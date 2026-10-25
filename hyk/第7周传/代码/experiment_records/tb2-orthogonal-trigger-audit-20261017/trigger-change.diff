@@ -1,0 +1,459 @@
+--- C:\Users\54177\Documents\ChatGPT\mcts\experiment_records\tb2-orthogonal-trigger-audit-20261017\frozen\policy.mjs
++++ projects/kz-dsh/src/policy.mjs
+@@ -1,4 +1,5 @@
+ import { createHash } from 'node:crypto';
++import { ExplorationTrigger, checkIdentity } from './exploration-trigger.mjs';
+ 
+ export const DEFAULTS = Object.freeze({
+   enabled: true, memoryCapacity: 24, recallLimit: 4, anchorLimit: 3,
+@@ -108,6 +109,7 @@
+     this.state.episode??={serial:0,executions:0,rejections:0,lastExit:null,history:[],seen:[]};
+     this.state.episode.cooldownRemaining??=0;
+     this.state.outputRepeat??=null;
++    this.trigger=new ExplorationTrigger(this.state.trigger??={},this.config.memoryCapacity);
+   }
+   noteAction(call) {
+     const key=actionKey(call);
+@@ -120,6 +122,7 @@
+     e.rearmEvidence=false;
+     e.history.push(e.lastExit);e.history=e.history.slice(-16);
+     this.state.active=false;this.state.failureStreak=0;
++    this.trigger.retirePending();
+     e.cooldownRemaining=this.config.explorationCooldownSteps;
+     this.state.diagnosticHint=reason==='orthogonal_rejections'?'Leave this rejected route. Choose one task-relevant read-only check of the missing premise; use native tools, then re-plan from its result. No command is injected.':null;
+   }
+@@ -131,6 +134,14 @@
+     if(!this.state.active)return;
+     e.executions++;e.rejections=0;
+     if(e.executions>=this.config.explorationMaxExecutions)this.endEpisode('execution_window_complete');
++  }
++  activatePending(key=null) {
++    if(!this.config.enabled||!this.config.explorationEnabled||this.state.active||this.state.advisory||this.state.episode.cooldownRemaining>0)return;
++    if(this.state.episode.lastExit&&!this.state.episode.rearmEvidence)return;
++    const candidate=this.trigger.pending(this.config.triggerFailures,key);
++    if(!candidate)return;
++    const e=this.state.episode;e.serial++;e.executions=0;e.rejections=0;e.seen=[];
++    e.trigger=this.trigger.consume(candidate);this.state.active=true;this.state.diagnosticHint=null;
+   }
+   recall(query = '') {
+     const q = words(query);
+@@ -197,8 +208,11 @@
+     }
+     if (identical && changed)
+       return { allowed: true, reason: 'observed_workspace_change', evidence: identical.id };
+-    if (identical?.outcome==='execution_failed' && unchanged)
++    if (identical?.outcome==='execution_failed' && unchanged) {
++      this.trigger.blocked(checkIdentity(call.arguments.command,call.arguments.workdir??'.'),identical.id);
++      this.activatePending();
+       return this.deny('same_failed_command_in_unchanged_workspace', identical.id);
++    }
+     if(identical?.outcome==='execution_succeeded'&&reusable&&covered&&unchanged&&!identical.changed)
+       return this.deny('unchanged_file_read_result_already_available', {id:identical.id,result:identical.observation});
+     const repeat=this.state.outputRepeat;
+@@ -247,6 +261,8 @@
+     record.justifiedRetryUsed=prior?.justifiedRetryUsed&&prior.signature===signature&&stable(prior.dependencies)===stable(dependencies)||false;
+     this.state.memories.push(record);
+     this.state.memories = this.state.memories.slice(-this.config.memoryCapacity);
++    const check=checkIdentity(call.arguments.command,call.arguments.workdir??'.');
++    if(!observation.noMatch)this.trigger.observe(check,record.id,outcome==='execution_failed'?'failed':'passed');
+     const repeat=this.state.outputRepeat;
+     const interleaved=this.state.lastAdmission&&this.state.lastAdmission.callId!==call.callId;
+     const repeated=outcome==='execution_failed'&&!changed&&!conditionsChanged&&!interleaved&&repeat?.key===key&&repeat.signature===signature;
+@@ -255,10 +271,7 @@
+     if (outcome === 'execution_failed') this.state.failureStreak=repeated?this.state.failureStreak+1:1;
+     else this.state.failureStreak = 0;
+     if(changed||conditionsChanged||newEvidence)this.state.episode.rearmEvidence=true;
+-    if (this.config.explorationEnabled&&!this.state.active&&this.state.episode.cooldownRemaining===0&&this.state.failureStreak >= this.config.triggerFailures&&(!this.state.episode.lastExit||this.state.episode.rearmEvidence)) {
+-      const e=this.state.episode;e.serial++;e.executions=0;e.rejections=0;e.seen=[];
+-      this.state.active=true;this.state.diagnosticHint=null;
+-    }
++    this.activatePending(check);
+     if (improved&&this.state.active) this.endEpisode('verified_command_improvement');
+     // Merely running a different command is NOT progress; an identical failure
+     // must not re-arm the gate after advisory fallback (prevents reject/run loops).
+--- /dev/null
++++ projects/kz-dsh/src/exploration-trigger.mjs
+@@ -0,0 +1,49 @@
++import path from 'node:path';
++
++// Grouping is only a recovery trigger. It never proves action equivalence or
++// authorizes cached results. Unknown shell programs retain exact identity.
++export function checkIdentity(command, cwd = '.') {
++  let text = String(command), directory = cwd;
++  const cd = text.match(/^\s*cd\s+(['"]?)([^\s;'"&|]+)\1\s*&&\s*/u);
++  if (cd) { directory = path.posix.normalize(path.posix.join(cwd, cd[2])); if(cd[2].startsWith('/'))directory=path.posix.normalize(cd[2]); text=text.slice(cd[0].length); }
++  if (!text.includes('<<')) {
++    const build = text.match(/(?:^|[;&|]\s*)(gcc|g\+\+|cc|c\+\+)\s+([^;\n|&]+)/u);
++    if (build && !/[$`\\]/u.test(build[2])) {
++      const sources = [...build[2].matchAll(/(?:^|\s)([^\s'"<>]+\.(?:c|cc|cpp|cxx))(?=\s|$)/gu)].map(m=>m[1]).sort();
++      if (sources.length) return JSON.stringify(['build',directory,sources]);
++    }
++    const telnet = text.match(/(?:^|[;|&]\s*|\btimeout\s+\d+\s+)telnet\s+([\w.-]+)\s+(\d+)\b/u);
++    if (telnet) return JSON.stringify(['telnet',directory,telnet[1],telnet[2]]);
++  }
++  return JSON.stringify(['exact',directory,text.trim()]);
++}
++
++export class ExplorationTrigger {
++  constructor(state = {}, capacity = 24) {
++    this.state=state; this.capacity=capacity;
++    state.checks??=[];state.seen??=[];state.blockedEvidence??=[];state.lastDecision??=null;
++  }
++  observe(key, evidence, status) {
++    if(!['failed','passed'].includes(status)||this.state.seen.includes(evidence))return;
++    this.state.seen.push(evidence);this.state.seen=this.state.seen.slice(-1024);
++    let row=this.state.checks.find(x=>x.key===key);
++    if(status==='passed') {this.state.checks=this.state.checks.filter(x=>x.key!==key);return;}
++    if(!row){row={key,failures:0,evidence:[],blocked:false};this.state.checks.push(row);}
++    row.failures++;row.evidence.push(evidence);row.evidence=row.evidence.slice(-4);
++    // Reads, edits, uncertain observations and changed error text do not erase
++    // this ledger. A clean completion of this same check closes it.
++    this.state.checks=this.state.checks.filter(x=>x!==row).concat(row).slice(-this.capacity);
++  }
++  blocked(key,evidence) {
++    const row=this.state.checks.find(x=>x.key===key);
++    if(!row||this.state.blockedEvidence.includes(evidence))return;
++    this.state.blockedEvidence.push(evidence);this.state.blockedEvidence=this.state.blockedEvidence.slice(-1024);
++    row.blocked=true;
++  }
++  pending(threshold,key=null) {return this.state.checks.find(x=>(key===null||x.key===key)&&(x.failures>=threshold||x.blocked));}
++  consume(row) {
++    const decision={key:row.key,failures:row.failures,evidence:[...row.evidence],reason:row.blocked?'repeated_failure_request':'same_check_failed_again'};
++    row.failures=0;row.blocked=false;this.state.lastDecision=decision;return decision;
++  }
++  retirePending() {for(const row of this.state.checks){row.failures=0;row.blocked=false;}}
++}
+--- /dev/null
++++ projects/kz-dsh/tests/exploration-trigger.test.mjs
+@@ -0,0 +1,80 @@
++import test from 'node:test';
++import assert from 'node:assert/strict';
++import { Policy } from '../src/policy.mjs';
++import { checkIdentity } from '../src/exploration-trigger.mjs';
++import { FullTask } from '../src/full-task.mjs';
++const S='sha256:before',T='sha256:repaired';
++const call=(id,command='gcc main.c -o main',name='bash')=>({callId:id,name,arguments:{command,workdir:'/app'}});
++function outcome(p,c,{before=S,after=before,exitCode=1,stdout='compile error',clean=exitCode===0,complete=true}={}) {
++ p.noteAction(c);p.executionStep(c.callId);
++ return p.observe(c,{executed:true,complete,exitCode,stdout,stderr:'',clean},before,after);
++}
++test('changed diagnostics and edited source retain failures for the same check',()=>{
++ const p=new Policy();outcome(p,call('a'));
++ p.noteAction(call('edit','main.c','edit'));
++ assert.equal(p.before(call('b'),T).reason,'observed_workspace_change');
++ outcome(p,call('b'),{before:T,stdout:'different line and error'});
++ assert.equal(p.state.active,true);assert.deepEqual(p.state.episode.trigger.evidence,['E1','E2']);
++});
++test('reading evidence between failed checks does not erase attempts',()=>{
++ const p=new Policy();outcome(p,call('a'));p.noteAction(call('read','main.c','read'));
++ outcome(p,call('b'),{stdout:'new details'});assert.equal(p.state.active,true);
++});
++test('different compiler flags and wrappers target the same source, other source/cwd do not',()=>{
++ assert.equal(checkIdentity('cd /app && gcc -Wall main.c -o /tmp/a; echo done'),checkIdentity('gcc main.c -o b','/app'));
++ assert.notEqual(checkIdentity('gcc other.c -o b','/app'),checkIdentity('gcc main.c -o b','/app'));
++ assert.notEqual(checkIdentity('gcc main.c -o b','/elsewhere'),checkIdentity('gcc main.c -o b','/app'));
++ const p=new Policy();outcome(p,call('a'));outcome(p,call('b','gcc other.c -o main'));assert.equal(p.state.active,false);
++});
++test('same telnet endpoint aggregates changed probes, separate ports stay separate',()=>{
++ assert.equal(checkIdentity('(sleep 8) | timeout 25 telnet 127.0.0.1 6665 | grep login'),checkIdentity('timeout 15 telnet 127.0.0.1 6665 | head'));
++ assert.notEqual(checkIdentity('telnet 127.0.0.1 6665'),checkIdentity('telnet 127.0.0.1 7777'));
++});
++test('clean success of the same check clears only that check',()=>{
++ const p=new Policy();outcome(p,call('a'));outcome(p,call('ok'),{exitCode:0,stdout:'ok'});
++ outcome(p,call('b'));assert.equal(p.state.active,false);
++ const q=new Policy();outcome(q,call('a'));outcome(q,call('ls','ls'),{exitCode:0,stdout:'main.c'});
++ outcome(q,call('b'));assert.equal(q.state.active,true);
++});
++test('uncertain zero exit preserves the ledger without inventing another failure',()=>{
++ const p=new Policy();outcome(p,call('a'));outcome(p,call('uncertain'),{exitCode:0,clean:false,stdout:'possibly failed'});
++ assert.equal(p.state.active,false);assert.equal(p.trigger.state.checks[0].failures,1);
++ outcome(p,call('b'));assert.equal(p.state.active,true);
++});
++test('incomplete outcomes, disabled exploration and duplicate receipt IDs do not activate',()=>{
++ const p=new Policy();outcome(p,call('a'));outcome(p,call('b'),{complete:false});assert.equal(p.state.active,false);
++ const q=new Policy({explorationEnabled:false});outcome(q,call('a'));outcome(q,call('b'));assert.equal(q.state.active,false);
++ const r=new Policy();r.trigger.observe('check','E1','failed');r.trigger.observe('check','E1','failed');assert.equal(r.trigger.pending(2),undefined);
++});
++test('unchanged failed request activates before denial, once per failed receipt',()=>{
++ const p=new Policy();outcome(p,call('a'));
++ assert.equal(p.before(call('b'),S).allowed,false);assert.equal(p.state.active,true);
++ p.endEpisode('orthogonal_rejections');
++ for(let i=0;i<20;i++)p.before(call('retry'+i),S);
++ assert.equal(p.state.episode.serial,1);assert.equal(p.state.active,false);
++});
++test('recovery cannot rearm from failures accumulated inside the previous episode',()=>{
++ const p=new Policy();outcome(p,call('a'));outcome(p,call('b'));outcome(p,call('c'));
++ p.endEpisode('orthogonal_rejections');for(let i=0;i<4;i++)p.executionStep('cooldown'+i);
++ p.activatePending();assert.equal(p.state.active,false);
++ outcome(p,call('d'));assert.equal(p.state.active,false);
++ outcome(p,call('e'));assert.equal(p.state.active,false);
++ outcome(p,call('f'),{before:T,stdout:'new failure after repair'});assert.equal(p.state.active,true);
++});
++test('trigger state survives context/session restoration',()=>{
++ const p=new Policy();outcome(p,call('a'));const q=new Policy({},structuredClone(p.state));
++ outcome(q,call('b'),{stdout:'different failure'});assert.equal(q.state.active,true);
++});
++
++test('full-task evidence path activates across edits while local syntax fixes remain exempt',()=>{
++ const p=new Policy(),task=new FullTask({});
++ const fail={executed:true,complete:true,exitCode:1,stdout:'',stderr:'compiler check failed'};
++ const observe=(id,command,before,stderr=fail.stderr)=>task.observe(call(id,command),{...fail,stderr},before,before,{}, {},p,'fixture');
++ observe('a','gcc main.c -o main',S);
++ task.state.local=null;
++ observe('b','gcc main.c -o main',T);
++ assert.equal(p.state.active,true);assert.deepEqual(p.state.episode.trigger.evidence,['E1','E2']);
++ const q=new Policy(),other=new FullTask({});
++ other.observe(call('syntax','python broken.py'),{...fail,stderr:'SyntaxError: invalid syntax'},S,S,{}, {},q,'fixture');
++ assert.equal(q.trigger.state.checks.length,0);assert.equal(q.state.active,false);
++});
+--- C:\Users\54177\Documents\ChatGPT\mcts\projects\kz-native-tb2-tls3-20261017\native\legacy\sources\bestfgs-project\src\bestfgs\lean_runtime.py
++++ projects/kz-native-orthogonal-trigger-20261017/native/legacy/sources/bestfgs-project/src/bestfgs/lean_runtime.py
+@@ -28,7 +28,7 @@
+ from .memory_injection import MEMORY_INSTRUCTION, reserved_view, remove_goal_duplicates, tail_order, validate_review, review_repair_feedback
+ from .terminal_text import project_terminal
+ from .advisor_handover import build_handover
+-from .contrastive_exploration import ContrastiveExploration
++from .contrastive_exploration import ContrastiveExploration, command_text
+ from .action_loop import ActionLoopGuard
+ from .recovery_clock import recovery_steps
+ from .rejection_recovery import RejectionRecovery
+@@ -557,6 +557,8 @@
+                 # A cached harness diagnostic must not recursively start another
+                 # exploration episode and regenerate the identical diagnostic.
+                 if not diagnostic:
++                    from .exploration_trigger import check_identity
++                    self.exploration_trigger.blocked(check_identity(command_text(action), action.get('cwd', '.')), blocked['evidence_id'])
+                     self._contrastive_activate('unchanged_action_loop')
+                 return dict(not_executed=True, action_loop=blocked)
+         started = time.monotonic()
+--- C:\Users\54177\Documents\ChatGPT\mcts\projects\kz-native-tb2-tls3-20261017\native\legacy\sources\bestfgs-project\src\bestfgs\contrastive_exploration.py
++++ projects/kz-native-orthogonal-trigger-20261017/native/legacy/sources/bestfgs-project/src/bestfgs/contrastive_exploration.py
+@@ -258,6 +258,7 @@
+ from .recovery_clock import recovery_steps
+ from .rejection_recovery import changed_paths
+ from .targeted_diagnostics import diagnostic_action
++from .exploration_trigger import ExplorationTrigger, check_identity
+ 
+ 
+ class ContrastiveExploration:
+@@ -266,14 +267,20 @@
+                 or not self.contrastive_failures
+                 or recovery_steps(self)-self.contrastive_last_end < 4):
+             return
++        candidate = self.exploration_trigger.pending(self.config.contrastive_trigger_failures)
++        if candidate is None:
++            return
++        decision = self.exploration_trigger.consume(candidate)
+         self.counts['contrastive_episodes'] += 1
++        baselines = {f['command_key'] for f in self.contrastive_failures if f.get('check_key') == decision['key']}
+         self.contrastive_episode = dict(id='X'+str(self.counts['contrastive_episodes']), phase='plan',
+-            start_tool=self.counts['tool_calls'], baseline_keys={self.contrastive_failures[-1]['command_key']})
++            start_tool=self.counts['tool_calls'], baseline_keys=baselines or {self.contrastive_failures[-1]['command_key']})
+         self._emit('contrastive_episode_start', episode_id=self.contrastive_episode['id'],
+-            trigger=trigger, policy=self.config.contrastive_mode,
++            trigger=trigger, trigger_evidence=decision, policy=self.config.contrastive_mode,
+             baseline_keys=sorted(self.contrastive_episode['baseline_keys']))
+ 
+     def _init_contrastive(self):
++        self.exploration_trigger = ExplorationTrigger(capacity=self.config.max_memories)
+         self.contrastive_failures = []
+         self.contrastive_episode = None
+         self.contrastive_pending = None
+@@ -383,6 +390,7 @@
+             self._emit('contrastive_episode_end', episode_id=e['id'],
+                        reason='two_rejections_diagnostic_fallback', task_success=None)
+             self.contrastive_episode = None
++            self.exploration_trigger.retire_pending()
+             self.contrastive_last_end = recovery_steps(self)
+             self.contrastive_reject_streak = 0
+             return dict(fallback_action=fallback, reason=reason)
+@@ -435,6 +443,10 @@
+         failed = (row['return_code'] != 0 or row['timed_out'] or row['blocked']
+                   or assessment.get('check_status') == 'public_check_failed')
+         no_match = row['category'] == 'search' and row['return_code'] == 1 and not row['stderr']
++        check = check_identity(command_text(action), action.get('cwd', '.'))
++        if complete and not no_match:
++            self.exploration_trigger.observe(check, row['id'], 'failed' if failed else
++                                             'passed' if assessment['execution_clean'] else 'unknown')
+         if failed and not no_match and not row['capture_incomplete'] and not row['terminal_projection_incomplete']:
+             self.counts['contrastive_failure_records'] += 1
+             index = self.counts['contrastive_failure_records']
+@@ -444,7 +456,7 @@
+             relevant = list(row.get('relevant_dependencies', {})) or (
+                 declared(action) if callable(declared) else dependency_paths(action))
+             self.contrastive_failures.append(dict(id='F'+str(index), index=index,
+-                command=command_text(action), command_key=action_key(action), scope=row['after'],
++                command=command_text(action), command_key=action_key(action), check_key=check, scope=row['after'],
+                 dependencies={p: row.get('dependency_after', {}).get(p, 'unknown') for p in relevant}, evidence_id=row['id'],
+                 observation=(row['stderr'] or row['stdout'])[:600], memory_ids=memory_ids,
+                 hypothesis=chosen.get('hypothesis', 'unknown'), status='observed_failure_not_causal_exclusion'))
+@@ -459,8 +471,10 @@
+                 self._emit('contrastive_episode_end', episode_id=episode['id'],
+                     reason='original_check_completed_cleanly' if verified else 'episode_tool_cap', task_success=None)
+                 self.contrastive_episode = None
++                self.exploration_trigger.retire_pending()
+                 self.contrastive_last_end = recovery_steps(self)
+-        elif (self.failure_streak >= self.config.contrastive_trigger_failures
++        elif (self.exploration_trigger.pending(self.config.contrastive_trigger_failures)
+                 and recovery_steps(self)-self.contrastive_last_end >= 4
+                 and self.contrastive_failures):
+-            self._contrastive_activate('repeated_observed_failure')
++            self._contrastive_activate('same_check_failed_again')
++        self.log.save('exploration-trigger.json', self.exploration_trigger.state)
+--- /dev/null
++++ projects/kz-native-orthogonal-trigger-20261017/native/legacy/sources/bestfgs-project/src/bestfgs/exploration_trigger.py
+@@ -0,0 +1,70 @@
++"""Evidence-backed cross-action trigger; never an action-equivalence proof."""
++import json
++import posixpath
++import re
++
++
++def check_identity(command, cwd='.'):
++    text = str(command)
++    directory = cwd
++    cd = re.match(r'''^\s*cd\s+(['"]?)([^\s;'"&|]+)\1\s*&&\s*''', text)
++    if cd:
++        directory = posixpath.normpath(posixpath.join(cwd, cd[2]))
++        text = text[cd.end():]
++    if '<<' not in text:
++        build = re.search(r'(?:^|[;&|]\s*)(gcc|g\+\+|cc|c\+\+)\s+([^;\n|&]+)', text)
++        if build and not re.search(r'[$`\\]', build[2]):
++            sources = sorted(re.findall(r'''(?:^|\s)([^\s'"<>]+\.(?:c|cc|cpp|cxx))(?=\s|$)''', build[2]))
++            if sources:
++                return json.dumps(['build', directory, sources], separators=(',', ':'))
++        telnet = re.search(r'(?:^|[;|&]\s*|\btimeout\s+\d+\s+)telnet\s+([\w.-]+)\s+(\d+)\b', text)
++        if telnet:
++            return json.dumps(['telnet', directory, telnet[1], telnet[2]], separators=(',', ':'))
++    return json.dumps(['exact', directory, text.strip()], separators=(',', ':'))
++
++
++class ExplorationTrigger:
++    def __init__(self, state=None, capacity=24):
++        self.state = state if state is not None else {}
++        self.capacity = capacity
++        for key in ('checks', 'seen', 'blockedEvidence'):
++            self.state.setdefault(key, [])
++        self.state.setdefault('lastDecision', None)
++
++    def observe(self, key, evidence, status):
++        if status not in ('failed', 'passed') or evidence in self.state['seen']:
++            return
++        self.state['seen'] = (self.state['seen'] + [evidence])[-1024:]
++        row = next((x for x in self.state['checks'] if x['key'] == key), None)
++        if status == 'passed':
++            self.state['checks'] = [x for x in self.state['checks'] if x['key'] != key]
++            return
++        if row is None:
++            row = dict(key=key, failures=0, evidence=[], blocked=False)
++        row['failures'] += 1
++        row['evidence'] = (row['evidence'] + [evidence])[-4:]
++        self.state['checks'] = ([x for x in self.state['checks'] if x is not row] + [row])[-self.capacity:]
++
++    def blocked(self, key, evidence):
++        row = next((x for x in self.state['checks'] if x['key'] == key), None)
++        if row is None or evidence in self.state['blockedEvidence']:
++            return
++        self.state['blockedEvidence'] = (self.state['blockedEvidence'] + [evidence])[-1024:]
++        row['blocked'] = True
++
++    def pending(self, threshold, key=None):
++        return next((x for x in self.state['checks'] if (key is None or x['key'] == key)
++                     and (x['failures'] >= threshold or x['blocked'])), None)
++
++    def consume(self, row):
++        decision = dict(key=row['key'], failures=row['failures'], evidence=list(row['evidence']),
++                        reason='repeated_failure_request' if row['blocked'] else 'same_check_failed_again')
++        row['failures'] = 0
++        row['blocked'] = False
++        self.state['lastDecision'] = decision
++        return decision
++
++    def retire_pending(self):
++        for row in self.state['checks']:
++            row['failures'] = 0
++            row['blocked'] = False
+--- /dev/null
++++ projects/kz-native-orthogonal-trigger-20261017/native/test_exploration_trigger.py
+@@ -0,0 +1,81 @@
++import sys, unittest
++from pathlib import Path
++from types import SimpleNamespace
++from collections import Counter
++sys.path[:0]=[str(Path(__file__).parent/'legacy/sources/bestfgs-project/src'),str(Path(__file__).parent/'legacy/compatibility/src')]
++from bestfgs.exploration_trigger import ExplorationTrigger, check_identity
++from bestfgs.contrastive_exploration import ContrastiveExploration
++
++class Runner(ContrastiveExploration):
++    def __init__(self):
++        self.config=SimpleNamespace(contrastive_mode='orthogonal',contrastive_trigger_failures=2,
++            max_memories=24,contrastive_predictions=False,contrastive_episode_tools=8)
++        self.counts=Counter();self.events=[];self.saved={}
++        self.log=SimpleNamespace(save=lambda k,v:self.saved.update({k:v}))
++        self.memory=SimpleNamespace(items={});self.environment=SimpleNamespace()
++        self._init_contrastive()
++    def _emit(self,event,**fields):self.events.append(dict(event=event,**fields))
++    def step(self,eid,command='gcc main.c -o main',code=1,clean=False,before='a',after='a',output='error',complete=True):
++        self.counts['tool_calls']+=1
++        action=dict(action='run',argv=['bash','-lc',command],cwd='/app')
++        row=dict(id=eid,return_code=code,stdout=output,stderr='',before=before,after=after,category='build',
++            timed_out=False,blocked=False,capture_incomplete=not complete,terminal_projection_incomplete=False,dependency_after={})
++        self._contrastive_outcome(action,row,dict(execution_clean=clean,check_status='unknown'))
++
++class Tests(unittest.TestCase):
++    def test_real_runner_unchanged_guard_starts_exploration(self):
++        import tempfile
++        sys.path.insert(0,str(Path(__file__).parent/'legacy/sources/bestfgs-project/tests'))
++        from test_lean import LeanTests, LeanConfig, run_action, SUBMIT
++        root=Path(__file__).resolve().parents[3]/'experiment_records/tb2-orthogonal-trigger-audit-20261017/test-tmp'
++        root.mkdir(exist_ok=True)
++        previous=tempfile.tempdir;tempfile.tempdir=str(root)
++        fixture=LeanTests()
++        try:
++            result,events,_,_,env,runner=fixture.exercise([run_action('fail'),run_action('fail'),SUBMIT],
++                config=LeanConfig(max_turns=3,max_tools=10,contrastive_mode='orthogonal',
++                                  memory_reliability=True,outcome_reliability=True,memory_decision=False))
++            self.assertEqual(len(env.executed),1)
++            self.assertEqual(runner.counts['action_loop_blocks'],1)
++            starts=[e for e in events if e['event']=='contrastive_episode_start']
++            self.assertEqual(len(starts),1)
++            self.assertEqual(starts[0]['trigger_evidence']['reason'],'repeated_failure_request')
++        finally:
++            fixture.doCleanups();tempfile.tempdir=previous
++    def test_real_outcome_path_after_edit_and_changed_diagnostic(self):
++        r=Runner();r.step('E1');r.step('read','cat main.c',0,True)
++        r.step('E3',before='b',after='c',output='different compiler line')
++        self.assertEqual(r.counts['contrastive_episodes'],1)
++        self.assertEqual(r.events[0]['trigger_evidence']['evidence'],['E1','E3'])
++    def test_clean_check_resets_only_itself(self):
++        r=Runner();r.step('E1');r.step('E2',code=0,clean=True);r.step('E3')
++        self.assertEqual(r.counts['contrastive_episodes'],0)
++    def test_unrelated_checks_not_pooled(self):
++        r=Runner();r.step('E1');r.step('E2','gcc other.c -o main');self.assertIsNone(r.contrastive_episode)
++    def test_uncertain_and_incomplete_do_not_fake_failure_or_success(self):
++        r=Runner();r.step('E1');r.step('E2',code=0,clean=False);r.step('E3',complete=False)
++        self.assertIsNone(r.contrastive_episode);r.step('E4');self.assertIsNotNone(r.contrastive_episode)
++    def test_duplicate_block_receipt_cannot_rearm(self):
++        r=Runner();r.step('E1');key=check_identity('gcc main.c -o main','/app')
++        r.exploration_trigger.blocked(key,'E1');r._contrastive_activate('unchanged_action_loop')
++        self.assertEqual(r.counts['contrastive_episodes'],1)
++        r.contrastive_episode=None;r.exploration_trigger.retire_pending()
++        for _ in range(20):
++            r.exploration_trigger.blocked(key,'E1');r._contrastive_activate('unchanged_action_loop')
++        self.assertEqual(r.counts['contrastive_episodes'],1)
++    def test_tool_cap_retires_episode_failures(self):
++        r=Runner();r.step('E1');r.step('E2')
++        for i in range(8):r.step('during'+str(i))
++        self.assertIsNone(r.contrastive_episode)
++        self.assertIsNone(r.exploration_trigger.pending(2))
++    def test_disabled(self):
++        r=Runner();r.config.contrastive_mode='off';r.step('E1');r.step('E2');self.assertIsNone(r.contrastive_episode)
++    def test_family_identity(self):
++        self.assertEqual(check_identity('cd /app && gcc -Wall main.c -o a; echo done'),check_identity('gcc main.c -o b','/app'))
++        self.assertEqual(check_identity('(sleep 8) | timeout 25 telnet 127.0.0.1 6665 | grep login'),check_identity('timeout 15 telnet 127.0.0.1 6665 | head'))
++        self.assertNotEqual(check_identity('telnet 127.0.0.1 6665'),check_identity('telnet 127.0.0.1 7777'))
++    def test_restore_and_deduplicate(self):
++        t=ExplorationTrigger();t.observe('x','E1','failed');q=ExplorationTrigger(t.state)
++        q.observe('x','E1','failed');self.assertIsNone(q.pending(2));q.observe('x','E2','failed');self.assertIsNotNone(q.pending(2))
++
++if __name__=='__main__':unittest.main()

@@ -1,0 +1,15 @@
+Authorized 2026-10-03: rerun frozen mechanism-large A on the original RAW twelve tasks.
+One fresh attempt per task, zero carried results/memories, independent clean environments.
+Do not deploy v8, submission-loop-v3, or change the frozen solver/adapter/tool code.
+A disables memory_enabled, auto_memory, memory_decision, stagnation_control, route_search.
+Semantic monitor, adviser, memory/monitor/outcome reliability retain original settings.
+deepseek-flash; thinking disabled; temperature 0; 4096 output tokens.
+800 actor turns; 600 tools; 12 monitor calls; 6 adviser calls; 48000 context characters.
+Original per-task wall/resource limits and benchmark commit/images retained.
+Four parallel slots, <=32 CPU / 64 GiB campaign reservations. Disk guard disabled as authorized.
+Use current outer supervision only: deadlines, durable ledger, safe secret stdin, failure reporting.
+No GPT recurring automation, task replay, extra tasks, model budget increase or credential reuse.
+Original A frozen source hashes checked against its ready seal, then checked after copying.
+Preparation uses deterministic tests and a no-model official continuation fixture.
+Production launch waits for local hidden API key input. Keys are never put in command args/logs.
+Official partial scores and all failures are retained. Single runs do not establish statistical superiority.

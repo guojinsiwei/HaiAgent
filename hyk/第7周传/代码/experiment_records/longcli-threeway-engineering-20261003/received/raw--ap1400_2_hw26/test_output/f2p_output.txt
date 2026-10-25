@@ -1,0 +1,176 @@
+========== HW2 Start ==========
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Error at /usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake:230 (message):
+  Could NOT find OpenSSL, try to set the path to OpenSSL root folder in the
+  system variable OPENSSL_ROOT_DIR (missing: OPENSSL_CRYPTO_LIBRARY
+  OPENSSL_INCLUDE_DIR)
+Call Stack (most recent call first):
+  /usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake:600 (_FPHSA_FAILURE_MESSAGE)
+  /usr/share/cmake-3.28/Modules/FindOpenSSL.cmake:668 (find_package_handle_standard_args)
+  CMakeLists.txt:6 (find_package)
+
+
+-- Configuring incomplete, errors occurred!
+make: *** No targets specified and no makefile found.  Stop.
+HW2 compile failed, cannot run program
+
+========== HW6 Start ==========
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found GTest: /usr/local/lib/cmake/GTest/GTestConfig.cmake (found version "1.18.0")  
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /app/ap1400_2_hw/ap1400_2_hw6/build_hw6
+[ 33%] Building CXX object CMakeFiles/main.dir/src/main.cpp.o
+[ 66%] Building CXX object CMakeFiles/main.dir/src/unit_test.cpp.o
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp: In member function 'virtual void HW6Test_TEST1_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:12:17: error: 'q1' has not been declared
+   12 |     auto min1 = q1::gradient_descent(0.01, 0.1, cos);
+      |                 ^~
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:15:17: error: 'q1' has not been declared
+   15 |     auto min2 = q1::gradient_descent(0.01, 0.01, cos);
+      |                 ^~
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp: In member function 'virtual void HW6Test_TEST2_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:20:16: error: 'q1' has not been declared
+   20 |     auto min = q1::gradient_descent(0.01, 0.01, [](double a){return sin(a)+cos(a);});
+      |                ^~
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp: In member function 'virtual void HW6Test_TEST3_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:29:16: error: 'q1' has not been declared
+   29 |     auto min = q1::gradient_descent(0.01, 0.01, Func{});
+      |                ^~
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp: In member function 'virtual void HW6Test_TEST4_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:38:16: error: 'q1' has not been declared
+   38 |     auto min = q1::gradient_descent<double, Func>(0.0, 0.01);
+      |                ^~
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:38:37: error: expected primary-expression before 'double'
+   38 |     auto min = q1::gradient_descent<double, Func>(0.0, 0.01);
+      |                                     ^~~~~~
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp: In member function 'virtual void HW6Test_TEST5_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:43:17: error: 'q2' was not declared in this scope
+   43 |     std::vector<q2::Patient> patients = q2::read_file("lung_cancer.csv");
+      |                 ^~
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:43:28: error: template argument 1 is invalid
+   43 |     std::vector<q2::Patient> patients = q2::read_file("lung_cancer.csv");
+      |                            ^
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:43:28: error: template argument 2 is invalid
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:43:41: error: 'q2' is not a class, namespace, or enumeration
+   43 |     std::vector<q2::Patient> patients = q2::read_file("lung_cancer.csv");
+      |                                         ^~
+In file included from /usr/local/include/gtest/gtest.h:72,
+                 from /app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:1:
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:44:24: error: request for member 'size' in 'patients', which is of non-class type 'int'
+   44 |     EXPECT_EQ(patients.size(), 59);
+      |                        ^~~~
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:45:23: error: invalid types 'int[int]' for array subscript
+   45 |     EXPECT_EQ(patients[0].name, "John Wick");
+      |                       ^
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:46:23: error: invalid types 'int[int]' for array subscript
+   46 |     EXPECT_EQ(patients[0].age, 35);
+      |                       ^
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:47:23: error: invalid types 'int[int]' for array subscript
+   47 |     EXPECT_EQ(patients[0].smokes, 3);
+      |                       ^
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:48:23: error: invalid types 'int[int]' for array subscript
+   48 |     EXPECT_EQ(patients[0].area_q, 5);
+      |                       ^
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:49:23: error: invalid types 'int[int]' for array subscript
+   49 |     EXPECT_EQ(patients[0].alkhol, 4);
+      |                       ^
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:51:23: error: invalid types 'int[int]' for array subscript
+   51 |     EXPECT_EQ(patients[58].name, "Sidney Poitier");
+      |                       ^
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:52:23: error: invalid types 'int[int]' for array subscript
+   52 |     EXPECT_EQ(patients[58].age, 51);
+      |                       ^
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:53:23: error: invalid types 'int[int]' for array subscript
+   53 |     EXPECT_EQ(patients[58].smokes, 25);
+      |                       ^
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:54:23: error: invalid types 'int[int]' for array subscript
+   54 |     EXPECT_EQ(patients[58].area_q, 9);
+      |                       ^
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:55:23: error: invalid types 'int[int]' for array subscript
+   55 |     EXPECT_EQ(patients[58].alkhol, 0);
+      |                       ^
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp: In member function 'virtual void HW6Test_TEST6_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:59:17: error: 'q2' was not declared in this scope
+   59 |     std::vector<q2::Patient> patients = q2::read_file("lung_cancer.csv");
+      |                 ^~
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:59:28: error: template argument 1 is invalid
+   59 |     std::vector<q2::Patient> patients = q2::read_file("lung_cancer.csv");
+      |                            ^
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:59:28: error: template argument 2 is invalid
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:59:41: error: 'q2' is not a class, namespace, or enumeration
+   59 |     std::vector<q2::Patient> patients = q2::read_file("lung_cancer.csv");
+      |                                         ^~
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:61:5: error: 'q2' is not a class, namespace, or enumeration
+   61 |     q2::sort(patients);
+      |     ^~
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:62:23: error: invalid types 'int[int]' for array subscript
+   62 |     EXPECT_EQ(patients[0].name, "Alec Guinness");
+      |                       ^
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:63:23: error: invalid types 'int[int]' for array subscript
+   63 |     EXPECT_EQ(patients[10].name, "Sidney Poitier");
+      |                       ^
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:64:23: error: invalid types 'int[int]' for array subscript
+   64 |     EXPECT_EQ(patients[30].name, "Jane Wyman");
+      |                       ^
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:65:23: error: invalid types 'int[int]' for array subscript
+   65 |     EXPECT_EQ(patients[58].name, "Joan Crawford");
+      |                       ^
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp: In member function 'virtual void HW6Test_TEST7_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:69:20: error: 'q3' has not been declared
+   69 |     auto flights = q3::gather_flights("flights.txt");
+      |                    ^~
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp: In member function 'virtual void HW6Test_TEST8_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:82:17: error: 'q4' was not declared in this scope
+   82 |     std::vector<q4::Sensor> sensors{{{0, 0.01}, 0.5},
+      |                 ^~
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:82:27: error: template argument 1 is invalid
+   82 |     std::vector<q4::Sensor> sensors{{{0, 0.01}, 0.5},
+      |                           ^
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:82:27: error: template argument 2 is invalid
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:82:29: error: scalar object 'sensors' requires one element in initializer
+   82 |     std::vector<q4::Sensor> sensors{{{0, 0.01}, 0.5},
+      |                             ^~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:84:17: error: 'q4' is not a class, namespace, or enumeration
+   84 |     auto kalman{q4::kalman_filter(sensors)};
+      |                 ^~
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp: In member function 'virtual void HW6Test_TEST9_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:90:17: error: 'q4' was not declared in this scope
+   90 |     std::vector<q4::Sensor> sensors{{{1, 0.3}, 0.5},
+      |                 ^~
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:90:27: error: template argument 1 is invalid
+   90 |     std::vector<q4::Sensor> sensors{{{1, 0.3}, 0.5},
+      |                           ^
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:90:27: error: template argument 2 is invalid
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:90:29: error: scalar object 'sensors' requires one element in initializer
+   90 |     std::vector<q4::Sensor> sensors{{{1, 0.3}, 0.5},
+      |                             ^~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:95:17: error: 'q4' is not a class, namespace, or enumeration
+   95 |     auto kalman{q4::kalman_filter(sensors)};
+      |                 ^~
+make[2]: *** [CMakeFiles/main.dir/build.make:90: CMakeFiles/main.dir/src/unit_test.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/main.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2
+HW6 compile failed, cannot run program

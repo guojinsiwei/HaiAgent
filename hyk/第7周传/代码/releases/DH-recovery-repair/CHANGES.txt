@@ -1,0 +1,21 @@
+DH — 2026-10-04 frozen experiment release
+
+Renamed user-facing repaired v9 to DH. Source base: recovery-counter-fix-v9.
+Merged the already implemented prediction extension switch from the preceding
+LongCLI toggle comparison, in lean_protocol.py and contrastive_exploration.py.
+The primary full comparison disables contrastive_predictions. No graph search.
+All other 52 Python modules are byte-identical to recovery-counter-fix-v9.
+Source hashes/provenance: dh-source-manifest.json.
+
+Runtime configuration: memory enabled/injected, automatic memory, memory
+reliability, semantic monitor, monitor reliability, outcome reliability enabled;
+contrastive_mode=orthogonal, threshold=0.8, route_search=false,
+stagnation_control=false, contrastive_predictions=false.
+
+Verification: 128 offline regression tests plus 18 deployment/wire tests,
+including orthogonal repair execution with predictions disabled and recovery
+monitor reactivation after blocked actions. Full campaign infrastructure and
+official scoring acceptance are recorded under:
+experiment_records/longcli-dh-raw-full20-20261004.
+
+The release alone is not evidence of improved benchmark performance.

@@ -1,0 +1,83 @@
+历史实验评分核验 — 2026-10-03
+
+结论：完整原固定 LHTB12 中，BestFGS 最高为正交探索v8+工程v2，25.3875%；RAW 26.2680%。
+但同题子集上，A/D五题和v6八题的历史记录高于正交版；不能称正交版历史全面最优。
+
+审计范围与边界：
+- 学院 /var/tmp 与 /mnt/sdb/home/lizh639 下全部可访问的 LHTB 一级目录，共 21 个（含空部署目录及本轮新目录）。
+- 摘要引用203个不同报告路径（含旧结果携带/复制，不等于203次独立试验）；有报告引用的记录均与官方报告相符，未发现分数不一致。
+- 另补查摘要未索引的3份报告：r3 Great Expectations、v18 Spot和NetCDF，均无官方评分，不是遗漏的高分。
+- 最早RAW三题官方报告均无评分；不以submitted/自报成功替代官方成绩。
+- r2/r3/r4携带前轮结果，按官方report路径识别重复，不把副本算独立重复。
+- 本地当前项目、旧BestFGS_work、隐藏运行副本、releases、实验日志、official-eval/evaluation/submission和experiment_records扫描 463 个候选结果文件。候选中含非官方指标与测试，不能当作独立正式实验数。
+- CubeStudio两个容器可达、共享历史目录可见，补查早期SWE/Terminal以及SWE-Pro目录；没有用模型总结替代官方评分。
+- ECS 114.215.186.90 SSH超时，无法重新核验那台机器未保存在本地的历史结果。不能保证不可访问记录绝无更高成绩。
+- 不把不同benchmark、题集、模型、预算的数值混排；无评分、失败、未启动均单列。
+
+完整原固定LHTB12记录（包含HAI0.7旧结果携带副本；副本不算新增独立证据）：
+campaign | method | scored | mean_pct | fully_passed
+lizh639-lhtb-raw12-engineering-v2-20261002-r1 | raw1 | 12 | 26.2680 | 1
+lizh639-lhtb-contrastive12-engineering-v2-20261002-r1 | orthogonal1 | 12 | 25.3875 | 1
+lizh639-lhtb-contrastive12-v8-20261002 | evidence1 | 12 | 20.2504 | 0
+lizh639-lhtb-contrastive12-engineering-v2-20261002-r1 | evidence1 | 12 | 19.1334 | 0
+lizh639-lhtb-contrastive12-v8-20261002 | orthogonal1 | 12 | 17.4808 | 0
+lizh639-lhtb-bestfgs12-memory-v5-20260930 | bestfgs | 12 | 14.4675 | 0
+lizh639-lhtb-hai082-only-r1 | hai | 12 | 13.9150 | 0
+lizh639-lhtb-bestfgs-v181-only-r1 | bestfgs | 12 | 13.8736 | 0
+lizh639-lhtb-hai070-only-r1 | hai | 12 | 5.9267 | 0
+lizh639-lhtb-r4 | hai | 12 | 5.9267 | 0
+
+所有完整子集与正交版共同题目比较：
+campaign | method | n | historical_pct | orthogonal_same_subset_pct | delta_pp | infra_failures
+lhtb-triple12-v161-20260927-r2 | raw | 3 | 38.2211 | 41.4183 | -3.1972 | 0
+lhtb-triple12-v161-20260927-r2 | hai | 4 | 8.3333 | 31.0698 | -22.7365 | 0
+lhtb-triple12-v161-20260927-r2 | bestfgs | 4 | 8.3454 | 31.0698 | -22.7244 | 0
+lhtb-triple12-v161-20260927-r3 | raw | 5 | 24.2651 | 26.3041 | -2.0390 | 0
+lhtb-triple12-v161-20260927-r3 | hai | 5 | 7.9991 | 26.3041 | -18.3050 | 0
+lhtb-triple12-v161-20260927-r3 | bestfgs | 5 | 8.0088 | 26.3041 | -18.2953 | 1
+lhtb-triple25-v161-20260926 | raw | 2 | 40.6650 | 45.4608 | -4.7958 | 0
+lhtb-triple25-v161-20260926 | hai | 2 | 0.0000 | 45.4608 | -45.4608 | 0
+lizh639-lhtb-bestfgs-v181-only-r1 | bestfgs | 12 | 13.8736 | 25.3875 | -11.5139 | 0
+lizh639-lhtb-bestfgs12-memory-v5-20260930 | bestfgs | 12 | 14.4675 | 25.3875 | -10.9200 | 0
+lizh639-lhtb-contrastive12-engineering-v2-20261002-r1 | evidence1 | 12 | 19.1334 | 25.3875 | -6.2541 | 0
+lizh639-lhtb-contrastive12-engineering-v2-20261002-r1 | orthogonal1 | 12 | 25.3875 | 25.3875 | +0.0000 | 0
+lizh639-lhtb-contrastive12-v8-20261002 | orthogonal1 | 12 | 17.4808 | 25.3875 | -7.9067 | 0
+lizh639-lhtb-contrastive12-v8-20261002 | evidence1 | 12 | 20.2504 | 25.3875 | -5.1371 | 1
+lizh639-lhtb-hai070-only-r1 | hai | 12 | 5.9267 | 25.3875 | -19.4608 | 0
+lizh639-lhtb-hai082-only-r1 | hai | 12 | 13.9150 | 25.3875 | -11.4725 | 2
+lizh639-lhtb-mechanism-large-20261001 | B1 | 5 | 24.8015 | 30.3104 | -5.5089 | 1
+lizh639-lhtb-mechanism-large-20261001 | C1 | 5 | 24.2251 | 30.3104 | -6.0853 | 0
+lizh639-lhtb-mechanism-large-20261001 | E1 | 5 | 25.5835 | 30.3104 | -4.7269 | 0
+lizh639-lhtb-mechanism-large-20261001 | D1 | 5 | 34.5251 | 30.3104 | +4.2147 | 0
+lizh639-lhtb-mechanism-large-20261001 | A1 | 5 | 35.2527 | 30.3104 | +4.9423 | 0
+lizh639-lhtb-paired6-repair-v2-20260929 | bestfgs | 6 | 24.9860 | 26.4655 | -1.4796 | 0
+lizh639-lhtb-paired6-repair-v2-20260929 | hai | 6 | 10.1926 | 26.4655 | -16.2729 | 0
+lizh639-lhtb-r4 | hai | 12 | 5.9267 | 25.3875 | -19.4608 | 0
+lizh639-lhtb-raw12-engineering-v2-20261002-r1 | raw1 | 12 | 26.2680 | 25.3875 | +0.8805 | 0
+lizh639-lhtb-v6-v7-paired8-20260930 | v6 | 8 | 21.3525 | 20.7016 | +0.6509 | 5
+lizh639-lhtb-v6-v7-paired8-20260930 | v7 | 8 | 6.1613 | 20.7016 | -14.5403 | 0
+
+LHTB未完成/不完整评分记录：
+lhtb-triple25-v161-20260926/bestfgs: 0/2 scored; scored-only mean=None; missing are NOT silently zero/removed.
+lizh639-lhtb-bestfgs-v18-only-r1/bestfgs: 3/5 scored; scored-only mean=11.111111111111109; missing are NOT silently zero/removed.
+lizh639-lhtb-r4/raw: 11/12 scored; scored-only mean=13.859133097181818; missing are NOT silently zero/removed.
+lizh639-lhtb-r4/bestfgs: 11/12 scored; scored-only mean=6.009370310868501; missing are NOT silently zero/removed.
+
+其他benchmark（不能与LHTB25.39%混排）：
+LongCLI paired10 raw: official F2P partial mean 10.3014%, full 1/10; score-file evidence in local-score-inventory.json.
+LongCLI paired10 bestfgs-v6.1: official F2P partial mean 43.4874%, full 1/10; score-file evidence in local-score-inventory.json.
+SWE raw-v31-paired12-20260924/raw-deepseek: confirmed resolved 6/11 available per-instance reports; NOT full planned success rate when reports missing.
+SWE bestfgs-batch-3c5e4e5b52e90a92/deepseek-flash: confirmed resolved 1/1 available per-instance reports; NOT full planned success rate when reports missing.
+SWE bestfgs-v31-paired12-20260924/bestfgs-deepseek: confirmed resolved 4/12 available per-instance reports; NOT full planned success rate when reports missing.
+SWE bestfgs-current50-v10/deepseek-flash: confirmed resolved 34/49 available per-instance reports; NOT full planned success rate when reports missing.
+SWE bestfgs-batch-543f784a24bbdce3/bestfgs-deepseek: confirmed resolved 62/84 available per-instance reports; NOT full planned success rate when reports missing.
+SWE bestfgs-sympy-dev-02-20260918-134702/deepseek-flash: confirmed resolved 1/1 available per-instance reports; NOT full planned success rate when reports missing.
+SWE bestfgs-batch-a3c9cc7b0b496ff3/raw-deepseek: confirmed resolved 79/98 available per-instance reports; NOT full planned success rate when reports missing.
+SWE旧原型9题官方6/9通过；旧12题官方7题通过、11份完成评分/12提交。任务/模型/预算不同，不能证明优于v8。
+旧Terminal8题reconciled official报告4/8通过。不是当前LHTB12题。
+学院Terminal36：BestFGS9通过/35评分，1题未评分；RAW20/36通过。记录在college-terminal36.json。
+最新submission-loop-repair-v3只有工程回归，无新正式Benchmark成绩。
+
+本轮A12：复制20261001原A冻结源码，38回归通过、无模型官方续跑夹具通过，4并发，原预算；本地隐藏输入密钥后启动。
+只换外层监督/凭据传递，不部署v8/v3算法修订；不携带旧结果或记忆。
+结果是单次历史观测，未做多重复统计显著性检验。

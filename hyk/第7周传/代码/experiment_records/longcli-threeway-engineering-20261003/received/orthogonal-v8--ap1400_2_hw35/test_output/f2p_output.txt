@@ -1,0 +1,367 @@
+========== HW3 Start ==========
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found GTest: /usr/local/lib/cmake/GTest/GTestConfig.cmake (found version "1.18.0")  
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /app/ap1400_2_hw/ap1400_2_hw3/build_hw3
+[ 25%] Building CXX object CMakeFiles/main.dir/src/bst.cpp.o
+[ 50%] Building CXX object CMakeFiles/main.dir/src/main.cpp.o
+[ 75%] Building CXX object CMakeFiles/main.dir/src/unit_test.cpp.o
+In file included from /usr/local/include/gtest/gtest-printers.h:128,
+                 from /usr/local/include/gtest/gtest-matchers.h:51,
+                 from /usr/local/include/gtest/internal/gtest-death-test-internal.h:48,
+                 from /usr/local/include/gtest/gtest-death-test.h:43,
+                 from /usr/local/include/gtest/gtest.h:65,
+                 from /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:2:
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In member function 'virtual void HW3Test_TEST5_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:52:22: error: no match for 'operator>' (operand types are 'BST::Node' and 'int')
+   52 |     EXPECT_TRUE(node > 4);
+      |                 ~~~~ ^ ~
+      |                 |      |
+      |                 |      int
+      |                 BST::Node
+In file included from /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:4:
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:18:14: note: candidate: 'bool BST::Node::operator>(const BST::Node&) const'
+   18 |         bool operator>(const Node& other) const;
+      |              ^~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:18:36: note:   no known conversion for argument 1 from 'int' to 'const BST::Node&'
+   18 |         bool operator>(const Node& other) const;
+      |                        ~~~~~~~~~~~~^~~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:53:23: error: no match for 'operator>' (operand types are 'BST::Node' and 'int')
+   53 |     EXPECT_FALSE(node > 5);
+      |                  ~~~~ ^ ~
+      |                  |      |
+      |                  |      int
+      |                  BST::Node
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:18:14: note: candidate: 'bool BST::Node::operator>(const BST::Node&) const'
+   18 |         bool operator>(const Node& other) const;
+      |              ^~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:18:36: note:   no known conversion for argument 1 from 'int' to 'const BST::Node&'
+   18 |         bool operator>(const Node& other) const;
+      |                        ~~~~~~~~~~~~^~~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:54:22: error: no match for 'operator>=' (operand types are 'BST::Node' and 'int')
+   54 |     EXPECT_TRUE(node >= 5);
+      |                 ~~~~ ^~ ~
+      |                 |       |
+      |                 |       int
+      |                 BST::Node
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:55:23: error: no match for 'operator>=' (operand types are 'BST::Node' and 'int')
+   55 |     EXPECT_FALSE(node >= 6);
+      |                  ~~~~ ^~ ~
+      |                  |       |
+      |                  |       int
+      |                  BST::Node
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:56:22: error: no match for 'operator<' (operand types are 'BST::Node' and 'int')
+   56 |     EXPECT_TRUE(node < 6);
+      |                 ~~~~ ^ ~
+      |                 |      |
+      |                 |      int
+      |                 BST::Node
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:17:14: note: candidate: 'bool BST::Node::operator<(const BST::Node&) const'
+   17 |         bool operator<(const Node& other) const;
+      |              ^~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:17:36: note:   no known conversion for argument 1 from 'int' to 'const BST::Node&'
+   17 |         bool operator<(const Node& other) const;
+      |                        ~~~~~~~~~~~~^~~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:57:23: error: no match for 'operator<' (operand types are 'BST::Node' and 'int')
+   57 |     EXPECT_FALSE(node < 2);
+      |                  ~~~~ ^ ~
+      |                  |      |
+      |                  |      int
+      |                  BST::Node
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:17:14: note: candidate: 'bool BST::Node::operator<(const BST::Node&) const'
+   17 |         bool operator<(const Node& other) const;
+      |              ^~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:17:36: note:   no known conversion for argument 1 from 'int' to 'const BST::Node&'
+   17 |         bool operator<(const Node& other) const;
+      |                        ~~~~~~~~~~~~^~~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:58:22: error: no match for 'operator<=' (operand types are 'BST::Node' and 'int')
+   58 |     EXPECT_TRUE(node <= 5);
+      |                 ~~~~ ^~ ~
+      |                 |       |
+      |                 |       int
+      |                 BST::Node
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:59:23: error: no match for 'operator<=' (operand types are 'BST::Node' and 'int')
+   59 |     EXPECT_FALSE(node <= 2);
+      |                  ~~~~ ^~ ~
+      |                  |       |
+      |                  |       int
+      |                  BST::Node
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:60:22: error: no match for 'operator==' (operand types are 'BST::Node' and 'int')
+   60 |     EXPECT_TRUE(node == 5);
+      |                 ~~~~ ^~ ~
+      |                 |       |
+      |                 |       int
+      |                 BST::Node
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:16:14: note: candidate: 'bool BST::Node::operator==(const BST::Node&) const'
+   16 |         bool operator==(const Node& other) const;
+      |              ^~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:16:37: note:   no known conversion for argument 1 from 'int' to 'const BST::Node&'
+   16 |         bool operator==(const Node& other) const;
+      |                         ~~~~~~~~~~~~^~~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:61:23: error: no match for 'operator==' (operand types are 'BST::Node' and 'int')
+   61 |     EXPECT_FALSE(node == 3);
+      |                  ~~~~ ^~ ~
+      |                  |       |
+      |                  |       int
+      |                  BST::Node
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:16:14: note: candidate: 'bool BST::Node::operator==(const BST::Node&) const'
+   16 |         bool operator==(const Node& other) const;
+      |              ^~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:16:37: note:   no known conversion for argument 1 from 'int' to 'const BST::Node&'
+   16 |         bool operator==(const Node& other) const;
+      |                         ~~~~~~~~~~~~^~~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:63:19: error: no match for 'operator<' (operand types are 'int' and 'BST::Node')
+   63 |     EXPECT_TRUE(4 < node);
+      |                 ~ ^ ~~~~
+      |                 |   |
+      |                 int BST::Node
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:64:20: error: no match for 'operator<' (operand types are 'int' and 'BST::Node')
+   64 |     EXPECT_FALSE(5 < node);
+      |                  ~ ^ ~~~~
+      |                  |   |
+      |                  int BST::Node
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:65:19: error: no match for 'operator<=' (operand types are 'int' and 'BST::Node')
+   65 |     EXPECT_TRUE(5 <= node);
+      |                 ~ ^~ ~~~~
+      |                 |    |
+      |                 int  BST::Node
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:66:20: error: no match for 'operator<=' (operand types are 'int' and 'BST::Node')
+   66 |     EXPECT_FALSE(6 <= node);
+      |                  ~ ^~ ~~~~
+      |                  |    |
+      |                  int  BST::Node
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:67:19: error: no match for 'operator>' (operand types are 'int' and 'BST::Node')
+   67 |     EXPECT_TRUE(6 > node);
+      |                 ~ ^ ~~~~
+      |                 |   |
+      |                 int BST::Node
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:68:20: error: no match for 'operator>' (operand types are 'int' and 'BST::Node')
+   68 |     EXPECT_FALSE(2 > node);
+      |                  ~ ^ ~~~~
+      |                  |   |
+      |                  int BST::Node
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:69:19: error: no match for 'operator>=' (operand types are 'int' and 'BST::Node')
+   69 |     EXPECT_TRUE(5 >= node);
+      |                 ~ ^~ ~~~~
+      |                 |    |
+      |                 int  BST::Node
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:70:20: error: no match for 'operator>=' (operand types are 'int' and 'BST::Node')
+   70 |     EXPECT_FALSE(2 >= node);
+      |                  ~ ^~ ~~~~
+      |                  |    |
+      |                  int  BST::Node
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:71:19: error: no match for 'operator==' (operand types are 'int' and 'BST::Node')
+   71 |     EXPECT_TRUE(5 == node);
+      |                 ~ ^~ ~~~~
+      |                 |    |
+      |                 int  BST::Node
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:16:14: note: candidate: 'bool BST::Node::operator==(const BST::Node&) const' (reversed)
+   16 |         bool operator==(const Node& other) const;
+      |              ^~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:16:37: note:   no known conversion for argument 1 from 'int' to 'const BST::Node&'
+   16 |         bool operator==(const Node& other) const;
+      |                         ~~~~~~~~~~~~^~~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:72:20: error: no match for 'operator==' (operand types are 'int' and 'BST::Node')
+   72 |     EXPECT_FALSE(3 == node);
+      |                  ~ ^~ ~~~~
+      |                  |    |
+      |                  int  BST::Node
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:16:14: note: candidate: 'bool BST::Node::operator==(const BST::Node&) const' (reversed)
+   16 |         bool operator==(const Node& other) const;
+      |              ^~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:16:37: note:   no known conversion for argument 1 from 'int' to 'const BST::Node&'
+   16 |         bool operator==(const Node& other) const;
+      |                         ~~~~~~~~~~~~^~~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In member function 'virtual void HW3Test_TEST8_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:100:30: error: invalid use of void expression
+  100 |     EXPECT_FALSE(bst.add_node(53));
+      |                  ~~~~~~~~~~~~^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In member function 'virtual void HW3Test_TEST9_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:113:30: error: invalid use of void expression
+  113 |     EXPECT_FALSE(bst.add_node(50));
+      |                  ~~~~~~~~~~~~^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:116:9: error: 'class BST' has no member named 'bfs'
+  116 |     bst.bfs([&values](BST::Node*& node){values.push_back(node->value);});
+      |         ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In member function 'virtual void HW3Test_TEST29_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:461:39: error: no matching function for call to 'BST::BST(<brace-enclosed initializer list>)'
+  461 |     BST bst1{5, 1, 10, 2, 8, 50, 4, 60};
+      |                                       ^
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:24:5: note: candidate: 'BST::BST(BST&&)'
+   24 |     BST(BST&& other) noexcept;
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:24:5: note:   candidate expects 1 argument, 8 provided
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:23:5: note: candidate: 'BST::BST(const BST&)'
+   23 |     BST(const BST& other);
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:23:5: note:   candidate expects 1 argument, 8 provided
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:22:5: note: candidate: 'BST::BST()'
+   22 |     BST();
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:22:5: note:   candidate expects 0 arguments, 8 provided
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:462:49: error: no matching function for call to 'BST::BST(<brace-enclosed initializer list>)'
+  462 |     BST bst2{3, 2, 100, 20, 8, 50, 4, 60, 44, 23};
+      |                                                 ^
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:24:5: note: candidate: 'BST::BST(BST&&)'
+   24 |     BST(BST&& other) noexcept;
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:24:5: note:   candidate expects 1 argument, 10 provided
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:23:5: note: candidate: 'BST::BST(const BST&)'
+   23 |     BST(const BST& other);
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:23:5: note:   candidate expects 1 argument, 10 provided
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:22:5: note: candidate: 'BST::BST()'
+   22 |     BST();
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:22:5: note:   candidate expects 0 arguments, 10 provided
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In member function 'virtual void HW3Test_TEST30_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:468:38: error: no matching function for call to 'BST::BST(<brace-enclosed initializer list>)'
+  468 |     BST bst{5, 1, 10, 2, 8, 50, 4, 60};
+      |                                      ^
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:24:5: note: candidate: 'BST::BST(BST&&)'
+   24 |     BST(BST&& other) noexcept;
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:24:5: note:   candidate expects 1 argument, 8 provided
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:23:5: note: candidate: 'BST::BST(const BST&)'
+   23 |     BST(const BST& other);
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:23:5: note:   candidate expects 1 argument, 8 provided
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:22:5: note: candidate: 'BST::BST()'
+   22 |     BST();
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:22:5: note:   candidate expects 0 arguments, 8 provided
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:469:14: error: no match for 'operator++' (operand type is 'BST')
+  469 |     BST bst2{++bst};
+      |              ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:469:19: error: no matching function for call to 'BST::BST(<brace-enclosed initializer list>)'
+  469 |     BST bst2{++bst};
+      |                   ^
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:24:5: note: candidate: 'BST::BST(BST&&)'
+   24 |     BST(BST&& other) noexcept;
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:24:5: note:   conversion of argument 1 would be ill-formed:
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:23:5: note: candidate: 'BST::BST(const BST&)'
+   23 |     BST(const BST& other);
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:23:5: note:   conversion of argument 1 would be ill-formed:
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:22:5: note: candidate: 'BST::BST()'
+   22 |     BST();
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:22:5: note:   candidate expects 0 arguments, 1 provided
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In member function 'virtual void HW3Test_TEST31_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:480:39: error: no matching function for call to 'BST::BST(<brace-enclosed initializer list>)'
+  480 |     BST bst1{5, 1, 10, 2, 8, 50, 4, 60};
+      |                                       ^
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:24:5: note: candidate: 'BST::BST(BST&&)'
+   24 |     BST(BST&& other) noexcept;
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:24:5: note:   candidate expects 1 argument, 8 provided
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:23:5: note: candidate: 'BST::BST(const BST&)'
+   23 |     BST(const BST& other);
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:23:5: note:   candidate expects 1 argument, 8 provided
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:22:5: note: candidate: 'BST::BST()'
+   22 |     BST();
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:22:5: note:   candidate expects 0 arguments, 8 provided
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:481:18: error: no 'operator++(int)' declared for postfix '++' [-fpermissive]
+  481 |     BST bst2{bst1++};
+      |              ~~~~^~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:481:20: error: no matching function for call to 'BST::BST(<brace-enclosed initializer list>)'
+  481 |     BST bst2{bst1++};
+      |                    ^
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:24:5: note: candidate: 'BST::BST(BST&&)'
+   24 |     BST(BST&& other) noexcept;
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:24:5: note:   conversion of argument 1 would be ill-formed:
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:23:5: note: candidate: 'BST::BST(const BST&)'
+   23 |     BST(const BST& other);
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:23:5: note:   conversion of argument 1 would be ill-formed:
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:22:5: note: candidate: 'BST::BST()'
+   22 |     BST();
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/include/bst.h:22:5: note:   candidate expects 0 arguments, 1 provided
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:484:10: error: 'class BST' has no member named 'bfs'
+  484 |     bst1.bfs([&values1](BST::Node*& node){values1.push_back(node->value);});
+      |          ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:487:10: error: 'class BST' has no member named 'bfs'
+  487 |     bst2.bfs([&values2](BST::Node*& node){values2.push_back(node->value);});
+      |          ^~~
+make[2]: *** [CMakeFiles/main.dir/build.make:104: CMakeFiles/main.dir/src/unit_test.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/main.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2
+HW3 compile failed, cannot run program
+
+========== HW5 Start ==========
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found GTest: /usr/local/lib/cmake/GTest/GTestConfig.cmake (found version "1.18.0")  
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /app/ap1400_2_hw/ap1400_2_hw5/build_hw5
+[ 16%] Building CXX object CMakeFiles/main.dir/src/espresso_based.cpp.o
+[ 33%] Building CXX object CMakeFiles/main.dir/src/mocha.cpp.o
+[ 50%] Building CXX object CMakeFiles/main.dir/src/main.cpp.o
+[ 66%] Building CXX object CMakeFiles/main.dir/src/unit_test.cpp.o
+[ 83%] Building CXX object CMakeFiles/main.dir/src/cappuccino.cpp.o
+[100%] Linking CXX executable main
+[100%] Built target main
+RUNNING TESTS ...
+[==========] Running 12 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 12 tests from HW5Test
+[ RUN      ] HW5Test.TEST1
+[       OK ] HW5Test.TEST1 (0 ms)
+[ RUN      ] HW5Test.TEST2
+[       OK ] HW5Test.TEST2 (0 ms)
+[ RUN      ] HW5Test.TEST3
+[       OK ] HW5Test.TEST3 (0 ms)
+[ RUN      ] HW5Test.TEST4
+[       OK ] HW5Test.TEST4 (0 ms)
+[ RUN      ] HW5Test.TEST5
+[       OK ] HW5Test.TEST5 (0 ms)
+[ RUN      ] HW5Test.TEST6
+[       OK ] HW5Test.TEST6 (0 ms)
+[ RUN      ] HW5Test.TEST7
+[       OK ] HW5Test.TEST7 (0 ms)
+[ RUN      ] HW5Test.TEST8
+[       OK ] HW5Test.TEST8 (0 ms)
+[ RUN      ] HW5Test.TEST9
+[       OK ] HW5Test.TEST9 (0 ms)
+[ RUN      ] HW5Test.TEST10
+[       OK ] HW5Test.TEST10 (0 ms)
+[ RUN      ] HW5Test.TEST11
+Brewing Cappuccino: grinding beans, pulling espresso, steaming milk, adding foam.
+[       OK ] HW5Test.TEST11 (0 ms)
+[ RUN      ] HW5Test.TEST12
+Brewing Mocha: pulling espresso, adding chocolate, steaming milk, topping with cocoa.
+[       OK ] HW5Test.TEST12 (0 ms)
+[----------] 12 tests from HW5Test (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 12 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 12 tests.
+<<<SUCCESS>>>

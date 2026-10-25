@@ -1,0 +1,174 @@
+=====================================================================
+Assignment: Cats Project
+OK, version v1.18.1
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Scoring tests
+
+---------------------------------------------------------------------
+Problem 1
+    Passed: 1
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Problem 2 > Suite 1 > Case 1
+
+>>> from cats import about
+>>> from cats import pick
+>>> dogs = about(['dogs', 'hounds'])
+>>> dogs('A paragraph about cats.')
+False
+>>> dogs('A paragraph about dogs.')
+True
+>>> dogs('Release the Hounds!')
+True
+>>> dogs('"DOGS" stands for Department Of Geophysical Science.')
+True
+>>> dogs('Do gs and ho unds don\'t count')
+False
+>>> dogs("AdogsParagraph")
+True
+
+# Error: expected
+#     False
+# but got
+#     True
+
+Run only this test case with "python3 ok -q 02 --suite 1 --case 1"
+---------------------------------------------------------------------
+Problem 2 > Suite 2 > Case 2
+
+>>> from cats import about
+>>> ab = about(['unsimilar', 'conditioning', 'crystallogenical', 'mennom', 'foreannouncement', 'neomorph'])
+>>> ab('#crystallogenIcalW podded reorganizationist neomorPhf hneomorphj')
+True
+
+# Error: expected
+#     False
+# but got
+#     True
+
+Run only this test case with "python3 ok -q 02 --suite 2 --case 2"
+---------------------------------------------------------------------
+Problem 2
+    Passed: 0
+    Failed: 2
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Problem 3
+    Passed: 1
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Problem 4
+    Passed: 1
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Problem 5 > Suite 1 > Case 1
+
+>>> from cats import autocorrect, lines_from_file
+>>> abs_diff = lambda w1, w2, limit: abs(len(w2) - len(w1))
+>>> autocorrect("cul", ["culture", "cult", "cultivate"], abs_diff, 10)
+'cult'
+>>> autocorrect("cul", ["culture", "cult", "cultivate"], abs_diff, 0)
+'cul'
+>>> autocorrect("wor", ["worry", "car", "part"], abs_diff, 10)
+'car'
+>>> first_diff = lambda w1, w2, limit: 1 if w1[0] != w2[0] else 0
+>>> autocorrect("wrod", ["word", "rod"], first_diff, 1)
+'word'
+>>> autocorrect("inside", ["idea", "inside"], first_diff, 0.5)
+'idea'
+
+# Error: expected
+#     'inside'
+# but got
+#     'idea'
+
+Run only this test case with "python3 ok -q 05 --suite 1 --case 1"
+---------------------------------------------------------------------
+Problem 5
+    Passed: 0
+    Failed: 1
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Problem 6
+    Passed: 1
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Problem 7
+    Passed: 1
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Problem 8 > Suite 1 > Case 1
+
+>>> from cats import report_progress
+>>> print_progress = lambda d: print('ID:', d['id'], 'Progress:', d['progress'])
+>>> typed = ['I', 'have', 'begun']
+>>> source = ['I', 'have', 'begun', 'to', 'type']
+>>> print_progress({'id': 1, 'progress': 0.6})
+ID: 1 Progress: 0.6
+>>> report_progress(typed, source, 1, print_progress) # print_progress is called on the report
+ID: 1 Progress: 0.6
+0.6
+>>> report_progress(['I', 'begun'], source, 2, print_progress)
+ID: 2 Progress: 0.2
+0.2
+>>> report_progress(['I', 'hve', 'begun', 'to', 'type'], source, 3, print_progress)
+ID: 3 Progress: 0.8
+0.8
+
+# Error: expected
+#     ID: 3 Progress: 0.2
+#     0.2
+# but got
+#     ID: 3 Progress: 0.8
+#     0.8
+
+Run only this test case with "python3 ok -q 08 --suite 1 --case 1"
+---------------------------------------------------------------------
+Problem 8
+    Passed: 0
+    Failed: 1
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Problem 9
+    Passed: 1
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Problem 10
+    Passed: 1
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Point breakdown
+    Problem 1: 1.0/1
+    Problem 2: 0.0/1
+    Problem 3: 2.0/2
+    Problem 4: 1.0/1
+    Problem 5: 0.0/2
+    Problem 6: 3.0/3
+    Problem 7: 3.0/3
+    Problem 8: 0.0/2
+    Problem 9: 1.0/1
+    Problem 10: 3.0/3
+
+Score:
+    Total: 14.0
+
+Cannot backup when running ok with --local.

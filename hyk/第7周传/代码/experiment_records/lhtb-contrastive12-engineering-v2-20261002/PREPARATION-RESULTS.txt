@@ -1,0 +1,17 @@
+2026-10-02: repair follow-up deployed and ready, awaiting fresh hidden key entry.
+Remote: /var/tmp/lizh639-lhtb-contrastive12-engineering-v2-20261002-r1
+Launcher: Start-LHTBRepair12.ps1
+Two arms x same original RAW 12 tasks = 24 NEW trials. Four slots.
+Paid model calls during preparation: 0. Completed paid trials: 0.
+Seven campaign/adapter/launcher tests passed. Two actual Docker official
+continuation/isolation/budget-delivery fixtures both passed official grading.
+Final sealed control.py validate passed; no ledger blockers or active workers.
+Common engineering release: Linux 160/160 tests passed, standalone Docker smoke
+passed timeout cleanup / detached child rejection / follow-up / snapshot / delivery.
+
+The first deployment's preparation failed before fixtures/model calls because
+an already shipped HAI dependency was copied again. That failed directory is
+retained untouched; the fixed preparation verifies the shipped dependency's
+hashes instead. The fresh -r1 directory is the only launcher target.
+Original completed campaigns and their outcomes remain unchanged.
+No old memories/results/credentials are carried, and no GPT automation created.

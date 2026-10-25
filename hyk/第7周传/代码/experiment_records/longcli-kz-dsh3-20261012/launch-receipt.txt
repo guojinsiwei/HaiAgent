@@ -1,0 +1,1 @@
+{"started": true, "pid": 1817884, "campaign": "lizh639-longcli-kz-dsh3-20261012", "tasks": 3, "pilot_then_concurrency": 2}

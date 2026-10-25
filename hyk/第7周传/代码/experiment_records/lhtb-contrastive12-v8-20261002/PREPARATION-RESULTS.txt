@@ -1,0 +1,24 @@
+2026-10-02, exact previous RAW twelve tasks, two exploration arms.
+
+Ready: true. 12 tasks/arm, 24 fresh trials, four concurrent trial slots.
+No new RAW trials and no previous outcomes/memories carried.
+Same benchmark commit and exact twelve task rows/order as raw-reference-manifest.json.
+All twelve cached official Docker image IDs/digests verified unchanged.
+Common candidate source exactly matches the contrastive-v1 135-test validation seal.
+
+Campaign tests: 5/5 passed on college Linux, including actual adapter forwarding
+of BOTH mode flags into the validated runner configuration. No model API calls.
+Official no-API budget/continuation/isolation fixture: passed in BOTH arms (2/2).
+Fresh campaign inputs/jobs/harness sealed by ready.json; no replays authorized.
+Default raw budgets retained: 600 tools, 800 total logical model requests,
+original task wall limits, same-conversation binary official continuation.
+No HAI route_search/stagnation_control exploration in either arm.
+
+Private credential is NOT copied from any worker and NOT saved to files/tmpfs.
+New hidden local input entry -> encrypted SSH -> anonymous pipe -> in-memory guard.
+Official model trials are pending user entry until health.json reports running.
+Do not confuse preparation/fixture success with benchmark results.
+
+Remote campaign: /var/tmp/lizh639-lhtb-contrastive12-v8-20261002
+Local launcher: Start-LHTBContrastive12.ps1
+Small four-case micro-pilot is superseded and is not part of this comparison.

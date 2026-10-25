@@ -1,0 +1,341 @@
+=====================================================================
+Assignment: Project 1: Hog
+OK, version v1.18.1
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Scoring tests
+
+---------------------------------------------------------------------
+Question 0
+    Passed: 1
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Question 1 > Suite 1 > Case 1
+
+>>> from hog import *
+>>> roll_dice(2, make_test_dice(4, 6, 1))
+
+# Error: expected
+#     10
+# but got
+
+
+Run only this test case with "python3 ok -q 01 --suite 1 --case 1"
+---------------------------------------------------------------------
+Question 1 > Suite 2 > Case 1
+
+>>> from hog import *
+>>> roll_dice(5, make_test_dice(4, 2, 3, 3, 4, 1))
+
+# Error: expected
+#     16
+# but got
+
+
+Run only this test case with "python3 ok -q 01 --suite 2 --case 1"
+---------------------------------------------------------------------
+Question 1 > Suite 3 > Case 1
+
+>>> # generated case
+>>> from hog import *
+>>> dice = make_test_dice(2, 4, 3, 5, 2, 2)
+>>> roll_dice(4, dice)
+
+# Error: expected
+#     14
+# but got
+
+
+Run only this test case with "python3 ok -q 01 --suite 3 --case 1"
+---------------------------------------------------------------------
+Question 1
+    Passed: 0
+    Failed: 3
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Question 2 > Suite 1 > Case 1
+
+>>> from hog import *
+>>> import tests.construct_check as test
+>>> boar_brawl(21, 46)
+
+# Error: expected
+#     9
+# but got
+
+
+Run only this test case with "python3 ok -q 02 --suite 1 --case 1"
+---------------------------------------------------------------------
+Question 2
+    Passed: 0
+    Failed: 1
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Question 3 > Suite 1 > Case 1
+
+>>> from hog import *
+>>> take_turn(2, 7, 27, make_test_dice(4, 5, 1))
+
+# Error: expected
+#     9
+# but got
+
+
+Run only this test case with "python3 ok -q 03 --suite 1 --case 1"
+---------------------------------------------------------------------
+Question 3 > Suite 2 > Case 1
+
+>>> import hog
+>>> def roll_dice(num_rolls, dice):
+...     print("Called roll dice!")
+...     return 9002
+...
+>>> hog.roll_dice, old_roll_dice = roll_dice, hog.roll_dice
+>>> hog.take_turn(5, 0, 0) # Make sure you call roll_dice!
+
+# Error: expected
+#     Called roll dice!
+#     9002
+# but got
+
+>>> hog.roll_dice = old_roll_dice
+
+Run only this test case with "python3 ok -q 03 --suite 2 --case 1"
+---------------------------------------------------------------------
+Question 3
+    Passed: 0
+    Failed: 2
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Question 4 > Suite 1 > Case 1
+
+>>> from hog import *
+>>> import tests.construct_check as test
+>>> num_factors(1)
+
+# Error: expected
+#     1
+# but got
+
+
+Run only this test case with "python3 ok -q 04 --suite 1 --case 1"
+---------------------------------------------------------------------
+Question 4
+    Passed: 0
+    Failed: 1
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Question 5 > Suite 2 > Case 1
+
+>>> # Fuzz Testing
+>>> # Plays a lot of random games, and calculates a secret value.
+>>> # Failing this test means something is wrong, but you should
+>>> # look at other tests to see where the problem might be.
+>>> # Hint: make sure you're only calling update once per turn!
+>>> #
+>>> import hog, importlib
+>>> # importlib.reload(hog)
+>>> import tests.play_utils
+>>> turns = tests.play_utils.describe_game(hog, test_number=69484, score0=15, score1=10, goal=32, update=hog.simple_update)
+>>> print(turns[0])
+Game Over
+
+# Error: expected
+#     Start scores = (15, 10).
+#     Player 0 rolls 8 dice and gets outcomes [2, 1, 6, 6, 6, 5, 4, 4].
+#     End scores = (16, 10)
+# but got
+#     Game Over
+
+Run only this test case with "python3 ok -q 05 --suite 2 --case 1"
+---------------------------------------------------------------------
+Question 5
+    Passed: 0
+    Failed: 1
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Question 6 > Suite 1 > Case 1
+
+>>> from hog import *
+>>> always_roll(3)(10, 20)
+TypeError: 'NoneType' object is not callable
+
+# Error: expected
+#     3
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     TypeError: 'NoneType' object is not callable
+
+Run only this test case with "python3 ok -q 06 --suite 1 --case 1"
+---------------------------------------------------------------------
+Question 6
+    Passed: 0
+    Failed: 1
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Question 7 > Suite 1 > Case 1
+
+>>> from hog import *
+>>> is_always_roll(always_roll_5)
+
+# Error: expected
+#     True
+# but got
+
+
+Run only this test case with "python3 ok -q 07 --suite 1 --case 1"
+---------------------------------------------------------------------
+Question 7
+    Passed: 0
+    Failed: 1
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Question 8 > Suite 2 > Case 1
+
+>>> from hog import *
+>>> dice = make_test_dice(3, 1, 5, 6)
+>>> averaged_dice = make_averaged(dice, 1000)
+>>> # Average of calling dice 1000 times
+>>> averaged_dice()
+TypeError: 'NoneType' object is not callable
+
+# Error: expected
+#     3.75
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     TypeError: 'NoneType' object is not callable
+
+Run only this test case with "python3 ok -q 08 --suite 2 --case 1"
+---------------------------------------------------------------------
+Question 8 > Suite 3 > Case 1
+
+>>> from hog import *
+>>> hundred_range = range(1, 100)
+>>> hundred_dice = make_test_dice(*hundred_range)
+>>> averaged_hundred_dice = make_averaged(hundred_dice, 5*len(hundred_range))
+>>> correct_average = sum(range(1, 100)) / len(hundred_range)
+>>> averaged_hundred_dice()
+TypeError: 'NoneType' object is not callable
+
+# Error: expected
+#     50.0
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     TypeError: 'NoneType' object is not callable
+
+Run only this test case with "python3 ok -q 08 --suite 3 --case 1"
+---------------------------------------------------------------------
+Question 8
+    Passed: 0
+    Failed: 2
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Question 9 > Suite 2 > Case 1
+
+>>> from hog import *
+>>> dice = make_test_dice(3)   # dice always returns 3
+>>> max_scoring_num_rolls(dice, times_called=1000)
+
+# Error: expected
+#     10
+# but got
+
+
+Run only this test case with "python3 ok -q 09 --suite 2 --case 1"
+---------------------------------------------------------------------
+Question 9 > Suite 3 > Case 1
+
+>>> from hog import *
+>>> dice = make_test_dice(2)     # dice always rolls 2
+>>> max_scoring_num_rolls(dice, times_called=1000)
+
+# Error: expected
+#     10
+# but got
+
+
+Run only this test case with "python3 ok -q 09 --suite 3 --case 1"
+---------------------------------------------------------------------
+Question 9
+    Passed: 0
+    Failed: 2
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Question 10 > Suite 1 > Case 1
+
+>>> from hog import *
+>>> boar_strategy(40, 51, threshold=7, num_rolls=2)
+2
+
+# Error: expected
+#     0
+# but got
+#     2
+
+Run only this test case with "python3 ok -q 10 --suite 1 --case 1"
+---------------------------------------------------------------------
+Question 10
+    Passed: 0
+    Failed: 1
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Question 11 > Suite 1 > Case 2
+
+>>> from hog import *
+>>> sus_strategy(30, 41, threshold=10, num_rolls=2)
+2
+
+# Error: expected
+#     0
+# but got
+#     2
+
+Run only this test case with "python3 ok -q 11 --suite 1 --case 2"
+---------------------------------------------------------------------
+Question 11
+    Passed: 0
+    Failed: 1
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Question 12
+    Passed: 0
+    Failed: 0
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Point breakdown
+    Question 0: 0.0/0
+    Question 1: 0.0/2
+    Question 2: 0.0/2
+    Question 3: 0.0/2
+    Question 4: 0.0/2
+    Question 5: 0.0/4
+    Question 6: 0.0/2
+    Question 7: 0.0/2
+    Question 8: 0.0/2
+    Question 9: 0.0/2
+    Question 10: 0.0/2
+    Question 11: 0.0/2
+    Question 12: 0.0/0
+
+Score:
+    Total: 0.0
+
+Cannot backup when running ok with --local.

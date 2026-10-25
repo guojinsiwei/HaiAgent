@@ -1,0 +1,165 @@
+[  1%] Building C object third_party/utf8proc/CMakeFiles/utf8proc.dir/utf8proc.c.o
+[  1%] Building CXX object third_party/backward-cpp/CMakeFiles/backward_object.dir/backward.cpp.o
+[  1%] Building CXX object third_party/fmt/CMakeFiles/fmt.dir/src/format.cc.o
+[  1%] Building CXX object third_party/murmur3/CMakeFiles/bustub_murmur3.dir/MurmurHash3.cpp.o
+[  2%] Building CXX object third_party/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[  3%] Building C object third_party/libfort/lib/CMakeFiles/fort.dir/fort.c.o
+[  3%] Building C object third_party/linenoise/CMakeFiles/bustub_linenoise.dir/linenoise.c.o
+[  3%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/postgres_parser.cpp.o
+[  4%] Linking C static library ../../lib/libbustub_linenoise.a
+[  4%] Built target bustub_linenoise
+[  5%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/pg_functions.cpp.o
+[  6%] Linking CXX static library ../../lib/libbustub_murmur3.a
+[  6%] Built target bustub_murmur3
+[  6%] Building CXX object third_party/backward-cpp/CMakeFiles/backward.dir/backward.cpp.o
+[  6%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_parser.cpp.o
+[  7%] Linking C static library ../../../lib/libfort.a
+/usr/bin/ar qc ../../../lib/libfort.a CMakeFiles/fort.dir/fort.c.o
+/usr/bin/ranlib ../../../lib/libfort.a
+[  7%] Built target fort
+[  8%] Building CXX object third_party/fmt/CMakeFiles/fmt.dir/src/os.cc.o
+[  8%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.o
+[  9%] Linking C static library ../../lib/libutf8proc.a
+[  9%] Built target utf8proc
+[ 10%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_gram.cpp.o
+[ 11%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_projection.cpp.o
+[ 11%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/binder.cpp.o
+[ 11%] Built target backward_object
+[ 12%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_nodes_list.cpp.o
+[ 12%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_nlj.cpp.o
+[ 13%] Linking CXX static library ../../lib/libbackward.a
+[ 13%] Built target backward
+[ 14%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/bind_create.cpp.o
+[ 14%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_scansup.cpp.o
+[ 15%] Linking CXX static library ../../lib/libfmtd.a
+[ 15%] Built target fmt
+[ 16%] Building CXX object src/binder/statement/CMakeFiles/bustub_statement.dir/create_statement.cpp.o
+[ 17%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_nodes_makefuncs.cpp.o
+[ 18%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_scan.cpp.o
+[ 18%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/bind_insert.cpp.o
+[ 18%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_nodes_value.cpp.o
+[ 19%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_scan.cpp.o
+[ 20%] Building CXX object src/buffer/CMakeFiles/bustub_buffer.dir/buffer_pool_manager.cpp.o
+[ 20%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_common_keywords.cpp.o
+[ 20%] Building CXX object src/binder/statement/CMakeFiles/bustub_statement.dir/delete_statement.cpp.o
+[ 21%] Linking CXX static library ../../lib/libduckdb_pg_query.a
+[ 21%] Built target duckdb_pg_query
+[ 22%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_hash_join.cpp.o
+/app/cmu15_445/src/buffer/buffer_pool_manager.cpp: In member function 'bool bustub::BufferPoolManager::FlushPageUnsafe(bustub::page_id_t)':
+/app/cmu15_445/src/buffer/buffer_pool_manager.cpp:284:25: error: 'latch_' was not declared in this scope; did you mean 'bpm_latch_'?
+  284 |   std::scoped_lock lock{latch_};
+      |                         ^~~~~~
+      |                         bpm_latch_
+/app/cmu15_445/src/buffer/buffer_pool_manager.cpp:291:13: error: 'class std::shared_ptr<bustub::FrameHeader>' has no member named 'is_dirty_'
+  291 |   if (frame.is_dirty_) {
+      |             ^~~~~~~~~
+/app/cmu15_445/src/buffer/buffer_pool_manager.cpp:292:5: error: 'disk_manager_' was not declared in this scope; did you mean 'DiskManager'?
+  292 |     disk_manager_->WritePage(page_id, frame.data_);
+      |     ^~~~~~~~~~~~~
+      |     DiskManager
+/app/cmu15_445/src/buffer/buffer_pool_manager.cpp:292:45: error: 'class std::shared_ptr<bustub::FrameHeader>' has no member named 'data_'
+  292 |     disk_manager_->WritePage(page_id, frame.data_);
+      |                                             ^~~~~
+/app/cmu15_445/src/buffer/buffer_pool_manager.cpp:293:11: error: 'class std::shared_ptr<bustub::FrameHeader>' has no member named 'is_dirty_'
+  293 |     frame.is_dirty_ = false;
+      |           ^~~~~~~~~
+/app/cmu15_445/src/buffer/buffer_pool_manager.cpp: In member function 'bool bustub::BufferPoolManager::FlushPage(bustub::page_id_t)':
+/app/cmu15_445/src/buffer/buffer_pool_manager.cpp:317:25: error: 'latch_' was not declared in this scope; did you mean 'bpm_latch_'?
+  317 |   std::scoped_lock lock{latch_};
+      |                         ^~~~~~
+      |                         bpm_latch_
+/app/cmu15_445/src/buffer/buffer_pool_manager.cpp:324:37: error: 'class std::shared_ptr<bustub::FrameHeader>' has no member named 'rwlatch_'
+  324 |   std::scoped_lock frame_lock{frame.rwlatch_};
+      |                                     ^~~~~~~~
+/app/cmu15_445/src/buffer/buffer_pool_manager.cpp:325:13: error: 'class std::shared_ptr<bustub::FrameHeader>' has no member named 'is_dirty_'
+  325 |   if (frame.is_dirty_) {
+      |             ^~~~~~~~~
+/app/cmu15_445/src/buffer/buffer_pool_manager.cpp:326:5: error: 'disk_manager_' was not declared in this scope; did you mean 'DiskManager'?
+  326 |     disk_manager_->WritePage(page_id, frame.data_);
+      |     ^~~~~~~~~~~~~
+      |     DiskManager
+/app/cmu15_445/src/buffer/buffer_pool_manager.cpp:326:45: error: 'class std::shared_ptr<bustub::FrameHeader>' has no member named 'data_'
+  326 |     disk_manager_->WritePage(page_id, frame.data_);
+      |                                             ^~~~~
+/app/cmu15_445/src/buffer/buffer_pool_manager.cpp:327:11: error: 'class std::shared_ptr<bustub::FrameHeader>' has no member named 'is_dirty_'
+  327 |     frame.is_dirty_ = false;
+      |           ^~~~~~~~~
+/app/cmu15_445/src/buffer/buffer_pool_manager.cpp: In member function 'void bustub::BufferPoolManager::FlushAllPagesUnsafe()':
+/app/cmu15_445/src/buffer/buffer_pool_manager.cpp:346:25: error: 'latch_' was not declared in this scope; did you mean 'bpm_latch_'?
+  346 |   std::scoped_lock lock{latch_};
+      |                         ^~~~~~
+      |                         bpm_latch_
+/app/cmu15_445/src/buffer/buffer_pool_manager.cpp:349:15: error: 'class std::shared_ptr<bustub::FrameHeader>' has no member named 'is_dirty_'
+  349 |     if (frame.is_dirty_) {
+      |               ^~~~~~~~~
+/app/cmu15_445/src/buffer/buffer_pool_manager.cpp:350:7: error: 'disk_manager_' was not declared in this scope; did you mean 'DiskManager'?
+  350 |       disk_manager_->WritePage(page_id, frame.data_);
+      |       ^~~~~~~~~~~~~
+      |       DiskManager
+/app/cmu15_445/src/buffer/buffer_pool_manager.cpp:350:47: error: 'class std::shared_ptr<bustub::FrameHeader>' has no member named 'data_'
+  350 |       disk_manager_->WritePage(page_id, frame.data_);
+      |                                               ^~~~~
+/app/cmu15_445/src/buffer/buffer_pool_manager.cpp:351:13: error: 'class std::shared_ptr<bustub::FrameHeader>' has no member named 'is_dirty_'
+  351 |       frame.is_dirty_ = false;
+      |             ^~~~~~~~~
+/app/cmu15_445/src/buffer/buffer_pool_manager.cpp: In member function 'void bustub::BufferPoolManager::FlushAllPages()':
+/app/cmu15_445/src/buffer/buffer_pool_manager.cpp:369:25: error: 'latch_' was not declared in this scope; did you mean 'bpm_latch_'?
+  369 |   std::scoped_lock lock{latch_};
+      |                         ^~~~~~
+      |                         bpm_latch_
+/app/cmu15_445/src/buffer/buffer_pool_manager.cpp:372:39: error: 'class std::shared_ptr<bustub::FrameHeader>' has no member named 'rwlatch_'
+  372 |     std::scoped_lock frame_lock{frame.rwlatch_};
+      |                                       ^~~~~~~~
+/app/cmu15_445/src/buffer/buffer_pool_manager.cpp:373:15: error: 'class std::shared_ptr<bustub::FrameHeader>' has no member named 'is_dirty_'
+  373 |     if (frame.is_dirty_) {
+      |               ^~~~~~~~~
+/app/cmu15_445/src/buffer/buffer_pool_manager.cpp:374:7: error: 'disk_manager_' was not declared in this scope; did you mean 'DiskManager'?
+  374 |       disk_manager_->WritePage(page_id, frame.data_);
+      |       ^~~~~~~~~~~~~
+      |       DiskManager
+/app/cmu15_445/src/buffer/buffer_pool_manager.cpp:374:47: error: 'class std::shared_ptr<bustub::FrameHeader>' has no member named 'data_'
+  374 |       disk_manager_->WritePage(page_id, frame.data_);
+      |                                               ^~~~~
+/app/cmu15_445/src/buffer/buffer_pool_manager.cpp:375:13: error: 'class std::shared_ptr<bustub::FrameHeader>' has no member named 'is_dirty_'
+  375 |       frame.is_dirty_ = false;
+      |             ^~~~~~~~~
+/app/cmu15_445/src/buffer/buffer_pool_manager.cpp: In member function 'std::optional<long unsigned int> bustub::BufferPoolManager::GetPinCount(bustub::page_id_t)':
+/app/cmu15_445/src/buffer/buffer_pool_manager.cpp:405:25: error: 'latch_' was not declared in this scope; did you mean 'bpm_latch_'?
+  405 |   std::scoped_lock lock{latch_};
+      |                         ^~~~~~
+      |                         bpm_latch_
+/app/cmu15_445/src/buffer/buffer_pool_manager.cpp:410:30: error: '__gnu_cxx::__alloc_traits<std::allocator<std::shared_ptr<bustub::FrameHeader> >, std::shared_ptr<bustub::FrameHeader> >::value_type' {aka 'class std::shared_ptr<bustub::FrameHeader>'} has no member named 'pin_count_'
+  410 |   return frames_[it->second].pin_count_.load();
+      |                              ^~~~~~~~~~
+make[2]: *** [src/buffer/CMakeFiles/bustub_buffer.dir/build.make:76: src/buffer/CMakeFiles/bustub_buffer.dir/buffer_pool_manager.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1773: src/buffer/CMakeFiles/bustub_buffer.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 23%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/bind_select.cpp.o
+[ 24%] Building CXX object src/binder/statement/CMakeFiles/bustub_statement.dir/explain_statement.cpp.o
+[ 24%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_index_join.cpp.o
+[ 24%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/bind_variable.cpp.o
+[ 24%] Building CXX object src/binder/statement/CMakeFiles/bustub_statement.dir/index_statement.cpp.o
+[ 25%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer.cpp.o
+[ 26%] Building CXX object src/binder/statement/CMakeFiles/bustub_statement.dir/insert_statement.cpp.o
+[ 26%] Linking CXX static library ../../../lib/libgtest.a
+[ 26%] Built target gtest
+[ 27%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/bound_statement.cpp.o
+[ 27%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.o
+[ 28%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/fmt_impl.cpp.o
+[ 29%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_internal.cpp.o
+[ 29%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/keyword_helper.cpp.o
+[ 29%] Building CXX object src/binder/statement/CMakeFiles/bustub_statement.dir/select_statement.cpp.o
+[ 29%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.o
+[ 30%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/node_tag_to_string.cpp.o
+[ 31%] Building CXX object src/binder/statement/CMakeFiles/bustub_statement.dir/update_statement.cpp.o
+[ 31%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/transformer.cpp.o
+[ 32%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/sort_limit_as_topn.cpp.o
+[ 32%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/seqscan_as_indexscan.cpp.o
+[ 33%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/column_pruning.cpp.o
+[ 33%] Built target bustub_statement
+[ 33%] Built target bustub_optimizer
+[ 33%] Built target bustub_binder
+make: *** [Makefile:166: all] Error 2
+make: *** No rule to make target 'build-tests'.  Stop.
+Test project /app/cmu15_445/build
+No tests were found!!!

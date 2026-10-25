@@ -1,0 +1,675 @@
+========== HW3 Start ==========
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found GTest: /usr/local/lib/cmake/GTest/GTestConfig.cmake (found version "1.18.0")  
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /app/ap1400_2_hw/ap1400_2_hw3/build_hw3
+[ 25%] Building CXX object CMakeFiles/main.dir/src/unit_test.cpp.o
+[ 50%] Building CXX object CMakeFiles/main.dir/src/main.cpp.o
+[ 75%] Building CXX object CMakeFiles/main.dir/src/bst.cpp.o
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In member function 'virtual void HW3Test_TEST1_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:8:5: error: 'BST' has not been declared
+    8 |     BST::Node left{10, nullptr, nullptr};
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:9:5: error: 'BST' has not been declared
+    9 |     BST::Node right{10, nullptr, nullptr};
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:10:5: error: 'BST' has not been declared
+   10 |     BST::Node node{10, &left, &right};
+      |     ^~~
+In file included from /usr/local/include/gtest/gtest.h:72,
+                 from /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:2:
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:11:15: error: 'node' was not declared in this scope
+   11 |     EXPECT_EQ(node.left, &left);
+      |               ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:11:27: error: 'left' was not declared in this scope; did you mean 'std::left'?
+   11 |     EXPECT_EQ(node.left, &left);
+      |                           ^~~~
+In file included from /usr/include/c++/13/ios:44,
+                 from /usr/include/c++/13/ostream:40,
+                 from /usr/include/c++/13/bits/unique_ptr.h:42,
+                 from /usr/include/c++/13/memory:78,
+                 from /usr/local/include/gtest/gtest.h:55:
+/usr/include/c++/13/bits/ios_base.h:1042:3: note: 'std::left' declared here
+ 1042 |   left(ios_base& __base)
+      |   ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:12:15: error: 'node' was not declared in this scope
+   12 |     EXPECT_EQ(node.right, &right);
+      |               ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:12:28: error: 'right' was not declared in this scope; did you mean 'std::right'?
+   12 |     EXPECT_EQ(node.right, &right);
+      |                            ^~~~~
+/usr/include/c++/13/bits/ios_base.h:1050:3: note: 'std::right' declared here
+ 1050 |   right(ios_base& __base)
+      |   ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In member function 'virtual void HW3Test_TEST2_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:17:5: error: 'BST' has not been declared
+   17 |     BST::Node left{10, nullptr, nullptr};
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:18:5: error: 'BST' has not been declared
+   18 |     BST::Node right{10, nullptr, nullptr};
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:19:5: error: 'BST' has not been declared
+   19 |     BST::Node node{10, &left, &right};
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:20:5: error: 'BST' has not been declared
+   20 |     BST::Node copy{node};
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:21:15: error: 'copy' was not declared in this scope
+   21 |     EXPECT_EQ(copy.value, node.value);
+      |               ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:21:15: note: suggested alternatives:
+In file included from /usr/include/c++/13/bits/locale_facets.h:48,
+                 from /usr/include/c++/13/bits/basic_ios.h:37,
+                 from /usr/include/c++/13/ios:46:
+/usr/include/c++/13/bits/streambuf_iterator.h:339:5: note:   'std::copy'
+  339 |     copy(istreambuf_iterator<_CharT> __first,
+      |     ^~~~
+In file included from /usr/include/c++/13/bits/ranges_algo.h:38,
+                 from /usr/include/c++/13/algorithm:63,
+                 from /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:1:
+/usr/include/c++/13/bits/ranges_algobase.h:318:30: note:   'std::ranges::copy'
+  318 |   inline constexpr __copy_fn copy{};
+      |                              ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:21:27: error: 'node' was not declared in this scope
+   21 |     EXPECT_EQ(copy.value, node.value);
+      |                           ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:22:15: error: 'copy' was not declared in this scope
+   22 |     EXPECT_EQ(copy.left, node.left);
+      |               ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:22:15: note: suggested alternatives:
+/usr/include/c++/13/bits/streambuf_iterator.h:339:5: note:   'std::copy'
+  339 |     copy(istreambuf_iterator<_CharT> __first,
+      |     ^~~~
+/usr/include/c++/13/bits/ranges_algobase.h:318:30: note:   'std::ranges::copy'
+  318 |   inline constexpr __copy_fn copy{};
+      |                              ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:22:26: error: 'node' was not declared in this scope
+   22 |     EXPECT_EQ(copy.left, node.left);
+      |                          ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:23:15: error: 'copy' was not declared in this scope
+   23 |     EXPECT_EQ(copy.right, node.right);
+      |               ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:23:15: note: suggested alternatives:
+/usr/include/c++/13/bits/streambuf_iterator.h:339:5: note:   'std::copy'
+  339 |     copy(istreambuf_iterator<_CharT> __first,
+      |     ^~~~
+/usr/include/c++/13/bits/ranges_algobase.h:318:30: note:   'std::ranges::copy'
+  318 |   inline constexpr __copy_fn copy{};
+      |                              ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:23:27: error: 'node' was not declared in this scope
+   23 |     EXPECT_EQ(copy.right, node.right);
+      |                           ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In member function 'virtual void HW3Test_TEST3_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:28:5: error: 'BST' has not been declared
+   28 |     BST::Node default_{};
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:29:15: error: 'default_' was not declared in this scope
+   29 |     EXPECT_EQ(default_.value, 0);
+      |               ^~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:30:15: error: 'default_' was not declared in this scope
+   30 |     EXPECT_EQ(default_.left, nullptr);
+      |               ^~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:31:15: error: 'default_' was not declared in this scope
+   31 |     EXPECT_EQ(default_.right, nullptr);
+      |               ^~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In member function 'virtual void HW3Test_TEST4_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:36:5: error: 'BST' has not been declared
+   36 |     BST::Node left{10, nullptr, nullptr};
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:37:5: error: 'BST' has not been declared
+   37 |     BST::Node right{10, nullptr, nullptr};
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:38:5: error: 'BST' has not been declared
+   38 |     BST::Node node{10, &left, &right};
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:40:41: error: 'node' was not declared in this scope
+   40 |     std::cout << "adress of node: " << &node << std::endl;
+      |                                         ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:41:41: error: 'left' was not declared in this scope; did you mean 'std::left'?
+   41 |     std::cout << "adress of left: " << &left << std::endl;
+      |                                         ^~~~
+      |                                         std::left
+/usr/include/c++/13/bits/ios_base.h:1042:3: note: 'std::left' declared here
+ 1042 |   left(ios_base& __base)
+      |   ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:42:42: error: 'right' was not declared in this scope; did you mean 'std::right'?
+   42 |     std::cout << "adress of right: " << &right << std::endl;
+      |                                          ^~~~~
+      |                                          std::right
+/usr/include/c++/13/bits/ios_base.h:1050:3: note: 'std::right' declared here
+ 1050 |   right(ios_base& __base)
+      |   ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In member function 'virtual void HW3Test_TEST5_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:50:5: error: 'BST' has not been declared
+   50 |     BST::Node node{5, nullptr, nullptr};
+      |     ^~~
+In file included from /usr/local/include/gtest/gtest-printers.h:128,
+                 from /usr/local/include/gtest/gtest-matchers.h:51,
+                 from /usr/local/include/gtest/internal/gtest-death-test-internal.h:48,
+                 from /usr/local/include/gtest/gtest-death-test.h:43,
+                 from /usr/local/include/gtest/gtest.h:65:
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:52:17: error: 'node' was not declared in this scope
+   52 |     EXPECT_TRUE(node > 4);
+      |                 ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:53:18: error: 'node' was not declared in this scope
+   53 |     EXPECT_FALSE(node > 5);
+      |                  ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:54:17: error: 'node' was not declared in this scope
+   54 |     EXPECT_TRUE(node >= 5);
+      |                 ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:55:18: error: 'node' was not declared in this scope
+   55 |     EXPECT_FALSE(node >= 6);
+      |                  ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:56:17: error: 'node' was not declared in this scope
+   56 |     EXPECT_TRUE(node < 6);
+      |                 ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:57:18: error: 'node' was not declared in this scope
+   57 |     EXPECT_FALSE(node < 2);
+      |                  ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:58:17: error: 'node' was not declared in this scope
+   58 |     EXPECT_TRUE(node <= 5);
+      |                 ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:59:18: error: 'node' was not declared in this scope
+   59 |     EXPECT_FALSE(node <= 2);
+      |                  ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:60:17: error: 'node' was not declared in this scope
+   60 |     EXPECT_TRUE(node == 5);
+      |                 ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:61:18: error: 'node' was not declared in this scope
+   61 |     EXPECT_FALSE(node == 3);
+      |                  ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:63:21: error: 'node' was not declared in this scope
+   63 |     EXPECT_TRUE(4 < node);
+      |                     ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:64:22: error: 'node' was not declared in this scope
+   64 |     EXPECT_FALSE(5 < node);
+      |                      ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:65:22: error: 'node' was not declared in this scope
+   65 |     EXPECT_TRUE(5 <= node);
+      |                      ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:66:23: error: 'node' was not declared in this scope
+   66 |     EXPECT_FALSE(6 <= node);
+      |                       ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:67:21: error: 'node' was not declared in this scope
+   67 |     EXPECT_TRUE(6 > node);
+      |                     ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:68:22: error: 'node' was not declared in this scope
+   68 |     EXPECT_FALSE(2 > node);
+      |                      ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:69:22: error: 'node' was not declared in this scope
+   69 |     EXPECT_TRUE(5 >= node);
+      |                      ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:70:23: error: 'node' was not declared in this scope
+   70 |     EXPECT_FALSE(2 >= node);
+      |                       ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:71:22: error: 'node' was not declared in this scope
+   71 |     EXPECT_TRUE(5 == node);
+      |                      ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:72:23: error: 'node' was not declared in this scope
+   72 |     EXPECT_FALSE(3 == node);
+      |                       ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In member function 'virtual void HW3Test_TEST6_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:77:5: error: 'BST' was not declared in this scope; did you mean 'BST_H'?
+   77 |     BST bst{};
+      |     ^~~
+      |     BST_H
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:78:15: error: 'bst' was not declared in this scope
+   78 |     EXPECT_EQ(bst.get_root(), nullptr);
+      |               ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In member function 'virtual void HW3Test_TEST7_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:82:5: error: 'BST' was not declared in this scope; did you mean 'BST_H'?
+   82 |     BST bst{};
+      |     ^~~
+      |     BST_H
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:83:5: error: 'bst' was not declared in this scope
+   83 |     bst.add_node(10);
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In member function 'virtual void HW3Test_TEST8_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:92:5: error: 'BST' was not declared in this scope; did you mean 'BST_H'?
+   92 |     BST bst{};
+      |     ^~~
+      |     BST_H
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:93:5: error: 'bst' was not declared in this scope
+   93 |     bst.add_node(25);
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In member function 'virtual void HW3Test_TEST9_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:107:5: error: 'BST' was not declared in this scope; did you mean 'BST_H'?
+  107 |     BST bst{};
+      |     ^~~
+      |     BST_H
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:108:5: error: 'bst' was not declared in this scope
+  108 |     bst.add_node(25);
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:116:23: error: 'BST' is not a class, namespace, or enumeration
+  116 |     bst.bfs([&values](BST::Node*& node){values.push_back(node->value);});
+      |                       ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:116:32: error: expected ',' or '...' before '*' token
+  116 |     bst.bfs([&values](BST::Node*& node){values.push_back(node->value);});
+      |                                ^
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In lambda function:
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:116:58: error: 'node' was not declared in this scope; did you mean 'Node'?
+  116 |     bst.bfs([&values](BST::Node*& node){values.push_back(node->value);});
+      |                                                          ^~~~
+      |                                                          Node
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In member function 'virtual void HW3Test_TEST10_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:125:5: error: 'BST' was not declared in this scope; did you mean 'BST_H'?
+  125 |     BST bst{};
+      |     ^~~
+      |     BST_H
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:126:5: error: 'bst' was not declared in this scope
+  126 |     bst.add_node(25);
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In member function 'virtual void HW3Test_TEST11_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:137:5: error: 'BST' was not declared in this scope; did you mean 'BST_H'?
+  137 |     BST bst{};
+      |     ^~~
+      |     BST_H
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:138:5: error: 'bst' was not declared in this scope
+  138 |     bst.add_node(25);
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In member function 'virtual void HW3Test_TEST12_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:150:5: error: 'BST' was not declared in this scope; did you mean 'BST_H'?
+  150 |     BST bst{};
+      |     ^~~
+      |     BST_H
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:151:5: error: 'bst' was not declared in this scope
+  151 |     bst.add_node(25);
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:158:5: error: 'BST' is not a class, namespace, or enumeration
+  158 |     BST::Node** node{bst.find_node(10)};
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:158:17: error: 'node' was not declared in this scope
+  158 |     BST::Node** node{bst.find_node(10)};
+      |                 ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In member function 'virtual void HW3Test_TEST13_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:165:5: error: 'BST' was not declared in this scope; did you mean 'BST_H'?
+  165 |     BST bst{};
+      |     ^~~
+      |     BST_H
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:166:5: error: 'bst' was not declared in this scope
+  166 |     bst.add_node(25);
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:173:5: error: 'BST' is not a class, namespace, or enumeration
+  173 |     BST::Node** node{bst.find_node(11)};
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:173:17: error: 'node' was not declared in this scope
+  173 |     BST::Node** node{bst.find_node(11)};
+      |                 ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In member function 'virtual void HW3Test_TEST14_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:178:5: error: 'BST' was not declared in this scope; did you mean 'BST_H'?
+  178 |     BST bst{};
+      |     ^~~
+      |     BST_H
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:179:5: error: 'bst' was not declared in this scope
+  179 |     bst.add_node(25);
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:187:5: error: 'BST' is not a class, namespace, or enumeration
+  187 |     BST::Node** node{bst.find_parrent(15)};
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:187:17: error: 'node' was not declared in this scope
+  187 |     BST::Node** node{bst.find_parrent(15)};
+      |                 ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In member function 'virtual void HW3Test_TEST15_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:195:5: error: 'BST' was not declared in this scope; did you mean 'BST_H'?
+  195 |     BST bst{};
+      |     ^~~
+      |     BST_H
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:196:5: error: 'bst' was not declared in this scope
+  196 |     bst.add_node(25);
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:205:5: error: 'BST' is not a class, namespace, or enumeration
+  205 |     BST::Node** node{bst.find_successor(10)};
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:205:17: error: 'node' was not declared in this scope
+  205 |     BST::Node** node{bst.find_successor(10)};
+      |                 ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In member function 'virtual void HW3Test_TEST16_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:212:5: error: 'BST' was not declared in this scope; did you mean 'BST_H'?
+  212 |     BST bst{};
+      |     ^~~
+      |     BST_H
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:213:5: error: 'bst' was not declared in this scope
+  213 |     bst.add_node(25);
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In member function 'virtual void HW3Test_TEST17_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:226:5: error: 'BST' was not declared in this scope; did you mean 'BST_H'?
+  226 |     BST bst{};
+      |     ^~~
+      |     BST_H
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:227:5: error: 'bst' was not declared in this scope
+  227 |     bst.add_node(25);
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In member function 'virtual void HW3Test_TEST18_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:243:5: error: 'BST' was not declared in this scope; did you mean 'BST_H'?
+  243 |     BST bst{};
+      |     ^~~
+      |     BST_H
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:244:5: error: 'bst' was not declared in this scope
+  244 |     bst.add_node(25);
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In member function 'virtual void HW3Test_TEST19_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:266:5: error: 'BST' was not declared in this scope; did you mean 'BST_H'?
+  266 |     BST bst{};
+      |     ^~~
+      |     BST_H
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:267:5: error: 'bst' was not declared in this scope
+  267 |     bst.add_node(25);
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:278:5: error: 'BST' is not a class, namespace, or enumeration
+  278 |     BST::Node* address_of_5{*bst.find_node(5)};
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:278:16: error: 'address_of_5' was not declared in this scope
+  278 |     BST::Node* address_of_5{*bst.find_node(5)};
+      |                ^~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:279:5: error: 'BST' is not a class, namespace, or enumeration
+  279 |     BST::Node* address_of_2{*bst.find_node(2)};
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:279:16: error: 'address_of_2' was not declared in this scope
+  279 |     BST::Node* address_of_2{*bst.find_node(2)};
+      |                ^~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In member function 'virtual void HW3Test_TEST20_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:292:5: error: 'BST' was not declared in this scope; did you mean 'BST_H'?
+  292 |     BST bst{};
+      |     ^~~
+      |     BST_H
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:293:5: error: 'bst' was not declared in this scope
+  293 |     bst.add_node(25);
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In member function 'virtual void HW3Test_TEST21_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:316:5: error: 'BST' was not declared in this scope; did you mean 'BST_H'?
+  316 |     BST bst{};
+      |     ^~~
+      |     BST_H
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:317:5: error: 'bst' was not declared in this scope
+  317 |     bst.add_node(25);
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:328:5: error: 'BST' is not a class, namespace, or enumeration
+  328 |     BST::Node* address_of_60{*bst.find_node(60)};
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:328:16: error: 'address_of_60' was not declared in this scope
+  328 |     BST::Node* address_of_60{*bst.find_node(60)};
+      |                ^~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:329:5: error: 'BST' is not a class, namespace, or enumeration
+  329 |     BST::Node* address_of_75{*bst.find_node(75)};
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:329:16: error: 'address_of_75' was not declared in this scope
+  329 |     BST::Node* address_of_75{*bst.find_node(75)};
+      |                ^~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In member function 'virtual void HW3Test_TEST22_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:341:5: error: 'BST' was not declared in this scope; did you mean 'BST_H'?
+  341 |     BST bst{};
+      |     ^~~
+      |     BST_H
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:342:5: error: 'bst' was not declared in this scope
+  342 |     bst.add_node(25);
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In member function 'virtual void HW3Test_TEST23_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:364:5: error: 'BST' was not declared in this scope; did you mean 'BST_H'?
+  364 |     BST bst{};
+      |     ^~~
+      |     BST_H
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:365:5: error: 'bst' was not declared in this scope
+  365 |     bst.add_node(25);
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In member function 'virtual void HW3Test_TEST24_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:388:5: error: 'BST' was not declared in this scope; did you mean 'BST_H'?
+  388 |     BST bst{};
+      |     ^~~
+      |     BST_H
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:389:5: error: 'bst' was not declared in this scope
+  389 |     bst.add_node(5);
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:392:8: error: expected ';' before 'copy'
+  392 |     BST copy{bst};
+      |        ^~~~~
+      |        ;
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:393:29: error: 'copy' was not declared in this scope
+  393 |     EXPECT_EQ(bst.length(), copy.length());
+      |                             ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:393:29: note: suggested alternatives:
+/usr/include/c++/13/bits/streambuf_iterator.h:339:5: note:   'std::copy'
+  339 |     copy(istreambuf_iterator<_CharT> __first,
+      |     ^~~~
+/usr/include/c++/13/bits/ranges_algobase.h:318:30: note:   'std::ranges::copy'
+  318 |   inline constexpr __copy_fn copy{};
+      |                              ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:394:45: error: 'copy' was not declared in this scope
+  394 |     EXPECT_EQ(bst.get_root()->right->value, copy.get_root()->right->value);
+      |                                             ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:394:45: note: suggested alternatives:
+/usr/include/c++/13/bits/streambuf_iterator.h:339:5: note:   'std::copy'
+  339 |     copy(istreambuf_iterator<_CharT> __first,
+      |     ^~~~
+/usr/include/c++/13/bits/ranges_algobase.h:318:30: note:   'std::ranges::copy'
+  318 |   inline constexpr __copy_fn copy{};
+      |                              ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In member function 'virtual void HW3Test_TEST25_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:398:5: error: 'BST' was not declared in this scope; did you mean 'BST_H'?
+  398 |     BST bst{};
+      |     ^~~
+      |     BST_H
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:399:5: error: 'bst' was not declared in this scope
+  399 |     bst.add_node(5);
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:403:8: error: expected ';' before 'equal'
+  403 |     BST equal{};
+      |        ^~~~~~
+      |        ;
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:407:5: error: 'equal' was not declared in this scope
+  407 |     equal = bst;
+      |     ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:407:5: note: suggested alternatives:
+In file included from /usr/include/c++/13/algorithm:73:
+/usr/include/c++/13/pstl/glue_algorithm_defs.h:347:1: note:   'std::equal'
+  347 | equal(_ExecutionPolicy&& __exec, _ForwardIterator1 __first1, _ForwardIterator1 __last1, _ForwardIterator2 __first2,
+      | ^~~~~
+/usr/include/c++/13/bits/ranges_algobase.h:158:31: note:   'std::ranges::equal'
+  158 |   inline constexpr __equal_fn equal{};
+      |                               ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In member function 'virtual void HW3Test_TEST26_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:413:5: error: 'BST' was not declared in this scope; did you mean 'BST_H'?
+  413 |     BST bst{};
+      |     ^~~
+      |     BST_H
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:414:5: error: 'bst' was not declared in this scope
+  414 |     bst.add_node(5);
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In member function 'virtual void HW3Test_TEST27_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:428:5: error: 'BST' was not declared in this scope; did you mean 'BST_H'?
+  428 |     BST bst{};
+      |     ^~~
+      |     BST_H
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:429:5: error: 'bst' was not declared in this scope
+  429 |     bst.add_node(5);
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:434:5: error: 'BST' is not a class, namespace, or enumeration
+  434 |     BST::Node* adddress_of_root{*bst.find_node(5)};
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:434:16: error: 'adddress_of_root' was not declared in this scope
+  434 |     BST::Node* adddress_of_root{*bst.find_node(5)};
+      |                ^~~~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:436:8: error: expected ';' before 'move'
+  436 |     BST move{std::move(bst)};
+      |        ^~~~~
+      |        ;
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:437:33: error: 'move' was not declared in this scope
+  437 |     EXPECT_EQ(adddress_of_root, move.get_root());
+      |                                 ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:437:33: note: suggested alternatives:
+/usr/include/c++/13/pstl/glue_algorithm_defs.h:353:1: note:   'std::move'
+  353 | move(_ExecutionPolicy&& __exec, _ForwardIterator1 __first, _ForwardIterator1 __last, _ForwardIterator2 __d_first);
+      | ^~~~
+/usr/include/c++/13/bits/ranges_algobase.h:343:30: note:   'std::ranges::move'
+  343 |   inline constexpr __move_fn move{};
+      |                              ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:438:27: error: 'move' was not declared in this scope
+  438 |     EXPECT_EQ(test_value, move.get_root()->right->value);
+      |                           ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:438:27: note: suggested alternatives:
+/usr/include/c++/13/pstl/glue_algorithm_defs.h:353:1: note:   'std::move'
+  353 | move(_ExecutionPolicy&& __exec, _ForwardIterator1 __first, _ForwardIterator1 __last, _ForwardIterator2 __d_first);
+      | ^~~~
+/usr/include/c++/13/bits/ranges_algobase.h:343:30: note:   'std::ranges::move'
+  343 |   inline constexpr __move_fn move{};
+      |                              ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In member function 'virtual void HW3Test_TEST28_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:442:5: error: 'BST' was not declared in this scope; did you mean 'BST_H'?
+  442 |     BST bst{};
+      |     ^~~
+      |     BST_H
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:443:5: error: 'bst' was not declared in this scope
+  443 |     bst.add_node(25);
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:452:5: error: 'BST' is not a class, namespace, or enumeration
+  452 |     BST::Node* adddress_of_root{*bst.find_node(25)};
+      |     ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:452:16: error: 'adddress_of_root' was not declared in this scope
+  452 |     BST::Node* adddress_of_root{*bst.find_node(25)};
+      |                ^~~~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:454:8: error: expected ';' before 'move'
+  454 |     BST move{};
+      |        ^~~~~
+      |        ;
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:455:5: error: 'move' was not declared in this scope
+  455 |     move = std::move(bst);
+      |     ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:455:5: note: suggested alternatives:
+/usr/include/c++/13/pstl/glue_algorithm_defs.h:353:1: note:   'std::move'
+  353 | move(_ExecutionPolicy&& __exec, _ForwardIterator1 __first, _ForwardIterator1 __last, _ForwardIterator2 __d_first);
+      | ^~~~
+/usr/include/c++/13/bits/ranges_algobase.h:343:30: note:   'std::ranges::move'
+  343 |   inline constexpr __move_fn move{};
+      |                              ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In member function 'virtual void HW3Test_TEST29_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:461:5: error: 'BST' was not declared in this scope; did you mean 'BST_H'?
+  461 |     BST bst1{5, 1, 10, 2, 8, 50, 4, 60};
+      |     ^~~
+      |     BST_H
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:462:8: error: expected ';' before 'bst2'
+  462 |     BST bst2{3, 2, 100, 20, 8, 50, 4, 60, 44, 23};
+      |        ^~~~~
+      |        ;
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:463:17: error: 'bst1' was not declared in this scope
+  463 |     EXPECT_EQ((*bst1.find_successor(5))->value, 4);
+      |                 ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:464:15: error: 'bst2' was not declared in this scope
+  464 |     EXPECT_EQ(bst2.length(), 10);
+      |               ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In member function 'virtual void HW3Test_TEST30_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:468:5: error: 'BST' was not declared in this scope; did you mean 'BST_H'?
+  468 |     BST bst{5, 1, 10, 2, 8, 50, 4, 60};
+      |     ^~~
+      |     BST_H
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:469:8: error: expected ';' before 'bst2'
+  469 |     BST bst2{++bst};
+      |        ^~~~~
+      |        ;
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:472:15: error: 'bst' was not declared in this scope
+  472 |     EXPECT_EQ(bst.get_root()->value, 6);
+      |               ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:473:15: error: 'bst2' was not declared in this scope
+  473 |     EXPECT_EQ(bst2.get_root()->value, 6);
+      |               ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:474:15: error: 'bst' was not declared in this scope
+  474 |     EXPECT_EQ(bst.get_root()->right->right->right->value, 61);
+      |               ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:475:15: error: 'bst2' was not declared in this scope
+  475 |     EXPECT_EQ(bst2.get_root()->right->right->right->value, 61);
+      |               ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In member function 'virtual void HW3Test_TEST31_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:480:5: error: 'BST' was not declared in this scope; did you mean 'BST_H'?
+  480 |     BST bst1{5, 1, 10, 2, 8, 50, 4, 60};
+      |     ^~~
+      |     BST_H
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:481:8: error: expected ';' before 'bst2'
+  481 |     BST bst2{bst1++};
+      |        ^~~~~
+      |        ;
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:484:5: error: 'bst1' was not declared in this scope
+  484 |     bst1.bfs([&values1](BST::Node*& node){values1.push_back(node->value);});
+      |     ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:484:25: error: 'BST' is not a class, namespace, or enumeration
+  484 |     bst1.bfs([&values1](BST::Node*& node){values1.push_back(node->value);});
+      |                         ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:484:34: error: expected ',' or '...' before '*' token
+  484 |     bst1.bfs([&values1](BST::Node*& node){values1.push_back(node->value);});
+      |                                  ^
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In lambda function:
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:484:61: error: 'node' was not declared in this scope; did you mean 'Node'?
+  484 |     bst1.bfs([&values1](BST::Node*& node){values1.push_back(node->value);});
+      |                                                             ^~~~
+      |                                                             Node
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In member function 'virtual void HW3Test_TEST31_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:487:5: error: 'bst2' was not declared in this scope
+  487 |     bst2.bfs([&values2](BST::Node*& node){values2.push_back(node->value);});
+      |     ^~~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:487:25: error: 'BST' is not a class, namespace, or enumeration
+  487 |     bst2.bfs([&values2](BST::Node*& node){values2.push_back(node->value);});
+      |                         ^~~
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:487:34: error: expected ',' or '...' before '*' token
+  487 |     bst2.bfs([&values2](BST::Node*& node){values2.push_back(node->value);});
+      |                                  ^
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp: In lambda function:
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:487:61: error: 'node' was not declared in this scope; did you mean 'Node'?
+  487 |     bst2.bfs([&values2](BST::Node*& node){values2.push_back(node->value);});
+      |                                                             ^~~~
+      |                                                             Node
+make[2]: *** [CMakeFiles/main.dir/build.make:104: CMakeFiles/main.dir/src/unit_test.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/main.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2
+HW3 compile failed, cannot run program
+
+========== HW5 Start ==========
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found GTest: /usr/local/lib/cmake/GTest/GTestConfig.cmake (found version "1.18.0")  
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /app/ap1400_2_hw/ap1400_2_hw5/build_hw5
+[ 16%] Building CXX object CMakeFiles/main.dir/src/mocha.cpp.o
+[ 33%] Building CXX object CMakeFiles/main.dir/src/cappuccino.cpp.o
+[ 50%] Building CXX object CMakeFiles/main.dir/src/main.cpp.o
+[ 66%] Building CXX object CMakeFiles/main.dir/src/espresso_based.cpp.o
+[ 83%] Building CXX object CMakeFiles/main.dir/src/unit_test.cpp.o
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp: In member function 'virtual void HW5Test_TEST4_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:48:35: error: 'class Cappuccino' has no member named 'get_ingredients'
+   48 |     auto ingredients = cappuccino.get_ingredients();
+      |                                   ^~~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp: In member function 'virtual void HW5Test_TEST10_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:98:30: error: 'class Mocha' has no member named 'get_ingredients'
+   98 |     auto ingredients = mocha.get_ingredients();
+      |                              ^~~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp: In member function 'virtual void HW5Test_TEST11_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:116:16: error: 'class Cappuccino' has no member named 'brew'
+  116 |     cappuccino.brew();
+      |                ^~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp: In member function 'virtual void HW5Test_TEST12_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:121:11: error: 'class Mocha' has no member named 'brew'
+  121 |     mocha.brew();
+      |           ^~~~
+make[2]: *** [CMakeFiles/main.dir/build.make:90: CMakeFiles/main.dir/src/unit_test.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/main.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2
+HW5 compile failed, cannot run program

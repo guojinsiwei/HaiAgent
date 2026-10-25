@@ -1,0 +1,28 @@
+2026-10-01, before paid model execution
+
+Local Windows: 135 discovered, 117 passed, 18 Linux-only skipped, no failures.
+College isolated Linux: 135 passed, 0 skipped, 0 failures/errors.
+Includes original v8 regressions plus contrastive policy checks and both real
+bounded CLI integration paths using mock providers; no API was called.
+
+Six predeclared deterministic gate-only probes:
+- unchanged repeat: both refuse
+- shell spacing/argument quotes: both refuse
+- meaningful single-character numeric parameter change: evidence allows,
+  TF-IDF refuses (similarity=1 because single-character word tokens vanish)
+- same verification after anchored relevant file change: evidence allows,
+  TF-IDF refuses (identical command)
+- unrelated file change: both refuse
+- new diagnostic command: both allow
+These are gate behavior checks, NOT autonomous agent performance or a benchmark.
+
+Linux mock-provider CLI integration:
+- evidence repairs the missing-file fixture, repeats the check, and submits.
+- orthogonal performs the same repair but rejects its verification three times;
+  stops at existing protocol-error limit. Independent checker finds the repaired
+  artifact valid; no actor verification or submission occurred. This is an
+  explicitly scripted engineering test, not a claim about real-model choices.
+
+Sources/fixtures/harness sealed, original v8 hashes unchanged at sealing.
+Remote isolated directory: /var/tmp/lizh639-contrastive-RKZKJH
+Real provider pilot: awaiting local hidden input, four cases per arm.

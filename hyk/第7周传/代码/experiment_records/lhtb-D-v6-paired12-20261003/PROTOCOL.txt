@@ -1,0 +1,19 @@
+User authorization 2026-10-03: D and v6 each rerun the full original twelve LHTB tasks.
+24 fresh isolated attempts. No previous scores, workspaces or memories carried.
+A12 already running remains unchanged; RAW/v8/v7/other historical variants are not restarted.
+D1: byte-identical common-v7-with-v6.1-fixes frozen source, original group D switches.
+V1: v6 decision mechanism, using already validated monitor-control-v6.1 engineering repair.
+Results explicitly identify V1 as v6.1; never pretend it is the untouched failing v6 binary.
+No additional algorithm changes or v8/submission-loop-v3 prompts/guards are incorporated.
+Both: deepseek-flash, thinking disabled, temperature=0, max output4096 tokens.
+600 tools,800 actor turns,12 monitor calls,6 adviser calls,48000 context characters.
+Original per-task wall limits, CPU/memory settings, official image digests and benchmark commit.
+Alternate arm ordering by task. Four new slots plus A's four <=32CPU/64GiB reservations.
+Disk admission/executor guards disabled per prior authorization; actual storage failures stay errors.
+The shared outer deployment policy bypasses the old 60GiB reserve check in both frozen adapters,
+while preserving cancellation. Frozen arm files remain byte-identical; no solver decision changes.
+Current external deadline/ledger/supervision infrastructure only. No whole-task retries.
+Shared format or credential failures halt new admissions, preserving attempted task reports.
+Preparation: source hashes, per-arm regression, no-model official continuation/budget fixture.
+Launch needs local hidden key input; stdin/anonymous pipes only, no old credential reuse/files/argv/logs.
+No GPT automations or additional paid tasks beyond24. Each version one run, not a multi-repeat significance claim.

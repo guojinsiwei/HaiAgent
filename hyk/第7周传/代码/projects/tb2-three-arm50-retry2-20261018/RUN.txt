@@ -1,0 +1,47 @@
+TB2.0 three-arm50: engineering repair and second retry
+Date: 2026-10-18, Asia/Shanghai
+
+Remote: /mnt/sdb/home/lizh639/tb2-three-arm50-retry2-20261018
+Original: /mnt/sdb/home/lizh639/tb2-three-arm50-20261017
+Previous retry: /mnt/sdb/home/lizh639/tb2-three-arm50-retry-20261018
+Supervisor: PID 583179; start=819531713; boot=2861b57d-7d78-4a80-a96b-0854417097ca
+Launched 14:07; confirmed alive with two actual preflight processes.
+At 14:09:08, KZDSH tune-mjcf had passed preflight and issued 8 model requests;
+settled global ledger increased from 283445632 to 283581465 microCNY.
+DSH torch-pipeline-parallelism was still preflighting; no task failure recorded.
+
+Root cause of previous retry failure:
+Python/native/verifier dependency tarballs were symlinks to the old campaign.
+Container copies could not read those host-side symlink targets. Native installs
+reported missing python-runtime.tar.gz; verifier tar reported permission denied.
+
+Repair:
+- All four deployment archives are regular physical files, mode 0644.
+- upload_verified rejects symlink inputs before transfer; verifies regular-file
+  status and SHA-256 inside the container after transfer, before extraction.
+- All three adapters completed real keyless Docker installation, solver fixture,
+  artifact collection, official tune-mjcf tests, and cleanup successfully.
+- Empty scripted solutions correctly received reward 0; this is infrastructure
+  acceptance and contributes no benchmark passes. Model calls in acceptance: 0.
+- 12 Python and 21 JavaScript regression tests passed.
+- Native runtime and all DSH runtime archive members except the prior approved
+  transport guard remain identical to the original algorithm release.
+
+Scope: 23 remaining engineering failures: native KZ 8, KZDSH 8, DSH 7.
+Exclude DSH hf-model-inference: previous retry already completed with score 0.
+Skip KZDSH dna-assembly: original remaining budget 0.104935 CNY cannot fund the
+maximum request reservation. Do not reset its original charges.
+
+Budget: shared original SQLite ledger, 600 CNY global; original arm/task identity
+retained for cumulative 4 CNY/task and request limits. Unknown costs remain held.
+Model and Token Plan endpoint unchanged. No keys stored in this directory.
+RSA-encrypted local handoff, SSH stdin, server process memory only; local encrypted
+handoff files and public key removed after acknowledgement, clipboard cleared.
+
+Concurrency: maximum 3, one per arm; actual 2 at launch due to Docker disk guard.
+Each queued retry has its own real keyless preflight before any model call.
+Single-task failures are recorded and the rest of the queue continues.
+Historical results and previous seals remain unchanged.
+
+Status command: venv/bin/python status_retry2.py in the remote retry2 directory.
+Live files: health.json, schedule.json, retry-plan.json. Do not rerun --launch.

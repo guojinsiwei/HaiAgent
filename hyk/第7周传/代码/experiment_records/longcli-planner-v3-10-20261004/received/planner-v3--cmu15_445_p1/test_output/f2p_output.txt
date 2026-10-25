@@ -1,0 +1,300 @@
+[  0%] Building CXX object third_party/murmur3/CMakeFiles/bustub_murmur3.dir/MurmurHash3.cpp.o
+[  0%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/postgres_parser.cpp.o
+[  0%] Building C object third_party/utf8proc/CMakeFiles/utf8proc.dir/utf8proc.c.o
+[  0%] Building CXX object third_party/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[  0%] Building C object third_party/libfort/lib/CMakeFiles/fort.dir/fort.c.o
+[  0%] Building CXX object third_party/backward-cpp/CMakeFiles/backward_object.dir/backward.cpp.o
+[  0%] Building CXX object third_party/fmt/CMakeFiles/fmt.dir/src/format.cc.o
+[  0%] Building C object third_party/linenoise/CMakeFiles/bustub_linenoise.dir/linenoise.c.o
+[  1%] Linking C static library ../../lib/libbustub_linenoise.a
+[  1%] Built target bustub_linenoise
+[  1%] Building CXX object third_party/fmt/CMakeFiles/fmt.dir/src/os.cc.o
+[  1%] Linking CXX static library ../../lib/libbustub_murmur3.a
+[  3%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/pg_functions.cpp.o
+[  3%] Built target bustub_murmur3
+[  3%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_parser.cpp.o
+[  3%] Linking C static library ../../../lib/libfort.a
+/usr/bin/ar qc ../../../lib/libfort.a CMakeFiles/fort.dir/fort.c.o
+/usr/bin/ranlib ../../../lib/libfort.a
+[  3%] Built target fort
+[  3%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_gram.cpp.o
+[  5%] Linking C static library ../../lib/libutf8proc.a
+[  5%] Built target utf8proc
+[  6%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_nodes_list.cpp.o
+[  8%] Building CXX object third_party/backward-cpp/CMakeFiles/backward.dir/backward.cpp.o
+[ 10%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.o
+[ 10%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_scansup.cpp.o
+[ 11%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/binder.cpp.o
+[ 11%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_projection.cpp.o
+[ 11%] Built target backward_object
+[ 11%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_nodes_makefuncs.cpp.o
+[ 11%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_nlj.cpp.o
+[ 13%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_nodes_value.cpp.o
+[ 13%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_scan.cpp.o
+[ 15%] Linking CXX static library ../../lib/libfmtd.a
+[ 15%] Built target fmt
+[ 15%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/bind_create.cpp.o
+[ 15%] Linking CXX static library ../../lib/libbackward.a
+[ 15%] Built target backward
+[ 15%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_common_keywords.cpp.o
+[ 16%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_scan.cpp.o
+[ 16%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/bind_insert.cpp.o
+[ 18%] Linking CXX static library ../../lib/libduckdb_pg_query.a
+[ 18%] Building CXX object src/binder/statement/CMakeFiles/bustub_statement.dir/create_statement.cpp.o
+[ 18%] Built target duckdb_pg_query
+[ 18%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_hash_join.cpp.o
+[ 20%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/bind_select.cpp.o
+[ 20%] Building CXX object src/binder/statement/CMakeFiles/bustub_statement.dir/delete_statement.cpp.o
+[ 20%] Building CXX object src/buffer/CMakeFiles/bustub_buffer.dir/buffer_pool_manager.cpp.o
+[ 20%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/bind_variable.cpp.o
+[ 20%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_index_join.cpp.o
+[ 21%] Building CXX object src/binder/statement/CMakeFiles/bustub_statement.dir/explain_statement.cpp.o
+[ 23%] Building CXX object src/catalog/CMakeFiles/bustub_catalog.dir/column.cpp.o
+[ 23%] Building CXX object src/buffer/CMakeFiles/bustub_buffer.dir/arc_replacer.cpp.o
+[ 23%] Linking CXX static library ../../../lib/libgtest.a
+[ 23%] Built target gtest
+[ 23%] Building CXX object src/catalog/CMakeFiles/bustub_catalog.dir/table_generator.cpp.o
+[ 25%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer.cpp.o
+[ 25%] Building CXX object src/binder/statement/CMakeFiles/bustub_statement.dir/index_statement.cpp.o
+[ 26%] Building CXX object src/buffer/CMakeFiles/bustub_buffer.dir/clock_replacer.cpp.o
+[ 26%] Building CXX object src/buffer/CMakeFiles/bustub_buffer.dir/lru_replacer.cpp.o
+[ 26%] Building CXX object src/buffer/CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.o
+[ 26%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/bound_statement.cpp.o
+[ 28%] Building CXX object src/common/CMakeFiles/bustub_common.dir/bustub_instance.cpp.o
+/app/cmu15_445/src/buffer/lru_k_replacer.cpp: In member function 'std::optional<int> bustub::LRUKReplacer::Evict()':
+/app/cmu15_445/src/buffer/lru_k_replacer.cpp:27:15: error: 'bool bustub::LRUKNode::is_evictable_' is private within this context
+   27 |     if (!node.is_evictable_) continue;
+      |               ^~~~~~~~~~~~~
+In file included from /app/cmu15_445/src/buffer/lru_k_replacer.cpp:13:
+/app/cmu15_445/src/include/buffer/lru_k_replacer.h:36:25: note: declared private here
+   36 |   [[maybe_unused]] bool is_evictable_{false};
+      |                         ^~~~~~~~~~~~~
+/app/cmu15_445/src/buffer/lru_k_replacer.cpp:28:21: error: 'std::__cxx11::list<long unsigned int> bustub::LRUKNode::history_' is private within this context
+   28 |     bool inf = node.history_.size() < k_;
+      |                     ^~~~~~~~
+/app/cmu15_445/src/include/buffer/lru_k_replacer.h:33:38: note: declared private here
+   33 |   [[maybe_unused]] std::list<size_t> history_;
+      |                                      ^~~~~~~~
+/app/cmu15_445/src/buffer/lru_k_replacer.cpp:30:26: error: 'std::__cxx11::list<long unsigned int> bustub::LRUKNode::history_' is private within this context
+   30 |     size_t oldest = node.history_.front();
+      |                          ^~~~~~~~
+/app/cmu15_445/src/include/buffer/lru_k_replacer.h:33:38: note: declared private here
+   33 |   [[maybe_unused]] std::list<size_t> history_;
+      |                                      ^~~~~~~~
+/app/cmu15_445/src/buffer/lru_k_replacer.cpp:32:22: error: 'std::__cxx11::list<long unsigned int> bustub::LRUKNode::history_' is private within this context
+   32 |       auto it = node.history_.rbegin();
+      |                      ^~~~~~~~
+/app/cmu15_445/src/include/buffer/lru_k_replacer.h:33:38: note: declared private here
+   33 |   [[maybe_unused]] std::list<size_t> history_;
+      |                                      ^~~~~~~~
+/app/cmu15_445/src/buffer/lru_k_replacer.cpp: In member function 'void bustub::LRUKReplacer::RecordAccess(bustub::frame_id_t, bustub::AccessType)':
+/app/cmu15_445/src/buffer/lru_k_replacer.cpp:59:8: error: 'bustub::frame_id_t bustub::LRUKNode::fid_' is private within this context
+   59 |   node.fid_ = frame_id;
+      |        ^~~~
+/app/cmu15_445/src/include/buffer/lru_k_replacer.h:35:31: note: declared private here
+   35 |   [[maybe_unused]] frame_id_t fid_;
+      |                               ^~~~
+/app/cmu15_445/src/buffer/lru_k_replacer.cpp:60:8: error: 'size_t bustub::LRUKNode::k_' is private within this context
+   60 |   node.k_ = k_;
+      |        ^~
+/app/cmu15_445/src/include/buffer/lru_k_replacer.h:34:27: note: declared private here
+   34 |   [[maybe_unused]] size_t k_;
+      |                           ^~
+/app/cmu15_445/src/buffer/lru_k_replacer.cpp:61:8: error: 'std::__cxx11::list<long unsigned int> bustub::LRUKNode::history_' is private within this context
+   61 |   node.history_.push_back(current_timestamp_);
+      |        ^~~~~~~~
+/app/cmu15_445/src/include/buffer/lru_k_replacer.h:33:38: note: declared private here
+   33 |   [[maybe_unused]] std::list<size_t> history_;
+      |                                      ^~~~~~~~
+/app/cmu15_445/src/buffer/lru_k_replacer.cpp:62:12: error: 'std::__cxx11::list<long unsigned int> bustub::LRUKNode::history_' is private within this context
+   62 |   if (node.history_.size() > k_) node.history_.pop_front();
+      |            ^~~~~~~~
+/app/cmu15_445/src/include/buffer/lru_k_replacer.h:33:38: note: declared private here
+   33 |   [[maybe_unused]] std::list<size_t> history_;
+      |                                      ^~~~~~~~
+/app/cmu15_445/src/buffer/lru_k_replacer.cpp:62:39: error: 'std::__cxx11::list<long unsigned int> bustub::LRUKNode::history_' is private within this context
+   62 |   if (node.history_.size() > k_) node.history_.pop_front();
+      |                                       ^~~~~~~~
+/app/cmu15_445/src/include/buffer/lru_k_replacer.h:33:38: note: declared private here
+   33 |   [[maybe_unused]] std::list<size_t> history_;
+      |                                      ^~~~~~~~
+/app/cmu15_445/src/buffer/lru_k_replacer.cpp: In member function 'void bustub::LRUKReplacer::SetEvictable(bustub::frame_id_t, bool)':
+/app/cmu15_445/src/buffer/lru_k_replacer.cpp:73:18: error: 'bool bustub::LRUKNode::is_evictable_' is private within this context
+   73 |   if (it->second.is_evictable_ == set_evictable) return;
+      |                  ^~~~~~~~~~~~~
+/app/cmu15_445/src/include/buffer/lru_k_replacer.h:36:25: note: declared private here
+   36 |   [[maybe_unused]] bool is_evictable_{false};
+      |                         ^~~~~~~~~~~~~
+/app/cmu15_445/src/buffer/lru_k_replacer.cpp:74:14: error: 'bool bustub::LRUKNode::is_evictable_' is private within this context
+   74 |   it->second.is_evictable_ = set_evictable;
+      |              ^~~~~~~~~~~~~
+/app/cmu15_445/src/include/buffer/lru_k_replacer.h:36:25: note: declared private here
+   36 |   [[maybe_unused]] bool is_evictable_{false};
+      |                         ^~~~~~~~~~~~~
+/app/cmu15_445/src/buffer/lru_k_replacer.cpp: In member function 'void bustub::LRUKReplacer::Remove(bustub::frame_id_t)':
+/app/cmu15_445/src/buffer/lru_k_replacer.cpp:82:19: error: 'bool bustub::LRUKNode::is_evictable_' is private within this context
+   82 |   if (!it->second.is_evictable_) {
+      |                   ^~~~~~~~~~~~~
+/app/cmu15_445/src/include/buffer/lru_k_replacer.h:36:25: note: declared private here
+   36 |   [[maybe_unused]] bool is_evictable_{false};
+      |                         ^~~~~~~~~~~~~
+make[2]: *** [src/buffer/CMakeFiles/bustub_buffer.dir/build.make:132: src/buffer/CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1860: src/buffer/CMakeFiles/bustub_buffer.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 28%] Building CXX object src/common/CMakeFiles/bustub_common.dir/bustub_ddl.cpp.o
+[ 28%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.o
+[ 30%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/fmt_impl.cpp.o
+[ 30%] Building CXX object src/binder/statement/CMakeFiles/bustub_statement.dir/insert_statement.cpp.o
+[ 30%] Building CXX object src/catalog/CMakeFiles/bustub_catalog.dir/schema.cpp.o
+[ 30%] Building CXX object src/common/CMakeFiles/bustub_common.dir/config.cpp.o
+[ 30%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/keyword_helper.cpp.o
+[ 30%] Built target bustub_catalog
+[ 31%] Building CXX object src/binder/statement/CMakeFiles/bustub_statement.dir/select_statement.cpp.o
+[ 31%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_internal.cpp.o
+[ 31%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/node_tag_to_string.cpp.o
+[ 33%] Building CXX object src/common/CMakeFiles/bustub_common.dir/util/string_util.cpp.o
+[ 35%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.o
+[ 35%] Building CXX object src/binder/statement/CMakeFiles/bustub_statement.dir/update_statement.cpp.o
+[ 35%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/sort_limit_as_topn.cpp.o
+[ 36%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/transformer.cpp.o
+[ 36%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/seqscan_as_indexscan.cpp.o
+[ 38%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/column_pruning.cpp.o
+[ 38%] Built target bustub_statement
+[ 38%] Built target bustub_common
+[ 38%] Built target bustub_optimizer
+[ 38%] Built target bustub_binder
+make: *** [Makefile:166: all] Error 2
+[  0%] Building CXX object src/buffer/CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.o
+[  0%] Built target bustub_murmur3
+[  0%] Built target fort
+[  1%] Built target fmt
+[  3%] Built target bustub_statement
+[  7%] Built target duckdb_pg_query
+[ 12%] Built target bustub_binder
+[ 17%] Built target bustub_optimizer
+[ 17%] Building CXX object src/concurrency/CMakeFiles/bustub_concurrency.dir/transaction_manager.cpp.o
+[ 18%] Built target bustub_catalog
+[ 18%] Building CXX object src/container/disk/hash/CMakeFiles/bustub_container_disk_hash.dir/disk_extendible_hash_table.cpp.o
+[ 18%] Building CXX object src/concurrency/CMakeFiles/bustub_concurrency.dir/transaction_manager_impl.cpp.o
+[ 20%] Built target bustub_common
+[ 20%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/aggregation_executor.cpp.o
+[ 21%] Building CXX object src/recovery/CMakeFiles/bustub_recovery.dir/log_manager.cpp.o
+[ 21%] Building CXX object src/container/disk/hash/CMakeFiles/bustub_container_disk_hash.dir/linear_probe_hash_table.cpp.o
+[ 21%] Building CXX object src/storage/disk/CMakeFiles/bustub_storage_disk.dir/disk_manager.cpp.o
+/app/cmu15_445/src/buffer/lru_k_replacer.cpp: In member function 'std::optional<int> bustub::LRUKReplacer::Evict()':
+/app/cmu15_445/src/buffer/lru_k_replacer.cpp:27:15: error: 'bool bustub::LRUKNode::is_evictable_' is private within this context
+   27 |     if (!node.is_evictable_) continue;
+      |               ^~~~~~~~~~~~~
+In file included from /app/cmu15_445/src/buffer/lru_k_replacer.cpp:13:
+/app/cmu15_445/src/include/buffer/lru_k_replacer.h:36:25: note: declared private here
+   36 |   [[maybe_unused]] bool is_evictable_{false};
+      |                         ^~~~~~~~~~~~~
+/app/cmu15_445/src/buffer/lru_k_replacer.cpp:28:21: error: 'std::__cxx11::list<long unsigned int> bustub::LRUKNode::history_' is private within this context
+   28 |     bool inf = node.history_.size() < k_;
+      |                     ^~~~~~~~
+/app/cmu15_445/src/include/buffer/lru_k_replacer.h:33:38: note: declared private here
+   33 |   [[maybe_unused]] std::list<size_t> history_;
+      |                                      ^~~~~~~~
+/app/cmu15_445/src/buffer/lru_k_replacer.cpp:30:26: error: 'std::__cxx11::list<long unsigned int> bustub::LRUKNode::history_' is private within this context
+   30 |     size_t oldest = node.history_.front();
+      |                          ^~~~~~~~
+/app/cmu15_445/src/include/buffer/lru_k_replacer.h:33:38: note: declared private here
+   33 |   [[maybe_unused]] std::list<size_t> history_;
+      |                                      ^~~~~~~~
+/app/cmu15_445/src/buffer/lru_k_replacer.cpp:32:22: error: 'std::__cxx11::list<long unsigned int> bustub::LRUKNode::history_' is private within this context
+   32 |       auto it = node.history_.rbegin();
+      |                      ^~~~~~~~
+/app/cmu15_445/src/include/buffer/lru_k_replacer.h:33:38: note: declared private here
+   33 |   [[maybe_unused]] std::list<size_t> history_;
+      |                                      ^~~~~~~~
+/app/cmu15_445/src/buffer/lru_k_replacer.cpp: In member function 'void bustub::LRUKReplacer::RecordAccess(bustub::frame_id_t, bustub::AccessType)':
+/app/cmu15_445/src/buffer/lru_k_replacer.cpp:59:8: error: 'bustub::frame_id_t bustub::LRUKNode::fid_' is private within this context
+   59 |   node.fid_ = frame_id;
+      |        ^~~~
+/app/cmu15_445/src/include/buffer/lru_k_replacer.h:35:31: note: declared private here
+   35 |   [[maybe_unused]] frame_id_t fid_;
+      |                               ^~~~
+/app/cmu15_445/src/buffer/lru_k_replacer.cpp:60:8: error: 'size_t bustub::LRUKNode::k_' is private within this context
+   60 |   node.k_ = k_;
+      |        ^~
+/app/cmu15_445/src/include/buffer/lru_k_replacer.h:34:27: note: declared private here
+   34 |   [[maybe_unused]] size_t k_;
+      |                           ^~
+/app/cmu15_445/src/buffer/lru_k_replacer.cpp:61:8: error: 'std::__cxx11::list<long unsigned int> bustub::LRUKNode::history_' is private within this context
+   61 |   node.history_.push_back(current_timestamp_);
+      |        ^~~~~~~~
+/app/cmu15_445/src/include/buffer/lru_k_replacer.h:33:38: note: declared private here
+   33 |   [[maybe_unused]] std::list<size_t> history_;
+      |                                      ^~~~~~~~
+/app/cmu15_445/src/buffer/lru_k_replacer.cpp:62:12: error: 'std::__cxx11::list<long unsigned int> bustub::LRUKNode::history_' is private within this context
+   62 |   if (node.history_.size() > k_) node.history_.pop_front();
+      |            ^~~~~~~~
+/app/cmu15_445/src/include/buffer/lru_k_replacer.h:33:38: note: declared private here
+   33 |   [[maybe_unused]] std::list<size_t> history_;
+      |                                      ^~~~~~~~
+/app/cmu15_445/src/buffer/lru_k_replacer.cpp:62:39: error: 'std::__cxx11::list<long unsigned int> bustub::LRUKNode::history_' is private within this context
+   62 |   if (node.history_.size() > k_) node.history_.pop_front();
+      |                                       ^~~~~~~~
+/app/cmu15_445/src/include/buffer/lru_k_replacer.h:33:38: note: declared private here
+   33 |   [[maybe_unused]] std::list<size_t> history_;
+      |                                      ^~~~~~~~
+/app/cmu15_445/src/buffer/lru_k_replacer.cpp: In member function 'void bustub::LRUKReplacer::SetEvictable(bustub::frame_id_t, bool)':
+/app/cmu15_445/src/buffer/lru_k_replacer.cpp:73:18: error: 'bool bustub::LRUKNode::is_evictable_' is private within this context
+   73 |   if (it->second.is_evictable_ == set_evictable) return;
+      |                  ^~~~~~~~~~~~~
+/app/cmu15_445/src/include/buffer/lru_k_replacer.h:36:25: note: declared private here
+   36 |   [[maybe_unused]] bool is_evictable_{false};
+      |                         ^~~~~~~~~~~~~
+/app/cmu15_445/src/buffer/lru_k_replacer.cpp:74:14: error: 'bool bustub::LRUKNode::is_evictable_' is private within this context
+   74 |   it->second.is_evictable_ = set_evictable;
+      |              ^~~~~~~~~~~~~
+/app/cmu15_445/src/include/buffer/lru_k_replacer.h:36:25: note: declared private here
+   36 |   [[maybe_unused]] bool is_evictable_{false};
+      |                         ^~~~~~~~~~~~~
+/app/cmu15_445/src/buffer/lru_k_replacer.cpp: In member function 'void bustub::LRUKReplacer::Remove(bustub::frame_id_t)':
+/app/cmu15_445/src/buffer/lru_k_replacer.cpp:82:19: error: 'bool bustub::LRUKNode::is_evictable_' is private within this context
+   82 |   if (!it->second.is_evictable_) {
+      |                   ^~~~~~~~~~~~~
+/app/cmu15_445/src/include/buffer/lru_k_replacer.h:36:25: note: declared private here
+   36 |   [[maybe_unused]] bool is_evictable_{false};
+      |                         ^~~~~~~~~~~~~
+make[3]: *** [src/buffer/CMakeFiles/bustub_buffer.dir/build.make:132: src/buffer/CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.o] Error 1
+make[2]: *** [CMakeFiles/Makefile2:1860: src/buffer/CMakeFiles/bustub_buffer.dir/all] Error 2
+make[2]: *** Waiting for unfinished jobs....
+[ 23%] Building CXX object src/storage/disk/CMakeFiles/bustub_storage_disk.dir/disk_manager_memory.cpp.o
+[ 23%] Built target bustub_recovery
+[ 23%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/delete_executor.cpp.o
+[ 24%] Building CXX object src/concurrency/CMakeFiles/bustub_concurrency.dir/watermark.cpp.o
+[ 25%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/execution_common.cpp.o
+[ 26%] Building CXX object src/container/disk/hash/CMakeFiles/bustub_container_disk_hash.dir/disk_extendible_hash_table_utils.cpp.o
+[ 26%] Building CXX object src/storage/disk/CMakeFiles/bustub_storage_disk.dir/disk_scheduler.cpp.o
+[ 26%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/external_merge_sort_executor.cpp.o
+[ 26%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/executor_factory.cpp.o
+[ 27%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/filter_executor.cpp.o
+[ 27%] Built target bustub_storage_disk
+[ 27%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/fmt_impl.cpp.o
+[ 27%] Built target bustub_container_disk_hash
+[ 27%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/hash_join_executor.cpp.o
+[ 28%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/index_scan_executor.cpp.o
+[ 28%] Built target bustub_concurrency
+[ 28%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/init_check_executor.cpp.o
+[ 28%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/insert_executor.cpp.o
+[ 29%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/limit_executor.cpp.o
+[ 29%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/mock_scan_executor.cpp.o
+[ 29%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/nested_index_join_executor.cpp.o
+[ 30%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/nested_loop_join_executor.cpp.o
+[ 30%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/plan_node.cpp.o
+[ 30%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/projection_executor.cpp.o
+[ 31%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/seq_scan_executor.cpp.o
+[ 31%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/sort_executor.cpp.o
+[ 31%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/topn_executor.cpp.o
+[ 32%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/topn_per_group_executor.cpp.o
+[ 32%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/topn_check_executor.cpp.o
+[ 32%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/update_executor.cpp.o
+[ 34%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/values_executor.cpp.o
+[ 34%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/window_function_executor.cpp.o
+[ 34%] Built target bustub_execution
+make[1]: *** [CMakeFiles/Makefile2:2297: test/CMakeFiles/build-tests.dir/rule] Error 2
+make: *** [Makefile:823: build-tests] Error 2
+Test project /app/cmu15_445/build
+No tests were found!!!

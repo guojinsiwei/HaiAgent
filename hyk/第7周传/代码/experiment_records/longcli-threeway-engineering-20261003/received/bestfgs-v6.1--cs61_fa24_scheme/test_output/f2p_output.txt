@@ -1,0 +1,375 @@
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.18.1
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Scoring tests
+
+---------------------------------------------------------------------
+Understanding Eval/Apply
+    Passed: 0
+    Failed: 0
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Problem 1
+    Passed: 2
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Problem 2
+    Passed: 1
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Problem 3
+    Passed: 2
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Problem 4 > Suite 2 > Case 1
+
+scm> (define size 2)
+
+# Error: expected
+#     size
+# but got
+
+
+Run only this test case with "python3 ok -q 04 --suite 2 --case 1"
+---------------------------------------------------------------------
+Problem 4
+    Passed: 0
+    Failed: 1
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Problem 5
+    Passed: 3
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Problem 6 > Suite 1 > Case 1
+
+>>> from scheme import *
+>>> env = create_global_frame()
+>>> eval_all(Pair(2, nil), env)
+2
+>>> eval_all(Pair(4, Pair(5, nil)), env)
+4
+
+# Error: expected
+#     5
+# but got
+#     4
+
+Run only this test case with "python3 ok -q 06 --suite 1 --case 1"
+---------------------------------------------------------------------
+Problem 6 > Suite 2 > Case 1
+
+scm> (begin (+ 2 3) (+ 5 6))
+5
+
+# Error: expected
+#     11
+# but got
+#     5
+
+Run only this test case with "python3 ok -q 06 --suite 2 --case 1"
+---------------------------------------------------------------------
+Problem 6
+    Passed: 0
+    Failed: 2
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Problem 7
+    Passed: 2
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Problem 8
+    Passed: 2
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Problem 9 > Suite 1 > Case 1
+
+scm> (define square (lambda (x) (* x x)))
+
+# Error: expected
+#     square
+# but got
+
+
+Run only this test case with "python3 ok -q 09 --suite 1 --case 1"
+---------------------------------------------------------------------
+Problem 9 > Suite 2 > Case 1
+
+scm> (define double (lambda (n) (* 2 n))) ; make double a LambdaProcedure that doubles a number
+
+# Error: expected
+#     double
+# but got
+
+
+Run only this test case with "python3 ok -q 09 --suite 2 --case 1"
+---------------------------------------------------------------------
+Problem 9 > Suite 3 > Case 1
+
+scm> (define x 5)
+
+# Error: expected
+#     x
+# but got
+
+
+Run only this test case with "python3 ok -q 09 --suite 3 --case 1"
+---------------------------------------------------------------------
+Problem 9
+    Passed: 0
+    Failed: 3
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Problem 10
+    Passed: 2
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Problem 11 > Suite 1 > Case 1
+
+scm> (define y 1)
+
+# Error: expected
+#     y
+# but got
+
+
+Run only this test case with "python3 ok -q 11 --suite 1 --case 1"
+---------------------------------------------------------------------
+Problem 11 > Suite 2 > Case 1
+
+scm> (define h (mu () x))
+
+# Error: expected
+#     h
+# but got
+
+
+Run only this test case with "python3 ok -q 11 --suite 2 --case 1"
+---------------------------------------------------------------------
+Problem 11
+    Passed: 0
+    Failed: 2
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Problem 12 > Suite 1 > Case 2
+
+scm> (not (and #f))
+#t
+scm> (and 3 2 #f)
+#f
+scm> (and 3 2 1)
+1
+scm> (and 3 #f 5)
+#f
+scm> (and 0 1 2 3)
+3
+scm> (define (true-fn) #t)
+true-fn
+scm> (and (true-fn))
+#t
+scm> (define x #f)
+
+# Error: expected
+#     x
+# but got
+
+
+Run only this test case with "python3 ok -q 12 --suite 1 --case 2"
+---------------------------------------------------------------------
+Problem 12 > Suite 2 > Case 3
+
+scm> (define x 0)
+
+# Error: expected
+#     x
+# but got
+
+
+Run only this test case with "python3 ok -q 12 --suite 2 --case 3"
+---------------------------------------------------------------------
+Problem 12
+    Passed: 0
+    Failed: 2
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Problem 13 > Suite 2 > Case 3
+
+scm> (define x 0)
+
+# Error: expected
+#     x
+# but got
+
+
+Run only this test case with "python3 ok -q 13 --suite 2 --case 3"
+---------------------------------------------------------------------
+Problem 13
+    Passed: 1
+    Failed: 1
+[oooook.....] 50.0% passed
+
+---------------------------------------------------------------------
+Problem 14 > Suite 1 > Case 1
+
+scm> (define x 1)
+
+# Error: expected
+#     x
+# but got
+
+
+Run only this test case with "python3 ok -q 14 --suite 1 --case 1"
+---------------------------------------------------------------------
+Problem 14 > Suite 2 > Case 2
+
+>>> from scheme import *
+>>> global_frame = create_global_frame()
+>>> # Improper formals list - used same variable name twice
+>>> bindings = Pair(Pair('x', Pair(2, nil)), Pair(Pair('x', Pair(3, nil)), nil)) # equivalent to ((x 2) (x 3))
+>>> make_let_frame(bindings, global_frame)
+Traceback (most recent call last):
+  File "/app/cs61_fa24_scheme/scheme_forms.py", line 212, in make_let_frame
+    return env.make_child_frame(names, vals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/cs61_fa24_scheme/scheme_classes.py", line 59, in make_child_frame
+    child.define(formals.first, vals.first)
+  File "/app/cs61_fa24_scheme/scheme_classes.py", line 29, in define
+    self.bindings[symbol] = value
+    ~~~~~~~~~~~~~^^^^^^^^
+TypeError: unhashable type: 'Pair'
+
+# Error: expected
+#     SchemeError
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     TypeError: unhashable type: 'Pair'
+
+Run only this test case with "python3 ok -q 14 --suite 2 --case 2"
+---------------------------------------------------------------------
+Problem 14 > Suite 3 > Case 1
+
+scm> (define x 3)
+
+# Error: expected
+#     x
+# but got
+
+
+Run only this test case with "python3 ok -q 14 --suite 3 --case 1"
+---------------------------------------------------------------------
+Problem 14
+    Passed: 0
+    Failed: 3
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Scheme tests in tests.scm
+
+Tests terminated due to unhandled exception after line 207:
+TypeError: unhashable type: 'Pair'
+test failed at line 62
+  expected size
+   printed 
+test failed at line 165
+  expected 3.00009155413138
+   printed good-enough?
+test failed at line 168
+  expected 11.704699917758145
+   printed good-enough?
+test failed at line 171
+  expected 1.7739279023207892
+   printed Error: operand 0 (good-enough?) is not a number
+test failed at line 174
+  expected 1000.000369924366
+   printed Error: operand 0 (good-enough?) is not a number
+Score: 0.0/1
+
+---------------------------------------------------------------------
+Problem 15 > Suite 1 > Case 1
+
+scm> (load 'questions)
+
+scm> (enumerate '(3 4 5 6))
+replace-this-line
+
+# Error: expected
+#     ((0 3) (1 4) (2 5) (3 6))
+# but got
+#     replace-this-line
+
+Run only this test case with "python3 ok -q 15 --suite 1 --case 1"
+---------------------------------------------------------------------
+Problem 15
+    Passed: 0
+    Failed: 1
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Problem 16 > Suite 1 > Case 1
+
+scm> (load 'questions)
+
+scm> (merge < '(1 4 6) '(2 5 8))
+replace-this-line
+
+# Error: expected
+#     (1 2 4 5 6 8)
+# but got
+#     replace-this-line
+
+Run only this test case with "python3 ok -q 16 --suite 1 --case 1"
+---------------------------------------------------------------------
+Problem 16
+    Passed: 0
+    Failed: 1
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Point breakdown
+    Understanding Eval/Apply: 0.0/0
+    Problem 1: 1.0/1
+    Problem 2: 2.0/2
+    Problem 3: 2.0/2
+    Problem 4: 0.0/2
+    Problem 5: 1.0/1
+    Problem 6: 0.0/1
+    Problem 7: 2.0/2
+    Problem 8: 2.0/2
+    Problem 9: 0.0/2
+    Problem 10: 2.0/2
+    Problem 11: 0.0/1
+    Problem 12: 0.0/2
+    Problem 13: 1.0/2
+    Problem 14: 0.0/2
+    tests.scm: 0.0/1
+    Problem 15: 0.0/1
+    Problem 16: 0.0/2
+
+Score:
+    Total: 13.0
+
+Cannot backup when running ok with --local.

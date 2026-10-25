@@ -1,0 +1,472 @@
+[  0%] Building C object third_party/utf8proc/CMakeFiles/utf8proc.dir/utf8proc.c.o
+[  0%] Building CXX object third_party/murmur3/CMakeFiles/bustub_murmur3.dir/MurmurHash3.cpp.o
+[  0%] Building CXX object third_party/backward-cpp/CMakeFiles/backward_object.dir/backward.cpp.o
+[  0%] Building CXX object third_party/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[  0%] Building CXX object third_party/fmt/CMakeFiles/fmt.dir/src/format.cc.o
+[  0%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/postgres_parser.cpp.o
+[  0%] Building C object third_party/linenoise/CMakeFiles/bustub_linenoise.dir/linenoise.c.o
+[  0%] Building C object third_party/libfort/lib/CMakeFiles/fort.dir/fort.c.o
+[  1%] Linking C static library ../../lib/libbustub_linenoise.a
+[  1%] Built target bustub_linenoise
+[  3%] Building CXX object third_party/backward-cpp/CMakeFiles/backward.dir/backward.cpp.o
+[  3%] Linking CXX static library ../../lib/libbustub_murmur3.a
+[  5%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/pg_functions.cpp.o
+[  5%] Built target bustub_murmur3
+[  5%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_parser.cpp.o
+[  5%] Linking C static library ../../../lib/libfort.a
+/usr/bin/ar qc ../../../lib/libfort.a CMakeFiles/fort.dir/fort.c.o
+/usr/bin/ranlib ../../../lib/libfort.a
+[  5%] Built target fort
+[  5%] Building CXX object third_party/fmt/CMakeFiles/fmt.dir/src/os.cc.o
+[  6%] Linking C static library ../../lib/libutf8proc.a
+[  6%] Built target utf8proc
+[  8%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_gram.cpp.o
+[  8%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_nodes_list.cpp.o
+[ 10%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.o
+[ 11%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/binder.cpp.o
+[ 11%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_projection.cpp.o
+[ 11%] Built target backward_object
+[ 11%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_scansup.cpp.o
+[ 11%] Linking CXX static library ../../lib/libbackward.a
+[ 11%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/bind_create.cpp.o
+[ 11%] Built target backward
+[ 11%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_nlj.cpp.o
+[ 11%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_nodes_makefuncs.cpp.o
+[ 13%] Linking CXX static library ../../lib/libfmtd.a
+[ 13%] Built target fmt
+[ 13%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/bind_insert.cpp.o
+[ 15%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_nodes_value.cpp.o
+[ 15%] Building CXX object src/binder/statement/CMakeFiles/bustub_statement.dir/create_statement.cpp.o
+[ 15%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_scan.cpp.o
+[ 15%] Building CXX object src/buffer/CMakeFiles/bustub_buffer.dir/buffer_pool_manager.cpp.o
+[ 15%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_common_keywords.cpp.o
+[ 16%] Building CXX object src/catalog/CMakeFiles/bustub_catalog.dir/column.cpp.o
+[ 18%] Linking CXX static library ../../lib/libduckdb_pg_query.a
+[ 18%] Built target duckdb_pg_query
+[ 18%] Building CXX object src/binder/statement/CMakeFiles/bustub_statement.dir/delete_statement.cpp.o
+[ 20%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/bind_select.cpp.o
+[ 20%] Building CXX object src/catalog/CMakeFiles/bustub_catalog.dir/table_generator.cpp.o
+[ 20%] Building CXX object src/buffer/CMakeFiles/bustub_buffer.dir/arc_replacer.cpp.o
+[ 21%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_scan.cpp.o
+[ 23%] Building CXX object src/binder/statement/CMakeFiles/bustub_statement.dir/explain_statement.cpp.o
+[ 25%] Building CXX object src/buffer/CMakeFiles/bustub_buffer.dir/clock_replacer.cpp.o
+[ 26%] Building CXX object src/common/CMakeFiles/bustub_common.dir/bustub_instance.cpp.o
+[ 26%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/bind_variable.cpp.o
+[ 26%] Building CXX object src/buffer/CMakeFiles/bustub_buffer.dir/lru_replacer.cpp.o
+[ 26%] Building CXX object src/buffer/CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.o
+[ 26%] Linking CXX static library ../../../lib/libgtest.a
+[ 26%] Built target gtest
+[ 26%] Building CXX object src/catalog/CMakeFiles/bustub_catalog.dir/schema.cpp.o
+[ 26%] Built target bustub_buffer
+[ 26%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_hash_join.cpp.o
+[ 26%] Building CXX object src/binder/statement/CMakeFiles/bustub_statement.dir/index_statement.cpp.o
+[ 26%] Built target bustub_catalog
+[ 26%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/bound_statement.cpp.o
+[ 26%] Building CXX object src/common/CMakeFiles/bustub_common.dir/bustub_ddl.cpp.o
+[ 26%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_index_join.cpp.o
+[ 26%] Building CXX object src/concurrency/CMakeFiles/bustub_concurrency.dir/transaction_manager.cpp.o
+[ 26%] Building CXX object src/binder/statement/CMakeFiles/bustub_statement.dir/insert_statement.cpp.o
+[ 26%] Building CXX object src/common/CMakeFiles/bustub_common.dir/config.cpp.o
+[ 28%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/fmt_impl.cpp.o
+[ 30%] Building CXX object src/binder/statement/CMakeFiles/bustub_statement.dir/select_statement.cpp.o
+[ 30%] Building CXX object src/container/disk/hash/CMakeFiles/bustub_container_disk_hash.dir/disk_extendible_hash_table.cpp.o
+[ 30%] Building CXX object src/concurrency/CMakeFiles/bustub_concurrency.dir/transaction_manager_impl.cpp.o
+[ 31%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer.cpp.o
+[ 31%] Building CXX object src/container/disk/hash/CMakeFiles/bustub_container_disk_hash.dir/linear_probe_hash_table.cpp.o
+[ 31%] Building CXX object src/binder/statement/CMakeFiles/bustub_statement.dir/update_statement.cpp.o
+[ 31%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/aggregation_executor.cpp.o
+[ 31%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/keyword_helper.cpp.o
+[ 33%] Building CXX object src/concurrency/CMakeFiles/bustub_concurrency.dir/watermark.cpp.o
+[ 35%] Building CXX object src/container/disk/hash/CMakeFiles/bustub_container_disk_hash.dir/disk_extendible_hash_table_utils.cpp.o
+[ 35%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.o
+[ 35%] Built target bustub_statement
+[ 36%] Building CXX object src/common/CMakeFiles/bustub_common.dir/util/string_util.cpp.o
+[ 36%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/delete_executor.cpp.o
+[ 36%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/node_tag_to_string.cpp.o
+[ 36%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_internal.cpp.o
+[ 38%] Building CXX object src/recovery/CMakeFiles/bustub_recovery.dir/log_manager.cpp.o
+[ 38%] Built target bustub_concurrency
+[ 40%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/execution_common.cpp.o
+[ 41%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.o
+[ 41%] Built target bustub_container_disk_hash
+[ 43%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/transformer.cpp.o
+[ 43%] Built target bustub_common
+[ 43%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/external_merge_sort_executor.cpp.o
+[ 43%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/executor_factory.cpp.o
+[ 43%] Built target bustub_recovery
+[ 43%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/sort_limit_as_topn.cpp.o
+[ 43%] Building CXX object src/storage/disk/CMakeFiles/bustub_storage_disk.dir/disk_manager.cpp.o
+[ 43%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/seqscan_as_indexscan.cpp.o
+[ 45%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/filter_executor.cpp.o
+[ 46%] Building CXX object src/storage/disk/CMakeFiles/bustub_storage_disk.dir/disk_manager_memory.cpp.o
+[ 46%] Building CXX object src/storage/index/CMakeFiles/bustub_storage_index.dir/b_plus_tree_index.cpp.o
+[ 46%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/fmt_impl.cpp.o
+[ 46%] Built target bustub_binder
+[ 46%] Building CXX object src/storage/disk/CMakeFiles/bustub_storage_disk.dir/disk_scheduler.cpp.o
+[ 48%] Building CXX object src/storage/index/CMakeFiles/bustub_storage_index.dir/b_plus_tree.cpp.o
+[ 50%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/column_pruning.cpp.o
+[ 50%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/hash_join_executor.cpp.o
+[ 50%] Built target bustub_storage_disk
+[ 50%] Building CXX object src/storage/index/CMakeFiles/bustub_storage_index.dir/extendible_hash_table_index.cpp.o
+[ 50%] Building CXX object src/storage/page/CMakeFiles/bustub_storage_page.dir/b_plus_tree_internal_page.cpp.o
+[ 51%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/index_scan_executor.cpp.o
+[ 51%] Building CXX object src/storage/page/CMakeFiles/bustub_storage_page.dir/b_plus_tree_leaf_page.cpp.o
+[ 51%] Built target bustub_optimizer
+[ 51%] Building CXX object src/storage/index/CMakeFiles/bustub_storage_index.dir/index_iterator.cpp.o
+[ 51%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/init_check_executor.cpp.o
+[ 53%] Building CXX object src/storage/page/CMakeFiles/bustub_storage_page.dir/b_plus_tree_page.cpp.o
+[ 53%] Building CXX object src/storage/table/CMakeFiles/bustub_storage_table.dir/table_heap.cpp.o
+[ 53%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/insert_executor.cpp.o
+[ 53%] Building CXX object src/storage/page/CMakeFiles/bustub_storage_page.dir/hash_table_block_page.cpp.o
+[ 53%] Building CXX object src/type/CMakeFiles/bustub_type.dir/bigint_type.cpp.o
+[ 55%] Building CXX object src/storage/table/CMakeFiles/bustub_storage_table.dir/table_iterator.cpp.o
+[ 56%] Building CXX object src/storage/index/CMakeFiles/bustub_storage_index.dir/linear_probe_hash_table_index.cpp.o
+[ 58%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/limit_executor.cpp.o
+[ 58%] Building CXX object src/storage/page/CMakeFiles/bustub_storage_page.dir/hash_table_bucket_page.cpp.o
+[ 60%] Building CXX object src/type/CMakeFiles/bustub_type.dir/boolean_type.cpp.o
+[ 60%] Building CXX object src/planner/CMakeFiles/bustub_planner.dir/expression_factory.cpp.o
+[ 60%] Building CXX object src/storage/table/CMakeFiles/bustub_storage_table.dir/tuple.cpp.o
+[ 61%] Building CXX object src/storage/page/CMakeFiles/bustub_storage_page.dir/hash_table_directory_page.cpp.o
+[ 61%] Building CXX object src/type/CMakeFiles/bustub_type.dir/decimal_type.cpp.o
+[ 61%] Building CXX object src/primer/CMakeFiles/bustub_primer.dir/hyperloglog.cpp.o
+[ 61%] Building CXX object src/planner/CMakeFiles/bustub_planner.dir/plan_aggregation.cpp.o
+[ 61%] Built target bustub_storage_index
+[ 61%] Building CXX object src/storage/page/CMakeFiles/bustub_storage_page.dir/extendible_htable_bucket_page.cpp.o
+[ 61%] Built target bustub_storage_table
+[ 61%] Building CXX object src/type/CMakeFiles/bustub_type.dir/integer_parent_type.cpp.o
+[ 61%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/mock_scan_executor.cpp.o
+[ 61%] Building CXX object src/primer/CMakeFiles/bustub_primer.dir/hyperloglog_presto.cpp.o
+[ 63%] Building CXX object src/planner/CMakeFiles/bustub_planner.dir/plan_func_call.cpp.o
+[ 65%] Building CXX object third_party/googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
+[ 66%] Building CXX object src/type/CMakeFiles/bustub_type.dir/integer_type.cpp.o
+[ 68%] Building CXX object src/storage/page/CMakeFiles/bustub_storage_page.dir/extendible_htable_directory_page.cpp.o
+[ 70%] Building CXX object src/primer/CMakeFiles/bustub_primer.dir/orset.cpp.o
+[ 70%] Building CXX object src/type/CMakeFiles/bustub_type.dir/smallint_type.cpp.o
+[ 70%] Building CXX object src/storage/page/CMakeFiles/bustub_storage_page.dir/extendible_htable_header_page.cpp.o
+[ 70%] Building CXX object src/storage/page/CMakeFiles/bustub_storage_page.dir/extendible_htable_page_utils.cpp.o
+[ 70%] Building CXX object src/type/CMakeFiles/bustub_type.dir/timestamp_type.cpp.o
+[ 70%] Building CXX object src/primer/CMakeFiles/bustub_primer.dir/orset_driver.cpp.o
+[ 70%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/nested_index_join_executor.cpp.o
+[ 70%] Building CXX object src/primer/CMakeFiles/bustub_primer.dir/skiplist.cpp.o
+[ 70%] Linking CXX static library ../../../lib/libgmock.a
+[ 70%] Built target gmock
+[ 71%] Building CXX object src/type/CMakeFiles/bustub_type.dir/tinyint_type.cpp.o
+[ 73%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/nested_loop_join_executor.cpp.o
+[ 75%] Building CXX object src/storage/page/CMakeFiles/bustub_storage_page.dir/page_guard.cpp.o
+[ 75%] Building CXX object src/planner/CMakeFiles/bustub_planner.dir/plan_expression.cpp.o
+[ 76%] Building CXX object third_party/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[ 76%] Building CXX object src/type/CMakeFiles/bustub_type.dir/type.cpp.o
+[ 78%] Building CXX object src/primer/CMakeFiles/bustub_primer.dir/count_min_sketch.cpp.o
+[ 78%] Building CXX object src/storage/page/CMakeFiles/bustub_storage_page.dir/table_page.cpp.o
+[ 78%] Building CXX object src/planner/CMakeFiles/bustub_planner.dir/plan_insert.cpp.o
+[ 78%] Building CXX object src/type/CMakeFiles/bustub_type.dir/value.cpp.o
+[ 78%] Linking CXX static library ../../../lib/libgtest_main.a
+[ 78%] Built target gtest_main
+[ 78%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/plan_node.cpp.o
+[ 78%] Building CXX object src/primer/CMakeFiles/bustub_primer.dir/trie.cpp.o
+[ 80%] Building CXX object src/planner/CMakeFiles/bustub_planner.dir/plan_table_ref.cpp.o
+[ 81%] Building CXX object src/type/CMakeFiles/bustub_type.dir/varlen_type.cpp.o
+[ 81%] Built target bustub_storage_page
+[ 81%] Building CXX object src/primer/CMakeFiles/bustub_primer.dir/trie_store.cpp.o
+[ 81%] Building CXX object src/planner/CMakeFiles/bustub_planner.dir/plan_select.cpp.o
+[ 81%] Building CXX object src/type/CMakeFiles/bustub_type.dir/vector_type.cpp.o
+[ 81%] Building CXX object third_party/googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
+[ 81%] Built target bustub_primer
+[ 81%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/projection_executor.cpp.o
+[ 83%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/seq_scan_executor.cpp.o
+[ 83%] Building CXX object src/planner/CMakeFiles/bustub_planner.dir/plan_window_function.cpp.o
+[ 85%] Linking CXX static library ../../../lib/libgmock_main.a
+[ 85%] Built target gmock_main
+[ 85%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/sort_executor.cpp.o
+[ 85%] Built target bustub_type
+[ 86%] Building CXX object src/planner/CMakeFiles/bustub_planner.dir/planner.cpp.o
+[ 86%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/topn_executor.cpp.o
+[ 88%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/topn_per_group_executor.cpp.o
+[ 88%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/topn_check_executor.cpp.o
+[ 88%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/update_executor.cpp.o
+[ 90%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/values_executor.cpp.o
+[ 90%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/window_function_executor.cpp.o
+[ 90%] Built target bustub_planner
+[ 90%] Built target bustub_execution
+[ 90%] Linking CXX static library ../lib/libbustub.a
+[ 90%] Built target bustub
+[ 90%] Building CXX object tools/htable_bench/CMakeFiles/htable-bench.dir/htable_bench.cpp.o
+[ 91%] Building CXX object tools/bpm_bench/CMakeFiles/bpm-bench.dir/bpm_bench.cpp.o
+[ 93%] Building CXX object tools/shell/CMakeFiles/shell.dir/shell.cpp.o
+[ 93%] Building CXX object tools/sqllogictest/CMakeFiles/sqllogictest.dir/sqllogictest.cpp.o
+[ 93%] Building CXX object tools/terrier_bench/CMakeFiles/terrier-bench.dir/terrier.cpp.o
+[ 93%] Building CXX object tools/nc-shell/CMakeFiles/nc-shell.dir/nc-shell.cpp.o
+[ 93%] Building CXX object tools/b_plus_tree_printer/CMakeFiles/b_plus_tree_printer.dir/b_plus_tree_printer.cpp.o
+[ 95%] Building CXX object tools/btree_bench/CMakeFiles/btree-bench.dir/btree_bench.cpp.o
+[ 95%] Linking CXX executable ../../bin/b_plus_tree_printer
+[ 95%] Built target b_plus_tree_printer
+[ 96%] Building CXX object tools/sqllogictest/CMakeFiles/sqllogictest.dir/parser.cpp.o
+[ 96%] Linking CXX executable ../../bin/bustub-shell
+[ 96%] Building CXX object tools/bpm_bench/CMakeFiles/bpm-bench.dir/__/backtrace.cpp.o
+[ 96%] Built target shell
+[ 98%] Linking CXX executable ../../bin/bustub-htable-bench
+[ 98%] Linking CXX executable ../../bin/bustub-btree-bench
+[ 98%] Linking CXX executable ../../bin/bustub-nc-shell
+[ 98%] Built target htable-bench
+[ 98%] Built target btree-bench
+[100%] Linking CXX executable ../../bin/bustub-terrier-bench
+[100%] Linking CXX executable ../../bin/bustub-sqllogictest
+[100%] Linking CXX executable ../../bin/bustub-bpm-bench
+[100%] Built target nc-shell
+[100%] Built target bpm-bench
+[100%] Built target terrier-bench
+[100%] Built target sqllogictest
+[  1%] Built target bustub_buffer
+[  5%] Built target duckdb_pg_query
+[  5%] Built target bustub_murmur3
+[  5%] Built target fort
+[  7%] Built target bustub_statement
+[  8%] Built target fmt
+[ 14%] Built target bustub_optimizer
+[ 18%] Built target bustub_binder
+[ 19%] Built target bustub_catalog
+[ 20%] Built target bustub_recovery
+[ 21%] Built target bustub_container_disk_hash
+[ 25%] Built target bustub_common
+[ 25%] Built target bustub_concurrency
+[ 26%] Built target bustub_storage_disk
+[ 28%] Built target bustub_storage_index
+[ 29%] Built target bustub_storage_table
+[ 34%] Built target bustub_storage_page
+[ 36%] Built target bustub_primer
+[ 40%] Built target bustub_type
+[ 49%] Built target bustub_execution
+[ 52%] Built target bustub_planner
+[ 52%] Built target gtest
+[ 52%] Built target bustub
+[ 53%] Built target gmock
+[ 54%] Built target sqllogictest
+[ 56%] Built target gmock_main
+[ 57%] Building CXX object test/CMakeFiles/binder_test.dir/binder/binder_test.cpp.o
+[ 57%] Building CXX object test/CMakeFiles/lru_k_replacer_test.dir/buffer/lru_k_replacer_test.cpp.o
+[ 57%] Building CXX object test/CMakeFiles/clock_replacer_test.dir/buffer/clock_replacer_test.cpp.o
+[ 57%] Building CXX object test/CMakeFiles/buffer_pool_manager_test.dir/buffer/buffer_pool_manager_test.cpp.o
+[ 57%] Building CXX object test/CMakeFiles/crash_test.dir/backtrace/crash_test.cpp.o
+[ 57%] Building CXX object test/CMakeFiles/arc_replacer_performance_test.dir/buffer/arc_replacer_performance_test.cpp.o
+[ 57%] Building CXX object test/CMakeFiles/arc_replacer_test.dir/buffer/arc_replacer_test.cpp.o
+[ 57%] Building CXX object test/CMakeFiles/lru_replacer_test.dir/buffer/lru_replacer_test.cpp.o
+[ 58%] Building CXX object test/CMakeFiles/crash_test.dir/__/tools/backtrace.cpp.o
+[ 59%] Building CXX object test/CMakeFiles/clock_replacer_test.dir/__/tools/backtrace.cpp.o
+[ 59%] Building CXX object test/CMakeFiles/lru_replacer_test.dir/__/tools/backtrace.cpp.o
+[ 59%] Building CXX object test/CMakeFiles/arc_replacer_test.dir/__/tools/backtrace.cpp.o
+[ 59%] Building CXX object test/CMakeFiles/arc_replacer_performance_test.dir/__/tools/backtrace.cpp.o
+[ 59%] Building CXX object test/CMakeFiles/lru_k_replacer_test.dir/__/tools/backtrace.cpp.o
+[ 60%] Building CXX object test/CMakeFiles/buffer_pool_manager_test.dir/__/tools/backtrace.cpp.o
+[ 60%] Linking CXX executable crash_test
+[ 60%] Linking CXX executable clock_replacer_test
+[ 61%] Linking CXX executable lru_replacer_test
+[ 62%] Linking CXX executable arc_replacer_test
+[ 63%] Linking CXX executable arc_replacer_performance_test
+[ 63%] Built target crash_test
+[ 63%] Building CXX object test/CMakeFiles/binder_test.dir/__/tools/backtrace.cpp.o
+[ 63%] Built target clock_replacer_test
+[ 64%] Building CXX object test/CMakeFiles/rwlatch_test.dir/common/rwlatch_test.cpp.o
+[ 64%] Built target lru_replacer_test
+[ 64%] Building CXX object test/CMakeFiles/rwlatch_test.dir/__/tools/backtrace.cpp.o
+[ 65%] Linking CXX executable lru_k_replacer_test
+[ 65%] Built target arc_replacer_test
+[ 65%] Building CXX object test/CMakeFiles/extendible_htable_concurrent_test.dir/container/disk/hash/extendible_htable_concurrent_test.cpp.o
+[ 65%] Built target arc_replacer_performance_test
+[ 65%] Building CXX object test/CMakeFiles/extendible_htable_concurrent_test.dir/__/tools/backtrace.cpp.o
+[ 65%] Building CXX object test/CMakeFiles/extendible_htable_test.dir/container/disk/hash/extendible_htable_test.cpp.o
+[ 65%] Built target lru_k_replacer_test
+[ 65%] Building CXX object test/CMakeFiles/extendible_htable_test.dir/__/tools/backtrace.cpp.o
+[ 65%] Linking CXX executable buffer_pool_manager_test
+[ 65%] Building CXX object test/CMakeFiles/hash_table_page_test.dir/container/disk/hash/hash_table_page_test.cpp.o
+[ 67%] Building CXX object test/CMakeFiles/hash_table_page_test.dir/__/tools/backtrace.cpp.o
+[ 67%] Built target buffer_pool_manager_test
+[ 67%] Building CXX object test/CMakeFiles/hash_table_test.dir/container/disk/hash/hash_table_test.cpp.o
+[ 68%] Building CXX object test/CMakeFiles/hash_table_test.dir/__/tools/backtrace.cpp.o
+[ 68%] Linking CXX executable binder_test
+[ 68%] Linking CXX executable rwlatch_test
+[ 68%] Building CXX object test/CMakeFiles/count_min_sketch_test.dir/primer/count_min_sketch_test.cpp.o
+[ 68%] Built target rwlatch_test
+[ 69%] Building CXX object test/CMakeFiles/count_min_sketch_test.dir/__/tools/backtrace.cpp.o
+[ 69%] Building CXX object test/CMakeFiles/hyperloglog_test.dir/primer/hyperloglog_test.cpp.o
+[ 70%] Linking CXX executable extendible_htable_test
+[ 70%] Built target binder_test
+[ 70%] Building CXX object test/CMakeFiles/hyperloglog_test.dir/__/tools/backtrace.cpp.o
+[ 70%] Built target extendible_htable_test
+[ 71%] Building CXX object test/CMakeFiles/orset_test.dir/primer/orset_test.cpp.o
+[ 72%] Linking CXX executable extendible_htable_concurrent_test
+[ 72%] Linking CXX executable hash_table_page_test
+[ 72%] Linking CXX executable hash_table_test
+[ 72%] Built target hash_table_page_test
+[ 72%] Building CXX object test/CMakeFiles/orset_test.dir/__/tools/backtrace.cpp.o
+[ 72%] Built target extendible_htable_concurrent_test
+[ 72%] Building CXX object test/CMakeFiles/skiplist_test.dir/primer/skiplist_test.cpp.o
+[ 72%] Built target hash_table_test
+[ 73%] Building CXX object test/CMakeFiles/skiplist_test.dir/__/tools/backtrace.cpp.o
+[ 73%] Building CXX object test/CMakeFiles/trie_debug_test.dir/primer/trie_debug_test.cpp.o
+[ 73%] Building CXX object test/CMakeFiles/trie_noncopy_test.dir/primer/trie_noncopy_test.cpp.o
+[ 73%] Building CXX object test/CMakeFiles/trie_debug_test.dir/__/tools/backtrace.cpp.o
+[ 74%] Linking CXX executable hyperloglog_test
+[ 74%] Built target hyperloglog_test
+[ 74%] Building CXX object test/CMakeFiles/trie_noncopy_test.dir/__/tools/backtrace.cpp.o
+[ 74%] Linking CXX executable count_min_sketch_test
+[ 74%] Built target count_min_sketch_test
+[ 74%] Building CXX object test/CMakeFiles/trie_store_noncopy_test.dir/primer/trie_store_noncopy_test.cpp.o
+[ 74%] Linking CXX executable orset_test
+[ 74%] Building CXX object test/CMakeFiles/trie_store_test.dir/primer/trie_store_test.cpp.o
+[ 74%] Linking CXX executable skiplist_test
+[ 74%] Built target orset_test
+[ 74%] Building CXX object test/CMakeFiles/trie_store_noncopy_test.dir/__/tools/backtrace.cpp.o
+[ 74%] Building CXX object test/CMakeFiles/trie_store_test.dir/__/tools/backtrace.cpp.o
+[ 74%] Building CXX object test/CMakeFiles/trie_test.dir/primer/trie_test.cpp.o
+[ 74%] Built target skiplist_test
+[ 74%] Building CXX object test/CMakeFiles/trie_test.dir/__/tools/backtrace.cpp.o
+[ 75%] Linking CXX executable trie_debug_test
+/usr/bin/ld: CMakeFiles/trie_debug_test.dir/primer/trie_debug_test.cpp.o: in function `bustub::TrieDebugger_TestCase_Test::TestBody()':
+/app/cmu15_445/test/primer/trie_debug_test.cpp:52:(.text+0x11b7): undefined reference to `bustub::Trie bustub::Trie::Put<unsigned int>(std::basic_string_view<char, std::char_traits<char> >, unsigned int) const'
+collect2: error: ld returned 1 exit status
+make[3]: *** [test/CMakeFiles/trie_debug_test.dir/build.make:125: test/trie_debug_test] Error 1
+make[2]: *** [CMakeFiles/Makefile2:3264: test/CMakeFiles/trie_debug_test.dir/all] Error 2
+make[2]: *** Waiting for unfinished jobs....
+[ 76%] Linking CXX executable trie_noncopy_test
+/usr/bin/ld: CMakeFiles/trie_noncopy_test.dir/primer/trie_noncopy_test.cpp.o: in function `bustub::TrieTest_NonCopyableTest_Test::TestBody()':
+/app/cmu15_445/test/primer/trie_noncopy_test.cpp:31:(.text+0x454): undefined reference to `bustub::Trie bustub::Trie::Put<std::unique_ptr<unsigned int, std::default_delete<unsigned int> > >(std::basic_string_view<char, std::char_traits<char> >, std::unique_ptr<unsigned int, std::default_delete<unsigned int> >) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_noncopy_test.cpp:32:(.text+0x640): undefined reference to `bustub::Trie bustub::Trie::Put<std::unique_ptr<unsigned int, std::default_delete<unsigned int> > >(std::basic_string_view<char, std::char_traits<char> >, std::unique_ptr<unsigned int, std::default_delete<unsigned int> >) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_noncopy_test.cpp:33:(.text+0x82c): undefined reference to `bustub::Trie bustub::Trie::Put<std::unique_ptr<unsigned int, std::default_delete<unsigned int> > >(std::basic_string_view<char, std::char_traits<char> >, std::unique_ptr<unsigned int, std::default_delete<unsigned int> >) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_noncopy_test.cpp:34:(.text+0x991): undefined reference to `std::unique_ptr<unsigned int, std::default_delete<unsigned int> > const* bustub::Trie::Get<std::unique_ptr<unsigned int, std::default_delete<unsigned int> > >(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_noncopy_test.cpp:35:(.text+0xc23): undefined reference to `std::unique_ptr<unsigned int, std::default_delete<unsigned int> > const* bustub::Trie::Get<std::unique_ptr<unsigned int, std::default_delete<unsigned int> > >(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_noncopy_test.cpp:36:(.text+0xeb5): undefined reference to `std::unique_ptr<unsigned int, std::default_delete<unsigned int> > const* bustub::Trie::Get<std::unique_ptr<unsigned int, std::default_delete<unsigned int> > >(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_noncopy_test.cpp:40:(.text+0x146c): undefined reference to `std::unique_ptr<unsigned int, std::default_delete<unsigned int> > const* bustub::Trie::Get<std::unique_ptr<unsigned int, std::default_delete<unsigned int> > >(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_noncopy_test.cpp:41:(.text+0x1734): undefined reference to `std::unique_ptr<unsigned int, std::default_delete<unsigned int> > const* bustub::Trie::Get<std::unique_ptr<unsigned int, std::default_delete<unsigned int> > >(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: CMakeFiles/trie_noncopy_test.dir/primer/trie_noncopy_test.cpp.o:/app/cmu15_445/test/primer/trie_noncopy_test.cpp:42: more undefined references to `std::unique_ptr<unsigned int, std::default_delete<unsigned int> > const* bustub::Trie::Get<std::unique_ptr<unsigned int, std::default_delete<unsigned int> > >(std::basic_string_view<char, std::char_traits<char> >) const' follow
+collect2: error: ld returned 1 exit status
+make[3]: *** [test/CMakeFiles/trie_noncopy_test.dir/build.make:125: test/trie_noncopy_test] Error 1
+make[2]: *** [CMakeFiles/Makefile2:3313: test/CMakeFiles/trie_noncopy_test.dir/all] Error 2
+[ 78%] Linking CXX executable trie_store_noncopy_test
+[ 79%] Linking CXX executable trie_store_test
+[ 80%] Linking CXX executable trie_test
+[ 80%] Built target trie_store_noncopy_test
+[ 80%] Built target trie_store_test
+/usr/bin/ld: CMakeFiles/trie_test.dir/primer/trie_test.cpp.o: in function `bustub::TrieTest_BasicPutTest_Test::TestBody()':
+/app/cmu15_445/test/primer/trie_test.cpp:31:(.text+0x36b): undefined reference to `bustub::Trie bustub::Trie::Put<unsigned int>(std::basic_string_view<char, std::char_traits<char> >, unsigned int) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:32:(.text+0x47b): undefined reference to `bustub::Trie bustub::Trie::Put<unsigned long>(std::basic_string_view<char, std::char_traits<char> >, unsigned long) const'
+/usr/bin/ld: CMakeFiles/trie_test.dir/primer/trie_test.cpp.o: in function `bustub::TrieTest_TrieStructureCheck_Test::TestBody()':
+/app/cmu15_445/test/primer/trie_test.cpp:40:(.text+0xe29): undefined reference to `bustub::Trie bustub::Trie::Put<unsigned int>(std::basic_string_view<char, std::char_traits<char> >, unsigned int) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:41:(.text+0xf57): undefined reference to `unsigned int const* bustub::Trie::Get<unsigned int>(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: CMakeFiles/trie_test.dir/primer/trie_test.cpp.o: in function `bustub::TrieTest_BasicPutGetTest_Test::TestBody()':
+/app/cmu15_445/test/primer/trie_test.cpp:56:(.text+0x3229): undefined reference to `bustub::Trie bustub::Trie::Put<unsigned int>(std::basic_string_view<char, std::char_traits<char> >, unsigned int) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:57:(.text+0x3357): undefined reference to `unsigned int const* bustub::Trie::Get<unsigned int>(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:59:(.text+0x35c3): undefined reference to `bustub::Trie bustub::Trie::Put<unsigned int>(std::basic_string_view<char, std::char_traits<char> >, unsigned int) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:60:(.text+0x36f1): undefined reference to `unsigned int const* bustub::Trie::Get<unsigned int>(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: CMakeFiles/trie_test.dir/primer/trie_test.cpp.o: in function `bustub::TrieTest_PutGetOnePath_Test::TestBody()':
+/app/cmu15_445/test/primer/trie_test.cpp:73:(.text+0x4c0f): undefined reference to `bustub::Trie bustub::Trie::Put<unsigned int>(std::basic_string_view<char, std::char_traits<char> >, unsigned int) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:74:(.text+0x4d1f): undefined reference to `bustub::Trie bustub::Trie::Put<unsigned int>(std::basic_string_view<char, std::char_traits<char> >, unsigned int) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:75:(.text+0x4e2f): undefined reference to `bustub::Trie bustub::Trie::Put<unsigned int>(std::basic_string_view<char, std::char_traits<char> >, unsigned int) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:76:(.text+0x4f3f): undefined reference to `bustub::Trie bustub::Trie::Put<unsigned int>(std::basic_string_view<char, std::char_traits<char> >, unsigned int) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:77:(.text+0x506d): undefined reference to `unsigned int const* bustub::Trie::Get<unsigned int>(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:78:(.text+0x52e8): undefined reference to `unsigned int const* bustub::Trie::Get<unsigned int>(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:79:(.text+0x555d): undefined reference to `unsigned int const* bustub::Trie::Get<unsigned int>(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: CMakeFiles/trie_test.dir/primer/trie_test.cpp.o: in function `bustub::TrieTest_BasicRemoveTest1_Test::TestBody()':
+/app/cmu15_445/test/primer/trie_test.cpp:85:(.text+0x5eef): undefined reference to `bustub::Trie bustub::Trie::Put<unsigned int>(std::basic_string_view<char, std::char_traits<char> >, unsigned int) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:86:(.text+0x601d): undefined reference to `unsigned int const* bustub::Trie::Get<unsigned int>(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:87:(.text+0x6289): undefined reference to `bustub::Trie bustub::Trie::Put<unsigned int>(std::basic_string_view<char, std::char_traits<char> >, unsigned int) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:88:(.text+0x63b7): undefined reference to `unsigned int const* bustub::Trie::Get<unsigned int>(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:89:(.text+0x6623): undefined reference to `bustub::Trie bustub::Trie::Put<unsigned int>(std::basic_string_view<char, std::char_traits<char> >, unsigned int) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:90:(.text+0x6751): undefined reference to `unsigned int const* bustub::Trie::Get<unsigned int>(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:96:(.text+0x6d00): undefined reference to `unsigned int const* bustub::Trie::Get<unsigned int>(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:97:(.text+0x6fc8): undefined reference to `unsigned int const* bustub::Trie::Get<unsigned int>(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:98:(.text+0x728a): undefined reference to `unsigned int const* bustub::Trie::Get<unsigned int>(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: CMakeFiles/trie_test.dir/primer/trie_test.cpp.o: in function `bustub::TrieTest_BasicRemoveTest2_Test::TestBody()':
+/app/cmu15_445/test/primer/trie_test.cpp:104:(.text+0x7fe1): undefined reference to `bustub::Trie bustub::Trie::Put<unsigned int>(std::basic_string_view<char, std::char_traits<char> >, unsigned int) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:105:(.text+0x810f): undefined reference to `unsigned int const* bustub::Trie::Get<unsigned int>(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:106:(.text+0x837b): undefined reference to `bustub::Trie bustub::Trie::Put<unsigned int>(std::basic_string_view<char, std::char_traits<char> >, unsigned int) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:107:(.text+0x84a9): undefined reference to `unsigned int const* bustub::Trie::Get<unsigned int>(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:108:(.text+0x8715): undefined reference to `bustub::Trie bustub::Trie::Put<unsigned int>(std::basic_string_view<char, std::char_traits<char> >, unsigned int) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:109:(.text+0x8843): undefined reference to `unsigned int const* bustub::Trie::Get<unsigned int>(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:110:(.text+0x8aaf): undefined reference to `bustub::Trie bustub::Trie::Put<unsigned int>(std::basic_string_view<char, std::char_traits<char> >, unsigned int) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:111:(.text+0x8bdd): undefined reference to `unsigned int const* bustub::Trie::Get<unsigned int>(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:118:(.text+0x9296): undefined reference to `unsigned int const* bustub::Trie::Get<unsigned int>(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:119:(.text+0x956d): undefined reference to `unsigned int const* bustub::Trie::Get<unsigned int>(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:120:(.text+0x9835): undefined reference to `unsigned int const* bustub::Trie::Get<unsigned int>(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:121:(.text+0x9af7): undefined reference to `unsigned int const* bustub::Trie::Get<unsigned int>(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: CMakeFiles/trie_test.dir/primer/trie_test.cpp.o: in function `bustub::TrieTest_RemoveFreeTest_Test::TestBody()':
+/app/cmu15_445/test/primer/trie_test.cpp:126:(.text+0xa8d5): undefined reference to `bustub::Trie bustub::Trie::Put<unsigned int>(std::basic_string_view<char, std::char_traits<char> >, unsigned int) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:127:(.text+0xa9e5): undefined reference to `bustub::Trie bustub::Trie::Put<unsigned int>(std::basic_string_view<char, std::char_traits<char> >, unsigned int) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:128:(.text+0xaaf5): undefined reference to `bustub::Trie bustub::Trie::Put<unsigned int>(std::basic_string_view<char, std::char_traits<char> >, unsigned int) const'
+/usr/bin/ld: CMakeFiles/trie_test.dir/primer/trie_test.cpp.o: in function `bustub::TrieTest_MismatchTypeTest_Test::TestBody()':
+/app/cmu15_445/test/primer/trie_test.cpp:139:(.text+0xbaef): undefined reference to `bustub::Trie bustub::Trie::Put<unsigned int>(std::basic_string_view<char, std::char_traits<char> >, unsigned int) const'
+/usr/bin/ld: CMakeFiles/trie_test.dir/primer/trie_test.cpp.o: in function `bustub::TrieTest_CopyOnWriteTest1_Test::TestBody()':
+/app/cmu15_445/test/primer/trie_test.cpp:146:(.text+0xc4b7): undefined reference to `bustub::Trie bustub::Trie::Put<unsigned int>(std::basic_string_view<char, std::char_traits<char> >, unsigned int) const'
+/usr/bin/ld: CMakeFiles/trie_test.dir/primer/trie_test.cpp.o:/app/cmu15_445/test/primer/trie_test.cpp:147: more undefined references to `bustub::Trie bustub::Trie::Put<unsigned int>(std::basic_string_view<char, std::char_traits<char> >, unsigned int) const' follow
+/usr/bin/ld: CMakeFiles/trie_test.dir/primer/trie_test.cpp.o: in function `bustub::TrieTest_CopyOnWriteTest1_Test::TestBody()':
+/app/cmu15_445/test/primer/trie_test.cpp:156:(.text+0xc9af): undefined reference to `unsigned int const* bustub::Trie::Get<unsigned int>(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:157:(.text+0xcc39): undefined reference to `unsigned int const* bustub::Trie::Get<unsigned int>(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:158:(.text+0xcec3): undefined reference to `unsigned int const* bustub::Trie::Get<unsigned int>(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:160:(.text+0xd154): undefined reference to `unsigned int const* bustub::Trie::Get<unsigned int>(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:161:(.text+0xd424): undefined reference to `unsigned int const* bustub::Trie::Get<unsigned int>(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: CMakeFiles/trie_test.dir/primer/trie_test.cpp.o:/app/cmu15_445/test/primer/trie_test.cpp:162: more undefined references to `unsigned int const* bustub::Trie::Get<unsigned int>(std::basic_string_view<char, std::char_traits<char> >) const' follow
+/usr/bin/ld: CMakeFiles/trie_test.dir/primer/trie_test.cpp.o: in function `bustub::TrieTest_CopyOnWriteTest2_Test::TestBody()':
+/app/cmu15_445/test/primer/trie_test.cpp:176:(.text+0xf959): undefined reference to `bustub::Trie bustub::Trie::Put<unsigned int>(std::basic_string_view<char, std::char_traits<char> >, unsigned int) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:177:(.text+0xfa2b): undefined reference to `bustub::Trie bustub::Trie::Put<unsigned int>(std::basic_string_view<char, std::char_traits<char> >, unsigned int) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:178:(.text+0xfafd): undefined reference to `bustub::Trie bustub::Trie::Put<unsigned int>(std::basic_string_view<char, std::char_traits<char> >, unsigned int) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:186:(.text+0x1004f): undefined reference to `unsigned int const* bustub::Trie::Get<unsigned int>(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:187:(.text+0x102d9): undefined reference to `unsigned int const* bustub::Trie::Get<unsigned int>(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:188:(.text+0x10563): undefined reference to `unsigned int const* bustub::Trie::Get<unsigned int>(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:191:(.text+0x10a10): undefined reference to `unsigned int const* bustub::Trie::Get<unsigned int>(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:192:(.text+0x10c9a): undefined reference to `unsigned int const* bustub::Trie::Get<unsigned int>(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: CMakeFiles/trie_test.dir/primer/trie_test.cpp.o:/app/cmu15_445/test/primer/trie_test.cpp:194: more undefined references to `unsigned int const* bustub::Trie::Get<unsigned int>(std::basic_string_view<char, std::char_traits<char> >) const' follow
+/usr/bin/ld: CMakeFiles/trie_test.dir/primer/trie_test.cpp.o: in function `bustub::TrieTest_CopyOnWriteTest3_Test::TestBody()':
+/app/cmu15_445/test/primer/trie_test.cpp:206:(.text+0x12eaf): undefined reference to `bustub::Trie bustub::Trie::Put<unsigned int>(std::basic_string_view<char, std::char_traits<char> >, unsigned int) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:207:(.text+0x12f81): undefined reference to `bustub::Trie bustub::Trie::Put<unsigned int>(std::basic_string_view<char, std::char_traits<char> >, unsigned int) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:208:(.text+0x13053): undefined reference to `bustub::Trie bustub::Trie::Put<unsigned int>(std::basic_string_view<char, std::char_traits<char> >, unsigned int) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:216:(.text+0x135a5): undefined reference to `unsigned int const* bustub::Trie::Get<unsigned int>(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:217:(.text+0x1382f): undefined reference to `unsigned int const* bustub::Trie::Get<unsigned int>(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:218:(.text+0x13ab9): undefined reference to `unsigned int const* bustub::Trie::Get<unsigned int>(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:221:(.text+0x13f66): undefined reference to `unsigned int const* bustub::Trie::Get<unsigned int>(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:222:(.text+0x141f0): undefined reference to `unsigned int const* bustub::Trie::Get<unsigned int>(std::basic_string_view<char, std::char_traits<char> >) const'
+/usr/bin/ld: CMakeFiles/trie_test.dir/primer/trie_test.cpp.o:/app/cmu15_445/test/primer/trie_test.cpp:224: more undefined references to `unsigned int const* bustub::Trie::Get<unsigned int>(std::basic_string_view<char, std::char_traits<char> >) const' follow
+/usr/bin/ld: CMakeFiles/trie_test.dir/primer/trie_test.cpp.o: in function `bustub::TrieTest_PointerStability_Test::TestBody()':
+/app/cmu15_445/test/primer/trie_test.cpp:289:(.text+0x19597): undefined reference to `bustub::Trie bustub::Trie::Put<unsigned int>(std::basic_string_view<char, std::char_traits<char> >, unsigned int) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:291:(.text+0x19738): undefined reference to `bustub::Trie bustub::Trie::Put<unsigned int>(std::basic_string_view<char, std::char_traits<char> >, unsigned int) const'
+/usr/bin/ld: /app/cmu15_445/test/primer/trie_test.cpp:292:(.text+0x1983f): undefined reference to `bustub::Trie bustub::Trie::Put<unsigned int>(std::basic_string_view<char, std::char_traits<char> >, unsigned int) const'
+collect2: error: ld returned 1 exit status
+make[3]: *** [test/CMakeFiles/trie_test.dir/build.make:125: test/trie_test] Error 1
+make[2]: *** [CMakeFiles/Makefile2:3460: test/CMakeFiles/trie_test.dir/all] Error 2
+make[1]: *** [CMakeFiles/Makefile2:2297: test/CMakeFiles/build-tests.dir/rule] Error 2
+make: *** [Makefile:823: build-tests] Error 2
+Test project /app/cmu15_445/build
+    Start  98: TrieStoreTest.NonCopyableTest
+1/9 Test  #98: TrieStoreTest.NonCopyableTest .......Subprocess aborted***Exception:   1.35 sec
+    Start  99: TrieStoreTest.ReadWriteTest
+2/9 Test  #99: TrieStoreTest.ReadWriteTest .........Subprocess aborted***Exception:   1.35 sec
+    Start 100: TrieStoreTest.BasicTest
+3/9 Test #100: TrieStoreTest.BasicTest .............Subprocess aborted***Exception:   1.38 sec
+    Start 101: TrieStoreTest.GuardTest
+4/9 Test #101: TrieStoreTest.GuardTest .............Subprocess aborted***Exception:   1.38 sec
+    Start 102: TrieStoreTest.MixedTest
+5/9 Test #102: TrieStoreTest.MixedTest .............Subprocess aborted***Exception:   1.36 sec
+    Start 103: TrieStoreTest.MixedConcurrentTest
+6/9 Test #103: TrieStoreTest.MixedConcurrentTest ...Subprocess aborted***Exception:   1.79 sec
+    Start 123: SQLLogicTest.p0.01-lower-upper
+7/9 Test #123: SQLLogicTest.p0.01-lower-upper ......Subprocess aborted***Exception:   0.13 sec
+    Start 124: SQLLogicTest.p0.02-function-error
+8/9 Test #124: SQLLogicTest.p0.02-function-error ...Subprocess aborted***Exception:   0.13 sec
+    Start 125: SQLLogicTest.p0.03-string-scan
+9/9 Test #125: SQLLogicTest.p0.03-string-scan ......Subprocess aborted***Exception:   0.13 sec
+
+0% tests passed, 9 tests failed out of 9
+
+Total Test time (real) =   9.01 sec
+
+The following tests FAILED:
+	 98 - TrieStoreTest.NonCopyableTest (Subprocess aborted)
+	 99 - TrieStoreTest.ReadWriteTest (Subprocess aborted)
+	100 - TrieStoreTest.BasicTest (Subprocess aborted)
+	101 - TrieStoreTest.GuardTest (Subprocess aborted)
+	102 - TrieStoreTest.MixedTest (Subprocess aborted)
+	103 - TrieStoreTest.MixedConcurrentTest (Subprocess aborted)
+	123 - SQLLogicTest.p0.01-lower-upper (Subprocess aborted)
+	124 - SQLLogicTest.p0.02-function-error (Subprocess aborted)
+	125 - SQLLogicTest.p0.03-string-scan (Subprocess aborted)
+Errors while running CTest
+Output from these tests are in: /app/cmu15_445/build/Testing/Temporary/LastTest.log
+Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.

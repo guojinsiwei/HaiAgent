@@ -1,0 +1,719 @@
+[  0%] Building CXX object third_party/backward-cpp/CMakeFiles/backward_object.dir/backward.cpp.o
+[  0%] Building C object third_party/utf8proc/CMakeFiles/utf8proc.dir/utf8proc.c.o
+[  0%] Building CXX object third_party/murmur3/CMakeFiles/bustub_murmur3.dir/MurmurHash3.cpp.o
+[  0%] Building CXX object third_party/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[  0%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/postgres_parser.cpp.o
+[  0%] Building CXX object third_party/fmt/CMakeFiles/fmt.dir/src/format.cc.o
+[  0%] Building C object third_party/linenoise/CMakeFiles/bustub_linenoise.dir/linenoise.c.o
+[  0%] Building C object third_party/libfort/lib/CMakeFiles/fort.dir/fort.c.o
+[  1%] Linking C static library ../../lib/libbustub_linenoise.a
+[  1%] Built target bustub_linenoise
+[  1%] Building CXX object third_party/fmt/CMakeFiles/fmt.dir/src/os.cc.o
+[  1%] Linking CXX static library ../../lib/libbustub_murmur3.a
+[  3%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/pg_functions.cpp.o
+[  3%] Built target bustub_murmur3
+[  3%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_parser.cpp.o
+[  3%] Linking C static library ../../../lib/libfort.a
+/usr/bin/ar qc ../../../lib/libfort.a CMakeFiles/fort.dir/fort.c.o
+/usr/bin/ranlib ../../../lib/libfort.a
+[  3%] Built target fort
+[  3%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_gram.cpp.o
+[  5%] Linking C static library ../../lib/libutf8proc.a
+[  5%] Built target utf8proc
+[  6%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_nodes_list.cpp.o
+[  8%] Building CXX object third_party/backward-cpp/CMakeFiles/backward.dir/backward.cpp.o
+[  8%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_scansup.cpp.o
+[ 10%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.o
+[ 11%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/binder.cpp.o
+[ 11%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_projection.cpp.o
+[ 11%] Built target backward_object
+[ 11%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_nodes_makefuncs.cpp.o
+[ 11%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_nlj.cpp.o
+[ 13%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_nodes_value.cpp.o
+[ 13%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_scan.cpp.o
+[ 15%] Linking CXX static library ../../lib/libfmtd.a
+[ 15%] Linking CXX static library ../../lib/libbackward.a
+[ 15%] Built target fmt
+[ 15%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/bind_create.cpp.o
+[ 15%] Built target backward
+[ 16%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_scan.cpp.o
+[ 16%] Building CXX object third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_common_keywords.cpp.o
+[ 16%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/bind_insert.cpp.o
+[ 16%] Building CXX object src/binder/statement/CMakeFiles/bustub_statement.dir/create_statement.cpp.o
+[ 16%] Building CXX object src/buffer/CMakeFiles/bustub_buffer.dir/buffer_pool_manager.cpp.o
+[ 18%] Linking CXX static library ../../lib/libduckdb_pg_query.a
+[ 18%] Built target duckdb_pg_query
+[ 18%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_hash_join.cpp.o
+[ 18%] Building CXX object src/binder/statement/CMakeFiles/bustub_statement.dir/delete_statement.cpp.o
+[ 18%] Building CXX object src/buffer/CMakeFiles/bustub_buffer.dir/arc_replacer.cpp.o
+[ 20%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/bind_select.cpp.o
+[ 21%] Building CXX object src/catalog/CMakeFiles/bustub_catalog.dir/column.cpp.o
+[ 21%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_index_join.cpp.o
+[ 23%] Building CXX object src/common/CMakeFiles/bustub_common.dir/bustub_instance.cpp.o
+[ 25%] Building CXX object src/binder/statement/CMakeFiles/bustub_statement.dir/explain_statement.cpp.o
+[ 25%] Building CXX object src/common/CMakeFiles/bustub_common.dir/bustub_ddl.cpp.o
+[ 25%] Building CXX object src/catalog/CMakeFiles/bustub_catalog.dir/table_generator.cpp.o
+[ 26%] Building CXX object src/buffer/CMakeFiles/bustub_buffer.dir/clock_replacer.cpp.o
+[ 26%] Linking CXX static library ../../../lib/libgtest.a
+[ 26%] Built target gtest
+[ 28%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer.cpp.o
+[ 28%] Building CXX object src/buffer/CMakeFiles/bustub_buffer.dir/lru_replacer.cpp.o
+[ 28%] Building CXX object src/buffer/CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.o
+[ 28%] Built target bustub_buffer
+[ 28%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/bind_variable.cpp.o
+[ 28%] Building CXX object src/binder/statement/CMakeFiles/bustub_statement.dir/index_statement.cpp.o
+[ 28%] Building CXX object src/binder/statement/CMakeFiles/bustub_statement.dir/insert_statement.cpp.o
+[ 28%] Building CXX object src/catalog/CMakeFiles/bustub_catalog.dir/schema.cpp.o
+[ 28%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.o
+[ 28%] Building CXX object src/common/CMakeFiles/bustub_common.dir/config.cpp.o
+[ 28%] Built target bustub_catalog
+[ 28%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/bound_statement.cpp.o
+[ 28%] Building CXX object src/concurrency/CMakeFiles/bustub_concurrency.dir/transaction_manager.cpp.o
+[ 30%] Building CXX object src/binder/statement/CMakeFiles/bustub_statement.dir/select_statement.cpp.o
+[ 31%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/fmt_impl.cpp.o
+[ 31%] Building CXX object src/container/disk/hash/CMakeFiles/bustub_container_disk_hash.dir/disk_extendible_hash_table.cpp.o
+[ 31%] Building CXX object src/binder/statement/CMakeFiles/bustub_statement.dir/update_statement.cpp.o
+[ 31%] Building CXX object src/concurrency/CMakeFiles/bustub_concurrency.dir/transaction_manager_impl.cpp.o
+[ 33%] Building CXX object src/common/CMakeFiles/bustub_common.dir/util/string_util.cpp.o
+[ 33%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_internal.cpp.o
+[ 35%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.o
+[ 35%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/aggregation_executor.cpp.o
+[ 35%] Building CXX object src/container/disk/hash/CMakeFiles/bustub_container_disk_hash.dir/linear_probe_hash_table.cpp.o
+[ 35%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/delete_executor.cpp.o
+[ 35%] Built target bustub_statement
+[ 35%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/keyword_helper.cpp.o
+[ 35%] Built target bustub_common
+[ 35%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/sort_limit_as_topn.cpp.o
+[ 36%] Building CXX object src/container/disk/hash/CMakeFiles/bustub_container_disk_hash.dir/disk_extendible_hash_table_utils.cpp.o
+[ 38%] Building CXX object src/concurrency/CMakeFiles/bustub_concurrency.dir/watermark.cpp.o
+[ 40%] Building CXX object src/recovery/CMakeFiles/bustub_recovery.dir/log_manager.cpp.o
+[ 40%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/seqscan_as_indexscan.cpp.o
+[ 41%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/execution_common.cpp.o
+[ 41%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/node_tag_to_string.cpp.o
+[ 41%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/external_merge_sort_executor.cpp.o
+[ 41%] Building CXX object src/storage/disk/CMakeFiles/bustub_storage_disk.dir/disk_manager.cpp.o
+[ 41%] Built target bustub_concurrency
+[ 43%] Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/column_pruning.cpp.o
+[ 43%] Built target bustub_container_disk_hash
+[ 45%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/transformer.cpp.o
+[ 45%] Built target bustub_recovery
+[ 45%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/executor_factory.cpp.o
+[ 46%] Building CXX object src/storage/disk/CMakeFiles/bustub_storage_disk.dir/disk_manager_memory.cpp.o
+[ 46%] Building CXX object src/storage/index/CMakeFiles/bustub_storage_index.dir/b_plus_tree_index.cpp.o
+[ 46%] Building CXX object src/storage/disk/CMakeFiles/bustub_storage_disk.dir/disk_scheduler.cpp.o
+[ 48%] Building CXX object src/storage/index/CMakeFiles/bustub_storage_index.dir/b_plus_tree.cpp.o
+[ 48%] Built target bustub_optimizer
+[ 50%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/filter_executor.cpp.o
+[ 50%] Building CXX object src/storage/page/CMakeFiles/bustub_storage_page.dir/b_plus_tree_internal_page.cpp.o
+[ 50%] Building CXX object src/storage/index/CMakeFiles/bustub_storage_index.dir/extendible_hash_table_index.cpp.o
+[ 50%] Built target bustub_binder
+[ 50%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/fmt_impl.cpp.o
+[ 50%] Built target bustub_storage_disk
+In file included from /app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:17:
+/app/cmu15_445/src/include/storage/page/b_plus_tree_internal_page.h:22:40: error: no declaration matches 'ValueType bustub::BPlusTreeInternalPage<KeyType, ValueType, KeyComparator>::Lookup(const KeyType&, const KeyComparator&) const'
+   22 | #define B_PLUS_TREE_INTERNAL_PAGE_TYPE BPlusTreeInternalPage<KeyType, ValueType, KeyComparator>
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:103:6: note: in expansion of macro 'B_PLUS_TREE_INTERNAL_PAGE_TYPE'
+  103 | auto B_PLUS_TREE_INTERNAL_PAGE_TYPE::Lookup(const KeyType &key, const KeyComparator &comparator) const -> ValueType {
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/cmu15_445/src/include/storage/page/b_plus_tree_internal_page.h:70:8: note: candidate is: 'int bustub::BPlusTreeInternalPage<KeyType, ValueType, KeyComparator>::Lookup(const KeyType&, const KeyComparator&) const'
+   70 |   auto Lookup(const KeyType &key, const KeyComparator &comparator) const -> int;
+      |        ^~~~~~
+/app/cmu15_445/src/include/storage/page/b_plus_tree_internal_page.h:47:7: note: 'class bustub::BPlusTreeInternalPage<KeyType, ValueType, KeyComparator>' defined here
+   47 | class BPlusTreeInternalPage : public BPlusTreePage {
+      |       ^~~~~~~~~~~~~~~~~~~~~
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp: In member function 'void bustub::BPlusTreeInternalPage<KeyType, ValueType, KeyComparator>::InsertAt(int, const KeyType&, const ValueType&)':
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:135:3: error: there are no arguments to 'IncreaseSize' that depend on a template parameter, so a declaration of 'IncreaseSize' must be available [-fpermissive]
+  135 |   IncreaseSize(1);
+      |   ^~~~~~~~~~~~
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:135:3: note: (if you use '-fpermissive', G++ will accept your code, but allowing the use of an undeclared name is deprecated)
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp: In member function 'void bustub::BPlusTreeInternalPage<KeyType, ValueType, KeyComparator>::RemoveAt(int)':
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:149:3: error: there are no arguments to 'IncreaseSize' that depend on a template parameter, so a declaration of 'IncreaseSize' must be available [-fpermissive]
+  149 |   IncreaseSize(-1);
+      |   ^~~~~~~~~~~~
+[ 50%] Building CXX object src/storage/page/CMakeFiles/bustub_storage_page.dir/b_plus_tree_leaf_page.cpp.o
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp: In instantiation of 'void bustub::BPlusTreeInternalPage<KeyType, ValueType, KeyComparator>::InsertAt(int, const KeyType&, const ValueType&) [with KeyType = bustub::GenericKey<4>; ValueType = int; KeyComparator = bustub::GenericComparator<4>]':
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:171:16:   required from here
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:135:15: error: 'IncreaseSize' was not declared in this scope
+  135 |   IncreaseSize(1);
+      |   ~~~~~~~~~~~~^~~
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp: In instantiation of 'void bustub::BPlusTreeInternalPage<KeyType, ValueType, KeyComparator>::RemoveAt(int) [with KeyType = bustub::GenericKey<4>; ValueType = int; KeyComparator = bustub::GenericComparator<4>]':
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:171:16:   required from here
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:149:15: error: 'IncreaseSize' was not declared in this scope
+  149 |   IncreaseSize(-1);
+      |   ~~~~~~~~~~~~^~~~
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp: In instantiation of 'void bustub::BPlusTreeInternalPage<KeyType, ValueType, KeyComparator>::InsertAt(int, const KeyType&, const ValueType&) [with KeyType = bustub::GenericKey<8>; ValueType = int; KeyComparator = bustub::GenericComparator<8>]':
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:172:16:   required from here
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:135:15: error: 'IncreaseSize' was not declared in this scope
+  135 |   IncreaseSize(1);
+      |   ~~~~~~~~~~~~^~~
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp: In instantiation of 'void bustub::BPlusTreeInternalPage<KeyType, ValueType, KeyComparator>::RemoveAt(int) [with KeyType = bustub::GenericKey<8>; ValueType = int; KeyComparator = bustub::GenericComparator<8>]':
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:172:16:   required from here
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:149:15: error: 'IncreaseSize' was not declared in this scope
+  149 |   IncreaseSize(-1);
+      |   ~~~~~~~~~~~~^~~~
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp: In instantiation of 'void bustub::BPlusTreeInternalPage<KeyType, ValueType, KeyComparator>::InsertAt(int, const KeyType&, const ValueType&) [with KeyType = bustub::GenericKey<16>; ValueType = int; KeyComparator = bustub::GenericComparator<16>]':
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:173:16:   required from here
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:135:15: error: 'IncreaseSize' was not declared in this scope
+  135 |   IncreaseSize(1);
+      |   ~~~~~~~~~~~~^~~
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp: In instantiation of 'void bustub::BPlusTreeInternalPage<KeyType, ValueType, KeyComparator>::RemoveAt(int) [with KeyType = bustub::GenericKey<16>; ValueType = int; KeyComparator = bustub::GenericComparator<16>]':
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:173:16:   required from here
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:149:15: error: 'IncreaseSize' was not declared in this scope
+  149 |   IncreaseSize(-1);
+      |   ~~~~~~~~~~~~^~~~
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp: In instantiation of 'void bustub::BPlusTreeInternalPage<KeyType, ValueType, KeyComparator>::InsertAt(int, const KeyType&, const ValueType&) [with KeyType = bustub::GenericKey<32>; ValueType = int; KeyComparator = bustub::GenericComparator<32>]':
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:174:16:   required from here
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:135:15: error: 'IncreaseSize' was not declared in this scope
+  135 |   IncreaseSize(1);
+      |   ~~~~~~~~~~~~^~~
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp: In instantiation of 'void bustub::BPlusTreeInternalPage<KeyType, ValueType, KeyComparator>::RemoveAt(int) [with KeyType = bustub::GenericKey<32>; ValueType = int; KeyComparator = bustub::GenericComparator<32>]':
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:174:16:   required from here
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:149:15: error: 'IncreaseSize' was not declared in this scope
+  149 |   IncreaseSize(-1);
+      |   ~~~~~~~~~~~~^~~~
+[ 50%] Building CXX object src/storage/table/CMakeFiles/bustub_storage_table.dir/table_heap.cpp.o
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp: In instantiation of 'void bustub::BPlusTreeInternalPage<KeyType, ValueType, KeyComparator>::InsertAt(int, const KeyType&, const ValueType&) [with KeyType = bustub::GenericKey<64>; ValueType = int; KeyComparator = bustub::GenericComparator<64>]':
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:175:16:   required from here
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:135:15: error: 'IncreaseSize' was not declared in this scope
+  135 |   IncreaseSize(1);
+      |   ~~~~~~~~~~~~^~~
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp: In instantiation of 'void bustub::BPlusTreeInternalPage<KeyType, ValueType, KeyComparator>::RemoveAt(int) [with KeyType = bustub::GenericKey<64>; ValueType = int; KeyComparator = bustub::GenericComparator<64>]':
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:175:16:   required from here
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:149:15: error: 'IncreaseSize' was not declared in this scope
+  149 |   IncreaseSize(-1);
+      |   ~~~~~~~~~~~~^~~~
+make[2]: *** [src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make:76: src/storage/page/CMakeFiles/bustub_storage_page.dir/b_plus_tree_internal_page.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+[ 50%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/hash_join_executor.cpp.o
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp: In instantiation of 'std::vector<_Tp> bustub::BPlusTreeLeafPage<KeyType, ValueType, KeyComparator, NumTombs>::GetTombstones() const [with KeyType = bustub::GenericKey<4>; ValueType = bustub::RID; KeyComparator = bustub::GenericComparator<4>; long int NumTombs = 0]':
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:135:16:   required from here
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:51:23: error: comparison of integer expressions of different signedness: 'const size_t' {aka 'const long unsigned int'} and 'int' [-Werror=sign-compare]
+   51 |   if (num_tombstones_ < cnt) {
+      |       ~~~~~~~~~~~~~~~~^~~~~
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:55:25: error: no matching function for call to 'std::vector<bustub::GenericKey<4>, std::allocator<bustub::GenericKey<4> > >::push_back(const size_t&)'
+   55 |     tombstones.push_back(tombstones_[i]);
+      |     ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/13/vector:66,
+                 from /app/cmu15_445/src/include/storage/page/b_plus_tree_leaf_page.h:17,
+                 from /app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:17:
+/usr/include/c++/13/bits/stl_vector.h:1281:7: note: candidate: 'void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = bustub::GenericKey<4>; _Alloc = std::allocator<bustub::GenericKey<4> >; value_type = bustub::GenericKey<4>]'
+ 1281 |       push_back(const value_type& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1281:35: note:   no known conversion for argument 1 from 'const size_t' {aka 'const long unsigned int'} to 'const std::vector<bustub::GenericKey<4>, std::allocator<bustub::GenericKey<4> > >::value_type&' {aka 'const bustub::GenericKey<4>&'}
+ 1281 |       push_back(const value_type& __x)
+      |                 ~~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/bits/stl_vector.h:1298:7: note: candidate: 'void std::vector<_Tp, _Alloc>::push_back(value_type&&) [with _Tp = bustub::GenericKey<4>; _Alloc = std::allocator<bustub::GenericKey<4> >; value_type = bustub::GenericKey<4>]'
+ 1298 |       push_back(value_type&& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1298:30: note:   no known conversion for argument 1 from 'const size_t' {aka 'const long unsigned int'} to 'std::vector<bustub::GenericKey<4>, std::allocator<bustub::GenericKey<4> > >::value_type&&' {aka 'bustub::GenericKey<4>&&'}
+ 1298 |       push_back(value_type&& __x)
+      |                 ~~~~~~~~~~~~~^~~
+[ 50%] Building CXX object src/storage/index/CMakeFiles/bustub_storage_index.dir/index_iterator.cpp.o
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp: In instantiation of 'std::vector<_Tp> bustub::BPlusTreeLeafPage<KeyType, ValueType, KeyComparator, NumTombs>::GetTombstones() const [with KeyType = bustub::GenericKey<8>; ValueType = bustub::RID; KeyComparator = bustub::GenericComparator<8>; long int NumTombs = 0]':
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:137:16:   required from here
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:51:23: error: comparison of integer expressions of different signedness: 'const size_t' {aka 'const long unsigned int'} and 'int' [-Werror=sign-compare]
+   51 |   if (num_tombstones_ < cnt) {
+      |       ~~~~~~~~~~~~~~~~^~~~~
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:55:25: error: no matching function for call to 'std::vector<bustub::GenericKey<8>, std::allocator<bustub::GenericKey<8> > >::push_back(const size_t&)'
+   55 |     tombstones.push_back(tombstones_[i]);
+      |     ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1281:7: note: candidate: 'void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = bustub::GenericKey<8>; _Alloc = std::allocator<bustub::GenericKey<8> >; value_type = bustub::GenericKey<8>]'
+ 1281 |       push_back(const value_type& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1281:35: note:   no known conversion for argument 1 from 'const size_t' {aka 'const long unsigned int'} to 'const std::vector<bustub::GenericKey<8>, std::allocator<bustub::GenericKey<8> > >::value_type&' {aka 'const bustub::GenericKey<8>&'}
+ 1281 |       push_back(const value_type& __x)
+      |                 ~~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/bits/stl_vector.h:1298:7: note: candidate: 'void std::vector<_Tp, _Alloc>::push_back(value_type&&) [with _Tp = bustub::GenericKey<8>; _Alloc = std::allocator<bustub::GenericKey<8> >; value_type = bustub::GenericKey<8>]'
+ 1298 |       push_back(value_type&& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1298:30: note:   no known conversion for argument 1 from 'const size_t' {aka 'const long unsigned int'} to 'std::vector<bustub::GenericKey<8>, std::allocator<bustub::GenericKey<8> > >::value_type&&' {aka 'bustub::GenericKey<8>&&'}
+ 1298 |       push_back(value_type&& __x)
+      |                 ~~~~~~~~~~~~~^~~
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp: In instantiation of 'std::vector<_Tp> bustub::BPlusTreeLeafPage<KeyType, ValueType, KeyComparator, NumTombs>::GetTombstones() const [with KeyType = bustub::GenericKey<8>; ValueType = bustub::RID; KeyComparator = bustub::GenericComparator<8>; long int NumTombs = 3]':
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:138:16:   required from here
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:51:23: error: comparison of integer expressions of different signedness: 'const size_t' {aka 'const long unsigned int'} and 'int' [-Werror=sign-compare]
+   51 |   if (num_tombstones_ < cnt) {
+      |       ~~~~~~~~~~~~~~~~^~~~~
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:55:25: error: no matching function for call to 'std::vector<bustub::GenericKey<8>, std::allocator<bustub::GenericKey<8> > >::push_back(const size_t&)'
+   55 |     tombstones.push_back(tombstones_[i]);
+      |     ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1281:7: note: candidate: 'void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = bustub::GenericKey<8>; _Alloc = std::allocator<bustub::GenericKey<8> >; value_type = bustub::GenericKey<8>]'
+ 1281 |       push_back(const value_type& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1281:35: note:   no known conversion for argument 1 from 'const size_t' {aka 'const long unsigned int'} to 'const std::vector<bustub::GenericKey<8>, std::allocator<bustub::GenericKey<8> > >::value_type&' {aka 'const bustub::GenericKey<8>&'}
+ 1281 |       push_back(const value_type& __x)
+      |                 ~~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/bits/stl_vector.h:1298:7: note: candidate: 'void std::vector<_Tp, _Alloc>::push_back(value_type&&) [with _Tp = bustub::GenericKey<8>; _Alloc = std::allocator<bustub::GenericKey<8> >; value_type = bustub::GenericKey<8>]'
+ 1298 |       push_back(value_type&& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1298:30: note:   no known conversion for argument 1 from 'const size_t' {aka 'const long unsigned int'} to 'std::vector<bustub::GenericKey<8>, std::allocator<bustub::GenericKey<8> > >::value_type&&' {aka 'bustub::GenericKey<8>&&'}
+ 1298 |       push_back(value_type&& __x)
+      |                 ~~~~~~~~~~~~~^~~
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp: In instantiation of 'std::vector<_Tp> bustub::BPlusTreeLeafPage<KeyType, ValueType, KeyComparator, NumTombs>::GetTombstones() const [with KeyType = bustub::GenericKey<8>; ValueType = bustub::RID; KeyComparator = bustub::GenericComparator<8>; long int NumTombs = 2]':
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:139:16:   required from here
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:51:23: error: comparison of integer expressions of different signedness: 'const size_t' {aka 'const long unsigned int'} and 'int' [-Werror=sign-compare]
+   51 |   if (num_tombstones_ < cnt) {
+      |       ~~~~~~~~~~~~~~~~^~~~~
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:55:25: error: no matching function for call to 'std::vector<bustub::GenericKey<8>, std::allocator<bustub::GenericKey<8> > >::push_back(const size_t&)'
+   55 |     tombstones.push_back(tombstones_[i]);
+      |     ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1281:7: note: candidate: 'void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = bustub::GenericKey<8>; _Alloc = std::allocator<bustub::GenericKey<8> >; value_type = bustub::GenericKey<8>]'
+ 1281 |       push_back(const value_type& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1281:35: note:   no known conversion for argument 1 from 'const size_t' {aka 'const long unsigned int'} to 'const std::vector<bustub::GenericKey<8>, std::allocator<bustub::GenericKey<8> > >::value_type&' {aka 'const bustub::GenericKey<8>&'}
+ 1281 |       push_back(const value_type& __x)
+      |                 ~~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/bits/stl_vector.h:1298:7: note: candidate: 'void std::vector<_Tp, _Alloc>::push_back(value_type&&) [with _Tp = bustub::GenericKey<8>; _Alloc = std::allocator<bustub::GenericKey<8> >; value_type = bustub::GenericKey<8>]'
+ 1298 |       push_back(value_type&& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1298:30: note:   no known conversion for argument 1 from 'const size_t' {aka 'const long unsigned int'} to 'std::vector<bustub::GenericKey<8>, std::allocator<bustub::GenericKey<8> > >::value_type&&' {aka 'bustub::GenericKey<8>&&'}
+ 1298 |       push_back(value_type&& __x)
+      |                 ~~~~~~~~~~~~~^~~
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp: In instantiation of 'std::vector<_Tp> bustub::BPlusTreeLeafPage<KeyType, ValueType, KeyComparator, NumTombs>::GetTombstones() const [with KeyType = bustub::GenericKey<8>; ValueType = bustub::RID; KeyComparator = bustub::GenericComparator<8>; long int NumTombs = 1]':
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:140:16:   required from here
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:51:23: error: comparison of integer expressions of different signedness: 'const size_t' {aka 'const long unsigned int'} and 'int' [-Werror=sign-compare]
+   51 |   if (num_tombstones_ < cnt) {
+      |       ~~~~~~~~~~~~~~~~^~~~~
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:55:25: error: no matching function for call to 'std::vector<bustub::GenericKey<8>, std::allocator<bustub::GenericKey<8> > >::push_back(const size_t&)'
+   55 |     tombstones.push_back(tombstones_[i]);
+      |     ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1281:7: note: candidate: 'void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = bustub::GenericKey<8>; _Alloc = std::allocator<bustub::GenericKey<8> >; value_type = bustub::GenericKey<8>]'
+ 1281 |       push_back(const value_type& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1281:35: note:   no known conversion for argument 1 from 'const size_t' {aka 'const long unsigned int'} to 'const std::vector<bustub::GenericKey<8>, std::allocator<bustub::GenericKey<8> > >::value_type&' {aka 'const bustub::GenericKey<8>&'}
+ 1281 |       push_back(const value_type& __x)
+      |                 ~~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/bits/stl_vector.h:1298:7: note: candidate: 'void std::vector<_Tp, _Alloc>::push_back(value_type&&) [with _Tp = bustub::GenericKey<8>; _Alloc = std::allocator<bustub::GenericKey<8> >; value_type = bustub::GenericKey<8>]'
+ 1298 |       push_back(value_type&& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1298:30: note:   no known conversion for argument 1 from 'const size_t' {aka 'const long unsigned int'} to 'std::vector<bustub::GenericKey<8>, std::allocator<bustub::GenericKey<8> > >::value_type&&' {aka 'bustub::GenericKey<8>&&'}
+ 1298 |       push_back(value_type&& __x)
+      |                 ~~~~~~~~~~~~~^~~
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp: In instantiation of 'std::vector<_Tp> bustub::BPlusTreeLeafPage<KeyType, ValueType, KeyComparator, NumTombs>::GetTombstones() const [with KeyType = bustub::GenericKey<8>; ValueType = bustub::RID; KeyComparator = bustub::GenericComparator<8>; long int NumTombs = -1]':
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:141:16:   required from here
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:51:23: error: comparison of integer expressions of different signedness: 'const size_t' {aka 'const long unsigned int'} and 'int' [-Werror=sign-compare]
+   51 |   if (num_tombstones_ < cnt) {
+      |       ~~~~~~~~~~~~~~~~^~~~~
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:55:25: error: no matching function for call to 'std::vector<bustub::GenericKey<8>, std::allocator<bustub::GenericKey<8> > >::push_back(const size_t&)'
+   55 |     tombstones.push_back(tombstones_[i]);
+      |     ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1281:7: note: candidate: 'void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = bustub::GenericKey<8>; _Alloc = std::allocator<bustub::GenericKey<8> >; value_type = bustub::GenericKey<8>]'
+ 1281 |       push_back(const value_type& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1281:35: note:   no known conversion for argument 1 from 'const size_t' {aka 'const long unsigned int'} to 'const std::vector<bustub::GenericKey<8>, std::allocator<bustub::GenericKey<8> > >::value_type&' {aka 'const bustub::GenericKey<8>&'}
+ 1281 |       push_back(const value_type& __x)
+      |                 ~~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/bits/stl_vector.h:1298:7: note: candidate: 'void std::vector<_Tp, _Alloc>::push_back(value_type&&) [with _Tp = bustub::GenericKey<8>; _Alloc = std::allocator<bustub::GenericKey<8> >; value_type = bustub::GenericKey<8>]'
+ 1298 |       push_back(value_type&& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1298:30: note:   no known conversion for argument 1 from 'const size_t' {aka 'const long unsigned int'} to 'std::vector<bustub::GenericKey<8>, std::allocator<bustub::GenericKey<8> > >::value_type&&' {aka 'bustub::GenericKey<8>&&'}
+ 1298 |       push_back(value_type&& __x)
+      |                 ~~~~~~~~~~~~~^~~
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp: In instantiation of 'std::vector<_Tp> bustub::BPlusTreeLeafPage<KeyType, ValueType, KeyComparator, NumTombs>::GetTombstones() const [with KeyType = bustub::GenericKey<16>; ValueType = bustub::RID; KeyComparator = bustub::GenericComparator<16>; long int NumTombs = 0]':
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:143:16:   required from here
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:51:23: error: comparison of integer expressions of different signedness: 'const size_t' {aka 'const long unsigned int'} and 'int' [-Werror=sign-compare]
+   51 |   if (num_tombstones_ < cnt) {
+      |       ~~~~~~~~~~~~~~~~^~~~~
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:55:25: error: no matching function for call to 'std::vector<bustub::GenericKey<16>, std::allocator<bustub::GenericKey<16> > >::push_back(const size_t&)'
+   55 |     tombstones.push_back(tombstones_[i]);
+      |     ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1281:7: note: candidate: 'void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = bustub::GenericKey<16>; _Alloc = std::allocator<bustub::GenericKey<16> >; value_type = bustub::GenericKey<16>]'
+ 1281 |       push_back(const value_type& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1281:35: note:   no known conversion for argument 1 from 'const size_t' {aka 'const long unsigned int'} to 'const std::vector<bustub::GenericKey<16>, std::allocator<bustub::GenericKey<16> > >::value_type&' {aka 'const bustub::GenericKey<16>&'}
+ 1281 |       push_back(const value_type& __x)
+      |                 ~~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/bits/stl_vector.h:1298:7: note: candidate: 'void std::vector<_Tp, _Alloc>::push_back(value_type&&) [with _Tp = bustub::GenericKey<16>; _Alloc = std::allocator<bustub::GenericKey<16> >; value_type = bustub::GenericKey<16>]'
+ 1298 |       push_back(value_type&& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1298:30: note:   no known conversion for argument 1 from 'const size_t' {aka 'const long unsigned int'} to 'std::vector<bustub::GenericKey<16>, std::allocator<bustub::GenericKey<16> > >::value_type&&' {aka 'bustub::GenericKey<16>&&'}
+ 1298 |       push_back(value_type&& __x)
+      |                 ~~~~~~~~~~~~~^~~
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp: In instantiation of 'std::vector<_Tp> bustub::BPlusTreeLeafPage<KeyType, ValueType, KeyComparator, NumTombs>::GetTombstones() const [with KeyType = bustub::GenericKey<32>; ValueType = bustub::RID; KeyComparator = bustub::GenericComparator<32>; long int NumTombs = 0]':
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:145:16:   required from here
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:51:23: error: comparison of integer expressions of different signedness: 'const size_t' {aka 'const long unsigned int'} and 'int' [-Werror=sign-compare]
+   51 |   if (num_tombstones_ < cnt) {
+      |       ~~~~~~~~~~~~~~~~^~~~~
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:55:25: error: no matching function for call to 'std::vector<bustub::GenericKey<32>, std::allocator<bustub::GenericKey<32> > >::push_back(const size_t&)'
+   55 |     tombstones.push_back(tombstones_[i]);
+      |     ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1281:7: note: candidate: 'void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = bustub::GenericKey<32>; _Alloc = std::allocator<bustub::GenericKey<32> >; value_type = bustub::GenericKey<32>]'
+ 1281 |       push_back(const value_type& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1281:35: note:   no known conversion for argument 1 from 'const size_t' {aka 'const long unsigned int'} to 'const std::vector<bustub::GenericKey<32>, std::allocator<bustub::GenericKey<32> > >::value_type&' {aka 'const bustub::GenericKey<32>&'}
+ 1281 |       push_back(const value_type& __x)
+      |                 ~~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/bits/stl_vector.h:1298:7: note: candidate: 'void std::vector<_Tp, _Alloc>::push_back(value_type&&) [with _Tp = bustub::GenericKey<32>; _Alloc = std::allocator<bustub::GenericKey<32> >; value_type = bustub::GenericKey<32>]'
+ 1298 |       push_back(value_type&& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1298:30: note:   no known conversion for argument 1 from 'const size_t' {aka 'const long unsigned int'} to 'std::vector<bustub::GenericKey<32>, std::allocator<bustub::GenericKey<32> > >::value_type&&' {aka 'bustub::GenericKey<32>&&'}
+ 1298 |       push_back(value_type&& __x)
+      |                 ~~~~~~~~~~~~~^~~
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp: In instantiation of 'std::vector<_Tp> bustub::BPlusTreeLeafPage<KeyType, ValueType, KeyComparator, NumTombs>::GetTombstones() const [with KeyType = bustub::GenericKey<64>; ValueType = bustub::RID; KeyComparator = bustub::GenericComparator<64>; long int NumTombs = 0]':
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:147:16:   required from here
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:51:23: error: comparison of integer expressions of different signedness: 'const size_t' {aka 'const long unsigned int'} and 'int' [-Werror=sign-compare]
+   51 |   if (num_tombstones_ < cnt) {
+      |       ~~~~~~~~~~~~~~~~^~~~~
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:55:25: error: no matching function for call to 'std::vector<bustub::GenericKey<64>, std::allocator<bustub::GenericKey<64> > >::push_back(const size_t&)'
+   55 |     tombstones.push_back(tombstones_[i]);
+      |     ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1281:7: note: candidate: 'void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = bustub::GenericKey<64>; _Alloc = std::allocator<bustub::GenericKey<64> >; value_type = bustub::GenericKey<64>]'
+ 1281 |       push_back(const value_type& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1281:35: note:   no known conversion for argument 1 from 'const size_t' {aka 'const long unsigned int'} to 'const std::vector<bustub::GenericKey<64>, std::allocator<bustub::GenericKey<64> > >::value_type&' {aka 'const bustub::GenericKey<64>&'}
+ 1281 |       push_back(const value_type& __x)
+      |                 ~~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/bits/stl_vector.h:1298:7: note: candidate: 'void std::vector<_Tp, _Alloc>::push_back(value_type&&) [with _Tp = bustub::GenericKey<64>; _Alloc = std::allocator<bustub::GenericKey<64> >; value_type = bustub::GenericKey<64>]'
+ 1298 |       push_back(value_type&& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1298:30: note:   no known conversion for argument 1 from 'const size_t' {aka 'const long unsigned int'} to 'std::vector<bustub::GenericKey<64>, std::allocator<bustub::GenericKey<64> > >::value_type&&' {aka 'bustub::GenericKey<64>&&'}
+ 1298 |       push_back(value_type&& __x)
+      |                 ~~~~~~~~~~~~~^~~
+cc1plus: all warnings being treated as errors
+[ 50%] Building CXX object src/type/CMakeFiles/bustub_type.dir/bigint_type.cpp.o
+make[2]: *** [src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make:90: src/storage/page/CMakeFiles/bustub_storage_page.dir/b_plus_tree_leaf_page.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:2094: src/storage/page/CMakeFiles/bustub_storage_page.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 51%] Building CXX object src/storage/table/CMakeFiles/bustub_storage_table.dir/table_iterator.cpp.o
+[ 53%] Building CXX object src/storage/index/CMakeFiles/bustub_storage_index.dir/linear_probe_hash_table_index.cpp.o
+[ 55%] Building CXX object src/type/CMakeFiles/bustub_type.dir/boolean_type.cpp.o
+[ 56%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/index_scan_executor.cpp.o
+[ 56%] Building CXX object src/storage/table/CMakeFiles/bustub_storage_table.dir/tuple.cpp.o
+[ 56%] Building CXX object src/type/CMakeFiles/bustub_type.dir/decimal_type.cpp.o
+[ 56%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/init_check_executor.cpp.o
+[ 56%] Building CXX object src/type/CMakeFiles/bustub_type.dir/integer_parent_type.cpp.o
+[ 56%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/insert_executor.cpp.o
+[ 56%] Built target bustub_storage_index
+[ 58%] Building CXX object src/type/CMakeFiles/bustub_type.dir/integer_type.cpp.o
+[ 58%] Built target bustub_storage_table
+[ 60%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/limit_executor.cpp.o
+[ 60%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/mock_scan_executor.cpp.o
+[ 60%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/nested_index_join_executor.cpp.o
+[ 60%] Building CXX object src/type/CMakeFiles/bustub_type.dir/smallint_type.cpp.o
+[ 60%] Building CXX object src/type/CMakeFiles/bustub_type.dir/timestamp_type.cpp.o
+[ 61%] Building CXX object src/type/CMakeFiles/bustub_type.dir/tinyint_type.cpp.o
+[ 61%] Building CXX object src/type/CMakeFiles/bustub_type.dir/type.cpp.o
+[ 63%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/nested_loop_join_executor.cpp.o
+[ 63%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/plan_node.cpp.o
+[ 63%] Building CXX object src/type/CMakeFiles/bustub_type.dir/value.cpp.o
+[ 63%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/projection_executor.cpp.o
+[ 65%] Building CXX object src/type/CMakeFiles/bustub_type.dir/varlen_type.cpp.o
+[ 66%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/seq_scan_executor.cpp.o
+[ 66%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/sort_executor.cpp.o
+[ 66%] Building CXX object src/type/CMakeFiles/bustub_type.dir/vector_type.cpp.o
+[ 66%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/topn_executor.cpp.o
+[ 68%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/topn_per_group_executor.cpp.o
+[ 68%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/topn_check_executor.cpp.o
+[ 68%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/update_executor.cpp.o
+[ 70%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/values_executor.cpp.o
+[ 70%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/window_function_executor.cpp.o
+[ 70%] Built target bustub_type
+[ 70%] Built target bustub_execution
+make: *** [Makefile:166: all] Error 2
+[  1%] Built target fmt
+[  1%] Built target fort
+[  2%] Built target bustub_buffer
+[  2%] Built target bustub_murmur3
+[  6%] Built target duckdb_pg_query
+[  8%] Built target bustub_statement
+[ 13%] Built target bustub_binder
+[ 14%] Built target bustub_catalog
+[ 19%] Built target bustub_optimizer
+[ 21%] Built target bustub_common
+[ 23%] Built target bustub_concurrency
+[ 24%] Built target bustub_container_disk_hash
+[ 25%] Built target bustub_recovery
+[ 26%] Built target bustub_storage_disk
+[ 26%] Building CXX object src/planner/CMakeFiles/bustub_planner.dir/expression_factory.cpp.o
+[ 26%] Building CXX object src/storage/page/CMakeFiles/bustub_storage_page.dir/b_plus_tree_internal_page.cpp.o
+[ 26%] Building CXX object src/planner/CMakeFiles/bustub_planner.dir/plan_aggregation.cpp.o
+[ 27%] Built target bustub_storage_table
+[ 29%] Built target bustub_storage_index
+[ 30%] Building CXX object src/planner/CMakeFiles/bustub_planner.dir/plan_func_call.cpp.o
+[ 30%] Building CXX object src/planner/CMakeFiles/bustub_planner.dir/plan_expression.cpp.o
+[ 30%] Building CXX object src/storage/page/CMakeFiles/bustub_storage_page.dir/b_plus_tree_leaf_page.cpp.o
+[ 35%] Built target bustub_type
+[ 35%] Building CXX object src/planner/CMakeFiles/bustub_planner.dir/plan_insert.cpp.o
+[ 43%] Built target bustub_execution
+[ 45%] Building CXX object src/storage/page/CMakeFiles/bustub_storage_page.dir/b_plus_tree_page.cpp.o
+In file included from /app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:17:
+/app/cmu15_445/src/include/storage/page/b_plus_tree_internal_page.h:22:40: error: no declaration matches 'ValueType bustub::BPlusTreeInternalPage<KeyType, ValueType, KeyComparator>::Lookup(const KeyType&, const KeyComparator&) const'
+   22 | #define B_PLUS_TREE_INTERNAL_PAGE_TYPE BPlusTreeInternalPage<KeyType, ValueType, KeyComparator>
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:103:6: note: in expansion of macro 'B_PLUS_TREE_INTERNAL_PAGE_TYPE'
+  103 | auto B_PLUS_TREE_INTERNAL_PAGE_TYPE::Lookup(const KeyType &key, const KeyComparator &comparator) const -> ValueType {
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/cmu15_445/src/include/storage/page/b_plus_tree_internal_page.h:70:8: note: candidate is: 'int bustub::BPlusTreeInternalPage<KeyType, ValueType, KeyComparator>::Lookup(const KeyType&, const KeyComparator&) const'
+   70 |   auto Lookup(const KeyType &key, const KeyComparator &comparator) const -> int;
+      |        ^~~~~~
+/app/cmu15_445/src/include/storage/page/b_plus_tree_internal_page.h:47:7: note: 'class bustub::BPlusTreeInternalPage<KeyType, ValueType, KeyComparator>' defined here
+   47 | class BPlusTreeInternalPage : public BPlusTreePage {
+      |       ^~~~~~~~~~~~~~~~~~~~~
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp: In member function 'void bustub::BPlusTreeInternalPage<KeyType, ValueType, KeyComparator>::InsertAt(int, const KeyType&, const ValueType&)':
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:135:3: error: there are no arguments to 'IncreaseSize' that depend on a template parameter, so a declaration of 'IncreaseSize' must be available [-fpermissive]
+  135 |   IncreaseSize(1);
+      |   ^~~~~~~~~~~~
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:135:3: note: (if you use '-fpermissive', G++ will accept your code, but allowing the use of an undeclared name is deprecated)
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp: In member function 'void bustub::BPlusTreeInternalPage<KeyType, ValueType, KeyComparator>::RemoveAt(int)':
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:149:3: error: there are no arguments to 'IncreaseSize' that depend on a template parameter, so a declaration of 'IncreaseSize' must be available [-fpermissive]
+  149 |   IncreaseSize(-1);
+      |   ^~~~~~~~~~~~
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp: In instantiation of 'void bustub::BPlusTreeInternalPage<KeyType, ValueType, KeyComparator>::InsertAt(int, const KeyType&, const ValueType&) [with KeyType = bustub::GenericKey<4>; ValueType = int; KeyComparator = bustub::GenericComparator<4>]':
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:171:16:   required from here
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:135:15: error: 'IncreaseSize' was not declared in this scope
+  135 |   IncreaseSize(1);
+      |   ~~~~~~~~~~~~^~~
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp: In instantiation of 'std::vector<_Tp> bustub::BPlusTreeLeafPage<KeyType, ValueType, KeyComparator, NumTombs>::GetTombstones() const [with KeyType = bustub::GenericKey<4>; ValueType = bustub::RID; KeyComparator = bustub::GenericComparator<4>; long int NumTombs = 0]':
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:135:16:   required from here
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:51:23: error: comparison of integer expressions of different signedness: 'const size_t' {aka 'const long unsigned int'} and 'int' [-Werror=sign-compare]
+   51 |   if (num_tombstones_ < cnt) {
+      |       ~~~~~~~~~~~~~~~~^~~~~
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:55:25: error: no matching function for call to 'std::vector<bustub::GenericKey<4>, std::allocator<bustub::GenericKey<4> > >::push_back(const size_t&)'
+   55 |     tombstones.push_back(tombstones_[i]);
+      |     ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp: In instantiation of 'void bustub::BPlusTreeInternalPage<KeyType, ValueType, KeyComparator>::RemoveAt(int) [with KeyType = bustub::GenericKey<4>; ValueType = int; KeyComparator = bustub::GenericComparator<4>]':
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:171:16:   required from here
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:149:15: error: 'IncreaseSize' was not declared in this scope
+  149 |   IncreaseSize(-1);
+      |   ~~~~~~~~~~~~^~~~
+In file included from /usr/include/c++/13/vector:66,
+                 from /app/cmu15_445/src/include/storage/page/b_plus_tree_leaf_page.h:17,
+                 from /app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:17:
+/usr/include/c++/13/bits/stl_vector.h:1281:7: note: candidate: 'void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = bustub::GenericKey<4>; _Alloc = std::allocator<bustub::GenericKey<4> >; value_type = bustub::GenericKey<4>]'
+ 1281 |       push_back(const value_type& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1281:35: note:   no known conversion for argument 1 from 'const size_t' {aka 'const long unsigned int'} to 'const std::vector<bustub::GenericKey<4>, std::allocator<bustub::GenericKey<4> > >::value_type&' {aka 'const bustub::GenericKey<4>&'}
+ 1281 |       push_back(const value_type& __x)
+      |                 ~~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/bits/stl_vector.h:1298:7: note: candidate: 'void std::vector<_Tp, _Alloc>::push_back(value_type&&) [with _Tp = bustub::GenericKey<4>; _Alloc = std::allocator<bustub::GenericKey<4> >; value_type = bustub::GenericKey<4>]'
+ 1298 |       push_back(value_type&& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1298:30: note:   no known conversion for argument 1 from 'const size_t' {aka 'const long unsigned int'} to 'std::vector<bustub::GenericKey<4>, std::allocator<bustub::GenericKey<4> > >::value_type&&' {aka 'bustub::GenericKey<4>&&'}
+ 1298 |       push_back(value_type&& __x)
+      |                 ~~~~~~~~~~~~~^~~
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp: In instantiation of 'std::vector<_Tp> bustub::BPlusTreeLeafPage<KeyType, ValueType, KeyComparator, NumTombs>::GetTombstones() const [with KeyType = bustub::GenericKey<8>; ValueType = bustub::RID; KeyComparator = bustub::GenericComparator<8>; long int NumTombs = 0]':
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:137:16:   required from here
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:51:23: error: comparison of integer expressions of different signedness: 'const size_t' {aka 'const long unsigned int'} and 'int' [-Werror=sign-compare]
+   51 |   if (num_tombstones_ < cnt) {
+      |       ~~~~~~~~~~~~~~~~^~~~~
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:55:25: error: no matching function for call to 'std::vector<bustub::GenericKey<8>, std::allocator<bustub::GenericKey<8> > >::push_back(const size_t&)'
+   55 |     tombstones.push_back(tombstones_[i]);
+      |     ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1281:7: note: candidate: 'void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = bustub::GenericKey<8>; _Alloc = std::allocator<bustub::GenericKey<8> >; value_type = bustub::GenericKey<8>]'
+ 1281 |       push_back(const value_type& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1281:35: note:   no known conversion for argument 1 from 'const size_t' {aka 'const long unsigned int'} to 'const std::vector<bustub::GenericKey<8>, std::allocator<bustub::GenericKey<8> > >::value_type&' {aka 'const bustub::GenericKey<8>&'}
+ 1281 |       push_back(const value_type& __x)
+      |                 ~~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/bits/stl_vector.h:1298:7: note: candidate: 'void std::vector<_Tp, _Alloc>::push_back(value_type&&) [with _Tp = bustub::GenericKey<8>; _Alloc = std::allocator<bustub::GenericKey<8> >; value_type = bustub::GenericKey<8>]'
+ 1298 |       push_back(value_type&& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1298:30: note:   no known conversion for argument 1 from 'const size_t' {aka 'const long unsigned int'} to 'std::vector<bustub::GenericKey<8>, std::allocator<bustub::GenericKey<8> > >::value_type&&' {aka 'bustub::GenericKey<8>&&'}
+ 1298 |       push_back(value_type&& __x)
+      |                 ~~~~~~~~~~~~~^~~
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp: In instantiation of 'void bustub::BPlusTreeInternalPage<KeyType, ValueType, KeyComparator>::InsertAt(int, const KeyType&, const ValueType&) [with KeyType = bustub::GenericKey<8>; ValueType = int; KeyComparator = bustub::GenericComparator<8>]':
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:172:16:   required from here
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:135:15: error: 'IncreaseSize' was not declared in this scope
+  135 |   IncreaseSize(1);
+      |   ~~~~~~~~~~~~^~~
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp: In instantiation of 'std::vector<_Tp> bustub::BPlusTreeLeafPage<KeyType, ValueType, KeyComparator, NumTombs>::GetTombstones() const [with KeyType = bustub::GenericKey<8>; ValueType = bustub::RID; KeyComparator = bustub::GenericComparator<8>; long int NumTombs = 3]':
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:138:16:   required from here
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:51:23: error: comparison of integer expressions of different signedness: 'const size_t' {aka 'const long unsigned int'} and 'int' [-Werror=sign-compare]
+   51 |   if (num_tombstones_ < cnt) {
+      |       ~~~~~~~~~~~~~~~~^~~~~
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:55:25: error: no matching function for call to 'std::vector<bustub::GenericKey<8>, std::allocator<bustub::GenericKey<8> > >::push_back(const size_t&)'
+   55 |     tombstones.push_back(tombstones_[i]);
+      |     ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1281:7: note: candidate: 'void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = bustub::GenericKey<8>; _Alloc = std::allocator<bustub::GenericKey<8> >; value_type = bustub::GenericKey<8>]'
+ 1281 |       push_back(const value_type& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1281:35: note:   no known conversion for argument 1 from 'const size_t' {aka 'const long unsigned int'} to 'const std::vector<bustub::GenericKey<8>, std::allocator<bustub::GenericKey<8> > >::value_type&' {aka 'const bustub::GenericKey<8>&'}
+ 1281 |       push_back(const value_type& __x)
+      |                 ~~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/bits/stl_vector.h:1298:7: note: candidate: 'void std::vector<_Tp, _Alloc>::push_back(value_type&&) [with _Tp = bustub::GenericKey<8>; _Alloc = std::allocator<bustub::GenericKey<8> >; value_type = bustub::GenericKey<8>]'
+ 1298 |       push_back(value_type&& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1298:30: note:   no known conversion for argument 1 from 'const size_t' {aka 'const long unsigned int'} to 'std::vector<bustub::GenericKey<8>, std::allocator<bustub::GenericKey<8> > >::value_type&&' {aka 'bustub::GenericKey<8>&&'}
+ 1298 |       push_back(value_type&& __x)
+      |                 ~~~~~~~~~~~~~^~~
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp: In instantiation of 'std::vector<_Tp> bustub::BPlusTreeLeafPage<KeyType, ValueType, KeyComparator, NumTombs>::GetTombstones() const [with KeyType = bustub::GenericKey<8>; ValueType = bustub::RID; KeyComparator = bustub::GenericComparator<8>; long int NumTombs = 2]':
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:139:16:   required from here
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:51:23: error: comparison of integer expressions of different signedness: 'const size_t' {aka 'const long unsigned int'} and 'int' [-Werror=sign-compare]
+   51 |   if (num_tombstones_ < cnt) {
+      |       ~~~~~~~~~~~~~~~~^~~~~
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:55:25: error: no matching function for call to 'std::vector<bustub::GenericKey<8>, std::allocator<bustub::GenericKey<8> > >::push_back(const size_t&)'
+   55 |     tombstones.push_back(tombstones_[i]);
+      |     ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1281:7: note: candidate: 'void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = bustub::GenericKey<8>; _Alloc = std::allocator<bustub::GenericKey<8> >; value_type = bustub::GenericKey<8>]'
+ 1281 |       push_back(const value_type& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1281:35: note:   no known conversion for argument 1 from 'const size_t' {aka 'const long unsigned int'} to 'const std::vector<bustub::GenericKey<8>, std::allocator<bustub::GenericKey<8> > >::value_type&' {aka 'const bustub::GenericKey<8>&'}
+ 1281 |       push_back(const value_type& __x)
+      |                 ~~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/bits/stl_vector.h:1298:7: note: candidate: 'void std::vector<_Tp, _Alloc>::push_back(value_type&&) [with _Tp = bustub::GenericKey<8>; _Alloc = std::allocator<bustub::GenericKey<8> >; value_type = bustub::GenericKey<8>]'
+ 1298 |       push_back(value_type&& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1298:30: note:   no known conversion for argument 1 from 'const size_t' {aka 'const long unsigned int'} to 'std::vector<bustub::GenericKey<8>, std::allocator<bustub::GenericKey<8> > >::value_type&&' {aka 'bustub::GenericKey<8>&&'}
+ 1298 |       push_back(value_type&& __x)
+      |                 ~~~~~~~~~~~~~^~~
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp: In instantiation of 'std::vector<_Tp> bustub::BPlusTreeLeafPage<KeyType, ValueType, KeyComparator, NumTombs>::GetTombstones() const [with KeyType = bustub::GenericKey<8>; ValueType = bustub::RID; KeyComparator = bustub::GenericComparator<8>; long int NumTombs = 1]':
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:140:16:   required from here
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:51:23: error: comparison of integer expressions of different signedness: 'const size_t' {aka 'const long unsigned int'} and 'int' [-Werror=sign-compare]
+   51 |   if (num_tombstones_ < cnt) {
+      |       ~~~~~~~~~~~~~~~~^~~~~
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:55:25: error: no matching function for call to 'std::vector<bustub::GenericKey<8>, std::allocator<bustub::GenericKey<8> > >::push_back(const size_t&)'
+   55 |     tombstones.push_back(tombstones_[i]);
+      |     ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1281:7: note: candidate: 'void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = bustub::GenericKey<8>; _Alloc = std::allocator<bustub::GenericKey<8> >; value_type = bustub::GenericKey<8>]'
+ 1281 |       push_back(const value_type& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1281:35: note:   no known conversion for argument 1 from 'const size_t' {aka 'const long unsigned int'} to 'const std::vector<bustub::GenericKey<8>, std::allocator<bustub::GenericKey<8> > >::value_type&' {aka 'const bustub::GenericKey<8>&'}
+ 1281 |       push_back(const value_type& __x)
+      |                 ~~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/bits/stl_vector.h:1298:7: note: candidate: 'void std::vector<_Tp, _Alloc>::push_back(value_type&&) [with _Tp = bustub::GenericKey<8>; _Alloc = std::allocator<bustub::GenericKey<8> >; value_type = bustub::GenericKey<8>]'
+ 1298 |       push_back(value_type&& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1298:30: note:   no known conversion for argument 1 from 'const size_t' {aka 'const long unsigned int'} to 'std::vector<bustub::GenericKey<8>, std::allocator<bustub::GenericKey<8> > >::value_type&&' {aka 'bustub::GenericKey<8>&&'}
+ 1298 |       push_back(value_type&& __x)
+      |                 ~~~~~~~~~~~~~^~~
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp: In instantiation of 'void bustub::BPlusTreeInternalPage<KeyType, ValueType, KeyComparator>::RemoveAt(int) [with KeyType = bustub::GenericKey<8>; ValueType = int; KeyComparator = bustub::GenericComparator<8>]':
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:172:16:   required from here
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:149:15: error: 'IncreaseSize' was not declared in this scope
+  149 |   IncreaseSize(-1);
+      |   ~~~~~~~~~~~~^~~~
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp: In instantiation of 'std::vector<_Tp> bustub::BPlusTreeLeafPage<KeyType, ValueType, KeyComparator, NumTombs>::GetTombstones() const [with KeyType = bustub::GenericKey<8>; ValueType = bustub::RID; KeyComparator = bustub::GenericComparator<8>; long int NumTombs = -1]':
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:141:16:   required from here
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:51:23: error: comparison of integer expressions of different signedness: 'const size_t' {aka 'const long unsigned int'} and 'int' [-Werror=sign-compare]
+   51 |   if (num_tombstones_ < cnt) {
+      |       ~~~~~~~~~~~~~~~~^~~~~
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:55:25: error: no matching function for call to 'std::vector<bustub::GenericKey<8>, std::allocator<bustub::GenericKey<8> > >::push_back(const size_t&)'
+   55 |     tombstones.push_back(tombstones_[i]);
+      |     ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1281:7: note: candidate: 'void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = bustub::GenericKey<8>; _Alloc = std::allocator<bustub::GenericKey<8> >; value_type = bustub::GenericKey<8>]'
+ 1281 |       push_back(const value_type& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1281:35: note:   no known conversion for argument 1 from 'const size_t' {aka 'const long unsigned int'} to 'const std::vector<bustub::GenericKey<8>, std::allocator<bustub::GenericKey<8> > >::value_type&' {aka 'const bustub::GenericKey<8>&'}
+ 1281 |       push_back(const value_type& __x)
+      |                 ~~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/bits/stl_vector.h:1298:7: note: candidate: 'void std::vector<_Tp, _Alloc>::push_back(value_type&&) [with _Tp = bustub::GenericKey<8>; _Alloc = std::allocator<bustub::GenericKey<8> >; value_type = bustub::GenericKey<8>]'
+ 1298 |       push_back(value_type&& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1298:30: note:   no known conversion for argument 1 from 'const size_t' {aka 'const long unsigned int'} to 'std::vector<bustub::GenericKey<8>, std::allocator<bustub::GenericKey<8> > >::value_type&&' {aka 'bustub::GenericKey<8>&&'}
+ 1298 |       push_back(value_type&& __x)
+      |                 ~~~~~~~~~~~~~^~~
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp: In instantiation of 'std::vector<_Tp> bustub::BPlusTreeLeafPage<KeyType, ValueType, KeyComparator, NumTombs>::GetTombstones() const [with KeyType = bustub::GenericKey<16>; ValueType = bustub::RID; KeyComparator = bustub::GenericComparator<16>; long int NumTombs = 0]':
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:143:16:   required from here
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:51:23: error: comparison of integer expressions of different signedness: 'const size_t' {aka 'const long unsigned int'} and 'int' [-Werror=sign-compare]
+   51 |   if (num_tombstones_ < cnt) {
+      |       ~~~~~~~~~~~~~~~~^~~~~
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:55:25: error: no matching function for call to 'std::vector<bustub::GenericKey<16>, std::allocator<bustub::GenericKey<16> > >::push_back(const size_t&)'
+   55 |     tombstones.push_back(tombstones_[i]);
+      |     ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1281:7: note: candidate: 'void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = bustub::GenericKey<16>; _Alloc = std::allocator<bustub::GenericKey<16> >; value_type = bustub::GenericKey<16>]'
+ 1281 |       push_back(const value_type& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1281:35: note:   no known conversion for argument 1 from 'const size_t' {aka 'const long unsigned int'} to 'const std::vector<bustub::GenericKey<16>, std::allocator<bustub::GenericKey<16> > >::value_type&' {aka 'const bustub::GenericKey<16>&'}
+ 1281 |       push_back(const value_type& __x)
+      |                 ~~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/bits/stl_vector.h:1298:7: note: candidate: 'void std::vector<_Tp, _Alloc>::push_back(value_type&&) [with _Tp = bustub::GenericKey<16>; _Alloc = std::allocator<bustub::GenericKey<16> >; value_type = bustub::GenericKey<16>]'
+ 1298 |       push_back(value_type&& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1298:30: note:   no known conversion for argument 1 from 'const size_t' {aka 'const long unsigned int'} to 'std::vector<bustub::GenericKey<16>, std::allocator<bustub::GenericKey<16> > >::value_type&&' {aka 'bustub::GenericKey<16>&&'}
+ 1298 |       push_back(value_type&& __x)
+      |                 ~~~~~~~~~~~~~^~~
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp: In instantiation of 'void bustub::BPlusTreeInternalPage<KeyType, ValueType, KeyComparator>::InsertAt(int, const KeyType&, const ValueType&) [with KeyType = bustub::GenericKey<16>; ValueType = int; KeyComparator = bustub::GenericComparator<16>]':
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:173:16:   required from here
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:135:15: error: 'IncreaseSize' was not declared in this scope
+  135 |   IncreaseSize(1);
+      |   ~~~~~~~~~~~~^~~
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp: In instantiation of 'std::vector<_Tp> bustub::BPlusTreeLeafPage<KeyType, ValueType, KeyComparator, NumTombs>::GetTombstones() const [with KeyType = bustub::GenericKey<32>; ValueType = bustub::RID; KeyComparator = bustub::GenericComparator<32>; long int NumTombs = 0]':
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:145:16:   required from here
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:51:23: error: comparison of integer expressions of different signedness: 'const size_t' {aka 'const long unsigned int'} and 'int' [-Werror=sign-compare]
+   51 |   if (num_tombstones_ < cnt) {
+      |       ~~~~~~~~~~~~~~~~^~~~~
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:55:25: error: no matching function for call to 'std::vector<bustub::GenericKey<32>, std::allocator<bustub::GenericKey<32> > >::push_back(const size_t&)'
+   55 |     tombstones.push_back(tombstones_[i]);
+      |     ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1281:7: note: candidate: 'void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = bustub::GenericKey<32>; _Alloc = std::allocator<bustub::GenericKey<32> >; value_type = bustub::GenericKey<32>]'
+ 1281 |       push_back(const value_type& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1281:35: note:   no known conversion for argument 1 from 'const size_t' {aka 'const long unsigned int'} to 'const std::vector<bustub::GenericKey<32>, std::allocator<bustub::GenericKey<32> > >::value_type&' {aka 'const bustub::GenericKey<32>&'}
+ 1281 |       push_back(const value_type& __x)
+      |                 ~~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/bits/stl_vector.h:1298:7: note: candidate: 'void std::vector<_Tp, _Alloc>::push_back(value_type&&) [with _Tp = bustub::GenericKey<32>; _Alloc = std::allocator<bustub::GenericKey<32> >; value_type = bustub::GenericKey<32>]'
+ 1298 |       push_back(value_type&& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1298:30: note:   no known conversion for argument 1 from 'const size_t' {aka 'const long unsigned int'} to 'std::vector<bustub::GenericKey<32>, std::allocator<bustub::GenericKey<32> > >::value_type&&' {aka 'bustub::GenericKey<32>&&'}
+ 1298 |       push_back(value_type&& __x)
+      |                 ~~~~~~~~~~~~~^~~
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp: In instantiation of 'void bustub::BPlusTreeInternalPage<KeyType, ValueType, KeyComparator>::RemoveAt(int) [with KeyType = bustub::GenericKey<16>; ValueType = int; KeyComparator = bustub::GenericComparator<16>]':
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:173:16:   required from here
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:149:15: error: 'IncreaseSize' was not declared in this scope
+  149 |   IncreaseSize(-1);
+      |   ~~~~~~~~~~~~^~~~
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp: In instantiation of 'std::vector<_Tp> bustub::BPlusTreeLeafPage<KeyType, ValueType, KeyComparator, NumTombs>::GetTombstones() const [with KeyType = bustub::GenericKey<64>; ValueType = bustub::RID; KeyComparator = bustub::GenericComparator<64>; long int NumTombs = 0]':
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:147:16:   required from here
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:51:23: error: comparison of integer expressions of different signedness: 'const size_t' {aka 'const long unsigned int'} and 'int' [-Werror=sign-compare]
+   51 |   if (num_tombstones_ < cnt) {
+      |       ~~~~~~~~~~~~~~~~^~~~~
+/app/cmu15_445/src/storage/page/b_plus_tree_leaf_page.cpp:55:25: error: no matching function for call to 'std::vector<bustub::GenericKey<64>, std::allocator<bustub::GenericKey<64> > >::push_back(const size_t&)'
+   55 |     tombstones.push_back(tombstones_[i]);
+      |     ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1281:7: note: candidate: 'void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = bustub::GenericKey<64>; _Alloc = std::allocator<bustub::GenericKey<64> >; value_type = bustub::GenericKey<64>]'
+ 1281 |       push_back(const value_type& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1281:35: note:   no known conversion for argument 1 from 'const size_t' {aka 'const long unsigned int'} to 'const std::vector<bustub::GenericKey<64>, std::allocator<bustub::GenericKey<64> > >::value_type&' {aka 'const bustub::GenericKey<64>&'}
+ 1281 |       push_back(const value_type& __x)
+      |                 ~~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/bits/stl_vector.h:1298:7: note: candidate: 'void std::vector<_Tp, _Alloc>::push_back(value_type&&) [with _Tp = bustub::GenericKey<64>; _Alloc = std::allocator<bustub::GenericKey<64> >; value_type = bustub::GenericKey<64>]'
+ 1298 |       push_back(value_type&& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1298:30: note:   no known conversion for argument 1 from 'const size_t' {aka 'const long unsigned int'} to 'std::vector<bustub::GenericKey<64>, std::allocator<bustub::GenericKey<64> > >::value_type&&' {aka 'bustub::GenericKey<64>&&'}
+ 1298 |       push_back(value_type&& __x)
+      |                 ~~~~~~~~~~~~~^~~
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp: In instantiation of 'void bustub::BPlusTreeInternalPage<KeyType, ValueType, KeyComparator>::InsertAt(int, const KeyType&, const ValueType&) [with KeyType = bustub::GenericKey<32>; ValueType = int; KeyComparator = bustub::GenericComparator<32>]':
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:174:16:   required from here
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:135:15: error: 'IncreaseSize' was not declared in this scope
+  135 |   IncreaseSize(1);
+      |   ~~~~~~~~~~~~^~~
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp: In instantiation of 'void bustub::BPlusTreeInternalPage<KeyType, ValueType, KeyComparator>::RemoveAt(int) [with KeyType = bustub::GenericKey<32>; ValueType = int; KeyComparator = bustub::GenericComparator<32>]':
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:174:16:   required from here
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:149:15: error: 'IncreaseSize' was not declared in this scope
+  149 |   IncreaseSize(-1);
+      |   ~~~~~~~~~~~~^~~~
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp: In instantiation of 'void bustub::BPlusTreeInternalPage<KeyType, ValueType, KeyComparator>::InsertAt(int, const KeyType&, const ValueType&) [with KeyType = bustub::GenericKey<64>; ValueType = int; KeyComparator = bustub::GenericComparator<64>]':
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:175:16:   required from here
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:135:15: error: 'IncreaseSize' was not declared in this scope
+  135 |   IncreaseSize(1);
+      |   ~~~~~~~~~~~~^~~
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp: In instantiation of 'void bustub::BPlusTreeInternalPage<KeyType, ValueType, KeyComparator>::RemoveAt(int) [with KeyType = bustub::GenericKey<64>; ValueType = int; KeyComparator = bustub::GenericComparator<64>]':
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:175:16:   required from here
+/app/cmu15_445/src/storage/page/b_plus_tree_internal_page.cpp:149:15: error: 'IncreaseSize' was not declared in this scope
+  149 |   IncreaseSize(-1);
+      |   ~~~~~~~~~~~~^~~~
+cc1plus: all warnings being treated as errors
+make[3]: *** [src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make:90: src/storage/page/CMakeFiles/bustub_storage_page.dir/b_plus_tree_leaf_page.cpp.o] Error 1
+make[3]: *** Waiting for unfinished jobs....
+make[3]: *** [src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make:76: src/storage/page/CMakeFiles/bustub_storage_page.dir/b_plus_tree_internal_page.cpp.o] Error 1
+make[2]: *** [CMakeFiles/Makefile2:2094: src/storage/page/CMakeFiles/bustub_storage_page.dir/all] Error 2
+make[2]: *** Waiting for unfinished jobs....
+[ 46%] Building CXX object src/primer/CMakeFiles/bustub_primer.dir/hyperloglog.cpp.o
+[ 46%] Building CXX object src/planner/CMakeFiles/bustub_planner.dir/plan_table_ref.cpp.o
+[ 46%] Built target gtest
+[ 46%] Building CXX object src/planner/CMakeFiles/bustub_planner.dir/plan_select.cpp.o
+[ 46%] Building CXX object src/primer/CMakeFiles/bustub_primer.dir/hyperloglog_presto.cpp.o
+[ 47%] Building CXX object src/primer/CMakeFiles/bustub_primer.dir/orset.cpp.o
+[ 47%] Building CXX object src/planner/CMakeFiles/bustub_planner.dir/plan_window_function.cpp.o
+[ 47%] Building CXX object src/primer/CMakeFiles/bustub_primer.dir/orset_driver.cpp.o
+[ 47%] Building CXX object src/primer/CMakeFiles/bustub_primer.dir/skiplist.cpp.o
+[ 48%] Building CXX object src/primer/CMakeFiles/bustub_primer.dir/count_min_sketch.cpp.o
+[ 48%] Building CXX object src/primer/CMakeFiles/bustub_primer.dir/trie.cpp.o
+[ 49%] Building CXX object src/planner/CMakeFiles/bustub_planner.dir/planner.cpp.o
+[ 49%] Building CXX object src/primer/CMakeFiles/bustub_primer.dir/trie_store.cpp.o
+[ 49%] Built target bustub_primer
+[ 49%] Built target bustub_planner
+make[1]: *** [CMakeFiles/Makefile2:2297: test/CMakeFiles/build-tests.dir/rule] Error 2
+make: *** [Makefile:823: build-tests] Error 2
+Test project /app/cmu15_445/build
+No tests were found!!!

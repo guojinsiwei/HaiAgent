@@ -1,0 +1,47 @@
+v8 命令规范化修复验证（2026-10-01）
+
+结论
+原五类行为检查由 4/5 变为 5/5；另加引号改写检查通过，共 6/6。
+六类各做有记忆/无记忆两组，共十二次隔离运行。
+全程真实 Linux 命令、生产 LiveWorkspace/LeanTaskRunner，但 Actor 为预设脚本，
+API 调用为 0。只证明工程行为，不证明大模型会自主利用记忆或成绩提升。
+
+修复前后最重要的区别
+只加空格的 shell 失败命令，修复前第三次执行失败；修复后在执行前被拦下。
+该夹具失败执行次数由 3 变为 2。无记忆对照仍执行第三次失败。
+修复源码后，同一验证命令正常重新执行并通过，没有被旧失败记忆误封。
+
+新增引号检查
+第一次执行 python guard.py，第二次将 guard.py 加单引号。
+两次命令的静态参数相同，得到相同错误，在同一文件状态下生成 M1。
+第三次将该参数改为双引号并加入空格，虽然声称 different_route，仍被拦截。
+随后预设源码补丁生效，同一验证命令允许复测并通过。
+
+实现
+sources/bestfgs-project/src/bestfgs/lean_memory.py 的 action_key 统一使用
+保守的静态简单命令身份。先检查 shell 语法边界，再用 shlex 提取字面参数。
+该身份用于自动失败观察、记忆匹配和执行前重复检查。
+不修改真实执行的 argv，不删除参数，不忽略 --verbose 等选项。
+
+明确边界
+- 仅支持 argv 长度为 3 的 bash/sh -c 或 -lc 静态简单命令。
+- 保留引号内的数据空白，保留实参顺序、cwd、stdin、shell 路径及选项。
+- 保留首个命令词的原始拼写，避免误合并可能受别名影响的不同引用方式。
+- 变量、替换、通配符、管道、重定向、注释、多命令和坏语法退回原始身份。
+- 因此没有声称解决任意语义等价命令绕过；不做不安全的全局空白替换。
+- 仍允许携带明确新证据的 justified_retry；这不是不可推翻的命令黑名单。
+
+回归结果
+Windows：95 项发现，81 通过，14 因 Linux 进程组要求跳过。
+Linux：用户明确允许补齐 previous-rejected-candidates.json 后，重新运行完整
+95 项回归：95 通过，0 跳过，0 失败/报错。初次运行唯一报错是缺少该文件。
+原始复测终端输出记录在 regression-output.txt。
+六类小测试全部通过，其中原来的五类夹具保持同样测试计划。
+冻结实验源码哈希未变；修复前的源码清单保存在 pre-normalization-source-manifest.json。
+
+证据位置
+summary.json：十二次运行逐项结果。
+各 case-memory / case-control：完整 events.jsonl 与 micro-result.json。
+原始失败证据保留在 ../microtests/，未覆盖。
+服务器隔离目录：/var/tmp/lizh639-memory-normalized-xBQsEA。
+未替换正式部署、正在运行的实验、HAI 或桌面阅读包。

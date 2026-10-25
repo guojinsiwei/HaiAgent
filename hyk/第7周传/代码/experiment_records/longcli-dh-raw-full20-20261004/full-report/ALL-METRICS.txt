@@ -1,0 +1,133 @@
+所有已记录指标对比
+2026-10-04T15:15:18+08:00
+RAW采用有效补跑；DH采用pgtbl补评。首次失败与评分时限变化均保留。
+
+一、DH与RAW：同20题
+指标	DH	RAW
+有效题数	20	20
+平均F2P(%)	51.5772	43.8182
+中位F2P(%)	52.9762	31.8452
+F2P全过题数	3	4
+F2P零分题数	5	7
+整题完全通过	2	3
+P2P全过题数	11	15
+平均P2P(%)	96.2350	99.4600
+工具总数	5282	5183
+每题平均工具	264.1000	259.1500
+逻辑模型调用usage	12691	5215
+runner interaction_rounds	12692	5215
+wire/API请求	12699	5670
+API回复	12699	5670
+输入tokens	166455757	74961050
+输出tokens	5111004	764460
+总tokens	171566761	75725510
+每题平均tokens	8578338.0500	3786275.5000
+缓存命中输入tokens	26226560	6092160
+缓存命中占输入(%)	15.7559	8.1271
+每题平均耗时分钟	68.4441	25.4245
+每题中位耗时分钟	71.0176	16.5309
+题目耗时累计小时(非墙钟)	22.8147	8.4748
+自主提交题数	5	6
+
+dh 退出原因：{"model_budget": 13, "model_submit": 5, "request_or_tool_budget": 1, "wall_budget": 1}
+dh 传输/格式失败计数：{"json_syntax": 17}
+dh 按角色API计数：{"action": {"model_calls": 12455, "api_requests": 12463, "api_responses": 12463, "prompt_tokens": 164865779, "completion_tokens": 4981050, "total_tokens": 169846829, "cached_prompt_tokens": 26054400, "cache_miss_prompt_tokens": 138811379, "usage_reports": 12463, "usage_missing_responses": 0}, "advisor": {"model_calls": 39, "api_requests": 39, "api_responses": 39, "prompt_tokens": 585533, "completion_tokens": 17655, "total_tokens": 603188, "cached_prompt_tokens": 9088, "cache_miss_prompt_tokens": 576445, "usage_reports": 39, "usage_missing_responses": 0}, "monitor": {"model_calls": 197, "api_requests": 197, "api_responses": 197, "prompt_tokens": 1004445, "completion_tokens": 112299, "total_tokens": 1116744, "cached_prompt_tokens": 163072, "cache_miss_prompt_tokens": 841373, "usage_reports": 197, "usage_missing_responses": 0}}
+
+raw 退出原因：{"tool_budget": 6, "protocol_error": 6, "model_submit": 6, "wall_budget": 2}
+raw 传输/格式失败计数：{"json_syntax": 453, "output_length": 2}
+raw 按角色API计数：{"action": {"model_calls": 5215, "api_requests": 5670, "api_responses": 5670, "prompt_tokens": 74961050, "completion_tokens": 764460, "total_tokens": 75725510, "cached_prompt_tokens": 6092160, "cache_miss_prompt_tokens": 68868890, "usage_reports": 5670, "usage_missing_responses": 0}}
+
+二、所有组件计数（—代表RAW未启用/未记录同名字段，不代表没有循环）
+字段	DH	RAW
+action_calls	12456	—
+action_loop_blocks	5848	—
+advisor_calls	39	—
+advisor_deferred	5	—
+advisor_responses_accepted	34	—
+auto_memories_admitted	192	—
+auto_memories_rejected	51	—
+auto_memory_candidates	246	—
+branch_restores	0	—
+checkpoints_created	20	—
+contrastive_accepted	3480	—
+contrastive_diagnostic_fallbacks	779	—
+contrastive_episodes	789	—
+contrastive_failure_records	762	—
+contrastive_informative_predictions	0	—
+contrastive_new_evidence	157	—
+contrastive_observations	197	—
+contrastive_proposals	5338	—
+contrastive_public_check_improvements	0	—
+contrastive_rejections	1858	—
+contrastive_workspace_changes	29	—
+memories_admitted	195	—
+memories_rejected	0	—
+memory_action_changed	8	—
+memory_action_unchanged	12	—
+memory_exposures	42040	—
+memory_followup_actions	313	—
+memory_followup_runs	313	—
+memory_followup_succeeded	157	—
+memory_followup_workspace_changed	58	—
+memory_interventions	20	—
+memory_use_self_reports	577	—
+model_requests	12692	—
+monitor_calls	197	—
+monitor_deferred	49	—
+monitor_reviews_accepted	148	—
+observed_memories_admitted	3	—
+post_advice_actions	33	—
+protocol_errors	11	—
+recovery_checked_hypotheses	0	—
+recovery_failed	0	—
+recovery_plans	0	—
+recovery_started	0	—
+recovery_verified_repairs	0	—
+requests_with_memory	11969	—
+route_episodes	0	—
+route_no_gain	0	—
+route_plans	0	—
+route_pruned	0	—
+route_rejected	0	—
+route_restore_failures	0	—
+route_selected	0	—
+route_tools	0	—
+route_trials	0	—
+semantic_stalls	39	—
+submissions	5	—
+tool_calls	5282	—
+
+三、严格相同10题：DH、RAW、图搜索
+指标	DH	RAW	图搜索
+有效题数	10	10	10
+平均F2P(%)	51.2547	16.6705	12.0111
+中位F2P(%)	52.9762	0.0000	0.0000
+F2P全过题数	1	1	1
+F2P零分题数	2	6	6
+整题完全通过	1	1	1
+P2P全过题数	6	9	8
+平均P2P(%)	94.4700	99.4700	98.2200
+工具总数	2372	3118	554
+每题平均工具	237.2000	311.8000	55.4000
+逻辑模型调用usage	6492	3140	1019
+runner interaction_rounds	6492	3140	1019
+wire/API请求	6496	3462	1046
+API回复	6496	3462	1045
+输入tokens	84828200	42691392	11536221
+输出tokens	2551980	520944	345732
+总tokens	87380180	43212336	11881953
+每题平均tokens	8738018.0000	4321233.6000	1188195.3000
+缓存命中输入tokens	13474048	3999744	2674432
+缓存命中占输入(%)	15.8839	9.3690	23.1829
+每题平均耗时分钟	45.9315	12.4076	6.3853
+每题中位耗时分钟	40.3089	8.9946	6.8276
+题目耗时累计小时(非墙钟)	7.6553	2.0679	1.0642
+自主提交题数	3	1	1
+
+图搜索退出原因：{"graph_node_budget": 9, "model_submit": 1}
+图搜索所有组件计数：{"action_calls": 802, "action_loop_blocks": 27, "advisor_calls": 0, "advisor_deferred": 0, "advisor_responses_accepted": 0, "auto_memories_admitted": 21, "auto_memories_rejected": 3, "auto_memory_candidates": 24, "branch_restores": 210, "checkpoints_created": 93, "graph_cached_results": 27, "graph_duplicate_proposals": 220, "graph_expansions": 802, "graph_frontier_selections": 1396, "graph_nodes_created": 575, "graph_snapshots": 93, "graph_source_switches": 855, "graph_stale_proposals": 2, "graph_state_merges": 6, "memories_admitted": 21, "memories_rejected": 0, "memory_action_changed": 0, "memory_action_unchanged": 0, "memory_exposures": 944, "memory_followup_actions": 32, "memory_followup_runs": 32, "memory_followup_succeeded": 26, "memory_followup_workspace_changed": 6, "memory_interventions": 1, "memory_use_self_reports": 41, "model_requests": 1019, "monitor_calls": 18, "monitor_deferred": 0, "monitor_reviews_accepted": 18, "observed_memories_admitted": 0, "planner_annotations_rejected": 6, "planner_calls": 199, "planner_decisions_accepted": 184, "planner_deferred": 15, "planner_fallback_selections": 1212, "post_advice_actions": 0, "protocol_errors": 5, "recovery_checked_hypotheses": 0, "recovery_failed": 0, "recovery_plans": 0, "recovery_started": 0, "recovery_verified_repairs": 0, "requests_with_memory": 628, "route_episodes": 0, "route_no_gain": 0, "route_plans": 0, "route_pruned": 0, "route_rejected": 0, "route_restore_failures": 0, "route_selected": 0, "route_tools": 0, "route_trials": 0, "semantic_stalls": 0, "submissions": 1, "tool_calls": 554}
+
+四、不可由已有日志可靠得出的指标
+真实人民币费用（无账单核对）；全局重复率/无效工具率（未统一独立标注）；记忆因果增益；统计显著性。
+曝光不是利用，自述不是证据，命令成功不是任务成功，正交放行不是获得新证据。
+逻辑请求usage与runner计数存在差异时分列，不强行合并；数值缺失不当作零。

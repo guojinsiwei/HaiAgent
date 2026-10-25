@@ -1,0 +1,51 @@
+Fresh DH control-repair tool ablation, 2026-10-08
+
+Remote: /mnt/sdb/home/lizh639/longcli-dh-controls-paired40-20261008
+Methods: dh_1234_tools (20) and dh_1234_no_tools (20), all fresh; no historical scores reused.
+Source: releases/DH-control-repair; both methods run identical source and operational backend.
+Only ablation variable: availability of inspect_code/edit_code/verify_goal.
+Base: subgoals + local correction + reconnaissance + critic + protected backtracking (1342).
+
+Model: deepseek-flash; thinking=false; temperature=0.
+Per task: 800 actual API attempts shared by all roles and retries, 600 tools, 7200 seconds.
+Per response: 4096 output tokens. Final wire messages <=48000 UTF8 bytes.
+Docker: pinned official task images and starter archives; 2 visible CPUs, 8GiB, 256 pids.
+Fresh task workspace, home, scratch, memories, role clients; hidden tests masked, task network none.
+Concurrent limit: 12 total, 6 per method, after both first-task pilots pass engineering checks.
+Paired tasks have distinct CPU slots; source and budgets are equal.
+Grading: pinned official grader, separately sequential, scores never enter solver context.
+No email, no GPT automation, no shared credentials with old experiments.
+
+Acceptance: remote-ready.json. 310 regression tests, zero errors/failures/skips.
+1,404 historical prompts replayed with zero context errors.
+Both arms completed real keyless Docker fixtures; all 20 pinned task images passed clean shell checks.
+48-step/four-role pressure fixtures passed; all final wire bodies within 48000-byte cap.
+Actual Docker raw-output archival and exact source pagination tested, including middle error retention.
+Three concurrent Docker canaries: one failed task preserved, two healthy siblings finished.
+Official grade and container cleanup verified. Real model completion calls during acceptance: zero.
+
+These repairs include an admission-policy change (TF-IDF advisory and bounded retries),
+not a claim of unchanged algorithm behavior or proven score improvement.
+Old tool experiment remains cancelled; old no-tools experiment/source/results are unchanged.
+Paid launch requires NEW local hidden key input in Start-Paired40.ps1.
+
+Launch confirmed after user's fresh local credential input.
+Initial live check: tools arm 105 successful API responses / 71 tool calls;
+no-tools arm 61 successful API responses / 56 tool calls (one request in flight per arm).
+Both first-task pilots running; 38 subsequent trials pending pilot acceptance.
+No observed protocol error, infrastructure error, recovery hard stop or /dev/null permission error.
+Sealed source hashes verified; desktop monitor sees both arms with expected=20 each.
+See remote-launch.json and evidence/initial-live-health.json; these are snapshots, not current status.
+
+2026-10-09 parallel scheduling correction:
+The initial controller's first-task-completion gate left only two tasks active despite a 12-task cap.
+ops-parallel replaces only that controller after fresh local key input, adopts existing task PIDs,
+and immediately fills free slots to 6 tasks per arm. It does not restart tasks, edit solver source,
+change budgets, create a new scored campaign or replace the official grader.
+Shared/repeated engineering faults still pause new admission; healthy siblings continue.
+7 zero-API operations tests passed on the compute node, including an actual POSIX handoff fixture.
+Before input, the original controller and trials continue unchanged.
+Operation receipts: ops-parallel/handoff.json and ops-parallel/launch.json on the compute node.
+Parallel handoff completed after fresh hidden input: 12 active (6 per arm), original two task PIDs
+preserved, no task restart. Initial post-handoff check confirmed API responses and tool execution
+in all 12 active tasks, zero shared/task engineering errors and the original solver source seal valid.

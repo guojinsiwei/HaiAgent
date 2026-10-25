@@ -1,0 +1,683 @@
+=====================================================================
+Assignment: Project 3: Ants Vs. SomeBees
+OK, version v1.18.1
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Scoring tests
+
+---------------------------------------------------------------------
+Problem 0
+    Passed: 1
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Problem 1 > Suite 2 > Case 1
+
+>>> from ants import *
+>>> from ants_plans import *
+>>> Ant.food_cost
+0
+>>> HarvesterAnt.food_cost
+0
+
+# Error: expected
+#     2
+# but got
+#     0
+
+Run only this test case with "python3 ok -q 01 --suite 2 --case 1"
+---------------------------------------------------------------------
+Problem 1
+    Passed: 0
+    Failed: 1
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Problem 2 > Suite 2 > Case 1
+
+>>> from ants import *
+>>> from ants_plans import *
+>>> #
+>>> # Create a test layout where the gamestate is a single row with 3 tiles
+>>> beehive, layout = Hive(make_test_assault_plan()), dry_layout
+>>> dimensions = (1, 3)
+>>> gamestate = GameState(beehive, ant_types(), layout, dimensions)
+>>> #
+>>> # Simple test for Place
+>>> place0 = Place('place_0')
+>>> print(place0.exit)
+None
+>>> print(place0.entrance)
+None
+>>> place1 = Place('place_1', place0)
+>>> place1.exit is place0
+True
+>>> place0.entrance is place1
+False
+
+# Error: expected
+#     True
+# but got
+#     False
+
+Run only this test case with "python3 ok -q 02 --suite 2 --case 1"
+---------------------------------------------------------------------
+Problem 2
+    Passed: 0
+    Failed: 1
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Problem 3 > Suite 2 > Case 1
+
+>>> from ants import *
+>>> beehive, layout = Hive(AssaultPlan()), dry_layout
+>>> dimensions = (1, 9)
+>>> gamestate = GameState(beehive, ant_types(), layout, dimensions)
+>>> thrower = ThrowerAnt()
+>>> ant_place = gamestate.places["tunnel_0_0"]
+>>> ant_place.add_insect(thrower)
+>>> #
+>>> # Testing nearest_bee
+>>> near_bee = Bee(2) # A Bee with 2 health
+>>> far_bee = Bee(3)  # A Bee with 3 health
+>>> hive_bee = Bee(4) # A Bee with 4 health
+>>> hive_place = gamestate.beehive
+>>> hive_place.is_hive # Check if this place is the Hive
+True
+>>> hive_place.add_insect(hive_bee)
+>>> thrower.nearest_bee() is hive_bee # Bees in the Hive can never be attacked
+False
+>>> near_place = gamestate.places['tunnel_0_3']
+>>> far_place = gamestate.places['tunnel_0_6']
+>>> near_place.is_hive # Check if this place is the Hive
+False
+>>> near_place.add_insect(near_bee)
+>>> far_place.add_insect(far_bee)
+>>> nearest_bee = thrower.nearest_bee()
+>>> thrower.place is ant_place    # Don't change self.place!
+True
+>>> nearest_bee is far_bee
+False
+>>> nearest_bee is near_bee
+False
+
+# Error: expected
+#     True
+# but got
+#     False
+
+Run only this test case with "python3 ok -q 03 --suite 2 --case 1"
+---------------------------------------------------------------------
+Problem 3
+    Passed: 0
+    Failed: 1
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Problem 4 > Suite 2 > Case 2
+
+>>> from ants import *
+>>> beehive, layout = Hive(AssaultPlan()), dry_layout
+>>> dimensions = (1, 9)
+>>> gamestate = GameState(beehive, ant_types(), layout, dimensions)
+>>> #
+>>> from ants import *
+>>> LongThrower.implemented
+False
+
+# Error: expected
+#     True
+# but got
+#     False
+
+Run only this test case with "python3 ok -q 04 --suite 2 --case 2"
+---------------------------------------------------------------------
+Problem 4 > Suite 3 > Case 2
+
+>>> from ants import *
+>>> beehive, layout = Hive(AssaultPlan()), dry_layout
+>>> dimensions = (1, 100)
+>>> gamestate = GameState(beehive, ant_types(), layout, dimensions)
+>>> #
+>>> # Testing if upper_bound is set appropriately in ThrowerAnt
+>>> ant = ThrowerAnt()
+>>> gamestate.places["tunnel_0_0"].add_insect(ant)
+>>> bee = Bee(2)
+>>> gamestate.places["tunnel_0_99"].add_insect(bee)
+>>> ant.action(gamestate)
+>>> bee.health
+2
+
+# Error: expected
+#     1
+# but got
+#     2
+
+Run only this test case with "python3 ok -q 04 --suite 3 --case 2"
+---------------------------------------------------------------------
+Problem 4
+    Passed: 1
+    Failed: 2
+[oook.......] 33.3% passed
+
+---------------------------------------------------------------------
+Problem 5 > Suite 2 > Case 2
+
+>>> from ants import *
+>>> beehive, layout = Hive(AssaultPlan()), dry_layout
+>>> dimensions = (1, 9)
+>>> gamestate = GameState(beehive, ant_types(), layout, dimensions)
+>>> #
+>>> # Abstraction tests
+>>> original = Ant.__init__
+>>> Ant.__init__ = lambda self, health: print("init") #If this errors, you are not calling the parent constructor correctly.
+>>> fire = FireAnt()
+init
+>>> Ant.__init__ = original
+>>> fire = FireAnt()
+>>> original = Ant.reduce_health
+>>> Ant.reduce_health = lambda self, amount: print("reduced") #If this errors, you are not calling the inherited method correctly
+>>> place = gamestate.places['tunnel_0_4']
+>>> place.add_insect(fire)
+>>> fire.reduce_health(1)
+
+# Error: expected
+#     reduced
+# but got
+
+
+Run only this test case with "python3 ok -q 05 --suite 2 --case 2"
+---------------------------------------------------------------------
+Problem 5 > Suite 3 > Case 1
+
+>>> from ants import *
+>>> FireAnt.implemented
+False
+
+# Error: expected
+#     True
+# but got
+#     False
+
+Run only this test case with "python3 ok -q 05 --suite 3 --case 1"
+---------------------------------------------------------------------
+Problem 5
+    Passed: 0
+    Failed: 2
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Problem 6 > Suite 2 > Case 1
+
+>>> from ants import *
+>>> # Testing WallAnt parameters
+>>> wall = WallAnt()
+NameError: name 'WallAnt' is not defined
+
+# Error: expected
+
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     NameError: name 'WallAnt' is not defined
+
+Run only this test case with "python3 ok -q 06 --suite 2 --case 1"
+---------------------------------------------------------------------
+Problem 6 > Suite 3 > Case 1
+
+>>> from ants import *
+>>> WallAnt.implemented
+NameError: name 'WallAnt' is not defined
+
+# Error: expected
+#     True
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     NameError: name 'WallAnt' is not defined
+
+Run only this test case with "python3 ok -q 06 --suite 3 --case 1"
+---------------------------------------------------------------------
+Problem 6
+    Passed: 0
+    Failed: 2
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Problem 7 > Suite 2 > Case 1
+
+>>> from ants import *
+>>> beehive, layout = Hive(AssaultPlan()), dry_layout
+>>> dimensions = (1, 9)
+>>> gamestate = GameState(beehive, ant_types(), layout, dimensions)
+>>> #
+>>> # Testing HungryAnt parameters
+>>> hungry = HungryAnt()
+NameError: name 'HungryAnt' is not defined
+
+# Error: expected
+
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     NameError: name 'HungryAnt' is not defined
+
+Run only this test case with "python3 ok -q 07 --suite 2 --case 1"
+---------------------------------------------------------------------
+Problem 7 > Suite 3 > Case 1
+
+>>> from ants import *
+>>> HungryAnt.implemented
+NameError: name 'HungryAnt' is not defined
+
+# Error: expected
+#     True
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     NameError: name 'HungryAnt' is not defined
+
+Run only this test case with "python3 ok -q 07 --suite 3 --case 1"
+---------------------------------------------------------------------
+Problem 7
+    Passed: 0
+    Failed: 2
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Problem 8a > Suite 2 > Case 1
+
+>>> from ants import *
+>>> beehive, layout = Hive(AssaultPlan()), dry_layout
+>>> gamestate = GameState(beehive, ant_types(), layout, (1, 9))
+>>> #
+>>> container = ContainerAnt(1)
+>>> container2 = ContainerAnt(2)
+>>> container3 = ContainerAnt(3)
+>>> throw_long = LongThrower(1)
+>>> container.can_contain(container2)
+
+# Error: expected
+#     False
+# but got
+
+
+Run only this test case with "python3 ok -q 08a --suite 2 --case 1"
+---------------------------------------------------------------------
+Problem 8a
+    Passed: 0
+    Failed: 1
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Problem 8b > Suite 2 > Case 1
+
+>>> from ants import *
+>>> beehive, layout = Hive(AssaultPlan()), dry_layout
+>>> gamestate = GameState(beehive, ant_types(), layout, (1, 9))
+>>> #
+>>> # Container ant added before another ant
+>>> container = ContainerAnt(1)
+>>> other_ant = ThrowerAnt()
+>>> place = gamestate.places['tunnel_0_0']
+>>> place.add_insect(container)  # ContainerAnt in place first
+>>> place.add_insect(other_ant)
+Traceback (most recent call last):
+  File "/app/cs61_fa24_ants/ants.py", line 36, in add_insect
+    insect.add_to(self)
+  File "/app/cs61_fa24_ants/ants.py", line 126, in add_to
+    assert place.ant is None, 'Too many ants in {0}'.format(place)
+           ^^^^^^^^^^^^^^^^^
+AssertionError: Too many ants in tunnel_0_0
+
+# Error: expected
+
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     AssertionError: Too many ants in tunnel_0_0
+
+Run only this test case with "python3 ok -q 08b --suite 2 --case 1"
+---------------------------------------------------------------------
+Problem 8b
+    Passed: 0
+    Failed: 1
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Problem 8c > Suite 2 > Case 1
+
+>>> from ants import *
+>>> # Testing BodyguardAnt parameters
+>>> bodyguard = BodyguardAnt()
+TypeError: ContainerAnt.__init__() missing 1 required positional argument: 'health'
+
+# Error: expected
+
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     TypeError: ContainerAnt.__init__() missing 1 required positional argument: 'health'
+
+Run only this test case with "python3 ok -q 08c --suite 2 --case 1"
+---------------------------------------------------------------------
+Problem 8c > Suite 3 > Case 1
+
+>>> from ants import *
+>>> # Abstraction tests
+>>> original = ContainerAnt.__init__
+>>> ContainerAnt.__init__ = lambda self, health: print("init") #If this errors, you are not calling the parent constructor correctly.
+>>> bodyguard = BodyguardAnt()
+TypeError: <lambda>() missing 1 required positional argument: 'health'
+
+# Error: expected
+#     init
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     TypeError: <lambda>() missing 1 required positional argument: 'health'
+
+Run only this test case with "python3 ok -q 08c --suite 3 --case 1"
+---------------------------------------------------------------------
+Problem 8c > Suite 4 > Case 1
+
+>>> from ants import *
+>>> beehive, layout = Hive(AssaultPlan()), dry_layout
+>>> gamestate = GameState(beehive, ant_types(), layout, (1, 9))
+>>> #
+>>> bodyguard = BodyguardAnt()
+TypeError: <lambda>() missing 1 required positional argument: 'health'
+
+# Error: expected
+
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     TypeError: <lambda>() missing 1 required positional argument: 'health'
+
+Run only this test case with "python3 ok -q 08c --suite 4 --case 1"
+---------------------------------------------------------------------
+Problem 8c
+    Passed: 1
+    Failed: 3
+[ook........] 25.0% passed
+
+---------------------------------------------------------------------
+Problem 9 > Suite 2 > Case 1
+
+>>> from ants_plans import *
+>>> from ants import *
+>>> beehive, layout = Hive(make_test_assault_plan()), dry_layout
+>>> dimensions = (1, 9)
+>>> gamestate = GameState(beehive, ant_types(), layout, dimensions)
+>>> #
+>>> # Testing TankAnt parameters
+>>> TankAnt.food_cost
+NameError: name 'TankAnt' is not defined
+
+# Error: expected
+#     6
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     NameError: name 'TankAnt' is not defined
+
+Run only this test case with "python3 ok -q 09 --suite 2 --case 1"
+---------------------------------------------------------------------
+Problem 9 > Suite 3 > Case 1
+
+>>> from ants_plans import *
+>>> from ants import *
+>>> beehive, layout = Hive(make_test_assault_plan()), dry_layout
+>>> dimensions = (1, 9)
+>>> gamestate = GameState(beehive, ant_types(), layout, dimensions)
+>>> #
+>>> # Testing TankAnt action
+>>> tank = TankAnt()
+NameError: name 'TankAnt' is not defined
+
+# Error: expected
+
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     NameError: name 'TankAnt' is not defined
+
+Run only this test case with "python3 ok -q 09 --suite 3 --case 1"
+---------------------------------------------------------------------
+Problem 9 > Suite 4 > Case 1
+
+>>> from ants import *
+>>> TankAnt.implemented
+NameError: name 'TankAnt' is not defined
+
+# Error: expected
+#     True
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     NameError: name 'TankAnt' is not defined
+
+Run only this test case with "python3 ok -q 09 --suite 4 --case 1"
+---------------------------------------------------------------------
+Problem 9
+    Passed: 0
+    Failed: 3
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Problem 10 > Suite 2 > Case 1
+
+>>> from ants import *
+>>> from ants_plans import *
+>>> beehive, layout = Hive(make_test_assault_plan()), dry_layout
+>>> dimensions = (1, 9)
+>>> gamestate = GameState(beehive, ant_types(), layout, dimensions)
+>>> #
+>>> # Testing water with Ants
+>>> test_water = Water('Water Test1')
+>>> ant = HarvesterAnt()
+>>> test_water.add_insect(ant)
+>>> (ant.health, test_water.ant is None)
+(1, True)
+
+# Error: expected
+#     (0, True)
+# but got
+#     (1, True)
+
+Run only this test case with "python3 ok -q 10 --suite 2 --case 1"
+---------------------------------------------------------------------
+Problem 10 > Suite 3 > Case 1
+
+>>> from ants import *
+>>> from ants_plans import *
+>>> beehive, layout = Hive(make_test_assault_plan()), dry_layout
+>>> dimensions = (1, 9)
+>>> gamestate = GameState(beehive, ant_types(), layout, dimensions)
+>>> old_add_insect = Place.add_insect
+>>> # Testing water inheritance
+>>> old_add_insect = Place.add_insect
+>>> def new_add_insect(self, insect):
+...     print("called add_insect")
+...     old_add_insect(self, insect)
+>>> Place.add_insect = new_add_insect
+>>> test_bee = Bee(1)
+>>> test_water = Water('Water Test4')
+>>> test_water.add_insect(test_bee) # if this fails you probably didn't call `add_insect`
+
+# Error: expected
+#     called add_insect
+# but got
+
+>>> Place.add_insect = old_add_insect
+
+Run only this test case with "python3 ok -q 10 --suite 3 --case 1"
+---------------------------------------------------------------------
+Problem 10
+    Passed: 0
+    Failed: 2
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Problem 11 > Suite 3 > Case 1
+
+>>> from ants import *
+>>> beehive, layout = Hive(AssaultPlan()), wet_layout
+>>> dimensions = (1, 9)
+>>> gamestate = GameState(beehive, ant_types(), layout, dimensions)
+>>> #
+>>> # Testing if ScubaThrower is waterproof
+>>> water = gamestate.places["water_0_2"]
+>>> ant = ScubaThrower()
+NameError: name 'ScubaThrower' is not defined. Did you mean: 'ScaryThrower'?
+
+# Error: expected
+
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     NameError: name 'ScubaThrower' is not defined
+
+Run only this test case with "python3 ok -q 11 --suite 3 --case 1"
+---------------------------------------------------------------------
+Problem 11 > Suite 4 > Case 1
+
+>>> from ants import *
+>>> beehive, layout = Hive(AssaultPlan()), wet_layout
+>>> dimensions = (1, 9)
+>>> gamestate = GameState(beehive, ant_types(), layout, dimensions)
+>>> old_thrower_action = ThrowerAnt.action
+>>> old_throw_at = ThrowerAnt.throw_at
+>>> # Testing ScubaThrower Inheritance from ThrowerAnt
+>>> def new_action(self, gamestate):
+...     raise NotImplementedError()
+>>> def new_throw_at(self, target):
+...     raise NotImplementedError()
+>>> ThrowerAnt.action = new_action
+>>> test_scuba = ScubaThrower()
+NameError: name 'ScubaThrower' is not defined. Did you mean: 'ScaryThrower'?
+
+# Error: expected
+
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     NameError: name 'ScubaThrower' is not defined
+>>> ThrowerAnt.action = old_thrower_action
+>>> ThrowerAnt.throw_at = old_throw_at
+
+Run only this test case with "python3 ok -q 11 --suite 4 --case 1"
+---------------------------------------------------------------------
+Problem 11 > Suite 5 > Case 1
+
+>>> from ants import *
+>>> ScubaThrower.implemented
+NameError: name 'ScubaThrower' is not defined. Did you mean: 'ScaryThrower'?
+
+# Error: expected
+#     True
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     NameError: name 'ScubaThrower' is not defined
+
+Run only this test case with "python3 ok -q 11 --suite 5 --case 1"
+---------------------------------------------------------------------
+Problem 11
+    Passed: 0
+    Failed: 3
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Problem 12 > Suite 3 > Case 1
+
+>>> import ants, importlib
+>>> importlib.reload(ants)
+>>> beehive = ants.Hive(ants.AssaultPlan())
+>>> dimensions = (2, 9)
+>>> gamestate = ants.GameState(beehive, ants.ant_types(),
+...                            ants.dry_layout, dimensions, food=20)
+>>> ants.ants_lose = lambda: None
+>>> # QueenAnt Placement
+>>> queen = ants.QueenAnt()
+>>> front_ant, back_ant = ants.ThrowerAnt(), ants.ThrowerAnt()
+>>> tunnel = [gamestate.places['tunnel_0_{0}'.format(i)]
+...         for i in range(9)]
+>>> tunnel[1].add_insect(back_ant)
+>>> tunnel[7].add_insect(front_ant)
+>>> tunnel[4].ant is None
+True
+>>> back_ant.damage           # Ants should not have double damage yet
+1
+>>> front_ant.damage
+1
+>>> tunnel[4].add_insect(queen)
+>>> queen.action(gamestate)
+>>> back_ant.damage           # Ants behind queen should have double damage
+1
+
+# Error: expected
+#     2
+# but got
+#     1
+
+Run only this test case with "python3 ok -q 12 --suite 3 --case 1"
+---------------------------------------------------------------------
+Problem 12 > Suite 4 > Case 1
+
+>>> import ants, importlib
+>>> importlib.reload(ants)
+>>> beehive = ants.Hive(ants.AssaultPlan())
+>>> dimensions = (2, 9)
+>>> gamestate = ants.GameState(beehive, ants.ant_types(),
+...                            ants.dry_layout, dimensions, food=20)
+>>> #
+>>> # Testing game over
+>>> queen = ants.QueenAnt()
+>>> tunnel = [gamestate.places['tunnel_0_{0}'.format(i)]
+...           for i in range(9)]
+>>> tunnel[4].add_insect(queen)
+>>> bee = ants.Bee(3)
+>>> tunnel[6].add_insect(bee)     # Bee in a different place from the queen
+>>> bee.action(gamestate)         # Game should not end
+>>> bee.move_to(tunnel[4])        # Bee moved to place with queen
+>>> bee.action(gamestate)         # Game should end
+
+# Error: expected
+#     AntsLoseException
+# but got
+
+
+Run only this test case with "python3 ok -q 12 --suite 4 --case 1"
+---------------------------------------------------------------------
+Problem 12
+    Passed: 1
+    Failed: 2
+[oook.......] 33.3% passed
+
+---------------------------------------------------------------------
+Point breakdown
+    Problem 0: 0.0/0
+    Problem 1: 0.0/1
+    Problem 2: 0.0/1
+    Problem 3: 0.0/2
+    Problem 4: 0.6666666666666666/2
+    Problem 5: 0.0/3
+    Problem 6: 0.0/1
+    Problem 7: 0.0/3
+    Problem 8a: 0.0/1
+    Problem 8b: 0.0/1
+    Problem 8c: 0.25/1
+    Problem 9: 0.0/2
+    Problem 10: 0.0/1
+    Problem 11: 0.0/2
+    Problem 12: 0.6666666666666666/2
+
+Score:
+    Total: 1.5833333333333333
+
+Cannot backup when running ok with --local.

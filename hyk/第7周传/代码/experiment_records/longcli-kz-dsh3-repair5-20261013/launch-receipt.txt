@@ -1,0 +1,1 @@
+{"started": true, "pid": 5583, "campaign": "lizh639-longcli-kz-dsh3-repair5-20261013", "tasks": 3, "pilot_then_concurrency": 2}

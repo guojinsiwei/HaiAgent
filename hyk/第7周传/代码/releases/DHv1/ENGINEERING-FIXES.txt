@@ -1,0 +1,108 @@
+DHv1 engineering repairs — 2026-10-04 (Asia/Shanghai)
+
+Subsequent second-pass audit found SIX additional reproduced engineering defects.
+See audit/DEEP-ENGINEERING-AUDIT.txt and audit/deep-engineering-audit.json.
+Those six defects were subsequently repaired at the user's explicit request.
+Current changes and verification: audit/BOUNDARY-FIXES.txt.
+The successful acceptance below covers its selected cases, not an all-clear.
+
+Scope
+Repair confirmed defects from AUDIT.txt in this independent DHv1 candidate.
+No benchmark runs or model API calls. Frozen DH, DH-engineering-repair-v1 and
+previous experiment results remain untouched. No new release name.
+
+Repairs
+1. Boot delivery audit now lexes C tokens after line splicing. Comments and
+   quoted source text do not count as exec calls. Missing shell dispatch,
+   newly introduced literal programs and computed/variable dispatch are
+   rejected or explicitly unverified. Handles both root and child xv6 folders.
+   Never silently reverts user code. This remains a lexical audit, not a C
+   compiler or control-flow/reachability proof.
+2. expected_observation is excluded from executable action-change comparison.
+   Changing only the predicted outcome no longer earns memory_action_changed.
+   Canonical command keys and the actual repetition policy remain unchanged.
+3. Migrated five stale core fixtures to required ordered memory reviews and
+   current compact prompt fields. Production review enforcement remains on.
+   Core tests are now included in release acceptance, not silently excluded.
+4. run_dhv1.py resolves the bundled package, avoiding a global old installation.
+   CLI defaults pin DH orthogonal mode, no HAI route/stagnation search, no old
+   two-candidate prediction extension, expectation enabled. Explicit HAI flags
+   fail before model construction. Request/tool budgets stay 800/600; CLI wall
+   default stays 3600 seconds; command cap is pinned to the trial's 300 seconds.
+   No increase to existing benchmark budget. Invalid delivery/protocol endings
+   yield nonzero process status; partial budget artifact is not task success.
+5. Literal direct argv timeout 90 make qemu receives the same bounded clock
+   alignment as the covered shell form. It cannot enlarge command/task limits.
+6. LiveWorkspace now recovers fresh, bounded workspace-local redirected QEMU
+   logs after a timeout, both with and without stage-status tracing. Keeps
+   timeout/failure flags and labels recovered logs as untrusted partial data.
+   Does not read shared host /tmp; stale logs and symlink escapes are excluded.
+7. Cube acceptance helper imports this release's bundled compatibility executor,
+   not the historical arm's package. Historical template path remains explicit.
+8. Engineering audit exits nonzero if a confirmed defect reappears or migrated
+   fixtures fail. Intentional malformed legacy reply remains a negative fixture.
+
+Verification completed on Windows (bundled Python 3.12)
+- Release acceptance: 235 cases, 225 passed, 10 POSIX-specific cases skipped.
+- Core test_lean: 33 cases, 26 passed, 7 POSIX-specific cases skipped; all five
+  migrated fixtures pass with the required production review protocol enabled.
+- Audit: all four prior defect reproductions false; five migrated cases passed.
+- New focused regression file: 25 cases, 24 passed, 1 real Linux case skipped.
+  Includes two mocked LiveWorkspace timeout paths, boot comment/string/variable
+  bypasses, root xv6, command clock cap, fresh/stale log bounds and CLI settings.
+- run_dhv1.py --help imports and exits successfully without keys/model access.
+- Byte comparison against engineering base: compatibility, harness and evidence
+  files unchanged (excluding Python caches). Orthogonal exploration and RAW
+  implementation files unchanged. Changes to source beyond initial expectation
+  addition: command_io, delivery_safety, lean_cli, lean_environment, lean_runtime.
+
+Reproduce locally
+  python -X utf8 -m unittest discover -s tests -p "test_*.py"
+  python -X utf8 audit/scan_engineering.py
+  python -X utf8 run_dhv1.py --help
+
+Linux validation completed after explicit upload approval — 2026-10-04
+The user explicitly approved uploading DHv1 source and necessary fixtures for
+acceptance. A new isolated directory was used on lizh639@172.16.108.236:
+  /var/tmp/lizh639-dhv1-acceptance-20261004-HKGypE
+Uploaded only bundled bestfgs source, test_lean fixtures, three selected release
+test files, the new real-Linux preflight, entry point and engineering audit.
+No compatibility/harness/history/evidence/editor configuration or keys uploaded.
+Source archive SHA256 verified locally and remotely:
+  99002600a1d59d2685ecc7f8f7f9eeb1078478db54664014b6a8b86dd83b81ca
+Linux 6.17.0-14-generic x86_64, Python 3.12.12:
+- 91 tests: 91 passed, zero failures/errors/skips, 2.816 seconds.
+- Includes 33 core, 25 engineering-fix, 28 expectation and 5 additional real
+  preflight cases. The Windows-skipped process-group/timeout cases in this
+  selected source-only suite now ran; this is not the entire 235-case suite.
+- Real timeout recovery tested with and without shell status tracing, preserves
+  failure/unknown semantics; background-descendant cleanup/checkpoints tested.
+- LiveWorkspace /dev/null clean read/write, false|true stage failure recognition,
+  symlink log escape rejection, ANSI cleaning with raw evidence retained passed.
+- Scripted actor plus real file execution completed expectation registration,
+  observation, feedback and submission with one tool and two scripted requests.
+- Audit: four prior defect reproductions false; all five migrated fixtures pass.
+- Bundled launch entry --help imported and exited successfully without a key.
+- Python network and real model-client methods were disabled during acceptance;
+  zero attempted network/model API calls, zero paid API calls.
+Reports copied back to audit/linux-acceptance-summary.json,
+audit/linux-acceptance.log, audit/engineering-audit.json and audit/launch-help.txt.
+No existing experiment, live Cube worker or task container was modified. This
+tests the isolated server LiveWorkspace backend, not current Cube worker roots,
+real QEMU guest input or official LongCLI grading. The prior blocked uploads
+were not performed; original empty directory is retained.
+
+Reproduce isolated Linux acceptance (no keys/API)
+  python -X utf8 tests/verify_linux_engineering.py
+
+Remaining limits (not changed by engineering repair)
+- Real QEMU guest-input/session driving and full official grading acceptance
+  remain unverified; captured partial logs never imply a passed guest test.
+- Nested/complex shell status coverage remains bounded and may be unknown.
+- A model repeatedly proposing rejected actions can still consume request budget.
+  No forced takeover/new-route policy or monitor/advisor quota bypass added.
+- RAW format-error breaker remains unchanged (3 consecutive / 8 total).
+- Expected-observation matching remains narrow; unsupported test runners return
+  unknown. Matching does not automatically create checkpoints or failure bans.
+- Strict orthogonal thresholds, cooldowns, memory policy and API budget unchanged.
+- No cloud deployment of DHv1 and no paid experiment restart in this request.

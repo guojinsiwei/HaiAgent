@@ -1,0 +1,30 @@
+RAW12 baseline, 2026-10-02. Exactly the previous RAW twelve-task manifest.
+One fresh trial per task. No prior results, memory or credentials are carried.
+Separate campaign; do not change the two currently running exploration arms.
+Four RAW workers, plus up to four existing workers; all use task-specific CPU
+and memory limits. Existing user-authorized disabled disk guard is retained.
+No pruning/deletion or GPT automation. Plain Python supervision only.
+
+Pure RAW uses ONE deepseek-flash actor (temperature 0, thinking disabled,
+4096 max output tokens), 600 tool calls, 800 logical requests, 900s command
+cap and the original 1h/1.5h/3h task limits. Same 120s delivery reserve,
+official Docker image identity, Harbor grading and binary same-conversation
+continuation as the paired arms. Wire format/transport repair is bounded by
+the same two attempts per logical request and three consecutive-error cap.
+
+No generated experience memory, keyword/semantic experience retrieval,
+reserved memory prompt zone, forced reflection, loop/stall detection, adviser,
+semantic monitor, strategy contrast/TF-IDF gate, checkpoint/rollback action,
+automatic route selection or extra verification. Repeated failed commands are
+not blocked. No BestFGS/HAI decision runner is invoked.
+
+Shared neutral facilities: original chronological action/observation dialogue,
+same bounded conversation budget (48,000 chars) and exact transcript pagination,
+CLI schema, API client, ANSI-readable output, output byte bounds, shell execution
+trace for audit, timeout/descendant cleanup, isolated persistent container,
+artifact capture/delivery and official evaluator. Transcript recall reads past
+raw dialogue, never creates or searches structured experience. Infra/format
+errors and official acceptance are reported independently from task score.
+
+Start requires a fresh local hidden DeepSeek key entry; no credentials in argv,
+disk/tmpfs, logs or task containers, and no reuse from another campaign.

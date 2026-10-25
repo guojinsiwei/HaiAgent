@@ -1,0 +1,948 @@
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.18.1
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Scoring tests
+
+---------------------------------------------------------------------
+Understanding Eval/Apply
+    Passed: 0
+    Failed: 0
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Problem 1 > Suite 1 > Case 1
+
+>>> from scheme import *
+>>> global_frame = create_global_frame()
+>>> global_frame.define("x", 3)
+>>> global_frame.parent is None
+True
+>>> global_frame.lookup("x")
+
+# Error: expected
+#     3
+# but got
+
+
+Run only this test case with "python3 ok -q 01 --suite 1 --case 1"
+---------------------------------------------------------------------
+Problem 1 > Suite 2 > Case 1
+
+scm> +
+
+# Error: expected
+#     #[+]
+# but got
+
+
+Run only this test case with "python3 ok -q 01 --suite 2 --case 1"
+---------------------------------------------------------------------
+Problem 1
+    Passed: 0
+    Failed: 2
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Problem 2 > Suite 1 > Case 1
+
+>>> from scheme import *
+>>> env = create_global_frame()
+>>> twos = Pair(2, Pair(2, nil))
+>>> plus = BuiltinProcedure(scheme_add) # + procedure
+>>> scheme_apply(plus, twos, env) # Type SchemeError if you think this errors
+
+# Error: expected
+#     4
+# but got
+
+
+Run only this test case with "python3 ok -q 02 --suite 1 --case 1"
+---------------------------------------------------------------------
+Problem 2
+    Passed: 0
+    Failed: 1
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Problem 3 > Suite 1 > Case 1
+
+>>> from scheme_reader import *
+>>> from scheme import *
+>>> expr = read_line('(+ 2 2)')
+>>> scheme_eval(expr, create_global_frame()) # Type SchemeError if you think this errors
+
+# Error: expected
+#     4
+# but got
+
+
+Run only this test case with "python3 ok -q 03 --suite 1 --case 1"
+---------------------------------------------------------------------
+Problem 3 > Suite 2 > Case 1
+
+scm> (* (+ 3 2) (+ 1 7)) ; Type SchemeError if you think this errors
+
+# Error: expected
+#     40
+# but got
+
+
+Run only this test case with "python3 ok -q 03 --suite 2 --case 1"
+---------------------------------------------------------------------
+Problem 3
+    Passed: 0
+    Failed: 2
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Problem 4 > Suite 2 > Case 1
+
+scm> (define size 2)
+
+# Error: expected
+#     size
+# but got
+
+
+Run only this test case with "python3 ok -q 04 --suite 2 --case 1"
+---------------------------------------------------------------------
+Problem 4
+    Passed: 0
+    Failed: 1
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Problem 5 > Suite 2 > Case 1
+
+>>> from scheme import *
+>>> global_frame = create_global_frame()
+>>> do_quote_form(Pair(3, nil), global_frame)
+
+# Error: expected
+#     3
+# but got
+
+
+Run only this test case with "python3 ok -q 05 --suite 2 --case 1"
+---------------------------------------------------------------------
+Problem 5 > Suite 3 > Case 1
+
+scm> ''hello
+
+# Error: expected
+#     (quote hello)
+# but got
+
+
+Run only this test case with "python3 ok -q 05 --suite 3 --case 1"
+---------------------------------------------------------------------
+Problem 5 > Suite 4 > Case 1
+
+scm> (quote hello)
+
+# Error: expected
+#     hello
+# but got
+
+
+Run only this test case with "python3 ok -q 05 --suite 4 --case 1"
+---------------------------------------------------------------------
+Problem 5
+    Passed: 0
+    Failed: 3
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Problem 6 > Suite 1 > Case 1
+
+>>> from scheme import *
+>>> env = create_global_frame()
+>>> eval_all(Pair(2, nil), env)
+2
+>>> eval_all(Pair(4, Pair(5, nil)), env)
+4
+
+# Error: expected
+#     5
+# but got
+#     4
+
+Run only this test case with "python3 ok -q 06 --suite 1 --case 1"
+---------------------------------------------------------------------
+Problem 6 > Suite 2 > Case 1
+
+scm> (begin (+ 2 3) (+ 5 6))
+
+# Error: expected
+#     11
+# but got
+
+
+Run only this test case with "python3 ok -q 06 --suite 2 --case 1"
+---------------------------------------------------------------------
+Problem 6
+    Passed: 0
+    Failed: 2
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Problem 7 > Suite 1 > Case 1
+
+scm> (lambda (x y) (+ x y)) ;; An lambda procedure is displayed exactly as it is written
+
+# Error: expected
+#     (lambda (x y) (+ x y))
+# but got
+
+
+Run only this test case with "python3 ok -q 07 --suite 1 --case 1"
+---------------------------------------------------------------------
+Problem 7 > Suite 2 > Case 1
+
+>>> from scheme_reader import *
+>>> from scheme import *
+>>> env = create_global_frame()
+>>> lambda_line = read_line("(lambda (a b c) (+ a b c))")
+>>> lambda_proc = do_lambda_form(lambda_line.rest, env)
+>>> lambda_proc.formals # use single quotes ' around strings in your answer
+AttributeError: 'NoneType' object has no attribute 'formals'
+
+# Error: expected
+#     Pair('a', Pair('b', Pair('c', nil)))
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     AttributeError: 'NoneType' object has no attribute 'formals'
+
+Run only this test case with "python3 ok -q 07 --suite 2 --case 1"
+---------------------------------------------------------------------
+Problem 7
+    Passed: 0
+    Failed: 2
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Problem 8 > Suite 1 > Case 1
+
+>>> from scheme import *
+>>> global_frame = create_global_frame()
+>>> formals = Pair('a', Pair('b', Pair('c', nil)))
+>>> vals = Pair(1, Pair(2, Pair(3, nil)))
+>>> frame = global_frame.make_child_frame(formals, vals)
+>>> global_frame.lookup('a') # Type SchemeError if you think this errors
+
+# Error: expected
+#     SchemeError
+# but got
+
+
+Run only this test case with "python3 ok -q 08 --suite 1 --case 1"
+---------------------------------------------------------------------
+Problem 8 > Suite 2 > Case 3
+
+>>> from scheme import *
+>>> global_frame = create_global_frame()
+>>> # Values can be pairs.
+>>> formals = Pair('a', Pair('b', nil))
+>>> values = Pair(Pair(1, nil), Pair(Pair(2, nil), nil))
+>>> frame = global_frame.make_child_frame(formals, values)
+>>> frame.lookup('a')
+AttributeError: 'NoneType' object has no attribute 'lookup'
+
+# Error: expected
+#     Pair(1, nil)
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     AttributeError: 'NoneType' object has no attribute 'lookup'
+
+Run only this test case with "python3 ok -q 08 --suite 2 --case 3"
+---------------------------------------------------------------------
+Problem 8
+    Passed: 0
+    Failed: 2
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Problem 9 > Suite 1 > Case 1
+
+scm> (define square (lambda (x) (* x x)))
+
+# Error: expected
+#     square
+# but got
+
+
+Run only this test case with "python3 ok -q 09 --suite 1 --case 1"
+---------------------------------------------------------------------
+Problem 9 > Suite 2 > Case 1
+
+scm> (define double (lambda (n) (* 2 n))) ; make double a LambdaProcedure that doubles a number
+
+# Error: expected
+#     double
+# but got
+
+
+Run only this test case with "python3 ok -q 09 --suite 2 --case 1"
+---------------------------------------------------------------------
+Problem 9 > Suite 3 > Case 1
+
+scm> (define x 5)
+
+# Error: expected
+#     x
+# but got
+
+
+Run only this test case with "python3 ok -q 09 --suite 3 --case 1"
+---------------------------------------------------------------------
+Problem 9
+    Passed: 0
+    Failed: 3
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Problem 10 > Suite 1 > Case 1
+
+scm> (define (f x y) (+ x y))
+
+# Error: expected
+#     f
+# but got
+
+
+Run only this test case with "python3 ok -q 10 --suite 1 --case 1"
+---------------------------------------------------------------------
+Problem 10 > Suite 2 > Case 1
+
+>>> from scheme_reader import *
+>>> from scheme import *
+>>> env = create_global_frame()
+>>> inp = read_line("(define (f x) x)")
+>>> scheme_eval(inp, env)
+
+# Error: expected
+#     'f'
+# but got
+
+
+Run only this test case with "python3 ok -q 10 --suite 2 --case 1"
+---------------------------------------------------------------------
+Problem 10
+    Passed: 0
+    Failed: 2
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Problem 11 > Suite 1 > Case 1
+
+scm> (define y 1)
+
+# Error: expected
+#     y
+# but got
+
+
+Run only this test case with "python3 ok -q 11 --suite 1 --case 1"
+---------------------------------------------------------------------
+Problem 11 > Suite 2 > Case 1
+
+scm> (define h (mu () x))
+
+# Error: expected
+#     h
+# but got
+
+
+Run only this test case with "python3 ok -q 11 --suite 2 --case 1"
+---------------------------------------------------------------------
+Problem 11
+    Passed: 0
+    Failed: 2
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Problem 12 > Suite 1 > Case 1
+
+scm> (and)
+
+# Error: expected
+#     #t
+# but got
+
+
+Run only this test case with "python3 ok -q 12 --suite 1 --case 1"
+---------------------------------------------------------------------
+Problem 12 > Suite 2 > Case 1
+
+scm> (or)
+
+# Error: expected
+#     #f
+# but got
+
+
+Run only this test case with "python3 ok -q 12 --suite 2 --case 1"
+---------------------------------------------------------------------
+Problem 12
+    Passed: 0
+    Failed: 2
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Problem 13 > Suite 1 > Case 1
+
+scm> (cond ((> 2 3) 5)
+....       ((> 2 4) 6)
+....       ((< 2 5) 7)
+....       (else 8))
+
+# Error: expected
+#     7
+# but got
+
+
+Run only this test case with "python3 ok -q 13 --suite 1 --case 1"
+---------------------------------------------------------------------
+Problem 13 > Suite 2 > Case 1
+
+scm> (cond ((> 2 3) 5)
+....       ((> 2 4) 6)
+....       ((< 2 5) 7))
+
+# Error: expected
+#     7
+# but got
+
+
+Run only this test case with "python3 ok -q 13 --suite 2 --case 1"
+---------------------------------------------------------------------
+Problem 13
+    Passed: 0
+    Failed: 2
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Problem 14 > Suite 1 > Case 1
+
+scm> (define x 1)
+
+# Error: expected
+#     x
+# but got
+
+
+Run only this test case with "python3 ok -q 14 --suite 1 --case 1"
+---------------------------------------------------------------------
+Problem 14 > Suite 2 > Case 1
+
+>>> from scheme import *
+>>> global_frame = create_global_frame()
+>>> # Incorrectly formatted bindings
+>>> bindings = Pair(Pair('x', Pair(2, nil)), Pair(Pair('y', nil), nil)) # equivalent to ((x 2) (y))
+>>> make_let_frame(bindings, global_frame)
+
+# Error: expected
+#     SchemeError
+# but got
+
+
+Run only this test case with "python3 ok -q 14 --suite 2 --case 1"
+---------------------------------------------------------------------
+Problem 14 > Suite 3 > Case 1
+
+scm> (define x 3)
+
+# Error: expected
+#     x
+# but got
+
+
+Run only this test case with "python3 ok -q 14 --suite 3 --case 1"
+---------------------------------------------------------------------
+Problem 14
+    Passed: 0
+    Failed: 3
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Scheme tests in tests.scm
+
+test failed at line 24
+  expected 486
+   printed 
+test failed at line 27
+  expected 666
+   printed 
+test failed at line 30
+  expected 495
+   printed 
+test failed at line 33
+  expected 2
+   printed 
+test failed at line 36
+  expected 12.7
+   printed 
+test failed at line 39
+  expected 75
+   printed 
+test failed at line 42
+  expected 1200
+   printed 
+test failed at line 45
+  expected 19
+   printed 
+test failed at line 48
+  expected 57
+   printed 
+test failed at line 55
+  expected 57
+   printed 
+test failed at line 62
+  expected size
+   printed 
+test failed at line 64
+  expected 2
+   printed 
+test failed at line 67
+  expected 10
+   printed 
+test failed at line 72
+  expected 314.159
+   printed 
+test failed at line 76
+  expected 62.8318
+   printed 
+test failed at line 81
+  expected square
+   printed 
+test failed at line 83
+  expected 441
+   printed 
+test failed at line 87
+  expected 441
+   printed 
+test failed at line 90
+  expected 49
+   printed 
+test failed at line 93
+  expected 81
+   printed 
+test failed at line 98
+  expected 25
+   printed 
+test failed at line 103
+  expected 136
+   printed 
+test failed at line 112
+  expected 3
+   printed 
+test failed at line 115
+  expected 0
+   printed 
+test failed at line 118
+  expected 3
+   printed 
+test failed at line 123
+  expected 5
+   printed 
+test failed at line 141
+  expected 3.00009155413138
+   printed 
+test failed at line 144
+  expected 11.704699917758145
+   printed 
+test failed at line 147
+  expected 1.7739279023207892
+   printed 
+test failed at line 150
+  expected 1000.000369924366
+   printed 
+test failed at line 165
+  expected 3.00009155413138
+   printed 
+test failed at line 168
+  expected 11.704699917758145
+   printed 
+test failed at line 171
+  expected 1.7739279023207892
+   printed 
+test failed at line 174
+  expected 1000.000369924366
+   printed 
+test failed at line 188
+  expected 3025
+   printed 
+test failed at line 194
+  expected 55
+   printed 
+test failed at line 199
+  expected 12
+   printed 
+test failed at line 208
+  expected 456
+   printed 
+test failed at line 214
+  expected 38
+   printed 
+test failed at line 219
+  expected 21
+   printed 
+test failed at line 243
+  expected 1
+   printed 
+test failed at line 246
+  expected (2)
+   printed 
+test failed at line 252
+  expected 1
+   printed 
+test failed at line 255
+  expected 3
+   printed 
+test failed at line 258
+  expected ((1 2) 3 4)
+   printed 
+test failed at line 270
+  expected 1/2
+   printed 
+test failed at line 274
+  expected 5/6
+   printed 
+test failed at line 277
+  expected 1/6
+   printed 
+test failed at line 280
+  expected 6/9
+   printed 
+test failed at line 290
+  expected 2/3
+   printed 
+test failed at line 294
+  expected (1 2 3 4)
+   printed 
+test failed at line 297
+  expected 1
+   printed 
+test failed at line 300
+  expected (2 3 4)
+   printed 
+test failed at line 303
+  expected 2
+   printed 
+test failed at line 306
+  expected (10 1 2 3 4)
+   printed 
+test failed at line 309
+  expected (5 1 2 3 4)
+   printed 
+test failed at line 317
+  expected (10 2.5 11.6 17)
+   printed 
+test failed at line 321
+  expected (1 4 9 16)
+   printed 
+test failed at line 327
+  expected (10 20 30 40 50)
+   printed 
+test failed at line 336
+  expected 4
+   printed 
+test failed at line 339
+  expected 8
+   printed 
+test failed at line 351
+  expected (1 3 5)
+   printed 
+test failed at line 359
+  expected 15
+   printed 
+test failed at line 362
+  expected 120
+   printed 
+test failed at line 365
+  expected (1 2 3 4 5)
+   printed 
+test failed at line 372
+  expected (2 3 4 5 6 7)
+   printed 
+test failed at line 380
+  expected (1 2 3 4 5)
+   printed 
+test failed at line 389
+  expected (1 2)
+   printed 
+test failed at line 392
+  expected (a b)
+   printed 
+test failed at line 395
+  expected (a 2)
+   printed 
+test failed at line 398
+  expected a
+   printed 
+test failed at line 401
+  expected (b c)
+   printed 
+test failed at line 408
+  expected #f
+   printed 
+test failed at line 411
+  expected (apple pear)
+   printed 
+test failed at line 420
+  expected #t
+   printed 
+test failed at line 423
+  expected #f
+   printed 
+test failed at line 426
+  expected #f
+   printed 
+test failed at line 432
+  expected 10
+   printed 
+test failed at line 436
+  expected (10)
+   printed 
+test failed at line 440
+  expected 20
+   printed 
+test failed at line 443
+  expected 80
+   printed 
+test failed at line 447
+  expected 6
+   printed 
+test failed at line 450
+  expected 30414093201713378043612608166064768844377641568960512000000000000
+   printed 
+test failed at line 459
+  expected ((1 5) (2 6) (3 7) (4 8))
+   printed 
+test failed at line 467
+  expected (1 5 2 6 3 7 4 8)
+   printed 
+test failed at line 470
+  expected (1 3 5 7 2 4 6 8)
+   printed 
+test failed at line 473
+  expected (1 2 3 4 5 6 7 8)
+   printed 
+test failed at line 478
+  expected 4
+   printed 
+test failed at line 481
+  expected 10
+   printed 
+test failed at line 484
+  expected (1 2 3 4)
+   printed 
+test failed at line 493
+  expected #t
+   printed 
+test failed at line 496
+  expected #f
+   printed 
+test failed at line 499
+  expected #t
+   printed 
+test failed at line 502
+  expected 1
+   printed 
+test failed at line 505
+  expected 3
+   printed 
+test failed at line 508
+  expected #f
+   printed 
+test failed at line 511
+  expected an error indication
+   printed 
+test failed at line 514
+  expected 3
+   printed 
+test failed at line 517
+  expected an error indication
+   printed 
+test failed at line 520
+  expected hello
+   printed 
+test failed at line 529
+  expected 2
+   printed 1
+test failed at line 534
+  expected 12
+   printed 
+test failed at line 537
+  expected 2
+   printed 
+test failed at line 537
+  expected 2
+   printed 
+test failed at line 540
+  expected 7
+   printed 
+test failed at line 552
+  expected 4
+   printed 
+test failed at line 562
+  expected 2
+   printed 1
+test failed at line 564
+  expected 1
+   printed 
+test failed at line 564
+  expected x
+   printed 
+test failed at line 566
+  expected 2
+   printed 
+test failed at line 569
+  expected x
+   printed 
+test failed at line 571
+  expected 2
+   printed 
+test failed at line 573
+  expected x
+   printed 
+test failed at line 575
+  expected 10
+   printed 
+test failed at line 577
+  expected f
+   printed 
+test failed at line 579
+  expected 5
+   printed 
+test failed at line 582
+  expected (+ x 2)
+   printed 
+test failed at line 585
+  expected (lambda (x) (+ x 2))
+   printed 
+test failed at line 588
+  expected 2
+   printed 
+test failed at line 590
+  expected 3
+   printed 
+test failed at line 593
+  expected #f
+   printed 
+test failed at line 595
+  expected 1
+   printed 
+test failed at line 595
+  expected 2
+   printed 
+test failed at line 595
+  expected 3
+   printed 
+test failed at line 595
+  expected 4
+   printed 
+test failed at line 595
+  expected #f
+   printed 
+test failed at line 598
+  expected 10
+   printed 
+test failed at line 600
+  expected 2
+   printed 
+test failed at line 603
+  expected 3
+   printed 
+test failed at line 606
+  expected 5
+   printed 
+test failed at line 620
+  expected 501501
+   printed 
+test failed at line 626
+  expected 501501
+   printed 
+test failed at line 637
+  expected 501501
+   printed 
+test failed at line 657
+  expected (0 2 3)
+   printed 
+test failed at line 673
+  expected 5.000023178253949
+   printed 
+test failed at line 682
+  expected f
+   printed 
+test failed at line 684
+  expected 1
+   printed 
+Score: 0.0/1
+
+---------------------------------------------------------------------
+Problem 15 > Suite 1 > Case 1
+
+scm> (load 'questions)
+scm> (enumerate '(3 4 5 6))
+
+# Error: expected
+#     ((0 3) (1 4) (2 5) (3 6))
+# but got
+
+
+Run only this test case with "python3 ok -q 15 --suite 1 --case 1"
+---------------------------------------------------------------------
+Problem 15
+    Passed: 0
+    Failed: 1
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Problem 16 > Suite 1 > Case 1
+
+scm> (load 'questions)
+scm> (merge < '(1 4 6) '(2 5 8))
+
+# Error: expected
+#     (1 2 4 5 6 8)
+# but got
+
+
+Run only this test case with "python3 ok -q 16 --suite 1 --case 1"
+---------------------------------------------------------------------
+Problem 16
+    Passed: 0
+    Failed: 1
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Point breakdown
+    Understanding Eval/Apply: 0.0/0
+    Problem 1: 0.0/1
+    Problem 2: 0.0/2
+    Problem 3: 0.0/2
+    Problem 4: 0.0/2
+    Problem 5: 0.0/1
+    Problem 6: 0.0/1
+    Problem 7: 0.0/2
+    Problem 8: 0.0/2
+    Problem 9: 0.0/2
+    Problem 10: 0.0/2
+    Problem 11: 0.0/1
+    Problem 12: 0.0/2
+    Problem 13: 0.0/2
+    Problem 14: 0.0/2
+    tests.scm: 0.0/1
+    Problem 15: 0.0/1
+    Problem 16: 0.0/2
+
+Score:
+    Total: 0.0
+
+Cannot backup when running ok with --local.

@@ -1,0 +1,5 @@
+numpy<2
+scipy
+pypower
+pandas==2.2.3
+PyYAML==6.0.2
