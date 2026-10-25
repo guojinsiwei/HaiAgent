@@ -1,0 +1,356 @@
+{
+  "benchmark_commit": "d78f5eb52ad754c5ee9154741af73130a85a65b8",
+  "selection_seed": "lhtb-file-artifacts-triple25-20260926",
+  "selection_rule": "All twelve tasks in the pre-existing seeded order; no outcome filtering.",
+  "excluded": {
+    "genetic-convergence-testing": "non-/app artifacts; outside this file workspace adapter",
+    "generals-bot-arena": "live arena/service behavior outside this preparation scope",
+    "vector-db-iterative-build": "persistent database service outside this preparation scope"
+  },
+  "eligible_count": 28,
+  "tasks": [
+    {
+      "task": "spot-scheduler-traces",
+      "agent": {
+        "timeout_sec": 10800,
+        "continue_until_timeout": true
+      },
+      "environment": {
+        "docker_image": "zli12321/lhtb-spot-scheduler-traces:20260615",
+        "cpus": 2,
+        "memory_mb": 4096,
+        "storage_mb": 4096,
+        "gpus": 0,
+        "allow_internet": false
+      },
+      "verifier": {
+        "timeout_sec": 300,
+        "environment_mode": "shared"
+      },
+      "artifacts": [
+        "/app/workspace/policy.py",
+        "/app/output/simulation_results.json",
+        "/app/output/JOURNAL.md"
+      ]
+    },
+    {
+      "task": "modflow6-groundwater-regression-audit",
+      "agent": {
+        "timeout_sec": 3600,
+        "continue_until_timeout": true
+      },
+      "environment": {
+        "docker_image": "zli12321/lhtb-modflow6-groundwater-regression-audit:20260615",
+        "cpus": 2,
+        "memory_mb": 4096,
+        "storage_mb": 8192,
+        "gpus": 0,
+        "allow_internet": true
+      },
+      "verifier": {
+        "timeout_sec": 1200,
+        "environment_mode": "shared"
+      },
+      "artifacts": [
+        "outputs/heads_summary.csv",
+        "outputs/observation_heads.csv",
+        "outputs/package_budget.csv",
+        "outputs/well_capture.csv",
+        "outputs/specific_discharge.csv",
+        "outputs/water_balance.csv",
+        "outputs/model_summary.json",
+        "outputs/diagnostics.md"
+      ]
+    },
+    {
+      "task": "foldseek-paper-reproduction",
+      "agent": {
+        "timeout_sec": 3600,
+        "continue_until_timeout": true
+      },
+      "environment": {
+        "docker_image": "zli12321/lhtb-foldseek-paper-reproduction:20260615",
+        "cpus": 2,
+        "memory_mb": 4096,
+        "storage_mb": 8192,
+        "gpus": 0,
+        "allow_internet": true
+      },
+      "verifier": {
+        "timeout_sec": 900,
+        "environment_mode": "shared"
+      },
+      "artifacts": [
+        "outputs/foldseek_report.json",
+        "outputs/summary.tsv"
+      ]
+    },
+    {
+      "task": "gdal-proj-raster-regression",
+      "agent": {
+        "timeout_sec": 3600,
+        "continue_until_timeout": true
+      },
+      "environment": {
+        "docker_image": "zli12321/lhtb-gdal-proj-raster-regression:20260615",
+        "cpus": 2,
+        "memory_mb": 4096,
+        "storage_mb": 8192,
+        "gpus": 0,
+        "allow_internet": true
+      },
+      "verifier": {
+        "timeout_sec": 1200,
+        "environment_mode": "shared"
+      },
+      "artifacts": [
+        "outputs/warp_report.json",
+        "outputs/raster_summary.csv",
+        "outputs/transform_checks.csv",
+        "outputs/sample_points.csv",
+        "outputs/zonal_stats.csv",
+        "outputs/terrain_metrics.csv",
+        "outputs/window_stats.csv",
+        "outputs/rasterize_stats.csv",
+        "outputs/warped_samples.csv",
+        "outputs/nodata_components.csv",
+        "outputs/rotated_grid_checks.csv",
+        "outputs/multiband_index_stats.csv",
+        "outputs/multiband_pixel_samples.csv",
+        "outputs/area_weighted_zonal.csv",
+        "outputs/cross_crs_rasterize.csv",
+        "outputs/output_geotiff_report.json",
+        "outputs/geotiffs/dem_utm10_bilinear.tif",
+        "outputs/geotiffs/landcover_utm10_nearest.tif",
+        "outputs/audit_summary.md"
+      ]
+    },
+    {
+      "task": "climate-netcdf-extreme-event-audit",
+      "agent": {
+        "timeout_sec": 3600,
+        "continue_until_timeout": true
+      },
+      "environment": {
+        "docker_image": "zhongzhi660/lhtb-climate-netcdf-extreme-event-audit:20260709",
+        "cpus": 2,
+        "memory_mb": 4096,
+        "storage_mb": 8192,
+        "gpus": 0,
+        "allow_internet": true
+      },
+      "verifier": {
+        "timeout_sec": 1200,
+        "environment_mode": "shared"
+      },
+      "artifacts": [
+        "outputs/heatwave_events.csv",
+        "outputs/precip_extremes.csv",
+        "outputs/drought_spells.csv",
+        "outputs/climate_indices.csv",
+        "outputs/gridcell_anomalies.csv",
+        "outputs/qc_report.json",
+        "outputs/audit_summary.md",
+        "outputs/JOURNAL.md"
+      ]
+    },
+    {
+      "task": "great-expectations-audit",
+      "agent": {
+        "timeout_sec": 3600,
+        "continue_until_timeout": true
+      },
+      "environment": {
+        "docker_image": "zli12321/lhtb-great-expectations-audit:20260615",
+        "cpus": 2,
+        "memory_mb": 4096,
+        "storage_mb": 8192,
+        "gpus": 0,
+        "allow_internet": true
+      },
+      "verifier": {
+        "timeout_sec": 900,
+        "environment_mode": "shared"
+      },
+      "artifacts": [
+        "outputs/cleaned_customers.csv",
+        "outputs/cleaned_orders.csv",
+        "outputs/cleaned_payments.csv",
+        "outputs/cleaned_refunds.csv",
+        "outputs/quarantine_report.csv",
+        "outputs/validation_report.json",
+        "outputs/reconciliation_report.json",
+        "outputs/audit_summary.md"
+      ]
+    },
+    {
+      "task": "microscopy-cell-count-qc-audit",
+      "agent": {
+        "timeout_sec": 5400,
+        "continue_until_timeout": true
+      },
+      "environment": {
+        "docker_image": "zhongzhi660/lhtb-microscopy-cell-count-qc-audit:20260709",
+        "cpus": 2,
+        "memory_mb": 4096,
+        "storage_mb": 8192,
+        "gpus": 0,
+        "allow_internet": true
+      },
+      "verifier": {
+        "timeout_sec": 1200,
+        "environment_mode": "shared"
+      },
+      "artifacts": [
+        "outputs/cell_counts.csv",
+        "outputs/channel_summary.json",
+        "outputs/qc_report.json",
+        "outputs/cell_regions.geojson",
+        "outputs/audit_summary.md",
+        "outputs/JOURNAL.md"
+      ]
+    },
+    {
+      "task": "epa-swmm-stormwater-regression-audit",
+      "agent": {
+        "timeout_sec": 3600,
+        "continue_until_timeout": true
+      },
+      "environment": {
+        "docker_image": "zli12321/lhtb-epa-swmm-stormwater-regression-audit:20260615",
+        "cpus": 2,
+        "memory_mb": 4096,
+        "storage_mb": 8192,
+        "gpus": 0,
+        "allow_internet": true
+      },
+      "verifier": {
+        "timeout_sec": 1200,
+        "environment_mode": "shared"
+      },
+      "artifacts": [
+        "outputs/node_hydraulics.csv",
+        "outputs/link_hydraulics.csv",
+        "outputs/subcatchment_runoff.csv",
+        "outputs/outfall_timeseries.csv",
+        "outputs/system_mass_balance.csv",
+        "outputs/storm_summary.json",
+        "outputs/diagnostics.md"
+      ]
+    },
+    {
+      "task": "satellite-flood-change-detection-audit",
+      "agent": {
+        "timeout_sec": 5400,
+        "continue_until_timeout": true
+      },
+      "environment": {
+        "docker_image": "zhongzhi660/lhtb-satellite-flood-change-detection-audit:20260709",
+        "cpus": 2,
+        "memory_mb": 4096,
+        "storage_mb": 8192,
+        "gpus": 0,
+        "allow_internet": true
+      },
+      "verifier": {
+        "timeout_sec": 1200,
+        "environment_mode": "shared"
+      },
+      "artifacts": [
+        "outputs/flood_extent.csv",
+        "outputs/change_report.json",
+        "outputs/vector_summary.geojson",
+        "outputs/tile_qc.json",
+        "outputs/audit_summary.md",
+        "outputs/JOURNAL.md"
+      ]
+    },
+    {
+      "task": "opensees-seismic-structural-regression-audit",
+      "agent": {
+        "timeout_sec": 3600,
+        "continue_until_timeout": true
+      },
+      "environment": {
+        "docker_image": "zli12321/lhtb-opensees-seismic-structural-regression-audit:20260615",
+        "cpus": 2,
+        "memory_mb": 4096,
+        "storage_mb": 8192,
+        "gpus": 0,
+        "allow_internet": true
+      },
+      "verifier": {
+        "timeout_sec": 1200,
+        "environment_mode": "shared"
+      },
+      "artifacts": [
+        "outputs/modal_properties.csv",
+        "outputs/time_history_response.csv",
+        "outputs/story_drift_summary.csv",
+        "outputs/base_shear_summary.csv",
+        "outputs/plastic_hinge_report.csv",
+        "outputs/energy_balance.csv",
+        "outputs/scenario_summary.json",
+        "outputs/diagnostics.md"
+      ]
+    },
+    {
+      "task": "unison-paper-reproduction",
+      "agent": {
+        "timeout_sec": 5400,
+        "continue_until_timeout": true
+      },
+      "environment": {
+        "docker_image": "zli12321/lhtb-unison-paper-reproduction:20260615",
+        "cpus": 2,
+        "memory_mb": 4096,
+        "storage_mb": 8192,
+        "gpus": 0,
+        "allow_internet": true
+      },
+      "verifier": {
+        "timeout_sec": 900,
+        "environment_mode": "shared"
+      },
+      "artifacts": [
+        "outputs/unison_report.json",
+        "outputs/summary.csv"
+      ]
+    },
+    {
+      "task": "matpower-opf-regression",
+      "agent": {
+        "timeout_sec": 3600,
+        "continue_until_timeout": true
+      },
+      "environment": {
+        "docker_image": "zli12321/lhtb-matpower-opf-regression:20260615",
+        "cpus": 2,
+        "memory_mb": 4096,
+        "storage_mb": 8192,
+        "gpus": 0,
+        "allow_internet": true
+      },
+      "verifier": {
+        "timeout_sec": 1200,
+        "environment_mode": "shared"
+      },
+      "artifacts": [
+        "outputs/opf_report.json",
+        "outputs/grid_summary.md",
+        "outputs/case_table.csv",
+        "outputs/violations.csv",
+        "outputs/bus_voltage_table.csv",
+        "outputs/generator_dispatch.csv",
+        "outputs/branch_loading.csv"
+      ]
+    }
+  ],
+  "methods": [
+    "bestfgs"
+  ],
+  "total_trials": 12,
+  "status": "authorized_pilot_pending_preflight_and_credential",
+  "source_release": "memory-reliability-v5",
+  "prior_results_carried": 0
+}

@@ -1,0 +1,70 @@
+{
+  "experiment": "spider2-dbt-smoke2-20261003",
+  "benchmark": "Spider2-DBT",
+  "commit": "cafb867313aab4e674652054198f383cf4018943",
+  "tasks": [
+    {
+      "task": "asset001",
+      "index": 0,
+      "instruction": "Calculate the average bid, ask, and mid prices for stock tickers on a daily basis and then determine the total book value of shares based on these prices\n\nProject directory: asset001. Complete the project and leave the final DuckDB database at asset001/asset.duckdb. The database begins with public source tables. Inspect the project and current database; do not assume output tables already exist. You may use dbt and Python/DuckDB. All work and final outputs must remain under /app.\n",
+      "project": "asset001",
+      "result_path": "asset001/asset.duckdb",
+      "wall_seconds": 3600,
+      "cpu_affinity": [
+        8,
+        9
+      ]
+    },
+    {
+      "task": "asana001",
+      "index": 1,
+      "instruction": "Can you describe the process used to aggregate task and project metrics for Asana teams and users, including open tasks, completed tasks, and average close times?\n\nProject directory: asana001. Complete the project and leave the final DuckDB database at asana001/asana.duckdb. The database begins with public source tables. Inspect the project and current database; do not assume output tables already exist. You may use dbt and Python/DuckDB. All work and final outputs must remain under /app.\n",
+      "project": "asana001",
+      "result_path": "asana001/asana.duckdb",
+      "wall_seconds": 3600,
+      "cpu_affinity": [
+        8,
+        9
+      ]
+    }
+  ],
+  "methods": [
+    "prediction-off"
+  ],
+  "total_trials": 2,
+  "workers": 1,
+  "model": "deepseek-flash",
+  "thinking": "disabled",
+  "temperature": 0,
+  "max_turns": 400,
+  "max_tools": 200,
+  "command_seconds": 300,
+  "context_limit": 48000,
+  "role_output_tokens": {
+    "action": 4096,
+    "advisor": 1536,
+    "monitor": 1536
+  },
+  "generation_concurrency_per_worker": 1,
+  "generation_resources": {
+    "concurrency_total": 1,
+    "cpu_affinity_each": 2
+  },
+  "adapted_smoke": true,
+  "full_official_benchmark": false,
+  "runtime_adaptation": "Cached public Ubuntu/Python 3.12.3 base; isolated pinned DBT venv. Official baseline uses Python 3.11.",
+  "data_provenance": {
+    "source": "Harbor registry mirror of Spider2 DBT databases",
+    "mirror_commit": "82d1fb0c144d28b1fd9852006cee0a39e74bd4a8",
+    "direct_official_drive_unavailable": true,
+    "byte_parity_to_google_drive_unverified": true
+  },
+  "network": "Solver commands offline; public declared dbt packages installed before solving",
+  "result": "Frozen final database graded with exact official DuckDB matcher; no hidden feedback while solving",
+  "runtime_image": {
+    "tag": "spider2-dbt-smoke2-20261003/runtime:1",
+    "id": "sha256:128c87eb62138ff36e6de3b176a6c2d85b332147fdcb85f258aed088036641b3",
+    "archive": "runtime-rootfs.tar",
+    "sha256": "b5c1a79cdf9a48829034cafdd1a8396bd47ae06539c0d41b3a5f001e4e083486"
+  }
+}

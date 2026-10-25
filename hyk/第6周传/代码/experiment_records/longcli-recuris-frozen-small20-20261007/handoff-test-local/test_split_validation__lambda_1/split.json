@@ -1,0 +1,18 @@
+{
+  "evolve": [
+    "source",
+    "other-evolve"
+  ],
+  "dev": [
+    "dev-anchor",
+    "dev-other"
+  ],
+  "test": [
+    "unseen-test",
+    "dev-anchor"
+  ],
+  "seeds": [
+    0,
+    1
+  ]
+}

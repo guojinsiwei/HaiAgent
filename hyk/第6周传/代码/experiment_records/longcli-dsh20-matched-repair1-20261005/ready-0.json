@@ -1,0 +1,21 @@
+{
+  "ready": true,
+  "worker": 0,
+  "paid_api_requests": 0,
+  "acceptance_file": "acceptance-0-r1.json",
+  "hashes": {
+    "protocol.json": "aafa0216c4dd96941b4d70c8ee4e38436d9a9d5d7b3ffa0f977f5425403a4fbd",
+    "budget.mjs": "06dbe9a17ab1a7f2c40862a7018ddd8937310072b50de7a8fc4683d5ef444604",
+    "experiment.patch.yml": "38e31fb6901a2084a0438a7e32cc78cf8ef8fe19231deee70e666cbd1168a214",
+    "runner.py": "a11c1dfc949a3903e44a3c3cc204a4629df1b2c6e3b8dabfe1f70d8570485038",
+    "provider.py": "59a6223dd34872a8bea1ce4304991ad8e632a39f88b96e813504d3a035c7f824",
+    "context_limit.py": "c15290d639a006c748541adb433d1eb281501db0cdc51ab32ce7f29320fe7c12",
+    "isolated_entry.py": "04c93e9297f0d80738a0fb35d2c1aa69ae3f1d979bc9b8aae6970e6ee59023a0",
+    "launch.py": "2bc329799da8c28f8c88b189db3ef438a6af295d2c9ac1a0c2768731e50ed029",
+    "device_setup.py": "69acc9f8d89a4384cc1a110dda0851bb97d8d3e91e03fb8f79b81901a216fd54",
+    "common.py": "c75bbfacae1b783546fb810a8abee158e4d23bdc65481b0521ea20b84a0ab2d1",
+    "check_ready.py": "f43fbe4207bdc34a6ab18ba23186fe458e58abdf563debffa074a39bb4a519bc",
+    "prepare.py": "e60c606fba5d9e614e0d65baba2b5b577ccecc6b0376c6f25bd7116c17544e67",
+    "acceptance-0-r1.json": "873410752bfa463e30e0125ba037f0cd74a26086ff149d1e6605cfc3faaee838"
+  }
+}

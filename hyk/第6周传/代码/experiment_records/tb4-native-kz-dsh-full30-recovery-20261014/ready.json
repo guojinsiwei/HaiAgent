@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "files": {
+    "queue_policy.py": "b525bf8867e4070021e32fac90e9c02b78a6ac879f64689a8773a9b09f4c2111",
+    "campaign.py": "25c69644de61032a59e667cd478700f4d17e34512968fa9816063ea75d2b214a",
+    "agents.py": "d905c8d1102f31153635f78a6ca12883f10a16d53c680fe592b931e51837478c",
+    "host_agent.py": "8e560ed6b7a70ee36d378e36b473119a04cd80e1aca11d357a3a8c1e1c9f2404",
+    "entry_harbor.py": "6d0719661c0b153ad025325c7883b8ecbfd16f9c6afb019259fad22bd06d43b7",
+    "container-run.mjs": "a74f1d2f3f3220876e863f1a2107af92e0c3a896bd321d10b971628b14dd40b4",
+    "deadline.mjs": "754638f77b28272de91ede5d03c297b0615e74ace2d5090acccdb48f5744674d",
+    "tasks.json": "a040e6711e88aff0fff53d6e43ae58610ff94e80a431d2d967021b99f2f6ce35",
+    "history.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "history-reference.json": "2fa98f849d0a71cfe2eca0dc7ccfcb2fe7cb72b8e87cf1f9e2b30a25f88c60d2",
+    "test_scheduler.py": "cd90f4cae3c60dafb82d6bbb672c37a7966413b0fc0dc38f370ff729516296a9",
+    "README.txt": "58e1364155fc1d70b9ca08f0061e8081bdb969742302240c2f785bd01af9f582",
+    "offline.json": "31bb582462df3c99c8b3aa400be8dd456dd6b506fb8857c837f900bd8e119558"
+  },
+  "native_runtime": "frozen repair1",
+  "dsh_runtime": "frozen unlimited-repair",
+  "paid_calls_at_pack": 0
+}

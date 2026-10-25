@@ -1,0 +1,3772 @@
+{
+  "reference_tasks": [
+    "spot-scheduler-traces",
+    "modflow6-groundwater-regression-audit",
+    "foldseek-paper-reproduction",
+    "gdal-proj-raster-regression",
+    "climate-netcdf-extreme-event-audit",
+    "great-expectations-audit",
+    "microscopy-cell-count-qc-audit",
+    "epa-swmm-stormwater-regression-audit",
+    "satellite-flood-change-detection-audit",
+    "opensees-seismic-structural-regression-audit",
+    "unison-paper-reproduction",
+    "matpower-opf-regression"
+  ],
+  "campaigns": [
+    {
+      "campaign": "/mnt/sdb/home/lizh639/lhtb-raw3-20260926",
+      "summary_exists": true,
+      "manifest_exists": false,
+      "manifest_tasks": [],
+      "same_manifest12": false,
+      "source_release": null,
+      "health": {
+        "state": "completed",
+        "completed": [
+          {
+            "interaction_rounds": 302,
+            "official_success": null,
+            "run_dir": "/mnt/sdb/home/lizh639/lhtb-raw3-20260926/runs/raw-langchain-version-migration/langchain-version-migration__3mpLpbK/agent/haia-run",
+            "stop_reason": "tool_budget",
+            "submitted": false,
+            "task_id": "long-horizon-terminal-bench/langchain-version-migration",
+            "tool_calls": 300
+          },
+          {
+            "interaction_rounds": 13,
+            "official_success": null,
+            "run_dir": "/mnt/sdb/home/lizh639/lhtb-raw3-20260926/runs/raw-nbody-accel-iterative/nbody-accel-iterative__XErbiRw/agent/haia-run",
+            "stop_reason": "wall_budget",
+            "submitted": false,
+            "task_id": "long-horizon-terminal-bench/nbody-accel-iterative",
+            "tool_calls": 13
+          },
+          {
+            "interaction_rounds": 301,
+            "official_success": null,
+            "run_dir": "/mnt/sdb/home/lizh639/lhtb-raw3-20260926/runs/raw-duckdb-optimizer-closure/duckdb-optimizer-closure__FCvoViq/agent/haia-run",
+            "stop_reason": "tool_budget",
+            "submitted": false,
+            "task_id": "long-horizon-terminal-bench/duckdb-optimizer-closure",
+            "tool_calls": 300
+          }
+        ]
+      },
+      "official_report_count": 3,
+      "official_reward_count": 0,
+      "reports_not_in_summary": [],
+      "summary_schema": "object",
+      "public_summary": {
+        "official_success": null,
+        "rows": [
+          {
+            "interaction_rounds": 302,
+            "official_success": null,
+            "run_dir": "/mnt/sdb/home/lizh639/lhtb-raw3-20260926/runs/raw-langchain-version-migration/langchain-version-migration__3mpLpbK/agent/haia-run",
+            "stop_reason": "tool_budget",
+            "submitted": false,
+            "task_id": "long-horizon-terminal-bench/langchain-version-migration",
+            "tool_calls": 300
+          },
+          {
+            "interaction_rounds": 13,
+            "official_success": null,
+            "run_dir": "/mnt/sdb/home/lizh639/lhtb-raw3-20260926/runs/raw-nbody-accel-iterative/nbody-accel-iterative__XErbiRw/agent/haia-run",
+            "stop_reason": "wall_budget",
+            "submitted": false,
+            "task_id": "long-horizon-terminal-bench/nbody-accel-iterative",
+            "tool_calls": 13
+          },
+          {
+            "interaction_rounds": 301,
+            "official_success": null,
+            "run_dir": "/mnt/sdb/home/lizh639/lhtb-raw3-20260926/runs/raw-duckdb-optimizer-closure/duckdb-optimizer-closure__FCvoViq/agent/haia-run",
+            "stop_reason": "tool_budget",
+            "submitted": false,
+            "task_id": "long-horizon-terminal-bench/duckdb-optimizer-closure",
+            "tool_calls": 300
+          }
+        ]
+      }
+    },
+    {
+      "campaign": "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r2",
+      "summary_exists": true,
+      "manifest_exists": true,
+      "manifest_tasks": [
+        "spot-scheduler-traces",
+        "modflow6-groundwater-regression-audit",
+        "foldseek-paper-reproduction",
+        "gdal-proj-raster-regression",
+        "climate-netcdf-extreme-event-audit",
+        "great-expectations-audit",
+        "microscopy-cell-count-qc-audit",
+        "epa-swmm-stormwater-regression-audit",
+        "satellite-flood-change-detection-audit",
+        "opensees-seismic-structural-regression-audit",
+        "unison-paper-reproduction",
+        "matpower-opf-regression"
+      ],
+      "same_manifest12": true,
+      "source_release": null,
+      "health": {
+        "state": "needs_attention",
+        "completed": 11,
+        "total": 36,
+        "pending": 25
+      },
+      "official_report_count": 7,
+      "official_reward_count": 7,
+      "reports_not_in_summary": [],
+      "groups": [
+        {
+          "method": "raw",
+          "attempts": 3,
+          "unique_tasks": 3,
+          "scored": 3,
+          "mean_pct": 38.221111111111114,
+          "full": 0,
+          "same_scored12": false,
+          "report_checks": {
+            "match": 3
+          },
+          "rows": [
+            {
+              "task": "spot-scheduler-traces",
+              "reward": 0.8133,
+              "official_reward": 0.8133,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple25-v161-20260926/runs/raw-spot-scheduler-traces/spot-scheduler-traces__2MXmBPK/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            },
+            {
+              "task": "modflow6-groundwater-regression-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple25-v161-20260926/runs/raw-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__PSQyHk9/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            },
+            {
+              "task": "foldseek-paper-reproduction",
+              "reward": 0.3333333333333333,
+              "official_reward": 0.3333333333333333,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r2/runs/raw-foldseek-paper-reproduction/foldseek-paper-reproduction__KYvzY7Y/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            }
+          ]
+        },
+        {
+          "method": "hai",
+          "attempts": 4,
+          "unique_tasks": 4,
+          "scored": 4,
+          "mean_pct": 8.333333333333332,
+          "full": 0,
+          "same_scored12": false,
+          "report_checks": {
+            "match": 4
+          },
+          "rows": [
+            {
+              "task": "spot-scheduler-traces",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple25-v161-20260926/runs/hai-spot-scheduler-traces/spot-scheduler-traces__JVDQx7E/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            },
+            {
+              "task": "modflow6-groundwater-regression-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple25-v161-20260926/runs/hai-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__36xUEiV/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            },
+            {
+              "task": "foldseek-paper-reproduction",
+              "reward": 0.3333333333333333,
+              "official_reward": 0.3333333333333333,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r2/runs/hai-foldseek-paper-reproduction/foldseek-paper-reproduction__9mNhd6f/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            },
+            {
+              "task": "gdal-proj-raster-regression",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r2/runs/hai-gdal-proj-raster-regression/gdal-proj-raster-regression__rrEWxAJ/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            }
+          ]
+        },
+        {
+          "method": "bestfgs",
+          "attempts": 4,
+          "unique_tasks": 4,
+          "scored": 4,
+          "mean_pct": 8.345416465281135,
+          "full": 0,
+          "same_scored12": false,
+          "report_checks": {
+            "match": 4
+          },
+          "rows": [
+            {
+              "task": "modflow6-groundwater-regression-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r2/runs/bestfgs-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__eBQTwK4/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            },
+            {
+              "task": "foldseek-paper-reproduction",
+              "reward": 0.3333333333333333,
+              "official_reward": 0.3333333333333333,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r2/runs/bestfgs-foldseek-paper-reproduction/foldseek-paper-reproduction__28gTBg6/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            },
+            {
+              "task": "gdal-proj-raster-regression",
+              "reward": 0.0004833252779120348,
+              "official_reward": 0.0004833252779120348,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r2/runs/bestfgs-gdal-proj-raster-regression/gdal-proj-raster-regression__ZaodW2s/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            },
+            {
+              "task": "spot-scheduler-traces",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r2/runs/bestfgs-spot-scheduler-traces/spot-scheduler-traces__3xQZpMr/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            }
+          ]
+        }
+      ],
+      "summary_sha256": "4c44133fb02eaed17ad870e9d27bc9e6825b818ad65a20df32742208106fc3ce"
+    },
+    {
+      "campaign": "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r3",
+      "summary_exists": true,
+      "manifest_exists": true,
+      "manifest_tasks": [
+        "spot-scheduler-traces",
+        "modflow6-groundwater-regression-audit",
+        "foldseek-paper-reproduction",
+        "gdal-proj-raster-regression",
+        "climate-netcdf-extreme-event-audit",
+        "great-expectations-audit",
+        "microscopy-cell-count-qc-audit",
+        "epa-swmm-stormwater-regression-audit",
+        "satellite-flood-change-detection-audit",
+        "opensees-seismic-structural-regression-audit",
+        "unison-paper-reproduction",
+        "matpower-opf-regression"
+      ],
+      "same_manifest12": true,
+      "source_release": null,
+      "health": {
+        "state": "draining_after_error",
+        "completed": 15,
+        "total": 36,
+        "pending": 19
+      },
+      "official_report_count": 5,
+      "official_reward_count": 4,
+      "reports_not_in_summary": [
+        "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r3/runs/bestfgs-great-expectations-audit/great-expectations-audit__UfUwMrY/result.json"
+      ],
+      "groups": [
+        {
+          "method": "raw",
+          "attempts": 5,
+          "unique_tasks": 5,
+          "scored": 5,
+          "mean_pct": 24.265092813806667,
+          "full": 0,
+          "same_scored12": false,
+          "report_checks": {
+            "match": 5
+          },
+          "rows": [
+            {
+              "task": "spot-scheduler-traces",
+              "reward": 0.8133,
+              "official_reward": 0.8133,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple25-v161-20260926/runs/raw-spot-scheduler-traces/spot-scheduler-traces__2MXmBPK/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            },
+            {
+              "task": "modflow6-groundwater-regression-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple25-v161-20260926/runs/raw-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__PSQyHk9/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            },
+            {
+              "task": "foldseek-paper-reproduction",
+              "reward": 0.3333333333333333,
+              "official_reward": 0.3333333333333333,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r2/runs/raw-foldseek-paper-reproduction/foldseek-paper-reproduction__KYvzY7Y/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            },
+            {
+              "task": "climate-netcdf-extreme-event-audit",
+              "reward": 0.066621307357,
+              "official_reward": 0.066621307357,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r3/runs/raw-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__XB2DH4b/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "gdal-proj-raster-regression",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r3/runs/raw-gdal-proj-raster-regression/gdal-proj-raster-regression__DTRnv4h/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            }
+          ]
+        },
+        {
+          "method": "hai",
+          "attempts": 5,
+          "unique_tasks": 5,
+          "scored": 5,
+          "mean_pct": 7.999092813806667,
+          "full": 0,
+          "same_scored12": false,
+          "report_checks": {
+            "match": 5
+          },
+          "rows": [
+            {
+              "task": "spot-scheduler-traces",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple25-v161-20260926/runs/hai-spot-scheduler-traces/spot-scheduler-traces__JVDQx7E/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            },
+            {
+              "task": "modflow6-groundwater-regression-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple25-v161-20260926/runs/hai-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__36xUEiV/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            },
+            {
+              "task": "foldseek-paper-reproduction",
+              "reward": 0.3333333333333333,
+              "official_reward": 0.3333333333333333,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r2/runs/hai-foldseek-paper-reproduction/foldseek-paper-reproduction__9mNhd6f/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            },
+            {
+              "task": "gdal-proj-raster-regression",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r2/runs/hai-gdal-proj-raster-regression/gdal-proj-raster-regression__rrEWxAJ/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            },
+            {
+              "task": "climate-netcdf-extreme-event-audit",
+              "reward": 0.066621307357,
+              "official_reward": 0.066621307357,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r3/runs/hai-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__VcS7kCC/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            }
+          ]
+        },
+        {
+          "method": "bestfgs",
+          "attempts": 5,
+          "unique_tasks": 5,
+          "scored": 5,
+          "mean_pct": 8.008759319364907,
+          "full": 0,
+          "same_scored12": false,
+          "report_checks": {
+            "match": 5
+          },
+          "rows": [
+            {
+              "task": "modflow6-groundwater-regression-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r2/runs/bestfgs-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__eBQTwK4/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            },
+            {
+              "task": "foldseek-paper-reproduction",
+              "reward": 0.3333333333333333,
+              "official_reward": 0.3333333333333333,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r2/runs/bestfgs-foldseek-paper-reproduction/foldseek-paper-reproduction__28gTBg6/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            },
+            {
+              "task": "gdal-proj-raster-regression",
+              "reward": 0.0004833252779120348,
+              "official_reward": 0.0004833252779120348,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r2/runs/bestfgs-gdal-proj-raster-regression/gdal-proj-raster-regression__ZaodW2s/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            },
+            {
+              "task": "spot-scheduler-traces",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r2/runs/bestfgs-spot-scheduler-traces/spot-scheduler-traces__3xQZpMr/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            },
+            {
+              "task": "climate-netcdf-extreme-event-audit",
+              "reward": 0.066621307357,
+              "official_reward": 0.066621307357,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r3/runs/bestfgs-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__dsAKTk8/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": false,
+              "exception": false
+            }
+          ]
+        }
+      ],
+      "summary_sha256": "5c3702fdf596a4bf893c218d42e913193586b87d7e4dbb61d80566c032580e07"
+    },
+    {
+      "campaign": "/mnt/sdb/home/lizh639/lhtb-triple25-v161-20260926",
+      "summary_exists": true,
+      "manifest_exists": true,
+      "manifest_tasks": [
+        "spot-scheduler-traces",
+        "modflow6-groundwater-regression-audit",
+        "foldseek-paper-reproduction",
+        "gdal-proj-raster-regression",
+        "climate-netcdf-extreme-event-audit",
+        "great-expectations-audit",
+        "microscopy-cell-count-qc-audit",
+        "epa-swmm-stormwater-regression-audit",
+        "satellite-flood-change-detection-audit",
+        "opensees-seismic-structural-regression-audit",
+        "unison-paper-reproduction",
+        "matpower-opf-regression"
+      ],
+      "same_manifest12": true,
+      "source_release": null,
+      "health": {
+        "state": "needs_attention",
+        "completed": 6,
+        "total": 36,
+        "pending": 30
+      },
+      "official_report_count": 6,
+      "official_reward_count": 4,
+      "reports_not_in_summary": [],
+      "groups": [
+        {
+          "method": "raw",
+          "attempts": 2,
+          "unique_tasks": 2,
+          "scored": 2,
+          "mean_pct": 40.665,
+          "full": 0,
+          "same_scored12": false,
+          "report_checks": {
+            "match": 2
+          },
+          "rows": [
+            {
+              "task": "spot-scheduler-traces",
+              "reward": 0.8133,
+              "official_reward": 0.8133,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple25-v161-20260926/runs/raw-spot-scheduler-traces/spot-scheduler-traces__2MXmBPK/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            },
+            {
+              "task": "modflow6-groundwater-regression-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple25-v161-20260926/runs/raw-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__PSQyHk9/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            }
+          ]
+        },
+        {
+          "method": "hai",
+          "attempts": 2,
+          "unique_tasks": 2,
+          "scored": 2,
+          "mean_pct": 0.0,
+          "full": 0,
+          "same_scored12": false,
+          "report_checks": {
+            "match": 2
+          },
+          "rows": [
+            {
+              "task": "spot-scheduler-traces",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple25-v161-20260926/runs/hai-spot-scheduler-traces/spot-scheduler-traces__JVDQx7E/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            },
+            {
+              "task": "modflow6-groundwater-regression-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple25-v161-20260926/runs/hai-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__36xUEiV/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            }
+          ]
+        },
+        {
+          "method": "bestfgs",
+          "attempts": 2,
+          "unique_tasks": 2,
+          "scored": 0,
+          "mean_pct": null,
+          "full": 0,
+          "same_scored12": false,
+          "report_checks": {
+            "match": 2
+          },
+          "rows": [
+            {
+              "task": "modflow6-groundwater-regression-audit",
+              "reward": null,
+              "official_reward": null,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple25-v161-20260926/runs/bestfgs-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__YNXiEGW/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": true
+            },
+            {
+              "task": "spot-scheduler-traces",
+              "reward": null,
+              "official_reward": null,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple25-v161-20260926/runs/bestfgs-spot-scheduler-traces/spot-scheduler-traces__pbtfrMP/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": true
+            }
+          ]
+        }
+      ],
+      "summary_sha256": "9dc8e82d023517430f6b01b0e79756bd2d06647667e1c23787b82ae32c273bb4"
+    },
+    {
+      "campaign": "/var/tmp/lizh639-lhtb-A12-frozen-20261003-r1",
+      "summary_exists": false,
+      "manifest_exists": true,
+      "manifest_tasks": [
+        "spot-scheduler-traces",
+        "modflow6-groundwater-regression-audit",
+        "foldseek-paper-reproduction",
+        "gdal-proj-raster-regression",
+        "climate-netcdf-extreme-event-audit",
+        "great-expectations-audit",
+        "microscopy-cell-count-qc-audit",
+        "epa-swmm-stormwater-regression-audit",
+        "satellite-flood-change-detection-audit",
+        "opensees-seismic-structural-regression-audit",
+        "unison-paper-reproduction",
+        "matpower-opf-regression"
+      ],
+      "same_manifest12": true,
+      "source_release": "common-v7-with-v6.1-fixes/A",
+      "health": {},
+      "official_report_count": 0,
+      "official_reward_count": 0,
+      "reports_not_in_summary": [],
+      "groups": []
+    },
+    {
+      "campaign": "/var/tmp/lizh639-lhtb-bestfgs-v18-only-r1",
+      "summary_exists": true,
+      "manifest_exists": true,
+      "manifest_tasks": [
+        "spot-scheduler-traces",
+        "modflow6-groundwater-regression-audit",
+        "foldseek-paper-reproduction",
+        "gdal-proj-raster-regression",
+        "climate-netcdf-extreme-event-audit",
+        "great-expectations-audit",
+        "microscopy-cell-count-qc-audit",
+        "epa-swmm-stormwater-regression-audit",
+        "satellite-flood-change-detection-audit",
+        "opensees-seismic-structural-regression-audit",
+        "unison-paper-reproduction",
+        "matpower-opf-regression"
+      ],
+      "same_manifest12": true,
+      "source_release": null,
+      "health": {
+        "state": "needs_attention",
+        "completed": 5,
+        "total": 12,
+        "pending": 7
+      },
+      "official_report_count": 5,
+      "official_reward_count": 3,
+      "reports_not_in_summary": [
+        "/var/tmp/lizh639-lhtb-bestfgs-v18-only-r1/runs/bestfgs-spot-scheduler-traces/spot-scheduler-traces__JRxA2JL/result.json",
+        "/var/tmp/lizh639-lhtb-bestfgs-v18-only-r1/runs/bestfgs-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__5inZDC3/result.json"
+      ],
+      "groups": [
+        {
+          "method": "bestfgs",
+          "attempts": 5,
+          "unique_tasks": 5,
+          "scored": 3,
+          "mean_pct": 11.111111111111109,
+          "full": 0,
+          "same_scored12": false,
+          "report_checks": {
+            "match": 3,
+            "no_report_reference": 2
+          },
+          "rows": [
+            {
+              "task": "foldseek-paper-reproduction",
+              "reward": 0.3333333333333333,
+              "official_reward": 0.3333333333333333,
+              "report": "/var/tmp/lizh639-lhtb-bestfgs-v18-only-r1/runs/bestfgs-foldseek-paper-reproduction/foldseek-paper-reproduction__iYtmSey/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": false,
+              "exception": false
+            },
+            {
+              "task": "modflow6-groundwater-regression-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-bestfgs-v18-only-r1/runs/bestfgs-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__E2UCydA/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": false,
+              "exception": false
+            },
+            {
+              "task": "gdal-proj-raster-regression",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-bestfgs-v18-only-r1/runs/bestfgs-gdal-proj-raster-regression/gdal-proj-raster-regression__YnAYK6C/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": false,
+              "exception": false
+            },
+            {
+              "task": "spot-scheduler-traces",
+              "reward": null,
+              "official_reward": null,
+              "report": null,
+              "verification": "no_report_reference",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": false,
+              "exception": true
+            },
+            {
+              "task": "climate-netcdf-extreme-event-audit",
+              "reward": null,
+              "official_reward": null,
+              "report": null,
+              "verification": "no_report_reference",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": false,
+              "exception": true
+            }
+          ]
+        }
+      ],
+      "summary_sha256": "04d24b690685708a4f814ebf8537f01d40088a136b815df60608726e80f5014e"
+    },
+    {
+      "campaign": "/var/tmp/lizh639-lhtb-bestfgs-v181-only-r1",
+      "summary_exists": true,
+      "manifest_exists": true,
+      "manifest_tasks": [
+        "spot-scheduler-traces",
+        "modflow6-groundwater-regression-audit",
+        "foldseek-paper-reproduction",
+        "gdal-proj-raster-regression",
+        "climate-netcdf-extreme-event-audit",
+        "great-expectations-audit",
+        "microscopy-cell-count-qc-audit",
+        "epa-swmm-stormwater-regression-audit",
+        "satellite-flood-change-detection-audit",
+        "opensees-seismic-structural-regression-audit",
+        "unison-paper-reproduction",
+        "matpower-opf-regression"
+      ],
+      "same_manifest12": true,
+      "source_release": null,
+      "health": {
+        "state": "completed_with_errors",
+        "completed": 12,
+        "total": 12,
+        "pending": 0
+      },
+      "official_report_count": 12,
+      "official_reward_count": 12,
+      "reports_not_in_summary": [],
+      "groups": [
+        {
+          "method": "bestfgs",
+          "attempts": 12,
+          "unique_tasks": 12,
+          "scored": 12,
+          "mean_pct": 13.873619850288073,
+          "full": 0,
+          "same_scored12": true,
+          "report_checks": {
+            "match": 12
+          },
+          "rows": [
+            {
+              "task": "spot-scheduler-traces",
+              "reward": 0.8804,
+              "official_reward": 0.8804,
+              "report": "/var/tmp/lizh639-lhtb-bestfgs-v181-only-r1/runs/bestfgs-spot-scheduler-traces/spot-scheduler-traces__iUgCEhg/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "modflow6-groundwater-regression-audit",
+              "reward": 0.03742084052964882,
+              "official_reward": 0.03742084052964882,
+              "report": "/var/tmp/lizh639-lhtb-bestfgs-v181-only-r1/runs/bestfgs-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__UNLWRNN/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "foldseek-paper-reproduction",
+              "reward": 0.3333333333333333,
+              "official_reward": 0.3333333333333333,
+              "report": "/var/tmp/lizh639-lhtb-bestfgs-v181-only-r1/runs/bestfgs-foldseek-paper-reproduction/foldseek-paper-reproduction__TQ3QNTT/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "gdal-proj-raster-regression",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-bestfgs-v181-only-r1/runs/bestfgs-gdal-proj-raster-regression/gdal-proj-raster-regression__HrMkFN4/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "climate-netcdf-extreme-event-audit",
+              "reward": 0.084969479067,
+              "official_reward": 0.084969479067,
+              "report": "/var/tmp/lizh639-lhtb-bestfgs-v181-only-r1/runs/bestfgs-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__HyYQiPi/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "great-expectations-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-bestfgs-v181-only-r1/runs/bestfgs-great-expectations-audit/great-expectations-audit__GGCKH9Q/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "microscopy-cell-count-qc-audit",
+              "reward": 0.045,
+              "official_reward": 0.045,
+              "report": "/var/tmp/lizh639-lhtb-bestfgs-v181-only-r1/runs/bestfgs-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__bpUEZNX/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "epa-swmm-stormwater-regression-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-bestfgs-v181-only-r1/runs/bestfgs-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__kWwb6DP/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "satellite-flood-change-detection-audit",
+              "reward": 0.093333333333,
+              "official_reward": 0.093333333333,
+              "report": "/var/tmp/lizh639-lhtb-bestfgs-v181-only-r1/runs/bestfgs-satellite-flood-change-detection-audit/satellite-flood-change-detection__MTXcaKG/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "opensees-seismic-structural-regression-audit",
+              "reward": 0.023710729104919975,
+              "official_reward": 0.023710729104919975,
+              "report": "/var/tmp/lizh639-lhtb-bestfgs-v181-only-r1/runs/bestfgs-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__owYqXN2/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "unison-paper-reproduction",
+              "reward": 0.16666666666666666,
+              "official_reward": 0.16666666666666666,
+              "report": "/var/tmp/lizh639-lhtb-bestfgs-v181-only-r1/runs/bestfgs-unison-paper-reproduction/unison-paper-reproduction__R8vyuAr/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "matpower-opf-regression",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-bestfgs-v181-only-r1/runs/bestfgs-matpower-opf-regression/matpower-opf-regression__o2BZLr6/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            }
+          ]
+        }
+      ],
+      "summary_sha256": "58267095019c096c0f3a5842a4d40b7dac46fbde9ee81035577acd486ad20959"
+    },
+    {
+      "campaign": "/var/tmp/lizh639-lhtb-bestfgs12-memory-v5-20260930",
+      "summary_exists": true,
+      "manifest_exists": true,
+      "manifest_tasks": [
+        "spot-scheduler-traces",
+        "modflow6-groundwater-regression-audit",
+        "foldseek-paper-reproduction",
+        "gdal-proj-raster-regression",
+        "climate-netcdf-extreme-event-audit",
+        "great-expectations-audit",
+        "microscopy-cell-count-qc-audit",
+        "epa-swmm-stormwater-regression-audit",
+        "satellite-flood-change-detection-audit",
+        "opensees-seismic-structural-regression-audit",
+        "unison-paper-reproduction",
+        "matpower-opf-regression"
+      ],
+      "same_manifest12": true,
+      "source_release": "memory-reliability-v5",
+      "health": {
+        "state": "completed",
+        "completed": 12,
+        "total": 12,
+        "pending": 0
+      },
+      "official_report_count": 12,
+      "official_reward_count": 12,
+      "reports_not_in_summary": [],
+      "groups": [
+        {
+          "method": "bestfgs",
+          "attempts": 12,
+          "unique_tasks": 12,
+          "scored": 12,
+          "mean_pct": 14.467485473112006,
+          "full": 0,
+          "same_scored12": true,
+          "report_checks": {
+            "match": 12
+          },
+          "rows": [
+            {
+              "task": "modflow6-groundwater-regression-audit",
+              "reward": 0.018998272884283247,
+              "official_reward": 0.018998272884283247,
+              "report": "/var/tmp/lizh639-lhtb-bestfgs12-memory-v5-20260930/runs/bestfgs-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__LUxSu42/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "spot-scheduler-traces",
+              "reward": 0.8728,
+              "official_reward": 0.8728,
+              "report": "/var/tmp/lizh639-lhtb-bestfgs12-memory-v5-20260930/runs/bestfgs-spot-scheduler-traces/spot-scheduler-traces__r9YuuSE/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "foldseek-paper-reproduction",
+              "reward": 0.3333333333333333,
+              "official_reward": 0.3333333333333333,
+              "report": "/var/tmp/lizh639-lhtb-bestfgs12-memory-v5-20260930/runs/bestfgs-foldseek-paper-reproduction/foldseek-paper-reproduction__Sh44XHt/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "gdal-proj-raster-regression",
+              "reward": 0.0009666505558240696,
+              "official_reward": 0.0009666505558240696,
+              "report": "/var/tmp/lizh639-lhtb-bestfgs12-memory-v5-20260930/runs/bestfgs-gdal-proj-raster-regression/gdal-proj-raster-regression__K2VmyCf/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "climate-netcdf-extreme-event-audit",
+              "reward": 0.015,
+              "official_reward": 0.015,
+              "report": "/var/tmp/lizh639-lhtb-bestfgs12-memory-v5-20260930/runs/bestfgs-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__YDXonL5/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "great-expectations-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-bestfgs12-memory-v5-20260930/runs/bestfgs-great-expectations-audit/great-expectations-audit__RnVKKKf/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "microscopy-cell-count-qc-audit",
+              "reward": 0.045,
+              "official_reward": 0.045,
+              "report": "/var/tmp/lizh639-lhtb-bestfgs12-memory-v5-20260930/runs/bestfgs-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__rS4F6S8/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "epa-swmm-stormwater-regression-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-bestfgs12-memory-v5-20260930/runs/bestfgs-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__B4wsRdV/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "satellite-flood-change-detection-audit",
+              "reward": 0.2,
+              "official_reward": 0.2,
+              "report": "/var/tmp/lizh639-lhtb-bestfgs12-memory-v5-20260930/runs/bestfgs-satellite-flood-change-detection-audit/satellite-flood-change-detection__SM3Vfq6/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "opensees-seismic-structural-regression-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-bestfgs12-memory-v5-20260930/runs/bestfgs-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__nqiZDhV/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "unison-paper-reproduction",
+              "reward": 0.16666666666666666,
+              "official_reward": 0.16666666666666666,
+              "report": "/var/tmp/lizh639-lhtb-bestfgs12-memory-v5-20260930/runs/bestfgs-unison-paper-reproduction/unison-paper-reproduction__grYn8Gs/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "matpower-opf-regression",
+              "reward": 0.08333333333333333,
+              "official_reward": 0.08333333333333333,
+              "report": "/var/tmp/lizh639-lhtb-bestfgs12-memory-v5-20260930/runs/bestfgs-matpower-opf-regression/matpower-opf-regression__Poyehbp/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            }
+          ]
+        }
+      ],
+      "summary_sha256": "dcfe95caf25f0a456403653077a12e3e7741cc4c1cd803bb8e123f7d822f35b4"
+    },
+    {
+      "campaign": "/var/tmp/lizh639-lhtb-contrastive12-engineering-v2-20261002",
+      "summary_exists": false,
+      "manifest_exists": true,
+      "manifest_tasks": [
+        "spot-scheduler-traces",
+        "modflow6-groundwater-regression-audit",
+        "foldseek-paper-reproduction",
+        "gdal-proj-raster-regression",
+        "climate-netcdf-extreme-event-audit",
+        "great-expectations-audit",
+        "microscopy-cell-count-qc-audit",
+        "epa-swmm-stormwater-regression-audit",
+        "satellite-flood-change-detection-audit",
+        "opensees-seismic-structural-regression-audit",
+        "unison-paper-reproduction",
+        "matpower-opf-regression"
+      ],
+      "same_manifest12": true,
+      "source_release": "contrastive-engineering-repair-v2",
+      "health": {},
+      "official_report_count": 0,
+      "official_reward_count": 0,
+      "reports_not_in_summary": [],
+      "groups": []
+    },
+    {
+      "campaign": "/var/tmp/lizh639-lhtb-contrastive12-engineering-v2-20261002-r1",
+      "summary_exists": true,
+      "manifest_exists": true,
+      "manifest_tasks": [
+        "spot-scheduler-traces",
+        "modflow6-groundwater-regression-audit",
+        "foldseek-paper-reproduction",
+        "gdal-proj-raster-regression",
+        "climate-netcdf-extreme-event-audit",
+        "great-expectations-audit",
+        "microscopy-cell-count-qc-audit",
+        "epa-swmm-stormwater-regression-audit",
+        "satellite-flood-change-detection-audit",
+        "opensees-seismic-structural-regression-audit",
+        "unison-paper-reproduction",
+        "matpower-opf-regression"
+      ],
+      "same_manifest12": true,
+      "source_release": "contrastive-engineering-repair-v2",
+      "health": {
+        "state": "completed_with_errors",
+        "completed": 24,
+        "total": 24,
+        "pending": 0
+      },
+      "official_report_count": 24,
+      "official_reward_count": 24,
+      "reports_not_in_summary": [],
+      "groups": [
+        {
+          "method": "evidence1",
+          "attempts": 12,
+          "unique_tasks": 12,
+          "scored": 12,
+          "mean_pct": 19.133401956933408,
+          "full": 0,
+          "same_scored12": true,
+          "report_checks": {
+            "match": 12
+          },
+          "rows": [
+            {
+              "task": "modflow6-groundwater-regression-audit",
+              "reward": 0.010362694300518135,
+              "official_reward": 0.010362694300518135,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-engineering-v2-20261002-r1/runs/evidence1-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__cWxfGZi/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "evidence1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "spot-scheduler-traces",
+              "reward": 0.7043,
+              "official_reward": 0.7043,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-engineering-v2-20261002-r1/runs/evidence1-spot-scheduler-traces/spot-scheduler-traces__bkhoDVk/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "evidence1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "foldseek-paper-reproduction",
+              "reward": 0.3333333333333333,
+              "official_reward": 0.3333333333333333,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-engineering-v2-20261002-r1/runs/evidence1-foldseek-paper-reproduction/foldseek-paper-reproduction__DmZAoVY/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "evidence1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "climate-netcdf-extreme-event-audit",
+              "reward": 0.076220618941,
+              "official_reward": 0.076220618941,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-engineering-v2-20261002-r1/runs/evidence1-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__6coe9pZ/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "evidence1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "gdal-proj-raster-regression",
+              "reward": 0.0002416626389560174,
+              "official_reward": 0.0002416626389560174,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-engineering-v2-20261002-r1/runs/evidence1-gdal-proj-raster-regression/gdal-proj-raster-regression__SxkcnYv/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "evidence1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "great-expectations-audit",
+              "reward": 0.2727272727272727,
+              "official_reward": 0.2727272727272727,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-engineering-v2-20261002-r1/runs/evidence1-great-expectations-audit/great-expectations-audit__c5Cdg3c/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "evidence1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "microscopy-cell-count-qc-audit",
+              "reward": 0.005,
+              "official_reward": 0.005,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-engineering-v2-20261002-r1/runs/evidence1-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__ZtAc96H/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "evidence1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "epa-swmm-stormwater-regression-audit",
+              "reward": 0.008264462809917356,
+              "official_reward": 0.008264462809917356,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-engineering-v2-20261002-r1/runs/evidence1-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__wWeFaku/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "evidence1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "satellite-flood-change-detection-audit",
+              "reward": 0.21,
+              "official_reward": 0.21,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-engineering-v2-20261002-r1/runs/evidence1-satellite-flood-change-detection-audit/satellite-flood-change-detection__DsDmFLR/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "evidence1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "opensees-seismic-structural-regression-audit",
+              "reward": 0.00889152341434499,
+              "official_reward": 0.00889152341434499,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-engineering-v2-20261002-r1/runs/evidence1-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__kmuRSna/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "evidence1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "matpower-opf-regression",
+              "reward": 0.5,
+              "official_reward": 0.5,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-engineering-v2-20261002-r1/runs/evidence1-matpower-opf-regression/matpower-opf-regression__HThem7q/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "evidence1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "unison-paper-reproduction",
+              "reward": 0.16666666666666666,
+              "official_reward": 0.16666666666666666,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-engineering-v2-20261002-r1/runs/evidence1-unison-paper-reproduction/unison-paper-reproduction__L2neumf/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "evidence1",
+              "infrastructure_ok": true,
+              "exception": false
+            }
+          ]
+        },
+        {
+          "method": "orthogonal1",
+          "attempts": 12,
+          "unique_tasks": 12,
+          "scored": 12,
+          "mean_pct": 25.387534127033394,
+          "full": 1,
+          "same_scored12": true,
+          "report_checks": {
+            "match": 12
+          },
+          "rows": [
+            {
+              "task": "modflow6-groundwater-regression-audit",
+              "reward": 0.013816925734024179,
+              "official_reward": 0.013816925734024179,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-engineering-v2-20261002-r1/runs/orthogonal1-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__BsQ6NBz/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "orthogonal1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "spot-scheduler-traces",
+              "reward": 0.8954,
+              "official_reward": 0.8954,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-engineering-v2-20261002-r1/runs/orthogonal1-spot-scheduler-traces/spot-scheduler-traces__k5oAWqQ/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "orthogonal1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "gdal-proj-raster-regression",
+              "reward": 0.0002416626389560174,
+              "official_reward": 0.0002416626389560174,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-engineering-v2-20261002-r1/runs/orthogonal1-gdal-proj-raster-regression/gdal-proj-raster-regression__ZXRkwpP/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "orthogonal1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "foldseek-paper-reproduction",
+              "reward": 0.3333333333333333,
+              "official_reward": 0.3333333333333333,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-engineering-v2-20261002-r1/runs/orthogonal1-foldseek-paper-reproduction/foldseek-paper-reproduction__C3mCE8h/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "orthogonal1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "climate-netcdf-extreme-event-audit",
+              "reward": 0.072411912752,
+              "official_reward": 0.072411912752,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-engineering-v2-20261002-r1/runs/orthogonal1-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__Vzqcsm3/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "orthogonal1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "great-expectations-audit",
+              "reward": 0.2727272727272727,
+              "official_reward": 0.2727272727272727,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-engineering-v2-20261002-r1/runs/orthogonal1-great-expectations-audit/great-expectations-audit__Czo4dsb/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "orthogonal1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "epa-swmm-stormwater-regression-audit",
+              "reward": 0.01652892561983471,
+              "official_reward": 0.01652892561983471,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-engineering-v2-20261002-r1/runs/orthogonal1-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__wxEMwcL/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "orthogonal1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "microscopy-cell-count-qc-audit",
+              "reward": 0.051666666667,
+              "official_reward": 0.051666666667,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-engineering-v2-20261002-r1/runs/orthogonal1-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__K3UnFcn/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "orthogonal1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "satellite-flood-change-detection-audit",
+              "reward": 0.2,
+              "official_reward": 0.2,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-engineering-v2-20261002-r1/runs/orthogonal1-satellite-flood-change-detection-audit/satellite-flood-change-detection__RsEuTUG/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "orthogonal1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "opensees-seismic-structural-regression-audit",
+              "reward": 0.023710729104919975,
+              "official_reward": 0.023710729104919975,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-engineering-v2-20261002-r1/runs/orthogonal1-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__VBWsADv/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "orthogonal1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "unison-paper-reproduction",
+              "reward": 0.16666666666666666,
+              "official_reward": 0.16666666666666666,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-engineering-v2-20261002-r1/runs/orthogonal1-unison-paper-reproduction/unison-paper-reproduction__SgD2m4T/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "orthogonal1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "matpower-opf-regression",
+              "reward": 1.0,
+              "official_reward": 1.0,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-engineering-v2-20261002-r1/runs/orthogonal1-matpower-opf-regression/matpower-opf-regression__6hC6jtw/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "orthogonal1",
+              "infrastructure_ok": true,
+              "exception": false
+            }
+          ]
+        }
+      ],
+      "summary_sha256": "b7058e89411f6a32f6f9039f8e73d377f83df06096e7dd8e7abd9ed25ec9d71f"
+    },
+    {
+      "campaign": "/var/tmp/lizh639-lhtb-contrastive12-v8-20261002",
+      "summary_exists": true,
+      "manifest_exists": true,
+      "manifest_tasks": [
+        "spot-scheduler-traces",
+        "modflow6-groundwater-regression-audit",
+        "foldseek-paper-reproduction",
+        "gdal-proj-raster-regression",
+        "climate-netcdf-extreme-event-audit",
+        "great-expectations-audit",
+        "microscopy-cell-count-qc-audit",
+        "epa-swmm-stormwater-regression-audit",
+        "satellite-flood-change-detection-audit",
+        "opensees-seismic-structural-regression-audit",
+        "unison-paper-reproduction",
+        "matpower-opf-regression"
+      ],
+      "same_manifest12": true,
+      "source_release": "contrastive-exploration-v1",
+      "health": {
+        "state": "completed_with_errors",
+        "completed": 24,
+        "total": 24,
+        "pending": 0
+      },
+      "official_report_count": 24,
+      "official_reward_count": 24,
+      "reports_not_in_summary": [],
+      "groups": [
+        {
+          "method": "orthogonal1",
+          "attempts": 12,
+          "unique_tasks": 12,
+          "scored": 12,
+          "mean_pct": 17.4808060068076,
+          "full": 0,
+          "same_scored12": true,
+          "report_checks": {
+            "match": 12
+          },
+          "rows": [
+            {
+              "task": "modflow6-groundwater-regression-audit",
+              "reward": 0.018422567645365574,
+              "official_reward": 0.018422567645365574,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-v8-20261002/runs/orthogonal1-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__PpMhcFL/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "orthogonal1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "spot-scheduler-traces",
+              "reward": 0.8937,
+              "official_reward": 0.8937,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-v8-20261002/runs/orthogonal1-spot-scheduler-traces/spot-scheduler-traces__Z5uc6KC/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "orthogonal1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "foldseek-paper-reproduction",
+              "reward": 0.4444444444444444,
+              "official_reward": 0.4444444444444444,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-v8-20261002/runs/orthogonal1-foldseek-paper-reproduction/foldseek-paper-reproduction__ERtLWDz/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "orthogonal1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "great-expectations-audit",
+              "reward": 0.2727272727272727,
+              "official_reward": 0.2727272727272727,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-v8-20261002/runs/orthogonal1-great-expectations-audit/great-expectations-audit__MoCZMBi/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "orthogonal1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "gdal-proj-raster-regression",
+              "reward": 0.01208313194780087,
+              "official_reward": 0.01208313194780087,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-v8-20261002/runs/orthogonal1-gdal-proj-raster-regression/gdal-proj-raster-regression__xH9LCZA/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "orthogonal1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "climate-netcdf-extreme-event-audit",
+              "reward": 0.035518960802,
+              "official_reward": 0.035518960802,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-v8-20261002/runs/orthogonal1-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__rTpskR2/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "orthogonal1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "satellite-flood-change-detection-audit",
+              "reward": 0.123333333333,
+              "official_reward": 0.123333333333,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-v8-20261002/runs/orthogonal1-satellite-flood-change-detection-audit/satellite-flood-change-detection__EMb4ckm/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "orthogonal1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "microscopy-cell-count-qc-audit",
+              "reward": 0.045,
+              "official_reward": 0.045,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-v8-20261002/runs/orthogonal1-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__ZfjPikG/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "orthogonal1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "opensees-seismic-structural-regression-audit",
+              "reward": 0.0017783046828689982,
+              "official_reward": 0.0017783046828689982,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-v8-20261002/runs/orthogonal1-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__mUqEYxt/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "orthogonal1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "epa-swmm-stormwater-regression-audit",
+              "reward": 0.0006887052341597796,
+              "official_reward": 0.0006887052341597796,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-v8-20261002/runs/orthogonal1-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__X5oMt7R/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "orthogonal1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "matpower-opf-regression",
+              "reward": 0.08333333333333333,
+              "official_reward": 0.08333333333333333,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-v8-20261002/runs/orthogonal1-matpower-opf-regression/matpower-opf-regression__q6DVXi4/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "orthogonal1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "unison-paper-reproduction",
+              "reward": 0.16666666666666666,
+              "official_reward": 0.16666666666666666,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-v8-20261002/runs/orthogonal1-unison-paper-reproduction/unison-paper-reproduction__3ZoJNSj/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "orthogonal1",
+              "infrastructure_ok": true,
+              "exception": false
+            }
+          ]
+        },
+        {
+          "method": "evidence1",
+          "attempts": 12,
+          "unique_tasks": 12,
+          "scored": 12,
+          "mean_pct": 20.25039582532281,
+          "full": 0,
+          "same_scored12": true,
+          "report_checks": {
+            "match": 12
+          },
+          "rows": [
+            {
+              "task": "modflow6-groundwater-regression-audit",
+              "reward": 0.025331030512377662,
+              "official_reward": 0.025331030512377662,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-v8-20261002/runs/evidence1-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__DfWFVMU/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "evidence1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "spot-scheduler-traces",
+              "reward": 0.8537,
+              "official_reward": 0.8537,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-v8-20261002/runs/evidence1-spot-scheduler-traces/spot-scheduler-traces__2sNhY35/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "evidence1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "climate-netcdf-extreme-event-audit",
+              "reward": 0.042075123023,
+              "official_reward": 0.042075123023,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-v8-20261002/runs/evidence1-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__AfmnKMo/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "evidence1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "foldseek-paper-reproduction",
+              "reward": 0.5555555555555556,
+              "official_reward": 0.5555555555555556,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-v8-20261002/runs/evidence1-foldseek-paper-reproduction/foldseek-paper-reproduction__v8HbNgn/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "evidence1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "great-expectations-audit",
+              "reward": 0.2727272727272727,
+              "official_reward": 0.2727272727272727,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-v8-20261002/runs/evidence1-great-expectations-audit/great-expectations-audit__hkwQPGZ/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "evidence1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "microscopy-cell-count-qc-audit",
+              "reward": 0.045,
+              "official_reward": 0.045,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-v8-20261002/runs/evidence1-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__Nnzryta/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "evidence1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "gdal-proj-raster-regression",
+              "reward": 0.0009666505558240696,
+              "official_reward": 0.0009666505558240696,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-v8-20261002/runs/evidence1-gdal-proj-raster-regression/gdal-proj-raster-regression__6FNJ3UZ/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "evidence1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "epa-swmm-stormwater-regression-audit",
+              "reward": 0.0006887052341597796,
+              "official_reward": 0.0006887052341597796,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-v8-20261002/runs/evidence1-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__7DRTmje/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "evidence1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "unison-paper-reproduction",
+              "reward": 0.16666666666666666,
+              "official_reward": 0.16666666666666666,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-v8-20261002/runs/evidence1-unison-paper-reproduction/unison-paper-reproduction__faAZVFG/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "evidence1",
+              "infrastructure_ok": false,
+              "exception": false
+            },
+            {
+              "task": "satellite-flood-change-detection-audit",
+              "reward": 0.04,
+              "official_reward": 0.04,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-v8-20261002/runs/evidence1-satellite-flood-change-detection-audit/satellite-flood-change-detection__hVycCMX/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "evidence1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "opensees-seismic-structural-regression-audit",
+              "reward": 0.01066982809721399,
+              "official_reward": 0.01066982809721399,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-v8-20261002/runs/evidence1-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__yFhgVD9/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "evidence1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "matpower-opf-regression",
+              "reward": 0.4166666666666667,
+              "official_reward": 0.4166666666666667,
+              "report": "/var/tmp/lizh639-lhtb-contrastive12-v8-20261002/runs/evidence1-matpower-opf-regression/matpower-opf-regression__fXmNHSR/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "evidence1",
+              "infrastructure_ok": true,
+              "exception": false
+            }
+          ]
+        }
+      ],
+      "summary_sha256": "72374b30edff490b5bf74e4826dddd783ec0d80a8a3cef04bcfbeeede7e1bad2"
+    },
+    {
+      "campaign": "/var/tmp/lizh639-lhtb-hai070-only-r1",
+      "summary_exists": true,
+      "manifest_exists": true,
+      "manifest_tasks": [
+        "spot-scheduler-traces",
+        "modflow6-groundwater-regression-audit",
+        "foldseek-paper-reproduction",
+        "gdal-proj-raster-regression",
+        "climate-netcdf-extreme-event-audit",
+        "great-expectations-audit",
+        "microscopy-cell-count-qc-audit",
+        "epa-swmm-stormwater-regression-audit",
+        "satellite-flood-change-detection-audit",
+        "opensees-seismic-structural-regression-audit",
+        "unison-paper-reproduction",
+        "matpower-opf-regression"
+      ],
+      "same_manifest12": true,
+      "source_release": null,
+      "health": {
+        "state": "completed",
+        "completed": 12,
+        "total": 12,
+        "pending": 0
+      },
+      "official_report_count": 12,
+      "official_reward_count": 12,
+      "reports_not_in_summary": [],
+      "groups": [
+        {
+          "method": "hai",
+          "attempts": 12,
+          "unique_tasks": 12,
+          "scored": 12,
+          "mean_pct": 5.926705339083333,
+          "full": 0,
+          "same_scored12": true,
+          "report_checks": {
+            "match": 12
+          },
+          "rows": [
+            {
+              "task": "modflow6-groundwater-regression-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-hai070-only-r1/runs/hai-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__bfrU3Ns/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "spot-scheduler-traces",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-hai070-only-r1/runs/hai-spot-scheduler-traces/spot-scheduler-traces__aLzY7Jy/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "climate-netcdf-extreme-event-audit",
+              "reward": 0.066621307357,
+              "official_reward": 0.066621307357,
+              "report": "/var/tmp/lizh639-lhtb-hai070-only-r1/runs/hai-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__XutEJFN/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "foldseek-paper-reproduction",
+              "reward": 0.3333333333333333,
+              "official_reward": 0.3333333333333333,
+              "report": "/var/tmp/lizh639-lhtb-hai070-only-r1/runs/hai-foldseek-paper-reproduction/foldseek-paper-reproduction__RuDGphL/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "gdal-proj-raster-regression",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-hai070-only-r1/runs/hai-gdal-proj-raster-regression/gdal-proj-raster-regression__rVZ5N3g/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "great-expectations-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-hai070-only-r1/runs/hai-great-expectations-audit/great-expectations-audit__ipJ7ZoE/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "epa-swmm-stormwater-regression-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-hai070-only-r1/runs/hai-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__KDqEMqm/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "microscopy-cell-count-qc-audit",
+              "reward": 0.05125,
+              "official_reward": 0.05125,
+              "report": "/var/tmp/lizh639-lhtb-hai070-only-r1/runs/hai-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__jJ742jo/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "opensees-seismic-structural-regression-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-hai070-only-r1/runs/hai-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__99GrvXk/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "satellite-flood-change-detection-audit",
+              "reward": 0.093333333333,
+              "official_reward": 0.093333333333,
+              "report": "/var/tmp/lizh639-lhtb-hai070-only-r1/runs/hai-satellite-flood-change-detection-audit/satellite-flood-change-detection__nntG2YM/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "matpower-opf-regression",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-hai070-only-r1/runs/hai-matpower-opf-regression/matpower-opf-regression__cfkAbXn/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "unison-paper-reproduction",
+              "reward": 0.16666666666666666,
+              "official_reward": 0.16666666666666666,
+              "report": "/var/tmp/lizh639-lhtb-hai070-only-r1/runs/hai-unison-paper-reproduction/unison-paper-reproduction__cqpeWoU/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            }
+          ]
+        }
+      ],
+      "summary_sha256": "7ee484c563acdfc6a28f16a357ab27d8052c6f5516a7a150a2e810dff2e8c490"
+    },
+    {
+      "campaign": "/var/tmp/lizh639-lhtb-hai070-r1",
+      "summary_exists": false,
+      "manifest_exists": true,
+      "manifest_tasks": [
+        "spot-scheduler-traces",
+        "modflow6-groundwater-regression-audit",
+        "foldseek-paper-reproduction",
+        "gdal-proj-raster-regression",
+        "climate-netcdf-extreme-event-audit",
+        "great-expectations-audit",
+        "microscopy-cell-count-qc-audit",
+        "epa-swmm-stormwater-regression-audit",
+        "satellite-flood-change-detection-audit",
+        "opensees-seismic-structural-regression-audit",
+        "unison-paper-reproduction",
+        "matpower-opf-regression"
+      ],
+      "same_manifest12": true,
+      "source_release": null,
+      "health": {},
+      "official_report_count": 0,
+      "official_reward_count": 0,
+      "reports_not_in_summary": [],
+      "groups": []
+    },
+    {
+      "campaign": "/var/tmp/lizh639-lhtb-hai082-only-r1",
+      "summary_exists": true,
+      "manifest_exists": true,
+      "manifest_tasks": [
+        "spot-scheduler-traces",
+        "modflow6-groundwater-regression-audit",
+        "foldseek-paper-reproduction",
+        "gdal-proj-raster-regression",
+        "climate-netcdf-extreme-event-audit",
+        "great-expectations-audit",
+        "microscopy-cell-count-qc-audit",
+        "epa-swmm-stormwater-regression-audit",
+        "satellite-flood-change-detection-audit",
+        "opensees-seismic-structural-regression-audit",
+        "unison-paper-reproduction",
+        "matpower-opf-regression"
+      ],
+      "same_manifest12": true,
+      "source_release": null,
+      "health": {
+        "state": "completed_with_errors",
+        "completed": 12,
+        "total": 12,
+        "pending": 0
+      },
+      "official_report_count": 12,
+      "official_reward_count": 12,
+      "reports_not_in_summary": [],
+      "groups": [
+        {
+          "method": "hai",
+          "attempts": 12,
+          "unique_tasks": 12,
+          "scored": 12,
+          "mean_pct": 13.915038672416665,
+          "full": 0,
+          "same_scored12": true,
+          "report_checks": {
+            "match": 12
+          },
+          "rows": [
+            {
+              "task": "modflow6-groundwater-regression-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-hai082-only-r1/runs/hai-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__v3xkfMZ/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "foldseek-paper-reproduction",
+              "reward": 0.3333333333333333,
+              "official_reward": 0.3333333333333333,
+              "report": "/var/tmp/lizh639-lhtb-hai082-only-r1/runs/hai-foldseek-paper-reproduction/foldseek-paper-reproduction__4A7c6XF/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": false,
+              "exception": false
+            },
+            {
+              "task": "spot-scheduler-traces",
+              "reward": 0.9586,
+              "official_reward": 0.9586,
+              "report": "/var/tmp/lizh639-lhtb-hai082-only-r1/runs/hai-spot-scheduler-traces/spot-scheduler-traces__GFKM2fK/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "gdal-proj-raster-regression",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-hai082-only-r1/runs/hai-gdal-proj-raster-regression/gdal-proj-raster-regression__m5BLk3Q/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "climate-netcdf-extreme-event-audit",
+              "reward": 0.066621307357,
+              "official_reward": 0.066621307357,
+              "report": "/var/tmp/lizh639-lhtb-hai082-only-r1/runs/hai-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__9W8R3cU/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "great-expectations-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-hai082-only-r1/runs/hai-great-expectations-audit/great-expectations-audit__Rju7295/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "epa-swmm-stormwater-regression-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-hai082-only-r1/runs/hai-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__bb96wCv/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "opensees-seismic-structural-regression-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-hai082-only-r1/runs/hai-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__P8FGUSV/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "microscopy-cell-count-qc-audit",
+              "reward": 0.05125,
+              "official_reward": 0.05125,
+              "report": "/var/tmp/lizh639-lhtb-hai082-only-r1/runs/hai-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__7bhNPTn/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "satellite-flood-change-detection-audit",
+              "reward": 0.093333333333,
+              "official_reward": 0.093333333333,
+              "report": "/var/tmp/lizh639-lhtb-hai082-only-r1/runs/hai-satellite-flood-change-detection-audit/satellite-flood-change-detection__U6bRoJF/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": false,
+              "exception": false
+            },
+            {
+              "task": "matpower-opf-regression",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-hai082-only-r1/runs/hai-matpower-opf-regression/matpower-opf-regression__ocmNuxF/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "unison-paper-reproduction",
+              "reward": 0.16666666666666666,
+              "official_reward": 0.16666666666666666,
+              "report": "/var/tmp/lizh639-lhtb-hai082-only-r1/runs/hai-unison-paper-reproduction/unison-paper-reproduction__Uwmcgg7/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            }
+          ]
+        }
+      ],
+      "summary_sha256": "ac33166532d57cdcb2d4e234fa83469898677076e3cabb5913553203f13d4130"
+    },
+    {
+      "campaign": "/var/tmp/lizh639-lhtb-mechanism-large-20261001",
+      "summary_exists": true,
+      "manifest_exists": true,
+      "manifest_tasks": [
+        "spot-scheduler-traces",
+        "modflow6-groundwater-regression-audit",
+        "foldseek-paper-reproduction",
+        "gdal-proj-raster-regression",
+        "climate-netcdf-extreme-event-audit",
+        "great-expectations-audit",
+        "microscopy-cell-count-qc-audit",
+        "epa-swmm-stormwater-regression-audit",
+        "satellite-flood-change-detection-audit",
+        "opensees-seismic-structural-regression-audit",
+        "unison-paper-reproduction",
+        "matpower-opf-regression"
+      ],
+      "same_manifest12": true,
+      "source_release": "common-v7-with-v6.1-fixes",
+      "health": {
+        "state": "completed_with_errors",
+        "completed": 25,
+        "total": 25,
+        "pending": 0
+      },
+      "official_report_count": 25,
+      "official_reward_count": 25,
+      "reports_not_in_summary": [],
+      "groups": [
+        {
+          "method": "B1",
+          "attempts": 5,
+          "unique_tasks": 5,
+          "scored": 5,
+          "mean_pct": 24.80149991944578,
+          "full": 0,
+          "same_scored12": false,
+          "report_checks": {
+            "match": 5
+          },
+          "rows": [
+            {
+              "task": "modflow6-groundwater-regression-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-mechanism-large-20261001/runs/B1-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__wscbAJB/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "B1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "spot-scheduler-traces",
+              "reward": 0.9065,
+              "official_reward": 0.9065,
+              "report": "/var/tmp/lizh639-lhtb-mechanism-large-20261001/runs/B1-spot-scheduler-traces/spot-scheduler-traces__nRLC8JW/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "B1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "great-expectations-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-mechanism-large-20261001/runs/B1-great-expectations-audit/great-expectations-audit__SFdf6sE/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "B1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "foldseek-paper-reproduction",
+              "reward": 0.3333333333333333,
+              "official_reward": 0.3333333333333333,
+              "report": "/var/tmp/lizh639-lhtb-mechanism-large-20261001/runs/B1-foldseek-paper-reproduction/foldseek-paper-reproduction__HEbQgXy/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "B1",
+              "infrastructure_ok": false,
+              "exception": false
+            },
+            {
+              "task": "gdal-proj-raster-regression",
+              "reward": 0.0002416626389560174,
+              "official_reward": 0.0002416626389560174,
+              "report": "/var/tmp/lizh639-lhtb-mechanism-large-20261001/runs/B1-gdal-proj-raster-regression/gdal-proj-raster-regression__Akz9S8S/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "B1",
+              "infrastructure_ok": true,
+              "exception": false
+            }
+          ]
+        },
+        {
+          "method": "C1",
+          "attempts": 5,
+          "unique_tasks": 5,
+          "scored": 5,
+          "mean_pct": 24.225118113066948,
+          "full": 0,
+          "same_scored12": false,
+          "report_checks": {
+            "match": 5
+          },
+          "rows": [
+            {
+              "task": "modflow6-groundwater-regression-audit",
+              "reward": 0.025331030512377662,
+              "official_reward": 0.025331030512377662,
+              "report": "/var/tmp/lizh639-lhtb-mechanism-large-20261001/runs/C1-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__35uVAH4/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "C1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "great-expectations-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-mechanism-large-20261001/runs/C1-great-expectations-audit/great-expectations-audit__XFQ7f28/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "C1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "spot-scheduler-traces",
+              "reward": 0.8451,
+              "official_reward": 0.8451,
+              "report": "/var/tmp/lizh639-lhtb-mechanism-large-20261001/runs/C1-spot-scheduler-traces/spot-scheduler-traces__XL3SKkf/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "C1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "foldseek-paper-reproduction",
+              "reward": 0.3333333333333333,
+              "official_reward": 0.3333333333333333,
+              "report": "/var/tmp/lizh639-lhtb-mechanism-large-20261001/runs/C1-foldseek-paper-reproduction/foldseek-paper-reproduction__r6T24aA/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "C1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "gdal-proj-raster-regression",
+              "reward": 0.007491541807636539,
+              "official_reward": 0.007491541807636539,
+              "report": "/var/tmp/lizh639-lhtb-mechanism-large-20261001/runs/C1-gdal-proj-raster-regression/gdal-proj-raster-regression__Bf84P4Y/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "C1",
+              "infrastructure_ok": true,
+              "exception": false
+            }
+          ]
+        },
+        {
+          "method": "E1",
+          "attempts": 5,
+          "unique_tasks": 5,
+          "scored": 5,
+          "mean_pct": 25.58352718489042,
+          "full": 0,
+          "same_scored12": false,
+          "report_checks": {
+            "match": 5
+          },
+          "rows": [
+            {
+              "task": "modflow6-groundwater-regression-audit",
+              "reward": 0.10995970063327576,
+              "official_reward": 0.10995970063327576,
+              "report": "/var/tmp/lizh639-lhtb-mechanism-large-20261001/runs/E1-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__YgGRHaj/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "E1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "great-expectations-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-mechanism-large-20261001/runs/E1-great-expectations-audit/great-expectations-audit__daGYFEo/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "E1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "foldseek-paper-reproduction",
+              "reward": 0.3333333333333333,
+              "official_reward": 0.3333333333333333,
+              "report": "/var/tmp/lizh639-lhtb-mechanism-large-20261001/runs/E1-foldseek-paper-reproduction/foldseek-paper-reproduction__D8Crsu2/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "E1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "spot-scheduler-traces",
+              "reward": 0.8354,
+              "official_reward": 0.8354,
+              "report": "/var/tmp/lizh639-lhtb-mechanism-large-20261001/runs/E1-spot-scheduler-traces/spot-scheduler-traces__uxUr3E4/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "E1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "gdal-proj-raster-regression",
+              "reward": 0.0004833252779120348,
+              "official_reward": 0.0004833252779120348,
+              "report": "/var/tmp/lizh639-lhtb-mechanism-large-20261001/runs/E1-gdal-proj-raster-regression/gdal-proj-raster-regression__JVW6acS/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "E1",
+              "infrastructure_ok": true,
+              "exception": false
+            }
+          ]
+        },
+        {
+          "method": "D1",
+          "attempts": 5,
+          "unique_tasks": 5,
+          "scored": 5,
+          "mean_pct": 34.525079802500144,
+          "full": 0,
+          "same_scored12": false,
+          "report_checks": {
+            "match": 5
+          },
+          "rows": [
+            {
+              "task": "modflow6-groundwater-regression-audit",
+              "reward": 0.024179620034542316,
+              "official_reward": 0.024179620034542316,
+              "report": "/var/tmp/lizh639-lhtb-mechanism-large-20261001/runs/D1-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__qJWunzh/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "D1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "great-expectations-audit",
+              "reward": 0.2727272727272727,
+              "official_reward": 0.2727272727272727,
+              "report": "/var/tmp/lizh639-lhtb-mechanism-large-20261001/runs/D1-great-expectations-audit/great-expectations-audit__XUxPabK/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "D1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "spot-scheduler-traces",
+              "reward": 0.8663,
+              "official_reward": 0.8663,
+              "report": "/var/tmp/lizh639-lhtb-mechanism-large-20261001/runs/D1-spot-scheduler-traces/spot-scheduler-traces__kEay2Ch/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "D1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "foldseek-paper-reproduction",
+              "reward": 0.5555555555555556,
+              "official_reward": 0.5555555555555556,
+              "report": "/var/tmp/lizh639-lhtb-mechanism-large-20261001/runs/D1-foldseek-paper-reproduction/foldseek-paper-reproduction__Gqmfiyh/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "D1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "gdal-proj-raster-regression",
+              "reward": 0.007491541807636539,
+              "official_reward": 0.007491541807636539,
+              "report": "/var/tmp/lizh639-lhtb-mechanism-large-20261001/runs/D1-gdal-proj-raster-regression/gdal-proj-raster-regression__BKXt9Rv/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "D1",
+              "infrastructure_ok": true,
+              "exception": false
+            }
+          ]
+        },
+        {
+          "method": "A1",
+          "attempts": 5,
+          "unique_tasks": 5,
+          "scored": 5,
+          "mean_pct": 35.25267163661751,
+          "full": 0,
+          "same_scored12": false,
+          "report_checks": {
+            "match": 5
+          },
+          "rows": [
+            {
+              "task": "modflow6-groundwater-regression-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-mechanism-large-20261001/runs/A1-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__RM77CNn/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "A1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "great-expectations-audit",
+              "reward": 0.36363636363636365,
+              "official_reward": 0.36363636363636365,
+              "report": "/var/tmp/lizh639-lhtb-mechanism-large-20261001/runs/A1-great-expectations-audit/great-expectations-audit__neRYi5W/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "A1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "spot-scheduler-traces",
+              "reward": 0.8432,
+              "official_reward": 0.8432,
+              "report": "/var/tmp/lizh639-lhtb-mechanism-large-20261001/runs/A1-spot-scheduler-traces/spot-scheduler-traces__RF2ScDm/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "A1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "foldseek-paper-reproduction",
+              "reward": 0.5555555555555556,
+              "official_reward": 0.5555555555555556,
+              "report": "/var/tmp/lizh639-lhtb-mechanism-large-20261001/runs/A1-foldseek-paper-reproduction/foldseek-paper-reproduction__pTiv3WE/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "A1",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "gdal-proj-raster-regression",
+              "reward": 0.0002416626389560174,
+              "official_reward": 0.0002416626389560174,
+              "report": "/var/tmp/lizh639-lhtb-mechanism-large-20261001/runs/A1-gdal-proj-raster-regression/gdal-proj-raster-regression__ZncG9Gi/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "A1",
+              "infrastructure_ok": true,
+              "exception": false
+            }
+          ]
+        }
+      ],
+      "summary_sha256": "c18f5bdb0c7c67cea528ed5b70c330ec7638d94865fc959a45be627d042d6874"
+    },
+    {
+      "campaign": "/var/tmp/lizh639-lhtb-missing2-r5",
+      "summary_exists": true,
+      "manifest_exists": false,
+      "manifest_tasks": [],
+      "same_manifest12": false,
+      "source_release": null,
+      "health": {
+        "state": "completed",
+        "completed": 2,
+        "total": 2,
+        "pending": 0
+      },
+      "official_report_count": 2,
+      "official_reward_count": 2,
+      "reports_not_in_summary": [],
+      "groups": [
+        {
+          "method": "bestfgs",
+          "attempts": 1,
+          "unique_tasks": 1,
+          "scored": 1,
+          "mean_pct": 0.0,
+          "full": 0,
+          "same_scored12": false,
+          "report_checks": {
+            "match": 1
+          },
+          "rows": [
+            {
+              "task": "great-expectations-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-missing2-r5/runs/bestfgs-great-expectations-audit/great-expectations-audit__cuuvir9/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            }
+          ]
+        },
+        {
+          "method": "raw",
+          "attempts": 1,
+          "unique_tasks": 1,
+          "scored": 1,
+          "mean_pct": 0.0,
+          "full": 0,
+          "same_scored12": false,
+          "report_checks": {
+            "match": 1
+          },
+          "rows": [
+            {
+              "task": "great-expectations-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-missing2-r5/runs/raw-great-expectations-audit/great-expectations-audit__fiRUW9V/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            }
+          ]
+        }
+      ],
+      "summary_sha256": "011f5b9faaa40a630f9b31ffafb0551c82e332c8de805162521a6617a3672663"
+    },
+    {
+      "campaign": "/var/tmp/lizh639-lhtb-paired6-repair-v2-20260929",
+      "summary_exists": true,
+      "manifest_exists": true,
+      "manifest_tasks": [
+        "spot-scheduler-traces",
+        "modflow6-groundwater-regression-audit",
+        "foldseek-paper-reproduction",
+        "gdal-proj-raster-regression",
+        "climate-netcdf-extreme-event-audit",
+        "great-expectations-audit"
+      ],
+      "same_manifest12": false,
+      "source_release": "mechanism-conversation-fix-v2",
+      "health": {
+        "state": "completed_with_errors",
+        "completed": 12,
+        "total": 12,
+        "pending": 0
+      },
+      "official_report_count": 12,
+      "official_reward_count": 12,
+      "reports_not_in_summary": [],
+      "groups": [
+        {
+          "method": "bestfgs",
+          "attempts": 6,
+          "unique_tasks": 6,
+          "scored": 6,
+          "mean_pct": 24.985966082703698,
+          "full": 0,
+          "same_scored12": false,
+          "report_checks": {
+            "match": 6
+          },
+          "rows": [
+            {
+              "task": "spot-scheduler-traces",
+              "reward": 0.9542,
+              "official_reward": 0.9542,
+              "report": "/var/tmp/lizh639-lhtb-paired6-repair-v2-20260929/runs/bestfgs-spot-scheduler-traces/spot-scheduler-traces__USQgWic/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "modflow6-groundwater-regression-audit",
+              "reward": 0.015544041450777202,
+              "official_reward": 0.015544041450777202,
+              "report": "/var/tmp/lizh639-lhtb-paired6-repair-v2-20260929/runs/bestfgs-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__2hHf9rZ/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "foldseek-paper-reproduction",
+              "reward": 0.4444444444444444,
+              "official_reward": 0.4444444444444444,
+              "report": "/var/tmp/lizh639-lhtb-paired6-repair-v2-20260929/runs/bestfgs-foldseek-paper-reproduction/foldseek-paper-reproduction__3LQwRuX/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "gdal-proj-raster-regression",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-paired6-repair-v2-20260929/runs/bestfgs-gdal-proj-raster-regression/gdal-proj-raster-regression__BsyosMG/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "climate-netcdf-extreme-event-audit",
+              "reward": 0.084969479067,
+              "official_reward": 0.084969479067,
+              "report": "/var/tmp/lizh639-lhtb-paired6-repair-v2-20260929/runs/bestfgs-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__mcmDudc/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "great-expectations-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-paired6-repair-v2-20260929/runs/bestfgs-great-expectations-audit/great-expectations-audit__BgKzuK7/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            }
+          ]
+        },
+        {
+          "method": "hai",
+          "attempts": 6,
+          "unique_tasks": 6,
+          "scored": 6,
+          "mean_pct": 10.19257734483889,
+          "full": 0,
+          "same_scored12": false,
+          "report_checks": {
+            "match": 6
+          },
+          "rows": [
+            {
+              "task": "spot-scheduler-traces",
+              "reward": 0.2116,
+              "official_reward": 0.2116,
+              "report": "/var/tmp/lizh639-lhtb-paired6-repair-v2-20260929/runs/hai-spot-scheduler-traces/spot-scheduler-traces__pYQTJjf/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "modflow6-groundwater-regression-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-paired6-repair-v2-20260929/runs/hai-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__WaVdeWe/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "foldseek-paper-reproduction",
+              "reward": 0.3333333333333333,
+              "official_reward": 0.3333333333333333,
+              "report": "/var/tmp/lizh639-lhtb-paired6-repair-v2-20260929/runs/hai-foldseek-paper-reproduction/foldseek-paper-reproduction__E6QFDhx/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "gdal-proj-raster-regression",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-paired6-repair-v2-20260929/runs/hai-gdal-proj-raster-regression/gdal-proj-raster-regression__co3SLr8/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "great-expectations-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-paired6-repair-v2-20260929/runs/hai-great-expectations-audit/great-expectations-audit__u6nJukx/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "climate-netcdf-extreme-event-audit",
+              "reward": 0.066621307357,
+              "official_reward": 0.066621307357,
+              "report": "/var/tmp/lizh639-lhtb-paired6-repair-v2-20260929/runs/hai-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__cXBsHgy/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            }
+          ]
+        }
+      ],
+      "summary_sha256": "3f9f951833e893bc10050e8384dc458f557c8bc9f2efdf83064f3948e4480c08"
+    },
+    {
+      "campaign": "/var/tmp/lizh639-lhtb-r4",
+      "summary_exists": true,
+      "manifest_exists": true,
+      "manifest_tasks": [
+        "spot-scheduler-traces",
+        "modflow6-groundwater-regression-audit",
+        "foldseek-paper-reproduction",
+        "gdal-proj-raster-regression",
+        "climate-netcdf-extreme-event-audit",
+        "great-expectations-audit",
+        "microscopy-cell-count-qc-audit",
+        "epa-swmm-stormwater-regression-audit",
+        "satellite-flood-change-detection-audit",
+        "opensees-seismic-structural-regression-audit",
+        "unison-paper-reproduction",
+        "matpower-opf-regression"
+      ],
+      "same_manifest12": true,
+      "source_release": null,
+      "health": {
+        "state": "completed_with_errors",
+        "completed": 36,
+        "total": 36,
+        "pending": 0
+      },
+      "official_report_count": 19,
+      "official_reward_count": 19,
+      "reports_not_in_summary": [],
+      "groups": [
+        {
+          "method": "raw",
+          "attempts": 12,
+          "unique_tasks": 12,
+          "scored": 11,
+          "mean_pct": 13.859133097181818,
+          "full": 0,
+          "same_scored12": false,
+          "report_checks": {
+            "match": 11,
+            "no_report_reference": 1
+          },
+          "rows": [
+            {
+              "task": "spot-scheduler-traces",
+              "reward": 0.8133,
+              "official_reward": 0.8133,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple25-v161-20260926/runs/raw-spot-scheduler-traces/spot-scheduler-traces__2MXmBPK/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            },
+            {
+              "task": "modflow6-groundwater-regression-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple25-v161-20260926/runs/raw-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__PSQyHk9/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            },
+            {
+              "task": "foldseek-paper-reproduction",
+              "reward": 0.3333333333333333,
+              "official_reward": 0.3333333333333333,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r2/runs/raw-foldseek-paper-reproduction/foldseek-paper-reproduction__KYvzY7Y/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            },
+            {
+              "task": "climate-netcdf-extreme-event-audit",
+              "reward": 0.066621307357,
+              "official_reward": 0.066621307357,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r3/runs/raw-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__XB2DH4b/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "gdal-proj-raster-regression",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r3/runs/raw-gdal-proj-raster-regression/gdal-proj-raster-regression__DTRnv4h/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "great-expectations-audit",
+              "reward": null,
+              "official_reward": null,
+              "report": null,
+              "verification": "no_report_reference",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": false,
+              "exception": true
+            },
+            {
+              "task": "microscopy-cell-count-qc-audit",
+              "reward": 0.05125,
+              "official_reward": 0.05125,
+              "report": "/var/tmp/lizh639-lhtb-r4/runs/raw-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__7Wu8Xyj/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "epa-swmm-stormwater-regression-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-r4/runs/raw-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__rM5Z6GZ/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "satellite-flood-change-detection-audit",
+              "reward": 0.093333333333,
+              "official_reward": 0.093333333333,
+              "report": "/var/tmp/lizh639-lhtb-r4/runs/raw-satellite-flood-change-detection-audit/satellite-flood-change-detection__WEdxjND/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "unison-paper-reproduction",
+              "reward": 0.16666666666666666,
+              "official_reward": 0.16666666666666666,
+              "report": "/var/tmp/lizh639-lhtb-r4/runs/raw-unison-paper-reproduction/unison-paper-reproduction__JcxMbDT/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "opensees-seismic-structural-regression-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-r4/runs/raw-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__NvfBs7K/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "matpower-opf-regression",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-r4/runs/raw-matpower-opf-regression/matpower-opf-regression__xtbt7cj/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            }
+          ]
+        },
+        {
+          "method": "hai",
+          "attempts": 12,
+          "unique_tasks": 12,
+          "scored": 12,
+          "mean_pct": 5.926705339083333,
+          "full": 0,
+          "same_scored12": true,
+          "report_checks": {
+            "match": 12
+          },
+          "rows": [
+            {
+              "task": "spot-scheduler-traces",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple25-v161-20260926/runs/hai-spot-scheduler-traces/spot-scheduler-traces__JVDQx7E/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            },
+            {
+              "task": "modflow6-groundwater-regression-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple25-v161-20260926/runs/hai-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__36xUEiV/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            },
+            {
+              "task": "foldseek-paper-reproduction",
+              "reward": 0.3333333333333333,
+              "official_reward": 0.3333333333333333,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r2/runs/hai-foldseek-paper-reproduction/foldseek-paper-reproduction__9mNhd6f/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            },
+            {
+              "task": "gdal-proj-raster-regression",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r2/runs/hai-gdal-proj-raster-regression/gdal-proj-raster-regression__rrEWxAJ/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            },
+            {
+              "task": "climate-netcdf-extreme-event-audit",
+              "reward": 0.066621307357,
+              "official_reward": 0.066621307357,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r3/runs/hai-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__VcS7kCC/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "microscopy-cell-count-qc-audit",
+              "reward": 0.05125,
+              "official_reward": 0.05125,
+              "report": "/var/tmp/lizh639-lhtb-r4/runs/hai-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__fTSBSTC/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "great-expectations-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-r4/runs/hai-great-expectations-audit/great-expectations-audit__ackGFii/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "epa-swmm-stormwater-regression-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-r4/runs/hai-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__XQoDsKh/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "satellite-flood-change-detection-audit",
+              "reward": 0.093333333333,
+              "official_reward": 0.093333333333,
+              "report": "/var/tmp/lizh639-lhtb-r4/runs/hai-satellite-flood-change-detection-audit/satellite-flood-change-detection__xtHXr8A/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "opensees-seismic-structural-regression-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-r4/runs/hai-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__4MEXiQ9/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "unison-paper-reproduction",
+              "reward": 0.16666666666666666,
+              "official_reward": 0.16666666666666666,
+              "report": "/var/tmp/lizh639-lhtb-r4/runs/hai-unison-paper-reproduction/unison-paper-reproduction__SnoUqdN/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "matpower-opf-regression",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-r4/runs/hai-matpower-opf-regression/matpower-opf-regression__o6JsrDc/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": false
+            }
+          ]
+        },
+        {
+          "method": "bestfgs",
+          "attempts": 12,
+          "unique_tasks": 12,
+          "scored": 11,
+          "mean_pct": 6.009370310868501,
+          "full": 0,
+          "same_scored12": false,
+          "report_checks": {
+            "match": 12
+          },
+          "rows": [
+            {
+              "task": "modflow6-groundwater-regression-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r2/runs/bestfgs-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__eBQTwK4/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            },
+            {
+              "task": "foldseek-paper-reproduction",
+              "reward": 0.3333333333333333,
+              "official_reward": 0.3333333333333333,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r2/runs/bestfgs-foldseek-paper-reproduction/foldseek-paper-reproduction__28gTBg6/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            },
+            {
+              "task": "gdal-proj-raster-regression",
+              "reward": 0.0004833252779120348,
+              "official_reward": 0.0004833252779120348,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r2/runs/bestfgs-gdal-proj-raster-regression/gdal-proj-raster-regression__ZaodW2s/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            },
+            {
+              "task": "spot-scheduler-traces",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r2/runs/bestfgs-spot-scheduler-traces/spot-scheduler-traces__3xQZpMr/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": null,
+              "exception": false
+            },
+            {
+              "task": "climate-netcdf-extreme-event-audit",
+              "reward": 0.066621307357,
+              "official_reward": 0.066621307357,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r3/runs/bestfgs-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__dsAKTk8/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": false,
+              "exception": false
+            },
+            {
+              "task": "great-expectations-audit",
+              "reward": null,
+              "official_reward": null,
+              "report": "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r3/runs/bestfgs-great-expectations-audit/great-expectations-audit__UfUwMrY/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": false,
+              "exception": true
+            },
+            {
+              "task": "microscopy-cell-count-qc-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-r4/runs/bestfgs-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__fBGr8m7/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": false,
+              "exception": false
+            },
+            {
+              "task": "epa-swmm-stormwater-regression-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-r4/runs/bestfgs-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__ZvZXwHh/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": false,
+              "exception": false
+            },
+            {
+              "task": "satellite-flood-change-detection-audit",
+              "reward": 0.093333333333,
+              "official_reward": 0.093333333333,
+              "report": "/var/tmp/lizh639-lhtb-r4/runs/bestfgs-satellite-flood-change-detection-audit/satellite-flood-change-detection__UE4nPhe/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": true,
+              "exception": true
+            },
+            {
+              "task": "opensees-seismic-structural-regression-audit",
+              "reward": 0.0005927682276229994,
+              "official_reward": 0.0005927682276229994,
+              "report": "/var/tmp/lizh639-lhtb-r4/runs/bestfgs-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__y5g9dXG/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": false,
+              "exception": false
+            },
+            {
+              "task": "unison-paper-reproduction",
+              "reward": 0.16666666666666666,
+              "official_reward": 0.16666666666666666,
+              "report": "/var/tmp/lizh639-lhtb-r4/runs/bestfgs-unison-paper-reproduction/unison-paper-reproduction__xsDBqYM/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": false,
+              "exception": false
+            },
+            {
+              "task": "matpower-opf-regression",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-r4/runs/bestfgs-matpower-opf-regression/matpower-opf-regression__RKsmAd8/result.json",
+              "verification": "match",
+              "algorithm": null,
+              "release": null,
+              "infrastructure_ok": false,
+              "exception": false
+            }
+          ]
+        }
+      ],
+      "summary_sha256": "97b130cc804ccb1903c8b45495fd33cde350e0a1f214c8893bdc2f7ea4836da1"
+    },
+    {
+      "campaign": "/var/tmp/lizh639-lhtb-raw12-engineering-v2-20261002",
+      "summary_exists": false,
+      "manifest_exists": true,
+      "manifest_tasks": [
+        "spot-scheduler-traces",
+        "modflow6-groundwater-regression-audit",
+        "foldseek-paper-reproduction",
+        "gdal-proj-raster-regression",
+        "climate-netcdf-extreme-event-audit",
+        "great-expectations-audit",
+        "microscopy-cell-count-qc-audit",
+        "epa-swmm-stormwater-regression-audit",
+        "satellite-flood-change-detection-audit",
+        "opensees-seismic-structural-regression-audit",
+        "unison-paper-reproduction",
+        "matpower-opf-regression"
+      ],
+      "same_manifest12": true,
+      "source_release": "raw-cli-engineering-v2",
+      "health": {},
+      "official_report_count": 0,
+      "official_reward_count": 0,
+      "reports_not_in_summary": [],
+      "groups": []
+    },
+    {
+      "campaign": "/var/tmp/lizh639-lhtb-raw12-engineering-v2-20261002-r1",
+      "summary_exists": true,
+      "manifest_exists": true,
+      "manifest_tasks": [
+        "spot-scheduler-traces",
+        "modflow6-groundwater-regression-audit",
+        "foldseek-paper-reproduction",
+        "gdal-proj-raster-regression",
+        "climate-netcdf-extreme-event-audit",
+        "great-expectations-audit",
+        "microscopy-cell-count-qc-audit",
+        "epa-swmm-stormwater-regression-audit",
+        "satellite-flood-change-detection-audit",
+        "opensees-seismic-structural-regression-audit",
+        "unison-paper-reproduction",
+        "matpower-opf-regression"
+      ],
+      "same_manifest12": true,
+      "source_release": "raw-cli-engineering-v2",
+      "health": {
+        "state": "completed_with_errors",
+        "completed": 12,
+        "total": 12,
+        "pending": 0
+      },
+      "official_report_count": 12,
+      "official_reward_count": 12,
+      "reports_not_in_summary": [],
+      "groups": [
+        {
+          "method": "raw1",
+          "attempts": 12,
+          "unique_tasks": 12,
+          "scored": 12,
+          "mean_pct": 26.267990578673178,
+          "full": 1,
+          "same_scored12": true,
+          "report_checks": {
+            "match": 12
+          },
+          "rows": [
+            {
+              "task": "gdal-proj-raster-regression",
+              "reward": 0.008458192363460609,
+              "official_reward": 0.008458192363460609,
+              "report": "/var/tmp/lizh639-lhtb-raw12-engineering-v2-20261002-r1/runs/raw1-gdal-proj-raster-regression/gdal-proj-raster-regression__PXQ4A9T/result.json",
+              "verification": "match",
+              "algorithm": "raw",
+              "release": "raw-cli-engineering-v2",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "foldseek-paper-reproduction",
+              "reward": 0.3333333333333333,
+              "official_reward": 0.3333333333333333,
+              "report": "/var/tmp/lizh639-lhtb-raw12-engineering-v2-20261002-r1/runs/raw1-foldseek-paper-reproduction/foldseek-paper-reproduction__5qiVGyN/result.json",
+              "verification": "match",
+              "algorithm": "raw",
+              "release": "raw-cli-engineering-v2",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "modflow6-groundwater-regression-audit",
+              "reward": 0.12492803684513529,
+              "official_reward": 0.12492803684513529,
+              "report": "/var/tmp/lizh639-lhtb-raw12-engineering-v2-20261002-r1/runs/raw1-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__RUyqNFw/result.json",
+              "verification": "match",
+              "algorithm": "raw",
+              "release": "raw-cli-engineering-v2",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "climate-netcdf-extreme-event-audit",
+              "reward": 0.085444630872,
+              "official_reward": 0.085444630872,
+              "report": "/var/tmp/lizh639-lhtb-raw12-engineering-v2-20261002-r1/runs/raw1-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__HfmvjXT/result.json",
+              "verification": "match",
+              "algorithm": "raw",
+              "release": "raw-cli-engineering-v2",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "great-expectations-audit",
+              "reward": 0.09090909090909091,
+              "official_reward": 0.09090909090909091,
+              "report": "/var/tmp/lizh639-lhtb-raw12-engineering-v2-20261002-r1/runs/raw1-great-expectations-audit/great-expectations-audit__FGRZyu3/result.json",
+              "verification": "match",
+              "algorithm": "raw",
+              "release": "raw-cli-engineering-v2",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "microscopy-cell-count-qc-audit",
+              "reward": 0.06,
+              "official_reward": 0.06,
+              "report": "/var/tmp/lizh639-lhtb-raw12-engineering-v2-20261002-r1/runs/raw1-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__SoPEizS/result.json",
+              "verification": "match",
+              "algorithm": "raw",
+              "release": "raw-cli-engineering-v2",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "epa-swmm-stormwater-regression-audit",
+              "reward": 0.008264462809917356,
+              "official_reward": 0.008264462809917356,
+              "report": "/var/tmp/lizh639-lhtb-raw12-engineering-v2-20261002-r1/runs/raw1-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__Ej8JDVQ/result.json",
+              "verification": "match",
+              "algorithm": "raw",
+              "release": "raw-cli-engineering-v2",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "satellite-flood-change-detection-audit",
+              "reward": 0.21,
+              "official_reward": 0.21,
+              "report": "/var/tmp/lizh639-lhtb-raw12-engineering-v2-20261002-r1/runs/raw1-satellite-flood-change-detection-audit/satellite-flood-change-detection__LP5nNqo/result.json",
+              "verification": "match",
+              "algorithm": "raw",
+              "release": "raw-cli-engineering-v2",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "unison-paper-reproduction",
+              "reward": 0.3333333333333333,
+              "official_reward": 0.3333333333333333,
+              "report": "/var/tmp/lizh639-lhtb-raw12-engineering-v2-20261002-r1/runs/raw1-unison-paper-reproduction/unison-paper-reproduction__7xqMSA6/result.json",
+              "verification": "match",
+              "algorithm": "raw",
+              "release": "raw-cli-engineering-v2",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "opensees-seismic-structural-regression-audit",
+              "reward": 0.033787788974510964,
+              "official_reward": 0.033787788974510964,
+              "report": "/var/tmp/lizh639-lhtb-raw12-engineering-v2-20261002-r1/runs/raw1-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__mGb9y2Z/result.json",
+              "verification": "match",
+              "algorithm": "raw",
+              "release": "raw-cli-engineering-v2",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "matpower-opf-regression",
+              "reward": 1.0,
+              "official_reward": 1.0,
+              "report": "/var/tmp/lizh639-lhtb-raw12-engineering-v2-20261002-r1/runs/raw1-matpower-opf-regression/matpower-opf-regression__6qKE9pA/result.json",
+              "verification": "match",
+              "algorithm": "raw",
+              "release": "raw-cli-engineering-v2",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "spot-scheduler-traces",
+              "reward": 0.8637,
+              "official_reward": 0.8637,
+              "report": "/var/tmp/lizh639-lhtb-raw12-engineering-v2-20261002-r1/runs/raw1-spot-scheduler-traces/spot-scheduler-traces__kVv54m5/result.json",
+              "verification": "match",
+              "algorithm": "raw",
+              "release": "raw-cli-engineering-v2",
+              "infrastructure_ok": true,
+              "exception": false
+            }
+          ]
+        }
+      ],
+      "summary_sha256": "8489db0ab6f2d2c8bab987340ecd907be94b07ed35c5a02d26aefa0d3db2803c"
+    },
+    {
+      "campaign": "/var/tmp/lizh639-lhtb-v6-v7-paired8-20260930",
+      "summary_exists": true,
+      "manifest_exists": true,
+      "manifest_tasks": [
+        "spot-scheduler-traces",
+        "modflow6-groundwater-regression-audit",
+        "foldseek-paper-reproduction",
+        "gdal-proj-raster-regression",
+        "climate-netcdf-extreme-event-audit",
+        "great-expectations-audit",
+        "microscopy-cell-count-qc-audit",
+        "epa-swmm-stormwater-regression-audit"
+      ],
+      "same_manifest12": false,
+      "source_release": {
+        "v6": "monitor-control-v6",
+        "v7": "route-selection-v7"
+      },
+      "health": {
+        "state": "completed_with_errors",
+        "completed": 16,
+        "total": 16,
+        "pending": 0
+      },
+      "official_report_count": 16,
+      "official_reward_count": 16,
+      "reports_not_in_summary": [],
+      "groups": [
+        {
+          "method": "v6",
+          "attempts": 8,
+          "unique_tasks": 8,
+          "scored": 8,
+          "mean_pct": 21.35252268921374,
+          "full": 0,
+          "same_scored12": false,
+          "report_checks": {
+            "match": 8
+          },
+          "rows": [
+            {
+              "task": "spot-scheduler-traces",
+              "reward": 0.9222,
+              "official_reward": 0.9222,
+              "report": "/var/tmp/lizh639-lhtb-v6-v7-paired8-20260930/runs/v6-spot-scheduler-traces/spot-scheduler-traces__Vaq9A4R/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "v6",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "modflow6-groundwater-regression-audit",
+              "reward": 0.07599309153713299,
+              "official_reward": 0.07599309153713299,
+              "report": "/var/tmp/lizh639-lhtb-v6-v7-paired8-20260930/runs/v6-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__zxSQYEL/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "v6",
+              "infrastructure_ok": false,
+              "exception": false
+            },
+            {
+              "task": "foldseek-paper-reproduction",
+              "reward": 0.5555555555555556,
+              "official_reward": 0.5555555555555556,
+              "report": "/var/tmp/lizh639-lhtb-v6-v7-paired8-20260930/runs/v6-foldseek-paper-reproduction/foldseek-paper-reproduction__UZHC8vq/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "v6",
+              "infrastructure_ok": false,
+              "exception": false
+            },
+            {
+              "task": "gdal-proj-raster-regression",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-v6-v7-paired8-20260930/runs/v6-gdal-proj-raster-regression/gdal-proj-raster-regression__XRAapuT/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "v6",
+              "infrastructure_ok": false,
+              "exception": false
+            },
+            {
+              "task": "climate-netcdf-extreme-event-audit",
+              "reward": 0.01175,
+              "official_reward": 0.01175,
+              "report": "/var/tmp/lizh639-lhtb-v6-v7-paired8-20260930/runs/v6-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__GBPuUFX/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "v6",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "great-expectations-audit",
+              "reward": 0.09090909090909091,
+              "official_reward": 0.09090909090909091,
+              "report": "/var/tmp/lizh639-lhtb-v6-v7-paired8-20260930/runs/v6-great-expectations-audit/great-expectations-audit__GkRbrZ5/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "v6",
+              "infrastructure_ok": false,
+              "exception": false
+            },
+            {
+              "task": "microscopy-cell-count-qc-audit",
+              "reward": 0.050416666667,
+              "official_reward": 0.050416666667,
+              "report": "/var/tmp/lizh639-lhtb-v6-v7-paired8-20260930/runs/v6-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__TF752m7/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "v6",
+              "infrastructure_ok": false,
+              "exception": false
+            },
+            {
+              "task": "epa-swmm-stormwater-regression-audit",
+              "reward": 0.0013774104683195593,
+              "official_reward": 0.0013774104683195593,
+              "report": "/var/tmp/lizh639-lhtb-v6-v7-paired8-20260930/runs/v6-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__C7V6Ran/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "v6",
+              "infrastructure_ok": true,
+              "exception": false
+            }
+          ]
+        },
+        {
+          "method": "v7",
+          "attempts": 8,
+          "unique_tasks": 8,
+          "scored": 8,
+          "mean_pct": 6.161259419354753,
+          "full": 0,
+          "same_scored12": false,
+          "report_checks": {
+            "match": 8
+          },
+          "rows": [
+            {
+              "task": "modflow6-groundwater-regression-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-v6-v7-paired8-20260930/runs/v7-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__mLfK7tK/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "v7",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "spot-scheduler-traces",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-v6-v7-paired8-20260930/runs/v7-spot-scheduler-traces/spot-scheduler-traces__sAhQYGa/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "v7",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "foldseek-paper-reproduction",
+              "reward": 0.3333333333333333,
+              "official_reward": 0.3333333333333333,
+              "report": "/var/tmp/lizh639-lhtb-v6-v7-paired8-20260930/runs/v7-foldseek-paper-reproduction/foldseek-paper-reproduction__Cr6LYEi/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "v7",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "gdal-proj-raster-regression",
+              "reward": 0.0002416626389560174,
+              "official_reward": 0.0002416626389560174,
+              "report": "/var/tmp/lizh639-lhtb-v6-v7-paired8-20260930/runs/v7-gdal-proj-raster-regression/gdal-proj-raster-regression__hLodxDV/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "v7",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "climate-netcdf-extreme-event-audit",
+              "reward": 0.01175,
+              "official_reward": 0.01175,
+              "report": "/var/tmp/lizh639-lhtb-v6-v7-paired8-20260930/runs/v7-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__mZokJoq/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "v7",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "great-expectations-audit",
+              "reward": 0.09090909090909091,
+              "official_reward": 0.09090909090909091,
+              "report": "/var/tmp/lizh639-lhtb-v6-v7-paired8-20260930/runs/v7-great-expectations-audit/great-expectations-audit__wX4F2V9/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "v7",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "microscopy-cell-count-qc-audit",
+              "reward": 0.056666666667,
+              "official_reward": 0.056666666667,
+              "report": "/var/tmp/lizh639-lhtb-v6-v7-paired8-20260930/runs/v7-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__dX6BPjh/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "v7",
+              "infrastructure_ok": true,
+              "exception": false
+            },
+            {
+              "task": "epa-swmm-stormwater-regression-audit",
+              "reward": 0.0,
+              "official_reward": 0.0,
+              "report": "/var/tmp/lizh639-lhtb-v6-v7-paired8-20260930/runs/v7-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__a6WNFVu/result.json",
+              "verification": "match",
+              "algorithm": "bestfgs",
+              "release": "v7",
+              "infrastructure_ok": true,
+              "exception": false
+            }
+          ]
+        }
+      ],
+      "summary_sha256": "ce5635384ce257aefef61c6540fc2c8f041b186e977d47c6b4327a51106a002d"
+    }
+  ],
+  "scope": "All accessible LHTB campaign directories under /var/tmp and the college home root"
+}

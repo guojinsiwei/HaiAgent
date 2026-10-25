@@ -1,0 +1,367 @@
+{
+  "passed": true,
+  "worker": 0,
+  "checks": [
+    {
+      "task": "cs61_fa24_scheme",
+      "method": "dh",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "riscv_qemu": false,
+      "fresh_public_app": true,
+      "fixture_root_reused_offline_only": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "cs61_fa24_ants",
+      "method": "raw",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "riscv_qemu": false,
+      "fresh_public_app": true,
+      "fixture_root_reused_offline_only": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "cs61_fa24_cats",
+      "method": "dh",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "riscv_qemu": false,
+      "fresh_public_app": true,
+      "fixture_root_reused_offline_only": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "cs61_fa24_hog",
+      "method": "raw",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "riscv_qemu": false,
+      "fresh_public_app": true,
+      "fixture_root_reused_offline_only": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "cs61_fa24_hw08",
+      "method": "dh",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "riscv_qemu": false,
+      "fresh_public_app": true,
+      "fixture_root_reused_offline_only": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "cmu15_445_p0",
+      "method": "raw",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "riscv_qemu": false,
+      "fresh_public_app": true,
+      "fixture_root_reused_offline_only": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "cmu15_445_p1",
+      "method": "dh",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "riscv_qemu": false,
+      "fresh_public_app": true,
+      "fixture_root_reused_offline_only": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "cmu15_445_p2",
+      "method": "raw",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "riscv_qemu": false,
+      "fresh_public_app": true,
+      "fixture_root_reused_offline_only": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "ap1400_2_hw26",
+      "method": "dh",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "riscv_qemu": false,
+      "fresh_public_app": true,
+      "fixture_root_reused_offline_only": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "ap1400_2_hw35",
+      "method": "raw",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "riscv_qemu": false,
+      "fresh_public_app": true,
+      "fixture_root_reused_offline_only": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "61810_cow",
+      "method": "dh",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "riscv_qemu": true,
+      "fresh_public_app": true,
+      "fixture_root_reused_offline_only": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "61810_fs",
+      "method": "raw",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "riscv_qemu": true,
+      "fresh_public_app": true,
+      "fixture_root_reused_offline_only": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "61810_lock",
+      "method": "dh",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "riscv_qemu": true,
+      "fresh_public_app": true,
+      "fixture_root_reused_offline_only": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "61810_mmap",
+      "method": "raw",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "riscv_qemu": true,
+      "fresh_public_app": true,
+      "fixture_root_reused_offline_only": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "61810_net",
+      "method": "dh",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "riscv_qemu": true,
+      "fresh_public_app": true,
+      "fixture_root_reused_offline_only": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "61810_pgtbl",
+      "method": "raw",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "riscv_qemu": true,
+      "fresh_public_app": true,
+      "fixture_root_reused_offline_only": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "61810_syscall",
+      "method": "dh",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "riscv_qemu": true,
+      "fresh_public_app": true,
+      "fixture_root_reused_offline_only": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "61810_thread",
+      "method": "raw",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "riscv_qemu": true,
+      "fresh_public_app": true,
+      "fixture_root_reused_offline_only": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "61810_traps",
+      "method": "dh",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "riscv_qemu": true,
+      "fresh_public_app": true,
+      "fixture_root_reused_offline_only": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "61810_util",
+      "method": "raw",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "riscv_qemu": true,
+      "fresh_public_app": true,
+      "fixture_root_reused_offline_only": true,
+      "submitted": true,
+      "model_calls": 0
+    }
+  ],
+  "model_calls": 0
+}

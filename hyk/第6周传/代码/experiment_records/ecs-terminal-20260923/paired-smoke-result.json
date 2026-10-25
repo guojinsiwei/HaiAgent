@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "scope": "synthetic_not_benchmark",
+  "api_requests": 0,
+  "methods": [
+    {
+      "method": "bestfgs",
+      "decision_turns": 3,
+      "interaction_rounds": 2,
+      "cli_calls": 2,
+      "api_requests": 0,
+      "delete_delivery": true,
+      "passed": true
+    },
+    {
+      "method": "raw",
+      "decision_turns": 3,
+      "interaction_rounds": 2,
+      "cli_calls": 2,
+      "api_requests": 0,
+      "delete_delivery": true,
+      "passed": true
+    }
+  ]
+}

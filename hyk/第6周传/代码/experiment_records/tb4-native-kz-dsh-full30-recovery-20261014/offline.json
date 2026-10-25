@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "scheduler_tests": 11,
+  "complete_supervisor_simulation": "60 first-pass admissions, injected launch fault, retry only after first pass",
+  "node_syntax_passed": true,
+  "python_syntax_passed": true,
+  "real_model_calls": 0,
+  "algorithm_validity_claim": false,
+  "missing_result_http_count_test": true,
+  "budget_exhaustion_not_retried": true
+}

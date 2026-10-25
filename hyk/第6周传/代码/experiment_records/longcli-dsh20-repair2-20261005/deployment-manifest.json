@@ -1,0 +1,29 @@
+{
+  "state": "ready_not_started",
+  "official_dsh_version": "0.2.0-rc.2",
+  "files": {
+    "runner.py": "11e75709e3cd3bf364b1c32dbf7dde0d31c8f521b80f88db04f2142e66e7f699",
+    "launch.py": "4ed7cd787e238ab2ad59d4a39655bb43078c20472f40f3ba1515cf65d9eaa301",
+    "budget.mjs": "cb747d2698b786dd3f5f4af64d926c4a69563d003f225284fdb9785cf4d8bcec",
+    "experiment.patch.yml": "017dd738fe26b06553f2c55c9580b54866bb3390e6af2de1579a1fa70f0be84e",
+    "protocol.json": "bf8558a07069b4aa556790af6d23a0ddc9bd14621fbf876d45c6017c2affcd95",
+    "common.py": "c75bbfacae1b783546fb810a8abee158e4d23bdc65481b0521ea20b84a0ab2d1",
+    "college_grader.py": "e557933f3896136ec32b0827e255b7f1b96027c56ec336de4403018425acd298",
+    "input-manifest.json": "fd73350dc674eb82f1d6978c4eb922c69f128e35a483c65fa732141230cec6bc",
+    "test_budget.mjs": "25c9a9971be06629b219a4b77695460ceb38343b3d54de2dd037dd2ef54687b9",
+    "validate.py": "064c4717e1b202d461beb26284acc66adba4889265859afdc291416c2e61e8a3",
+    "return_artifacts.py": "e819a22ab1ea8bd92cca7e114bebffb017571715f59af907d0ee0dc7b11c2634",
+    "test_controller.py": "dacb05b4b2596a74f77da8942c3ad73c888f63ee91d510f1b65b393439407fdb",
+    "check_ready.py": "7d93df57899c88d6d583b175b567c11a368f5baf308dc018d39267e35e6e6634",
+    "large-write-acceptance.json": "9c02b05f45b3fcec3158517deb78ac9b1a3858b717d9dc1826a7cc305c211160",
+    "keyless-acceptance.json": "da5a09ecbf5c9e21269074ef8730e29c336762adc2f6ac7fe873726e90ae29fb",
+    "pressure-acceptance.json": "b4c41813d36e21ce9af17679dd70b17e4013a9a48716b66851eb9c33d01b4356",
+    "grading-acceptance.json": "aa1f2274b0fa7a13dd43283f7158b5162d86b7c745a456c681ff6b28f604aeba",
+    "environment-acceptance.json": "6554d5fd90d3c0ae65eb7fa7bbe8650583740a8f382ccb919d2ba7d62be5c3f1",
+    "runtime/dsh/package-lock.json": "4ac761594c37ae04f2c2283010bc1c337ee98fcd8a02f4d1ff7b21cbe0c0c8df",
+    "runtime/dsh/node_modules/@deepseek-ai/dsh/lib/bin.js": "1a03dee18683483ff6a1b27b2a1e650230da6bcca9a0f55f7d81b3308c3f307f",
+    "runtime/dsh/node_modules/@deepseek-ai/dsh-base/cordis.patch.yml": "9c2be64f46a193eff3cca190c26e697e8e8eee25c9b40149dfdb56f8142c252d",
+    "runtime/node/package/bin/node": "596b5144ff242737f1c1be6a5f0ccb3907dbba2482344143cb1a6898633402a9"
+  },
+  "paid_api_requests": 0
+}

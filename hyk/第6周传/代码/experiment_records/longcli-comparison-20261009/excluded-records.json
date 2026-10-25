@@ -1,0 +1,49 @@
+{
+  "records": [
+    {
+      "budget": "large",
+      "name": "DH 原版 v9 大预算",
+      "record": {
+        "task": "61810_lock",
+        "report": "/mnt/sdb/home/lizh639/longcli-resume-five-20261007/dh-resume-20261007/grades/dh--61810_lock/result.json",
+        "report_sha256": "be6fce622107468f3d8da3a511d4414e0321da15762f8c09fd59f0ce3bed8550",
+        "scored": true,
+        "score": -1.225,
+        "official_success": false,
+        "grade_cleanup": true,
+        "summary": "/mnt/sdb/home/lizh639/longcli-resume-five-20261007/dh-resume-20261007/jobs/dh--61810_lock/summary.json",
+        "summary_sha256": "f46099500a6addd7d4aa859a5d27c9879afe20ec796196f751a253160962ff4d",
+        "api_attempts": 754,
+        "tools": 51,
+        "stop_reason": "wall_budget",
+        "model_fault": null,
+        "engineering_fault": null,
+        "artifact_matches": true
+      },
+      "reason": "explicit user-requested analysis exclusion; original retained"
+    },
+    {
+      "budget": "large",
+      "name": "DSH 大预算",
+      "record": {
+        "task": "61810_lock",
+        "report": "/var/tmp/lizh639-longcli-dsh20-repair2-20261005/grades/dsh--61810_lock/result.json",
+        "report_sha256": "f4af2129b44ada005e081d02175fdb8280b3c88cfa209595de84ca44d3ff0954",
+        "scored": true,
+        "score": -1.25,
+        "official_success": false,
+        "grade_cleanup": true,
+        "summary": "/var/tmp/lizh639-longcli-dsh20-repair2-20261005/jobs/dsh--61810_lock/summary.json",
+        "summary_sha256": "5041be19517fb32d1d4f6745796c14745a84d3b340c555cf85b8aab8755c88ab",
+        "api_attempts": 96,
+        "tools": 99,
+        "stop_reason": "wall_budget",
+        "model_fault": null,
+        "engineering_fault": null,
+        "artifact_matches": true
+      },
+      "reason": "explicit user-requested analysis exclusion; original retained"
+    }
+  ],
+  "original_data_deleted": false
+}

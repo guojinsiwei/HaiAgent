@@ -1,0 +1,90 @@
+{
+  "state": "all_deliveries_transferred",
+  "updated": 1791425530.3947735,
+  "received": 5,
+  "expected": 5,
+  "errors": [],
+  "workers": [
+    {
+      "time": 1791425516.3906348,
+      "controller_alive": false,
+      "state": "generation_complete",
+      "completed_preserved": 15,
+      "concurrency": 3,
+      "updated": 1791394532.75484,
+      "jobs": [
+        {
+          "job": "taco--cs61_fa24_hog",
+          "summary": true,
+          "state": "awaiting_grade",
+          "alive": false,
+          "model_requests": 11,
+          "tool_calls": 5,
+          "updated": 1791387943.7059326,
+          "artifact_sha256": "d6e954bb781ac3e60bdcff0586ff131b009343b137ad8d5727db27e35dad5c71",
+          "engineering_fault": null,
+          "cleanup_error": null
+        },
+        {
+          "job": "taco--61810_fs",
+          "summary": true,
+          "state": "awaiting_grade",
+          "alive": false,
+          "model_requests": 117,
+          "tool_calls": 91,
+          "updated": 1791391426.4750836,
+          "artifact_sha256": "96a14c063b312e24358ed98643912c66aecda819fbf15c757ab93a1b1d3c3477",
+          "engineering_fault": null,
+          "cleanup_error": null
+        },
+        {
+          "job": "taco--61810_mmap",
+          "summary": true,
+          "state": "awaiting_grade",
+          "alive": false,
+          "model_requests": 354,
+          "tool_calls": 262,
+          "updated": 1791394527.6384,
+          "artifact_sha256": "e4ae844783f4c8fc6daf4b49fc69da58c2a4ade47a38c60649e15894d0c5f2b7",
+          "engineering_fault": null,
+          "cleanup_error": null
+        }
+      ]
+    },
+    {
+      "time": 1791425531.1643214,
+      "controller_alive": false,
+      "state": "generation_complete",
+      "completed_preserved": 15,
+      "concurrency": 2,
+      "updated": 1791395124.4574356,
+      "jobs": [
+        {
+          "job": "taco--61810_cow",
+          "summary": true,
+          "state": "awaiting_grade",
+          "alive": false,
+          "model_requests": 189,
+          "tool_calls": 167,
+          "updated": 1791395120.2269518,
+          "artifact_sha256": "7586b24f0801e817aabe5f16d1eb43cd4ad5613689af9893963d7236045bf3c7",
+          "engineering_fault": null,
+          "cleanup_error": null
+        },
+        {
+          "job": "taco--61810_lock",
+          "summary": true,
+          "state": "awaiting_grade",
+          "alive": false,
+          "model_requests": 151,
+          "tool_calls": 126,
+          "updated": 1791394432.5414166,
+          "artifact_sha256": "23c49d7ca67bf62c47c0624e59958b0b333d66cbd240f202b15cee3421b477dd",
+          "engineering_fault": null,
+          "cleanup_error": null
+        }
+      ]
+    }
+  ],
+  "model_calls": 0
+}

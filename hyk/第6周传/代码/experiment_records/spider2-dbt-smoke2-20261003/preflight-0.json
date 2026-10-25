@@ -1,0 +1,242 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "task": "asset001",
+      "isolation": {
+        "uid": 0,
+        "no_host": true,
+        "no_proc": true,
+        "no_gold": true,
+        "no_network": true
+      },
+      "runtime": {
+        "duckdb": "1.2.2",
+        "pandas": "2.2.3",
+        "dbt": "1.9.6"
+      },
+      "device_clean": true,
+      "checkpoint_restore": true,
+      "masked_failure_detected": true,
+      "dbt_version_ok": true,
+      "project_parse_exit": 0,
+      "project_parse_stderr": "",
+      "fixture": {
+        "job": "fixture-v1-prediction-off--asset001",
+        "task": "asset001",
+        "method": "prediction-off",
+        "worker": 0,
+        "submitted": true,
+        "stop_reason": "model_submit",
+        "interaction_rounds": 2,
+        "tool_calls": 1,
+        "elapsed_seconds": 7.603651130571961,
+        "artifact": {
+          "path": "/mnt/lizh639/spider2-dbt-smoke2-20261003/fixtures/fixture-v1-prediction-off--asset001/source.tar.gz",
+          "sha256": "0da0cc6f8e86616e0afda67e223a5f591f782e5353a825e7a406e70fad7a4975",
+          "entries": 17,
+          "source_only": true
+        },
+        "official_success": null,
+        "mechanism_utilization": {
+          "model_requests": 2,
+          "action_calls": 2,
+          "advisor_calls": 0,
+          "tool_calls": 1,
+          "memory_exposures": 0,
+          "requests_with_memory": 0,
+          "memories_admitted": 0,
+          "memories_rejected": 0,
+          "memory_use_self_reports": 0,
+          "advisor_responses_accepted": 0,
+          "advisor_deferred": 0,
+          "checkpoints_created": 1,
+          "branch_restores": 0,
+          "submissions": 1,
+          "protocol_errors": 0,
+          "memory_interventions": 0,
+          "memory_action_changed": 0,
+          "memory_action_unchanged": 0,
+          "memory_followup_actions": 0,
+          "memory_followup_runs": 0,
+          "memory_followup_succeeded": 0,
+          "memory_followup_workspace_changed": 0,
+          "post_advice_actions": 0,
+          "monitor_calls": 0,
+          "monitor_reviews_accepted": 0,
+          "monitor_deferred": 0,
+          "semantic_stalls": 0,
+          "auto_memory_candidates": 0,
+          "auto_memories_admitted": 0,
+          "auto_memories_rejected": 0,
+          "observed_memories_admitted": 0,
+          "recovery_started": 0,
+          "recovery_plans": 0,
+          "recovery_verified_repairs": 0,
+          "recovery_checked_hypotheses": 0,
+          "recovery_failed": 0,
+          "route_episodes": 0,
+          "route_plans": 0,
+          "route_tools": 0,
+          "route_trials": 0,
+          "route_pruned": 0,
+          "route_selected": 0,
+          "route_no_gain": 0,
+          "route_rejected": 0,
+          "route_restore_failures": 0,
+          "memory_exposure_is_not_benefit": true,
+          "memory_use_is_self_report": true
+        },
+        "model_usage": {
+          "action": {
+            "model_calls": 0,
+            "api_requests": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0
+          },
+          "advisor": {
+            "model_calls": 0,
+            "api_requests": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0
+          },
+          "monitor": {
+            "model_calls": 0,
+            "api_requests": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0
+          }
+        },
+        "audit": {
+          "events": 6,
+          "tail_sha256": "f365136968e60205ec002bd4c5ca6f383db7a3e3d1edd6dd60e0438a4760a794"
+        },
+        "fixture": true
+      },
+      "model_calls": 0,
+      "semaphore_ok": true,
+      "independent_dbt_run_ok": true,
+      "project_parse_stdout_tail": "'test.dbt_asset.unique_book_value_tt_key.0a7f720154' (models/schema.yml) depends on a node named 'book_value' in package '' which was not found\n12:02:34  [WARNING]: Test 'test.dbt_asset.not_null_book_value_tt_key.fb1d9f1bb7' (models/schema.yml) depends on a node named 'book_value' in package '' which was not found\n12:02:34  [WARNING]: Test 'test.dbt_asset.not_null_book_value_ticker.91c427286d' (models/schema.yml) depends on a node named 'book_value' in package '' which was not found\n12:02:34  [WARNING]: Test 'test.dbt_asset.not_null_book_value_ts.97d2cc4a59' (models/schema.yml) depends on a node named 'book_value' in package '' which was not found\n12:02:34  [WARNING]: Test 'test.dbt_asset.not_null_book_value_shares.77841ad40d' (models/schema.yml) depends on a node named 'book_value' in package '' which was not found\n12:02:34  [WARNING]: Test 'test.dbt_asset.not_null_book_value_value.9b4bfb8a7c' (models/schema.yml) depends on a node named 'book_value' in package '' which was not found\n12:02:34  Performance info: /app/asset001/target/perf_info.json\n12:02:34  [WARNING][DeprecationsSummary]: Deprecated functionality\nSummary of encountered deprecations:\n- ConfigSourcePathDeprecation: 1 occurrence\n- ConfigDataPathDeprecation: 1 occurrence\nTo see all deprecation instances instead of just the first occurrence of each,\nrun command again with the `--show-all-deprecations` flag. You may also need to\nrun with `--no-partial-parse` as some deprecations are only encountered during\nparsing.\n"
+    },
+    {
+      "task": "asana001",
+      "isolation": {
+        "uid": 0,
+        "no_host": true,
+        "no_proc": true,
+        "no_gold": true,
+        "no_network": true
+      },
+      "runtime": {
+        "duckdb": "1.2.2",
+        "pandas": "2.2.3",
+        "dbt": "1.9.6"
+      },
+      "device_clean": true,
+      "checkpoint_restore": true,
+      "masked_failure_detected": true,
+      "dbt_version_ok": true,
+      "project_parse_exit": 0,
+      "project_parse_stderr": "",
+      "fixture": {
+        "job": "fixture-v1-prediction-off--asana001",
+        "task": "asana001",
+        "method": "prediction-off",
+        "worker": 0,
+        "submitted": true,
+        "stop_reason": "model_submit",
+        "interaction_rounds": 2,
+        "tool_calls": 1,
+        "elapsed_seconds": 1.5536973625421524,
+        "artifact": {
+          "path": "/mnt/lizh639/spider2-dbt-smoke2-20261003/fixtures/fixture-v1-prediction-off--asana001/source.tar.gz",
+          "sha256": "d8dd1bb23ee2adc4a738a820b29e7e551f6c4ac5664b2f0860a376597456fc42",
+          "entries": 446,
+          "source_only": true
+        },
+        "official_success": null,
+        "mechanism_utilization": {
+          "model_requests": 2,
+          "action_calls": 2,
+          "advisor_calls": 0,
+          "tool_calls": 1,
+          "memory_exposures": 0,
+          "requests_with_memory": 0,
+          "memories_admitted": 0,
+          "memories_rejected": 0,
+          "memory_use_self_reports": 0,
+          "advisor_responses_accepted": 0,
+          "advisor_deferred": 0,
+          "checkpoints_created": 1,
+          "branch_restores": 0,
+          "submissions": 1,
+          "protocol_errors": 0,
+          "memory_interventions": 0,
+          "memory_action_changed": 0,
+          "memory_action_unchanged": 0,
+          "memory_followup_actions": 0,
+          "memory_followup_runs": 0,
+          "memory_followup_succeeded": 0,
+          "memory_followup_workspace_changed": 0,
+          "post_advice_actions": 0,
+          "monitor_calls": 0,
+          "monitor_reviews_accepted": 0,
+          "monitor_deferred": 0,
+          "semantic_stalls": 0,
+          "auto_memory_candidates": 0,
+          "auto_memories_admitted": 0,
+          "auto_memories_rejected": 0,
+          "observed_memories_admitted": 0,
+          "recovery_started": 0,
+          "recovery_plans": 0,
+          "recovery_verified_repairs": 0,
+          "recovery_checked_hypotheses": 0,
+          "recovery_failed": 0,
+          "route_episodes": 0,
+          "route_plans": 0,
+          "route_tools": 0,
+          "route_trials": 0,
+          "route_pruned": 0,
+          "route_selected": 0,
+          "route_no_gain": 0,
+          "route_rejected": 0,
+          "route_restore_failures": 0,
+          "memory_exposure_is_not_benefit": true,
+          "memory_use_is_self_report": true
+        },
+        "model_usage": {
+          "action": {
+            "model_calls": 0,
+            "api_requests": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0
+          },
+          "advisor": {
+            "model_calls": 0,
+            "api_requests": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0
+          },
+          "monitor": {
+            "model_calls": 0,
+            "api_requests": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0
+          }
+        },
+        "audit": {
+          "events": 6,
+          "tail_sha256": "58e0e4f80f3a195b3691621ac3cb032675597cf476d9e76691d0344f81a5aa9c"
+        },
+        "fixture": true
+      },
+      "model_calls": 0,
+      "semaphore_ok": true,
+      "independent_dbt_run_ok": true,
+      "project_parse_stdout_tail": " 'asana__user' in package '' which was not found\n12:02:47  [WARNING]: Test 'test.asana.not_null_asana__user_user_id.eb9cd93a43' (models/asana.yml) depends on a node named 'asana__user' in package '' which was not found\n12:02:47  [WARNING]: Test 'test.asana.unique_asana__team_team_id.ada6b5e093' (models/asana.yml) depends on a node named 'asana__team' in package '' which was not found\n12:02:47  [WARNING]: Test 'test.asana.not_null_asana__team_team_id.cd6b6c88bf' (models/asana.yml) depends on a node named 'asana__team' in package '' which was not found\n12:02:48  [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.\nThere are 13 unused configuration paths:\n- seeds.main.task_data\n- seeds.main.task_section_data\n- seeds.main.story_data\n- seeds.main.section_data\n- seeds.main\n- seeds.main.team_data\n- seeds.main.task_follower_data\n- seeds.main.tag_data\n- seeds.main.project_task_data\n- seeds.main.task_tag_data\n- seeds.main.user_data\n- seeds\n- seeds.main.project_data\n12:02:48  Performance info: /app/asana001/target/perf_info.json\n12:02:48  [WARNING][DeprecationsSummary]: Deprecated functionality\nSummary of encountered deprecations:\n- MissingArgumentsPropertyInGenericTestDeprecation: 1 occurrence\nTo see all deprecation instances instead of just the first occurrence of each,\nrun command again with the `--show-all-deprecations` flag. You may also need to\nrun with `--no-partial-parse` as some deprecations are only encountered during\nparsing.\n"
+    }
+  ],
+  "model_calls": 0,
+  "shm_repair_verified": true,
+  "paid_trials": 0
+}

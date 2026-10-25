@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "legacy_tasks": [
+    "payments-pipeline-fix",
+    "mvcc-lsm-compaction",
+    "uefi-bootkit"
+  ],
+  "unchanged_frozen_python_files": 134,
+  "additional_meter_test": true,
+  "files": {
+    "legacy-runtime.tar.gz": "7c5737f3daaf337ac8af2f26aaab11efa726926166f4dc464066bea101dbda92",
+    "harbor_legacy.py": "97c322aa5abbf9c2ad489d9d2deeb9e6f003b547bb42687ff58e2a3b7f70aa53",
+    "entry_harbor.py": "fc7ffad10b1d7f1937ff7df09a33ee7b6924eed386d4a61ab49c3b7d151f503c",
+    "resume.py": "078b7f26db011f73f8b131191425cd6e1fb4ee09cc3ac1f8c5cf48830a78eb05",
+    "anthropic_bridge.py": "fcbed22072551cdb01b03351c5db8f7af0954fb745468f99784e94916725ecdd",
+    "solve.py": "d4e7df4679f4b6959f3de17366cfe1872fe93da8952be73f707a7325e076b50d",
+    "protocol.json": "37a522cf3d2d0f448944e9044574bcdd5fc7d212a653f835790a6933e8530fbe"
+  }
+}

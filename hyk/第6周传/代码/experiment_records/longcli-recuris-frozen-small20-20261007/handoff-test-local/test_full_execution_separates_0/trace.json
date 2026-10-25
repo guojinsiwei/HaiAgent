@@ -1,0 +1,208 @@
+[
+  {
+    "step_id": 1,
+    "event": "turn",
+    "state_before": [
+      {
+        "id": "artifact",
+        "description": "Deliver checked artifact",
+        "verification": {
+          "command": "python public_check.py",
+          "contains": [
+            "PUBLIC_OK"
+          ]
+        },
+        "status": "pending",
+        "evidence_ids": [],
+        "blocker": ""
+      }
+    ],
+    "invoked_skills": [
+      "inspect-first"
+    ],
+    "action": {
+      "analysis": "Use observed evidence",
+      "operation": "execute",
+      "keystrokes": "cat > artifact.py <<'PY'\nprint('hello')\nPY\n",
+      "duration": 0,
+      "goal_id": "",
+      "final_answer": ""
+    },
+    "observation": {
+      "kind": "terminal",
+      "output": "ordinary terminal output",
+      "revision": 1,
+      "synthetic": false,
+      "id": "receipt-1",
+      "output_truncated": false
+    },
+    "proposed_state": {
+      "updates": [
+        {
+          "goal_id": "artifact",
+          "status": "pending",
+          "evidence_ids": [],
+          "blocker": ""
+        }
+      ],
+      "new_goals": [],
+      "revised_verifications": []
+    },
+    "checker_decisions": [
+      {
+        "goal_id": "artifact",
+        "requested_status": "pending",
+        "accepted": true,
+        "reason": "non-completion proposal"
+      }
+    ],
+    "state_after": [
+      {
+        "id": "artifact",
+        "description": "Deliver checked artifact",
+        "verification": {
+          "command": "python public_check.py",
+          "contains": [
+            "PUBLIC_OK"
+          ]
+        },
+        "status": "pending",
+        "evidence_ids": [],
+        "blocker": ""
+      }
+    ]
+  },
+  {
+    "step_id": 2,
+    "event": "turn",
+    "state_before": [
+      {
+        "id": "artifact",
+        "description": "Deliver checked artifact",
+        "verification": {
+          "command": "python public_check.py",
+          "contains": [
+            "PUBLIC_OK"
+          ]
+        },
+        "status": "pending",
+        "evidence_ids": [],
+        "blocker": ""
+      }
+    ],
+    "invoked_skills": [],
+    "action": {
+      "analysis": "Use observed evidence",
+      "operation": "verify",
+      "keystrokes": "",
+      "duration": 0,
+      "goal_id": "artifact",
+      "final_answer": ""
+    },
+    "observation": {
+      "kind": "verification",
+      "goal_id": "artifact",
+      "verification_digest": "2c23e258e8f2b49632d4c6df12a02cfde101cb4b7ddd09c283da4a2b12c5b3cb",
+      "revision": 1,
+      "output": "PUBLIC_OK",
+      "completed": true,
+      "exit_code": 0,
+      "synthetic": false,
+      "id": "receipt-2",
+      "output_truncated": false
+    },
+    "proposed_state": {
+      "updates": [
+        {
+          "goal_id": "artifact",
+          "status": "done",
+          "evidence_ids": [
+            "receipt-2"
+          ],
+          "blocker": ""
+        }
+      ],
+      "new_goals": [],
+      "revised_verifications": []
+    },
+    "checker_decisions": [
+      {
+        "goal_id": "artifact",
+        "requested_status": "done",
+        "accepted": true,
+        "reason": "Supported by actual public check receipt receipt-2"
+      }
+    ],
+    "state_after": [
+      {
+        "id": "artifact",
+        "description": "Deliver checked artifact",
+        "verification": {
+          "command": "python public_check.py",
+          "contains": [
+            "PUBLIC_OK"
+          ]
+        },
+        "status": "done",
+        "evidence_ids": [
+          "receipt-2"
+        ],
+        "blocker": ""
+      }
+    ]
+  },
+  {
+    "step_id": 3,
+    "event": "turn",
+    "state_before": [
+      {
+        "id": "artifact",
+        "description": "Deliver checked artifact",
+        "verification": {
+          "command": "python public_check.py",
+          "contains": [
+            "PUBLIC_OK"
+          ]
+        },
+        "status": "done",
+        "evidence_ids": [
+          "receipt-2"
+        ],
+        "blocker": ""
+      }
+    ],
+    "invoked_skills": [],
+    "action": {
+      "analysis": "Use observed evidence",
+      "operation": "finish",
+      "keystrokes": "",
+      "duration": 0,
+      "goal_id": "",
+      "final_answer": "Public artifact check passed."
+    },
+    "observation": {
+      "kind": "completion_request",
+      "accepted": true,
+      "synthetic": true
+    },
+    "proposed_state": {},
+    "checker_decisions": [],
+    "state_after": [
+      {
+        "id": "artifact",
+        "description": "Deliver checked artifact",
+        "verification": {
+          "command": "python public_check.py",
+          "contains": [
+            "PUBLIC_OK"
+          ]
+        },
+        "status": "done",
+        "evidence_ids": [
+          "receipt-2"
+        ],
+        "blocker": ""
+      }
+    ]
+  }
+]

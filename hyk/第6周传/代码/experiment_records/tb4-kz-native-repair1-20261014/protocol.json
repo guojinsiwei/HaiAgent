@@ -1,0 +1,30 @@
+{
+  "name": "KZ2 native engineering repair1",
+  "algorithm": "standalone KZ2.0; no DSH loop",
+  "source": "tb4-kz-standalone3-20261014/legacy-source.tar.gz",
+  "benchmark": "TerminalBench 4.0.0",
+  "commit": "452bf305c6daa62fc59061d22133a7cbc7c1572e",
+  "tasks_sha256": "a040e6711e88aff0fff53d6e43ae58610ff94e80a431d2d967021b99f2f6ce35",
+  "max_paid_trials": 30,
+  "paid_attempts_per_task": 1,
+  "development_tasks": [
+    "payments-pipeline-fix",
+    "mvcc-lsm-compaction",
+    "uefi-bootkit"
+  ],
+  "prospective_tasks": 27,
+  "expansion_gate": "all 3 engineering clean; all graded; at least 1 success",
+  "model": "deepseek-flash",
+  "provider": "TaoToken token plan",
+  "temperature": 0,
+  "thinking": false,
+  "context_tokens": 1000000,
+  "output_tokens": 32768,
+  "solver_seconds": 10800,
+  "command_seconds": 600,
+  "concurrency": 1,
+  "cross_task_memory": false,
+  "backtracking": false,
+  "real_model_calls_so_far": 0,
+  "status": "offline_qualified_pending_environment_and_fresh_credential"
+}

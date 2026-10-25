@@ -1,0 +1,9 @@
+{
+  "state": "ready_for_deepseek_key",
+  "updated_at": 1790148025.0942478,
+  "paid_model_requests": 0,
+  "protocol_sha256": "5a861054448586272288ee3321aa026413b80ca914770a05e2c9269679b749ed",
+  "tasks": 36,
+  "method_runs": 72,
+  "formal_experiment_started": false
+}

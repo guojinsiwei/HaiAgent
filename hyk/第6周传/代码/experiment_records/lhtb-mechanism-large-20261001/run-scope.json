@@ -1,0 +1,13 @@
+{
+  "stage": "pilot_plus3",
+  "task_indices": [1, 5, 0, 2, 3],
+  "parallel_slots": 8,
+  "disable_disk_guard": true,
+  "authorized_total_trials": 25,
+  "selection_rule": "Original two pilot tasks, then first three unattempted development tasks in fixed order; first repetition only; five paired groups.",
+  "pilot_task_indices": [
+    1,
+    5
+  ],
+  "pilot_trials": 10
+}

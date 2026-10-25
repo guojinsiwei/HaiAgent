@@ -1,0 +1,1372 @@
+{
+  "selection_sha256": "7cdf90a63d3d733662d6af8c5c5747257b50989adf4e7e5616fd4ecb34998037",
+  "tasks": {
+    "terminal-bench/gcode-to-text": {
+      "pinned_image": "alexgshaw/gcode-to-text@sha256:0979ef40c6a3e8c4e7ab5b6c2524c74625a84799e15cd45dd98dcf83b11efd4d",
+      "original_image": "alexgshaw/gcode-to-text:20251031",
+      "ready": true,
+      "attempts": 1,
+      "image_id": "sha256:0979ef40c6a3e8c4e7ab5b6c2524c74625a84799e15cd45dd98dcf83b11efd4d",
+      "image_bytes": 183673726,
+      "checks": [
+        {
+          "method": "bestfgs",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        },
+        {
+          "method": "raw",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        }
+      ],
+      "finished_at": 1790144429.4634366,
+      "total_attempts": 4,
+      "attempt_history": [
+        {
+          "started_at": 1790144401.2502112,
+          "attempt": 4,
+          "finished_at": 1790144429.463441,
+          "ready": true
+        }
+      ],
+      "setup_version": "shared-python-ca-v2"
+    },
+    "terminal-bench/compile-compcert": {
+      "ready": true,
+      "attempts": 1,
+      "pinned_image": "alexgshaw/compile-compcert@sha256:f316947b7be23ad0d187320126eb1cbb5685f48342c6543fdd3ac839aa9e1a7f",
+      "original_image": "alexgshaw/compile-compcert:20251031",
+      "image_id": "sha256:f316947b7be23ad0d187320126eb1cbb5685f48342c6543fdd3ac839aa9e1a7f",
+      "image_bytes": 117318481,
+      "checks": [
+        {
+          "method": "bestfgs",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        },
+        {
+          "method": "raw",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        }
+      ],
+      "finished_at": 1790144457.619019,
+      "total_attempts": 3,
+      "attempt_history": [
+        {
+          "started_at": 1790144429.4646316,
+          "attempt": 3,
+          "finished_at": 1790144457.619024,
+          "ready": true
+        }
+      ],
+      "setup_version": "shared-python-ca-v2"
+    },
+    "terminal-bench/crack-7z-hash": {
+      "ready": true,
+      "attempts": 1,
+      "pinned_image": "alexgshaw/crack-7z-hash@sha256:0f4453abd774c5a3d3d7e66ba28fae88ec2e49ada3a993b324ebc16c348666d3",
+      "original_image": "alexgshaw/crack-7z-hash:20251031",
+      "error_reason": "",
+      "image_id": "sha256:0f4453abd774c5a3d3d7e66ba28fae88ec2e49ada3a993b324ebc16c348666d3",
+      "image_bytes": 1139391305,
+      "checks": [
+        {
+          "method": "bestfgs",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        },
+        {
+          "method": "raw",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        }
+      ],
+      "finished_at": 1790144485.8312078,
+      "total_attempts": 4,
+      "attempt_history": [
+        {
+          "started_at": 1790144457.6203344,
+          "attempt": 4,
+          "finished_at": 1790144485.8312113,
+          "ready": true
+        }
+      ],
+      "setup_version": "shared-python-ca-v2"
+    },
+    "terminal-bench/vulnerable-secret": {
+      "pinned_image": "alexgshaw/vulnerable-secret@sha256:61ebb40454dd103aa2f7e71ad6dafd91cf2b301e6bb07e69d5b472412d1ee15b",
+      "original_image": "alexgshaw/vulnerable-secret:20251031",
+      "image_id": "sha256:61ebb40454dd103aa2f7e71ad6dafd91cf2b301e6bb07e69d5b472412d1ee15b",
+      "image_bytes": 531170475,
+      "checks": [
+        {
+          "method": "bestfgs",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        },
+        {
+          "method": "raw",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        }
+      ],
+      "ready": true,
+      "attempts": 1,
+      "finished_at": 1790144514.0545003,
+      "total_attempts": 2,
+      "attempt_history": [
+        {
+          "started_at": 1790144485.8324764,
+          "attempt": 2,
+          "finished_at": 1790144514.054504,
+          "ready": true
+        }
+      ],
+      "setup_version": "shared-python-ca-v2"
+    },
+    "terminal-bench/tune-mjcf": {
+      "ready": true,
+      "attempts": 1,
+      "error_reason": "",
+      "pinned_image": "alexgshaw/tune-mjcf@sha256:56c197739db2db79562384581fcc9d3d71e6c171bf052104b1a7ee0282e7c3cf",
+      "original_image": "alexgshaw/tune-mjcf:20251031",
+      "image_id": "sha256:56c197739db2db79562384581fcc9d3d71e6c171bf052104b1a7ee0282e7c3cf",
+      "image_bytes": 361843056,
+      "checks": [
+        {
+          "method": "bestfgs",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        },
+        {
+          "method": "raw",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        }
+      ],
+      "finished_at": 1790144542.7961168,
+      "total_attempts": 2,
+      "attempt_history": [
+        {
+          "started_at": 1790144514.055791,
+          "attempt": 2,
+          "finished_at": 1790144542.7961204,
+          "ready": true
+        }
+      ],
+      "setup_version": "shared-python-ca-v2"
+    },
+    "terminal-bench/path-tracing": {
+      "pinned_image": "alexgshaw/path-tracing@sha256:4b44725102cd627dfa895191a5a30d16dae3c5623bb43da6459f79135db6b482",
+      "original_image": "alexgshaw/path-tracing:20251031",
+      "ready": true,
+      "attempts": 1,
+      "error_reason": "",
+      "image_id": "sha256:4b44725102cd627dfa895191a5a30d16dae3c5623bb43da6459f79135db6b482",
+      "image_bytes": 1532409604,
+      "checks": [
+        {
+          "method": "bestfgs",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        },
+        {
+          "method": "raw",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        }
+      ],
+      "finished_at": 1790144571.6387007,
+      "total_attempts": 4,
+      "attempt_history": [
+        {
+          "started_at": 1790144542.7974224,
+          "attempt": 4,
+          "finished_at": 1790144571.6387045,
+          "ready": true
+        }
+      ],
+      "setup_version": "shared-python-ca-v2"
+    },
+    "terminal-bench/polyglot-c-py": {
+      "ready": true,
+      "attempts": 1,
+      "error_reason": "",
+      "pinned_image": "alexgshaw/polyglot-c-py@sha256:0f1c3b7816d70cf5551573fd6aeef76893f2ae3000be2419997b6871b5d987ed",
+      "original_image": "alexgshaw/polyglot-c-py:20251031",
+      "image_id": "sha256:0f1c3b7816d70cf5551573fd6aeef76893f2ae3000be2419997b6871b5d987ed",
+      "image_bytes": 506726315,
+      "checks": [
+        {
+          "method": "bestfgs",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        },
+        {
+          "method": "raw",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        }
+      ],
+      "finished_at": 1790144600.1664815,
+      "total_attempts": 4,
+      "attempt_history": [
+        {
+          "started_at": 1790144571.64008,
+          "attempt": 4,
+          "finished_at": 1790144600.166485,
+          "ready": true
+        }
+      ],
+      "setup_version": "shared-python-ca-v2"
+    },
+    "terminal-bench/sparql-university": {
+      "pinned_image": "alexgshaw/sparql-university@sha256:92fa4304e51167f9fb4466144eba33ef9272a7df0ac1cab9fc3986bccd1ab708",
+      "original_image": "alexgshaw/sparql-university:20251031",
+      "image_id": "sha256:92fa4304e51167f9fb4466144eba33ef9272a7df0ac1cab9fc3986bccd1ab708",
+      "image_bytes": 117341145,
+      "checks": [
+        {
+          "method": "bestfgs",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        },
+        {
+          "method": "raw",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        }
+      ],
+      "ready": true,
+      "attempts": 1,
+      "finished_at": 1790144628.452394,
+      "total_attempts": 2,
+      "attempt_history": [
+        {
+          "started_at": 1790144600.16792,
+          "attempt": 2,
+          "finished_at": 1790144628.452398,
+          "ready": true
+        }
+      ],
+      "setup_version": "shared-python-ca-v2"
+    },
+    "terminal-bench/git-multibranch": {
+      "ready": true,
+      "attempts": 1,
+      "error_reason": "",
+      "total_attempts": 6,
+      "attempt_history": [
+        {
+          "started_at": 1790143514.246801,
+          "attempt": 4,
+          "finished_at": 1790143544.473923,
+          "ready": false,
+          "error_type": "CalledProcessError"
+        },
+        {
+          "started_at": 1790143549.4744923,
+          "attempt": 5,
+          "finished_at": 1790143668.0790267,
+          "ready": true
+        },
+        {
+          "started_at": 1790144628.453912,
+          "attempt": 6,
+          "finished_at": 1790144656.8229594,
+          "ready": true
+        }
+      ],
+      "pinned_image": "alexgshaw/git-multibranch@sha256:5bc449921c138295f6ddd8dca2977319fee2ce523811dbe56cec4ca663385fb5",
+      "original_image": "alexgshaw/git-multibranch:20251031",
+      "image_id": "sha256:5bc449921c138295f6ddd8dca2977319fee2ce523811dbe56cec4ca663385fb5",
+      "image_bytes": 892178614,
+      "checks": [
+        {
+          "method": "bestfgs",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        },
+        {
+          "method": "raw",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        }
+      ],
+      "finished_at": 1790144656.822956,
+      "setup_version": "shared-python-ca-v2"
+    },
+    "terminal-bench/regex-chess": {
+      "total_attempts": 2,
+      "attempt_history": [
+        {
+          "started_at": 1790143668.0801005,
+          "attempt": 1,
+          "finished_at": 1790143719.4406178,
+          "ready": true
+        },
+        {
+          "started_at": 1790144656.8243942,
+          "attempt": 2,
+          "finished_at": 1790144685.1587238,
+          "ready": true
+        }
+      ],
+      "pinned_image": "alexgshaw/regex-chess@sha256:e3b6d61d2d3930fbbdc5f7bf091a7f8b7f6125e1951ef8a7dbe165b1ef62942c",
+      "original_image": "alexgshaw/regex-chess:20251031",
+      "image_id": "sha256:e3b6d61d2d3930fbbdc5f7bf091a7f8b7f6125e1951ef8a7dbe165b1ef62942c",
+      "image_bytes": 211343216,
+      "checks": [
+        {
+          "method": "bestfgs",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        },
+        {
+          "method": "raw",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        }
+      ],
+      "ready": true,
+      "attempts": 1,
+      "finished_at": 1790144685.1587203,
+      "setup_version": "shared-python-ca-v2"
+    },
+    "terminal-bench/extract-moves-from-video": {
+      "total_attempts": 2,
+      "attempt_history": [
+        {
+          "started_at": 1790143719.442065,
+          "attempt": 1,
+          "finished_at": 1790143754.606884,
+          "ready": true
+        },
+        {
+          "started_at": 1790144685.1601295,
+          "attempt": 2,
+          "finished_at": 1790144713.611483,
+          "ready": true
+        }
+      ],
+      "pinned_image": "alexgshaw/extract-moves-from-video@sha256:14a9dcca7d08ce53c5a0ed9fbd663a996ef28f207c199ed69d9ccf6064f8b184",
+      "original_image": "alexgshaw/extract-moves-from-video:20251031",
+      "image_id": "sha256:14a9dcca7d08ce53c5a0ed9fbd663a996ef28f207c199ed69d9ccf6064f8b184",
+      "image_bytes": 117318489,
+      "checks": [
+        {
+          "method": "bestfgs",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        },
+        {
+          "method": "raw",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        }
+      ],
+      "ready": true,
+      "attempts": 1,
+      "finished_at": 1790144713.611479,
+      "setup_version": "shared-python-ca-v2"
+    },
+    "terminal-bench/financial-document-processor": {
+      "total_attempts": 2,
+      "attempt_history": [
+        {
+          "started_at": 1790143754.6080434,
+          "attempt": 1,
+          "finished_at": 1790143807.0067127,
+          "ready": true
+        },
+        {
+          "started_at": 1790144713.6129,
+          "attempt": 2,
+          "finished_at": 1790144741.9887457,
+          "ready": true
+        }
+      ],
+      "pinned_image": "alexgshaw/financial-document-processor@sha256:ef6c9cfaaf14cdd200163008a188d5baa9f626f3bfb8d3e7d6f30c08518e6251",
+      "original_image": "alexgshaw/financial-document-processor:20251031",
+      "image_id": "sha256:ef6c9cfaaf14cdd200163008a188d5baa9f626f3bfb8d3e7d6f30c08518e6251",
+      "image_bytes": 189410604,
+      "checks": [
+        {
+          "method": "bestfgs",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        },
+        {
+          "method": "raw",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        }
+      ],
+      "ready": true,
+      "attempts": 1,
+      "finished_at": 1790144741.9887419,
+      "setup_version": "shared-python-ca-v2"
+    },
+    "terminal-bench/mteb-leaderboard": {
+      "total_attempts": 7,
+      "attempt_history": [
+        {
+          "started_at": 1790143807.0080388,
+          "attempt": 1,
+          "finished_at": 1790144186.8964252,
+          "ready": false,
+          "error_type": "CalledProcessError"
+        },
+        {
+          "started_at": 1790144191.8977857,
+          "attempt": 2,
+          "finished_at": 1790144196.4770448,
+          "ready": false,
+          "error_type": "CalledProcessError"
+        },
+        {
+          "started_at": 1790144206.4777887,
+          "attempt": 3,
+          "finished_at": 1790144211.1010509,
+          "ready": false,
+          "error_type": "CalledProcessError"
+        },
+        {
+          "started_at": 1790144741.990289,
+          "attempt": 4,
+          "finished_at": 1790144746.8338273,
+          "ready": false,
+          "error_type": "CalledProcessError"
+        },
+        {
+          "started_at": 1790144751.834727,
+          "attempt": 5,
+          "finished_at": 1790144756.6293032,
+          "ready": false,
+          "error_type": "CalledProcessError"
+        },
+        {
+          "started_at": 1790144766.6302345,
+          "attempt": 6
+        },
+        {
+          "started_at": 1790147916.082542,
+          "attempt": 7,
+          "finished_at": 1790147952.9349146,
+          "ready": true
+        }
+      ],
+      "pinned_image": "alexgshaw/mteb-leaderboard@sha256:968de9456bfc53728f7df0cb6c9ce33e17bd0e5563ddfe031e6ed2964965aecf",
+      "original_image": "alexgshaw/mteb-leaderboard:20251031",
+      "ready": true,
+      "attempts": 1,
+      "error_reason": "",
+      "image_id": "sha256:968de9456bfc53728f7df0cb6c9ce33e17bd0e5563ddfe031e6ed2964965aecf",
+      "image_bytes": 21623437997,
+      "checks": [
+        {
+          "method": "bestfgs",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        },
+        {
+          "method": "raw",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        }
+      ],
+      "finished_at": 1790147952.9349117,
+      "setup_version": "shared-python-ca-v2"
+    },
+    "terminal-bench/qemu-alpine-ssh": {
+      "total_attempts": 5,
+      "attempt_history": [
+        {
+          "started_at": 1790144767.4524374,
+          "attempt": 1,
+          "finished_at": 1790144778.4777935,
+          "ready": false,
+          "error_type": "URLError"
+        },
+        {
+          "started_at": 1790144783.4795327,
+          "attempt": 2,
+          "finished_at": 1790144794.6154714,
+          "ready": false,
+          "error_type": "URLError"
+        },
+        {
+          "started_at": 1790144804.6163802,
+          "attempt": 3
+        },
+        {
+          "started_at": 1790144932.7104828,
+          "attempt": 4,
+          "finished_at": 1790145316.8718688,
+          "ready": false,
+          "error_type": "CalledProcessError"
+        },
+        {
+          "started_at": 1790145321.8727672,
+          "attempt": 5,
+          "finished_at": 1790145619.2466936,
+          "ready": true
+        }
+      ],
+      "ready": true,
+      "attempts": 2,
+      "error_reason": "",
+      "pinned_image": "alexgshaw/qemu-alpine-ssh@sha256:541e8214a8c4faa7b556531b899d45da21048fa2ca6dd328d8cb6c4cffa8e964",
+      "original_image": "alexgshaw/qemu-alpine-ssh:20251031",
+      "image_id": "sha256:541e8214a8c4faa7b556531b899d45da21048fa2ca6dd328d8cb6c4cffa8e964",
+      "image_bytes": 3149800152,
+      "checks": [
+        {
+          "method": "bestfgs",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        },
+        {
+          "method": "raw",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        }
+      ],
+      "finished_at": 1790145619.24669,
+      "setup_version": "shared-python-ca-v2"
+    },
+    "terminal-bench/git-leak-recovery": {
+      "total_attempts": 1,
+      "attempt_history": [
+        {
+          "started_at": 1790145619.2501469,
+          "attempt": 1,
+          "finished_at": 1790145685.3185608,
+          "ready": true
+        }
+      ],
+      "pinned_image": "alexgshaw/git-leak-recovery@sha256:62160e522a4238b8bcd522411ea97b5b200f811e5899d34947e66809bef7e586",
+      "original_image": "alexgshaw/git-leak-recovery:20251031",
+      "image_id": "sha256:62160e522a4238b8bcd522411ea97b5b200f811e5899d34947e66809bef7e586",
+      "image_bytes": 332051136,
+      "checks": [
+        {
+          "method": "bestfgs",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        },
+        {
+          "method": "raw",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        }
+      ],
+      "ready": true,
+      "attempts": 1,
+      "finished_at": 1790145685.3185563,
+      "setup_version": "shared-python-ca-v2"
+    },
+    "terminal-bench/overfull-hbox": {
+      "total_attempts": 1,
+      "attempt_history": [
+        {
+          "started_at": 1790145685.3201704,
+          "attempt": 1,
+          "finished_at": 1790145773.2469053,
+          "ready": true
+        }
+      ],
+      "pinned_image": "alexgshaw/overfull-hbox@sha256:67fe0ccc0ff2305d6fcb3652977d377b901bb7bd96904b6765835935574992e1",
+      "original_image": "alexgshaw/overfull-hbox:20251031",
+      "image_id": "sha256:67fe0ccc0ff2305d6fcb3652977d377b901bb7bd96904b6765835935574992e1",
+      "image_bytes": 476195182,
+      "checks": [
+        {
+          "method": "bestfgs",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        },
+        {
+          "method": "raw",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        }
+      ],
+      "ready": true,
+      "attempts": 1,
+      "finished_at": 1790145773.2469006,
+      "setup_version": "shared-python-ca-v2"
+    },
+    "terminal-bench/distribution-search": {
+      "total_attempts": 1,
+      "attempt_history": [
+        {
+          "started_at": 1790145773.2487612,
+          "attempt": 1,
+          "finished_at": 1790145870.4184377,
+          "ready": true
+        }
+      ],
+      "pinned_image": "alexgshaw/distribution-search@sha256:1448f7aa1c6080488251d00350e8e90477858989b1bec0accc866d7b3220738a",
+      "original_image": "alexgshaw/distribution-search:20251031",
+      "image_id": "sha256:1448f7aa1c6080488251d00350e8e90477858989b1bec0accc866d7b3220738a",
+      "image_bytes": 620510570,
+      "checks": [
+        {
+          "method": "bestfgs",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        },
+        {
+          "method": "raw",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        }
+      ],
+      "ready": true,
+      "attempts": 1,
+      "finished_at": 1790145870.4184349,
+      "setup_version": "shared-python-ca-v2"
+    },
+    "terminal-bench/circuit-fibsqrt": {
+      "total_attempts": 1,
+      "attempt_history": [
+        {
+          "started_at": 1790145870.420152,
+          "attempt": 1,
+          "finished_at": 1790145956.2027159,
+          "ready": true
+        }
+      ],
+      "pinned_image": "alexgshaw/circuit-fibsqrt@sha256:29783439f529eaed2145592f15af7a2281161528860392a382c825489030ae3a",
+      "original_image": "alexgshaw/circuit-fibsqrt:20251031",
+      "image_id": "sha256:29783439f529eaed2145592f15af7a2281161528860392a382c825489030ae3a",
+      "image_bytes": 566031714,
+      "checks": [
+        {
+          "method": "bestfgs",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        },
+        {
+          "method": "raw",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        }
+      ],
+      "ready": true,
+      "attempts": 1,
+      "finished_at": 1790145956.202712,
+      "setup_version": "shared-python-ca-v2"
+    },
+    "terminal-bench/torch-tensor-parallelism": {
+      "total_attempts": 1,
+      "attempt_history": [
+        {
+          "started_at": 1790145956.204489,
+          "attempt": 1,
+          "finished_at": 1790145996.337788,
+          "ready": true
+        }
+      ],
+      "pinned_image": "alexgshaw/torch-tensor-parallelism@sha256:c50ac169e11465f41b49749fe87e4487f24d31a0c39c0906cd3242cc5499c690",
+      "original_image": "alexgshaw/torch-tensor-parallelism:20251031",
+      "image_id": "sha256:c50ac169e11465f41b49749fe87e4487f24d31a0c39c0906cd3242cc5499c690",
+      "image_bytes": 117318489,
+      "checks": [
+        {
+          "method": "bestfgs",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        },
+        {
+          "method": "raw",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        }
+      ],
+      "ready": true,
+      "attempts": 1,
+      "finished_at": 1790145996.337785,
+      "setup_version": "shared-python-ca-v2"
+    },
+    "terminal-bench/make-mips-interpreter": {
+      "total_attempts": 1,
+      "attempt_history": [
+        {
+          "started_at": 1790145996.339794,
+          "attempt": 1,
+          "finished_at": 1790146212.8314836,
+          "ready": true
+        }
+      ],
+      "pinned_image": "alexgshaw/make-mips-interpreter@sha256:082fc8821b317f30fdfbf8d08d528874ce331c03e8083aef0406d48cdd7132a2",
+      "original_image": "alexgshaw/make-mips-interpreter:20251031",
+      "image_id": "sha256:082fc8821b317f30fdfbf8d08d528874ce331c03e8083aef0406d48cdd7132a2",
+      "image_bytes": 2142433542,
+      "checks": [
+        {
+          "method": "bestfgs",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        },
+        {
+          "method": "raw",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        }
+      ],
+      "ready": true,
+      "attempts": 1,
+      "finished_at": 1790146212.8314798,
+      "setup_version": "shared-python-ca-v2"
+    },
+    "terminal-bench/constraints-scheduling": {
+      "total_attempts": 1,
+      "attempt_history": [
+        {
+          "started_at": 1790146212.8333726,
+          "attempt": 1,
+          "finished_at": 1790146268.6318948,
+          "ready": true
+        }
+      ],
+      "pinned_image": "alexgshaw/constraints-scheduling@sha256:567ce5a189f8d11ac461790876e934cc7af38391baf89a78f95f4dafc1fec3b0",
+      "original_image": "alexgshaw/constraints-scheduling:20251031",
+      "image_id": "sha256:567ce5a189f8d11ac461790876e934cc7af38391baf89a78f95f4dafc1fec3b0",
+      "image_bytes": 207929880,
+      "checks": [
+        {
+          "method": "bestfgs",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        },
+        {
+          "method": "raw",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        }
+      ],
+      "ready": true,
+      "attempts": 1,
+      "finished_at": 1790146268.6318917,
+      "setup_version": "shared-python-ca-v2"
+    },
+    "terminal-bench/build-cython-ext": {
+      "total_attempts": 1,
+      "attempt_history": [
+        {
+          "started_at": 1790146268.6341949,
+          "attempt": 1,
+          "finished_at": 1790146404.8667116,
+          "ready": true
+        }
+      ],
+      "pinned_image": "alexgshaw/build-cython-ext@sha256:3612a38fadb89a96f74a1a951fb0b0af734198fd160571eeaba6401593234594",
+      "original_image": "alexgshaw/build-cython-ext:20251031",
+      "image_id": "sha256:3612a38fadb89a96f74a1a951fb0b0af734198fd160571eeaba6401593234594",
+      "image_bytes": 1183411932,
+      "checks": [
+        {
+          "method": "bestfgs",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        },
+        {
+          "method": "raw",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        }
+      ],
+      "ready": true,
+      "attempts": 1,
+      "finished_at": 1790146404.8667085,
+      "setup_version": "shared-python-ca-v2"
+    },
+    "terminal-bench/openssl-selfsigned-cert": {
+      "total_attempts": 1,
+      "attempt_history": [
+        {
+          "started_at": 1790146404.8689551,
+          "attempt": 1,
+          "finished_at": 1790146448.6667488,
+          "ready": true
+        }
+      ],
+      "pinned_image": "alexgshaw/openssl-selfsigned-cert@sha256:4c948a4e630af2435ae0a19108fc0814a946ac2fa29a512469e0fc77b38c8c12",
+      "original_image": "alexgshaw/openssl-selfsigned-cert:20251031",
+      "image_id": "sha256:4c948a4e630af2435ae0a19108fc0814a946ac2fa29a512469e0fc77b38c8c12",
+      "image_bytes": 180741990,
+      "checks": [
+        {
+          "method": "bestfgs",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        },
+        {
+          "method": "raw",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        }
+      ],
+      "ready": true,
+      "attempts": 1,
+      "finished_at": 1790146448.6667457,
+      "setup_version": "shared-python-ca-v2"
+    },
+    "terminal-bench/merge-diff-arc-agi-task": {
+      "total_attempts": 1,
+      "attempt_history": [
+        {
+          "started_at": 1790146448.6688719,
+          "attempt": 1,
+          "finished_at": 1790146489.0149844,
+          "ready": true
+        }
+      ],
+      "pinned_image": "alexgshaw/merge-diff-arc-agi-task@sha256:bfc2a235f2ceea64ffb1ffc5529c2acebf570bff61f3668f0e5669ef570c17d4",
+      "original_image": "alexgshaw/merge-diff-arc-agi-task:20251031",
+      "image_id": "sha256:bfc2a235f2ceea64ffb1ffc5529c2acebf570bff61f3668f0e5669ef570c17d4",
+      "image_bytes": 117345821,
+      "checks": [
+        {
+          "method": "bestfgs",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        },
+        {
+          "method": "raw",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        }
+      ],
+      "ready": true,
+      "attempts": 1,
+      "finished_at": 1790146489.014981,
+      "setup_version": "shared-python-ca-v2"
+    },
+    "terminal-bench/log-summary-date-ranges": {
+      "total_attempts": 1,
+      "attempt_history": [
+        {
+          "started_at": 1790146489.017387,
+          "attempt": 1,
+          "finished_at": 1790146529.5629852,
+          "ready": true
+        }
+      ],
+      "pinned_image": "alexgshaw/log-summary-date-ranges@sha256:cbeb6ba905c2fec294f16cd5e16e3ea7f2e04d38ac2484d51a11de262aa7dc51",
+      "original_image": "alexgshaw/log-summary-date-ranges:20251031",
+      "image_id": "sha256:cbeb6ba905c2fec294f16cd5e16e3ea7f2e04d38ac2484d51a11de262aa7dc51",
+      "image_bytes": 187812462,
+      "checks": [
+        {
+          "method": "bestfgs",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        },
+        {
+          "method": "raw",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        }
+      ],
+      "ready": true,
+      "attempts": 1,
+      "finished_at": 1790146529.5629816,
+      "setup_version": "shared-python-ca-v2"
+    },
+    "terminal-bench/fix-ocaml-gc": {
+      "total_attempts": 1,
+      "attempt_history": [
+        {
+          "started_at": 1790146529.5655437,
+          "attempt": 1,
+          "finished_at": 1790146790.8187284,
+          "ready": true
+        }
+      ],
+      "pinned_image": "alexgshaw/fix-ocaml-gc@sha256:66a1e2293076c9ef27a118611b3089a6284fdf467fd4675592d0cce7d11e5b0b",
+      "original_image": "alexgshaw/fix-ocaml-gc:20251031",
+      "image_id": "sha256:66a1e2293076c9ef27a118611b3089a6284fdf467fd4675592d0cce7d11e5b0b",
+      "image_bytes": 1956427606,
+      "checks": [
+        {
+          "method": "bestfgs",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        },
+        {
+          "method": "raw",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        }
+      ],
+      "ready": true,
+      "attempts": 1,
+      "finished_at": 1790146790.818725,
+      "setup_version": "shared-python-ca-v2"
+    },
+    "terminal-bench/pytorch-model-cli": {
+      "total_attempts": 1,
+      "attempt_history": [
+        {
+          "started_at": 1790146790.8219178,
+          "attempt": 1,
+          "finished_at": 1790146832.3692443,
+          "ready": true
+        }
+      ],
+      "pinned_image": "alexgshaw/pytorch-model-cli@sha256:c996884b5fb5fb2c0c07d67da2c4f974f271f07234ed28e1a868240375c57a67",
+      "original_image": "alexgshaw/pytorch-model-cli:20251031",
+      "image_id": "sha256:c996884b5fb5fb2c0c07d67da2c4f974f271f07234ed28e1a868240375c57a67",
+      "image_bytes": 181463211,
+      "checks": [
+        {
+          "method": "bestfgs",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        },
+        {
+          "method": "raw",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        }
+      ],
+      "ready": true,
+      "attempts": 1,
+      "finished_at": 1790146832.3692398,
+      "setup_version": "shared-python-ca-v2"
+    },
+    "terminal-bench/dna-insert": {
+      "total_attempts": 1,
+      "attempt_history": [
+        {
+          "started_at": 1790146832.3728244,
+          "attempt": 1,
+          "finished_at": 1790146873.8474336,
+          "ready": true
+        }
+      ],
+      "pinned_image": "alexgshaw/dna-insert@sha256:4dd8760694e355de85ecf03605cb487ccdb33322f6afad513d2920829baa33b2",
+      "original_image": "alexgshaw/dna-insert:20251031",
+      "image_id": "sha256:4dd8760694e355de85ecf03605cb487ccdb33322f6afad513d2920829baa33b2",
+      "image_bytes": 117336659,
+      "checks": [
+        {
+          "method": "bestfgs",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        },
+        {
+          "method": "raw",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        }
+      ],
+      "ready": true,
+      "attempts": 1,
+      "finished_at": 1790146873.8474293,
+      "setup_version": "shared-python-ca-v2"
+    },
+    "terminal-bench/caffe-cifar-10": {
+      "total_attempts": 1,
+      "attempt_history": [
+        {
+          "started_at": 1790146873.8503013,
+          "attempt": 1,
+          "finished_at": 1790146990.5185626,
+          "ready": true
+        }
+      ],
+      "pinned_image": "alexgshaw/caffe-cifar-10@sha256:5b54d6e8f1b392cdeb819e28215853f500b72b8e08b91270c7a3693bf44d1fe2",
+      "original_image": "alexgshaw/caffe-cifar-10:20251031",
+      "image_id": "sha256:5b54d6e8f1b392cdeb819e28215853f500b72b8e08b91270c7a3693bf44d1fe2",
+      "image_bytes": 754286243,
+      "checks": [
+        {
+          "method": "bestfgs",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        },
+        {
+          "method": "raw",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        }
+      ],
+      "ready": true,
+      "attempts": 1,
+      "finished_at": 1790146990.5185592,
+      "setup_version": "shared-python-ca-v2"
+    },
+    "terminal-bench/install-windows-3-11": {
+      "total_attempts": 1,
+      "attempt_history": [
+        {
+          "started_at": 1790146990.5212276,
+          "attempt": 1,
+          "finished_at": 1790147218.434493,
+          "ready": true
+        }
+      ],
+      "pinned_image": "alexgshaw/install-windows-3.11@sha256:c6695097316ef8810abce0545e347e65354aef9d51d4f7f662c3242e742f6a3e",
+      "original_image": "alexgshaw/install-windows-3.11:20251031",
+      "image_id": "sha256:c6695097316ef8810abce0545e347e65354aef9d51d4f7f662c3242e742f6a3e",
+      "image_bytes": 2214021673,
+      "checks": [
+        {
+          "method": "bestfgs",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        },
+        {
+          "method": "raw",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        }
+      ],
+      "ready": true,
+      "attempts": 1,
+      "finished_at": 1790147218.4344902,
+      "setup_version": "shared-python-ca-v2"
+    },
+    "terminal-bench/prove-plus-comm": {
+      "total_attempts": 1,
+      "attempt_history": [
+        {
+          "started_at": 1790147218.4373493,
+          "attempt": 1,
+          "finished_at": 1790147447.0147362,
+          "ready": true
+        }
+      ],
+      "pinned_image": "alexgshaw/prove-plus-comm@sha256:e26741d01681a9da1beeff8b7b7b65fe2b921b8b122a306a3707a81ebd051f73",
+      "original_image": "alexgshaw/prove-plus-comm:20251031",
+      "image_id": "sha256:e26741d01681a9da1beeff8b7b7b65fe2b921b8b122a306a3707a81ebd051f73",
+      "image_bytes": 1812916921,
+      "checks": [
+        {
+          "method": "bestfgs",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        },
+        {
+          "method": "raw",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        }
+      ],
+      "ready": true,
+      "attempts": 1,
+      "finished_at": 1790147447.0147326,
+      "setup_version": "shared-python-ca-v2"
+    },
+    "terminal-bench/video-processing": {
+      "total_attempts": 1,
+      "attempt_history": [
+        {
+          "started_at": 1790147447.0174487,
+          "attempt": 1,
+          "finished_at": 1790147661.8712919,
+          "ready": true
+        }
+      ],
+      "pinned_image": "alexgshaw/video-processing@sha256:a2c0f39e3ab04e67ac6e49cad9167bb0d987babe32511768c01aa0c6905a875f",
+      "original_image": "alexgshaw/video-processing:20251031",
+      "image_id": "sha256:a2c0f39e3ab04e67ac6e49cad9167bb0d987babe32511768c01aa0c6905a875f",
+      "image_bytes": 1054602137,
+      "checks": [
+        {
+          "method": "bestfgs",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        },
+        {
+          "method": "raw",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        }
+      ],
+      "ready": true,
+      "attempts": 1,
+      "finished_at": 1790147661.8712888,
+      "setup_version": "shared-python-ca-v2"
+    },
+    "terminal-bench/db-wal-recovery": {
+      "total_attempts": 1,
+      "attempt_history": [
+        {
+          "started_at": 1790147661.8740675,
+          "attempt": 1,
+          "finished_at": 1790147733.2034397,
+          "ready": true
+        }
+      ],
+      "pinned_image": "alexgshaw/db-wal-recovery@sha256:0e33ea5ec823975d1bd6c3778395c9f94251dd88f571146057bff6adb7e4594e",
+      "original_image": "alexgshaw/db-wal-recovery:20251031",
+      "image_id": "sha256:0e33ea5ec823975d1bd6c3778395c9f94251dd88f571146057bff6adb7e4594e",
+      "image_bytes": 710824049,
+      "checks": [
+        {
+          "method": "bestfgs",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        },
+        {
+          "method": "raw",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        }
+      ],
+      "ready": true,
+      "attempts": 1,
+      "finished_at": 1790147733.2034366,
+      "setup_version": "shared-python-ca-v2"
+    },
+    "terminal-bench/sqlite-db-truncate": {
+      "total_attempts": 1,
+      "attempt_history": [
+        {
+          "started_at": 1790147733.2061775,
+          "attempt": 1,
+          "finished_at": 1790147773.9148011,
+          "ready": true
+        }
+      ],
+      "pinned_image": "alexgshaw/sqlite-db-truncate@sha256:aabac93c93bd1f310e6a6fb893911d7735026ed18491c72133c9196a09092ca4",
+      "original_image": "alexgshaw/sqlite-db-truncate:20251031",
+      "image_id": "sha256:aabac93c93bd1f310e6a6fb893911d7735026ed18491c72133c9196a09092ca4",
+      "image_bytes": 180696139,
+      "checks": [
+        {
+          "method": "bestfgs",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        },
+        {
+          "method": "raw",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        }
+      ],
+      "ready": true,
+      "attempts": 1,
+      "finished_at": 1790147773.914798,
+      "setup_version": "shared-python-ca-v2"
+    },
+    "terminal-bench/write-compressor": {
+      "total_attempts": 1,
+      "attempt_history": [
+        {
+          "started_at": 1790147773.9179761,
+          "attempt": 1,
+          "finished_at": 1790147866.430668,
+          "ready": true
+        }
+      ],
+      "pinned_image": "alexgshaw/write-compressor@sha256:3618e1f8a997b437c09cd3dbaac736705809c05f6f12f584b65722175970ebe1",
+      "original_image": "alexgshaw/write-compressor:20251031",
+      "image_id": "sha256:3618e1f8a997b437c09cd3dbaac736705809c05f6f12f584b65722175970ebe1",
+      "image_bytes": 1086772910,
+      "checks": [
+        {
+          "method": "bestfgs",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        },
+        {
+          "method": "raw",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        }
+      ],
+      "ready": true,
+      "attempts": 1,
+      "finished_at": 1790147866.4306636,
+      "setup_version": "shared-python-ca-v2"
+    },
+    "terminal-bench/model-extraction-relu-logits": {
+      "total_attempts": 1,
+      "attempt_history": [
+        {
+          "started_at": 1790147866.4355915,
+          "attempt": 1,
+          "finished_at": 1790147916.0795195,
+          "ready": true
+        }
+      ],
+      "pinned_image": "alexgshaw/model-extraction-relu-logits@sha256:52fe1f089f38650f0dc22d7531ee6e01ebd526de1b349aaa2ecb331dca9fabce",
+      "original_image": "alexgshaw/model-extraction-relu-logits:20251031",
+      "image_id": "sha256:52fe1f089f38650f0dc22d7531ee6e01ebd526de1b349aaa2ecb331dca9fabce",
+      "image_bytes": 316867867,
+      "checks": [
+        {
+          "method": "bestfgs",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        },
+        {
+          "method": "raw",
+          "fresh_container": true,
+          "runtime_import": true,
+          "setup_identical": true,
+          "ca_store": true
+        }
+      ],
+      "ready": true,
+      "attempts": 1,
+      "finished_at": 1790147916.0795162,
+      "setup_version": "shared-python-ca-v2"
+    }
+  },
+  "completed": true,
+  "current": null,
+  "updated_at": 1790147952.9365635,
+  "model_calls": 0,
+  "verifier_runs": 0
+}

@@ -1,0 +1,11 @@
+{
+  "pid": 565984,
+  "worker": 1,
+  "wait_for_pid": 555659,
+  "time": 1791055150.0765157,
+  "original_trials_only": true,
+  "failed_jobs_replayed": false,
+  "secret_values_read": false,
+  "rearmed": 1791055593.9408352,
+  "waits_for_supplementary_retry": true
+}

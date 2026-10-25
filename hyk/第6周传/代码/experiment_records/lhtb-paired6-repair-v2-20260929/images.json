@@ -1,0 +1,50 @@
+[
+  {
+    "task": "spot-scheduler-traces",
+    "image": "zli12321/lhtb-spot-scheduler-traces:20260615",
+    "id": "sha256:4617479c6226fcf72d83d7cb3e4e823c8e0c6289b1b7e4c5c4af4597a63bf8a1",
+    "digest": "sha256:4617479c6226fcf72d83d7cb3e4e823c8e0c6289b1b7e4c5c4af4597a63bf8a1",
+    "size": 84311729,
+    "reused": true
+  },
+  {
+    "task": "modflow6-groundwater-regression-audit",
+    "image": "zli12321/lhtb-modflow6-groundwater-regression-audit:20260615",
+    "id": "sha256:bedeaecd1bc6249440433c6735c8deb60f35965136bf700a49201be1eb7b9e9f",
+    "digest": "sha256:bedeaecd1bc6249440433c6735c8deb60f35965136bf700a49201be1eb7b9e9f",
+    "size": 235478399,
+    "reused": true
+  },
+  {
+    "task": "foldseek-paper-reproduction",
+    "image": "zli12321/lhtb-foldseek-paper-reproduction:20260615",
+    "id": "sha256:e0aa5be7b3c49155fb347e15beebc93e956d125ae74739f2b91cbd4a7612ee9f",
+    "digest": "sha256:e0aa5be7b3c49155fb347e15beebc93e956d125ae74739f2b91cbd4a7612ee9f",
+    "size": 105584658,
+    "reused": true
+  },
+  {
+    "task": "gdal-proj-raster-regression",
+    "image": "zli12321/lhtb-gdal-proj-raster-regression:20260615",
+    "id": "sha256:9a0ded6d51ce0c5a3d7b311f3f35b797bda88f5767386a8c1d1f737f10fdb61f",
+    "digest": "sha256:9a0ded6d51ce0c5a3d7b311f3f35b797bda88f5767386a8c1d1f737f10fdb61f",
+    "size": 165383661,
+    "reused": true
+  },
+  {
+    "task": "climate-netcdf-extreme-event-audit",
+    "image": "zhongzhi660/lhtb-climate-netcdf-extreme-event-audit:20260709",
+    "id": "sha256:354f0aac6a0128a3c7d48328bcaa37c238acde68b1b5df2e576a64fd9078d40d",
+    "digest": "sha256:354f0aac6a0128a3c7d48328bcaa37c238acde68b1b5df2e576a64fd9078d40d",
+    "size": 149449534,
+    "reused": true
+  },
+  {
+    "task": "great-expectations-audit",
+    "image": "zli12321/lhtb-great-expectations-audit:20260615",
+    "id": "sha256:30db89ec62c1d36d8b944f5fcfae2dd5ebad3f9adcb6bca79faff715c09a11bf",
+    "digest": "sha256:30db89ec62c1d36d8b944f5fcfae2dd5ebad3f9adcb6bca79faff715c09a11bf",
+    "size": 281003649,
+    "reused": true
+  }
+]

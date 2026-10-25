@@ -1,0 +1,484 @@
+{
+  "updated": 1791301942.8086662,
+  "workers": [
+    {
+      "state": "generation_complete",
+      "worker": 0,
+      "pid": 1231813,
+      "new_api_key": true,
+      "errors": [],
+      "updated": 1791293350.950786,
+      "active": [],
+      "pending": [],
+      "completed": [
+        {
+          "job": "dsh--cs61_fa24_scheme",
+          "task": "cs61_fa24_scheme",
+          "state": "awaiting_grade",
+          "started": 1791230349.890871,
+          "fresh_rootfs": true,
+          "fresh_home": true,
+          "worker": null,
+          "runtime_version": "0.2.0-rc.2",
+          "api_key_visible_in_task": false,
+          "paid": true,
+          "resources": {
+            "cpu_affinity": [
+              0,
+              1
+            ],
+            "address_space_gib_per_process": 3
+          },
+          "updated": 1791231048.4249465,
+          "api_attempts": 348,
+          "usage": {
+            "prompt_tokens": 2983683,
+            "completion_tokens": 78031,
+            "total_tokens": 3061714
+          },
+          "exit_code": 0,
+          "native_finish_reason": "completed",
+          "logical_model_requests": 348,
+          "root_tool_dispatches": 302,
+          "all_model_streams": 348,
+          "stop_reason": "native_completed",
+          "maximum_input_bytes": 42556,
+          "artifact": {
+            "path": "/mnt/lizh639/longcli-dsh20-byte-context-repair-20261006/jobs/dsh--cs61_fa24_scheme/final-source.tar.gz",
+            "sha256": "2e605a764c0391c9cf538c7837bd775d01cfcb350b3f241475abeede08159dd3",
+            "entries": 337,
+            "source_only": true
+          },
+          "ended": 1791231054.7441676,
+          "seconds": 704.853296995163,
+          "task_processes_stopped": true
+        },
+        {
+          "job": "dsh--cs61_fa24_hw08",
+          "task": "cs61_fa24_hw08",
+          "state": "awaiting_grade",
+          "started": 1791231062.3491437,
+          "fresh_rootfs": true,
+          "fresh_home": true,
+          "worker": null,
+          "runtime_version": "0.2.0-rc.2",
+          "api_key_visible_in_task": false,
+          "paid": true,
+          "resources": {
+            "cpu_affinity": [
+              0,
+              1
+            ],
+            "address_space_gib_per_process": 3
+          },
+          "updated": 1791231272.262974,
+          "api_attempts": 85,
+          "usage": {
+            "prompt_tokens": 706194,
+            "completion_tokens": 16730,
+            "total_tokens": 722924
+          },
+          "exit_code": 0,
+          "native_finish_reason": "completed",
+          "logical_model_requests": 85,
+          "root_tool_dispatches": 72,
+          "all_model_streams": 85,
+          "stop_reason": "native_completed",
+          "maximum_input_bytes": 38933,
+          "artifact": {
+            "path": "/mnt/lizh639/longcli-dsh20-byte-context-repair-20261006/jobs/dsh--cs61_fa24_hw08/final-source.tar.gz",
+            "sha256": "2745583dd0d09098d208948c30113e216788ac56285258fc5360d128054d0e3e",
+            "entries": 308,
+            "source_only": true
+          },
+          "ended": 1791231278.2252414,
+          "seconds": 215.87609839439392,
+          "task_processes_stopped": true
+        },
+        {
+          "job": "dsh--cmu15_445_p1",
+          "task": "cmu15_445_p1",
+          "state": "awaiting_grade",
+          "started": 1791231284.9052994,
+          "fresh_rootfs": true,
+          "fresh_home": true,
+          "worker": null,
+          "runtime_version": "0.2.0-rc.2",
+          "api_key_visible_in_task": false,
+          "paid": true,
+          "resources": {
+            "cpu_affinity": [
+              0,
+              1
+            ],
+            "address_space_gib_per_process": 3
+          },
+          "updated": 1791232722.6571987,
+          "api_attempts": 600,
+          "usage": {
+            "prompt_tokens": 5168900,
+            "completion_tokens": 206164,
+            "total_tokens": 5375064
+          },
+          "exit_code": 1,
+          "native_finish_reason": "error",
+          "logical_model_requests": 600,
+          "root_tool_dispatches": 600,
+          "all_model_streams": 600,
+          "stop_reason": "tool_budget",
+          "maximum_input_bytes": 42392,
+          "artifact": {
+            "path": "/mnt/lizh639/longcli-dsh20-byte-context-repair-20261006/jobs/dsh--cmu15_445_p1/final-source.tar.gz",
+            "sha256": "d48be19369dddf0e256efdacf5489bc17f0f6935f4d5287c54a908e01ae43df7",
+            "entries": 1372,
+            "source_only": true
+          },
+          "ended": 1791232734.8218365,
+          "seconds": 1449.9165380001068,
+          "task_processes_stopped": true
+        },
+        {
+          "job": "dsh--cs61_fa24_cats",
+          "task": "cs61_fa24_cats",
+          "state": "awaiting_grade",
+          "started": 1791230349.8910434,
+          "fresh_rootfs": true,
+          "fresh_home": true,
+          "worker": null,
+          "runtime_version": "0.2.0-rc.2",
+          "api_key_visible_in_task": false,
+          "paid": true,
+          "resources": {
+            "cpu_affinity": [
+              2,
+              3
+            ],
+            "address_space_gib_per_process": 3
+          },
+          "updated": 1791237712.9787803,
+          "api_attempts": 154,
+          "usage": {
+            "prompt_tokens": 1308644,
+            "completion_tokens": 38175,
+            "total_tokens": 1346819
+          },
+          "stop_reason": "wall_budget",
+          "exit_code": 0,
+          "native_finish_reason": null,
+          "logical_model_requests": 154,
+          "root_tool_dispatches": 130,
+          "all_model_streams": 154,
+          "maximum_input_bytes": 44071,
+          "artifact": {
+            "path": "/mnt/lizh639/longcli-dsh20-byte-context-repair-20261006/jobs/dsh--cs61_fa24_cats/final-source.tar.gz",
+            "sha256": "ae541d81ebf9bfd5dd76e9490eb271f9ec2e7a299fb155f469db5fdd8003f2d1",
+            "entries": 48,
+            "source_only": true
+          },
+          "ended": 1791237724.438524,
+          "seconds": 7374.547481536865,
+          "task_processes_stopped": true
+        },
+        {
+          "job": "dsh--ap1400_2_hw26",
+          "task": "ap1400_2_hw26",
+          "state": "awaiting_grade",
+          "started": 1791232740.4355268,
+          "fresh_rootfs": true,
+          "fresh_home": true,
+          "worker": null,
+          "runtime_version": "0.2.0-rc.2",
+          "api_key_visible_in_task": false,
+          "paid": true,
+          "resources": {
+            "cpu_affinity": [
+              0,
+              1
+            ],
+            "address_space_gib_per_process": 3
+          },
+          "updated": 1791239525.8918521,
+          "api_attempts": 592,
+          "usage": {
+            "prompt_tokens": 5143535,
+            "completion_tokens": 210610,
+            "total_tokens": 5354145
+          },
+          "exit_code": 0,
+          "native_finish_reason": "completed",
+          "logical_model_requests": 592,
+          "root_tool_dispatches": 488,
+          "all_model_streams": 592,
+          "stop_reason": "native_completed",
+          "maximum_input_bytes": 40399,
+          "error_type": "RuntimeError",
+          "error": "Refusing external artifact link",
+          "ended": 1791239532.556252,
+          "seconds": 6792.120726108551,
+          "task_processes_stopped": true,
+          "artifact": {
+            "path": "/mnt/lizh639/longcli-dsh20-byte-context-repair-20261006/jobs/dsh--ap1400_2_hw26/final-source.tar.gz",
+            "sha256": "5f14a7a279dfa221f16e7b41a2f56d847331ff0b75eb1480fa3885917bc3f23b",
+            "entries": 2815,
+            "source_only": true,
+            "compiled_exclusions": 2,
+            "transport_adapter": "compiled-suffix-before-link-check"
+          },
+          "artifact_recovered_at": 1791284590.9237587,
+          "original_engineering_failure_preserved": "summary-before-artifact-recovery.json",
+          "paid_solver_rerun": false
+        },
+        {
+          "job": "dsh--61810_cow",
+          "task": "61810_cow",
+          "state": "awaiting_grade",
+          "started": 1791237733.6005986,
+          "fresh_rootfs": true,
+          "fresh_home": true,
+          "worker": null,
+          "runtime_version": "0.2.0-rc.2",
+          "api_key_visible_in_task": false,
+          "paid": true,
+          "resources": {
+            "cpu_affinity": [
+              2,
+              3
+            ],
+            "address_space_gib_per_process": 3
+          },
+          "updated": 1791240935.174978,
+          "api_attempts": 705,
+          "usage": {
+            "prompt_tokens": 6162040,
+            "completion_tokens": 139526,
+            "total_tokens": 6301566
+          },
+          "exit_code": 1,
+          "native_finish_reason": "error",
+          "logical_model_requests": 705,
+          "root_tool_dispatches": 600,
+          "all_model_streams": 705,
+          "stop_reason": "tool_budget",
+          "maximum_input_bytes": 41602,
+          "artifact": {
+            "path": "/mnt/lizh639/longcli-dsh20-byte-context-repair-20261006/jobs/dsh--61810_cow/final-source.tar.gz",
+            "sha256": "9b9d3d045b548acf9dd8ae6b7b25aae03336d107dac11a84290581fa44691349",
+            "entries": 189,
+            "source_only": true
+          },
+          "ended": 1791240941.9540055,
+          "seconds": 3208.3534076213837,
+          "task_processes_stopped": true
+        },
+        {
+          "job": "dsh--61810_net",
+          "task": "61810_net",
+          "state": "awaiting_grade",
+          "started": 1791285127.6865213,
+          "fresh_rootfs": true,
+          "fresh_home": true,
+          "worker": "0",
+          "runtime_version": "0.2.0-rc.2",
+          "api_key_visible_in_task": false,
+          "paid": true,
+          "resources": {
+            "cpu_affinity": [
+              2,
+              3
+            ],
+            "address_space_gib_per_process": 3
+          },
+          "updated": 1791286802.5611358,
+          "api_attempts": 669,
+          "usage": {
+            "prompt_tokens": 5849442,
+            "completion_tokens": 149026,
+            "total_tokens": 5998468
+          },
+          "exit_code": 0,
+          "native_finish_reason": "completed",
+          "logical_model_requests": 669,
+          "root_tool_dispatches": 569,
+          "all_model_streams": 669,
+          "stop_reason": "native_completed",
+          "maximum_input_bytes": 45190,
+          "artifact": {
+            "path": "/mnt/lizh639/longcli-dsh20-byte-context-repair-20261006/jobs/dsh--61810_net/final-source.tar.gz",
+            "sha256": "c1f14293694383fd1d7514ba4baabbb3f567c26224ff94d9a925ca4617506d1c",
+            "entries": 203,
+            "source_only": true,
+            "compiled_exclusions": 53,
+            "transport_adapter": "compiled-suffix-before-link-check"
+          },
+          "ended": 1791286809.102703,
+          "seconds": 1681.4161829948425,
+          "task_processes_stopped": true
+        },
+        {
+          "job": "dsh--61810_syscall",
+          "task": "61810_syscall",
+          "state": "awaiting_grade",
+          "started": 1791286817.727173,
+          "fresh_rootfs": true,
+          "fresh_home": true,
+          "worker": "0",
+          "runtime_version": "0.2.0-rc.2",
+          "api_key_visible_in_task": false,
+          "paid": true,
+          "resources": {
+            "cpu_affinity": [
+              2,
+              3
+            ],
+            "address_space_gib_per_process": 3
+          },
+          "updated": 1791292436.2306879,
+          "api_attempts": 160,
+          "usage": {
+            "prompt_tokens": 1375503,
+            "completion_tokens": 34179,
+            "total_tokens": 1409682
+          },
+          "exit_code": 0,
+          "native_finish_reason": "completed",
+          "logical_model_requests": 160,
+          "root_tool_dispatches": 134,
+          "all_model_streams": 160,
+          "stop_reason": "native_completed",
+          "maximum_input_bytes": 38875,
+          "artifact": {
+            "path": "/mnt/lizh639/longcli-dsh20-byte-context-repair-20261006/jobs/dsh--61810_syscall/final-source.tar.gz",
+            "sha256": "d4aecc3e27e769f1797b7d9901fd45856692e5bc879c98513b6e193bea4bf107",
+            "entries": 196,
+            "source_only": true,
+            "compiled_exclusions": 50,
+            "transport_adapter": "compiled-suffix-before-link-check"
+          },
+          "ended": 1791292442.290101,
+          "seconds": 5624.562929153442,
+          "task_processes_stopped": true
+        },
+        {
+          "job": "dsh--61810_lock",
+          "task": "61810_lock",
+          "state": "awaiting_grade",
+          "started": 1791285127.685636,
+          "fresh_rootfs": true,
+          "fresh_home": true,
+          "worker": "0",
+          "runtime_version": "0.2.0-rc.2",
+          "api_key_visible_in_task": false,
+          "paid": true,
+          "resources": {
+            "cpu_affinity": [
+              0,
+              1
+            ],
+            "address_space_gib_per_process": 3
+          },
+          "updated": 1791292461.9256814,
+          "api_attempts": 517,
+          "usage": {
+            "prompt_tokens": 4512706,
+            "completion_tokens": 136900,
+            "total_tokens": 4649606
+          },
+          "stop_reason": "wall_budget",
+          "exit_code": 0,
+          "native_finish_reason": null,
+          "logical_model_requests": 517,
+          "root_tool_dispatches": 408,
+          "all_model_streams": 517,
+          "maximum_input_bytes": 40523,
+          "artifact": {
+            "path": "/mnt/lizh639/longcli-dsh20-byte-context-repair-20261006/jobs/dsh--61810_lock/final-source.tar.gz",
+            "sha256": "52ac0220ede7cc5a55e7e67d5c4160400427c9b022f4e7ba21d84f5e4e91fe26",
+            "entries": 205,
+            "source_only": true,
+            "compiled_exclusions": 54,
+            "transport_adapter": "compiled-suffix-before-link-check"
+          },
+          "ended": 1791292474.0768237,
+          "seconds": 7346.391189336777,
+          "task_processes_stopped": true
+        },
+        {
+          "job": "dsh--61810_traps",
+          "task": "61810_traps",
+          "state": "awaiting_grade",
+          "started": 1791292451.3878007,
+          "fresh_rootfs": true,
+          "fresh_home": true,
+          "worker": "0",
+          "runtime_version": "0.2.0-rc.2",
+          "api_key_visible_in_task": false,
+          "paid": true,
+          "resources": {
+            "cpu_affinity": [
+              2,
+              3
+            ],
+            "address_space_gib_per_process": 3
+          },
+          "updated": 1791293335.7663443,
+          "api_attempts": 469,
+          "usage": {
+            "prompt_tokens": 4289437,
+            "completion_tokens": 105910,
+            "total_tokens": 4395347
+          },
+          "exit_code": 1,
+          "native_finish_reason": "error",
+          "logical_model_requests": 469,
+          "root_tool_dispatches": 600,
+          "all_model_streams": 469,
+          "stop_reason": "tool_budget",
+          "maximum_input_bytes": 41847,
+          "artifact": {
+            "path": "/mnt/lizh639/longcli-dsh20-byte-context-repair-20261006/jobs/dsh--61810_traps/final-source.tar.gz",
+            "sha256": "6bf2b7c0377581a9e09288a07554f931d4ad5c92bab046d8d8ecf313c9b16f97",
+            "entries": 86,
+            "source_only": true,
+            "compiled_exclusions": 0,
+            "transport_adapter": "compiled-suffix-before-link-check"
+          },
+          "ended": 1791293341.3065782,
+          "seconds": 889.9187786579132,
+          "task_processes_stopped": true
+        }
+      ],
+      "artifact_transport_repaired_at": 1791284590.9878306,
+      "resume_started": 1791285127.684555,
+      "resumed_never_started_only": true,
+      "prior_errors": [
+        {
+          "task": "ap1400_2_hw26",
+          "reason": "engineering_failure",
+          "no_auto_retry": true
+        }
+      ]
+    }
+  ],
+  "graded": [
+    "dsh--61810_cow",
+    "dsh--61810_fs",
+    "dsh--61810_mmap",
+    "dsh--61810_net",
+    "dsh--61810_pgtbl",
+    "dsh--61810_thread",
+    "dsh--61810_util",
+    "dsh--ap1400_2_hw26",
+    "dsh--ap1400_2_hw35",
+    "dsh--cmu15_445_p0",
+    "dsh--cmu15_445_p1",
+    "dsh--cmu15_445_p2",
+    "dsh--cs61_fa24_ants",
+    "dsh--cs61_fa24_cats",
+    "dsh--cs61_fa24_hog",
+    "dsh--cs61_fa24_hw08",
+    "dsh--cs61_fa24_scheme"
+  ],
+  "grading_job": "dsh--61810_syscall",
+  "grading_state": "grading_already_claimed",
+  "paid_model_calls_by_relay": 0
+}

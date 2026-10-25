@@ -1,0 +1,114 @@
+{
+  "accepted": true,
+  "reasons": [],
+  "source_count": 2,
+  "source_repaired": 2,
+  "source_candidate_passed": 2,
+  "dev_count": 4,
+  "anchor_count": 4,
+  "anchor_regressions": 0,
+  "dev_baseline_rate": 1.0,
+  "dev_candidate_rate": 1.0,
+  "policy": "strict_no_regression_v1_engineering_choice",
+  "schema_version": 1,
+  "base_digest": "843aaf6704712b73b35fd3c50160ff1f967daa36c57593a7e9f193f095186f75",
+  "candidate_digest": "90ebd8db54a6ecfe045eb376769c07ef56f98280d0ca47297f4c815bdd018999",
+  "deployed_digest": "90ebd8db54a6ecfe045eb376769c07ef56f98280d0ca47297f4c815bdd018999",
+  "source_task_id": "source",
+  "source_attempt_dir": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recuris-frozen-small20-20261007\\handoff-test-local\\test_trace_partition_accepts_r0\\failed-source",
+  "replicate_indices": [
+    0,
+    1
+  ],
+  "deterministic_model_seeds": false,
+  "split": {
+    "evolve": [
+      "source",
+      "other-evolve"
+    ],
+    "dev": [
+      "dev-anchor",
+      "dev-other"
+    ],
+    "test": [
+      "unseen-test"
+    ],
+    "seeds": [
+      0,
+      1
+    ]
+  },
+  "evidence": {
+    "source": [
+      {
+        "task_id": "source",
+        "seed": 0,
+        "baseline": false,
+        "candidate": true,
+        "baseline_attempt_dir": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recuris-frozen-small20-20261007\\handoff-test-local\\test_trace_partition_accepts_r0\\source-0-baseline",
+        "candidate_attempt_dir": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recuris-frozen-small20-20261007\\handoff-test-local\\test_trace_partition_accepts_r0\\source-0-candidate",
+        "baseline_run_id": "source-0-baseline",
+        "candidate_run_id": "source-0-candidate"
+      },
+      {
+        "task_id": "source",
+        "seed": 1,
+        "baseline": false,
+        "candidate": true,
+        "baseline_attempt_dir": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recuris-frozen-small20-20261007\\handoff-test-local\\test_trace_partition_accepts_r0\\source-1-baseline",
+        "candidate_attempt_dir": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recuris-frozen-small20-20261007\\handoff-test-local\\test_trace_partition_accepts_r0\\source-1-candidate",
+        "baseline_run_id": "source-1-baseline",
+        "candidate_run_id": "source-1-candidate"
+      }
+    ],
+    "dev": [
+      {
+        "task_id": "dev-anchor",
+        "seed": 0,
+        "baseline": true,
+        "candidate": true,
+        "baseline_attempt_dir": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recuris-frozen-small20-20261007\\handoff-test-local\\test_trace_partition_accepts_r0\\dev-anchor-0-baseline",
+        "candidate_attempt_dir": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recuris-frozen-small20-20261007\\handoff-test-local\\test_trace_partition_accepts_r0\\dev-anchor-0-candidate",
+        "baseline_run_id": "dev-anchor-0-baseline",
+        "candidate_run_id": "dev-anchor-0-candidate"
+      },
+      {
+        "task_id": "dev-anchor",
+        "seed": 1,
+        "baseline": true,
+        "candidate": true,
+        "baseline_attempt_dir": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recuris-frozen-small20-20261007\\handoff-test-local\\test_trace_partition_accepts_r0\\dev-anchor-1-baseline",
+        "candidate_attempt_dir": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recuris-frozen-small20-20261007\\handoff-test-local\\test_trace_partition_accepts_r0\\dev-anchor-1-candidate",
+        "baseline_run_id": "dev-anchor-1-baseline",
+        "candidate_run_id": "dev-anchor-1-candidate"
+      },
+      {
+        "task_id": "dev-other",
+        "seed": 0,
+        "baseline": true,
+        "candidate": true,
+        "baseline_attempt_dir": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recuris-frozen-small20-20261007\\handoff-test-local\\test_trace_partition_accepts_r0\\dev-other-0-baseline",
+        "candidate_attempt_dir": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recuris-frozen-small20-20261007\\handoff-test-local\\test_trace_partition_accepts_r0\\dev-other-0-candidate",
+        "baseline_run_id": "dev-other-0-baseline",
+        "candidate_run_id": "dev-other-0-candidate"
+      },
+      {
+        "task_id": "dev-other",
+        "seed": 1,
+        "baseline": true,
+        "candidate": true,
+        "baseline_attempt_dir": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recuris-frozen-small20-20261007\\handoff-test-local\\test_trace_partition_accepts_r0\\dev-other-1-baseline",
+        "candidate_attempt_dir": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recuris-frozen-small20-20261007\\handoff-test-local\\test_trace_partition_accepts_r0\\dev-other-1-candidate",
+        "baseline_run_id": "dev-other-1-baseline",
+        "candidate_run_id": "dev-other-1-candidate"
+      }
+    ]
+  },
+  "input_artifact_hashes": {
+    "base_memory": "f18c4239acd3dff13fe70d1130aa98fba7774e646a85fe28cba0784f9db92857",
+    "candidate": "f667b834fce8b405648091aa4aee8cd528a6b6bf8c0bf78bf55283bd20adee8d",
+    "evaluations": "664c7b78333d2901e7ae399701aa8baa9c0a1d5a272d71666d49426efb5d6cfe",
+    "split": "22cc5b9011ec8f96e20f3869b10465330b521798e95872fb889caa02f1426b01"
+  },
+  "integrity_scope": "local_hash_consistency_not_cryptographic_authentication"
+}

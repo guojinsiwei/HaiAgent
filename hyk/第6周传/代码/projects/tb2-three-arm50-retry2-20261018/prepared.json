@@ -1,0 +1,10 @@
+{
+  "previous": "/mnt/sdb/home/lizh639/tb2-three-arm50-retry-20261018",
+  "archives": {
+    "runtime-final.tar.gz": "0d76016ef642d4b6718095e120aa52615756dce85110cbe27b3d9e7a8768836a",
+    "python-runtime.tar.gz": "178d3d83b6e8e99285a65d3fce9c16b87952cc5efdb4d1a0e3ff3be18ff0fc9c",
+    "native-runtime.tar.gz": "11333afc281dd98ba5ac32be2ac5c6767d4cf659a4af5450ab805b86e057729a",
+    "verifier-deps.tar.gz": "9f1c7a9296f7587734f8fc372f37b8d7f3d9c08e94b4b196f301b1d98f160549"
+  },
+  "physical_archives": true
+}

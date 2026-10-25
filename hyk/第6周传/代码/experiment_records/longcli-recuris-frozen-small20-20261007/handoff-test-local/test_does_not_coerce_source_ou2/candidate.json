@@ -1,0 +1,54 @@
+{
+  "diagnoses": [
+    {
+      "component": "E",
+      "description": "Missing validation",
+      "evidence_step_ids": [
+        1
+      ]
+    }
+  ],
+  "base_digest": "843aaf6704712b73b35fd3c50160ff1f967daa36c57593a7e9f193f095186f75",
+  "candidate_memory": {
+    "schema_version": 1,
+    "E": [
+      {
+        "id": "check",
+        "description": "Check requirements",
+        "content": "Read back all requested fields.",
+        "tags": []
+      }
+    ],
+    "W": {
+      "init_guidance": "Track goals",
+      "update_guidance": "Use evidence",
+      "max_goals": 8
+    },
+    "rho": {
+      "trigger": "first_turn",
+      "retrieval": "all",
+      "max_skills": 8
+    },
+    "C": {
+      "required_output": [],
+      "forbidden_output": []
+    }
+  },
+  "changed_components": [
+    "E"
+  ],
+  "candidate_digest": "90ebd8db54a6ecfe045eb376769c07ef56f98280d0ca47297f4c815bdd018999",
+  "mode": "cross_task",
+  "input_tokens": 50,
+  "output_tokens": 30,
+  "model_calls": 2,
+  "elapsed_seconds": 0.0,
+  "no_op": false,
+  "reason": "",
+  "trace_step_ids": [
+    1
+  ],
+  "omitted_step_ids": [],
+  "source_task_id": "source",
+  "source_attempt_dir": "failed-source"
+}

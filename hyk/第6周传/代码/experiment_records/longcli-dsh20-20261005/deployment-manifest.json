@@ -1,0 +1,22 @@
+{
+  "state": "ready_not_started",
+  "official_dsh_version": "0.2.0-rc.2",
+  "files": {
+    "runner.py": "fd8a855aaf4d1cccf90f6fcdfedd05d74d7abc9194689934b8de38c8edec67aa",
+    "launch.py": "4ed7cd787e238ab2ad59d4a39655bb43078c20472f40f3ba1515cf65d9eaa301",
+    "budget.mjs": "1976fbe88f39fb71d18faae1cf4db89986a90afdf67f52ec898f8daf0bfb5650",
+    "experiment.patch.yml": "37aafd22295ea71369787067322f8263532d0f6b579819303468ae5e58c90c1f",
+    "protocol.json": "1926ac28b35b6389a66793a64e26480ea0c29ebd29e0deb73cdc13a90dc8edd9",
+    "common.py": "c75bbfacae1b783546fb810a8abee158e4d23bdc65481b0521ea20b84a0ab2d1",
+    "college_grader.py": "e557933f3896136ec32b0827e255b7f1b96027c56ec336de4403018425acd298",
+    "input-manifest.json": "fd73350dc674eb82f1d6978c4eb922c69f128e35a483c65fa732141230cec6bc",
+    "test_budget.mjs": "72200fa862501ebdd372030e2441e8086b534dec0d43ad10784d55af3ad795dd",
+    "validate.py": "2e47d60638e1ceb014f5af04ad5bfaed49362c53ece9bb589c0564c5e3726a69",
+    "return_artifacts.py": "0b6391d3f8119c7b2333b8c593ffb5cf14686340b5b3474e367a5c1d81374746",
+    "runtime/dsh/package-lock.json": "4ac761594c37ae04f2c2283010bc1c337ee98fcd8a02f4d1ff7b21cbe0c0c8df",
+    "runtime/dsh/node_modules/@deepseek-ai/dsh/lib/bin.js": "1a03dee18683483ff6a1b27b2a1e650230da6bcca9a0f55f7d81b3308c3f307f",
+    "runtime/dsh/node_modules/@deepseek-ai/dsh-base/cordis.patch.yml": "9c2be64f46a193eff3cca190c26e697e8e8eee25c9b40149dfdb56f8142c252d",
+    "runtime/node/package/bin/node": "596b5144ff242737f1c1be6a5f0ccb3907dbba2482344143cb1a6898633402a9"
+  },
+  "paid_api_requests": 0
+}

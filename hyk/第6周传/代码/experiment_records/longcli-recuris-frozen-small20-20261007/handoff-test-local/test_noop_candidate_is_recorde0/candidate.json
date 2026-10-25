@@ -1,0 +1,37 @@
+{
+  "diagnoses": [],
+  "base_digest": "843aaf6704712b73b35fd3c50160ff1f967daa36c57593a7e9f193f095186f75",
+  "candidate_memory": {
+    "schema_version": 1,
+    "E": [],
+    "W": {
+      "init_guidance": "Track goals",
+      "update_guidance": "Use evidence",
+      "max_goals": 8
+    },
+    "rho": {
+      "trigger": "first_turn",
+      "retrieval": "all",
+      "max_skills": 8
+    },
+    "C": {
+      "required_output": [],
+      "forbidden_output": []
+    }
+  },
+  "changed_components": [],
+  "candidate_digest": "843aaf6704712b73b35fd3c50160ff1f967daa36c57593a7e9f193f095186f75",
+  "mode": "cross_task",
+  "input_tokens": 50,
+  "output_tokens": 30,
+  "model_calls": 2,
+  "elapsed_seconds": 0.0,
+  "no_op": true,
+  "reason": "No useful memory repair",
+  "trace_step_ids": [
+    1
+  ],
+  "omitted_step_ids": [],
+  "source_task_id": "source",
+  "source_attempt_dir": "failed-source"
+}

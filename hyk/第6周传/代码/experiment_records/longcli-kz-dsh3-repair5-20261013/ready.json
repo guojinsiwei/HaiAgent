@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "paid_api_requests": 0,
+  "checks": [
+    {
+      "name": "KZ regressions",
+      "passed": true,
+      "test_files": 27,
+      "totals": {
+        "tests": 340,
+        "pass": 340,
+        "fail": 0,
+        "skipped": 0
+      },
+      "tail": "uses a linked workspace root\n  ---\n  duration_ms: 1.014317\n  type: 'test'\n  ...\n# Subtest: R4 task instruction: refuses a linked file pointing outside the task\nok 340 - R4 task instruction: refuses a linked file pointing outside the task\n  ---\n  duration_ms: 1.125578\n  type: 'test'\n  ...\n1..340\n# tests 340\n# suites 0\n# pass 340\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 1522.165975\n"
+    },
+    {
+      "name": "cs61_fa24_hog shell",
+      "passed": true,
+      "stdout": "Python 3.12.3"
+    },
+    {
+      "name": "cs61_fa24_cats shell",
+      "passed": true,
+      "stdout": "Python 3.12.3"
+    },
+    {
+      "name": "ap1400_2_hw35 shell",
+      "passed": true,
+      "stdout": "Python 3.12.3"
+    },
+    {
+      "name": "native chain and compression",
+      "exit_code": 0,
+      "requests": 6,
+      "real_bash_receipt": true,
+      "settings": true,
+      "compaction_successes": 1,
+      "compaction_errors": [],
+      "request_accounting": true,
+      "compaction_accounting": true,
+      "kz_tool_present": true,
+      "paid_requests": 0,
+      "pipeline_stages_verified": true,
+      "canonical_task_bound": true,
+      "subgoal_plan_requested": true,
+      "passed": true
+    },
+    {
+      "name": "official starter grading",
+      "passed": true,
+      "score": 0.0,
+      "p2p_count": 17
+    }
+  ]
+}

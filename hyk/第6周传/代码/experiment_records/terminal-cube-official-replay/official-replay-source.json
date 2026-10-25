@@ -1,0 +1,100 @@
+[
+  {
+    "method": "bestfgs",
+    "task": "polyglot-c-py",
+    "source_candidate": "/mnt/lizh639/bestfgs-runs/terminal-cube-pilot-20260920T134839-339214/bestfgs/polyglot-c-py/attempt-f467cac02fb249539e4f247e1c3e13e3/snapshots/snapshot_90aaa0b304be4a38",
+    "files": [
+      {
+        "path": "polyglot/cmain",
+        "sha256": "2a0d9eeaa489dc5c380c024b78870d85bfa940d61e1482dd2fba3c4512d4bcf0",
+        "mode": 493
+      },
+      {
+        "path": "polyglot/main.py.c",
+        "sha256": "fefa3b96b484da1c34adea34298828e9d26487a5f05584b78fbee635e3358dff",
+        "mode": 420
+      }
+    ]
+  },
+  {
+    "method": "bestfgs",
+    "task": "openssl-selfsigned-cert",
+    "source_candidate": "/mnt/lizh639/bestfgs-runs/terminal-cube-pilot-20260920T134839-339214/bestfgs/openssl-selfsigned-cert/attempt-6bb10583007143f4941eb85a81f3eb90/snapshots/snapshot_502f4f9c85324524",
+    "files": [
+      {
+        "path": "check_cert.py",
+        "sha256": "e0c054067622e1b41cfedb6a8fbd68202e0c7fa525fa2bdbd3f1178fff261113",
+        "mode": 420
+      },
+      {
+        "path": "ssl/server.crt",
+        "sha256": "003f5df98829c9be15c242b863a27e0101af0bf2ed8e7bcc882fe92e2a4b6b6a",
+        "mode": 420
+      },
+      {
+        "path": "ssl/server.key",
+        "sha256": "acd4e65c4ab2df5684ac7c63c8778043dd36b216581e197311c070c58bd0567f",
+        "mode": 384
+      },
+      {
+        "path": "ssl/server.pem",
+        "sha256": "b81e79754dd84f2f8f930e4ff7407c06943355528c2635760836de32486ba6ba",
+        "mode": 420
+      },
+      {
+        "path": "ssl/verification.txt",
+        "sha256": "cee57079bf84512e0482e7711647a46e9b31ea14c1a9220f831bcd05e9fa83c0",
+        "mode": 420
+      }
+    ]
+  },
+  {
+    "method": "raw",
+    "task": "polyglot-c-py",
+    "source_candidate": "/mnt/lizh639/bestfgs-runs/terminal-cube-pilot-20260920T134839-339214/raw/polyglot-c-py/attempt-f08b3a04619948d19f56a39e51c156e0/snapshots/snapshot_f220ed5be9ed464d",
+    "files": [
+      {
+        "path": "polyglot/cmain",
+        "sha256": "210160300c9ac045ebe6b643c8ea60af9ec2018efba985a630f5b1609910d76a",
+        "mode": 493
+      },
+      {
+        "path": "polyglot/main.py.c",
+        "sha256": "f8771f689f17444e139f5ccecb553f3ea3b6d92e928ac6160e3afb92612f1832",
+        "mode": 420
+      }
+    ]
+  },
+  {
+    "method": "raw",
+    "task": "openssl-selfsigned-cert",
+    "source_candidate": "/mnt/lizh639/bestfgs-runs/terminal-cube-pilot-20260920T134839-339214/raw/openssl-selfsigned-cert/attempt-9fd03933f04f46f9a6dd6094bf939165/snapshots/snapshot_ac869f763b2b43bc",
+    "files": [
+      {
+        "path": "check_cert.py",
+        "sha256": "58aca1664d86cbd31daefab7242b0b002e4ff2b7c17c124250423862ae023804",
+        "mode": 420
+      },
+      {
+        "path": "ssl/server.crt",
+        "sha256": "348e323d0ded3b4b7b83c76fcd81803ff53da655420868cdf9340c908e0b407d",
+        "mode": 420
+      },
+      {
+        "path": "ssl/server.key",
+        "sha256": "567a0ef9f98aec5388be594492e2136cca8f67f97bfb81c531665d4aff0939c5",
+        "mode": 384
+      },
+      {
+        "path": "ssl/server.pem",
+        "sha256": "81990455d694169557fb67f570156fba44dc0a00670988ff05204659b13c2bb5",
+        "mode": 420
+      },
+      {
+        "path": "ssl/verification.txt",
+        "sha256": "5501197bb384ddd807ff2fd1bc8ef8fabe72c735b0ed4e75f5bb87b90181d2b9",
+        "mode": 420
+      }
+    ]
+  }
+]

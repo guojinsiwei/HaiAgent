@@ -1,0 +1,14 @@
+{
+  "make-pytest": {
+    "tag": "longcli-paired10-20261001/make-pytest:2015f37",
+    "id": "sha256:b287b885f05beae74d249992380c27298ab3584ad5a09367293945228aeeee0a",
+    "archive": "make-pytest-rootfs.tar",
+    "sha256": "a642b686382f71ba27006b2a99102b4e009474225940a5d00f7910ac3b5776f0"
+  },
+  "c-env": {
+    "tag": "longcli-paired10-20261001/c-env:2015f37",
+    "id": "sha256:f64b1afb86bc8dc4f6e0a0ee5ad531baa3ae89a58935d431ee1a6534fcea100a",
+    "archive": "c-env-rootfs.tar",
+    "sha256": "c22d8c551946f7208da76d1fc530abd059997c0ee304fec3a2bb3079c4e37ad2"
+  }
+}

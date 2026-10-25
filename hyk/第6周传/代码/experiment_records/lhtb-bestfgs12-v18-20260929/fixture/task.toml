@@ -1,0 +1,14 @@
+version = "1.0"
+[metadata]
+difficulty = "easy"
+[agent]
+timeout_sec = 240
+continue_until_timeout = true
+[verifier]
+timeout_sec = 30
+[environment]
+docker_image = "zli12321/lhtb-matpower-opf-regression:20260615"
+cpus = 2
+memory_mb = 4096
+storage_mb = 4096
+allow_internet = false

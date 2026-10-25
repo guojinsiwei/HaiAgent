@@ -1,0 +1,87 @@
+{
+  "passed": true,
+  "worker": 0,
+  "checks": [
+    {
+      "task": "cs61_fa24_scheme",
+      "method": "planner-v3",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "graph_parent_restore": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "cs61_fa24_cats",
+      "method": "planner-v3",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "graph_parent_restore": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "cs61_fa24_hw08",
+      "method": "planner-v3",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "graph_parent_restore": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "cmu15_445_p1",
+      "method": "planner-v3",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "graph_parent_restore": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "ap1400_2_hw26",
+      "method": "planner-v3",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "graph_parent_restore": true,
+      "submitted": true,
+      "model_calls": 0
+    }
+  ],
+  "model_calls": 0
+}

@@ -1,0 +1,62 @@
+{
+  "task": "microscopy-cell-count-qc-audit",
+  "method": "hai",
+  "report": "/var/tmp/lizh639-lhtb-hai082-only-r1/runs/hai-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__7bhNPTn/result.json",
+  "verifier_result": {
+    "rewards": {
+      "reward": 0.05125
+    }
+  },
+  "exception_info": null,
+  "process_exit_code": 0,
+  "audit_chain": {
+    "events": 1217,
+    "tail_sha256": "ab762e68479c310e6f55c8acbf9c974f7fe32314eafb7369e61404e2681f2434"
+  },
+  "mechanism_utilization": {
+    "automatic_memory_updates": 22,
+    "direction_stalls": 12,
+    "enabled": true,
+    "explained_retries": 3,
+    "inferred_strategy_actions": 0,
+    "inferred_subgoal_actions": 0,
+    "memory_action_changed": 6,
+    "memory_action_unchanged": 3,
+    "memory_behavior_chain_is_association_not_causation": true,
+    "memory_direction_changed": 6,
+    "memory_direction_unchanged": 3,
+    "memory_exact_action_changed": 6,
+    "memory_followup_actions": 9,
+    "memory_followup_runs": 7,
+    "memory_followup_succeeded": 7,
+    "memory_followup_workspace_changed": 0,
+    "memory_intervention_followup_coverage": 1.0,
+    "memory_interventions": 10,
+    "memory_override_reasons": 3,
+    "memory_override_reasons_exhausted": 3,
+    "memory_overrides_exhausted": 1,
+    "memory_recall_exposures": 350,
+    "memory_reconsiderations": 9,
+    "memory_rejections": 0,
+    "memory_use_self_reports": 1,
+    "model_declared_strategy_actions": 408,
+    "model_declared_subgoal_actions": 408,
+    "model_memory_admissions": 0,
+    "repeat_blocked": 0,
+    "repeat_decisions": 5,
+    "repeat_executed": 5,
+    "repetition_observations": 19,
+    "requests_with_recalled_memory": 350,
+    "run_decisions": 408,
+    "strategy_switches": 43,
+    "subgoal_switches": 0,
+    "unique_strategies": 3,
+    "unique_subgoals": 1,
+    "unverified_scope_soft_retries": 1
+  },
+  "classification": {
+    "stop_reason": "stagnation_limit",
+    "infrastructure_ok": true,
+    "reasons": []
+  }
+}

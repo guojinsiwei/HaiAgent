@@ -1,0 +1,28 @@
+{
+  "state": "ready_not_started",
+  "official_dsh_version": "0.2.0-rc.2",
+  "files": {
+    "runner.py": "676c5075f1dc0c076a8440385b0450e85f1f09ccf78ae838019b6abf843465c3",
+    "launch.py": "4ed7cd787e238ab2ad59d4a39655bb43078c20472f40f3ba1515cf65d9eaa301",
+    "budget.mjs": "0a920ea17d89edacefc24079045db73dd8a4d06e7275e9f887ae7298ea0bb79e",
+    "experiment.patch.yml": "a67fc529074b49a357ec1cfaff6e3a4ed11b305cf333e540d260e0aeb5abbe08",
+    "protocol.json": "47be9440127e650671525262ca71d3296d923be1aba9e0ba92330474d343b7ed",
+    "common.py": "c75bbfacae1b783546fb810a8abee158e4d23bdc65481b0521ea20b84a0ab2d1",
+    "college_grader.py": "e557933f3896136ec32b0827e255b7f1b96027c56ec336de4403018425acd298",
+    "input-manifest.json": "fd73350dc674eb82f1d6978c4eb922c69f128e35a483c65fa732141230cec6bc",
+    "test_budget.mjs": "72200fa862501ebdd372030e2441e8086b534dec0d43ad10784d55af3ad795dd",
+    "validate.py": "2e47d60638e1ceb014f5af04ad5bfaed49362c53ece9bb589c0564c5e3726a69",
+    "return_artifacts.py": "f8ec5ee3864c82c6630f5534133128dea63d0f7a4a8dc0b2f2b431bf801dbd5e",
+    "test_controller.py": "a8941a1d79fb6d93c11be10ed3c102b95300d6e5e1d14da6d02c0ba125280da1",
+    "check_ready.py": "b1e8ab435d892423f1b07d0a3befa9128ce84bda6c4835e6655c01bb5df220d8",
+    "keyless-acceptance.json": "62eeb73536786857a3c9afd522f7489f921a52d29ca4c6bdbdeef573c1438de8",
+    "pressure-acceptance.json": "76efce27bcc4c90db49aed647cb1a15e8d54f7030d15e138e4013dc45aac1f25",
+    "grading-acceptance.json": "22c1ee9d1cc287337ff489c0f70db7fdcf6c503e523655fd35ac31479b235042",
+    "environment-acceptance.json": "8ba0bbbe8544a2a3cf30387ad82899b911be2c6158218aaeb7458c6d87552ba8",
+    "runtime/dsh/package-lock.json": "4ac761594c37ae04f2c2283010bc1c337ee98fcd8a02f4d1ff7b21cbe0c0c8df",
+    "runtime/dsh/node_modules/@deepseek-ai/dsh/lib/bin.js": "1a03dee18683483ff6a1b27b2a1e650230da6bcca9a0f55f7d81b3308c3f307f",
+    "runtime/dsh/node_modules/@deepseek-ai/dsh-base/cordis.patch.yml": "9c2be64f46a193eff3cca190c26e697e8e8eee25c9b40149dfdb56f8142c252d",
+    "runtime/node/package/bin/node": "596b5144ff242737f1c1be6a5f0ccb3907dbba2482344143cb1a6898633402a9"
+  },
+  "paid_api_requests": 0
+}

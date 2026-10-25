@@ -1,0 +1,11 @@
+{
+  "schema_version": 7,
+  "selection": "tb2_native_authorized_tls_repair_three",
+  "task_count": 3,
+  "concurrency": 1,
+  "solver_seconds": 2700,
+  "engineering_retry_batches": 0,
+  "preflight_attempts_per_trial": 1,
+  "retry_score_zero": false,
+  "retry_valid_budget_exhaustion": false
+}

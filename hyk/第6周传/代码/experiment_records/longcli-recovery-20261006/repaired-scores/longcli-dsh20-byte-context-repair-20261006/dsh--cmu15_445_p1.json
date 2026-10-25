@@ -1,0 +1,33 @@
+{
+  "job": "dsh--cmu15_445_p1",
+  "task": "cmu15_445_p1",
+  "artifact_sha256": "d48be19369dddf0e256efdacf5489bc17f0f6935f4d5287c54a908e01ae43df7",
+  "image_id": "sha256:32fc507a95959e2b2772e04dfe10fd4ece2068c10a4f9619e2bd52d4eb4c5d4f",
+  "container": "longcli-paired10-c531872ef440",
+  "grading_cpu": 8,
+  "grading_memory_gib": 8,
+  "grading_cpuset": "0-7",
+  "official_success": false,
+  "grading_state": "complete",
+  "fixture": false,
+  "script_exit": 0,
+  "f2p": {
+    "is_pass": 0,
+    "step_score": 0.0
+  },
+  "p2p_is_pass": 1,
+  "p2p_step_score": 1.0,
+  "p2p_count": 8,
+  "p2p_cases": {
+    "test_p1_basic_tests": 1,
+    "test_file_integrity[/app/cmu15_445/build_support/build-web-shell.sh-83b0e25914933062977c4e85008dec24]": 1,
+    "test_file_integrity[/app/cmu15_445/build_support/cpplint.py-9b002723fb00934012c0680d8da5d8ff]": 1,
+    "test_file_integrity[/app/cmu15_445/build_support/packages.sh-e099158d72c3915632a23291c01178a7]": 1,
+    "test_file_integrity[/app/cmu15_445/build_support/run_clang_format.py-4f400dafc731ac17a067c753ccfc5307]": 1,
+    "test_file_integrity[/app/cmu15_445/build_support/run_clang_tidy.py-eed8a95bdf84e10c697af51789b88a95]": 1,
+    "test_file_integrity[/app/cmu15_445/build_support/run_clang_tidy_extra.py-c644a0acd96caee9819856d0855ef897]": 1,
+    "test_file_integrity[/app/cmu15_445/gradescope_sign.py-ee24d7ce67cae3faabc38c3be8a8fbbd]": 1
+  },
+  "f2p_output_nonempty": true,
+  "grading_container_destroyed": true
+}

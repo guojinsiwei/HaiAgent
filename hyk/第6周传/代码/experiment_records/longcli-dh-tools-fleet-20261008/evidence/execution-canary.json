@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "concurrency": 3,
+  "fixtures": [
+    {
+      "fixture": 0,
+      "state": "local_failure_preserved",
+      "artifact": "9dff15b0aade543684a9e5482c8d28ace8f44f9189672a0e8b94fdc3c0462cd7",
+      "visible_cpus": 2,
+      "paid_model_calls": 0
+    },
+    {
+      "fixture": 1,
+      "state": "healthy_completed",
+      "visible_cpus": 2,
+      "paid_model_calls": 0
+    },
+    {
+      "fixture": 2,
+      "state": "healthy_completed",
+      "visible_cpus": 2,
+      "paid_model_calls": 0
+    }
+  ],
+  "paid_model_calls": 0
+}

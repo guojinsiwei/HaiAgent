@@ -1,0 +1,171 @@
+{
+  "experiment": "lizh639-longcli-kz-dsh3-20261012",
+  "commit": "2015f37b5c458f2562354de6b415e9182c91af64",
+  "tasks": [
+    {
+      "task": "cs61_fa24_hog",
+      "family": "make-pytest",
+      "project": "cs61-hog",
+      "index": 3,
+      "image": "longcli-paired10-20261001/task-cs61_fa24_hog:2015f37",
+      "image_id": "sha256:cb17a6ea2478304ee86be957b1d3ad73d21983ac1029a2091a9e22201c2dcd43",
+      "wall_seconds": 7200.0,
+      "test_seconds": 300.0,
+      "instruction": "Open and follow the detailed project specification at INSTRUCTION.md. Implement the CS61A Hog project tasks accordingly in folder cs61-hog.",
+      "starter_path": "/var/tmp/lizh639-longcli-dh-raw-full20-20261004/starter-cs61_fa24_hog.tar.gz",
+      "starter_sha256": "e150a5a9739cf75d575667d5014fc178b7c907af59f8ab67351518127f123000"
+    },
+    {
+      "task": "cs61_fa24_cats",
+      "family": "make-pytest",
+      "project": "cs61_fa24_cats",
+      "index": 2,
+      "image": "longcli-paired10-20261001/task-cs61_fa24_cats:2015f37",
+      "image_id": "sha256:9d6cfd469d0f4d2e8eba88423821aef2aef460a048c3c446ba791978f0b09a74",
+      "wall_seconds": 7200.0,
+      "test_seconds": 300.0,
+      "instruction": "Open and follow the detailed project specification at INSTRUCTION.md. Implement the project tasks accordingly in folder cs61_fa24_cats.",
+      "starter_path": "/var/tmp/lizh639-longcli-dh-raw-full20-20261004/starter-cs61_fa24_cats.tar.gz",
+      "starter_sha256": "d3ed5e05b8831e3f302489bc7de0bc771d3e99d9cde4fffdd9e0bfb680c821ea"
+    },
+    {
+      "task": "ap1400_2_hw35",
+      "family": "c-env",
+      "project": "ap1400_2_hw",
+      "index": 9,
+      "image": "longcli-paired10-20261001/task-ap1400_2_hw35:2015f37",
+      "image_id": "sha256:94cf06cc66c75068e8c42d874b34344c009713164c81d37223debee286cb25a4",
+      "wall_seconds": 10800.0,
+      "test_seconds": 300.0,
+      "instruction": "Open and follow the detailed project specification at INSTRUCTION.md. Implement the project tasks accordingly in folder ap1400_2_hw. This task requires completing both HW4 and HW5 assignments simultaneously.",
+      "starter_path": "/var/tmp/lizh639-longcli-dh-raw-full20-20261004/starter-ap1400_2_hw35.tar.gz",
+      "starter_sha256": "5df3592a9a81cea803239e7b558201ccbb769efbda49d20163ddda5e7afc29f4"
+    }
+  ],
+  "methods": [
+    "kz"
+  ],
+  "total_trials": 40,
+  "workers": 2,
+  "model": "deepseek-flash",
+  "thinking": "disabled",
+  "temperature": 0,
+  "max_turns": 800,
+  "max_tools": 600,
+  "command_seconds": 300,
+  "max_tokens": 4096,
+  "context_limit": 48000,
+  "base_images": {
+    "make-pytest": {
+      "tag": "longcli-paired10-20261001/make-pytest:2015f37",
+      "id": "sha256:b287b885f05beae74d249992380c27298ab3584ad5a09367293945228aeeee0a",
+      "archive": "make-pytest-rootfs.tar",
+      "sha256": "a642b686382f71ba27006b2a99102b4e009474225940a5d00f7910ac3b5776f0"
+    },
+    "c-env": {
+      "tag": "longcli-paired10-20261001/c-env:2015f37",
+      "id": "sha256:f64b1afb86bc8dc4f6e0a0ee5ad531baa3ae89a58935d431ee1a6534fcea100a",
+      "archive": "c-env-rootfs.tar",
+      "sha256": "c22d8c551946f7208da76d1fc530abd059997c0ee304fec3a2bb3079c4e37ad2"
+    }
+  },
+  "created_date": "2026-10-05",
+  "grading": "Single final official grading, no online hidden feedback",
+  "endpoint": "https://api.deepseek.com",
+  "response_protocol": "Official DSH native tools; no DH JSON wire or orthogonality gates",
+  "context_windows": {
+    "dsh": {
+      "tokens": 16384,
+      "management": "official native compaction"
+    },
+    "historical_dh": {
+      "characters": 48000
+    }
+  },
+  "role_output_tokens": {
+    "action": 4096,
+    "advisor": 1536,
+    "monitor": 1536
+  },
+  "role_wire_attempts": {
+    "action": 2,
+    "advisor": 2,
+    "monitor": 1
+  },
+  "output_bytes": 24000,
+  "task_entry": "Unmodified task.yaml instruction; full INSTRUCTION.md available on disk",
+  "assignment": "Paired rotating arm order, 20 fresh jobs per worker, two slots each",
+  "grading_resources": {
+    "concurrency": 1,
+    "cpu_each": 8,
+    "memory_gib_each": 8,
+    "disk_reserve_gib": null,
+    "note": "Independent grading needs enough compile capacity to honor unchanged official test timeouts; both arms use identical settings."
+  },
+  "generation_resources": {
+    "concurrency_after_pilot": 2,
+    "cpu_each": 2,
+    "memory_gib_each": 8,
+    "pids": 256
+  },
+  "known_upstream_defects": [
+    {
+      "task": "cs61_fa24_cats",
+      "kind": "starter_p2p_missing_file",
+      "detail": "Unmodified official P2P requests READMD.md, absent from the pinned starter; 18/19 pass before solving. Keep raw official scores; do not attribute this pre-existing failure to a solver."
+    }
+  ],
+  "original_task_inputs_identical": true,
+  "prior_results_carried": 0,
+  "source_releases": {
+    "dsh": "official npm 0.2.0-rc.2, headless"
+  },
+  "ablation_only_difference": null,
+  "generation_concurrency_per_worker": 2,
+  "grading_storage_floor_disabled": true,
+  "status": "preparing",
+  "contrastive_predictions": false,
+  "route_search": false,
+  "budget_definition": "800 total provider streams/attempts, including title, compaction, retries and subagents; 600 model-root native tool dispatches; 7200 seconds",
+  "pilot_policy": "First task is included; no paid retry or automatic failed-task replay",
+  "historical_comparator": {
+    "campaign": "longcli-dh-raw-full20-20261004",
+    "arm": "dh",
+    "rerun": false,
+    "protocol_sha256": "78f661c3f86f8c333effbca1605df90f5c8add3e0c4cddac3a88143376d90fb1"
+  },
+  "comparison_limits": [
+    "TaoToken versus historical DeepSeek route; model revision not provably identical",
+    "Native DSH execution/compaction versus historic KZ private harness",
+    "Rollback frozen by user; historical KZ 1342 enabled it",
+    "Native metadata tools count toward 600; historical shell counts differ",
+    "Regression on three selected stable tasks, not unbiased benchmark ranking"
+  ],
+  "fresh_container_per_task": true,
+  "fresh_home_per_task": true,
+  "preserved_shared_state": "read-only runtime and immutable input images only",
+  "context_comparison_note": "16384 tokens is an approximate English-input budget match, not exact equivalence to 48000 characters; tool schemas also consume DSH context",
+  "retry_comparison_note": "DSH hard 800 ceiling includes retries; historical DH 800 logical requests allowed separately counted wire retries",
+  "execution_comparison_note": "DSH solves in new academy Docker containers; historical DH solved in CubeStudio private chroots from the same pinned toolchain exports. This is a historical practical comparison, not a single-factor ablation.",
+  "context_selection": 16384,
+  "automatic_failed_task_retry": false,
+  "date": "2026-10-12",
+  "historical_comparison": "KZ original, no historical solver artifacts imported",
+  "budget": {
+    "requests": 800,
+    "tools": 600,
+    "seconds": 7200,
+    "context": 1000000,
+    "output": 32768,
+    "headroom": 65536,
+    "temperature": 0,
+    "thinking": false,
+    "cost_guard_cny": 50,
+    "cost_guard_basis": "historical 2/8 upper estimate, NOT TokenPlan invoice"
+  },
+  "compaction_temperature": "native omitted; provider default",
+  "cross_task_memory": false,
+  "official_feedback_to_solver": false,
+  "no_automatic_retries": true,
+  "source_mode": "current KZ 0.2.4 unmodified src; large-budget deployment overlay only"
+}

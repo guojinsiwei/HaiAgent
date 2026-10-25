@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "method": "bestfgs-v6.1",
+      "kind": "shared",
+      "returncode": 0,
+      "tests": 22,
+      "log_sha256": "9d713087ac3548a06ff2a263311b329232f01668c0e0d269a4b9790b6b0ca2c0"
+    },
+    {
+      "method": "bestfgs-v6.1",
+      "kind": "lean",
+      "returncode": 0,
+      "tests": 33,
+      "log_sha256": "433b93b199b0a23665f76e906d78c822465dd3c6fcaca42a8f07905b6e3b15f8"
+    },
+    {
+      "method": "bestfgs-v6.1",
+      "kind": "hai",
+      "returncode": 0,
+      "tests": 123,
+      "log_sha256": "fc89063a5674b57a753672eeef6f0dcb1dd65920a5769d450e64b1c6bdcc7f45"
+    },
+    {
+      "method": "orthogonal-v8",
+      "kind": "shared",
+      "returncode": 0,
+      "tests": 22,
+      "log_sha256": "63d434b2beafc13be09734b2ab5e3a939fa87894a40ceeea0dfa4310691317de"
+    },
+    {
+      "method": "orthogonal-v8",
+      "kind": "current-features",
+      "returncode": 0,
+      "tests": 110,
+      "log_sha256": "2d773e6e084032e5b3b02d46b75182259f7d8d2df9bd46e65a1f80d0b33ae4f8"
+    },
+    {
+      "method": "orthogonal-v8",
+      "kind": "hai",
+      "returncode": 0,
+      "tests": 123,
+      "log_sha256": "385fd9408fc3f1a514fca5daa9f0b6d23e824a859622d6527ec8287053190f1d"
+    },
+    {
+      "method": "raw",
+      "kind": "shared",
+      "returncode": 0,
+      "tests": 22,
+      "log_sha256": "fa38d1a7a5a1a5ddbe9b4045f9309ec7518c6b9c4ea4027cd23c42d9cea0ce58"
+    }
+  ],
+  "model_calls": 0,
+  "scope": "Shared wire/relay/admission plus deployed lean and RAW runtimes; legacy full-suite report retained separately"
+}

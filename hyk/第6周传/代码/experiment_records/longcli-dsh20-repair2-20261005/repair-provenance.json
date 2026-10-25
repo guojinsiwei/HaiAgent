@@ -1,0 +1,19 @@
+{
+  "previous_campaign": "/var/tmp/lizh639-longcli-dsh20-repair1-20261005",
+  "previous_manifest_sha256": "bbccb7b5acfb4104f129c1eb1ff61759dc3832ceab4559ac01fb330da3e8b182",
+  "previous_results_modified": false,
+  "runtime_reused_readonly": true,
+  "paid_api_requests": 0,
+  "failure_evidence": {
+    "cmu15_445_p0": {
+      "finish_reason": "length",
+      "completion_tokens": 4096,
+      "truncated_tool": "write"
+    },
+    "cmu15_445_p1": {
+      "finish_reason": "length",
+      "completion_tokens": 4096,
+      "truncated_tool": "write"
+    }
+  }
+}

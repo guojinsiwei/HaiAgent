@@ -1,0 +1,319 @@
+{
+  "status": "completed",
+  "acceptance_passed": true,
+  "exit_code": 0,
+  "counts": {
+    "PASS": 13,
+    "FAIL": 0,
+    "ERROR": 0
+  },
+  "model_api_calls": 0,
+  "checks": [
+    {
+      "name": "docker_snapshot_restore_delivery",
+      "status": "PASS",
+      "evidence": {
+        "restore_output": "restored\n",
+        "delivered": "A",
+        "live_container_reused": true,
+        "mounts": [],
+        "network": "container:63028c56f9cc4dfbbf14a0cdd55eb36809b3f530914425e5a4d1e82577924dd0"
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "workspace_escape_refused",
+      "status": "PASS",
+      "evidence": {
+        "blocked": true,
+        "exit": 126
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "command_timeout_and_recovery",
+      "status": "PASS",
+      "evidence": {
+        "timed_out": true,
+        "next_call_succeeded": true
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "best_plain_read_advisor",
+      "status": "PASS",
+      "evidence": {
+        "advisor_calls": 1
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "best_shell_wrapped_read_advisor",
+      "status": "PASS",
+      "evidence": {
+        "advisor_calls": 1,
+        "expected": 1
+      },
+      "expected_issue": "shell compound classified generic"
+    },
+    {
+      "name": "best_visible_evidence_3",
+      "status": "PASS",
+      "evidence": {
+        "accepted": 1,
+        "visible": [
+          "E1",
+          "E2",
+          "E3",
+          "E4"
+        ],
+        "deferred": [],
+        "declared_maximum": 3,
+        "expected_behavior": "accept valid 3; explicitly reject over-limit 4"
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "best_visible_evidence_4",
+      "status": "PASS",
+      "evidence": {
+        "accepted": 0,
+        "visible": [
+          "E1",
+          "E2",
+          "E3",
+          "E4"
+        ],
+        "deferred": [
+          "evidence_ids must contain at most 3 IDs"
+        ],
+        "declared_maximum": 3,
+        "expected_behavior": "accept valid 3; explicitly reject over-limit 4"
+      },
+      "expected_issue": "undocumented three-evidence limit"
+    },
+    {
+      "name": "hai_relative_cwd_memory",
+      "status": "PASS",
+      "evidence": {
+        "cwd": ".",
+        "memory_count": 1,
+        "validity": [
+          "current"
+        ],
+        "memory_bytes": [
+          2448
+        ],
+        "selected_ids": [
+          "M1"
+        ],
+        "tools": 3,
+        "workspace_scope": {
+          "cwd": "/var/tmp/lizh639-mechanism-integration-20260929/repairs/mechanism-integration-fix-v1/run-20260929-211815-16bb0729/hai_relative_cwd_memory/state/live",
+          "environment": null,
+          "workspace": "eb57b9b2b3f60203ac2f4bda94f9f88df13a3ff40b177a1e9a4d3bcf40ffff9e"
+        }
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "hai_container_cwd_memory",
+      "status": "PASS",
+      "evidence": {
+        "cwd": "/app",
+        "memory_count": 1,
+        "validity": [
+          "current"
+        ],
+        "memory_bytes": [
+          2452
+        ],
+        "selected_ids": [
+          "M1"
+        ],
+        "tools": 3,
+        "workspace_scope": {
+          "cwd": "/var/tmp/lizh639-mechanism-integration-20260929/repairs/mechanism-integration-fix-v1/run-20260929-211815-16bb0729/hai_container_cwd_memory/state/live",
+          "environment": null,
+          "workspace": "eb57b9b2b3f60203ac2f4bda94f9f88df13a3ff40b177a1e9a4d3bcf40ffff9e"
+        }
+      },
+      "expected_issue": "container /app versus host mirror alias"
+    },
+    {
+      "name": "hai_large_memory_reaches_next_prompt",
+      "status": "PASS",
+      "evidence": {
+        "cwd": ".",
+        "memory_count": 1,
+        "validity": [
+          "current"
+        ],
+        "memory_bytes": [
+          3509
+        ],
+        "selected_ids": [
+          "M1"
+        ],
+        "tools": 3,
+        "workspace_scope": {
+          "cwd": "/var/tmp/lizh639-mechanism-integration-20260929/repairs/mechanism-integration-fix-v1/run-20260929-211815-16bb0729/hai_large_memory/state/live",
+          "environment": null,
+          "workspace": "eb57b9b2b3f60203ac2f4bda94f9f88df13a3ff40b177a1e9a4d3bcf40ffff9e"
+        }
+      },
+      "expected_issue": "whole memory dropped above 3000-byte slice"
+    },
+    {
+      "name": "hai_container_cwd_intervention",
+      "status": "PASS",
+      "evidence": {
+        "reminders": 1,
+        "tools": 4,
+        "reconsiderations": [
+          {
+            "acknowledged_memory_ids": [],
+            "causal_benefit_proven": false,
+            "changed": true,
+            "changed_action": true,
+            "changed_direction": true,
+            "event": "memory_reconsideration",
+            "intervention_id": "MI1",
+            "memory_ids": [
+              "M1"
+            ],
+            "previous": "2306bf38e408ce10253c2469da4beeb21275e710c505fee8ef6477f35a83dc2b",
+            "previous_profile": {
+              "action_key": "e7c8c319bde49990464d95a738f1e678e8c5258b9847630ae02112c8cf40253e",
+              "anchors": [
+                "--mode",
+                "search"
+              ],
+              "canonical_sha256": "d43db5518bc6e62885ac309a67eedc767dbcb762dfa59f87568257aa1a0c9044",
+              "direction_key": "334114dddedec5b0a87f2595e004fa76cbce9cb1d6dd587bf652868b63f507c8",
+              "exploration_scope": [],
+              "kind": "execute",
+              "payload_sha256": "c8ce17baae87c6b172cf03ef68f0aa7c825c837b71cde14844e332eaee2203ad",
+              "program": "python",
+              "stdin_direction_sha256": null,
+              "summary": "execute via python: workspace/environment; scope=unspecified",
+              "targets": [],
+              "tool_chain": [
+                "python"
+              ]
+            },
+            "revised_profile": {
+              "action_key": "6a467696cea272af4a2c8d4e3f14a80c04cd098691e6dbb91263a9c636dec6a0",
+              "anchors": [],
+              "canonical_sha256": "ee86d7ecdd2d566f061d676dc1d4ead4dc8b6b9e05a10dd875dc49fed250d619",
+              "direction_key": "5f8fd8d3bae195e2521eb363002ccb1a07a4cb3cd4c2f5805fe1f7cd2f2a66b2",
+              "exploration_scope": [],
+              "kind": "inspect",
+              "payload_sha256": "cb548fb37c04c2d579eb0d8115936766ada0ea5651b5a06fe835275cb2e8bdf1",
+              "program": "cat",
+              "stdin_direction_sha256": null,
+              "summary": "inspect via cat: file.txt; scope=unspecified",
+              "targets": [
+                "file.txt"
+              ],
+              "tool_chain": [
+                "cat"
+              ]
+            },
+            "sequence": 31,
+            "sha256": "9e661bc46b56bd4e974e1298d3f53cef915c24c9083d9151f6a307c4f63f180e",
+            "time": 1790688142.675687
+          }
+        ],
+        "followups": [
+          {
+            "action_kind": "run",
+            "blocked": false,
+            "causal_benefit_proven": false,
+            "changed": true,
+            "changed_action": true,
+            "changed_direction": true,
+            "event": "memory_followup_outcome",
+            "intervention_id": "MI1",
+            "memory_ids": [
+              "M1"
+            ],
+            "outcome_observed": true,
+            "previous": "b0211bc6a3beef652ca05076c9e9d71768b4a402a537a625736617508b4fc420",
+            "profile": {
+              "action_key": "6a467696cea272af4a2c8d4e3f14a80c04cd098691e6dbb91263a9c636dec6a0",
+              "anchors": [],
+              "canonical_sha256": "ee86d7ecdd2d566f061d676dc1d4ead4dc8b6b9e05a10dd875dc49fed250d619",
+              "direction_key": "5f8fd8d3bae195e2521eb363002ccb1a07a4cb3cd4c2f5805fe1f7cd2f2a66b2",
+              "exploration_scope": [],
+              "kind": "inspect",
+              "payload_sha256": "cb548fb37c04c2d579eb0d8115936766ada0ea5651b5a06fe835275cb2e8bdf1",
+              "program": "cat",
+              "stdin_direction_sha256": null,
+              "summary": "inspect via cat: file.txt; scope=unspecified",
+              "targets": [
+                "file.txt"
+              ],
+              "tool_chain": [
+                "cat"
+              ]
+            },
+            "revised_profile": {
+              "action_key": "6a467696cea272af4a2c8d4e3f14a80c04cd098691e6dbb91263a9c636dec6a0",
+              "anchors": [],
+              "canonical_sha256": "ee86d7ecdd2d566f061d676dc1d4ead4dc8b6b9e05a10dd875dc49fed250d619",
+              "direction_key": "5f8fd8d3bae195e2521eb363002ccb1a07a4cb3cd4c2f5805fe1f7cd2f2a66b2",
+              "exploration_scope": [],
+              "kind": "inspect",
+              "payload_sha256": "cb548fb37c04c2d579eb0d8115936766ada0ea5651b5a06fe835275cb2e8bdf1",
+              "program": "cat",
+              "stdin_direction_sha256": null,
+              "summary": "inspect via cat: file.txt; scope=unspecified",
+              "targets": [
+                "file.txt"
+              ],
+              "tool_chain": [
+                "cat"
+              ]
+            },
+            "sequence": 34,
+            "sha256": "e2da8b6bf61e44de955bffc2b578fa362adca31c2b5c8593c1f37b9f03876290",
+            "succeeded": true,
+            "time": 1790688148.2870045,
+            "timed_out": false,
+            "workspace_changed": false
+          }
+        ]
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "classifier_budget_with_metrics",
+      "status": "PASS",
+      "evidence": {
+        "stop_reason": "wall_budget",
+        "infrastructure_ok": true,
+        "reasons": []
+      },
+      "expected_issue": "metrics changes adjacency"
+    },
+    {
+      "name": "classifier_infrastructure_stop",
+      "status": "PASS",
+      "evidence": {
+        "stop_reason": "infrastructure_error",
+        "infrastructure_ok": false,
+        "reasons": [
+          "infrastructure_stop"
+        ]
+      },
+      "expected_issue": "stop reason ignored"
+    }
+  ],
+  "fatal": null,
+  "cleanup_errors": [],
+  "remaining_originals": [],
+  "elapsed_seconds": 271.052,
+  "run_dir": "/var/tmp/lizh639-mechanism-integration-20260929/repairs/mechanism-integration-fix-v1/run-20260929-211815-16bb0729",
+  "source_dir": "/var/tmp/lizh639-mechanism-integration-20260929/repairs/mechanism-integration-fix-v1/sources"
+}

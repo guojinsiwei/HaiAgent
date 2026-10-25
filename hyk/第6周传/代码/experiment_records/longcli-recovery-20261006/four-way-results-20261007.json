@@ -1,0 +1,567 @@
+{
+  "tasks": [
+    "cs61_fa24_scheme",
+    "cs61_fa24_ants",
+    "cs61_fa24_cats",
+    "cs61_fa24_hog",
+    "cs61_fa24_hw08",
+    "cmu15_445_p0",
+    "cmu15_445_p1",
+    "cmu15_445_p2",
+    "ap1400_2_hw26",
+    "ap1400_2_hw35",
+    "61810_cow",
+    "61810_fs",
+    "61810_lock",
+    "61810_mmap",
+    "61810_net",
+    "61810_pgtbl",
+    "61810_syscall",
+    "61810_thread",
+    "61810_traps",
+    "61810_util"
+  ],
+  "metrics": {
+    "DH": {
+      "tasks": 20,
+      "mean": 0.515772071318461,
+      "median": 0.5297619047619048,
+      "f2p_full": 3,
+      "strict_success": 2,
+      "zero": 5,
+      "os10_mean": 0.5189970578620464,
+      "other10_mean": 0.5125470847748756
+    },
+    "RAW": {
+      "tasks": 20,
+      "mean": 0.43818172580018167,
+      "median": 0.31845238095238093,
+      "f2p_full": 4,
+      "strict_success": 3,
+      "zero": 7,
+      "os10_mean": 0.7096589497459063,
+      "other10_mean": 0.1667045018544571
+    },
+    "DSH": {
+      "tasks": 20,
+      "mean": 0.4692233062004577,
+      "median": 0.45,
+      "f2p_full": 4,
+      "strict_success": 2,
+      "zero": 6,
+      "os10_mean": 0.5767024280067758,
+      "other10_mean": 0.36174418439413963
+    },
+    "Reflexion": {
+      "tasks": 20,
+      "mean": 0.48917065027839624,
+      "median": 0.513157894736842,
+      "f2p_full": 3,
+      "strict_success": 1,
+      "zero": 5,
+      "os10_mean": 0.63061520401795,
+      "other10_mean": 0.34772609653884246
+    }
+  },
+  "paired": {
+    "DSH/DH": {
+      "wins": 7,
+      "ties": 7,
+      "losses": 6,
+      "mean_delta": -0.04654876511800333
+    },
+    "DSH/RAW": {
+      "wins": 6,
+      "ties": 11,
+      "losses": 3,
+      "mean_delta": 0.031041580400276055
+    },
+    "Reflexion/DH": {
+      "wins": 9,
+      "ties": 5,
+      "losses": 6,
+      "mean_delta": -0.026601421040064816
+    },
+    "Reflexion/RAW": {
+      "wins": 6,
+      "ties": 8,
+      "losses": 6,
+      "mean_delta": 0.05098892447821456
+    }
+  },
+  "source_selection": {
+    "DH/cs61_fa24_scheme": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "dh--cs61_fa24_scheme"
+    },
+    "DH/cs61_fa24_ants": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "dh--cs61_fa24_ants"
+    },
+    "DH/cs61_fa24_cats": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "dh--cs61_fa24_cats"
+    },
+    "DH/cs61_fa24_hog": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "dh--cs61_fa24_hog"
+    },
+    "DH/cs61_fa24_hw08": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "dh--cs61_fa24_hw08"
+    },
+    "DH/cmu15_445_p0": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "dh--cmu15_445_p0"
+    },
+    "DH/cmu15_445_p1": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "dh--cmu15_445_p1"
+    },
+    "DH/cmu15_445_p2": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "dh--cmu15_445_p2"
+    },
+    "DH/ap1400_2_hw26": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "dh--ap1400_2_hw26"
+    },
+    "DH/ap1400_2_hw35": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "dh--ap1400_2_hw35"
+    },
+    "DH/61810_cow": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "dh--61810_cow"
+    },
+    "DH/61810_fs": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "dh--61810_fs"
+    },
+    "DH/61810_lock": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "dh--61810_lock"
+    },
+    "DH/61810_mmap": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "dh--61810_mmap"
+    },
+    "DH/61810_net": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "dh--61810_net"
+    },
+    "DH/61810_pgtbl": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "roundtrip--outer-clock-fix--61810_pgtbl"
+    },
+    "DH/61810_syscall": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "dh--61810_syscall"
+    },
+    "DH/61810_thread": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "dh--61810_thread"
+    },
+    "DH/61810_traps": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "dh--61810_traps"
+    },
+    "DH/61810_util": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "dh--61810_util"
+    },
+    "RAW/cs61_fa24_scheme": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "roundtrip--cs61_fa24_scheme"
+    },
+    "RAW/cs61_fa24_ants": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "raw--cs61_fa24_ants"
+    },
+    "RAW/cs61_fa24_cats": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "raw--cs61_fa24_cats"
+    },
+    "RAW/cs61_fa24_hog": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "raw--cs61_fa24_hog"
+    },
+    "RAW/cs61_fa24_hw08": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "raw--cs61_fa24_hw08"
+    },
+    "RAW/cmu15_445_p0": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "raw--cmu15_445_p0"
+    },
+    "RAW/cmu15_445_p1": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "raw--cmu15_445_p1"
+    },
+    "RAW/cmu15_445_p2": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "raw--cmu15_445_p2"
+    },
+    "RAW/ap1400_2_hw26": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "raw--ap1400_2_hw26"
+    },
+    "RAW/ap1400_2_hw35": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "raw--ap1400_2_hw35"
+    },
+    "RAW/61810_cow": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "raw--61810_cow"
+    },
+    "RAW/61810_fs": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "raw--61810_fs"
+    },
+    "RAW/61810_lock": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "raw--61810_lock"
+    },
+    "RAW/61810_mmap": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "raw--61810_mmap"
+    },
+    "RAW/61810_net": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "raw--61810_net"
+    },
+    "RAW/61810_pgtbl": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "raw--61810_pgtbl"
+    },
+    "RAW/61810_syscall": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "raw--61810_syscall"
+    },
+    "RAW/61810_thread": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "raw--61810_thread"
+    },
+    "RAW/61810_traps": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "raw--61810_traps"
+    },
+    "RAW/61810_util": {
+      "report_container": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004\\full-report\\report-data.json",
+      "report_key": "raw--61810_util"
+    },
+    "DSH/61810_cow": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-dsh20-byte-context-repair-20261006\\dsh--61810_cow.json",
+      "sha256": "553365f6a794a50f6b326ad0acda12b25b518f3e65183ea81fdb6d1d9af13cb7"
+    },
+    "DSH/61810_fs": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-dsh20-byte-context-repair-20261006\\dsh--61810_fs.json",
+      "sha256": "2fe26b64b74e6c19073ced157d6a4c9c29ccce55db652e62203f8a6000a2bce3"
+    },
+    "DSH/61810_lock": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-dsh20-byte-context-repair-20261006\\dsh--61810_lock.json",
+      "sha256": "d06119244fe2158619e8852a90613d85d7d1f6953e2d6313bd791a4f94362adf"
+    },
+    "DSH/61810_mmap": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-dsh20-byte-context-repair-20261006\\dsh--61810_mmap.json",
+      "sha256": "b4d9ce671281ba36366b054b288bd8d70453131a851c6f95dbcd827d61e8b625"
+    },
+    "DSH/61810_net": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-dsh20-byte-context-repair-20261006\\dsh--61810_net.json",
+      "sha256": "dec7d96ba0a526b058a96c252dd72d09308edb015e2e3a9b34affa5699d2fa79"
+    },
+    "DSH/61810_pgtbl": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-dsh20-byte-context-repair-20261006\\dsh--61810_pgtbl.json",
+      "sha256": "7f44284d583f978ada283b2a05ab218fdbfadad0157c6a476b9140768a9059b8"
+    },
+    "DSH/61810_syscall": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-dsh20-byte-context-repair-20261006\\dsh--61810_syscall.json",
+      "sha256": "52536ccb5eb3581778a4be8dd6260972dfa0ebc867adfe28331a579610ed0fd7"
+    },
+    "DSH/61810_thread": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-dsh20-byte-context-repair-20261006\\dsh--61810_thread.json",
+      "sha256": "d5ed53510b282b733af0256281c3b69fcc245f2ce6d12d7b2bb8006e54ade00d"
+    },
+    "DSH/61810_traps": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-dsh20-byte-context-repair-20261006\\dsh--61810_traps.json",
+      "sha256": "9e5b38731c61a1103ac2aaa08841f1f796d25cba5a6ce7d941bdb3b2bb483838"
+    },
+    "DSH/61810_util": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-dsh20-byte-context-repair-20261006\\dsh--61810_util.json",
+      "sha256": "48a20ceeba534aff94c5fd2e7d24dba1c3ce62d4aa32c4dc25fcdfc453e2233b"
+    },
+    "DSH/ap1400_2_hw26": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-dsh20-byte-context-repair-20261006\\dsh--ap1400_2_hw26.json",
+      "sha256": "57091fa959e538678ae29a18813b800fbf545fb6d6847c27cb02e643d03f2cf1"
+    },
+    "DSH/ap1400_2_hw35": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-dsh20-byte-context-repair-20261006\\dsh--ap1400_2_hw35.json",
+      "sha256": "0b1ba340f29a22500decd6f95bac45cf6efa9fdf002775f0ece6fe984378ec70"
+    },
+    "DSH/cmu15_445_p0": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-dsh20-byte-context-repair-20261006\\dsh--cmu15_445_p0.json",
+      "sha256": "9146d501a1c3359bb7863d16e0a6cde6ce5f1085dd90f31f7b77b21201b12f1a"
+    },
+    "DSH/cmu15_445_p1": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-dsh20-byte-context-repair-20261006\\dsh--cmu15_445_p1.json",
+      "sha256": "203b4a3c714db4bb4d5ebc0751f2d4580a2bad0b1948821e7dd9816a426b1dd0"
+    },
+    "DSH/cmu15_445_p2": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-dsh20-byte-context-repair-20261006\\dsh--cmu15_445_p2.json",
+      "sha256": "588925ef0bd5ee8574d4c2cbe3bf3b7b4b363abc7cc06602ea326290c71a2867"
+    },
+    "DSH/cs61_fa24_ants": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-dsh20-byte-context-repair-20261006\\dsh--cs61_fa24_ants.json",
+      "sha256": "50df6e02d0a337a60d0c65c2d834439f491278393c5df348cbdd1980e579a733"
+    },
+    "DSH/cs61_fa24_cats": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-dsh20-byte-context-repair-20261006\\dsh--cs61_fa24_cats.json",
+      "sha256": "ab41a5f727d324c8e0e71f0c06f7be9dbf0741f9b5fbe4eb1eda600e60b42fb7"
+    },
+    "DSH/cs61_fa24_hog": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-dsh20-byte-context-repair-20261006\\dsh--cs61_fa24_hog.json",
+      "sha256": "a685e8060c46dece645cbf388c7bca46b3f6770a0cb13b902b55fc4b6830c9c6"
+    },
+    "DSH/cs61_fa24_hw08": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-dsh20-byte-context-repair-20261006\\dsh--cs61_fa24_hw08.json",
+      "sha256": "c650f538f8f1bd8a97db52828aabe3a2c243375dc9d95332d134270d2bba899a"
+    },
+    "DSH/cs61_fa24_scheme": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-dsh20-byte-context-repair-20261006\\dsh--cs61_fa24_scheme.json",
+      "sha256": "8995a93983b1d04ff0b8fa9f3d4beebc9dfd68e3f56404bc6e71a9496a396651"
+    },
+    "Reflexion/61810_util": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-reflexion20-college-20261006\\reflexion--61810_util.json",
+      "sha256": "82b483395d6545212e1139a77922c07d65f3bea75809410cbc4f8ce2429431b0"
+    },
+    "Reflexion/cs61_fa24_hog": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-reflexion20-college-20261006\\reflexion--cs61_fa24_hog.json",
+      "sha256": "7ae44acdf09f992b07f9c414a5e6f7b945c41211f20a3bb82622d466133c34e5"
+    },
+    "Reflexion/cs61_fa24_hw08": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-reflexion20-college-20261006\\reflexion--cs61_fa24_hw08.json",
+      "sha256": "799c548a2f1f74dbb809af65af83092cb00c9ba50f571f89761200993ef69b29"
+    },
+    "Reflexion/61810_cow": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-reflexion-recovery-20261006\\reflexion--61810_cow.json",
+      "sha256": "e18851df1e611c1a8e138e5005f542e295b1109eecbd7383b4451850a3aad4de"
+    },
+    "Reflexion/61810_fs": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-reflexion-recovery-20261006\\reflexion--61810_fs.json",
+      "sha256": "58a642f5bc167077c4fc796716d1d3a2b5599cbb45c05b1286d4f2f9fb204769"
+    },
+    "Reflexion/61810_lock": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-reflexion-recovery-20261006\\reflexion--61810_lock.json",
+      "sha256": "0b13dcd6d3059d97c903d7a61be9824234dc7a9cf6fff6028c77f7fe65ef5585"
+    },
+    "Reflexion/61810_mmap": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-reflexion-recovery-20261006\\reflexion--61810_mmap.json",
+      "sha256": "1b9df835c3ff728620ad8abbc3e04199579143686fb08a97a818089f507aab0c"
+    },
+    "Reflexion/61810_net": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-reflexion-recovery-20261006\\reflexion--61810_net.json",
+      "sha256": "88a57437494c7308412f9fbe4cc3616821408926911297396d0cd73fc1526ebb"
+    },
+    "Reflexion/61810_pgtbl": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-reflexion-recovery-20261006\\reflexion--61810_pgtbl.json",
+      "sha256": "7ffc9e7d2ac62ea5bbe4bb8b36b378e96ae8cbb1521fe8b55bad2ff12527d6b9"
+    },
+    "Reflexion/61810_syscall": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-reflexion-recovery-20261006\\reflexion--61810_syscall.json",
+      "sha256": "828a2607cd93aa685dd874a890bec33f17e71a9713e11d19c81c90558cc5d277"
+    },
+    "Reflexion/61810_thread": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-reflexion-recovery-20261006\\reflexion--61810_thread.json",
+      "sha256": "f18b5b08d3614afe3676f31868dac58659a9b4b0bac305148df2c73d836af0f3"
+    },
+    "Reflexion/61810_traps": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-reflexion-recovery-20261006\\reflexion--61810_traps.json",
+      "sha256": "a0a969dcffca9fc54eca286ed7073850b030ff7c31c64e70c17dd5b161181d0a"
+    },
+    "Reflexion/ap1400_2_hw26": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-reflexion-recovery-20261006\\reflexion--ap1400_2_hw26.json",
+      "sha256": "710dffdbe775161b9a4b45d58b883a959380810c36c2578b62a90355b540ad36"
+    },
+    "Reflexion/ap1400_2_hw35": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-reflexion-recovery-20261006\\reflexion--ap1400_2_hw35.json",
+      "sha256": "d66d3787b01f6ac80944d36d588e73f4476b6a889bdca8da219ebc5280c796d6"
+    },
+    "Reflexion/cmu15_445_p0": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-reflexion-recovery-20261006\\reflexion--cmu15_445_p0.json",
+      "sha256": "954c7ddd2ad50143851578f6c29eee192358533cf2632829330614b1ab455571"
+    },
+    "Reflexion/cmu15_445_p1": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-reflexion-recovery-20261006\\reflexion--cmu15_445_p1.json",
+      "sha256": "1f9bcaef70d6a9fe5ac3ae61b4eff0f97833f8cc556f391e4a0edffa5923145d"
+    },
+    "Reflexion/cmu15_445_p2": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-reflexion-recovery-20261006\\reflexion--cmu15_445_p2.json",
+      "sha256": "1faf71738d38c12ad99a505f9e89a406a3a0e33a24c42697095e7fcc93875a1e"
+    },
+    "Reflexion/cs61_fa24_ants": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-reflexion-recovery-20261006\\reflexion--cs61_fa24_ants.json",
+      "sha256": "36aadced1ae717b265b8526623622ef357f89cce5ec7fdb9deb015dd291b828a"
+    },
+    "Reflexion/cs61_fa24_cats": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-reflexion-recovery-20261006\\reflexion--cs61_fa24_cats.json",
+      "sha256": "22ed65c779896fabf5081c95f90625f8b9d044181760876331e813ef2c0b6bc6"
+    },
+    "Reflexion/cs61_fa24_scheme": {
+      "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-recovery-20261006\\repaired-scores\\longcli-reflexion-recovery-20261006\\reflexion--cs61_fa24_scheme.json",
+      "sha256": "2031c1794f7292208d0c7121ca106d305eb80c9ede0b1fdcf5e89f202bddc2cf"
+    }
+  },
+  "scores": [
+    {
+      "task": "cs61_fa24_scheme",
+      "DH": 0.5595238095238095,
+      "RAW": 0.30357142857142855,
+      "DSH": 0.8928571428571429,
+      "Reflexion": 0.8928571428571429
+    },
+    {
+      "task": "cs61_fa24_ants",
+      "DH": 0.34720978812294834,
+      "RAW": 0.03014025663980901,
+      "DSH": 0.03014025663980901,
+      "Reflexion": 0.03014025663980901
+    },
+    {
+      "task": "cs61_fa24_cats",
+      "DH": 0.7894736842105263,
+      "RAW": 0.0,
+      "DSH": 1.0,
+      "Reflexion": 1.0
+    },
+    {
+      "task": "cs61_fa24_hog",
+      "DH": 0.9166666666666666,
+      "RAW": 0.0,
+      "DSH": 0.3194444444444444,
+      "Reflexion": 0.4583333333333333
+    },
+    {
+      "task": "cs61_fa24_hw08",
+      "DH": 1.0,
+      "RAW": 1.0,
+      "DSH": 1.0,
+      "Reflexion": 0.0
+    },
+    {
+      "task": "cmu15_445_p0",
+      "DH": 0.5,
+      "RAW": 0.0,
+      "DSH": 0.0,
+      "Reflexion": 0.0
+    },
+    {
+      "task": "cmu15_445_p1",
+      "DH": 0.0,
+      "RAW": 0.0,
+      "DSH": 0.0,
+      "Reflexion": 0.0
+    },
+    {
+      "task": "cmu15_445_p2",
+      "DH": 0.0,
+      "RAW": 0.0,
+      "DSH": 0.0,
+      "Reflexion": 0.0
+    },
+    {
+      "task": "ap1400_2_hw26",
+      "DH": 0.2916666666666667,
+      "RAW": 0.3333333333333333,
+      "DSH": 0.375,
+      "Reflexion": 0.375
+    },
+    {
+      "task": "ap1400_2_hw35",
+      "DH": 0.7209302325581395,
+      "RAW": 0.0,
+      "DSH": 0.0,
+      "Reflexion": 0.7209302325581395
+    },
+    {
+      "task": "61810_cow",
+      "DH": 0.0,
+      "RAW": 0.7272727272727273,
+      "DSH": 0.7272727272727273,
+      "Reflexion": 0.00909090909090909
+    },
+    {
+      "task": "61810_fs",
+      "DH": 0.4,
+      "RAW": 0.81,
+      "DSH": 0.4,
+      "Reflexion": 0.8
+    },
+    {
+      "task": "61810_lock",
+      "DH": 0.0,
+      "RAW": 0.25,
+      "DSH": 0.5,
+      "Reflexion": 0.5
+    },
+    {
+      "task": "61810_mmap",
+      "DH": 0.0,
+      "RAW": 0.0,
+      "DSH": 0.0,
+      "Reflexion": 0.0
+    },
+    {
+      "task": "61810_net",
+      "DH": 1.0,
+      "RAW": 1.0,
+      "DSH": 1.0,
+      "Reflexion": 1.0
+    },
+    {
+      "task": "61810_pgtbl",
+      "DH": 0.43478260869565216,
+      "RAW": 0.6521739130434783,
+      "DSH": 0.782608695652174,
+      "Reflexion": 0.6521739130434783
+    },
+    {
+      "task": "61810_syscall",
+      "DH": 0.6857142857142857,
+      "RAW": 0.8571428571428571,
+      "DSH": 0.8571428571428571,
+      "Reflexion": 0.8285714285714286
+    },
+    {
+      "task": "61810_thread",
+      "DH": 0.88,
+      "RAW": 1.0,
+      "DSH": 0.5,
+      "Reflexion": 1.0
+    },
+    {
+      "task": "61810_traps",
+      "DH": 0.7894736842105263,
+      "RAW": 0.8,
+      "DSH": 0.0,
+      "Reflexion": 0.5263157894736842
+    },
+    {
+      "task": "61810_util",
+      "DH": 1.0,
+      "RAW": 1.0,
+      "DSH": 1.0,
+      "Reflexion": 0.99
+    }
+  ],
+  "notes": [
+    "Historical DH is v9 repair/recovery-counter-fix, not DHv1 and not graph search.",
+    "RAW scheme uses authorized retry after initial DNS failure; original failure retained.",
+    "DH pgtbl uses same-artifact corrected outer-clock grading; no new solver run.",
+    "All groups use fixed 20 task IDs, pinned official commit, deepseek-flash thinking disabled, temperature zero.",
+    "800 logical requests/600 tools are common ceilings, not identical algorithm-internal turn limits.",
+    "Historical DH48k characters differs from UTF8-byte DSH/Reflexion48k; DSH includes native tool schema.",
+    "Cube versus academy host/process isolation and persistent-shell semantics differ.",
+    "This is a historical matched-task comparison, not a fully controlled four-arm causal ablation.",
+    "Strict success includes raw official P2P checks, including known starter defects."
+  ]
+}

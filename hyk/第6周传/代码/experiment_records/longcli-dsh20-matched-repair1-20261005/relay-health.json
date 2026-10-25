@@ -1,0 +1,53 @@
+{
+  "updated": 1791204429.264154,
+  "workers": [
+    {
+      "state": "running",
+      "worker": 0,
+      "pid": 1173365,
+      "new_api_key": true,
+      "errors": [],
+      "updated": 1791204421.7826514,
+      "active": [
+        "cs61_fa24_scheme",
+        "cs61_fa24_cats"
+      ],
+      "pending": [
+        "cs61_fa24_hw08",
+        "cmu15_445_p1",
+        "ap1400_2_hw26",
+        "61810_cow",
+        "61810_lock",
+        "61810_net",
+        "61810_syscall",
+        "61810_traps"
+      ],
+      "completed": []
+    },
+    {
+      "state": "running",
+      "worker": 1,
+      "pid": 925316,
+      "new_api_key": true,
+      "errors": [],
+      "updated": 1791204428.0457118,
+      "active": [
+        "cs61_fa24_ants",
+        "cs61_fa24_hog"
+      ],
+      "pending": [
+        "cmu15_445_p0",
+        "cmu15_445_p2",
+        "ap1400_2_hw35",
+        "61810_fs",
+        "61810_mmap",
+        "61810_pgtbl",
+        "61810_thread",
+        "61810_util"
+      ],
+      "completed": []
+    }
+  ],
+  "graded": [],
+  "paid_model_calls_by_relay": 0
+}

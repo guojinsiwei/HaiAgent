@@ -1,0 +1,22 @@
+{
+  "state": "prepared_no_model_calls",
+  "paid_model_requests": 0,
+  "source_prepared_root": "/mnt/lizh639/bestfgs-runs/swe100-reserve-v2/frozen",
+  "task_count": 12,
+  "method_runs": 24,
+  "selection_ids": [
+    "scikit-learn__scikit-learn-25747",
+    "django__django-13121",
+    "sphinx-doc__sphinx-9658",
+    "django__django-11066",
+    "django__django-13809",
+    "django__django-14752",
+    "sympy__sympy-22080",
+    "pydata__xarray-3095",
+    "django__django-11749",
+    "django__django-15957",
+    "django__django-15382",
+    "django__django-15467"
+  ],
+  "plan_sha256": "4047fee202b51df2e89cbb7fb0c1b2095cfb26d092d6b2b939e91351692aa266"
+}

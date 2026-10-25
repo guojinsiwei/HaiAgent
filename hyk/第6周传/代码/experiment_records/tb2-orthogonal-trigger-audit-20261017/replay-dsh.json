@@ -1,0 +1,78 @@
+[
+  {
+    "arm": "kz-dsh",
+    "task": "build-cython-ext",
+    "oldEpisodes": 0,
+    "first": null
+  },
+  {
+    "arm": "kz-dsh",
+    "task": "chess-best-move",
+    "oldEpisodes": 0,
+    "first": null
+  },
+  {
+    "arm": "kz-dsh",
+    "task": "configure-git-webserver",
+    "oldEpisodes": 0,
+    "first": null
+  },
+  {
+    "arm": "kz-dsh",
+    "task": "fix-code-vulnerability",
+    "oldEpisodes": 0,
+    "first": null
+  },
+  {
+    "arm": "kz-dsh",
+    "task": "log-summary-date-ranges",
+    "oldEpisodes": 0,
+    "first": null
+  },
+  {
+    "arm": "kz-dsh",
+    "task": "polyglot-c-py",
+    "oldEpisodes": 0,
+    "first": {
+      "at": "E8",
+      "line": 60,
+      "trigger": {
+        "key": "[\"build\",\"/app/polyglot\",[\"main.py.c\"]]",
+        "failures": 2,
+        "evidence": [
+          "E2",
+          "E3"
+        ],
+        "reason": "same_check_failed_again"
+      },
+      "historicalEvidence": [
+        "E5",
+        "E8"
+      ]
+    }
+  },
+  {
+    "arm": "kz-dsh",
+    "task": "qemu-alpine-ssh",
+    "oldEpisodes": 0,
+    "first": null
+  },
+  {
+    "arm": "kz-dsh",
+    "task": "qemu-startup",
+    "oldEpisodes": 0,
+    "first": null
+  },
+  {
+    "arm": "kz-dsh",
+    "task": "regex-log",
+    "oldEpisodes": 0,
+    "first": null
+  },
+  {
+    "arm": "kz-dsh",
+    "task": "sqlite-with-gcov",
+    "oldEpisodes": 0,
+    "first": null
+  }
+]

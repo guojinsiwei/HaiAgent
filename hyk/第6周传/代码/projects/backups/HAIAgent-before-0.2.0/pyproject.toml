@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hai-agent"
+version = "0.1.0"
+description = "Sequential CLI agent with bounded task-local context and independently audited metrics"
+requires-python = ">=3.11"
+dependencies = []
+readme = "README.md"
+
+[project.scripts]
+hai-agent = "haiagent.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,9 @@
+{
+  "task_id": "replace-with-benchmark-instance-id",
+  "instruction": "Replace with the actual public task instruction; never include hidden tests or reference solution.",
+  "workspace": "/workspace/task",
+  "delivery": "git_patch",
+  "constraints": [],
+  "environment_revision": null,
+  "environment": {}
+}

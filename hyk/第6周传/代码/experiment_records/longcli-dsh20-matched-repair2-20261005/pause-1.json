@@ -1,0 +1,23 @@
+{
+  "state": "paused",
+  "worker": 1,
+  "time": 1791206940.8207545,
+  "reason": "user_requested_context_adapter_repair",
+  "worker_and_descendants_stopped": true,
+  "selected_process_count": 4,
+  "interrupted": [
+    {
+      "task": "cs61_fa24_hog",
+      "job": "dsh--cs61_fa24_hog",
+      "artifact": {
+        "path": "/mnt/lizh639/longcli-dsh20-matched-repair2-20261005/jobs/dsh--cs61_fa24_hog/paused-source.tar.gz",
+        "sha256": "b3d6c765ff8b03234f90f509a4291e579823b22ab18b46683e14bbf3309b4057",
+        "entries": 25,
+        "source_only": true
+      },
+      "status": "user_interrupted_not_a_scored_rerun"
+    }
+  ],
+  "finished_original_results_preserved": 1,
+  "replacement_requires_new_hidden_input": true
+}

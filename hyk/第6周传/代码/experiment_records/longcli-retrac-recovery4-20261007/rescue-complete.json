@@ -1,0 +1,36 @@
+{
+  "state": "passed",
+  "results": [
+    {
+      "task": "61810_cow",
+      "snapshot": "/mnt/sdb/home/lizh639/longcli-retrac-recovery4-20261007/interrupted-workspaces/61810_cow",
+      "state": "snapshot_retained_container_removed",
+      "original_exit_code": 137,
+      "original_oom_killed": false
+    },
+    {
+      "task": "61810_fs",
+      "snapshot": "/mnt/sdb/home/lizh639/longcli-retrac-recovery4-20261007/interrupted-workspaces/61810_fs",
+      "state": "snapshot_retained_container_removed",
+      "original_exit_code": 137,
+      "original_oom_killed": false
+    },
+    {
+      "task": "61810_lock",
+      "snapshot": "/mnt/sdb/home/lizh639/longcli-retrac-recovery4-20261007/interrupted-workspaces/61810_lock",
+      "state": "snapshot_retained_container_removed",
+      "original_exit_code": 137,
+      "original_oom_killed": false
+    },
+    {
+      "task": "61810_mmap",
+      "snapshot": "/mnt/sdb/home/lizh639/longcli-retrac-recovery4-20261007/interrupted-workspaces/61810_mmap",
+      "state": "snapshot_retained_container_removed",
+      "original_exit_code": 137,
+      "original_oom_killed": false
+    }
+  ],
+  "old_workspaces_preserved": 4,
+  "paid_model_calls": 0,
+  "time": 1791360989.0641832
+}

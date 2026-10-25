@@ -1,0 +1,32 @@
+{
+  "state": "installed_not_started",
+  "version": "0.2.0-rc.2",
+  "node": {
+    "shasum": "0830b0026af541501c42742accc4cf8013d4a300",
+    "tarball": "https://registry.npmjs.org/node-linux-x64/-/node-linux-x64-22.19.0.tgz",
+    "fileCount": 2375,
+    "integrity": "sha512-kjgmAijr2xPcEIrK1eky8L05W9pZcVUYihQbsN99F0zQP6VXX+DlAbSFbVre3bI7oLjtyUd10/vCdCkxfqnysw==",
+    "signatures": [
+      {
+        "sig": "MEUCIQDg4bKUq07oEqFWCef5kjngYdQBIyQYKlKDMJEsIqs5twIga7wUDCvi9YIynXlNpid2gouDttAJuJQs+zZ3diZn5WY=",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      }
+    ],
+    "unpackedSize": 173539245
+  },
+  "npm": {
+    "shasum": "b03ebf67129a71489e9937a2e0489f931574590b",
+    "tarball": "https://registry.npmjs.org/npm/-/npm-11.6.0.tgz",
+    "fileCount": 2293,
+    "integrity": "sha512-d/P7DbvYgYNde9Ehfeq99+13/E7E82PfZPw8uYZASr9sQ3ZhBBCA9cXSJRA1COfJ6jDLJ0K36UJnXQWhCvLXuQ==",
+    "signatures": [
+      {
+        "sig": "MEUCIQCOAPn+0RqxLyTsSs9yRew4sgmNdEv/5u9BlnT82xGBmQIgObCi2JYwEvKWcFpJnlgPVjeywKiR96CVcgu4JYRsThw=",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      }
+    ],
+    "unpackedSize": 12563230
+  },
+  "lock_sha256": "4ac761594c37ae04f2c2283010bc1c337ee98fcd8a02f4d1ff7b21cbe0c0c8df",
+  "paid_model_requests": 0
+}

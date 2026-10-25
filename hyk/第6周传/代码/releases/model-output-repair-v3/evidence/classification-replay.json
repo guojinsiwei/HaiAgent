@@ -1,0 +1,176 @@
+{
+  "scope": "Offline classification replay only, not a rerun or modified official score",
+  "rows": [
+    {
+      "task": "spot-scheduler-traces",
+      "reward": 0.9542,
+      "original_classification": {
+        "stop_reason": "request_or_tool_budget",
+        "infrastructure_ok": true,
+        "reasons": [],
+        "method_issues": []
+      },
+      "corrected_classification": {
+        "stop_reason": "request_or_tool_budget",
+        "infrastructure_ok": true,
+        "reasons": [],
+        "method_issues": [],
+        "model_error_count": 0,
+        "recovered_model_errors": 0,
+        "unrecovered_model_errors": 0,
+        "warnings": []
+      },
+      "original_audit_sha256": "15aece24595856e320dd8d5d02244d6204515cc1e002e2aa2737d48266209f0a",
+      "inner_error_codes": []
+    },
+    {
+      "task": "modflow6-groundwater-regression-audit",
+      "reward": 0.015544041450777202,
+      "original_classification": {
+        "stop_reason": "request_or_tool_budget",
+        "infrastructure_ok": true,
+        "reasons": [],
+        "method_issues": [
+          "model_error"
+        ]
+      },
+      "corrected_classification": {
+        "stop_reason": "request_or_tool_budget",
+        "infrastructure_ok": true,
+        "reasons": [],
+        "method_issues": [],
+        "model_error_count": 3,
+        "recovered_model_errors": 3,
+        "unrecovered_model_errors": 0,
+        "warnings": [
+          "recovered_model_errors"
+        ]
+      },
+      "original_audit_sha256": "48016544822c1047c9fb9eada2671393e2b31566d442c2b2cfa36b3e636a41e0",
+      "inner_error_codes": [
+        "json_syntax",
+        "json_syntax",
+        "json_syntax"
+      ]
+    },
+    {
+      "task": "foldseek-paper-reproduction",
+      "reward": 0.4444444444444444,
+      "original_classification": {
+        "stop_reason": "request_or_tool_budget",
+        "infrastructure_ok": true,
+        "reasons": [],
+        "method_issues": [
+          "model_error"
+        ]
+      },
+      "corrected_classification": {
+        "stop_reason": "request_or_tool_budget",
+        "infrastructure_ok": true,
+        "reasons": [],
+        "method_issues": [],
+        "model_error_count": 3,
+        "recovered_model_errors": 3,
+        "unrecovered_model_errors": 0,
+        "warnings": [
+          "recovered_model_errors"
+        ]
+      },
+      "original_audit_sha256": "f8c6e7e161b2ea7441f631e2abdf54cca091769e061db1652cbcdb1cf5ec7bc9",
+      "inner_error_codes": [
+        "json_syntax",
+        "json_syntax",
+        "json_syntax"
+      ]
+    },
+    {
+      "task": "gdal-proj-raster-regression",
+      "reward": 0.0,
+      "original_classification": {
+        "stop_reason": "model_or_protocol_error_limit",
+        "infrastructure_ok": true,
+        "reasons": [],
+        "method_issues": [
+          "model_error"
+        ]
+      },
+      "corrected_classification": {
+        "stop_reason": "model_or_protocol_error_limit",
+        "infrastructure_ok": true,
+        "reasons": [],
+        "method_issues": [
+          "model_error"
+        ],
+        "model_error_count": 6,
+        "recovered_model_errors": 3,
+        "unrecovered_model_errors": 3,
+        "warnings": [
+          "recovered_model_errors"
+        ]
+      },
+      "original_audit_sha256": "301c000b3f334b6fed443529b8fedb904d4652dc6a674c336b3033a25b3622e9",
+      "inner_error_codes": [
+        "output_length",
+        "output_length",
+        "output_length",
+        "output_length",
+        "output_length",
+        "output_length"
+      ]
+    },
+    {
+      "task": "climate-netcdf-extreme-event-audit",
+      "reward": 0.084969479067,
+      "original_classification": {
+        "stop_reason": "request_or_tool_budget",
+        "infrastructure_ok": true,
+        "reasons": [],
+        "method_issues": []
+      },
+      "corrected_classification": {
+        "stop_reason": "request_or_tool_budget",
+        "infrastructure_ok": true,
+        "reasons": [],
+        "method_issues": [],
+        "model_error_count": 0,
+        "recovered_model_errors": 0,
+        "unrecovered_model_errors": 0,
+        "warnings": []
+      },
+      "original_audit_sha256": "e1d59d49362c6929a78191e390584646765f36343fff4de3758cc6f4aae5b2d2",
+      "inner_error_codes": []
+    },
+    {
+      "task": "great-expectations-audit",
+      "reward": 0.0,
+      "original_classification": {
+        "stop_reason": "model_or_protocol_error_limit",
+        "infrastructure_ok": true,
+        "reasons": [],
+        "method_issues": [
+          "model_error"
+        ]
+      },
+      "corrected_classification": {
+        "stop_reason": "model_or_protocol_error_limit",
+        "infrastructure_ok": true,
+        "reasons": [],
+        "method_issues": [
+          "model_error"
+        ],
+        "model_error_count": 3,
+        "recovered_model_errors": 0,
+        "unrecovered_model_errors": 3,
+        "warnings": []
+      },
+      "original_audit_sha256": "93bd5450ecc9f63ec3e774f4deb414bbaa035041fe64b53e68fca0ffd6b25c39",
+      "inner_error_codes": [
+        "output_length",
+        "output_length",
+        "output_length"
+      ]
+    }
+  ],
+  "before_method_issue_trials": 4,
+  "after_method_issue_trials": 2
+}

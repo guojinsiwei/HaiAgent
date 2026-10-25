@@ -1,0 +1,143 @@
+{
+  "version": "bestfgs-contrastive-repair-v9",
+  "task_id": "cs61_fa24_scheme",
+  "submitted": false,
+  "stop_reason": "model_budget",
+  "artifact": {
+    "path": "/mnt/lizh639/longcli-dh-raw-full20-20261004/roots/dh--cs61_fa24_scheme/app",
+    "fingerprint": "af0e4846a606e44826451cf8ef502d9fc26e00b255cc1a31b8db030d645e85c1",
+    "restoration": "workspace_files_only"
+  },
+  "official_success": null,
+  "error_type": null,
+  "interaction_rounds": 800,
+  "action_rounds": 789,
+  "advisor_rounds": 1,
+  "monitor_rounds": 10,
+  "tool_calls": 197,
+  "wall_seconds": 2255.5748124970123,
+  "model_usage": {
+    "action": {
+      "model_calls": 789,
+      "api_requests": 789,
+      "api_responses": 789,
+      "prompt_tokens": 10606131,
+      "completion_tokens": 320357,
+      "total_tokens": 10926488,
+      "cached_prompt_tokens": 1620480,
+      "cache_miss_prompt_tokens": 8985651,
+      "usage_reports": 789,
+      "usage_missing_responses": 0,
+      "failure_counts": {},
+      "response_models": [
+        "deepseek-flash"
+      ]
+    },
+    "advisor": {
+      "model_calls": 1,
+      "api_requests": 1,
+      "api_responses": 1,
+      "prompt_tokens": 12898,
+      "completion_tokens": 343,
+      "total_tokens": 13241,
+      "cached_prompt_tokens": 256,
+      "cache_miss_prompt_tokens": 12642,
+      "usage_reports": 1,
+      "usage_missing_responses": 0,
+      "failure_counts": {},
+      "response_models": [
+        "deepseek-flash"
+      ]
+    },
+    "monitor": {
+      "model_calls": 10,
+      "api_requests": 10,
+      "api_responses": 10,
+      "prompt_tokens": 47922,
+      "completion_tokens": 6436,
+      "total_tokens": 54358,
+      "cached_prompt_tokens": 12160,
+      "cache_miss_prompt_tokens": 35762,
+      "usage_reports": 10,
+      "usage_missing_responses": 0,
+      "failure_counts": {
+        "json_syntax": 1
+      },
+      "response_models": [
+        "deepseek-flash"
+      ]
+    }
+  },
+  "mechanism_utilization": {
+    "model_requests": 800,
+    "action_calls": 789,
+    "advisor_calls": 1,
+    "tool_calls": 197,
+    "memory_exposures": 2861,
+    "requests_with_memory": 741,
+    "memories_admitted": 14,
+    "memories_rejected": 0,
+    "memory_use_self_reports": 1,
+    "advisor_responses_accepted": 1,
+    "advisor_deferred": 0,
+    "checkpoints_created": 1,
+    "branch_restores": 0,
+    "submissions": 0,
+    "protocol_errors": 0,
+    "memory_interventions": 0,
+    "memory_action_changed": 0,
+    "memory_action_unchanged": 0,
+    "memory_followup_actions": 1,
+    "memory_followup_runs": 1,
+    "memory_followup_succeeded": 1,
+    "memory_followup_workspace_changed": 0,
+    "post_advice_actions": 1,
+    "monitor_calls": 10,
+    "monitor_reviews_accepted": 9,
+    "monitor_deferred": 1,
+    "semantic_stalls": 1,
+    "auto_memory_candidates": 18,
+    "auto_memories_admitted": 14,
+    "auto_memories_rejected": 4,
+    "observed_memories_admitted": 0,
+    "recovery_started": 0,
+    "recovery_plans": 0,
+    "recovery_verified_repairs": 0,
+    "recovery_checked_hypotheses": 0,
+    "recovery_failed": 0,
+    "route_episodes": 0,
+    "route_plans": 0,
+    "route_tools": 0,
+    "route_trials": 0,
+    "route_pruned": 0,
+    "route_selected": 0,
+    "route_no_gain": 0,
+    "route_rejected": 0,
+    "route_restore_failures": 0,
+    "action_loop_blocks": 547,
+    "contrastive_failure_records": 8,
+    "contrastive_episodes": 21,
+    "contrastive_proposals": 573,
+    "contrastive_rejections": 65,
+    "contrastive_diagnostic_fallbacks": 20,
+    "contrastive_accepted": 508,
+    "contrastive_observations": 7,
+    "contrastive_informative_predictions": 0,
+    "contrastive_new_evidence": 5,
+    "contrastive_workspace_changes": 3,
+    "contrastive_public_check_improvements": 0,
+    "memory_exposure_is_not_benefit": true,
+    "memory_use_is_self_report": true
+  },
+  "time_by_role": {
+    "action": 1757.3243874395266,
+    "tools": 44.551873564720154,
+    "monitor": 33.73202881589532,
+    "advisor": 2.277170521207154
+  },
+  "contextual_tool_redundancy": {
+    "status": "requires_independent_audit",
+    "rate": null,
+    "denominator": 197
+  }
+}

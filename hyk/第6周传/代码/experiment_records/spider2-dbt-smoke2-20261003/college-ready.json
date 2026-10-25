@@ -1,0 +1,13 @@
+{
+  "ready": true,
+  "hashes": {
+    "spider_grader.py": "97d474ec0bd6c4eea596f1877b84848be1bc9d7d944e1345cea7664f4b1a7c32",
+    "common.py": "30eb54574fdeeee02f4203c0f3fa593136597d48fa492756acb38a96635e1f72",
+    "protocol.json": "16e132481c570eddfda0892827d4f717bcded31da8414a990b248aeacd23d9c3",
+    "upstream/spider2-dbt/evaluation_suite/eval_utils.py": "d1d7ea59e5587340ef01237c203b8d194205e304f45dbf4232495bd68d4b2610",
+    "upstream/spider2-dbt/evaluation_suite/gold/spider2_eval.jsonl": "59abe98560f120abd7665b1c4abcc59664b17e8d70f3452cd18ba25fcecef501",
+    "gold/asset001/asset.duckdb": "2d027db456288892d3dcb511ab9c1a4aa7480984877a196d8cef6167340f8e4b",
+    "gold/asana001/asana.duckdb": "8bd2190fb78351c8144c39413b7ff984f441b9d59abc5e4033cf297bbd5b5ea4"
+  },
+  "model_calls": 0
+}

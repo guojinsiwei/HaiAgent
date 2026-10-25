@@ -1,0 +1,1075 @@
+{
+  "schema_version": 1,
+  "metric_version": "cli-comparison-v1",
+  "plan_sha256": "8e46676a0b79150c84a9fca745bed3638dd1f4f6e8bad6df4ca62405609affe7",
+  "dataset": "SWE-bench/SWE-bench_Verified",
+  "split": "test",
+  "expected_ids": [
+    "django__django-15252",
+    "django__django-13023",
+    "scikit-learn__scikit-learn-14894",
+    "django__django-11087",
+    "scikit-learn__scikit-learn-14053",
+    "matplotlib__matplotlib-20676",
+    "django__django-15957",
+    "sympy__sympy-22080",
+    "django__django-15382",
+    "django__django-15467",
+    "sphinx-doc__sphinx-7590",
+    "django__django-13033",
+    "django__django-16100",
+    "sympy__sympy-13798",
+    "django__django-11885",
+    "pytest-dev__pytest-10051",
+    "scikit-learn__scikit-learn-11578",
+    "django__django-16256",
+    "django__django-12262",
+    "django__django-11749",
+    "django__django-13809",
+    "django__django-13449",
+    "django__django-10999",
+    "django__django-15572",
+    "django__django-13363",
+    "sphinx-doc__sphinx-7985",
+    "scikit-learn__scikit-learn-13496",
+    "django__django-14915",
+    "django__django-14053",
+    "sympy__sympy-24213",
+    "sympy__sympy-23262",
+    "sympy__sympy-15875",
+    "pydata__xarray-3095",
+    "sphinx-doc__sphinx-8551",
+    "django__django-14752",
+    "pytest-dev__pytest-5262",
+    "django__django-13837",
+    "sympy__sympy-19040",
+    "pylint-dev__pylint-7080",
+    "django__django-13807",
+    "django__django-13933",
+    "django__django-11179",
+    "sympy__sympy-17139",
+    "sympy__sympy-22456",
+    "django__django-13568",
+    "django__django-12325",
+    "django__django-14238",
+    "django__django-11400",
+    "scikit-learn__scikit-learn-13328",
+    "django__django-13089",
+    "django__django-11999",
+    "django__django-16454",
+    "django__django-14534",
+    "django__django-17084",
+    "django__django-14493",
+    "django__django-11138",
+    "django__django-14672",
+    "django__django-12741",
+    "django__django-12209",
+    "django__django-14140",
+    "django__django-13121",
+    "sympy__sympy-12481",
+    "django__django-10554",
+    "pytest-dev__pytest-5631",
+    "sphinx-doc__sphinx-10435",
+    "pylint-dev__pylint-4604",
+    "django__django-13158",
+    "sphinx-doc__sphinx-8056",
+    "django__django-12708",
+    "sympy__sympy-12419",
+    "astropy__astropy-7336",
+    "sphinx-doc__sphinx-9658",
+    "sympy__sympy-14976",
+    "django__django-11133",
+    "astropy__astropy-7671",
+    "django__django-16950",
+    "django__django-11951",
+    "scikit-learn__scikit-learn-14983",
+    "django__django-15375",
+    "scikit-learn__scikit-learn-25747",
+    "django__django-15098",
+    "sphinx-doc__sphinx-9602",
+    "sympy__sympy-13757",
+    "django__django-12193",
+    "matplotlib__matplotlib-21568",
+    "django__django-15278",
+    "scikit-learn__scikit-learn-14629",
+    "django__django-10880",
+    "sympy__sympy-15599",
+    "sphinx-doc__sphinx-7757",
+    "django__django-15127",
+    "django__django-16819",
+    "django__django-14771",
+    "sphinx-doc__sphinx-9591",
+    "django__django-13658",
+    "django__django-16139",
+    "django__django-13741",
+    "django__django-11066",
+    "django__django-17087",
+    "sphinx-doc__sphinx-10449"
+  ],
+  "implementation_sha256": "e68b7836714bfc941b73d066d9470255a9510c390d1fc27a1cec0b2c4da5a041",
+  "agent_python": "/mnt/lizh639/envs/bestfgs/bin/python3.11",
+  "agent_python_version": "3.11.16 (main, Sep  2 2026, 23:39:52) [GCC 15.3.0]",
+  "common_args": [
+    "--provider",
+    "deepseek",
+    "--model",
+    "deepseek-flash",
+    "--base-url",
+    "https://api.deepseek.com",
+    "--api-key-env",
+    "DEEPSEEK_API_KEY",
+    "--temperature",
+    "0.2",
+    "--reasoning-effort",
+    "high",
+    "--solve-reasoning-effort",
+    "high",
+    "--max-iterations",
+    "24",
+    "--max-tool-calls",
+    "80",
+    "--max-commands-per-action",
+    "4",
+    "--budget-multiplier",
+    "1",
+    "--no-adaptive-budget",
+    "--success-judge-mode",
+    "off",
+    "--comparison-metrics",
+    "--model-timeout",
+    "90",
+    "--model-max-wall-time",
+    "600",
+    "--model-request-attempts",
+    "5",
+    "--model-parse-attempts",
+    "3",
+    "--model-retry-interval",
+    "2",
+    "--model-max-retry-interval",
+    "30"
+  ],
+  "task_timeout": 14400,
+  "prepared": {
+    "django__django-15252": {
+      "ready_sha256": "2e1dcda0dd78825216ccb0f807b88ad49dc0fe75714df5f98f3f091ceb0effee",
+      "pip_freeze_sha256": "540e514fcc51dc180d6674c604f1987542f54476937fee5d7e41a6c5d08f2b69",
+      "seed_sha256": "544074bf208a466d11643c243c109c349ed348ff5e20fde0c27cff87e29869ae",
+      "prepared_commit": "cf6b1f3a11dc89c480f2636b82b095bfbb4b9b0c",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-15252/attempt-0af2db1bb53c/env/bin/python",
+      "base_commit": "361bb8f786f112ee275be136795c0b1ecefff928"
+    },
+    "django__django-13023": {
+      "ready_sha256": "596572b0dd5d071c94776c7dca04e5d4854156823153bfa82016b0bc7def1527",
+      "pip_freeze_sha256": "c10ee7b7beb9855688658f276df9b90f59d6b34cd9cf68152ac451012cc41a28",
+      "seed_sha256": "a9d46f1fc6b7270f5636a37e30db899555698e9e485f9898ed58cebf70aa0d93",
+      "prepared_commit": "7041ed9610d774b3e8825e2e01c3e0703385f97d",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-13023/attempt-e9a2b6151edd/env/bin/python",
+      "base_commit": "f83b44075dafa429d59e8755aa47e15577cc49f9"
+    },
+    "scikit-learn__scikit-learn-14894": {
+      "ready_sha256": "b49096ff0e0215c4cd61fd302c5ea36b0ff713b192bcd53ae68eda758bfdd496",
+      "pip_freeze_sha256": "ebbed4d5fae2c1f4547051e9e6d4f36aca24987197baf3c86cd28785f7e629bc",
+      "seed_sha256": "3916f70a959ff9b0159ea622ccfd5bf1e4b530ce406df235ddb17afaa9668b7d",
+      "prepared_commit": "5cc24c98d69ea026e8594e41a123ffef43bb022a",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/scikit-learn__scikit-learn-14894/attempt-807114851ab9/env/bin/python",
+      "base_commit": "fdbaa58acbead5a254f2e6d597dc1ab3b947f4c6"
+    },
+    "django__django-11087": {
+      "ready_sha256": "3ade92ec0e342f28f7a369c5449ac8221e2d38cac1d1ff42e97c159cb162b60c",
+      "pip_freeze_sha256": "cc1a88f2269e9e4dfcf4bb95a29a071c95a315134b5416217f2e907e8cec1758",
+      "seed_sha256": "91d34d52520199858a2af10674bfca5f555d5080be5b6474b92936d8535b6c86",
+      "prepared_commit": "2d63c7ecf78a4126c1bf29cbf101533803acddc8",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-11087/attempt-d1e12cb4e5d2/env/bin/python",
+      "base_commit": "8180ffba21bf10f4be905cb0d4890dc2bcff2788"
+    },
+    "scikit-learn__scikit-learn-14053": {
+      "ready_sha256": "9b3c9c3c7942d29ca0310a1c281ec0099db271e21e43541af527899e9a90d14f",
+      "pip_freeze_sha256": "e255bb92673603abdf7dcd9e95b4e0654fa8f98bec99c8b8c1af7dad7a9fb4b8",
+      "seed_sha256": "eb4d6c54d37435a137f493a80da6312ca6f32681876ba1803667c5dadf40f38b",
+      "prepared_commit": "80b59ac42ec2efce143b069c431a37ec88caa6db",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/scikit-learn__scikit-learn-14053/attempt-9c67d527bfc5/env/bin/python",
+      "base_commit": "6ab8c86c383dd847a1be7103ad115f174fe23ffd"
+    },
+    "matplotlib__matplotlib-20676": {
+      "ready_sha256": "34cae043546e9faece23ba17d6636233b06a523b750d063f373faa5317a65b6a",
+      "pip_freeze_sha256": "09b7b021f152e5b68a6e93982b286ad319e3c7d92dbf4f56b289ae7f3b949fb3",
+      "seed_sha256": "eeb4718890c78c6781371d2e9ab997f43384604a5f77d271d658596541676bce",
+      "prepared_commit": "aa3568a6b2b93d4ef01970f867fd33d208cacaf3",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/matplotlib__matplotlib-20676/attempt-7c8ddbe3fb31/env/bin/python",
+      "base_commit": "6786f437df54ca7780a047203cbcfaa1db8dc542"
+    },
+    "django__django-15957": {
+      "ready_sha256": "86f8f231759cbf8a71fb3612b06aa7988bf64642aec18da8f2f970646d6766b3",
+      "pip_freeze_sha256": "87e008b20c9bf8c3dfcef6f36f92a8d8bf4d45f4189ff51c4bd03f5782bf6f1f",
+      "seed_sha256": "88000a77e06cba2cbebf75c727245baae9cafd41c54eb543a7421f09eeca536b",
+      "prepared_commit": "e2f1ed024232175808ea918ccf15d75835fe0533",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-15957/attempt-a1f1f3121f0d/env/bin/python",
+      "base_commit": "f387d024fc75569d2a4a338bfda76cc2f328f627"
+    },
+    "sympy__sympy-22080": {
+      "ready_sha256": "27785849d703156181b22cf97b1662ec41935ef62cdaacf72230efcf36f695ec",
+      "pip_freeze_sha256": "353bf68342d14566f7866f29de57d92140d5e4800a7ae88efc3f03784e62c6f5",
+      "seed_sha256": "bf93aad89cc4ffc7374538f992ff885e15e8c0444d570dc23dd020dfad36a0bb",
+      "prepared_commit": "c0065277119ac6b5430ffdaac727edc8804920fa",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/sympy__sympy-22080/attempt-c32344602f19/env/bin/python",
+      "base_commit": "3f8c8c2377cb8e0daaf8073e8d03ac7d87580813"
+    },
+    "django__django-15382": {
+      "ready_sha256": "5f6617dea68c422189072d222a10d590dd6344ef5ce2f99756d2a4f2cd73fb15",
+      "pip_freeze_sha256": "35f9bd708b496682386e814c4719503938db1e96918cc5af6c391143aca36f64",
+      "seed_sha256": "21b5bf2f684d3857a86529e641ff34a37e109b01f6a348400dc1e2f7ac56695b",
+      "prepared_commit": "63452e116cdac72c4bcc0beb5b8090fbf5a857c6",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-reserve-v1/prepared/django__django-15382/attempt-695c195c5d1b/env/bin/python",
+      "base_commit": "770d3e6a4ce8e0a91a9e27156036c1985e74d4a3"
+    },
+    "django__django-15467": {
+      "ready_sha256": "f61cd734a81126f959f26c576c470ba7111e91eb2113aa0bb94aac8be32c2771",
+      "pip_freeze_sha256": "7b0caf91ec9125ba9edfb3ba31f539f07b9f026d7a48e1eed19d669992440a83",
+      "seed_sha256": "9a74744f878dc80f9819cda6101921c811ddef3ce4d10b8149e0325705978184",
+      "prepared_commit": "3a973513ee1d8a418eebb62898adb126c8e0caf8",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-15467/attempt-63d005981fbc/env/bin/python",
+      "base_commit": "e0442a628eb480eac6a7888aed5a86f83499e299"
+    },
+    "sphinx-doc__sphinx-7590": {
+      "ready_sha256": "25c142af9dba1b1c0857ddb26aad85c0fe44da1e69f8ddfa30340724c635d807",
+      "pip_freeze_sha256": "f2236c197ae312c7d4bea5d06f0b5ed89764573004e69f35dcbf3743d2861580",
+      "seed_sha256": "8bf8b1ee21b3d9742d39532cc3e5b9a14f1a840d938cfa4793e2aeedfa5751e8",
+      "prepared_commit": "6f215209676695146bb701e5c9bf924e0f839ed5",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/sphinx-doc__sphinx-7590/attempt-9103abfd77bf/env/bin/python",
+      "base_commit": "2e506c5ab457cba743bb47eb5b8c8eb9dd51d23d"
+    },
+    "django__django-13033": {
+      "ready_sha256": "795925f0993e3d7bef173787dae9503be0d8df87db35042e863b0a44091443bc",
+      "pip_freeze_sha256": "25fc8cc6e0e6a08fab9e95db069032a68d1ca0f8627cbacfefcec979d4d7f18e",
+      "seed_sha256": "214e24a7254547506690e897473899d32df8e0ca37c641afba698902b22b0ed5",
+      "prepared_commit": "27a598428e7ff00db6c9605ae0ac092af47d7a35",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-13033/attempt-ed6d2fb24bbb/env/bin/python",
+      "base_commit": "a59de6e89e8dc1f3e71c9a5a5bbceb373ea5247e"
+    },
+    "django__django-16100": {
+      "ready_sha256": "fb83b595a5ffd7cdd3420ca9aa31b555ab8d33f1370b5a3d7387dbb46713962e",
+      "pip_freeze_sha256": "89489c07751c7262dc9fbba6bd3eaa38e15d00609ec622e33a2ae36aca808354",
+      "seed_sha256": "1eee9d780c6967421d9c70edfa0176b42918c2738b40ee3914c6b15db0895e0b",
+      "prepared_commit": "0d312760448348a91ed345885344d9e7702e6012",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-16100/attempt-0ae924fcacdf/env/bin/python",
+      "base_commit": "c6350d594c359151ee17b0c4f354bb44f28ff69e"
+    },
+    "sympy__sympy-13798": {
+      "ready_sha256": "96eddd0f59c32257711470da368fc6feec52e7f45528cf371f3330a07bbf6638",
+      "pip_freeze_sha256": "c41e7639efc861971366d5ecc18461e9dd8b92d995343067b273aa2a3faed6c3",
+      "seed_sha256": "980d3b57535016d91b89db7e59b2c0e8cd2aeb05109e9291e92672718fbb9bca",
+      "prepared_commit": "4398ebc304bb1ac567773b940b96f9802a1ed212",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/sympy__sympy-13798/attempt-48679e52545c/env/bin/python",
+      "base_commit": "7121bdf1facdd90d05b6994b4c2e5b2865a4638a"
+    },
+    "django__django-11885": {
+      "ready_sha256": "fafd5dd6a7278d258d7711a4c14bd25c5c389f9268177ca829059f46c9102164",
+      "pip_freeze_sha256": "73abbbd54c8fd2139b324f8e3042191fc0ccc40e09e8d7cd2445467f644dfc5e",
+      "seed_sha256": "6866634a457411bfac106702d630f285ac0597a1cee8de761ca23aed1247c1b8",
+      "prepared_commit": "de130ecb9f390dbac7768342e653a8fea056279d",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-11885/attempt-90a59fec7561/env/bin/python",
+      "base_commit": "04ac9b45a34440fa447feb6ae934687aacbfc5f4"
+    },
+    "pytest-dev__pytest-10051": {
+      "ready_sha256": "cd80f4bd3c89da1f88d68e233a2c9ee59003db74556c7e5791887b82f47190d1",
+      "pip_freeze_sha256": "c68523367e108720a6664c2f9b7c5f9ba47f540b42940eda35c9b951dc8fbecf",
+      "seed_sha256": "c8b229e3fd467f60c672fd51a1afc6fafa889b6fe815544d2457fece62d65eb0",
+      "prepared_commit": "e5ae9951d25c42a79b0e8260b10f5d2ba0e7787f",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/pytest-dev__pytest-10051/attempt-38890bc92ce8/env/bin/python",
+      "base_commit": "aa55975c7d3f6c9f6d7f68accc41bb7cadf0eb9a"
+    },
+    "scikit-learn__scikit-learn-11578": {
+      "ready_sha256": "dec466b3c6a1cb671dddcb30c560c5fe1b3472833246107acb69c9c9ef19f516",
+      "pip_freeze_sha256": "1d33fba75f0bdd98ab30b6b1d8fa9acb588755fefc4824e7d98a22dd8e06f9a5",
+      "seed_sha256": "dbe3100389ffd6613bfdf7fa09ebb6e1b9369274498ae733b6df8c92b72b88c3",
+      "prepared_commit": "e55baaa818c297aff161cf1357d68ed4c471fd12",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/scikit-learn__scikit-learn-11578/attempt-f220f017e268/env/bin/python",
+      "base_commit": "dd69361a0d9c6ccde0d2353b00b86e0e7541a3e3"
+    },
+    "django__django-16256": {
+      "ready_sha256": "b7414a9e02fdadd66cc79bf2c5b951f5c10b4bca8671406324e84a3462650d99",
+      "pip_freeze_sha256": "444ff69e06237c2747ba010dd9e5459c7e4e114c2a795da609364ce01dbd3772",
+      "seed_sha256": "0718a21c62da6f9358bca681d28a431efad1c94cfc3d398c9a04acd3fc786586",
+      "prepared_commit": "9e0f2bd3efce5fa6f6f27f9685331471c8b2dcf5",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-16256/attempt-9aa8e430267b/env/bin/python",
+      "base_commit": "76e37513e22f4d9a01c7f15eee36fe44388e6670"
+    },
+    "django__django-12262": {
+      "ready_sha256": "5ac648e480583759c5b05d36d44b3ca775ffb91fbf3b53849c9281fb7c4ff60e",
+      "pip_freeze_sha256": "827723a706ca0dec6034c24af450dc7c6c54e5058cfce0d51bc236de5886fbc8",
+      "seed_sha256": "56268b36e32d595afeb6e0913051a24ec2eaa72d52628fa68becc86868140f6f",
+      "prepared_commit": "25fffb2f79196ad1aff38be03159eacd17d4e23f",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-12262/attempt-391b81cdb168/env/bin/python",
+      "base_commit": "69331bb851c34f05bc77e9fc24020fe6908b9cd5"
+    },
+    "django__django-11749": {
+      "ready_sha256": "4de4cd235e62296511e27f7215cb6b4946649980b39d46c95bb7089582e40130",
+      "pip_freeze_sha256": "46427be084a561abfa167b8a64f1663247986f76b07bda17b044a1a208faf4d6",
+      "seed_sha256": "d1a9aaaf74ce2517ab7412350d7ce37e67adf28d6b1f97d5ad4fba4def131fb4",
+      "prepared_commit": "9962178f503acb4dc028c245c28cfbdd621dadf6",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-11749/attempt-81966cf1e0b0/env/bin/python",
+      "base_commit": "350123f38c2b6217c38d70bfbd924a9ba3df1289"
+    },
+    "django__django-13809": {
+      "ready_sha256": "533409e8d0b075a000d636a6505217b594b84923d5a7b28a2afe317052fe74f7",
+      "pip_freeze_sha256": "4f7a23587b452428a8acd28924a726327edb36a9b4834c3130f4e768513b0501",
+      "seed_sha256": "39952238cd539552ae30877a5e3c0f47631c53c10669d625aeeba983ab5f0947",
+      "prepared_commit": "430f16864572942599e59c9a76fb190c5c5d6de4",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-13809/attempt-ffce9e3ca45a/env/bin/python",
+      "base_commit": "bef6f7584280f1cc80e5e2d80b7ad073a93d26ec"
+    },
+    "django__django-13449": {
+      "ready_sha256": "853b8b647fd090d9f8b8ba11abb164da9d3e9ad788099ed3eb2133d435d3fe5a",
+      "pip_freeze_sha256": "4b6e98ac1d17950b35b1d83b7db3fd2433601c632296fa4c2144860abb203367",
+      "seed_sha256": "89915b9bdc8ed77c0809fb5f426be2800d4bd85428f6688ce31a5ad88f839f1e",
+      "prepared_commit": "a407ed0a2a114920949dce66ad51737700b0f51c",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-13449/attempt-94ead40d9c20/env/bin/python",
+      "base_commit": "2a55431a5678af52f669ffe7dff3dd0bd21727f8"
+    },
+    "django__django-10999": {
+      "ready_sha256": "95bd6ec6182fa6d1700f4215a157041b2e2dfdf577b3f02ed45bf0e1dc96ba00",
+      "pip_freeze_sha256": "8793b7d52493b23e4144013ce348f872ccf475fce046fb1793df9def4bec5279",
+      "seed_sha256": "d52503e8a46e9967acf1160aa7f456fcee1a7e4e89ed13b11aebc82597566418",
+      "prepared_commit": "8ececda601210f54d5b829c2d23f54b4cfa55c8c",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-10999/attempt-1b248a287189/env/bin/python",
+      "base_commit": "36300ef336e3f130a0dadc1143163ff3d23dc843"
+    },
+    "django__django-15572": {
+      "ready_sha256": "2d41dcb07b3719d98e186dbae58a1e181ca6551800871df367f362d8bd125f2f",
+      "pip_freeze_sha256": "0e54b191cefe870393033feea3c718e2056b7749456a17ad0824885ae548072d",
+      "seed_sha256": "4940bce7040f96d9ad46453f5a4ad41e5157f6afda867f1c6256d4852a2340b1",
+      "prepared_commit": "ff6785a104350d63d42c022cfac4f343945106f7",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-15572/attempt-9d53af055bf6/env/bin/python",
+      "base_commit": "0b31e024873681e187b574fe1c4afe5e48aeeecf"
+    },
+    "django__django-13363": {
+      "ready_sha256": "c9673f99d03ecd3e580faab32a32ce23088126bf5792f1d61b42e9936323db5f",
+      "pip_freeze_sha256": "bd853843f07c056a43c038f3261392b0568f1ea166b54d1dff5b73dec630c635",
+      "seed_sha256": "8d05b197204bdb898d195349b94e7b846bdf11544aeef7101c048d3ffda03ae3",
+      "prepared_commit": "1355135cacb87e8a9fb56d73baf283518bd2e31d",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-13363/attempt-434aef2d15f1/env/bin/python",
+      "base_commit": "76e0151ea0e0f56dca66cee846a78b89346d2c4c"
+    },
+    "sphinx-doc__sphinx-7985": {
+      "ready_sha256": "709c7c0762fbdf5ea821679a56367f5301e3f6e811b0c44288e7021f1d0deea8",
+      "pip_freeze_sha256": "7bdb8a026377466ff536e7434cc758a9bdb56ef122de88f0d4eaf6287b363006",
+      "seed_sha256": "1aa41445a42a996ac1686f618d28ff459b718b812ac9949ce379b9553c01de09",
+      "prepared_commit": "448a0a43b8225578e69cdd613562b4a0cc95e5db",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/sphinx-doc__sphinx-7985/attempt-9d06813d9421/env/bin/python",
+      "base_commit": "f30284ef926ebaf04b176f21b421e2dffc679792"
+    },
+    "scikit-learn__scikit-learn-13496": {
+      "ready_sha256": "ccdd15c706fad73cde4de9cca532a05d859b8005e4e075ae932a8e2b40bb9ec3",
+      "pip_freeze_sha256": "4982cd8942d0f56fb1cfa460eae766381b1f8baae413c131552c339603495b14",
+      "seed_sha256": "b5d0ec9272578e84e720f176b12f2c7535be2ec1aea93bdfb151e395a584d9d8",
+      "prepared_commit": "92924214d44d768f4f96e7684e5df33d1da0a171",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/scikit-learn__scikit-learn-13496/attempt-6dc98eebda71/env/bin/python",
+      "base_commit": "3aefc834dce72e850bff48689bea3c7dff5f3fad"
+    },
+    "django__django-14915": {
+      "ready_sha256": "f5e2ffe4d450cde5421d99f4f12b3990766b1d5a03192c1cab3c80014b9e72fb",
+      "pip_freeze_sha256": "db0846c411ecc966a6eca873f20a5fb88de4272da1746ec5aaa9a81111827717",
+      "seed_sha256": "a2d2c0cd404d62fbeb4f18f7dc2f3295497b954a6a76ac8226ea4702cf9485d1",
+      "prepared_commit": "fdf0599557c8bb421504fb3dc62b98fa45a437d8",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-14915/attempt-f57cfd1e3f5e/env/bin/python",
+      "base_commit": "903aaa35e5ceaa33bfc9b19b7f6da65ce5a91dd4"
+    },
+    "django__django-14053": {
+      "ready_sha256": "2de3035bc9897eea86848046b3e2bdac943f842f2eecf1ba875b5d2326f715f9",
+      "pip_freeze_sha256": "a9672f490c8918f6d3f3326d785cff752bfcc16d5981b8ed046ff8d1fbddaa54",
+      "seed_sha256": "76eb302e9a3b16a1169fd8af119d2f943c8c56487637e54105738b98e87bbb36",
+      "prepared_commit": "1daa8b09229c7f7d0e7a4821a06ba3173ff202d3",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-14053/attempt-4badf8bdba7c/env/bin/python",
+      "base_commit": "179ee13eb37348cd87169a198aec18fedccc8668"
+    },
+    "sympy__sympy-24213": {
+      "ready_sha256": "ca35075bdc929fb41b529afec07b960259db4c96efe3c36bf6cb996b4a0117e4",
+      "pip_freeze_sha256": "6a91ef3a733579ad74d69f045e13f41beb65ceda7188ef12c92715a064427d99",
+      "seed_sha256": "2682a118e47cd2a79cb4fa5a211003d8ec78f8f5d80508bcaf3c7704cf9ffb8d",
+      "prepared_commit": "c4b66397168e75df4a24852f935f7a37971d8964",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/sympy__sympy-24213/attempt-4b6ceac839a0/env/bin/python",
+      "base_commit": "e8c22f6eac7314be8d92590bfff92ced79ee03e2"
+    },
+    "sympy__sympy-23262": {
+      "ready_sha256": "940e1b63f961ad49a65f44db30a852d9607804d79f72243c193815b77ee2ed42",
+      "pip_freeze_sha256": "81de37e88d705206fa7a5aad12018f2f05296af923ef49a86ffbf6f18503de97",
+      "seed_sha256": "afb1d6d205c5e5fd61cdc14a045c92ca116103bd22538cd0462805d6e52c19a8",
+      "prepared_commit": "27732a685009daff304ce9c01ee54826363f2699",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/sympy__sympy-23262/attempt-a19fd2dbe717/env/bin/python",
+      "base_commit": "fdc707f73a65a429935c01532cd3970d3355eab6"
+    },
+    "sympy__sympy-15875": {
+      "ready_sha256": "249838078adab4e58687f483921730ae634caed3b9fe8aa30f6c4399a82b3648",
+      "pip_freeze_sha256": "f4743c6f2dbc52f83f698b0a637d244fb4b41a28c0b4d1359724248a5351cde0",
+      "seed_sha256": "d98ca2456077da1b1ec2a38c3687ff5efb2dc6011fb8ba1dd16da85f94871996",
+      "prepared_commit": "d2e7b8c1f59b5bb8f84e8a5c89b7b2908b0f7f9e",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/sympy__sympy-15875/attempt-3f6e57f72b24/env/bin/python",
+      "base_commit": "b506169ad727ee39cb3d60c8b3ff5e315d443d8e"
+    },
+    "pydata__xarray-3095": {
+      "ready_sha256": "23b67de22427bcba07dd9bccd1a3d0439ba123ab518ec2111579bf2f2d153551",
+      "pip_freeze_sha256": "f9a929c7872e898685cc21198f80a314a4c246c820fd4c439f2b4a55f3c98b9f",
+      "seed_sha256": "2c49e5d5a50d12e7a44fcf006384ed63be1af4dd8e63152393358d8ab5c3c926",
+      "prepared_commit": "99bda41d42075a9a69cb7411b13d1ef76a6743e8",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/pydata__xarray-3095/attempt-a127cd5d4cda/env/bin/python",
+      "base_commit": "1757dffac2fa493d7b9a074b84cf8c830a706688"
+    },
+    "sphinx-doc__sphinx-8551": {
+      "ready_sha256": "4bb33246c0b0c2e47c3735ed00a9e5c8329954cedad87d512c37d2b69f1624d4",
+      "pip_freeze_sha256": "04f27e6aceb09e73995d614965e98bf1fa7626e9d76317c939d8946f72c460ba",
+      "seed_sha256": "9986fa4fc1cc2eaba04288f5c1b8395b23ca7e3f9372e6cd6ef0e6d5dbcac421",
+      "prepared_commit": "03c2b25b79a0c74c8e47a01857964e0f6312334a",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/sphinx-doc__sphinx-8551/attempt-0d69aa7aab70/env/bin/python",
+      "base_commit": "57ed10c68057c96491acbd3e62254ccfaf9e3861"
+    },
+    "django__django-14752": {
+      "ready_sha256": "98449db32c5a313bcf0de236e746047b7132240eca6399e17684536110ddd313",
+      "pip_freeze_sha256": "1e2d8fee66f98a23c211d3884914871305a2867c0576d694435c9345b88e9e62",
+      "seed_sha256": "74b19987ab1793ff0ed28f9db3b8aaff14e06217f10663cb47d86fa27597fb75",
+      "prepared_commit": "ee168320d7b2bccf5e293c14f7dc233b1ab30109",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-14752/attempt-1573396561c8/env/bin/python",
+      "base_commit": "b64db05b9cedd96905d637a2d824cbbf428e40e7"
+    },
+    "pytest-dev__pytest-5262": {
+      "ready_sha256": "6d92ad83a5f9c42ca977b8a9f6668b60c912256834572341c36ba3f34e20ba64",
+      "pip_freeze_sha256": "5aa41ba06a625cc8078c4ab97a9a44a5addcadbd2417ec4ce8f12c0e597a57e1",
+      "seed_sha256": "9b3686d30e0ea366124f111ffa6f30c61353f1d853054c53e9efac77af0dceb7",
+      "prepared_commit": "2c6d1aafc820ab281c0fd191e29b1d6cd8d559bb",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/pytest-dev__pytest-5262/attempt-dd8c13bd1154/env/bin/python",
+      "base_commit": "58e6a09db49f34886ff13f3b7520dd0bcd7063cd"
+    },
+    "django__django-13837": {
+      "ready_sha256": "7fcce22f577580e00f060b9c8d5c706f5af2b82120f124c161221b4419d6819b",
+      "pip_freeze_sha256": "a93f4782305095e4fee77c2e43d4a3a8f4f4aab3b9b292d7f417353413732b40",
+      "seed_sha256": "fc82a61ad46487a6b2b669d49f659b37a29fe0cb2115de0b98cf1a5b92c652be",
+      "prepared_commit": "59620eee6b896ea25158f0a9f131e1944b3a3bb8",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-13837/attempt-599f93347740/env/bin/python",
+      "base_commit": "415f50298f97fb17f841a9df38d995ccf347dfcc"
+    },
+    "sympy__sympy-19040": {
+      "ready_sha256": "6aaa891fc06781ca11fcc69ef8db78bd457633ff929b607c4f0d82cac83ef993",
+      "pip_freeze_sha256": "42d42b81b19f2380f4f45a41a0328b917050153deb2e1e8132ad7d5c5d8bd556",
+      "seed_sha256": "19894e7f89042c96e9fee155b02ca452a0c1ab6ae890d59cde4453256f3a1979",
+      "prepared_commit": "fb6538dbd860c740398d25b1d2eda3457aa2b6a5",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/sympy__sympy-19040/attempt-e4d860cbbb54/env/bin/python",
+      "base_commit": "b9179e80d2daa1bb6cba1ffe35ca9e6612e115c9"
+    },
+    "pylint-dev__pylint-7080": {
+      "ready_sha256": "3738a6aec6e042ab587078ad8afd44b8c10e8bdf124e5a72c719bfbd00cf17c9",
+      "pip_freeze_sha256": "1f44ed2fe3faf8f67ce09538a3bf819c0d5a62afabdd7bcd86e127ac1ae16698",
+      "seed_sha256": "bdfd5328f33239ef75a086d81de411045dcf993af7d0756f36538407012863a4",
+      "prepared_commit": "8d0559a1bec68c2933d918b5601df67da5a15122",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/pylint-dev__pylint-7080/attempt-db51de2ec7ba/env/bin/python",
+      "base_commit": "3c5eca2ded3dd2b59ebaf23eb289453b5d2930f0"
+    },
+    "django__django-13807": {
+      "ready_sha256": "d5430d35eae3d3b8bdabb3214bf943baddefef8a5131cc0753e3b1a88538e5f2",
+      "pip_freeze_sha256": "0a1341b017a2765214a81b203ffd7ecf25a81720de2d89b82b25b17a94de15e2",
+      "seed_sha256": "e30a3c1d821130701988fe6d28c7bb3f5bc1e686e4cd982a524696f4d246bff5",
+      "prepared_commit": "efb89eaffc4ba562f7c96880efec46184ab7ca34",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-reserve-v1/prepared/django__django-13807/attempt-749d87e230ef/env/bin/python",
+      "base_commit": "89fc144dedc737a79929231438f035b1d4a993c9"
+    },
+    "django__django-13933": {
+      "ready_sha256": "ba7ceedde223f512d6e6aa1162bc44ce4f1b5dd0cedac84c7234cb3a28cf7657",
+      "pip_freeze_sha256": "b362cf89e701be7bfcc3ec2727c0da5bcdb1d7edcb0a81de77bc7c66ba86ed48",
+      "seed_sha256": "1dabd4a8c7291e2317b1f7caef98093e35ec9dcefcf9630a2bcf939bbf6e70e6",
+      "prepared_commit": "a4d53c6798495432472ba0647ac53fcbc597dc1a",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-reserve-v1/prepared/django__django-13933/attempt-72762deb7560/env/bin/python",
+      "base_commit": "42e8cf47c7ee2db238bf91197ea398126c546741"
+    },
+    "django__django-11179": {
+      "ready_sha256": "950ca99d501da12c91c7e62be88a6711bfd9d19f1f0990b5cb0dbaf86459681e",
+      "pip_freeze_sha256": "f8d665a547f274614f9cf33e0100db9420d41c0c1dbb11375a58eae85267c243",
+      "seed_sha256": "425ca55424b7dfa53ff40ff30308720a2ff034ad7d4fd30d4563544defe24220",
+      "prepared_commit": "faa6d9b888033d99fbb7911649591d736ddbf600",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-11179/attempt-cf7edf9388be/env/bin/python",
+      "base_commit": "19fc6376ce67d01ca37a91ef2f55ef769f50513a"
+    },
+    "sympy__sympy-17139": {
+      "ready_sha256": "39770e74929f18206f12d083189b63da988aa55f93c0cb40237e3860dc39c642",
+      "pip_freeze_sha256": "49491caa514d4dac14c1ead5a5a9c496123f87b95131ef654644367ad86554ad",
+      "seed_sha256": "fe13228b207230fb4816c2658fd9101601cd9481a4af97344b5c81b693b6b8f1",
+      "prepared_commit": "622aad9f4937c963f94dcf75c7f8ee64ae787ac7",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/sympy__sympy-17139/attempt-f6ccbbf3d99a/env/bin/python",
+      "base_commit": "1d3327b8e90a186df6972991963a5ae87053259d"
+    },
+    "sympy__sympy-22456": {
+      "ready_sha256": "f66e9d5423c6d55932a22054e8411eb871ba60bf67c1941d977b6857b95fc9e1",
+      "pip_freeze_sha256": "38c33c17359ebfd5c6a7550974a81377648705a09aa14595edd20f77ff8123ee",
+      "seed_sha256": "33c654ec21cbccf20341d3c934b8253eca6672fefeb6736f029b64aecdb14592",
+      "prepared_commit": "5725fae75b5d36c3c8f0319f08842c5b12404244",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/sympy__sympy-22456/attempt-d6bd7ab242ef/env/bin/python",
+      "base_commit": "a3475b3f9ac662cd425157dd3bdb93ad7111c090"
+    },
+    "django__django-13568": {
+      "ready_sha256": "4e34130d03688525eba047a7f0a8b48bd42e83789257e30d419ff213f5e12fd5",
+      "pip_freeze_sha256": "33e2b2ed271a801a3b8139ef6716106640cbb2a274c251585f194df04c37eb41",
+      "seed_sha256": "1c8b4b2699afd1837b423dcaeacaefeeb0ef004694961fa46184b03d2b186e43",
+      "prepared_commit": "aed940e56d4d59b5038e13493a6381946450fb56",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-13568/attempt-673c1b371060/env/bin/python",
+      "base_commit": "ede9fac75807fe5810df66280a60e7068cc97e4a"
+    },
+    "django__django-12325": {
+      "ready_sha256": "cbd2102f7d84564f3a138a13846e93f4f36a79352a40e4d72bd1368cced89ef0",
+      "pip_freeze_sha256": "de9cf19f9bec9418300612edce954711a5221e67be06558f20ef8945acb75099",
+      "seed_sha256": "f11e0f90a71629b8761501ce18ac63d3cd4330f7119e9cb0fbff60630ffa3df1",
+      "prepared_commit": "8bee5dfd507d7fccf0996acb37148b9410279583",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-12325/attempt-06ecffec058c/env/bin/python",
+      "base_commit": "29c126bb349526b5f1cd78facbe9f25906f18563"
+    },
+    "django__django-14238": {
+      "ready_sha256": "6aae2cbca4dc92e44c488bb6301ac62b5aa2c60b8fb20ec290a71d442cd7c2bc",
+      "pip_freeze_sha256": "76f5e2a592064f276c2ae7d7c1d1f5c82dc87301ec6f90e567c3dc6fb165f11d",
+      "seed_sha256": "c04ac6083d539f1c44181f1f2c1585b2ce531349217a579d4345a5818cdc68f6",
+      "prepared_commit": "065112cae9c05d664b8a6d6f25529f72300b6795",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-14238/attempt-1f8a93378aad/env/bin/python",
+      "base_commit": "30e123ed351317b7527f632b3b7dc4e81e850449"
+    },
+    "django__django-11400": {
+      "ready_sha256": "833f993545006d7cb8ff88119e277812afd9c3569c763a0e5e478565a8b8d01b",
+      "pip_freeze_sha256": "13a7b55bde0d1180bb9913b14eb73ed8d568d17177bc866fcd37da2553808183",
+      "seed_sha256": "bd710c641ad6a82b3ff7cb35fe07fc7781a9569e5d82a6576fef06d0cf658f40",
+      "prepared_commit": "92a9e338bd215a5e38b95b130f1c10de8be1c623",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-reserve-v2/prepared/django__django-11400/attempt-3793dff5d9bf/env/bin/python",
+      "base_commit": "1f8382d34d54061eddc41df6994e20ee38c60907"
+    },
+    "scikit-learn__scikit-learn-13328": {
+      "ready_sha256": "c01c5dd0826c77dbefa27db3085e5a287c2367e28b8dfa1b230a932717957dfb",
+      "pip_freeze_sha256": "ce998302a7d03d5d1d1ba143ff6e46e87b51ce3c9a4dbcfe1c607575898806e9",
+      "seed_sha256": "5b037edde99a31f62a618f9c8c947977b9bea5cdcdbcd3b2b43cef88a353d80c",
+      "prepared_commit": "eab29d4dae0c55a5e290861439edbb54886f6f07",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/scikit-learn__scikit-learn-13328/attempt-c494a2292c0c/env/bin/python",
+      "base_commit": "37b0e66c871e8fb032a9c7086b2a1d5419838154"
+    },
+    "django__django-13089": {
+      "ready_sha256": "f8c3c47b74f2aaae891c33e2c047eb19fd97d0c3e56ffa1c057dcf3817280857",
+      "pip_freeze_sha256": "949b7a8d75bf81934ad5cbd4c82097c7a69b97534b77a08916dc91c94dcf17a1",
+      "seed_sha256": "5af3b9fa49b2bf68bdd8d8dafc77527b9a145debfb1922f085b0ce2843b4647d",
+      "prepared_commit": "2a4b1dc664aa3b9f5ecea6fa6ca67fc9a2c0606d",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-13089/attempt-5bae37229811/env/bin/python",
+      "base_commit": "27c09043da52ca1f02605bf28600bfd5ace95ae4"
+    },
+    "django__django-11999": {
+      "ready_sha256": "401c62691bb5e6ffce510f727ab85feadeb9993414c709d34b1049796fd89a6d",
+      "pip_freeze_sha256": "dfadce8f0f1b26cc0b785d61b98f59c2408165aaa2baa895ff69d45141af6fe6",
+      "seed_sha256": "96279214b3c98e7b8af832d4c3e69607df4300faffe8d8d4b8299fa6cfebf44e",
+      "prepared_commit": "113b15a3a4c98ce27213669900246eb01e2fef2f",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-11999/attempt-0595caa30fb2/env/bin/python",
+      "base_commit": "84633905273fc916e3d17883810d9969c03f73c2"
+    },
+    "django__django-16454": {
+      "ready_sha256": "9a0d4c856816eb48be9b5087daac71cdb40caa45148676f9b14d898f38ef3050",
+      "pip_freeze_sha256": "80a77ff31d21911b985776ff07a3a64bc78d3e9c38689b6bb1c604bcd796595f",
+      "seed_sha256": "cc71792799273b133797e8030220f10d9081bb096fc005a0848be55ae9600253",
+      "prepared_commit": "6a9b774a9a5c2e8d5a24ac87606d01a2ed8e007c",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-16454/attempt-d224382b71c1/env/bin/python",
+      "base_commit": "1250483ebf73f7a82ff820b94092c63ce4238264"
+    },
+    "django__django-14534": {
+      "ready_sha256": "18e994bd2f4c5e5f379ad8bf6c3e0652f636514280f5d7604c45d89291724420",
+      "pip_freeze_sha256": "86fc8e52aeb90feffd63322c7fb30b6f382d1e77151795e5f810ce21b86c21ee",
+      "seed_sha256": "3f368a07e6b108d5d0a088d4435b500a7a361f6d03557e78e8232bb1e238ea47",
+      "prepared_commit": "108489a37fc5f5f1cbc405699c2fc1f2a2e7d031",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-14534/attempt-c7cd9581f106/env/bin/python",
+      "base_commit": "910ecd1b8df7678f45c3d507dde6bcb1faafa243"
+    },
+    "django__django-17084": {
+      "ready_sha256": "bcb805cf1949346924ec094fff68a4e4d3415534c5361c970d671edbcb0e49ad",
+      "pip_freeze_sha256": "af1dc8c2d8ee955b965ea123b112729558843457fa9fca4fc9f91f4e8565b5bf",
+      "seed_sha256": "5b66b8428af5e309ebf5ce08317aaa7f68c679ad9ed51fd90529101a2bdcac91",
+      "prepared_commit": "9f7be86fadd18a693dad5339f706d9dbc9821fd8",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-17084/attempt-6e856de9ca6d/env/bin/python",
+      "base_commit": "f8c43aca467b7b0c4bb0a7fa41362f90b610b8df"
+    },
+    "django__django-14493": {
+      "ready_sha256": "0c906d389ba3fc81259aa1b539810596632b294017e6de65b4c4d638db101abe",
+      "pip_freeze_sha256": "589b1f7017f1566bf39035090da741a626a0fb5ecba482000c4fdf572bad5c85",
+      "seed_sha256": "4292e28816c68b6423af92b02fcfdc7642c83008c4388a34a675e9e58a2d93f8",
+      "prepared_commit": "506d6165a6bf3a5cfe5d24f6ef61f3fac1a9a0a5",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-14493/attempt-f4f0fb9ad319/env/bin/python",
+      "base_commit": "7272e1963ffdf39c1d4fe225d5425a45dd095d11"
+    },
+    "django__django-11138": {
+      "ready_sha256": "0e8017f3050177d78844436b2ed79cd6087b1ae04318822688144256e4739677",
+      "pip_freeze_sha256": "8de10e1cb7d1b6308f8a08e8b6e14bb146c09002a6f47b6843858f218d278d3f",
+      "seed_sha256": "74f410639c4da698a288cdd13c8e9ef4d8da38c25223415311f6907e7eb231ae",
+      "prepared_commit": "26b2acd2c37d3aae161fe9f424bd16faaf4ec9e2",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-11138/attempt-00d5e0dce5f3/env/bin/python",
+      "base_commit": "c84b91b7603e488f7171fdff8f08368ef3d6b856"
+    },
+    "django__django-14672": {
+      "ready_sha256": "a9c0f9e38d8c844616bb2299ca4809d0f91b7607704959647a769eb8fffb4306",
+      "pip_freeze_sha256": "8861dd94f2575e5f43b282a6f433ac52405e0a44374ef553a326b46eea91c93d",
+      "seed_sha256": "96736d6e050285799c5101e64fe85b9ccd1be3626ea6c9b6cf61aa6b9226e26e",
+      "prepared_commit": "da0ab812e9a1e392959fbbdb60f1bad9a19606aa",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-14672/attempt-0a10703202d7/env/bin/python",
+      "base_commit": "00ea883ef56fb5e092cbe4a6f7ff2e7470886ac4"
+    },
+    "django__django-12741": {
+      "ready_sha256": "358b9cdfcb4bd69408825de0f3f4cdf2a2df94e3eef963e5ef90135d4b871f9b",
+      "pip_freeze_sha256": "9b84056dd8aae117ed2665b0d2fb85cd02c4ee569bd223158edaa4014f04fc1a",
+      "seed_sha256": "3eaa13ffc763355224a5cd4462a04ba1f453df09cc645ffb1449d1a8cdba80f1",
+      "prepared_commit": "924a5e3daedba802a4b0938754d6983be6165fb6",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-reserve-v2/prepared/django__django-12741/attempt-1aee68445578/env/bin/python",
+      "base_commit": "537d422942b53bc0a2b6a51968f379c0de07793c"
+    },
+    "django__django-12209": {
+      "ready_sha256": "2db120d839dfc5ba3cd259faf6e9ae138f6396493b54a376ef4bbe63a4ff11fd",
+      "pip_freeze_sha256": "1aba2e7b5d916c8da0e6f917ff254fadf9095663725fd6d92d7a20532642f599",
+      "seed_sha256": "38f87e9520dfb0b6497669243f59a625c9dc021afdfa174e6db467dc66a58c20",
+      "prepared_commit": "8eb90965c945cc511f97990fd4e0d1920b3ee2fd",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-reserve-v2/prepared/django__django-12209/attempt-561e0f1aafd7/env/bin/python",
+      "base_commit": "5a68f024987e6d16c2626a31bf653a2edddea579"
+    },
+    "django__django-14140": {
+      "ready_sha256": "95f85cc842014546edf694a231ba75038746b995fd093b82ac5020129b897785",
+      "pip_freeze_sha256": "78696e3eec65effb28d842f77956d36a2a4cfc12ed9309d9af766f2dee8bddcb",
+      "seed_sha256": "47fef9681bf5d7b0cd246295d8fe4d79e9236bbcabecefe0ddedd0ff20fb4bf9",
+      "prepared_commit": "bf0ac0f5f87dc2ab30b2527c2b19e630e1ffb442",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-14140/attempt-7e3a34ae68b7/env/bin/python",
+      "base_commit": "45814af6197cfd8f4dc72ee43b90ecde305a1d5a"
+    },
+    "django__django-13121": {
+      "ready_sha256": "5a1a3fe6ccaa8d87e52e0061d698543ddc9d9c40106f44ea9c67bdd4c3453e21",
+      "pip_freeze_sha256": "755fa846efcf1985c1b32ffdc0982768c1016ed727ee8090a2d13385e1093158",
+      "seed_sha256": "28a81bbda4b1254da1cfcbe5fd5da56e56d7f954fddab3d3795fdb9596013f42",
+      "prepared_commit": "5485d01788c9f4fa861f311fbd843e92ec556a35",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-13121/attempt-efac8c9164cb/env/bin/python",
+      "base_commit": "ec5aa2161d8015a3fe57dcbbfe14200cd18f0a16"
+    },
+    "sympy__sympy-12481": {
+      "ready_sha256": "8306d49592d39b223a99325e8a90fd33c93fdbb125550fdf4feec0ae42509c60",
+      "pip_freeze_sha256": "e745333e2e7e8fe207164f707bcce137608c7bfb5a466c0c8211addf9198aa62",
+      "seed_sha256": "2cd8f3c007138b79d5a4fdf2a90385455032be9cafc5948e678e9cd477d050fe",
+      "prepared_commit": "7f5481610af56294cf74c49bd86846cd8805eb2c",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/sympy__sympy-12481/attempt-7b6d608ed0a8/env/bin/python",
+      "base_commit": "c807dfe7569692cad24f02a08477b70c1679a4dd"
+    },
+    "django__django-10554": {
+      "ready_sha256": "751083be93bc7750bcd34785f70e5ada8e18064fa7c2b1c06c16c6e0dcd61336",
+      "pip_freeze_sha256": "a3e0c5e39cf3005f9eea7de562c8eefbcaa8adf2a5d3860b54dd49f9eb7363db",
+      "seed_sha256": "00a9efb1ed5ee655969bd8eb099b05c83230473e492adcdd96eb9ce7e6f7fe2a",
+      "prepared_commit": "26d5801f74d27d5f4b95ea119f2fb616e03370e3",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-10554/attempt-53d17e640357/env/bin/python",
+      "base_commit": "14d026cccb144c6877294ba4cd4e03ebf0842498"
+    },
+    "pytest-dev__pytest-5631": {
+      "ready_sha256": "626fc58d24a65a7796712db98308170db27d2b0f4e2e88110a4c15183c886b0a",
+      "pip_freeze_sha256": "d3258e354bdabc41e311cc03480c3fd5f329d1a770e0b3b14003c3e089f6e0a4",
+      "seed_sha256": "89ff52ef5117cca97fa01af867340fdd50085842a8de459b2a9817b94ea6ca8c",
+      "prepared_commit": "0574d80f0c81a62cd5472f0410381f90b65c7dda",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/pytest-dev__pytest-5631/attempt-b6f07c4531f2/env/bin/python",
+      "base_commit": "cb828ebe70b4fa35cd5f9a7ee024272237eab351"
+    },
+    "sphinx-doc__sphinx-10435": {
+      "ready_sha256": "2f70358ce6c1e3d5df46e11a50a04d45ec909e1f1953db64f4cbfbded69260f0",
+      "pip_freeze_sha256": "be60e59f3f9977b5f5e558961056aa17b93a27d2a979c6753d728777a9c02837",
+      "seed_sha256": "e7ba01101f1181634dd66d04c392da534290de7612aa8e6eee00d2301c054c1e",
+      "prepared_commit": "bdc1dced0406830db8fea73f4b19e6bffaaf10b4",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-reserve-v2/prepared/sphinx-doc__sphinx-10435/attempt-2c10165168f4/env/bin/python",
+      "base_commit": "f1061c012e214f16fd8790dec3c283d787e3daa8"
+    },
+    "pylint-dev__pylint-4604": {
+      "ready_sha256": "c709851422aec037e1469ce9e45fbd955167618e7f181bce78f11d65a7b59f37",
+      "pip_freeze_sha256": "c7574cac282220b17d24a881d8f6d375c1a1734a6bde226e9a27289757f27f4b",
+      "seed_sha256": "c9471e863d399b77615b046801988a46492d1575d65e3a50838d1484ce676920",
+      "prepared_commit": "865081be3c2806ae4eaa0454579a47c9eb909147",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/pylint-dev__pylint-4604/attempt-bf0f9f759c7d/env/bin/python",
+      "base_commit": "1e55ae64624d28c5fe8b63ad7979880ee2e6ef3f"
+    },
+    "django__django-13158": {
+      "ready_sha256": "2ee09ccb620a1b1adf300eb5760738ef239f1f92a41ee521a3ba93450fef7743",
+      "pip_freeze_sha256": "19db75322073ddf8a4ee0d94f8a1586de051abd24f7889f7541372b4b75f1d6f",
+      "seed_sha256": "1ef76103aabae4f46253c94dd47461bf0d0f4244c238de01a759908dda5bba2f",
+      "prepared_commit": "ae3c841d673ab8d22590340c5f7fa1d3eaf80cf3",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-13158/attempt-d5dd170d73bf/env/bin/python",
+      "base_commit": "7af8f4127397279d19ef7c7899e93018274e2f9b"
+    },
+    "sphinx-doc__sphinx-8056": {
+      "ready_sha256": "a6c3cc70459691d0a05b249cd0648a49301cf017ffcd3e7e3960f2d518253c6b",
+      "pip_freeze_sha256": "1af35465d5ffe9b061afd58193793c928b2700de2a58f93493b1f3a2f0f02cd7",
+      "seed_sha256": "af31b660c0f3749cbbb2d0b804dd8c6527ef1cbc6f9986c1303532968bcb0552",
+      "prepared_commit": "5b76b1c15d304d3076008e045c3b4bf04acac0e9",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-reserve-v2/prepared/sphinx-doc__sphinx-8056/attempt-d8b1891411ee/env/bin/python",
+      "base_commit": "e188d56ed1248dead58f3f8018c0e9a3f99193f7"
+    },
+    "django__django-12708": {
+      "ready_sha256": "2852292193b6105596a8536aaacd8bc27c1dbfd844b5720311dda76912ff579a",
+      "pip_freeze_sha256": "b2bdbf6a2f71ea60fcee48a78ab0627f086ef80751f2ea7ffd26e87c5a16fbce",
+      "seed_sha256": "fe9dc307fc7a55182708ec53f36cae94e3a6b71e050c012de1a6404ff1cdd298",
+      "prepared_commit": "693da559ae36c4bcb8f9e2dba2dfacbeee8aee82",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-12708/attempt-3d27b6a059c4/env/bin/python",
+      "base_commit": "447980e72ac01da1594dd3373a03ba40b7ee6f80"
+    },
+    "sympy__sympy-12419": {
+      "ready_sha256": "080a18778aafb5d8cc263e639b2a43b5072fdbed1c87f73f48cc0c5fa8ccc5cc",
+      "pip_freeze_sha256": "e09a37b0d4032c4f9537591621fa88a25db6bd74114379fbd586fb1ec767cb43",
+      "seed_sha256": "57ee0e79f886f5a58943679d39ddfaf1903cb31265740330f6ee90addf4ce10c",
+      "prepared_commit": "f30936ee0c6f00ed4961350b3934e350cf5b036f",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/sympy__sympy-12419/attempt-1a6507882f0c/env/bin/python",
+      "base_commit": "479939f8c65c8c2908bbedc959549a257a7c0b0b"
+    },
+    "astropy__astropy-7336": {
+      "ready_sha256": "a8e6d394e86ae75bce466a1c0e0f8b8477daa4a05c9bc9ea6a2264db28ca59dd",
+      "pip_freeze_sha256": "f786401da72ea3a712cd4ad97f1223e9655c1f996304628c00c91213a0fd0228",
+      "seed_sha256": "8b70488fc49ac505817df0eb7755bb64ede6575d42dd787e5651391a008365a1",
+      "prepared_commit": "a3f0972edf4e4b46705bc7c2d9a623b637032dbf",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/astropy__astropy-7336/attempt-1790f51aba19/env/bin/python",
+      "base_commit": "732d89c2940156bdc0e200bb36dc38b5e424bcba"
+    },
+    "sphinx-doc__sphinx-9658": {
+      "ready_sha256": "610475b059af608da891e8ed3b936dd8517f563e0bbf7e7f7d4d2ee1eaa2ff71",
+      "pip_freeze_sha256": "5dbb856afb2c4b2154f05f4434cd9bb10d7e1f3d734d2990026dde122beee319",
+      "seed_sha256": "e120e55fb526f55d17b95167292b13be683195dd042b6a7a2d4d80a4c6b1c744",
+      "prepared_commit": "525e03ce7298dd8e33d9451805af576976bc49c9",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/sphinx-doc__sphinx-9658/attempt-1da256a15b2a/env/bin/python",
+      "base_commit": "232dbe41c5250eb7d559d40438c4743483e95f15"
+    },
+    "sympy__sympy-14976": {
+      "ready_sha256": "12af05c504f96978e0e1731b2f04828fcc28011a375b016b4eb24184e7e1d30d",
+      "pip_freeze_sha256": "18621e4a747497079450a07b078169659d2dddc7c45ba3ba967c433260232f1e",
+      "seed_sha256": "c6f9a0dcaca73389d37102f62e70113e9ea4a2a0382a225bd36e85ea0c35195d",
+      "prepared_commit": "8a7bc4601d1256a55b1a9f60566b9a9860e9d862",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/sympy__sympy-14976/attempt-015a766d3490/env/bin/python",
+      "base_commit": "9cbea134220b0b951587e11b63e2c832c7246cbc"
+    },
+    "django__django-11133": {
+      "ready_sha256": "3960af7198c48d2c2ba65756e4e9893f770cd1fe7488bc6fca36720f07890f4b",
+      "pip_freeze_sha256": "bffd06e3201d9abc7ebfa4a5ab3a2de54234a6d2ceb4d80a6e3d07b46838489b",
+      "seed_sha256": "a24c488dcfd3df9b4dbf7145121ebd412a0ab8bbf6ee491091d1d2aea2d34782",
+      "prepared_commit": "95d6ee863a383604c1e250aa112e3b89d4cc2c4c",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-11133/attempt-e7c14aa78152/env/bin/python",
+      "base_commit": "879cc3da6249e920b8d54518a0ae06de835d7373"
+    },
+    "astropy__astropy-7671": {
+      "ready_sha256": "18c7879cc535b17b654911237e1cab7145be8dc4a68ee130dca71b3b7b05a15c",
+      "pip_freeze_sha256": "91f1446a6888a1a352ad5c6e0c1f5f93a43fe7c73c9f3ab90c1bc723368b8c9f",
+      "seed_sha256": "7d1f415c1e4878ecce8bfa4747ef344c6ebf94d667b0f4e412d19843fb7f0c66",
+      "prepared_commit": "07ae8a27389ab0c49671c5e2b6d124990a3a9c04",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/astropy__astropy-7671/attempt-9e48f05633e0/env/bin/python",
+      "base_commit": "a7141cd90019b62688d507ae056298507678c058"
+    },
+    "django__django-16950": {
+      "ready_sha256": "ea708d4f5bc9e0538be126e3103d20c8fb60d14de48b153f31421b09b8981d7c",
+      "pip_freeze_sha256": "9acbf127147fc5a601fc270f74b0a1ca0e96fc7ad0756cc9abf8f2519face5e3",
+      "seed_sha256": "b65b9c69249a8460ffcf967c25170652557c162db7bb0af99d3208e9ce89adaf",
+      "prepared_commit": "4ccd7d2b852b119816c978096b5acfdabcdae737",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-16950/attempt-6df58135110b/env/bin/python",
+      "base_commit": "f64fd47a7627ed6ffe2df2a32ded6ee528a784eb"
+    },
+    "django__django-11951": {
+      "ready_sha256": "a8a406a9ec677787029fdbb40fef8670a76b1f3f77830c5cf38aee82d3de7b11",
+      "pip_freeze_sha256": "7adb6aa3a3abd64317549f7d5a87fa387b2a3551ff522da86bf29c4833646d8d",
+      "seed_sha256": "94daf0e307423f6791858ba832f2c350f5a7a025a9d0dba70f30985986619def",
+      "prepared_commit": "aac68f73b96282ab7664c4135057ba396e015466",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-11951/attempt-3e13fb374e98/env/bin/python",
+      "base_commit": "312049091288dbba2299de8d07ea3e3311ed7238"
+    },
+    "scikit-learn__scikit-learn-14983": {
+      "ready_sha256": "2eeb4b053a14a4ca830dd22a58084b9b13a7ae84c5cb3576c34c9c129c0df597",
+      "pip_freeze_sha256": "154da11e8b6624c7fa1f00ab30615ced9220ce9253eb0262278bca56913e88f6",
+      "seed_sha256": "c0bf49d9a54aab330c3b8c5f44f64605f169c9b297ff4162820eb7b6ee2710f8",
+      "prepared_commit": "1dd72f9196e0f3673d42413185ca29c1f73247b7",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/scikit-learn__scikit-learn-14983/attempt-b6e3be17ee1c/env/bin/python",
+      "base_commit": "06632c0d185128a53c57ccc73b25b6408e90bb89"
+    },
+    "django__django-15375": {
+      "ready_sha256": "ee6ce293f2b9b1c429839f328d090457c0f506ccfc5a868a0fd759beb39392d3",
+      "pip_freeze_sha256": "cdb5eb273c1a35e54ce5c90f3efbf229ae6f3bbea95823d2fdd7a5d681fd2b8c",
+      "seed_sha256": "737a574a99def0c06c104ccf99314d46e686bbeb7e798a7421ba45aea0520a1c",
+      "prepared_commit": "2b38017e69a42fc719e97e7268502bb4d654ec07",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-15375/attempt-5338b6e4f9aa/env/bin/python",
+      "base_commit": "beb7ddbcee03270e833b2f74927ccfc8027aa693"
+    },
+    "scikit-learn__scikit-learn-25747": {
+      "ready_sha256": "07b794ec36a176379504853280e0e021cbeb1dd4c55233b352cd5cfc2c8c2146",
+      "pip_freeze_sha256": "c0bc2fe5d74b8e013ad56082d452bd1dfbc8f2ff03e3d67f9402ffa5a46ebb99",
+      "seed_sha256": "ec77f21f503e29af33d001fd3160d0d8ed70c8802bb9324b5078f800a283fb44",
+      "prepared_commit": "4c2bdcdff30eba5abf81a4a241b273b4ab89f6af",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/scikit-learn__scikit-learn-25747/attempt-01b0380d4032/env/bin/python",
+      "base_commit": "2c867b8f822eb7a684f0d5c4359e4426e1c9cfe0"
+    },
+    "django__django-15098": {
+      "ready_sha256": "133331f1d87e20ad8032a3e7646b50a7b83fb856d5314d0f3c09ea85609847b9",
+      "pip_freeze_sha256": "2e37d0a21bdde53904b86c8126eefccdc22fbfb7165ade52e9036d5d2a1c90c1",
+      "seed_sha256": "7daae19a26b66d9a31a664dc5b6f4fbc0b2ae0cd41b2fdae885c6ef75753d0dc",
+      "prepared_commit": "3cf971f055259d4c2985c689373e8a648309596d",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-15098/attempt-3261d171465c/env/bin/python",
+      "base_commit": "2c7846d992ca512d36a73f518205015c88ed088c"
+    },
+    "sphinx-doc__sphinx-9602": {
+      "ready_sha256": "5f1971d0eadb7d045e90e4f5ad7f44ae0afe194d6f87c183e44457eeefe490a8",
+      "pip_freeze_sha256": "75d875769c754650eb300f4fd8915aefc5c32f75ed5c947867a9a5a5f74bd5e1",
+      "seed_sha256": "1fecf802bece8704ef17d65fafcce05232e0db71840e490d247a4fc40263b5ec",
+      "prepared_commit": "cbb56715c02417e69d09deafc787499f626a8745",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-reserve-v2/prepared/sphinx-doc__sphinx-9602/attempt-ceb20a3a1b10/env/bin/python",
+      "base_commit": "6c38f68dae221e8cfc70c137974b8b88bd3baaab"
+    },
+    "sympy__sympy-13757": {
+      "ready_sha256": "722d92c67fb6931ee269d8cf21c4b4a168fbb0de76e2261d91d828665f0b37d1",
+      "pip_freeze_sha256": "a1d2fe4b74a9777c90a2d78ed6af376d8df9201d41f645bf12f7234cae92dadf",
+      "seed_sha256": "eaebf8678c307aaae2107165911097b642292fdecc95f9cd513ce4f5a1e76772",
+      "prepared_commit": "4bfac2bd53c75e419bff97f0504695b7f37f41ba",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/sympy__sympy-13757/attempt-2f85cf016e18/env/bin/python",
+      "base_commit": "a5e6a101869e027e7930e694f8b1cfb082603453"
+    },
+    "django__django-12193": {
+      "ready_sha256": "c9fae5f9dce1a89bea4c60d88af2078d2515c22b4fd544dd1e1428d98bfb2b44",
+      "pip_freeze_sha256": "36836b78315eaf8a7b641b47dbeac4dd6c9027e5eff910d71395d144b36ebfa0",
+      "seed_sha256": "03f5d238d6edb2c24011436edf13c16aff1a55a492dc773da078b06707a81d7f",
+      "prepared_commit": "8f1af83c6fd587e56f71085fa6ac24e9bb23b872",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-12193/attempt-143d1db24fe3/env/bin/python",
+      "base_commit": "3fb7c12158a2402f0f80824f6778112071235803"
+    },
+    "matplotlib__matplotlib-21568": {
+      "ready_sha256": "e074112faf08d578150fa17d36c25573f95773c22a108337793fd3c0162d274f",
+      "pip_freeze_sha256": "c8a838ae9e56dff67c796e1767b80391148294352a7cd6ae6eb200875132b596",
+      "seed_sha256": "34c112d616c2010811e8c31e0d6ea16057285917945ec38b1cea998de9eb124b",
+      "prepared_commit": "4223157391172ff42de06dba19499e4231a60542",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/matplotlib__matplotlib-21568/attempt-22dec9b40deb/env/bin/python",
+      "base_commit": "f0632c0fc7339f68e992ed63ae4cfac76cd41aad"
+    },
+    "django__django-15278": {
+      "ready_sha256": "88c56972d7bc529bc1ff6ef2e46aa5f2d3e8b330fe83bdef87b2cde0f4144c4c",
+      "pip_freeze_sha256": "63d5b0d9c130a468ed3fbb7f86f2e6335d079268d9dc688b6655b759a10bcb77",
+      "seed_sha256": "054f1e28e5cc9105bbf7ca3c78e4bece26ecbd2c145ba8f4445a4102c7561593",
+      "prepared_commit": "d74dcd866c261ce0fb073ab4fda17c3c0166bf39",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-15278/attempt-c4487e054204/env/bin/python",
+      "base_commit": "0ab58c120939093fea90822f376e1866fc714d1f"
+    },
+    "scikit-learn__scikit-learn-14629": {
+      "ready_sha256": "55ac94999d8898c7e057d37c9f2af81f313a42991afc5af2062e5776adf8ad62",
+      "pip_freeze_sha256": "d17015cd75028d07aae11a418ade3372c1e97974bc2c70a27ff2e6de1ce4b0a4",
+      "seed_sha256": "836524d5a1c8b8212fc3c45c072edd1c2a88f7965c6ff4cde1527867fbc7fd47",
+      "prepared_commit": "cfad512f1f85624583ba6399b11f56aa934376ad",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-reserve-v2/prepared/scikit-learn__scikit-learn-14629/attempt-b69e2369f43c/env/bin/python",
+      "base_commit": "4aded39b5663d943f6a4809abacfa9cae3d7fb6a"
+    },
+    "django__django-10880": {
+      "ready_sha256": "32ff08cd365e7e1858512bfb452e9b68c0c85304cbd17cdad52e545c2ad6f803",
+      "pip_freeze_sha256": "f1f869e763a939e693e6c5c1439682585e10c6c37902d5c0c3000b69977b1f5f",
+      "seed_sha256": "1d7f540d1c53319c262f0ee5d25fb72f9d65ea011196b2e5117eadd0aae78f73",
+      "prepared_commit": "253fe66b9f81e11b5b11618e0bc85f3691a5aa46",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-10880/attempt-20d2b3b3f424/env/bin/python",
+      "base_commit": "838e432e3e5519c5383d12018e6c78f8ec7833c1"
+    },
+    "sympy__sympy-15599": {
+      "ready_sha256": "4c4393b22883370e9f76af3d13aeaff7dff6455eaf6efa48aed67c332df7052d",
+      "pip_freeze_sha256": "f74d1b23e07c499f7c6a8013ef150245baab67b6b86b9e0e7b462fb4e13d8cdf",
+      "seed_sha256": "e400002cbded8be9881e8a3e218f472b05e066098b0fd7fa0dffda1dcf6fe586",
+      "prepared_commit": "7d9b6fc959f46b5026a91247cccacee8b5b22747",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/sympy__sympy-15599/attempt-e9b2bfb875f8/env/bin/python",
+      "base_commit": "5e17a90c19f7eecfa10c1ab872648ae7e2131323"
+    },
+    "sphinx-doc__sphinx-7757": {
+      "ready_sha256": "a6c2895e89d39589a43360b432ea47ac2add32083aa326dde36e73b5dcf6e039",
+      "pip_freeze_sha256": "a3f3c4c73fdb180a3d85adf6ee0b094c0216c2d35b73f8555f1d6972ef424a29",
+      "seed_sha256": "6d6f4c7090ebc73e958f41273130e6416f00a79eaa03622593f11c3b0a0bc2af",
+      "prepared_commit": "4df4ae5f3d9492453212151c285e17bdac9d40a3",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/sphinx-doc__sphinx-7757/attempt-32e3f5cc5406/env/bin/python",
+      "base_commit": "212fd67b9f0b4fae6a7c3501fdf1a9a5b2801329"
+    },
+    "django__django-15127": {
+      "ready_sha256": "4189d7916d2f7029cd2b039241cc14653d5004c80f04adc2b2a9c5a2dae6ecac",
+      "pip_freeze_sha256": "7e6bd19123d491337abb1327ce45c844014bef217334ff649e562e71daed7a77",
+      "seed_sha256": "683e2503ea05080146ba2fd4bef0190a431b9c22addcb2a5e34764d3be9e9cf8",
+      "prepared_commit": "83a3dc9cf810d553f68b4383225e73b7996f6e52",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-reserve-v2/prepared/django__django-15127/attempt-775bd82e850f/env/bin/python",
+      "base_commit": "9a6e2df3a8f01ea761529bec48e5a8dc0ea9575b"
+    },
+    "django__django-16819": {
+      "ready_sha256": "6548f8c97df25879d31f7cd1c5a79232c361c1154fe459aab2bb1fe938b241c4",
+      "pip_freeze_sha256": "18f15148262bb3386b5c9b346b961f52d382acb370c131f81d638df0087a417a",
+      "seed_sha256": "3d96371ac53685301d2790ddd13661a8ecb5ae5b7d09c6f64a23376e6a2d36e2",
+      "prepared_commit": "d843986c19b5d4302ab3ec969b2726ee340c2ac0",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-16819/attempt-b824bcb0e98d/env/bin/python",
+      "base_commit": "0b0998dc151feb77068e2387c34cc50ef6b356ae"
+    },
+    "django__django-14771": {
+      "ready_sha256": "dbd41e58a75ad25d9971b1fedde291be1ab69c686063b535a10cd31b2dcfdfdd",
+      "pip_freeze_sha256": "58f6970a81ceed7aa4df226bfef35f665e64cebdac46a1cd54d2fef074eef055",
+      "seed_sha256": "a64416a48b65a82f15add3443786455fc37ec735e4ec6a4af5e4e98eceece89c",
+      "prepared_commit": "59dddea48bfe2b434696b925faa67a7a45ee3d05",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-reserve-v2/prepared/django__django-14771/attempt-1897ea9a56ef/env/bin/python",
+      "base_commit": "4884a87e022056eda10534c13d74e49b8cdda632"
+    },
+    "sphinx-doc__sphinx-9591": {
+      "ready_sha256": "c378507cbf9121fbf45a4b56b381d2246b269daff9263d056eaef147279267eb",
+      "pip_freeze_sha256": "e54668d375b12e9585fc34cf120fc13408cd240b8c6376791af67a33bf94a2d5",
+      "seed_sha256": "88a2a43b4c8ce3f15729331ee0df88319b591e6f8deeaefc63ae5a6843992b6a",
+      "prepared_commit": "52ef424cf6117ecf7fbe81c8d442e7197a8c4d40",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/sphinx-doc__sphinx-9591/attempt-e9eb1b518eb5/env/bin/python",
+      "base_commit": "9ed054279aeffd5b1d0642e2d24a8800389de29f"
+    },
+    "django__django-13658": {
+      "ready_sha256": "26b65c297541e4b349c90db0234415dd194331c838f9833bf390575656e42a32",
+      "pip_freeze_sha256": "3b21c7e0b80ebfbd07bef6d8f5217db038dca22e0efa01dacce4e2b797988165",
+      "seed_sha256": "bfcaaa38f1847582d9e0c13c154dd5870af2145d30655a4664e863d2f54f98c2",
+      "prepared_commit": "3f9a0ab1dd46b717a9c84d707e26c561a9c95f91",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-13658/attempt-e02d8e53a2c8/env/bin/python",
+      "base_commit": "0773837e15bb632afffb6848a58c59a791008fa1"
+    },
+    "django__django-16139": {
+      "ready_sha256": "f894f879cc08bb62a36d7c03b8f42124553dc64ded9057809bad0deffd55c01c",
+      "pip_freeze_sha256": "a09b408187194ec696af7a0821f33e5803c231a0ba15f7a8ac5e49fe50192cb4",
+      "seed_sha256": "e4cb0d38d80ccbf4b645ae8a05d5a6745e62c26d16a982029de63ddbbe477568",
+      "prepared_commit": "e434031cb2ba274301def0181e033cf19c1a156c",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-16139/attempt-e45ff40a68b6/env/bin/python",
+      "base_commit": "d559cb02da30f74debbb1fc3a46de0df134d2d80"
+    },
+    "django__django-13741": {
+      "ready_sha256": "95d6e09789d01f7f08faab6d751a22c2d2c1130edf5b4c19bc66189c1a68f682",
+      "pip_freeze_sha256": "c2f8853a26bd1e3b9a52816ef6efc1fe8b2813bdbbfc7c68cd81ba53fece3717",
+      "seed_sha256": "73cf2cb9141681afce7a2e7422064c2a65d7e432a0aff48102e5e5179856ab2e",
+      "prepared_commit": "c6ffb86b1bda18fafc7ddb56f5ed30104e663531",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-13741/attempt-5262e6507d12/env/bin/python",
+      "base_commit": "d746f28949c009251a8741ba03d156964050717f"
+    },
+    "django__django-11066": {
+      "ready_sha256": "f6814581b4f654ac2abfdc399ae91dac76c60735978bfc43c80a6724b846f3ed",
+      "pip_freeze_sha256": "a0622696cf729fe42386e849abc93c0a6dc8da1cc98902f69bdace9d73f04464",
+      "seed_sha256": "bc8eb176eb6438d88069dd79257061c7bb042810027e1939d0d8746577564b48",
+      "prepared_commit": "257c01580bb42e19c6dc8640351a3fd9e5e3e78c",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-reserve-v2/prepared/django__django-11066/attempt-be59bd6b5ec9/env/bin/python",
+      "base_commit": "4b45b6c8e4d7c9701a332e80d3b1c84209dc36e2"
+    },
+    "django__django-17087": {
+      "ready_sha256": "2279633c19de590275f01965c43052e60c7e279bd38e9b57eac3885a24a6e4db",
+      "pip_freeze_sha256": "63058ad30e959ed428e48a3ee59076e03839ef17041fb047cf3565bdfcb74a6e",
+      "seed_sha256": "735905ad8af30a0ce77e6ea01183a680e05cdfc46d6f11a628d953584c31c854",
+      "prepared_commit": "d8d37c554e063ccccfeed4dd4ed4ec211d459ed3",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-17087/attempt-331cb6a35f55/env/bin/python",
+      "base_commit": "4a72da71001f154ea60906a2f74898d32b7322a7"
+    },
+    "sphinx-doc__sphinx-10449": {
+      "ready_sha256": "080a97ade56a649f9391bbdb83f0cdd998b102278b78380ea4ac2d969f7f1e72",
+      "pip_freeze_sha256": "3ac70b1618032d37005b6086baa97d459dbf1b8c2345c0fc60c4640db66ff635",
+      "seed_sha256": "f57c08ff7b92eaf312658adde53ab8411674d323acd3d6e87346b15e6363081e",
+      "prepared_commit": "8cb02b1b9a67fb156a349d016d5be1c2e887ef8c",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/sphinx-doc__sphinx-10449/attempt-7e7a76a4efe6/env/bin/python",
+      "base_commit": "36367765fe780f962bba861bf368a765380bbc68"
+    }
+  },
+  "runtime_env": {
+    "BESTFGS_TASK_SOURCE_PATH": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MPLBACKEND": "Agg"
+  },
+  "method_order": "paired; first arm = parity of SHA256(instance_id); second arm follows immediately",
+  "success_source": "official SWE-bench Docker harness; never internal succeeded",
+  "efficiency_budget": "same main action-batch and total CLI-call caps; NOT equal LLM-token budgets",
+  "sharding": {
+    "count": 2,
+    "assignment": "SHA256(instance_id) ascending; round-robin",
+    "workers": [
+      [
+        "sympy__sympy-13798",
+        "django__django-16100",
+        "django__django-16454",
+        "astropy__astropy-7671",
+        "django__django-15957",
+        "scikit-learn__scikit-learn-11578",
+        "django__django-13121",
+        "django__django-13807",
+        "django__django-17084",
+        "django__django-14140",
+        "django__django-13363",
+        "django__django-14915",
+        "django__django-12209",
+        "astropy__astropy-7336",
+        "django__django-12708",
+        "django__django-14752",
+        "scikit-learn__scikit-learn-14894",
+        "django__django-13658",
+        "scikit-learn__scikit-learn-13496",
+        "sphinx-doc__sphinx-7985",
+        "scikit-learn__scikit-learn-13328",
+        "django__django-15252",
+        "django__django-17087",
+        "django__django-13089",
+        "django__django-11138",
+        "django__django-13449",
+        "django__django-11951",
+        "scikit-learn__scikit-learn-14983",
+        "pytest-dev__pytest-5262",
+        "django__django-14238",
+        "pytest-dev__pytest-10051",
+        "django__django-15127",
+        "django__django-13033",
+        "sympy__sympy-23262",
+        "django__django-15278",
+        "django__django-11066",
+        "sphinx-doc__sphinx-7757",
+        "sympy__sympy-22456",
+        "django__django-13158",
+        "django__django-10880",
+        "sphinx-doc__sphinx-10435",
+        "sphinx-doc__sphinx-9602",
+        "sympy__sympy-19040",
+        "django__django-15572",
+        "django__django-11999",
+        "django__django-11179",
+        "django__django-12193",
+        "sympy__sympy-15599",
+        "pylint-dev__pylint-4604",
+        "sympy__sympy-24213"
+      ],
+      [
+        "pytest-dev__pytest-5631",
+        "django__django-13809",
+        "scikit-learn__scikit-learn-25747",
+        "sphinx-doc__sphinx-8056",
+        "pylint-dev__pylint-7080",
+        "sympy__sympy-15875",
+        "django__django-11885",
+        "django__django-11087",
+        "django__django-16819",
+        "matplotlib__matplotlib-20676",
+        "pydata__xarray-3095",
+        "django__django-14672",
+        "django__django-13568",
+        "django__django-15375",
+        "scikit-learn__scikit-learn-14629",
+        "scikit-learn__scikit-learn-14053",
+        "django__django-13837",
+        "matplotlib__matplotlib-21568",
+        "django__django-16256",
+        "django__django-16950",
+        "django__django-14493",
+        "django__django-13023",
+        "django__django-11400",
+        "django__django-13741",
+        "sympy__sympy-12481",
+        "sympy__sympy-12419",
+        "django__django-11133",
+        "sphinx-doc__sphinx-9658",
+        "django__django-12741",
+        "sympy__sympy-14976",
+        "django__django-15382",
+        "sphinx-doc__sphinx-9591",
+        "sphinx-doc__sphinx-7590",
+        "django__django-16139",
+        "django__django-15098",
+        "django__django-10999",
+        "sympy__sympy-13757",
+        "django__django-14534",
+        "sphinx-doc__sphinx-8551",
+        "sphinx-doc__sphinx-10449",
+        "sympy__sympy-22080",
+        "django__django-12262",
+        "django__django-14053",
+        "django__django-15467",
+        "django__django-13933",
+        "django__django-12325",
+        "django__django-10554",
+        "django__django-11749",
+        "sympy__sympy-17139",
+        "django__django-14771"
+      ]
+    ],
+    "both_methods_per_task": true
+  }
+}

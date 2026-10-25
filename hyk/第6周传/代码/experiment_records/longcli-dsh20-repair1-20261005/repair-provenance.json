@@ -1,0 +1,8 @@
+{
+  "old_campaign": "/var/tmp/lizh639-longcli-dsh20-20261005",
+  "original_manifest_sha256": "e76cc867eda5858b6d7bbbeb2ba6f1d1cd22e901a89a8de3c5f569dbede164c7",
+  "runtime_reused_readonly": true,
+  "new_task_homes": true,
+  "old_results_modified": false,
+  "paid_api_requests": 0
+}

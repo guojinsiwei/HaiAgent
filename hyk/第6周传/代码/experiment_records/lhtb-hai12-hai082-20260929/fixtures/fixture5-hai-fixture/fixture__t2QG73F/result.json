@@ -1,0 +1,114 @@
+{
+    "id": "c7eb3b50-02d8-4935-89c5-5716132af2e7",
+    "task_name": "fixture",
+    "trial_name": "fixture__t2QG73F",
+    "trial_uri": "file:///var/tmp/lizh639-lhtb-hai082-only-r1/fixtures/fixture5-hai-fixture/fixture__t2QG73F",
+    "task_id": {
+        "path": "/var/tmp/lizh639-lhtb-hai082-only-r1/fixture"
+    },
+    "source": null,
+    "task_checksum": "5a62b1c1d56f872788682c086af82c1b1410fa5e3de9163568dc5e4a1277b510",
+    "config": {
+        "task": {
+            "path": "/var/tmp/lizh639-lhtb-hai082-only-r1/fixture",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "fixture__t2QG73F",
+        "trials_dir": "/var/tmp/lizh639-lhtb-hai082-only-r1/fixtures/fixture5-hai-fixture",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "transport:TripleAgent",
+            "model_name": "deepseek-flash",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": 600.0,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "method": "hai",
+                "task_id": "fixture",
+                "wall_seconds": 240,
+                "cpu": 2,
+                "memory_mb": 4096,
+                "fixture": "budget"
+            },
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "95b58dda-d8a5-4325-b9e2-804fd5abb2af"
+    },
+    "agent_info": {
+        "name": "lhtb-triple-file-artifacts",
+        "version": "bestfgs-0.16.1-hai-0.8.2-lhtb-adapter-draft3",
+        "model_info": {
+            "name": "deepseek-flash",
+            "provider": null
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "termination_reason": "budget_or_method_stop",
+            "continue_until_timeout_phase": 1,
+            "continue_until_timeout_phases": 1
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-09-29T02:51:48.193359Z",
+    "finished_at": "2026-09-29T02:52:27.136098Z",
+    "environment_setup": {
+        "started_at": "2026-09-29T02:51:48.202925Z",
+        "finished_at": "2026-09-29T02:51:50.613423Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-09-29T02:51:50.613504Z",
+        "finished_at": "2026-09-29T02:51:52.378462Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-09-29T02:51:52.378685Z",
+        "finished_at": "2026-09-29T02:52:13.311147Z"
+    },
+    "verifier": {
+        "started_at": "2026-09-29T02:52:14.166694Z",
+        "finished_at": "2026-09-29T02:52:14.888836Z"
+    },
+    "step_results": null
+}

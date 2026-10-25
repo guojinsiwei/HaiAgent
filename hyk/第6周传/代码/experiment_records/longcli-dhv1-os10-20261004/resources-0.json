@@ -1,0 +1,5 @@
+{
+  "worker": 0,
+  "cpu_slots": [[0, 1], [2, 3]],
+  "simultaneous_trials": 2
+}

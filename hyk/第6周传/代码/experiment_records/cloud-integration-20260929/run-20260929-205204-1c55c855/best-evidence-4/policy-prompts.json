@@ -1,0 +1,910 @@
+{
+  "actor": [
+    {
+      "task": {
+        "task_id": "best-evidence-4",
+        "goal": "Inspect file.txt and deliver result.txt when requested",
+        "success_criteria": [],
+        "constraints": []
+      },
+      "fixed_context": {
+        "current_workspace": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+        "external_state": "unverified",
+        "evidence": [],
+        "memories": [],
+        "advice": {},
+        "delivery_progress": {
+          "criteria": [
+            {
+              "criterion": "Inspect file.txt and deliver result.txt when requested",
+              "status": "unverified_by_controller"
+            }
+          ],
+          "requested_artifacts": [
+            {
+              "path": "file.txt",
+              "exists": true,
+              "state": "file:27:88287527654b18eb2300d4b4802f8c550881f7e4ddf378f3337457a710933871"
+            },
+            {
+              "path": "result.txt",
+              "exists": false,
+              "state": "missing"
+            }
+          ],
+          "missing_artifacts": [
+            "result.txt"
+          ],
+          "controller_claims_success": false,
+          "delivery_gap": "Explicitly requested artifact paths still missing: result.txt"
+        },
+        "budget_pressure": {
+          "stage": "normal",
+          "used_ratio": 0.001
+        },
+        "memory_intervention": null,
+        "checkpoints": [
+          {
+            "id": "C1",
+            "label": "initial state",
+            "hypothesis": "Root before any attempted solution",
+            "fingerprint": "aa9c2fa87cce18fdba01d98b751ff9173172cbaf6ff30f5531007defffdaf4fe"
+          }
+        ],
+        "budgets": {
+          "model_requests": 40,
+          "tools": 30,
+          "advisor_calls": 6,
+          "wall_seconds": 499.61
+        },
+        "feedback": {}
+      },
+      "recent_decisions": []
+    },
+    {
+      "task": {
+        "task_id": "best-evidence-4",
+        "goal": "Inspect file.txt and deliver result.txt when requested",
+        "success_criteria": [],
+        "constraints": []
+      },
+      "fixed_context": {
+        "current_workspace": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+        "external_state": "unverified",
+        "evidence": [
+          {
+            "id": "E1",
+            "argv": "[\"cat\", \"file.txt\"]",
+            "purpose": "integration test",
+            "before": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "after": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "read"
+          }
+        ],
+        "memories": [],
+        "advice": {},
+        "delivery_progress": {
+          "criteria": [
+            {
+              "criterion": "Inspect file.txt and deliver result.txt when requested",
+              "status": "unverified_by_controller"
+            }
+          ],
+          "requested_artifacts": [
+            {
+              "path": "file.txt",
+              "exists": true,
+              "state": "file:27:88287527654b18eb2300d4b4802f8c550881f7e4ddf378f3337457a710933871"
+            },
+            {
+              "path": "result.txt",
+              "exists": false,
+              "state": "missing"
+            }
+          ],
+          "missing_artifacts": [
+            "result.txt"
+          ],
+          "controller_claims_success": false,
+          "delivery_gap": "Explicitly requested artifact paths still missing: result.txt"
+        },
+        "budget_pressure": {
+          "stage": "normal",
+          "used_ratio": 0.033
+        },
+        "memory_intervention": null,
+        "checkpoints": [
+          {
+            "id": "C1",
+            "label": "initial state",
+            "hypothesis": "Root before any attempted solution",
+            "fingerprint": "aa9c2fa87cce18fdba01d98b751ff9173172cbaf6ff30f5531007defffdaf4fe"
+          }
+        ],
+        "budgets": {
+          "model_requests": 39,
+          "tools": 29,
+          "advisor_calls": 6,
+          "wall_seconds": 499.0
+        },
+        "feedback": {
+          "evidence": {
+            "id": "E1",
+            "argv": "[\"cat\", \"file.txt\"]",
+            "purpose": "integration test",
+            "before": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "after": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "read"
+          }
+        }
+      },
+      "recent_decisions": [
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"cat\", \"file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E1"
+          }
+        }
+      ]
+    },
+    {
+      "task": {
+        "task_id": "best-evidence-4",
+        "goal": "Inspect file.txt and deliver result.txt when requested",
+        "success_criteria": [],
+        "constraints": []
+      },
+      "fixed_context": {
+        "current_workspace": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+        "external_state": "unverified",
+        "evidence": [
+          {
+            "id": "E1",
+            "argv": "[\"cat\", \"file.txt\"]",
+            "purpose": "integration test",
+            "before": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "after": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "read"
+          },
+          {
+            "id": "E2",
+            "argv": "[\"cat\", \"file.txt\"]",
+            "purpose": "integration test",
+            "before": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "after": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "read"
+          }
+        ],
+        "memories": [],
+        "advice": {},
+        "delivery_progress": {
+          "criteria": [
+            {
+              "criterion": "Inspect file.txt and deliver result.txt when requested",
+              "status": "unverified_by_controller"
+            }
+          ],
+          "requested_artifacts": [
+            {
+              "path": "file.txt",
+              "exists": true,
+              "state": "file:27:88287527654b18eb2300d4b4802f8c550881f7e4ddf378f3337457a710933871"
+            },
+            {
+              "path": "result.txt",
+              "exists": false,
+              "state": "missing"
+            }
+          ],
+          "missing_artifacts": [
+            "result.txt"
+          ],
+          "controller_claims_success": false,
+          "delivery_gap": "Explicitly requested artifact paths still missing: result.txt"
+        },
+        "budget_pressure": {
+          "stage": "normal",
+          "used_ratio": 0.067
+        },
+        "memory_intervention": null,
+        "checkpoints": [
+          {
+            "id": "C1",
+            "label": "initial state",
+            "hypothesis": "Root before any attempted solution",
+            "fingerprint": "aa9c2fa87cce18fdba01d98b751ff9173172cbaf6ff30f5531007defffdaf4fe"
+          }
+        ],
+        "budgets": {
+          "model_requests": 38,
+          "tools": 28,
+          "advisor_calls": 6,
+          "wall_seconds": 498.38
+        },
+        "feedback": {
+          "evidence": {
+            "id": "E2",
+            "argv": "[\"cat\", \"file.txt\"]",
+            "purpose": "integration test",
+            "before": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "after": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "read"
+          }
+        }
+      },
+      "recent_decisions": [
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"cat\", \"file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E1"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"cat\", \"file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E2"
+          }
+        }
+      ]
+    },
+    {
+      "task": {
+        "task_id": "best-evidence-4",
+        "goal": "Inspect file.txt and deliver result.txt when requested",
+        "success_criteria": [],
+        "constraints": []
+      },
+      "fixed_context": {
+        "current_workspace": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+        "external_state": "unverified",
+        "evidence": [
+          {
+            "id": "E1",
+            "argv": "[\"cat\", \"file.txt\"]",
+            "purpose": "integration test",
+            "before": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "after": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "read"
+          },
+          {
+            "id": "E2",
+            "argv": "[\"cat\", \"file.txt\"]",
+            "purpose": "integration test",
+            "before": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "after": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "read"
+          },
+          {
+            "id": "E3",
+            "argv": "[\"cat\", \"file.txt\"]",
+            "purpose": "integration test",
+            "before": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "after": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "read"
+          }
+        ],
+        "memories": [],
+        "advice": {},
+        "delivery_progress": {
+          "criteria": [
+            {
+              "criterion": "Inspect file.txt and deliver result.txt when requested",
+              "status": "unverified_by_controller"
+            }
+          ],
+          "requested_artifacts": [
+            {
+              "path": "file.txt",
+              "exists": true,
+              "state": "file:27:88287527654b18eb2300d4b4802f8c550881f7e4ddf378f3337457a710933871"
+            },
+            {
+              "path": "result.txt",
+              "exists": false,
+              "state": "missing"
+            }
+          ],
+          "missing_artifacts": [
+            "result.txt"
+          ],
+          "controller_claims_success": false,
+          "delivery_gap": "Explicitly requested artifact paths still missing: result.txt"
+        },
+        "budget_pressure": {
+          "stage": "normal",
+          "used_ratio": 0.1
+        },
+        "memory_intervention": null,
+        "checkpoints": [
+          {
+            "id": "C1",
+            "label": "initial state",
+            "hypothesis": "Root before any attempted solution",
+            "fingerprint": "aa9c2fa87cce18fdba01d98b751ff9173172cbaf6ff30f5531007defffdaf4fe"
+          }
+        ],
+        "budgets": {
+          "model_requests": 37,
+          "tools": 27,
+          "advisor_calls": 6,
+          "wall_seconds": 497.78
+        },
+        "feedback": {
+          "evidence": {
+            "id": "E3",
+            "argv": "[\"cat\", \"file.txt\"]",
+            "purpose": "integration test",
+            "before": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "after": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "read"
+          }
+        }
+      },
+      "recent_decisions": [
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"cat\", \"file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E1"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"cat\", \"file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E2"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"cat\", \"file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E3"
+          }
+        }
+      ]
+    },
+    {
+      "task": {
+        "task_id": "best-evidence-4",
+        "goal": "Inspect file.txt and deliver result.txt when requested",
+        "success_criteria": [],
+        "constraints": []
+      },
+      "fixed_context": {
+        "current_workspace": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+        "external_state": "unverified",
+        "evidence": [
+          {
+            "id": "E1",
+            "argv": "[\"cat\", \"file.txt\"]",
+            "purpose": "integration test",
+            "before": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "after": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "read"
+          },
+          {
+            "id": "E2",
+            "argv": "[\"cat\", \"file.txt\"]",
+            "purpose": "integration test",
+            "before": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "after": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "read"
+          },
+          {
+            "id": "E3",
+            "argv": "[\"cat\", \"file.txt\"]",
+            "purpose": "integration test",
+            "before": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "after": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "read"
+          },
+          {
+            "id": "E4",
+            "argv": "[\"cat\", \"file.txt\"]",
+            "purpose": "integration test",
+            "before": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "after": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "read"
+          }
+        ],
+        "memories": [],
+        "advice": {},
+        "delivery_progress": {
+          "criteria": [
+            {
+              "criterion": "Inspect file.txt and deliver result.txt when requested",
+              "status": "unverified_by_controller"
+            }
+          ],
+          "requested_artifacts": [
+            {
+              "path": "file.txt",
+              "exists": true,
+              "state": "file:27:88287527654b18eb2300d4b4802f8c550881f7e4ddf378f3337457a710933871"
+            },
+            {
+              "path": "result.txt",
+              "exists": false,
+              "state": "missing"
+            }
+          ],
+          "missing_artifacts": [
+            "result.txt"
+          ],
+          "controller_claims_success": false,
+          "delivery_gap": "Explicitly requested artifact paths still missing: result.txt"
+        },
+        "budget_pressure": {
+          "stage": "normal",
+          "used_ratio": 0.133
+        },
+        "memory_intervention": null,
+        "checkpoints": [
+          {
+            "id": "C1",
+            "label": "initial state",
+            "hypothesis": "Root before any attempted solution",
+            "fingerprint": "aa9c2fa87cce18fdba01d98b751ff9173172cbaf6ff30f5531007defffdaf4fe"
+          }
+        ],
+        "budgets": {
+          "model_requests": 36,
+          "tools": 26,
+          "advisor_calls": 6,
+          "wall_seconds": 497.21
+        },
+        "feedback": {
+          "evidence": {
+            "id": "E4",
+            "argv": "[\"cat\", \"file.txt\"]",
+            "purpose": "integration test",
+            "before": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "after": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "read"
+          }
+        }
+      },
+      "recent_decisions": [
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"cat\", \"file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E1"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"cat\", \"file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E2"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"cat\", \"file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E3"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"cat\", \"file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E4"
+          }
+        }
+      ]
+    },
+    {
+      "task": {
+        "task_id": "best-evidence-4",
+        "goal": "Inspect file.txt and deliver result.txt when requested",
+        "success_criteria": [],
+        "constraints": []
+      },
+      "fixed_context": {
+        "current_workspace": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+        "external_state": "unverified",
+        "evidence": [
+          {
+            "id": "E1",
+            "argv": "[\"cat\", \"file.txt\"]",
+            "purpose": "integration test",
+            "before": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "after": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "read"
+          },
+          {
+            "id": "E2",
+            "argv": "[\"cat\", \"file.txt\"]",
+            "purpose": "integration test",
+            "before": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "after": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "read"
+          },
+          {
+            "id": "E3",
+            "argv": "[\"cat\", \"file.txt\"]",
+            "purpose": "integration test",
+            "before": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "after": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "read"
+          },
+          {
+            "id": "E4",
+            "argv": "[\"cat\", \"file.txt\"]",
+            "purpose": "integration test",
+            "before": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "after": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "read"
+          }
+        ],
+        "memories": [],
+        "advice": {},
+        "delivery_progress": {
+          "criteria": [
+            {
+              "criterion": "Inspect file.txt and deliver result.txt when requested",
+              "status": "unverified_by_controller"
+            }
+          ],
+          "requested_artifacts": [
+            {
+              "path": "file.txt",
+              "exists": true,
+              "state": "file:27:88287527654b18eb2300d4b4802f8c550881f7e4ddf378f3337457a710933871"
+            },
+            {
+              "path": "result.txt",
+              "exists": false,
+              "state": "missing"
+            }
+          ],
+          "missing_artifacts": [
+            "result.txt"
+          ],
+          "controller_claims_success": false,
+          "delivery_gap": "Explicitly requested artifact paths still missing: result.txt"
+        },
+        "budget_pressure": {
+          "stage": "normal",
+          "used_ratio": 0.15
+        },
+        "memory_intervention": null,
+        "checkpoints": [
+          {
+            "id": "C1",
+            "label": "initial state",
+            "hypothesis": "Root before any attempted solution",
+            "fingerprint": "aa9c2fa87cce18fdba01d98b751ff9173172cbaf6ff30f5531007defffdaf4fe"
+          }
+        ],
+        "budgets": {
+          "model_requests": 34,
+          "tools": 26,
+          "advisor_calls": 5,
+          "wall_seconds": 496.83
+        },
+        "feedback": {
+          "advisor": "deferred",
+          "instruction": "Continue with existing evidence; no action was executed."
+        }
+      },
+      "recent_decisions": [
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"cat\", \"file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E1"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"cat\", \"file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E2"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"cat\", \"file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E3"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"cat\", \"file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E4"
+          }
+        },
+        {
+          "action": "consult",
+          "detail": "{\"action\": \"consult\", \"question\": \"Inspect the evidence\"}",
+          "response": {
+            "advisor": "deferred",
+            "instruction": "Continue with existing evidence; no action was executed."
+          }
+        }
+      ]
+    }
+  ],
+  "advisor": [
+    {
+      "task": {
+        "task_id": "best-evidence-4",
+        "goal": "Inspect file.txt and deliver result.txt when requested",
+        "success_criteria": [],
+        "constraints": []
+      },
+      "fixed_context": {
+        "current_workspace": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+        "external_state": "unverified",
+        "evidence": [
+          {
+            "id": "E1",
+            "argv": "[\"cat\", \"file.txt\"]",
+            "purpose": "integration test",
+            "before": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "after": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "read"
+          },
+          {
+            "id": "E2",
+            "argv": "[\"cat\", \"file.txt\"]",
+            "purpose": "integration test",
+            "before": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "after": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "read"
+          },
+          {
+            "id": "E3",
+            "argv": "[\"cat\", \"file.txt\"]",
+            "purpose": "integration test",
+            "before": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "after": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "read"
+          },
+          {
+            "id": "E4",
+            "argv": "[\"cat\", \"file.txt\"]",
+            "purpose": "integration test",
+            "before": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "after": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "read"
+          }
+        ],
+        "memories": [],
+        "advice": {},
+        "delivery_progress": {
+          "criteria": [
+            {
+              "criterion": "Inspect file.txt and deliver result.txt when requested",
+              "status": "unverified_by_controller"
+            }
+          ],
+          "requested_artifacts": [
+            {
+              "path": "file.txt",
+              "exists": true,
+              "state": "file:27:88287527654b18eb2300d4b4802f8c550881f7e4ddf378f3337457a710933871"
+            },
+            {
+              "path": "result.txt",
+              "exists": false,
+              "state": "missing"
+            }
+          ],
+          "missing_artifacts": [
+            "result.txt"
+          ],
+          "controller_claims_success": false,
+          "delivery_gap": "Explicitly requested artifact paths still missing: result.txt"
+        },
+        "budget_pressure": {
+          "stage": "normal",
+          "used_ratio": 0.133
+        },
+        "memory_intervention": null,
+        "checkpoints": [
+          {
+            "id": "C1",
+            "label": "initial state",
+            "hypothesis": "Root before any attempted solution",
+            "fingerprint": "aa9c2fa87cce18fdba01d98b751ff9173172cbaf6ff30f5531007defffdaf4fe"
+          }
+        ],
+        "budgets": {
+          "model_requests": 35,
+          "tools": 26,
+          "advisor_calls": 6,
+          "wall_seconds": 497.02
+        },
+        "feedback": {
+          "evidence": {
+            "id": "E4",
+            "argv": "[\"cat\", \"file.txt\"]",
+            "purpose": "integration test",
+            "before": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "after": "7be226ec532a02c5f9019ce97f77eaf50bf2af49bcb7366992f76dcdc54a1712",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "read"
+          }
+        }
+      },
+      "recent_decisions": [
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"cat\", \"file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E1"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"cat\", \"file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E2"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"cat\", \"file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E3"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"cat\", \"file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E4"
+          }
+        }
+      ],
+      "question": "Inspect the evidence"
+    }
+  ]
+}

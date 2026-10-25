@@ -1,0 +1,42 @@
+{
+  "success": true,
+  "groups": [
+    {
+      "group": "hai",
+      "exit_code": 0,
+      "tests": 123
+    },
+    {
+      "group": "lean",
+      "exit_code": 0,
+      "tests": 38
+    },
+    {
+      "group": "views",
+      "exit_code": 0,
+      "tests": 20
+    },
+    {
+      "group": "transport",
+      "exit_code": 0,
+      "tests": 32
+    },
+    {
+      "group": "repairs_and_semantic",
+      "exit_code": 0,
+      "tests": 56
+    },
+    {
+      "group": "classification",
+      "exit_code": 0,
+      "tests": 7
+    },
+    {
+      "group": "supervision",
+      "exit_code": 0,
+      "tests": 11
+    }
+  ],
+  "total_tests": 287,
+  "model_calls": 0
+}

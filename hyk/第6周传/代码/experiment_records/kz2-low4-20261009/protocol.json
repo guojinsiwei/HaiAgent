@@ -1,0 +1,141 @@
+{
+  "commit": "2015f37b5c458f2562354de6b415e9182c91af64",
+  "tasks": [
+    {
+      "task": "61810_cow",
+      "family": "make-pytest",
+      "project": "cow",
+      "index": 10,
+      "image": "longcli-dh-raw-full20-20261004/task-61810_cow:2015f37",
+      "image_id": "sha256:b279ec81c63b14bb2b52ca7fa9f0430172ac4c510b1b9c6dfaa09b2ba8a80cb1",
+      "wall_seconds": 7200.0,
+      "test_seconds": 300.0,
+      "instruction": "Open and follow the detailed project specification at INSTRUCTION.md. Implement the project tasks accordingly in folder cow."
+    },
+    {
+      "task": "61810_lock",
+      "family": "make-pytest",
+      "project": "lock",
+      "index": 12,
+      "image": "longcli-dh-raw-full20-20261004/task-61810_lock:2015f37",
+      "image_id": "sha256:218e3e61935c206e6fe67092bbe5b2801e2ba396548fe1cba4d8719c40d737cb",
+      "wall_seconds": 7200.0,
+      "test_seconds": 1800.0,
+      "instruction": "Open and follow the detailed project specification at INSTRUCTION.md. Implement the project tasks accordingly in folder lock."
+    },
+    {
+      "task": "61810_mmap",
+      "family": "make-pytest",
+      "project": "mmap",
+      "index": 13,
+      "image": "longcli-dh-raw-full20-20261004/task-61810_mmap:2015f37",
+      "image_id": "sha256:beff0e959d2b7475c404bc9bb88c3b68f98701345c3ffe2761e7cfd4f9b74161",
+      "wall_seconds": 7200.0,
+      "test_seconds": 1800.0,
+      "instruction": "Open and follow the detailed project specification at INSTRUCTION.md. Implement the project tasks accordingly in folder mmap."
+    },
+    {
+      "task": "cmu15_445_p2",
+      "family": "c-env",
+      "project": "cmu15_445",
+      "index": 7,
+      "image": "longcli-paired10-20261001/task-cmu15_445_p2:2015f37",
+      "image_id": "sha256:b5e046e99a93e0df3a8b66fcc6035a51d64abeb335468a6e48b3b1f223feed30",
+      "wall_seconds": 7200.0,
+      "test_seconds": 300.0,
+      "instruction": "Open and follow the detailed project specification at INSTRUCTION.md. Implement the project tasks accordingly in folder cmu15_445."
+    }
+  ],
+  "model": "deepseek-flash",
+  "experiment": "kz2-low4-20261009",
+  "methods": [
+    "1342"
+  ],
+  "total_trials": 4,
+  "max_turns": 800,
+  "max_tools": 600,
+  "max_tokens": 32768,
+  "context_tokens": 1000000,
+  "context_headroom_tokens": 65536,
+  "context_limit": 3737856,
+  "command_seconds": 300,
+  "wall_seconds": 7200,
+  "concurrency": 4,
+  "cpu_per_task": 2,
+  "memory_gib_per_task": 8,
+  "pids_limit": 256,
+  "temperature": 0,
+  "thinking": false,
+  "actual_api_attempts_per_task": 800,
+  "role_output_tokens": {
+    "action": 32768,
+    "advisor": 32768,
+    "monitor": 32768,
+    "critic": 32768
+  },
+  "baseline": "longcli-dh-raw-full20-20261004/recovery-counter-fix-v9",
+  "matched_dsh": "longcli-dsh20-repair2-20261005",
+  "preserved": {
+    "route_search": false,
+    "contrastive_predictions": false,
+    "contrastive_mode": "orthogonal",
+    "memory": "DH original",
+    "context_compaction": "DH native excerpts, NOT DSH summarizer"
+  },
+  "remaining_native_differences": [
+    "DH JSON actions versus DSH native tools",
+    "DH stateless command shell versus DSH persistent sessions",
+    "DH memory/monitor/advisor policies retained; DSH compaction/title policies not imported",
+    "Task network none versus DSH internal network with API-only relay; provider client on host"
+  ],
+  "context_meter": "DSH 0.2.0-rc.2 fixed density: UTF-16 chars/4 + message/block framing; heuristic, not exact tokenizer",
+  "concurrency_per_arm": 4,
+  "subgoals_enabled": true,
+  "source": "DH-subgoal-v1 plus bounded error routes",
+  "arms": {
+    "13": {
+      "local_correction": true,
+      "reconnaissance": true,
+      "critic": false,
+      "backtracking": false
+    },
+    "134": {
+      "local_correction": true,
+      "reconnaissance": true,
+      "critic": true,
+      "backtracking": false
+    },
+    "1342": {
+      "local_correction": true,
+      "reconnaissance": true,
+      "critic": true,
+      "backtracking": true
+    }
+  },
+  "common": {
+    "subgoals": true,
+    "memory": true,
+    "orthogonal": true,
+    "route_search": false,
+    "predictions": false,
+    "cross_task_memory": false,
+    "official_feedback_to_solver": false
+  },
+  "limits": {
+    "critic_reviews": 2,
+    "checks_per_review": 2,
+    "local_corrections": 3,
+    "automatic_rollbacks": 2
+  },
+  "routing_trigger": "evidence/format classified; unknown remains ordinary actor",
+  "task_selection": "explicitly authorized rerun of cow, lock, mmap, cmu_p2; preserve historic20",
+  "scoring": "same frozen official LongCLIBench parser and separate fresh grading containers",
+  "preserved_original_tasks": [],
+  "name": "KZ2.0",
+  "safety": {
+    "per_task_cny": 50,
+    "accounting": "pre-request conservative reservation",
+    "all_roles_and_retries": true,
+    "recovery_rejection_hard_stop": false
+  }
+}

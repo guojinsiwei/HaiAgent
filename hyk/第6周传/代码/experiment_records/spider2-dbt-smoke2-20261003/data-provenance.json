@@ -1,0 +1,31 @@
+{
+  "downloads": [
+    {
+      "path": "downloads/asset001/asset.duckdb",
+      "bytes": 46673920,
+      "sha256": "f728a00b03236dd21863d5845edcd397666600cc8da086edd19f8bf44b239687",
+      "url": "https://huggingface.co/datasets/harborframework/harbor-datasets/resolve/82d1fb0c144d28b1fd9852006cee0a39e74bd4a8/datasets/spider2-dbt/asset001/environment/dbt_project/asset.duckdb"
+    },
+    {
+      "path": "gold/asset001/asset.duckdb",
+      "bytes": 148123648,
+      "sha256": "2d027db456288892d3dcb511ab9c1a4aa7480984877a196d8cef6167340f8e4b",
+      "url": "https://huggingface.co/datasets/harborframework/harbor-datasets/resolve/82d1fb0c144d28b1fd9852006cee0a39e74bd4a8/datasets/spider2-dbt/asset001/tests/gold.duckdb"
+    },
+    {
+      "path": "downloads/asana001/asana.duckdb",
+      "bytes": 3420160,
+      "sha256": "d3489630113c8d7b2df4215da4d2ceac8c1554be1667ca9ce050b9cbbf20bd58",
+      "url": "https://huggingface.co/datasets/harborframework/harbor-datasets/resolve/82d1fb0c144d28b1fd9852006cee0a39e74bd4a8/datasets/spider2-dbt/asana001/environment/dbt_project/asana.duckdb"
+    },
+    {
+      "path": "gold/asana001/asana.duckdb",
+      "bytes": 14430208,
+      "sha256": "8bd2190fb78351c8144c39413b7ff984f441b9d59abc5e4033cf297bbd5b5ea4",
+      "url": "https://huggingface.co/datasets/harborframework/harbor-datasets/resolve/82d1fb0c144d28b1fd9852006cee0a39e74bd4a8/datasets/spider2-dbt/asana001/tests/gold.duckdb"
+    }
+  ],
+  "official_commit": "cafb867313aab4e674652054198f383cf4018943",
+  "mirror_commit": "82d1fb0c144d28b1fd9852006cee0a39e74bd4a8",
+  "model_calls": 0
+}

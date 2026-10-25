@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "attempt_index": 2,
+  "run_id": "recuris-e7529f24a0e044078ee383ee1e93554f",
+  "task_id": "demo_task",
+  "trial_name": "demo_task.1-of-1.recuris-e7529f24a0e044078ee383ee1e93554f",
+  "official_success": true,
+  "failure_mode": "unset",
+  "artifacts": {
+    "official_result": {
+      "path": "tb-output/recuris-e7529f24a0e044078ee383ee1e93554f/demo_task/demo_task.1-of-1.recuris-e7529f24a0e044078ee383ee1e93554f/results.json",
+      "sha256": "3cecf7a856e0bf9a39b06a028f3fc0294ff22ffa46a09f3bf58caa0780740f5f"
+    },
+    "context": {
+      "path": "tb-output/recuris-e7529f24a0e044078ee383ee1e93554f/demo_task/demo_task.1-of-1.recuris-e7529f24a0e044078ee383ee1e93554f/agent-logs/recuris/one/context.json",
+      "sha256": "5f2b9fc4d6fd4d66f601a227a0452ad54d2515d13a5190b02fba6bddf6a57d40"
+    },
+    "trace": {
+      "path": "tb-output/recuris-e7529f24a0e044078ee383ee1e93554f/demo_task/demo_task.1-of-1.recuris-e7529f24a0e044078ee383ee1e93554f/agent-logs/recuris/one/trace.json",
+      "sha256": "4851887db7b32d2877da0c02d6482beeb1a6f828d5f68a6c0c3aef686434a6a5"
+    },
+    "actor_result": {
+      "path": "tb-output/recuris-e7529f24a0e044078ee383ee1e93554f/demo_task/demo_task.1-of-1.recuris-e7529f24a0e044078ee383ee1e93554f/agent-logs/recuris/one/result.json",
+      "sha256": "a7e0a698dcafb69826fd360933a0bac6f420e4347ea4e787ad341e4d07b38f6b"
+    },
+    "memory": {
+      "path": "memory.json",
+      "sha256": "c1a1374a1ac2e9f459bae50079883e2e9a8c69658a71398e393bea827f4db6b0"
+    },
+    "provenance": {
+      "path": "provenance.json",
+      "sha256": "9576fb42afaba777bf56716da4e47fe15be8f7cfc7d8c347fd31448d4a88cdec"
+    }
+  }
+}

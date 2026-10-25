@@ -1,0 +1,74 @@
+[
+  {
+    "task": "spot-scheduler-traces",
+    "method": "raw",
+    "report": "/mnt/sdb/home/lizh639/lhtb-triple25-v161-20260926/runs/raw-spot-scheduler-traces/spot-scheduler-traces__2MXmBPK/result.json",
+    "verifier_result": {
+      "rewards": {
+        "reward": 0.8133
+      }
+    },
+    "exception_info": null,
+    "process_exit_code": 0,
+    "audit_chain": {
+      "events": 661,
+      "tail_sha256": "be88bd2edf0c8d9a0c9eed389c6990fc15ddbbf85ad857e5fcc975b6999c0b65"
+    },
+    "carried_forward": true,
+    "origin_protocol_sha256": "4107f2da63cbf4eb5e573c7ca9cb71cd8d689db758efad3d9b0afa93342395c7"
+  },
+  {
+    "task": "spot-scheduler-traces",
+    "method": "hai",
+    "report": "/mnt/sdb/home/lizh639/lhtb-triple25-v161-20260926/runs/hai-spot-scheduler-traces/spot-scheduler-traces__JVDQx7E/result.json",
+    "verifier_result": {
+      "rewards": {
+        "reward": 0.0
+      }
+    },
+    "exception_info": null,
+    "process_exit_code": 0,
+    "audit_chain": {
+      "events": 1804,
+      "tail_sha256": "41a6fa2734420960627b976b64140b54df31ddf1c6133a968125d6d8fb226869"
+    },
+    "carried_forward": true,
+    "origin_protocol_sha256": "4107f2da63cbf4eb5e573c7ca9cb71cd8d689db758efad3d9b0afa93342395c7"
+  },
+  {
+    "task": "modflow6-groundwater-regression-audit",
+    "method": "hai",
+    "report": "/mnt/sdb/home/lizh639/lhtb-triple25-v161-20260926/runs/hai-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__36xUEiV/result.json",
+    "verifier_result": {
+      "rewards": {
+        "reward": 0.0
+      }
+    },
+    "exception_info": null,
+    "process_exit_code": 0,
+    "audit_chain": {
+      "events": 764,
+      "tail_sha256": "ef795583607b0705950ce7dbde06496b7ce4d1cf47eaac44188d7f02a77d12a0"
+    },
+    "carried_forward": true,
+    "origin_protocol_sha256": "4107f2da63cbf4eb5e573c7ca9cb71cd8d689db758efad3d9b0afa93342395c7"
+  },
+  {
+    "task": "modflow6-groundwater-regression-audit",
+    "method": "raw",
+    "report": "/mnt/sdb/home/lizh639/lhtb-triple25-v161-20260926/runs/raw-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__PSQyHk9/result.json",
+    "verifier_result": {
+      "rewards": {
+        "reward": 0.0
+      }
+    },
+    "exception_info": null,
+    "process_exit_code": 0,
+    "audit_chain": {
+      "events": 928,
+      "tail_sha256": "5e41bf43ffb8ab429deb7ab5459ec87331ca5d2bee021c58119a4972e3bb3e59"
+    },
+    "carried_forward": true,
+    "origin_protocol_sha256": "4107f2da63cbf4eb5e573c7ca9cb71cd8d689db758efad3d9b0afa93342395c7"
+  }
+]

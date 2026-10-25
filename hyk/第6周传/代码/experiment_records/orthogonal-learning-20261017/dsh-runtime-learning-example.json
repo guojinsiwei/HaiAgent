@@ -1,0 +1,50 @@
+{
+  "source": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\projects\\kz-dsh\\.runtime\\strategy-repair4-ten4yZ\\audit\\6c211da608e6af7d09ee336de7f38e00d48cdeae41f5f53360199846fca9d534.jsonl",
+  "records": [
+    {
+      "time": "2026-10-17T09:29:32.619Z",
+      "session": "strategy-repair4",
+      "hostSeq": 0,
+      "event": "exploration_learning",
+      "record": {
+        "id": "XE12",
+        "evidence_id": "E12",
+        "episode": 1,
+        "anchor_ids": [
+          "E1"
+        ],
+        "check_key": "[\"exact\",\".\",\"python check.py\"]",
+        "goal": null,
+        "kind": "probe",
+        "command": "ss -lnt",
+        "hypothesis": "listener is present",
+        "predictions": {
+          "supports": {
+            "field": "stdout",
+            "contains": "LISTEN"
+          },
+          "refutes": {
+            "field": "stderr",
+            "contains": "assertion failed"
+          }
+        },
+        "status": "refuted",
+        "reason": "exclusive_predicted_observation",
+        "evidence": [
+          {
+            "field": "stderr",
+            "quote": "assertion failed"
+          }
+        ],
+        "conditions": {
+          "before": "sha256:0126751994825ec571a18891266bd61429ebe34bb16b99caf87fd719d66d47aa",
+          "after": "sha256:0126751994825ec571a18891266bd61429ebe34bb16b99caf87fd719d66d47aa",
+          "dependencies": {}
+        },
+        "semantic_verified": false,
+        "task_success": null,
+        "next_use": "Reconsider this hypothesis under the recorded conditions; cite new evidence before retrying it."
+      }
+    }
+  ]
+}

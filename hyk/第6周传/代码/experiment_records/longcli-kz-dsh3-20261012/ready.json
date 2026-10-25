@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "paid_api_requests": 0,
+  "checks": [
+    {
+      "name": "KZ regressions",
+      "passed": true,
+      "test_files": 9,
+      "tail": "  ...\n# Subtest: repair3 matched blocker can be explicitly reviewed as not applicable without demanding unrelated memories\nok 172 - repair3 matched blocker can be explicitly reviewed as not applicable without demanding unrelated memories\n  ---\n  duration_ms: 0.938596\n  type: 'test'\n  ...\n1..172\n# tests 172\n# suites 0\n# pass 172\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 1404.231441\n"
+    },
+    {
+      "name": "cs61_fa24_hog shell",
+      "passed": true,
+      "stdout": "Python 3.12.3"
+    },
+    {
+      "name": "cs61_fa24_cats shell",
+      "passed": true,
+      "stdout": "Python 3.12.3"
+    },
+    {
+      "name": "ap1400_2_hw35 shell",
+      "passed": true,
+      "stdout": "Python 3.12.3"
+    },
+    {
+      "name": "native chain and compression",
+      "exit_code": 0,
+      "requests": 5,
+      "real_bash_receipt": true,
+      "settings": true,
+      "compaction_successes": 2,
+      "compaction_errors": [],
+      "request_accounting": true,
+      "compaction_accounting": true,
+      "kz_tool_present": true,
+      "paid_requests": 0,
+      "passed": true
+    },
+    {
+      "name": "official starter grading",
+      "passed": true,
+      "score": 0.0,
+      "p2p_count": 17
+    }
+  ]
+}

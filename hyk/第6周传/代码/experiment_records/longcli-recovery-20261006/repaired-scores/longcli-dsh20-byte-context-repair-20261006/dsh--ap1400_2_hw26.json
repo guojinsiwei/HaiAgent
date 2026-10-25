@@ -1,0 +1,29 @@
+{
+  "job": "dsh--ap1400_2_hw26",
+  "task": "ap1400_2_hw26",
+  "artifact_sha256": "5f14a7a279dfa221f16e7b41a2f56d847331ff0b75eb1480fa3885917bc3f23b",
+  "image_id": "sha256:988efbc77fbe62953936ad62bf84bc95666260aabd69d1e0033c8dce727a5d5d",
+  "container": "longcli-paired10-aa9611c3b9e3",
+  "grading_cpu": 8,
+  "grading_memory_gib": 8,
+  "grading_cpuset": "0-7",
+  "official_success": false,
+  "grading_state": "complete",
+  "fixture": false,
+  "script_exit": 0,
+  "f2p": {
+    "is_pass": 0,
+    "step_score": 0.375
+  },
+  "p2p_is_pass": 1,
+  "p2p_step_score": 1.0,
+  "p2p_count": 4,
+  "p2p_cases": {
+    "test_file_integrity[/app/ap1400_2_hw/ap1400_2_hw2/Dockerfile-af126cf95e4817d59dde9629f8d1fd17]": 1,
+    "test_file_integrity[/app/ap1400_2_hw/ap1400_2_hw2/src/main.cpp-f14ad9a116f7b446d740a7f9bf709003]": 1,
+    "test_file_integrity[/app/ap1400_2_hw/ap1400_2_hw6/Dockerfile-03ac1a3d1fbcbd9f0d5de84b9f6f9341]": 1,
+    "test_file_integrity[/app/ap1400_2_hw/ap1400_2_hw6/src/main.cpp-cd35e02a5f629f1e4c96499a560cbed4]": 1
+  },
+  "f2p_output_nonempty": true,
+  "grading_container_destroyed": true
+}

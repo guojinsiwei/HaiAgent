@@ -1,0 +1,190 @@
+{
+  "status": "completed",
+  "acceptance_passed": false,
+  "exit_code": 1,
+  "counts": {
+    "PASS": 6,
+    "FAIL": 6,
+    "ERROR": 0
+  },
+  "model_api_calls": 0,
+  "checks": [
+    {
+      "name": "docker_snapshot_restore_delivery",
+      "status": "PASS",
+      "evidence": {
+        "restore_output": "restored\n",
+        "delivered": "A",
+        "live_container_reused": true,
+        "mounts": [],
+        "network": "container:ac9bc20dfc7338a4a153736b71be279772c51eb21a05d791053a24f463112714"
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "workspace_escape_refused",
+      "status": "PASS",
+      "evidence": {
+        "blocked": true,
+        "exit": 126
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "command_timeout_and_recovery",
+      "status": "PASS",
+      "evidence": {
+        "timed_out": true,
+        "next_call_succeeded": true
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "best_plain_read_advisor",
+      "status": "PASS",
+      "evidence": {
+        "advisor_calls": 1
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "best_shell_wrapped_read_advisor",
+      "status": "FAIL",
+      "evidence": {
+        "advisor_calls": 0,
+        "expected": 1
+      },
+      "expected_issue": "shell compound classified generic"
+    },
+    {
+      "name": "best_visible_evidence_3",
+      "status": "PASS",
+      "evidence": {
+        "accepted": 1,
+        "visible": [
+          "E1",
+          "E2",
+          "E3",
+          "E4"
+        ],
+        "deferred": []
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "best_visible_evidence_4",
+      "status": "FAIL",
+      "evidence": {
+        "accepted": 0,
+        "visible": [
+          "E1",
+          "E2",
+          "E3",
+          "E4"
+        ],
+        "deferred": [
+          "advisor cited unavailable evidence"
+        ]
+      },
+      "expected_issue": "undocumented three-evidence limit"
+    },
+    {
+      "name": "hai_relative_cwd_memory",
+      "status": "PASS",
+      "evidence": {
+        "cwd": ".",
+        "memory_count": 1,
+        "validity": [
+          "current"
+        ],
+        "memory_bytes": [
+          2300
+        ],
+        "selected_ids": [
+          "M1"
+        ],
+        "tools": 3,
+        "workspace_scope": {
+          "cwd": "/var/tmp/lizh639-mechanism-integration-20260929/run-20260929-204730-2c274fd0/hai_relative_cwd_memory/state/live",
+          "environment": null,
+          "workspace": "ad2d95b2c7438a79198836d29cc68b43491baea913773a929ee66ca303cddbfe"
+        }
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "hai_container_cwd_memory",
+      "status": "FAIL",
+      "evidence": {
+        "cwd": "/app",
+        "memory_count": 1,
+        "validity": [
+          "stale"
+        ],
+        "memory_bytes": [
+          1874
+        ],
+        "selected_ids": [
+          "M1"
+        ],
+        "tools": 3,
+        "workspace_scope": {
+          "cwd": "/var/tmp/lizh639-mechanism-integration-20260929/run-20260929-204730-2c274fd0/hai_container_cwd_memory/state/live",
+          "environment": null,
+          "workspace": "ad2d95b2c7438a79198836d29cc68b43491baea913773a929ee66ca303cddbfe"
+        }
+      },
+      "expected_issue": "container /app versus host mirror alias"
+    },
+    {
+      "name": "hai_large_memory_reaches_next_prompt",
+      "status": "FAIL",
+      "evidence": {
+        "cwd": ".",
+        "memory_count": 1,
+        "validity": [
+          "current"
+        ],
+        "memory_bytes": [
+          3361
+        ],
+        "selected_ids": [],
+        "tools": 3,
+        "workspace_scope": {
+          "cwd": "/var/tmp/lizh639-mechanism-integration-20260929/run-20260929-204730-2c274fd0/hai_large_memory/state/live",
+          "environment": null,
+          "workspace": "ad2d95b2c7438a79198836d29cc68b43491baea913773a929ee66ca303cddbfe"
+        }
+      },
+      "expected_issue": "whole memory dropped above 3000-byte slice"
+    },
+    {
+      "name": "classifier_budget_with_metrics",
+      "status": "FAIL",
+      "evidence": {
+        "stop_reason": "wall_budget",
+        "infrastructure_ok": false,
+        "reasons": [
+          "model_error"
+        ]
+      },
+      "expected_issue": "metrics changes adjacency"
+    },
+    {
+      "name": "classifier_infrastructure_stop",
+      "status": "FAIL",
+      "evidence": {
+        "stop_reason": "infrastructure_error",
+        "infrastructure_ok": true,
+        "reasons": []
+      },
+      "expected_issue": "stop reason ignored"
+    }
+  ],
+  "fatal": null,
+  "cleanup_errors": [],
+  "remaining_originals": [],
+  "elapsed_seconds": 199.815,
+  "run_dir": "/var/tmp/lizh639-mechanism-integration-20260929/run-20260929-204730-2c274fd0",
+  "source_dir": "/var/tmp/lizh639-mechanism-integration-20260929/sources"
+}

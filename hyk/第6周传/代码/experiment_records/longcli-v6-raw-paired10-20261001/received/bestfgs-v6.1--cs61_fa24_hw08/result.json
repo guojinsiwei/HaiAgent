@@ -1,0 +1,136 @@
+{
+  "version": "bestfgs-monitor-control-v6.1",
+  "task_id": "cs61_fa24_hw08",
+  "submitted": true,
+  "stop_reason": "model_submit",
+  "artifact": {
+    "path": "/mnt/lizh639/longcli-v6-raw-paired10-20261001/roots/bestfgs-v6.1--cs61_fa24_hw08/app",
+    "fingerprint": "477aa4f6b50a1f12c08d6ac62968cf416add0c98a57aa5769ab5e381cdadd583",
+    "restoration": "workspace_files_only"
+  },
+  "official_success": null,
+  "error_type": null,
+  "interaction_rounds": 18,
+  "action_rounds": 17,
+  "advisor_rounds": 0,
+  "monitor_rounds": 1,
+  "tool_calls": 16,
+  "wall_seconds": 74.65980194415897,
+  "model_usage": {
+    "action": {
+      "model_calls": 17,
+      "api_requests": 21,
+      "api_responses": 21,
+      "prompt_tokens": 263325,
+      "cached_prompt_tokens": 67584,
+      "cache_miss_prompt_tokens": 195741,
+      "cache_write_prompt_tokens": 0,
+      "completion_tokens": 8524,
+      "cache_hit_rate": 0.256656,
+      "usage_missing_responses": 0,
+      "response_models": [
+        "deepseek-flash"
+      ],
+      "system_fingerprints": [
+        "aeb56401ca74e127821c4f9126dcb669"
+      ],
+      "last_failure_kind": null,
+      "last_failure_detail": null,
+      "failure_counts": {
+        "json_syntax": 3,
+        "output_length": 1
+      },
+      "usage_unreported_requests": 0
+    },
+    "advisor": {
+      "model_calls": 0,
+      "api_requests": 0,
+      "api_responses": 0,
+      "prompt_tokens": 0,
+      "cached_prompt_tokens": 0,
+      "cache_miss_prompt_tokens": 0,
+      "cache_write_prompt_tokens": 0,
+      "completion_tokens": 0,
+      "cache_hit_rate": 0.0,
+      "usage_missing_responses": 0,
+      "response_models": [],
+      "system_fingerprints": [],
+      "last_failure_kind": null,
+      "last_failure_detail": null,
+      "failure_counts": {},
+      "usage_unreported_requests": 0
+    },
+    "monitor": {
+      "model_calls": 1,
+      "api_requests": 1,
+      "api_responses": 1,
+      "prompt_tokens": 4345,
+      "cached_prompt_tokens": 256,
+      "cache_miss_prompt_tokens": 4089,
+      "cache_write_prompt_tokens": 0,
+      "completion_tokens": 448,
+      "cache_hit_rate": 0.058918,
+      "usage_missing_responses": 0,
+      "response_models": [
+        "deepseek-flash"
+      ],
+      "system_fingerprints": [
+        "aeb56401ca74e127821c4f9126dcb669"
+      ],
+      "last_failure_kind": null,
+      "last_failure_detail": null,
+      "failure_counts": {},
+      "usage_unreported_requests": 0
+    }
+  },
+  "mechanism_utilization": {
+    "model_requests": 18,
+    "action_calls": 17,
+    "advisor_calls": 0,
+    "tool_calls": 16,
+    "memory_exposures": 9,
+    "requests_with_memory": 9,
+    "memories_admitted": 1,
+    "memories_rejected": 0,
+    "memory_use_self_reports": 0,
+    "advisor_responses_accepted": 0,
+    "advisor_deferred": 0,
+    "checkpoints_created": 1,
+    "branch_restores": 0,
+    "submissions": 1,
+    "protocol_errors": 0,
+    "memory_interventions": 0,
+    "memory_action_changed": 0,
+    "memory_action_unchanged": 0,
+    "memory_followup_actions": 0,
+    "memory_followup_runs": 0,
+    "memory_followup_succeeded": 0,
+    "memory_followup_workspace_changed": 0,
+    "post_advice_actions": 0,
+    "monitor_calls": 1,
+    "monitor_reviews_accepted": 1,
+    "monitor_deferred": 0,
+    "semantic_stalls": 0,
+    "auto_memory_candidates": 1,
+    "auto_memories_admitted": 1,
+    "auto_memories_rejected": 0,
+    "observed_memories_admitted": 0,
+    "recovery_started": 0,
+    "recovery_plans": 0,
+    "recovery_verified_repairs": 0,
+    "recovery_checked_hypotheses": 0,
+    "recovery_failed": 0,
+    "memory_exposure_is_not_benefit": true,
+    "memory_use_is_self_report": true
+  },
+  "time_by_role": {
+    "action": 54.173865638673306,
+    "tools": 4.198580490425229,
+    "monitor": 2.950224041007459
+  },
+  "contextual_tool_redundancy": {
+    "status": "requires_independent_audit",
+    "rate": null,
+    "denominator": 16
+  }
+}

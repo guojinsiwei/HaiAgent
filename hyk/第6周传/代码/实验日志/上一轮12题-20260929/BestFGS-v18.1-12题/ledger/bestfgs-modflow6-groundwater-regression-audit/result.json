@@ -1,0 +1,51 @@
+{
+  "task": "modflow6-groundwater-regression-audit",
+  "method": "bestfgs",
+  "report": "/var/tmp/lizh639-lhtb-bestfgs-v181-only-r1/runs/bestfgs-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__UNLWRNN/result.json",
+  "verifier_result": {
+    "rewards": {
+      "reward": 0.03742084052964882
+    }
+  },
+  "exception_info": null,
+  "process_exit_code": 0,
+  "audit_chain": {
+    "events": 1830,
+    "tail_sha256": "dcd5737eb0521456e6aeebe97da8b6beacd665e2733d763a1d157b9ceecd08d0"
+  },
+  "mechanism_utilization": {
+    "action_calls": 612,
+    "advisor_calls": 0,
+    "advisor_deferred": 0,
+    "advisor_responses_accepted": 0,
+    "branch_restores": 0,
+    "checkpoints_created": 1,
+    "memories_admitted": 0,
+    "memories_rejected": 0,
+    "memory_action_changed": 0,
+    "memory_action_unchanged": 0,
+    "memory_exposure_is_not_benefit": true,
+    "memory_exposures": 0,
+    "memory_followup_actions": 0,
+    "memory_followup_runs": 0,
+    "memory_followup_succeeded": 0,
+    "memory_followup_workspace_changed": 0,
+    "memory_interventions": 0,
+    "memory_use_is_self_report": true,
+    "memory_use_self_reports": 0,
+    "model_requests": 612,
+    "post_advice_actions": 0,
+    "protocol_errors": 0,
+    "requests_with_memory": 0,
+    "submissions": 1,
+    "tool_calls": 600
+  },
+  "classification": {
+    "stop_reason": "request_or_tool_budget",
+    "infrastructure_ok": true,
+    "reasons": [],
+    "method_issues": [
+      "model_error"
+    ]
+  }
+}

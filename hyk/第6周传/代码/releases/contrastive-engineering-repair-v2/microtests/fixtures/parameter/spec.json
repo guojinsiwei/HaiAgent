@@ -1,0 +1,1 @@
+{"threshold_constraint":"0 < threshold <= 1","report":"report.json","loss":"threshold / 2","allowed_operation":"microtool evaluate --threshold VALUE"}

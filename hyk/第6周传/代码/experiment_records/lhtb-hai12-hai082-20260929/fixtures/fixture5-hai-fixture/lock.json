@@ -1,0 +1,65 @@
+{
+    "schema_version": 1,
+    "created_at": "2026-09-29T02:51:45.220972Z",
+    "harbor": {
+        "version": "0.20.0",
+        "is_editable": false
+    },
+    "invocation": [
+        "/var/tmp/lizh639-lhtb-hai082-only-r1/harbor_entry.py",
+        "run",
+        "--config",
+        "/var/tmp/lizh639-lhtb-hai082-only-r1/jobs/fixture5-hai-fixture.json"
+    ],
+    "n_concurrent_trials": 1,
+    "retry": {
+        "max_retries": 0,
+        "exclude_exceptions": [
+            "VerifierTimeoutError",
+            "RewardFileEmptyError",
+            "RewardFileNotFoundError",
+            "VerifierOutputParseError",
+            "AgentTimeoutError"
+        ],
+        "wait_multiplier": 1.0,
+        "min_wait_sec": 1.0,
+        "max_wait_sec": 60.0
+    },
+    "trials": [
+        {
+            "task": {
+                "name": "fixture",
+                "type": "local",
+                "digest": "sha256:57778c97813b67b4457553726551d035c624e97327cfd511b7dcec4a96c54652",
+                "path": "/var/tmp/lizh639-lhtb-hai082-only-r1/fixture"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "import_path": "transport:TripleAgent",
+                "model_name": "deepseek-flash",
+                "override_setup_timeout_sec": 600.0,
+                "kwargs": {
+                    "method": "hai",
+                    "task_id": "fixture",
+                    "wall_seconds": 240,
+                    "cpu": 2,
+                    "memory_mb": 4096,
+                    "fixture": "budget"
+                },
+                "env": {}
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        }
+    ]
+}

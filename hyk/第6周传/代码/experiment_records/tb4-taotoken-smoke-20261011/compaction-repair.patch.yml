@@ -1,0 +1,5 @@
+# Native DSH summarization bypasses the agent/request settings waterfall.
+# Match the unchanged smoke output cap; do not enlarge any task budget.
+- id: compaction-basic
+  config:
+    maxTokens: 8192

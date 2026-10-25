@@ -1,0 +1,9 @@
+{
+  "task": "asana001",
+  "artifact_sha256": "d8dd1bb23ee2adc4a738a820b29e7e551f6c4ac5664b2f0860a376597456fc42",
+  "database_sha256": "d3489630113c8d7b2df4215da4d2ceac8c1554be1667ca9ce050b9cbbf20bd58",
+  "score": 0,
+  "roundtrip_verified": true,
+  "model_calls": 0,
+  "not_a_solution": true
+}

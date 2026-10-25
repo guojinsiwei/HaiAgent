@@ -1,0 +1,41 @@
+{
+  "version": "hai-result-v1",
+  "run_id": "44076f0ab8bf487097ef21a69f7e89fe",
+  "task_id": "cs61_fa24_scheme",
+  "method": "raw",
+  "submitted": false,
+  "stop_reason": "api_error",
+  "model_summary": "",
+  "artifact": null,
+  "success": null,
+  "success_status": "requires_independent_evaluation",
+  "interaction_rounds": 0,
+  "tool_calls": 0,
+  "wall_seconds": 20.91250902786851,
+  "protocol_sha256": "19f4e6e0c7f26c2c4d0861c9010f33b1482637622cb1ca02007bccd46fd2963e",
+  "trace_sha256": "874a0b55773175162147ebbdf23fe4233e4ae2ac33c0c533f7a4af007b3d80d0",
+  "model_usage": {
+    "action": {
+      "model_calls": 1,
+      "api_requests": 2,
+      "api_responses": 0,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "cached_prompt_tokens": 0,
+      "cache_miss_prompt_tokens": 0,
+      "usage_reports": 0,
+      "usage_missing_responses": 0,
+      "failure_counts": {
+        "transport": 2
+      },
+      "response_models": []
+    }
+  },
+  "mechanism_utilization": {
+    "memory": false,
+    "advisor": false,
+    "monitor": false,
+    "branch_restore": false
+  }
+}

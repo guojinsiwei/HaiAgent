@@ -1,0 +1,2024 @@
+{
+  "groups": {
+    "bestfgs": {
+      "expected": 36,
+      "scored": 35,
+      "successes": 9,
+      "official_success_rate": null,
+      "errors": 1,
+      "infrastructure_invalid_evaluations": 0,
+      "complete_metric_traces": 0,
+      "mean_interaction_rounds": null,
+      "confirmed_reusable_call_rate_lower_bound": null,
+      "partial_measured_tool_calls": 0,
+      "partial_unknown_calls": 0
+    },
+    "raw": {
+      "expected": 36,
+      "scored": 36,
+      "successes": 20,
+      "official_success_rate": 0.5555555555555556,
+      "errors": 0,
+      "infrastructure_invalid_evaluations": 0,
+      "complete_metric_traces": 18,
+      "mean_interaction_rounds": null,
+      "confirmed_reusable_call_rate_lower_bound": null,
+      "partial_measured_tool_calls": 608,
+      "partial_unknown_calls": 536
+    }
+  },
+  "rows": [
+    {
+      "id": "terminal-bench/gcode-to-text",
+      "method": "bestfgs",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": null,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": null,
+      "blocking_memory_metrics": null
+    },
+    {
+      "id": "terminal-bench/gcode-to-text",
+      "method": "raw",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": 17,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": {
+        "model_calls": 18,
+        "api_requests": 18,
+        "api_responses": 18,
+        "prompt_tokens": 347822,
+        "cached_prompt_tokens": 293376,
+        "cache_miss_prompt_tokens": 54446,
+        "cache_write_prompt_tokens": 0,
+        "completion_tokens": 189992,
+        "cache_hit_rate": 0.843466,
+        "usage_missing_responses": 0,
+        "response_models": [
+          "deepseek-flash"
+        ],
+        "system_fingerprints": [
+          "aeb56401ca74e127821c4f9126dcb669"
+        ],
+        "last_failure_kind": null,
+        "last_failure_detail": null,
+        "failure_counts": {
+          "schema_validation": 1
+        },
+        "usage_unreported_requests": 0
+      },
+      "blocking_memory_metrics": {}
+    },
+    {
+      "id": "terminal-bench/compile-compcert",
+      "method": "raw",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": 12,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": {
+        "model_calls": 15,
+        "api_requests": 15,
+        "api_responses": 15,
+        "prompt_tokens": 228572,
+        "cached_prompt_tokens": 193024,
+        "cache_miss_prompt_tokens": 35548,
+        "cache_write_prompt_tokens": 0,
+        "completion_tokens": 23559,
+        "cache_hit_rate": 0.844478,
+        "usage_missing_responses": 0,
+        "response_models": [
+          "deepseek-flash"
+        ],
+        "system_fingerprints": [
+          "aeb56401ca74e127821c4f9126dcb669"
+        ],
+        "last_failure_kind": null,
+        "last_failure_detail": null,
+        "failure_counts": {
+          "schema_validation": 3
+        },
+        "usage_unreported_requests": 0
+      },
+      "blocking_memory_metrics": {}
+    },
+    {
+      "id": "terminal-bench/compile-compcert",
+      "method": "bestfgs",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": null,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": null,
+      "blocking_memory_metrics": null
+    },
+    {
+      "id": "terminal-bench/crack-7z-hash",
+      "method": "bestfgs",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": null,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": null,
+      "blocking_memory_metrics": null
+    },
+    {
+      "id": "terminal-bench/crack-7z-hash",
+      "method": "raw",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": 15,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": {
+        "model_calls": 16,
+        "api_requests": 16,
+        "api_responses": 16,
+        "prompt_tokens": 297895,
+        "cached_prompt_tokens": 261376,
+        "cache_miss_prompt_tokens": 36519,
+        "cache_write_prompt_tokens": 0,
+        "completion_tokens": 60861,
+        "cache_hit_rate": 0.87741,
+        "usage_missing_responses": 0,
+        "response_models": [
+          "deepseek-flash"
+        ],
+        "system_fingerprints": [
+          "aeb56401ca74e127821c4f9126dcb669"
+        ],
+        "last_failure_kind": null,
+        "last_failure_detail": null,
+        "failure_counts": {
+          "schema_validation": 1
+        },
+        "usage_unreported_requests": 0
+      },
+      "blocking_memory_metrics": {}
+    },
+    {
+      "id": "terminal-bench/vulnerable-secret",
+      "method": "raw",
+      "state": "completed",
+      "success": true,
+      "interaction_rounds": 7,
+      "decision_turns": 7,
+      "tool_calls": 16,
+      "confirmed_reusable_calls": 1,
+      "unknown_calls": 14,
+      "exception_type": null,
+      "official_reward": 1.0,
+      "trace_complete": true,
+      "model_usage": {
+        "model_calls": 8,
+        "api_requests": 9,
+        "api_responses": 9,
+        "prompt_tokens": 50300,
+        "cached_prompt_tokens": 37632,
+        "cache_miss_prompt_tokens": 12668,
+        "cache_write_prompt_tokens": 0,
+        "completion_tokens": 8114,
+        "cache_hit_rate": 0.748151,
+        "usage_missing_responses": 0,
+        "response_models": [
+          "deepseek-flash"
+        ],
+        "system_fingerprints": [
+          "aeb56401ca74e127821c4f9126dcb669"
+        ],
+        "last_failure_kind": null,
+        "last_failure_detail": null,
+        "failure_counts": {
+          "json_syntax": 1,
+          "schema_validation": 1
+        },
+        "usage_unreported_requests": 0
+      },
+      "blocking_memory_metrics": {}
+    },
+    {
+      "id": "terminal-bench/vulnerable-secret",
+      "method": "bestfgs",
+      "state": "completed",
+      "success": true,
+      "interaction_rounds": null,
+      "decision_turns": null,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 1.0,
+      "trace_complete": null,
+      "model_usage": null,
+      "blocking_memory_metrics": null
+    },
+    {
+      "id": "terminal-bench/tune-mjcf",
+      "method": "bestfgs",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": null,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": null,
+      "blocking_memory_metrics": null
+    },
+    {
+      "id": "terminal-bench/tune-mjcf",
+      "method": "raw",
+      "state": "completed",
+      "success": true,
+      "interaction_rounds": null,
+      "decision_turns": 8,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 1.0,
+      "trace_complete": null,
+      "model_usage": {
+        "model_calls": 10,
+        "api_requests": 11,
+        "api_responses": 11,
+        "prompt_tokens": 62962,
+        "cached_prompt_tokens": 49408,
+        "cache_miss_prompt_tokens": 13554,
+        "cache_write_prompt_tokens": 0,
+        "completion_tokens": 50916,
+        "cache_hit_rate": 0.784727,
+        "usage_missing_responses": 0,
+        "response_models": [
+          "deepseek-flash"
+        ],
+        "system_fingerprints": [
+          "aeb56401ca74e127821c4f9126dcb669"
+        ],
+        "last_failure_kind": null,
+        "last_failure_detail": null,
+        "failure_counts": {
+          "schema_validation": 2,
+          "json_syntax": 1
+        },
+        "usage_unreported_requests": 0
+      },
+      "blocking_memory_metrics": {}
+    },
+    {
+      "id": "terminal-bench/path-tracing",
+      "method": "raw",
+      "state": "completed",
+      "success": true,
+      "interaction_rounds": 12,
+      "decision_turns": 12,
+      "tool_calls": 43,
+      "confirmed_reusable_calls": 0,
+      "unknown_calls": 42,
+      "exception_type": null,
+      "official_reward": 1.0,
+      "trace_complete": true,
+      "model_usage": {
+        "model_calls": 12,
+        "api_requests": 13,
+        "api_responses": 13,
+        "prompt_tokens": 382432,
+        "cached_prompt_tokens": 318080,
+        "cache_miss_prompt_tokens": 64352,
+        "cache_write_prompt_tokens": 0,
+        "completion_tokens": 114687,
+        "cache_hit_rate": 0.83173,
+        "usage_missing_responses": 0,
+        "response_models": [
+          "deepseek-flash"
+        ],
+        "system_fingerprints": [
+          "aeb56401ca74e127821c4f9126dcb669"
+        ],
+        "last_failure_kind": null,
+        "last_failure_detail": null,
+        "failure_counts": {
+          "json_syntax": 1
+        },
+        "usage_unreported_requests": 0
+      },
+      "blocking_memory_metrics": {}
+    },
+    {
+      "id": "terminal-bench/path-tracing",
+      "method": "bestfgs",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": null,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": null,
+      "blocking_memory_metrics": null
+    },
+    {
+      "id": "terminal-bench/polyglot-c-py",
+      "method": "bestfgs",
+      "state": "completed",
+      "success": true,
+      "interaction_rounds": null,
+      "decision_turns": null,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 1.0,
+      "trace_complete": null,
+      "model_usage": null,
+      "blocking_memory_metrics": null
+    },
+    {
+      "id": "terminal-bench/polyglot-c-py",
+      "method": "raw",
+      "state": "completed",
+      "success": true,
+      "interaction_rounds": 10,
+      "decision_turns": 10,
+      "tool_calls": 49,
+      "confirmed_reusable_calls": 1,
+      "unknown_calls": 47,
+      "exception_type": null,
+      "official_reward": 1.0,
+      "trace_complete": true,
+      "model_usage": {
+        "model_calls": 12,
+        "api_requests": 13,
+        "api_responses": 13,
+        "prompt_tokens": 112588,
+        "cached_prompt_tokens": 92544,
+        "cache_miss_prompt_tokens": 20044,
+        "cache_write_prompt_tokens": 0,
+        "completion_tokens": 103263,
+        "cache_hit_rate": 0.82197,
+        "usage_missing_responses": 0,
+        "response_models": [
+          "deepseek-flash"
+        ],
+        "system_fingerprints": [
+          "aeb56401ca74e127821c4f9126dcb669"
+        ],
+        "last_failure_kind": null,
+        "last_failure_detail": null,
+        "failure_counts": {
+          "schema_validation": 2,
+          "json_syntax": 1
+        },
+        "usage_unreported_requests": 0
+      },
+      "blocking_memory_metrics": {}
+    },
+    {
+      "id": "terminal-bench/sparql-university",
+      "method": "raw",
+      "state": "completed",
+      "success": true,
+      "interaction_rounds": 15,
+      "decision_turns": 15,
+      "tool_calls": 53,
+      "confirmed_reusable_calls": 0,
+      "unknown_calls": 49,
+      "exception_type": null,
+      "official_reward": 1.0,
+      "trace_complete": true,
+      "model_usage": {
+        "model_calls": 17,
+        "api_requests": 20,
+        "api_responses": 20,
+        "prompt_tokens": 207078,
+        "cached_prompt_tokens": 184448,
+        "cache_miss_prompt_tokens": 22630,
+        "cache_write_prompt_tokens": 0,
+        "completion_tokens": 132542,
+        "cache_hit_rate": 0.890718,
+        "usage_missing_responses": 0,
+        "response_models": [
+          "deepseek-flash"
+        ],
+        "system_fingerprints": [
+          "aeb56401ca74e127821c4f9126dcb669"
+        ],
+        "last_failure_kind": null,
+        "last_failure_detail": null,
+        "failure_counts": {
+          "json_syntax": 3,
+          "schema_validation": 2
+        },
+        "usage_unreported_requests": 0
+      },
+      "blocking_memory_metrics": {}
+    },
+    {
+      "id": "terminal-bench/sparql-university",
+      "method": "bestfgs",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": null,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": null,
+      "blocking_memory_metrics": null
+    },
+    {
+      "id": "terminal-bench/git-multibranch",
+      "method": "bestfgs",
+      "state": "completed",
+      "success": true,
+      "interaction_rounds": null,
+      "decision_turns": null,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 1.0,
+      "trace_complete": null,
+      "model_usage": null,
+      "blocking_memory_metrics": null
+    },
+    {
+      "id": "terminal-bench/git-multibranch",
+      "method": "raw",
+      "state": "completed",
+      "success": true,
+      "interaction_rounds": null,
+      "decision_turns": 20,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 1.0,
+      "trace_complete": null,
+      "model_usage": {
+        "model_calls": 20,
+        "api_requests": 22,
+        "api_responses": 22,
+        "prompt_tokens": 454891,
+        "cached_prompt_tokens": 402176,
+        "cache_miss_prompt_tokens": 52715,
+        "cache_write_prompt_tokens": 0,
+        "completion_tokens": 177660,
+        "cache_hit_rate": 0.884115,
+        "usage_missing_responses": 0,
+        "response_models": [
+          "deepseek-flash"
+        ],
+        "system_fingerprints": [
+          "aeb56401ca74e127821c4f9126dcb669"
+        ],
+        "last_failure_kind": null,
+        "last_failure_detail": null,
+        "failure_counts": {
+          "json_syntax": 2
+        },
+        "usage_unreported_requests": 0
+      },
+      "blocking_memory_metrics": {}
+    },
+    {
+      "id": "terminal-bench/regex-chess",
+      "method": "raw",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": 2,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": {
+        "model_calls": 2,
+        "api_requests": 4,
+        "api_responses": 4,
+        "prompt_tokens": 10648,
+        "cached_prompt_tokens": 7040,
+        "cache_miss_prompt_tokens": 3608,
+        "cache_write_prompt_tokens": 0,
+        "completion_tokens": 110478,
+        "cache_hit_rate": 0.661157,
+        "usage_missing_responses": 0,
+        "response_models": [
+          "deepseek-flash"
+        ],
+        "system_fingerprints": [
+          "aeb56401ca74e127821c4f9126dcb669"
+        ],
+        "last_failure_kind": null,
+        "last_failure_detail": null,
+        "failure_counts": {
+          "json_syntax": 2
+        },
+        "usage_unreported_requests": 0
+      },
+      "blocking_memory_metrics": {}
+    },
+    {
+      "id": "terminal-bench/regex-chess",
+      "method": "bestfgs",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": null,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": null,
+      "blocking_memory_metrics": null
+    },
+    {
+      "id": "terminal-bench/extract-moves-from-video",
+      "method": "bestfgs",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": null,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": null,
+      "blocking_memory_metrics": null
+    },
+    {
+      "id": "terminal-bench/extract-moves-from-video",
+      "method": "raw",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": 18,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": {
+        "model_calls": 19,
+        "api_requests": 21,
+        "api_responses": 21,
+        "prompt_tokens": 385754,
+        "cached_prompt_tokens": 340224,
+        "cache_miss_prompt_tokens": 45530,
+        "cache_write_prompt_tokens": 0,
+        "completion_tokens": 43464,
+        "cache_hit_rate": 0.881971,
+        "usage_missing_responses": 0,
+        "response_models": [
+          "deepseek-flash"
+        ],
+        "system_fingerprints": [
+          "aeb56401ca74e127821c4f9126dcb669"
+        ],
+        "last_failure_kind": null,
+        "last_failure_detail": null,
+        "failure_counts": {
+          "json_syntax": 2,
+          "schema_validation": 1
+        },
+        "usage_unreported_requests": 0
+      },
+      "blocking_memory_metrics": {}
+    },
+    {
+      "id": "terminal-bench/financial-document-processor",
+      "method": "raw",
+      "state": "completed",
+      "success": true,
+      "interaction_rounds": 12,
+      "decision_turns": 12,
+      "tool_calls": 28,
+      "confirmed_reusable_calls": 1,
+      "unknown_calls": 25,
+      "exception_type": null,
+      "official_reward": 1.0,
+      "trace_complete": true,
+      "model_usage": {
+        "model_calls": 12,
+        "api_requests": 14,
+        "api_responses": 14,
+        "prompt_tokens": 110656,
+        "cached_prompt_tokens": 86656,
+        "cache_miss_prompt_tokens": 24000,
+        "cache_write_prompt_tokens": 0,
+        "completion_tokens": 36732,
+        "cache_hit_rate": 0.783112,
+        "usage_missing_responses": 0,
+        "response_models": [
+          "deepseek-flash"
+        ],
+        "system_fingerprints": [
+          "aeb56401ca74e127821c4f9126dcb669"
+        ],
+        "last_failure_kind": null,
+        "last_failure_detail": null,
+        "failure_counts": {
+          "json_syntax": 2
+        },
+        "usage_unreported_requests": 0
+      },
+      "blocking_memory_metrics": {}
+    },
+    {
+      "id": "terminal-bench/financial-document-processor",
+      "method": "bestfgs",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": null,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": null,
+      "blocking_memory_metrics": null
+    },
+    {
+      "id": "terminal-bench/mteb-leaderboard",
+      "method": "bestfgs",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": null,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": null,
+      "blocking_memory_metrics": null
+    },
+    {
+      "id": "terminal-bench/mteb-leaderboard",
+      "method": "raw",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": 30,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": {
+        "model_calls": 31,
+        "api_requests": 37,
+        "api_responses": 37,
+        "prompt_tokens": 1526734,
+        "cached_prompt_tokens": 1430016,
+        "cache_miss_prompt_tokens": 96718,
+        "cache_write_prompt_tokens": 0,
+        "completion_tokens": 129008,
+        "cache_hit_rate": 0.93665,
+        "usage_missing_responses": 0,
+        "response_models": [
+          "deepseek-flash"
+        ],
+        "system_fingerprints": [
+          "aeb56401ca74e127821c4f9126dcb669"
+        ],
+        "last_failure_kind": null,
+        "last_failure_detail": null,
+        "failure_counts": {
+          "json_syntax": 6,
+          "schema_validation": 1
+        },
+        "usage_unreported_requests": 0
+      },
+      "blocking_memory_metrics": {}
+    },
+    {
+      "id": "terminal-bench/qemu-alpine-ssh",
+      "method": "raw",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": 10,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": {
+        "model_calls": 10,
+        "api_requests": 11,
+        "api_responses": 11,
+        "prompt_tokens": 64564,
+        "cached_prompt_tokens": 46592,
+        "cache_miss_prompt_tokens": 17972,
+        "cache_write_prompt_tokens": 0,
+        "completion_tokens": 92544,
+        "cache_hit_rate": 0.721641,
+        "usage_missing_responses": 0,
+        "response_models": [
+          "deepseek-flash"
+        ],
+        "system_fingerprints": [
+          "aeb56401ca74e127821c4f9126dcb669"
+        ],
+        "last_failure_kind": null,
+        "last_failure_detail": null,
+        "failure_counts": {
+          "json_syntax": 1
+        },
+        "usage_unreported_requests": 0
+      },
+      "blocking_memory_metrics": {}
+    },
+    {
+      "id": "terminal-bench/qemu-alpine-ssh",
+      "method": "bestfgs",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": null,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": null,
+      "blocking_memory_metrics": null
+    },
+    {
+      "id": "terminal-bench/git-leak-recovery",
+      "method": "bestfgs",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": null,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": null,
+      "blocking_memory_metrics": null
+    },
+    {
+      "id": "terminal-bench/git-leak-recovery",
+      "method": "raw",
+      "state": "completed",
+      "success": true,
+      "interaction_rounds": 11,
+      "decision_turns": 11,
+      "tool_calls": 85,
+      "confirmed_reusable_calls": 5,
+      "unknown_calls": 73,
+      "exception_type": null,
+      "official_reward": 1.0,
+      "trace_complete": true,
+      "model_usage": {
+        "model_calls": 12,
+        "api_requests": 14,
+        "api_responses": 14,
+        "prompt_tokens": 132854,
+        "cached_prompt_tokens": 110976,
+        "cache_miss_prompt_tokens": 21878,
+        "cache_write_prompt_tokens": 0,
+        "completion_tokens": 50300,
+        "cache_hit_rate": 0.835323,
+        "usage_missing_responses": 0,
+        "response_models": [
+          "deepseek-flash"
+        ],
+        "system_fingerprints": [
+          "aeb56401ca74e127821c4f9126dcb669"
+        ],
+        "last_failure_kind": null,
+        "last_failure_detail": null,
+        "failure_counts": {
+          "json_syntax": 2,
+          "schema_validation": 1
+        },
+        "usage_unreported_requests": 0
+      },
+      "blocking_memory_metrics": {}
+    },
+    {
+      "id": "terminal-bench/overfull-hbox",
+      "method": "raw",
+      "state": "completed",
+      "success": true,
+      "interaction_rounds": null,
+      "decision_turns": 11,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 1.0,
+      "trace_complete": null,
+      "model_usage": {
+        "model_calls": 11,
+        "api_requests": 14,
+        "api_responses": 14,
+        "prompt_tokens": 149206,
+        "cached_prompt_tokens": 117376,
+        "cache_miss_prompt_tokens": 31830,
+        "cache_write_prompt_tokens": 0,
+        "completion_tokens": 159113,
+        "cache_hit_rate": 0.786671,
+        "usage_missing_responses": 0,
+        "response_models": [
+          "deepseek-flash"
+        ],
+        "system_fingerprints": [
+          "aeb56401ca74e127821c4f9126dcb669"
+        ],
+        "last_failure_kind": null,
+        "last_failure_detail": null,
+        "failure_counts": {
+          "json_syntax": 3
+        },
+        "usage_unreported_requests": 0
+      },
+      "blocking_memory_metrics": {}
+    },
+    {
+      "id": "terminal-bench/overfull-hbox",
+      "method": "bestfgs",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": null,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": null,
+      "blocking_memory_metrics": null
+    },
+    {
+      "id": "terminal-bench/distribution-search",
+      "method": "bestfgs",
+      "state": "completed",
+      "success": true,
+      "interaction_rounds": null,
+      "decision_turns": null,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 1.0,
+      "trace_complete": null,
+      "model_usage": null,
+      "blocking_memory_metrics": null
+    },
+    {
+      "id": "terminal-bench/distribution-search",
+      "method": "raw",
+      "state": "completed",
+      "success": true,
+      "interaction_rounds": 4,
+      "decision_turns": 4,
+      "tool_calls": 14,
+      "confirmed_reusable_calls": 1,
+      "unknown_calls": 12,
+      "exception_type": null,
+      "official_reward": 1.0,
+      "trace_complete": true,
+      "model_usage": {
+        "model_calls": 5,
+        "api_requests": 5,
+        "api_responses": 5,
+        "prompt_tokens": 12663,
+        "cached_prompt_tokens": 7808,
+        "cache_miss_prompt_tokens": 4855,
+        "cache_write_prompt_tokens": 0,
+        "completion_tokens": 27952,
+        "cache_hit_rate": 0.6166,
+        "usage_missing_responses": 0,
+        "response_models": [
+          "deepseek-flash"
+        ],
+        "system_fingerprints": [
+          "aeb56401ca74e127821c4f9126dcb669"
+        ],
+        "last_failure_kind": null,
+        "last_failure_detail": null,
+        "failure_counts": {
+          "schema_validation": 1
+        },
+        "usage_unreported_requests": 0
+      },
+      "blocking_memory_metrics": {}
+    },
+    {
+      "id": "terminal-bench/circuit-fibsqrt",
+      "method": "raw",
+      "state": "completed",
+      "success": true,
+      "interaction_rounds": 9,
+      "decision_turns": 9,
+      "tool_calls": 34,
+      "confirmed_reusable_calls": 5,
+      "unknown_calls": 23,
+      "exception_type": null,
+      "official_reward": 1.0,
+      "trace_complete": true,
+      "model_usage": {
+        "model_calls": 10,
+        "api_requests": 11,
+        "api_responses": 11,
+        "prompt_tokens": 104775,
+        "cached_prompt_tokens": 87808,
+        "cache_miss_prompt_tokens": 16967,
+        "cache_write_prompt_tokens": 0,
+        "completion_tokens": 159797,
+        "cache_hit_rate": 0.838063,
+        "usage_missing_responses": 0,
+        "response_models": [
+          "deepseek-flash"
+        ],
+        "system_fingerprints": [
+          "aeb56401ca74e127821c4f9126dcb669"
+        ],
+        "last_failure_kind": null,
+        "last_failure_detail": null,
+        "failure_counts": {
+          "json_syntax": 1,
+          "schema_validation": 1
+        },
+        "usage_unreported_requests": 0
+      },
+      "blocking_memory_metrics": {}
+    },
+    {
+      "id": "terminal-bench/circuit-fibsqrt",
+      "method": "bestfgs",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": null,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": null,
+      "blocking_memory_metrics": null
+    },
+    {
+      "id": "terminal-bench/torch-tensor-parallelism",
+      "method": "bestfgs",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": null,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": null,
+      "blocking_memory_metrics": null
+    },
+    {
+      "id": "terminal-bench/torch-tensor-parallelism",
+      "method": "raw",
+      "state": "completed",
+      "success": true,
+      "interaction_rounds": null,
+      "decision_turns": 12,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 1.0,
+      "trace_complete": null,
+      "model_usage": {
+        "model_calls": 12,
+        "api_requests": 13,
+        "api_responses": 13,
+        "prompt_tokens": 146683,
+        "cached_prompt_tokens": 115456,
+        "cache_miss_prompt_tokens": 31227,
+        "cache_write_prompt_tokens": 0,
+        "completion_tokens": 195537,
+        "cache_hit_rate": 0.787112,
+        "usage_missing_responses": 0,
+        "response_models": [
+          "deepseek-flash"
+        ],
+        "system_fingerprints": [
+          "aeb56401ca74e127821c4f9126dcb669"
+        ],
+        "last_failure_kind": null,
+        "last_failure_detail": null,
+        "failure_counts": {
+          "json_syntax": 1
+        },
+        "usage_unreported_requests": 0
+      },
+      "blocking_memory_metrics": {}
+    },
+    {
+      "id": "terminal-bench/make-mips-interpreter",
+      "method": "raw",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": 11,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": {
+        "model_calls": 14,
+        "api_requests": 18,
+        "api_responses": 18,
+        "prompt_tokens": 369007,
+        "cached_prompt_tokens": 311807,
+        "cache_miss_prompt_tokens": 57200,
+        "cache_write_prompt_tokens": 0,
+        "completion_tokens": 81475,
+        "cache_hit_rate": 0.844989,
+        "usage_missing_responses": 0,
+        "response_models": [
+          "deepseek-flash"
+        ],
+        "system_fingerprints": [
+          "aeb56401ca74e127821c4f9126dcb669"
+        ],
+        "last_failure_kind": null,
+        "last_failure_detail": null,
+        "failure_counts": {
+          "schema_validation": 3,
+          "json_syntax": 4
+        },
+        "usage_unreported_requests": 0
+      },
+      "blocking_memory_metrics": {}
+    },
+    {
+      "id": "terminal-bench/make-mips-interpreter",
+      "method": "bestfgs",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": null,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": null,
+      "blocking_memory_metrics": null
+    },
+    {
+      "id": "terminal-bench/constraints-scheduling",
+      "method": "bestfgs",
+      "state": "completed",
+      "success": true,
+      "interaction_rounds": null,
+      "decision_turns": null,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 1.0,
+      "trace_complete": null,
+      "model_usage": null,
+      "blocking_memory_metrics": null
+    },
+    {
+      "id": "terminal-bench/constraints-scheduling",
+      "method": "raw",
+      "state": "completed",
+      "success": true,
+      "interaction_rounds": 4,
+      "decision_turns": 4,
+      "tool_calls": 12,
+      "confirmed_reusable_calls": 1,
+      "unknown_calls": 7,
+      "exception_type": null,
+      "official_reward": 1.0,
+      "trace_complete": true,
+      "model_usage": {
+        "model_calls": 4,
+        "api_requests": 4,
+        "api_responses": 4,
+        "prompt_tokens": 18002,
+        "cached_prompt_tokens": 10240,
+        "cache_miss_prompt_tokens": 7762,
+        "cache_write_prompt_tokens": 0,
+        "completion_tokens": 16110,
+        "cache_hit_rate": 0.568826,
+        "usage_missing_responses": 0,
+        "response_models": [
+          "deepseek-flash"
+        ],
+        "system_fingerprints": [
+          "aeb56401ca74e127821c4f9126dcb669"
+        ],
+        "last_failure_kind": null,
+        "last_failure_detail": null,
+        "failure_counts": {},
+        "usage_unreported_requests": 0
+      },
+      "blocking_memory_metrics": {}
+    },
+    {
+      "id": "terminal-bench/build-cython-ext",
+      "method": "raw",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": 19,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": {
+        "model_calls": 22,
+        "api_requests": 24,
+        "api_responses": 24,
+        "prompt_tokens": 910815,
+        "cached_prompt_tokens": 775680,
+        "cache_miss_prompt_tokens": 135135,
+        "cache_write_prompt_tokens": 0,
+        "completion_tokens": 166557,
+        "cache_hit_rate": 0.851633,
+        "usage_missing_responses": 0,
+        "response_models": [
+          "deepseek-flash"
+        ],
+        "system_fingerprints": [
+          "aeb56401ca74e127821c4f9126dcb669"
+        ],
+        "last_failure_kind": null,
+        "last_failure_detail": null,
+        "failure_counts": {
+          "json_syntax": 2,
+          "schema_validation": 3
+        },
+        "usage_unreported_requests": 0
+      },
+      "blocking_memory_metrics": {}
+    },
+    {
+      "id": "terminal-bench/build-cython-ext",
+      "method": "bestfgs",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": null,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": null,
+      "blocking_memory_metrics": null
+    },
+    {
+      "id": "terminal-bench/openssl-selfsigned-cert",
+      "method": "bestfgs",
+      "state": "completed",
+      "success": true,
+      "interaction_rounds": null,
+      "decision_turns": null,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 1.0,
+      "trace_complete": null,
+      "model_usage": null,
+      "blocking_memory_metrics": null
+    },
+    {
+      "id": "terminal-bench/openssl-selfsigned-cert",
+      "method": "raw",
+      "state": "completed",
+      "success": true,
+      "interaction_rounds": 7,
+      "decision_turns": 7,
+      "tool_calls": 43,
+      "confirmed_reusable_calls": 2,
+      "unknown_calls": 38,
+      "exception_type": null,
+      "official_reward": 1.0,
+      "trace_complete": true,
+      "model_usage": {
+        "model_calls": 9,
+        "api_requests": 9,
+        "api_responses": 9,
+        "prompt_tokens": 63028,
+        "cached_prompt_tokens": 47616,
+        "cache_miss_prompt_tokens": 15412,
+        "cache_write_prompt_tokens": 0,
+        "completion_tokens": 45046,
+        "cache_hit_rate": 0.755474,
+        "usage_missing_responses": 0,
+        "response_models": [
+          "deepseek-flash"
+        ],
+        "system_fingerprints": [
+          "aeb56401ca74e127821c4f9126dcb669"
+        ],
+        "last_failure_kind": null,
+        "last_failure_detail": null,
+        "failure_counts": {
+          "schema_validation": 2
+        },
+        "usage_unreported_requests": 0
+      },
+      "blocking_memory_metrics": {}
+    },
+    {
+      "id": "terminal-bench/merge-diff-arc-agi-task",
+      "method": "raw",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": 11,
+      "decision_turns": 11,
+      "tool_calls": 50,
+      "confirmed_reusable_calls": 0,
+      "unknown_calls": 46,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": true,
+      "model_usage": {
+        "model_calls": 11,
+        "api_requests": 14,
+        "api_responses": 14,
+        "prompt_tokens": 130536,
+        "cached_prompt_tokens": 110720,
+        "cache_miss_prompt_tokens": 19816,
+        "cache_write_prompt_tokens": 0,
+        "completion_tokens": 53734,
+        "cache_hit_rate": 0.848195,
+        "usage_missing_responses": 0,
+        "response_models": [
+          "deepseek-flash"
+        ],
+        "system_fingerprints": [
+          "aeb56401ca74e127821c4f9126dcb669"
+        ],
+        "last_failure_kind": null,
+        "last_failure_detail": null,
+        "failure_counts": {
+          "json_syntax": 2,
+          "empty_content": 1
+        },
+        "usage_unreported_requests": 0
+      },
+      "blocking_memory_metrics": {}
+    },
+    {
+      "id": "terminal-bench/merge-diff-arc-agi-task",
+      "method": "bestfgs",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": null,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": null,
+      "blocking_memory_metrics": null
+    },
+    {
+      "id": "terminal-bench/log-summary-date-ranges",
+      "method": "bestfgs",
+      "state": "completed",
+      "success": true,
+      "interaction_rounds": null,
+      "decision_turns": null,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 1.0,
+      "trace_complete": null,
+      "model_usage": null,
+      "blocking_memory_metrics": null
+    },
+    {
+      "id": "terminal-bench/log-summary-date-ranges",
+      "method": "raw",
+      "state": "completed",
+      "success": true,
+      "interaction_rounds": 5,
+      "decision_turns": 5,
+      "tool_calls": 9,
+      "confirmed_reusable_calls": 0,
+      "unknown_calls": 7,
+      "exception_type": null,
+      "official_reward": 1.0,
+      "trace_complete": true,
+      "model_usage": {
+        "model_calls": 6,
+        "api_requests": 6,
+        "api_responses": 6,
+        "prompt_tokens": 64621,
+        "cached_prompt_tokens": 49152,
+        "cache_miss_prompt_tokens": 15469,
+        "cache_write_prompt_tokens": 0,
+        "completion_tokens": 7219,
+        "cache_hit_rate": 0.76062,
+        "usage_missing_responses": 0,
+        "response_models": [
+          "deepseek-flash"
+        ],
+        "system_fingerprints": [
+          "aeb56401ca74e127821c4f9126dcb669"
+        ],
+        "last_failure_kind": null,
+        "last_failure_detail": null,
+        "failure_counts": {
+          "schema_validation": 1
+        },
+        "usage_unreported_requests": 0
+      },
+      "blocking_memory_metrics": {}
+    },
+    {
+      "id": "terminal-bench/fix-ocaml-gc",
+      "method": "raw",
+      "state": "completed",
+      "success": true,
+      "interaction_rounds": null,
+      "decision_turns": 14,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 1.0,
+      "trace_complete": null,
+      "model_usage": {
+        "model_calls": 16,
+        "api_requests": 20,
+        "api_responses": 20,
+        "prompt_tokens": 567809,
+        "cached_prompt_tokens": 503680,
+        "cache_miss_prompt_tokens": 64129,
+        "cache_write_prompt_tokens": 0,
+        "completion_tokens": 101065,
+        "cache_hit_rate": 0.887059,
+        "usage_missing_responses": 0,
+        "response_models": [
+          "deepseek-flash"
+        ],
+        "system_fingerprints": [
+          "aeb56401ca74e127821c4f9126dcb669"
+        ],
+        "last_failure_kind": null,
+        "last_failure_detail": null,
+        "failure_counts": {
+          "schema_validation": 2,
+          "json_syntax": 4
+        },
+        "usage_unreported_requests": 0
+      },
+      "blocking_memory_metrics": {}
+    },
+    {
+      "id": "terminal-bench/fix-ocaml-gc",
+      "method": "bestfgs",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": null,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": null,
+      "blocking_memory_metrics": null
+    },
+    {
+      "id": "terminal-bench/pytorch-model-cli",
+      "method": "bestfgs",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": null,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": null,
+      "blocking_memory_metrics": null
+    },
+    {
+      "id": "terminal-bench/pytorch-model-cli",
+      "method": "raw",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": 15,
+      "decision_turns": 15,
+      "tool_calls": 51,
+      "confirmed_reusable_calls": 1,
+      "unknown_calls": 47,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": true,
+      "model_usage": {
+        "model_calls": 17,
+        "api_requests": 17,
+        "api_responses": 17,
+        "prompt_tokens": 221998,
+        "cached_prompt_tokens": 184704,
+        "cache_miss_prompt_tokens": 37294,
+        "cache_write_prompt_tokens": 0,
+        "completion_tokens": 68611,
+        "cache_hit_rate": 0.832007,
+        "usage_missing_responses": 0,
+        "response_models": [
+          "deepseek-flash"
+        ],
+        "system_fingerprints": [
+          "aeb56401ca74e127821c4f9126dcb669"
+        ],
+        "last_failure_kind": null,
+        "last_failure_detail": null,
+        "failure_counts": {
+          "schema_validation": 2
+        },
+        "usage_unreported_requests": 0
+      },
+      "blocking_memory_metrics": {}
+    },
+    {
+      "id": "terminal-bench/dna-insert",
+      "method": "raw",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": 8,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": {
+        "model_calls": 8,
+        "api_requests": 9,
+        "api_responses": 9,
+        "prompt_tokens": 79927,
+        "cached_prompt_tokens": 60672,
+        "cache_miss_prompt_tokens": 19255,
+        "cache_write_prompt_tokens": 0,
+        "completion_tokens": 123272,
+        "cache_hit_rate": 0.759093,
+        "usage_missing_responses": 0,
+        "response_models": [
+          "deepseek-flash"
+        ],
+        "system_fingerprints": [
+          "aeb56401ca74e127821c4f9126dcb669"
+        ],
+        "last_failure_kind": null,
+        "last_failure_detail": null,
+        "failure_counts": {
+          "json_syntax": 1
+        },
+        "usage_unreported_requests": 0
+      },
+      "blocking_memory_metrics": {}
+    },
+    {
+      "id": "terminal-bench/dna-insert",
+      "method": "bestfgs",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": null,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": null,
+      "blocking_memory_metrics": null
+    },
+    {
+      "id": "terminal-bench/caffe-cifar-10",
+      "method": "bestfgs",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": null,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": null,
+      "blocking_memory_metrics": null
+    },
+    {
+      "id": "terminal-bench/caffe-cifar-10",
+      "method": "raw",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": 7,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": {
+        "model_calls": 8,
+        "api_requests": 10,
+        "api_responses": 10,
+        "prompt_tokens": 111008,
+        "cached_prompt_tokens": 56448,
+        "cache_miss_prompt_tokens": 54560,
+        "cache_write_prompt_tokens": 0,
+        "completion_tokens": 38219,
+        "cache_hit_rate": 0.508504,
+        "usage_missing_responses": 0,
+        "response_models": [
+          "deepseek-flash"
+        ],
+        "system_fingerprints": [
+          "aeb56401ca74e127821c4f9126dcb669"
+        ],
+        "last_failure_kind": null,
+        "last_failure_detail": null,
+        "failure_counts": {
+          "json_syntax": 2,
+          "schema_validation": 1
+        },
+        "usage_unreported_requests": 0
+      },
+      "blocking_memory_metrics": {}
+    },
+    {
+      "id": "terminal-bench/install-windows-3-11",
+      "method": "raw",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": 16,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": {
+        "model_calls": 17,
+        "api_requests": 23,
+        "api_responses": 23,
+        "prompt_tokens": 413520,
+        "cached_prompt_tokens": 370176,
+        "cache_miss_prompt_tokens": 43344,
+        "cache_write_prompt_tokens": 0,
+        "completion_tokens": 100006,
+        "cache_hit_rate": 0.895183,
+        "usage_missing_responses": 0,
+        "response_models": [
+          "deepseek-flash"
+        ],
+        "system_fingerprints": [
+          "aeb56401ca74e127821c4f9126dcb669"
+        ],
+        "last_failure_kind": null,
+        "last_failure_detail": null,
+        "failure_counts": {
+          "json_syntax": 6,
+          "schema_validation": 1
+        },
+        "usage_unreported_requests": 0
+      },
+      "blocking_memory_metrics": {}
+    },
+    {
+      "id": "terminal-bench/install-windows-3-11",
+      "method": "bestfgs",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": null,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": null,
+      "blocking_memory_metrics": null
+    },
+    {
+      "id": "terminal-bench/prove-plus-comm",
+      "method": "bestfgs",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": null,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": null,
+      "blocking_memory_metrics": null
+    },
+    {
+      "id": "terminal-bench/prove-plus-comm",
+      "method": "raw",
+      "state": "completed",
+      "success": true,
+      "interaction_rounds": 12,
+      "decision_turns": 12,
+      "tool_calls": 51,
+      "confirmed_reusable_calls": 4,
+      "unknown_calls": 46,
+      "exception_type": null,
+      "official_reward": 1.0,
+      "trace_complete": true,
+      "model_usage": {
+        "model_calls": 12,
+        "api_requests": 15,
+        "api_responses": 15,
+        "prompt_tokens": 52832,
+        "cached_prompt_tokens": 40576,
+        "cache_miss_prompt_tokens": 12256,
+        "cache_write_prompt_tokens": 0,
+        "completion_tokens": 57876,
+        "cache_hit_rate": 0.768019,
+        "usage_missing_responses": 0,
+        "response_models": [
+          "deepseek-flash"
+        ],
+        "system_fingerprints": [
+          "aeb56401ca74e127821c4f9126dcb669"
+        ],
+        "last_failure_kind": null,
+        "last_failure_detail": null,
+        "failure_counts": {
+          "empty_content": 1,
+          "json_syntax": 2
+        },
+        "usage_unreported_requests": 0
+      },
+      "blocking_memory_metrics": {}
+    },
+    {
+      "id": "terminal-bench/video-processing",
+      "method": "raw",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": 15,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": {
+        "model_calls": 16,
+        "api_requests": 26,
+        "api_responses": 26,
+        "prompt_tokens": 555901,
+        "cached_prompt_tokens": 493952,
+        "cache_miss_prompt_tokens": 61949,
+        "cache_write_prompt_tokens": 0,
+        "completion_tokens": 137556,
+        "cache_hit_rate": 0.888561,
+        "usage_missing_responses": 0,
+        "response_models": [
+          "deepseek-flash"
+        ],
+        "system_fingerprints": [
+          "aeb56401ca74e127821c4f9126dcb669"
+        ],
+        "last_failure_kind": null,
+        "last_failure_detail": null,
+        "failure_counts": {
+          "json_syntax": 9,
+          "schema_validation": 1,
+          "empty_content": 1
+        },
+        "usage_unreported_requests": 0
+      },
+      "blocking_memory_metrics": {}
+    },
+    {
+      "id": "terminal-bench/video-processing",
+      "method": "bestfgs",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": null,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": null,
+      "blocking_memory_metrics": null
+    },
+    {
+      "id": "terminal-bench/db-wal-recovery",
+      "method": "bestfgs",
+      "state": "completed",
+      "success": true,
+      "interaction_rounds": null,
+      "decision_turns": null,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 1.0,
+      "trace_complete": null,
+      "model_usage": null,
+      "blocking_memory_metrics": null
+    },
+    {
+      "id": "terminal-bench/db-wal-recovery",
+      "method": "raw",
+      "state": "completed",
+      "success": true,
+      "interaction_rounds": 12,
+      "decision_turns": 12,
+      "tool_calls": 24,
+      "confirmed_reusable_calls": 0,
+      "unknown_calls": 24,
+      "exception_type": null,
+      "official_reward": 1.0,
+      "trace_complete": true,
+      "model_usage": {
+        "model_calls": 13,
+        "api_requests": 16,
+        "api_responses": 16,
+        "prompt_tokens": 133349,
+        "cached_prompt_tokens": 116736,
+        "cache_miss_prompt_tokens": 16613,
+        "cache_write_prompt_tokens": 0,
+        "completion_tokens": 64662,
+        "cache_hit_rate": 0.875417,
+        "usage_missing_responses": 0,
+        "response_models": [
+          "deepseek-flash"
+        ],
+        "system_fingerprints": [
+          "aeb56401ca74e127821c4f9126dcb669"
+        ],
+        "last_failure_kind": null,
+        "last_failure_detail": null,
+        "failure_counts": {
+          "json_syntax": 3,
+          "schema_validation": 1
+        },
+        "usage_unreported_requests": 0
+      },
+      "blocking_memory_metrics": {}
+    },
+    {
+      "id": "terminal-bench/sqlite-db-truncate",
+      "method": "raw",
+      "state": "completed",
+      "success": true,
+      "interaction_rounds": 6,
+      "decision_turns": 6,
+      "tool_calls": 16,
+      "confirmed_reusable_calls": 0,
+      "unknown_calls": 15,
+      "exception_type": null,
+      "official_reward": 1.0,
+      "trace_complete": true,
+      "model_usage": {
+        "model_calls": 6,
+        "api_requests": 6,
+        "api_responses": 6,
+        "prompt_tokens": 20563,
+        "cached_prompt_tokens": 11008,
+        "cache_miss_prompt_tokens": 9555,
+        "cache_write_prompt_tokens": 0,
+        "completion_tokens": 29847,
+        "cache_hit_rate": 0.53533,
+        "usage_missing_responses": 0,
+        "response_models": [
+          "deepseek-flash"
+        ],
+        "system_fingerprints": [
+          "aeb56401ca74e127821c4f9126dcb669"
+        ],
+        "last_failure_kind": null,
+        "last_failure_detail": null,
+        "failure_counts": {},
+        "usage_unreported_requests": 0
+      },
+      "blocking_memory_metrics": {}
+    },
+    {
+      "id": "terminal-bench/sqlite-db-truncate",
+      "method": "bestfgs",
+      "state": "completed",
+      "success": true,
+      "interaction_rounds": null,
+      "decision_turns": null,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 1.0,
+      "trace_complete": null,
+      "model_usage": null,
+      "blocking_memory_metrics": null
+    },
+    {
+      "id": "terminal-bench/write-compressor",
+      "method": "bestfgs",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": null,
+      "decision_turns": null,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": null,
+      "model_usage": null,
+      "blocking_memory_metrics": null
+    },
+    {
+      "id": "terminal-bench/write-compressor",
+      "method": "raw",
+      "state": "completed",
+      "success": true,
+      "interaction_rounds": 5,
+      "decision_turns": 5,
+      "tool_calls": 17,
+      "confirmed_reusable_calls": 0,
+      "unknown_calls": 13,
+      "exception_type": null,
+      "official_reward": 1.0,
+      "trace_complete": true,
+      "model_usage": {
+        "model_calls": 5,
+        "api_requests": 6,
+        "api_responses": 6,
+        "prompt_tokens": 29864,
+        "cached_prompt_tokens": 17920,
+        "cache_miss_prompt_tokens": 11944,
+        "cache_write_prompt_tokens": 0,
+        "completion_tokens": 184607,
+        "cache_hit_rate": 0.600054,
+        "usage_missing_responses": 0,
+        "response_models": [
+          "deepseek-flash"
+        ],
+        "system_fingerprints": [
+          "aeb56401ca74e127821c4f9126dcb669"
+        ],
+        "last_failure_kind": null,
+        "last_failure_detail": null,
+        "failure_counts": {
+          "json_syntax": 1
+        },
+        "usage_unreported_requests": 0
+      },
+      "blocking_memory_metrics": {}
+    },
+    {
+      "id": "terminal-bench/model-extraction-relu-logits",
+      "method": "raw",
+      "state": "completed",
+      "success": false,
+      "interaction_rounds": 6,
+      "decision_turns": 6,
+      "tool_calls": 13,
+      "confirmed_reusable_calls": 0,
+      "unknown_calls": 8,
+      "exception_type": null,
+      "official_reward": 0.0,
+      "trace_complete": true,
+      "model_usage": {
+        "model_calls": 8,
+        "api_requests": 9,
+        "api_responses": 9,
+        "prompt_tokens": 58653,
+        "cached_prompt_tokens": 47104,
+        "cache_miss_prompt_tokens": 11549,
+        "cache_write_prompt_tokens": 0,
+        "completion_tokens": 74409,
+        "cache_hit_rate": 0.803096,
+        "usage_missing_responses": 0,
+        "response_models": [
+          "deepseek-flash"
+        ],
+        "system_fingerprints": [
+          "aeb56401ca74e127821c4f9126dcb669"
+        ],
+        "last_failure_kind": null,
+        "last_failure_detail": null,
+        "failure_counts": {
+          "json_syntax": 1,
+          "schema_validation": 2
+        },
+        "usage_unreported_requests": 0
+      },
+      "blocking_memory_metrics": {}
+    },
+    {
+      "id": "terminal-bench/model-extraction-relu-logits",
+      "method": "bestfgs",
+      "state": "error",
+      "success": null,
+      "interaction_rounds": null,
+      "decision_turns": null,
+      "tool_calls": null,
+      "confirmed_reusable_calls": null,
+      "unknown_calls": null,
+      "exception_type": "RuntimeError",
+      "official_reward": null
+    }
+  ]
+}

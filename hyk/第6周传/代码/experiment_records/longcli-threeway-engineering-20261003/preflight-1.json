@@ -1,0 +1,190 @@
+{
+  "passed": true,
+  "worker": 1,
+  "checks": [
+    {
+      "task": "cs61_fa24_scheme",
+      "method": "orthogonal-v8",
+      "isolation_previously_asserted": true,
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "submitted": true,
+      "model_calls": 0,
+      "provenance": "Retained completed fixture plus trusted original assert-before-checked log",
+      "fixture_job": "worker1-v2-orthogonal-v8--cs61_fa24_scheme",
+      "original_log_sha256": "385f71e9f7add255a89c578e68b40bfb78252c68c204c8e82337091c1433a252"
+    },
+    {
+      "task": "cs61_fa24_ants",
+      "method": "orthogonal-v8",
+      "isolation_previously_asserted": true,
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "submitted": true,
+      "model_calls": 0,
+      "provenance": "Retained completed fixture plus trusted original assert-before-checked log",
+      "fixture_job": "worker1-v2-orthogonal-v8--cs61_fa24_ants",
+      "original_log_sha256": "385f71e9f7add255a89c578e68b40bfb78252c68c204c8e82337091c1433a252"
+    },
+    {
+      "task": "cs61_fa24_ants",
+      "method": "bestfgs-v6.1",
+      "isolation_previously_asserted": true,
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "submitted": true,
+      "model_calls": 0,
+      "provenance": "Retained completed fixture plus trusted original assert-before-checked log",
+      "fixture_job": "worker1-v2-bestfgs-v6.1--cs61_fa24_ants",
+      "original_log_sha256": "385f71e9f7add255a89c578e68b40bfb78252c68c204c8e82337091c1433a252"
+    },
+    {
+      "task": "cs61_fa24_cats",
+      "method": "bestfgs-v6.1",
+      "isolation_previously_asserted": true,
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "submitted": true,
+      "model_calls": 0,
+      "provenance": "Retained completed fixture plus trusted original assert-before-checked log",
+      "fixture_job": "worker1-v2-bestfgs-v6.1--cs61_fa24_cats",
+      "original_log_sha256": "385f71e9f7add255a89c578e68b40bfb78252c68c204c8e82337091c1433a252"
+    },
+    {
+      "task": "cs61_fa24_hog",
+      "method": "bestfgs-v6.1",
+      "isolation_previously_asserted": true,
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "submitted": true,
+      "model_calls": 0,
+      "provenance": "Retained completed fixture plus trusted original assert-before-checked log",
+      "fixture_job": "worker1-v2-bestfgs-v6.1--cs61_fa24_hog",
+      "original_log_sha256": "385f71e9f7add255a89c578e68b40bfb78252c68c204c8e82337091c1433a252"
+    },
+    {
+      "task": "cs61_fa24_hog",
+      "method": "raw",
+      "isolation_previously_asserted": true,
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "submitted": true,
+      "model_calls": 0,
+      "provenance": "Retained completed fixture plus trusted original assert-before-checked log",
+      "fixture_job": "worker1-v2-raw--cs61_fa24_hog",
+      "original_log_sha256": "385f71e9f7add255a89c578e68b40bfb78252c68c204c8e82337091c1433a252"
+    },
+    {
+      "task": "cs61_fa24_hw08",
+      "method": "raw",
+      "isolation_previously_asserted": true,
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "submitted": true,
+      "model_calls": 0,
+      "provenance": "Retained completed fixture plus trusted original assert-before-checked log",
+      "fixture_job": "worker1-v2-raw--cs61_fa24_hw08",
+      "original_log_sha256": "385f71e9f7add255a89c578e68b40bfb78252c68c204c8e82337091c1433a252"
+    },
+    {
+      "task": "cmu15_445_p0",
+      "method": "raw",
+      "isolation_previously_asserted": true,
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "submitted": true,
+      "model_calls": 0,
+      "provenance": "Retained completed fixture plus trusted original assert-before-checked log",
+      "fixture_job": "worker1-v2-raw--cmu15_445_p0",
+      "original_log_sha256": "385f71e9f7add255a89c578e68b40bfb78252c68c204c8e82337091c1433a252"
+    },
+    {
+      "task": "cmu15_445_p0",
+      "method": "orthogonal-v8",
+      "isolation_previously_asserted": true,
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "submitted": true,
+      "model_calls": 0,
+      "provenance": "Retained completed fixture plus trusted original assert-before-checked log",
+      "fixture_job": "worker1-v2-orthogonal-v8--cmu15_445_p0",
+      "original_log_sha256": "385f71e9f7add255a89c578e68b40bfb78252c68c204c8e82337091c1433a252"
+    },
+    {
+      "task": "cmu15_445_p1",
+      "method": "orthogonal-v8",
+      "isolation_previously_asserted": true,
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "submitted": true,
+      "model_calls": 0,
+      "provenance": "Retained completed fixture plus trusted original assert-before-checked log",
+      "fixture_job": "worker1-v2-orthogonal-v8--cmu15_445_p1",
+      "original_log_sha256": "385f71e9f7add255a89c578e68b40bfb78252c68c204c8e82337091c1433a252"
+    },
+    {
+      "task": "cmu15_445_p2",
+      "method": "orthogonal-v8",
+      "isolation_previously_asserted": true,
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "submitted": true,
+      "model_calls": 0,
+      "provenance": "Retained completed fixture plus trusted original assert-before-checked log",
+      "fixture_job": "worker1-v2-orthogonal-v8--cmu15_445_p2",
+      "original_log_sha256": "385f71e9f7add255a89c578e68b40bfb78252c68c204c8e82337091c1433a252"
+    },
+    {
+      "task": "cmu15_445_p2",
+      "method": "bestfgs-v6.1",
+      "isolation_previously_asserted": true,
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "submitted": true,
+      "model_calls": 0,
+      "provenance": "Retained completed fixture plus trusted original assert-before-checked log",
+      "fixture_job": "worker1-v2-bestfgs-v6.1--cmu15_445_p2",
+      "original_log_sha256": "385f71e9f7add255a89c578e68b40bfb78252c68c204c8e82337091c1433a252"
+    },
+    {
+      "task": "ap1400_2_hw26",
+      "method": "bestfgs-v6.1",
+      "isolation_previously_asserted": true,
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "submitted": true,
+      "model_calls": 0,
+      "provenance": "Retained completed fixture plus trusted original assert-before-checked log",
+      "fixture_job": "worker1-v2-bestfgs-v6.1--ap1400_2_hw26",
+      "original_log_sha256": "385f71e9f7add255a89c578e68b40bfb78252c68c204c8e82337091c1433a252"
+    },
+    {
+      "task": "ap1400_2_hw35",
+      "method": "bestfgs-v6.1",
+      "isolation_previously_asserted": true,
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "submitted": true,
+      "model_calls": 0,
+      "provenance": "Retained completed fixture plus trusted original assert-before-checked log",
+      "fixture_job": "worker1-v2-bestfgs-v6.1--ap1400_2_hw35",
+      "original_log_sha256": "385f71e9f7add255a89c578e68b40bfb78252c68c204c8e82337091c1433a252"
+    },
+    {
+      "task": "ap1400_2_hw35",
+      "method": "raw",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "submitted": true,
+      "model_calls": 0
+    }
+  ],
+  "model_calls": 0
+}

@@ -1,0 +1,10 @@
+{
+  "base": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-raw-full20-20261004",
+  "capacity_only_source_changes": {
+    "lean_protocol.py": {
+      "old": "8803cb07cdf9fd5b38e39c743cc61092c3376516e44423c79f27190a80fa7b5b",
+      "new": "90d3a421dbc3a00c408f030d706ca104d45ff16e624fb3ee3c52c63cc628ce13"
+    }
+  },
+  "detail": "Only argv/stdin maximum characters 24000 -> 524288; all other native source hashes identical."
+}

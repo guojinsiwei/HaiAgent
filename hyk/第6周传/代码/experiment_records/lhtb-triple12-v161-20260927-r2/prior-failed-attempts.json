@@ -1,0 +1,36 @@
+[
+  {
+    "task": "modflow6-groundwater-regression-audit",
+    "method": "bestfgs",
+    "report": "/mnt/sdb/home/lizh639/lhtb-triple25-v161-20260926/runs/bestfgs-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__YNXiEGW/result.json",
+    "verifier_result": null,
+    "exception_info": {
+      "exception_type": "RuntimeError",
+      "exception_message": "Adapter failure: OSError",
+      "exception_traceback": "Traceback (most recent call last):\n  File \"/mnt/sdb/home/lizh639/lhtb-triple25-v161-20260926/upstream/harbor/src/harbor/trial/trial.py\", line 2030, in run\n    await self._execute_agent()\n  File \"/mnt/sdb/home/lizh639/lhtb-triple25-v161-20260926/upstream/harbor/src/harbor/trial/trial.py\", line 961, in _execute_agent\n    await asyncio.wait_for(\n  File \"/home/lizh639/terminalbench-v14-setup/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/mnt/sdb/home/lizh639/lhtb-triple25-v161-20260926/transport.py\", line 191, in run\n    boundary = await self.wait_boundary()\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/sdb/home/lizh639/lhtb-triple25-v161-20260926/transport.py\", line 118, in wait_boundary\n    raise RuntimeError('Adapter failure: ' + detail)\nRuntimeError: Adapter failure: OSError\n",
+      "occurred_at": "2026-09-27T01:44:22.634873"
+    },
+    "process_exit_code": 0,
+    "audit_chain": {
+      "events": 299,
+      "tail_sha256": "ff16adae30c0150dd406c5b3f9bd63f554e2fa8128df4af0b9600c20133581b1"
+    }
+  },
+  {
+    "task": "spot-scheduler-traces",
+    "method": "bestfgs",
+    "report": "/mnt/sdb/home/lizh639/lhtb-triple25-v161-20260926/runs/bestfgs-spot-scheduler-traces/spot-scheduler-traces__pbtfrMP/result.json",
+    "verifier_result": null,
+    "exception_info": {
+      "exception_type": "RuntimeError",
+      "exception_message": "Adapter failure: TimeoutError",
+      "exception_traceback": "Traceback (most recent call last):\n  File \"/mnt/sdb/home/lizh639/lhtb-triple25-v161-20260926/upstream/harbor/src/harbor/trial/trial.py\", line 2030, in run\n    await self._execute_agent()\n  File \"/mnt/sdb/home/lizh639/lhtb-triple25-v161-20260926/upstream/harbor/src/harbor/trial/trial.py\", line 961, in _execute_agent\n    await asyncio.wait_for(\n  File \"/home/lizh639/terminalbench-v14-setup/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/mnt/sdb/home/lizh639/lhtb-triple25-v161-20260926/transport.py\", line 191, in run\n    boundary = await self.wait_boundary()\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/sdb/home/lizh639/lhtb-triple25-v161-20260926/transport.py\", line 118, in wait_boundary\n    raise RuntimeError('Adapter failure: ' + detail)\nRuntimeError: Adapter failure: TimeoutError\n",
+      "occurred_at": "2026-09-27T02:54:13.733085"
+    },
+    "process_exit_code": 0,
+    "audit_chain": {
+      "events": 2502,
+      "tail_sha256": "83bd31a539cf727468fb522d99b949525a4ff4481f0260e32718dadbf47c420a"
+    }
+  }
+]

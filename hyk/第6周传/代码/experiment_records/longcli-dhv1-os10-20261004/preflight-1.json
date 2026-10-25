@@ -1,0 +1,97 @@
+{
+  "passed": true,
+  "worker": 1,
+  "checks": [
+    {
+      "task": "61810_fs",
+      "method": "dh",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "riscv_qemu": true,
+      "fresh_public_app": true,
+      "fixture_root_reused_offline_only": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "61810_mmap",
+      "method": "dh",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "riscv_qemu": true,
+      "fresh_public_app": true,
+      "fixture_root_reused_offline_only": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "61810_pgtbl",
+      "method": "dh",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "riscv_qemu": true,
+      "fresh_public_app": true,
+      "fixture_root_reused_offline_only": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "61810_thread",
+      "method": "dh",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "riscv_qemu": true,
+      "fresh_public_app": true,
+      "fixture_root_reused_offline_only": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "61810_util",
+      "method": "dh",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "riscv_qemu": true,
+      "fresh_public_app": true,
+      "fixture_root_reused_offline_only": true,
+      "submitted": true,
+      "model_calls": 0
+    }
+  ],
+  "model_calls": 0
+}

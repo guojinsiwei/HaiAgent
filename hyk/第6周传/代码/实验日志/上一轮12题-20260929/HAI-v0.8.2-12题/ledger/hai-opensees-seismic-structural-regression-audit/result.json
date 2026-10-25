@@ -1,0 +1,62 @@
+{
+  "task": "opensees-seismic-structural-regression-audit",
+  "method": "hai",
+  "report": "/var/tmp/lizh639-lhtb-hai082-only-r1/runs/hai-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__P8FGUSV/result.json",
+  "verifier_result": {
+    "rewards": {
+      "reward": 0.0
+    }
+  },
+  "exception_info": null,
+  "process_exit_code": 0,
+  "audit_chain": {
+    "events": 106,
+    "tail_sha256": "69c8f380c4f5521d37579e586c5cb8b482c4af2f67115bea175881a62ea425be"
+  },
+  "mechanism_utilization": {
+    "automatic_memory_updates": 5,
+    "direction_stalls": 2,
+    "enabled": true,
+    "explained_retries": 2,
+    "inferred_strategy_actions": 0,
+    "inferred_subgoal_actions": 0,
+    "memory_action_changed": 0,
+    "memory_action_unchanged": 4,
+    "memory_behavior_chain_is_association_not_causation": true,
+    "memory_direction_changed": 0,
+    "memory_direction_unchanged": 4,
+    "memory_exact_action_changed": 0,
+    "memory_followup_actions": 4,
+    "memory_followup_runs": 2,
+    "memory_followup_succeeded": 2,
+    "memory_followup_workspace_changed": 0,
+    "memory_intervention_followup_coverage": 1.0,
+    "memory_interventions": 5,
+    "memory_override_reasons": 1,
+    "memory_override_reasons_exhausted": 0,
+    "memory_overrides_exhausted": 1,
+    "memory_recall_exposures": 23,
+    "memory_reconsiderations": 4,
+    "memory_rejections": 0,
+    "memory_use_self_reports": 1,
+    "model_declared_strategy_actions": 36,
+    "model_declared_subgoal_actions": 36,
+    "model_memory_admissions": 0,
+    "repeat_blocked": 0,
+    "repeat_decisions": 2,
+    "repeat_executed": 2,
+    "repetition_observations": 4,
+    "requests_with_recalled_memory": 23,
+    "run_decisions": 36,
+    "strategy_switches": 2,
+    "subgoal_switches": 0,
+    "unique_strategies": 3,
+    "unique_subgoals": 1,
+    "unverified_scope_soft_retries": 0
+  },
+  "classification": {
+    "stop_reason": "stagnation_limit",
+    "infrastructure_ok": true,
+    "reasons": []
+  }
+}

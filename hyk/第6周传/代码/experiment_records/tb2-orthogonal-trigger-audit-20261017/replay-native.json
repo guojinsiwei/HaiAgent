@@ -1,0 +1,74 @@
+[
+  {
+    "arm": "native-kz",
+    "task": "build-cython-ext",
+    "oldEpisodes": 0,
+    "first": null
+  },
+  {
+    "arm": "native-kz",
+    "task": "chess-best-move",
+    "oldEpisodes": 0,
+    "first": null
+  },
+  {
+    "arm": "native-kz",
+    "task": "configure-git-webserver",
+    "oldEpisodes": 0,
+    "first": null
+  },
+  {
+    "arm": "native-kz",
+    "task": "fix-code-vulnerability",
+    "oldEpisodes": 0,
+    "first": null
+  },
+  {
+    "arm": "native-kz",
+    "task": "log-summary-date-ranges",
+    "oldEpisodes": 0,
+    "first": null
+  },
+  {
+    "arm": "native-kz",
+    "task": "polyglot-c-py",
+    "oldEpisodes": 0,
+    "first": null
+  },
+  {
+    "arm": "native-kz",
+    "task": "qemu-alpine-ssh",
+    "oldEpisodes": 0,
+    "first": null
+  },
+  {
+    "arm": "native-kz",
+    "task": "qemu-startup",
+    "oldEpisodes": 0,
+    "first": {
+      "at": "E22",
+      "line": 348,
+      "trigger": {
+        "key": "[\"telnet\",\".\",\"127.0.0.1\",\"6665\"]",
+        "failures": 2,
+        "evidence": [
+          "E21",
+          "E22"
+        ],
+        "reason": "same_check_failed_again"
+      }
+    }
+  },
+  {
+    "arm": "native-kz",
+    "task": "regex-log",
+    "oldEpisodes": 0,
+    "first": null
+  },
+  {
+    "arm": "native-kz",
+    "task": "sqlite-with-gcov",
+    "oldEpisodes": 0,
+    "first": null
+  }
+]
