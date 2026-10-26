@@ -1,0 +1,83 @@
+TB2.0: five image repairs and AppWorld capacity transfer
+Date: 2026-10-20
+
+Verified at 23:47:57 China time:
+All five official preflights passed with zero model calls.
+The first paid repair, path-tracing, had 31 budget-ledger calls under its original
+job ID. The other four repairs remain queued after their successful preflights.
+Actual concurrent trials: HLD 5, Recuris 2.
+TB official scores: HLD 10/50 completed, 5 passed; Recuris 28/50 completed,
+12 passed. Total TB settled cost CNY 161.203190 of the original CNY 800 cap.
+
+Authorization:
+Repair the five newly reported engineering failures; run real preflight checks
+before paid retries; reuse the original budget; transfer freed AppWorld capacity
+to TB, prioritizing HLD; preserve active tasks and historical results.
+
+AppWorld:
+Both new 70-task cohorts completed. HLD 57/70; Recuris 51/70.
+
+Five repairs:
+path-tracing
+model-extraction-relu-logits
+openssl-selfsigned-cert
+sqlite-db-truncate
+query-optimize
+
+The original attempts failed before model invocation.
+The workstation fetched official Docker Hub manifests and checked their SHA-256
+against Docker-Content-Digest headers. The server reused those pinned manifests
+and downloaded matching image content from the mirror. All five images were
+verified locally. No task, grader, algorithm, or model version was changed.
+Fourteen additional pending-task manifests were pinned by the same procedure
+to avoid repeating the origin connection failure.
+
+Repair controller:
+/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/infra_repair5.py
+State and verification:
+/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/infra-repair5-20261020/
+
+Each successful preflight advances to exactly one paid attempt.
+The original budget_job and spending.sqlite ledger are retained.
+Original per-task limit: CNY 8. TB campaign limit: CNY 800.
+AppWorld budget is not transferred into TB.
+A failed preflight is skipped and recorded; it does not block the other repairs.
+Do not restart an admitted repair controller or repeat a paid attempt implicitly.
+
+Capacity handoff:
+The former six-slot controller acknowledged drain before the new controller
+claimed 55 pending jobs (40 HLD, 15 Recuris). Active jobs were excluded.
+Existing processes finish under their original supervisor and proxy.
+Admission bookkeeping and official results remain in their original locations.
+All 100 effective task identities remain unique.
+
+New main controller:
+/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/capacity_campaign.py
+State:
+/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/capacity10-20261020/
+
+Total admission limit: 10, including draining workers and the two repair workers.
+HLD target: 7 while Recuris remains; up to 10 once Recuris is finished.
+Admission retains a 24 GiB Docker reserve, 10 GiB per concurrent task,
+20 GiB extra for a cold image, 8 GiB data reserve, and memory/load checks.
+Actual concurrency can remain below the limit when storage reservations bind.
+AppWorld completion is verified before the new queue admits any work.
+
+DO NOT restart boost_campaign.py or the original campaign.py.
+Pending work has moved to capacity_campaign.py. boost_campaign.py now rejects
+restart after the claim file exists. effective_status.py merges all controllers
+and repair results without counting a task twice.
+
+Evidence:
+capacity10-20261020/offline-validation.json
+capacity10-20261020/deployment-validation.json
+capacity10-20261020/active-task-preservation.json
+capacity10-20261020/claimed-pending.json
+capacity10-20261020/deployment-source.tar.gz
+infra-repair5-20261020/image-results.json
+infra-repair5-20261020/preflight-results.json (written after all checks finish)
+infra-repair5-20261020/health.json (live state)
+
+No active solver was terminated. No historical result or submission snapshot
+was deleted. One exact, old, unused TB4 build-cache record was selected for
+reclamation; Docker reported 0 bytes reclaimed.

@@ -1,0 +1,8 @@
+{
+  "task": "circuit-fibsqrt",
+  "image": "alexgshaw/circuit-fibsqrt:20251031",
+  "digest": "sha256:29783439f529eaed2145592f15af7a2281161528860392a382c825489030ae3a",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/circuit-fibsqrt/manifests/20251031",
+  "header_verified": true,
+  "time": 1792550854.1798134
+}

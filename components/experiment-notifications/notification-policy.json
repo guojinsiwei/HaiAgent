@@ -1,0 +1,9 @@
+{
+  "enabled": false,
+  "recipient": "5417779@qq.com",
+  "events": ["completed_with_grading", "terminated", "heartbeat_stale"],
+  "implementation": "ordinary Python process, no LLM or Codex automation",
+  "credentials": "fresh hidden local input -> encrypted SSH stdin -> RAM only",
+  "delivery": "requires sender SMTP authorization; accepted by SMTP is not inbox confirmation",
+  "scope": "default for newly deployed experiments; do not modify historical results"
+}

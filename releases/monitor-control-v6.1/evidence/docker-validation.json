@@ -1,0 +1,399 @@
+{
+  "status": "completed",
+  "acceptance_passed": true,
+  "exit_code": 0,
+  "counts": {
+    "PASS": 10,
+    "FAIL": 0,
+    "ERROR": 0
+  },
+  "model_api_calls": 0,
+  "checks": [
+    {
+      "name": "v6_docker_pipeline_exit_observation",
+      "status": "PASS",
+      "evidence": {
+        "process_exit": 0,
+        "assessment": {
+          "process_succeeded": true,
+          "execution_clean": false,
+          "failure_observed": false,
+          "suspected_failure": true,
+          "check_status": "unknown",
+          "signals": [
+            "python_traceback",
+            "nonzero_shell_stage"
+          ],
+          "shell": {
+            "coverage": "top_level_bash_only",
+            "complete": true,
+            "command_may_modify_traps": false,
+            "trace_truncated": false,
+            "pipelines": [
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "nonzero_statuses": [
+              {
+                "shell_status": 0,
+                "stages": [
+                  1,
+                  0
+                ]
+              },
+              {
+                "shell_status": 0,
+                "stages": [
+                  1,
+                  0
+                ]
+              }
+            ],
+            "notice": "Nonzero stages may be handled intentionally (grep no-match, head SIGPIPE, || recovery). Not task failure proof."
+          },
+          "task_success": null
+        }
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "v6_docker_intervention_edit_verify",
+      "status": "PASS",
+      "evidence": {
+        "counts": {
+          "model_requests": 6,
+          "action_calls": 6,
+          "advisor_calls": 0,
+          "tool_calls": 5,
+          "memory_exposures": 0,
+          "requests_with_memory": 0,
+          "memories_admitted": 0,
+          "memories_rejected": 0,
+          "memory_use_self_reports": 0,
+          "advisor_responses_accepted": 0,
+          "advisor_deferred": 0,
+          "checkpoints_created": 1,
+          "branch_restores": 0,
+          "submissions": 1,
+          "protocol_errors": 0,
+          "memory_interventions": 0,
+          "memory_action_changed": 0,
+          "memory_action_unchanged": 0,
+          "memory_followup_actions": 0,
+          "memory_followup_runs": 0,
+          "memory_followup_succeeded": 0,
+          "memory_followup_workspace_changed": 0,
+          "post_advice_actions": 0,
+          "monitor_calls": 0,
+          "monitor_reviews_accepted": 0,
+          "monitor_deferred": 0,
+          "semantic_stalls": 0,
+          "auto_memory_candidates": 0,
+          "auto_memories_admitted": 0,
+          "auto_memories_rejected": 0,
+          "observed_memories_admitted": 0,
+          "recovery_started": 1,
+          "recovery_plans": 1,
+          "recovery_verified_repairs": 1,
+          "recovery_checked_hypotheses": 0,
+          "recovery_failed": 0,
+          "memory_exposure_is_not_benefit": true,
+          "memory_use_is_self_report": true
+        },
+        "recovery": {
+          "id": "I1",
+          "status": "verified_public_check",
+          "reason": "The same command, observable state and output recurred at least three times. Explain a legitimate retry or select a discriminating action; repetition alone is not failure proof.",
+          "created_tool": 3,
+          "deadline_tool": 11,
+          "plan": {
+            "hypothesis": "Required result.txt is missing",
+            "mode": "repair",
+            "targets": [
+              "result.txt"
+            ],
+            "action": {
+              "argv": [
+                "bash",
+                "-lc",
+                "printf repaired > result.txt"
+              ],
+              "cwd": ".",
+              "stdin": null
+            },
+            "verification": {
+              "argv": [
+                "bash",
+                "-lc",
+                "test \"$(cat result.txt)\" = repaired && echo RECOVERY_CHECK_PASSED"
+              ],
+              "cwd": ".",
+              "stdin": null
+            },
+            "success_contains": "RECOVERY_CHECK_PASSED",
+            "fingerprint": "6cba61e1c87b3a54317c59513253ea543388250bc037522077ba5e8a6dbc571d"
+          },
+          "action_seen": true,
+          "target_changed": true,
+          "verification_seen": true,
+          "last_outcome": {
+            "evidence_id": "E5",
+            "execution_clean": true,
+            "check_status": "unknown",
+            "signals": []
+          }
+        }
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "v6_docker_real_artifact_delivery",
+      "status": "PASS",
+      "evidence": {
+        "artifact": {
+          "path": "/var/tmp/lizh639-monitor-control-v6.1/run-20261001-132244-72ea2e0a/monitor-control-v6/state/71d4e6f3b0a74603ab84f13f0e0be00b",
+          "fingerprint": "535760d9524e3f8ebd2b9c69ea8a4509f3be130eaeab60b07161786cbc6d50cf",
+          "snapshot_id": "71d4e6f3b0a74603ab84f13f0e0be00b",
+          "restoration": "container_filesystem_only"
+        }
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "repair-v6-foldseek-paper-reproduction",
+      "status": "PASS",
+      "evidence": {
+        "counts": {
+          "model_requests": 7,
+          "action_calls": 7,
+          "advisor_calls": 0,
+          "tool_calls": 5,
+          "memory_exposures": 0,
+          "requests_with_memory": 0,
+          "memories_admitted": 0,
+          "memories_rejected": 0,
+          "memory_use_self_reports": 0,
+          "advisor_responses_accepted": 0,
+          "advisor_deferred": 0,
+          "checkpoints_created": 1,
+          "branch_restores": 0,
+          "submissions": 1,
+          "protocol_errors": 1,
+          "memory_interventions": 0,
+          "memory_action_changed": 0,
+          "memory_action_unchanged": 0,
+          "memory_followup_actions": 0,
+          "memory_followup_runs": 0,
+          "memory_followup_succeeded": 0,
+          "memory_followup_workspace_changed": 0,
+          "post_advice_actions": 0,
+          "monitor_calls": 0,
+          "monitor_reviews_accepted": 0,
+          "monitor_deferred": 0,
+          "semantic_stalls": 0,
+          "auto_memory_candidates": 0,
+          "auto_memories_admitted": 0,
+          "auto_memories_rejected": 0,
+          "observed_memories_admitted": 0,
+          "recovery_started": 1,
+          "recovery_plans": 1,
+          "recovery_verified_repairs": 1,
+          "recovery_checked_hypotheses": 0,
+          "recovery_failed": 0,
+          "memory_exposure_is_not_benefit": true,
+          "memory_use_is_self_report": true
+        },
+        "stop": "model_submit"
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "repair-v6-gdal-proj-raster-regression",
+      "status": "PASS",
+      "evidence": {
+        "counts": {
+          "model_requests": 7,
+          "action_calls": 7,
+          "advisor_calls": 0,
+          "tool_calls": 5,
+          "memory_exposures": 0,
+          "requests_with_memory": 0,
+          "memories_admitted": 0,
+          "memories_rejected": 0,
+          "memory_use_self_reports": 0,
+          "advisor_responses_accepted": 0,
+          "advisor_deferred": 0,
+          "checkpoints_created": 1,
+          "branch_restores": 0,
+          "submissions": 1,
+          "protocol_errors": 1,
+          "memory_interventions": 0,
+          "memory_action_changed": 0,
+          "memory_action_unchanged": 0,
+          "memory_followup_actions": 0,
+          "memory_followup_runs": 0,
+          "memory_followup_succeeded": 0,
+          "memory_followup_workspace_changed": 0,
+          "post_advice_actions": 0,
+          "monitor_calls": 0,
+          "monitor_reviews_accepted": 0,
+          "monitor_deferred": 0,
+          "semantic_stalls": 0,
+          "auto_memory_candidates": 0,
+          "auto_memories_admitted": 0,
+          "auto_memories_rejected": 0,
+          "observed_memories_admitted": 0,
+          "recovery_started": 1,
+          "recovery_plans": 1,
+          "recovery_verified_repairs": 1,
+          "recovery_checked_hypotheses": 0,
+          "recovery_failed": 0,
+          "memory_exposure_is_not_benefit": true,
+          "memory_use_is_self_report": true
+        },
+        "stop": "model_submit"
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "repair-v6-microscopy-cell-count-qc-audit",
+      "status": "PASS",
+      "evidence": {
+        "counts": {
+          "model_requests": 7,
+          "action_calls": 7,
+          "advisor_calls": 0,
+          "tool_calls": 5,
+          "memory_exposures": 0,
+          "requests_with_memory": 0,
+          "memories_admitted": 0,
+          "memories_rejected": 0,
+          "memory_use_self_reports": 0,
+          "advisor_responses_accepted": 0,
+          "advisor_deferred": 0,
+          "checkpoints_created": 1,
+          "branch_restores": 0,
+          "submissions": 1,
+          "protocol_errors": 1,
+          "memory_interventions": 0,
+          "memory_action_changed": 0,
+          "memory_action_unchanged": 0,
+          "memory_followup_actions": 0,
+          "memory_followup_runs": 0,
+          "memory_followup_succeeded": 0,
+          "memory_followup_workspace_changed": 0,
+          "post_advice_actions": 0,
+          "monitor_calls": 0,
+          "monitor_reviews_accepted": 0,
+          "monitor_deferred": 0,
+          "semantic_stalls": 0,
+          "auto_memory_candidates": 0,
+          "auto_memories_admitted": 0,
+          "auto_memories_rejected": 0,
+          "observed_memories_admitted": 0,
+          "recovery_started": 1,
+          "recovery_plans": 1,
+          "recovery_verified_repairs": 1,
+          "recovery_checked_hypotheses": 0,
+          "recovery_failed": 0,
+          "memory_exposure_is_not_benefit": true,
+          "memory_use_is_self_report": true
+        },
+        "stop": "model_submit"
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "repair-v6-modflow6-groundwater-regression-audit",
+      "status": "PASS",
+      "evidence": {
+        "counts": {
+          "model_requests": 7,
+          "action_calls": 7,
+          "advisor_calls": 0,
+          "tool_calls": 5,
+          "memory_exposures": 0,
+          "requests_with_memory": 0,
+          "memories_admitted": 0,
+          "memories_rejected": 0,
+          "memory_use_self_reports": 0,
+          "advisor_responses_accepted": 0,
+          "advisor_deferred": 0,
+          "checkpoints_created": 1,
+          "branch_restores": 0,
+          "submissions": 1,
+          "protocol_errors": 1,
+          "memory_interventions": 0,
+          "memory_action_changed": 0,
+          "memory_action_unchanged": 0,
+          "memory_followup_actions": 0,
+          "memory_followup_runs": 0,
+          "memory_followup_succeeded": 0,
+          "memory_followup_workspace_changed": 0,
+          "post_advice_actions": 0,
+          "monitor_calls": 0,
+          "monitor_reviews_accepted": 0,
+          "monitor_deferred": 0,
+          "semantic_stalls": 0,
+          "auto_memory_candidates": 0,
+          "auto_memories_admitted": 0,
+          "auto_memories_rejected": 0,
+          "observed_memories_admitted": 0,
+          "recovery_started": 1,
+          "recovery_plans": 1,
+          "recovery_verified_repairs": 1,
+          "recovery_checked_hypotheses": 0,
+          "recovery_failed": 0,
+          "memory_exposure_is_not_benefit": true,
+          "memory_use_is_self_report": true
+        },
+        "stop": "model_submit"
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "great_expectations_original_failure_reproduced",
+      "status": "PASS",
+      "evidence": {
+        "inferred_paths": 6,
+        "longest_component": 286
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "great_expectations_captured_edit_continues",
+      "status": "PASS",
+      "evidence": {
+        "stop": "model_submit",
+        "paths": [
+          "src/dq_audit/audit.py"
+        ],
+        "tool_calls": 1
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "dependency_os_error_is_unknown",
+      "status": "PASS",
+      "evidence": {
+        "states": {
+          "src/dq_audit/audit.py": "file:304:3b2ba7009312882e6670aa20f0b6d0f7178634801a322e2bc184af8ed5b64548",
+          "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.py": "unknown"
+        }
+      },
+      "expected_issue": null
+    }
+  ],
+  "fatal": null,
+  "cleanup_errors": [],
+  "remaining_originals": [],
+  "elapsed_seconds": 136.683,
+  "run_dir": "/var/tmp/lizh639-monitor-control-v6.1/run-20261001-132244-72ea2e0a",
+  "source_dir": "/var/tmp/lizh639-monitor-control-v6.1/sources"
+}

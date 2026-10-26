@@ -1,0 +1,8 @@
+{
+  "task": "break-filter-js-from-html",
+  "image": "alexgshaw/break-filter-js-from-html:20251031",
+  "digest": "sha256:d7bfb45e47cf10d2e21dc520239215498f4eba9c1ab2d0cd7d647985dddb4fa8",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/break-filter-js-from-html/manifests/20251031",
+  "header_verified": true,
+  "time": 1792550852.0020866
+}

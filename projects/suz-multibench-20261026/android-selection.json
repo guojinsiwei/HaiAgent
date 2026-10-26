@@ -1,0 +1,16 @@
+{
+  "seed": 20261026,
+  "classes": [
+    "ContactsAddContact",
+    "ClockTimerEntry",
+    "SimpleCalendarAddOneEvent",
+    "SimpleCalendarAddRepeatingEvent",
+    "MarkorCreateNote",
+    "MarkorEditNote",
+    "SimpleSmsSend",
+    "ExpenseAddSingle",
+    "RecipeAddSingleRecipe",
+    "SimpleSmsReply"
+  ],
+  "fixed_parameters_required": true
+}

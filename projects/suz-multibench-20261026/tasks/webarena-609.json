@@ -1,0 +1,43 @@
+{
+  "id": "webarena-609",
+  "task": {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 609,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Find a subreddit focused on topics related to {{topic}}, and post my question, \"{{question}}\" there",
+    "instantiation_dict": {
+      "topic": "ML, DL, NLP",
+      "question": "what is the SOTA web navigation agent repo"
+    },
+    "intent": "Find a subreddit focused on topics related to ML, DL, NLP, and post my question, \"what is the SOTA web navigation agent repo\" there",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/deeplearning |OR| __REDDIT__/f/MachineLearning |OR| __REDDIT__/f/singularity",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "what is the SOTA web navigation agent repo"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 5
+  },
+  "benchmark": "webarena",
+  "source_task_sha256": "981f732bacb35e3b0bd8e275d3d0f9a287e856b201c55e940f6fd7a49d19777a"
+}

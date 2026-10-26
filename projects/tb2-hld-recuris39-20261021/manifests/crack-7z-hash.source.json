@@ -1,0 +1,8 @@
+{
+  "task": "crack-7z-hash",
+  "image": "alexgshaw/crack-7z-hash:20251031",
+  "digest": "sha256:0f4453abd774c5a3d3d7e66ba28fae88ec2e49ada3a993b324ebc16c348666d3",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/crack-7z-hash/manifests/20251031",
+  "header_verified": true,
+  "time": 1792550858.3355024
+}

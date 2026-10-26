@@ -1,0 +1,13 @@
+{
+  "id": "androidworld-SimpleSmsReply",
+  "class": "SimpleSmsReply",
+  "params": {
+    "number": "+15309972283",
+    "message": "Pick up groceries: Milk and Bread and Apples.",
+    "seed": 20261035
+  },
+  "instruction": "Reply to +15309972283 with message: Pick up groceries: Milk and Bread and Apples. in Simple SMS Messenger",
+  "max_steps": 12,
+  "benchmark": "androidworld",
+  "instance_sha256": "5c880287a2496507ef121191bb58328f055f868f8430b5b0d301746a074d0244"
+}

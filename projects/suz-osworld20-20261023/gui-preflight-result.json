@@ -1,0 +1,9 @@
+{
+  "cpu_only": true,
+  "screenshot": true,
+  "gui_action": true,
+  "negative_score": 0.0,
+  "positive_score": 1.0,
+  "fresh_reset_score": 0.0,
+  "model_calls": 0
+}

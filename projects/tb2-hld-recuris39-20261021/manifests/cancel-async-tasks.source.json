@@ -1,0 +1,8 @@
+{
+  "task": "cancel-async-tasks",
+  "image": "alexgshaw/cancel-async-tasks:20251031",
+  "digest": "sha256:84c7fae6b256dcc56a350790e2a9715eefc7dad662a9d8e8a472363aa71ef18d",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/cancel-async-tasks/manifests/20251031",
+  "header_verified": true,
+  "time": 1792550854.205193
+}

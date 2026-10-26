@@ -1,0 +1,13 @@
+{
+  "pid": 3167180,
+  "started": 1792681436.8921294,
+  "tasks": 24,
+  "trials": 48,
+  "arms": [
+    "HLD v8",
+    "Recuris"
+  ],
+  "per_run_cny": 24,
+  "campaign_cny": 1152,
+  "concurrency": 6
+}

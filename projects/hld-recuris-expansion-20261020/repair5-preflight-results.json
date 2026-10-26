@@ -1,0 +1,116 @@
+{
+  "model_calls": 0,
+  "all_passed": true,
+  "rows": [
+    {
+      "task": "path-tracing",
+      "arm": "recuris",
+      "stage": "image-repair",
+      "job": "tb2hr50-26-recuris-path-tracing-imagefix1",
+      "budget_job": "tb2hr50-26-recuris-path-tracing",
+      "original_job": "tb2hr50-26-recuris-path-tracing",
+      "state": "preflight_passed",
+      "preflight_attempt_id": "84bf95df59fc4edba55c0978e48e8da1",
+      "admission_offline": true,
+      "preflight": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/preflight/preflight-tb2hr50-26-recuris-path-tracing-imagefix1/path-tracing__j3qSS9Q",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "harbor_exit": 0
+      },
+      "preflight_ok": true
+    },
+    {
+      "task": "model-extraction-relu-logits",
+      "arm": "recuris",
+      "stage": "image-repair",
+      "job": "tb2hr50-27-recuris-model-extraction-relu-logits-imagefix1",
+      "budget_job": "tb2hr50-27-recuris-model-extraction-relu-logits",
+      "original_job": "tb2hr50-27-recuris-model-extraction-relu-logits",
+      "state": "preflight_passed",
+      "preflight_attempt_id": "e685331307d74b74aeaef3f41d008916",
+      "admission_offline": true,
+      "preflight": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/preflight/preflight-tb2hr50-27-recuris-model-extraction-relu-logits-imagefix1/model-extraction-relu-logits__6iD4zDn",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "harbor_exit": 0
+      },
+      "preflight_ok": true
+    },
+    {
+      "task": "openssl-selfsigned-cert",
+      "arm": "recuris",
+      "stage": "image-repair",
+      "job": "tb2hr50-31-recuris-openssl-selfsigned-cert-imagefix1",
+      "budget_job": "tb2hr50-31-recuris-openssl-selfsigned-cert",
+      "original_job": "tb2hr50-31-recuris-openssl-selfsigned-cert",
+      "state": "preflight_passed",
+      "preflight_attempt_id": "19e5b69c857d404fb9992f7f012d1407",
+      "admission_offline": true,
+      "preflight": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/preflight/preflight-tb2hr50-31-recuris-openssl-selfsigned-cert-imagefix1/openssl-selfsigned-cert__xUgHHd4",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "harbor_exit": 0
+      },
+      "preflight_ok": true
+    },
+    {
+      "task": "sqlite-db-truncate",
+      "arm": "recuris",
+      "stage": "image-repair",
+      "job": "tb2hr50-33-recuris-sqlite-db-truncate-imagefix1",
+      "budget_job": "tb2hr50-33-recuris-sqlite-db-truncate",
+      "original_job": "tb2hr50-33-recuris-sqlite-db-truncate",
+      "state": "preflight_passed",
+      "preflight_attempt_id": "47b8a20259a6420f86c453b96b3a6927",
+      "admission_offline": true,
+      "preflight": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/preflight/preflight-tb2hr50-33-recuris-sqlite-db-truncate-imagefix1/sqlite-db-truncate__GojzLYW",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "harbor_exit": 0
+      },
+      "preflight_ok": true
+    },
+    {
+      "task": "query-optimize",
+      "arm": "recuris",
+      "stage": "image-repair",
+      "job": "tb2hr50-34-recuris-query-optimize-imagefix1",
+      "budget_job": "tb2hr50-34-recuris-query-optimize",
+      "original_job": "tb2hr50-34-recuris-query-optimize",
+      "state": "preflight_passed",
+      "preflight_attempt_id": "9799d30762194265b8bc0a2588bcaa43",
+      "admission_offline": true,
+      "preflight": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/preflight/preflight-tb2hr50-34-recuris-query-optimize-imagefix1/query-optimize__mttrvaz",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "harbor_exit": 0
+      },
+      "preflight_ok": true
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+2026-10-02. No provider/model API invoked. No campaign resumed or rerun.
+
+New guard regression cases: 13 passed locally and in college Linux.
+Full candidate suite: Linux 173 tests, 173 passed, 0 skipped, 0 failed (10.416s).
+Windows: 173 tests, 145 passed, 28 Linux-only skipped, 0 failed (8.401s).
+Linux isolated directory: /var/tmp/lizh639-submission-v3-0C2rt5
+
+Verified: first submission unchanged; 320 identical proposals invoke feedback
+only once and stop after four actor requests (first send + three local refusals).
+Fresh complete actual tool evidence after a real repair permits another send.
+Summary-only changes, old rejected state restored, repeated checks on unchanged
+files, stale or failed checks, simple echo and listing do not permit sending.
+Reads do not reset the local refusal limit. Eight rejected distinct revisions
+hit the separate fixed cap and preserve files. An explicit public artifact
+contract blocks unrelated edits; its actual content change permits repair.
+Submission stagnation is a method issue, not an infrastructure fault or success.
+
+Real Docker test on a newly owned network-none container with scripted clients:
+timeout descendants cleaned; detached launcher exit126; next command exit0;
+snapshot and delivery pass. Identical submit fixture: one feedback callback,
+four actor rounds, stop=submission_stagnation. Separate fixture: actual creation
+of submission-output.txt -> stable Python assertion -> second submission allowed.
+Official_success remains null: stub acceptance is not benchmark correctness.
+Only exact owner-label-verified test containers/images were removed; cached
+base image and all experimental containers retained. No secrets used.
+
+Additional diagnostic test_lean.py (33 tests) was run against v2 and v3.
+Both have the SAME five failing pre-existing memory-fixture tests and seven
+Windows-only skips. These old fixtures predate v8's mandatory memory reviews;
+they are not silently counted as passes. The two continuation fixtures were
+updated in v3 to include a real check and revision contract; cumulative budgets
+are still checked. Current maintained v8 memory/reliability/injection tests pass.
+The conversation-only unchanged-resubmit fixture explicitly disables the new
+guard to isolate history behavior; enabled default behavior is tested separately.
+
+Not verified: live model obedience, meaningful semantic strategy novelty,
+whether eight rejections is the best ceiling, reward improvements, and all future
+task output contracts. Without explicit manifest artifact paths coverage is
+workspace_only. Clean execution is not proof that a check tests the right thing.
+The new adapter argument must be wired from the public manifest for each NEW
+deployment; model-guessed output paths are not used as an authoritative contract.

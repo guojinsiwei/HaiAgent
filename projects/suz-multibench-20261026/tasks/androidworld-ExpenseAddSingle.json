@@ -1,0 +1,170 @@
+{
+  "id": "androidworld-ExpenseAddSingle",
+  "class": "ExpenseAddSingle",
+  "params": {
+    "row_objects": [
+      {
+        "__type__": "dataclass",
+        "module": "android_world.task_evals.utils.sqlite_schema_utils",
+        "name": "Expense",
+        "fields": {
+          "name": "Amusement Park",
+          "amount": 18708,
+          "category": 6,
+          "note": "I may repeat this",
+          "created_date": 1697133600000,
+          "modified_date": 1697133600000,
+          "expense_id": -1
+        }
+      }
+    ],
+    "noise_row_objects": [
+      {
+        "__type__": "dataclass",
+        "module": "android_world.task_evals.utils.sqlite_schema_utils",
+        "name": "Expense",
+        "fields": {
+          "name": "Interest Income",
+          "amount": 29316,
+          "category": 2,
+          "note": "I may repeat this",
+          "created_date": 1696341600000,
+          "modified_date": 1696341600000,
+          "expense_id": -1
+        }
+      },
+      {
+        "__type__": "dataclass",
+        "module": "android_world.task_evals.utils.sqlite_schema_utils",
+        "name": "Expense",
+        "fields": {
+          "name": "School Supplies",
+          "amount": 22297,
+          "category": 10,
+          "note": "Urgent",
+          "created_date": 1697043600000,
+          "modified_date": 1697043600000,
+          "expense_id": -1
+        }
+      },
+      {
+        "__type__": "dataclass",
+        "module": "android_world.task_evals.utils.sqlite_schema_utils",
+        "name": "Expense",
+        "fields": {
+          "name": "Event Tickets",
+          "amount": 6451,
+          "category": 5,
+          "note": "A need",
+          "created_date": 1696546800000,
+          "modified_date": 1696546800000,
+          "expense_id": -1
+        }
+      },
+      {
+        "__type__": "dataclass",
+        "module": "android_world.task_evals.utils.sqlite_schema_utils",
+        "name": "Expense",
+        "fields": {
+          "name": "Unexpected Expenses",
+          "amount": 38543,
+          "category": 1,
+          "note": "Remember to transfer funds",
+          "created_date": 1697036400000,
+          "modified_date": 1697036400000,
+          "expense_id": -1
+        }
+      },
+      {
+        "__type__": "dataclass",
+        "module": "android_world.task_evals.utils.sqlite_schema_utils",
+        "name": "Expense",
+        "fields": {
+          "name": "Medications",
+          "amount": 38476,
+          "category": 9,
+          "note": "I may repeat this",
+          "created_date": 1696615200000,
+          "modified_date": 1696615200000,
+          "expense_id": -1
+        }
+      },
+      {
+        "__type__": "dataclass",
+        "module": "android_world.task_evals.utils.sqlite_schema_utils",
+        "name": "Expense",
+        "fields": {
+          "name": "Rent Payment",
+          "amount": 46738,
+          "category": 4,
+          "note": "Remember to transfer funds",
+          "created_date": 1697209200000,
+          "modified_date": 1697209200000,
+          "expense_id": -1
+        }
+      },
+      {
+        "__type__": "dataclass",
+        "module": "android_world.task_evals.utils.sqlite_schema_utils",
+        "name": "Expense",
+        "fields": {
+          "name": "Mortgage",
+          "amount": 34312,
+          "category": 4,
+          "note": "Remember to transfer funds",
+          "created_date": 1696716000000,
+          "modified_date": 1696716000000,
+          "expense_id": -1
+        }
+      },
+      {
+        "__type__": "dataclass",
+        "module": "android_world.task_evals.utils.sqlite_schema_utils",
+        "name": "Expense",
+        "fields": {
+          "name": "Wellness Products",
+          "amount": 44543,
+          "category": 9,
+          "note": "Remember to transfer funds",
+          "created_date": 1696503600000,
+          "modified_date": 1696503600000,
+          "expense_id": -1
+        }
+      },
+      {
+        "__type__": "dataclass",
+        "module": "android_world.task_evals.utils.sqlite_schema_utils",
+        "name": "Expense",
+        "fields": {
+          "name": "Gas",
+          "amount": 42375,
+          "category": 7,
+          "note": "Monthly recurring",
+          "created_date": 1696813200000,
+          "modified_date": 1696813200000,
+          "expense_id": -1
+        }
+      },
+      {
+        "__type__": "dataclass",
+        "module": "android_world.task_evals.utils.sqlite_schema_utils",
+        "name": "Expense",
+        "fields": {
+          "name": "Rental Income",
+          "amount": 14132,
+          "category": 2,
+          "note": "Monthly recurring",
+          "created_date": 1697065200000,
+          "modified_date": 1697065200000,
+          "expense_id": -1
+        }
+      }
+    ],
+    "text_representation_type": "text_block",
+    "seed": 20261033
+  },
+  "instruction": "Add the following expenses into the pro expense:\nExpense: Amusement Park\n amount_dollars: $187.08\n category_name: Entertainment\n note: I may repeat this\n",
+  "max_steps": 12,
+  "benchmark": "androidworld",
+  "instance_sha256": "68809cbc2e4387078a3cf424eace1935b31bc23887beedbbd5dcd49012a81055"
+}

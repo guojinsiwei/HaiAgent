@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "trial": "/mnt/sdb/home/lizh639/tb4-hld-recuris7-20261019/preflight/preflight-repair-v1-ordinary/payments-pipeline-fix__MULhQhs",
+      "reward": 0.0,
+      "exception_type": null,
+      "engineering_clean": true,
+      "result_status": "present",
+      "lifecycle_status": "succeeded",
+      "collection_failures": [],
+      "label": "ordinary",
+      "exit_code": 0,
+      "snapshot_present": true
+    },
+    {
+      "trial": "/mnt/sdb/home/lizh639/tb4-hld-recuris7-20261019/preflight/preflight-repair-v1-stopped-main/payments-pipeline-fix__tTF8P4M",
+      "reward": 0.0,
+      "exception_type": null,
+      "engineering_clean": true,
+      "result_status": "present",
+      "lifecycle_status": "succeeded",
+      "collection_failures": [],
+      "label": "stopped-main",
+      "exit_code": 0,
+      "snapshot_present": true,
+      "private_log_recovered": true
+    }
+  ],
+  "paid_calls": 0
+}

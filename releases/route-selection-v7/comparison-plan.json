@@ -1,0 +1,50 @@
+{
+  "status": "prepared_not_launched",
+  "control": {
+    "release": "monitor-control-v6",
+    "cloud_directory": "/var/tmp/lizh639-monitor-control-v6",
+    "route_search": false
+  },
+  "treatment": {
+    "release": "route-selection-v7",
+    "cloud_directory": "/var/tmp/lizh639-route-selection-v7",
+    "route_search": true
+  },
+  "same_build_ablation": "Run v7 with route_search=false to isolate this algorithm from release packaging.",
+  "shared_limits": {
+    "max_tools": 600,
+    "max_turns": 800,
+    "wall_seconds": "inherit the same per-task manifest budget on both arms; do not flatten all tasks to 3600",
+    "max_monitor_calls": 12,
+    "max_advisor_calls": 6,
+    "max_checkpoints": 12,
+    "context_chars": 48000,
+    "monitor_context_chars": 20000
+  },
+  "prior_12_task_wall_budgets": {
+    "default": 3600,
+    "spot-scheduler-traces": 10800,
+    "microscopy-cell-count-qc-audit": 5400,
+    "satellite-flood-change-detection-audit": 5400,
+    "unison-paper-reproduction": 5400
+  },
+  "must_match": [
+    "task IDs and immutable task/image digests",
+    "actor/adviser/monitor models and decoding settings",
+    "CPU, memory, network, task wall time and adapter delivery reserve",
+    "fresh independent workspaces and empty task-local memory",
+    "existing v6 reliability features enabled on both arms"
+  ],
+  "primary_outcomes": ["paired official task score", "paired task success"],
+  "mechanism_outcomes": [
+    "monitor requests and late-budget coverage",
+    "route proposals accepted/rejected and completed/incomplete episodes",
+    "probe supported/refuted/unknown outcomes",
+    "trial tool cost, checkpoint/restore cost and model token cost",
+    "same-check baseline failure to candidate pass with actual target change",
+    "failed-route reuse avoided under matching conditions",
+    "context-aware repetition before and after intervention"
+  ],
+  "not_success_metrics": ["memory count", "model self-reported progress", "raw exit-zero count"],
+  "execution_note": "No paid task launched by preparation. Re-run both arms on the same selected tasks; do not compare a new v7 run only against the old v5 scores. Counterbalance arm order. Small samples are exploratory, not conclusive."
+}

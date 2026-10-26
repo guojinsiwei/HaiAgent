@@ -1,0 +1,8 @@
+{
+  "task": "sanitize-git-repo",
+  "image": "alexgshaw/sanitize-git-repo:20251031",
+  "digest": "sha256:4b5234da5bb0d67f3b0bf8db40a2883c07a5219f62b64c2bf9ff1ac84cd0f672",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/sanitize-git-repo/manifests/20251031",
+  "header_verified": true,
+  "time": 1792550881.6413336
+}

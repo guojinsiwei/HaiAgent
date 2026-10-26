@@ -1,0 +1,370 @@
+{
+  "campaign_limit_cny": 720,
+  "attempt_limit_cny": 8,
+  "max_new_cny": 120,
+  "queue": [
+    {
+      "arm": "hld",
+      "row": {
+        "task": "13547f5_2",
+        "scenario": "13547f5",
+        "instruction": "Send a phone text message to my partner, \"The dishwasher is clean and ready to be emptied.\".",
+        "supervisor": {
+          "first_name": "Sabrina",
+          "last_name": "Brown",
+          "email": "sab-brown@gmail.com",
+          "phone_number": "6639773608"
+        },
+        "datetime": "2023-05-18T12:00:00",
+        "_job": "hld--13547f5_2--mechanism2",
+        "_attempt": 2,
+        "_rerun_of": "hld--13547f5_2"
+      },
+      "before_tests": [
+        3,
+        6
+      ],
+      "reason": "mechanism-v2 repair audit: public scope, verification identity/protocol, and AppWorld adapter"
+    },
+    {
+      "arm": "hld",
+      "row": {
+        "task": "13547f5_3",
+        "scenario": "13547f5",
+        "instruction": "Send a phone voice message to my husband, \"Don't forget to water the plants today.\".",
+        "supervisor": {
+          "first_name": "Katie",
+          "last_name": "Simpson",
+          "email": "kat_simp@gmail.com",
+          "phone_number": "6727300099"
+        },
+        "datetime": "2023-05-18T12:00:00",
+        "_job": "hld--13547f5_3--mechanism2",
+        "_attempt": 2,
+        "_rerun_of": "hld--13547f5_3"
+      },
+      "before_tests": [
+        3,
+        6
+      ],
+      "reason": "mechanism-v2 repair audit: public scope, verification identity/protocol, and AppWorld adapter"
+    },
+    {
+      "arm": "kzdsh-new",
+      "row": {
+        "task": "0d01c76_1",
+        "scenario": "0d01c76",
+        "instruction": "Import markdown notes in the \"~/documents/personal/notes/\" directory of my file system to my Simple Note account. Each markdown file should become a separate note in the Simple Note account. The title of each note should be taken from the name of the source file (excluding the directory path and file extension), replacing underscores in it with blank spaces.",
+        "supervisor": {
+          "first_name": "Adam",
+          "last_name": "Blackburn",
+          "email": "ad.blackburn@gmail.com",
+          "phone_number": "8944155247"
+        },
+        "datetime": "2023-05-18T12:00:00",
+        "_job": "kzdsh-new--0d01c76_1--mechanism2",
+        "_attempt": 2,
+        "_rerun_of": "kzdsh-new--0d01c76_1"
+      },
+      "before_tests": [
+        5,
+        6
+      ],
+      "reason": "mechanism-v2 repair audit: public scope, verification identity/protocol, and AppWorld adapter"
+    },
+    {
+      "arm": "hld",
+      "row": {
+        "task": "90adc3f_3",
+        "scenario": "90adc3f",
+        "instruction": "I made venmo payment requests to some of my friends yesterday evening. Unfortunately, I have made a mistake in calculation. Each of them owes me $15 less than the requested amount. So delete those requests and make new ones with everything else the same, but with the corrected amount.",
+        "supervisor": {
+          "first_name": "Nancy",
+          "last_name": "Ritter",
+          "email": "nan_ritt@gmail.com",
+          "phone_number": "2307354647"
+        },
+        "datetime": "2023-05-20T08:42:53",
+        "_job": "hld--90adc3f_3--mechanism2",
+        "_attempt": 2,
+        "_rerun_of": "hld--90adc3f_3"
+      },
+      "before_tests": [
+        6,
+        7
+      ],
+      "reason": "mechanism-v2 repair audit: public scope, verification identity/protocol, and AppWorld adapter"
+    },
+    {
+      "arm": "kzdsh-new",
+      "row": {
+        "task": "2c544f9_1",
+        "scenario": "2c544f9",
+        "instruction": "Send $250 on venmo to Catherine.",
+        "supervisor": {
+          "first_name": "Brandon",
+          "last_name": "Weber",
+          "email": "brandon-webe@gmail.com",
+          "phone_number": "3798762980"
+        },
+        "datetime": "2023-05-18T12:00:00",
+        "_job": "kzdsh-new--2c544f9_1--mechanism2",
+        "_attempt": 3,
+        "_rerun_of": "kzdsh-new--2c544f9_1--repair1"
+      },
+      "before_tests": [
+        5,
+        6
+      ],
+      "reason": "mechanism-v2 repair audit: public scope, verification identity/protocol, and AppWorld adapter"
+    },
+    {
+      "arm": "hld",
+      "row": {
+        "task": "2c544f9_1",
+        "scenario": "2c544f9",
+        "instruction": "Send $250 on venmo to Catherine.",
+        "supervisor": {
+          "first_name": "Brandon",
+          "last_name": "Weber",
+          "email": "brandon-webe@gmail.com",
+          "phone_number": "3798762980"
+        },
+        "datetime": "2023-05-18T12:00:00",
+        "_job": "hld--2c544f9_1--mechanism2",
+        "_attempt": 3,
+        "_rerun_of": "hld--2c544f9_1--repair1"
+      },
+      "before_tests": [
+        5,
+        6
+      ],
+      "reason": "mechanism-v2 repair audit: public scope, verification identity/protocol, and AppWorld adapter"
+    },
+    {
+      "arm": "hld",
+      "row": {
+        "task": "f323bae_1",
+        "scenario": "f323bae",
+        "instruction": "I maintain my habit tracking logs in Simple Note. Export it in \"~/downloads/habit_tracker.csv\" in my file system. Its first header column should be \"date\" and the rest should be correspond to the habits I track as per my logs. The rows for date column should be in yyyy-mm-dd format and the rest should be yes or no as per my logs. The rows should be sorted in ascending order of the date from top to bottom, and habit columns as per their order in logs.",
+        "supervisor": {
+          "first_name": "Troy",
+          "last_name": "Solomon",
+          "email": "tr_solo@gmail.com",
+          "phone_number": "7273731063"
+        },
+        "datetime": "2023-05-18T12:00:00",
+        "_job": "hld--f323bae_1--mechanism2",
+        "_attempt": 3,
+        "_rerun_of": "hld--f323bae_1--repair1"
+      },
+      "before_tests": [
+        6,
+        9
+      ],
+      "reason": "mechanism-v2 repair audit: public scope, verification identity/protocol, and AppWorld adapter"
+    },
+    {
+      "arm": "hld",
+      "row": {
+        "task": "f323bae_2",
+        "scenario": "f323bae",
+        "instruction": "I maintain my habit tracking logs in Simple Note. Export it in \"~/backups/habit_log.csv\" in my file system. Its first header column should be \"date\" and the rest should be correspond to the habits I track as per my logs. The rows for date column should be in yyyy-mm-dd format and the rest should be yes or no as per my logs. The rows should be sorted in descending order of the date from top to bottom, and habit columns as per their order in logs.",
+        "supervisor": {
+          "first_name": "Spencer",
+          "last_name": "Powell",
+          "email": "spencer.powell@gmail.com",
+          "phone_number": "8267279358"
+        },
+        "datetime": "2023-05-18T12:00:00",
+        "_job": "hld--f323bae_2--mechanism2",
+        "_attempt": 3,
+        "_rerun_of": "hld--f323bae_2--repair1"
+      },
+      "before_tests": [
+        5,
+        9
+      ],
+      "reason": "mechanism-v2 repair audit: public scope, verification identity/protocol, and AppWorld adapter"
+    },
+    {
+      "arm": "hld",
+      "row": {
+        "task": "f323bae_3",
+        "scenario": "f323bae",
+        "instruction": "I maintain my habit tracking logs in Simple Note. Export it in \"~/backups/simple_note/habits.csv\" in my file system. Its first header column should be \"date\" and the rest should be correspond to the habits I track as per my logs. The rows for date column should be in yyyy-mm-dd format and the rest should be yes or no as per my logs. The rows should be sorted in ascending order of the date from top to bottom, and habit columns as per their order in logs.",
+        "supervisor": {
+          "first_name": "Richard",
+          "last_name": "Riddle",
+          "email": "ric.riddle@gmail.com",
+          "phone_number": "4436271690"
+        },
+        "datetime": "2023-05-18T12:00:00",
+        "_job": "hld--f323bae_3--mechanism2",
+        "_attempt": 3,
+        "_rerun_of": "hld--f323bae_3--repair1"
+      },
+      "before_tests": [
+        6,
+        9
+      ],
+      "reason": "mechanism-v2 repair audit: public scope, verification identity/protocol, and AppWorld adapter"
+    },
+    {
+      "arm": "hld",
+      "row": {
+        "task": "2c544f9_2",
+        "scenario": "2c544f9",
+        "instruction": "Send $427 on venmo to Anita.",
+        "supervisor": {
+          "first_name": "Anthony",
+          "last_name": "Harrison",
+          "email": "an-harrison@gmail.com",
+          "phone_number": "2466064078"
+        },
+        "datetime": "2023-05-18T12:00:00",
+        "_job": "hld--2c544f9_2--mechanism2",
+        "_attempt": 2,
+        "_rerun_of": "hld--2c544f9_2"
+      },
+      "before_tests": [
+        5,
+        6
+      ],
+      "reason": "mechanism-v2 repair audit: public scope, verification identity/protocol, and AppWorld adapter"
+    },
+    {
+      "arm": "kzdsh-new",
+      "row": {
+        "task": "2c544f9_2",
+        "scenario": "2c544f9",
+        "instruction": "Send $427 on venmo to Anita.",
+        "supervisor": {
+          "first_name": "Anthony",
+          "last_name": "Harrison",
+          "email": "an-harrison@gmail.com",
+          "phone_number": "2466064078"
+        },
+        "datetime": "2023-05-18T12:00:00",
+        "_job": "kzdsh-new--2c544f9_2--mechanism2",
+        "_attempt": 2,
+        "_rerun_of": "kzdsh-new--2c544f9_2"
+      },
+      "before_tests": [
+        1,
+        6
+      ],
+      "reason": "mechanism-v2 repair audit: public scope, verification identity/protocol, and AppWorld adapter"
+    },
+    {
+      "arm": "hld",
+      "row": {
+        "task": "2c544f9_3",
+        "scenario": "2c544f9",
+        "instruction": "Send $234 on venmo to Jack.",
+        "supervisor": {
+          "first_name": "Sierra",
+          "last_name": "White",
+          "email": "siwhit@gmail.com",
+          "phone_number": "7295077363"
+        },
+        "datetime": "2023-05-18T12:00:00",
+        "_job": "hld--2c544f9_3--mechanism2",
+        "_attempt": 2,
+        "_rerun_of": "hld--2c544f9_3"
+      },
+      "before_tests": [
+        5,
+        6
+      ],
+      "reason": "mechanism-v2 repair audit: public scope, verification identity/protocol, and AppWorld adapter"
+    },
+    {
+      "arm": "hld",
+      "row": {
+        "task": "90adc3f_1",
+        "scenario": "90adc3f",
+        "instruction": "I made venmo payment requests to some of my friends yesterday evening. Unfortunately, I have made a mistake in calculation. Each of them owes me $5 less than the requested amount. So delete those requests and make new ones with everything else the same, but with the corrected amount.",
+        "supervisor": {
+          "first_name": "Anita",
+          "last_name": "Burch",
+          "email": "anita.burch@gmail.com",
+          "phone_number": "3643463570"
+        },
+        "datetime": "2023-05-20T11:28:49",
+        "_job": "hld--90adc3f_1--mechanism2",
+        "_attempt": 2,
+        "_rerun_of": "hld--90adc3f_1"
+      },
+      "before_tests": [
+        2,
+        7
+      ],
+      "reason": "mechanism-v2 repair audit: public scope, verification identity/protocol, and AppWorld adapter"
+    },
+    {
+      "arm": "hld",
+      "row": {
+        "task": "90adc3f_2",
+        "scenario": "90adc3f",
+        "instruction": "I made venmo payment requests to my roommates yesterday evening. Unfortunately, I have made a mistake in calculation. Each of them owes me $10 more than the requested amount. So delete those requests and make new ones with everything else the same, but with the corrected amount.",
+        "supervisor": {
+          "first_name": "Kathryn",
+          "last_name": "Maldonado",
+          "email": "kathrynmaldonado@gmail.com",
+          "phone_number": "2473084266"
+        },
+        "datetime": "2023-05-20T10:27:30",
+        "_job": "hld--90adc3f_2--mechanism2",
+        "_attempt": 2,
+        "_rerun_of": "hld--90adc3f_2"
+      },
+      "before_tests": [
+        3,
+        7
+      ],
+      "reason": "mechanism-v2 repair audit: public scope, verification identity/protocol, and AppWorld adapter"
+    },
+    {
+      "arm": "kzdsh-new",
+      "row": {
+        "task": "90adc3f_3",
+        "scenario": "90adc3f",
+        "instruction": "I made venmo payment requests to some of my friends yesterday evening. Unfortunately, I have made a mistake in calculation. Each of them owes me $15 less than the requested amount. So delete those requests and make new ones with everything else the same, but with the corrected amount.",
+        "supervisor": {
+          "first_name": "Nancy",
+          "last_name": "Ritter",
+          "email": "nan_ritt@gmail.com",
+          "phone_number": "2307354647"
+        },
+        "datetime": "2023-05-20T08:42:53",
+        "_job": "kzdsh-new--90adc3f_3--mechanism2",
+        "_attempt": 2,
+        "_rerun_of": "kzdsh-new--90adc3f_3"
+      },
+      "before_tests": [
+        3,
+        7
+      ],
+      "reason": "mechanism-v2 repair audit: public scope, verification identity/protocol, and AppWorld adapter"
+    }
+  ],
+  "previous_completed": [],
+  "retry_count": 15,
+  "workers": 6,
+  "baseline_passed": {
+    "hld": 19,
+    "kzdsh-new": 26,
+    "recuris": 27,
+    "dsh": 25
+  },
+  "paid_calls_before": {
+    "limit_microcny": 720000000,
+    "settled_microcny": 459147481,
+    "reserved_microcny": 0,
+    "uncertain_microcny": 387072,
+    "remaining_microcny": 260465447,
+    "halt_reason": null,
+    "estimate_peak_cny": 720.0
+  }
+}

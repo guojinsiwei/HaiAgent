@@ -1,0 +1,59 @@
+KZ evidence-control-3 / 0.3.2 — 2026-10-16
+
+Purpose
+Repair the review failures identified in the payments/layout/fin audit before
+running a fresh, bounded 10-task KZ-on-DSH campaign. The historical source and
+three-task results are retained separately.
+
+Algorithm changes
+1. Global accept no longer closes all open gaps. Each gap requires an explicit
+   ID, an explanation and passing receipts targeted to that gap before execution.
+   Planning-stage gaps persist even if the later verdict accepts. Distinct gaps
+   remain distinct, including multiple defects under one public requirement.
+2. Execution success and correctness evidence are separate. Check expectations
+   include author, provenance, expected rule, source quotes and independence.
+   Task quotes and observed evidence references are checked. Self-consistency,
+   missing sources and replaying an old receipt cannot resolve a correctness gap.
+   Evidence becoming stale reopens the relevant obligation.
+3. Review checks are preflighted before execution. Unsupported heredocs, masked
+   shell stages and composite commands return repair guidance. A concrete lack
+   of information/capability can produce a zero-check revision without executing
+   a check or spending a second verdict request.
+4. Prompts require actual failure/recovery boundaries, independently sourced
+   expectations, and rendering tied to the current artifact. Own readiness logs,
+   same-container restarts and mocks skipping recovery do not establish the
+   stronger properties claimed in the failed run.
+
+Limits of these changes
+Source-reference and closure checks enforce traceability and structure. They do
+not prove model-attributed authorship, semantic independence, exhaustive task
+coverage or domain correctness. Official task scoring remains the outcome.
+No historical solution, corrected finance formula or hidden verifier answer was
+added to the production algorithm. Regression fixtures are test-only.
+
+Experiment contract
+KZ attached to DSH; deepseek-flash; TaoToken purchased Token Plan endpoint.
+Frozen first 10 tasks, concurrency 1, no paid task retry batch.
+Per task: 120 actual HTTP attempts (including retries), 180 tools, 45 minutes.
+Context 128000 tokens; maximum output 16384 tokens; thinking disabled.
+Independent conservative estimate: 5 CNY/task and 40 CNY/campaign, using public
+peak rates of input 2, cache read 0.04 and output 8 CNY per million tokens.
+This is NOT an exact Credits cap or provider invoice. Unknown usage retains the
+reservation and stops only the affected task. Later tasks continue within the
+same total cap. No top-up, purchase or renewal is configured.
+
+Validation
+Linux offline suites after fault-isolation repair: 396 Node tests, 44 Python
+tests, 18 deadline/provider tests. All 458 passed, none skipped.
+The real keyless container acceptance checks
+installation, private log collection, official verification and cleanup; its
+empty solver is expected to score zero. It is not a model-quality benchmark.
+Final machine-readable validation and lifecycle evidence are saved under audit/.
+
+Deployment
+Server: 172.16.108.236
+Directory: /mnt/sdb/home/lizh639/tb4-kz-ec3-bounded10-20261016
+User enters the API key in secure_start.py's masked GUI at the last step.
+Credential is passed via SSH stdin, not written to a credential file or chat.
+The launch marker prevents duplicate starts. No GPT agent or automation monitors
+the campaign. Launch status/acknowledgement is saved locally under audit/.

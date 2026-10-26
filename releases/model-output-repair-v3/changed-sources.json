@@ -1,0 +1,62 @@
+[
+  {
+    "path": "audit.py",
+    "before": "25470668f8b2d90e0ab23324cd2a957a4a2f5c9b67982fea76eb0ecae8b91eb9",
+    "after": "fce0a3e4177143bd7f752fd36e07d791d85db514f3e394930eb93eb3313f42df"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/lean_memory.py",
+    "before": "e4cd971b64b2821686b4f4a225eda5924cdb1904958e7ea67ea53f6ecc08b5d2",
+    "after": "a4eaa3dbdb395923470c6c44986a73afbee8c228e1ec28d49f584f829492984f"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/lean_protocol.py",
+    "before": "58ff8f9708f97b207646951f8fc0a86c72a29e24912bd3284f9b9503edcdf415",
+    "after": "23e7536a9813588d5662162c5d992118f340fc8cc9eccbf4d7f885b5ea65c4f5"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/lean_runtime.py",
+    "before": "2c82e4fa5ab8b4a9317b5714b7536be5bafe846c9da8f02cdef4e10977614c3d",
+    "after": "c6f197a8ef0218f32c7427218b4516ff0feb19f2321f968f665f7d9067c6482f"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/prompt_views.py",
+    "before": "c6a43055a551d3f5541d902da71a1b35e86d4e47b1342d27f04fa8ef0b35b5f0",
+    "after": "68353387a320b28f05230f649887faa0e1c2b0445d89e6c8cc8986986a315723"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/retrac_adapter.py",
+    "before": "4bd3cd405e9adc3b103330eb20c36e6f39863ad1c9dcd55cd0a611117522bfca",
+    "after": "a6b5c7bf19b6e161ea0bc0d7ab4bf6ccc9d9429251d060281f8957c65fc5bdef"
+  },
+  {
+    "path": "hai-project/src/haiagent/runtime.py",
+    "before": "1c753dc2a5041bc25861800d0d80ee220875ecff379a01e44c5ebc1ffd214c20",
+    "after": "6d6ec919089be6ecd71ecefcf64fe438caea4f8d4bfe330d78101b6207672081"
+  },
+  {
+    "path": "hai-project/src/terminal_context/core.py",
+    "before": "1f564599e112bfaed23980551751a8daa5e325c0fb3dbd5582ef4cd81ba79588",
+    "after": "4e121ef0c13b3e2734cb7bae18d49255fa496ffdda88a4cd1804a614987cf90f"
+  },
+  {
+    "path": "hai_outcomes.py",
+    "before": "007200423a23c9a011e51ca0c6b3d3d187cee7b0e58a0793406d550f2bb5e2ae",
+    "after": "51bfbfdb144d0adbdfcc0ba710069aa71e2bfa5fc5659a62d6f19ca0461a6def"
+  },
+  {
+    "path": "hai_transport.py",
+    "before": "f685a93b551116dc52433c57f8f88f3d5e074ae8fe05a8710b38019d58caae7b",
+    "after": "f4363ebb8b50e0d511e56344c2d42abe20e3e5d99667b9c71e1383d2ee2665db"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/lean_conversation.py",
+    "before": null,
+    "after": "b62e7cacf9726bb59cc5690d53defe343e7a3f8a5fbc6455872de6de76608c35"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/response_repair.py",
+    "before": null,
+    "after": "fdafb17f8b0b1cfc342230bd4e1d793f54787a1881b1b79e061eaedd09470a4a"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "task": "torch-tensor-parallelism",
+  "image": "alexgshaw/torch-tensor-parallelism:20251031",
+  "digest": "sha256:c50ac169e11465f41b49749fe87e4487f24d31a0c39c0906cd3242cc5499c690",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/torch-tensor-parallelism/manifests/20251031",
+  "header_verified": true,
+  "time": 1792510258.977302
+}

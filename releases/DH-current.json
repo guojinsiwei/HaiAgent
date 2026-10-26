@@ -1,0 +1,10 @@
+{
+  "candidate": "DH-control-repair",
+  "source": "releases/DH-control-repair/sources/bestfgs-project",
+  "runner": "bestfgs.error_routing.RoutedTaskRunner",
+  "native_tools_enabled": "per-arm: tools=true, no-tools=false",
+  "status": "server_acceptance_passed_fresh_paired40_running",
+  "deployment": "/mnt/sdb/home/lizh639/longcli-dh-controls-paired40-20261008",
+  "acceptance": "experiment_records/longcli-dh-controls-paired40-20261008/remote-ready.json",
+  "notes": "This is a human-readable source pointer, not an automatic scheduler setting. Existing frozen campaigns retain their original source and scores."
+}

@@ -1,0 +1,89 @@
+{
+  "changes": [
+    {
+      "job": "tb4-01-hld-payments-pipeline-fix",
+      "before": "engineering_failure",
+      "after": "done",
+      "reward": 0.0
+    },
+    {
+      "job": "tb4-01-recuris-payments-pipeline-fix",
+      "before": "engineering_failure",
+      "after": "engineering_failure",
+      "reward": null
+    },
+    {
+      "job": "tb4-02-recuris-fin-saccr-rwa",
+      "before": "done",
+      "after": "done",
+      "reward": 0.0
+    },
+    {
+      "job": "tb4-02-hld-fin-saccr-rwa",
+      "before": "engineering_failure",
+      "after": "done",
+      "reward": 0.0
+    },
+    {
+      "job": "tb4-03-hld-mvcc-lsm-compaction",
+      "before": "done",
+      "after": "done",
+      "reward": 0.0
+    },
+    {
+      "job": "tb4-03-recuris-mvcc-lsm-compaction",
+      "before": "done",
+      "after": "done",
+      "reward": 0.0
+    },
+    {
+      "job": "tb4-04-recuris-uefi-bootkit",
+      "before": "done",
+      "after": "done",
+      "reward": 0.0
+    },
+    {
+      "job": "tb4-04-hld-uefi-bootkit",
+      "before": "engineering_failure",
+      "after": "done",
+      "reward": 0.0
+    },
+    {
+      "job": "tb4-05-hld-retro-console-soc",
+      "before": "engineering_failure",
+      "after": "done",
+      "reward": 0.0
+    },
+    {
+      "job": "tb4-05-recuris-retro-console-soc",
+      "before": "done",
+      "after": "done",
+      "reward": 0.0
+    },
+    {
+      "job": "tb4-06-recuris-gsea-proteomics",
+      "before": "done",
+      "after": "done",
+      "reward": 0.0
+    },
+    {
+      "job": "tb4-06-hld-gsea-proteomics",
+      "before": "engineering_failure",
+      "after": "done",
+      "reward": 0.0
+    },
+    {
+      "job": "tb4-07-hld-coq-block-bound",
+      "before": "engineering_failure",
+      "after": "done",
+      "reward": 0.0
+    },
+    {
+      "job": "tb4-07-recuris-coq-block-bound",
+      "before": "done",
+      "after": "done",
+      "reward": 0.0
+    }
+  ],
+  "paid_calls": 0
+}

@@ -1,0 +1,1742 @@
+[
+  {
+    "task": "ff58e36_1",
+    "instruction": "Add all my friends and roommates as friends on venmo, if they are not already.",
+    "arms": {
+      "hld": {
+        "pass": true,
+        "tests": [
+          6,
+          6
+        ],
+        "cost": 3.85903,
+        "requests": 89,
+        "tools": 56,
+        "seconds": 856,
+        "stop": null,
+        "job": "hld--ff58e36_1"
+      },
+      "kzdsh-new": {
+        "pass": true,
+        "tests": [
+          6,
+          6
+        ],
+        "cost": 4.682221,
+        "requests": 91,
+        "tools": 51,
+        "seconds": 1054,
+        "stop": null,
+        "job": "kzdsh-new--ff58e36_1"
+      },
+      "recuris": {
+        "pass": true,
+        "tests": [
+          6,
+          6
+        ],
+        "cost": 0.38791,
+        "requests": 62,
+        "tools": 37,
+        "seconds": 200,
+        "stop": "native_completed",
+        "job": "recuris--ff58e36_1"
+      },
+      "dsh": {
+        "pass": true,
+        "tests": [
+          6,
+          6
+        ],
+        "cost": 0.081908,
+        "requests": 17,
+        "tools": 21,
+        "seconds": 74,
+        "stop": "native_completed",
+        "job": "dsh--ff58e36_1"
+      }
+    }
+  },
+  {
+    "task": "ff58e36_2",
+    "instruction": "Add all my coworkers and friends as friends on venmo, if they are not already.",
+    "arms": {
+      "hld": {
+        "pass": true,
+        "tests": [
+          6,
+          6
+        ],
+        "cost": 2.599411,
+        "requests": 59,
+        "tools": 37,
+        "seconds": 536,
+        "stop": "wall_budget",
+        "job": "hld--ff58e36_2--repair1"
+      },
+      "kzdsh-new": {
+        "pass": true,
+        "tests": [
+          6,
+          6
+        ],
+        "cost": 7.639183,
+        "requests": 163,
+        "tools": 122,
+        "seconds": 1653,
+        "stop": "per_task_budget_exhausted",
+        "job": "kzdsh-new--ff58e36_2--repair1"
+      },
+      "recuris": {
+        "pass": true,
+        "tests": [
+          6,
+          6
+        ],
+        "cost": 0.305779,
+        "requests": 38,
+        "tools": 25,
+        "seconds": 140,
+        "stop": "native_completed",
+        "job": "recuris--ff58e36_2"
+      },
+      "dsh": {
+        "pass": false,
+        "tests": [
+          5,
+          6
+        ],
+        "cost": 0.11243,
+        "requests": 20,
+        "tools": 27,
+        "seconds": 84,
+        "stop": "native_completed",
+        "job": "dsh--ff58e36_2"
+      }
+    }
+  },
+  {
+    "task": "ff58e36_3",
+    "instruction": "Add all my coworkers and roommates as friends on venmo, if they are not already.",
+    "arms": {
+      "hld": {
+        "pass": true,
+        "tests": [
+          6,
+          6
+        ],
+        "cost": 3.963442,
+        "requests": 95,
+        "tools": 65,
+        "seconds": 989,
+        "stop": null,
+        "job": "hld--ff58e36_3"
+      },
+      "kzdsh-new": {
+        "pass": true,
+        "tests": [
+          6,
+          6
+        ],
+        "cost": 3.749622,
+        "requests": 95,
+        "tools": 59,
+        "seconds": 844,
+        "stop": null,
+        "job": "kzdsh-new--ff58e36_3"
+      },
+      "recuris": {
+        "pass": true,
+        "tests": [
+          6,
+          6
+        ],
+        "cost": 0.627306,
+        "requests": 87,
+        "tools": 52,
+        "seconds": 324,
+        "stop": "native_completed",
+        "job": "recuris--ff58e36_3"
+      },
+      "dsh": {
+        "pass": true,
+        "tests": [
+          6,
+          6
+        ],
+        "cost": 0.06145,
+        "requests": 14,
+        "tools": 17,
+        "seconds": 58,
+        "stop": "native_completed",
+        "job": "dsh--ff58e36_3"
+      }
+    }
+  },
+  {
+    "task": "f323bae_1",
+    "instruction": "I maintain my habit tracking logs in Simple Note. Export it in \"~/downloads/habit_tracker.csv\" in my file system. Its first header column should be \"date\" and the rest should be correspond to the habits I track as per my logs. The rows for date column should be in yyyy-mm-dd format and the rest should be yes or no as per my logs. The rows should be sorted in ascending order of the date from top to bottom, and habit columns as per their order in logs.",
+    "arms": {
+      "hld": {
+        "pass": false,
+        "tests": [
+          6,
+          9
+        ],
+        "cost": 7.64712,
+        "requests": 195,
+        "tools": 109,
+        "seconds": 1650,
+        "stop": "per_task_budget_exhausted",
+        "job": "hld--f323bae_1--repair1"
+      },
+      "kzdsh-new": {
+        "pass": true,
+        "tests": [
+          9,
+          9
+        ],
+        "cost": 4.88891,
+        "requests": 94,
+        "tools": 57,
+        "seconds": 946,
+        "stop": null,
+        "job": "kzdsh-new--f323bae_1"
+      },
+      "recuris": {
+        "pass": true,
+        "tests": [
+          9,
+          9
+        ],
+        "cost": 0.603167,
+        "requests": 64,
+        "tools": 41,
+        "seconds": 214,
+        "stop": "native_completed",
+        "job": "recuris--f323bae_1"
+      },
+      "dsh": {
+        "pass": false,
+        "tests": [
+          6,
+          9
+        ],
+        "cost": 0.074884,
+        "requests": 20,
+        "tools": 23,
+        "seconds": 85,
+        "stop": "native_completed",
+        "job": "dsh--f323bae_1"
+      }
+    }
+  },
+  {
+    "task": "f323bae_2",
+    "instruction": "I maintain my habit tracking logs in Simple Note. Export it in \"~/backups/habit_log.csv\" in my file system. Its first header column should be \"date\" and the rest should be correspond to the habits I track as per my logs. The rows for date column should be in yyyy-mm-dd format and the rest should be yes or no as per my logs. The rows should be sorted in descending order of the date from top to bottom, and habit columns as per their order in logs.",
+    "arms": {
+      "hld": {
+        "pass": false,
+        "tests": [
+          5,
+          9
+        ],
+        "cost": 7.662504,
+        "requests": 158,
+        "tools": 96,
+        "seconds": 1529,
+        "stop": "per_task_budget_exhausted",
+        "job": "hld--f323bae_2--repair1"
+      },
+      "kzdsh-new": {
+        "pass": true,
+        "tests": [
+          9,
+          9
+        ],
+        "cost": 4.374307,
+        "requests": 89,
+        "tools": 52,
+        "seconds": 893,
+        "stop": null,
+        "job": "kzdsh-new--f323bae_2"
+      },
+      "recuris": {
+        "pass": true,
+        "tests": [
+          9,
+          9
+        ],
+        "cost": 0.428221,
+        "requests": 50,
+        "tools": 30,
+        "seconds": 169,
+        "stop": "native_completed",
+        "job": "recuris--f323bae_2"
+      },
+      "dsh": {
+        "pass": true,
+        "tests": [
+          9,
+          9
+        ],
+        "cost": 0.099277,
+        "requests": 18,
+        "tools": 19,
+        "seconds": 69,
+        "stop": "native_completed",
+        "job": "dsh--f323bae_2"
+      }
+    }
+  },
+  {
+    "task": "f323bae_3",
+    "instruction": "I maintain my habit tracking logs in Simple Note. Export it in \"~/backups/simple_note/habits.csv\" in my file system. Its first header column should be \"date\" and the rest should be correspond to the habits I track as per my logs. The rows for date column should be in yyyy-mm-dd format and the rest should be yes or no as per my logs. The rows should be sorted in ascending order of the date from top to bottom, and habit columns as per their order in logs.",
+    "arms": {
+      "hld": {
+        "pass": false,
+        "tests": [
+          6,
+          9
+        ],
+        "cost": 7.670416,
+        "requests": 192,
+        "tools": 112,
+        "seconds": 1735,
+        "stop": "per_task_budget_exhausted",
+        "job": "hld--f323bae_3--repair1"
+      },
+      "kzdsh-new": {
+        "pass": true,
+        "tests": [
+          9,
+          9
+        ],
+        "cost": 4.476185,
+        "requests": 93,
+        "tools": 50,
+        "seconds": 853,
+        "stop": null,
+        "job": "kzdsh-new--f323bae_3"
+      },
+      "recuris": {
+        "pass": true,
+        "tests": [
+          9,
+          9
+        ],
+        "cost": 0.521649,
+        "requests": 59,
+        "tools": 33,
+        "seconds": 200,
+        "stop": "native_completed",
+        "job": "recuris--f323bae_3"
+      },
+      "dsh": {
+        "pass": true,
+        "tests": [
+          9,
+          9
+        ],
+        "cost": 0.097454,
+        "requests": 15,
+        "tools": 16,
+        "seconds": 59,
+        "stop": "native_completed",
+        "job": "dsh--f323bae_3"
+      }
+    }
+  },
+  {
+    "task": "2c544f9_1",
+    "instruction": "Send $250 on venmo to Catherine.",
+    "arms": {
+      "hld": {
+        "pass": false,
+        "tests": [
+          5,
+          6
+        ],
+        "cost": 7.642283,
+        "requests": 195,
+        "tools": 118,
+        "seconds": 1822,
+        "stop": "per_task_budget_exhausted",
+        "job": "hld--2c544f9_1--repair1"
+      },
+      "kzdsh-new": {
+        "pass": false,
+        "tests": [
+          5,
+          6
+        ],
+        "cost": 7.614313,
+        "requests": 170,
+        "tools": 121,
+        "seconds": 1442,
+        "stop": "per_task_budget_exhausted",
+        "job": "kzdsh-new--2c544f9_1--repair1"
+      },
+      "recuris": {
+        "pass": true,
+        "tests": [
+          6,
+          6
+        ],
+        "cost": 0.475891,
+        "requests": 62,
+        "tools": 37,
+        "seconds": 190,
+        "stop": "native_completed",
+        "job": "recuris--2c544f9_1"
+      },
+      "dsh": {
+        "pass": false,
+        "tests": [
+          5,
+          6
+        ],
+        "cost": 0.072691,
+        "requests": 20,
+        "tools": 23,
+        "seconds": 69,
+        "stop": "native_completed",
+        "job": "dsh--2c544f9_1"
+      }
+    }
+  },
+  {
+    "task": "2c544f9_2",
+    "instruction": "Send $427 on venmo to Anita.",
+    "arms": {
+      "hld": {
+        "pass": false,
+        "tests": [
+          5,
+          6
+        ],
+        "cost": 7.646815,
+        "requests": 173,
+        "tools": 101,
+        "seconds": 1514,
+        "stop": "per_task_budget_exhausted",
+        "job": "hld--2c544f9_2"
+      },
+      "kzdsh-new": {
+        "pass": false,
+        "tests": [
+          1,
+          6
+        ],
+        "cost": 7.646126,
+        "requests": 135,
+        "tools": 70,
+        "seconds": 1504,
+        "stop": "per_task_budget_exhausted",
+        "job": "kzdsh-new--2c544f9_2"
+      },
+      "recuris": {
+        "pass": false,
+        "tests": [
+          5,
+          6
+        ],
+        "cost": 1.009857,
+        "requests": 124,
+        "tools": 74,
+        "seconds": 370,
+        "stop": "native_completed",
+        "job": "recuris--2c544f9_2"
+      },
+      "dsh": {
+        "pass": true,
+        "tests": [
+          6,
+          6
+        ],
+        "cost": 0.308007,
+        "requests": 48,
+        "tools": 62,
+        "seconds": 169,
+        "stop": "native_completed",
+        "job": "dsh--2c544f9_2"
+      }
+    }
+  },
+  {
+    "task": "2c544f9_3",
+    "instruction": "Send $234 on venmo to Jack.",
+    "arms": {
+      "hld": {
+        "pass": false,
+        "tests": [
+          5,
+          6
+        ],
+        "cost": 7.628978,
+        "requests": 156,
+        "tools": 89,
+        "seconds": 1643,
+        "stop": "per_task_budget_exhausted",
+        "job": "hld--2c544f9_3"
+      },
+      "kzdsh-new": {
+        "pass": true,
+        "tests": [
+          6,
+          6
+        ],
+        "cost": 7.641881,
+        "requests": 168,
+        "tools": 106,
+        "seconds": 1436,
+        "stop": "per_task_budget_exhausted",
+        "job": "kzdsh-new--2c544f9_3"
+      },
+      "recuris": {
+        "pass": false,
+        "tests": [
+          1,
+          6
+        ],
+        "cost": 1.583837,
+        "requests": 186,
+        "tools": 92,
+        "seconds": 600,
+        "stop": "native_completed",
+        "job": "recuris--2c544f9_3"
+      },
+      "dsh": {
+        "pass": true,
+        "tests": [
+          6,
+          6
+        ],
+        "cost": 0.063595,
+        "requests": 23,
+        "tools": 24,
+        "seconds": 74,
+        "stop": "native_completed",
+        "job": "dsh--2c544f9_3"
+      }
+    }
+  },
+  {
+    "task": "522e5e5_1",
+    "instruction": "Befriend on Venmo anyone I have sent or received money from this month.",
+    "arms": {
+      "hld": {
+        "pass": true,
+        "tests": [
+          4,
+          4
+        ],
+        "cost": 7.618107,
+        "requests": 195,
+        "tools": 127,
+        "seconds": 1731,
+        "stop": "per_task_budget_exhausted",
+        "job": "hld--522e5e5_1"
+      },
+      "kzdsh-new": {
+        "pass": true,
+        "tests": [
+          4,
+          4
+        ],
+        "cost": 7.641324,
+        "requests": 169,
+        "tools": 101,
+        "seconds": 1473,
+        "stop": "per_task_budget_exhausted",
+        "job": "kzdsh-new--522e5e5_1"
+      },
+      "recuris": {
+        "pass": true,
+        "tests": [
+          4,
+          4
+        ],
+        "cost": 0.33449,
+        "requests": 49,
+        "tools": 28,
+        "seconds": 139,
+        "stop": "native_completed",
+        "job": "recuris--522e5e5_1"
+      },
+      "dsh": {
+        "pass": true,
+        "tests": [
+          4,
+          4
+        ],
+        "cost": 0.052321,
+        "requests": 14,
+        "tools": 15,
+        "seconds": 49,
+        "stop": "native_completed",
+        "job": "dsh--522e5e5_1"
+      }
+    }
+  },
+  {
+    "task": "522e5e5_2",
+    "instruction": "Befriend on Venmo anyone I have sent money to this month.",
+    "arms": {
+      "hld": {
+        "pass": true,
+        "tests": [
+          4,
+          4
+        ],
+        "cost": 7.636392,
+        "requests": 181,
+        "tools": 108,
+        "seconds": 1575,
+        "stop": "per_task_budget_exhausted",
+        "job": "hld--522e5e5_2"
+      },
+      "kzdsh-new": {
+        "pass": true,
+        "tests": [
+          4,
+          4
+        ],
+        "cost": 5.801925,
+        "requests": 140,
+        "tools": 76,
+        "seconds": 1276,
+        "stop": "native_completed",
+        "job": "kzdsh-new--522e5e5_2"
+      },
+      "recuris": {
+        "pass": true,
+        "tests": [
+          4,
+          4
+        ],
+        "cost": 0.372798,
+        "requests": 46,
+        "tools": 24,
+        "seconds": 150,
+        "stop": "native_completed",
+        "job": "recuris--522e5e5_2"
+      },
+      "dsh": {
+        "pass": true,
+        "tests": [
+          4,
+          4
+        ],
+        "cost": 0.055663,
+        "requests": 14,
+        "tools": 17,
+        "seconds": 54,
+        "stop": "native_completed",
+        "job": "dsh--522e5e5_2"
+      }
+    }
+  },
+  {
+    "task": "522e5e5_3",
+    "instruction": "Befriend on Venmo anyone I have received money from this month.",
+    "arms": {
+      "hld": {
+        "pass": true,
+        "tests": [
+          4,
+          4
+        ],
+        "cost": 7.623234,
+        "requests": 177,
+        "tools": 105,
+        "seconds": 1597,
+        "stop": "per_task_budget_exhausted",
+        "job": "hld--522e5e5_3"
+      },
+      "kzdsh-new": {
+        "pass": true,
+        "tests": [
+          4,
+          4
+        ],
+        "cost": 7.6221,
+        "requests": 219,
+        "tools": 150,
+        "seconds": 1751,
+        "stop": "per_task_budget_exhausted",
+        "job": "kzdsh-new--522e5e5_3"
+      },
+      "recuris": {
+        "pass": true,
+        "tests": [
+          4,
+          4
+        ],
+        "cost": 0.227456,
+        "requests": 39,
+        "tools": 25,
+        "seconds": 119,
+        "stop": "native_completed",
+        "job": "recuris--522e5e5_3"
+      },
+      "dsh": {
+        "pass": true,
+        "tests": [
+          4,
+          4
+        ],
+        "cost": 0.048301,
+        "requests": 16,
+        "tools": 19,
+        "seconds": 54,
+        "stop": "native_completed",
+        "job": "dsh--522e5e5_3"
+      }
+    }
+  },
+  {
+    "task": "dac78d9_1",
+    "instruction": "How many venmo friends have I made since the start of January this year?",
+    "arms": {
+      "hld": {
+        "pass": true,
+        "tests": [
+          2,
+          2
+        ],
+        "cost": 7.662319,
+        "requests": 189,
+        "tools": 123,
+        "seconds": 1616,
+        "stop": "per_task_budget_exhausted",
+        "job": "hld--dac78d9_1"
+      },
+      "kzdsh-new": {
+        "pass": true,
+        "tests": [
+          2,
+          2
+        ],
+        "cost": 5.315133,
+        "requests": 125,
+        "tools": 72,
+        "seconds": 987,
+        "stop": "native_completed",
+        "job": "kzdsh-new--dac78d9_1"
+      },
+      "recuris": {
+        "pass": true,
+        "tests": [
+          2,
+          2
+        ],
+        "cost": 0.186296,
+        "requests": 33,
+        "tools": 17,
+        "seconds": 89,
+        "stop": "native_completed",
+        "job": "recuris--dac78d9_1"
+      },
+      "dsh": {
+        "pass": true,
+        "tests": [
+          2,
+          2
+        ],
+        "cost": 0.038115,
+        "requests": 13,
+        "tools": 15,
+        "seconds": 44,
+        "stop": "native_completed",
+        "job": "dsh--dac78d9_1"
+      }
+    }
+  },
+  {
+    "task": "dac78d9_2",
+    "instruction": "How many venmo friends have I made since the start of October last year?",
+    "arms": {
+      "hld": {
+        "pass": true,
+        "tests": [
+          2,
+          2
+        ],
+        "cost": 7.629873,
+        "requests": 206,
+        "tools": 118,
+        "seconds": 1638,
+        "stop": "per_task_budget_exhausted",
+        "job": "hld--dac78d9_2"
+      },
+      "kzdsh-new": {
+        "pass": true,
+        "tests": [
+          2,
+          2
+        ],
+        "cost": 7.655471,
+        "requests": 151,
+        "tools": 90,
+        "seconds": 1317,
+        "stop": "per_task_budget_exhausted",
+        "job": "kzdsh-new--dac78d9_2"
+      },
+      "recuris": {
+        "pass": true,
+        "tests": [
+          2,
+          2
+        ],
+        "cost": 0.742005,
+        "requests": 70,
+        "tools": 35,
+        "seconds": 240,
+        "stop": "native_completed",
+        "job": "recuris--dac78d9_2"
+      },
+      "dsh": {
+        "pass": true,
+        "tests": [
+          2,
+          2
+        ],
+        "cost": 0.030309,
+        "requests": 10,
+        "tools": 13,
+        "seconds": 39,
+        "stop": "native_completed",
+        "job": "dsh--dac78d9_2"
+      }
+    }
+  },
+  {
+    "task": "dac78d9_3",
+    "instruction": "How many venmo friends have I made since the start of March this year?",
+    "arms": {
+      "hld": {
+        "pass": true,
+        "tests": [
+          2,
+          2
+        ],
+        "cost": 7.649501,
+        "requests": 188,
+        "tools": 120,
+        "seconds": 1531,
+        "stop": "per_task_budget_exhausted",
+        "job": "hld--dac78d9_3"
+      },
+      "kzdsh-new": {
+        "pass": true,
+        "tests": [
+          2,
+          2
+        ],
+        "cost": 7.474976,
+        "requests": 170,
+        "tools": 88,
+        "seconds": 1496,
+        "stop": "native_completed",
+        "job": "kzdsh-new--dac78d9_3"
+      },
+      "recuris": {
+        "pass": true,
+        "tests": [
+          2,
+          2
+        ],
+        "cost": 0.509678,
+        "requests": 48,
+        "tools": 28,
+        "seconds": 159,
+        "stop": "native_completed",
+        "job": "recuris--dac78d9_3"
+      },
+      "dsh": {
+        "pass": true,
+        "tests": [
+          2,
+          2
+        ],
+        "cost": 0.034383,
+        "requests": 12,
+        "tools": 13,
+        "seconds": 44,
+        "stop": "native_completed",
+        "job": "dsh--dac78d9_3"
+      }
+    }
+  },
+  {
+    "task": "0d01c76_1",
+    "instruction": "Import markdown notes in the \"~/documents/personal/notes/\" directory of my file system to my Simple Note account. Each markdown file should become a separate note in the Simple Note account. The title of each note should be taken from the name of the source file (excluding the directory path and file extension), replacing underscores in it with blank spaces.",
+    "arms": {
+      "hld": {
+        "pass": true,
+        "tests": [
+          6,
+          6
+        ],
+        "cost": 7.630537,
+        "requests": 184,
+        "tools": 113,
+        "seconds": 1577,
+        "stop": "per_task_budget_exhausted",
+        "job": "hld--0d01c76_1"
+      },
+      "kzdsh-new": {
+        "pass": false,
+        "tests": [
+          5,
+          6
+        ],
+        "cost": 7.6838,
+        "requests": 163,
+        "tools": 102,
+        "seconds": 1387,
+        "stop": "per_task_budget_exhausted",
+        "job": "kzdsh-new--0d01c76_1"
+      },
+      "recuris": {
+        "pass": true,
+        "tests": [
+          6,
+          6
+        ],
+        "cost": 0.218285,
+        "requests": 39,
+        "tools": 24,
+        "seconds": 109,
+        "stop": "native_completed",
+        "job": "recuris--0d01c76_1"
+      },
+      "dsh": {
+        "pass": true,
+        "tests": [
+          6,
+          6
+        ],
+        "cost": 0.051057,
+        "requests": 14,
+        "tools": 14,
+        "seconds": 54,
+        "stop": "native_completed",
+        "job": "dsh--0d01c76_1"
+      }
+    }
+  },
+  {
+    "task": "0d01c76_2",
+    "instruction": "Import markdown notes in the \"~/documents/personal/simple_note/\" directory of my file system to my Simple Note account. Each markdown file should become a separate note in the Simple Note account. The title of each note should be taken from the name of the source file (excluding the directory path and file extension), replacing underscores in it with blank spaces.",
+    "arms": {
+      "hld": {
+        "pass": true,
+        "tests": [
+          6,
+          6
+        ],
+        "cost": 6.015783,
+        "requests": 130,
+        "tools": 75,
+        "seconds": 1061,
+        "stop": "native_completed",
+        "job": "hld--0d01c76_2"
+      },
+      "kzdsh-new": {
+        "pass": true,
+        "tests": [
+          6,
+          6
+        ],
+        "cost": 7.650202,
+        "requests": 174,
+        "tools": 116,
+        "seconds": 1566,
+        "stop": "per_task_budget_exhausted",
+        "job": "kzdsh-new--0d01c76_2"
+      },
+      "recuris": {
+        "pass": false,
+        "tests": [
+          5,
+          6
+        ],
+        "cost": 0.180282,
+        "requests": 36,
+        "tools": 23,
+        "seconds": 94,
+        "stop": "native_completed",
+        "job": "recuris--0d01c76_2"
+      },
+      "dsh": {
+        "pass": true,
+        "tests": [
+          6,
+          6
+        ],
+        "cost": 0.05794,
+        "requests": 17,
+        "tools": 17,
+        "seconds": 54,
+        "stop": "native_completed",
+        "job": "dsh--0d01c76_2"
+      }
+    }
+  },
+  {
+    "task": "0d01c76_3",
+    "instruction": "Import markdown notes in the \"~/documents/personal/personal_notes/\" directory of my file system to my Simple Note account. Each markdown file should become a separate note in the Simple Note account. The title of each note should be taken from the name of the source file (excluding the directory path and file extension), replacing underscores in it with blank spaces.",
+    "arms": {
+      "hld": {
+        "pass": true,
+        "tests": [
+          6,
+          6
+        ],
+        "cost": 7.669751,
+        "requests": 176,
+        "tools": 121,
+        "seconds": 1474,
+        "stop": "per_task_budget_exhausted",
+        "job": "hld--0d01c76_3"
+      },
+      "kzdsh-new": {
+        "pass": true,
+        "tests": [
+          6,
+          6
+        ],
+        "cost": 7.688978,
+        "requests": 144,
+        "tools": 87,
+        "seconds": 1415,
+        "stop": "per_task_budget_exhausted",
+        "job": "kzdsh-new--0d01c76_3"
+      },
+      "recuris": {
+        "pass": true,
+        "tests": [
+          6,
+          6
+        ],
+        "cost": 0.240077,
+        "requests": 44,
+        "tools": 26,
+        "seconds": 120,
+        "stop": "native_completed",
+        "job": "recuris--0d01c76_3"
+      },
+      "dsh": {
+        "pass": false,
+        "tests": [
+          5,
+          6
+        ],
+        "cost": 0.090069,
+        "requests": 28,
+        "tools": 31,
+        "seconds": 84,
+        "stop": "native_completed",
+        "job": "dsh--0d01c76_3"
+      }
+    }
+  },
+  {
+    "task": "7847649_1",
+    "instruction": "How many activities are completed in my bucket list as per my SimpleNote note?",
+    "arms": {
+      "hld": {
+        "pass": true,
+        "tests": [
+          2,
+          2
+        ],
+        "cost": 7.647167,
+        "requests": 178,
+        "tools": 115,
+        "seconds": 1478,
+        "stop": "per_task_budget_exhausted",
+        "job": "hld--7847649_1"
+      },
+      "kzdsh-new": {
+        "pass": true,
+        "tests": [
+          2,
+          2
+        ],
+        "cost": 7.636787,
+        "requests": 187,
+        "tools": 107,
+        "seconds": 1439,
+        "stop": "per_task_budget_exhausted",
+        "job": "kzdsh-new--7847649_1"
+      },
+      "recuris": {
+        "pass": true,
+        "tests": [
+          2,
+          2
+        ],
+        "cost": 0.264556,
+        "requests": 38,
+        "tools": 24,
+        "seconds": 109,
+        "stop": "native_completed",
+        "job": "recuris--7847649_1"
+      },
+      "dsh": {
+        "pass": true,
+        "tests": [
+          2,
+          2
+        ],
+        "cost": 0.028094,
+        "requests": 12,
+        "tools": 14,
+        "seconds": 39,
+        "stop": "native_completed",
+        "job": "dsh--7847649_1"
+      }
+    }
+  },
+  {
+    "task": "7847649_2",
+    "instruction": "How many activities are left to do in my bucket list as per my SimpleNote note?",
+    "arms": {
+      "hld": {
+        "pass": true,
+        "tests": [
+          2,
+          2
+        ],
+        "cost": 7.628433,
+        "requests": 200,
+        "tools": 107,
+        "seconds": 1448,
+        "stop": "per_task_budget_exhausted",
+        "job": "hld--7847649_2"
+      },
+      "kzdsh-new": {
+        "pass": true,
+        "tests": [
+          2,
+          2
+        ],
+        "cost": 3.816718,
+        "requests": 102,
+        "tools": 55,
+        "seconds": 687,
+        "stop": "native_completed",
+        "job": "kzdsh-new--7847649_2"
+      },
+      "recuris": {
+        "pass": true,
+        "tests": [
+          2,
+          2
+        ],
+        "cost": 0.191665,
+        "requests": 31,
+        "tools": 20,
+        "seconds": 89,
+        "stop": "native_completed",
+        "job": "recuris--7847649_2"
+      },
+      "dsh": {
+        "pass": true,
+        "tests": [
+          2,
+          2
+        ],
+        "cost": 0.037084,
+        "requests": 12,
+        "tools": 14,
+        "seconds": 44,
+        "stop": "native_completed",
+        "job": "dsh--7847649_2"
+      }
+    }
+  },
+  {
+    "task": "7847649_3",
+    "instruction": "How many activities are done in my bucket list as per my SimpleNote note?",
+    "arms": {
+      "hld": {
+        "pass": true,
+        "tests": [
+          2,
+          2
+        ],
+        "cost": 7.628046,
+        "requests": 204,
+        "tools": 121,
+        "seconds": 1418,
+        "stop": "per_task_budget_exhausted",
+        "job": "hld--7847649_3"
+      },
+      "kzdsh-new": {
+        "pass": true,
+        "tests": [
+          2,
+          2
+        ],
+        "cost": 7.613889,
+        "requests": 203,
+        "tools": 119,
+        "seconds": 1538,
+        "stop": "per_task_budget_exhausted",
+        "job": "kzdsh-new--7847649_3"
+      },
+      "recuris": {
+        "pass": true,
+        "tests": [
+          2,
+          2
+        ],
+        "cost": 0.266234,
+        "requests": 47,
+        "tools": 32,
+        "seconds": 129,
+        "stop": "native_completed",
+        "job": "recuris--7847649_3"
+      },
+      "dsh": {
+        "pass": true,
+        "tests": [
+          2,
+          2
+        ],
+        "cost": 0.030075,
+        "requests": 11,
+        "tools": 14,
+        "seconds": 39,
+        "stop": "native_completed",
+        "job": "dsh--7847649_3"
+      }
+    }
+  },
+  {
+    "task": "8ce6779_1",
+    "instruction": "At my job, we manage the tasks on todoist. But I am changing job soon, so for each task that is assigned to me and is incomplete yet, I have asked who can take it from me. See the discussion in comments and reassign based on it. Then, leave a comment there, \"Thank you <person_first_name>!\". Here <person_first_name> is the first name of the person who is reassigned the task. If no one has agreed to take the task, leave it as is.",
+    "arms": {
+      "hld": {
+        "pass": true,
+        "tests": [
+          9,
+          9
+        ],
+        "cost": 7.662125,
+        "requests": 172,
+        "tools": 102,
+        "seconds": 1375,
+        "stop": "per_task_budget_exhausted",
+        "job": "hld--8ce6779_1"
+      },
+      "kzdsh-new": {
+        "pass": true,
+        "tests": [
+          9,
+          9
+        ],
+        "cost": 7.690898,
+        "requests": 163,
+        "tools": 101,
+        "seconds": 1504,
+        "stop": "per_task_budget_exhausted",
+        "job": "kzdsh-new--8ce6779_1"
+      },
+      "recuris": {
+        "pass": true,
+        "tests": [
+          9,
+          9
+        ],
+        "cost": 0.97664,
+        "requests": 66,
+        "tools": 33,
+        "seconds": 204,
+        "stop": "native_completed",
+        "job": "recuris--8ce6779_1"
+      },
+      "dsh": {
+        "pass": true,
+        "tests": [
+          9,
+          9
+        ],
+        "cost": 0.098823,
+        "requests": 22,
+        "tools": 24,
+        "seconds": 74,
+        "stop": "native_completed",
+        "job": "dsh--8ce6779_1"
+      }
+    }
+  },
+  {
+    "task": "8ce6779_2",
+    "instruction": "At my job, we manage the tasks on todoist. But I am changing job soon, so for each task that is assigned to me and is incomplete yet, I have asked who can take it from me. See the discussion in comments and reassign based on it. Then, leave a comment there, \"Thanks <person_first_name>!\". Here <person_first_name> is the first name of the person who is reassigned the task. If no one has agreed to take the task, leave it as is.",
+    "arms": {
+      "hld": {
+        "pass": true,
+        "tests": [
+          9,
+          9
+        ],
+        "cost": 7.624906,
+        "requests": 183,
+        "tools": 108,
+        "seconds": 1345,
+        "stop": "per_task_budget_exhausted",
+        "job": "hld--8ce6779_2"
+      },
+      "kzdsh-new": {
+        "pass": true,
+        "tests": [
+          9,
+          9
+        ],
+        "cost": 7.629936,
+        "requests": 150,
+        "tools": 91,
+        "seconds": 1302,
+        "stop": "per_task_budget_exhausted",
+        "job": "kzdsh-new--8ce6779_2"
+      },
+      "recuris": {
+        "pass": true,
+        "tests": [
+          9,
+          9
+        ],
+        "cost": 1.157664,
+        "requests": 86,
+        "tools": 46,
+        "seconds": 300,
+        "stop": "native_completed",
+        "job": "recuris--8ce6779_2"
+      },
+      "dsh": {
+        "pass": true,
+        "tests": [
+          9,
+          9
+        ],
+        "cost": 0.10982,
+        "requests": 28,
+        "tools": 29,
+        "seconds": 84,
+        "stop": "native_completed",
+        "job": "dsh--8ce6779_2"
+      }
+    }
+  },
+  {
+    "task": "8ce6779_3",
+    "instruction": "At my job, we manage the tasks on todoist. But I am changing job soon, so for each task that is assigned to me and is incomplete yet, I have asked who can take it from me. See the discussion in comments and reassign based on it. Then, leave a comment there, \"Greatly appreciate it <person_first_name>!\". Here <person_first_name> is the first name of the person who is reassigned the task. If no one has agreed to take the task, leave it as is.",
+    "arms": {
+      "hld": {
+        "pass": true,
+        "tests": [
+          9,
+          9
+        ],
+        "cost": 7.620543,
+        "requests": 203,
+        "tools": 132,
+        "seconds": 1505,
+        "stop": "per_task_budget_exhausted",
+        "job": "hld--8ce6779_3"
+      },
+      "kzdsh-new": {
+        "pass": true,
+        "tests": [
+          9,
+          9
+        ],
+        "cost": 7.616576,
+        "requests": 161,
+        "tools": 101,
+        "seconds": 1434,
+        "stop": "per_task_budget_exhausted",
+        "job": "kzdsh-new--8ce6779_3"
+      },
+      "recuris": {
+        "pass": true,
+        "tests": [
+          9,
+          9
+        ],
+        "cost": 0.461591,
+        "requests": 55,
+        "tools": 32,
+        "seconds": 160,
+        "stop": "native_completed",
+        "job": "recuris--8ce6779_3"
+      },
+      "dsh": {
+        "pass": true,
+        "tests": [
+          9,
+          9
+        ],
+        "cost": 0.076982,
+        "requests": 17,
+        "tools": 19,
+        "seconds": 59,
+        "stop": "native_completed",
+        "job": "dsh--8ce6779_3"
+      }
+    }
+  },
+  {
+    "task": "90adc3f_1",
+    "instruction": "I made venmo payment requests to some of my friends yesterday evening. Unfortunately, I have made a mistake in calculation. Each of them owes me $5 less than the requested amount. So delete those requests and make new ones with everything else the same, but with the corrected amount.",
+    "arms": {
+      "hld": {
+        "pass": false,
+        "tests": [
+          2,
+          7
+        ],
+        "cost": 7.647117,
+        "requests": 163,
+        "tools": 96,
+        "seconds": 1332,
+        "stop": "per_task_budget_exhausted",
+        "job": "hld--90adc3f_1"
+      },
+      "kzdsh-new": {
+        "pass": true,
+        "tests": [
+          7,
+          7
+        ],
+        "cost": 7.629012,
+        "requests": 184,
+        "tools": 110,
+        "seconds": 1581,
+        "stop": "per_task_budget_exhausted",
+        "job": "kzdsh-new--90adc3f_1"
+      },
+      "recuris": {
+        "pass": true,
+        "tests": [
+          7,
+          7
+        ],
+        "cost": 1.146418,
+        "requests": 103,
+        "tools": 55,
+        "seconds": 395,
+        "stop": "native_completed",
+        "job": "recuris--90adc3f_1"
+      },
+      "dsh": {
+        "pass": true,
+        "tests": [
+          7,
+          7
+        ],
+        "cost": 0.124117,
+        "requests": 28,
+        "tools": 29,
+        "seconds": 164,
+        "stop": "native_completed",
+        "job": "dsh--90adc3f_1"
+      }
+    }
+  },
+  {
+    "task": "90adc3f_2",
+    "instruction": "I made venmo payment requests to my roommates yesterday evening. Unfortunately, I have made a mistake in calculation. Each of them owes me $10 more than the requested amount. So delete those requests and make new ones with everything else the same, but with the corrected amount.",
+    "arms": {
+      "hld": {
+        "pass": false,
+        "tests": [
+          3,
+          7
+        ],
+        "cost": 7.66647,
+        "requests": 149,
+        "tools": 86,
+        "seconds": 1345,
+        "stop": "per_task_budget_exhausted",
+        "job": "hld--90adc3f_2"
+      },
+      "kzdsh-new": {
+        "pass": true,
+        "tests": [
+          7,
+          7
+        ],
+        "cost": 7.649324,
+        "requests": 150,
+        "tools": 84,
+        "seconds": 1403,
+        "stop": "per_task_budget_exhausted",
+        "job": "kzdsh-new--90adc3f_2"
+      },
+      "recuris": {
+        "pass": true,
+        "tests": [
+          7,
+          7
+        ],
+        "cost": 0.406385,
+        "requests": 50,
+        "tools": 29,
+        "seconds": 134,
+        "stop": "native_completed",
+        "job": "recuris--90adc3f_2"
+      },
+      "dsh": {
+        "pass": true,
+        "tests": [
+          7,
+          7
+        ],
+        "cost": 0.106111,
+        "requests": 22,
+        "tools": 30,
+        "seconds": 74,
+        "stop": "native_completed",
+        "job": "dsh--90adc3f_2"
+      }
+    }
+  },
+  {
+    "task": "90adc3f_3",
+    "instruction": "I made venmo payment requests to some of my friends yesterday evening. Unfortunately, I have made a mistake in calculation. Each of them owes me $15 less than the requested amount. So delete those requests and make new ones with everything else the same, but with the corrected amount.",
+    "arms": {
+      "hld": {
+        "pass": false,
+        "tests": [
+          6,
+          7
+        ],
+        "cost": 7.668947,
+        "requests": 207,
+        "tools": 133,
+        "seconds": 1516,
+        "stop": "per_task_budget_exhausted",
+        "job": "hld--90adc3f_3"
+      },
+      "kzdsh-new": {
+        "pass": false,
+        "tests": [
+          3,
+          7
+        ],
+        "cost": 7.633636,
+        "requests": 191,
+        "tools": 108,
+        "seconds": 1485,
+        "stop": "per_task_budget_exhausted",
+        "job": "kzdsh-new--90adc3f_3"
+      },
+      "recuris": {
+        "pass": true,
+        "tests": [
+          7,
+          7
+        ],
+        "cost": 0.195592,
+        "requests": 30,
+        "tools": 21,
+        "seconds": 94,
+        "stop": "native_completed",
+        "job": "recuris--90adc3f_3"
+      },
+      "dsh": {
+        "pass": false,
+        "tests": [
+          3,
+          7
+        ],
+        "cost": 0.073307,
+        "requests": 13,
+        "tools": 15,
+        "seconds": 49,
+        "stop": "native_completed",
+        "job": "dsh--90adc3f_3"
+      }
+    }
+  },
+  {
+    "task": "13547f5_1",
+    "instruction": "Send a phone voice message to my all roommates, \"I have taken out the trash.\".",
+    "arms": {
+      "hld": {
+        "pass": true,
+        "tests": [
+          6,
+          6
+        ],
+        "cost": 7.639852,
+        "requests": 208,
+        "tools": 121,
+        "seconds": 1565,
+        "stop": "per_task_budget_exhausted",
+        "job": "hld--13547f5_1"
+      },
+      "kzdsh-new": {
+        "pass": true,
+        "tests": [
+          6,
+          6
+        ],
+        "cost": 7.673533,
+        "requests": 178,
+        "tools": 114,
+        "seconds": 1440,
+        "stop": "per_task_budget_exhausted",
+        "job": "kzdsh-new--13547f5_1"
+      },
+      "recuris": {
+        "pass": true,
+        "tests": [
+          6,
+          6
+        ],
+        "cost": 0.419175,
+        "requests": 55,
+        "tools": 30,
+        "seconds": 145,
+        "stop": "native_completed",
+        "job": "recuris--13547f5_1"
+      },
+      "dsh": {
+        "pass": true,
+        "tests": [
+          6,
+          6
+        ],
+        "cost": 0.035015,
+        "requests": 12,
+        "tools": 15,
+        "seconds": 44,
+        "stop": "native_completed",
+        "job": "dsh--13547f5_1"
+      }
+    }
+  },
+  {
+    "task": "13547f5_2",
+    "instruction": "Send a phone text message to my partner, \"The dishwasher is clean and ready to be emptied.\".",
+    "arms": {
+      "hld": {
+        "pass": false,
+        "tests": [
+          3,
+          6
+        ],
+        "cost": 7.665311,
+        "requests": 172,
+        "tools": 113,
+        "seconds": 1393,
+        "stop": "per_task_budget_exhausted",
+        "job": "hld--13547f5_2"
+      },
+      "kzdsh-new": {
+        "pass": true,
+        "tests": [
+          6,
+          6
+        ],
+        "cost": 7.672289,
+        "requests": 157,
+        "tools": 87,
+        "seconds": 1354,
+        "stop": "per_task_budget_exhausted",
+        "job": "kzdsh-new--13547f5_2"
+      },
+      "recuris": {
+        "pass": true,
+        "tests": [
+          6,
+          6
+        ],
+        "cost": 0.265309,
+        "requests": 52,
+        "tools": 33,
+        "seconds": 134,
+        "stop": "native_completed",
+        "job": "recuris--13547f5_2"
+      },
+      "dsh": {
+        "pass": true,
+        "tests": [
+          6,
+          6
+        ],
+        "cost": 0.044965,
+        "requests": 15,
+        "tools": 17,
+        "seconds": 49,
+        "stop": "native_completed",
+        "job": "dsh--13547f5_2"
+      }
+    }
+  },
+  {
+    "task": "13547f5_3",
+    "instruction": "Send a phone voice message to my husband, \"Don't forget to water the plants today.\".",
+    "arms": {
+      "hld": {
+        "pass": false,
+        "tests": [
+          3,
+          6
+        ],
+        "cost": 7.657666,
+        "requests": 160,
+        "tools": 89,
+        "seconds": 1245,
+        "stop": "per_task_budget_exhausted",
+        "job": "hld--13547f5_3"
+      },
+      "kzdsh-new": {
+        "pass": true,
+        "tests": [
+          6,
+          6
+        ],
+        "cost": 3.237326,
+        "requests": 88,
+        "tools": 58,
+        "seconds": 551,
+        "stop": "native_completed",
+        "job": "kzdsh-new--13547f5_3"
+      },
+      "recuris": {
+        "pass": true,
+        "tests": [
+          6,
+          6
+        ],
+        "cost": 0.186538,
+        "requests": 42,
+        "tools": 25,
+        "seconds": 104,
+        "stop": "native_completed",
+        "job": "recuris--13547f5_3"
+      },
+      "dsh": {
+        "pass": true,
+        "tests": [
+          6,
+          6
+        ],
+        "cost": 0.038062,
+        "requests": 12,
+        "tools": 14,
+        "seconds": 39,
+        "stop": "native_completed",
+        "job": "dsh--13547f5_3"
+      }
+    }
+  }
+]

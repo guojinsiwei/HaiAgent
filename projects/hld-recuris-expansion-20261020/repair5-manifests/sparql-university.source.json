@@ -1,0 +1,8 @@
+{
+  "task": "sparql-university",
+  "image": "alexgshaw/sparql-university:20251031",
+  "digest": "sha256:92fa4304e51167f9fb4466144eba33ef9272a7df0ac1cab9fc3986bccd1ab708",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/sparql-university/manifests/20251031",
+  "header_verified": true,
+  "time": 1792510252.7863376
+}

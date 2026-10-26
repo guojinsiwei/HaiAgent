@@ -1,0 +1,12 @@
+New server: lizh639@172.16.156.27
+Existing local identity: C:/Users/54177/.ssh/cubestudio_notebook
+Public key: same path with .pub suffix. Never transfer the private key.
+Authentication status on 2026-10-23: public-key login rejected; one-time enrollment pending.
+Enrollment script: ../appworld-recuris-native100-20261023/connect-server.ps1
+The user enters the existing password only in the interactive local SSH terminal.
+The script appends the existing public key to this account's authorized_keys without replacing existing entries.
+After enrollment, use BatchMode=yes with the identity above and verify login before any transfer.
+Do not ask for the password again if key authentication succeeds.
+Migration is a copy of source snapshots; preserve old files, experiment processes, and results.
+No new paid experiments are authorized by this migration request.
+No GPT scheduled tasks.

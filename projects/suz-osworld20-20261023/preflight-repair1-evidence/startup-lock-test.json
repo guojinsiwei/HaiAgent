@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "concurrent_boot_peak": 1,
+  "waiting_seconds": 300,
+  "model_calls": 0,
+  "environment_sha256": "593b48abecbe1fde60f9fdb95887da632cbeb50d4fe446a89b9967e90762d0d0"
+}

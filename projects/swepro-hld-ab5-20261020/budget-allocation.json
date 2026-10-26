@@ -1,0 +1,10 @@
+{
+  "original_total_cap_microcny": 240000000,
+  "original_charged_including_reservations": 132061693,
+  "comparison_cap_microcny": 80000000,
+  "combined_max_microcny": 212061693,
+  "original_calls": 5107,
+  "original_calls_sha256": "4fce03444f728c413f00a7a775a645c52e937294c74d5d9568848a32d186e8ac",
+  "original_ledger_unchanged": true,
+  "rule": "80 CNY allocated from unspent original 240 CNY envelope; original campaign is finished, no original paid restart allowed during comparison. Unsettled reservations remain charged."
+}

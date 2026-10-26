@@ -1,0 +1,8 @@
+test_historical_results_and_profile_preserved (test_repair.RepairSafety.test_historical_results_and_profile_preserved) ... ok
+test_main_and_existing_repairs_reserve_all_pending_capacity (test_repair.RepairSafety.test_main_and_existing_repairs_reserve_all_pending_capacity) ... ok
+test_same_job_cumulative_budget_is_not_reset (test_repair.RepairSafety.test_same_job_cumulative_budget_is_not_reset) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.007s
+
+OK

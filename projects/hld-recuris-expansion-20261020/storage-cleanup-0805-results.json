@@ -1,0 +1,641 @@
+{
+  "completed": "2026-10-21T08:08:00.390580",
+  "results": [
+    {
+      "id": "sha256:c0c2a52021e2182481b153725a70e9f0403a96edba82a3423c7f416898b7ad51",
+      "tags": [
+        "swerebenchv2/keras-team-keras:20040-f6a81cc"
+      ],
+      "digests": [
+        "swerebenchv2/keras-team-keras@sha256:c0c2a52021e2182481b153725a70e9f0403a96edba82a3423c7f416898b7ad51"
+      ],
+      "created": "2026-07-30T20:24:28.584588653+08:00",
+      "size": 1742894805,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/keras-team-keras:20040-f6a81cc\nDeleted: sha256:c0c2a52021e2182481b153725a70e9f0403a96edba82a3423c7f416898b7ad51\n",
+      "stderr": "",
+      "free_before": 50896994304,
+      "free_after": 56172171264
+    },
+    {
+      "id": "sha256:726ea444ac672a5a5dc7af8fdffcbfbc8ec959d867ef8385f083cac2fa06af2d",
+      "tags": [
+        "swerebenchv2/weaviate-weaviate:4104-1fb11ff"
+      ],
+      "digests": [
+        "swerebenchv2/weaviate-weaviate@sha256:726ea444ac672a5a5dc7af8fdffcbfbc8ec959d867ef8385f083cac2fa06af2d"
+      ],
+      "created": "2026-07-27T19:55:13.576197992+08:00",
+      "size": 1737857465,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/weaviate-weaviate:4104-1fb11ff\nDeleted: sha256:726ea444ac672a5a5dc7af8fdffcbfbc8ec959d867ef8385f083cac2fa06af2d\n",
+      "stderr": "",
+      "free_before": 56172171264,
+      "free_after": 59879124992
+    },
+    {
+      "id": "sha256:ac956fec5666f9208a8b21999c182308b748e2325d55acc7b63c2f2fcfe8240e",
+      "tags": [
+        "swerebenchv2/keras-team-keras:19863-f6cf6a0"
+      ],
+      "digests": [
+        "swerebenchv2/keras-team-keras@sha256:ac956fec5666f9208a8b21999c182308b748e2325d55acc7b63c2f2fcfe8240e"
+      ],
+      "created": "2026-07-25T19:56:29.763215756+08:00",
+      "size": 1737851748,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/keras-team-keras:19863-f6cf6a0\nDeleted: sha256:ac956fec5666f9208a8b21999c182308b748e2325d55acc7b63c2f2fcfe8240e\n",
+      "stderr": "",
+      "free_before": 59879124992,
+      "free_after": 65114169344
+    },
+    {
+      "id": "sha256:957069ab6d1165060b2706868eaff6527fa219af0b5257cc7e8fa7079f5b451b",
+      "tags": [
+        "swerebenchv2/alteryx-evalml:1302-d254e31"
+      ],
+      "digests": [
+        "swerebenchv2/alteryx-evalml@sha256:957069ab6d1165060b2706868eaff6527fa219af0b5257cc7e8fa7079f5b451b"
+      ],
+      "created": "2026-07-30T18:46:19.011151235+08:00",
+      "size": 1724619170,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/alteryx-evalml:1302-d254e31\nDeleted: sha256:957069ab6d1165060b2706868eaff6527fa219af0b5257cc7e8fa7079f5b451b\n",
+      "stderr": "",
+      "free_before": 65114169344,
+      "free_after": 69139521536
+    },
+    {
+      "id": "sha256:a43742bde5f49434f59af6c9fb06b4e70828b05ea42a9386864b9ba9c5396a94",
+      "tags": [
+        "swerebenchv2/dapr-components-contrib:3478-2aea319"
+      ],
+      "digests": [
+        "swerebenchv2/dapr-components-contrib@sha256:a43742bde5f49434f59af6c9fb06b4e70828b05ea42a9386864b9ba9c5396a94"
+      ],
+      "created": "2026-07-25T23:54:46.300358301+08:00",
+      "size": 1721433952,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/dapr-components-contrib:3478-2aea319\nDeleted: sha256:a43742bde5f49434f59af6c9fb06b4e70828b05ea42a9386864b9ba9c5396a94\n",
+      "stderr": "",
+      "free_before": 69139521536,
+      "free_after": 75199344640
+    },
+    {
+      "id": "sha256:d7175ab6c3a228547ceb77c4956cec88994647396ddc10986be784d05a88368e",
+      "tags": [
+        "swerebenchv2/qiskit-qiskit:12548-54f13cc"
+      ],
+      "digests": [
+        "swerebenchv2/qiskit-qiskit@sha256:d7175ab6c3a228547ceb77c4956cec88994647396ddc10986be784d05a88368e"
+      ],
+      "created": "2026-07-24T15:43:27.481701662+08:00",
+      "size": 1721307291,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/qiskit-qiskit:12548-54f13cc\nDeleted: sha256:d7175ab6c3a228547ceb77c4956cec88994647396ddc10986be784d05a88368e\n",
+      "stderr": "",
+      "free_before": 75199344640,
+      "free_after": 82445619200
+    },
+    {
+      "id": "sha256:80492e49cd742b391674cd854be83caf914a5c81a1457596e9b9cb99e15e0010",
+      "tags": [
+        "swerebenchv2/mne-tools-mne-bids:1258-c87a823"
+      ],
+      "digests": [
+        "swerebenchv2/mne-tools-mne-bids@sha256:80492e49cd742b391674cd854be83caf914a5c81a1457596e9b9cb99e15e0010"
+      ],
+      "created": "2026-07-30T14:10:58.904846579+08:00",
+      "size": 1706825203,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/mne-tools-mne-bids:1258-c87a823\nDeleted: sha256:80492e49cd742b391674cd854be83caf914a5c81a1457596e9b9cb99e15e0010\n",
+      "stderr": "",
+      "free_before": 82445619200,
+      "free_after": 86363856896
+    },
+    {
+      "id": "sha256:367dd0f1ae0dd7dbe809ed17549437d9883826652b57249303d601311a355807",
+      "tags": [
+        "swerebenchv2/pandas-dev-pandas:61376-65bf9cd"
+      ],
+      "digests": [
+        "swerebenchv2/pandas-dev-pandas@sha256:367dd0f1ae0dd7dbe809ed17549437d9883826652b57249303d601311a355807"
+      ],
+      "created": "2026-07-31T16:48:53.373054288+08:00",
+      "size": 1705333691,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/pandas-dev-pandas:61376-65bf9cd\nDeleted: sha256:367dd0f1ae0dd7dbe809ed17549437d9883826652b57249303d601311a355807\n",
+      "stderr": "",
+      "free_before": 86363815936,
+      "free_after": 90692378624
+    },
+    {
+      "id": "sha256:fa57a409eb4574e987920d4fa57980933974117459b42b4c5b6e6f0d2f2fa605",
+      "tags": [
+        "swerebenchv2/pandas-dev-pandas:61600-c5457f6"
+      ],
+      "digests": [
+        "swerebenchv2/pandas-dev-pandas@sha256:fa57a409eb4574e987920d4fa57980933974117459b42b4c5b6e6f0d2f2fa605"
+      ],
+      "created": "2026-07-24T22:04:48.238615763+08:00",
+      "size": 1697309657,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/pandas-dev-pandas:61600-c5457f6\nDeleted: sha256:fa57a409eb4574e987920d4fa57980933974117459b42b4c5b6e6f0d2f2fa605\n",
+      "stderr": "",
+      "free_before": 90681892864,
+      "free_after": 94978596864
+    },
+    {
+      "id": "sha256:dd91e2f036d1db5ca128c5f6cd60beb88721dcf1e3b522be7f291a0e30bf7c40",
+      "tags": [
+        "swerebenchv2/pandas-dev-pandas:59284-71b395f"
+      ],
+      "digests": [
+        "swerebenchv2/pandas-dev-pandas@sha256:dd91e2f036d1db5ca128c5f6cd60beb88721dcf1e3b522be7f291a0e30bf7c40"
+      ],
+      "created": "2026-07-27T20:10:39.630668109+08:00",
+      "size": 1673072089,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/pandas-dev-pandas:59284-71b395f\nDeleted: sha256:dd91e2f036d1db5ca128c5f6cd60beb88721dcf1e3b522be7f291a0e30bf7c40\n",
+      "stderr": "",
+      "free_before": 94974402560,
+      "free_after": 99231449088
+    },
+    {
+      "id": "sha256:752041f2d2bf6a84058e3ca74e90feffca51cdbce4490071a1c694fd5f1eeed5",
+      "tags": [
+        "swerebenchv2/pandas-dev-pandas:59999-02267e5"
+      ],
+      "digests": [
+        "swerebenchv2/pandas-dev-pandas@sha256:752041f2d2bf6a84058e3ca74e90feffca51cdbce4490071a1c694fd5f1eeed5"
+      ],
+      "created": "2026-07-30T13:08:49.301605267+08:00",
+      "size": 1672608341,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/pandas-dev-pandas:59999-02267e5\nDeleted: sha256:752041f2d2bf6a84058e3ca74e90feffca51cdbce4490071a1c694fd5f1eeed5\n",
+      "stderr": "",
+      "free_before": 99227254784,
+      "free_after": 103484297216
+    },
+    {
+      "id": "sha256:26d20cf2192ec911f9a22b75755fc8d0a6d411b2b79663f83071b33e68dda99a",
+      "tags": [
+        "swerebenchv2/pandas-dev-pandas:59966-4ad6c7a"
+      ],
+      "digests": [
+        "swerebenchv2/pandas-dev-pandas@sha256:26d20cf2192ec911f9a22b75755fc8d0a6d411b2b79663f83071b33e68dda99a"
+      ],
+      "created": "2026-07-24T18:44:34.148523563+08:00",
+      "size": 1672254791,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/pandas-dev-pandas:59966-4ad6c7a\nDeleted: sha256:26d20cf2192ec911f9a22b75755fc8d0a6d411b2b79663f83071b33e68dda99a\n",
+      "stderr": "",
+      "free_before": 103477997568,
+      "free_after": 107735457792
+    },
+    {
+      "id": "sha256:f0d6779fab43103248bd2c7f33646f68897c4e4915b62f1b92ab84429181a55f",
+      "tags": [
+        "swerebenchv2/pandas-dev-pandas:59909-f9d2e50"
+      ],
+      "digests": [
+        "swerebenchv2/pandas-dev-pandas@sha256:f0d6779fab43103248bd2c7f33646f68897c4e4915b62f1b92ab84429181a55f"
+      ],
+      "created": "2026-07-24T15:19:35.240423963+08:00",
+      "size": 1671806953,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/pandas-dev-pandas:59909-f9d2e50\nDeleted: sha256:f0d6779fab43103248bd2c7f33646f68897c4e4915b62f1b92ab84429181a55f\n",
+      "stderr": "",
+      "free_before": 107731263488,
+      "free_after": 112043307008
+    },
+    {
+      "id": "sha256:606c2a977c14838ef0bcf5400b808b0c11e0a098fc9e3543ae52e1622ab71e45",
+      "tags": [
+        "swerebenchv2/pandas-dev-pandas:56194-762b61d"
+      ],
+      "digests": [
+        "swerebenchv2/pandas-dev-pandas@sha256:606c2a977c14838ef0bcf5400b808b0c11e0a098fc9e3543ae52e1622ab71e45"
+      ],
+      "created": "2026-07-24T19:41:45.12810883+08:00",
+      "size": 1669624349,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/pandas-dev-pandas:56194-762b61d\nDeleted: sha256:606c2a977c14838ef0bcf5400b808b0c11e0a098fc9e3543ae52e1622ab71e45\n",
+      "stderr": "",
+      "free_before": 112040472576,
+      "free_after": 116287729664
+    },
+    {
+      "id": "sha256:a4659b80813d66f91299d2cfb884538a61b57b0d613fc5e7d1cc37c76bcc0d32",
+      "tags": [
+        "swerebenchv2/gleam-lang-gleam:4155-48e210e"
+      ],
+      "digests": [
+        "swerebenchv2/gleam-lang-gleam@sha256:a4659b80813d66f91299d2cfb884538a61b57b0d613fc5e7d1cc37c76bcc0d32"
+      ],
+      "created": "2026-07-24T21:49:32.392625918+08:00",
+      "size": 1644754693,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/gleam-lang-gleam:4155-48e210e\nDeleted: sha256:a4659b80813d66f91299d2cfb884538a61b57b0d613fc5e7d1cc37c76bcc0d32\n",
+      "stderr": "",
+      "free_before": 115947601920,
+      "free_after": 119814963200
+    },
+    {
+      "id": "sha256:a4cc032752d5cdb26d2c503da63beb3610804d5600fd8fcb073d3a37cd46dfad",
+      "tags": [
+        "swerebenchv2/gleam-lang-gleam:4184-00b0755"
+      ],
+      "digests": [
+        "swerebenchv2/gleam-lang-gleam@sha256:a4cc032752d5cdb26d2c503da63beb3610804d5600fd8fcb073d3a37cd46dfad"
+      ],
+      "created": "2026-07-27T17:29:34.01147761+08:00",
+      "size": 1644716697,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/gleam-lang-gleam:4184-00b0755\nDeleted: sha256:a4cc032752d5cdb26d2c503da63beb3610804d5600fd8fcb073d3a37cd46dfad\n",
+      "stderr": "",
+      "free_before": 119520542720,
+      "free_after": 123253972992
+    },
+    {
+      "id": "sha256:847505835cf091f69c812b289806991e6583718edde8b944c5935eb1e61e1b2d",
+      "tags": [
+        "swerebenchv2/rust-lang-rustfmt:5879-a57d57b"
+      ],
+      "digests": [
+        "swerebenchv2/rust-lang-rustfmt@sha256:847505835cf091f69c812b289806991e6583718edde8b944c5935eb1e61e1b2d"
+      ],
+      "created": "2026-07-24T22:25:44.462837508+08:00",
+      "size": 1638373068,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/rust-lang-rustfmt:5879-a57d57b\nDeleted: sha256:847505835cf091f69c812b289806991e6583718edde8b944c5935eb1e61e1b2d\n",
+      "stderr": "",
+      "free_before": 123052154880,
+      "free_after": 128081371136
+    },
+    {
+      "id": "sha256:cd12e9679148cb12e57df96d94cb80bb6b365cf4c0239027832bfba680a50dfe",
+      "tags": [
+        "swerebenchv2/rust-lang-rustfmt:5817-d9a0992"
+      ],
+      "digests": [
+        "swerebenchv2/rust-lang-rustfmt@sha256:cd12e9679148cb12e57df96d94cb80bb6b365cf4c0239027832bfba680a50dfe"
+      ],
+      "created": "2026-07-23T15:50:04.545947481+08:00",
+      "size": 1637175511,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/rust-lang-rustfmt:5817-d9a0992\nDeleted: sha256:cd12e9679148cb12e57df96d94cb80bb6b365cf4c0239027832bfba680a50dfe\n",
+      "stderr": "",
+      "free_before": 127918542848,
+      "free_after": 133093023744
+    },
+    {
+      "id": "sha256:dec9f487f424309873cb5bb9a28d2691d91907ede969a011aac8f29981b42cb4",
+      "tags": [
+        "swerebenchv2/gleam-lang-gleam:3561-74a8ce8"
+      ],
+      "digests": [
+        "swerebenchv2/gleam-lang-gleam@sha256:dec9f487f424309873cb5bb9a28d2691d91907ede969a011aac8f29981b42cb4"
+      ],
+      "created": "2026-07-30T20:16:37.821236474+08:00",
+      "size": 1585755918,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/gleam-lang-gleam:3561-74a8ce8\nDeleted: sha256:dec9f487f424309873cb5bb9a28d2691d91907ede969a011aac8f29981b42cb4\n",
+      "stderr": "",
+      "free_before": 132442624000,
+      "free_after": 135889817600
+    },
+    {
+      "id": "sha256:c1b05023b677a76520f4384e65493ef4fc219d9d80cb0c1a4bc026fd6f7a620c",
+      "tags": [
+        "swerebenchv2/gleam-lang-gleam:3458-65c2efb"
+      ],
+      "digests": [
+        "swerebenchv2/gleam-lang-gleam@sha256:c1b05023b677a76520f4384e65493ef4fc219d9d80cb0c1a4bc026fd6f7a620c"
+      ],
+      "created": "2026-07-30T21:23:30.625370292+08:00",
+      "size": 1585535419,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/gleam-lang-gleam:3458-65c2efb\nDeleted: sha256:c1b05023b677a76520f4384e65493ef4fc219d9d80cb0c1a4bc026fd6f7a620c\n",
+      "stderr": "",
+      "free_before": 135669063680,
+      "free_after": 139249496064
+    },
+    {
+      "id": "sha256:8da8575068d6912410f841c5c42b9e9a6f2124a0d46f61405b63783c4a4d9b0b",
+      "tags": [
+        "swerebenchv2/cuthbertlab-music21:1775-36b00ae"
+      ],
+      "digests": [
+        "swerebenchv2/cuthbertlab-music21@sha256:8da8575068d6912410f841c5c42b9e9a6f2124a0d46f61405b63783c4a4d9b0b"
+      ],
+      "created": "2026-07-27T14:01:29.950267344+08:00",
+      "size": 1558821154,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/cuthbertlab-music21:1775-36b00ae\nDeleted: sha256:8da8575068d6912410f841c5c42b9e9a6f2124a0d46f61405b63783c4a4d9b0b\n",
+      "stderr": "",
+      "free_before": 138957418496,
+      "free_after": 142322032640
+    },
+    {
+      "id": "sha256:f0b4496e749f96e5104a538220ed40f2f9a60bd395e429949abb6fb5544cd25d",
+      "tags": [
+        "swerebenchv2/googlecloudplatform-gcp-service-broker:527-cb6eb96"
+      ],
+      "digests": [
+        "swerebenchv2/googlecloudplatform-gcp-service-broker@sha256:f0b4496e749f96e5104a538220ed40f2f9a60bd395e429949abb6fb5544cd25d"
+      ],
+      "created": "2026-07-30T21:07:14.979146742+08:00",
+      "size": 1545230608,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/googlecloudplatform-gcp-service-broker:527-cb6eb96\nDeleted: sha256:f0b4496e749f96e5104a538220ed40f2f9a60bd395e429949abb6fb5544cd25d\n",
+      "stderr": "",
+      "free_before": 141952499712,
+      "free_after": 145002602496
+    },
+    {
+      "id": "sha256:ada158592479687e0a04751f486bf84ee9efbcebdc7a01c7d0172135b0a0f426",
+      "tags": [
+        "swerebenchv2/qiskit-qiskit-terra:8288-aa6d359"
+      ],
+      "digests": [
+        "swerebenchv2/qiskit-qiskit-terra@sha256:ada158592479687e0a04751f486bf84ee9efbcebdc7a01c7d0172135b0a0f426"
+      ],
+      "created": "2026-07-24T23:59:15.443450792+08:00",
+      "size": 1543332942,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/qiskit-qiskit-terra:8288-aa6d359\nDeleted: sha256:ada158592479687e0a04751f486bf84ee9efbcebdc7a01c7d0172135b0a0f426\n",
+      "stderr": "",
+      "free_before": 144714407936,
+      "free_after": 149591072768
+    },
+    {
+      "id": "sha256:d3a5283e922598754c2b8c2706c6ab5e2f5dea26587b7794cadad6b04b01e691",
+      "tags": [
+        "swerebenchv2/qiskit-qiskit-terra:7789-6a22ed8"
+      ],
+      "digests": [
+        "swerebenchv2/qiskit-qiskit-terra@sha256:d3a5283e922598754c2b8c2706c6ab5e2f5dea26587b7794cadad6b04b01e691"
+      ],
+      "created": "2026-07-29T22:05:15.392131147+08:00",
+      "size": 1541589044,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/qiskit-qiskit-terra:7789-6a22ed8\nDeleted: sha256:d3a5283e922598754c2b8c2706c6ab5e2f5dea26587b7794cadad6b04b01e691\n",
+      "stderr": "",
+      "free_before": 149449916416,
+      "free_after": 154576297984
+    },
+    {
+      "id": "sha256:c7d6c1203de7ceeed0cac0830ed98d0ccd49b3f8fee12b0596892ff9e1183a14",
+      "tags": [
+        "swerebenchv2/qiskit-qiskit-terra:8924-3a073c7"
+      ],
+      "digests": [
+        "swerebenchv2/qiskit-qiskit-terra@sha256:c7d6c1203de7ceeed0cac0830ed98d0ccd49b3f8fee12b0596892ff9e1183a14"
+      ],
+      "created": "2026-07-31T13:36:31.815530392+08:00",
+      "size": 1539614507,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/qiskit-qiskit-terra:8924-3a073c7\nDeleted: sha256:c7d6c1203de7ceeed0cac0830ed98d0ccd49b3f8fee12b0596892ff9e1183a14\n",
+      "stderr": "",
+      "free_before": 154379694080,
+      "free_after": 159443927040
+    },
+    {
+      "id": "sha256:593887a928436efdb0ec1d265980c79b52b1bb016032ec047e6b6b94e86469cf",
+      "tags": [
+        "swerebenchv2/joernio-joern:1767-b2f29ef"
+      ],
+      "digests": [
+        "swerebenchv2/joernio-joern@sha256:593887a928436efdb0ec1d265980c79b52b1bb016032ec047e6b6b94e86469cf"
+      ],
+      "created": "2026-04-21T13:07:11.984124199Z",
+      "size": 1505143552,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/joernio-joern:1767-b2f29ef\nDeleted: sha256:593887a928436efdb0ec1d265980c79b52b1bb016032ec047e6b6b94e86469cf\n",
+      "stderr": "",
+      "free_before": 159373746176,
+      "free_after": 164114223104
+    },
+    {
+      "id": "sha256:d099bfa5cdc352aa820aca6fd7056b26519e01a098bb08cc862db0194763fb57",
+      "tags": [
+        "swerebenchv2/cuthbertlab-music21:1725-2c346ec"
+      ],
+      "digests": [
+        "swerebenchv2/cuthbertlab-music21@sha256:d099bfa5cdc352aa820aca6fd7056b26519e01a098bb08cc862db0194763fb57"
+      ],
+      "created": "2026-07-24T23:01:14.485677919+08:00",
+      "size": 1478208314,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/cuthbertlab-music21:1725-2c346ec\nDeleted: sha256:d099bfa5cdc352aa820aca6fd7056b26519e01a098bb08cc862db0194763fb57\n",
+      "stderr": "",
+      "free_before": 164102127616,
+      "free_after": 167729790976
+    },
+    {
+      "id": "sha256:1a9164ec9974cc288aff5eb8779864fb4026ef49e9be65270c55d806299937dc",
+      "tags": [
+        "swerebenchv2/knope-dev-knope:994-00c62a5"
+      ],
+      "digests": [
+        "swerebenchv2/knope-dev-knope@sha256:1a9164ec9974cc288aff5eb8779864fb4026ef49e9be65270c55d806299937dc"
+      ],
+      "created": "2026-07-25T22:03:02.433947762+08:00",
+      "size": 1475129837,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/knope-dev-knope:994-00c62a5\nDeleted: sha256:1a9164ec9974cc288aff5eb8779864fb4026ef49e9be65270c55d806299937dc\n",
+      "stderr": "",
+      "free_before": 167707521024,
+      "free_after": 172683960320
+    },
+    {
+      "id": "sha256:0f6329a30b8c9fdfdae09dbdf68019f41ca934f07d62a90d34c2840fa3948a7f",
+      "tags": [
+        "swerebenchv2/reubeno-brush:355-1a780de"
+      ],
+      "digests": [
+        "swerebenchv2/reubeno-brush@sha256:0f6329a30b8c9fdfdae09dbdf68019f41ca934f07d62a90d34c2840fa3948a7f"
+      ],
+      "created": "2026-07-31T13:07:15.462424149+08:00",
+      "size": 1346772734,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/reubeno-brush:355-1a780de\nDeleted: sha256:0f6329a30b8c9fdfdae09dbdf68019f41ca934f07d62a90d34c2840fa3948a7f\n",
+      "stderr": "",
+      "free_before": 172673855488,
+      "free_after": 176862400512
+    },
+    {
+      "id": "sha256:d57745b7730f5a0ac45be23ccb6e514767c7e13ab9eef64ec42d2191cf0539da",
+      "tags": [
+        "swerebenchv2/skypilot-org-skypilot:5985-60a6c93"
+      ],
+      "digests": [
+        "swerebenchv2/skypilot-org-skypilot@sha256:d57745b7730f5a0ac45be23ccb6e514767c7e13ab9eef64ec42d2191cf0539da"
+      ],
+      "created": "2026-07-29T20:08:30.910830303+08:00",
+      "size": 1274890215,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/skypilot-org-skypilot:5985-60a6c93\nDeleted: sha256:d57745b7730f5a0ac45be23ccb6e514767c7e13ab9eef64ec42d2191cf0539da\n",
+      "stderr": "",
+      "free_before": 176816091136,
+      "free_after": 181135265792
+    },
+    {
+      "id": "sha256:2877b58b896d2c77afea74a459206ad1b14025012737a22cb71dc5adef0eb932",
+      "tags": [
+        "swerebenchv2/reubeno-brush:384-a6d1250"
+      ],
+      "digests": [
+        "swerebenchv2/reubeno-brush@sha256:2877b58b896d2c77afea74a459206ad1b14025012737a22cb71dc5adef0eb932"
+      ],
+      "created": "2026-07-30T19:08:48.647011194+08:00",
+      "size": 1257603550,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/reubeno-brush:384-a6d1250\nDeleted: sha256:2877b58b896d2c77afea74a459206ad1b14025012737a22cb71dc5adef0eb932\n",
+      "stderr": "",
+      "free_before": 182371028992,
+      "free_after": 186752278528
+    },
+    {
+      "id": "sha256:f7ef35039b62843db07b25803605a9a6ea2c2e87b6a556f594ee429f4cd7fff3",
+      "tags": [
+        "swerebenchv2/pybamm-team-pybamm:4001-8cd1cec"
+      ],
+      "digests": [
+        "swerebenchv2/pybamm-team-pybamm@sha256:f7ef35039b62843db07b25803605a9a6ea2c2e87b6a556f594ee429f4cd7fff3"
+      ],
+      "created": "2026-07-31T14:17:12.932495637+08:00",
+      "size": 1233123403,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/pybamm-team-pybamm:4001-8cd1cec\nDeleted: sha256:f7ef35039b62843db07b25803605a9a6ea2c2e87b6a556f594ee429f4cd7fff3\n",
+      "stderr": "",
+      "free_before": 186736058368,
+      "free_after": 189733601280
+    },
+    {
+      "id": "sha256:7ddef575eb9854334e9ddd99a7f307674f45accac9f4209777549fdc50cfa4a2",
+      "tags": [
+        "swerebenchv2/cuthbertlab-music21:578-93bea7c"
+      ],
+      "digests": [
+        "swerebenchv2/cuthbertlab-music21@sha256:7ddef575eb9854334e9ddd99a7f307674f45accac9f4209777549fdc50cfa4a2"
+      ],
+      "created": "2026-07-25T21:16:04.121651928+08:00",
+      "size": 1215495860,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/cuthbertlab-music21:578-93bea7c\nDeleted: sha256:7ddef575eb9854334e9ddd99a7f307674f45accac9f4209777549fdc50cfa4a2\n",
+      "stderr": "",
+      "free_before": 189716680704,
+      "free_after": 192447811584
+    },
+    {
+      "id": "sha256:4bc89a3cf1b8cee703355a3d95a5875455545209109875821faf67fa850c15d0",
+      "tags": [
+        "swerebenchv2/sap-luigi:3742-d05e842"
+      ],
+      "digests": [
+        "swerebenchv2/sap-luigi@sha256:4bc89a3cf1b8cee703355a3d95a5875455545209109875821faf67fa850c15d0"
+      ],
+      "created": "2026-07-31T17:42:52.45709385+08:00",
+      "size": 1211388962,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/sap-luigi:3742-d05e842\nDeleted: sha256:4bc89a3cf1b8cee703355a3d95a5875455545209109875821faf67fa850c15d0\n",
+      "stderr": "",
+      "free_before": 192435785728,
+      "free_after": 196550680576
+    },
+    {
+      "id": "sha256:116c09d370c69192bded0fae167d029cee4b0aa0f67e05756e0aa37b9c4cddae",
+      "tags": [
+        "swerebenchv2/godot-rust-godot-rust:961-3731a64"
+      ],
+      "digests": [
+        "swerebenchv2/godot-rust-godot-rust@sha256:116c09d370c69192bded0fae167d029cee4b0aa0f67e05756e0aa37b9c4cddae"
+      ],
+      "created": "2026-07-25T20:27:48.589352121+08:00",
+      "size": 1209358995,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/godot-rust-godot-rust:961-3731a64\nDeleted: sha256:116c09d370c69192bded0fae167d029cee4b0aa0f67e05756e0aa37b9c4cddae\n",
+      "stderr": "",
+      "free_before": 196385247232,
+      "free_after": 199711436800
+    },
+    {
+      "id": "sha256:d838d431e5368f26143c74068bfdac18b78cbbfd68ebc2d7b88ba1ec260e49c8",
+      "tags": [
+        "swerebenchv2/google-autocxx:181-1981456"
+      ],
+      "digests": [
+        "swerebenchv2/google-autocxx@sha256:d838d431e5368f26143c74068bfdac18b78cbbfd68ebc2d7b88ba1ec260e49c8"
+      ],
+      "created": "2026-07-29T17:46:01.871962283+08:00",
+      "size": 1206349625,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/google-autocxx:181-1981456\nDeleted: sha256:d838d431e5368f26143c74068bfdac18b78cbbfd68ebc2d7b88ba1ec260e49c8\n",
+      "stderr": "",
+      "free_before": 199592460288,
+      "free_after": 202944684032
+    },
+    {
+      "id": "sha256:223b5da3a9cff386b03bbcf2cd12cfa89b7b219423363b434691a3df6cf44a7a",
+      "tags": [
+        "swerebenchv2/oasisprotocol-oasis-sdk:101-6e7fed2"
+      ],
+      "digests": [
+        "swerebenchv2/oasisprotocol-oasis-sdk@sha256:223b5da3a9cff386b03bbcf2cd12cfa89b7b219423363b434691a3df6cf44a7a"
+      ],
+      "created": "2026-07-30T16:41:52.682453135+08:00",
+      "size": 1188945672,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/oasisprotocol-oasis-sdk:101-6e7fed2\nDeleted: sha256:223b5da3a9cff386b03bbcf2cd12cfa89b7b219423363b434691a3df6cf44a7a\n",
+      "stderr": "",
+      "free_before": 202936057856,
+      "free_after": 205860016128
+    }
+  ],
+  "removed": 37,
+  "free_before": 50896994304,
+  "free_after": 205563138048,
+  "protected_results_verified": 407,
+  "historical_snapshots_preserved": 147,
+  "no_container_deletion": true,
+  "no_forced_removal": true
+}

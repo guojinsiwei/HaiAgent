@@ -1,0 +1,425 @@
+{
+  "benchmark": "Terminal-Bench 2.0",
+  "commit": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+  "arms": [
+    "HLD v9 efficiency candidate"
+  ],
+  "selection": [
+    "crack-7z-hash",
+    "path-tracing-reverse",
+    "gcode-to-text",
+    "chess-best-move",
+    "torch-pipeline-parallelism",
+    "hf-model-inference",
+    "dna-assembly",
+    "polyglot-c-py"
+  ],
+  "model": "deepseek-flash",
+  "temperature": 0,
+  "thinking": false,
+  "budget": {
+    "server_solver_seconds": 7200,
+    "per_run_cny": 8,
+    "campaign_cny": 64,
+    "shared_requests": 400,
+    "shared_tools": 600
+  },
+  "hld_source": "/mnt/sdb/home/lizh639/swepro-hld-ab5-20261020/bundle/hld-new",
+  "recuris_source": "/mnt/sdb/home/lizh639/swepro-hld-ab5-20261020/bundle/recuris-dsh",
+  "cross_task_memory": false,
+  "historical_exposure": "Selected prior scored failures. Diagnostic retest; previous solutions and private graders excluded from solver context.",
+  "total_trials": 8,
+  "max_trials_with_retry": 8,
+  "paid_attempts_per_arm_task": 1,
+  "no_automatic_paid_retries": true,
+  "task_preflight": "One unpaid original-verifier preflight for each run",
+  "retry_policy": "No automatic paid retries",
+  "concurrency": {
+    "total": 4,
+    "per_arm": 4
+  },
+  "experiment": {
+    "task_count": 8,
+    "trial_count": 8,
+    "concurrency": 4,
+    "solver_seconds": 7200,
+    "paid_attempts_per_task": 1,
+    "per_run_cny": 8,
+    "campaign_cny": 64
+  },
+  "paired_tasks": 8,
+  "historical_baseline_root": "/mnt/sdb/home/lizh639/tb2-hld-mechanism-ab10-20261022",
+  "historical_baseline_rows": [
+    {
+      "task": "crack-7z-hash",
+      "job": "tb2hm10-01-hld-new-crack-7z-hash",
+      "result": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-hld-mechanism-ab10-20261022/jobs/tb2hm10-01-hld-new-crack-7z-hash/crack-7z-hash__J4rtQSk",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "solver_exit": 1,
+        "timed_out": false,
+        "exit_receipt_status": "present",
+        "requests": 192,
+        "actual_http_attempts": 191,
+        "tools": 145,
+        "usage": {
+          "requests": 192,
+          "tools": 145,
+          "inputTokens": 3045105,
+          "outputTokens": 142129,
+          "cacheReadTokens": 9774848,
+          "cacheWriteTokens": 0,
+          "unknownUsageRequests": 1,
+          "stopped": null,
+          "budgetMode": "bounded_peak_price_estimate",
+          "updated_utc": "2026-10-22T03:59:15.318Z"
+        },
+        "usage_status": "present",
+        "http_status_counts": {
+          "200": 191
+        },
+        "malformed_route_records": 0,
+        "auth_failure": false,
+        "budget_exhausted": true,
+        "provider": {
+          "kind": "available"
+        },
+        "budget_stop": {
+          "reason": "per_task_budget_exhausted",
+          "source": "hld_structured_turn_end"
+        },
+        "completion": "budget_exhausted",
+        "harbor_exit": 0
+      }
+    },
+    {
+      "task": "path-tracing-reverse",
+      "job": "tb2hm10-02-hld-new-path-tracing-reverse",
+      "result": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-hld-mechanism-ab10-20261022/jobs/tb2hm10-02-hld-new-path-tracing-reverse/path-tracing-reverse__b9kNHR2",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "solver_exit": 1,
+        "timed_out": false,
+        "exit_receipt_status": "present",
+        "requests": 171,
+        "actual_http_attempts": 170,
+        "tools": 130,
+        "usage": {
+          "requests": 171,
+          "tools": 130,
+          "inputTokens": 3157391,
+          "outputTokens": 120488,
+          "cacheReadTokens": 8518400,
+          "cacheWriteTokens": 0,
+          "unknownUsageRequests": 1,
+          "stopped": null,
+          "budgetMode": "bounded_peak_price_estimate",
+          "updated_utc": "2026-10-22T03:56:20.830Z"
+        },
+        "usage_status": "present",
+        "http_status_counts": {
+          "200": 170
+        },
+        "malformed_route_records": 0,
+        "auth_failure": false,
+        "budget_exhausted": true,
+        "provider": {
+          "kind": "available"
+        },
+        "budget_stop": {
+          "reason": "per_task_budget_exhausted",
+          "source": "hld_structured_turn_end"
+        },
+        "completion": "budget_exhausted",
+        "harbor_exit": 0
+      }
+    },
+    {
+      "task": "gcode-to-text",
+      "job": "tb2hm10-03-hld-new-gcode-to-text",
+      "result": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-hld-mechanism-ab10-20261022/jobs/tb2hm10-03-hld-new-gcode-to-text/gcode-to-text__rntEkjF",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "solver_exit": 1,
+        "timed_out": false,
+        "exit_receipt_status": "present",
+        "requests": 207,
+        "actual_http_attempts": 206,
+        "tools": 157,
+        "usage": {
+          "requests": 207,
+          "tools": 157,
+          "inputTokens": 2995238,
+          "outputTokens": 156848,
+          "cacheReadTokens": 10132480,
+          "cacheWriteTokens": 0,
+          "unknownUsageRequests": 1,
+          "stopped": null,
+          "budgetMode": "bounded_peak_price_estimate",
+          "updated_utc": "2026-10-22T04:07:08.110Z"
+        },
+        "usage_status": "present",
+        "http_status_counts": {
+          "200": 206
+        },
+        "malformed_route_records": 0,
+        "auth_failure": false,
+        "budget_exhausted": true,
+        "provider": {
+          "kind": "available"
+        },
+        "budget_stop": {
+          "reason": "per_task_budget_exhausted",
+          "source": "hld_structured_turn_end"
+        },
+        "completion": "budget_exhausted",
+        "harbor_exit": 0
+      }
+    },
+    {
+      "task": "chess-best-move",
+      "job": "tb2hm10-04-hld-new-chess-best-move",
+      "result": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-hld-mechanism-ab10-20261022/jobs/tb2hm10-04-hld-new-chess-best-move/chess-best-move__DwgFYm4",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "solver_exit": 0,
+        "timed_out": false,
+        "exit_receipt_status": "present",
+        "requests": 96,
+        "actual_http_attempts": 96,
+        "tools": 72,
+        "usage": {
+          "requests": 96,
+          "tools": 72,
+          "inputTokens": 1431987,
+          "outputTokens": 79123,
+          "cacheReadTokens": 4387072,
+          "cacheWriteTokens": 0,
+          "unknownUsageRequests": 0,
+          "stopped": null,
+          "budgetMode": "bounded_peak_price_estimate",
+          "updated_utc": "2026-10-22T03:53:27.253Z"
+        },
+        "usage_status": "present",
+        "http_status_counts": {
+          "200": 96
+        },
+        "malformed_route_records": 0,
+        "auth_failure": false,
+        "budget_exhausted": false,
+        "provider": {
+          "kind": "available"
+        },
+        "budget_stop": {},
+        "harbor_exit": 0
+      }
+    },
+    {
+      "task": "torch-pipeline-parallelism",
+      "job": "tb2hm10-05-hld-new-torch-pipeline-parallelism",
+      "result": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-hld-mechanism-ab10-20261022/jobs/tb2hm10-05-hld-new-torch-pipeline-parallelism/torch-pipeline-parallelism__evFfyxW",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "solver_exit": 0,
+        "timed_out": false,
+        "exit_receipt_status": "present",
+        "requests": 231,
+        "actual_http_attempts": 231,
+        "tools": 184,
+        "usage": {
+          "requests": 231,
+          "tools": 184,
+          "inputTokens": 2856761,
+          "outputTokens": 178323,
+          "cacheReadTokens": 11316608,
+          "cacheWriteTokens": 0,
+          "unknownUsageRequests": 1,
+          "stopped": null,
+          "budgetMode": "bounded_peak_price_estimate",
+          "updated_utc": "2026-10-22T05:02:45.840Z"
+        },
+        "usage_status": "present",
+        "http_status_counts": {
+          "200": 230
+        },
+        "malformed_route_records": 0,
+        "auth_failure": false,
+        "budget_exhausted": true,
+        "provider": {
+          "kind": "budget",
+          "reason": "per_task_budget_exhausted",
+          "updated_utc": "2026-10-22T05:02:45.760Z"
+        },
+        "budget_stop": {
+          "reason": "per_task_budget_exhausted"
+        },
+        "completion": "budget_exhausted",
+        "harbor_exit": 0
+      }
+    },
+    {
+      "task": "hf-model-inference",
+      "job": "tb2hm10-07-hld-new-hf-model-inference",
+      "result": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-hld-mechanism-ab10-20261022/jobs/tb2hm10-07-hld-new-hf-model-inference/hf-model-inference__N4whmse",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "solver_exit": 0,
+        "timed_out": false,
+        "exit_receipt_status": "present",
+        "requests": 93,
+        "actual_http_attempts": 93,
+        "tools": 74,
+        "usage": {
+          "requests": 93,
+          "tools": 74,
+          "inputTokens": 917060,
+          "outputTokens": 65175,
+          "cacheReadTokens": 3643392,
+          "cacheWriteTokens": 0,
+          "unknownUsageRequests": 0,
+          "stopped": null,
+          "budgetMode": "bounded_peak_price_estimate",
+          "updated_utc": "2026-10-22T04:27:08.190Z"
+        },
+        "usage_status": "present",
+        "http_status_counts": {
+          "200": 93
+        },
+        "malformed_route_records": 0,
+        "auth_failure": false,
+        "budget_exhausted": false,
+        "provider": {
+          "kind": "available"
+        },
+        "budget_stop": {},
+        "harbor_exit": 0
+      }
+    },
+    {
+      "task": "dna-assembly",
+      "job": "tb2hm10-08-hld-new-dna-assembly",
+      "result": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-hld-mechanism-ab10-20261022/jobs/tb2hm10-08-hld-new-dna-assembly/dna-assembly__9XbVq7P",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "solver_exit": 1,
+        "timed_out": false,
+        "exit_receipt_status": "present",
+        "requests": 232,
+        "actual_http_attempts": 231,
+        "tools": 185,
+        "usage": {
+          "requests": 232,
+          "tools": 185,
+          "inputTokens": 2894350,
+          "outputTokens": 169409,
+          "cacheReadTokens": 11973376,
+          "cacheWriteTokens": 0,
+          "unknownUsageRequests": 1,
+          "stopped": null,
+          "budgetMode": "bounded_peak_price_estimate",
+          "updated_utc": "2026-10-22T04:37:21.809Z"
+        },
+        "usage_status": "present",
+        "http_status_counts": {
+          "200": 231
+        },
+        "malformed_route_records": 0,
+        "auth_failure": false,
+        "budget_exhausted": true,
+        "provider": {
+          "kind": "available"
+        },
+        "budget_stop": {
+          "reason": "per_task_budget_exhausted",
+          "source": "hld_structured_turn_end"
+        },
+        "completion": "budget_exhausted",
+        "harbor_exit": 0
+      }
+    },
+    {
+      "task": "polyglot-c-py",
+      "job": "tb2hm10-10-hld-new-polyglot-c-py",
+      "result": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-hld-mechanism-ab10-20261022/jobs/tb2hm10-10-hld-new-polyglot-c-py/polyglot-c-py__at4yZEF",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "solver_exit": 0,
+        "timed_out": false,
+        "exit_receipt_status": "present",
+        "requests": 192,
+        "actual_http_attempts": 192,
+        "tools": 140,
+        "usage": {
+          "requests": 192,
+          "tools": 140,
+          "inputTokens": 3028194,
+          "outputTokens": 140479,
+          "cacheReadTokens": 9533696,
+          "cacheWriteTokens": 0,
+          "unknownUsageRequests": 1,
+          "stopped": null,
+          "budgetMode": "bounded_peak_price_estimate",
+          "updated_utc": "2026-10-22T04:53:33.453Z"
+        },
+        "usage_status": "present",
+        "http_status_counts": {
+          "200": 191
+        },
+        "malformed_route_records": 0,
+        "auth_failure": false,
+        "budget_exhausted": true,
+        "provider": {
+          "kind": "budget",
+          "reason": "per_task_budget_exhausted",
+          "updated_utc": "2026-10-22T04:53:33.372Z"
+        },
+        "budget_stop": {
+          "reason": "per_task_budget_exhausted"
+        },
+        "completion": "budget_exhausted",
+        "harbor_exit": 0
+      }
+    }
+  ],
+  "comparison": "Diagnostic historical v8 versus fresh v9; equal 8 CNY/400 requests/600 tools/7200 seconds; no concurrent v8 replay"
+}

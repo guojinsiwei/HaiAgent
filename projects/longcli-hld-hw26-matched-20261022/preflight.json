@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "model_calls": 0,
+  "created": 1792675452.3785434,
+  "hashes": {
+    "runner.py": "bc054e873c0243e8ca4b7ad8af802c8486845b454713e6e58cc1cdcc3bc0ab32",
+    "college_grader.py": "1d5e1d5cb49be58bdca4474ac0ff1c0c09f36d4c0cce070cc5054ebecb09a6c8",
+    "common.py": "c75bbfacae1b783546fb810a8abee158e4d23bdc65481b0521ea20b84a0ab2d1",
+    "spending.py": "073507f75e1a656b8828f699a93fe16e992003df598c1f1086ce3350483b4794",
+    "entry-run.mjs": "30ee7981be4ff25f5b64d3651349bb39692113bf06ac79bf1c9608c570850496",
+    "worker.py": "e8a1a459895f3542566ebd8f33977389ceb1e4e6be7948aa571b033354147569",
+    "protocol.json": "84a985a5b06f8fb85b432921c1d81c01fcecb92526ac86989b8e506eecbc7daf",
+    "input-manifest.json": "fd73350dc674eb82f1d6978c4eb922c69f128e35a483c65fa732141230cec6bc",
+    "runtime/kz/route-high-output.patch.yml": "737ffad02f62c743600f8c3018e40d1db13eb71da9ce8e3030f7cd1c5a3e12fc",
+    "runtime/kz/shared-budget-high.mjs": "a1a03fe8effcf1fe0d2fdc253e11db133c0180ea2db5eec0a35ed5bc7abc471a",
+    "runtime/kz/.runtime/kz-high-limits.patch.yml": "554adf891c4093936d085a07820916347abbcff338620296ccb67b8870970ada",
+    "runtime/kz/.runtime/hld-high-context.patch.yml": "c34a64399f00c7b8c538cb826ff9c2c1aa660da999e30b25df0a320d05208a32"
+  },
+  "checks": [
+    "original starter hash",
+    "original instruction",
+    "fresh workspace",
+    "same official grader AST and hashes",
+    "same image",
+    "800 attempts",
+    "32768 output",
+    "24 CNY attempt ceiling",
+    "480 CNY shared ceiling",
+    "separate job allowlist",
+    "syntax checks",
+    "disk headroom"
+  ]
+}

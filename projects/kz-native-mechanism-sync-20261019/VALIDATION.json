@@ -1,0 +1,45 @@
+{
+  "status": "offline-validated-with-five-unchanged-legacy-failures",
+  "platform": "linux",
+  "python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+  "total_tests": 105,
+  "passed": 100,
+  "failed": 5,
+  "errors": 0,
+  "skipped": 0,
+  "native_related_suites": {
+    "passed": 72,
+    "failed": 0
+  },
+  "legacy_regression": {
+    "tests": 33,
+    "passed": 28,
+    "failures_identical_to_baseline": true,
+    "failure_names": [
+      "test_action_conditioned_memory_reminds_before_execution_and_audits_followup (test_lean.LeanTests.test_action_conditioned_memory_reminds_before_execution_and_audits_followup)",
+      "test_deliberate_same_action_runs_after_one_memory_reminder (test_lean.LeanTests.test_deliberate_same_action_runs_after_one_memory_reminder)",
+      "test_memory_is_in_fixed_panel_after_old_history_eviction (test_lean.LeanTests.test_memory_is_in_fixed_panel_after_old_history_eviction)",
+      "test_memory_preserved_but_marked_historical_after_restore (test_lean.LeanTests.test_memory_preserved_but_marked_historical_after_restore)",
+      "test_memory_reconsideration_to_submit_does_not_leak_into_later_tool (test_lean.LeanTests.test_memory_reconsideration_to_submit_does_not_leak_into_later_tool)"
+    ]
+  },
+  "measurement_differential": {
+    "cases": 21,
+    "all_outputs_equal_to_dsh": true
+  },
+  "baseline_source_files_unchanged": 159,
+  "model_calls": 0,
+  "remote_deployment": false,
+  "limitations": [
+    "Five pre-existing legacy memory tests remain failing; full suite exits nonzero.",
+    "No real-model benchmark efficacy test.",
+    "Host-specific DSH background jobs and session restore APIs stay with the DSH execution framework."
+  ],
+  "evidence": [
+    "audit/offline-tests.log",
+    "audit/offline-summary.json",
+    "audit/baseline-legacy.json",
+    "audit/measurement-parity.json",
+    "audit/source-change.diff"
+  ]
+}

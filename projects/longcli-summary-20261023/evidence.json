@@ -1,0 +1,1334 @@
+{
+  "checked_utc": "2026-10-23T08:25:44.183280+00:00",
+  "campaigns": {
+    "longcli-recuris-large20-20261009/recuris_frozen": {
+      "61810_traps": {
+        "task": "61810_traps",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 0,
+          "step_score": 0.8
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "9f536e7a38059d0c397d30b1b0f93e755abcf9882c59d74b4ae113dc07d4f9b3",
+        "source": "/mnt/sdb/home/lizh639/longcli-recuris-large20-20261009/recuris_frozen/grades/recuris_frozen--61810_traps/result.json",
+        "result_sha256": "a3e10018ed9bff291b6e23e2246e208885935088c7782c3a4b495a159d4534f6"
+      },
+      "cs61_fa24_hog": {
+        "task": "cs61_fa24_hog",
+        "grading_state": "complete",
+        "official_success": true,
+        "f2p": {
+          "is_pass": 1,
+          "step_score": 1.0
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "f48ed22965e867deee02afe0ed357e397b1dc923561e3d632295510c0d7777ac",
+        "source": "/mnt/sdb/home/lizh639/longcli-recuris-large20-20261009/recuris_frozen/grades/recuris_frozen--cs61_fa24_hog/result.json",
+        "result_sha256": "be7fe67b32ed7a0b210e340498c458bdf197b33a9277eb00812f47873a4695d6"
+      },
+      "61810_lock": {
+        "task": "61810_lock",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 0,
+          "step_score": 0.275
+        },
+        "p2p_is_pass": 0,
+        "p2p_step_score": 0.988,
+        "script_exit": 1,
+        "error_type": null,
+        "artifact_sha256": "342148e87c884b63c213b917c85e8ee7287cf683189cce82eb5ea97974240f7f",
+        "source": "/mnt/sdb/home/lizh639/longcli-recuris-large20-20261009/recuris_frozen/grades/recuris_frozen--61810_lock/result.json",
+        "result_sha256": "17ff5ef6058ac77a78bc9e99f1c7ee95a789b0f38671112fe2f07369e76f48c3"
+      },
+      "61810_pgtbl": {
+        "task": "61810_pgtbl",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 0,
+          "step_score": 0.6739130434782609
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "2519816ac0131a4c90cb9fee5b19fee9cd7b82acb2e10f3a18172c35adc532a0",
+        "source": "/mnt/sdb/home/lizh639/longcli-recuris-large20-20261009/recuris_frozen/grades/recuris_frozen--61810_pgtbl/result.json",
+        "result_sha256": "9c3f5110e05b154decf3f401800cb504143ee66ca14839fd6c6e69407d31b7f0"
+      },
+      "cs61_fa24_scheme": {
+        "task": "cs61_fa24_scheme",
+        "grading_state": "complete",
+        "official_success": true,
+        "f2p": {
+          "is_pass": 1,
+          "step_score": 1.0
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "bb434b9098afaf7293fa0339871f1b9c50a0284c30089874e19590f47274c7e7",
+        "source": "/mnt/sdb/home/lizh639/longcli-recuris-large20-20261009/recuris_frozen/grades/recuris_frozen--cs61_fa24_scheme/result.json",
+        "result_sha256": "b4212ce86a4d996a69d5a1bbd46bc423bdab57c19bb8e3b04f8ddc648e739efd"
+      },
+      "cmu15_445_p0": {
+        "task": "cmu15_445_p0",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 0,
+          "step_score": 0.7916666666666666
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "dd799f8bd1c68dd411ebc893766a6bbf591421a5186ef188d513a586172fda3b",
+        "source": "/mnt/sdb/home/lizh639/longcli-recuris-large20-20261009/recuris_frozen/grades/recuris_frozen--cmu15_445_p0/result.json",
+        "result_sha256": "9e079774016badbcf94d4ae64f8967bbae7edb70402b9ad585bf38eb65fc71aa"
+      },
+      "61810_fs": {
+        "task": "61810_fs",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 1,
+          "step_score": 1.0
+        },
+        "p2p_is_pass": 0,
+        "p2p_step_score": 0.956,
+        "script_exit": 1,
+        "error_type": null,
+        "artifact_sha256": "8854d00b5665b2aaa90a0c79b784d61fa108a98064520d66b8138d5bbaed53c7",
+        "source": "/mnt/sdb/home/lizh639/longcli-recuris-large20-20261009/recuris_frozen/grades/recuris_frozen--61810_fs/result.json",
+        "result_sha256": "74df8d248d3d7e8dc87d7e2083877dcf3148c7b1f935fa6b187abe6e956ee5fa"
+      },
+      "cmu15_445_p1": {
+        "task": "cmu15_445_p1",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 0,
+          "step_score": 0.6
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "f07b604cf1e48ec9c1b911ddc1f1f468a73ad872570bd876096cbe620a67f8c0",
+        "source": "/mnt/sdb/home/lizh639/longcli-recuris-large20-20261009/recuris_frozen/grades/recuris_frozen--cmu15_445_p1/result.json",
+        "result_sha256": "be6c7006009d258a9c3bbde0c6f5bcbff837810b2e1f371f4bc041d4609ebbc0"
+      },
+      "cs61_fa24_hw08": {
+        "task": "cs61_fa24_hw08",
+        "grading_state": "complete",
+        "official_success": true,
+        "f2p": {
+          "is_pass": 1,
+          "step_score": 1.0
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "13a9f587cdd364d619ad9e509017bfe886819ebce084de7c3fc6b9e2b239abb2",
+        "source": "/mnt/sdb/home/lizh639/longcli-recuris-large20-20261009/recuris_frozen/grades/recuris_frozen--cs61_fa24_hw08/result.json",
+        "result_sha256": "9f5645b040e6270b1d00d9b1f7c3c5eca8aeb6dae07da07b7ab584fab641ed6b"
+      },
+      "61810_net": {
+        "task": "61810_net",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 1,
+          "step_score": 1.0
+        },
+        "p2p_is_pass": 0,
+        "p2p_step_score": 0.976,
+        "script_exit": 1,
+        "error_type": null,
+        "artifact_sha256": "beb3af85d44e6cb22b6c32e76833bb322bdce76f547dabbe568cf2659a362079",
+        "source": "/mnt/sdb/home/lizh639/longcli-recuris-large20-20261009/recuris_frozen/grades/recuris_frozen--61810_net/result.json",
+        "result_sha256": "664142a17cf08f8946e60bcf7b8061e7b960620fd53bb60430a21fabf7d6a577"
+      },
+      "61810_thread": {
+        "task": "61810_thread",
+        "grading_state": "complete",
+        "official_success": true,
+        "f2p": {
+          "is_pass": 1,
+          "step_score": 1.0
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "a1d6e736cc3d0e2e3e492b76db53badca7f7bbd7a587d93cc92c35f2deef0854",
+        "source": "/mnt/sdb/home/lizh639/longcli-recuris-large20-20261009/recuris_frozen/grades/recuris_frozen--61810_thread/result.json",
+        "result_sha256": "68d69f0763fe74ae84d064e4095aa3864c092943fdc99df6fbe0a279761d7a7f"
+      },
+      "61810_cow": {
+        "task": "61810_cow",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 0,
+          "step_score": 0.7363636363636363
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "2feb3e92a6bf22b63b07593c536e14f8f1da757f5c7d75f7e6025642539cc4f8",
+        "source": "/mnt/sdb/home/lizh639/longcli-recuris-large20-20261009/recuris_frozen/grades/recuris_frozen--61810_cow/result.json",
+        "result_sha256": "ec80fb6b6b2c2a446e97de649cba8b80e5fd99e132d683821ac3fa696470ec5f"
+      },
+      "cs61_fa24_cats": {
+        "task": "cs61_fa24_cats",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 1,
+          "step_score": 1.0
+        },
+        "p2p_is_pass": 0,
+        "p2p_step_score": 0.947,
+        "script_exit": 1,
+        "error_type": null,
+        "artifact_sha256": "0444090d3c49a723fd7d71c3db0c66faa695ae822d0a9b667567d93b0951ca52",
+        "source": "/mnt/sdb/home/lizh639/longcli-recuris-large20-20261009/recuris_frozen/grades/recuris_frozen--cs61_fa24_cats/result.json",
+        "result_sha256": "9c5c259953af821f66bef6b7d0e28a62c8c9ab2f192d2d0272dfeb4d408e1f3e"
+      },
+      "cmu15_445_p2": {
+        "task": "cmu15_445_p2",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 0,
+          "step_score": 0.0
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "d0485ee3b77754fa924bd9b3427a7b0f172c7ee4618e94b1e0ab0cb978666caf",
+        "source": "/mnt/sdb/home/lizh639/longcli-recuris-large20-20261009/recuris_frozen/grades/recuris_frozen--cmu15_445_p2/result.json",
+        "result_sha256": "29696b0d89036a6bf37adee5a27d33ca12ac6f94b7ac8c49b2c06dee485a9c65"
+      },
+      "cs61_fa24_ants": {
+        "task": "cs61_fa24_ants",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 0,
+          "step_score": 0.9104744852282901
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "42e630f09c4ca3c0a34d8b09544e49e69c3cc6734526b26d743e674711f03c5b",
+        "source": "/mnt/sdb/home/lizh639/longcli-recuris-large20-20261009/recuris_frozen/grades/recuris_frozen--cs61_fa24_ants/result.json",
+        "result_sha256": "b0c62e14d6c6b7f646d54179736fbe3101197c941c2a4bfe77abe91d614cda5b"
+      },
+      "61810_syscall": {
+        "task": "61810_syscall",
+        "grading_state": "complete",
+        "official_success": true,
+        "f2p": {
+          "is_pass": 1,
+          "step_score": 1.0
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "dc11eeb8c27e1df21da63304ca40cc2865d0fb873b02474ebc4679683c84057d",
+        "source": "/mnt/sdb/home/lizh639/longcli-recuris-large20-20261009/recuris_frozen/grades/recuris_frozen--61810_syscall/result.json",
+        "result_sha256": "cb9bd6930ca0bc4848391eddb9a1f65c8fa5e905b4ef0847875f5560eaf93566"
+      },
+      "ap1400_2_hw26": {
+        "task": "ap1400_2_hw26",
+        "grading_state": "complete",
+        "official_success": true,
+        "f2p": {
+          "is_pass": 1,
+          "step_score": 1.0
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "7596a09dd8ca8cb1c7fe1c3744cb21ccd51fb66467f763957da9abd6dc71ae88",
+        "source": "/mnt/sdb/home/lizh639/longcli-recuris-large20-20261009/recuris_frozen/grades/recuris_frozen--ap1400_2_hw26/result.json",
+        "result_sha256": "5b2affd670a78cf70f1e5a7c1248358761399a7299db2eae942721e57e63c5f7"
+      },
+      "ap1400_2_hw35": {
+        "task": "ap1400_2_hw35",
+        "grading_state": "complete",
+        "official_success": true,
+        "f2p": {
+          "is_pass": 1,
+          "step_score": 1.0
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "eb568ad05042dec8c1b9bb65dc1622042c8b858a3334524bb844e02f93b402d9",
+        "source": "/mnt/sdb/home/lizh639/longcli-recuris-large20-20261009/recuris_frozen/grades/recuris_frozen--ap1400_2_hw35/result.json",
+        "result_sha256": "992cb8ca8d9c942fbdbbc699a5ceeaf9e65bd75684ced6a273cb28816ab1a73a"
+      },
+      "61810_util": {
+        "task": "61810_util",
+        "grading_state": "complete",
+        "official_success": true,
+        "f2p": {
+          "is_pass": 1,
+          "step_score": 1.0
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "020c1bfc79b6f1a02c94d5f2a34562353479df013f8da74c00d82969a23bcc4e",
+        "source": "/mnt/sdb/home/lizh639/longcli-recuris-large20-20261009/recuris_frozen/grades/recuris_frozen--61810_util/result.json",
+        "result_sha256": "ba0bb8ce080dc80330751b1b96b5469b3ae3dcbe68caa6c14a9b91980e8f8d0b"
+      },
+      "61810_mmap": {
+        "task": "61810_mmap",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 0,
+          "step_score": 0.8642857142857143
+        },
+        "p2p_is_pass": 0,
+        "p2p_step_score": 0.968,
+        "script_exit": 1,
+        "error_type": null,
+        "artifact_sha256": "dba1a7ef8a1004c462abaf38840aae97c69052c2d840871c85f450ac1bda6432",
+        "source": "/mnt/sdb/home/lizh639/longcli-recuris-large20-20261009/recuris_frozen/grades/recuris_frozen--61810_mmap/result.json",
+        "result_sha256": "2af9b49ebdac4388a6cd88dff001bc8d69acef95670e801466560bcf6a0bc9d2"
+      }
+    },
+    "longcli-hld-full20-triple-20261022": {
+      "61810_syscall": {
+        "task": "61810_syscall",
+        "grading_state": "complete",
+        "official_success": true,
+        "f2p": {
+          "is_pass": 1,
+          "step_score": 1.0
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "d39f2ac399e41a050769bbba7874e7a628d278552cb8a7ccd44600b7e1cf939e",
+        "source": "/mnt/sdb/home/lizh639/longcli-hld-full20-triple-20261022/grades/hld--61810_syscall/result.json",
+        "result_sha256": "3ec940b053983e99f8410ea83d3ea6b75089672933970157e8561ac48b12a8d5"
+      },
+      "cs61_fa24_hog": {
+        "task": "cs61_fa24_hog",
+        "grading_state": "complete",
+        "official_success": true,
+        "f2p": {
+          "is_pass": 1,
+          "step_score": 1.0
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "931f871c97a71142f81aadf2d9b6a6ee981bcb07a1e30ad8781f67d876078bad",
+        "source": "/mnt/sdb/home/lizh639/longcli-hld-full20-triple-20261022/grades/hld--cs61_fa24_hog/result.json",
+        "result_sha256": "f506deec0c27637c796637a1efce38734ae3d44b22d884805d9f8f15db6e89cd"
+      },
+      "61810_lock": {
+        "task": "61810_lock",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 0,
+          "step_score": 0.275
+        },
+        "p2p_is_pass": 0,
+        "p2p_step_score": 0.988,
+        "script_exit": 1,
+        "error_type": null,
+        "artifact_sha256": "0b7592e6d113dcd13e5d2d5cee7afc495ba7d9923dbb573e928bf98b71777e16",
+        "source": "/mnt/sdb/home/lizh639/longcli-hld-full20-triple-20261022/grades/hld--61810_lock/result.json",
+        "result_sha256": "d1800e83c1d23144074e760e74cfaa85d0e62b9584b6d305162c8983c2579f0f"
+      },
+      "61810_util": {
+        "task": "61810_util",
+        "grading_state": "complete",
+        "official_success": true,
+        "f2p": {
+          "is_pass": 1,
+          "step_score": 1.0
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "0a066d73b28778f27c8887ea4503a27f5bcc2d89bbc42611c3814ede9816a98f",
+        "source": "/mnt/sdb/home/lizh639/longcli-hld-full20-triple-20261022/grades/hld--61810_util/result.json",
+        "result_sha256": "08ba2b9252e0d439e6d7fe0ef7158291eb3b4d29d7b97dd8465b789d7ad952d7"
+      },
+      "cmu15_445_p0": {
+        "task": "cmu15_445_p0",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 0,
+          "step_score": 0.8333333333333334
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "eacd68eddcf8c9e89fee0b1b660b2d8dbd9c282bd9f14da358d9f5ca60c736a7",
+        "source": "/mnt/sdb/home/lizh639/longcli-hld-full20-triple-20261022/grades/hld--cmu15_445_p0/result.json",
+        "result_sha256": "5fb30c57c2bc461720a71417df6970858bf831584693b5ae71f98d051503197e"
+      },
+      "cs61_fa24_cats": {
+        "task": "cs61_fa24_cats",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 1,
+          "step_score": 1.0
+        },
+        "p2p_is_pass": 0,
+        "p2p_step_score": 0.947,
+        "script_exit": 1,
+        "error_type": null,
+        "artifact_sha256": "549f7dccab3bf664993d5e2f1df8c81a774693bb7bc8c5fc7f349bd614e6557f",
+        "source": "/mnt/sdb/home/lizh639/longcli-hld-full20-triple-20261022/grades/hld--cs61_fa24_cats/result.json",
+        "result_sha256": "727d7147d118e272719aff6d694f13d17f1fbedb7abfac1a1a9b20a75df9ebb5"
+      },
+      "61810_fs": {
+        "task": "61810_fs",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 0,
+          "step_score": 0.81
+        },
+        "p2p_is_pass": 0,
+        "p2p_step_score": 0.971,
+        "script_exit": 1,
+        "error_type": null,
+        "artifact_sha256": "1d273900be3b5257cb82e36f8c004bd8d235c8e43d0c3916e768c000562925ad",
+        "source": "/mnt/sdb/home/lizh639/longcli-hld-full20-triple-20261022/grades/hld--61810_fs/result.json",
+        "result_sha256": "c5edaaa6ae76c17932275a9ca1602ab6d3df98f6ed71e5466e978d756bcc2253"
+      },
+      "cmu15_445_p1": {
+        "task": "cmu15_445_p1",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 0,
+          "step_score": 0.9
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "423742efa9acbd7ca1c198adc9b3c1786a08787af115ead274e5243b8867d668",
+        "source": "/mnt/sdb/home/lizh639/longcli-hld-full20-triple-20261022/grades/hld--cmu15_445_p1/result.json",
+        "result_sha256": "37b8cb6a5288c7c75a04a4153e28cd0274d61cab06a254de1b0a354e3310a708"
+      },
+      "cs61_fa24_ants": {
+        "task": "cs61_fa24_ants",
+        "grading_state": "complete",
+        "official_success": true,
+        "f2p": {
+          "is_pass": 1,
+          "step_score": 1.0
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "c20bd797213fd5a99649fa0c9a1482d823c65a4a3443e587915a1761d15f5824",
+        "source": "/mnt/sdb/home/lizh639/longcli-hld-full20-triple-20261022/grades/hld--cs61_fa24_ants/result.json",
+        "result_sha256": "3f422b5a8e58ce394e9e91a3ddb8833b27a99a7ba5e82176d6f53dde891c3a2e"
+      },
+      "ap1400_2_hw26": {
+        "task": "ap1400_2_hw26",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 0,
+          "step_score": 0.375
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "8023cb6357fad4bf5336f50c445ecc0a531679e097d98b0c808fc3c8ceef25fd",
+        "source": "/mnt/sdb/home/lizh639/longcli-hld-full20-triple-20261022/grades/hld--ap1400_2_hw26/result.json",
+        "result_sha256": "ecf584503a462ba225415967a966dbdcc6f808752c5be3dbf666c100371413a4"
+      },
+      "ap1400_2_hw35": {
+        "task": "ap1400_2_hw35",
+        "grading_state": "complete",
+        "official_success": true,
+        "f2p": {
+          "is_pass": 1,
+          "step_score": 1.0
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "d74494c0fb65dcaf8f8b0e27576aeaef63c36bf87750ea4e717a8863b9ec7581",
+        "source": "/mnt/sdb/home/lizh639/longcli-hld-full20-triple-20261022/grades/hld--ap1400_2_hw35/result.json",
+        "result_sha256": "f91d79969a7b9d7c6c58d55055710496bd4615bb043013468fc4da9e53040e27"
+      },
+      "61810_mmap": {
+        "task": "61810_mmap",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 0,
+          "step_score": 0.8571428571428571
+        },
+        "p2p_is_pass": 0,
+        "p2p_step_score": 0.984,
+        "script_exit": 1,
+        "error_type": null,
+        "artifact_sha256": "be1ecb6bd48e1046643ca5f726fde25b1d7c60d54f3f4666ef76d708498f1304",
+        "source": "/mnt/sdb/home/lizh639/longcli-hld-full20-triple-20261022/grades/hld--61810_mmap/result.json",
+        "result_sha256": "aed1c13245f52e46e64ded7fcc3bd3001203fbdd83f7d0d507aba51763ba5d3c"
+      },
+      "cs61_fa24_hw08": {
+        "task": "cs61_fa24_hw08",
+        "grading_state": "complete",
+        "official_success": true,
+        "f2p": {
+          "is_pass": 1,
+          "step_score": 1.0
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "cf3e919cb8a6112825da4930c94fd3c974e4ab738a870740030049b3c8ec1d35",
+        "source": "/mnt/sdb/home/lizh639/longcli-hld-full20-triple-20261022/grades/hld--cs61_fa24_hw08/result.json",
+        "result_sha256": "e925c9abe2a1fc4f53c22fe74c3da31c51e60817fdb058b277afea8b871b3f30"
+      },
+      "61810_cow": {
+        "task": "61810_cow",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 0,
+          "step_score": 0.5545454545454546
+        },
+        "p2p_is_pass": 0,
+        "p2p_step_score": 0.986,
+        "script_exit": 1,
+        "error_type": null,
+        "artifact_sha256": "87a29de377bfb3f128c58bc8e2e76af059817ba1094063ce599c3275e613f8b0",
+        "source": "/mnt/sdb/home/lizh639/longcli-hld-full20-triple-20261022/grades/hld--61810_cow/result.json",
+        "result_sha256": "c4d628e02b3b02f337c0a97e05cfbc94bcde92885f0810fab25a45007c17e3d5"
+      },
+      "cmu15_445_p2": {
+        "task": "cmu15_445_p2",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 0,
+          "step_score": 0.05555555555555555
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "6cf682ecdc42d91a730ea88db73b8b2a023bc36ad1b31677a11a14bfa52f572f",
+        "source": "/mnt/sdb/home/lizh639/longcli-hld-full20-triple-20261022/grades/hld--cmu15_445_p2/result.json",
+        "result_sha256": "80b4ebea90b6261fb0d1a8e8ef7fbe9592867fe6c461288143f4a0e077cd1280"
+      },
+      "61810_pgtbl": {
+        "task": "61810_pgtbl",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 0,
+          "step_score": 0.782608695652174
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "b20719ae3d495a4676569d1bcc4be7b46143236a39e20d4944fbd37e4ffa2941",
+        "source": "/mnt/sdb/home/lizh639/longcli-hld-full20-triple-20261022/grades/hld--61810_pgtbl/result.json",
+        "result_sha256": "1742d2fdc533c43aa3f6df87332a89e15e884beabb245e9deeec95cf3672c537"
+      },
+      "61810_net": {
+        "task": "61810_net",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 1,
+          "step_score": 1.0
+        },
+        "p2p_is_pass": 0,
+        "p2p_step_score": 0.988,
+        "script_exit": 1,
+        "error_type": null,
+        "artifact_sha256": "8986dbe16f678dc5d0b08555e44b6b1a4578e55b13e66cc0951358a1c0546157",
+        "source": "/mnt/sdb/home/lizh639/longcli-hld-full20-triple-20261022/grades/hld--61810_net/result.json",
+        "result_sha256": "0f823623b591482cee9d5042815ad66e4d43e0da8092ca73e912fd2c9f9adf13"
+      },
+      "61810_thread": {
+        "task": "61810_thread",
+        "grading_state": "complete",
+        "official_success": true,
+        "f2p": {
+          "is_pass": 1,
+          "step_score": 1.0
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "de331c1b01686e797ed8c8f1a4677ec328f1f3da016c8487c511ceacbd40d915",
+        "source": "/mnt/sdb/home/lizh639/longcli-hld-full20-triple-20261022/grades/hld--61810_thread/result.json",
+        "result_sha256": "c849ba75ec0304ee3025c8ed8bdc785019d10025fa822f13793a850d4534ed92"
+      },
+      "cs61_fa24_scheme": {
+        "task": "cs61_fa24_scheme",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 0,
+          "step_score": 0.9285714285714286
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "6e11b9a57c5f7f9f7555b8605449c09754be9ed63e3bb4169d1b652fbe8b543b",
+        "source": "/mnt/sdb/home/lizh639/longcli-hld-full20-triple-20261022/grades/hld--cs61_fa24_scheme/result.json",
+        "result_sha256": "24c0a835c0b9eb3a902acad7a3995accbaf537ec717e255b8ba766e0ea28d4b6"
+      },
+      "61810_traps": {
+        "task": "61810_traps",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 1,
+          "step_score": 1.0
+        },
+        "p2p_is_pass": 0,
+        "p2p_step_score": 0.984,
+        "script_exit": 1,
+        "error_type": null,
+        "artifact_sha256": "963be6064ea2c544ae3c7be27ca7b20d30b22baba820fd5ceda0d163603778b8",
+        "source": "/mnt/sdb/home/lizh639/longcli-hld-full20-triple-20261022/grades/hld--61810_traps/result.json",
+        "result_sha256": "11fc395bf386df0deda8dee6c073bf0a391dc2ec50874a0211f35e5c7df92dcd"
+      }
+    },
+    "longcli-hld-hw26-matched-20261022": {
+      "ap1400_2_hw26": {
+        "task": "ap1400_2_hw26",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 0,
+          "step_score": 0.375
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "d2a05cea8c50040d1cadaa686c99ec62e0a844ef9c6b43139ed96c7ed5b0f107",
+        "source": "/mnt/sdb/home/lizh639/longcli-hld-hw26-matched-20261022/grades/hld-hw26-repeat--ap1400_2_hw26/result.json",
+        "result_sha256": "a87e3dccfd24acfe53052f9b30a09722b85765b8db2992f20ca381044fe6f3c4"
+      }
+    },
+    "longcli-hld-resource-match-20261022": {
+      "cs61_fa24_scheme": {
+        "task": "cs61_fa24_scheme",
+        "grading_state": "complete",
+        "official_success": true,
+        "f2p": {
+          "is_pass": 1,
+          "step_score": 1.0
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "d5ba6a08d0b6f005050ec1613a01212cabeb9d85d92ffc40cd092c14d1547994",
+        "source": "/mnt/sdb/home/lizh639/longcli-hld-resource-match-20261022/grades/hld-resource-match--cs61_fa24_scheme/result.json",
+        "result_sha256": "0133538f0ff2981ed6e0f669656e891bc7020bdeff28f075d04c25b82956b67e"
+      },
+      "61810_cow": {
+        "task": "61810_cow",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 0,
+          "step_score": 0.7272727272727273
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "e834393d8c26e25da0c3e9fb9a3f92a8149101fbef3aa3a5b726e43db43a4995",
+        "source": "/mnt/sdb/home/lizh639/longcli-hld-resource-match-20261022/grades/hld-resource-match--61810_cow/result.json",
+        "result_sha256": "005493a1dc5c7706e54560c0f0c40a7bb146982bd72afe991e9e415a3421fce5"
+      }
+    },
+    "longcli-hld-request400-rerun-20261022": {
+      "61810_traps": {
+        "task": "61810_traps",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 0,
+          "step_score": 0.0
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "8ad879703c929190f785c839931f5a0307acfeeeeab029c7175b6255f230ddd4",
+        "source": "/mnt/sdb/home/lizh639/longcli-hld-request400-rerun-20261022/grades/hld-request400--61810_traps/result.json",
+        "result_sha256": "26a44fb07cfd4b2b6fc3ed308f6f1d291b7f03609774ee02499822d2c750132f"
+      },
+      "61810_pgtbl": {
+        "task": "61810_pgtbl",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 0,
+          "step_score": 0.782608695652174
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "22919892101444bbf9d581de5c08081ba4ee97087fe0d2178044bed4b12903d0",
+        "source": "/mnt/sdb/home/lizh639/longcli-hld-request400-rerun-20261022/grades/hld-request400--61810_pgtbl/result.json",
+        "result_sha256": "214b57c02341629e5d8e0f015a357ccb06fe5dbff67494d17fc4699f3968eee8"
+      },
+      "61810_syscall": {
+        "task": "61810_syscall",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 0,
+          "step_score": 0.0
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "97fe301465087fbc528bc9d714f7ebdcaecd16a5d751fd51e3fa91ccc7788948",
+        "source": "/mnt/sdb/home/lizh639/longcli-hld-request400-rerun-20261022/grades/hld-request400--61810_syscall/result.json",
+        "result_sha256": "80041c0930c236892810a73bd8e458980be9ae21ae731a20f86a39b7aa742506"
+      },
+      "cmu15_445_p0": {
+        "task": "cmu15_445_p0",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 0,
+          "step_score": 0.8333333333333334
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "d95fcff99b97d0235f6bb686158f176a771b2b3bfb115d83246563a2e21dc494",
+        "source": "/mnt/sdb/home/lizh639/longcli-hld-request400-rerun-20261022/grades/hld-request400--cmu15_445_p0/result.json",
+        "result_sha256": "1d0be5c8271a125eae8568baadb13b06a35b5be2f0cd8d516471bad68a359f74"
+      },
+      "cmu15_445_p2": {
+        "task": "cmu15_445_p2",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 0,
+          "step_score": 0.2777777777777778
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "d60591a4190d7b5b8d72b91bdcd257b3eb9f5cddcc6606708b24afa3ab3f2d65",
+        "source": "/mnt/sdb/home/lizh639/longcli-hld-request400-rerun-20261022/grades/hld-request400--cmu15_445_p2/result.json",
+        "result_sha256": "7a19ced95dab2bac1ab41ed04ec6593fd9b1e8b7ed9cbc87c4dbc5bd64a1d13b"
+      }
+    },
+    "transport-recovery-20261023/longcli": {
+      "61810_traps": {
+        "task": "61810_traps",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 0,
+          "step_score": 0.0
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "155379e6a04313b7eba23699eb885c67be58e9ec46463e853b2a3c3ceaa06bac",
+        "source": "/mnt/sdb/home/lizh639/transport-recovery-20261023/longcli/grades/hld-request400--61810_traps/result.json",
+        "result_sha256": "048306240ef57b57e9939c478cd3802fa898e5db5de4b079df5472ecec002c75"
+      },
+      "61810_pgtbl": {
+        "task": "61810_pgtbl",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 0,
+          "step_score": 0.782608695652174
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "2fec1a630dbe53e0461dc5ef51871f6b927e80c8b1f14e2782d346a355eb306c",
+        "source": "/mnt/sdb/home/lizh639/transport-recovery-20261023/longcli/grades/hld-request400--61810_pgtbl/result.json",
+        "result_sha256": "e1711009e7a5abdda66cc59c05a13e85525dee72659a429bb7764896405929a7"
+      },
+      "61810_syscall": {
+        "task": "61810_syscall",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 0,
+          "step_score": 0.0
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "8af86f639245324346d57e6b2690aa9cdac1baed341da38b0b0ae6231c68ea81",
+        "source": "/mnt/sdb/home/lizh639/transport-recovery-20261023/longcli/grades/hld-request400--61810_syscall/result.json",
+        "result_sha256": "3036668b741e2a3f54ae00ee9de919d22775f6cfe29bb501481a73c298b82b92"
+      },
+      "61810_cow": {
+        "task": "61810_cow",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 0,
+          "step_score": 0.7272727272727273
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "ed6219d4e05df46721ca601120dc01bb618d20da2a955d405b88a43a379e09e0",
+        "source": "/mnt/sdb/home/lizh639/transport-recovery-20261023/longcli/grades/hld-resource-match--61810_cow/result.json",
+        "result_sha256": "9bcf7840c7b5fc946c8860a27189ed2d177db46f2ece344ac72d887e7aa967f4"
+      },
+      "cmu15_445_p0": {
+        "task": "cmu15_445_p0",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 0,
+          "step_score": 0.8333333333333334
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "265119dfa1e7ab1b095fef0904244c9b1a2ef9452e1f179d031735a1c9228847",
+        "source": "/mnt/sdb/home/lizh639/transport-recovery-20261023/longcli/grades/hld-request400--cmu15_445_p0/result.json",
+        "result_sha256": "ef4b9559eb2eb8aed159dd749a1cebe340a4ce9b476601633c81cadbc934c5b4"
+      },
+      "cmu15_445_p2": {
+        "task": "cmu15_445_p2",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 0,
+          "step_score": 0.2777777777777778
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "afb16b4e16a42c821cd8eb2e00d162e4c93705fe38ab1f1d99280d8b4ff6e295",
+        "source": "/mnt/sdb/home/lizh639/transport-recovery-20261023/longcli/grades/hld-request400--cmu15_445_p2/result.json",
+        "result_sha256": "566837e9234835a5832581d08384493ae56c185ad85b869b795673c5a1ac649a"
+      }
+    },
+    "transport-recovery-20261023/longcli-v2": {
+      "61810_traps": {
+        "task": "61810_traps",
+        "grading_state": "failed",
+        "official_success": null,
+        "f2p": null,
+        "p2p_is_pass": null,
+        "p2p_step_score": null,
+        "script_exit": 124,
+        "error_type": "FileNotFoundError",
+        "artifact_sha256": "e58474520b50dd8185530e5278c6f062139265e91b30132aa66d8422342fa6c2",
+        "source": "/mnt/sdb/home/lizh639/transport-recovery-20261023/longcli-v2/grades/hld-request400--61810_traps/result.json",
+        "result_sha256": "bfa809dbf473eb0502d17974eaf61eb59b7bc7bd78b2f600b5b9709f40e24eb0"
+      },
+      "61810_pgtbl": {
+        "task": "61810_pgtbl",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 0,
+          "step_score": 0.782608695652174
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "c4ba45c531420977f62d0d04c40ce2da947d411d4ed42169846b41ffacec5f55",
+        "source": "/mnt/sdb/home/lizh639/transport-recovery-20261023/longcli-v2/grades/hld-request400--61810_pgtbl/result.json",
+        "result_sha256": "e995b5feabeca1c715f5f543b010d15c992bdaa39a1756d007e2801ceda8413d"
+      },
+      "61810_syscall": {
+        "task": "61810_syscall",
+        "grading_state": "complete",
+        "official_success": true,
+        "f2p": {
+          "is_pass": 1,
+          "step_score": 1.0
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "93dbd8c304765bc7b6a82d92e48fd4d6c0007530278e752108c3098eb7961c31",
+        "source": "/mnt/sdb/home/lizh639/transport-recovery-20261023/longcli-v2/grades/hld-request400--61810_syscall/result.json",
+        "result_sha256": "0f3fec72e06757e72f37feffe993cd7b12c33e6b550cf6eff2d7bdded573e658"
+      },
+      "61810_cow": {
+        "task": "61810_cow",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 0,
+          "step_score": 0.7272727272727273
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "95267fdfb06e5eb5a60bac1d28aae427e2af4cad9ba373a09979a57db033a2c7",
+        "source": "/mnt/sdb/home/lizh639/transport-recovery-20261023/longcli-v2/grades/hld-resource-match--61810_cow/result.json",
+        "result_sha256": "22befaf838e81a0fcac8bba7fba39ddddcb29ee0b5525c3b3eef2991e969c2db"
+      },
+      "cmu15_445_p0": {
+        "task": "cmu15_445_p0",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 0,
+          "step_score": 0.8333333333333334
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "76005465733fe6b7f135b03692d88bef5d21cb7b9f9d45c294e7eeac189da81d",
+        "source": "/mnt/sdb/home/lizh639/transport-recovery-20261023/longcli-v2/grades/hld-request400--cmu15_445_p0/result.json",
+        "result_sha256": "0d6b168b905e3b9b73513a267949f4852e4609379e404ca30dfe8573f4aa7334"
+      },
+      "cmu15_445_p2": {
+        "task": "cmu15_445_p2",
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 0,
+          "step_score": 0.4444444444444444
+        },
+        "p2p_is_pass": 1,
+        "p2p_step_score": 1.0,
+        "script_exit": 0,
+        "error_type": null,
+        "artifact_sha256": "951156d1d20efceb4acbeb706abaf504cdcff2ce3a2ef9f98cb32941e9e84c13",
+        "source": "/mnt/sdb/home/lizh639/transport-recovery-20261023/longcli-v2/grades/hld-request400--cmu15_445_p2/result.json",
+        "result_sha256": "2fb2d2652d7f86eebcb04409b6f1071773f743f3402a3dc88131f670ba2ee581"
+      }
+    }
+  },
+  "hld_cumulative": {
+    "61810_syscall": {
+      "task": "61810_syscall",
+      "grading_state": "complete",
+      "official_success": true,
+      "f2p": {
+        "is_pass": 1,
+        "step_score": 1.0
+      },
+      "p2p_is_pass": 1,
+      "p2p_step_score": 1.0,
+      "script_exit": 0,
+      "error_type": null,
+      "artifact_sha256": "93dbd8c304765bc7b6a82d92e48fd4d6c0007530278e752108c3098eb7961c31",
+      "source": "/mnt/sdb/home/lizh639/transport-recovery-20261023/longcli-v2/grades/hld-request400--61810_syscall/result.json",
+      "result_sha256": "0f3fec72e06757e72f37feffe993cd7b12c33e6b550cf6eff2d7bdded573e658"
+    },
+    "cs61_fa24_hog": {
+      "task": "cs61_fa24_hog",
+      "grading_state": "complete",
+      "official_success": true,
+      "f2p": {
+        "is_pass": 1,
+        "step_score": 1.0
+      },
+      "p2p_is_pass": 1,
+      "p2p_step_score": 1.0,
+      "script_exit": 0,
+      "error_type": null,
+      "artifact_sha256": "931f871c97a71142f81aadf2d9b6a6ee981bcb07a1e30ad8781f67d876078bad",
+      "source": "/mnt/sdb/home/lizh639/longcli-hld-full20-triple-20261022/grades/hld--cs61_fa24_hog/result.json",
+      "result_sha256": "f506deec0c27637c796637a1efce38734ae3d44b22d884805d9f8f15db6e89cd"
+    },
+    "61810_lock": {
+      "task": "61810_lock",
+      "grading_state": "complete",
+      "official_success": false,
+      "f2p": {
+        "is_pass": 0,
+        "step_score": 0.275
+      },
+      "p2p_is_pass": 0,
+      "p2p_step_score": 0.988,
+      "script_exit": 1,
+      "error_type": null,
+      "artifact_sha256": "0b7592e6d113dcd13e5d2d5cee7afc495ba7d9923dbb573e928bf98b71777e16",
+      "source": "/mnt/sdb/home/lizh639/longcli-hld-full20-triple-20261022/grades/hld--61810_lock/result.json",
+      "result_sha256": "d1800e83c1d23144074e760e74cfaa85d0e62b9584b6d305162c8983c2579f0f"
+    },
+    "61810_util": {
+      "task": "61810_util",
+      "grading_state": "complete",
+      "official_success": true,
+      "f2p": {
+        "is_pass": 1,
+        "step_score": 1.0
+      },
+      "p2p_is_pass": 1,
+      "p2p_step_score": 1.0,
+      "script_exit": 0,
+      "error_type": null,
+      "artifact_sha256": "0a066d73b28778f27c8887ea4503a27f5bcc2d89bbc42611c3814ede9816a98f",
+      "source": "/mnt/sdb/home/lizh639/longcli-hld-full20-triple-20261022/grades/hld--61810_util/result.json",
+      "result_sha256": "08ba2b9252e0d439e6d7fe0ef7158291eb3b4d29d7b97dd8465b789d7ad952d7"
+    },
+    "cmu15_445_p0": {
+      "task": "cmu15_445_p0",
+      "grading_state": "complete",
+      "official_success": false,
+      "f2p": {
+        "is_pass": 0,
+        "step_score": 0.8333333333333334
+      },
+      "p2p_is_pass": 1,
+      "p2p_step_score": 1.0,
+      "script_exit": 0,
+      "error_type": null,
+      "artifact_sha256": "76005465733fe6b7f135b03692d88bef5d21cb7b9f9d45c294e7eeac189da81d",
+      "source": "/mnt/sdb/home/lizh639/transport-recovery-20261023/longcli-v2/grades/hld-request400--cmu15_445_p0/result.json",
+      "result_sha256": "0d6b168b905e3b9b73513a267949f4852e4609379e404ca30dfe8573f4aa7334"
+    },
+    "cs61_fa24_cats": {
+      "task": "cs61_fa24_cats",
+      "grading_state": "complete",
+      "official_success": false,
+      "f2p": {
+        "is_pass": 1,
+        "step_score": 1.0
+      },
+      "p2p_is_pass": 0,
+      "p2p_step_score": 0.947,
+      "script_exit": 1,
+      "error_type": null,
+      "artifact_sha256": "549f7dccab3bf664993d5e2f1df8c81a774693bb7bc8c5fc7f349bd614e6557f",
+      "source": "/mnt/sdb/home/lizh639/longcli-hld-full20-triple-20261022/grades/hld--cs61_fa24_cats/result.json",
+      "result_sha256": "727d7147d118e272719aff6d694f13d17f1fbedb7abfac1a1a9b20a75df9ebb5"
+    },
+    "61810_fs": {
+      "task": "61810_fs",
+      "grading_state": "complete",
+      "official_success": false,
+      "f2p": {
+        "is_pass": 0,
+        "step_score": 0.81
+      },
+      "p2p_is_pass": 0,
+      "p2p_step_score": 0.971,
+      "script_exit": 1,
+      "error_type": null,
+      "artifact_sha256": "1d273900be3b5257cb82e36f8c004bd8d235c8e43d0c3916e768c000562925ad",
+      "source": "/mnt/sdb/home/lizh639/longcli-hld-full20-triple-20261022/grades/hld--61810_fs/result.json",
+      "result_sha256": "c5edaaa6ae76c17932275a9ca1602ab6d3df98f6ed71e5466e978d756bcc2253"
+    },
+    "cmu15_445_p1": {
+      "task": "cmu15_445_p1",
+      "grading_state": "complete",
+      "official_success": false,
+      "f2p": {
+        "is_pass": 0,
+        "step_score": 0.9
+      },
+      "p2p_is_pass": 1,
+      "p2p_step_score": 1.0,
+      "script_exit": 0,
+      "error_type": null,
+      "artifact_sha256": "423742efa9acbd7ca1c198adc9b3c1786a08787af115ead274e5243b8867d668",
+      "source": "/mnt/sdb/home/lizh639/longcli-hld-full20-triple-20261022/grades/hld--cmu15_445_p1/result.json",
+      "result_sha256": "37b8cb6a5288c7c75a04a4153e28cd0274d61cab06a254de1b0a354e3310a708"
+    },
+    "cs61_fa24_ants": {
+      "task": "cs61_fa24_ants",
+      "grading_state": "complete",
+      "official_success": true,
+      "f2p": {
+        "is_pass": 1,
+        "step_score": 1.0
+      },
+      "p2p_is_pass": 1,
+      "p2p_step_score": 1.0,
+      "script_exit": 0,
+      "error_type": null,
+      "artifact_sha256": "c20bd797213fd5a99649fa0c9a1482d823c65a4a3443e587915a1761d15f5824",
+      "source": "/mnt/sdb/home/lizh639/longcli-hld-full20-triple-20261022/grades/hld--cs61_fa24_ants/result.json",
+      "result_sha256": "3f422b5a8e58ce394e9e91a3ddb8833b27a99a7ba5e82176d6f53dde891c3a2e"
+    },
+    "ap1400_2_hw26": {
+      "task": "ap1400_2_hw26",
+      "grading_state": "complete",
+      "official_success": false,
+      "f2p": {
+        "is_pass": 0,
+        "step_score": 0.375
+      },
+      "p2p_is_pass": 1,
+      "p2p_step_score": 1.0,
+      "script_exit": 0,
+      "error_type": null,
+      "artifact_sha256": "d2a05cea8c50040d1cadaa686c99ec62e0a844ef9c6b43139ed96c7ed5b0f107",
+      "source": "/mnt/sdb/home/lizh639/longcli-hld-hw26-matched-20261022/grades/hld-hw26-repeat--ap1400_2_hw26/result.json",
+      "result_sha256": "a87e3dccfd24acfe53052f9b30a09722b85765b8db2992f20ca381044fe6f3c4"
+    },
+    "ap1400_2_hw35": {
+      "task": "ap1400_2_hw35",
+      "grading_state": "complete",
+      "official_success": true,
+      "f2p": {
+        "is_pass": 1,
+        "step_score": 1.0
+      },
+      "p2p_is_pass": 1,
+      "p2p_step_score": 1.0,
+      "script_exit": 0,
+      "error_type": null,
+      "artifact_sha256": "d74494c0fb65dcaf8f8b0e27576aeaef63c36bf87750ea4e717a8863b9ec7581",
+      "source": "/mnt/sdb/home/lizh639/longcli-hld-full20-triple-20261022/grades/hld--ap1400_2_hw35/result.json",
+      "result_sha256": "f91d79969a7b9d7c6c58d55055710496bd4615bb043013468fc4da9e53040e27"
+    },
+    "61810_mmap": {
+      "task": "61810_mmap",
+      "grading_state": "complete",
+      "official_success": false,
+      "f2p": {
+        "is_pass": 0,
+        "step_score": 0.8571428571428571
+      },
+      "p2p_is_pass": 0,
+      "p2p_step_score": 0.984,
+      "script_exit": 1,
+      "error_type": null,
+      "artifact_sha256": "be1ecb6bd48e1046643ca5f726fde25b1d7c60d54f3f4666ef76d708498f1304",
+      "source": "/mnt/sdb/home/lizh639/longcli-hld-full20-triple-20261022/grades/hld--61810_mmap/result.json",
+      "result_sha256": "aed1c13245f52e46e64ded7fcc3bd3001203fbdd83f7d0d507aba51763ba5d3c"
+    },
+    "cs61_fa24_hw08": {
+      "task": "cs61_fa24_hw08",
+      "grading_state": "complete",
+      "official_success": true,
+      "f2p": {
+        "is_pass": 1,
+        "step_score": 1.0
+      },
+      "p2p_is_pass": 1,
+      "p2p_step_score": 1.0,
+      "script_exit": 0,
+      "error_type": null,
+      "artifact_sha256": "cf3e919cb8a6112825da4930c94fd3c974e4ab738a870740030049b3c8ec1d35",
+      "source": "/mnt/sdb/home/lizh639/longcli-hld-full20-triple-20261022/grades/hld--cs61_fa24_hw08/result.json",
+      "result_sha256": "e925c9abe2a1fc4f53c22fe74c3da31c51e60817fdb058b277afea8b871b3f30"
+    },
+    "61810_cow": {
+      "task": "61810_cow",
+      "grading_state": "complete",
+      "official_success": false,
+      "f2p": {
+        "is_pass": 0,
+        "step_score": 0.7272727272727273
+      },
+      "p2p_is_pass": 1,
+      "p2p_step_score": 1.0,
+      "script_exit": 0,
+      "error_type": null,
+      "artifact_sha256": "95267fdfb06e5eb5a60bac1d28aae427e2af4cad9ba373a09979a57db033a2c7",
+      "source": "/mnt/sdb/home/lizh639/transport-recovery-20261023/longcli-v2/grades/hld-resource-match--61810_cow/result.json",
+      "result_sha256": "22befaf838e81a0fcac8bba7fba39ddddcb29ee0b5525c3b3eef2991e969c2db"
+    },
+    "cmu15_445_p2": {
+      "task": "cmu15_445_p2",
+      "grading_state": "complete",
+      "official_success": false,
+      "f2p": {
+        "is_pass": 0,
+        "step_score": 0.4444444444444444
+      },
+      "p2p_is_pass": 1,
+      "p2p_step_score": 1.0,
+      "script_exit": 0,
+      "error_type": null,
+      "artifact_sha256": "951156d1d20efceb4acbeb706abaf504cdcff2ce3a2ef9f98cb32941e9e84c13",
+      "source": "/mnt/sdb/home/lizh639/transport-recovery-20261023/longcli-v2/grades/hld-request400--cmu15_445_p2/result.json",
+      "result_sha256": "2fb2d2652d7f86eebcb04409b6f1071773f743f3402a3dc88131f670ba2ee581"
+    },
+    "61810_pgtbl": {
+      "task": "61810_pgtbl",
+      "grading_state": "complete",
+      "official_success": false,
+      "f2p": {
+        "is_pass": 0,
+        "step_score": 0.782608695652174
+      },
+      "p2p_is_pass": 1,
+      "p2p_step_score": 1.0,
+      "script_exit": 0,
+      "error_type": null,
+      "artifact_sha256": "c4ba45c531420977f62d0d04c40ce2da947d411d4ed42169846b41ffacec5f55",
+      "source": "/mnt/sdb/home/lizh639/transport-recovery-20261023/longcli-v2/grades/hld-request400--61810_pgtbl/result.json",
+      "result_sha256": "e995b5feabeca1c715f5f543b010d15c992bdaa39a1756d007e2801ceda8413d"
+    },
+    "61810_net": {
+      "task": "61810_net",
+      "grading_state": "complete",
+      "official_success": false,
+      "f2p": {
+        "is_pass": 1,
+        "step_score": 1.0
+      },
+      "p2p_is_pass": 0,
+      "p2p_step_score": 0.988,
+      "script_exit": 1,
+      "error_type": null,
+      "artifact_sha256": "8986dbe16f678dc5d0b08555e44b6b1a4578e55b13e66cc0951358a1c0546157",
+      "source": "/mnt/sdb/home/lizh639/longcli-hld-full20-triple-20261022/grades/hld--61810_net/result.json",
+      "result_sha256": "0f823623b591482cee9d5042815ad66e4d43e0da8092ca73e912fd2c9f9adf13"
+    },
+    "61810_thread": {
+      "task": "61810_thread",
+      "grading_state": "complete",
+      "official_success": true,
+      "f2p": {
+        "is_pass": 1,
+        "step_score": 1.0
+      },
+      "p2p_is_pass": 1,
+      "p2p_step_score": 1.0,
+      "script_exit": 0,
+      "error_type": null,
+      "artifact_sha256": "de331c1b01686e797ed8c8f1a4677ec328f1f3da016c8487c511ceacbd40d915",
+      "source": "/mnt/sdb/home/lizh639/longcli-hld-full20-triple-20261022/grades/hld--61810_thread/result.json",
+      "result_sha256": "c849ba75ec0304ee3025c8ed8bdc785019d10025fa822f13793a850d4534ed92"
+    },
+    "cs61_fa24_scheme": {
+      "task": "cs61_fa24_scheme",
+      "grading_state": "complete",
+      "official_success": true,
+      "f2p": {
+        "is_pass": 1,
+        "step_score": 1.0
+      },
+      "p2p_is_pass": 1,
+      "p2p_step_score": 1.0,
+      "script_exit": 0,
+      "error_type": null,
+      "artifact_sha256": "d5ba6a08d0b6f005050ec1613a01212cabeb9d85d92ffc40cd092c14d1547994",
+      "source": "/mnt/sdb/home/lizh639/longcli-hld-resource-match-20261022/grades/hld-resource-match--cs61_fa24_scheme/result.json",
+      "result_sha256": "0133538f0ff2981ed6e0f669656e891bc7020bdeff28f075d04c25b82956b67e"
+    },
+    "61810_traps": {
+      "task": "61810_traps",
+      "grading_state": "complete",
+      "official_success": false,
+      "f2p": {
+        "is_pass": 1,
+        "step_score": 1.0
+      },
+      "p2p_is_pass": 0,
+      "p2p_step_score": 0.984,
+      "script_exit": 1,
+      "error_type": null,
+      "artifact_sha256": "963be6064ea2c544ae3c7be27ca7b20d30b22baba820fd5ceda0d163603778b8",
+      "source": "/mnt/sdb/home/lizh639/longcli-hld-full20-triple-20261022/grades/hld--61810_traps/result.json",
+      "result_sha256": "11fc395bf386df0deda8dee6c073bf0a391dc2ec50874a0211f35e5c7df92dcd"
+    }
+  },
+  "unresolved_latest": [
+    {
+      "task": "61810_traps",
+      "grading_state": "failed",
+      "official_success": null,
+      "f2p": null,
+      "p2p_is_pass": null,
+      "p2p_step_score": null,
+      "script_exit": 124,
+      "error_type": "FileNotFoundError",
+      "artifact_sha256": "e58474520b50dd8185530e5278c6f062139265e91b30132aa66d8422342fa6c2",
+      "source": "/mnt/sdb/home/lizh639/transport-recovery-20261023/longcli-v2/grades/hld-request400--61810_traps/result.json",
+      "result_sha256": "bfa809dbf473eb0502d17974eaf61eb59b7bc7bd78b2f600b5b9709f40e24eb0"
+    }
+  ],
+  "selection_rule": "Use first 24-CNY campaign, replace with completed HW26/resource-match/latest recovery results; latest traps grading failed, retain first campaign traps explicitly. Not best-of selection and not a fresh single-run cohort.",
+  "aggregates": {
+    "recuris": {
+      "tasks": 20,
+      "mean_f2p": 0.8325851773011285,
+      "f2p_full": 11,
+      "official_full": 8
+    },
+    "hld_first": {
+      "tasks": 20,
+      "mean_f2p": 0.8185878662400402,
+      "f2p_full": 10,
+      "official_full": 7
+    },
+    "hld_cumulative_provisional": {
+      "tasks": 20,
+      "mean_f2p": 0.8502401028922768,
+      "f2p_full": 11,
+      "official_full": 8
+    }
+  }
+}

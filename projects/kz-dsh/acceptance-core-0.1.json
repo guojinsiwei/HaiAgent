@@ -1,0 +1,27 @@
+{
+  "artifact": "DSH + KZ Core 0.1 (historical acceptance; see acceptance.json for current candidate)",
+  "date": "2026-10-11",
+  "status": "offline_core_prototype_verified",
+  "official_host": "@deepseek-ai/dsh@0.2.0-rc.2",
+  "node_tested": "v25.9.0",
+  "platform_tested": "Windows; synthetic bash result fixtures",
+  "target_platform": "Linux with native bash; target execution not yet verified",
+  "tests": { "total": 36, "passed": 36, "failed": 0, "policy": 24, "host_integration": 12 },
+  "real_official_components_tested": ["Cordis", "ToolRuntime", "SystemPrompt", "Session", "AgentLoop"],
+  "simulated_components": ["LLM adapter (scripted local stream)", "bash execution (structured native result fixture)"],
+  "cli_configuration_composition": "headless --patch common --patch kz --dump-config passed",
+  "package_version_check": "passed",
+  "paid_api_requests": 0,
+  "server_deployment": false,
+  "benchmark_run": false,
+  "historical_KZ_algorithm_equivalence": false,
+  "not_yet_migrated": ["full subgoal system", "1342 routing", "Critic", "checkpoint rollback", "Monitor/Advisor", "expected-observation validation"],
+  "not_yet_verified": ["real provider streaming", "real Linux shell execution", "compression stress", "host crash/recovery replay", "all-role aggregate budget and monetary cap"],
+  "test_environment_note": "Sandbox realpath returned EPERM; final synthetic offline tests passed with approved unsandboxed execution. Production path validation was retained.",
+  "lockfile_sha256": "d8088ced2da38dd9c6d8ea4a26c8e272759e6201dfdd263eacbf82f036387cd8",
+  "reference_sources": [
+    { "path": "../../releases/DH-routing-v1/sources/bestfgs-project/src/bestfgs/contrastive_exploration.py", "sha256": "75e2d73dc79be198c6710badeed0e375d7cee3fc971043dc25bba9d4d772ef7b" },
+    { "path": "../../releases/DH-routing-v1/sources/bestfgs-project/src/bestfgs/lean_memory.py", "sha256": "474e8ac7cb1f3ee91939b4c1174dfe71ec1b0920bc53726f9c878f3f1bcc4a8f" },
+    { "path": "../../releases/DH-routing-v1/sources/bestfgs-project/src/bestfgs/action_loop.py", "sha256": "23392d8975d8f9e7450e2d3377bd3999e6f25b221701c973ef26918ca2e3eee6" }
+  ]
+}

@@ -1,0 +1,2413 @@
+{
+  "campaign_limit_cny": 720,
+  "attempt_limit_cny": 8,
+  "previous_completed": [
+    {
+      "job": "dsh--2c544f9_1",
+      "arm": "dsh",
+      "task": "2c544f9_1",
+      "scenario": "2c544f9",
+      "state": "graded",
+      "started": 1792340633.8231947,
+      "world": "aw-world-111a2a3e54",
+      "solver": "aw-solver-111a2a3e54",
+      "updated": 1792340702.8454936,
+      "api_attempts": 20,
+      "http_errors": [],
+      "transport_errors": 0,
+      "shared_requests": 20,
+      "tools": 23,
+      "budget_reason": null,
+      "provider_stop": {},
+      "wall_stop": {},
+      "last_log_mtime": 1792340694.2610142,
+      "budget_exhausted": false,
+      "exit_code": 0,
+      "stop_reason": "native_completed",
+      "official_success": false,
+      "passed_tests": 5,
+      "total_tests": 6,
+      "grading": "complete",
+      "ended": 1792340702.8454933,
+      "charged_microcny_at_repair": 72691,
+      "actual_budget_exhausted": false
+    },
+    {
+      "job": "dsh--2c544f9_2",
+      "arm": "dsh",
+      "task": "2c544f9_2",
+      "scenario": "2c544f9",
+      "state": "graded",
+      "started": 1792340703.9924567,
+      "world": "aw-world-99655caa6d",
+      "solver": "aw-solver-99655caa6d",
+      "updated": 1792340872.764281,
+      "api_attempts": 48,
+      "http_errors": [],
+      "transport_errors": 0,
+      "shared_requests": 48,
+      "tools": 62,
+      "budget_reason": null,
+      "provider_stop": {},
+      "wall_stop": {},
+      "last_log_mtime": 1792340864.1613111,
+      "budget_exhausted": false,
+      "exit_code": 0,
+      "stop_reason": "native_completed",
+      "official_success": true,
+      "passed_tests": 6,
+      "total_tests": 6,
+      "grading": "complete",
+      "ended": 1792340872.7642808,
+      "charged_microcny_at_repair": 308007,
+      "actual_budget_exhausted": false
+    },
+    {
+      "job": "dsh--f323bae_1",
+      "arm": "dsh",
+      "task": "f323bae_1",
+      "scenario": "f323bae",
+      "state": "graded",
+      "started": 1792339495.2206314,
+      "world": "aw-world-f6a1a413b4",
+      "solver": "aw-solver-f6a1a413b4",
+      "updated": 1792339580.260714,
+      "api_attempts": 20,
+      "http_errors": [],
+      "transport_errors": 0,
+      "shared_requests": 20,
+      "tools": 23,
+      "budget_reason": null,
+      "provider_stop": {},
+      "wall_stop": {},
+      "last_log_mtime": 1792339567.6908827,
+      "budget_exhausted": false,
+      "exit_code": 0,
+      "stop_reason": "native_completed",
+      "official_success": false,
+      "passed_tests": 6,
+      "total_tests": 9,
+      "grading": "complete",
+      "ended": 1792339580.2607136,
+      "charged_microcny_at_repair": 74884,
+      "actual_budget_exhausted": false
+    },
+    {
+      "job": "dsh--f323bae_2",
+      "arm": "dsh",
+      "task": "f323bae_2",
+      "scenario": "f323bae",
+      "state": "graded",
+      "started": 1792340162.2436662,
+      "world": "aw-world-3d83a08623",
+      "solver": "aw-solver-3d83a08623",
+      "updated": 1792340231.3900836,
+      "api_attempts": 18,
+      "http_errors": [],
+      "transport_errors": 0,
+      "shared_requests": 18,
+      "tools": 19,
+      "budget_reason": null,
+      "provider_stop": {},
+      "wall_stop": {},
+      "last_log_mtime": 1792340222.823425,
+      "budget_exhausted": false,
+      "exit_code": 0,
+      "stop_reason": "native_completed",
+      "official_success": true,
+      "passed_tests": 9,
+      "total_tests": 9,
+      "grading": "complete",
+      "ended": 1792340231.3900833,
+      "charged_microcny_at_repair": 99277,
+      "actual_budget_exhausted": false
+    },
+    {
+      "job": "dsh--f323bae_3",
+      "arm": "dsh",
+      "task": "f323bae_3",
+      "scenario": "f323bae",
+      "state": "graded",
+      "started": 1792340382.8706172,
+      "world": "aw-world-4e6291a47e",
+      "solver": "aw-solver-4e6291a47e",
+      "updated": 1792340441.863748,
+      "api_attempts": 15,
+      "http_errors": [],
+      "transport_errors": 0,
+      "shared_requests": 15,
+      "tools": 16,
+      "budget_reason": null,
+      "provider_stop": {},
+      "wall_stop": {},
+      "last_log_mtime": 1792340433.3221283,
+      "budget_exhausted": false,
+      "exit_code": 0,
+      "stop_reason": "native_completed",
+      "official_success": true,
+      "passed_tests": 9,
+      "total_tests": 9,
+      "grading": "complete",
+      "ended": 1792340441.8637478,
+      "charged_microcny_at_repair": 97454,
+      "actual_budget_exhausted": false
+    },
+    {
+      "job": "dsh--ff58e36_1",
+      "arm": "dsh",
+      "task": "ff58e36_1",
+      "scenario": "ff58e36",
+      "state": "graded",
+      "started": 1792338825.1013303,
+      "world": "aw-world-979f105f91",
+      "solver": "aw-solver-979f105f91",
+      "updated": 1792338899.0745118,
+      "api_attempts": 17,
+      "http_errors": [],
+      "transport_errors": 0,
+      "shared_requests": 17,
+      "tools": 21,
+      "budget_reason": null,
+      "provider_stop": {},
+      "wall_stop": {},
+      "last_log_mtime": 1792338889.514305,
+      "budget_exhausted": false,
+      "exit_code": 0,
+      "stop_reason": "native_completed",
+      "official_success": true,
+      "passed_tests": 6,
+      "total_tests": 6,
+      "grading": "complete",
+      "ended": 1792338899.0745113,
+      "charged_microcny_at_repair": 81908,
+      "actual_budget_exhausted": false
+    },
+    {
+      "job": "dsh--ff58e36_2",
+      "arm": "dsh",
+      "task": "ff58e36_2",
+      "scenario": "ff58e36",
+      "state": "graded",
+      "started": 1792338900.240302,
+      "world": "aw-world-46a8a5111d",
+      "solver": "aw-solver-46a8a5111d",
+      "updated": 1792338984.1423714,
+      "api_attempts": 20,
+      "http_errors": [],
+      "transport_errors": 0,
+      "shared_requests": 20,
+      "tools": 27,
+      "budget_reason": null,
+      "provider_stop": {},
+      "wall_stop": {},
+      "last_log_mtime": 1792338971.566362,
+      "budget_exhausted": false,
+      "exit_code": 0,
+      "stop_reason": "native_completed",
+      "official_success": false,
+      "passed_tests": 5,
+      "total_tests": 6,
+      "grading": "complete",
+      "ended": 1792338984.1423707,
+      "charged_microcny_at_repair": 112430,
+      "actual_budget_exhausted": false
+    },
+    {
+      "job": "dsh--ff58e36_3",
+      "arm": "dsh",
+      "task": "ff58e36_3",
+      "scenario": "ff58e36",
+      "state": "graded",
+      "started": 1792339025.5754921,
+      "world": "aw-world-864928e8b8",
+      "solver": "aw-solver-864928e8b8",
+      "updated": 1792339084.0486465,
+      "api_attempts": 14,
+      "http_errors": [],
+      "transport_errors": 0,
+      "shared_requests": 14,
+      "tools": 17,
+      "budget_reason": null,
+      "provider_stop": {},
+      "wall_stop": {},
+      "last_log_mtime": 1792339074.482913,
+      "budget_exhausted": false,
+      "exit_code": 0,
+      "stop_reason": "native_completed",
+      "official_success": true,
+      "passed_tests": 6,
+      "total_tests": 6,
+      "grading": "complete",
+      "ended": 1792339084.048646,
+      "charged_microcny_at_repair": 61450,
+      "actual_budget_exhausted": false
+    },
+    {
+      "job": "hld--2c544f9_1",
+      "arm": "hld",
+      "task": "2c544f9_1",
+      "scenario": "2c544f9",
+      "state": "graded",
+      "started": 1792340638.841622,
+      "world": "aw-world-7c85b3c7eb",
+      "solver": "aw-solver-7c85b3c7eb",
+      "updated": 1792341410.4149609,
+      "api_attempts": 93,
+      "http_errors": [],
+      "transport_errors": 0,
+      "shared_requests": 94,
+      "tools": 66,
+      "budget_reason": null,
+      "provider_stop": {},
+      "wall_stop": {},
+      "last_log_mtime": 1792341398.1390898,
+      "budget_exhausted": false,
+      "exit_code": 1,
+      "official_success": false,
+      "passed_tests": 4,
+      "total_tests": 6,
+      "grading": "complete",
+      "ended": 1792341410.4149606,
+      "stop_reason": "per_task_budget_exhausted",
+      "repair_cause": "legacy_cache_price_overcount",
+      "budget_accounting_affected": true,
+      "charged_microcny_at_repair": 3796090,
+      "actual_budget_exhausted": false
+    },
+    {
+      "job": "hld--f323bae_1",
+      "arm": "hld",
+      "task": "f323bae_1",
+      "scenario": "f323bae",
+      "state": "graded",
+      "started": 1792339585.260396,
+      "world": "aw-world-db667db0df",
+      "solver": "aw-solver-db667db0df",
+      "updated": 1792340379.4586885,
+      "api_attempts": 93,
+      "http_errors": [],
+      "transport_errors": 0,
+      "shared_requests": 94,
+      "tools": 67,
+      "budget_reason": null,
+      "provider_stop": {},
+      "wall_stop": {},
+      "last_log_mtime": 1792340370.0699883,
+      "budget_exhausted": false,
+      "exit_code": 1,
+      "official_success": false,
+      "passed_tests": 6,
+      "total_tests": 9,
+      "grading": "complete",
+      "ended": 1792340379.4586883,
+      "stop_reason": "per_task_budget_exhausted",
+      "repair_cause": "legacy_cache_price_overcount",
+      "budget_accounting_affected": true,
+      "charged_microcny_at_repair": 3784615,
+      "actual_budget_exhausted": false
+    },
+    {
+      "job": "hld--f323bae_2",
+      "arm": "hld",
+      "task": "f323bae_2",
+      "scenario": "f323bae",
+      "state": "graded",
+      "started": 1792339881.3092797,
+      "world": "aw-world-1f32407a06",
+      "solver": "aw-solver-1f32407a06",
+      "updated": 1792340689.2163718,
+      "api_attempts": 91,
+      "http_errors": [],
+      "transport_errors": 0,
+      "shared_requests": 93,
+      "tools": 69,
+      "budget_reason": null,
+      "provider_stop": {},
+      "wall_stop": {},
+      "last_log_mtime": 1792340677.5286937,
+      "budget_exhausted": false,
+      "exit_code": 1,
+      "official_success": false,
+      "passed_tests": 5,
+      "total_tests": 9,
+      "grading": "complete",
+      "ended": 1792340689.2163715,
+      "stop_reason": "per_task_budget_exhausted",
+      "repair_cause": "legacy_cache_price_overcount",
+      "budget_accounting_affected": true,
+      "charged_microcny_at_repair": 3683875,
+      "actual_budget_exhausted": false
+    },
+    {
+      "job": "hld--f323bae_3",
+      "arm": "hld",
+      "task": "f323bae_3",
+      "scenario": "f323bae",
+      "state": "graded",
+      "started": 1792340443.051833,
+      "world": "aw-world-50b1197165",
+      "solver": "aw-solver-50b1197165",
+      "updated": 1792341346.0646155,
+      "api_attempts": 94,
+      "http_errors": [],
+      "transport_errors": 0,
+      "shared_requests": 95,
+      "tools": 51,
+      "budget_reason": null,
+      "provider_stop": {},
+      "wall_stop": {},
+      "last_log_mtime": 1792341332.9626753,
+      "budget_exhausted": false,
+      "exit_code": 1,
+      "official_success": false,
+      "passed_tests": 6,
+      "total_tests": 9,
+      "grading": "complete",
+      "ended": 1792341346.0646152,
+      "stop_reason": "per_task_budget_exhausted",
+      "repair_cause": "legacy_cache_price_overcount",
+      "budget_accounting_affected": true,
+      "charged_microcny_at_repair": 3961639,
+      "actual_budget_exhausted": false
+    },
+    {
+      "job": "hld--ff58e36_1",
+      "arm": "hld",
+      "task": "ff58e36_1",
+      "scenario": "ff58e36",
+      "state": "graded",
+      "started": 1792338825.09751,
+      "world": "aw-world-818dfc492e",
+      "solver": "aw-solver-818dfc492e",
+      "updated": 1792339680.9945164,
+      "api_attempts": 88,
+      "http_errors": [],
+      "transport_errors": 0,
+      "shared_requests": 89,
+      "tools": 56,
+      "budget_reason": null,
+      "provider_stop": {},
+      "wall_stop": {},
+      "last_log_mtime": 1792339670.6407483,
+      "budget_exhausted": false,
+      "exit_code": 1,
+      "official_success": true,
+      "passed_tests": 6,
+      "total_tests": 6,
+      "grading": "complete",
+      "ended": 1792339680.9945161,
+      "stop_reason": "per_task_budget_exhausted",
+      "repair_cause": "legacy_cache_price_overcount",
+      "budget_accounting_affected": true,
+      "charged_microcny_at_repair": 3859030,
+      "actual_budget_exhausted": false
+    },
+    {
+      "job": "hld--ff58e36_2",
+      "arm": "hld",
+      "task": "ff58e36_2",
+      "scenario": "ff58e36",
+      "state": "needs_attention",
+      "started": 1792338965.4762964,
+      "world": "aw-world-c015ac8987",
+      "solver": "aw-solver-c015ac8987",
+      "updated": 1792339493.5782535,
+      "api_attempts": 59,
+      "http_errors": [],
+      "transport_errors": 1,
+      "shared_requests": 59,
+      "tools": 41,
+      "budget_reason": "budget_service_unavailable",
+      "provider_stop": {
+        "kind": "budget",
+        "reason": "budget_service_unavailable"
+      },
+      "wall_stop": {
+        "state": "enforced",
+        "reason": "budget-stop.json",
+        "limit_seconds": 7200
+      },
+      "last_log_mtime": 1792339470.661324,
+      "budget_exhausted": false,
+      "exit_code": 0,
+      "stop_reason": "budget_service_unavailable",
+      "engineering_fault": "budget_service_unavailable",
+      "official_success": false,
+      "passed_tests": 4,
+      "total_tests": 6,
+      "grading": "complete",
+      "ended": 1792339493.5782533,
+      "repair_cause": "budget_rpc_timeout",
+      "charged_microcny_at_repair": 2296887,
+      "actual_budget_exhausted": false
+    },
+    {
+      "job": "hld--ff58e36_3",
+      "arm": "hld",
+      "task": "ff58e36_3",
+      "scenario": "ff58e36",
+      "state": "graded",
+      "started": 1792339085.7362688,
+      "world": "aw-world-6814025f26",
+      "solver": "aw-solver-6814025f26",
+      "updated": 1792340074.2552357,
+      "api_attempts": 94,
+      "http_errors": [],
+      "transport_errors": 0,
+      "shared_requests": 95,
+      "tools": 65,
+      "budget_reason": null,
+      "provider_stop": {},
+      "wall_stop": {},
+      "last_log_mtime": 1792340064.5348501,
+      "budget_exhausted": false,
+      "exit_code": 1,
+      "official_success": true,
+      "passed_tests": 6,
+      "total_tests": 6,
+      "grading": "complete",
+      "ended": 1792340074.255235,
+      "stop_reason": "per_task_budget_exhausted",
+      "repair_cause": "legacy_cache_price_overcount",
+      "budget_accounting_affected": true,
+      "charged_microcny_at_repair": 3963442,
+      "actual_budget_exhausted": false
+    },
+    {
+      "job": "kzdsh-new--2c544f9_1",
+      "arm": "kzdsh-new",
+      "task": "2c544f9_1",
+      "scenario": "2c544f9",
+      "state": "graded",
+      "started": 1792340693.9744415,
+      "world": "aw-world-92c852a438",
+      "solver": "aw-solver-92c852a438",
+      "updated": 1792341642.8802292,
+      "api_attempts": 91,
+      "http_errors": [],
+      "transport_errors": 0,
+      "shared_requests": 92,
+      "tools": 54,
+      "budget_reason": null,
+      "provider_stop": {},
+      "wall_stop": {},
+      "last_log_mtime": 1792341631.1186316,
+      "budget_exhausted": false,
+      "exit_code": 1,
+      "official_success": false,
+      "passed_tests": 5,
+      "total_tests": 6,
+      "grading": "complete",
+      "ended": 1792341642.8802288,
+      "stop_reason": "per_task_budget_exhausted",
+      "repair_cause": "legacy_cache_price_overcount",
+      "budget_accounting_affected": true,
+      "charged_microcny_at_repair": 4445013,
+      "actual_budget_exhausted": false
+    },
+    {
+      "job": "kzdsh-new--f323bae_1",
+      "arm": "kzdsh-new",
+      "task": "f323bae_1",
+      "scenario": "f323bae",
+      "state": "graded",
+      "started": 1792339685.4565504,
+      "world": "aw-world-8c616c708c",
+      "solver": "aw-solver-8c616c708c",
+      "updated": 1792340631.491705,
+      "api_attempts": 92,
+      "http_errors": [],
+      "transport_errors": 0,
+      "shared_requests": 94,
+      "tools": 57,
+      "budget_reason": null,
+      "provider_stop": {},
+      "wall_stop": {},
+      "last_log_mtime": 1792340619.1365821,
+      "budget_exhausted": false,
+      "exit_code": 1,
+      "official_success": true,
+      "passed_tests": 9,
+      "total_tests": 9,
+      "grading": "complete",
+      "ended": 1792340631.4917045,
+      "stop_reason": "per_task_budget_exhausted",
+      "repair_cause": "legacy_cache_price_overcount",
+      "budget_accounting_affected": true,
+      "charged_microcny_at_repair": 4888910,
+      "actual_budget_exhausted": false
+    },
+    {
+      "job": "kzdsh-new--f323bae_2",
+      "arm": "kzdsh-new",
+      "task": "f323bae_2",
+      "scenario": "f323bae",
+      "state": "graded",
+      "started": 1792340071.9161873,
+      "world": "aw-world-92e086d685",
+      "solver": "aw-solver-92e086d685",
+      "updated": 1792340965.0636241,
+      "api_attempts": 88,
+      "http_errors": [],
+      "transport_errors": 0,
+      "shared_requests": 89,
+      "tools": 52,
+      "budget_reason": null,
+      "provider_stop": {},
+      "wall_stop": {},
+      "last_log_mtime": 1792340954.2980862,
+      "budget_exhausted": false,
+      "exit_code": 1,
+      "official_success": true,
+      "passed_tests": 9,
+      "total_tests": 9,
+      "grading": "complete",
+      "ended": 1792340965.063624,
+      "stop_reason": "per_task_budget_exhausted",
+      "repair_cause": "legacy_cache_price_overcount",
+      "budget_accounting_affected": true,
+      "charged_microcny_at_repair": 4374307,
+      "actual_budget_exhausted": false
+    },
+    {
+      "job": "kzdsh-new--f323bae_3",
+      "arm": "kzdsh-new",
+      "task": "f323bae_3",
+      "scenario": "f323bae",
+      "state": "graded",
+      "started": 1792340232.3742397,
+      "world": "aw-world-6ab493ca5d",
+      "solver": "aw-solver-6ab493ca5d",
+      "updated": 1792341085.870419,
+      "api_attempts": 92,
+      "http_errors": [],
+      "transport_errors": 0,
+      "shared_requests": 93,
+      "tools": 50,
+      "budget_reason": null,
+      "provider_stop": {},
+      "wall_stop": {},
+      "last_log_mtime": 1792341077.1135275,
+      "budget_exhausted": false,
+      "exit_code": 1,
+      "official_success": true,
+      "passed_tests": 9,
+      "total_tests": 9,
+      "grading": "complete",
+      "ended": 1792341085.8704188,
+      "stop_reason": "per_task_budget_exhausted",
+      "repair_cause": "legacy_cache_price_overcount",
+      "budget_accounting_affected": true,
+      "charged_microcny_at_repair": 4476185,
+      "actual_budget_exhausted": false
+    },
+    {
+      "job": "kzdsh-new--ff58e36_1",
+      "arm": "kzdsh-new",
+      "task": "ff58e36_1",
+      "scenario": "ff58e36",
+      "state": "graded",
+      "started": 1792338825.0961175,
+      "world": "aw-world-5cdce43eb3",
+      "solver": "aw-solver-5cdce43eb3",
+      "updated": 1792339879.4249635,
+      "api_attempts": 90,
+      "http_errors": [],
+      "transport_errors": 0,
+      "shared_requests": 91,
+      "tools": 51,
+      "budget_reason": null,
+      "provider_stop": {},
+      "wall_stop": {},
+      "last_log_mtime": 1792339870.186044,
+      "budget_exhausted": false,
+      "exit_code": 1,
+      "official_success": true,
+      "passed_tests": 6,
+      "total_tests": 6,
+      "grading": "complete",
+      "ended": 1792339879.4249632,
+      "stop_reason": "per_task_budget_exhausted",
+      "repair_cause": "legacy_cache_price_overcount",
+      "budget_accounting_affected": true,
+      "charged_microcny_at_repair": 4682221,
+      "actual_budget_exhausted": false
+    },
+    {
+      "job": "kzdsh-new--ff58e36_2",
+      "arm": "kzdsh-new",
+      "task": "ff58e36_2",
+      "scenario": "ff58e36",
+      "state": "graded",
+      "started": 1792338825.1022692,
+      "world": "aw-world-c18e684662",
+      "solver": "aw-solver-c18e684662",
+      "updated": 1792339851.5478337,
+      "api_attempts": 88,
+      "http_errors": [],
+      "transport_errors": 0,
+      "shared_requests": 89,
+      "tools": 56,
+      "budget_reason": null,
+      "provider_stop": {},
+      "wall_stop": {},
+      "last_log_mtime": 1792339839.7486498,
+      "budget_exhausted": false,
+      "exit_code": 1,
+      "official_success": false,
+      "passed_tests": 5,
+      "total_tests": 6,
+      "grading": "complete",
+      "ended": 1792339851.5478332,
+      "stop_reason": "per_task_budget_exhausted",
+      "repair_cause": "legacy_cache_price_overcount",
+      "budget_accounting_affected": true,
+      "charged_microcny_at_repair": 4482714,
+      "actual_budget_exhausted": false
+    },
+    {
+      "job": "kzdsh-new--ff58e36_3",
+      "arm": "kzdsh-new",
+      "task": "ff58e36_3",
+      "scenario": "ff58e36",
+      "state": "graded",
+      "started": 1792339313.7861671,
+      "world": "aw-world-3107d004bc",
+      "solver": "aw-solver-3107d004bc",
+      "updated": 1792340158.008031,
+      "api_attempts": 94,
+      "http_errors": [],
+      "transport_errors": 0,
+      "shared_requests": 95,
+      "tools": 59,
+      "budget_reason": null,
+      "provider_stop": {},
+      "wall_stop": {},
+      "last_log_mtime": 1792340146.2611527,
+      "budget_exhausted": false,
+      "exit_code": 1,
+      "official_success": true,
+      "passed_tests": 6,
+      "total_tests": 6,
+      "grading": "complete",
+      "ended": 1792340158.0080307,
+      "stop_reason": "per_task_budget_exhausted",
+      "repair_cause": "legacy_cache_price_overcount",
+      "budget_accounting_affected": true,
+      "charged_microcny_at_repair": 3749622,
+      "actual_budget_exhausted": false
+    },
+    {
+      "job": "recuris--2c544f9_1",
+      "arm": "recuris",
+      "task": "2c544f9_1",
+      "scenario": "2c544f9",
+      "state": "graded",
+      "started": 1792340448.063769,
+      "world": "aw-world-21399a27e7",
+      "solver": "aw-solver-21399a27e7",
+      "updated": 1792340637.8424656,
+      "api_attempts": 62,
+      "http_errors": [],
+      "transport_errors": 0,
+      "shared_requests": 62,
+      "tools": 37,
+      "budget_reason": null,
+      "provider_stop": {},
+      "wall_stop": {},
+      "last_log_mtime": 1792340626.2847176,
+      "budget_exhausted": false,
+      "exit_code": 0,
+      "stop_reason": "native_completed",
+      "official_success": true,
+      "passed_tests": 6,
+      "total_tests": 6,
+      "grading": "complete",
+      "ended": 1792340637.8424652,
+      "charged_microcny_at_repair": 475891,
+      "actual_budget_exhausted": false
+    },
+    {
+      "job": "recuris--f323bae_1",
+      "arm": "recuris",
+      "task": "f323bae_1",
+      "scenario": "f323bae",
+      "state": "graded",
+      "started": 1792339856.2335463,
+      "world": "aw-world-8bb8320607",
+      "solver": "aw-solver-8bb8320607",
+      "updated": 1792340070.4302242,
+      "api_attempts": 64,
+      "http_errors": [],
+      "transport_errors": 0,
+      "shared_requests": 64,
+      "tools": 41,
+      "budget_reason": null,
+      "provider_stop": {},
+      "wall_stop": {},
+      "last_log_mtime": 1792340061.3748012,
+      "budget_exhausted": false,
+      "exit_code": 0,
+      "stop_reason": "native_completed",
+      "official_success": true,
+      "passed_tests": 9,
+      "total_tests": 9,
+      "grading": "complete",
+      "ended": 1792340070.4302237,
+      "charged_microcny_at_repair": 603167,
+      "actual_budget_exhausted": false
+    },
+    {
+      "job": "recuris--f323bae_2",
+      "arm": "recuris",
+      "task": "f323bae_2",
+      "scenario": "f323bae",
+      "state": "graded",
+      "started": 1792340076.926257,
+      "world": "aw-world-810d4422bf",
+      "solver": "aw-solver-810d4422bf",
+      "updated": 1792340246.1334395,
+      "api_attempts": 50,
+      "http_errors": [],
+      "transport_errors": 0,
+      "shared_requests": 50,
+      "tools": 30,
+      "budget_reason": null,
+      "provider_stop": {},
+      "wall_stop": {},
+      "last_log_mtime": 1792340233.0665987,
+      "budget_exhausted": false,
+      "exit_code": 0,
+      "stop_reason": "native_completed",
+      "official_success": true,
+      "passed_tests": 9,
+      "total_tests": 9,
+      "grading": "complete",
+      "ended": 1792340246.133439,
+      "charged_microcny_at_repair": 428221,
+      "actual_budget_exhausted": false
+    },
+    {
+      "job": "recuris--f323bae_3",
+      "arm": "recuris",
+      "task": "f323bae_3",
+      "scenario": "f323bae",
+      "state": "graded",
+      "started": 1792340247.4142315,
+      "world": "aw-world-fb7cd061ec",
+      "solver": "aw-solver-fb7cd061ec",
+      "updated": 1792340447.2783248,
+      "api_attempts": 59,
+      "http_errors": [],
+      "transport_errors": 0,
+      "shared_requests": 59,
+      "tools": 33,
+      "budget_reason": null,
+      "provider_stop": {},
+      "wall_stop": {},
+      "last_log_mtime": 1792340437.2251992,
+      "budget_exhausted": false,
+      "exit_code": 0,
+      "stop_reason": "native_completed",
+      "official_success": true,
+      "passed_tests": 9,
+      "total_tests": 9,
+      "grading": "complete",
+      "ended": 1792340447.2783244,
+      "charged_microcny_at_repair": 521649,
+      "actual_budget_exhausted": false
+    },
+    {
+      "job": "recuris--ff58e36_1",
+      "arm": "recuris",
+      "task": "ff58e36_1",
+      "scenario": "ff58e36",
+      "state": "graded",
+      "started": 1792338825.097201,
+      "world": "aw-world-014b951091",
+      "solver": "aw-solver-014b951091",
+      "updated": 1792339025.194869,
+      "api_attempts": 62,
+      "http_errors": [],
+      "transport_errors": 0,
+      "shared_requests": 62,
+      "tools": 37,
+      "budget_reason": null,
+      "provider_stop": {},
+      "wall_stop": {},
+      "last_log_mtime": 1792339012.1593716,
+      "budget_exhausted": false,
+      "exit_code": 0,
+      "stop_reason": "native_completed",
+      "official_success": true,
+      "passed_tests": 6,
+      "total_tests": 6,
+      "grading": "complete",
+      "ended": 1792339025.1948686,
+      "charged_microcny_at_repair": 387910,
+      "actual_budget_exhausted": false
+    },
+    {
+      "job": "recuris--ff58e36_2",
+      "arm": "recuris",
+      "task": "ff58e36_2",
+      "scenario": "ff58e36",
+      "state": "graded",
+      "started": 1792338825.103145,
+      "world": "aw-world-440de078f6",
+      "solver": "aw-solver-440de078f6",
+      "updated": 1792338964.9292226,
+      "api_attempts": 38,
+      "http_errors": [],
+      "transport_errors": 0,
+      "shared_requests": 38,
+      "tools": 25,
+      "budget_reason": null,
+      "provider_stop": {},
+      "wall_stop": {},
+      "last_log_mtime": 1792338953.86892,
+      "budget_exhausted": false,
+      "exit_code": 0,
+      "stop_reason": "native_completed",
+      "official_success": true,
+      "passed_tests": 6,
+      "total_tests": 6,
+      "grading": "complete",
+      "ended": 1792338964.929222,
+      "charged_microcny_at_repair": 305779,
+      "actual_budget_exhausted": false
+    },
+    {
+      "job": "recuris--ff58e36_3",
+      "arm": "recuris",
+      "task": "ff58e36_3",
+      "scenario": "ff58e36",
+      "state": "graded",
+      "started": 1792338985.493495,
+      "world": "aw-world-8ba7ef32c6",
+      "solver": "aw-solver-8ba7ef32c6",
+      "updated": 1792339309.7103112,
+      "api_attempts": 87,
+      "http_errors": [],
+      "transport_errors": 0,
+      "shared_requests": 87,
+      "tools": 52,
+      "budget_reason": null,
+      "provider_stop": {},
+      "wall_stop": {},
+      "last_log_mtime": 1792339301.1684463,
+      "budget_exhausted": false,
+      "exit_code": 0,
+      "stop_reason": "native_completed",
+      "official_success": true,
+      "passed_tests": 6,
+      "total_tests": 6,
+      "grading": "complete",
+      "ended": 1792339309.710311,
+      "charged_microcny_at_repair": 627306,
+      "actual_budget_exhausted": false
+    }
+  ],
+  "retry_count": 7,
+  "unstarted_count": 91,
+  "queue": [
+    {
+      "arm": "hld",
+      "row": {
+        "task": "2c544f9_1",
+        "scenario": "2c544f9",
+        "instruction": "Send $250 on venmo to Catherine.",
+        "supervisor": {
+          "first_name": "Brandon",
+          "last_name": "Weber",
+          "email": "brandon-webe@gmail.com",
+          "phone_number": "3798762980"
+        },
+        "datetime": "2023-05-18T12:00:00",
+        "_job": "hld--2c544f9_1--repair1",
+        "_attempt": 2,
+        "_rerun_of": "hld--2c544f9_1"
+      },
+      "cause": "legacy_cache_price_overcount"
+    },
+    {
+      "arm": "hld",
+      "row": {
+        "task": "f323bae_1",
+        "scenario": "f323bae",
+        "instruction": "I maintain my habit tracking logs in Simple Note. Export it in \"~/downloads/habit_tracker.csv\" in my file system. Its first header column should be \"date\" and the rest should be correspond to the habits I track as per my logs. The rows for date column should be in yyyy-mm-dd format and the rest should be yes or no as per my logs. The rows should be sorted in ascending order of the date from top to bottom, and habit columns as per their order in logs.",
+        "supervisor": {
+          "first_name": "Troy",
+          "last_name": "Solomon",
+          "email": "tr_solo@gmail.com",
+          "phone_number": "7273731063"
+        },
+        "datetime": "2023-05-18T12:00:00",
+        "_job": "hld--f323bae_1--repair1",
+        "_attempt": 2,
+        "_rerun_of": "hld--f323bae_1"
+      },
+      "cause": "legacy_cache_price_overcount"
+    },
+    {
+      "arm": "hld",
+      "row": {
+        "task": "f323bae_2",
+        "scenario": "f323bae",
+        "instruction": "I maintain my habit tracking logs in Simple Note. Export it in \"~/backups/habit_log.csv\" in my file system. Its first header column should be \"date\" and the rest should be correspond to the habits I track as per my logs. The rows for date column should be in yyyy-mm-dd format and the rest should be yes or no as per my logs. The rows should be sorted in descending order of the date from top to bottom, and habit columns as per their order in logs.",
+        "supervisor": {
+          "first_name": "Spencer",
+          "last_name": "Powell",
+          "email": "spencer.powell@gmail.com",
+          "phone_number": "8267279358"
+        },
+        "datetime": "2023-05-18T12:00:00",
+        "_job": "hld--f323bae_2--repair1",
+        "_attempt": 2,
+        "_rerun_of": "hld--f323bae_2"
+      },
+      "cause": "legacy_cache_price_overcount"
+    },
+    {
+      "arm": "hld",
+      "row": {
+        "task": "f323bae_3",
+        "scenario": "f323bae",
+        "instruction": "I maintain my habit tracking logs in Simple Note. Export it in \"~/backups/simple_note/habits.csv\" in my file system. Its first header column should be \"date\" and the rest should be correspond to the habits I track as per my logs. The rows for date column should be in yyyy-mm-dd format and the rest should be yes or no as per my logs. The rows should be sorted in ascending order of the date from top to bottom, and habit columns as per their order in logs.",
+        "supervisor": {
+          "first_name": "Richard",
+          "last_name": "Riddle",
+          "email": "ric.riddle@gmail.com",
+          "phone_number": "4436271690"
+        },
+        "datetime": "2023-05-18T12:00:00",
+        "_job": "hld--f323bae_3--repair1",
+        "_attempt": 2,
+        "_rerun_of": "hld--f323bae_3"
+      },
+      "cause": "legacy_cache_price_overcount"
+    },
+    {
+      "arm": "hld",
+      "row": {
+        "task": "ff58e36_2",
+        "scenario": "ff58e36",
+        "instruction": "Add all my coworkers and friends as friends on venmo, if they are not already.",
+        "supervisor": {
+          "first_name": "Chris",
+          "last_name": "Mccoy",
+          "email": "chris.mcco@gmail.com",
+          "phone_number": "5584932120"
+        },
+        "datetime": "2023-05-18T12:00:00",
+        "_job": "hld--ff58e36_2--repair1",
+        "_attempt": 2,
+        "_rerun_of": "hld--ff58e36_2"
+      },
+      "cause": "budget_rpc_timeout"
+    },
+    {
+      "arm": "kzdsh-new",
+      "row": {
+        "task": "2c544f9_1",
+        "scenario": "2c544f9",
+        "instruction": "Send $250 on venmo to Catherine.",
+        "supervisor": {
+          "first_name": "Brandon",
+          "last_name": "Weber",
+          "email": "brandon-webe@gmail.com",
+          "phone_number": "3798762980"
+        },
+        "datetime": "2023-05-18T12:00:00",
+        "_job": "kzdsh-new--2c544f9_1--repair1",
+        "_attempt": 2,
+        "_rerun_of": "kzdsh-new--2c544f9_1"
+      },
+      "cause": "legacy_cache_price_overcount"
+    },
+    {
+      "arm": "kzdsh-new",
+      "row": {
+        "task": "ff58e36_2",
+        "scenario": "ff58e36",
+        "instruction": "Add all my coworkers and friends as friends on venmo, if they are not already.",
+        "supervisor": {
+          "first_name": "Chris",
+          "last_name": "Mccoy",
+          "email": "chris.mcco@gmail.com",
+          "phone_number": "5584932120"
+        },
+        "datetime": "2023-05-18T12:00:00",
+        "_job": "kzdsh-new--ff58e36_2--repair1",
+        "_attempt": 2,
+        "_rerun_of": "kzdsh-new--ff58e36_2"
+      },
+      "cause": "legacy_cache_price_overcount"
+    },
+    {
+      "arm": "hld",
+      "row": {
+        "task": "2c544f9_2",
+        "scenario": "2c544f9",
+        "instruction": "Send $427 on venmo to Anita.",
+        "supervisor": {
+          "first_name": "Anthony",
+          "last_name": "Harrison",
+          "email": "an-harrison@gmail.com",
+          "phone_number": "2466064078"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "kzdsh-new",
+      "row": {
+        "task": "2c544f9_2",
+        "scenario": "2c544f9",
+        "instruction": "Send $427 on venmo to Anita.",
+        "supervisor": {
+          "first_name": "Anthony",
+          "last_name": "Harrison",
+          "email": "an-harrison@gmail.com",
+          "phone_number": "2466064078"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "recuris",
+      "row": {
+        "task": "2c544f9_2",
+        "scenario": "2c544f9",
+        "instruction": "Send $427 on venmo to Anita.",
+        "supervisor": {
+          "first_name": "Anthony",
+          "last_name": "Harrison",
+          "email": "an-harrison@gmail.com",
+          "phone_number": "2466064078"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "hld",
+      "row": {
+        "task": "2c544f9_3",
+        "scenario": "2c544f9",
+        "instruction": "Send $234 on venmo to Jack.",
+        "supervisor": {
+          "first_name": "Sierra",
+          "last_name": "White",
+          "email": "siwhit@gmail.com",
+          "phone_number": "7295077363"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "kzdsh-new",
+      "row": {
+        "task": "2c544f9_3",
+        "scenario": "2c544f9",
+        "instruction": "Send $234 on venmo to Jack.",
+        "supervisor": {
+          "first_name": "Sierra",
+          "last_name": "White",
+          "email": "siwhit@gmail.com",
+          "phone_number": "7295077363"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "recuris",
+      "row": {
+        "task": "2c544f9_3",
+        "scenario": "2c544f9",
+        "instruction": "Send $234 on venmo to Jack.",
+        "supervisor": {
+          "first_name": "Sierra",
+          "last_name": "White",
+          "email": "siwhit@gmail.com",
+          "phone_number": "7295077363"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "dsh",
+      "row": {
+        "task": "2c544f9_3",
+        "scenario": "2c544f9",
+        "instruction": "Send $234 on venmo to Jack.",
+        "supervisor": {
+          "first_name": "Sierra",
+          "last_name": "White",
+          "email": "siwhit@gmail.com",
+          "phone_number": "7295077363"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "kzdsh-new",
+      "row": {
+        "task": "522e5e5_1",
+        "scenario": "522e5e5",
+        "instruction": "Befriend on Venmo anyone I have sent or received money from this month.",
+        "supervisor": {
+          "first_name": "James",
+          "last_name": "Solomon",
+          "email": "ja-solomon@gmail.com",
+          "phone_number": "8683971586"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "recuris",
+      "row": {
+        "task": "522e5e5_1",
+        "scenario": "522e5e5",
+        "instruction": "Befriend on Venmo anyone I have sent or received money from this month.",
+        "supervisor": {
+          "first_name": "James",
+          "last_name": "Solomon",
+          "email": "ja-solomon@gmail.com",
+          "phone_number": "8683971586"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "dsh",
+      "row": {
+        "task": "522e5e5_1",
+        "scenario": "522e5e5",
+        "instruction": "Befriend on Venmo anyone I have sent or received money from this month.",
+        "supervisor": {
+          "first_name": "James",
+          "last_name": "Solomon",
+          "email": "ja-solomon@gmail.com",
+          "phone_number": "8683971586"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "hld",
+      "row": {
+        "task": "522e5e5_1",
+        "scenario": "522e5e5",
+        "instruction": "Befriend on Venmo anyone I have sent or received money from this month.",
+        "supervisor": {
+          "first_name": "James",
+          "last_name": "Solomon",
+          "email": "ja-solomon@gmail.com",
+          "phone_number": "8683971586"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "recuris",
+      "row": {
+        "task": "522e5e5_2",
+        "scenario": "522e5e5",
+        "instruction": "Befriend on Venmo anyone I have sent money to this month.",
+        "supervisor": {
+          "first_name": "Matthew",
+          "last_name": "Blackburn",
+          "email": "matthew.blac@gmail.com",
+          "phone_number": "4886643554"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "dsh",
+      "row": {
+        "task": "522e5e5_2",
+        "scenario": "522e5e5",
+        "instruction": "Befriend on Venmo anyone I have sent money to this month.",
+        "supervisor": {
+          "first_name": "Matthew",
+          "last_name": "Blackburn",
+          "email": "matthew.blac@gmail.com",
+          "phone_number": "4886643554"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "hld",
+      "row": {
+        "task": "522e5e5_2",
+        "scenario": "522e5e5",
+        "instruction": "Befriend on Venmo anyone I have sent money to this month.",
+        "supervisor": {
+          "first_name": "Matthew",
+          "last_name": "Blackburn",
+          "email": "matthew.blac@gmail.com",
+          "phone_number": "4886643554"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "kzdsh-new",
+      "row": {
+        "task": "522e5e5_2",
+        "scenario": "522e5e5",
+        "instruction": "Befriend on Venmo anyone I have sent money to this month.",
+        "supervisor": {
+          "first_name": "Matthew",
+          "last_name": "Blackburn",
+          "email": "matthew.blac@gmail.com",
+          "phone_number": "4886643554"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "dsh",
+      "row": {
+        "task": "522e5e5_3",
+        "scenario": "522e5e5",
+        "instruction": "Befriend on Venmo anyone I have received money from this month.",
+        "supervisor": {
+          "first_name": "Jason",
+          "last_name": "Simpson",
+          "email": "jasonsimp@gmail.com",
+          "phone_number": "5516882990"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "hld",
+      "row": {
+        "task": "522e5e5_3",
+        "scenario": "522e5e5",
+        "instruction": "Befriend on Venmo anyone I have received money from this month.",
+        "supervisor": {
+          "first_name": "Jason",
+          "last_name": "Simpson",
+          "email": "jasonsimp@gmail.com",
+          "phone_number": "5516882990"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "kzdsh-new",
+      "row": {
+        "task": "522e5e5_3",
+        "scenario": "522e5e5",
+        "instruction": "Befriend on Venmo anyone I have received money from this month.",
+        "supervisor": {
+          "first_name": "Jason",
+          "last_name": "Simpson",
+          "email": "jasonsimp@gmail.com",
+          "phone_number": "5516882990"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "recuris",
+      "row": {
+        "task": "522e5e5_3",
+        "scenario": "522e5e5",
+        "instruction": "Befriend on Venmo anyone I have received money from this month.",
+        "supervisor": {
+          "first_name": "Jason",
+          "last_name": "Simpson",
+          "email": "jasonsimp@gmail.com",
+          "phone_number": "5516882990"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "hld",
+      "row": {
+        "task": "dac78d9_1",
+        "scenario": "dac78d9",
+        "instruction": "How many venmo friends have I made since the start of January this year?",
+        "supervisor": {
+          "first_name": "Morgan",
+          "last_name": "Burton",
+          "email": "morgan-harrison@gmail.com",
+          "phone_number": "8903665635"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "kzdsh-new",
+      "row": {
+        "task": "dac78d9_1",
+        "scenario": "dac78d9",
+        "instruction": "How many venmo friends have I made since the start of January this year?",
+        "supervisor": {
+          "first_name": "Morgan",
+          "last_name": "Burton",
+          "email": "morgan-harrison@gmail.com",
+          "phone_number": "8903665635"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "recuris",
+      "row": {
+        "task": "dac78d9_1",
+        "scenario": "dac78d9",
+        "instruction": "How many venmo friends have I made since the start of January this year?",
+        "supervisor": {
+          "first_name": "Morgan",
+          "last_name": "Burton",
+          "email": "morgan-harrison@gmail.com",
+          "phone_number": "8903665635"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "dsh",
+      "row": {
+        "task": "dac78d9_1",
+        "scenario": "dac78d9",
+        "instruction": "How many venmo friends have I made since the start of January this year?",
+        "supervisor": {
+          "first_name": "Morgan",
+          "last_name": "Burton",
+          "email": "morgan-harrison@gmail.com",
+          "phone_number": "8903665635"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "kzdsh-new",
+      "row": {
+        "task": "dac78d9_2",
+        "scenario": "dac78d9",
+        "instruction": "How many venmo friends have I made since the start of October last year?",
+        "supervisor": {
+          "first_name": "Ashley",
+          "last_name": "Moore",
+          "email": "as_moore@gmail.com",
+          "phone_number": "7336094411"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "recuris",
+      "row": {
+        "task": "dac78d9_2",
+        "scenario": "dac78d9",
+        "instruction": "How many venmo friends have I made since the start of October last year?",
+        "supervisor": {
+          "first_name": "Ashley",
+          "last_name": "Moore",
+          "email": "as_moore@gmail.com",
+          "phone_number": "7336094411"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "dsh",
+      "row": {
+        "task": "dac78d9_2",
+        "scenario": "dac78d9",
+        "instruction": "How many venmo friends have I made since the start of October last year?",
+        "supervisor": {
+          "first_name": "Ashley",
+          "last_name": "Moore",
+          "email": "as_moore@gmail.com",
+          "phone_number": "7336094411"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "hld",
+      "row": {
+        "task": "dac78d9_2",
+        "scenario": "dac78d9",
+        "instruction": "How many venmo friends have I made since the start of October last year?",
+        "supervisor": {
+          "first_name": "Ashley",
+          "last_name": "Moore",
+          "email": "as_moore@gmail.com",
+          "phone_number": "7336094411"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "recuris",
+      "row": {
+        "task": "dac78d9_3",
+        "scenario": "dac78d9",
+        "instruction": "How many venmo friends have I made since the start of March this year?",
+        "supervisor": {
+          "first_name": "Katie",
+          "last_name": "Simpson",
+          "email": "kat_simp@gmail.com",
+          "phone_number": "6727300099"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "dsh",
+      "row": {
+        "task": "dac78d9_3",
+        "scenario": "dac78d9",
+        "instruction": "How many venmo friends have I made since the start of March this year?",
+        "supervisor": {
+          "first_name": "Katie",
+          "last_name": "Simpson",
+          "email": "kat_simp@gmail.com",
+          "phone_number": "6727300099"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "hld",
+      "row": {
+        "task": "dac78d9_3",
+        "scenario": "dac78d9",
+        "instruction": "How many venmo friends have I made since the start of March this year?",
+        "supervisor": {
+          "first_name": "Katie",
+          "last_name": "Simpson",
+          "email": "kat_simp@gmail.com",
+          "phone_number": "6727300099"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "kzdsh-new",
+      "row": {
+        "task": "dac78d9_3",
+        "scenario": "dac78d9",
+        "instruction": "How many venmo friends have I made since the start of March this year?",
+        "supervisor": {
+          "first_name": "Katie",
+          "last_name": "Simpson",
+          "email": "kat_simp@gmail.com",
+          "phone_number": "6727300099"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "dsh",
+      "row": {
+        "task": "0d01c76_1",
+        "scenario": "0d01c76",
+        "instruction": "Import markdown notes in the \"~/documents/personal/notes/\" directory of my file system to my Simple Note account. Each markdown file should become a separate note in the Simple Note account. The title of each note should be taken from the name of the source file (excluding the directory path and file extension), replacing underscores in it with blank spaces.",
+        "supervisor": {
+          "first_name": "Adam",
+          "last_name": "Blackburn",
+          "email": "ad.blackburn@gmail.com",
+          "phone_number": "8944155247"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "hld",
+      "row": {
+        "task": "0d01c76_1",
+        "scenario": "0d01c76",
+        "instruction": "Import markdown notes in the \"~/documents/personal/notes/\" directory of my file system to my Simple Note account. Each markdown file should become a separate note in the Simple Note account. The title of each note should be taken from the name of the source file (excluding the directory path and file extension), replacing underscores in it with blank spaces.",
+        "supervisor": {
+          "first_name": "Adam",
+          "last_name": "Blackburn",
+          "email": "ad.blackburn@gmail.com",
+          "phone_number": "8944155247"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "kzdsh-new",
+      "row": {
+        "task": "0d01c76_1",
+        "scenario": "0d01c76",
+        "instruction": "Import markdown notes in the \"~/documents/personal/notes/\" directory of my file system to my Simple Note account. Each markdown file should become a separate note in the Simple Note account. The title of each note should be taken from the name of the source file (excluding the directory path and file extension), replacing underscores in it with blank spaces.",
+        "supervisor": {
+          "first_name": "Adam",
+          "last_name": "Blackburn",
+          "email": "ad.blackburn@gmail.com",
+          "phone_number": "8944155247"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "recuris",
+      "row": {
+        "task": "0d01c76_1",
+        "scenario": "0d01c76",
+        "instruction": "Import markdown notes in the \"~/documents/personal/notes/\" directory of my file system to my Simple Note account. Each markdown file should become a separate note in the Simple Note account. The title of each note should be taken from the name of the source file (excluding the directory path and file extension), replacing underscores in it with blank spaces.",
+        "supervisor": {
+          "first_name": "Adam",
+          "last_name": "Blackburn",
+          "email": "ad.blackburn@gmail.com",
+          "phone_number": "8944155247"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "hld",
+      "row": {
+        "task": "0d01c76_2",
+        "scenario": "0d01c76",
+        "instruction": "Import markdown notes in the \"~/documents/personal/simple_note/\" directory of my file system to my Simple Note account. Each markdown file should become a separate note in the Simple Note account. The title of each note should be taken from the name of the source file (excluding the directory path and file extension), replacing underscores in it with blank spaces.",
+        "supervisor": {
+          "first_name": "Glen",
+          "last_name": "Moore",
+          "email": "gl.moore@gmail.com",
+          "phone_number": "8346699249"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "kzdsh-new",
+      "row": {
+        "task": "0d01c76_2",
+        "scenario": "0d01c76",
+        "instruction": "Import markdown notes in the \"~/documents/personal/simple_note/\" directory of my file system to my Simple Note account. Each markdown file should become a separate note in the Simple Note account. The title of each note should be taken from the name of the source file (excluding the directory path and file extension), replacing underscores in it with blank spaces.",
+        "supervisor": {
+          "first_name": "Glen",
+          "last_name": "Moore",
+          "email": "gl.moore@gmail.com",
+          "phone_number": "8346699249"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "recuris",
+      "row": {
+        "task": "0d01c76_2",
+        "scenario": "0d01c76",
+        "instruction": "Import markdown notes in the \"~/documents/personal/simple_note/\" directory of my file system to my Simple Note account. Each markdown file should become a separate note in the Simple Note account. The title of each note should be taken from the name of the source file (excluding the directory path and file extension), replacing underscores in it with blank spaces.",
+        "supervisor": {
+          "first_name": "Glen",
+          "last_name": "Moore",
+          "email": "gl.moore@gmail.com",
+          "phone_number": "8346699249"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "dsh",
+      "row": {
+        "task": "0d01c76_2",
+        "scenario": "0d01c76",
+        "instruction": "Import markdown notes in the \"~/documents/personal/simple_note/\" directory of my file system to my Simple Note account. Each markdown file should become a separate note in the Simple Note account. The title of each note should be taken from the name of the source file (excluding the directory path and file extension), replacing underscores in it with blank spaces.",
+        "supervisor": {
+          "first_name": "Glen",
+          "last_name": "Moore",
+          "email": "gl.moore@gmail.com",
+          "phone_number": "8346699249"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "kzdsh-new",
+      "row": {
+        "task": "0d01c76_3",
+        "scenario": "0d01c76",
+        "instruction": "Import markdown notes in the \"~/documents/personal/personal_notes/\" directory of my file system to my Simple Note account. Each markdown file should become a separate note in the Simple Note account. The title of each note should be taken from the name of the source file (excluding the directory path and file extension), replacing underscores in it with blank spaces.",
+        "supervisor": {
+          "first_name": "Stacy",
+          "last_name": "Maldonado",
+          "email": "st-maldonado@gmail.com",
+          "phone_number": "9053203579"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "recuris",
+      "row": {
+        "task": "0d01c76_3",
+        "scenario": "0d01c76",
+        "instruction": "Import markdown notes in the \"~/documents/personal/personal_notes/\" directory of my file system to my Simple Note account. Each markdown file should become a separate note in the Simple Note account. The title of each note should be taken from the name of the source file (excluding the directory path and file extension), replacing underscores in it with blank spaces.",
+        "supervisor": {
+          "first_name": "Stacy",
+          "last_name": "Maldonado",
+          "email": "st-maldonado@gmail.com",
+          "phone_number": "9053203579"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "dsh",
+      "row": {
+        "task": "0d01c76_3",
+        "scenario": "0d01c76",
+        "instruction": "Import markdown notes in the \"~/documents/personal/personal_notes/\" directory of my file system to my Simple Note account. Each markdown file should become a separate note in the Simple Note account. The title of each note should be taken from the name of the source file (excluding the directory path and file extension), replacing underscores in it with blank spaces.",
+        "supervisor": {
+          "first_name": "Stacy",
+          "last_name": "Maldonado",
+          "email": "st-maldonado@gmail.com",
+          "phone_number": "9053203579"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "hld",
+      "row": {
+        "task": "0d01c76_3",
+        "scenario": "0d01c76",
+        "instruction": "Import markdown notes in the \"~/documents/personal/personal_notes/\" directory of my file system to my Simple Note account. Each markdown file should become a separate note in the Simple Note account. The title of each note should be taken from the name of the source file (excluding the directory path and file extension), replacing underscores in it with blank spaces.",
+        "supervisor": {
+          "first_name": "Stacy",
+          "last_name": "Maldonado",
+          "email": "st-maldonado@gmail.com",
+          "phone_number": "9053203579"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "recuris",
+      "row": {
+        "task": "7847649_1",
+        "scenario": "7847649",
+        "instruction": "How many activities are completed in my bucket list as per my SimpleNote note?",
+        "supervisor": {
+          "first_name": "Caitlin",
+          "last_name": "Burch",
+          "email": "caiburc@gmail.com",
+          "phone_number": "5896230193"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "dsh",
+      "row": {
+        "task": "7847649_1",
+        "scenario": "7847649",
+        "instruction": "How many activities are completed in my bucket list as per my SimpleNote note?",
+        "supervisor": {
+          "first_name": "Caitlin",
+          "last_name": "Burch",
+          "email": "caiburc@gmail.com",
+          "phone_number": "5896230193"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "hld",
+      "row": {
+        "task": "7847649_1",
+        "scenario": "7847649",
+        "instruction": "How many activities are completed in my bucket list as per my SimpleNote note?",
+        "supervisor": {
+          "first_name": "Caitlin",
+          "last_name": "Burch",
+          "email": "caiburc@gmail.com",
+          "phone_number": "5896230193"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "kzdsh-new",
+      "row": {
+        "task": "7847649_1",
+        "scenario": "7847649",
+        "instruction": "How many activities are completed in my bucket list as per my SimpleNote note?",
+        "supervisor": {
+          "first_name": "Caitlin",
+          "last_name": "Burch",
+          "email": "caiburc@gmail.com",
+          "phone_number": "5896230193"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "dsh",
+      "row": {
+        "task": "7847649_2",
+        "scenario": "7847649",
+        "instruction": "How many activities are left to do in my bucket list as per my SimpleNote note?",
+        "supervisor": {
+          "first_name": "Tammy",
+          "last_name": "Weaver",
+          "email": "ta.weav@gmail.com",
+          "phone_number": "2738013302"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "hld",
+      "row": {
+        "task": "7847649_2",
+        "scenario": "7847649",
+        "instruction": "How many activities are left to do in my bucket list as per my SimpleNote note?",
+        "supervisor": {
+          "first_name": "Tammy",
+          "last_name": "Weaver",
+          "email": "ta.weav@gmail.com",
+          "phone_number": "2738013302"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "kzdsh-new",
+      "row": {
+        "task": "7847649_2",
+        "scenario": "7847649",
+        "instruction": "How many activities are left to do in my bucket list as per my SimpleNote note?",
+        "supervisor": {
+          "first_name": "Tammy",
+          "last_name": "Weaver",
+          "email": "ta.weav@gmail.com",
+          "phone_number": "2738013302"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "recuris",
+      "row": {
+        "task": "7847649_2",
+        "scenario": "7847649",
+        "instruction": "How many activities are left to do in my bucket list as per my SimpleNote note?",
+        "supervisor": {
+          "first_name": "Tammy",
+          "last_name": "Weaver",
+          "email": "ta.weav@gmail.com",
+          "phone_number": "2738013302"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "hld",
+      "row": {
+        "task": "7847649_3",
+        "scenario": "7847649",
+        "instruction": "How many activities are done in my bucket list as per my SimpleNote note?",
+        "supervisor": {
+          "first_name": "James",
+          "last_name": "Solomon",
+          "email": "ja-solomon@gmail.com",
+          "phone_number": "8683971586"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "kzdsh-new",
+      "row": {
+        "task": "7847649_3",
+        "scenario": "7847649",
+        "instruction": "How many activities are done in my bucket list as per my SimpleNote note?",
+        "supervisor": {
+          "first_name": "James",
+          "last_name": "Solomon",
+          "email": "ja-solomon@gmail.com",
+          "phone_number": "8683971586"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "recuris",
+      "row": {
+        "task": "7847649_3",
+        "scenario": "7847649",
+        "instruction": "How many activities are done in my bucket list as per my SimpleNote note?",
+        "supervisor": {
+          "first_name": "James",
+          "last_name": "Solomon",
+          "email": "ja-solomon@gmail.com",
+          "phone_number": "8683971586"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "dsh",
+      "row": {
+        "task": "7847649_3",
+        "scenario": "7847649",
+        "instruction": "How many activities are done in my bucket list as per my SimpleNote note?",
+        "supervisor": {
+          "first_name": "James",
+          "last_name": "Solomon",
+          "email": "ja-solomon@gmail.com",
+          "phone_number": "8683971586"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "kzdsh-new",
+      "row": {
+        "task": "8ce6779_1",
+        "scenario": "8ce6779",
+        "instruction": "At my job, we manage the tasks on todoist. But I am changing job soon, so for each task that is assigned to me and is incomplete yet, I have asked who can take it from me. See the discussion in comments and reassign based on it. Then, leave a comment there, \"Thank you <person_first_name>!\". Here <person_first_name> is the first name of the person who is reassigned the task. If no one has agreed to take the task, leave it as is.",
+        "supervisor": {
+          "first_name": "Jordan",
+          "last_name": "Harrison",
+          "email": "jo-harr@gmail.com",
+          "phone_number": "2254213734"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "recuris",
+      "row": {
+        "task": "8ce6779_1",
+        "scenario": "8ce6779",
+        "instruction": "At my job, we manage the tasks on todoist. But I am changing job soon, so for each task that is assigned to me and is incomplete yet, I have asked who can take it from me. See the discussion in comments and reassign based on it. Then, leave a comment there, \"Thank you <person_first_name>!\". Here <person_first_name> is the first name of the person who is reassigned the task. If no one has agreed to take the task, leave it as is.",
+        "supervisor": {
+          "first_name": "Jordan",
+          "last_name": "Harrison",
+          "email": "jo-harr@gmail.com",
+          "phone_number": "2254213734"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "dsh",
+      "row": {
+        "task": "8ce6779_1",
+        "scenario": "8ce6779",
+        "instruction": "At my job, we manage the tasks on todoist. But I am changing job soon, so for each task that is assigned to me and is incomplete yet, I have asked who can take it from me. See the discussion in comments and reassign based on it. Then, leave a comment there, \"Thank you <person_first_name>!\". Here <person_first_name> is the first name of the person who is reassigned the task. If no one has agreed to take the task, leave it as is.",
+        "supervisor": {
+          "first_name": "Jordan",
+          "last_name": "Harrison",
+          "email": "jo-harr@gmail.com",
+          "phone_number": "2254213734"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "hld",
+      "row": {
+        "task": "8ce6779_1",
+        "scenario": "8ce6779",
+        "instruction": "At my job, we manage the tasks on todoist. But I am changing job soon, so for each task that is assigned to me and is incomplete yet, I have asked who can take it from me. See the discussion in comments and reassign based on it. Then, leave a comment there, \"Thank you <person_first_name>!\". Here <person_first_name> is the first name of the person who is reassigned the task. If no one has agreed to take the task, leave it as is.",
+        "supervisor": {
+          "first_name": "Jordan",
+          "last_name": "Harrison",
+          "email": "jo-harr@gmail.com",
+          "phone_number": "2254213734"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "recuris",
+      "row": {
+        "task": "8ce6779_2",
+        "scenario": "8ce6779",
+        "instruction": "At my job, we manage the tasks on todoist. But I am changing job soon, so for each task that is assigned to me and is incomplete yet, I have asked who can take it from me. See the discussion in comments and reassign based on it. Then, leave a comment there, \"Thanks <person_first_name>!\". Here <person_first_name> is the first name of the person who is reassigned the task. If no one has agreed to take the task, leave it as is.",
+        "supervisor": {
+          "first_name": "Paul",
+          "last_name": "Miller",
+          "email": "paul_mill@gmail.com",
+          "phone_number": "3379617841"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "dsh",
+      "row": {
+        "task": "8ce6779_2",
+        "scenario": "8ce6779",
+        "instruction": "At my job, we manage the tasks on todoist. But I am changing job soon, so for each task that is assigned to me and is incomplete yet, I have asked who can take it from me. See the discussion in comments and reassign based on it. Then, leave a comment there, \"Thanks <person_first_name>!\". Here <person_first_name> is the first name of the person who is reassigned the task. If no one has agreed to take the task, leave it as is.",
+        "supervisor": {
+          "first_name": "Paul",
+          "last_name": "Miller",
+          "email": "paul_mill@gmail.com",
+          "phone_number": "3379617841"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "hld",
+      "row": {
+        "task": "8ce6779_2",
+        "scenario": "8ce6779",
+        "instruction": "At my job, we manage the tasks on todoist. But I am changing job soon, so for each task that is assigned to me and is incomplete yet, I have asked who can take it from me. See the discussion in comments and reassign based on it. Then, leave a comment there, \"Thanks <person_first_name>!\". Here <person_first_name> is the first name of the person who is reassigned the task. If no one has agreed to take the task, leave it as is.",
+        "supervisor": {
+          "first_name": "Paul",
+          "last_name": "Miller",
+          "email": "paul_mill@gmail.com",
+          "phone_number": "3379617841"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "kzdsh-new",
+      "row": {
+        "task": "8ce6779_2",
+        "scenario": "8ce6779",
+        "instruction": "At my job, we manage the tasks on todoist. But I am changing job soon, so for each task that is assigned to me and is incomplete yet, I have asked who can take it from me. See the discussion in comments and reassign based on it. Then, leave a comment there, \"Thanks <person_first_name>!\". Here <person_first_name> is the first name of the person who is reassigned the task. If no one has agreed to take the task, leave it as is.",
+        "supervisor": {
+          "first_name": "Paul",
+          "last_name": "Miller",
+          "email": "paul_mill@gmail.com",
+          "phone_number": "3379617841"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "dsh",
+      "row": {
+        "task": "8ce6779_3",
+        "scenario": "8ce6779",
+        "instruction": "At my job, we manage the tasks on todoist. But I am changing job soon, so for each task that is assigned to me and is incomplete yet, I have asked who can take it from me. See the discussion in comments and reassign based on it. Then, leave a comment there, \"Greatly appreciate it <person_first_name>!\". Here <person_first_name> is the first name of the person who is reassigned the task. If no one has agreed to take the task, leave it as is.",
+        "supervisor": {
+          "first_name": "Jessica",
+          "last_name": "Miller",
+          "email": "jes.mill@gmail.com",
+          "phone_number": "3808719492"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "hld",
+      "row": {
+        "task": "8ce6779_3",
+        "scenario": "8ce6779",
+        "instruction": "At my job, we manage the tasks on todoist. But I am changing job soon, so for each task that is assigned to me and is incomplete yet, I have asked who can take it from me. See the discussion in comments and reassign based on it. Then, leave a comment there, \"Greatly appreciate it <person_first_name>!\". Here <person_first_name> is the first name of the person who is reassigned the task. If no one has agreed to take the task, leave it as is.",
+        "supervisor": {
+          "first_name": "Jessica",
+          "last_name": "Miller",
+          "email": "jes.mill@gmail.com",
+          "phone_number": "3808719492"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "kzdsh-new",
+      "row": {
+        "task": "8ce6779_3",
+        "scenario": "8ce6779",
+        "instruction": "At my job, we manage the tasks on todoist. But I am changing job soon, so for each task that is assigned to me and is incomplete yet, I have asked who can take it from me. See the discussion in comments and reassign based on it. Then, leave a comment there, \"Greatly appreciate it <person_first_name>!\". Here <person_first_name> is the first name of the person who is reassigned the task. If no one has agreed to take the task, leave it as is.",
+        "supervisor": {
+          "first_name": "Jessica",
+          "last_name": "Miller",
+          "email": "jes.mill@gmail.com",
+          "phone_number": "3808719492"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "recuris",
+      "row": {
+        "task": "8ce6779_3",
+        "scenario": "8ce6779",
+        "instruction": "At my job, we manage the tasks on todoist. But I am changing job soon, so for each task that is assigned to me and is incomplete yet, I have asked who can take it from me. See the discussion in comments and reassign based on it. Then, leave a comment there, \"Greatly appreciate it <person_first_name>!\". Here <person_first_name> is the first name of the person who is reassigned the task. If no one has agreed to take the task, leave it as is.",
+        "supervisor": {
+          "first_name": "Jessica",
+          "last_name": "Miller",
+          "email": "jes.mill@gmail.com",
+          "phone_number": "3808719492"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "hld",
+      "row": {
+        "task": "90adc3f_1",
+        "scenario": "90adc3f",
+        "instruction": "I made venmo payment requests to some of my friends yesterday evening. Unfortunately, I have made a mistake in calculation. Each of them owes me $5 less than the requested amount. So delete those requests and make new ones with everything else the same, but with the corrected amount.",
+        "supervisor": {
+          "first_name": "Anita",
+          "last_name": "Burch",
+          "email": "anita.burch@gmail.com",
+          "phone_number": "3643463570"
+        },
+        "datetime": "2023-05-20T11:28:49"
+      }
+    },
+    {
+      "arm": "kzdsh-new",
+      "row": {
+        "task": "90adc3f_1",
+        "scenario": "90adc3f",
+        "instruction": "I made venmo payment requests to some of my friends yesterday evening. Unfortunately, I have made a mistake in calculation. Each of them owes me $5 less than the requested amount. So delete those requests and make new ones with everything else the same, but with the corrected amount.",
+        "supervisor": {
+          "first_name": "Anita",
+          "last_name": "Burch",
+          "email": "anita.burch@gmail.com",
+          "phone_number": "3643463570"
+        },
+        "datetime": "2023-05-20T11:28:49"
+      }
+    },
+    {
+      "arm": "recuris",
+      "row": {
+        "task": "90adc3f_1",
+        "scenario": "90adc3f",
+        "instruction": "I made venmo payment requests to some of my friends yesterday evening. Unfortunately, I have made a mistake in calculation. Each of them owes me $5 less than the requested amount. So delete those requests and make new ones with everything else the same, but with the corrected amount.",
+        "supervisor": {
+          "first_name": "Anita",
+          "last_name": "Burch",
+          "email": "anita.burch@gmail.com",
+          "phone_number": "3643463570"
+        },
+        "datetime": "2023-05-20T11:28:49"
+      }
+    },
+    {
+      "arm": "dsh",
+      "row": {
+        "task": "90adc3f_1",
+        "scenario": "90adc3f",
+        "instruction": "I made venmo payment requests to some of my friends yesterday evening. Unfortunately, I have made a mistake in calculation. Each of them owes me $5 less than the requested amount. So delete those requests and make new ones with everything else the same, but with the corrected amount.",
+        "supervisor": {
+          "first_name": "Anita",
+          "last_name": "Burch",
+          "email": "anita.burch@gmail.com",
+          "phone_number": "3643463570"
+        },
+        "datetime": "2023-05-20T11:28:49"
+      }
+    },
+    {
+      "arm": "kzdsh-new",
+      "row": {
+        "task": "90adc3f_2",
+        "scenario": "90adc3f",
+        "instruction": "I made venmo payment requests to my roommates yesterday evening. Unfortunately, I have made a mistake in calculation. Each of them owes me $10 more than the requested amount. So delete those requests and make new ones with everything else the same, but with the corrected amount.",
+        "supervisor": {
+          "first_name": "Kathryn",
+          "last_name": "Maldonado",
+          "email": "kathrynmaldonado@gmail.com",
+          "phone_number": "2473084266"
+        },
+        "datetime": "2023-05-20T10:27:30"
+      }
+    },
+    {
+      "arm": "recuris",
+      "row": {
+        "task": "90adc3f_2",
+        "scenario": "90adc3f",
+        "instruction": "I made venmo payment requests to my roommates yesterday evening. Unfortunately, I have made a mistake in calculation. Each of them owes me $10 more than the requested amount. So delete those requests and make new ones with everything else the same, but with the corrected amount.",
+        "supervisor": {
+          "first_name": "Kathryn",
+          "last_name": "Maldonado",
+          "email": "kathrynmaldonado@gmail.com",
+          "phone_number": "2473084266"
+        },
+        "datetime": "2023-05-20T10:27:30"
+      }
+    },
+    {
+      "arm": "dsh",
+      "row": {
+        "task": "90adc3f_2",
+        "scenario": "90adc3f",
+        "instruction": "I made venmo payment requests to my roommates yesterday evening. Unfortunately, I have made a mistake in calculation. Each of them owes me $10 more than the requested amount. So delete those requests and make new ones with everything else the same, but with the corrected amount.",
+        "supervisor": {
+          "first_name": "Kathryn",
+          "last_name": "Maldonado",
+          "email": "kathrynmaldonado@gmail.com",
+          "phone_number": "2473084266"
+        },
+        "datetime": "2023-05-20T10:27:30"
+      }
+    },
+    {
+      "arm": "hld",
+      "row": {
+        "task": "90adc3f_2",
+        "scenario": "90adc3f",
+        "instruction": "I made venmo payment requests to my roommates yesterday evening. Unfortunately, I have made a mistake in calculation. Each of them owes me $10 more than the requested amount. So delete those requests and make new ones with everything else the same, but with the corrected amount.",
+        "supervisor": {
+          "first_name": "Kathryn",
+          "last_name": "Maldonado",
+          "email": "kathrynmaldonado@gmail.com",
+          "phone_number": "2473084266"
+        },
+        "datetime": "2023-05-20T10:27:30"
+      }
+    },
+    {
+      "arm": "recuris",
+      "row": {
+        "task": "90adc3f_3",
+        "scenario": "90adc3f",
+        "instruction": "I made venmo payment requests to some of my friends yesterday evening. Unfortunately, I have made a mistake in calculation. Each of them owes me $15 less than the requested amount. So delete those requests and make new ones with everything else the same, but with the corrected amount.",
+        "supervisor": {
+          "first_name": "Nancy",
+          "last_name": "Ritter",
+          "email": "nan_ritt@gmail.com",
+          "phone_number": "2307354647"
+        },
+        "datetime": "2023-05-20T08:42:53"
+      }
+    },
+    {
+      "arm": "dsh",
+      "row": {
+        "task": "90adc3f_3",
+        "scenario": "90adc3f",
+        "instruction": "I made venmo payment requests to some of my friends yesterday evening. Unfortunately, I have made a mistake in calculation. Each of them owes me $15 less than the requested amount. So delete those requests and make new ones with everything else the same, but with the corrected amount.",
+        "supervisor": {
+          "first_name": "Nancy",
+          "last_name": "Ritter",
+          "email": "nan_ritt@gmail.com",
+          "phone_number": "2307354647"
+        },
+        "datetime": "2023-05-20T08:42:53"
+      }
+    },
+    {
+      "arm": "hld",
+      "row": {
+        "task": "90adc3f_3",
+        "scenario": "90adc3f",
+        "instruction": "I made venmo payment requests to some of my friends yesterday evening. Unfortunately, I have made a mistake in calculation. Each of them owes me $15 less than the requested amount. So delete those requests and make new ones with everything else the same, but with the corrected amount.",
+        "supervisor": {
+          "first_name": "Nancy",
+          "last_name": "Ritter",
+          "email": "nan_ritt@gmail.com",
+          "phone_number": "2307354647"
+        },
+        "datetime": "2023-05-20T08:42:53"
+      }
+    },
+    {
+      "arm": "kzdsh-new",
+      "row": {
+        "task": "90adc3f_3",
+        "scenario": "90adc3f",
+        "instruction": "I made venmo payment requests to some of my friends yesterday evening. Unfortunately, I have made a mistake in calculation. Each of them owes me $15 less than the requested amount. So delete those requests and make new ones with everything else the same, but with the corrected amount.",
+        "supervisor": {
+          "first_name": "Nancy",
+          "last_name": "Ritter",
+          "email": "nan_ritt@gmail.com",
+          "phone_number": "2307354647"
+        },
+        "datetime": "2023-05-20T08:42:53"
+      }
+    },
+    {
+      "arm": "dsh",
+      "row": {
+        "task": "13547f5_1",
+        "scenario": "13547f5",
+        "instruction": "Send a phone voice message to my all roommates, \"I have taken out the trash.\".",
+        "supervisor": {
+          "first_name": "Anita",
+          "last_name": "Burch",
+          "email": "anita.burch@gmail.com",
+          "phone_number": "3643463570"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "hld",
+      "row": {
+        "task": "13547f5_1",
+        "scenario": "13547f5",
+        "instruction": "Send a phone voice message to my all roommates, \"I have taken out the trash.\".",
+        "supervisor": {
+          "first_name": "Anita",
+          "last_name": "Burch",
+          "email": "anita.burch@gmail.com",
+          "phone_number": "3643463570"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "kzdsh-new",
+      "row": {
+        "task": "13547f5_1",
+        "scenario": "13547f5",
+        "instruction": "Send a phone voice message to my all roommates, \"I have taken out the trash.\".",
+        "supervisor": {
+          "first_name": "Anita",
+          "last_name": "Burch",
+          "email": "anita.burch@gmail.com",
+          "phone_number": "3643463570"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "recuris",
+      "row": {
+        "task": "13547f5_1",
+        "scenario": "13547f5",
+        "instruction": "Send a phone voice message to my all roommates, \"I have taken out the trash.\".",
+        "supervisor": {
+          "first_name": "Anita",
+          "last_name": "Burch",
+          "email": "anita.burch@gmail.com",
+          "phone_number": "3643463570"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "hld",
+      "row": {
+        "task": "13547f5_2",
+        "scenario": "13547f5",
+        "instruction": "Send a phone text message to my partner, \"The dishwasher is clean and ready to be emptied.\".",
+        "supervisor": {
+          "first_name": "Sabrina",
+          "last_name": "Brown",
+          "email": "sab-brown@gmail.com",
+          "phone_number": "6639773608"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "kzdsh-new",
+      "row": {
+        "task": "13547f5_2",
+        "scenario": "13547f5",
+        "instruction": "Send a phone text message to my partner, \"The dishwasher is clean and ready to be emptied.\".",
+        "supervisor": {
+          "first_name": "Sabrina",
+          "last_name": "Brown",
+          "email": "sab-brown@gmail.com",
+          "phone_number": "6639773608"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "recuris",
+      "row": {
+        "task": "13547f5_2",
+        "scenario": "13547f5",
+        "instruction": "Send a phone text message to my partner, \"The dishwasher is clean and ready to be emptied.\".",
+        "supervisor": {
+          "first_name": "Sabrina",
+          "last_name": "Brown",
+          "email": "sab-brown@gmail.com",
+          "phone_number": "6639773608"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "dsh",
+      "row": {
+        "task": "13547f5_2",
+        "scenario": "13547f5",
+        "instruction": "Send a phone text message to my partner, \"The dishwasher is clean and ready to be emptied.\".",
+        "supervisor": {
+          "first_name": "Sabrina",
+          "last_name": "Brown",
+          "email": "sab-brown@gmail.com",
+          "phone_number": "6639773608"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "kzdsh-new",
+      "row": {
+        "task": "13547f5_3",
+        "scenario": "13547f5",
+        "instruction": "Send a phone voice message to my husband, \"Don't forget to water the plants today.\".",
+        "supervisor": {
+          "first_name": "Katie",
+          "last_name": "Simpson",
+          "email": "kat_simp@gmail.com",
+          "phone_number": "6727300099"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "recuris",
+      "row": {
+        "task": "13547f5_3",
+        "scenario": "13547f5",
+        "instruction": "Send a phone voice message to my husband, \"Don't forget to water the plants today.\".",
+        "supervisor": {
+          "first_name": "Katie",
+          "last_name": "Simpson",
+          "email": "kat_simp@gmail.com",
+          "phone_number": "6727300099"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "dsh",
+      "row": {
+        "task": "13547f5_3",
+        "scenario": "13547f5",
+        "instruction": "Send a phone voice message to my husband, \"Don't forget to water the plants today.\".",
+        "supervisor": {
+          "first_name": "Katie",
+          "last_name": "Simpson",
+          "email": "kat_simp@gmail.com",
+          "phone_number": "6727300099"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    },
+    {
+      "arm": "hld",
+      "row": {
+        "task": "13547f5_3",
+        "scenario": "13547f5",
+        "instruction": "Send a phone voice message to my husband, \"Don't forget to water the plants today.\".",
+        "supervisor": {
+          "first_name": "Katie",
+          "last_name": "Simpson",
+          "email": "kat_simp@gmail.com",
+          "phone_number": "6727300099"
+        },
+        "datetime": "2023-05-18T12:00:00"
+      }
+    }
+  ]
+}

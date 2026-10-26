@@ -1,0 +1,12 @@
+{
+  "schema_version": 6,
+  "selection": "tb2_paired_authorized_engineering_repair_seven",
+  "task_count": 5,
+  "trial_count": 7,
+  "concurrency": 2,
+  "solver_seconds": 2700,
+  "engineering_retry_batches": 0,
+  "preflight_attempts_per_trial": 1,
+  "retry_score_zero": false,
+  "retry_valid_budget_exhaustion": false
+}

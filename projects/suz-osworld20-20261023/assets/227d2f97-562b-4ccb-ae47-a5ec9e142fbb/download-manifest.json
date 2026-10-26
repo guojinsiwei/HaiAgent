@@ -1,0 +1,16 @@
+[
+  {
+    "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/227d2f97-562b-4ccb-ae47-a5ec9e142fbb/QTdHniCqfJbBLJe3L3nijU-1200-80.xcf",
+    "download_url": "https://hf-mirror.com/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/227d2f97-562b-4ccb-ae47-a5ec9e142fbb/QTdHniCqfJbBLJe3L3nijU-1200-80.xcf",
+    "file": "assets\\227d2f97-562b-4ccb-ae47-a5ec9e142fbb\\4348693a-b453-5b6b-b5c0-75bba7bd56c6_QTdHniCqfJbBLJe3L3nijU-1200-80.xcf",
+    "sha256": "e57d953be79675263f3b0f5a4e4363ba0bc99604c18b83ec35a213a32c0e065e",
+    "bytes": 1889435
+  },
+  {
+    "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/227d2f97-562b-4ccb-ae47-a5ec9e142fbb/image.docx",
+    "download_url": "https://hf-mirror.com/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/227d2f97-562b-4ccb-ae47-a5ec9e142fbb/image.docx",
+    "file": "assets\\227d2f97-562b-4ccb-ae47-a5ec9e142fbb\\image_Gold.docx",
+    "sha256": "4cc317091317d8b79068f1932dd2e0ca966200e41bb633790861facfca0779fc",
+    "bytes": 970920
+  }
+]

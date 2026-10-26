@@ -1,0 +1,3149 @@
+{
+  "created": 1792241952.92417,
+  "trials_found": 213,
+  "container_count": 4,
+  "protected_container_ids": [
+    "f0971efa8e669ad59e8c8348fbf27d170fe75e50248a79d67def5f2fc3b1471c",
+    "8c529207ca10970a71ce14c97d240eafeb0593babe242a376657d8b4a554bbd0",
+    "4d161d3dd6fe5ae94d7b42cdebcb4024242f3cd4f23b6c892d75ec3862ebc1fd",
+    "d6234127b0e048a3e418a22484763a07621bff895471f1e94d4f2c62f71ad258"
+  ],
+  "candidates": [
+    {
+      "id": "sha256:5445ae88ab3f92477f0f48f7c00549ed28b2a1ce6b0cd73f60d7dbd85f70fd1a",
+      "tags": [
+        "layout-config-recreation__pnjtfxe__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-16T17:16:02.881880585+08:00",
+      "size": 2104600870,
+      "project": "layout-config-recreation__pnjtfxe__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-ec3-bounded10-20261016/jobs/first-02-kz-dsh-layout-config-recreation/layout-config-recreation__pnJtfXE",
+        "result_sha256": "6fc31024533f5cdc206661e7cf4f0e64858805796da6eabb8255ced00f14c2f0",
+        "finished_at": "2026-10-16T09:19:52.614593Z"
+      }
+    },
+    {
+      "id": "sha256:a35a8c995bcaf04b7cbf94230e2eb8d1c3513b2affc43f62584687fab84fb36e",
+      "tags": [
+        "layout-config-recreation__92zvawx__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-16T17:16:02.881880585+08:00",
+      "size": 2104600870,
+      "project": "layout-config-recreation__92zvawx__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-ec3-bounded10-20261016/preflight/preflight-resume-02-kz-dsh-layout-config-recreation/layout-config-recreation__92ZvaWX",
+        "result_sha256": "15cf5011ce3da37ea0c24a5ec1af666718596de14411e9540923e2d04668b77e",
+        "finished_at": "2026-10-16T10:55:10.568607Z"
+      }
+    },
+    {
+      "id": "sha256:9cc536ed4b69670052247e12870983c6feb5785fec682bddb2265407793dfe69",
+      "tags": [
+        "layout-config-recreation__adfshrq__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-16T17:16:02.881880585+08:00",
+      "size": 2104600870,
+      "project": "layout-config-recreation__adfshrq__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-ec3-bounded10-20261016/preflight/preflight-first-02-kz-dsh-layout-config-recreation/layout-config-recreation__adfsHrQ",
+        "result_sha256": "360e5b647573e657153aafdf0bd4c857565781fea37c3ee9a5d7afc4006721e6",
+        "finished_at": "2026-10-16T09:18:37.369020Z"
+      }
+    },
+    {
+      "id": "sha256:32702dcea999577e8908aa23ed4488a594fdf2acb6bb54ea7a73ecfbbff58417",
+      "tags": [
+        "layout-config-recreation__qi5jeco__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-16T17:16:02.881880585+08:00",
+      "size": 2104600870,
+      "project": "layout-config-recreation__qi5jeco__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-ec3-bounded10-20261016/jobs/resume-02-kz-dsh-layout-config-recreation/layout-config-recreation__qi5JeCo",
+        "result_sha256": "c3802cd486ec6f6cc2595e6058863a8d728a80586b48e6cec22bebc9c993eafb",
+        "finished_at": "2026-10-16T11:27:13.351033Z"
+      }
+    },
+    {
+      "id": "sha256:70518efc8832fb45fad337a032a847d6c8a7d2efdf0ccfdc95ebe85124e66e4b",
+      "tags": [
+        "layout-config-recreation__adfshrq__env-main:latest"
+      ],
+      "created": "2026-10-16T17:05:50.576482396+08:00",
+      "size": 2080506655,
+      "project": "layout-config-recreation__adfshrq__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-ec3-bounded10-20261016/preflight/preflight-first-02-kz-dsh-layout-config-recreation/layout-config-recreation__adfsHrQ",
+        "result_sha256": "360e5b647573e657153aafdf0bd4c857565781fea37c3ee9a5d7afc4006721e6",
+        "finished_at": "2026-10-16T09:18:37.369020Z"
+      }
+    },
+    {
+      "id": "sha256:9f46d36a9d06e70de9ae785f52b06dc9ed71a8e09278a0ba9ef2611bce6c5ecd",
+      "tags": [
+        "layout-config-recreation__92zvawx__env-main:latest"
+      ],
+      "created": "2026-10-16T17:05:50.576482396+08:00",
+      "size": 2080506655,
+      "project": "layout-config-recreation__92zvawx__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-ec3-bounded10-20261016/preflight/preflight-resume-02-kz-dsh-layout-config-recreation/layout-config-recreation__92ZvaWX",
+        "result_sha256": "15cf5011ce3da37ea0c24a5ec1af666718596de14411e9540923e2d04668b77e",
+        "finished_at": "2026-10-16T10:55:10.568607Z"
+      }
+    },
+    {
+      "id": "sha256:33d14e1c644f0f4a7a1fb9352fb12b066e9dd80b9452cf77c40c7565197db940",
+      "tags": [
+        "layout-config-recreation__pnjtfxe__env-main:latest"
+      ],
+      "created": "2026-10-16T17:05:50.576482396+08:00",
+      "size": 2080506655,
+      "project": "layout-config-recreation__pnjtfxe__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-ec3-bounded10-20261016/jobs/first-02-kz-dsh-layout-config-recreation/layout-config-recreation__pnJtfXE",
+        "result_sha256": "6fc31024533f5cdc206661e7cf4f0e64858805796da6eabb8255ced00f14c2f0",
+        "finished_at": "2026-10-16T09:19:52.614593Z"
+      }
+    },
+    {
+      "id": "sha256:9aaed022f4096edd7c04d3b03ba224eeb07e04b3c8f8b23e5711a57c7e82fdbd",
+      "tags": [
+        "layout-config-recreation__qi5jeco__env-main:latest"
+      ],
+      "created": "2026-10-16T17:05:50.576482396+08:00",
+      "size": 2080506655,
+      "project": "layout-config-recreation__qi5jeco__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-ec3-bounded10-20261016/jobs/resume-02-kz-dsh-layout-config-recreation/layout-config-recreation__qi5JeCo",
+        "result_sha256": "c3802cd486ec6f6cc2595e6058863a8d728a80586b48e6cec22bebc9c993eafb",
+        "finished_at": "2026-10-16T11:27:13.351033Z"
+      }
+    },
+    {
+      "id": "sha256:2b0b0085da1ad968b0c358393151b4e5d89ff33b49ecc39d91ed1254700b7688",
+      "tags": [
+        "layout-config-recreation__hqrvtcn__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-15T21:45:04.746189172+08:00",
+      "size": 2104600999,
+      "project": "layout-config-recreation__hqrvtcn__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-dsh-engineering-smoke3-20261015/jobs/first-02-kz-dsh-layout-config-recreation/layout-config-recreation__HQRVTCn",
+        "result_sha256": "bda5ce9740ae9633050960427053b71b0290997b57b7b4702713c4d81ea623f0",
+        "finished_at": "2026-10-15T14:53:55.507914Z"
+      }
+    },
+    {
+      "id": "sha256:0a72ac5e63ae4fe5316046f671c3811c4898a1bfab2dd551e6aab43da9735391",
+      "tags": [
+        "layout-config-recreation__3vsuypl__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-15T21:45:04.746189172+08:00",
+      "size": 2104600999,
+      "project": "layout-config-recreation__3vsuypl__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/task2-complete-history-1792078654751459448/jobs/02-kz-layout-config-recreation/layout-config-recreation__3VSUYPL",
+        "result_sha256": "09148bb0ccfb769023e594a29225a8392cb735738269803b5b72b0d803c153c9",
+        "finished_at": "2026-10-15T13:51:48.917465Z"
+      }
+    },
+    {
+      "id": "sha256:96cf3ef74f1611885480c615ba15310e071dbcf8cc0b510b07b5f4b9396f379b",
+      "tags": [
+        "layout-config-recreation__c3ugezf__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-15T21:45:04.746189172+08:00",
+      "size": 2104600999,
+      "project": "layout-config-recreation__c3ugezf__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/task2-complete-history-1792078654751459448/jobs/02-dsh-layout-config-recreation/layout-config-recreation__c3UGEZF",
+        "result_sha256": "d11069abc7c56e4838780467f22cedb870aba1d3ddb96a6c354727218005ccde",
+        "finished_at": "2026-10-15T13:47:49.158680Z"
+      }
+    },
+    {
+      "id": "sha256:80a6d276e6745436506f773e3dc66539b29e6ce4660e684105ea3e40aa02a485",
+      "tags": [
+        "layout-config-recreation__lnoeqd3__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-15T21:45:04.746189172+08:00",
+      "size": 2104600999,
+      "project": "layout-config-recreation__lnoeqd3__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-dsh-engineering-smoke3-20261015/preflight/preflight-first-02-kz-dsh-layout-config-recreation/layout-config-recreation__Lnoeqd3",
+        "result_sha256": "1917a306d28379a9f0b63db3ceb87c9440284a2da03622079b8e45c3d73d5414",
+        "finished_at": "2026-10-15T14:13:08.233208Z"
+      }
+    },
+    {
+      "id": "sha256:beab49042578205fc036002ce0c2bf6f6db8a525bd2ec446fb7a55fc456984e7",
+      "tags": [
+        "layout-config-recreation__hqrvtcn__env-main:latest"
+      ],
+      "created": "2026-10-15T21:33:03.88615728+08:00",
+      "size": 2080507427,
+      "project": "layout-config-recreation__hqrvtcn__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-dsh-engineering-smoke3-20261015/jobs/first-02-kz-dsh-layout-config-recreation/layout-config-recreation__HQRVTCn",
+        "result_sha256": "bda5ce9740ae9633050960427053b71b0290997b57b7b4702713c4d81ea623f0",
+        "finished_at": "2026-10-15T14:53:55.507914Z"
+      }
+    },
+    {
+      "id": "sha256:c9e26508ea6a37d79b35407ba2c714f07bc1f904e23f74c755a1abca6ea2c310",
+      "tags": [
+        "layout-config-recreation__lnoeqd3__env-main:latest"
+      ],
+      "created": "2026-10-15T21:33:03.88615728+08:00",
+      "size": 2080507427,
+      "project": "layout-config-recreation__lnoeqd3__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-dsh-engineering-smoke3-20261015/preflight/preflight-first-02-kz-dsh-layout-config-recreation/layout-config-recreation__Lnoeqd3",
+        "result_sha256": "1917a306d28379a9f0b63db3ceb87c9440284a2da03622079b8e45c3d73d5414",
+        "finished_at": "2026-10-15T14:13:08.233208Z"
+      }
+    },
+    {
+      "id": "sha256:60e6ec48cd7b2f20fc92ab8ef42efa9e1ea38418d3237a5b8857da83b41a47ea",
+      "tags": [
+        "layout-config-recreation__r6jhuee__env-main:latest"
+      ],
+      "created": "2026-10-15T21:33:03.88615728+08:00",
+      "size": 2080507427,
+      "project": "layout-config-recreation__r6jhuee__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/task2-complete-history-1792078654751459448/preflight/preflight-02-dsh-layout-config-recreation/layout-config-recreation__R6jHuEE",
+        "result_sha256": "91ca8a817c4db4f23c430a072fdbf05d13df6c75df49e5819a6189012d24a4e4",
+        "finished_at": "2026-10-15T13:36:06.529629Z"
+      }
+    },
+    {
+      "id": "sha256:4ba61d890d1c36af1d63a4258b5358da63e6bd886d53adef8cb11eb5b964a219",
+      "tags": [
+        "layout-config-recreation__uygznaf__env-main:latest"
+      ],
+      "created": "2026-10-15T21:33:03.88615728+08:00",
+      "size": 2080507427,
+      "project": "layout-config-recreation__uygznaf__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/task2-complete-history-1792078654751459448/preflight/preflight-02-kz-layout-config-recreation/layout-config-recreation__uYgznaf",
+        "result_sha256": "5e30f47174f33017015a093e01467023d3b0707909ad6e938d19d84995d8ba09",
+        "finished_at": "2026-10-15T13:36:03.685922Z"
+      }
+    },
+    {
+      "id": "sha256:b875dd89ead18f9bd148e52f5a93e3beef53a4cacf131da2e6250e06f8ed2c34",
+      "tags": [
+        "layout-config-recreation__3vsuypl__env-main:latest"
+      ],
+      "created": "2026-10-15T21:33:03.88615728+08:00",
+      "size": 2080507427,
+      "project": "layout-config-recreation__3vsuypl__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/task2-complete-history-1792078654751459448/jobs/02-kz-layout-config-recreation/layout-config-recreation__3VSUYPL",
+        "result_sha256": "09148bb0ccfb769023e594a29225a8392cb735738269803b5b72b0d803c153c9",
+        "finished_at": "2026-10-15T13:51:48.917465Z"
+      }
+    },
+    {
+      "id": "sha256:4000ae1bce7fa4fd4fdc4f4f52cd09e60b7651aeb74086eb2f263399a7dcee5b",
+      "tags": [
+        "layout-config-recreation__c3ugezf__env-main:latest"
+      ],
+      "created": "2026-10-15T21:33:03.88615728+08:00",
+      "size": 2080507427,
+      "project": "layout-config-recreation__c3ugezf__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/task2-complete-history-1792078654751459448/jobs/02-dsh-layout-config-recreation/layout-config-recreation__c3UGEZF",
+        "result_sha256": "d11069abc7c56e4838780467f22cedb870aba1d3ddb96a6c354727218005ccde",
+        "finished_at": "2026-10-15T13:47:49.158680Z"
+      }
+    },
+    {
+      "id": "sha256:b95c0d34fcb5c46fb241d37be01dc386a6b731ee0019415112fdb88fdc4f0e58",
+      "tags": [
+        "data-anonymization__w97a2es__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-15T04:25:44.579037442+08:00",
+      "size": 198975862,
+      "project": "data-anonymization__w97a2es__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-30-dsh-data-anonymization/data-anonymization__W97A2eS",
+        "result_sha256": "1f0d5a8cf7c30a3d082c7ecdf0117e6139a39d89f1970e6da6f15f610f54f1bb",
+        "finished_at": "2026-10-14T20:27:10.832532Z"
+      }
+    },
+    {
+      "id": "sha256:57446b916707b01032f47c1546414cd495a9563ffcc1f8a36e0484468ce20ed1",
+      "tags": [
+        "data-anonymization__vzrjfb7__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-15T04:25:44.579037442+08:00",
+      "size": 198975862,
+      "project": "data-anonymization__vzrjfb7__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-30-dsh-data-anonymization/data-anonymization__vZrJfB7",
+        "result_sha256": "3cef13923e5df66bcbd13a6d6165f024a65c073d2ce56780bc5efc55b92ffa20",
+        "finished_at": "2026-10-14T20:26:19.499884Z"
+      }
+    },
+    {
+      "id": "sha256:a50d01b4c38af10ab664de9dd58038457f2a672556b6e8bb4ffec1ae56f98236",
+      "tags": [
+        "data-anonymization__vzrjfb7__env-main:latest"
+      ],
+      "created": "2026-10-15T04:24:30.205302399+08:00",
+      "size": 191751796,
+      "project": "data-anonymization__vzrjfb7__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-30-dsh-data-anonymization/data-anonymization__vZrJfB7",
+        "result_sha256": "3cef13923e5df66bcbd13a6d6165f024a65c073d2ce56780bc5efc55b92ffa20",
+        "finished_at": "2026-10-14T20:26:19.499884Z"
+      }
+    },
+    {
+      "id": "sha256:27384bf2666653686863ca46f22b543c465aa8dfe2a20136b0819c7b47f1be70",
+      "tags": [
+        "data-anonymization__w97a2es__env-main:latest"
+      ],
+      "created": "2026-10-15T04:24:30.205302399+08:00",
+      "size": 191751796,
+      "project": "data-anonymization__w97a2es__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-30-dsh-data-anonymization/data-anonymization__W97A2eS",
+        "result_sha256": "1f0d5a8cf7c30a3d082c7ecdf0117e6139a39d89f1970e6da6f15f610f54f1bb",
+        "finished_at": "2026-10-14T20:27:10.832532Z"
+      }
+    },
+    {
+      "id": "sha256:0117cb665d153a145548926eddc5749795462696e106e7ab95be56d3f9aeaea3",
+      "tags": [
+        "vpp-loss-divergence__unjjqud__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-15T04:01:12.988945718+08:00",
+      "size": 3905369108,
+      "project": "vpp-loss-divergence__unjjqud__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-27-dsh-vpp-loss-divergence/vpp-loss-divergence__UnjjquD",
+        "result_sha256": "7cc79e2bd62ed814750468f037f1dd56e9a7051af26b02f68db4e1fd44eff6ee",
+        "finished_at": "2026-10-14T20:23:28.806652Z"
+      }
+    },
+    {
+      "id": "sha256:f54ec5ed1ec583dd7fc058d37f9c67bc27aba4a29af857edc9619e0820c75b95",
+      "tags": [
+        "vpp-loss-divergence__unjjqud__env-main:latest"
+      ],
+      "created": "2026-10-15T03:48:23.458376843+08:00",
+      "size": 3904584169,
+      "project": "vpp-loss-divergence__unjjqud__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-27-dsh-vpp-loss-divergence/vpp-loss-divergence__UnjjquD",
+        "result_sha256": "7cc79e2bd62ed814750468f037f1dd56e9a7051af26b02f68db4e1fd44eff6ee",
+        "finished_at": "2026-10-14T20:23:28.806652Z"
+      }
+    },
+    {
+      "id": "sha256:1411b94cc3c65d8bc538a5d3e030f2c17673cc18fca853bf63e4b7afd609a65f",
+      "tags": [
+        "roy-polymorph-cn__z3lsjan__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-15T03:41:15.041990559+08:00",
+      "size": 103926484,
+      "project": "roy-polymorph-cn__z3lsjan__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-25-dsh-roy-polymorph-cn/roy-polymorph-cn__Z3LsjAn",
+        "result_sha256": "c620e7d09698fdac2d098d22b10c801c8ef832ae4438964fbb766d6502bb4150",
+        "finished_at": "2026-10-14T19:41:39.492337Z"
+      }
+    },
+    {
+      "id": "sha256:da1ba0ab74956ce7bb52c68558c54e4ed62253a04671355ace1a6506f0738c57",
+      "tags": [
+        "roy-polymorph-cn__xv4ayk7__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-15T03:41:15.041990559+08:00",
+      "size": 103926484,
+      "project": "roy-polymorph-cn__xv4ayk7__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-25-dsh-roy-polymorph-cn/roy-polymorph-cn__Xv4AYK7",
+        "result_sha256": "1953f8bac515204782e120677b9c743022ae9fb5262c6a2048aae3d462b96382",
+        "finished_at": "2026-10-14T19:42:30.739759Z"
+      }
+    },
+    {
+      "id": "sha256:734034aa0cbd3c5af163928167d56c37620fe2829410ebeff7358d9bda937ab2",
+      "tags": [
+        "roy-polymorph-cn__xv4ayk7__env-main:latest"
+      ],
+      "created": "2026-10-15T03:40:20.308422384+08:00",
+      "size": 302843738,
+      "project": "roy-polymorph-cn__xv4ayk7__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-25-dsh-roy-polymorph-cn/roy-polymorph-cn__Xv4AYK7",
+        "result_sha256": "1953f8bac515204782e120677b9c743022ae9fb5262c6a2048aae3d462b96382",
+        "finished_at": "2026-10-14T19:42:30.739759Z"
+      }
+    },
+    {
+      "id": "sha256:27fda03e84b3ccd34d6f9a62d03b710741aeba5a359070106f72ad767d878235",
+      "tags": [
+        "roy-polymorph-cn__z3lsjan__env-main:latest"
+      ],
+      "created": "2026-10-15T03:40:20.308422384+08:00",
+      "size": 302843738,
+      "project": "roy-polymorph-cn__z3lsjan__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-25-dsh-roy-polymorph-cn/roy-polymorph-cn__Z3LsjAn",
+        "result_sha256": "c620e7d09698fdac2d098d22b10c801c8ef832ae4438964fbb766d6502bb4150",
+        "finished_at": "2026-10-14T19:41:39.492337Z"
+      }
+    },
+    {
+      "id": "sha256:98e010c89cc981d13138e0b17aabd4c645964f66b0415a04c9136f02a6ec06d4",
+      "tags": [
+        "cad-model__dcmdadt__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-15T02:53:37.235963619+08:00",
+      "size": 157832246,
+      "project": "cad-model__dcmdadt__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-19-dsh-cad-model/cad-model__DCMDadt",
+        "result_sha256": "18866c07990bcfef82da8cbe58ca0c376f01e526a1cd19244ac3051f284fee63",
+        "finished_at": "2026-10-14T18:55:17.500477Z"
+      }
+    },
+    {
+      "id": "sha256:23caef8ed1ae3bd3c90b9a927ee0ad64ee589586cf6a6ce66e8109aab0dcd339",
+      "tags": [
+        "cad-model__yarvouu__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-15T02:53:37.235963619+08:00",
+      "size": 157832246,
+      "project": "cad-model__yarvouu__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-19-dsh-cad-model/cad-model__yarvouU",
+        "result_sha256": "e57887518b5cbe0f269a06ac1b173068777e4884b228b26601c27634aee3fb57",
+        "finished_at": "2026-10-14T18:54:12.849968Z"
+      }
+    },
+    {
+      "id": "sha256:b9ef66dd1765d8f4318e40802adc03ef6ffe9f14f5b83dad4d696b80efc51949",
+      "tags": [
+        "nextjs-performance__euoyjrs__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-15T02:49:20.548114115+08:00",
+      "size": 1212629877,
+      "project": "nextjs-performance__euoyjrs__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-18-dsh-nextjs-performance/nextjs-performance__euoYJRS",
+        "result_sha256": "b862f14616fb42bb94e0537ce747fb678c472617f7ae3539e081a12f148224d9",
+        "finished_at": "2026-10-14T18:52:58.429504Z"
+      }
+    },
+    {
+      "id": "sha256:9b524fc8d1c0fc47fe1ebe50170400f19927bdc7989de75c4e39c564465e1d86",
+      "tags": [
+        "nextjs-performance__zfmstuv__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-15T02:49:20.548114115+08:00",
+      "size": 1212629877,
+      "project": "nextjs-performance__zfmstuv__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-18-dsh-nextjs-performance/nextjs-performance__zFMsTuV",
+        "result_sha256": "97565d695cb23218551e9fde50fdcf113afb64fba824bcf618f7633dac9fb9e3",
+        "finished_at": "2026-10-14T18:51:04.325072Z"
+      }
+    },
+    {
+      "id": "sha256:6128808f788edb234079f5ab2147d90b8888f14acffcc6342ffc5f3b2979849a",
+      "tags": [
+        "vba-userform-port__6k8drue__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-15T02:37:50.236596336+08:00",
+      "size": 455534683,
+      "project": "vba-userform-port__6k8drue__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-13-dsh-vba-userform-port/vba-userform-port__6K8dRUE",
+        "result_sha256": "206dad9f73b252d970b0022bcafabda55d10d71ccc8efe6785e2ed77cd785411",
+        "finished_at": "2026-10-14T18:40:06.157213Z"
+      }
+    },
+    {
+      "id": "sha256:edc757c614856152e77bf478c392111d16295376d96225f38259c434feef116d",
+      "tags": [
+        "vba-userform-port__v9istjq__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-15T02:37:50.236596336+08:00",
+      "size": 455534683,
+      "project": "vba-userform-port__v9istjq__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-13-dsh-vba-userform-port/vba-userform-port__v9isTJq",
+        "result_sha256": "120fff86f28f1055260a5ad891f344757a2731b3254887a81b7c044db604046f",
+        "finished_at": "2026-10-14T18:39:09.716682Z"
+      }
+    },
+    {
+      "id": "sha256:ddb6534c5b998592fc61e60e9cc1cc916c456b062f424fa9471a24bb3269e3ff",
+      "tags": [
+        "ks-solver-cpp__edjvanh__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-15T02:30:42.337903569+08:00",
+      "size": 251959169,
+      "project": "ks-solver-cpp__edjvanh__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-10-dsh-ks-solver-cpp/ks-solver-cpp__EDjvANH",
+        "result_sha256": "3002981ff8b5e25f93bfae53500c37bc5184c477a980c999504870f19b2e5193",
+        "finished_at": "2026-10-14T18:31:18.260892Z"
+      }
+    },
+    {
+      "id": "sha256:c7d46f7683761e6b19b3ef84b24b685bad9f4257313aa516953c780aed5946a9",
+      "tags": [
+        "ks-solver-cpp__h2hcw5e__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-15T02:30:42.337903569+08:00",
+      "size": 251959169,
+      "project": "ks-solver-cpp__h2hcw5e__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-10-dsh-ks-solver-cpp/ks-solver-cpp__H2HcW5e",
+        "result_sha256": "58a156afaaf59f7869ae331d2e11db9ace04de71ee437ff24b8cb0c41c14c52a",
+        "finished_at": "2026-10-14T18:32:45.427512Z"
+      }
+    },
+    {
+      "id": "sha256:57cabdf17d84b14e119638fb52b317feee4b510fa43d3fd11fb9719d78cec693",
+      "tags": [
+        "layout-config-recreation2__9rplfzf__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-15T02:25:14.437788262+08:00",
+      "size": 550314027,
+      "project": "layout-config-recreation2__9rplfzf__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-08-dsh-layout-config-recreation2/layout-config-recreation2__9RpLfzF",
+        "result_sha256": "610ebff23c95a6f351d1791430339b236f7c9cb1cf6a01f1fd68924d8c1b4eb5",
+        "finished_at": "2026-10-14T18:27:56.229158Z"
+      }
+    },
+    {
+      "id": "sha256:407cf0e2f3803366b2da812b48913cefee833929c16f343a9f84beab0307d2a7",
+      "tags": [
+        "layout-config-recreation2__4ptshpf__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-15T02:25:14.437788262+08:00",
+      "size": 550314027,
+      "project": "layout-config-recreation2__4ptshpf__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-08-dsh-layout-config-recreation2/layout-config-recreation2__4PtsHpf",
+        "result_sha256": "7745f196ecfe36c5ad2dd4685e517e93f968866896b3cc896f80049a2c6a291e",
+        "finished_at": "2026-10-14T18:26:33.729261Z"
+      }
+    },
+    {
+      "id": "sha256:fac107cfaacf92796da0e0dff3767e6dd4fcc15246b5fbceb9d0d86c2e966bda",
+      "tags": [
+        "layout-config-recreation2__4ptshpf__env-main:latest"
+      ],
+      "created": "2026-10-15T02:23:20.620733559+08:00",
+      "size": 525643371,
+      "project": "layout-config-recreation2__4ptshpf__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-08-dsh-layout-config-recreation2/layout-config-recreation2__4PtsHpf",
+        "result_sha256": "7745f196ecfe36c5ad2dd4685e517e93f968866896b3cc896f80049a2c6a291e",
+        "finished_at": "2026-10-14T18:26:33.729261Z"
+      }
+    },
+    {
+      "id": "sha256:97c4ae99c6bb35c9493c30a4ab68535609869bac05a708964a042258b7729f46",
+      "tags": [
+        "layout-config-recreation2__9rplfzf__env-main:latest"
+      ],
+      "created": "2026-10-15T02:23:20.620733559+08:00",
+      "size": 525643371,
+      "project": "layout-config-recreation2__9rplfzf__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-08-dsh-layout-config-recreation2/layout-config-recreation2__9RpLfzF",
+        "result_sha256": "610ebff23c95a6f351d1791430339b236f7c9cb1cf6a01f1fd68924d8c1b4eb5",
+        "finished_at": "2026-10-14T18:27:56.229158Z"
+      }
+    },
+    {
+      "id": "sha256:ba3d924d01816302fcae028a2020fd3292ae2bf383edf923ea2b2ce8dc4e9927",
+      "tags": [
+        "gsea-proteomics__ed5yibd__env-main:latest"
+      ],
+      "created": "2026-10-15T02:20:22.205494452+08:00",
+      "size": 358407316,
+      "project": "gsea-proteomics__ed5yibd__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-07-dsh-gsea-proteomics/gsea-proteomics__ED5YibD",
+        "result_sha256": "c44c2971fd4a4e55813bb8f4d83d86d24ef160d51536ae9c7cff8b751822c2f6",
+        "finished_at": "2026-10-14T18:22:21.977291Z"
+      }
+    },
+    {
+      "id": "sha256:2a90f2737e6cce82ae8a09eba2730eee6d5a862322d3e78fd6d3d8e5af088dbc",
+      "tags": [
+        "gsea-proteomics__gsxmf7h__env-main:latest"
+      ],
+      "created": "2026-10-15T02:20:22.205494452+08:00",
+      "size": 358407316,
+      "project": "gsea-proteomics__gsxmf7h__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-07-dsh-gsea-proteomics/gsea-proteomics__GSXmF7H",
+        "result_sha256": "dd2e0d643533f1c78366209ac3032b1418b2359b99b75957f9017f859af02a67",
+        "finished_at": "2026-10-14T18:21:19.617703Z"
+      }
+    },
+    {
+      "id": "sha256:7cae884abed5118f47e0803ad7e43d9589b7eec5b0270ce312b41ce4a7c97866",
+      "tags": [
+        "mvcc-lsm-compaction__mcxb6aw__env-main:latest"
+      ],
+      "created": "2026-10-14T21:56:42.424323332+08:00",
+      "size": 156554505,
+      "project": "mvcc-lsm-compaction__mcxb6aw__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-04-dsh-mvcc-lsm-compaction/mvcc-lsm-compaction__mCxb6Aw",
+        "result_sha256": "b29f1529e85445e59e7705689839911cf3409e7fdf95a5e6693857a38d80c986",
+        "finished_at": "2026-10-14T15:43:31.966361Z"
+      }
+    },
+    {
+      "id": "sha256:9136213428a1eb36c6c0e1be3270ca3e5487843e3e24aa58f090507666e26c79",
+      "tags": [
+        "mvcc-lsm-compaction__yhcddkq__env-main:latest"
+      ],
+      "created": "2026-10-14T21:56:42.424323332+08:00",
+      "size": 156554505,
+      "project": "mvcc-lsm-compaction__yhcddkq__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-04-native-kz-mvcc-lsm-compaction/mvcc-lsm-compaction__yHcddKQ",
+        "result_sha256": "11ea5ba0ef447a24e7cd7b699ef7ad443db48f2070446e5e176ba5b730e56d64",
+        "finished_at": "2026-10-14T18:25:00.324139Z"
+      }
+    },
+    {
+      "id": "sha256:41fef88d3af9ec2c9cd2347ecca070b878185d9572ad82b97a7a864cb1145b9e",
+      "tags": [
+        "mvcc-lsm-compaction__css5gm6__env-main:latest"
+      ],
+      "created": "2026-10-14T21:56:42.424323332+08:00",
+      "size": 156554505,
+      "project": "mvcc-lsm-compaction__css5gm6__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-acceptance-v2-native-kz/mvcc-lsm-compaction__CsS5GM6",
+        "result_sha256": "2b6d8d8fd94e403212a0b8b36f403c01744ba857324ea583e5862317820f5306",
+        "finished_at": "2026-10-14T14:06:16.380700Z"
+      }
+    },
+    {
+      "id": "sha256:7e6fc849aa9fc4a7296958ede8fb714eb224d86febe24bc09621b6d06b08ed04",
+      "tags": [
+        "mvcc-lsm-compaction__iqeyuww__env-main:latest"
+      ],
+      "created": "2026-10-14T21:56:42.424323332+08:00",
+      "size": 156554505,
+      "project": "mvcc-lsm-compaction__iqeyuww__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-acceptance-dsh/mvcc-lsm-compaction__iQeyUWW",
+        "result_sha256": "e77882bf97916fe998bfdcab0761c29c493b01a94595614f6f30046ee3da3154",
+        "finished_at": "2026-10-14T13:58:05.096632Z"
+      }
+    },
+    {
+      "id": "sha256:b6193af6b6e5714338188d7de795de72c472abe1b008d538bd5790e04e4e619b",
+      "tags": [
+        "mvcc-lsm-compaction__gkgaxqw__env-main:latest"
+      ],
+      "created": "2026-10-14T21:56:42.424323332+08:00",
+      "size": 156554505,
+      "project": "mvcc-lsm-compaction__gkgaxqw__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-acceptance-v2-dsh/mvcc-lsm-compaction__gkGaXqw",
+        "result_sha256": "a9851bde699a1baa2a929f9f10b8acb98566fd457572e48c2c944bab21416b39",
+        "finished_at": "2026-10-14T14:12:45.417693Z"
+      }
+    },
+    {
+      "id": "sha256:69b232885636b713563151c1ca0f5856ea88e9d367c51b21f890ef7b54f73c9b",
+      "tags": [
+        "mvcc-lsm-compaction__sg6uger__env-main:latest"
+      ],
+      "created": "2026-10-14T21:56:42.424323332+08:00",
+      "size": 156554505,
+      "project": "mvcc-lsm-compaction__sg6uger__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-acceptance-native-kz/mvcc-lsm-compaction__Sg6UGer",
+        "result_sha256": "4bcfe49006c95d7b8844d95e72f561c6b8dd705a8ecef2cbac636761482ae835",
+        "finished_at": "2026-10-14T13:57:29.649354Z"
+      }
+    },
+    {
+      "id": "sha256:deefae3ad3588700815ea11ced2ee7d1035c237859d09d2b63a32382cffb003a",
+      "tags": [
+        "mvcc-lsm-compaction__rjrtdph__env-main:latest"
+      ],
+      "created": "2026-10-14T21:56:42.424323332+08:00",
+      "size": 156554505,
+      "project": "mvcc-lsm-compaction__rjrtdph__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-04-dsh-mvcc-lsm-compaction/mvcc-lsm-compaction__RJRtdPH",
+        "result_sha256": "ec061f8dbbc183281ec87c23744e0ee02d67ec55d46ec98fa11fb8074a2bcb92",
+        "finished_at": "2026-10-14T15:34:30.813310Z"
+      }
+    },
+    {
+      "id": "sha256:c2cd1509263e02f5ec0635ee071d40c07e318440f7b3cab10f4e6124149598ee",
+      "tags": [
+        "mvcc-lsm-compaction__kwyhuzc__env-main:latest"
+      ],
+      "created": "2026-10-14T21:56:42.424323332+08:00",
+      "size": 156554505,
+      "project": "mvcc-lsm-compaction__kwyhuzc__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-04-native-kz-mvcc-lsm-compaction/mvcc-lsm-compaction__KWYHUzC",
+        "result_sha256": "15e69d509c3052fca4d42557cb7fa8d52894393d66eeed567e89393c03871480",
+        "finished_at": "2026-10-14T21:31:46.659401Z"
+      }
+    },
+    {
+      "id": "sha256:80fdd07d0caa76f4c8f5a6b898dc1ab3b2c416edc10e4b5bed57bee01d61c367",
+      "tags": [
+        "music-harmony__a6mtajb__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T16:38:07.861395014+08:00",
+      "size": 128514325,
+      "project": "music-harmony__a6mtajb__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-23-dsh-music-harmony/music-harmony__A6mtAJB",
+        "result_sha256": "0c1e9a4d93e13b44c520a3397785849303b56858d765d20257e57b24c84fb65f",
+        "finished_at": "2026-10-14T19:38:13.926479Z"
+      }
+    },
+    {
+      "id": "sha256:810459855a0f0fbd4a3b8516b250e77758ab0d9baf82c1c33f370cd6baf094a2",
+      "tags": [
+        "music-harmony__tcpyezj__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T16:38:07.861395014+08:00",
+      "size": 128514325,
+      "project": "music-harmony__tcpyezj__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-23-dsh-music-harmony/music-harmony__Tcpyezj",
+        "result_sha256": "3cf1591615ccdcfaf46523e4cb623a73229323214d32eee10303ad9533f1dc71",
+        "finished_at": "2026-10-14T19:39:06.290388Z"
+      }
+    },
+    {
+      "id": "sha256:910a12856a70f1c042ebe86767bfbc6146a8eac58283466e3491d7022519e08e",
+      "tags": [
+        "music-harmony__tcpyezj__env-main:latest"
+      ],
+      "created": "2026-10-14T16:31:17.697299303+08:00",
+      "size": 45540318,
+      "project": "music-harmony__tcpyezj__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-23-dsh-music-harmony/music-harmony__Tcpyezj",
+        "result_sha256": "3cf1591615ccdcfaf46523e4cb623a73229323214d32eee10303ad9533f1dc71",
+        "finished_at": "2026-10-14T19:39:06.290388Z"
+      }
+    },
+    {
+      "id": "sha256:42daa1bff9fa1f460550f3e195bd72e66390d6f29ac33845fa55b702d90fe15b",
+      "tags": [
+        "music-harmony__a6mtajb__env-main:latest"
+      ],
+      "created": "2026-10-14T16:31:17.697299303+08:00",
+      "size": 45540318,
+      "project": "music-harmony__a6mtajb__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-23-dsh-music-harmony/music-harmony__A6mtAJB",
+        "result_sha256": "0c1e9a4d93e13b44c520a3397785849303b56858d765d20257e57b24c84fb65f",
+        "finished_at": "2026-10-14T19:38:13.926479Z"
+      }
+    },
+    {
+      "id": "sha256:7c3efdfa7fae4f7375b6c09d261b5a401c6578629a58fc382b4df4573c913a51",
+      "tags": [
+        "vllm-deepseek-streaming__zhh7t9o__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T16:16:10.203157526+08:00",
+      "size": 1236827777,
+      "project": "vllm-deepseek-streaming__zhh7t9o__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-22-dsh-vllm-deepseek-streaming/vllm-deepseek-streaming__zhh7T9o",
+        "result_sha256": "7abf15e342b262ef6e7502d7e7a079925dc7cdc39f8bdd09138feea5c6aebe5a",
+        "finished_at": "2026-10-14T19:36:13.696542Z"
+      }
+    },
+    {
+      "id": "sha256:0313994f5cb39ccf29eb2c19cb2212460597d36dbdc80894ae2935f8c7a21f25",
+      "tags": [
+        "vllm-deepseek-streaming__dwm6ksd__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T16:16:10.203157526+08:00",
+      "size": 1236827777,
+      "project": "vllm-deepseek-streaming__dwm6ksd__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-22-dsh-vllm-deepseek-streaming/vllm-deepseek-streaming__DWm6kSd",
+        "result_sha256": "f6520553335d215104b3d44045a93a7b3540c43b912614c74eb80137581ad814",
+        "finished_at": "2026-10-14T19:37:24.757606Z"
+      }
+    },
+    {
+      "id": "sha256:58061998f5d97aca486c0a5c6e6dee0be928ea716316df336777a7276d0b9ab1",
+      "tags": [
+        "vllm-deepseek-streaming__zhh7t9o__env-main:latest"
+      ],
+      "created": "2026-10-14T16:14:56.176214491+08:00",
+      "size": 1346346387,
+      "project": "vllm-deepseek-streaming__zhh7t9o__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-22-dsh-vllm-deepseek-streaming/vllm-deepseek-streaming__zhh7T9o",
+        "result_sha256": "7abf15e342b262ef6e7502d7e7a079925dc7cdc39f8bdd09138feea5c6aebe5a",
+        "finished_at": "2026-10-14T19:36:13.696542Z"
+      }
+    },
+    {
+      "id": "sha256:e874bd8af9caab9cc8bae2248e06b958f9766820ca9af7106bdb00ecebad4f1d",
+      "tags": [
+        "vllm-deepseek-streaming__dwm6ksd__env-main:latest"
+      ],
+      "created": "2026-10-14T16:14:56.176214491+08:00",
+      "size": 1346346387,
+      "project": "vllm-deepseek-streaming__dwm6ksd__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-22-dsh-vllm-deepseek-streaming/vllm-deepseek-streaming__DWm6kSd",
+        "result_sha256": "f6520553335d215104b3d44045a93a7b3540c43b912614c74eb80137581ad814",
+        "finished_at": "2026-10-14T19:37:24.757606Z"
+      }
+    },
+    {
+      "id": "sha256:07aa33d7c389f0fc28a9663766f78440c51fea025cd234b7c13e896a394882cb",
+      "tags": [
+        "formal-crypto__rlpvt4e__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T15:46:32.93327158+08:00",
+      "size": 2306683203,
+      "project": "formal-crypto__rlpvt4e__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-21-dsh-formal-crypto/formal-crypto__RLpVt4e",
+        "result_sha256": "2be17183e771a94c4e83d08f6aa80a6ec5c52880b38176864208c59cc6828da4",
+        "finished_at": "2026-10-14T19:16:53.876412Z"
+      }
+    },
+    {
+      "id": "sha256:e051a76ef3f112c574f2ea3b425a70e954142445172510d842a1b4d06a77ac88",
+      "tags": [
+        "formal-crypto__gvjt2jm__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T15:46:32.93327158+08:00",
+      "size": 2306683203,
+      "project": "formal-crypto__gvjt2jm__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-21-dsh-formal-crypto/formal-crypto__gvJT2Jm",
+        "result_sha256": "3655dd5f2cb0f65cd1369b7559a2610e93e686fcd5a842acd43e933016738cbf",
+        "finished_at": "2026-10-14T19:35:10.312566Z"
+      }
+    },
+    {
+      "id": "sha256:5a0ae6225be0ac5cac2bf28de174643286d529ce1c8e9a761494519ceb6313b3",
+      "tags": [
+        "formal-crypto__rlpvt4e__env-main:latest"
+      ],
+      "created": "2026-10-14T15:29:48.567377262+08:00",
+      "size": 2222282819,
+      "project": "formal-crypto__rlpvt4e__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-21-dsh-formal-crypto/formal-crypto__RLpVt4e",
+        "result_sha256": "2be17183e771a94c4e83d08f6aa80a6ec5c52880b38176864208c59cc6828da4",
+        "finished_at": "2026-10-14T19:16:53.876412Z"
+      }
+    },
+    {
+      "id": "sha256:4e08c49864769d565b81d4422f8a6d8660271ae242c04c48d56a24d5eff1fc2c",
+      "tags": [
+        "formal-crypto__gvjt2jm__env-main:latest"
+      ],
+      "created": "2026-10-14T15:29:48.567377262+08:00",
+      "size": 2222282819,
+      "project": "formal-crypto__gvjt2jm__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-21-dsh-formal-crypto/formal-crypto__gvJT2Jm",
+        "result_sha256": "3655dd5f2cb0f65cd1369b7559a2610e93e686fcd5a842acd43e933016738cbf",
+        "finished_at": "2026-10-14T19:35:10.312566Z"
+      }
+    },
+    {
+      "id": "sha256:917ffa52ad37a047e6c95c316c34f4ca23532740d5f34f3c64ad2646eafce69c",
+      "tags": [
+        "batched-eval-parity__6t5zyrg__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T14:57:37.871507478+08:00",
+      "size": 112635353,
+      "project": "batched-eval-parity__6t5zyrg__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-20-dsh-batched-eval-parity/batched-eval-parity__6T5zyRG",
+        "result_sha256": "ed803d16386803169bd54159374c2cceb9e5898ea00f6efdf67f720bdf2840e1",
+        "finished_at": "2026-10-14T18:56:49.427822Z"
+      }
+    },
+    {
+      "id": "sha256:b6df062b568d5d832a21b4d2fc5ecd911626e88552e3cf758f2205a06d33c2aa",
+      "tags": [
+        "batched-eval-parity__v5dzwyr__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T14:57:37.871507478+08:00",
+      "size": 112635353,
+      "project": "batched-eval-parity__v5dzwyr__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-20-dsh-batched-eval-parity/batched-eval-parity__V5dZWyR",
+        "result_sha256": "5d569152eb7291247735f54c29dad0fc64fcc9f34450033195b726f3b12b848c",
+        "finished_at": "2026-10-14T18:58:41.696870Z"
+      }
+    },
+    {
+      "id": "sha256:13efa11398f43848e0df58e7cda3d2579cb36f3189fbeadb290ee1960da6a838",
+      "tags": [
+        "batched-eval-parity__6t5zyrg__env-main:latest"
+      ],
+      "created": "2026-10-14T14:54:18.558581432+08:00",
+      "size": 72107310,
+      "project": "batched-eval-parity__6t5zyrg__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-20-dsh-batched-eval-parity/batched-eval-parity__6T5zyRG",
+        "result_sha256": "ed803d16386803169bd54159374c2cceb9e5898ea00f6efdf67f720bdf2840e1",
+        "finished_at": "2026-10-14T18:56:49.427822Z"
+      }
+    },
+    {
+      "id": "sha256:4cc93d33444d05e9d4d396600b2be46f91334ab353bc30ecc4b934e5b0a6cc24",
+      "tags": [
+        "batched-eval-parity__v5dzwyr__env-main:latest"
+      ],
+      "created": "2026-10-14T14:54:18.558581432+08:00",
+      "size": 72107310,
+      "project": "batched-eval-parity__v5dzwyr__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-20-dsh-batched-eval-parity/batched-eval-parity__V5dZWyR",
+        "result_sha256": "5d569152eb7291247735f54c29dad0fc64fcc9f34450033195b726f3b12b848c",
+        "finished_at": "2026-10-14T18:58:41.696870Z"
+      }
+    },
+    {
+      "id": "sha256:8b2e79cd5eb2ca2ecd8e393b03f115928b2aebc976435dd1adc9929fff6a9cdc",
+      "tags": [
+        "cad-model__dcmdadt__env-main:latest"
+      ],
+      "created": "2026-10-14T14:47:41.822164306+08:00",
+      "size": 43325124,
+      "project": "cad-model__dcmdadt__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-19-dsh-cad-model/cad-model__DCMDadt",
+        "result_sha256": "18866c07990bcfef82da8cbe58ca0c376f01e526a1cd19244ac3051f284fee63",
+        "finished_at": "2026-10-14T18:55:17.500477Z"
+      }
+    },
+    {
+      "id": "sha256:410f7bfcc837d68a0bbfe10efc496a2344c1c20b22b1afe7dba697d3d5bca074",
+      "tags": [
+        "cad-model__yarvouu__env-main:latest"
+      ],
+      "created": "2026-10-14T14:47:41.822164306+08:00",
+      "size": 43325124,
+      "project": "cad-model__yarvouu__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-19-dsh-cad-model/cad-model__yarvouU",
+        "result_sha256": "e57887518b5cbe0f269a06ac1b173068777e4884b228b26601c27634aee3fb57",
+        "finished_at": "2026-10-14T18:54:12.849968Z"
+      }
+    },
+    {
+      "id": "sha256:3751e67372d9e754348149e1f4b9fa58684069be6b3664d1c112dd1daecf2e0b",
+      "tags": [
+        "nextjs-performance__euoyjrs__env-main:latest"
+      ],
+      "created": "2026-10-14T14:31:00.270739892+08:00",
+      "size": 359450404,
+      "project": "nextjs-performance__euoyjrs__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-18-dsh-nextjs-performance/nextjs-performance__euoYJRS",
+        "result_sha256": "b862f14616fb42bb94e0537ce747fb678c472617f7ae3539e081a12f148224d9",
+        "finished_at": "2026-10-14T18:52:58.429504Z"
+      }
+    },
+    {
+      "id": "sha256:ed1e4580f2528c12a82747456266ba18f6dee2ccaebaa9149c9c782f6ddc83ff",
+      "tags": [
+        "nextjs-performance__zfmstuv__env-main:latest"
+      ],
+      "created": "2026-10-14T14:31:00.270739892+08:00",
+      "size": 359450404,
+      "project": "nextjs-performance__zfmstuv__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-18-dsh-nextjs-performance/nextjs-performance__zFMsTuV",
+        "result_sha256": "97565d695cb23218551e9fde50fdcf113afb64fba824bcf618f7633dac9fb9e3",
+        "finished_at": "2026-10-14T18:51:04.325072Z"
+      }
+    },
+    {
+      "id": "sha256:575d2426bbab9f69c9a83b37eaa5994a6fe492039b5466a3dfb660f14f88ad43",
+      "tags": [
+        "nextjs-performance__euoyjrs__env-warehouse-api:latest"
+      ],
+      "created": "2026-10-14T14:30:27.682510658+08:00",
+      "size": 78903091,
+      "project": "nextjs-performance__euoyjrs__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-18-dsh-nextjs-performance/nextjs-performance__euoYJRS",
+        "result_sha256": "b862f14616fb42bb94e0537ce747fb678c472617f7ae3539e081a12f148224d9",
+        "finished_at": "2026-10-14T18:52:58.429504Z"
+      }
+    },
+    {
+      "id": "sha256:23820e5829baeb14cd8391fd09add400a52482e5fc5ee886514a38626f49275d",
+      "tags": [
+        "nextjs-performance__zfmstuv__env-warehouse-api:latest"
+      ],
+      "created": "2026-10-14T14:30:27.682510658+08:00",
+      "size": 78903091,
+      "project": "nextjs-performance__zfmstuv__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-18-dsh-nextjs-performance/nextjs-performance__zFMsTuV",
+        "result_sha256": "97565d695cb23218551e9fde50fdcf113afb64fba824bcf618f7633dac9fb9e3",
+        "finished_at": "2026-10-14T18:51:04.325072Z"
+      }
+    },
+    {
+      "id": "sha256:5424e822dfce8b4a4ebb0b7afdba7e5b6dcd499c9c7035d64a0851ad48b107ec",
+      "tags": [
+        "freecad-impeller__imvv9kn__env-main:latest"
+      ],
+      "created": "2026-10-14T14:07:38.928209627+08:00",
+      "size": 1086635261,
+      "project": "freecad-impeller__imvv9kn__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-17-dsh-freecad-impeller/freecad-impeller__imvv9kn",
+        "result_sha256": "21f30d70701859e1d5d4f334938f858776e1783907bc28f78a5b5de6e85925d4",
+        "finished_at": "2026-10-14T18:45:52.074122Z"
+      }
+    },
+    {
+      "id": "sha256:98f570403ec05318d4c9a73fabd8731eeb642e2d8744ed1bdf00bc55d04a1bdc",
+      "tags": [
+        "risk-scorer-replay__ekh7hft__env-main:latest"
+      ],
+      "created": "2026-10-14T14:03:28.938072675+08:00",
+      "size": 48400594,
+      "project": "risk-scorer-replay__ekh7hft__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-16-dsh-risk-scorer-replay/risk-scorer-replay__ekH7hFt",
+        "result_sha256": "b555f1adaee3c5c67018e044ef2387b491d38a9e9d817ef268e0c158a59e94e7",
+        "finished_at": "2026-10-14T18:44:55.331159Z"
+      }
+    },
+    {
+      "id": "sha256:c6491aabbc0fe2d5cc8862aab5b3cd626efa0751b6b9d27b258f42a78c4f45ef",
+      "tags": [
+        "bun-sourcemap-leak__sgrjho9__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T13:50:51.874701124+08:00",
+      "size": 121389304,
+      "project": "bun-sourcemap-leak__sgrjho9__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-15-dsh-bun-sourcemap-leak/bun-sourcemap-leak__sGrJho9",
+        "result_sha256": "70e17063b6a55bf5d9431a9300eff683febf96baadad6531102eaf133cf6f471",
+        "finished_at": "2026-10-14T18:44:21.007828Z"
+      }
+    },
+    {
+      "id": "sha256:fdaeb7dfc73081a53a8d035e4118da498225206caf367e5682f8d6e8d8083ced",
+      "tags": [
+        "bun-sourcemap-leak__lxnzzzq__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T13:50:51.874701124+08:00",
+      "size": 121389304,
+      "project": "bun-sourcemap-leak__lxnzzzq__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-15-dsh-bun-sourcemap-leak/bun-sourcemap-leak__LxnzzzQ",
+        "result_sha256": "21fe17db78a0cd3fe1e255a1f42c39d94764c7bde454f8c52a72082ca50463b1",
+        "finished_at": "2026-10-14T18:43:08.354759Z"
+      }
+    },
+    {
+      "id": "sha256:e036cf1659c8c8e05125a016dc9ecbde430852071e724367a6c517a2c8764d97",
+      "tags": [
+        "bun-sourcemap-leak__lxnzzzq__env-main:latest"
+      ],
+      "created": "2026-10-14T13:49:20.676231369+08:00",
+      "size": 107468080,
+      "project": "bun-sourcemap-leak__lxnzzzq__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-15-dsh-bun-sourcemap-leak/bun-sourcemap-leak__LxnzzzQ",
+        "result_sha256": "21fe17db78a0cd3fe1e255a1f42c39d94764c7bde454f8c52a72082ca50463b1",
+        "finished_at": "2026-10-14T18:43:08.354759Z"
+      }
+    },
+    {
+      "id": "sha256:e406458500f66dfad8a554925c68ab3d86deeb09ab88bb966c1316a48e309dce",
+      "tags": [
+        "bun-sourcemap-leak__sgrjho9__env-main:latest"
+      ],
+      "created": "2026-10-14T13:49:20.676231369+08:00",
+      "size": 107468080,
+      "project": "bun-sourcemap-leak__sgrjho9__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-15-dsh-bun-sourcemap-leak/bun-sourcemap-leak__sGrJho9",
+        "result_sha256": "70e17063b6a55bf5d9431a9300eff683febf96baadad6531102eaf133cf6f471",
+        "finished_at": "2026-10-14T18:44:21.007828Z"
+      }
+    },
+    {
+      "id": "sha256:2c1ed4ef3c782adffd1b5efdcbe63c8b45f25a7cc24eeabb025116ff606e751e",
+      "tags": [
+        "ontology-kg-querying__pnynuxg__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T13:28:35.750621379+08:00",
+      "size": 48119909,
+      "project": "ontology-kg-querying__pnynuxg__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-14-dsh-ontology-kg-querying/ontology-kg-querying__pNYNuxg",
+        "result_sha256": "00dfe91a7e518fea86298424badac85a4463960bcc4a84b41ff4691526477bb5",
+        "finished_at": "2026-10-14T18:42:08.969407Z"
+      }
+    },
+    {
+      "id": "sha256:90829237dd7e0af1f814918624320872317a4f5b2ac1be8278276d7651a71af5",
+      "tags": [
+        "ontology-kg-querying__ogqpquu__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T13:28:35.750621379+08:00",
+      "size": 48119909,
+      "project": "ontology-kg-querying__ogqpquu__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-14-dsh-ontology-kg-querying/ontology-kg-querying__oGQpquU",
+        "result_sha256": "5262bb33d9962742112df7e5cbd66803e7e05209869f5c7f6a6998fc7a058f24",
+        "finished_at": "2026-10-14T18:40:59.098342Z"
+      }
+    },
+    {
+      "id": "sha256:97f4a6117ea2c3dba077bd7245ab955b6f355c26ab6ee5b4a88cf69da151a5d6",
+      "tags": [
+        "ontology-kg-querying__pnynuxg__env-main:latest"
+      ],
+      "created": "2026-10-14T13:27:51.236840897+08:00",
+      "size": 48144547,
+      "project": "ontology-kg-querying__pnynuxg__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-14-dsh-ontology-kg-querying/ontology-kg-querying__pNYNuxg",
+        "result_sha256": "00dfe91a7e518fea86298424badac85a4463960bcc4a84b41ff4691526477bb5",
+        "finished_at": "2026-10-14T18:42:08.969407Z"
+      }
+    },
+    {
+      "id": "sha256:5db7ff3923355fc1ef497eea3ce32bdecaba2d1abb7646887a3f2a4fb9554634",
+      "tags": [
+        "ontology-kg-querying__ogqpquu__env-main:latest"
+      ],
+      "created": "2026-10-14T13:27:51.236840897+08:00",
+      "size": 48144547,
+      "project": "ontology-kg-querying__ogqpquu__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-14-dsh-ontology-kg-querying/ontology-kg-querying__oGQpquU",
+        "result_sha256": "5262bb33d9962742112df7e5cbd66803e7e05209869f5c7f6a6998fc7a058f24",
+        "finished_at": "2026-10-14T18:40:59.098342Z"
+      }
+    },
+    {
+      "id": "sha256:f265cce7098846cbbce2e35d86460ca7c041dc461e2cd0d4c2b48f8fcee51dff",
+      "tags": [
+        "vba-userform-port__v9istjq__env-main:latest"
+      ],
+      "created": "2026-10-14T13:14:26.329652889+08:00",
+      "size": 123104271,
+      "project": "vba-userform-port__v9istjq__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-13-dsh-vba-userform-port/vba-userform-port__v9isTJq",
+        "result_sha256": "120fff86f28f1055260a5ad891f344757a2731b3254887a81b7c044db604046f",
+        "finished_at": "2026-10-14T18:39:09.716682Z"
+      }
+    },
+    {
+      "id": "sha256:4062c31af22c89910252ddf250385bb9766714aac619e74129a80f911f71d1a9",
+      "tags": [
+        "vba-userform-port__6k8drue__env-main:latest"
+      ],
+      "created": "2026-10-14T13:14:26.329652889+08:00",
+      "size": 123104271,
+      "project": "vba-userform-port__6k8drue__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-13-dsh-vba-userform-port/vba-userform-port__6K8dRUE",
+        "result_sha256": "206dad9f73b252d970b0022bcafabda55d10d71ccc8efe6785e2ed77cd785411",
+        "finished_at": "2026-10-14T18:40:06.157213Z"
+      }
+    },
+    {
+      "id": "sha256:bedacba96d6567f3f03665f946847a062f1bb7415699464df685a804744d4ac1",
+      "tags": [
+        "shadow-relay__3kcxmbp__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T12:36:18.247852573+08:00",
+      "size": 95909490,
+      "project": "shadow-relay__3kcxmbp__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-12-dsh-shadow-relay/shadow-relay__3KCXMbP",
+        "result_sha256": "b40cfbc6c2386017c599be0e601555dee08f43aba79327f31804e1ca6e518e01",
+        "finished_at": "2026-10-14T18:34:53.512586Z"
+      }
+    },
+    {
+      "id": "sha256:bf8bd00ea31a0224fe33aa4c701b672ae79b4664c18930d0d90be787a77b99ae",
+      "tags": [
+        "shadow-relay__wqejm8u__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T12:36:18.247852573+08:00",
+      "size": 95909490,
+      "project": "shadow-relay__wqejm8u__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-12-dsh-shadow-relay/shadow-relay__wqEjm8u",
+        "result_sha256": "ce5616a7867d211628373dacc1062f37b63527ae9c85129abe3dce6f362ff7fe",
+        "finished_at": "2026-10-14T18:35:44.087892Z"
+      }
+    },
+    {
+      "id": "sha256:1e8d1f8a84e31a4edf4a26c5be1d995f4e41b970493f4d1adf5ed67ad753a304",
+      "tags": [
+        "shadow-relay__wqejm8u__env-main:latest"
+      ],
+      "created": "2026-10-14T12:34:13.291124361+08:00",
+      "size": 88305433,
+      "project": "shadow-relay__wqejm8u__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-12-dsh-shadow-relay/shadow-relay__wqEjm8u",
+        "result_sha256": "ce5616a7867d211628373dacc1062f37b63527ae9c85129abe3dce6f362ff7fe",
+        "finished_at": "2026-10-14T18:35:44.087892Z"
+      }
+    },
+    {
+      "id": "sha256:f032a879df58547656cc62a7d36ddb2cba2f527613b1e96cd406456f299925d4",
+      "tags": [
+        "shadow-relay__3kcxmbp__env-main:latest"
+      ],
+      "created": "2026-10-14T12:34:13.291124361+08:00",
+      "size": 88305433,
+      "project": "shadow-relay__3kcxmbp__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-12-dsh-shadow-relay/shadow-relay__3KCXMbP",
+        "result_sha256": "b40cfbc6c2386017c599be0e601555dee08f43aba79327f31804e1ca6e518e01",
+        "finished_at": "2026-10-14T18:34:53.512586Z"
+      }
+    },
+    {
+      "id": "sha256:cc55f77ca448989827b22712632d75c253a6f23e145fb8a420d43b2d57a27369",
+      "tags": [
+        "ks-solver-cpp__h2hcw5e__env-main:latest"
+      ],
+      "created": "2026-10-14T12:15:23.96592132+08:00",
+      "size": 138609527,
+      "project": "ks-solver-cpp__h2hcw5e__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-10-dsh-ks-solver-cpp/ks-solver-cpp__H2HcW5e",
+        "result_sha256": "58a156afaaf59f7869ae331d2e11db9ace04de71ee437ff24b8cb0c41c14c52a",
+        "finished_at": "2026-10-14T18:32:45.427512Z"
+      }
+    },
+    {
+      "id": "sha256:79eda738ce78d44f1c101cea5ba30f7add5f3c5368810cf2026aa41fb844fd43",
+      "tags": [
+        "ks-solver-cpp__edjvanh__env-main:latest"
+      ],
+      "created": "2026-10-14T12:15:23.96592132+08:00",
+      "size": 138609527,
+      "project": "ks-solver-cpp__edjvanh__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-10-dsh-ks-solver-cpp/ks-solver-cpp__EDjvANH",
+        "result_sha256": "3002981ff8b5e25f93bfae53500c37bc5184c477a980c999504870f19b2e5193",
+        "finished_at": "2026-10-14T18:31:18.260892Z"
+      }
+    },
+    {
+      "id": "sha256:40117581eb43b8981fe2c9323447a5c0f08fca95ed5cb1ada8c27a6d353b2c47",
+      "tags": [
+        "fin-saccr-rwa__tv38yn7__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T11:55:03.507834011+08:00",
+      "size": 54492435,
+      "project": "fin-saccr-rwa__tv38yn7__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-03-native-kz-fin-saccr-rwa/fin-saccr-rwa__tv38yN7",
+        "result_sha256": "b356a08f9ec9be05856916a64c452efd533c68b2ff7f1ba138e44762308efa77",
+        "finished_at": "2026-10-14T18:18:02.209096Z"
+      }
+    },
+    {
+      "id": "sha256:98918c00494f9731896f3fce917b03517613b0c51209f4c01deb44f2c17ed0f4",
+      "tags": [
+        "fin-saccr-rwa__ykk3wzr__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T11:55:03.507834011+08:00",
+      "size": 54492435,
+      "project": "fin-saccr-rwa__ykk3wzr__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-dsh-engineering-smoke3-20261015/preflight/preflight-first-03-kz-dsh-fin-saccr-rwa/fin-saccr-rwa__YkK3WZR",
+        "result_sha256": "362634b0cfac418e93a4a533cc024d876bd62cdfeaf10fe6855366edd86e4cf0",
+        "finished_at": "2026-10-15T14:54:49.961831Z"
+      }
+    },
+    {
+      "id": "sha256:14856e781b952df0200a5dbf3f0693879d4e0993b3a4f2d6276b3f65bfcb88dc",
+      "tags": [
+        "fin-saccr-rwa__ttjcbsn__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T11:55:03.507834011+08:00",
+      "size": 54492435,
+      "project": "fin-saccr-rwa__ttjcbsn__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-dsh-engineering-smoke3-20261015/jobs/first-03-kz-dsh-fin-saccr-rwa/fin-saccr-rwa__tTJcbSn",
+        "result_sha256": "259781f8915dec9876ff9996c88bf8244b218b008785935ba8cc9145f4057b25",
+        "finished_at": "2026-10-15T15:04:06.020683Z"
+      }
+    },
+    {
+      "id": "sha256:b0875cb66c5000b2990ab8dded18eec3c076215968dece7b0276e877d9ba68a6",
+      "tags": [
+        "fin-saccr-rwa__nze6p6p__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T11:55:03.507834011+08:00",
+      "size": 54492435,
+      "project": "fin-saccr-rwa__nze6p6p__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-03-native-kz-fin-saccr-rwa/fin-saccr-rwa__Nze6p6p",
+        "result_sha256": "5688aa6d88e431d7f029140c3aac3d52c5059c0dd9cbd441af0b158ea37d21ac",
+        "finished_at": "2026-10-14T15:16:58.469291Z"
+      }
+    },
+    {
+      "id": "sha256:b8470c093a0bf79244ea90ca9f33ab3a19b460450b8dfc6eca915994e0880ae4",
+      "tags": [
+        "fin-saccr-rwa__cs35anx__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T11:55:03.507834011+08:00",
+      "size": 54492435,
+      "project": "fin-saccr-rwa__cs35anx__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/jobs/03-kz-fin-saccr-rwa/fin-saccr-rwa__cs35anx",
+        "result_sha256": "04daf79ace550e94b78e10c3215b3bac9873656e652cb75c9d7516798b897e18",
+        "finished_at": "2026-10-15T16:04:11.167570Z"
+      }
+    },
+    {
+      "id": "sha256:30bae303c9080a84c7076d31bc59c5affb23512144240ddb361477e5e40c00de",
+      "tags": [
+        "fin-saccr-rwa__sn5dzko__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T11:55:03.507834011+08:00",
+      "size": 54492435,
+      "project": "fin-saccr-rwa__sn5dzko__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-03-dsh-fin-saccr-rwa/fin-saccr-rwa__SN5dZko",
+        "result_sha256": "7f2e48524974d2351ca617843fea5e26dfb9cb1367aaf684ab002ef6a7a6ec8a",
+        "finished_at": "2026-10-14T15:16:52.813172Z"
+      }
+    },
+    {
+      "id": "sha256:4e1fe11fe4d8511631f6f6d7b7ba660f867b3090f0fa0f491e29e4fe19321c20",
+      "tags": [
+        "fin-saccr-rwa__cyhtlwd__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T11:55:03.507834011+08:00",
+      "size": 54492435,
+      "project": "fin-saccr-rwa__cyhtlwd__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-03-dsh-fin-saccr-rwa/fin-saccr-rwa__cYhtLwd",
+        "result_sha256": "24d6b37e4dee9b30c53db7fa67b3aa6b9da207f00dac4042ad1987f34f7f7a41",
+        "finished_at": "2026-10-14T15:27:37.537570Z"
+      }
+    },
+    {
+      "id": "sha256:e8e2492c072938ec407bcd4a45ed4140101f402ef63c24d8a887fa0b19498ed9",
+      "tags": [
+        "fin-saccr-rwa__uwiqcxw__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T11:55:03.507834011+08:00",
+      "size": 54492435,
+      "project": "fin-saccr-rwa__uwiqcxw__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/jobs/03-dsh-fin-saccr-rwa/fin-saccr-rwa__UwiQCxw",
+        "result_sha256": "85abed301251724ab87f0a8542a6ee046b5c8001efc2e98a5ce09b94574f15e1",
+        "finished_at": "2026-10-15T16:15:27.181496Z"
+      }
+    },
+    {
+      "id": "sha256:0c0d6031cc709f4dbf9b6742feb4f585586ba968bf317726e49c71552b98bb51",
+      "tags": [
+        "fin-saccr-rwa__bnnmt9x__env-main:latest"
+      ],
+      "created": "2026-10-14T11:53:20.885689428+08:00",
+      "size": 45451294,
+      "project": "fin-saccr-rwa__bnnmt9x__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/preflight/preflight-03-dsh-fin-saccr-rwa/fin-saccr-rwa__BnNMt9X",
+        "result_sha256": "904f5f8a3f79bc126b2b96984fa5c4d0733f0fcaafb3bf6826a9249329b50d54",
+        "finished_at": "2026-10-15T15:39:50.155631Z"
+      }
+    },
+    {
+      "id": "sha256:c2b4041c95706e60ec35349d9725c4afd310002ff2f405420f6da9bd127ed8cd",
+      "tags": [
+        "fin-saccr-rwa__nyrzjg4__env-main:latest"
+      ],
+      "created": "2026-10-14T11:53:20.885689428+08:00",
+      "size": 45451294,
+      "project": "fin-saccr-rwa__nyrzjg4__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/preflight/preflight-03-kz-fin-saccr-rwa/fin-saccr-rwa__nYrZjG4",
+        "result_sha256": "c2a82f3ec26e154202b4c56520082c79b62812defceab4a93b3ad6fb79e2bc96",
+        "finished_at": "2026-10-15T15:39:49.134757Z"
+      }
+    },
+    {
+      "id": "sha256:83632250ab92f1bf8ae74ca61d8b9884f994ab06e05b5eb0bcbc42dd2cd0fe2c",
+      "tags": [
+        "fin-saccr-rwa__cs35anx__env-main:latest"
+      ],
+      "created": "2026-10-14T11:53:20.885689428+08:00",
+      "size": 45451294,
+      "project": "fin-saccr-rwa__cs35anx__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/jobs/03-kz-fin-saccr-rwa/fin-saccr-rwa__cs35anx",
+        "result_sha256": "04daf79ace550e94b78e10c3215b3bac9873656e652cb75c9d7516798b897e18",
+        "finished_at": "2026-10-15T16:04:11.167570Z"
+      }
+    },
+    {
+      "id": "sha256:594b13d68785307ece945493c943a3309dc1d1f3df04b8264563b62e136a50c1",
+      "tags": [
+        "fin-saccr-rwa__uwiqcxw__env-main:latest"
+      ],
+      "created": "2026-10-14T11:53:20.885689428+08:00",
+      "size": 45451294,
+      "project": "fin-saccr-rwa__uwiqcxw__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/jobs/03-dsh-fin-saccr-rwa/fin-saccr-rwa__UwiQCxw",
+        "result_sha256": "85abed301251724ab87f0a8542a6ee046b5c8001efc2e98a5ce09b94574f15e1",
+        "finished_at": "2026-10-15T16:15:27.181496Z"
+      }
+    },
+    {
+      "id": "sha256:2d4b48091d4a0a5f0a4c74f14e49fd0bbec25791f04e80458507bc4183bf5a5d",
+      "tags": [
+        "fin-saccr-rwa__ykk3wzr__env-main:latest"
+      ],
+      "created": "2026-10-14T11:53:20.885689428+08:00",
+      "size": 45451294,
+      "project": "fin-saccr-rwa__ykk3wzr__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-dsh-engineering-smoke3-20261015/preflight/preflight-first-03-kz-dsh-fin-saccr-rwa/fin-saccr-rwa__YkK3WZR",
+        "result_sha256": "362634b0cfac418e93a4a533cc024d876bd62cdfeaf10fe6855366edd86e4cf0",
+        "finished_at": "2026-10-15T14:54:49.961831Z"
+      }
+    },
+    {
+      "id": "sha256:32fc41d27fe51b436cd4bf59d3f95be8111d103ca2324f62301a26e87bbc4550",
+      "tags": [
+        "fin-saccr-rwa__sn5dzko__env-main:latest"
+      ],
+      "created": "2026-10-14T11:53:20.885689428+08:00",
+      "size": 45451294,
+      "project": "fin-saccr-rwa__sn5dzko__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-03-dsh-fin-saccr-rwa/fin-saccr-rwa__SN5dZko",
+        "result_sha256": "7f2e48524974d2351ca617843fea5e26dfb9cb1367aaf684ab002ef6a7a6ec8a",
+        "finished_at": "2026-10-14T15:16:52.813172Z"
+      }
+    },
+    {
+      "id": "sha256:dfaa10caa1704bbcc0e973140f885542bb88564b9dfeaa842b69d7ac4b0de414",
+      "tags": [
+        "fin-saccr-rwa__tv38yn7__env-main:latest"
+      ],
+      "created": "2026-10-14T11:53:20.885689428+08:00",
+      "size": 45451294,
+      "project": "fin-saccr-rwa__tv38yn7__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-03-native-kz-fin-saccr-rwa/fin-saccr-rwa__tv38yN7",
+        "result_sha256": "b356a08f9ec9be05856916a64c452efd533c68b2ff7f1ba138e44762308efa77",
+        "finished_at": "2026-10-14T18:18:02.209096Z"
+      }
+    },
+    {
+      "id": "sha256:0df0a2a26aa8db3f849827e8483f057bde784ffa65c0b35153f4083937c18703",
+      "tags": [
+        "fin-saccr-rwa__nze6p6p__env-main:latest"
+      ],
+      "created": "2026-10-14T11:53:20.885689428+08:00",
+      "size": 45451294,
+      "project": "fin-saccr-rwa__nze6p6p__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-03-native-kz-fin-saccr-rwa/fin-saccr-rwa__Nze6p6p",
+        "result_sha256": "5688aa6d88e431d7f029140c3aac3d52c5059c0dd9cbd441af0b158ea37d21ac",
+        "finished_at": "2026-10-14T15:16:58.469291Z"
+      }
+    },
+    {
+      "id": "sha256:1f8d3599d08b4dec586a8c9d3cb5b5035e2df979910484ed23a21174d58334e4",
+      "tags": [
+        "fin-saccr-rwa__cyhtlwd__env-main:latest"
+      ],
+      "created": "2026-10-14T11:53:20.885689428+08:00",
+      "size": 45451294,
+      "project": "fin-saccr-rwa__cyhtlwd__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-03-dsh-fin-saccr-rwa/fin-saccr-rwa__cYhtLwd",
+        "result_sha256": "24d6b37e4dee9b30c53db7fa67b3aa6b9da207f00dac4042ad1987f34f7f7a41",
+        "finished_at": "2026-10-14T15:27:37.537570Z"
+      }
+    },
+    {
+      "id": "sha256:c46c78f6b5cef4b01a026b2c1f5d37419f0cf6b09b1a3d7654d4b27a6f89d065",
+      "tags": [
+        "fin-saccr-rwa__ttjcbsn__env-main:latest"
+      ],
+      "created": "2026-10-14T11:53:20.885689428+08:00",
+      "size": 45451294,
+      "project": "fin-saccr-rwa__ttjcbsn__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-dsh-engineering-smoke3-20261015/jobs/first-03-kz-dsh-fin-saccr-rwa/fin-saccr-rwa__tTJcbSn",
+        "result_sha256": "259781f8915dec9876ff9996c88bf8244b218b008785935ba8cc9145f4057b25",
+        "finished_at": "2026-10-15T15:04:06.020683Z"
+      }
+    },
+    {
+      "id": "sha256:247ebce2c80f111d5e94e3973b8bd01a8a90c5c33fd4611161f9fd4306e87ad0",
+      "tags": [
+        "wdm-design__vuwsrha__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T09:45:10.885674627+08:00",
+      "size": 319708834,
+      "project": "wdm-design__vuwsrha__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-11-dsh-wdm-design/wdm-design__VuWSrhA",
+        "result_sha256": "10a4c8be9014b95e0d6b3f12ae15fb1d613b9333ef168ef02c4a35231400fac5",
+        "finished_at": "2026-10-14T18:34:02.255260Z"
+      }
+    },
+    {
+      "id": "sha256:be46a8c666da3a08ab1aa8eb7fc8e1b70757b842c874c2e066fd0d9f4c43bc22",
+      "tags": [
+        "wdm-design__hzzhrsf__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T09:45:10.885674627+08:00",
+      "size": 319708834,
+      "project": "wdm-design__hzzhrsf__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-11-dsh-wdm-design/wdm-design__HZzhrsF",
+        "result_sha256": "1c59adf41a0b6f67a4a4c18b3cef2a89a2efbf0d6e3be094040a51b812e43b76",
+        "finished_at": "2026-10-14T18:33:22.497798Z"
+      }
+    },
+    {
+      "id": "sha256:096220c13223f8e2485990457f5a3b717de2ecde24eb3b434f1d182707431e24",
+      "tags": [
+        "wdm-design__vuwsrha__env-main:latest"
+      ],
+      "created": "2026-10-14T09:42:38.276529427+08:00",
+      "size": 569196683,
+      "project": "wdm-design__vuwsrha__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-11-dsh-wdm-design/wdm-design__VuWSrhA",
+        "result_sha256": "10a4c8be9014b95e0d6b3f12ae15fb1d613b9333ef168ef02c4a35231400fac5",
+        "finished_at": "2026-10-14T18:34:02.255260Z"
+      }
+    },
+    {
+      "id": "sha256:e335f8630ad293e5a2cd981587131d15b26f61fba15653d6210480d502ea0a99",
+      "tags": [
+        "wdm-design__hzzhrsf__env-main:latest"
+      ],
+      "created": "2026-10-14T09:42:38.276529427+08:00",
+      "size": 569196683,
+      "project": "wdm-design__hzzhrsf__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-11-dsh-wdm-design/wdm-design__HZzhrsF",
+        "result_sha256": "1c59adf41a0b6f67a4a4c18b3cef2a89a2efbf0d6e3be094040a51b812e43b76",
+        "finished_at": "2026-10-14T18:33:22.497798Z"
+      }
+    },
+    {
+      "id": "sha256:0b943226bd8f869f31e645886165fdf3e8712e90cdf85e272179318564537b23",
+      "tags": [
+        "coq-block-bound__ssgve67__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T09:10:18.97528358+08:00",
+      "size": 1414749955,
+      "project": "coq-block-bound__ssgve67__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-09-dsh-coq-block-bound/coq-block-bound__SSGVE67",
+        "result_sha256": "57f541f66501c0bd6d5748b8145473af1a462124aedf5836ac84528d6b1ba7a6",
+        "finished_at": "2026-10-14T18:28:52.255557Z"
+      }
+    },
+    {
+      "id": "sha256:77f7d717b402285650c57cd875304e752bdb50f653f38f0a4dad09c51f7cd5b6",
+      "tags": [
+        "coq-block-bound__k3aneuq__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T09:10:18.97528358+08:00",
+      "size": 1414749955,
+      "project": "coq-block-bound__k3aneuq__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-09-dsh-coq-block-bound/coq-block-bound__K3AneuQ",
+        "result_sha256": "e4bb08a6eff83d3af6ab519b76084319a631cf0b5f36bfbc5a204e13361091ed",
+        "finished_at": "2026-10-14T18:29:41.948620Z"
+      }
+    },
+    {
+      "id": "sha256:31db2ee35fc196391af15eafb5d95ccfdedd9d3b661e198d80bfc587fef4ccbc",
+      "tags": [
+        "coq-block-bound__ssgve67__env-main:latest"
+      ],
+      "created": "2026-10-14T09:09:29.417398142+08:00",
+      "size": 1389036533,
+      "project": "coq-block-bound__ssgve67__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-09-dsh-coq-block-bound/coq-block-bound__SSGVE67",
+        "result_sha256": "57f541f66501c0bd6d5748b8145473af1a462124aedf5836ac84528d6b1ba7a6",
+        "finished_at": "2026-10-14T18:28:52.255557Z"
+      }
+    },
+    {
+      "id": "sha256:89daa5f7b65ea266d15ef1a71ab24c78e2f3a6adfcf542968dff020b5eff66c2",
+      "tags": [
+        "coq-block-bound__k3aneuq__env-main:latest"
+      ],
+      "created": "2026-10-14T09:09:29.417398142+08:00",
+      "size": 1389036533,
+      "project": "coq-block-bound__k3aneuq__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-09-dsh-coq-block-bound/coq-block-bound__K3AneuQ",
+        "result_sha256": "e4bb08a6eff83d3af6ab519b76084319a631cf0b5f36bfbc5a204e13361091ed",
+        "finished_at": "2026-10-14T18:29:41.948620Z"
+      }
+    },
+    {
+      "id": "sha256:73b414f287d1b599db24ace3d08f82b0662a1162871872bf7baff661efeaaaf2",
+      "tags": [
+        "retro-console-soc__ey9ktto__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T09:05:18.221064653+08:00",
+      "size": 552929692,
+      "project": "retro-console-soc__ey9ktto__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-06-native-kz-retro-console-soc/retro-console-soc__eY9Ktto",
+        "result_sha256": "78295d55666ec11de502cec17e7407c47d3634eb97ef53da97ee282eb495cede",
+        "finished_at": "2026-10-15T00:36:23.192608Z"
+      }
+    },
+    {
+      "id": "sha256:8f2b0c1fbc602455f94ea8c998b537fdae47b6650ec4fc388f48e465ee8b67ae",
+      "tags": [
+        "retro-console-soc__5yhcrrr__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T09:05:18.221064653+08:00",
+      "size": 552929692,
+      "project": "retro-console-soc__5yhcrrr__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-06-dsh-retro-console-soc/retro-console-soc__5YHCRrr",
+        "result_sha256": "d707dfb4a1558983e7fd60756233c0c0e758a206a674184bbf813eb817ff0d09",
+        "finished_at": "2026-10-14T18:18:17.757940Z"
+      }
+    },
+    {
+      "id": "sha256:755ce192d8243719dc9ce2dc5021d8d489a3acdf05a508f595363d473f356787",
+      "tags": [
+        "retro-console-soc__ekkqfwu__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T09:05:18.221064653+08:00",
+      "size": 552929692,
+      "project": "retro-console-soc__ekkqfwu__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-06-dsh-retro-console-soc/retro-console-soc__eKkqFwU",
+        "result_sha256": "9e12387f5ffece92176383a44ca7c1f703477d67fa39fef95d650cbf9b7564eb",
+        "finished_at": "2026-10-14T15:44:45.289851Z"
+      }
+    },
+    {
+      "id": "sha256:526ea356e8f133f4fc8c861c8a5bcd68c75717205bbfd3c5030a9603bc991dd5",
+      "tags": [
+        "gsea-proteomics__gsxmf7h__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T09:03:41.982951071+08:00",
+      "size": 74972587,
+      "project": "gsea-proteomics__gsxmf7h__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-07-dsh-gsea-proteomics/gsea-proteomics__GSXmF7H",
+        "result_sha256": "dd2e0d643533f1c78366209ac3032b1418b2359b99b75957f9017f859af02a67",
+        "finished_at": "2026-10-14T18:21:19.617703Z"
+      }
+    },
+    {
+      "id": "sha256:ed6f1a8865ec48194a1c5bf937c7a67842e448a18c45753c5e8fca2e0b41acc3",
+      "tags": [
+        "gsea-proteomics__ed5yibd__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T09:03:41.982951071+08:00",
+      "size": 74972587,
+      "project": "gsea-proteomics__ed5yibd__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-07-dsh-gsea-proteomics/gsea-proteomics__ED5YibD",
+        "result_sha256": "c44c2971fd4a4e55813bb8f4d83d86d24ef160d51536ae9c7cff8b751822c2f6",
+        "finished_at": "2026-10-14T18:22:21.977291Z"
+      }
+    },
+    {
+      "id": "sha256:ee1de58267c69835de99af1790148febfdde208aca42fe899505fb9768c90516",
+      "tags": [
+        "retro-console-soc__9sye5nv__env-main:latest"
+      ],
+      "created": "2026-10-14T09:00:52.969441334+08:00",
+      "size": 519107166,
+      "project": "retro-console-soc__9sye5nv__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-06-native-kz-retro-console-soc/retro-console-soc__9SyE5nv",
+        "result_sha256": "38b2904e7a74e1031c2d021c9f94f54c2b2e0c1de383b489bca1ce62c897b96c",
+        "finished_at": "2026-10-15T02:26:59.341688Z"
+      }
+    },
+    {
+      "id": "sha256:50b308934213928ad5645628fc22c6d74f9d6904b63bb6a1e804bd50a6856697",
+      "tags": [
+        "retro-console-soc__ey9ktto__env-main:latest"
+      ],
+      "created": "2026-10-14T09:00:52.969441334+08:00",
+      "size": 519107166,
+      "project": "retro-console-soc__ey9ktto__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-06-native-kz-retro-console-soc/retro-console-soc__eY9Ktto",
+        "result_sha256": "78295d55666ec11de502cec17e7407c47d3634eb97ef53da97ee282eb495cede",
+        "finished_at": "2026-10-15T00:36:23.192608Z"
+      }
+    },
+    {
+      "id": "sha256:148b98d74b3e3387f6c4917e5374b66c5b025f9f410773ecb68f4fd53def0033",
+      "tags": [
+        "retro-console-soc__ekkqfwu__env-main:latest"
+      ],
+      "created": "2026-10-14T09:00:52.969441334+08:00",
+      "size": 519107166,
+      "project": "retro-console-soc__ekkqfwu__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-06-dsh-retro-console-soc/retro-console-soc__eKkqFwU",
+        "result_sha256": "9e12387f5ffece92176383a44ca7c1f703477d67fa39fef95d650cbf9b7564eb",
+        "finished_at": "2026-10-14T15:44:45.289851Z"
+      }
+    },
+    {
+      "id": "sha256:17c369c9c083f64f9c85ae7d55e8fdd6cc43ca4894b945788942b9c38d701076",
+      "tags": [
+        "retro-console-soc__5yhcrrr__env-main:latest"
+      ],
+      "created": "2026-10-14T09:00:52.969441334+08:00",
+      "size": 519107166,
+      "project": "retro-console-soc__5yhcrrr__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-06-dsh-retro-console-soc/retro-console-soc__5YHCRrr",
+        "result_sha256": "d707dfb4a1558983e7fd60756233c0c0e758a206a674184bbf813eb817ff0d09",
+        "finished_at": "2026-10-14T18:18:17.757940Z"
+      }
+    },
+    {
+      "id": "sha256:11977c0057f1fe610c2c4d6513e40081ac4df88c224b379bd324fadaf8360c92",
+      "tags": [
+        "uefi-bootkit__s97gmdw__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T09:00:08.827020714+08:00",
+      "size": 107256683,
+      "project": "uefi-bootkit__s97gmdw__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-05-native-kz-uefi-bootkit/uefi-bootkit__s97GMDw",
+        "result_sha256": "dca1bc25731fde2672a955366f7f2f5b802502bca60894d89100d81bf87ceee4",
+        "finished_at": "2026-10-14T21:33:35.360900Z"
+      }
+    },
+    {
+      "id": "sha256:85b562b783133b72f03d22b989453648d339b5d66ab3ef7a616bcca5d26809c0",
+      "tags": [
+        "uefi-bootkit__3caz5up__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T09:00:08.827020714+08:00",
+      "size": 107256683,
+      "project": "uefi-bootkit__3caz5up__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-05-native-kz-uefi-bootkit/uefi-bootkit__3cAZ5UP",
+        "result_sha256": "c7ce2f3eb0ab787a6d236fc29315bf836f28af9f4f6f405948710f0d74dcfacc",
+        "finished_at": "2026-10-15T00:35:29.739566Z"
+      }
+    },
+    {
+      "id": "sha256:504cfdeb3a53260cf60528d35dfcb5b4aae14f9338cabf124bc72e5b532e7096",
+      "tags": [
+        "uefi-bootkit__s97gmdw__env-main:latest"
+      ],
+      "created": "2026-10-14T08:58:17.713023038+08:00",
+      "size": 109567021,
+      "project": "uefi-bootkit__s97gmdw__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-05-native-kz-uefi-bootkit/uefi-bootkit__s97GMDw",
+        "result_sha256": "dca1bc25731fde2672a955366f7f2f5b802502bca60894d89100d81bf87ceee4",
+        "finished_at": "2026-10-14T21:33:35.360900Z"
+      }
+    },
+    {
+      "id": "sha256:64be6946c641ac3574c145eaef4f5a61d2109087e517a805824c3a511e4d5099",
+      "tags": [
+        "uefi-bootkit__3caz5up__env-main:latest"
+      ],
+      "created": "2026-10-14T08:58:17.713023038+08:00",
+      "size": 109567021,
+      "project": "uefi-bootkit__3caz5up__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-05-native-kz-uefi-bootkit/uefi-bootkit__3cAZ5UP",
+        "result_sha256": "c7ce2f3eb0ab787a6d236fc29315bf836f28af9f4f6f405948710f0d74dcfacc",
+        "finished_at": "2026-10-15T00:35:29.739566Z"
+      }
+    },
+    {
+      "id": "sha256:41503802aa5d76cff8f8c8409b42d778f6d803bb45cbe5699dd43215859f49c7",
+      "tags": [
+        "mvcc-lsm-compaction__css5gm6__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T08:50:44.889720898+08:00",
+      "size": 151411208,
+      "project": "mvcc-lsm-compaction__css5gm6__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-acceptance-v2-native-kz/mvcc-lsm-compaction__CsS5GM6",
+        "result_sha256": "2b6d8d8fd94e403212a0b8b36f403c01744ba857324ea583e5862317820f5306",
+        "finished_at": "2026-10-14T14:06:16.380700Z"
+      }
+    },
+    {
+      "id": "sha256:1ada27ff69c3543d5ff0bd540c98e0e995284c672b766d17b3b2dd2331fead4d",
+      "tags": [
+        "mvcc-lsm-compaction__mcxb6aw__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T08:50:44.889720898+08:00",
+      "size": 151411208,
+      "project": "mvcc-lsm-compaction__mcxb6aw__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-04-dsh-mvcc-lsm-compaction/mvcc-lsm-compaction__mCxb6Aw",
+        "result_sha256": "b29f1529e85445e59e7705689839911cf3409e7fdf95a5e6693857a38d80c986",
+        "finished_at": "2026-10-14T15:43:31.966361Z"
+      }
+    },
+    {
+      "id": "sha256:b27bf845528859074b5187fe86edb702941a98b094f6bc6692f1c0a590c6b874",
+      "tags": [
+        "mvcc-lsm-compaction__yhcddkq__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T08:50:44.889720898+08:00",
+      "size": 151411208,
+      "project": "mvcc-lsm-compaction__yhcddkq__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-04-native-kz-mvcc-lsm-compaction/mvcc-lsm-compaction__yHcddKQ",
+        "result_sha256": "11ea5ba0ef447a24e7cd7b699ef7ad443db48f2070446e5e176ba5b730e56d64",
+        "finished_at": "2026-10-14T18:25:00.324139Z"
+      }
+    },
+    {
+      "id": "sha256:d26bab4b755b6fc117c066d9a93256b6c38bce11f4bb86e9888f1a3cc99bbaba",
+      "tags": [
+        "mvcc-lsm-compaction__kwyhuzc__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T08:50:44.889720898+08:00",
+      "size": 151411208,
+      "project": "mvcc-lsm-compaction__kwyhuzc__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-04-native-kz-mvcc-lsm-compaction/mvcc-lsm-compaction__KWYHUzC",
+        "result_sha256": "15e69d509c3052fca4d42557cb7fa8d52894393d66eeed567e89393c03871480",
+        "finished_at": "2026-10-14T21:31:46.659401Z"
+      }
+    },
+    {
+      "id": "sha256:3f8e5d7e81021c3ca393043a9d4a2685d339d7e441c2766459cdfcf24749db51",
+      "tags": [
+        "mvcc-lsm-compaction__rjrtdph__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T08:50:44.889720898+08:00",
+      "size": 151411208,
+      "project": "mvcc-lsm-compaction__rjrtdph__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-04-dsh-mvcc-lsm-compaction/mvcc-lsm-compaction__RJRtdPH",
+        "result_sha256": "ec061f8dbbc183281ec87c23744e0ee02d67ec55d46ec98fa11fb8074a2bcb92",
+        "finished_at": "2026-10-14T15:34:30.813310Z"
+      }
+    },
+    {
+      "id": "sha256:221aeb5d854a4b379b9f236e425c5c8efa60d4a741a486b3758ccedd88d7dade",
+      "tags": [
+        "mvcc-lsm-compaction__gkgaxqw__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-14T08:50:44.889720898+08:00",
+      "size": 151411208,
+      "project": "mvcc-lsm-compaction__gkgaxqw__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-acceptance-v2-dsh/mvcc-lsm-compaction__gkGaXqw",
+        "result_sha256": "a9851bde699a1baa2a929f9f10b8acb98566fd457572e48c2c944bab21416b39",
+        "finished_at": "2026-10-14T14:12:45.417693Z"
+      }
+    },
+    {
+      "id": "sha256:d1dbb1480f8058ba31bd4c4099e59fcc8d542404d6c15b7989f32210beef87c0",
+      "tags": [
+        "payments-pipeline-fix__v7yhhdq__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-13T23:15:40.89391807+08:00",
+      "size": 126070500,
+      "project": "payments-pipeline-fix__v7yhhdq__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-01-dsh-payments-pipeline-fix/payments-pipeline-fix__v7yhHDq",
+        "result_sha256": "b3c16aabf6e1b2ff6907df233eb1017719a49d5140f462bb5badd84f24226bcc",
+        "finished_at": "2026-10-14T15:00:42.197730Z"
+      }
+    },
+    {
+      "id": "sha256:abd3e50d2f34c1a0621daed81e76406148dc57d2a3642c5807998188571d2557",
+      "tags": [
+        "payments-pipeline-fix__3qt67p7__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-13T23:15:40.89391807+08:00",
+      "size": 126070500,
+      "project": "payments-pipeline-fix__3qt67p7__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-dsh-engineering-smoke3-20261015/preflight/preflight-engineering-lifecycle/payments-pipeline-fix__3QT67p7",
+        "result_sha256": "e4415039539c3f75cbd9ebc3a7205bf8ff27f5f554b01e4cb5d3fafb61654c36",
+        "finished_at": "2026-10-15T13:12:46.840181Z"
+      }
+    },
+    {
+      "id": "sha256:0423ec9a200c958337caaaac1b6439c2b9e17aa7d04b6aa2517e85adbef6da9a",
+      "tags": [
+        "payments-pipeline-fix__wi8isnn__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-13T23:15:40.89391807+08:00",
+      "size": 126070500,
+      "project": "payments-pipeline-fix__wi8isnn__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/infrastructure-history-1792065264337262237/jobs/01-dsh-payments-pipeline-fix/payments-pipeline-fix__Wi8isnN",
+        "result_sha256": "6199338c20710af5d1b87628623398ab827d619e6f068cd4e1997e3c18b6b9c0",
+        "finished_at": "2026-10-15T11:52:52.444437Z"
+      }
+    },
+    {
+      "id": "sha256:1a0a816db890941fd41f972396ee10ba96a0d681ed9430113f56ae2378e8097b",
+      "tags": [
+        "payments-pipeline-fix__zppmhws__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-13T23:15:40.89391807+08:00",
+      "size": 126070500,
+      "project": "payments-pipeline-fix__zppmhws__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-01-native-kz-payments-pipeline-fix/payments-pipeline-fix__zPpMhWS",
+        "result_sha256": "0d6b3352185e30245136537f9c6eadc76aa5b5cdfd5581ba88ffb9d24d600def",
+        "finished_at": "2026-10-14T15:00:39.336127Z"
+      }
+    },
+    {
+      "id": "sha256:7b8027980f9cdc11778bb56603dec73b0c3653df322219cef631fe4e11d14f15",
+      "tags": [
+        "payments-pipeline-fix__wkxkiwv__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-13T23:15:40.89391807+08:00",
+      "size": 126070500,
+      "project": "payments-pipeline-fix__wkxkiwv__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-dsh-engineering-smoke3-20261015/jobs/first-01-kz-dsh-payments-pipeline-fix/payments-pipeline-fix__wkxkiwv",
+        "result_sha256": "77ddced0b44670a6bbe4362410da90c043144ad20d5d7563bf73cf638b40901f",
+        "finished_at": "2026-10-15T14:12:12.240241Z"
+      }
+    },
+    {
+      "id": "sha256:aeba99e7bfa1d90e55c67a4f4eee3de46f5a8ff46c5cdad5021442cfadbc4021",
+      "tags": [
+        "payments-pipeline-fix__yaf2old__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-13T23:15:40.89391807+08:00",
+      "size": 126070500,
+      "project": "payments-pipeline-fix__yaf2old__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-ec3-bounded10-20261016/jobs/first-01-kz-dsh-payments-pipeline-fix/payments-pipeline-fix__yaF2oLd",
+        "result_sha256": "3e9ec2c5430abaa8b2661734d26e21542d3a2065e10e6b01e4003f37f3231395",
+        "finished_at": "2026-10-16T08:58:23.912683Z"
+      }
+    },
+    {
+      "id": "sha256:e03c11924c250055c5f8e35f02d15e18f514f5d12364ba7236bc514f662a7019",
+      "tags": [
+        "payments-pipeline-fix__2hrlpzf__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-13T23:15:40.89391807+08:00",
+      "size": 126070500,
+      "project": "payments-pipeline-fix__2hrlpzf__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/interrupted-history-1792065912158847819/jobs/01-kz-payments-pipeline-fix/payments-pipeline-fix__2HrLPZf",
+        "result_sha256": "8d477559c62d455535a27a8273c2c625e80eb1796ec50197a572b017a881de2b",
+        "finished_at": "2026-10-15T12:00:38.566947Z"
+      }
+    },
+    {
+      "id": "sha256:51aaef5cbd288922f33ee752d91379c44d4a70efc6264a58303ff122840486e6",
+      "tags": [
+        "payments-pipeline-fix__vfhyru9__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-13T23:15:40.89391807+08:00",
+      "size": 126070500,
+      "project": "payments-pipeline-fix__vfhyru9__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-01-dsh-payments-pipeline-fix/payments-pipeline-fix__VFHyru9",
+        "result_sha256": "12ba917bf9da9a5999ee33c81ff3ff01d00bf6d65535ac95c3953c3cd68896fc",
+        "finished_at": "2026-10-14T14:16:10.699515Z"
+      }
+    },
+    {
+      "id": "sha256:5a93d1d455db50301303e188d0c9bc1066589af272cead635e90dce2c122f4c0",
+      "tags": [
+        "payments-pipeline-fix__bpn35wz__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-13T23:15:40.89391807+08:00",
+      "size": 126070500,
+      "project": "payments-pipeline-fix__bpn35wz__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-dsh-engineering-smoke3-20261015/preflight/preflight-first-01-kz-dsh-payments-pipeline-fix/payments-pipeline-fix__bpn35wz",
+        "result_sha256": "90192f232cda10bbac1851d2411c2d70516b8c6051e1a3821daddc9fb90968c2",
+        "finished_at": "2026-10-15T13:18:48.167456Z"
+      }
+    },
+    {
+      "id": "sha256:100975a68500ca32df9a8d17092e40f55e846ed422c345668498b1b0618e01aa",
+      "tags": [
+        "payments-pipeline-fix__z8zd5fn__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-13T23:15:40.89391807+08:00",
+      "size": 126070500,
+      "project": "payments-pipeline-fix__z8zd5fn__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-01-native-kz-payments-pipeline-fix/payments-pipeline-fix__Z8Zd5fN",
+        "result_sha256": "10df4b9edab514a0728e67f6fe8ef560077c597df8d2f6e66b39b8a67a759c65",
+        "finished_at": "2026-10-14T14:16:08.152693Z"
+      }
+    },
+    {
+      "id": "sha256:568c3044cb81a89d1007049dbea8b942851595aaac22196f4cfffde935e0da0c",
+      "tags": [
+        "payments-pipeline-fix__czttwrz__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-13T23:15:40.89391807+08:00",
+      "size": 126070500,
+      "project": "payments-pipeline-fix__czttwrz__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/infrastructure-history-1792065264337262237/jobs/01-kz-payments-pipeline-fix/payments-pipeline-fix__CZtTWRz",
+        "result_sha256": "278e82803332a518fd587fe5813c7038f19862321de9db7da44ee133ddb68586",
+        "finished_at": "2026-10-15T11:52:51.935481Z"
+      }
+    },
+    {
+      "id": "sha256:71f3ab4c04ed98e6d32bc517457cae376d962ed1f6645dd4a86c78326fb7181a",
+      "tags": [
+        "payments-pipeline-fix__zprpd8g__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-13T23:15:40.89391807+08:00",
+      "size": 126070500,
+      "project": "payments-pipeline-fix__zprpd8g__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-ec3-bounded10-20261016/preflight/preflight-ec3-final/payments-pipeline-fix__ZpRpD8g",
+        "result_sha256": "63453ed6c3b9df2f15fb1ca928f12ca0d5e326527df39b1ec4d3bbca116c3be5",
+        "finished_at": "2026-10-16T07:58:46.738306Z"
+      }
+    },
+    {
+      "id": "sha256:49af41c2d2522b52900c019d05db6de0dfb56abcf00218d1cc38d53457d777ad",
+      "tags": [
+        "payments-pipeline-fix__2cvgahd__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-13T23:15:40.89391807+08:00",
+      "size": 126070500,
+      "project": "payments-pipeline-fix__2cvgahd__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-dsh-ec2-offline-20261014/preflight/preflight-ec2-lifecycle-final/payments-pipeline-fix__2cVgAHd",
+        "result_sha256": "d052a090cd342464a879b4344270d0fd7343d008eefbad8b7e6d14accefea175",
+        "finished_at": "2026-10-14T15:52:58.089591Z"
+      }
+    },
+    {
+      "id": "sha256:0a2081a5ef760ffb8cc610745128243631656aa4f958b92d2381aedc8aac83ea",
+      "tags": [
+        "payments-pipeline-fix__pdmuv4r__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-13T23:15:40.89391807+08:00",
+      "size": 126070500,
+      "project": "payments-pipeline-fix__pdmuv4r__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/interrupted-history-1792065912158847819/jobs/01-dsh-payments-pipeline-fix/payments-pipeline-fix__PdmUv4r",
+        "result_sha256": "e786717e9d775a0fadc20f7fc8ac72b9fcc7dc2bc1947f5e404ce7907cb6f5d1",
+        "finished_at": "2026-10-15T12:00:42.951888Z"
+      }
+    },
+    {
+      "id": "sha256:da7e173d6e285df7759a32f04f826fb9f17f6791040f235886884d44a6704183",
+      "tags": [
+        "payments-pipeline-fix__fsfv467__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-13T23:15:40.89391807+08:00",
+      "size": 126070500,
+      "project": "payments-pipeline-fix__fsfv467__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-ec3-bounded10-20261016/preflight/preflight-first-01-kz-dsh-payments-pipeline-fix/payments-pipeline-fix__FsFv467",
+        "result_sha256": "fd1261c364fbd990648a0c82e3818899326c4ca55f0aa64a65ef18b03ed56e9b",
+        "finished_at": "2026-10-16T08:35:37.303801Z"
+      }
+    },
+    {
+      "id": "sha256:5da5b0a798e4ad4a59b7b44a8f20451129dc12fb4d9369beaf6a0d5a487eb94e",
+      "tags": [
+        "payments-pipeline-fix__zfx2qhp__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-13T23:15:40.89391807+08:00",
+      "size": 126070500,
+      "project": "payments-pipeline-fix__zfx2qhp__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-ec3-bounded10-20261016/preflight/preflight-recovery-isolation/payments-pipeline-fix__ZFX2Qhp",
+        "result_sha256": "c627986c5a2317d041bbf20c24e06d61a7867bd36aa24a27f84454dd2eca1c62",
+        "finished_at": "2026-10-16T10:52:58.225809Z"
+      }
+    },
+    {
+      "id": "sha256:a535331d94a7acb6cdaad0f6eaa571016fa3637dad42e91eaf98386633078ac9",
+      "tags": [
+        "payments-pipeline-fix__iacndjv__verifier__trial-main:latest"
+      ],
+      "created": "2026-10-13T23:15:40.89391807+08:00",
+      "size": 126070500,
+      "project": "payments-pipeline-fix__iacndjv__verifier__trial",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-ec3-bounded10-20261016/preflight/preflight-engineering-lifecycle/payments-pipeline-fix__iaCNdJV",
+        "result_sha256": "68a3b5823d02360613a448c7f2c573afc0ce25a89e113609f0ae3ccd275e22e0",
+        "finished_at": "2026-10-16T07:54:29.835210Z"
+      }
+    },
+    {
+      "id": "sha256:a89e265eb54746ed8c93e28498fb534ef3d011e48ee3595285076cbcef82cdfe",
+      "tags": [
+        "payments-pipeline-fix__wi8isnn__env-main:latest"
+      ],
+      "created": "2026-10-13T22:49:46.353910218+08:00",
+      "size": 70543684,
+      "project": "payments-pipeline-fix__wi8isnn__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/infrastructure-history-1792065264337262237/jobs/01-dsh-payments-pipeline-fix/payments-pipeline-fix__Wi8isnN",
+        "result_sha256": "6199338c20710af5d1b87628623398ab827d619e6f068cd4e1997e3c18b6b9c0",
+        "finished_at": "2026-10-15T11:52:52.444437Z"
+      }
+    },
+    {
+      "id": "sha256:c1284f1c9c57dbe99c6cf83ed98ae62e3c47d4db5b629698585b8819c9a485af",
+      "tags": [
+        "payments-pipeline-fix__fsfv467__env-main:latest"
+      ],
+      "created": "2026-10-13T22:49:46.353910218+08:00",
+      "size": 70543684,
+      "project": "payments-pipeline-fix__fsfv467__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-ec3-bounded10-20261016/preflight/preflight-first-01-kz-dsh-payments-pipeline-fix/payments-pipeline-fix__FsFv467",
+        "result_sha256": "fd1261c364fbd990648a0c82e3818899326c4ca55f0aa64a65ef18b03ed56e9b",
+        "finished_at": "2026-10-16T08:35:37.303801Z"
+      }
+    },
+    {
+      "id": "sha256:6803bea22c6bacdbdab6a9d7f0f636c3d2707bbad06c1030646da62d0d3e992e",
+      "tags": [
+        "payments-pipeline-fix__z8zd5fn__env-main:latest"
+      ],
+      "created": "2026-10-13T22:49:46.353910218+08:00",
+      "size": 70543684,
+      "project": "payments-pipeline-fix__z8zd5fn__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-01-native-kz-payments-pipeline-fix/payments-pipeline-fix__Z8Zd5fN",
+        "result_sha256": "10df4b9edab514a0728e67f6fe8ef560077c597df8d2f6e66b39b8a67a759c65",
+        "finished_at": "2026-10-14T14:16:08.152693Z"
+      }
+    },
+    {
+      "id": "sha256:c99a160d31c8684ba6a436beb1b7d3fb2395ece74580240b46c9638be8de2786",
+      "tags": [
+        "payments-pipeline-fix__vfhyru9__env-main:latest"
+      ],
+      "created": "2026-10-13T22:49:46.353910218+08:00",
+      "size": 70543684,
+      "project": "payments-pipeline-fix__vfhyru9__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-01-dsh-payments-pipeline-fix/payments-pipeline-fix__VFHyru9",
+        "result_sha256": "12ba917bf9da9a5999ee33c81ff3ff01d00bf6d65535ac95c3953c3cd68896fc",
+        "finished_at": "2026-10-14T14:16:10.699515Z"
+      }
+    },
+    {
+      "id": "sha256:3b1962609ca12389be8da58fdfe70e8fa3cd6bea4f853ec999d1323a400ce039",
+      "tags": [
+        "payments-pipeline-fix__pdmuv4r__env-main:latest"
+      ],
+      "created": "2026-10-13T22:49:46.353910218+08:00",
+      "size": 70543684,
+      "project": "payments-pipeline-fix__pdmuv4r__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/interrupted-history-1792065912158847819/jobs/01-dsh-payments-pipeline-fix/payments-pipeline-fix__PdmUv4r",
+        "result_sha256": "e786717e9d775a0fadc20f7fc8ac72b9fcc7dc2bc1947f5e404ce7907cb6f5d1",
+        "finished_at": "2026-10-15T12:00:42.951888Z"
+      }
+    },
+    {
+      "id": "sha256:7fd9f506ee861627db8ff660811794ecaed196fdd367ed00323ab48758a95458",
+      "tags": [
+        "payments-pipeline-fix__jijiygz__env-main:latest"
+      ],
+      "created": "2026-10-13T22:49:46.353910218+08:00",
+      "size": 70543684,
+      "project": "payments-pipeline-fix__jijiygz__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/infrastructure-history-1792065264337262237/preflight/preflight-01-kz-payments-pipeline-fix/payments-pipeline-fix__jiJiygZ",
+        "result_sha256": "6a0c38d7474a56e522dd61cbbd75a077bd4725b279704c1a131b1aaa383f271a",
+        "finished_at": "2026-10-15T11:49:23.556506Z"
+      }
+    },
+    {
+      "id": "sha256:13cda5ddbf2eaa9c8d9a1018b6edcfedd025f862679f8ae0c8b1b15c0c6fe3d2",
+      "tags": [
+        "payments-pipeline-fix__2hrlpzf__env-main:latest"
+      ],
+      "created": "2026-10-13T22:49:46.353910218+08:00",
+      "size": 70543684,
+      "project": "payments-pipeline-fix__2hrlpzf__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/interrupted-history-1792065912158847819/jobs/01-kz-payments-pipeline-fix/payments-pipeline-fix__2HrLPZf",
+        "result_sha256": "8d477559c62d455535a27a8273c2c625e80eb1796ec50197a572b017a881de2b",
+        "finished_at": "2026-10-15T12:00:38.566947Z"
+      }
+    },
+    {
+      "id": "sha256:6c1b17f4bbfb14c6c91a5783ab4b001fc663bd5c50b90836b1aac721d178aee3",
+      "tags": [
+        "payments-pipeline-fix__s2pzgwd__env-main:latest"
+      ],
+      "created": "2026-10-13T22:49:46.353910218+08:00",
+      "size": 70543684,
+      "project": "payments-pipeline-fix__s2pzgwd__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-dsh-ec2-offline-20261014/preflight/preflight-ec2-lifecycle-payments/payments-pipeline-fix__s2PZGWD",
+        "result_sha256": "c1efc8e9692b5c4f741b0a7201192fc598c8bbd16117ba3384aa555d763e0871",
+        "finished_at": "2026-10-14T15:47:40.405070Z"
+      }
+    },
+    {
+      "id": "sha256:993574fed01160fc4cba81b6e1ff1a1e2d8f9820c87d4c369fcf0a6efd176b6f",
+      "tags": [
+        "payments-pipeline-fix__iacndjv__env-main:latest"
+      ],
+      "created": "2026-10-13T22:49:46.353910218+08:00",
+      "size": 70543684,
+      "project": "payments-pipeline-fix__iacndjv__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-ec3-bounded10-20261016/preflight/preflight-engineering-lifecycle/payments-pipeline-fix__iaCNdJV",
+        "result_sha256": "68a3b5823d02360613a448c7f2c573afc0ce25a89e113609f0ae3ccd275e22e0",
+        "finished_at": "2026-10-16T07:54:29.835210Z"
+      }
+    },
+    {
+      "id": "sha256:1fc222eb81bf0f692bf69dd9872153ae183be139fc153b69a5001952a15c04eb",
+      "tags": [
+        "payments-pipeline-fix__n44tdp6__env-main:latest"
+      ],
+      "created": "2026-10-13T22:49:46.353910218+08:00",
+      "size": 70543684,
+      "project": "payments-pipeline-fix__n44tdp6__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/infrastructure-history-1792065264337262237/preflight/preflight-01-dsh-payments-pipeline-fix/payments-pipeline-fix__n44tDP6",
+        "result_sha256": "ad1d1fe75b2de06352e9f304201d7029f6cee1339dfe79bf53e1f3cee929e54a",
+        "finished_at": "2026-10-15T11:49:22.754501Z"
+      }
+    },
+    {
+      "id": "sha256:9883853edd8c1be16ec822efaa242834d81532596be9a742d16dae791c3b4b94",
+      "tags": [
+        "payments-pipeline-fix__czttwrz__env-main:latest"
+      ],
+      "created": "2026-10-13T22:49:46.353910218+08:00",
+      "size": 70543684,
+      "project": "payments-pipeline-fix__czttwrz__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/infrastructure-history-1792065264337262237/jobs/01-kz-payments-pipeline-fix/payments-pipeline-fix__CZtTWRz",
+        "result_sha256": "278e82803332a518fd587fe5813c7038f19862321de9db7da44ee133ddb68586",
+        "finished_at": "2026-10-15T11:52:51.935481Z"
+      }
+    },
+    {
+      "id": "sha256:add7ed51d67cf3f655e30d6c6230e919be3e13134d0bed94edb44d27f69683cb",
+      "tags": [
+        "payments-pipeline-fix__2cvgahd__env-main:latest"
+      ],
+      "created": "2026-10-13T22:49:46.353910218+08:00",
+      "size": 70543684,
+      "project": "payments-pipeline-fix__2cvgahd__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-dsh-ec2-offline-20261014/preflight/preflight-ec2-lifecycle-final/payments-pipeline-fix__2cVgAHd",
+        "result_sha256": "d052a090cd342464a879b4344270d0fd7343d008eefbad8b7e6d14accefea175",
+        "finished_at": "2026-10-14T15:52:58.089591Z"
+      }
+    },
+    {
+      "id": "sha256:aee8aef566763f3659696559df39a5db8829abd89dbc8fdb1d25ccf61bebcb04",
+      "tags": [
+        "payments-pipeline-fix__v7yhhdq__env-main:latest"
+      ],
+      "created": "2026-10-13T22:49:46.353910218+08:00",
+      "size": 70543684,
+      "project": "payments-pipeline-fix__v7yhhdq__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-01-dsh-payments-pipeline-fix/payments-pipeline-fix__v7yhHDq",
+        "result_sha256": "b3c16aabf6e1b2ff6907df233eb1017719a49d5140f462bb5badd84f24226bcc",
+        "finished_at": "2026-10-14T15:00:42.197730Z"
+      }
+    },
+    {
+      "id": "sha256:208d888bd401f42e67de62f12dfa36dfd1512225ff53f18505f34f63907d0975",
+      "tags": [
+        "payments-pipeline-fix__zprpd8g__env-main:latest"
+      ],
+      "created": "2026-10-13T22:49:46.353910218+08:00",
+      "size": 70543684,
+      "project": "payments-pipeline-fix__zprpd8g__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-ec3-bounded10-20261016/preflight/preflight-ec3-final/payments-pipeline-fix__ZpRpD8g",
+        "result_sha256": "63453ed6c3b9df2f15fb1ca928f12ca0d5e326527df39b1ec4d3bbca116c3be5",
+        "finished_at": "2026-10-16T07:58:46.738306Z"
+      }
+    },
+    {
+      "id": "sha256:6159e551db88c52f26dfb00df64316b8b8a6ad0749833208859f7681550965c5",
+      "tags": [
+        "payments-pipeline-fix__zppmhws__env-main:latest"
+      ],
+      "created": "2026-10-13T22:49:46.353910218+08:00",
+      "size": 70543684,
+      "project": "payments-pipeline-fix__zppmhws__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-01-native-kz-payments-pipeline-fix/payments-pipeline-fix__zPpMhWS",
+        "result_sha256": "0d6b3352185e30245136537f9c6eadc76aa5b5cdfd5581ba88ffb9d24d600def",
+        "finished_at": "2026-10-14T15:00:39.336127Z"
+      }
+    },
+    {
+      "id": "sha256:0c2e4d3de40058727b0899ba92e2cf6af0c3d1502ae47077092e19c4fb3b696e",
+      "tags": [
+        "payments-pipeline-fix__yaf2old__env-main:latest"
+      ],
+      "created": "2026-10-13T22:49:46.353910218+08:00",
+      "size": 70543684,
+      "project": "payments-pipeline-fix__yaf2old__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-ec3-bounded10-20261016/jobs/first-01-kz-dsh-payments-pipeline-fix/payments-pipeline-fix__yaF2oLd",
+        "result_sha256": "3e9ec2c5430abaa8b2661734d26e21542d3a2065e10e6b01e4003f37f3231395",
+        "finished_at": "2026-10-16T08:58:23.912683Z"
+      }
+    },
+    {
+      "id": "sha256:a98c6dcdfb8305f563be1ff87e32a70920990dbf1f00649bb30073782ed7dd74",
+      "tags": [
+        "payments-pipeline-fix__uf86sn4__env-main:latest"
+      ],
+      "created": "2026-10-13T22:49:46.353910218+08:00",
+      "size": 70543684,
+      "project": "payments-pipeline-fix__uf86sn4__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/build-interrupted-history-1792068866672996749/preflight/preflight-01-kz-payments-pipeline-fix/payments-pipeline-fix__UF86Sn4",
+        "result_sha256": "942dcf529adc9aa353a90f3cffad63619c167164f5129871e19bb1bd194d6247",
+        "finished_at": "2026-10-15T12:08:19.377214Z"
+      }
+    },
+    {
+      "id": "sha256:418f5127e461904fb9c5d3d4dc63a4b4111a3d69a1ed923a4da7a78c2bc1c8e8",
+      "tags": [
+        "payments-pipeline-fix__wkxkiwv__env-main:latest"
+      ],
+      "created": "2026-10-13T22:49:46.353910218+08:00",
+      "size": 70543684,
+      "project": "payments-pipeline-fix__wkxkiwv__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-dsh-engineering-smoke3-20261015/jobs/first-01-kz-dsh-payments-pipeline-fix/payments-pipeline-fix__wkxkiwv",
+        "result_sha256": "77ddced0b44670a6bbe4362410da90c043144ad20d5d7563bf73cf638b40901f",
+        "finished_at": "2026-10-15T14:12:12.240241Z"
+      }
+    },
+    {
+      "id": "sha256:b41e0d45fa5a05a15271633f192deeeb7f9e712a1ff0c9a3d8b4660ccc89bc97",
+      "tags": [
+        "payments-pipeline-fix__uldcno7__env-main:latest"
+      ],
+      "created": "2026-10-13T22:49:46.353910218+08:00",
+      "size": 70543684,
+      "project": "payments-pipeline-fix__uldcno7__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/interrupted-history-1792065912158847819/preflight/preflight-01-dsh-payments-pipeline-fix/payments-pipeline-fix__uLdCNo7",
+        "result_sha256": "dcf7a470d101ff17d655a9027ecc0f4b5d333059ddd8d0400a2c387a928f98a2",
+        "finished_at": "2026-10-15T11:56:50.557403Z"
+      }
+    },
+    {
+      "id": "sha256:8deeda4053f5b158340dfc8070ccfbe5e247a02598a6e9e10d62870c286a80e7",
+      "tags": [
+        "payments-pipeline-fix__bpn35wz__env-main:latest"
+      ],
+      "created": "2026-10-13T22:49:46.353910218+08:00",
+      "size": 70543684,
+      "project": "payments-pipeline-fix__bpn35wz__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-dsh-engineering-smoke3-20261015/preflight/preflight-first-01-kz-dsh-payments-pipeline-fix/payments-pipeline-fix__bpn35wz",
+        "result_sha256": "90192f232cda10bbac1851d2411c2d70516b8c6051e1a3821daddc9fb90968c2",
+        "finished_at": "2026-10-15T13:18:48.167456Z"
+      }
+    },
+    {
+      "id": "sha256:f33601605607722d9cc9ecb5c7052ecd8d662d7d17c3cec5453b969fcfa18e41",
+      "tags": [
+        "payments-pipeline-fix__zfx2qhp__env-main:latest"
+      ],
+      "created": "2026-10-13T22:49:46.353910218+08:00",
+      "size": 70543684,
+      "project": "payments-pipeline-fix__zfx2qhp__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-ec3-bounded10-20261016/preflight/preflight-recovery-isolation/payments-pipeline-fix__ZFX2Qhp",
+        "result_sha256": "c627986c5a2317d041bbf20c24e06d61a7867bd36aa24a27f84454dd2eca1c62",
+        "finished_at": "2026-10-16T10:52:58.225809Z"
+      }
+    },
+    {
+      "id": "sha256:3d942b040a33ab977349e536690b4f6ac2105ec9768a537e605b37a78eaa9035",
+      "tags": [
+        "payments-pipeline-fix__3qt67p7__env-main:latest"
+      ],
+      "created": "2026-10-13T22:49:46.353910218+08:00",
+      "size": 70543684,
+      "project": "payments-pipeline-fix__3qt67p7__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-dsh-engineering-smoke3-20261015/preflight/preflight-engineering-lifecycle/payments-pipeline-fix__3QT67p7",
+        "result_sha256": "e4415039539c3f75cbd9ebc3a7205bf8ff27f5f554b01e4cb5d3fafb61654c36",
+        "finished_at": "2026-10-15T13:12:46.840181Z"
+      }
+    },
+    {
+      "id": "sha256:ee2bd26329a61c9492c62edc29188682a8aaa56281da4479cce802597f1ce45e",
+      "tags": [
+        "payments-pipeline-fix__jowifrg__env-main:latest"
+      ],
+      "created": "2026-10-13T22:49:46.353910218+08:00",
+      "size": 70543684,
+      "project": "payments-pipeline-fix__jowifrg__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/interrupted-history-1792065912158847819/preflight/preflight-01-kz-payments-pipeline-fix/payments-pipeline-fix__JowiFrg",
+        "result_sha256": "55380c962481f1f462e097fc6bbc4aa042cfd0a5d11c738f1dd4b5759edb5d9b",
+        "finished_at": "2026-10-15T11:56:51.382263Z"
+      }
+    },
+    {
+      "id": "sha256:2b3a75b94441dde7ed7b564cde8f6b2a2ed6d95517167967359bfcf1ab1ecb90",
+      "tags": [
+        "payments-pipeline-fix__pc7mwbs__env-main:latest"
+      ],
+      "created": "2026-10-13T22:49:46.353910218+08:00",
+      "size": 70543684,
+      "project": "payments-pipeline-fix__pc7mwbs__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/build-interrupted-history-1792068866672996749/preflight/preflight-01-dsh-payments-pipeline-fix/payments-pipeline-fix__pC7mWbS",
+        "result_sha256": "92178955b1e0566c7dc28ff963bd333f6092e3ea75a468276150d9cdd8c6ad2c",
+        "finished_at": "2026-10-15T12:08:20.192506Z"
+      }
+    },
+    {
+      "id": "sha256:fe140b6b45c6fd482afea7bc2471c020ad44a2f14c80e0fdb54d4bd7785f404f",
+      "tags": [
+        "payments-pipeline-fix__n44tdp6__env-customer:latest"
+      ],
+      "created": "2026-10-13T22:49:42.467482957+08:00",
+      "size": 55670550,
+      "project": "payments-pipeline-fix__n44tdp6__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/infrastructure-history-1792065264337262237/preflight/preflight-01-dsh-payments-pipeline-fix/payments-pipeline-fix__n44tDP6",
+        "result_sha256": "ad1d1fe75b2de06352e9f304201d7029f6cee1339dfe79bf53e1f3cee929e54a",
+        "finished_at": "2026-10-15T11:49:22.754501Z"
+      }
+    },
+    {
+      "id": "sha256:d4ff0232c8890715ab19598c2b0239772fdf5db2c037de988f0e5ddf978b98a9",
+      "tags": [
+        "payments-pipeline-fix__zprpd8g__env-customer:latest"
+      ],
+      "created": "2026-10-13T22:49:42.467482957+08:00",
+      "size": 55670550,
+      "project": "payments-pipeline-fix__zprpd8g__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-ec3-bounded10-20261016/preflight/preflight-ec3-final/payments-pipeline-fix__ZpRpD8g",
+        "result_sha256": "63453ed6c3b9df2f15fb1ca928f12ca0d5e326527df39b1ec4d3bbca116c3be5",
+        "finished_at": "2026-10-16T07:58:46.738306Z"
+      }
+    },
+    {
+      "id": "sha256:9e945ee9630b21d180e316f151e990eceea5851326a88b9e20ae2352ade7d14b",
+      "tags": [
+        "payments-pipeline-fix__uldcno7__env-customer:latest"
+      ],
+      "created": "2026-10-13T22:49:42.467482957+08:00",
+      "size": 55670550,
+      "project": "payments-pipeline-fix__uldcno7__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/interrupted-history-1792065912158847819/preflight/preflight-01-dsh-payments-pipeline-fix/payments-pipeline-fix__uLdCNo7",
+        "result_sha256": "dcf7a470d101ff17d655a9027ecc0f4b5d333059ddd8d0400a2c387a928f98a2",
+        "finished_at": "2026-10-15T11:56:50.557403Z"
+      }
+    },
+    {
+      "id": "sha256:bcbbb1dea593bdfeeb399d6118f24057aa5e174df6549f61df46253a8408fc1a",
+      "tags": [
+        "payments-pipeline-fix__v7yhhdq__env-customer:latest"
+      ],
+      "created": "2026-10-13T22:49:42.467482957+08:00",
+      "size": 55670550,
+      "project": "payments-pipeline-fix__v7yhhdq__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-01-dsh-payments-pipeline-fix/payments-pipeline-fix__v7yhHDq",
+        "result_sha256": "b3c16aabf6e1b2ff6907df233eb1017719a49d5140f462bb5badd84f24226bcc",
+        "finished_at": "2026-10-14T15:00:42.197730Z"
+      }
+    },
+    {
+      "id": "sha256:7fe70e813718aac045bf0e269e8c900fab2bc2483b288b1a92edde4869dd77fd",
+      "tags": [
+        "payments-pipeline-fix__fsfv467__env-customer:latest"
+      ],
+      "created": "2026-10-13T22:49:42.467482957+08:00",
+      "size": 55670550,
+      "project": "payments-pipeline-fix__fsfv467__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-ec3-bounded10-20261016/preflight/preflight-first-01-kz-dsh-payments-pipeline-fix/payments-pipeline-fix__FsFv467",
+        "result_sha256": "fd1261c364fbd990648a0c82e3818899326c4ca55f0aa64a65ef18b03ed56e9b",
+        "finished_at": "2026-10-16T08:35:37.303801Z"
+      }
+    },
+    {
+      "id": "sha256:3722fe60c25b2d265ac0384e6ebfb3b998e33731bada75fcf461f3e6639e51a5",
+      "tags": [
+        "payments-pipeline-fix__wkxkiwv__env-customer:latest"
+      ],
+      "created": "2026-10-13T22:49:42.467482957+08:00",
+      "size": 55670550,
+      "project": "payments-pipeline-fix__wkxkiwv__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-dsh-engineering-smoke3-20261015/jobs/first-01-kz-dsh-payments-pipeline-fix/payments-pipeline-fix__wkxkiwv",
+        "result_sha256": "77ddced0b44670a6bbe4362410da90c043144ad20d5d7563bf73cf638b40901f",
+        "finished_at": "2026-10-15T14:12:12.240241Z"
+      }
+    },
+    {
+      "id": "sha256:789b8f9e97c1ebc93e44d65d92f2fd820ea337ee4ea81f8df05faedc7767024c",
+      "tags": [
+        "payments-pipeline-fix__iacndjv__env-customer:latest"
+      ],
+      "created": "2026-10-13T22:49:42.467482957+08:00",
+      "size": 55670550,
+      "project": "payments-pipeline-fix__iacndjv__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-ec3-bounded10-20261016/preflight/preflight-engineering-lifecycle/payments-pipeline-fix__iaCNdJV",
+        "result_sha256": "68a3b5823d02360613a448c7f2c573afc0ce25a89e113609f0ae3ccd275e22e0",
+        "finished_at": "2026-10-16T07:54:29.835210Z"
+      }
+    },
+    {
+      "id": "sha256:e12a97ab9b825ed2b75756e179b91a96e77c8574d707527399ee2aeabb785aff",
+      "tags": [
+        "payments-pipeline-fix__z8zd5fn__env-customer:latest"
+      ],
+      "created": "2026-10-13T22:49:42.467482957+08:00",
+      "size": 55670550,
+      "project": "payments-pipeline-fix__z8zd5fn__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-01-native-kz-payments-pipeline-fix/payments-pipeline-fix__Z8Zd5fN",
+        "result_sha256": "10df4b9edab514a0728e67f6fe8ef560077c597df8d2f6e66b39b8a67a759c65",
+        "finished_at": "2026-10-14T14:16:08.152693Z"
+      }
+    },
+    {
+      "id": "sha256:ccad4447cd67550978ebc7f90a6fd660ed2a7cde260ff3adad5225ce0c4de165",
+      "tags": [
+        "payments-pipeline-fix__s2pzgwd__env-customer:latest"
+      ],
+      "created": "2026-10-13T22:49:42.467482957+08:00",
+      "size": 55670550,
+      "project": "payments-pipeline-fix__s2pzgwd__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-dsh-ec2-offline-20261014/preflight/preflight-ec2-lifecycle-payments/payments-pipeline-fix__s2PZGWD",
+        "result_sha256": "c1efc8e9692b5c4f741b0a7201192fc598c8bbd16117ba3384aa555d763e0871",
+        "finished_at": "2026-10-14T15:47:40.405070Z"
+      }
+    },
+    {
+      "id": "sha256:ea07d244d5fac0d0afed1c9feeedc66096638951612b5331070b1a95dd3c5757",
+      "tags": [
+        "payments-pipeline-fix__czttwrz__env-customer:latest"
+      ],
+      "created": "2026-10-13T22:49:42.467482957+08:00",
+      "size": 55670550,
+      "project": "payments-pipeline-fix__czttwrz__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/infrastructure-history-1792065264337262237/jobs/01-kz-payments-pipeline-fix/payments-pipeline-fix__CZtTWRz",
+        "result_sha256": "278e82803332a518fd587fe5813c7038f19862321de9db7da44ee133ddb68586",
+        "finished_at": "2026-10-15T11:52:51.935481Z"
+      }
+    },
+    {
+      "id": "sha256:c4772367814b3a37a7ede4c85e57a54bc2f3e701bde30b6be6e2613f8b433271",
+      "tags": [
+        "payments-pipeline-fix__2cvgahd__env-customer:latest"
+      ],
+      "created": "2026-10-13T22:49:42.467482957+08:00",
+      "size": 55670550,
+      "project": "payments-pipeline-fix__2cvgahd__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-dsh-ec2-offline-20261014/preflight/preflight-ec2-lifecycle-final/payments-pipeline-fix__2cVgAHd",
+        "result_sha256": "d052a090cd342464a879b4344270d0fd7343d008eefbad8b7e6d14accefea175",
+        "finished_at": "2026-10-14T15:52:58.089591Z"
+      }
+    },
+    {
+      "id": "sha256:fa3698a82124a7e1ff32d193770d84c3fec4e3ec4ce3b98e5989710c2df93a71",
+      "tags": [
+        "payments-pipeline-fix__3qt67p7__env-customer:latest"
+      ],
+      "created": "2026-10-13T22:49:42.467482957+08:00",
+      "size": 55670550,
+      "project": "payments-pipeline-fix__3qt67p7__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-dsh-engineering-smoke3-20261015/preflight/preflight-engineering-lifecycle/payments-pipeline-fix__3QT67p7",
+        "result_sha256": "e4415039539c3f75cbd9ebc3a7205bf8ff27f5f554b01e4cb5d3fafb61654c36",
+        "finished_at": "2026-10-15T13:12:46.840181Z"
+      }
+    },
+    {
+      "id": "sha256:6db4f7739b36918e15618002c2c552a7ce28e178e21e821e0c3fffba17a440e6",
+      "tags": [
+        "payments-pipeline-fix__yaf2old__env-customer:latest"
+      ],
+      "created": "2026-10-13T22:49:42.467482957+08:00",
+      "size": 55670550,
+      "project": "payments-pipeline-fix__yaf2old__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-ec3-bounded10-20261016/jobs/first-01-kz-dsh-payments-pipeline-fix/payments-pipeline-fix__yaF2oLd",
+        "result_sha256": "3e9ec2c5430abaa8b2661734d26e21542d3a2065e10e6b01e4003f37f3231395",
+        "finished_at": "2026-10-16T08:58:23.912683Z"
+      }
+    },
+    {
+      "id": "sha256:738dbb5329af2df7543562ee411952ac0e2ba663a22c009856910a29e96e7723",
+      "tags": [
+        "payments-pipeline-fix__zfx2qhp__env-customer:latest"
+      ],
+      "created": "2026-10-13T22:49:42.467482957+08:00",
+      "size": 55670550,
+      "project": "payments-pipeline-fix__zfx2qhp__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-ec3-bounded10-20261016/preflight/preflight-recovery-isolation/payments-pipeline-fix__ZFX2Qhp",
+        "result_sha256": "c627986c5a2317d041bbf20c24e06d61a7867bd36aa24a27f84454dd2eca1c62",
+        "finished_at": "2026-10-16T10:52:58.225809Z"
+      }
+    },
+    {
+      "id": "sha256:4f3920182c612520a00fb502190a50b6df5a735e6c6b51e941d7762bfd75c400",
+      "tags": [
+        "payments-pipeline-fix__pdmuv4r__env-customer:latest"
+      ],
+      "created": "2026-10-13T22:49:42.467482957+08:00",
+      "size": 55670550,
+      "project": "payments-pipeline-fix__pdmuv4r__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/interrupted-history-1792065912158847819/jobs/01-dsh-payments-pipeline-fix/payments-pipeline-fix__PdmUv4r",
+        "result_sha256": "e786717e9d775a0fadc20f7fc8ac72b9fcc7dc2bc1947f5e404ce7907cb6f5d1",
+        "finished_at": "2026-10-15T12:00:42.951888Z"
+      }
+    },
+    {
+      "id": "sha256:a19df3775ab9ad9efc1da6c46d210abde403a8ca3bf13861fd3806ffe0c5083c",
+      "tags": [
+        "payments-pipeline-fix__2hrlpzf__env-customer:latest"
+      ],
+      "created": "2026-10-13T22:49:42.467482957+08:00",
+      "size": 55670550,
+      "project": "payments-pipeline-fix__2hrlpzf__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/interrupted-history-1792065912158847819/jobs/01-kz-payments-pipeline-fix/payments-pipeline-fix__2HrLPZf",
+        "result_sha256": "8d477559c62d455535a27a8273c2c625e80eb1796ec50197a572b017a881de2b",
+        "finished_at": "2026-10-15T12:00:38.566947Z"
+      }
+    },
+    {
+      "id": "sha256:92f9ad0e402d2b6070ed382e439c670dcbf1673c4669089167b968fc1c8d50a8",
+      "tags": [
+        "payments-pipeline-fix__uf86sn4__env-customer:latest"
+      ],
+      "created": "2026-10-13T22:49:42.467482957+08:00",
+      "size": 55670550,
+      "project": "payments-pipeline-fix__uf86sn4__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/build-interrupted-history-1792068866672996749/preflight/preflight-01-kz-payments-pipeline-fix/payments-pipeline-fix__UF86Sn4",
+        "result_sha256": "942dcf529adc9aa353a90f3cffad63619c167164f5129871e19bb1bd194d6247",
+        "finished_at": "2026-10-15T12:08:19.377214Z"
+      }
+    },
+    {
+      "id": "sha256:1996e3bfe951125f64233c4c3771cc9ee349d4502a561cfc710b8cf81d2ae036",
+      "tags": [
+        "payments-pipeline-fix__jijiygz__env-customer:latest"
+      ],
+      "created": "2026-10-13T22:49:42.467482957+08:00",
+      "size": 55670550,
+      "project": "payments-pipeline-fix__jijiygz__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/infrastructure-history-1792065264337262237/preflight/preflight-01-kz-payments-pipeline-fix/payments-pipeline-fix__jiJiygZ",
+        "result_sha256": "6a0c38d7474a56e522dd61cbbd75a077bd4725b279704c1a131b1aaa383f271a",
+        "finished_at": "2026-10-15T11:49:23.556506Z"
+      }
+    },
+    {
+      "id": "sha256:0f6561a3c84a7bc53ae1ead71c3ed5e418af920a4921a74143b1ab7394cc7266",
+      "tags": [
+        "payments-pipeline-fix__jowifrg__env-customer:latest"
+      ],
+      "created": "2026-10-13T22:49:42.467482957+08:00",
+      "size": 55670550,
+      "project": "payments-pipeline-fix__jowifrg__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/interrupted-history-1792065912158847819/preflight/preflight-01-kz-payments-pipeline-fix/payments-pipeline-fix__JowiFrg",
+        "result_sha256": "55380c962481f1f462e097fc6bbc4aa042cfd0a5d11c738f1dd4b5759edb5d9b",
+        "finished_at": "2026-10-15T11:56:51.382263Z"
+      }
+    },
+    {
+      "id": "sha256:409a1a0212459d26c1c0bbba4791ad027451372398404f791660b14e102274e4",
+      "tags": [
+        "payments-pipeline-fix__wi8isnn__env-customer:latest"
+      ],
+      "created": "2026-10-13T22:49:42.467482957+08:00",
+      "size": 55670550,
+      "project": "payments-pipeline-fix__wi8isnn__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/infrastructure-history-1792065264337262237/jobs/01-dsh-payments-pipeline-fix/payments-pipeline-fix__Wi8isnN",
+        "result_sha256": "6199338c20710af5d1b87628623398ab827d619e6f068cd4e1997e3c18b6b9c0",
+        "finished_at": "2026-10-15T11:52:52.444437Z"
+      }
+    },
+    {
+      "id": "sha256:10e1e225bf42b386bab827024e1f024de6ecf18451186ce98de58295e94bcc89",
+      "tags": [
+        "payments-pipeline-fix__zppmhws__env-customer:latest"
+      ],
+      "created": "2026-10-13T22:49:42.467482957+08:00",
+      "size": 55670550,
+      "project": "payments-pipeline-fix__zppmhws__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-01-native-kz-payments-pipeline-fix/payments-pipeline-fix__zPpMhWS",
+        "result_sha256": "0d6b3352185e30245136537f9c6eadc76aa5b5cdfd5581ba88ffb9d24d600def",
+        "finished_at": "2026-10-14T15:00:39.336127Z"
+      }
+    },
+    {
+      "id": "sha256:394da9ba7ab429f93947d44f85cefefb01467a36afb7f62f927944a126a676d7",
+      "tags": [
+        "payments-pipeline-fix__vfhyru9__env-customer:latest"
+      ],
+      "created": "2026-10-13T22:49:42.467482957+08:00",
+      "size": 55670550,
+      "project": "payments-pipeline-fix__vfhyru9__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-01-dsh-payments-pipeline-fix/payments-pipeline-fix__VFHyru9",
+        "result_sha256": "12ba917bf9da9a5999ee33c81ff3ff01d00bf6d65535ac95c3953c3cd68896fc",
+        "finished_at": "2026-10-14T14:16:10.699515Z"
+      }
+    },
+    {
+      "id": "sha256:9b68500b7291cbb04c705d5b78c51256f144b989633b6fe96e6e509ee22978f4",
+      "tags": [
+        "payments-pipeline-fix__bpn35wz__env-customer:latest"
+      ],
+      "created": "2026-10-13T22:49:42.467482957+08:00",
+      "size": 55670550,
+      "project": "payments-pipeline-fix__bpn35wz__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-dsh-engineering-smoke3-20261015/preflight/preflight-first-01-kz-dsh-payments-pipeline-fix/payments-pipeline-fix__bpn35wz",
+        "result_sha256": "90192f232cda10bbac1851d2411c2d70516b8c6051e1a3821daddc9fb90968c2",
+        "finished_at": "2026-10-15T13:18:48.167456Z"
+      }
+    },
+    {
+      "id": "sha256:ce1b05955b982471bbde038b610aa63dca68c6183170f19023f6ecda08e3c171",
+      "tags": [
+        "payments-pipeline-fix__pc7mwbs__env-customer:latest"
+      ],
+      "created": "2026-10-13T22:49:42.467482957+08:00",
+      "size": 55670550,
+      "project": "payments-pipeline-fix__pc7mwbs__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/build-interrupted-history-1792068866672996749/preflight/preflight-01-dsh-payments-pipeline-fix/payments-pipeline-fix__pC7mWbS",
+        "result_sha256": "92178955b1e0566c7dc28ff963bd333f6092e3ea75a468276150d9cdd8c6ad2c",
+        "finished_at": "2026-10-15T12:08:20.192506Z"
+      }
+    },
+    {
+      "id": "sha256:ad5e7bf005a4afce45e4077265fb70bc36c62bbc3b8f2c4abd97f8453c6973da",
+      "tags": [
+        "payments-pipeline-fix__zfx2qhp__env-seeder:latest"
+      ],
+      "created": "2026-10-13T22:49:41.200658239+08:00",
+      "size": 56210666,
+      "project": "payments-pipeline-fix__zfx2qhp__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-ec3-bounded10-20261016/preflight/preflight-recovery-isolation/payments-pipeline-fix__ZFX2Qhp",
+        "result_sha256": "c627986c5a2317d041bbf20c24e06d61a7867bd36aa24a27f84454dd2eca1c62",
+        "finished_at": "2026-10-16T10:52:58.225809Z"
+      }
+    },
+    {
+      "id": "sha256:bec1accf2b4202382dc34706b32806ffe85bed05d2e98f2286dea1c86f37357c",
+      "tags": [
+        "payments-pipeline-fix__s2pzgwd__env-seeder:latest"
+      ],
+      "created": "2026-10-13T22:49:41.200658239+08:00",
+      "size": 56210666,
+      "project": "payments-pipeline-fix__s2pzgwd__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-dsh-ec2-offline-20261014/preflight/preflight-ec2-lifecycle-payments/payments-pipeline-fix__s2PZGWD",
+        "result_sha256": "c1efc8e9692b5c4f741b0a7201192fc598c8bbd16117ba3384aa555d763e0871",
+        "finished_at": "2026-10-14T15:47:40.405070Z"
+      }
+    },
+    {
+      "id": "sha256:0d81d2ed5eaaae30ca570ab60d4dd8bb295e7a3b73d214425b65d16b833c55fd",
+      "tags": [
+        "payments-pipeline-fix__zprpd8g__env-seeder:latest"
+      ],
+      "created": "2026-10-13T22:49:41.200658239+08:00",
+      "size": 56210666,
+      "project": "payments-pipeline-fix__zprpd8g__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-ec3-bounded10-20261016/preflight/preflight-ec3-final/payments-pipeline-fix__ZpRpD8g",
+        "result_sha256": "63453ed6c3b9df2f15fb1ca928f12ca0d5e326527df39b1ec4d3bbca116c3be5",
+        "finished_at": "2026-10-16T07:58:46.738306Z"
+      }
+    },
+    {
+      "id": "sha256:df3edb2a233da20215cd439e155beea773ada1769d862c3b4a5627b05db6b716",
+      "tags": [
+        "payments-pipeline-fix__fsfv467__env-seeder:latest"
+      ],
+      "created": "2026-10-13T22:49:41.200658239+08:00",
+      "size": 56210666,
+      "project": "payments-pipeline-fix__fsfv467__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-ec3-bounded10-20261016/preflight/preflight-first-01-kz-dsh-payments-pipeline-fix/payments-pipeline-fix__FsFv467",
+        "result_sha256": "fd1261c364fbd990648a0c82e3818899326c4ca55f0aa64a65ef18b03ed56e9b",
+        "finished_at": "2026-10-16T08:35:37.303801Z"
+      }
+    },
+    {
+      "id": "sha256:cc7a8dce2cf9f8ac0ea6ca023c8e3c2ee47ad993e573041c773c6f90a9cd6ce0",
+      "tags": [
+        "payments-pipeline-fix__czttwrz__env-seeder:latest"
+      ],
+      "created": "2026-10-13T22:49:41.200658239+08:00",
+      "size": 56210666,
+      "project": "payments-pipeline-fix__czttwrz__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/infrastructure-history-1792065264337262237/jobs/01-kz-payments-pipeline-fix/payments-pipeline-fix__CZtTWRz",
+        "result_sha256": "278e82803332a518fd587fe5813c7038f19862321de9db7da44ee133ddb68586",
+        "finished_at": "2026-10-15T11:52:51.935481Z"
+      }
+    },
+    {
+      "id": "sha256:81c27d22a4c9aebc21ede36d3937e9a7b7b36c7c13ee212b28e1042c948b8355",
+      "tags": [
+        "payments-pipeline-fix__wkxkiwv__env-seeder:latest"
+      ],
+      "created": "2026-10-13T22:49:41.200658239+08:00",
+      "size": 56210666,
+      "project": "payments-pipeline-fix__wkxkiwv__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-dsh-engineering-smoke3-20261015/jobs/first-01-kz-dsh-payments-pipeline-fix/payments-pipeline-fix__wkxkiwv",
+        "result_sha256": "77ddced0b44670a6bbe4362410da90c043144ad20d5d7563bf73cf638b40901f",
+        "finished_at": "2026-10-15T14:12:12.240241Z"
+      }
+    },
+    {
+      "id": "sha256:90d23e7c3c5d6199050113f8244918cbea93d8becee73a514f9aca707b8a428e",
+      "tags": [
+        "payments-pipeline-fix__2cvgahd__env-seeder:latest"
+      ],
+      "created": "2026-10-13T22:49:41.200658239+08:00",
+      "size": 56210666,
+      "project": "payments-pipeline-fix__2cvgahd__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-dsh-ec2-offline-20261014/preflight/preflight-ec2-lifecycle-final/payments-pipeline-fix__2cVgAHd",
+        "result_sha256": "d052a090cd342464a879b4344270d0fd7343d008eefbad8b7e6d14accefea175",
+        "finished_at": "2026-10-14T15:52:58.089591Z"
+      }
+    },
+    {
+      "id": "sha256:98fcd6da91f814661a8fcafd38a2dd3686df5f92996695ad314091fd82a04551",
+      "tags": [
+        "payments-pipeline-fix__n44tdp6__env-seeder:latest"
+      ],
+      "created": "2026-10-13T22:49:41.200658239+08:00",
+      "size": 56210666,
+      "project": "payments-pipeline-fix__n44tdp6__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/infrastructure-history-1792065264337262237/preflight/preflight-01-dsh-payments-pipeline-fix/payments-pipeline-fix__n44tDP6",
+        "result_sha256": "ad1d1fe75b2de06352e9f304201d7029f6cee1339dfe79bf53e1f3cee929e54a",
+        "finished_at": "2026-10-15T11:49:22.754501Z"
+      }
+    },
+    {
+      "id": "sha256:7ae684ae19666815b0a8cf0d745786a10eba13cb2a4da32ba09711aff82f61b6",
+      "tags": [
+        "payments-pipeline-fix__bpn35wz__env-seeder:latest"
+      ],
+      "created": "2026-10-13T22:49:41.200658239+08:00",
+      "size": 56210666,
+      "project": "payments-pipeline-fix__bpn35wz__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-dsh-engineering-smoke3-20261015/preflight/preflight-first-01-kz-dsh-payments-pipeline-fix/payments-pipeline-fix__bpn35wz",
+        "result_sha256": "90192f232cda10bbac1851d2411c2d70516b8c6051e1a3821daddc9fb90968c2",
+        "finished_at": "2026-10-15T13:18:48.167456Z"
+      }
+    },
+    {
+      "id": "sha256:d8dc113e8e6432adf6e2152aba2de6c323f04da175683d02d571e4aa435eac2a",
+      "tags": [
+        "payments-pipeline-fix__wi8isnn__env-seeder:latest"
+      ],
+      "created": "2026-10-13T22:49:41.200658239+08:00",
+      "size": 56210666,
+      "project": "payments-pipeline-fix__wi8isnn__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/infrastructure-history-1792065264337262237/jobs/01-dsh-payments-pipeline-fix/payments-pipeline-fix__Wi8isnN",
+        "result_sha256": "6199338c20710af5d1b87628623398ab827d619e6f068cd4e1997e3c18b6b9c0",
+        "finished_at": "2026-10-15T11:52:52.444437Z"
+      }
+    },
+    {
+      "id": "sha256:acd52c450bd77e6dfaec3ca3a9b62dd5f9f867919758c4b424191049fa8f1651",
+      "tags": [
+        "payments-pipeline-fix__2hrlpzf__env-seeder:latest"
+      ],
+      "created": "2026-10-13T22:49:41.200658239+08:00",
+      "size": 56210666,
+      "project": "payments-pipeline-fix__2hrlpzf__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/interrupted-history-1792065912158847819/jobs/01-kz-payments-pipeline-fix/payments-pipeline-fix__2HrLPZf",
+        "result_sha256": "8d477559c62d455535a27a8273c2c625e80eb1796ec50197a572b017a881de2b",
+        "finished_at": "2026-10-15T12:00:38.566947Z"
+      }
+    },
+    {
+      "id": "sha256:1488a94c117c1dbf9d76f450af202807b5be4b7240845f57e6a541496df30b24",
+      "tags": [
+        "payments-pipeline-fix__uf86sn4__env-seeder:latest"
+      ],
+      "created": "2026-10-13T22:49:41.200658239+08:00",
+      "size": 56210666,
+      "project": "payments-pipeline-fix__uf86sn4__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/build-interrupted-history-1792068866672996749/preflight/preflight-01-kz-payments-pipeline-fix/payments-pipeline-fix__UF86Sn4",
+        "result_sha256": "942dcf529adc9aa353a90f3cffad63619c167164f5129871e19bb1bd194d6247",
+        "finished_at": "2026-10-15T12:08:19.377214Z"
+      }
+    },
+    {
+      "id": "sha256:75ba885ee0a28ed14a7a3ba988fefb73804cedbb6b4d964d48a8698e8d614799",
+      "tags": [
+        "payments-pipeline-fix__iacndjv__env-seeder:latest"
+      ],
+      "created": "2026-10-13T22:49:41.200658239+08:00",
+      "size": 56210666,
+      "project": "payments-pipeline-fix__iacndjv__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-ec3-bounded10-20261016/preflight/preflight-engineering-lifecycle/payments-pipeline-fix__iaCNdJV",
+        "result_sha256": "68a3b5823d02360613a448c7f2c573afc0ce25a89e113609f0ae3ccd275e22e0",
+        "finished_at": "2026-10-16T07:54:29.835210Z"
+      }
+    },
+    {
+      "id": "sha256:e17a6332e80a3a426a168658f65061765a256d1428d6a9fe30d7cb670a344f57",
+      "tags": [
+        "payments-pipeline-fix__jijiygz__env-seeder:latest"
+      ],
+      "created": "2026-10-13T22:49:41.200658239+08:00",
+      "size": 56210666,
+      "project": "payments-pipeline-fix__jijiygz__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/infrastructure-history-1792065264337262237/preflight/preflight-01-kz-payments-pipeline-fix/payments-pipeline-fix__jiJiygZ",
+        "result_sha256": "6a0c38d7474a56e522dd61cbbd75a077bd4725b279704c1a131b1aaa383f271a",
+        "finished_at": "2026-10-15T11:49:23.556506Z"
+      }
+    },
+    {
+      "id": "sha256:20b4eb4cdd8cbd4641ad1e16de4357c3c60e8f5658eba8bbcd4c05f2f696ea27",
+      "tags": [
+        "payments-pipeline-fix__pdmuv4r__env-seeder:latest"
+      ],
+      "created": "2026-10-13T22:49:41.200658239+08:00",
+      "size": 56210666,
+      "project": "payments-pipeline-fix__pdmuv4r__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/interrupted-history-1792065912158847819/jobs/01-dsh-payments-pipeline-fix/payments-pipeline-fix__PdmUv4r",
+        "result_sha256": "e786717e9d775a0fadc20f7fc8ac72b9fcc7dc2bc1947f5e404ce7907cb6f5d1",
+        "finished_at": "2026-10-15T12:00:42.951888Z"
+      }
+    },
+    {
+      "id": "sha256:4835187c5743da4e540a0d6d95ddcbf18e0d25f10b74b9b0eaba214022ed2f08",
+      "tags": [
+        "payments-pipeline-fix__3qt67p7__env-seeder:latest"
+      ],
+      "created": "2026-10-13T22:49:41.200658239+08:00",
+      "size": 56210666,
+      "project": "payments-pipeline-fix__3qt67p7__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-dsh-engineering-smoke3-20261015/preflight/preflight-engineering-lifecycle/payments-pipeline-fix__3QT67p7",
+        "result_sha256": "e4415039539c3f75cbd9ebc3a7205bf8ff27f5f554b01e4cb5d3fafb61654c36",
+        "finished_at": "2026-10-15T13:12:46.840181Z"
+      }
+    },
+    {
+      "id": "sha256:e770929164c35dff73c9113c53a3539c6680752c74944103a58d451894275bd5",
+      "tags": [
+        "payments-pipeline-fix__pc7mwbs__env-seeder:latest"
+      ],
+      "created": "2026-10-13T22:49:41.200658239+08:00",
+      "size": 56210666,
+      "project": "payments-pipeline-fix__pc7mwbs__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/build-interrupted-history-1792068866672996749/preflight/preflight-01-dsh-payments-pipeline-fix/payments-pipeline-fix__pC7mWbS",
+        "result_sha256": "92178955b1e0566c7dc28ff963bd333f6092e3ea75a468276150d9cdd8c6ad2c",
+        "finished_at": "2026-10-15T12:08:20.192506Z"
+      }
+    },
+    {
+      "id": "sha256:3e40d5ca1c2fac081c304aaf9234696803c2fa6059a6c304b78628366002bcfd",
+      "tags": [
+        "payments-pipeline-fix__vfhyru9__env-seeder:latest"
+      ],
+      "created": "2026-10-13T22:49:41.200658239+08:00",
+      "size": 56210666,
+      "project": "payments-pipeline-fix__vfhyru9__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-01-dsh-payments-pipeline-fix/payments-pipeline-fix__VFHyru9",
+        "result_sha256": "12ba917bf9da9a5999ee33c81ff3ff01d00bf6d65535ac95c3953c3cd68896fc",
+        "finished_at": "2026-10-14T14:16:10.699515Z"
+      }
+    },
+    {
+      "id": "sha256:c5c060cd953b4ed982a60159cad1ed4071556f0c2cc3f34f5cd7707ff1e212c0",
+      "tags": [
+        "payments-pipeline-fix__v7yhhdq__env-seeder:latest"
+      ],
+      "created": "2026-10-13T22:49:41.200658239+08:00",
+      "size": 56210666,
+      "project": "payments-pipeline-fix__v7yhhdq__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-01-dsh-payments-pipeline-fix/payments-pipeline-fix__v7yhHDq",
+        "result_sha256": "b3c16aabf6e1b2ff6907df233eb1017719a49d5140f462bb5badd84f24226bcc",
+        "finished_at": "2026-10-14T15:00:42.197730Z"
+      }
+    },
+    {
+      "id": "sha256:fd8efe03c0428efd7d8639f9cb8412ff4e73afa7262460f3e93c158ff16070ca",
+      "tags": [
+        "payments-pipeline-fix__z8zd5fn__env-seeder:latest"
+      ],
+      "created": "2026-10-13T22:49:41.200658239+08:00",
+      "size": 56210666,
+      "project": "payments-pipeline-fix__z8zd5fn__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-first-01-native-kz-payments-pipeline-fix/payments-pipeline-fix__Z8Zd5fN",
+        "result_sha256": "10df4b9edab514a0728e67f6fe8ef560077c597df8d2f6e66b39b8a67a759c65",
+        "finished_at": "2026-10-14T14:16:08.152693Z"
+      }
+    },
+    {
+      "id": "sha256:889ca17cecab70c1dbfc6e3b528c7e6d52c58ffe9c10c2f7036178ea44ffe332",
+      "tags": [
+        "payments-pipeline-fix__zppmhws__env-seeder:latest"
+      ],
+      "created": "2026-10-13T22:49:41.200658239+08:00",
+      "size": 56210666,
+      "project": "payments-pipeline-fix__zppmhws__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/jobs/first-01-native-kz-payments-pipeline-fix/payments-pipeline-fix__zPpMhWS",
+        "result_sha256": "0d6b3352185e30245136537f9c6eadc76aa5b5cdfd5581ba88ffb9d24d600def",
+        "finished_at": "2026-10-14T15:00:39.336127Z"
+      }
+    },
+    {
+      "id": "sha256:dc95d936d2f6889289c5e76604f73e55b562ea433c13100908be4374955d7ff1",
+      "tags": [
+        "payments-pipeline-fix__jowifrg__env-seeder:latest"
+      ],
+      "created": "2026-10-13T22:49:41.200658239+08:00",
+      "size": 56210666,
+      "project": "payments-pipeline-fix__jowifrg__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/interrupted-history-1792065912158847819/preflight/preflight-01-kz-payments-pipeline-fix/payments-pipeline-fix__JowiFrg",
+        "result_sha256": "55380c962481f1f462e097fc6bbc4aa042cfd0a5d11c738f1dd4b5759edb5d9b",
+        "finished_at": "2026-10-15T11:56:51.382263Z"
+      }
+    },
+    {
+      "id": "sha256:4a67a5fab1508d151acfa548b95e331fbf0e174f5b10cfb35ead2f72b12ad291",
+      "tags": [
+        "payments-pipeline-fix__uldcno7__env-seeder:latest"
+      ],
+      "created": "2026-10-13T22:49:41.200658239+08:00",
+      "size": 56210666,
+      "project": "payments-pipeline-fix__uldcno7__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-ctyun-firstpass-20261015/interrupted-history-1792065912158847819/preflight/preflight-01-dsh-payments-pipeline-fix/payments-pipeline-fix__uLdCNo7",
+        "result_sha256": "dcf7a470d101ff17d655a9027ecc0f4b5d333059ddd8d0400a2c387a928f98a2",
+        "finished_at": "2026-10-15T11:56:50.557403Z"
+      }
+    },
+    {
+      "id": "sha256:c827ff7a3d16989f4c03ddb8b528e34427ef96d0ef9ecd34ab7e41766825ff33",
+      "tags": [
+        "payments-pipeline-fix__yaf2old__env-seeder:latest"
+      ],
+      "created": "2026-10-13T22:49:41.200658239+08:00",
+      "size": 56210666,
+      "project": "payments-pipeline-fix__yaf2old__env",
+      "trial": {
+        "path": "/mnt/sdb/home/lizh639/tb4-kz-ec3-bounded10-20261016/jobs/first-01-kz-dsh-payments-pipeline-fix/payments-pipeline-fix__yaF2oLd",
+        "result_sha256": "3e9ec2c5430abaa8b2661734d26e21542d3a2065e10e6b01e4003f37f3231395",
+        "finished_at": "2026-10-16T08:58:23.912683Z"
+      }
+    }
+  ]
+}

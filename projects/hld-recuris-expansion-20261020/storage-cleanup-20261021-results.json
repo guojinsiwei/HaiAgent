@@ -1,0 +1,216 @@
+{
+  "completed": "2026-10-21T00:09:14.557642",
+  "results": [
+    {
+      "id": "sha256:26ebf5f82da5a023ce858101cab18ecde0c04c0f5e425abcdbe44aa3ba0a345e",
+      "tags": [
+        "swerebenchv2/rust-lang-rustfmt:5446-85fdf8e"
+      ],
+      "digests": [
+        "swerebenchv2/rust-lang-rustfmt@sha256:26ebf5f82da5a023ce858101cab18ecde0c04c0f5e425abcdbe44aa3ba0a345e"
+      ],
+      "created": "2026-07-29T21:32:23.620025312+08:00",
+      "size": 3350881477,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/rust-lang-rustfmt:5446-85fdf8e\nDeleted: sha256:26ebf5f82da5a023ce858101cab18ecde0c04c0f5e425abcdbe44aa3ba0a345e\n",
+      "stderr": "",
+      "free_before": 93388259328,
+      "free_after": 102459318272
+    },
+    {
+      "id": "sha256:68f1c0e505feac35d0ddff0b2a5c3bebf65be117bf315dbc4223f47ebab6e1d2",
+      "tags": [
+        "swerebenchv2/qiskit-qiskit:11272-fced4bf"
+      ],
+      "digests": [
+        "swerebenchv2/qiskit-qiskit@sha256:68f1c0e505feac35d0ddff0b2a5c3bebf65be117bf315dbc4223f47ebab6e1d2"
+      ],
+      "created": "2026-07-30T15:54:24.759029173+08:00",
+      "size": 3264669088,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/qiskit-qiskit:11272-fced4bf\nDeleted: sha256:68f1c0e505feac35d0ddff0b2a5c3bebf65be117bf315dbc4223f47ebab6e1d2\n",
+      "stderr": "",
+      "free_before": 102458007552,
+      "free_after": 111961112576
+    },
+    {
+      "id": "sha256:3bcac91ff0d98275a526a8c7bde8e87b960f0f83f6f10c6dbd1b3bd4bd84a69b",
+      "tags": [
+        "swerebenchv2/dprint-dprint-plugin-typescript:513-7c81446"
+      ],
+      "digests": [
+        "swerebenchv2/dprint-dprint-plugin-typescript@sha256:3bcac91ff0d98275a526a8c7bde8e87b960f0f83f6f10c6dbd1b3bd4bd84a69b"
+      ],
+      "created": "2026-07-30T20:55:11.602636692+08:00",
+      "size": 3175749907,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/dprint-dprint-plugin-typescript:513-7c81446\nDeleted: sha256:3bcac91ff0d98275a526a8c7bde8e87b960f0f83f6f10c6dbd1b3bd4bd84a69b\n",
+      "stderr": "",
+      "free_before": 111960875008,
+      "free_after": 120357941248
+    },
+    {
+      "id": "sha256:397321b65107909030e7fa9c812e51ca9e6a4e712309dfaa0d9ae4d76abd4692",
+      "tags": [
+        "swerebenchv2/rust-lang-rustfmt:4994-e3203ef"
+      ],
+      "digests": [
+        "swerebenchv2/rust-lang-rustfmt@sha256:397321b65107909030e7fa9c812e51ca9e6a4e712309dfaa0d9ae4d76abd4692"
+      ],
+      "created": "2026-07-24T15:06:30.777183588+08:00",
+      "size": 3129495471,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/rust-lang-rustfmt:4994-e3203ef\nDeleted: sha256:397321b65107909030e7fa9c812e51ca9e6a4e712309dfaa0d9ae4d76abd4692\n",
+      "stderr": "",
+      "free_before": 119894437888,
+      "free_after": 127489339392
+    },
+    {
+      "id": "sha256:db23c1102c37486ec640c9040276f9bddf48da444c31e95dd360b8b6ce86e61c",
+      "tags": [
+        "swerebenchv2/rust-lang-rustfmt:5274-a36dc36"
+      ],
+      "digests": [
+        "swerebenchv2/rust-lang-rustfmt@sha256:db23c1102c37486ec640c9040276f9bddf48da444c31e95dd360b8b6ce86e61c"
+      ],
+      "created": "2026-07-30T20:05:51.366692008+08:00",
+      "size": 3104404802,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/rust-lang-rustfmt:5274-a36dc36\nDeleted: sha256:db23c1102c37486ec640c9040276f9bddf48da444c31e95dd360b8b6ce86e61c\n",
+      "stderr": "",
+      "free_before": 122318024704,
+      "free_after": 129508827136
+    },
+    {
+      "id": "sha256:a341aec7da09cb02f3c3bd1abf30418149bf68b2ec8e510be63362262194c9e5",
+      "tags": [
+        "swerebenchv2/dprint-dprint-plugin-typescript:469-fd164bd"
+      ],
+      "digests": [
+        "swerebenchv2/dprint-dprint-plugin-typescript@sha256:a341aec7da09cb02f3c3bd1abf30418149bf68b2ec8e510be63362262194c9e5"
+      ],
+      "created": "2026-07-24T19:26:04.718254525+08:00",
+      "size": 3003301236,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/dprint-dprint-plugin-typescript:469-fd164bd\nDeleted: sha256:a341aec7da09cb02f3c3bd1abf30418149bf68b2ec8e510be63362262194c9e5\n",
+      "stderr": "",
+      "free_before": 129555484672,
+      "free_after": 137400463360
+    },
+    {
+      "id": "sha256:e9ea33b7e6236e23d53ebd763244716d02aeaeba30ea0c92d4114945867429c1",
+      "tags": [
+        "swerebenchv2/keras-team-keras:20689-f54c127"
+      ],
+      "digests": [
+        "swerebenchv2/keras-team-keras@sha256:e9ea33b7e6236e23d53ebd763244716d02aeaeba30ea0c92d4114945867429c1"
+      ],
+      "created": "2026-07-31T00:07:15.742610526+08:00",
+      "size": 2843741743,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/keras-team-keras:20689-f54c127\nDeleted: sha256:e9ea33b7e6236e23d53ebd763244716d02aeaeba30ea0c92d4114945867429c1\n",
+      "stderr": "",
+      "free_before": 137216147456,
+      "free_after": 144869675008
+    },
+    {
+      "id": "sha256:9e02bd42980e8616854b34f5f2b8c868821d53d014536b3e09ffaa03d8e0cdfb",
+      "tags": [
+        "swerebenchv2/openmined-pysyft:216-02ba82e"
+      ],
+      "digests": [
+        "swerebenchv2/openmined-pysyft@sha256:9e02bd42980e8616854b34f5f2b8c868821d53d014536b3e09ffaa03d8e0cdfb"
+      ],
+      "created": "2026-07-31T17:29:10.551315698+08:00",
+      "size": 2443952948,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/openmined-pysyft:216-02ba82e\nDeleted: sha256:9e02bd42980e8616854b34f5f2b8c868821d53d014536b3e09ffaa03d8e0cdfb\n",
+      "stderr": "",
+      "free_before": 144232382464,
+      "free_after": 149239894016
+    },
+    {
+      "id": "sha256:bd9c081073cc0e346cdb08e3dd06caf205542802e383d9c6586651f6dd457369",
+      "tags": [
+        "swerebenchv2/rust-lang-rust-analyzer:14890-21e5dc2"
+      ],
+      "digests": [
+        "swerebenchv2/rust-lang-rust-analyzer@sha256:bd9c081073cc0e346cdb08e3dd06caf205542802e383d9c6586651f6dd457369"
+      ],
+      "created": "2026-07-25T19:34:47.639314497+08:00",
+      "size": 2042929934,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/rust-lang-rust-analyzer:14890-21e5dc2\nDeleted: sha256:bd9c081073cc0e346cdb08e3dd06caf205542802e383d9c6586651f6dd457369\n",
+      "stderr": "",
+      "free_before": 148864815104,
+      "free_after": 154960703488
+    },
+    {
+      "id": "sha256:0c44877cf71348bb5d6a28fac4d4e3fee5fd2c5f7d23acaaf114009dd893dc95",
+      "tags": [
+        "swerebenchv2/alteryx-evalml:4179-ee540f1"
+      ],
+      "digests": [
+        "swerebenchv2/alteryx-evalml@sha256:0c44877cf71348bb5d6a28fac4d4e3fee5fd2c5f7d23acaaf114009dd893dc95"
+      ],
+      "created": "2026-07-24T18:34:33.085343289+08:00",
+      "size": 1982592069,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/alteryx-evalml:4179-ee540f1\nDeleted: sha256:0c44877cf71348bb5d6a28fac4d4e3fee5fd2c5f7d23acaaf114009dd893dc95\n",
+      "stderr": "",
+      "free_before": 154634334208,
+      "free_after": 159052750848
+    },
+    {
+      "id": "sha256:14265601ca9caed1253d6bb979c13994dc86687dcf2ca7cf5f88fb53c44646d1",
+      "tags": [
+        "swerebenchv2/tobikodata-sqlmesh:3103-fd3a2d1"
+      ],
+      "digests": [
+        "swerebenchv2/tobikodata-sqlmesh@sha256:14265601ca9caed1253d6bb979c13994dc86687dcf2ca7cf5f88fb53c44646d1"
+      ],
+      "created": "2026-07-30T14:19:49.224958821+08:00",
+      "size": 1955962358,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/tobikodata-sqlmesh:3103-fd3a2d1\nDeleted: sha256:14265601ca9caed1253d6bb979c13994dc86687dcf2ca7cf5f88fb53c44646d1\n",
+      "stderr": "",
+      "free_before": 158798548992,
+      "free_after": 163158872064
+    },
+    {
+      "id": "sha256:2ce75c6c4c9c8fc0edd44e7e8812d662ae2f83a89f7d1db07c821f7cbe6bf555",
+      "tags": [
+        "swerebenchv2/tobikodata-sqlmesh:2520-fdcaca5"
+      ],
+      "digests": [
+        "swerebenchv2/tobikodata-sqlmesh@sha256:2ce75c6c4c9c8fc0edd44e7e8812d662ae2f83a89f7d1db07c821f7cbe6bf555"
+      ],
+      "created": "2026-07-27T17:40:57.643458757+08:00",
+      "size": 1830617437,
+      "state": "removed",
+      "returncode": 0,
+      "stdout": "Untagged: swerebenchv2/tobikodata-sqlmesh:2520-fdcaca5\nDeleted: sha256:2ce75c6c4c9c8fc0edd44e7e8812d662ae2f83a89f7d1db07c821f7cbe6bf555\n",
+      "stderr": "",
+      "free_before": 163156541440,
+      "free_after": 167189811200
+    }
+  ],
+  "removed": 12,
+  "free_before": 93388996608,
+  "free_after": 166905589760,
+  "protected_results_verified": 361,
+  "historical_snapshots_preserved": 102,
+  "no_container_deletion": true,
+  "no_forced_removal": true
+}

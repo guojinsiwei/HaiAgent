@@ -1,0 +1,197 @@
+[
+  {
+    "step": 1,
+    "usage": {
+      "inputTokens": 2352,
+      "outputTokens": 181,
+      "cacheReadTokens": 5504,
+      "cacheWriteTokens": 0,
+      "totalTokens": 8037
+    },
+    "finishes": [
+      {
+        "kind": "tool-calls"
+      }
+    ]
+  },
+  {
+    "step": 2,
+    "usage": {
+      "inputTokens": 2702,
+      "outputTokens": 111,
+      "cacheReadTokens": 7808,
+      "cacheWriteTokens": 0,
+      "totalTokens": 10621
+    },
+    "finishes": [
+      {
+        "kind": "tool-calls"
+      }
+    ]
+  },
+  {
+    "step": 3,
+    "usage": {
+      "inputTokens": 3824,
+      "outputTokens": 111,
+      "cacheReadTokens": 10496,
+      "cacheWriteTokens": 0,
+      "totalTokens": 14431
+    },
+    "finishes": [
+      {
+        "kind": "tool-calls"
+      }
+    ]
+  },
+  {
+    "step": 4,
+    "usage": {
+      "inputTokens": 4364,
+      "outputTokens": 143,
+      "cacheReadTokens": 14208,
+      "cacheWriteTokens": 0,
+      "totalTokens": 18715
+    },
+    "finishes": [
+      {
+        "kind": "tool-calls"
+      }
+    ]
+  },
+  {
+    "step": 5,
+    "usage": {
+      "inputTokens": 5579,
+      "outputTokens": 492,
+      "cacheReadTokens": 18560,
+      "cacheWriteTokens": 0,
+      "totalTokens": 24631
+    },
+    "finishes": [
+      {
+        "kind": "tool-calls"
+      }
+    ]
+  },
+  {
+    "step": 6,
+    "usage": {
+      "inputTokens": 7091,
+      "outputTokens": 16384,
+      "cacheReadTokens": 24064,
+      "cacheWriteTokens": 0,
+      "totalTokens": 47539
+    },
+    "finishes": [
+      {
+        "kind": "max-tokens"
+      }
+    ]
+  },
+  {
+    "step": 7,
+    "usage": {
+      "inputTokens": 20045,
+      "outputTokens": 382,
+      "cacheReadTokens": 31104,
+      "cacheWriteTokens": 0,
+      "totalTokens": 51531
+    },
+    "finishes": [
+      {
+        "kind": "tool-calls"
+      }
+    ]
+  },
+  {
+    "step": 8,
+    "usage": {
+      "inputTokens": 8828,
+      "outputTokens": 219,
+      "cacheReadTokens": 51072,
+      "cacheWriteTokens": 0,
+      "totalTokens": 60119
+    },
+    "finishes": [
+      {
+        "kind": "tool-calls"
+      }
+    ]
+  },
+  {
+    "step": 9,
+    "usage": {
+      "inputTokens": 5071,
+      "outputTokens": 740,
+      "cacheReadTokens": 59776,
+      "cacheWriteTokens": 0,
+      "totalTokens": 65587
+    },
+    "finishes": [
+      {
+        "kind": "tool-calls"
+      }
+    ]
+  },
+  {
+    "step": 10,
+    "usage": {
+      "inputTokens": 5637,
+      "outputTokens": 99,
+      "cacheReadTokens": 64768,
+      "cacheWriteTokens": 0,
+      "totalTokens": 70504
+    },
+    "finishes": [
+      {
+        "kind": "tool-calls"
+      }
+    ]
+  },
+  {
+    "step": 11,
+    "usage": {
+      "inputTokens": 9471,
+      "outputTokens": 136,
+      "cacheReadTokens": 70400,
+      "cacheWriteTokens": 0,
+      "totalTokens": 80007
+    },
+    "finishes": [
+      {
+        "kind": "tool-calls"
+      }
+    ]
+  },
+  {
+    "step": 12,
+    "usage": {
+      "inputTokens": 5297,
+      "outputTokens": 829,
+      "cacheReadTokens": 79744,
+      "cacheWriteTokens": 0,
+      "totalTokens": 85870
+    },
+    "finishes": [
+      {
+        "kind": "tool-calls"
+      }
+    ]
+  },
+  {
+    "step": 13,
+    "usage": {
+      "inputTokens": 5831,
+      "outputTokens": 83,
+      "cacheReadTokens": 84992,
+      "cacheWriteTokens": 0,
+      "totalTokens": 90906
+    },
+    "finishes": [
+      {
+        "kind": "tool-calls"
+      }
+    ]
+  }
+]

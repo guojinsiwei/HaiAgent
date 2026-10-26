@@ -1,0 +1,63 @@
+{
+  "experiment": "longcli-hld-hw26-matched-20261022",
+  "commit": "2015f37b5c458f2562354de6b415e9182c91af64",
+  "tasks": [
+    {
+      "task": "ap1400_2_hw26",
+      "family": "c-env",
+      "project": "ap1400_2_hw",
+      "index": 8,
+      "image": "longcli-hld-full20-20261022/task-ap1400_2_hw26:2015f37",
+      "image_id": "sha256:4ac0795052112c743cb8f4d2e1fd0d72b45d07eff557ff3267cd773893c15629",
+      "wall_seconds": 10800.0,
+      "test_seconds": 300.0,
+      "instruction": "Open and follow the detailed project specification at INSTRUCTION.md. Implement the project tasks accordingly in folder ap1400_2_hw. This task requires completing both HW4 and HW5 assignments simultaneously.",
+      "historical_image_id": "sha256:988efbc77fbe62953936ad62bf84bc95666260aabd69d1e0033c8dce727a5d5d",
+      "starter_path": "/mnt/sdb/home/lizh639/longcli-hld-full20-20261022/starter-ap1400_2_hw26.tar.gz",
+      "starter_sha256": "e6995661a3065975806d8a9dd933f9bd07211fcd8e830def82d8512815a05c30"
+    }
+  ],
+  "methods": [
+    "hld-hw26-repeat"
+  ],
+  "total_trials": 1,
+  "model": "deepseek-flash",
+  "version": "HLD v8",
+  "concurrency": 1,
+  "cpu_per_task": 2,
+  "memory_gib_per_task": 8,
+  "wall_seconds": 7200,
+  "requests_per_task": 800,
+  "tools_per_task": 600,
+  "thinking": false,
+  "temperature": 0,
+  "task_budget_cny": 24,
+  "campaign_budget_cny": 480,
+  "all_auxiliary_calls_included": true,
+  "automatic_paid_retries": false,
+  "official_feedback_to_solver": false,
+  "cross_task_memory": false,
+  "scoring": "official f2p is_pass AND p2p is_pass; separate fresh grader",
+  "restored_bases": {
+    "make-pytest": {
+      "tag": "longcli-hld-full20-20261022/make-pytest:2015f37",
+      "archive_sha256": "a642b686382f71ba27006b2a99102b4e009474225940a5d00f7910ac3b5776f0",
+      "id": "sha256:abe03360493e3ab374ba7bad229dd565573ddd0f3f2be2265859a5121d4aa64b"
+    },
+    "c-env": {
+      "tag": "longcli-hld-full20-20261022/c-env:2015f37",
+      "archive_sha256": "c22d8c551946f7208da76d1fc530abd059997c0ee304fec3a2bb3079c4e37ad2",
+      "id": "sha256:c6122df373df57b931ce5e095e1a9f7005d0a55c1ec98525dbce0e120d8ce9c9"
+    }
+  },
+  "replaces_voided_experiment": null,
+  "budget_multiplier": 3,
+  "resource_limit_overrides": [],
+  "max_output_tokens": 32768,
+  "shared_ledger": "/mnt/sdb/home/lizh639/longcli-hld-full20-triple-20261022/spending.sqlite",
+  "fresh_attempt": true,
+  "diagnostic_hints_to_solver": false,
+  "old_solution_to_solver": false,
+  "original_score_preserved": true,
+  "rerun_not_substituted_into_first_attempt_aggregate": true
+}

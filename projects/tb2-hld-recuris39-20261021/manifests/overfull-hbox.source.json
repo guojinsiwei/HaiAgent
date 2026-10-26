@@ -1,0 +1,8 @@
+{
+  "task": "overfull-hbox",
+  "image": "alexgshaw/overfull-hbox:20251031",
+  "digest": "sha256:67fe0ccc0ff2305d6fcb3652977d377b901bb7bd96904b6765835935574992e1",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/overfull-hbox/manifests/20251031",
+  "header_verified": true,
+  "time": 1792550874.8843467
+}

@@ -1,0 +1,42 @@
+{
+  "refresh_seconds": 15,
+  "ssh_key": "C:/Users/54177/.ssh/cubestudio_notebook",
+  "nodes": [
+    {
+      "id": "college",
+      "name": "学院计算节点",
+      "host": "lizh639@172.16.108.236",
+      "python": "/mnt/sdb/home/lizh639/terminalbench-v14-setup/runtime/bin/python",
+      "locations": [
+        {"parent": "/mnt/sdb/home/lizh639", "prefixes": ["longcli-", "lats-", "lizh639-longcli-"]},
+        {"parent": "/var/tmp", "prefixes": ["lizh639-longcli-", "lizh639-lats-", "longcli-dh-tools-"]}
+      ],
+      "roots": [
+        "/mnt/sdb/home/lizh639/longcli-dh-controls-paired40-20261008",
+        "/mnt/sdb/home/lizh639/longcli-dh-tools-output-repair2-20261008",
+        "/mnt/sdb/home/lizh639/longcli-dh-tools-ablation40-repair1-20261008",
+        "/mnt/sdb/home/lizh639/longcli-dh-tools-ablation40-20261008",
+        "/var/tmp/lizh639-lats-recovery3-six-20261008",
+        "/var/tmp/lizh639-longcli-lats-taco-recovery2-20261007/lats",
+        "/var/tmp/lizh639-longcli-lats-taco-recovery2-20261007/taco",
+        "/mnt/sdb/home/lizh639/longcli-resume-five-20261007"
+      ]
+    },
+    {
+      "id": "cube0",
+      "name": "CubeStudio · 节点 1",
+      "host": "cubestudio_container",
+      "python": "/mnt/lizh639/longcli-retrac20-matched-20261006/test-env/bin/python",
+      "locations": [{"parent": "/mnt/lizh639", "prefixes": ["longcli-", "lizh639-longcli-", "lats-"]}],
+      "roots": ["/mnt/lizh639/longcli-taco-recovery2-worker0-20261007", "/mnt/lizh639/longcli-dh-tools-fleet-20261008-cube0"]
+    },
+    {
+      "id": "cube1",
+      "name": "CubeStudio · 节点 2",
+      "host": "cubestudio_container2",
+      "python": "/mnt/lizh639/longcli-retrac20-matched-20261006/test-env/bin/python",
+      "locations": [{"parent": "/mnt/lizh639", "prefixes": ["longcli-", "lizh639-longcli-", "lats-"]}],
+      "roots": ["/mnt/lizh639/longcli-taco-recovery2-worker1-20261007", "/mnt/lizh639/longcli-dh-tools-fleet-20261008-cube1"]
+    }
+  ]
+}

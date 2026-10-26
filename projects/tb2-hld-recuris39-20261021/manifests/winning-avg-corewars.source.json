@@ -1,0 +1,8 @@
+{
+  "task": "winning-avg-corewars",
+  "image": "alexgshaw/winning-avg-corewars:20251031",
+  "digest": "sha256:ad7a6b1c53aed59e10916c692aa7e2ae00042a4283187430aee1e3e79f72d5c6",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/winning-avg-corewars/manifests/20251031",
+  "header_verified": true,
+  "time": 1792550883.9927316
+}

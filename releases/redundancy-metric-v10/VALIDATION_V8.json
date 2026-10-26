@@ -1,0 +1,65 @@
+{
+  "release": "micro-experience-v8",
+  "validated_date_local": "2026-09-21",
+  "platform": "Windows",
+  "python_version": "3.12.14",
+  "implementation_sha256": "e94712e5f1c6bb9b106a828e1efba10b0e5980b8eba136c4a37164f613dbc0b8",
+  "baseline_release": "experience-control-v7",
+  "baseline_implementation_sha256": "db5a7df62f62b6f1ce1b727fadc652b512d4e92a60eef9a072feeb797a94fa2a",
+  "baseline_unchanged": true,
+  "tests": {
+    "equivalent_command": "PYTHONPATH=src python -m unittest discover -s tests -q",
+    "runner": "unittest discovery and TextTestRunner with final JSON receipt on stdout",
+    "total": 458,
+    "passed": 451,
+    "skipped": 7,
+    "failures": 0,
+    "errors": 0,
+    "elapsed_seconds": 105.992,
+    "skip_details": [
+      "MicroExperienceIndexTests.test_symlink_file_premise_does_not_read_its_target: Windows symlink creation privilege unavailable",
+      "NotebookRunnerTests.test_background_descendants_stopped: Linux process groups",
+      "SubmissionTests.test_symlink_is_exported_as_link_not_target_contents: Windows symlink creation privilege unavailable",
+      "BatchTests.test_model_outage_stops_batch_before_next_task: Linux preparation/search",
+      "BatchTests.test_only_internal_seed_symlinks_allowed: Unix symlinks",
+      "BatchTests.test_repair_preserves_successful_tasks_and_original_batch_configuration: Linux repair process",
+      "BatchTests.test_resumed_preparation_skips_completed_search: Linux preparation"
+    ]
+  },
+  "unchanged_components": [
+    "src/bestfgs/raw_baseline.py",
+    "src/bestfgs/experiment_metrics.py",
+    "src/bestfgs/environment.py",
+    "src/bestfgs/cli_config.py",
+    "run_comparison.py",
+    "compare_experiments.py"
+  ],
+  "metric_version": "cli-comparison-v1",
+  "default_experience_mode": "conditioned",
+  "experience_modes": ["off", "legacy", "conditioned"],
+  "validation_scope": [
+    "Raw observations versus source-bound model conditional hypotheses",
+    "Aggregation preserving provenance without frequency-based confidence",
+    "Indexed focused retrieval, diversity and action conditional category slot",
+    "Literal file predicates and exact unverified semantic declaration matching",
+    "AND conditions, changed branches, disjoint file scopes and unknown conditions",
+    "Invocation-local file cache, bounded reads and separate condition-cost diagnostics",
+    "Invalid optional metadata dropped without retrying otherwise valid model responses",
+    "Complete prompt premises, bounded historical feedback and literal whitespace preservation",
+    "Scripted same-prefix test changes actual subsequent action, not merely logs",
+    "Actual post-action feedback reaches the child normal planning call",
+    "No metadata priority/identity bonus, no additional planning calls or budget expansion",
+    "Existing artifact delivery, explicit submission, baseline and unified metric regressions"
+  ],
+  "paid_model_calls_performed": false,
+  "cloud_deployed": false,
+  "official_evaluation_performed": false,
+  "historical_100_tasks_rerun": false,
+  "claims_not_established": [
+    "Improved official SWE-bench success rate",
+    "Real DeepSeek policy uptake or causal reduction of repeated failures",
+    "Measured false-block rate or causal tool-call savings",
+    "Automatic causal discovery or arbitrary natural-language semantic unification",
+    "Full Linux integration validation or total experience subsystem cost"
+  ]
+}

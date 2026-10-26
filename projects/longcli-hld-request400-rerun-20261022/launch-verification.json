@@ -1,0 +1,80 @@
+{
+  "checked": 1792684583.5588653,
+  "supervisor_alive": true,
+  "jobs": [
+    {
+      "task": "cmu15_445_p0",
+      "state": "solving",
+      "requests": 8,
+      "http_200": 7,
+      "http_errors": [],
+      "effective": {
+        "requests": 800,
+        "max_output_tokens": 32768,
+        "context_tokens": 128000,
+        "headroom_tokens": 32768,
+        "task_limit_cny": 24,
+        "campaign_limit_cny": 480,
+        "algorithm": "HLD v8",
+        "fresh_attempt": true,
+        "no_hints": true
+      },
+      "budget_stop": null,
+      "provider_stop": null
+    },
+    {
+      "task": "cmu15_445_p2",
+      "state": "solving",
+      "requests": 9,
+      "http_200": 9,
+      "http_errors": [],
+      "effective": {
+        "requests": 800,
+        "max_output_tokens": 32768,
+        "context_tokens": 128000,
+        "headroom_tokens": 32768,
+        "task_limit_cny": 24,
+        "campaign_limit_cny": 480,
+        "algorithm": "HLD v8",
+        "fresh_attempt": true,
+        "no_hints": true
+      },
+      "budget_stop": null,
+      "provider_stop": null
+    },
+    {
+      "task": "61810_pgtbl",
+      "state": "solving",
+      "requests": 9,
+      "http_200": 8,
+      "http_errors": [],
+      "effective": {
+        "requests": 800,
+        "max_output_tokens": 32768,
+        "context_tokens": 128000,
+        "headroom_tokens": 32768,
+        "task_limit_cny": 24,
+        "campaign_limit_cny": 480,
+        "algorithm": "HLD v8",
+        "fresh_attempt": true,
+        "no_hints": true
+      },
+      "budget_stop": null,
+      "provider_stop": null
+    },
+    {
+      "task": "61810_syscall",
+      "state": "queued"
+    },
+    {
+      "task": "61810_traps",
+      "state": "queued"
+    }
+  ],
+  "budget": {
+    "campaign_limit_cny": 480,
+    "charged_or_reserved_cny": 272.254487,
+    "remaining_cny": 207.745513
+  },
+  "supervisor_log": ""
+}

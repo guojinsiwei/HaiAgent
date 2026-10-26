@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "results": {
+    "hld": {
+      "confirmed_before": 21,
+      "fixed_after": 21
+    },
+    "kzdsh-new": {
+      "confirmed_before": 20,
+      "fixed_after": 20
+    }
+  },
+  "paid_calls": 0
+}

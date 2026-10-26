@@ -1,0 +1,8 @@
+{
+  "task": "write-compressor",
+  "image": "alexgshaw/write-compressor:20251031",
+  "digest": "sha256:3618e1f8a997b437c09cd3dbaac736705809c05f6f12f584b65722175970ebe1",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/write-compressor/manifests/20251031",
+  "header_verified": true,
+  "time": 1792510253.992735
+}

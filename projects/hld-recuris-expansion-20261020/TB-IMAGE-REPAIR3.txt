@@ -1,0 +1,41 @@
+TB2.0 三项镜像下载故障修复，2026-10-20 23:14（北京时间）
+
+范围
+Recuris 的 schemelike-metacircular-eval、code-from-image、rstan-to-pystan。
+原三次失败均发生在预检阶段，原题付费调用均为 0。
+
+根因
+服务器访问官方 Docker Hub registry 时，连接在获取镜像 manifest 阶段被重置。
+原异常未保留足够的 stderr 信息，只有预检失败和 missing_unique_trial。
+
+修复
+code-from-image、rstan-to-pystan 重新从服务器取得官方原始 manifest。
+schemelike-metacircular-eval 通过本机 HTTPS 访问官方 registry 取得原始 manifest，
+其 SHA-256 与官方 Docker-Content-Digest 响应头一致。
+三份官方 manifest 的摘要均已固定；通过可用传输源下载相同摘要的镜像，
+下载前校验 manifest 一致，下载后确认 Linux/amd64 与本地镜像身份。
+保留任务缓存与原始清单，不修改任务、算法、模型或评分断言。
+
+通用下载入口增加有限重试：
+官方清单最多尝试 6 次，每次最多 45 秒，采用有上限的退避；
+保留 origin-error.json，记录尝试次数、错误类型和 registry 错误详情。
+离线故障注入验证：前 5 次连接重置、第 6 次成功，可正常恢复并复用缓存，
+未产生模型调用。
+
+真实预检
+3/3 全部通过：环境安装、产物收集、生命周期回执和官方空白评分正常。
+三题空白 reward 均为 0；预检模型调用为 0。
+
+补跑
+控制器 PID 4177779，独立并发 1，目录 infra-repair3-20261020。
+每题新目录后缀 -imagefix1，预算 job 保持原题 ID。
+首题 schemelike-metacircular-eval 已开始正常解题，检查时 4 次请求、2 次工具调用。
+其余两题预检已通过，依次补跑。
+保持每题 8 元、TB 整轮 800 元及原 spending.sqlite，不重置额度。
+原失败记录保留；没有重复执行已完成题，没有中断当前运行。
+effective_status.py 按原 job 合并此次补跑，不重复计数。
+
+服务器证据
+/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/infra-repair3-20261020/
+origin-probes.json、官方 manifest、image-results.json、offline-validation.json
+original-failures.json、preflight-results.json、repair-protocol.json、health.json

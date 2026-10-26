@@ -1,0 +1,2 @@
+# Preserve imported source bytes so historical SHA-256 manifests stay valid.
+* -text

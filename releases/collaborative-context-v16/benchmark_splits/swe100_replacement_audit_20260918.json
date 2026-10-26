@@ -1,0 +1,340 @@
+[
+  {
+    "removed": "scikit-learn__scikit-learn-25931",
+    "added": "django__django-15382",
+    "reason": "environment_preparation_not_ready",
+    "source_preparation_state": {
+      "id": "scikit-learn__scikit-learn-25931",
+      "status": "prepare_error",
+      "previous_attempts": [
+        {
+          "id": "scikit-learn__scikit-learn-25931",
+          "status": "prepare_error",
+          "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/scikit-learn__scikit-learn-25931/prepare.log",
+          "last_attempt_seconds": 473.14
+        },
+        {
+          "id": "scikit-learn__scikit-learn-25931",
+          "status": "prepare_error",
+          "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/scikit-learn__scikit-learn-25931/prepare.log",
+          "last_attempt_seconds": 86.74
+        }
+      ],
+      "repair_journal": "/mnt/lizh639/bestfgs-runs/swe100-v1/repairs/prepfix-v2-3041fab66a70/repair.json",
+      "error": "Command failed (1): /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/scikit-learn__scikit-learn-25931/attempt-2bbec70a6ebc/env/bin/python; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/scikit-learn__scikit-learn-25931/prepare.log",
+      "last_attempt_seconds": 373.47
+    }
+  },
+  {
+    "removed": "pydata__xarray-2905",
+    "added": "django__django-13807",
+    "reason": "environment_preparation_not_ready",
+    "source_preparation_state": {
+      "id": "pydata__xarray-2905",
+      "status": "prepare_error",
+      "previous_attempts": [
+        {
+          "id": "pydata__xarray-2905",
+          "status": "prepare_error",
+          "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/pydata__xarray-2905/prepare.log",
+          "last_attempt_seconds": 100.56
+        },
+        {
+          "id": "pydata__xarray-2905",
+          "status": "prepare_error",
+          "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/pydata__xarray-2905/prepare.log",
+          "last_attempt_seconds": 112.97
+        }
+      ],
+      "repair_journal": "/mnt/lizh639/bestfgs-runs/swe100-v1/repairs/prepfix-v2-3041fab66a70/repair.json",
+      "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/pydata__xarray-2905/prepare.log",
+      "last_attempt_seconds": 204.94
+    }
+  },
+  {
+    "removed": "pydata__xarray-4075",
+    "added": "django__django-13933",
+    "reason": "environment_preparation_not_ready",
+    "source_preparation_state": {
+      "id": "pydata__xarray-4075",
+      "status": "prepare_error",
+      "previous_attempts": [
+        {
+          "id": "pydata__xarray-4075",
+          "status": "prepare_error",
+          "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/pydata__xarray-4075/prepare.log",
+          "last_attempt_seconds": 102.61
+        },
+        {
+          "id": "pydata__xarray-4075",
+          "status": "prepare_error",
+          "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/pydata__xarray-4075/prepare.log",
+          "last_attempt_seconds": 111.64
+        }
+      ],
+      "repair_journal": "/mnt/lizh639/bestfgs-runs/swe100-v1/repairs/prepfix-v2-3041fab66a70/repair.json",
+      "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/pydata__xarray-4075/prepare.log",
+      "last_attempt_seconds": 136.57
+    }
+  },
+  {
+    "removed": "sphinx-doc__sphinx-10614",
+    "added": "django__django-11400",
+    "reason": "environment_preparation_not_ready",
+    "source_preparation_state": {
+      "id": "sphinx-doc__sphinx-10614",
+      "status": "prepare_error",
+      "previous_attempts": [
+        {
+          "id": "sphinx-doc__sphinx-10614",
+          "status": "prepare_error",
+          "error": "Command failed (1): /root/miniconda3/bin/conda; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/sphinx-doc__sphinx-10614/prepare.log",
+          "last_attempt_seconds": 76.27
+        },
+        {
+          "id": "sphinx-doc__sphinx-10614",
+          "status": "prepare_error",
+          "error": "Command failed (128): git; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/sphinx-doc__sphinx-10614/prepare.log",
+          "last_attempt_seconds": 288.18
+        }
+      ],
+      "repair_journal": "/mnt/lizh639/bestfgs-runs/swe100-v1/repairs/prepfix-v2-3041fab66a70/repair.json",
+      "error": "Command failed (2): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/sphinx-doc__sphinx-10614/prepare.log",
+      "last_attempt_seconds": 28.31
+    }
+  },
+  {
+    "removed": "pydata__xarray-4356",
+    "added": "django__django-12741",
+    "reason": "environment_preparation_not_ready",
+    "source_preparation_state": {
+      "id": "pydata__xarray-4356",
+      "status": "prepare_error",
+      "previous_attempts": [
+        {
+          "id": "pydata__xarray-4356",
+          "status": "prepare_error",
+          "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/pydata__xarray-4356/prepare.log",
+          "last_attempt_seconds": 242.78
+        },
+        {
+          "id": "pydata__xarray-4356",
+          "status": "prepare_error",
+          "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/pydata__xarray-4356/prepare.log",
+          "last_attempt_seconds": 158.96
+        }
+      ],
+      "repair_journal": "/mnt/lizh639/bestfgs-runs/swe100-v1/repairs/prepfix-v2-3041fab66a70/repair.json",
+      "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/pydata__xarray-4356/prepare.log",
+      "last_attempt_seconds": 194.05
+    }
+  },
+  {
+    "removed": "pylint-dev__pylint-8898",
+    "added": "django__django-12209",
+    "reason": "environment_preparation_not_ready",
+    "source_preparation_state": {
+      "id": "pylint-dev__pylint-8898",
+      "status": "prepare_error",
+      "previous_attempts": [
+        {
+          "id": "pylint-dev__pylint-8898",
+          "status": "prepare_error",
+          "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/pylint-dev__pylint-8898/prepare.log",
+          "last_attempt_seconds": 314.02
+        },
+        {
+          "id": "pylint-dev__pylint-8898",
+          "status": "prepare_error",
+          "error": "Command failed (128): git; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/pylint-dev__pylint-8898/prepare.log",
+          "last_attempt_seconds": 27.84
+        }
+      ],
+      "repair_journal": "/mnt/lizh639/bestfgs-runs/swe100-v1/repairs/prepfix-v2-3041fab66a70/repair.json",
+      "error": "Command failed (2): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/pylint-dev__pylint-8898/prepare.log",
+      "last_attempt_seconds": 30.4
+    }
+  },
+  {
+    "removed": "scikit-learn__scikit-learn-25232",
+    "added": "sphinx-doc__sphinx-10435",
+    "reason": "environment_preparation_not_ready",
+    "source_preparation_state": {
+      "id": "scikit-learn__scikit-learn-25232",
+      "status": "prepare_error",
+      "previous_attempts": [
+        {
+          "id": "scikit-learn__scikit-learn-25232",
+          "status": "prepare_error",
+          "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/scikit-learn__scikit-learn-25232/prepare.log",
+          "last_attempt_seconds": 86.94
+        },
+        {
+          "id": "scikit-learn__scikit-learn-25232",
+          "status": "prepare_error",
+          "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/scikit-learn__scikit-learn-25232/prepare.log",
+          "last_attempt_seconds": 81.68
+        }
+      ],
+      "repair_journal": "/mnt/lizh639/bestfgs-runs/swe100-v1/repairs/prepfix-v2-3041fab66a70/repair.json",
+      "error": "Command failed (1): /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/scikit-learn__scikit-learn-25232/attempt-44c2583d194f/env/bin/python; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/scikit-learn__scikit-learn-25232/prepare.log",
+      "last_attempt_seconds": 233.29
+    }
+  },
+  {
+    "removed": "astropy__astropy-14369",
+    "added": "sphinx-doc__sphinx-8056",
+    "reason": "environment_preparation_not_ready",
+    "source_preparation_state": {
+      "id": "astropy__astropy-14369",
+      "status": "prepare_error",
+      "previous_attempts": [
+        {
+          "id": "astropy__astropy-14369",
+          "status": "prepare_error",
+          "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/astropy__astropy-14369/prepare.log",
+          "last_attempt_seconds": 171.93
+        },
+        {
+          "id": "astropy__astropy-14369",
+          "status": "prepare_error",
+          "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/astropy__astropy-14369/prepare.log",
+          "last_attempt_seconds": 28.06
+        }
+      ],
+      "repair_journal": "/mnt/lizh639/bestfgs-runs/swe100-v1/repairs/prepfix-v2-3041fab66a70/repair.json",
+      "error": "Command failed (2): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/astropy__astropy-14369/prepare.log",
+      "last_attempt_seconds": 241.96
+    }
+  },
+  {
+    "removed": "matplotlib__matplotlib-24026",
+    "added": "sphinx-doc__sphinx-9602",
+    "reason": "environment_preparation_not_ready",
+    "source_preparation_state": {
+      "id": "matplotlib__matplotlib-24026",
+      "status": "prepare_error",
+      "previous_attempts": [
+        {
+          "id": "matplotlib__matplotlib-24026",
+          "status": "prepare_error",
+          "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/matplotlib__matplotlib-24026/prepare.log",
+          "last_attempt_seconds": 710.73
+        },
+        {
+          "id": "matplotlib__matplotlib-24026",
+          "status": "prepare_error",
+          "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/matplotlib__matplotlib-24026/prepare.log",
+          "last_attempt_seconds": 146.12
+        }
+      ],
+      "repair_journal": "/mnt/lizh639/bestfgs-runs/swe100-v1/repairs/prepfix-v2-3041fab66a70/repair.json",
+      "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/matplotlib__matplotlib-24026/prepare.log",
+      "last_attempt_seconds": 214.95
+    }
+  },
+  {
+    "removed": "matplotlib__matplotlib-24149",
+    "added": "scikit-learn__scikit-learn-14629",
+    "reason": "environment_preparation_not_ready",
+    "source_preparation_state": {
+      "id": "matplotlib__matplotlib-24149",
+      "status": "prepare_error",
+      "previous_attempts": [
+        {
+          "id": "matplotlib__matplotlib-24149",
+          "status": "prepare_error",
+          "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/matplotlib__matplotlib-24149/prepare.log",
+          "last_attempt_seconds": 132.2
+        },
+        {
+          "id": "matplotlib__matplotlib-24149",
+          "status": "prepare_error",
+          "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/matplotlib__matplotlib-24149/prepare.log",
+          "last_attempt_seconds": 121.16
+        }
+      ],
+      "repair_journal": "/mnt/lizh639/bestfgs-runs/swe100-v1/repairs/prepfix-v2-3041fab66a70/repair.json",
+      "error": "Command failed (2): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/matplotlib__matplotlib-24149/prepare.log",
+      "last_attempt_seconds": 268.06
+    }
+  },
+  {
+    "removed": "matplotlib__matplotlib-24570",
+    "added": "django__django-15127",
+    "reason": "environment_preparation_not_ready",
+    "source_preparation_state": {
+      "id": "matplotlib__matplotlib-24570",
+      "status": "prepare_error",
+      "previous_attempts": [
+        {
+          "id": "matplotlib__matplotlib-24570",
+          "status": "prepare_error",
+          "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/matplotlib__matplotlib-24570/prepare.log",
+          "last_attempt_seconds": 123.73
+        },
+        {
+          "id": "matplotlib__matplotlib-24570",
+          "status": "prepare_error",
+          "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/matplotlib__matplotlib-24570/prepare.log",
+          "last_attempt_seconds": 120.91
+        }
+      ],
+      "repair_journal": "/mnt/lizh639/bestfgs-runs/swe100-v1/repairs/prepfix-v2-3041fab66a70/repair.json",
+      "error": "Command failed (2): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/matplotlib__matplotlib-24570/prepare.log",
+      "last_attempt_seconds": 291.18
+    }
+  },
+  {
+    "removed": "scikit-learn__scikit-learn-26194",
+    "added": "django__django-14771",
+    "reason": "environment_preparation_not_ready",
+    "source_preparation_state": {
+      "id": "scikit-learn__scikit-learn-26194",
+      "status": "prepare_error",
+      "previous_attempts": [
+        {
+          "id": "scikit-learn__scikit-learn-26194",
+          "status": "prepare_error",
+          "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/scikit-learn__scikit-learn-26194/prepare.log",
+          "last_attempt_seconds": 102.6
+        },
+        {
+          "id": "scikit-learn__scikit-learn-26194",
+          "status": "prepare_error",
+          "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/scikit-learn__scikit-learn-26194/prepare.log",
+          "last_attempt_seconds": 81.56
+        }
+      ],
+      "repair_journal": "/mnt/lizh639/bestfgs-runs/swe100-v1/repairs/prepfix-v2-3041fab66a70/repair.json",
+      "error": "Command failed (1): /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/scikit-learn__scikit-learn-26194/attempt-63142b15ea3c/env/bin/python; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/scikit-learn__scikit-learn-26194/prepare.log",
+      "last_attempt_seconds": 226.52
+    }
+  },
+  {
+    "removed": "astropy__astropy-13033",
+    "added": "django__django-11066",
+    "reason": "environment_preparation_not_ready",
+    "source_preparation_state": {
+      "id": "astropy__astropy-13033",
+      "status": "prepare_error",
+      "previous_attempts": [
+        {
+          "id": "astropy__astropy-13033",
+          "status": "prepare_error",
+          "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/astropy__astropy-13033/prepare.log",
+          "last_attempt_seconds": 29.57
+        },
+        {
+          "id": "astropy__astropy-13033",
+          "status": "prepare_error",
+          "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/astropy__astropy-13033/prepare.log",
+          "last_attempt_seconds": 22.04
+        }
+      ],
+      "repair_journal": "/mnt/lizh639/bestfgs-runs/swe100-v1/repairs/prepfix-v2-3041fab66a70/repair.json",
+      "error": "Command failed (2): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/astropy__astropy-13033/prepare.log",
+      "last_attempt_seconds": 63.81
+    }
+  }
+]

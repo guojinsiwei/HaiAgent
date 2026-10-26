@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "trial": "/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/preflight/preflight-entry-hld-25113f34/build-cython-ext__sXn5jge",
+      "reward": 0.0,
+      "exception_type": null,
+      "engineering_clean": true,
+      "result_status": "present",
+      "lifecycle_status": "succeeded",
+      "collection_failures": [],
+      "arm": "hld",
+      "exit_code": 0
+    },
+    {
+      "trial": "/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/preflight/preflight-entry-recuris-8d3ef2aa/build-cython-ext__Cxpt4tF",
+      "reward": 0.0,
+      "exception_type": null,
+      "engineering_clean": true,
+      "result_status": "present",
+      "lifecycle_status": "succeeded",
+      "collection_failures": [],
+      "arm": "recuris",
+      "exit_code": 0
+    }
+  ],
+  "paid_calls": 0
+}

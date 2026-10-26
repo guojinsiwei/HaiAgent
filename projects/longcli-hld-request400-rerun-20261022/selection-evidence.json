@@ -1,0 +1,131 @@
+[
+  {
+    "task": "cmu15_445_p0",
+    "evidence": [
+      {
+        "file": "jobs/hld--cmu15_445_p0/logs/live/kz/093af838396abfff3b18549c1543523d29e4dd32d3bdc3285127a096b6d6a300.jsonl",
+        "event": {
+          "time": "2026-10-22T12:46:35.434Z",
+          "session": "session-0bc63359-09d2-4013-927a-dfa500df5aeb",
+          "hostSeq": 2824,
+          "event": "budget_exhausted",
+          "usage": {
+            "requests": 400,
+            "tools": 343,
+            "inputTokens": 6766109,
+            "outputTokens": 333470,
+            "roles": {
+              "solver": 299,
+              "semantic_planner": 26,
+              "monitor": 12,
+              "compaction": 59,
+              "advisor": 2,
+              "critic": 2
+            },
+            "nativeActions": 329,
+            "metadataCalls": 14
+          },
+          "commitSeq": 2542,
+          "eventIndex": 0
+        }
+      }
+    ]
+  },
+  {
+    "task": "cmu15_445_p2",
+    "evidence": [
+      {
+        "file": "jobs/hld--cmu15_445_p2/logs/live/kz/380d74c5bd4a74c487e3666304a3c1078414308f60aeef01b622eea6a9e5b8a1.jsonl",
+        "event": {
+          "time": "2026-10-22T13:10:27.633Z",
+          "session": "session-838e6785-57b6-4723-895d-5775c4a60f8d",
+          "hostSeq": 2642,
+          "event": "budget_exhausted",
+          "usage": {
+            "requests": 400,
+            "tools": 294,
+            "inputTokens": 6418854,
+            "outputTokens": 528558,
+            "roles": {
+              "solver": 264,
+              "semantic_planner": 21,
+              "monitor": 12,
+              "compaction": 103
+            },
+            "nativeActions": 291,
+            "metadataCalls": 3
+          },
+          "commitSeq": 2294,
+          "eventIndex": 0
+        }
+      }
+    ]
+  },
+  {
+    "task": "61810_pgtbl",
+    "evidence": [
+      {
+        "file": "jobs/hld--61810_pgtbl/logs/live/budget-stop.json",
+        "event": {
+          "reason": "per_task_request_limit"
+        }
+      },
+      {
+        "file": "jobs/hld--61810_pgtbl/logs/live/provider-stop.json",
+        "event": {
+          "kind": "budget",
+          "reason": "per_task_request_limit"
+        }
+      }
+    ]
+  },
+  {
+    "task": "61810_syscall",
+    "evidence": [
+      {
+        "file": "jobs/hld--61810_syscall/logs/live/budget-stop.json",
+        "event": {
+          "reason": "per_task_request_limit"
+        }
+      },
+      {
+        "file": "jobs/hld--61810_syscall/logs/live/provider-stop.json",
+        "event": {
+          "kind": "budget",
+          "reason": "per_task_request_limit"
+        }
+      }
+    ]
+  },
+  {
+    "task": "61810_traps",
+    "evidence": [
+      {
+        "file": "jobs/hld--61810_traps/logs/live/kz/bfd89ae748af4395961e8ab9dddd732837f93b8b7c4826519a61f9e1a5a5241f.jsonl",
+        "event": {
+          "time": "2026-10-22T13:16:57.001Z",
+          "session": "session-7a71e590-9465-419a-9e70-f733008ed9ca",
+          "hostSeq": 2675,
+          "event": "budget_exhausted",
+          "usage": {
+            "requests": 400,
+            "tools": 309,
+            "inputTokens": 6848075,
+            "outputTokens": 454623,
+            "roles": {
+              "solver": 276,
+              "semantic_planner": 24,
+              "monitor": 12,
+              "compaction": 86,
+              "advisor": 2
+            },
+            "nativeActions": 304,
+            "metadataCalls": 5
+          },
+          "commitSeq": 2418,
+          "eventIndex": 0
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,198 @@
+[
+  {
+    "index": 0,
+    "mode": "opencua_baseline",
+    "id": "6c4c23a1-42a4-43cc-9db1-2f86ff3738cc",
+    "reason": "engineering_stop",
+    "original_score": 0.0
+  },
+  {
+    "index": 2,
+    "mode": "opencua_baseline",
+    "id": "da46d875-6b82-4681-9284-653b0c7ae241",
+    "reason": "engineering_stop",
+    "original_score": 0
+  },
+  {
+    "index": 2,
+    "mode": "suz",
+    "id": "da46d875-6b82-4681-9284-653b0c7ae241",
+    "reason": "engineering_stop",
+    "original_score": 0
+  },
+  {
+    "index": 4,
+    "mode": "opencua_baseline",
+    "id": "2a729ded-3296-423d-aec4-7dd55ed5fbb3",
+    "reason": "engineering_stop",
+    "original_score": 0.0
+  },
+  {
+    "index": 5,
+    "mode": "opencua_baseline",
+    "id": "58d3eeeb-e9d0-499f-962e-fd0db2a744d8",
+    "reason": "engineering_stop",
+    "original_score": 0
+  },
+  {
+    "index": 5,
+    "mode": "suz",
+    "id": "58d3eeeb-e9d0-499f-962e-fd0db2a744d8",
+    "reason": "engineering_stop",
+    "original_score": 0
+  },
+  {
+    "index": 8,
+    "mode": "opencua_baseline",
+    "id": "12382c62-0cd1-4bf2-bdc8-1d20bf9b2371",
+    "reason": "engineering_stop",
+    "original_score": 0.0
+  },
+  {
+    "index": 8,
+    "mode": "suz",
+    "id": "12382c62-0cd1-4bf2-bdc8-1d20bf9b2371",
+    "reason": "engineering_stop",
+    "original_score": 0.0
+  },
+  {
+    "index": 9,
+    "mode": "opencua_baseline",
+    "id": "2cd43775-7085-45d8-89fa-9e35c0a915cf",
+    "reason": "engineering_stop",
+    "original_score": 0
+  },
+  {
+    "index": 9,
+    "mode": "suz",
+    "id": "2cd43775-7085-45d8-89fa-9e35c0a915cf",
+    "reason": "confirmed_semantic_completion_error",
+    "original_score": 0
+  },
+  {
+    "index": 11,
+    "mode": "opencua_baseline",
+    "id": "57667013-ea97-417c-9dce-2713091e6e2a",
+    "reason": "engineering_stop",
+    "original_score": 0
+  },
+  {
+    "index": 11,
+    "mode": "suz",
+    "id": "57667013-ea97-417c-9dce-2713091e6e2a",
+    "reason": "engineering_stop",
+    "original_score": 0
+  },
+  {
+    "index": 12,
+    "mode": "suz",
+    "id": "0810415c-bde4-4443-9047-d5f70165a697",
+    "reason": "engineering_stop",
+    "original_score": 0
+  },
+  {
+    "index": 14,
+    "mode": "opencua_baseline",
+    "id": "8472fece-c7dd-4241-8d65-9b3cd1a0b568",
+    "reason": "engineering_stop",
+    "original_score": 0
+  },
+  {
+    "index": 14,
+    "mode": "suz",
+    "id": "8472fece-c7dd-4241-8d65-9b3cd1a0b568",
+    "reason": "engineering_stop",
+    "original_score": 0
+  },
+  {
+    "index": 15,
+    "mode": "opencua_baseline",
+    "id": "36037439-2044-4b50-b9d1-875b5a332143",
+    "reason": "engineering_stop",
+    "original_score": 0.0
+  },
+  {
+    "index": 15,
+    "mode": "suz",
+    "id": "36037439-2044-4b50-b9d1-875b5a332143",
+    "reason": "engineering_stop",
+    "original_score": 0.0
+  },
+  {
+    "index": 17,
+    "mode": "opencua_baseline",
+    "id": "6d72aad6-187a-4392-a4c4-ed87269c51cf",
+    "reason": "engineering_stop",
+    "original_score": 0
+  },
+  {
+    "index": 17,
+    "mode": "suz",
+    "id": "6d72aad6-187a-4392-a4c4-ed87269c51cf",
+    "reason": "engineering_stop",
+    "original_score": 0
+  },
+  {
+    "index": 18,
+    "mode": "opencua_baseline",
+    "id": "c288e301-e626-4b98-a1ab-159dcb162af5",
+    "reason": "engineering_stop",
+    "original_score": 0
+  },
+  {
+    "index": 18,
+    "mode": "suz",
+    "id": "c288e301-e626-4b98-a1ab-159dcb162af5",
+    "reason": "engineering_stop",
+    "original_score": 0
+  },
+  {
+    "index": 21,
+    "mode": "opencua_baseline",
+    "id": "08c73485-7c6d-4681-999d-919f5c32dcfa",
+    "reason": "engineering_stop",
+    "original_score": 0.0
+  },
+  {
+    "index": 21,
+    "mode": "suz",
+    "id": "08c73485-7c6d-4681-999d-919f5c32dcfa",
+    "reason": "engineering_stop",
+    "original_score": 0.0
+  },
+  {
+    "index": 24,
+    "mode": "opencua_baseline",
+    "id": "aa4b5023-aef6-4ed9-bdc9-705f59ab9ad6",
+    "reason": "engineering_stop",
+    "original_score": 0.0
+  },
+  {
+    "index": 24,
+    "mode": "suz",
+    "id": "aa4b5023-aef6-4ed9-bdc9-705f59ab9ad6",
+    "reason": "engineering_stop",
+    "original_score": 0.0
+  },
+  {
+    "index": 25,
+    "mode": "suz",
+    "id": "5ac2891a-eacd-4954-b339-98abba077adb",
+    "reason": "confirmed_semantic_completion_error",
+    "original_score": 0
+  },
+  {
+    "index": 26,
+    "mode": "suz",
+    "id": "d06f0d4d-2cd5-4ede-8de9-598629438c6e",
+    "reason": "engineering_stop",
+    "original_score": 0
+  },
+  {
+    "index": 13,
+    "mode": "suz",
+    "id": "72b810ef-4156-4d09-8f08-a0cf57e7cefe",
+    "reason": "incomplete_selection_confirmed_in_saved_artifact",
+    "original_score": 0
+  }
+]

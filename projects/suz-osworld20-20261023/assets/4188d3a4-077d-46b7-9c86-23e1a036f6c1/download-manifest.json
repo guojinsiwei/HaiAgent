@@ -1,0 +1,16 @@
+[
+  {
+    "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/4188d3a4-077d-46b7-9c86-23e1a036f6c1/Freeze_row_column2.xlsx",
+    "download_url": "https://hf-mirror.com/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/4188d3a4-077d-46b7-9c86-23e1a036f6c1/Freeze_row_column2.xlsx",
+    "file": "assets\\4188d3a4-077d-46b7-9c86-23e1a036f6c1\\751b356d-e80f-5aa5-9a5d-6784353bceea_Freeze_row_column.xlsx",
+    "sha256": "d70cd1383ae8bf74de2903cc7ffd616aca6d29f3c3483d426b28a42ff87ec51b",
+    "bytes": 6947
+  },
+  {
+    "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/4188d3a4-077d-46b7-9c86-23e1a036f6c1/Freeze_row_column2_gold.xlsx",
+    "download_url": "https://hf-mirror.com/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/4188d3a4-077d-46b7-9c86-23e1a036f6c1/Freeze_row_column2_gold.xlsx",
+    "file": "assets\\4188d3a4-077d-46b7-9c86-23e1a036f6c1\\Freeze_row_column_gold.xlsx",
+    "sha256": "237bd011f931fd8767adb664cb8932ca52ceb0c46ef2f808ec9340014ef80552",
+    "bytes": 7018
+  }
+]

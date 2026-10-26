@@ -1,0 +1,98 @@
+{
+  "started": 1792339211.6779518,
+  "files": [
+    {
+      "original": "/mnt/sdb/home/lizh639/tb2-three-arm50-scorefix-20261018/dependency-cache/hf-model-inference/dependencies.tar",
+      "archive": "/mnt/sdb/home/lizh639/tb2-three-arm50-scorefix-20261018/dependency-cache/hf-model-inference/dependencies.tar.zst",
+      "original_bytes": 179599360,
+      "archive_bytes": 77264328,
+      "sha256_uncompressed": "a3fdab1874d9b8e57b32fa9e2919ba0a216b432c0ec736976a12b9b9c296848f",
+      "verified": true,
+      "original_removed": true
+    },
+    {
+      "original": "/mnt/sdb/home/lizh639/tb2-three-arm50-scorefix-20261018/dependency-cache/largest-eigenval/dependencies.tar",
+      "archive": "/mnt/sdb/home/lizh639/tb2-three-arm50-scorefix-20261018/dependency-cache/largest-eigenval/dependencies.tar.zst",
+      "original_bytes": 178657280,
+      "archive_bytes": 76322964,
+      "sha256_uncompressed": "2332675ef79aad402b55cf3406b84d543b287c96e58d61cc6a99834a9d3ca6a5",
+      "verified": true,
+      "original_removed": true
+    },
+    {
+      "original": "/mnt/sdb/home/lizh639/tb2-three-arm50-scorefix-20261018/dependency-cache/make-mips-interpreter/dependencies.tar",
+      "archive": "/mnt/sdb/home/lizh639/tb2-three-arm50-scorefix-20261018/dependency-cache/make-mips-interpreter/dependencies.tar.zst",
+      "original_bytes": 269342720,
+      "archive_bytes": 98386876,
+      "sha256_uncompressed": "2d149308cc90996e551d72d45cf2b0099de703db478d8b800da6460db659d3f5",
+      "verified": true,
+      "original_removed": true
+    },
+    {
+      "original": "/mnt/sdb/home/lizh639/tb2-three-arm50-scorefix-20261018/dependency-cache/mteb-leaderboard/dependencies.tar",
+      "archive": "/mnt/sdb/home/lizh639/tb2-three-arm50-scorefix-20261018/dependency-cache/mteb-leaderboard/dependencies.tar.zst",
+      "original_bytes": 190279680,
+      "archive_bytes": 78244829,
+      "sha256_uncompressed": "7a52deec5deb37650cfebbd78b1cc89351df3285dd2832fb49fedc8d1011f4f6",
+      "verified": true,
+      "original_removed": true
+    },
+    {
+      "original": "/mnt/sdb/home/lizh639/tb2-three-arm50-scorefix-20261018/dependency-cache/mteb-retrieve/dependencies.tar",
+      "archive": "/mnt/sdb/home/lizh639/tb2-three-arm50-scorefix-20261018/dependency-cache/mteb-retrieve/dependencies.tar.zst",
+      "original_bytes": 7167539200,
+      "archive_bytes": 3430159506,
+      "sha256_uncompressed": "aa7b346c81b82dd54bce640d28c49669ff5b6c990d2a3fc6884474e581f9caee",
+      "verified": true,
+      "original_removed": true
+    },
+    {
+      "original": "/mnt/sdb/home/lizh639/tb2-three-arm50-scorefix-20261018/dependency-cache/pytorch-model-recovery/dependencies.tar",
+      "archive": "/mnt/sdb/home/lizh639/tb2-three-arm50-scorefix-20261018/dependency-cache/pytorch-model-recovery/dependencies.tar.zst",
+      "original_bytes": 5521141760,
+      "archive_bytes": 2514320098,
+      "sha256_uncompressed": "0a08fec310ea68317799280e15c61599b6348e6fbc6818c1055712c0dd8ece7c",
+      "verified": true,
+      "original_removed": true
+    },
+    {
+      "original": "/mnt/sdb/home/lizh639/tb2-three-arm50-scorefix-20261018/dependency-cache/sam-cell-seg/dependencies.tar",
+      "archive": "/mnt/sdb/home/lizh639/tb2-three-arm50-scorefix-20261018/dependency-cache/sam-cell-seg/dependencies.tar.zst",
+      "original_bytes": 1515356160,
+      "archive_bytes": 522721442,
+      "sha256_uncompressed": "5dde04ee306f4b59886f5f238dfa4a250279ce67e5ccf6d4e54e6bf389fe790d",
+      "verified": true,
+      "original_removed": true
+    },
+    {
+      "original": "/mnt/sdb/home/lizh639/tb2-three-arm50-scorefix-20261018/dependency-cache/torch-pipeline-parallelism/dependencies.tar",
+      "archive": "/mnt/sdb/home/lizh639/tb2-three-arm50-scorefix-20261018/dependency-cache/torch-pipeline-parallelism/dependencies.tar.zst",
+      "original_bytes": 5771960320,
+      "archive_bytes": 2574206548,
+      "sha256_uncompressed": "025dde00bfeed5056f8f7ac23eaad9438a2bb8f9612332ed2357b02c0bdd9210",
+      "verified": true,
+      "original_removed": true
+    },
+    {
+      "original": "/mnt/sdb/home/lizh639/tb2-three-arm50-scorefix-20261018/dependency-cache/torch-tensor-parallelism/dependencies.tar",
+      "archive": "/mnt/sdb/home/lizh639/tb2-three-arm50-scorefix-20261018/dependency-cache/torch-tensor-parallelism/dependencies.tar.zst",
+      "original_bytes": 5808455680,
+      "archive_bytes": 2576276871,
+      "sha256_uncompressed": "82c305081ae44a82ffb2e3b1f318fa5d5aee9acd7123fd7cc563468bd9ec5461",
+      "verified": true,
+      "original_removed": true
+    },
+    {
+      "original": "/mnt/sdb/home/lizh639/tb2-three-arm50-scorefix-20261018/dependency-cache/train-fasttext/dependencies.tar",
+      "archive": "/mnt/sdb/home/lizh639/tb2-three-arm50-scorefix-20261018/dependency-cache/train-fasttext/dependencies.tar.zst",
+      "original_bytes": 546816000,
+      "archive_bytes": 172991340,
+      "sha256_uncompressed": "c55c7ec0949523e7cdbbbe9e567f847b00f0c641d61ead994f4e1cc0d03c1043",
+      "verified": true,
+      "original_removed": true
+    }
+  ],
+  "restore": "zstd -d ARCHIVE.dependencies.tar.zst -o dependencies.tar; verify SHA256 against this manifest before use",
+  "completed": 1792339536.0797057,
+  "freed_bytes": 15028253358
+}

@@ -1,0 +1,8 @@
+test_manifest_unique_and_balanced_pairs (test_safety.Safety.test_manifest_unique_and_balanced_pairs) ... ok
+test_other_queues_reserved_against_total_twelve (test_safety.Safety.test_other_queues_reserved_against_total_twelve) ... ok
+test_seven_yuan_cumulative_cap (test_safety.Safety.test_seven_yuan_cumulative_cap) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.009s
+
+OK

@@ -1,0 +1,38 @@
+{
+  "project": "KZ native",
+  "version": "2026.10.19-kzdsh-aligned.1",
+  "behavior_revision": "kz-native-kzdsh-parity-20261019",
+  "native_baseline": "projects\\kz-native-orthogonal-trigger-20261017",
+  "reference": "projects\\kz-dsh-exploration-v2-20261018\\candidate",
+  "reference_sha256": {
+    "src/exploration-trigger.mjs": "529f1fb72e0e8d5bfa10f34b86d354eb6c74447c6bcf07c1982f5cc6b532aa59",
+    "src/exploration-learning.mjs": "a754b2e8bf6dab8d81c9768e681c95cd75f5459129b20abd7f9295ffd903f828",
+    "src/exploration-measurement.mjs": "4e272d70c417abdb4496f5877624de010610c79d43a9dfef70c74265b27e3b66",
+    "src/policy.mjs": "21b0c23cdbb834132d71e47876f0184bffb698253e618cd81bcab1ae3855d773",
+    "src/subgoals.mjs": "8d5b09d17728043a1f5e74014d1cb18ac52c73771007d9d7a8f2c6967acd06bc",
+    "src/completion.mjs": "22929ba2329d89cf1b37e4cecb08a67be9f227f0804f323d85e2100ad812d5ff",
+    "src/review-policy.mjs": "7e901941ad01151ac9d541db341efd3af9873709021e9f24e124cdea40cf6e14",
+    "src/critic-cache.mjs": "f9448faf6242d604ef640bcd69a2b9f47ae76000d3fc25be58c0a94ccaf9a27f",
+    "src/verification-identity.mjs": "3ea36d208a7c81bd5624047bebdf184ef14c906600d5fb2fce5e255632228204",
+    "src/memory.mjs": "1f6d692ec808e661c9cbb6f96b96053197ecf1645177aeb361d45b8d4fa938a4",
+    "src/full-integration.mjs": "4ea63013b374929de32935b3d3276cc634fc3cc0e1164af187d6b0784b969af6"
+  },
+  "native_execution_framework_preserved": true,
+  "remote_deployment": false,
+  "model_calls": 0,
+  "inherited_failures": "Five legacy test_lean failures reproduced on the original native baseline",
+  "mechanism_mapping": {
+    "exploration": "native/legacy/sources/bestfgs-project/src/bestfgs/contrastive_exploration.py",
+    "measurement": "native/legacy/sources/bestfgs-project/src/bestfgs/exploration_measurement.py",
+    "monitor": "native/legacy/sources/bestfgs-project/src/bestfgs/lean_monitor.py",
+    "subgoals": "native/aligned_subgoals.py",
+    "completion": "native/completion_alignment.py",
+    "memory_review": "native/legacy/sources/bestfgs-project/src/bestfgs/memory_injection.py"
+  },
+  "retained_host_differences": [
+    "native synchronous subprocess execution and process-group cleanup",
+    "native task-local audit and conversation storage",
+    "no DSH background job APIs",
+    "unchanged native experiment budget defaults"
+  ]
+}

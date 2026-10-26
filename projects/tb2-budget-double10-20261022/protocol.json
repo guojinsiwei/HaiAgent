@@ -1,0 +1,54 @@
+{
+  "benchmark": "Terminal-Bench 2.0",
+  "commit": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+  "arms": [
+    "hld",
+    "recuris"
+  ],
+  "selection": [
+    "torch-pipeline-parallelism",
+    "regex-chess",
+    "sam-cell-seg",
+    "dna-assembly",
+    "circuit-fibsqrt",
+    "llm-inference-batching-scheduler",
+    "make-doom-for-mips",
+    "polyglot-c-py",
+    "adaptive-rejection-sampler"
+  ],
+  "model": "deepseek-flash",
+  "temperature": 0,
+  "thinking": false,
+  "budget": {
+    "server_solver_seconds": 7200,
+    "per_run_cny": 16,
+    "campaign_cny": 160,
+    "shared_requests": 800,
+    "shared_tools": 1200
+  },
+  "hld_source": "/mnt/sdb/home/lizh639/swepro-hld-ab5-20261020/bundle/hld-new",
+  "recuris_source": "/mnt/sdb/home/lizh639/swepro-hld-ab5-20261020/bundle/recuris-dsh",
+  "cross_task_memory": false,
+  "historical_exposure": "Prior failed monetary-stop attempts selected offline. Only original task instruction reaches solver; no prior artifacts, hints or audit reports.",
+  "total_trials": 10,
+  "max_trials_with_retry": 10,
+  "paid_attempts_per_arm_task": 1,
+  "no_automatic_paid_retries": true,
+  "task_preflight": "One unpaid original-verifier preflight for each run",
+  "retry_policy": "No automatic paid retries",
+  "concurrency": {
+    "total": 6,
+    "per_arm_when_both_waiting": 3
+  },
+  "experiment": {
+    "schema_version": 11,
+    "task_count": 9,
+    "trial_count": 10,
+    "concurrency": 6,
+    "solver_seconds": 7200,
+    "engineering_retry_batches": 0
+  },
+  "paired_tasks": null,
+  "selection_kind": "Selected arm-task budget diagnostic; asymmetric subset, not whole-benchmark head-to-head",
+  "algorithm_policy": "Preserve historical HLD v7 and Recuris v5 algorithms; shared DSH max-tokens engineering fix only; no audit hints or previous artifacts in solver context"
+}

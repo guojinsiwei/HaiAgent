@@ -1,0 +1,8 @@
+{
+  "task": "mailman",
+  "image": "alexgshaw/mailman:20251031",
+  "digest": "sha256:04fac73db7e2b4f49d43f09fbc2266a94d70131f07efa1393d370abc059f4094",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/mailman/manifests/20251031",
+  "header_verified": true,
+  "time": 1792550869.1030993
+}

@@ -1,0 +1,8 @@
+{
+  "source": "/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020",
+  "runtime_sha256": "f4ff20e6c6767496db70a04b3b2f6686a33fc28f0a1dc80ada248a0719daaf0a",
+  "python_sha256": "178d3d83b6e8e99285a65d3fce9c16b87952cc5efdb4d1a0e3ff3be18ff0fc9c",
+  "source_lock_sha256": "77557a52b1f778c1ba7b633082750c0e99cebf6479153c12559be2ee977df65d",
+  "model": "deepseek-flash",
+  "paid_calls": 0
+}

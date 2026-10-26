@@ -1,0 +1,136 @@
+{
+  "experiment": "longcli-hld-request400-rerun-20261022",
+  "commit": "2015f37b5c458f2562354de6b415e9182c91af64",
+  "tasks": [
+    {
+      "task": "cmu15_445_p0",
+      "family": "c-env",
+      "project": "cmu15_445",
+      "index": 5,
+      "image": "longcli-hld-full20-20261022/task-cmu15_445_p0:2015f37",
+      "image_id": "sha256:a31f3eda932cb29f9e08e667d9709b81ea7332ea72fe822b5f5aa992804ed1f0",
+      "wall_seconds": 7200.0,
+      "test_seconds": 720.0,
+      "instruction": "Open and follow the detailed project specification at INSTRUCTION.md. Implement the project tasks accordingly in folder cmu15_445.",
+      "historical_image_id": "sha256:22d90a6f9fad966c7f8e265c396cab0de64e58edb5ccd7f861a47fb4ec74958a",
+      "starter_path": "/mnt/sdb/home/lizh639/longcli-hld-full20-20261022/starter-cmu15_445_p0.tar.gz",
+      "starter_sha256": "3a2ef4c2bcbf5632cbd46c41685e1775f623ac9503549577794086074223baa2"
+    },
+    {
+      "task": "cmu15_445_p2",
+      "family": "c-env",
+      "project": "cmu15_445",
+      "index": 7,
+      "image": "longcli-hld-full20-20261022/task-cmu15_445_p2:2015f37",
+      "image_id": "sha256:d4be30ad59254434bba9c8a6faeb5c4f3698877453b667bda455c39c98e7e276",
+      "wall_seconds": 7200.0,
+      "test_seconds": 300.0,
+      "instruction": "Open and follow the detailed project specification at INSTRUCTION.md. Implement the project tasks accordingly in folder cmu15_445.",
+      "historical_image_id": "sha256:b5e046e99a93e0df3a8b66fcc6035a51d64abeb335468a6e48b3b1f223feed30",
+      "starter_path": "/mnt/sdb/home/lizh639/longcli-hld-full20-20261022/starter-cmu15_445_p2.tar.gz",
+      "starter_sha256": "cd9c4c71173f8c2fe9cc8a7eced5e277296639ba6fa15f31ae6f7d6040ce26a1"
+    },
+    {
+      "task": "61810_pgtbl",
+      "family": "make-pytest",
+      "project": "pgtbl",
+      "index": 15,
+      "image": "longcli-hld-full20-20261022/task-61810_pgtbl:2015f37",
+      "image_id": "sha256:4cf48cca16161eaf1fc12bd134ffb62212d020bc0fe4b3a3d1612e8c4457ac30",
+      "wall_seconds": 7200.0,
+      "test_seconds": 300.0,
+      "instruction": "Open and follow the detailed project specification at INSTRUCTION.md. Implement the project tasks accordingly in folder pgtbl.",
+      "historical_image_id": "sha256:6eb51b36579b3a571e305fbbf707cb246c38524e07c152f59b9d787165f7e5f5",
+      "starter_path": "/mnt/sdb/home/lizh639/longcli-hld-full20-20261022/starter-61810_pgtbl.tar.gz",
+      "starter_sha256": "01ffeebf800b135ed009ffbfb94fb715b6e3257458c946a7e78ab282c9ed069f"
+    },
+    {
+      "task": "61810_syscall",
+      "family": "make-pytest",
+      "project": "syscall",
+      "index": 16,
+      "image": "longcli-hld-full20-20261022/task-61810_syscall:2015f37",
+      "image_id": "sha256:d2b0317ef0cb63feb8556affb38b01b7740a0913bd59825bb00e98c2b17034b3",
+      "wall_seconds": 7200.0,
+      "test_seconds": 300.0,
+      "instruction": "Open and follow the detailed project specification at INSTRUCTION.md. Implement the project tasks accordingly in folder syscall.",
+      "historical_image_id": "sha256:9e9c1043986a6fd5991544cbf14693acafef248413d3b7bae19e6b14744b3a5d",
+      "starter_path": "/mnt/sdb/home/lizh639/longcli-hld-full20-20261022/starter-61810_syscall.tar.gz",
+      "starter_sha256": "b6bf8eca52f5718d5075fed1c7877ba4135830e439ec7e8c93165c26b084ed2c"
+    },
+    {
+      "task": "61810_traps",
+      "family": "make-pytest",
+      "project": "traps",
+      "index": 18,
+      "image": "longcli-hld-full20-20261022/task-61810_traps:2015f37",
+      "image_id": "sha256:ca44368ced38d0bd66b2993eb64a7a0d2a55f2364c5d60e3947d6fe7f740cf58",
+      "wall_seconds": 7200.0,
+      "test_seconds": 300.0,
+      "instruction": "Open and follow the detailed project specification at INSTRUCTION.md. Implement the project tasks accordingly in folder traps.",
+      "historical_image_id": "sha256:b1b3a23b3ac11dfd702ed8491e79d1a552b3bcc1d5cc494ad39ba68e24fa66c1",
+      "starter_path": "/mnt/sdb/home/lizh639/longcli-hld-full20-20261022/starter-61810_traps.tar.gz",
+      "starter_sha256": "78c0e83ecef4410e95024d5c73befcac2a4d505092a111056ce638c13c827fdd"
+    }
+  ],
+  "methods": [
+    "hld-request400"
+  ],
+  "total_trials": 5,
+  "model": "deepseek-flash",
+  "version": "HLD v8",
+  "concurrency": 3,
+  "cpu_per_task": 2,
+  "memory_gib_per_task": 8,
+  "wall_seconds": 7200,
+  "requests_per_task": 800,
+  "tools_per_task": 600,
+  "thinking": false,
+  "temperature": 0,
+  "task_budget_cny": 24,
+  "campaign_budget_cny": 480,
+  "all_auxiliary_calls_included": true,
+  "automatic_paid_retries": false,
+  "official_feedback_to_solver": false,
+  "cross_task_memory": false,
+  "scoring": "official f2p is_pass AND p2p is_pass; separate fresh grader",
+  "restored_bases": {
+    "make-pytest": {
+      "tag": "longcli-hld-full20-20261022/make-pytest:2015f37",
+      "archive_sha256": "a642b686382f71ba27006b2a99102b4e009474225940a5d00f7910ac3b5776f0",
+      "id": "sha256:abe03360493e3ab374ba7bad229dd565573ddd0f3f2be2265859a5121d4aa64b"
+    },
+    "c-env": {
+      "tag": "longcli-hld-full20-20261022/c-env:2015f37",
+      "archive_sha256": "c22d8c551946f7208da76d1fc530abd059997c0ee304fec3a2bb3079c4e37ad2",
+      "id": "sha256:c6122df373df57b931ce5e095e1a9f7005d0a55c1ec98525dbce0e120d8ce9c9"
+    }
+  },
+  "replaces_voided_experiment": null,
+  "budget_multiplier": 3,
+  "resource_limit_overrides": [],
+  "max_output_tokens": 32768,
+  "context_tokens": 128000,
+  "headroom_tokens": 32768,
+  "shared_ledger": "/mnt/sdb/home/lizh639/longcli-hld-full20-triple-20261022/spending.sqlite",
+  "selection_rule": "explicit 400-request limit event in original run, irrespective of score",
+  "selection": [
+    "cmu15_445_p0",
+    "cmu15_445_p2",
+    "61810_pgtbl",
+    "61810_syscall",
+    "61810_traps"
+  ],
+  "selection_evidence": "selection-evidence.json",
+  "exclude_duplicate_running_attempts": [
+    "cs61_fa24_scheme",
+    "61810_cow"
+  ],
+  "fresh_attempt": true,
+  "diagnostic_hints_to_solver": false,
+  "old_solution_to_solver": false,
+  "original_score_preserved": true,
+  "rerun_not_substituted_into_first_attempt_aggregate": true,
+  "historical_recuris_context_tokens": 1000000,
+  "full_configuration_equivalence": false
+}

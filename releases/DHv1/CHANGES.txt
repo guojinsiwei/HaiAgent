@@ -1,0 +1,71 @@
+DHv1 — 2026-10-04
+
+This file records the initial Expected Observation addition. Later engineering
+repairs and current verification are documented in ENGINEERING-FIXES.txt.
+The initial file-comparison/test counts below are historical, not current.
+
+User-facing name and directory: DHv1. Renamed from the independent expectation
+candidate; the original DH and engineering-only release remain unchanged.
+
+Scope: user's item 3 only (Expected Observation).
+Base: releases/DH-engineering-repair-v1. Both base releases and historical
+experiment results are untouched. This candidate has not been deployed or used
+in a paid benchmark run.
+
+Source changes relative to the engineering candidate:
+  Added sources/bestfgs-project/src/bestfgs/expectation.py
+  Changed sources/bestfgs-project/src/bestfgs/lean_protocol.py
+  Changed sources/bestfgs-project/src/bestfgs/lean_runtime.py
+Byte comparison confirmed all other source, compatibility, harness and evidence
+files unchanged (excluding generated Python caches).
+
+Behavior
+- LeanConfig.expectation_enabled defaults to True in this independent candidate.
+  Set it to False for the original prompt/execution path, without expectation
+  inspections, feedback or counters. No other switch/default/budget was changed.
+- The actor is instructed to attach one concise expected_observation to run.
+- Supported kinds: build, public_test, file_state, output, explicit unknown.
+- Register the contract before dispatch; associate the review with the actual
+  command key and E-number, then return it in evidence.expectation to the actor.
+- File observations use the existing public dependency-state interface, reusing
+  already observed values when available. They do not run another task command
+  or introduce another model request. Public paths are task-root-relative.
+- Outcomes are matched, contradicted, unknown. Timeout, blocked execution,
+  incomplete capture/status coverage and uncertain file state stay unknown.
+- Missing/invalid expectations produce bounded unknown feedback and counters;
+  they do not add protocol errors, regeneration requests or a new action gate.
+- Build matching requires recognized build invocation, clean execution and a
+  new/changed artifact. Unchanged existing artifacts are insufficient evidence.
+- public_test uses the preexisting supported result parser (currently narrow
+  explicit pytest summaries). Unsupported test runners/QEMU tests return unknown
+  here; they may declare a concrete output observation instead. Output matching
+  never upgrades a tool result to a validated test pass.
+- Error absence alone is not a positive output assertion. Conflicting positive
+  and negative markers return unknown. File change alone is not task progress.
+- A mismatch does not invalidate a route or automatically admit failure memory.
+  A match does not certify task success or automatically create a checkpoint.
+- No change to orthogonal similarity rules, repetition blocking, monitor/advisor
+  trigger/cooldown, memory policy, restoration, RAW or the existing two-candidate
+  prediction switch. contrastive_predictions is NOT turned on by this addition.
+
+New audit events: expectation_registered, expectation_outcome.
+New counters: expectations_registered, expectations_matched,
+  expectations_contradicted, expectations_unknown,
+  expectation_contract_missing, expectation_contract_invalid.
+
+Offline validation (no real model API, Docker or credentials)
+  python -X utf8 -m unittest discover -s tests -p test_expectation.py
+  28/28 new tests passed.
+  python -X utf8 -m unittest discover -s tests -p test_*.py
+  177 discovered; 175 passed, 2 existing POSIX-specific cases skipped on Windows.
+Coverage includes stale artifacts, failed pipelines masked by exit zero, fake
+test summaries, uncertain state, unsafe paths, contradictory/incomplete output,
+registration order, feedback, unchanged model/tool counts, no automatic restore,
+invalid fields without fatal protocol errors, and no repeat-guard bypass.
+These are the release regression suites, not every historical repository test.
+The 5 known legacy test_lean failures documented in the base remain out of scope.
+
+One compact example
+{"action":"run","argv":["make"],"cwd":"cow",
+ "purpose":"Check whether the current kernel can be built",
+ "expected_observation":{"kind":"build","artifact":"cow/kernel/kernel"}}

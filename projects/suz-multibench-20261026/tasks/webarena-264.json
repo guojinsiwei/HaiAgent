@@ -1,0 +1,31 @@
+{
+  "id": "webarena-264",
+  "task": {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 264,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "I want to browse the products in the {{category}} category",
+    "instantiation_dict": {
+      "category": "Cabinets, Racks & Shelves"
+    },
+    "intent": "I want to browse the products in the Cabinets, Racks & Shelves category",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/office-products/office-furniture-lighting/cabinets-racks-shelves.html",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 211
+  },
+  "benchmark": "webarena",
+  "source_task_sha256": "acea4da9efa6e9c05bd20804bccc6abb3125d78e87a5b7a8f46f0a51a429cea5"
+}

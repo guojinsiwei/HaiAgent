@@ -1,0 +1,48 @@
+{
+  "source_sha256": "19c0835700c25aaabf515c04bc5e7dfb1412e1403ee157143d440a9d31f5b484",
+  "deployment_sha256": "478b9da4162afd84a65d9729df7c091e226b1ec9d1bb2498b637cb6c1c7a9153",
+  "arms": [
+    {
+      "mode": "opencua_baseline",
+      "passed": true,
+      "model_calls": 0,
+      "new_cost_cny": 0,
+      "recorded_requests": 7,
+      "identical_action_batches": 7,
+      "role_errors": [],
+      "source_sha256": "19c0835700c25aaabf515c04bc5e7dfb1412e1403ee157143d440a9d31f5b484",
+      "deployment_sha256": "478b9da4162afd84a65d9729df7c091e226b1ec9d1bb2498b637cb6c1c7a9153",
+      "validation_kind": "real_CPU_multistep_trace_plus_full_protocol_replay_and_fresh_final_critic",
+      "cpu_only": true,
+      "green_fraction": 0.8341049382716049,
+      "original_live_source_sha256": "81b1fe7bc18b6cb4d43ca3c11ee92f941a5aeed2fa39250de4d027db994c57f3",
+      "evidence_directory": "/data/share/lizh639/suz-osworld30-20261024/preflight-multistep/opencua_baseline",
+      "replay_directory": "/data/share/lizh639/suz-osworld30-20261024/preflight-protocol-replay-final/opencua_baseline"
+    },
+    {
+      "mode": "suz",
+      "passed": true,
+      "model_calls": 1,
+      "new_cost_cny": 0.033587599999999995,
+      "recorded_requests": 18,
+      "identical_action_batches": 8,
+      "role_errors": [],
+      "source_sha256": "19c0835700c25aaabf515c04bc5e7dfb1412e1403ee157143d440a9d31f5b484",
+      "deployment_sha256": "478b9da4162afd84a65d9729df7c091e226b1ec9d1bb2498b637cb6c1c7a9153",
+      "validation_kind": "real_CPU_multistep_trace_plus_full_protocol_replay_and_fresh_final_critic",
+      "cpu_only": true,
+      "green_fraction": 0.8341049382716049,
+      "original_live_source_sha256": "81b1fe7bc18b6cb4d43ca3c11ee92f941a5aeed2fa39250de4d027db994c57f3",
+      "evidence_directory": "/data/share/lizh639/suz-osworld30-20261024/preflight-multistep/suz",
+      "replay_directory": "/data/share/lizh639/suz-osworld30-20261024/preflight-protocol-replay-final/suz"
+    }
+  ],
+  "timestamp": 1792822961.2954745,
+  "validation_kind": "real_CPU_multistep_trace_plus_full_protocol_replay_and_fresh_final_critic",
+  "changed_since_live_preflight": [
+    "src/controller.mjs",
+    "tests/controller.test.mjs"
+  ],
+  "original_live_errors_preserved": true,
+  "scope": "Protocol compatibility verified with recorded outputs; live behavior under new planning remains to be measured in the formal experiment."
+}

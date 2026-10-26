@@ -1,0 +1,8 @@
+{
+  "task": "modernize-scientific-stack",
+  "image": "alexgshaw/modernize-scientific-stack:20251031",
+  "digest": "sha256:64e69cee13bf6b0b9016e735b51891bce996a60f1e2d1a005bf12c949e221d71",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/modernize-scientific-stack/manifests/20251031",
+  "header_verified": true,
+  "time": 1792550872.5462987
+}

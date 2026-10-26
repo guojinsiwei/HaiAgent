@@ -1,0 +1,19 @@
+{
+  "benchmarks": [
+    "webarena",
+    "androidworld"
+  ],
+  "tasks_per_benchmark": 10,
+  "arms": [
+    "opencua_baseline",
+    "suz"
+  ],
+  "total_runs": 40,
+  "per_task_cny": 8,
+  "total_cny": 320,
+  "model": "glm-5.3-flash",
+  "gpu": false,
+  "seed": 20261026,
+  "webarena_subset": "5 reddit +5 shopping, distinct templates, deterministic official graders only",
+  "status": "preparing"
+}

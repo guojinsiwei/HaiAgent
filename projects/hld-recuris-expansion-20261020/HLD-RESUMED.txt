@@ -1,0 +1,48 @@
+新版 HLD 大规模对比恢复部署，2026-10-20
+
+实验范围
+- TB2.0：HLD 与 Recuris 使用原冻结的同一批 50 题。
+- AppWorld：HLD 与 Recuris 使用原冻结的同一批新增 70 题。
+- HLD 算法源码与 SWE-Pro 小对照的 hld-new 完全一致。
+- 模型继续使用 TaoToken deepseek-flash；每题最多 8 元。
+- 保留原 spending.sqlite；TB 总上限 800 元，AppWorld 1,120 元，总计 1,920 元。
+- 无新增独立预算，无自动付费重试，无 GPT 实验调用。
+
+已启动
+AppWorld 控制器 PID 3603566，HLD 并发 2。
+Recuris 70 题全部完成，51 题通过，工程故障 0；这些题不再重跑。
+HLD 保留已完成且通过的 9dabbc9_1，剩余 69 次运行已入队。
+9dabbc9_2、9dabbc9_3 的中断记录保留，新目录后缀 -resume1。
+两次补跑继续记在原预算 job 下，原消费和不确定消费保留。
+已核实两题产生正常 API 调用、工具执行，无 HTTP 错误。
+这是从新 AppWorld 世界重新执行两次中断题，不声称恢复了原会话。
+
+TB2.0 恢复协调器 PID 3604326 已部署。
+原 Recuris 主控制器正在等待当前两题自然完成；完成后协调器会恢复 50 题 HLD 队列。
+无需用户再次操作。已完成的 Recuris 结果与工程补跑继续保留。
+恢复后主队列最多 3 路：HLD 1 路、Recuris 2 路；工程补跑 1 路。
+加上 AppWorld 2 路，最高合计 6 路，仍受存储保护约束。
+部署检查时 Docker 盘可用约 120 GiB，数据盘约 165 GiB。
+
+暂停恢复计时修复
+旧恢复脚本调整了外部剩余时限，但遗漏了 HLD full.startedAt。
+已修复恢复副本中的内部起点：只扣除有记录的停机区间，保留此前已运行时间。
+费用、调用计数、原始检查点和已产生评分保持不变。
+重复回执幂等，冲突回执、重叠区间、错误时间顺序会拒绝。
+遇到未完成检查点事务时停止恢复，要求先协调事务。
+离线检查通过，另用 4 个真实保留检查点验证；无模型调用。
+此次未重新执行已完成的 SWE-Pro 评分或解题，历史计时故障标记继续保留。
+当前 TB/AppWorld 运行使用新会话，此修复位于宿主恢复脚本，不改变冻结算法。
+
+汇报口径
+新增 70 题结果单独汇报。
+与历史 30 题拼接的 100 题包含历史修复后保留成绩与不同版本，不能标成统一最新版首次运行结果。
+目前 Recuris 拼接成绩为 80/100（历史 29/30 + 新增 51/70）。
+工程重跑以原任务为键，保留全部尝试，不重复计算题数。
+
+服务器证据
+/mnt/sdb/home/lizh639/hld-recuris-expansion-20261020/resume-hld-validation.json
+/mnt/sdb/home/lizh639/hld-recuris-expansion-20261020/resume-hld-source-verification.json
+/mnt/sdb/home/lizh639/hld-recuris-expansion-20261020/resume-hld-launch.json
+/mnt/sdb/home/lizh639/appworld-hld-recuris70-20261020/resume-hld-20261020/
+/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/resume-hld-20261020/

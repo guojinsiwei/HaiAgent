@@ -1,0 +1,12 @@
+{
+  "schema": "hai-external-evaluation-v1",
+  "run_id": "COPY_FROM_RESULT_JSON",
+  "task_id": "COPY_FROM_RESULT_JSON",
+  "artifact_sha256": "COPY_FROM_RESULT_JSON",
+  "success": null,
+  "independent": true,
+  "evaluator": "REPLACE_WITH_OFFICIAL_HARNESS_NAME_AND_VERSION",
+  "source_report": "path/to/actual-official-report.json",
+  "source_format": "swe-instance-v1",
+  "source_sha256": "SHA256_OF_THE_ACTUAL_OFFICIAL_REPORT"
+}

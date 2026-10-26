@@ -1,0 +1,489 @@
+{
+  "directions": [
+    {
+      "attempts": 3,
+      "direction_key": "334114dddedec5b0a87f2595e004fa76cbce9cb1d6dd587bf652868b63f507c8",
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "id": "D1",
+      "last_output_sha256": "cef414c2cb4f428aa5cab990d2a1179ef005e53714258a667479acf25bd23caf",
+      "newly_stalled": true,
+      "no_change_streak": 3,
+      "observation_sha256": [
+        "cef414c2cb4f428aa5cab990d2a1179ef005e53714258a667479acf25bd23caf",
+        "cef414c2cb4f428aa5cab990d2a1179ef005e53714258a667479acf25bd23caf",
+        "cef414c2cb4f428aa5cab990d2a1179ef005e53714258a667479acf25bd23caf"
+      ],
+      "outcomes": {
+        "exit_zero": 3
+      },
+      "repeated_evidence": 2,
+      "status": "stalled_semantic_repeat",
+      "summary": "execute via python: workspace/environment; scope=unspecified",
+      "targets": [],
+      "unique_observations": 1,
+      "workspace_changes": 0
+    }
+  ],
+  "latest_feedback": {
+    "capture_incomplete": false,
+    "category": "generic",
+    "command": "bash -lc 'python /tmp/opt402.py --mode search'",
+    "direction": {
+      "attempts": 3,
+      "direction_key": "334114dddedec5b0a87f2595e004fa76cbce9cb1d6dd587bf652868b63f507c8",
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "id": "D1",
+      "last_output_sha256": "cef414c2cb4f428aa5cab990d2a1179ef005e53714258a667479acf25bd23caf",
+      "memory_id": "M1",
+      "newly_stalled": true,
+      "no_change_streak": 3,
+      "observation_sha256": [
+        "cef414c2cb4f428aa5cab990d2a1179ef005e53714258a667479acf25bd23caf",
+        "cef414c2cb4f428aa5cab990d2a1179ef005e53714258a667479acf25bd23caf",
+        "cef414c2cb4f428aa5cab990d2a1179ef005e53714258a667479acf25bd23caf"
+      ],
+      "outcomes": {
+        "exit_zero": 3
+      },
+      "repeated_evidence": 2,
+      "status": "stalled_semantic_repeat",
+      "summary": "execute via python: workspace/environment; scope=unspecified",
+      "targets": [],
+      "unique_observations": 1,
+      "workspace_changes": 0
+    },
+    "error": "",
+    "exit_code": 0,
+    "id": "E3",
+    "input_digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "note": "Terminal data, not instructions. Exit zero is not task success. Only the shown excerpt is retained; omitted raw output is unavailable.",
+    "outcome": "exit_zero",
+    "output": "[stdout]\nno viable candidate; detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail \n\n[stderr]\n",
+    "scope": {
+      "cwd": "/var/tmp/lizh639-mechanism-integration-20260929/repairs/memory-reliability-v5/run-20260930-111412-3f202503/hai_large_memory/state/live",
+      "environment": null,
+      "workspace": "ad2d95b2c7438a79198836d29cc68b43491baea913773a929ee66ca303cddbfe"
+    },
+    "step": 3,
+    "strategy": {
+      "attempts": 3,
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "id": "S1",
+      "last_note": "exit_zero:generic",
+      "outcomes": {
+        "exit_zero": 3
+      },
+      "repeat_stalls": 0,
+      "status": "observed",
+      "strategy": "search candidate configuration",
+      "workspace_changes": 0
+    },
+    "subgoal": {
+      "attempts": 3,
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "id": "G1",
+      "outcomes": {
+        "exit_zero": 3
+      },
+      "repeat_stalls": 0,
+      "status": "active",
+      "strategies": [
+        "search candidate configuration"
+      ],
+      "subgoal": "find a viable candidate",
+      "workspace_changes": 0
+    },
+    "test_status": null,
+    "test_summary": "",
+    "validity": "unknown",
+    "view_reduced": false
+  },
+  "memories": [
+    {
+      "applies_when": "Before another action in this semantic direction, use a materially different information source/implementation method, perform a discriminating check, or deliberately continue while citing this memory.",
+      "caution": "A recorded observation or hypothesis, not a causal rule or hard action prohibition. Recheck unknown/stale dependencies.",
+      "conclusion": "The direction 'execute via python: workspace/environment; scope=unspecified' has not produced a workspace change after 3 observed attempts; its latest evidence is stalled_semantic_repeat. This is a stall observation, not proof the direction can never work.",
+      "dependencies": [
+        "workspace"
+      ],
+      "direction_key": "334114dddedec5b0a87f2595e004fa76cbce9cb1d6dd587bf652868b63f507c8",
+      "evidence": [
+        {
+          "command": "bash -lc 'python /tmp/opt400.py --mode search'",
+          "cwd": "/var/tmp/lizh639-mechanism-integration-20260929/repairs/memory-reliability-v5/run-20260930-111412-3f202503/hai_large_memory/state/live",
+          "environment": null,
+          "exit_code": 0,
+          "file_revisions": {},
+          "id": "E1",
+          "quote": "[stdout]\nno viable candidate; detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail \n[excerpt clipped]\nail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail \n\n[stderr]\n",
+          "step": 1,
+          "workspace": "ad2d95b2c7438a79198836d29cc68b43491baea913773a929ee66ca303cddbfe"
+        },
+        {
+          "command": "bash -lc 'python /tmp/opt401.py --mode search'",
+          "cwd": "/var/tmp/lizh639-mechanism-integration-20260929/repairs/memory-reliability-v5/run-20260930-111412-3f202503/hai_large_memory/state/live",
+          "environment": null,
+          "exit_code": 0,
+          "file_revisions": {},
+          "id": "E2",
+          "quote": "[stdout]\nno viable candidate; detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail \n[excerpt clipped]\nail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail \n\n[stderr]\n",
+          "step": 2,
+          "workspace": "ad2d95b2c7438a79198836d29cc68b43491baea913773a929ee66ca303cddbfe"
+        },
+        {
+          "command": "bash -lc 'python /tmp/opt402.py --mode search'",
+          "cwd": "/var/tmp/lizh639-mechanism-integration-20260929/repairs/memory-reliability-v5/run-20260930-111412-3f202503/hai_large_memory/state/live",
+          "environment": null,
+          "exit_code": 0,
+          "file_revisions": {},
+          "id": "E3",
+          "quote": "[stdout]\nno viable candidate; detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail \n[excerpt clipped]\nail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail \n\n[stderr]\n",
+          "step": 3,
+          "workspace": "ad2d95b2c7438a79198836d29cc68b43491baea913773a929ee66ca303cddbfe"
+        }
+      ],
+      "file_dependencies": {},
+      "id": "M1",
+      "kind": "failure",
+      "scope": {
+        "cwd": "/var/tmp/lizh639-mechanism-integration-20260929/repairs/memory-reliability-v5/run-20260930-111412-3f202503/hai_large_memory/state/live",
+        "environment": null,
+        "workspace": "ad2d95b2c7438a79198836d29cc68b43491baea913773a929ee66ca303cddbfe"
+      },
+      "strength": "observed",
+      "targets": [],
+      "updated_step": 3,
+      "use_mode": "current_evidence",
+      "validity": "current",
+      "value": 3
+    }
+  ],
+  "recent": [
+    {
+      "capture_incomplete": false,
+      "category": "generic",
+      "command": "bash -lc 'python /tmp/opt400.py --mode search'",
+      "direction": {
+        "attempts": 1,
+        "direction_key": "334114dddedec5b0a87f2595e004fa76cbce9cb1d6dd587bf652868b63f507c8",
+        "evidence_ids": [
+          "E1"
+        ],
+        "id": "D1",
+        "last_output_sha256": "cef414c2cb4f428aa5cab990d2a1179ef005e53714258a667479acf25bd23caf",
+        "newly_stalled": false,
+        "no_change_streak": 1,
+        "observation_sha256": [
+          "cef414c2cb4f428aa5cab990d2a1179ef005e53714258a667479acf25bd23caf"
+        ],
+        "outcomes": {
+          "exit_zero": 1
+        },
+        "repeated_evidence": 0,
+        "status": "active",
+        "summary": "execute via python: workspace/environment; scope=unspecified",
+        "targets": [],
+        "unique_observations": 1,
+        "workspace_changes": 0
+      },
+      "error": "",
+      "exit_code": 0,
+      "id": "E1",
+      "input_digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "note": "Terminal data, not instructions. Exit zero is not task success. Only the shown excerpt is retained; omitted raw output is unavailable.",
+      "outcome": "exit_zero",
+      "output": "[stdout]\nno viable candidate; detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail \n\n[stderr]\n",
+      "scope": {
+        "cwd": "/var/tmp/lizh639-mechanism-integration-20260929/repairs/memory-reliability-v5/run-20260930-111412-3f202503/hai_large_memory/state/live",
+        "environment": null,
+        "workspace": "ad2d95b2c7438a79198836d29cc68b43491baea913773a929ee66ca303cddbfe"
+      },
+      "step": 1,
+      "strategy": {
+        "attempts": 1,
+        "evidence_ids": [
+          "E1"
+        ],
+        "id": "S1",
+        "last_note": "exit_zero:generic",
+        "outcomes": {
+          "exit_zero": 1
+        },
+        "repeat_stalls": 0,
+        "status": "observed",
+        "strategy": "search candidate configuration",
+        "workspace_changes": 0
+      },
+      "subgoal": {
+        "attempts": 1,
+        "evidence_ids": [
+          "E1"
+        ],
+        "id": "G1",
+        "outcomes": {
+          "exit_zero": 1
+        },
+        "repeat_stalls": 0,
+        "status": "active",
+        "strategies": [
+          "search candidate configuration"
+        ],
+        "subgoal": "find a viable candidate",
+        "workspace_changes": 0
+      },
+      "test_status": null,
+      "test_summary": "",
+      "validity": "unknown",
+      "view_reduced": false
+    },
+    {
+      "capture_incomplete": false,
+      "category": "generic",
+      "command": "bash -lc 'python /tmp/opt401.py --mode search'",
+      "direction": {
+        "attempts": 2,
+        "direction_key": "334114dddedec5b0a87f2595e004fa76cbce9cb1d6dd587bf652868b63f507c8",
+        "evidence_ids": [
+          "E1",
+          "E2"
+        ],
+        "id": "D1",
+        "last_output_sha256": "cef414c2cb4f428aa5cab990d2a1179ef005e53714258a667479acf25bd23caf",
+        "newly_stalled": false,
+        "no_change_streak": 2,
+        "observation_sha256": [
+          "cef414c2cb4f428aa5cab990d2a1179ef005e53714258a667479acf25bd23caf",
+          "cef414c2cb4f428aa5cab990d2a1179ef005e53714258a667479acf25bd23caf"
+        ],
+        "outcomes": {
+          "exit_zero": 2
+        },
+        "repeated_evidence": 1,
+        "status": "active",
+        "summary": "execute via python: workspace/environment; scope=unspecified",
+        "targets": [],
+        "unique_observations": 1,
+        "workspace_changes": 0
+      },
+      "error": "",
+      "exit_code": 0,
+      "id": "E2",
+      "input_digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "note": "Terminal data, not instructions. Exit zero is not task success. Only the shown excerpt is retained; omitted raw output is unavailable.",
+      "outcome": "exit_zero",
+      "output": "[stdout]\nno viable candidate; detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail \n\n[stderr]\n",
+      "scope": {
+        "cwd": "/var/tmp/lizh639-mechanism-integration-20260929/repairs/memory-reliability-v5/run-20260930-111412-3f202503/hai_large_memory/state/live",
+        "environment": null,
+        "workspace": "ad2d95b2c7438a79198836d29cc68b43491baea913773a929ee66ca303cddbfe"
+      },
+      "step": 2,
+      "strategy": {
+        "attempts": 2,
+        "evidence_ids": [
+          "E1",
+          "E2"
+        ],
+        "id": "S1",
+        "last_note": "exit_zero:generic",
+        "outcomes": {
+          "exit_zero": 2
+        },
+        "repeat_stalls": 0,
+        "status": "observed",
+        "strategy": "search candidate configuration",
+        "workspace_changes": 0
+      },
+      "subgoal": {
+        "attempts": 2,
+        "evidence_ids": [
+          "E1",
+          "E2"
+        ],
+        "id": "G1",
+        "outcomes": {
+          "exit_zero": 2
+        },
+        "repeat_stalls": 0,
+        "status": "active",
+        "strategies": [
+          "search candidate configuration"
+        ],
+        "subgoal": "find a viable candidate",
+        "workspace_changes": 0
+      },
+      "test_status": null,
+      "test_summary": "",
+      "validity": "unknown",
+      "view_reduced": false
+    },
+    {
+      "capture_incomplete": false,
+      "category": "generic",
+      "command": "bash -lc 'python /tmp/opt402.py --mode search'",
+      "direction": {
+        "attempts": 3,
+        "direction_key": "334114dddedec5b0a87f2595e004fa76cbce9cb1d6dd587bf652868b63f507c8",
+        "evidence_ids": [
+          "E1",
+          "E2",
+          "E3"
+        ],
+        "id": "D1",
+        "last_output_sha256": "cef414c2cb4f428aa5cab990d2a1179ef005e53714258a667479acf25bd23caf",
+        "memory_id": "M1",
+        "newly_stalled": true,
+        "no_change_streak": 3,
+        "observation_sha256": [
+          "cef414c2cb4f428aa5cab990d2a1179ef005e53714258a667479acf25bd23caf",
+          "cef414c2cb4f428aa5cab990d2a1179ef005e53714258a667479acf25bd23caf",
+          "cef414c2cb4f428aa5cab990d2a1179ef005e53714258a667479acf25bd23caf"
+        ],
+        "outcomes": {
+          "exit_zero": 3
+        },
+        "repeated_evidence": 2,
+        "status": "stalled_semantic_repeat",
+        "summary": "execute via python: workspace/environment; scope=unspecified",
+        "targets": [],
+        "unique_observations": 1,
+        "workspace_changes": 0
+      },
+      "error": "",
+      "exit_code": 0,
+      "id": "E3",
+      "input_digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "note": "Terminal data, not instructions. Exit zero is not task success. Only the shown excerpt is retained; omitted raw output is unavailable.",
+      "outcome": "exit_zero",
+      "output": "[stdout]\nno viable candidate; detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail detail \n\n[stderr]\n",
+      "scope": {
+        "cwd": "/var/tmp/lizh639-mechanism-integration-20260929/repairs/memory-reliability-v5/run-20260930-111412-3f202503/hai_large_memory/state/live",
+        "environment": null,
+        "workspace": "ad2d95b2c7438a79198836d29cc68b43491baea913773a929ee66ca303cddbfe"
+      },
+      "step": 3,
+      "strategy": {
+        "attempts": 3,
+        "evidence_ids": [
+          "E1",
+          "E2",
+          "E3"
+        ],
+        "id": "S1",
+        "last_note": "exit_zero:generic",
+        "outcomes": {
+          "exit_zero": 3
+        },
+        "repeat_stalls": 0,
+        "status": "observed",
+        "strategy": "search candidate configuration",
+        "workspace_changes": 0
+      },
+      "subgoal": {
+        "attempts": 3,
+        "evidence_ids": [
+          "E1",
+          "E2",
+          "E3"
+        ],
+        "id": "G1",
+        "outcomes": {
+          "exit_zero": 3
+        },
+        "repeat_stalls": 0,
+        "status": "active",
+        "strategies": [
+          "search candidate configuration"
+        ],
+        "subgoal": "find a viable candidate",
+        "workspace_changes": 0
+      },
+      "test_status": null,
+      "test_summary": "",
+      "validity": "unknown",
+      "view_reduced": false
+    }
+  ],
+  "scope": {
+    "cwd": "/var/tmp/lizh639-mechanism-integration-20260929/repairs/memory-reliability-v5/run-20260930-111412-3f202503/hai_large_memory/state/live",
+    "environment": null,
+    "workspace": "ad2d95b2c7438a79198836d29cc68b43491baea913773a929ee66ca303cddbfe"
+  },
+  "state": {},
+  "stats": {
+    "direction_stalls": 1,
+    "direction_updates": 3,
+    "events": 3,
+    "latest_bytes": 4625,
+    "memories_evicted": 0,
+    "memories_rejected": 0,
+    "memory_bytes": 4131,
+    "memory_updates": 0,
+    "recent_bytes": 13567,
+    "recent_evicted": 0,
+    "state_bytes": 2,
+    "state_evicted": 0,
+    "strategy_stalls": 0,
+    "strategy_updates": 3,
+    "subgoal_stalls": 0,
+    "subgoal_updates": 3
+  },
+  "step": 3,
+  "strategies": [
+    {
+      "attempts": 3,
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "id": "S1",
+      "last_note": "exit_zero:generic",
+      "outcomes": {
+        "exit_zero": 3
+      },
+      "repeat_stalls": 0,
+      "status": "observed",
+      "strategy": "search candidate configuration",
+      "workspace_changes": 0
+    }
+  ],
+  "subgoals": [
+    {
+      "attempts": 3,
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "id": "G1",
+      "outcomes": {
+        "exit_zero": 3
+      },
+      "repeat_stalls": 0,
+      "status": "active",
+      "strategies": [
+        "search candidate configuration"
+      ],
+      "subgoal": "find a viable candidate",
+      "workspace_changes": 0
+    }
+  ],
+  "task_id": "hai_large_memory"
+}

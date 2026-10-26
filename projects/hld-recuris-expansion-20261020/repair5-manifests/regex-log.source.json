@@ -1,0 +1,8 @@
+{
+  "task": "regex-log",
+  "image": "alexgshaw/regex-log:20251031",
+  "digest": "sha256:90101b2e815323a8da20528a1439bebc407eb9761c9c68a3d557730856c878e9",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/regex-log/manifests/20251031",
+  "header_verified": true,
+  "time": 1792510255.379618
+}

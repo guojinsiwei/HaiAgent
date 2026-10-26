@@ -1,0 +1,8 @@
+{
+  "task": "constraints-scheduling",
+  "image": "alexgshaw/constraints-scheduling:20251031",
+  "digest": "sha256:567ce5a189f8d11ac461790876e934cc7af38391baf89a78f95f4dafc1fec3b0",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/constraints-scheduling/manifests/20251031",
+  "header_verified": true,
+  "time": 1792550856.1177046
+}

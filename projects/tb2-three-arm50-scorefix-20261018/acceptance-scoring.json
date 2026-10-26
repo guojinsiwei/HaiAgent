@@ -1,0 +1,296 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-scorefix-20261018/preflight/preflight-accept-score-torch-pipeline-parallelism-aac06e/torch-pipeline-parallelism__VfcJSMG",
+      "reward": 0.0,
+      "exception_type": null,
+      "engineering_clean": true,
+      "result_status": "present",
+      "lifecycle_status": "succeeded",
+      "collection_failures": [],
+      "task": "torch-pipeline-parallelism",
+      "arm": "dsh",
+      "paid_calls": 0,
+      "exit_code": 0,
+      "row": {
+        "task": "torch-pipeline-parallelism",
+        "arm": "dsh",
+        "job": "accept-score-torch-pipeline-parallelism-aac06e",
+        "preflight_attempt_id": "be4b5b0802b34dab88734c235b8283db"
+      },
+      "official_test_summary": {
+        "tests": 3,
+        "passed": 1,
+        "failed": 2,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1792309131.8486876,
+        "stop": 1792309155.6537337
+      }
+    },
+    {
+      "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-scorefix-20261018/preflight/preflight-accept-score-pytorch-model-recovery-0764f3/pytorch-model-recovery__gzYCkS9",
+      "reward": 0.0,
+      "exception_type": null,
+      "engineering_clean": true,
+      "result_status": "present",
+      "lifecycle_status": "succeeded",
+      "collection_failures": [],
+      "task": "pytorch-model-recovery",
+      "arm": "kz-dsh",
+      "paid_calls": 0,
+      "exit_code": 0,
+      "row": {
+        "task": "pytorch-model-recovery",
+        "arm": "kz-dsh",
+        "job": "accept-score-pytorch-model-recovery-0764f3",
+        "preflight_attempt_id": "1fa1d1b73f29493fba345c6c8549ae83"
+      },
+      "official_test_summary": {
+        "tests": 5,
+        "passed": 1,
+        "failed": 4,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1792308730.6651301,
+        "stop": 1792308762.2305338
+      }
+    },
+    {
+      "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-scorefix-20261018/preflight/preflight-accept-score-sam-cell-seg-3b9017/sam-cell-seg__iLF4j9e",
+      "reward": 0.0,
+      "exception_type": null,
+      "engineering_clean": true,
+      "result_status": "present",
+      "lifecycle_status": "succeeded",
+      "collection_failures": [],
+      "task": "sam-cell-seg",
+      "arm": "dsh",
+      "paid_calls": 0,
+      "exit_code": 0,
+      "row": {
+        "task": "sam-cell-seg",
+        "arm": "dsh",
+        "job": "accept-score-sam-cell-seg-3b9017",
+        "preflight_attempt_id": "a2248882bb554c3da8a27ef339229c1c"
+      },
+      "official_test_summary": {
+        "tests": 9,
+        "passed": 0,
+        "failed": 9,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1792309099.2011523,
+        "stop": 1792309101.0484104
+      }
+    },
+    {
+      "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-scorefix-20261018/preflight/preflight-accept-score-mteb-leaderboard-92bf3f/mteb-leaderboard__tsBfVNA",
+      "reward": 0.0,
+      "exception_type": null,
+      "engineering_clean": true,
+      "result_status": "present",
+      "lifecycle_status": "succeeded",
+      "collection_failures": [],
+      "task": "mteb-leaderboard",
+      "arm": "native-kz",
+      "paid_calls": 0,
+      "exit_code": 0,
+      "row": {
+        "task": "mteb-leaderboard",
+        "arm": "native-kz",
+        "job": "accept-score-mteb-leaderboard-92bf3f",
+        "preflight_attempt_id": "dfd3efdabae2471da9bac2928e8b00c3"
+      },
+      "official_test_summary": {
+        "tests": 2,
+        "passed": 0,
+        "failed": 2,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1792308133.620803,
+        "stop": 1792308133.6845791
+      }
+    },
+    {
+      "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-scorefix-20261018/preflight/preflight-accept-score-largest-eigenval-7a6eca/largest-eigenval__j66c7NM",
+      "reward": 0.0,
+      "exception_type": null,
+      "engineering_clean": true,
+      "result_status": "present",
+      "lifecycle_status": "succeeded",
+      "collection_failures": [],
+      "task": "largest-eigenval",
+      "arm": "kz-dsh",
+      "paid_calls": 0,
+      "exit_code": 0,
+      "row": {
+        "task": "largest-eigenval",
+        "arm": "kz-dsh",
+        "job": "accept-score-largest-eigenval-7a6eca",
+        "preflight_attempt_id": "9e840511061941f78f6b599779fb94b8"
+      },
+      "official_test_summary": {
+        "tests": 3,
+        "passed": 2,
+        "failed": 1,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1792308117.2769027,
+        "stop": 1792308118.0935457
+      }
+    },
+    {
+      "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-scorefix-20261018/preflight/preflight-accept-score-hf-model-inference-8a73e3/hf-model-inference__jxSTFqc",
+      "reward": 0.0,
+      "exception_type": null,
+      "engineering_clean": true,
+      "result_status": "present",
+      "lifecycle_status": "succeeded",
+      "collection_failures": [],
+      "task": "hf-model-inference",
+      "arm": "dsh",
+      "paid_calls": 0,
+      "exit_code": 0,
+      "row": {
+        "task": "hf-model-inference",
+        "arm": "dsh",
+        "job": "accept-score-hf-model-inference-8a73e3",
+        "preflight_attempt_id": "ec0f3b5fc3b84e23a010951aef12b21d"
+      },
+      "official_test_summary": {
+        "tests": 4,
+        "passed": 0,
+        "failed": 4,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1792308117.5494916,
+        "stop": 1792308121.651083
+      }
+    },
+    {
+      "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-scorefix-20261018/preflight/preflight-accept-score-make-mips-interpreter-00cfb9/make-mips-interpreter__2H3cKmb",
+      "reward": 0.0,
+      "exception_type": null,
+      "engineering_clean": true,
+      "result_status": "present",
+      "lifecycle_status": "succeeded",
+      "collection_failures": [],
+      "task": "make-mips-interpreter",
+      "arm": "native-kz",
+      "paid_calls": 0,
+      "exit_code": 0,
+      "row": {
+        "task": "make-mips-interpreter",
+        "arm": "native-kz",
+        "job": "accept-score-make-mips-interpreter-00cfb9",
+        "preflight_attempt_id": "41b0311d79a04907bb147133a2ebf3d8"
+      },
+      "official_test_summary": {
+        "tests": 3,
+        "passed": 0,
+        "failed": 3,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1792308185.7946496,
+        "stop": 1792308215.9868402
+      }
+    },
+    {
+      "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-scorefix-20261018/preflight/preflight-accept-score-mteb-retrieve-d8065c/mteb-retrieve__ReMHUKm",
+      "reward": 0.0,
+      "exception_type": null,
+      "engineering_clean": true,
+      "result_status": "present",
+      "lifecycle_status": "succeeded",
+      "collection_failures": [],
+      "task": "mteb-retrieve",
+      "arm": "kz-dsh",
+      "paid_calls": 0,
+      "exit_code": 0,
+      "row": {
+        "task": "mteb-retrieve",
+        "arm": "kz-dsh",
+        "job": "accept-score-mteb-retrieve-d8065c",
+        "preflight_attempt_id": "d26776b5041445cea6765650c27942ee"
+      },
+      "official_test_summary": {
+        "tests": 2,
+        "passed": 0,
+        "failed": 2,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1792309695.797778,
+        "stop": 1792309695.8483238
+      }
+    },
+    {
+      "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-scorefix-20261018/preflight/preflight-accept-score-train-fasttext-f59e21/train-fasttext__3HVVv7n",
+      "reward": 0.0,
+      "exception_type": null,
+      "engineering_clean": true,
+      "result_status": "present",
+      "lifecycle_status": "succeeded",
+      "collection_failures": [],
+      "task": "train-fasttext",
+      "arm": "dsh",
+      "paid_calls": 0,
+      "exit_code": 0,
+      "row": {
+        "task": "train-fasttext",
+        "arm": "dsh",
+        "job": "accept-score-train-fasttext-f59e21",
+        "preflight_attempt_id": "455fb442105f4841b6b9d8bc955e9b94"
+      },
+      "official_test_summary": {
+        "tests": 2,
+        "passed": 0,
+        "failed": 2,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1792308226.5419652,
+        "stop": 1792308228.7537267
+      }
+    },
+    {
+      "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-scorefix-20261018/preflight/preflight-accept-score-torch-tensor-parallelism-28cc76/torch-tensor-parallelism__6HdbemV",
+      "reward": 0.0,
+      "exception_type": null,
+      "engineering_clean": true,
+      "result_status": "present",
+      "lifecycle_status": "succeeded",
+      "collection_failures": [],
+      "task": "torch-tensor-parallelism",
+      "arm": "native-kz",
+      "paid_calls": 0,
+      "exit_code": 0,
+      "row": {
+        "task": "torch-tensor-parallelism",
+        "arm": "native-kz",
+        "job": "accept-score-torch-tensor-parallelism-28cc76",
+        "preflight_attempt_id": "27691183926946b8ab79a308015fe38a"
+      },
+      "official_test_summary": {
+        "tests": 3,
+        "passed": 0,
+        "failed": 3,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1792309234.2285345,
+        "stop": 1792309298.7435122
+      }
+    }
+  ],
+  "paid_calls": 0
+}

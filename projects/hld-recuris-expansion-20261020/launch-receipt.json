@@ -1,0 +1,13 @@
+{
+  "time": 1792489452.1918902,
+  "results": [
+    {
+      "campaign": "appworld-hld-recuris70-20261020",
+      "result": "{\"started\": true, \"pid\": 2785572, \"runs\": 140, \"workers\": 2, \"cap_cny\": 1120}"
+    },
+    {
+      "campaign": "tb2-hld-recuris50-20261020",
+      "result": "READY\n{\"pid\": 2787048, \"detached\": true, \"paired_tasks\": 50, \"total_trials\": 100, \"retry_batches\": 0, \"total_concurrency\": 4}"
+    }
+  ]
+}

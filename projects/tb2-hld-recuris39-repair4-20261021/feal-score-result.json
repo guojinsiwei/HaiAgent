@@ -1,0 +1,38 @@
+{
+  "source_trial": "/mnt/sdb/home/lizh639/tb2-hld-recuris39-20261021/jobs/tb2hr39-13-recuris-feal-linear-cryptanalysis/feal-linear-cryptanalysis__ppMs6FF",
+  "snapshot": {
+    "image_id": "sha256:88eb189698893a58f55cbefe7495371748db15dca47ad223965ccb837b57dc93",
+    "tag": "kz-score-recovery:e68f74af479d458880d5375bd098b18e",
+    "container_id": "da1704aa6bd85bc87fddcd0d6c1f21841e3c2407688f583e83c17720311bdbeb",
+    "attempt_id": "e68f74af479d458880d5375bd098b18e",
+    "before_verifier": true
+  },
+  "original_result_sha256": "26a358d6a4ecd3585beae2431360cde2f5365b02b235dbf0c4b0e80e18553c68",
+  "official_test_hashes": {
+    "test_outputs.py": "f59ebc7218a648582483cee02556c3bc1235e186301376bc3be066ed106ed9f9",
+    "test.sh": "9431cbc2bad2b690001e096218ecd3f7f2f241b415062a2ea1ec7083d2e7c9e1"
+  },
+  "solver_rerun": false,
+  "paid_calls": 0,
+  "original_calls_before": 147,
+  "cpu_limit": 1,
+  "memory_gib": 2,
+  "timeout_seconds": 1800.0,
+  "engineering_clean": true,
+  "reward": 0,
+  "tests": {
+    "tests": 1,
+    "passed": 0,
+    "failed": 1,
+    "skipped": 0,
+    "pending": 0,
+    "other": 0,
+    "start": 1792595380.9595304,
+    "stop": 1792595381.0168707
+  },
+  "exit_code": 0,
+  "elapsed_seconds": 46.510523557662964,
+  "original_calls_after": 147,
+  "original_result_unchanged": true,
+  "official_tests_unchanged": true
+}

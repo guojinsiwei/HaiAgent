@@ -1,0 +1,23 @@
+{
+  "state": "running_retry",
+  "updated_utc": "2026-10-18T06:07:05.092373+00:00",
+  "supervisor_identity": {
+    "pid": 583179,
+    "start": "819531713",
+    "boot": "2861b57d-7d78-4a80-a96b-0854417097ca"
+  },
+  "parent": "/mnt/sdb/home/lizh639/tb2-three-arm50-20261017",
+  "eligible_trials": 23,
+  "skipped": [
+    {
+      "job": "tb50-23-kz-dsh-dna-assembly",
+      "reason": "original_task_budget_insufficient",
+      "charged_microcny": 3895065,
+      "remaining_microcny": 104935
+    },
+    {
+      "job": "tb50-28-dsh-hf-model-inference",
+      "reason": "previous_retry_already_clean_or_not_selected"
+    }
+  ]
+}

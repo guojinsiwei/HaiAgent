@@ -1,0 +1,150 @@
+{
+  "time": 1792669729.619103,
+  "rows": [
+    {
+      "task": "hld--61810_syscall",
+      "state": "solving",
+      "requests": 6,
+      "tools": 10,
+      "http_200": 6,
+      "errors": []
+    },
+    {
+      "task": "hld--61810_thread",
+      "state": "solving",
+      "requests": 7,
+      "tools": 10,
+      "http_200": 7,
+      "errors": []
+    },
+    {
+      "task": "hld--61810_traps",
+      "state": "solving",
+      "requests": 6,
+      "tools": 7,
+      "http_200": 6,
+      "errors": []
+    },
+    {
+      "task": "hld--61810_util",
+      "state": "solving",
+      "requests": 6,
+      "tools": 7,
+      "http_200": 6,
+      "errors": []
+    },
+    {
+      "task": "hld--cmu15_445_p0",
+      "state": "solving",
+      "requests": 46,
+      "tools": 54,
+      "http_200": 46,
+      "errors": []
+    },
+    {
+      "task": "hld--cs61_fa24_ants",
+      "state": "solving",
+      "requests": 75,
+      "tools": 73,
+      "http_200": 75,
+      "errors": []
+    },
+    {
+      "task": "hld--cs61_fa24_cats",
+      "state": "solving",
+      "requests": 86,
+      "tools": 83,
+      "http_200": 86,
+      "errors": []
+    },
+    {
+      "task": "hld--cs61_fa24_hog",
+      "state": "solving",
+      "requests": 75,
+      "tools": 71,
+      "http_200": 75,
+      "errors": []
+    },
+    {
+      "task": "hld--cs61_fa24_hw08",
+      "state": "solving",
+      "requests": 76,
+      "tools": 73,
+      "http_200": 77,
+      "errors": []
+    },
+    {
+      "task": "hld--cs61_fa24_scheme",
+      "state": "solving",
+      "requests": 78,
+      "tools": 68,
+      "http_200": 77,
+      "errors": []
+    }
+  ],
+  "containers": "31d829264ce2 hld-lcli-b0354ee9d2b4 Up 34 seconds\nda47b71785a1 hld-lcli-5a8559cdb1bd Up 34 seconds\n4f2bb56761ac hld-lcli-050c0b133932 Up 34 seconds\n87c1ca59d5f1 hld-lcli-da537e8e4bc9 Up 34 seconds\ne0392c864708 hld-lcli-00804d4fec93 Up 8 minutes\nc2006713666b hld-lcli-33f1daff8685 Up 8 minutes\nfb0abfd05d24 hld-lcli-6baf72d54485 Up 8 minutes\nff9e25899c12 hld-lcli-0dc50c1b90f8 Up 8 minutes\neead7c193d28 hld-lcli-4b4caac350cc Up 8 minutes\n05dbeac71674 hld-lcli-6744efcc8fa1 Up 8 minutes\n",
+  "disk_free_gib": {
+    "/var/lib/docker": 188.06,
+    "/mnt/sdb/home/lizh639": 113.35
+  },
+  "extension_log": "",
+  "extension_health": {
+    "state": "running",
+    "pid": 2736910,
+    "updated": 1792669724.6232018,
+    "extra_slots": 4,
+    "remaining": [
+      "61810_util",
+      "61810_traps",
+      "61810_thread",
+      "61810_syscall",
+      "61810_pgtbl",
+      "61810_net",
+      "61810_mmap",
+      "61810_lock",
+      "61810_fs",
+      "61810_cow",
+      "ap1400_2_hw35",
+      "ap1400_2_hw26",
+      "cmu15_445_p2",
+      "cmu15_445_p1"
+    ],
+    "combined": {
+      "concurrency_limit": 10,
+      "active": [
+        "cs61_fa24_scheme",
+        "cs61_fa24_ants",
+        "cs61_fa24_cats",
+        "cs61_fa24_hog",
+        "cs61_fa24_hw08",
+        "cmu15_445_p0",
+        "61810_syscall",
+        "61810_thread",
+        "61810_traps",
+        "61810_util"
+      ],
+      "completed": [],
+      "pending": [
+        "cmu15_445_p1",
+        "cmu15_445_p2",
+        "ap1400_2_hw26",
+        "ap1400_2_hw35",
+        "61810_cow",
+        "61810_fs",
+        "61810_lock",
+        "61810_mmap",
+        "61810_net",
+        "61810_pgtbl"
+      ]
+    },
+    "budget": {
+      "limit_microcny": 480000000,
+      "settled_microcny": 17602839,
+      "reserved_microcny": 1837056,
+      "uncertain_microcny": 0,
+      "remaining_microcny": 460560105,
+      "halt_reason": null,
+      "estimate_peak_cny": 480.0
+    }
+  }
+}

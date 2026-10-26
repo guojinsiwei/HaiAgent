@@ -1,0 +1,8 @@
+{
+  "task": "query-optimize",
+  "image": "alexgshaw/query-optimize:20251031",
+  "digest": "sha256:28de7da87004eab5b29bd5eaf1823579bc5b73ccea4b80349a5623185770da14",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/query-optimize/manifests/20251031",
+  "header_verified": true,
+  "time": 1792509978.3955197
+}

@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "worker": "0",
+  "checks": [
+    {
+      "family": "make-pytest",
+      "device": {
+        "null_character_device": true,
+        "mode": "0666"
+      },
+      "clean_shell": true,
+      "pipeline_observation": true,
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "model_calls": 0
+    },
+    {
+      "family": "c-env",
+      "device": {
+        "null_character_device": true,
+        "mode": "0666"
+      },
+      "clean_shell": true,
+      "pipeline_observation": true,
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "model_calls": 0
+    }
+  ],
+  "behavioral_tests": 122,
+  "model_calls": 0,
+  "updated": 1791019531.1647863
+}

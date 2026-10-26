@@ -1,0 +1,9 @@
+{
+  "pid": 262186,
+  "finite_trials": 3,
+  "original_budget_cny": 624,
+  "per_original_job_limit_cny": 8,
+  "global_paid_concurrency_limit": 8,
+  "scoring_only_recovery": "feal-linear-cryptanalysis",
+  "gpt_calls": 0
+}

@@ -1,0 +1,2892 @@
+{
+  "completed": "2026-10-21T22:17:07.503579",
+  "results": [
+    {
+      "id": "sha256:aebd640478149965bfaddc8f58ba225436eceb822b39d500b3e077748b9648fd",
+      "tags": [
+        "swerebenchv2/pivotal-kpack:1232-44ebcf9"
+      ],
+      "digests": [
+        "swerebenchv2/pivotal-kpack@sha256:aebd640478149965bfaddc8f58ba225436eceb822b39d500b3e077748b9648fd"
+      ],
+      "created": "2026-07-27T13:26:08.798607185+08:00",
+      "size": 1181960172,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:c42546c4def5782c2cbe8ecfe2f7cb0e843003c37d19159b19c428712dfc2e45",
+      "tags": [
+        "swerebenchv2/doitintl-kube-no-trouble:268-a491065"
+      ],
+      "digests": [
+        "swerebenchv2/doitintl-kube-no-trouble@sha256:c42546c4def5782c2cbe8ecfe2f7cb0e843003c37d19159b19c428712dfc2e45"
+      ],
+      "created": "2026-07-30T13:57:42.689901147+08:00",
+      "size": 1153131398,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:0c9cc978998c77cebe79714c6d52cf244b79c371f63ad1ce777fb9a6a809d82e",
+      "tags": [
+        "swerebenchv2/qiskit-qiskit-terra:8381-f2c2fe2"
+      ],
+      "digests": [
+        "swerebenchv2/qiskit-qiskit-terra@sha256:0c9cc978998c77cebe79714c6d52cf244b79c371f63ad1ce777fb9a6a809d82e"
+      ],
+      "created": "2026-07-30T19:32:22.867887271+08:00",
+      "size": 1141164809,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:603b83f512c1ce38d5ebe1ea5d087fdf40ab191935a39c3b67dafa1343d6d860",
+      "tags": [
+        "swerebenchv2/docker-compose-cli:1645-76f10e1"
+      ],
+      "digests": [
+        "swerebenchv2/docker-compose-cli@sha256:603b83f512c1ce38d5ebe1ea5d087fdf40ab191935a39c3b67dafa1343d6d860"
+      ],
+      "created": "2026-07-31T14:59:11.37528543+08:00",
+      "size": 1138494124,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:5539b245b743c19518c0517440a948366b94f8eda90fd031c6504bd6ca2e247e",
+      "tags": [
+        "swerebenchv2/chef-automate:3633-55eae95"
+      ],
+      "digests": [
+        "swerebenchv2/chef-automate@sha256:5539b245b743c19518c0517440a948366b94f8eda90fd031c6504bd6ca2e247e"
+      ],
+      "created": "2026-07-25T22:12:36.249246201+08:00",
+      "size": 1096904815,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:ad4f17fc8a8c23245e72637462eaede7632317f4f47cb6b232c0434bcae78530",
+      "tags": [
+        "swerebenchv2/deislabs-ratify:493-f863b4d"
+      ],
+      "digests": [
+        "swerebenchv2/deislabs-ratify@sha256:ad4f17fc8a8c23245e72637462eaede7632317f4f47cb6b232c0434bcae78530"
+      ],
+      "created": "2026-07-31T13:44:11.8064175+08:00",
+      "size": 1082178990,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:20cd3549f56b155fc9b257534ba02c8b2eabadb13737b325d29e11dc96a28ece",
+      "tags": [
+        "swerebenchv2/deislabs-ratify:452-1b940dc"
+      ],
+      "digests": [
+        "swerebenchv2/deislabs-ratify@sha256:20cd3549f56b155fc9b257534ba02c8b2eabadb13737b325d29e11dc96a28ece"
+      ],
+      "created": "2026-07-24T16:30:23.826162182+08:00",
+      "size": 1081907214,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:d2a3395e0de8bfb327386e2aee04bcda5f92dd3a4846ada99f83184a754861c7",
+      "tags": [
+        "swerebenchv2/moov-io-customers:204-dab1b83"
+      ],
+      "digests": [
+        "swerebenchv2/moov-io-customers@sha256:d2a3395e0de8bfb327386e2aee04bcda5f92dd3a4846ada99f83184a754861c7"
+      ],
+      "created": "2026-07-25T22:37:39.22857463+08:00",
+      "size": 1074160525,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:246575013014a09fc4fe3608c660d25500b1dd2e63d08dc4d5eb59e8829b91b2",
+      "tags": [
+        "swerebenchv2/qiskit-qiskit-terra:6658-21b875d"
+      ],
+      "digests": [
+        "swerebenchv2/qiskit-qiskit-terra@sha256:246575013014a09fc4fe3608c660d25500b1dd2e63d08dc4d5eb59e8829b91b2"
+      ],
+      "created": "2026-07-30T15:20:25.319842874+08:00",
+      "size": 1064309708,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:34f05c88ea896e42edcf13153cba92bfc06c6fcd74da81fe71d616dc9193e029",
+      "tags": [
+        "swerebenchv2/agnostiqhq-covalent:1356-f37a2c0"
+      ],
+      "digests": [
+        "swerebenchv2/agnostiqhq-covalent@sha256:34f05c88ea896e42edcf13153cba92bfc06c6fcd74da81fe71d616dc9193e029"
+      ],
+      "created": "2026-07-31T14:49:32.268053858+08:00",
+      "size": 1025357660,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:5fe763474f75a5666e3d38758346c96f3f860ab0e4e0f243db5ec0e07f8f352f",
+      "tags": [
+        "swerebenchv2/google-go-safeweb:114-0e40cd4"
+      ],
+      "digests": [
+        "swerebenchv2/google-go-safeweb@sha256:5fe763474f75a5666e3d38758346c96f3f860ab0e4e0f243db5ec0e07f8f352f"
+      ],
+      "created": "2026-04-21T11:49:00.597281269Z",
+      "size": 1016348657,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:f48ebb809c43a2aaf73b74734576fbe22f8ede43768e857d71e51f43d248007d",
+      "tags": [
+        "swerebenchv2/cli-cli:10417-1710f7d"
+      ],
+      "digests": [
+        "swerebenchv2/cli-cli@sha256:f48ebb809c43a2aaf73b74734576fbe22f8ede43768e857d71e51f43d248007d"
+      ],
+      "created": "2026-07-24T22:48:47.504645398+08:00",
+      "size": 1010431706,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:a8f4dd0daea373ea55019440c8df8ea4c0d715e30e442208827e042cd1a957e7",
+      "tags": [
+        "swerebenchv2/misawa-xq:26-01d8350"
+      ],
+      "digests": [
+        "swerebenchv2/misawa-xq@sha256:a8f4dd0daea373ea55019440c8df8ea4c0d715e30e442208827e042cd1a957e7"
+      ],
+      "created": "2026-07-31T17:14:17.827549919+08:00",
+      "size": 996876439,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:3a1ad6f95fa133df5c6c6e18b627bc784e62f89c97bb05deba25f9b352303881",
+      "tags": [
+        "swerebenchv2/azure-azure-sdk-for-go:23871-07989a8"
+      ],
+      "digests": [
+        "swerebenchv2/azure-azure-sdk-for-go@sha256:3a1ad6f95fa133df5c6c6e18b627bc784e62f89c97bb05deba25f9b352303881"
+      ],
+      "created": "2026-07-29T18:53:17.20632239+08:00",
+      "size": 961165863,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:977f735a2b7311d885036e98126f081be5e785157cf1d8cfdca65f51ddb75a4e",
+      "tags": [
+        "swerebenchv2/kubernetes-kops:9967-a311a31"
+      ],
+      "digests": [
+        "swerebenchv2/kubernetes-kops@sha256:977f735a2b7311d885036e98126f081be5e785157cf1d8cfdca65f51ddb75a4e"
+      ],
+      "created": "2026-07-24T14:50:42.243049614+08:00",
+      "size": 943441497,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:a50828ae22519f29dadb8bcd9df93c8d8057bbd26454e5b8961570bc3d145b9b",
+      "tags": [
+        "swerebenchv2/gfx-rs-wgpu:6318-859dd88"
+      ],
+      "digests": [
+        "swerebenchv2/gfx-rs-wgpu@sha256:a50828ae22519f29dadb8bcd9df93c8d8057bbd26454e5b8961570bc3d145b9b"
+      ],
+      "created": "2026-07-27T20:03:33.117173367+08:00",
+      "size": 942539600,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:7e1756643388f68f0cf7c7c0f1848cddf651ca0384b62b22fb00db8c1abeda4a",
+      "tags": [
+        "swerebenchv2/projectfluent-fluent-rs:143-0ceff86"
+      ],
+      "digests": [
+        "swerebenchv2/projectfluent-fluent-rs@sha256:7e1756643388f68f0cf7c7c0f1848cddf651ca0384b62b22fb00db8c1abeda4a"
+      ],
+      "created": "2026-07-23T15:40:53.4519713+08:00",
+      "size": 940000163,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:db6b61449b1ba3c4ae245b5a397881b96adb540eebb8c08900ed64d956658a2b",
+      "tags": [
+        "swerebenchv2/rust-lang-rust-analyzer:14851-e8ae2d3"
+      ],
+      "digests": [
+        "swerebenchv2/rust-lang-rust-analyzer@sha256:db6b61449b1ba3c4ae245b5a397881b96adb540eebb8c08900ed64d956658a2b"
+      ],
+      "created": "2026-07-27T20:14:31.433142268+08:00",
+      "size": 937566486,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:9c325efe070f6134c66b4bc18c1b192e9f1b9a0fc731bf66c09ca89120732c9a",
+      "tags": [
+        "swerebenchv2/rust-lang-rust-bindgen:2586-97e29b4"
+      ],
+      "digests": [
+        "swerebenchv2/rust-lang-rust-bindgen@sha256:9c325efe070f6134c66b4bc18c1b192e9f1b9a0fc731bf66c09ca89120732c9a"
+      ],
+      "created": "2026-07-24T22:41:12.746410553+08:00",
+      "size": 923381185,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:1cc0165fada41b4f63e4e56a07092754a0a49b63518d2d834c4454916dc4ad19",
+      "tags": [
+        "swerebenchv2/rust-lang-rust-bindgen:2567-ee980e1"
+      ],
+      "digests": [
+        "swerebenchv2/rust-lang-rust-bindgen@sha256:1cc0165fada41b4f63e4e56a07092754a0a49b63518d2d834c4454916dc4ad19"
+      ],
+      "created": "2026-07-30T15:29:05.766145546+08:00",
+      "size": 923342059,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:f4c51186c7e20beb4712dacfb60b0284fc67d406c3786926ac8c33bca1c28cab",
+      "tags": [
+        "swerebenchv2/rust-lang-rust-bindgen:2448-b3239c5"
+      ],
+      "digests": [
+        "swerebenchv2/rust-lang-rust-bindgen@sha256:f4c51186c7e20beb4712dacfb60b0284fc67d406c3786926ac8c33bca1c28cab"
+      ],
+      "created": "2026-07-30T22:33:53.975164773+08:00",
+      "size": 923324804,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:dacc7be6ec0dcf6cba0272b88c80bd7c27bee5e1786a423bdf3632823a3e401f",
+      "tags": [
+        "swerebenchv2/rust-lang-rust-bindgen:2951-3300618"
+      ],
+      "digests": [
+        "swerebenchv2/rust-lang-rust-bindgen@sha256:dacc7be6ec0dcf6cba0272b88c80bd7c27bee5e1786a423bdf3632823a3e401f"
+      ],
+      "created": "2026-07-29T19:13:02.819193709+08:00",
+      "size": 915237390,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:b226e1d3274fe0e5dcd6789c6d19f5a50106967ced61800927027ad5d2872ed2",
+      "tags": [
+        "swerebenchv2/pybamm-team-pybamm:797-f772517"
+      ],
+      "digests": [
+        "swerebenchv2/pybamm-team-pybamm@sha256:b226e1d3274fe0e5dcd6789c6d19f5a50106967ced61800927027ad5d2872ed2"
+      ],
+      "created": "2026-07-30T00:26:08.147847413+08:00",
+      "size": 914556933,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:78571cc79f44856dbfef4f2298984c9b39c7f156c9d488440f9f25699f6a8b5f",
+      "tags": [
+        "swerebenchv2/dtolnay-syn:834-0b9d0df"
+      ],
+      "digests": [
+        "swerebenchv2/dtolnay-syn@sha256:78571cc79f44856dbfef4f2298984c9b39c7f156c9d488440f9f25699f6a8b5f"
+      ],
+      "created": "2026-07-29T17:41:02.92929404+08:00",
+      "size": 909431056,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:993ef43e6ac98304e5ec7a70b94632cd3230e10c9382f8772750ba3c16bfceee",
+      "tags": [
+        "swerebenchv2/nix-community-nixpkgs-fmt:108-865cd3c"
+      ],
+      "digests": [
+        "swerebenchv2/nix-community-nixpkgs-fmt@sha256:993ef43e6ac98304e5ec7a70b94632cd3230e10c9382f8772750ba3c16bfceee"
+      ],
+      "created": "2026-07-31T18:12:02.422603428+08:00",
+      "size": 905086084,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:dc06c2ec81c3f99da7ea56daa24f1d5458d5d98dd709c48480edf412b557507c",
+      "tags": [
+        "swerebenchv2/pybamm-team-pybamm:713-7d31c68"
+      ],
+      "digests": [
+        "swerebenchv2/pybamm-team-pybamm@sha256:dc06c2ec81c3f99da7ea56daa24f1d5458d5d98dd709c48480edf412b557507c"
+      ],
+      "created": "2026-07-27T19:12:12.922281676+08:00",
+      "size": 900383875,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:55e4ac68b17cb61287a9bb739dafc46434cec1b99e80441046800e327ec97e1c",
+      "tags": [
+        "swerebenchv2/googleapis-google-api-python-client:2368-77666bf"
+      ],
+      "digests": [
+        "swerebenchv2/googleapis-google-api-python-client@sha256:55e4ac68b17cb61287a9bb739dafc46434cec1b99e80441046800e327ec97e1c"
+      ],
+      "created": "2026-07-24T18:50:47.537672643+08:00",
+      "size": 899427362,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:9788701712a81ca909715b1683f5fcf52ef1bc69b7bf40fe23cbaa226460d654",
+      "tags": [
+        "swerebenchv2/raphlinus-pulldown-cmark:767-ee3b423"
+      ],
+      "digests": [
+        "swerebenchv2/raphlinus-pulldown-cmark@sha256:9788701712a81ca909715b1683f5fcf52ef1bc69b7bf40fe23cbaa226460d654"
+      ],
+      "created": "2026-07-31T17:04:03.682432676+08:00",
+      "size": 897687915,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:d91e2e2eacaf680fbc5bcc598e3d366055e8f0b58236229aeb8127e8c01e542c",
+      "tags": [
+        "swerebenchv2/mehcode-config-rs:202-fd5c87a"
+      ],
+      "digests": [
+        "swerebenchv2/mehcode-config-rs@sha256:d91e2e2eacaf680fbc5bcc598e3d366055e8f0b58236229aeb8127e8c01e542c"
+      ],
+      "created": "2026-07-27T20:00:19.954585367+08:00",
+      "size": 896720090,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:b8b54dac69c8d6976b90478cd313c3b970b7ab3f4e170e2bba0352b4c4849be0",
+      "tags": [
+        "swerebenchv2/koaning-scikit-lego:736-7f2cc5c"
+      ],
+      "digests": [
+        "swerebenchv2/koaning-scikit-lego@sha256:b8b54dac69c8d6976b90478cd313c3b970b7ab3f4e170e2bba0352b4c4849be0"
+      ],
+      "created": "2026-07-27T17:11:31.161350729+08:00",
+      "size": 889797934,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:06c997521f850356f74c4702aff7362d089d805d404032ae118be423cea6858c",
+      "tags": [
+        "swerebenchv2/sunng87-handlebars-rust:282-f30998d"
+      ],
+      "digests": [
+        "swerebenchv2/sunng87-handlebars-rust@sha256:06c997521f850356f74c4702aff7362d089d805d404032ae118be423cea6858c"
+      ],
+      "created": "2026-07-31T18:42:50.585430473+08:00",
+      "size": 885937883,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:d0092bff8be2a2f88db88f34fe9635fb783e751a430271450e6f14bc0e8973ad",
+      "tags": [
+        "swerebenchv2/sunng87-handlebars-rust:373-131515d"
+      ],
+      "digests": [
+        "swerebenchv2/sunng87-handlebars-rust@sha256:d0092bff8be2a2f88db88f34fe9635fb783e751a430271450e6f14bc0e8973ad"
+      ],
+      "created": "2026-07-24T22:15:41.174139213+08:00",
+      "size": 885899326,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:336c16792501fdb2bf7e6a780756a0bcae0c91323d482c88c6f16d1b03bc899e",
+      "tags": [
+        "swerebenchv2/apache-datafusion-sqlparser-rs:1790-3ed4ad9"
+      ],
+      "digests": [
+        "swerebenchv2/apache-datafusion-sqlparser-rs@sha256:336c16792501fdb2bf7e6a780756a0bcae0c91323d482c88c6f16d1b03bc899e"
+      ],
+      "created": "2026-07-24T22:11:13.752252455+08:00",
+      "size": 884022889,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:6adccbb40057156082bb73abf0eecc81012726ba64bc29f9b243a619cdba1ce1",
+      "tags": [
+        "swerebenchv2/rust-lang-regex:1111-e7bd19d"
+      ],
+      "digests": [
+        "swerebenchv2/rust-lang-regex@sha256:6adccbb40057156082bb73abf0eecc81012726ba64bc29f9b243a619cdba1ce1"
+      ],
+      "created": "2026-07-27T18:13:23.419938376+08:00",
+      "size": 882991957,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:09512dec10a07419bb3f00a24c3acf687d868cbe1adce07a742b77948ea8db69",
+      "tags": [
+        "swerebenchv2/gimli-rs-object:645-609f677"
+      ],
+      "digests": [
+        "swerebenchv2/gimli-rs-object@sha256:09512dec10a07419bb3f00a24c3acf687d868cbe1adce07a742b77948ea8db69"
+      ],
+      "created": "2026-07-25T21:09:20.558179986+08:00",
+      "size": 881361616,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:d50c2510b7fc89bf5d4e6c32640afb97b918bcad4261418e9c02f55444ba82c8",
+      "tags": [
+        "swerebenchv2/cobalt-org-liquid-rust:404-ed9385a"
+      ],
+      "digests": [
+        "swerebenchv2/cobalt-org-liquid-rust@sha256:d50c2510b7fc89bf5d4e6c32640afb97b918bcad4261418e9c02f55444ba82c8"
+      ],
+      "created": "2026-07-27T17:45:39.390697531+08:00",
+      "size": 875077306,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:c086d24ee44be37b924f6b0d7d8ed053e254780bef64a088c6ada0df906cef1f",
+      "tags": [
+        "swerebenchv2/kyma-project-cli:1604-e80945d"
+      ],
+      "digests": [
+        "swerebenchv2/kyma-project-cli@sha256:c086d24ee44be37b924f6b0d7d8ed053e254780bef64a088c6ada0df906cef1f"
+      ],
+      "created": "2026-07-24T23:33:46.751295044+08:00",
+      "size": 875066960,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:39786003dd238e21d58106f2e66a1ab919455e016bd2eb5af84f38b6e672691c",
+      "tags": [
+        "swerebenchv2/shepmaster-snafu:222-54f4764"
+      ],
+      "digests": [
+        "swerebenchv2/shepmaster-snafu@sha256:39786003dd238e21d58106f2e66a1ab919455e016bd2eb5af84f38b6e672691c"
+      ],
+      "created": "2026-07-31T18:13:51.236856794+08:00",
+      "size": 873281775,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:d00401a230b61ba498e72f46c1e89f93af9ae1db5cdee3a802f3020c732e6a08",
+      "tags": [
+        "swerebenchv2/maciejhirsz-json-rust:26-604effa"
+      ],
+      "digests": [
+        "swerebenchv2/maciejhirsz-json-rust@sha256:d00401a230b61ba498e72f46c1e89f93af9ae1db5cdee3a802f3020c732e6a08"
+      ],
+      "created": "2026-07-31T17:05:48.548646797+08:00",
+      "size": 872485672,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:a4a6f9c81e8212e820103f74e7eab85597b5a436418328773bf44037a2bfb1d2",
+      "tags": [
+        "swerebenchv2/projectdiscovery-httpx:1951-0c9bba7"
+      ],
+      "digests": [
+        "swerebenchv2/projectdiscovery-httpx@sha256:a4a6f9c81e8212e820103f74e7eab85597b5a436418328773bf44037a2bfb1d2"
+      ],
+      "created": "2026-07-31T13:23:25.81774465+08:00",
+      "size": 853694904,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:506e0df54cdca9dd22f873126699e60515e58617c75502f15888390056bf959f",
+      "tags": [
+        "swerebenchv2/owasp-threat-dragon:569-5811fd4"
+      ],
+      "digests": [
+        "swerebenchv2/owasp-threat-dragon@sha256:506e0df54cdca9dd22f873126699e60515e58617c75502f15888390056bf959f"
+      ],
+      "created": "2026-07-31T16:40:08.38380376+08:00",
+      "size": 850424614,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:a8ca43f069a64505083a1874b9140b1ff7aa50d1655510570e7db091ac2e3b74",
+      "tags": [
+        "swerebenchv2/ouranosinc-xclim:339-0790e8c"
+      ],
+      "digests": [
+        "swerebenchv2/ouranosinc-xclim@sha256:a8ca43f069a64505083a1874b9140b1ff7aa50d1655510570e7db091ac2e3b74"
+      ],
+      "created": "2026-07-24T17:59:00.745422176+08:00",
+      "size": 844856429,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:faa16c73d9ef5de69df1b03dedd5b3e8500ff5fddb981a1e312c19ed3879ec07",
+      "tags": [
+        "swerebenchv2/numaproj-numaflow:802-e252879"
+      ],
+      "digests": [
+        "swerebenchv2/numaproj-numaflow@sha256:faa16c73d9ef5de69df1b03dedd5b3e8500ff5fddb981a1e312c19ed3879ec07"
+      ],
+      "created": "2026-07-30T19:20:45.069416702+08:00",
+      "size": 833214733,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:9a7a5dd6b00fc565d035e38cc9c3d0ff3dfd4144b77a5c9728b6ebd7f30dfaba",
+      "tags": [
+        "swerebenchv2/jax-ml-jax:25239-40122f7"
+      ],
+      "digests": [
+        "swerebenchv2/jax-ml-jax@sha256:9a7a5dd6b00fc565d035e38cc9c3d0ff3dfd4144b77a5c9728b6ebd7f30dfaba"
+      ],
+      "created": "2026-07-27T19:00:25.280149314+08:00",
+      "size": 821806536,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:e317a677c8457a7abf66b4d67f58245b40ac49856d7aa393ec2cfc593be14ddd",
+      "tags": [
+        "swerebenchv2/tbd54566975-ssi-service:589-e45835d"
+      ],
+      "digests": [
+        "swerebenchv2/tbd54566975-ssi-service@sha256:e317a677c8457a7abf66b4d67f58245b40ac49856d7aa393ec2cfc593be14ddd"
+      ],
+      "created": "2026-07-30T20:29:30.993189541+08:00",
+      "size": 812298280,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:254cec915473f010b84ac1fc869c66197decfffa97dc7b7bb93a4f2f2bd785f5",
+      "tags": [
+        "swerebenchv2/cta-observatory-ctapipe:2343-bb887b5"
+      ],
+      "digests": [
+        "swerebenchv2/cta-observatory-ctapipe@sha256:254cec915473f010b84ac1fc869c66197decfffa97dc7b7bb93a4f2f2bd785f5"
+      ],
+      "created": "2026-07-27T17:18:30.462122475+08:00",
+      "size": 808187209,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:398afea2138ebac2151e05bb8260000214ebfe2ac47ad9ee738089658bb50a49",
+      "tags": [
+        "swerebenchv2/cta-observatory-ctapipe:2403-a987cc8"
+      ],
+      "digests": [
+        "swerebenchv2/cta-observatory-ctapipe@sha256:398afea2138ebac2151e05bb8260000214ebfe2ac47ad9ee738089658bb50a49"
+      ],
+      "created": "2026-07-29T19:47:34.324663438+08:00",
+      "size": 806602653,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:920cc8e33b0048be1b998f248d04499cd8aab0be26333f6aad84a72b9a060972",
+      "tags": [
+        "swerebenchv2/getporter-porter:2154-f6a9e64"
+      ],
+      "digests": [
+        "swerebenchv2/getporter-porter@sha256:920cc8e33b0048be1b998f248d04499cd8aab0be26333f6aad84a72b9a060972"
+      ],
+      "created": "2026-07-24T22:44:46.429157063+08:00",
+      "size": 802764602,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:1e226e960b8f985a80ea8af3811a138124bf686cf908c710c7351e7dacb8a355",
+      "tags": [
+        "swerebenchv2/sigstore-sigstore-go:465-c830b3e"
+      ],
+      "digests": [
+        "swerebenchv2/sigstore-sigstore-go@sha256:1e226e960b8f985a80ea8af3811a138124bf686cf908c710c7351e7dacb8a355"
+      ],
+      "created": "2026-07-24T17:55:42.682398298+08:00",
+      "size": 797572993,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:178232187fac73c8e39cbc8a708b55c685b545886853323819ce773f1d80950a",
+      "tags": [
+        "swerebenchv2/pennylaneai-pennylane:3369-ecd5f6f"
+      ],
+      "digests": [
+        "swerebenchv2/pennylaneai-pennylane@sha256:178232187fac73c8e39cbc8a708b55c685b545886853323819ce773f1d80950a"
+      ],
+      "created": "2026-07-25T20:47:26.170120321+08:00",
+      "size": 792899889,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:71c77db29e9ef1b2f1964aeaa2e1950050e890739b36a2fe3b154e6424ab9633",
+      "tags": [
+        "swerebenchv2/pennylaneai-pennylane:6423-f08122d"
+      ],
+      "digests": [
+        "swerebenchv2/pennylaneai-pennylane@sha256:71c77db29e9ef1b2f1964aeaa2e1950050e890739b36a2fe3b154e6424ab9633"
+      ],
+      "created": "2026-07-29T19:44:23.781314869+08:00",
+      "size": 789064665,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:e15b378d8dae46a2ca2238675a250ac88a5a0d819930460ee7980e7c2b4d6d24",
+      "tags": [
+        "swerebenchv2/pennylaneai-pennylane:5455-8327ffa"
+      ],
+      "digests": [
+        "swerebenchv2/pennylaneai-pennylane@sha256:e15b378d8dae46a2ca2238675a250ac88a5a0d819930460ee7980e7c2b4d6d24"
+      ],
+      "created": "2026-07-27T19:21:55.015824224+08:00",
+      "size": 786183661,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:5122731cb951477d43f6fec566d5a78ee3c4f1866cbe3cf588da699f1e64eac1",
+      "tags": [
+        "swerebenchv2/maciejhirsz-json-rust:91-0b6091d"
+      ],
+      "digests": [
+        "swerebenchv2/maciejhirsz-json-rust@sha256:5122731cb951477d43f6fec566d5a78ee3c4f1866cbe3cf588da699f1e64eac1"
+      ],
+      "created": "2026-07-31T14:53:35.934960024+08:00",
+      "size": 785892002,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:515f3887a2583b18331c242e4d33540f5c0bd529eb38a8150b8d44376fa9cec6",
+      "tags": [
+        "swerebenchv2/tikv-pd:5480-d269010"
+      ],
+      "digests": [
+        "swerebenchv2/tikv-pd@sha256:515f3887a2583b18331c242e4d33540f5c0bd529eb38a8150b8d44376fa9cec6"
+      ],
+      "created": "2026-07-24T22:54:32.669394784+08:00",
+      "size": 773188891,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:5e288f54188499607fa7f3850f4286511340e90b4519595a339217d6f11c8c66",
+      "tags": [
+        "swerebenchv2/knative-client:1054-9931c2d"
+      ],
+      "digests": [
+        "swerebenchv2/knative-client@sha256:5e288f54188499607fa7f3850f4286511340e90b4519595a339217d6f11c8c66"
+      ],
+      "created": "2026-07-24T14:23:57.814335137+08:00",
+      "size": 761320240,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:cb6c1c300ecdf58d7953f89975669b1efe129a21392bac148e3f6b411004a962",
+      "tags": [
+        "swerebenchv2/numaproj-numaflow:601-64e17d8"
+      ],
+      "digests": [
+        "swerebenchv2/numaproj-numaflow@sha256:cb6c1c300ecdf58d7953f89975669b1efe129a21392bac148e3f6b411004a962"
+      ],
+      "created": "2026-07-25T22:50:07.307023362+08:00",
+      "size": 761118702,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:993898a9f5b452d510c35f73481a1bcf03464378115c916923e88c3e3306e058",
+      "tags": [
+        "swerebenchv2/open-sauced-app:2373-94f5491"
+      ],
+      "digests": [
+        "swerebenchv2/open-sauced-app@sha256:993898a9f5b452d510c35f73481a1bcf03464378115c916923e88c3e3306e058"
+      ],
+      "created": "2026-07-24T23:53:33.001819701+08:00",
+      "size": 751452731,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:2b468b6d8748b4c0109bd55e4856f6827fcfd25698401aa034483b2e0871a4bd",
+      "tags": [
+        "swerebenchv2/biotite-dev-biotite:653-de8c985"
+      ],
+      "digests": [
+        "swerebenchv2/biotite-dev-biotite@sha256:2b468b6d8748b4c0109bd55e4856f6827fcfd25698401aa034483b2e0871a4bd"
+      ],
+      "created": "2026-07-27T19:08:31.261677995+08:00",
+      "size": 750975833,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:d87a9f614ce3a1b6ded2c45cdf6a7167839d302a6d62e3b3b454dcf9c96016c3",
+      "tags": [
+        "swerebenchv2/qiskit-qiskit-optimization:157-6fd93e9"
+      ],
+      "digests": [
+        "swerebenchv2/qiskit-qiskit-optimization@sha256:d87a9f614ce3a1b6ded2c45cdf6a7167839d302a6d62e3b3b454dcf9c96016c3"
+      ],
+      "created": "2026-07-29T19:39:51.797419458+08:00",
+      "size": 741086157,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:d21709c489692b853084e22d300d4dec13e90c3008eb58a8f641467ff666a193",
+      "tags": [
+        "swerebenchv2/qiskit-qiskit:12664-9cdeac8"
+      ],
+      "digests": [
+        "swerebenchv2/qiskit-qiskit@sha256:d21709c489692b853084e22d300d4dec13e90c3008eb58a8f641467ff666a193"
+      ],
+      "created": "2026-07-27T18:28:07.048626166+08:00",
+      "size": 740114897,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:fdbb74e2bd220a84bee4b53696f4a72c36dc488cc64ee073696613273327c038",
+      "tags": [
+        "swerebenchv2/tweag-nickel:227-209b9ef"
+      ],
+      "digests": [
+        "swerebenchv2/tweag-nickel@sha256:fdbb74e2bd220a84bee4b53696f4a72c36dc488cc64ee073696613273327c038"
+      ],
+      "created": "2026-07-31T00:00:43.967521185+08:00",
+      "size": 737807944,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:e97d10298754aaf5a5a93a5d7141742ef0fa923acfb7bef52f9f605b76e96f76",
+      "tags": [
+        "swerebenchv2/obsidian-tasks-group-obsidian-tasks:2590-8b28ed9"
+      ],
+      "digests": [
+        "swerebenchv2/obsidian-tasks-group-obsidian-tasks@sha256:e97d10298754aaf5a5a93a5d7141742ef0fa923acfb7bef52f9f605b76e96f76"
+      ],
+      "created": "2026-07-27T14:43:33.205006567+08:00",
+      "size": 737058073,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:78afdab8f7660f807babdd08f14feca8eacda562de3473743143d6fbcf3acac7",
+      "tags": [
+        "swerebenchv2/google-jax:21774-833c7ba"
+      ],
+      "digests": [
+        "swerebenchv2/google-jax@sha256:78afdab8f7660f807babdd08f14feca8eacda562de3473743143d6fbcf3acac7"
+      ],
+      "created": "2026-07-30T13:34:59.650266026+08:00",
+      "size": 736563952,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:87bbde01f08819c4371ae677cabf966acf6528a8f6e5116c0b51ba0be02d5a7b",
+      "tags": [
+        "swerebenchv2/knative-client:880-ff350fb"
+      ],
+      "digests": [
+        "swerebenchv2/knative-client@sha256:87bbde01f08819c4371ae677cabf966acf6528a8f6e5116c0b51ba0be02d5a7b"
+      ],
+      "created": "2026-07-25T20:03:42.687330987+08:00",
+      "size": 732271099,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:6c1879e0f6b03a0a3f54a484fad1a81eac6663c55b736c06edd57aecc250ad75",
+      "tags": [
+        "swerebenchv2/containrrr-watchtower:1027-7221704"
+      ],
+      "digests": [
+        "swerebenchv2/containrrr-watchtower@sha256:6c1879e0f6b03a0a3f54a484fad1a81eac6663c55b736c06edd57aecc250ad75"
+      ],
+      "created": "2026-07-29T20:01:12.38012099+08:00",
+      "size": 730460571,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:4530c2e9ab4119a921bb41833d5cc917603f9bce01a7e689d3274fac3662181d",
+      "tags": [
+        "swerebenchv2/biotite-dev-biotite:795-5377013"
+      ],
+      "digests": [
+        "swerebenchv2/biotite-dev-biotite@sha256:4530c2e9ab4119a921bb41833d5cc917603f9bce01a7e689d3274fac3662181d"
+      ],
+      "created": "2026-07-24T18:19:46.191065088+08:00",
+      "size": 728405692,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:dd1e3f11db701817704f6322771e5de4adf6843b9a505d5fbb79a2da0c1e0c62",
+      "tags": [
+        "swerebenchv2/boto-botocore:830-80cc4c3"
+      ],
+      "digests": [
+        "swerebenchv2/boto-botocore@sha256:dd1e3f11db701817704f6322771e5de4adf6843b9a505d5fbb79a2da0c1e0c62"
+      ],
+      "created": "2026-07-31T14:35:38.072097463+08:00",
+      "size": 724243802,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:e425570c8b692e71eda5ecd051966b2fe6e6fa6342c7c836c56735418a5fbf8a",
+      "tags": [
+        "swerebenchv2/manusa-electronim:129-f32058f"
+      ],
+      "digests": [
+        "swerebenchv2/manusa-electronim@sha256:e425570c8b692e71eda5ecd051966b2fe6e6fa6342c7c836c56735418a5fbf8a"
+      ],
+      "created": "2026-07-31T15:06:13.450377464+08:00",
+      "size": 722096773,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:91b0ec2ccd5bb4a8b6ee88a5c4557e0f6008106a8e71e0536d572384d4e627c9",
+      "tags": [
+        "swerebenchv2/maxgraph-maxgraph:359-be73a20"
+      ],
+      "digests": [
+        "swerebenchv2/maxgraph-maxgraph@sha256:91b0ec2ccd5bb4a8b6ee88a5c4557e0f6008106a8e71e0536d572384d4e627c9"
+      ],
+      "created": "2026-07-31T16:27:43.888156721+08:00",
+      "size": 715637733,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:121a11d9da8cf39266e0083608b8b539f60ed0e751540f63046894d0b10a293c",
+      "tags": [
+        "swerebenchv2/knative-client:851-2df4595"
+      ],
+      "digests": [
+        "swerebenchv2/knative-client@sha256:121a11d9da8cf39266e0083608b8b539f60ed0e751540f63046894d0b10a293c"
+      ],
+      "created": "2026-07-31T16:20:13.537795241+08:00",
+      "size": 714714016,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:3fb588d0903c0dafb427336a76dc2e2e80e3706d663a16fc323d16b918a60e74",
+      "tags": [
+        "swerebenchv2/obsidian-tasks-group-obsidian-tasks:2330-e9dc131"
+      ],
+      "digests": [
+        "swerebenchv2/obsidian-tasks-group-obsidian-tasks@sha256:3fb588d0903c0dafb427336a76dc2e2e80e3706d663a16fc323d16b918a60e74"
+      ],
+      "created": "2026-07-30T00:16:10.667631617+08:00",
+      "size": 710683008,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:2e87a31b4bd59d35cbedd320fd4996650fc4be2062555aac5c77926c71ab813c",
+      "tags": [
+        "swerebenchv2/cloudflare-cloudflare-go:1035-fd07540"
+      ],
+      "digests": [
+        "swerebenchv2/cloudflare-cloudflare-go@sha256:2e87a31b4bd59d35cbedd320fd4996650fc4be2062555aac5c77926c71ab813c"
+      ],
+      "created": "2026-07-27T13:17:36.386809061+08:00",
+      "size": 707270712,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:9091d4f356a3b7240a9969d2ad435cf205e9b7c41684edc8dc797cbe21aaa5e6",
+      "tags": [
+        "swerebenchv2/rust-analyzer-rust-analyzer:3672-50c6a31"
+      ],
+      "digests": [
+        "swerebenchv2/rust-analyzer-rust-analyzer@sha256:9091d4f356a3b7240a9969d2ad435cf205e9b7c41684edc8dc797cbe21aaa5e6"
+      ],
+      "created": "2026-07-29T18:56:02.272175393+08:00",
+      "size": 706526262,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:efb0f482ca4a361bcdeed3366d0ee4fd90a89d3add3a0c7ca84fce89ac91824b",
+      "tags": [
+        "swerebenchv2/samuelcolvin-pydantic:3304-d53259a"
+      ],
+      "digests": [
+        "swerebenchv2/samuelcolvin-pydantic@sha256:efb0f482ca4a361bcdeed3366d0ee4fd90a89d3add3a0c7ca84fce89ac91824b"
+      ],
+      "created": "2026-07-27T17:21:49.350216712+08:00",
+      "size": 700512107,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:aecbc614e7433da71a7dc310c7c8feaf6461d82ef51fa21f90c16c5d4d639ac6",
+      "tags": [
+        "swerebenchv2/remix-run-remix:7109-b788f34"
+      ],
+      "digests": [
+        "swerebenchv2/remix-run-remix@sha256:aecbc614e7433da71a7dc310c7c8feaf6461d82ef51fa21f90c16c5d4d639ac6"
+      ],
+      "created": "2026-07-31T18:55:29.168313676+08:00",
+      "size": 700470484,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:7163e11b287916826fc6110fea593a8939546b0181f59c8bc4dca49d86b9b324",
+      "tags": [
+        "swerebenchv2/tektoncd-operator:2022-8364180"
+      ],
+      "digests": [
+        "swerebenchv2/tektoncd-operator@sha256:7163e11b287916826fc6110fea593a8939546b0181f59c8bc4dca49d86b9b324"
+      ],
+      "created": "2026-07-29T20:16:03.825666311+08:00",
+      "size": 699584607,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:8e6e98461f4f58187b88ae09a83403f595548cfb5c628ea67ca650a9bf4ccf01",
+      "tags": [
+        "swerebenchv2/sharkdp-fd:497-0f2429c"
+      ],
+      "digests": [
+        "swerebenchv2/sharkdp-fd@sha256:8e6e98461f4f58187b88ae09a83403f595548cfb5c628ea67ca650a9bf4ccf01"
+      ],
+      "created": "2026-07-27T17:15:13.911078791+08:00",
+      "size": 693996443,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:1ec3189d331dd97f46c1356b3a9ec0ef5fe4ac7fb0b5f3f53990ed27cc6af112",
+      "tags": [
+        "swerebenchv2/microsoft-griffel:86-cbfd304"
+      ],
+      "digests": [
+        "swerebenchv2/microsoft-griffel@sha256:1ec3189d331dd97f46c1356b3a9ec0ef5fe4ac7fb0b5f3f53990ed27cc6af112"
+      ],
+      "created": "2026-07-31T18:47:48.252316298+08:00",
+      "size": 693459555,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:a05e8d3faa03e50c8524d76621c617a7d7aebb4f91a02057896e5b7133cceb3a",
+      "tags": [
+        "swerebenchv2/appium-appium:18479-377e982"
+      ],
+      "digests": [
+        "swerebenchv2/appium-appium@sha256:a05e8d3faa03e50c8524d76621c617a7d7aebb4f91a02057896e5b7133cceb3a"
+      ],
+      "created": "2026-07-24T16:06:43.171549676+08:00",
+      "size": 691548317,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:40124c55ab3c416e92648369ee1afd8601350bc1fad24754370a0c673380dff1",
+      "tags": [
+        "swerebenchv2/galileo-galilei-kedro-mlflow:633-2920a26"
+      ],
+      "digests": [
+        "swerebenchv2/galileo-galilei-kedro-mlflow@sha256:40124c55ab3c416e92648369ee1afd8601350bc1fad24754370a0c673380dff1"
+      ],
+      "created": "2026-07-24T18:29:09.585626636+08:00",
+      "size": 691056443,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:e8f8856cd55ec94535d05e6b9a0fc584acb1567277024680ca7b9cff02270fef",
+      "tags": [
+        "swerebenchv2/aquasecurity-tfsec:1089-3aac00c"
+      ],
+      "digests": [
+        "swerebenchv2/aquasecurity-tfsec@sha256:e8f8856cd55ec94535d05e6b9a0fc584acb1567277024680ca7b9cff02270fef"
+      ],
+      "created": "2026-07-30T14:56:06.652973445+08:00",
+      "size": 685175593,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:39ced29385cd2a3ff9fcb08cdac9d3b88d502ab9e9473319f3cc17279afcc397",
+      "tags": [
+        "swerebenchv2/electron-fiddle:523-b3c266e"
+      ],
+      "digests": [
+        "swerebenchv2/electron-fiddle@sha256:39ced29385cd2a3ff9fcb08cdac9d3b88d502ab9e9473319f3cc17279afcc397"
+      ],
+      "created": "2026-07-31T18:08:22.92489425+08:00",
+      "size": 678174030,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:9de9121fd51bd7111fd84b6e6dec6c8bf661a36fbffbb26f441a558588558497",
+      "tags": [
+        "swerebenchv2/gluesql-gluesql:91-c381439"
+      ],
+      "digests": [
+        "swerebenchv2/gluesql-gluesql@sha256:9de9121fd51bd7111fd84b6e6dec6c8bf661a36fbffbb26f441a558588558497"
+      ],
+      "created": "2026-07-27T17:24:05.766533149+08:00",
+      "size": 665683771,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:04dd4629b67491f0bf680b06a7a548338f2ac122abf3b02964dc7a2b7b920aa7",
+      "tags": [
+        "swerebenchv2/clap-rs-clap:3968-5a4da7e"
+      ],
+      "digests": [
+        "swerebenchv2/clap-rs-clap@sha256:04dd4629b67491f0bf680b06a7a548338f2ac122abf3b02964dc7a2b7b920aa7"
+      ],
+      "created": "2026-07-24T20:02:22.143799018+08:00",
+      "size": 664819393,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:7666ac4afb4699738cfbddf764a72584d4c5647189fc8b400273704fea0e3d28",
+      "tags": [
+        "swerebenchv2/docker-notary:1043-3eb1f23"
+      ],
+      "digests": [
+        "swerebenchv2/docker-notary@sha256:7666ac4afb4699738cfbddf764a72584d4c5647189fc8b400273704fea0e3d28"
+      ],
+      "created": "2026-07-30T16:20:43.738765998+08:00",
+      "size": 663753161,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:10dd96b4418bfd583b5abd7ebf73ec9f49fd3cd83c1fe14bd5574affc856ef50",
+      "tags": [
+        "swerebenchv2/corazawaf-coraza:720-a81898e"
+      ],
+      "digests": [
+        "swerebenchv2/corazawaf-coraza@sha256:10dd96b4418bfd583b5abd7ebf73ec9f49fd3cd83c1fe14bd5574affc856ef50"
+      ],
+      "created": "2026-07-30T15:01:58.935082605+08:00",
+      "size": 659912089,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:4b219f0bc4e76a7d681e3239f0f35d4dec5e4c54e8e0f30614500ed50657448d",
+      "tags": [
+        "swerebenchv2/clap-rs-clap:4080-495e49e"
+      ],
+      "digests": [
+        "swerebenchv2/clap-rs-clap@sha256:4b219f0bc4e76a7d681e3239f0f35d4dec5e4c54e8e0f30614500ed50657448d"
+      ],
+      "created": "2026-07-30T23:27:26.146528861+08:00",
+      "size": 659608612,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:ae82e6ffa191b8063c084ee864007fa65a8ddbabd7e4a529e8dacc482304299c",
+      "tags": [
+        "swerebenchv2/obsidian-tasks-group-obsidian-tasks:2072-1075952"
+      ],
+      "digests": [
+        "swerebenchv2/obsidian-tasks-group-obsidian-tasks@sha256:ae82e6ffa191b8063c084ee864007fa65a8ddbabd7e4a529e8dacc482304299c"
+      ],
+      "created": "2026-07-31T18:35:23.421452856+08:00",
+      "size": 653760200,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:51f8a50533948fdb27b03aa15ef8377d888941a4f06574845f71cce15c2a74db",
+      "tags": [
+        "swerebenchv2/stfc-psyclone:2380-631e6a9"
+      ],
+      "digests": [
+        "swerebenchv2/stfc-psyclone@sha256:51f8a50533948fdb27b03aa15ef8377d888941a4f06574845f71cce15c2a74db"
+      ],
+      "created": "2026-07-30T20:38:02.292755566+08:00",
+      "size": 650743634,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:3630f2e1cebbfcdd0afa880c1d1217c588964d52fe011e8cd07cf03754cbec4d",
+      "tags": [
+        "swerebenchv2/stfc-psyclone:2545-2d2566d"
+      ],
+      "digests": [
+        "swerebenchv2/stfc-psyclone@sha256:3630f2e1cebbfcdd0afa880c1d1217c588964d52fe011e8cd07cf03754cbec4d"
+      ],
+      "created": "2026-07-27T13:30:36.738368577+08:00",
+      "size": 646674003,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:31435d46f5b938bcd12d308b37653bb4482334e8bca0a7a4344478a3fa96b4c9",
+      "tags": [
+        "swerebenchv2/oceanparcels-parcels:590-e629604"
+      ],
+      "digests": [
+        "swerebenchv2/oceanparcels-parcels@sha256:31435d46f5b938bcd12d308b37653bb4482334e8bca0a7a4344478a3fa96b4c9"
+      ],
+      "created": "2026-07-31T17:57:52.007577831+08:00",
+      "size": 646520058,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:b512c7988139d9ab4294a8671ebeee0ea8a772fef13cf90f97b612e1a2d5b851",
+      "tags": [
+        "swerebenchv2/formidablelabs-urql:1509-ed45f96"
+      ],
+      "digests": [
+        "swerebenchv2/formidablelabs-urql@sha256:b512c7988139d9ab4294a8671ebeee0ea8a772fef13cf90f97b612e1a2d5b851"
+      ],
+      "created": "2026-07-24T22:37:58.813196783+08:00",
+      "size": 641730776,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:9b9bc26c057b358a89fbad91c8dc94b5953e7a75efbc41690bb670275097673b",
+      "tags": [
+        "swerebenchv2/cogent3-cogent3:2050-7cf9ba3"
+      ],
+      "digests": [
+        "swerebenchv2/cogent3-cogent3@sha256:9b9bc26c057b358a89fbad91c8dc94b5953e7a75efbc41690bb670275097673b"
+      ],
+      "created": "2026-07-24T15:38:45.641363299+08:00",
+      "size": 640787419,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:5e18a3279001221793c3beccd7694d48953b02807978c11163b120bc8f1b2ba0",
+      "tags": [
+        "swerebenchv2/tikv-pd:7122-62ff67a"
+      ],
+      "digests": [
+        "swerebenchv2/tikv-pd@sha256:5e18a3279001221793c3beccd7694d48953b02807978c11163b120bc8f1b2ba0"
+      ],
+      "created": "2026-07-30T21:32:45.951035563+08:00",
+      "size": 639966967,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:1ee957aa83e20b3ad1e71b093ba77fe82c86c85f3973913c18a4c4383409b46b",
+      "tags": [
+        "swerebenchv2/primefaces-primefaces:13565-dfa06cd"
+      ],
+      "digests": [
+        "swerebenchv2/primefaces-primefaces@sha256:1ee957aa83e20b3ad1e71b093ba77fe82c86c85f3973913c18a4c4383409b46b"
+      ],
+      "created": "2026-07-27T19:27:09.078352786+08:00",
+      "size": 638407104,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:0cd7147168e3236d16d1404760bd3b02cc8c76ed82c3699675e51282cf31e062",
+      "tags": [
+        "swerebenchv2/primefaces-primefaces:13019-ccfd6d6"
+      ],
+      "digests": [
+        "swerebenchv2/primefaces-primefaces@sha256:0cd7147168e3236d16d1404760bd3b02cc8c76ed82c3699675e51282cf31e062"
+      ],
+      "created": "2026-07-30T14:14:08.553625344+08:00",
+      "size": 638284111,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:99b48b7cd9edbf062464e305dd54135b1d11e2f35a380a226cf6a7cd9a8c59ce",
+      "tags": [
+        "swerebenchv2/primefaces-primefaces:13249-593ef39"
+      ],
+      "digests": [
+        "swerebenchv2/primefaces-primefaces@sha256:99b48b7cd9edbf062464e305dd54135b1d11e2f35a380a226cf6a7cd9a8c59ce"
+      ],
+      "created": "2026-07-31T18:49:46.998165846+08:00",
+      "size": 638222830,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:f60dcd7522b33e031b17a95a39b50b5f2f53c779a50cb8baf3b922da8f1fe737",
+      "tags": [
+        "swerebenchv2/cogent3-cogent3:2138-f816fab"
+      ],
+      "digests": [
+        "swerebenchv2/cogent3-cogent3@sha256:f60dcd7522b33e031b17a95a39b50b5f2f53c779a50cb8baf3b922da8f1fe737"
+      ],
+      "created": "2026-07-29T19:20:47.010791237+08:00",
+      "size": 638016849,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:269c1a78effc2e4c49acc2135df0ada7da14482313c5f592f739010cebd0ae95",
+      "tags": [
+        "swerebenchv2/primefaces-primefaces:13555-80cd825"
+      ],
+      "digests": [
+        "swerebenchv2/primefaces-primefaces@sha256:269c1a78effc2e4c49acc2135df0ada7da14482313c5f592f739010cebd0ae95"
+      ],
+      "created": "2026-07-29T20:32:45.882085291+08:00",
+      "size": 637940305,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:89b3bd6d19abb8f25698b9d2a4fe61be8a9892154cb74eb5b3c7d28c779521a7",
+      "tags": [
+        "swerebenchv2/tomwhite-cubed:211-4305c85"
+      ],
+      "digests": [
+        "swerebenchv2/tomwhite-cubed@sha256:89b3bd6d19abb8f25698b9d2a4fe61be8a9892154cb74eb5b3c7d28c779521a7"
+      ],
+      "created": "2026-07-23T15:47:09.953739376+08:00",
+      "size": 637139747,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:9e8b64f3561981f53770988787277815ac94c7fa235e291aac6082cc369a1885",
+      "tags": [
+        "swerebenchv2/formidablelabs-urql:1123-ae9905f"
+      ],
+      "digests": [
+        "swerebenchv2/formidablelabs-urql@sha256:9e8b64f3561981f53770988787277815ac94c7fa235e291aac6082cc369a1885"
+      ],
+      "created": "2026-07-27T13:47:33.979686564+08:00",
+      "size": 637012110,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:8bf474eccbbb53aa6fd61cc50a640f83d1fd1d64d27bc3131966b27d093332ce",
+      "tags": [
+        "swerebenchv2/lightstep-otel-launcher-go:597-3b55ac7"
+      ],
+      "digests": [
+        "swerebenchv2/lightstep-otel-launcher-go@sha256:8bf474eccbbb53aa6fd61cc50a640f83d1fd1d64d27bc3131966b27d093332ce"
+      ],
+      "created": "2026-07-31T15:55:01.335221192+08:00",
+      "size": 635749813,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:e2169a9a8e4d893ea762fcd0aaf6a73cd71938b9d81ec1c78c172d3d023ee2b1",
+      "tags": [
+        "swerebenchv2/apigee-registry:928-bd04009"
+      ],
+      "digests": [
+        "swerebenchv2/apigee-registry@sha256:e2169a9a8e4d893ea762fcd0aaf6a73cd71938b9d81ec1c78c172d3d023ee2b1"
+      ],
+      "created": "2026-07-27T13:14:28.324437455+08:00",
+      "size": 634356463,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:ab43d7d661e1489f1fbc052ce629ce98836c6f84b7c2def71f0c50738a853712",
+      "tags": [
+        "swerebenchv2/intuit-auto:538-5e53f9b"
+      ],
+      "digests": [
+        "swerebenchv2/intuit-auto@sha256:ab43d7d661e1489f1fbc052ce629ce98836c6f84b7c2def71f0c50738a853712"
+      ],
+      "created": "2026-07-31T17:22:56.189668218+08:00",
+      "size": 631840198,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:bda2e3ef4f9a3d587b4cc510a91b4c05a718f32369cda7c9e7717f8990fe537e",
+      "tags": [
+        "swerebenchv2/image-rs-image-tiff:289-3345328"
+      ],
+      "digests": [
+        "swerebenchv2/image-rs-image-tiff@sha256:bda2e3ef4f9a3d587b4cc510a91b4c05a718f32369cda7c9e7717f8990fe537e"
+      ],
+      "created": "2026-07-27T19:19:48.658888064+08:00",
+      "size": 631835165,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:a6ca50ebab3d6657a2a59a8a99dde5c73df0d6fe30d5156b2af651565fcfdfd7",
+      "tags": [
+        "swerebenchv2/marigold-ui-marigold:2824-de69c7a"
+      ],
+      "digests": [
+        "swerebenchv2/marigold-ui-marigold@sha256:a6ca50ebab3d6657a2a59a8a99dde5c73df0d6fe30d5156b2af651565fcfdfd7"
+      ],
+      "created": "2026-07-31T17:12:16.32542157+08:00",
+      "size": 627786729,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:78bddfccde88c7eb28b61426e6de0bc9cc2fda0818eb6d990ced4f6b9b961f22",
+      "tags": [
+        "swerebenchv2/go-kratos-kratos:1341-80378ca"
+      ],
+      "digests": [
+        "swerebenchv2/go-kratos-kratos@sha256:78bddfccde88c7eb28b61426e6de0bc9cc2fda0818eb6d990ced4f6b9b961f22"
+      ],
+      "created": "2026-07-24T19:50:08.657644255+08:00",
+      "size": 625110799,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:62dade6ca692e2abbc9bdd15002a2a85022e4d0e103f075046605daf1103ed54",
+      "tags": [
+        "swerebenchv2/colinhacks-zod:4861-9335f05"
+      ],
+      "digests": [
+        "swerebenchv2/colinhacks-zod@sha256:62dade6ca692e2abbc9bdd15002a2a85022e4d0e103f075046605daf1103ed54"
+      ],
+      "created": "2026-07-31T17:07:46.24980423+08:00",
+      "size": 623542433,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:d0994878ac41c3781af2c48b3ad60829d6f42ffe34cfd6b5528da0efb1134e38",
+      "tags": [
+        "swerebenchv2/nomicfoundation-hardhat-ignition:481-570ddb8"
+      ],
+      "digests": [
+        "swerebenchv2/nomicfoundation-hardhat-ignition@sha256:d0994878ac41c3781af2c48b3ad60829d6f42ffe34cfd6b5528da0efb1134e38"
+      ],
+      "created": "2026-07-29T23:22:16.763875144+08:00",
+      "size": 618507381,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:9cbd7a4cb071c3f45241c1c5371bdf82e8d2339acc90228dc5cf4fb50cc03d4b",
+      "tags": [
+        "swerebenchv2/obsidian-tasks-group-obsidian-tasks:1391-02a664b"
+      ],
+      "digests": [
+        "swerebenchv2/obsidian-tasks-group-obsidian-tasks@sha256:9cbd7a4cb071c3f45241c1c5371bdf82e8d2339acc90228dc5cf4fb50cc03d4b"
+      ],
+      "created": "2026-07-31T18:10:21.022686143+08:00",
+      "size": 617874095,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:7f63a89497fd230c887c5501746a7af28cdb875b4106201e8f0717357c2c37a4",
+      "tags": [
+        "swerebenchv2/obsidian-tasks-group-obsidian-tasks:1441-194a219"
+      ],
+      "digests": [
+        "swerebenchv2/obsidian-tasks-group-obsidian-tasks@sha256:7f63a89497fd230c887c5501746a7af28cdb875b4106201e8f0717357c2c37a4"
+      ],
+      "created": "2026-07-31T18:23:54.095638441+08:00",
+      "size": 617766137,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:f2a5a1660b20104d50408681ee6fa30f24e1e283ebea77a03a172759ebf2621f",
+      "tags": [
+        "swerebenchv2/envoyproxy-ai-gateway:252-4af86e5"
+      ],
+      "digests": [
+        "swerebenchv2/envoyproxy-ai-gateway@sha256:f2a5a1660b20104d50408681ee6fa30f24e1e283ebea77a03a172759ebf2621f"
+      ],
+      "created": "2026-07-31T16:59:22.876826643+08:00",
+      "size": 617667058,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:39c3478dce77ed412df022f321ce43571795c78a1f78033f32299335ce2171b6",
+      "tags": [
+        "swerebenchv2/formidablelabs-urql:880-481ff4c"
+      ],
+      "digests": [
+        "swerebenchv2/formidablelabs-urql@sha256:39c3478dce77ed412df022f321ce43571795c78a1f78033f32299335ce2171b6"
+      ],
+      "created": "2026-07-24T15:23:14.214682188+08:00",
+      "size": 617206844,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:dc1d9fe4168fad743992eb186632836343b01e9de8b1b326dc882ee771bd4b0a",
+      "tags": [
+        "swerebenchv2/firebase-firebase-admin-go:459-ea909b1"
+      ],
+      "digests": [
+        "swerebenchv2/firebase-firebase-admin-go@sha256:dc1d9fe4168fad743992eb186632836343b01e9de8b1b326dc882ee771bd4b0a"
+      ],
+      "created": "2026-07-27T19:25:25.537872692+08:00",
+      "size": 615729015,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:d359007453857a95e85be764a058598423b9ee351c80ad69b799701086eae088",
+      "tags": [
+        "swerebenchv2/cloudflare-cloudflare-go:636-b6be224"
+      ],
+      "digests": [
+        "swerebenchv2/cloudflare-cloudflare-go@sha256:d359007453857a95e85be764a058598423b9ee351c80ad69b799701086eae088"
+      ],
+      "created": "2026-07-31T15:10:18.72868469+08:00",
+      "size": 615099187,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:6052602ccc6caf129b62395319522d0928e07cabf2b041afd41767bd95fb28ac",
+      "tags": [
+        "swerebenchv2/cedar-policy-cedar:1551-543a733"
+      ],
+      "digests": [
+        "swerebenchv2/cedar-policy-cedar@sha256:6052602ccc6caf129b62395319522d0928e07cabf2b041afd41767bd95fb28ac"
+      ],
+      "created": "2026-07-25T22:47:33.006348896+08:00",
+      "size": 614209093,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:8bc2449fcc7b505c68b59c3a3f98c0ce18036e1df557c351c2a2f45889fe9de4",
+      "tags": [
+        "swerebenchv2/kubernetes-sigs-cloud-provider-azure:1105-ec74033"
+      ],
+      "digests": [
+        "swerebenchv2/kubernetes-sigs-cloud-provider-azure@sha256:8bc2449fcc7b505c68b59c3a3f98c0ce18036e1df557c351c2a2f45889fe9de4"
+      ],
+      "created": "2026-07-25T21:24:35.982854582+08:00",
+      "size": 612611734,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:bc86d1532be433b369dff73d5244e3a9ce07a2f4712c022165714ea19d7873f3",
+      "tags": [
+        "swerebenchv2/aeye-lab-pymovements:1031-8718a7f"
+      ],
+      "digests": [
+        "swerebenchv2/aeye-lab-pymovements@sha256:bc86d1532be433b369dff73d5244e3a9ce07a2f4712c022165714ea19d7873f3"
+      ],
+      "created": "2026-07-27T19:47:28.40780972+08:00",
+      "size": 609351767,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:0395363452ff4e3b26a96ba5525c481408171c02df0e88e2dcde9039fcd45108",
+      "tags": [
+        "swerebenchv2/aeye-lab-pymovements:1032-9d39fe2"
+      ],
+      "digests": [
+        "swerebenchv2/aeye-lab-pymovements@sha256:0395363452ff4e3b26a96ba5525c481408171c02df0e88e2dcde9039fcd45108"
+      ],
+      "created": "2026-07-27T17:00:08.291382333+08:00",
+      "size": 609333726,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:5de44770e4ae21ab8cf7e54e935bf99e7e931e03403d30b07d9e8482082e8b0f",
+      "tags": [
+        "swerebenchv2/drivendataorg-cloudpathlib:432-fabb0e4"
+      ],
+      "digests": [
+        "swerebenchv2/drivendataorg-cloudpathlib@sha256:5de44770e4ae21ab8cf7e54e935bf99e7e931e03403d30b07d9e8482082e8b0f"
+      ],
+      "created": "2026-07-29T18:30:24.80999875+08:00",
+      "size": 607378049,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:434b4e9d813f6df45e3220e32cbe86fd6f11654355de4bf7f81a46107425b879",
+      "tags": [
+        "swerebenchv2/drivendataorg-cloudpathlib:224-403ce19"
+      ],
+      "digests": [
+        "swerebenchv2/drivendataorg-cloudpathlib@sha256:434b4e9d813f6df45e3220e32cbe86fd6f11654355de4bf7f81a46107425b879"
+      ],
+      "created": "2026-07-31T14:21:08.049240661+08:00",
+      "size": 606292326,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:9f502bc4744522ff71144bb74b9e8d09a90c242828ef669212a8cc2b5876ea04",
+      "tags": [
+        "swerebenchv2/auth0-auth0-spa-js:840-a501987"
+      ],
+      "digests": [
+        "swerebenchv2/auth0-auth0-spa-js@sha256:9f502bc4744522ff71144bb74b9e8d09a90c242828ef669212a8cc2b5876ea04"
+      ],
+      "created": "2026-07-31T15:03:32.89776012+08:00",
+      "size": 605026286,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:f26fb5ee151332102b85359c5a6c7ebc2a3f5179a3fe6e54588808a62125d2fd",
+      "tags": [
+        "swerebenchv2/openzeppelin-rust-contracts-stylus:150-766ed11"
+      ],
+      "digests": [
+        "swerebenchv2/openzeppelin-rust-contracts-stylus@sha256:f26fb5ee151332102b85359c5a6c7ebc2a3f5179a3fe6e54588808a62125d2fd"
+      ],
+      "created": "2026-07-27T17:57:33.920686243+08:00",
+      "size": 603950609,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:fe94d032dc016c41c05ba07bb612baaee1b671f272f75242675c4c1d029a5f0b",
+      "tags": [
+        "swerebenchv2/pyvrp-pyvrp:803-a06232d"
+      ],
+      "digests": [
+        "swerebenchv2/pyvrp-pyvrp@sha256:fe94d032dc016c41c05ba07bb612baaee1b671f272f75242675c4c1d029a5f0b"
+      ],
+      "created": "2026-07-29T18:58:40.559925008+08:00",
+      "size": 603402111,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:a12ef5fba362ba6cbc11ce6f4f24c8a677c6c47ad5d460f7867b53575c61354e",
+      "tags": [
+        "swerebenchv2/clap-rs-clap:3170-8eb5538"
+      ],
+      "digests": [
+        "swerebenchv2/clap-rs-clap@sha256:a12ef5fba362ba6cbc11ce6f4f24c8a677c6c47ad5d460f7867b53575c61354e"
+      ],
+      "created": "2026-07-30T20:34:29.234633655+08:00",
+      "size": 602930203,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:7c55d60c5519642f506ea823684300e4ab8f92a467b66a337680d4e3782a6ef3",
+      "tags": [
+        "swerebenchv2/honeydipper-honeydipper:256-8342a52"
+      ],
+      "digests": [
+        "swerebenchv2/honeydipper-honeydipper@sha256:7c55d60c5519642f506ea823684300e4ab8f92a467b66a337680d4e3782a6ef3"
+      ],
+      "created": "2026-07-24T23:46:44.647005155+08:00",
+      "size": 602229305,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:823b940b57ce683189610ad034d4847f1b5d1e2dd363bfff453f3113d8cdd6a6",
+      "tags": [
+        "swerebenchv2/kubernetes-sigs-controller-runtime:2905-250454b"
+      ],
+      "digests": [
+        "swerebenchv2/kubernetes-sigs-controller-runtime@sha256:823b940b57ce683189610ad034d4847f1b5d1e2dd363bfff453f3113d8cdd6a6"
+      ],
+      "created": "2026-07-23T15:31:07.207073977+08:00",
+      "size": 600225926,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:87d9990c8d384bd4f5b4e42ee25546cc3177162377f63e206e586427778cd07f",
+      "tags": [
+        "swerebenchv2/pennylaneai-pennylane:1320-6a2cf0a"
+      ],
+      "digests": [
+        "swerebenchv2/pennylaneai-pennylane@sha256:87d9990c8d384bd4f5b4e42ee25546cc3177162377f63e206e586427778cd07f"
+      ],
+      "created": "2026-07-27T13:54:54.530952776+08:00",
+      "size": 597961327,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:1d3bf5ecf774b61f293bc387c921b16b4ff7f19bb1b63e86726d43e4788b95c0",
+      "tags": [
+        "swerebenchv2/lindell-multi-gitter:397-1fd9931"
+      ],
+      "digests": [
+        "swerebenchv2/lindell-multi-gitter@sha256:1d3bf5ecf774b61f293bc387c921b16b4ff7f19bb1b63e86726d43e4788b95c0"
+      ],
+      "created": "2026-07-25T21:33:10.348610258+08:00",
+      "size": 597593364,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:6101354fe46cf25bc38688f061dd26fbffc46f5494f1aea62c00cb9216804a58",
+      "tags": [
+        "swerebenchv2/dtolnay-cxx:839-c5f472e"
+      ],
+      "digests": [
+        "swerebenchv2/dtolnay-cxx@sha256:6101354fe46cf25bc38688f061dd26fbffc46f5494f1aea62c00cb9216804a58"
+      ],
+      "created": "2026-07-23T15:37:18.386180636+08:00",
+      "size": 597144285,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:aa9a93cb31be1e01740f08a695ece40420eacca4c4699a278ca7fdef8c01031e",
+      "tags": [
+        "swerebenchv2/libgit2-git2go:736-2d32dd2"
+      ],
+      "digests": [
+        "swerebenchv2/libgit2-git2go@sha256:aa9a93cb31be1e01740f08a695ece40420eacca4c4699a278ca7fdef8c01031e"
+      ],
+      "created": "2026-07-25T19:49:17.255339504+08:00",
+      "size": 596345013,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:c593e7acadcb59e5e04059cde88e7bd4d1896ae7abd64f21c6b4c0240ebf2c82",
+      "tags": [
+        "swerebenchv2/libgit2-git2go:743-bbb77f1"
+      ],
+      "digests": [
+        "swerebenchv2/libgit2-git2go@sha256:c593e7acadcb59e5e04059cde88e7bd4d1896ae7abd64f21c6b4c0240ebf2c82"
+      ],
+      "created": "2026-07-25T19:21:05.517091069+08:00",
+      "size": 596007829,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:dc9be83161648bc0e5e2c360bcd6d543f27c358e68e7fc685714594f18461adf",
+      "tags": [
+        "swerebenchv2/ontodev-robot:710-691d0dd"
+      ],
+      "digests": [
+        "swerebenchv2/ontodev-robot@sha256:dc9be83161648bc0e5e2c360bcd6d543f27c358e68e7fc685714594f18461adf"
+      ],
+      "created": "2026-07-27T13:21:51.523813555+08:00",
+      "size": 594034519,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:3ef4b6675cf87b288dec9916810987b3fd443e990f2cd0ef85c46edeb80d4888",
+      "tags": [
+        "swerebenchv2/pyvrp-pyvrp:280-fe6c756"
+      ],
+      "digests": [
+        "swerebenchv2/pyvrp-pyvrp@sha256:3ef4b6675cf87b288dec9916810987b3fd443e990f2cd0ef85c46edeb80d4888"
+      ],
+      "created": "2026-07-31T16:30:39.285716913+08:00",
+      "size": 594014204,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:772364d307929448366e7d25bb74f841bf7afad8dbd5e7b7126076802195264b",
+      "tags": [
+        "swerebenchv2/serverless-serverless-azure-functions:443-efafe9a"
+      ],
+      "digests": [
+        "swerebenchv2/serverless-serverless-azure-functions@sha256:772364d307929448366e7d25bb74f841bf7afad8dbd5e7b7126076802195264b"
+      ],
+      "created": "2026-07-31T18:04:50.871962234+08:00",
+      "size": 592920629,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:c18f83b6b091439061fe3a1f1253f9411ffb68d1a658aebe6d3faa7af0e90cb1",
+      "tags": [
+        "swerebenchv2/tokio-rs-mio:1276-0f4003d"
+      ],
+      "digests": [
+        "swerebenchv2/tokio-rs-mio@sha256:c18f83b6b091439061fe3a1f1253f9411ffb68d1a658aebe6d3faa7af0e90cb1"
+      ],
+      "created": "2026-07-25T21:22:57.039265382+08:00",
+      "size": 590015655,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:36b45a1c0c1cefd583b52ed27d313f1008af7282dec40ea32ce9bf5eabd852b8",
+      "tags": [
+        "swerebenchv2/clap-rs-clap:3188-fd38d24"
+      ],
+      "digests": [
+        "swerebenchv2/clap-rs-clap@sha256:36b45a1c0c1cefd583b52ed27d313f1008af7282dec40ea32ce9bf5eabd852b8"
+      ],
+      "created": "2026-07-24T20:37:20.502332588+08:00",
+      "size": 589991000,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:6d32c53970cad6b51287245753987a35a5981ecd83e7184c6ef9949d98bbf586",
+      "tags": [
+        "swerebenchv2/rust-itertools-itertools:866-1f69c53"
+      ],
+      "digests": [
+        "swerebenchv2/rust-itertools-itertools@sha256:6d32c53970cad6b51287245753987a35a5981ecd83e7184c6ef9949d98bbf586"
+      ],
+      "created": "2026-07-31T13:51:29.454851456+08:00",
+      "size": 589414225,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:45c35b1428021eb2bcb66ed4773f562d9e7c91b5cf8e9dafcd352efeac5e4c9c",
+      "tags": [
+        "swerebenchv2/gravitee-io-graviteeio-access-management:361-e6e987b"
+      ],
+      "digests": [
+        "swerebenchv2/gravitee-io-graviteeio-access-management@sha256:45c35b1428021eb2bcb66ed4773f562d9e7c91b5cf8e9dafcd352efeac5e4c9c"
+      ],
+      "created": "2026-07-29T20:48:58.221226402+08:00",
+      "size": 589394041,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:8d9cf82269152e360f36452fec1e7feed6b32523da4251207f9896fd0b1c8220",
+      "tags": [
+        "swerebenchv2/aleph-alpha-ts-rs:127-837bc44"
+      ],
+      "digests": [
+        "swerebenchv2/aleph-alpha-ts-rs@sha256:8d9cf82269152e360f36452fec1e7feed6b32523da4251207f9896fd0b1c8220"
+      ],
+      "created": "2026-07-29T21:54:40.220699517+08:00",
+      "size": 589248857,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:0a128766052a6a46f0c03c14f329f7754c8679b0f3613bbb2d5cc9ff5ebad60e",
+      "tags": [
+        "swerebenchv2/dtolnay-cxx:828-7afede8"
+      ],
+      "digests": [
+        "swerebenchv2/dtolnay-cxx@sha256:0a128766052a6a46f0c03c14f329f7754c8679b0f3613bbb2d5cc9ff5ebad60e"
+      ],
+      "created": "2026-07-30T22:11:59.713876169+08:00",
+      "size": 589009300,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:734cc72fad9224e84ff572f6d37a164af920161182a8ceaf9166c5817c464172",
+      "tags": [
+        "swerebenchv2/pyfisch-cbor:118-6bd070e"
+      ],
+      "digests": [
+        "swerebenchv2/pyfisch-cbor@sha256:734cc72fad9224e84ff572f6d37a164af920161182a8ceaf9166c5817c464172"
+      ],
+      "created": "2026-07-30T00:11:37.839661522+08:00",
+      "size": 587059947,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:735359f73fa86d09ee5d232bd78711a42bf714dc2580fb14576773b6c83e293e",
+      "tags": [
+        "swerebenchv2/fairwindsops-pluto:29-8868796"
+      ],
+      "digests": [
+        "swerebenchv2/fairwindsops-pluto@sha256:735359f73fa86d09ee5d232bd78711a42bf714dc2580fb14576773b6c83e293e"
+      ],
+      "created": "2026-07-31T17:47:54.06784331+08:00",
+      "size": 586434882,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:889c03a32d448b84ae899e006c87ecbad1fae77cf10cdd870d2dd0eab4211abc",
+      "tags": [
+        "swerebenchv2/knative-client:679-345653b"
+      ],
+      "digests": [
+        "swerebenchv2/knative-client@sha256:889c03a32d448b84ae899e006c87ecbad1fae77cf10cdd870d2dd0eab4211abc"
+      ],
+      "created": "2026-07-30T23:49:18.232310438+08:00",
+      "size": 582816533,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:5195b8f4cfb19b1efe37dcc3bae8954a8fef9d1e4a53b2c55670d5194feba39c",
+      "tags": [
+        "swerebenchv2/duartegroup-autode:303-db7b03d"
+      ],
+      "digests": [
+        "swerebenchv2/duartegroup-autode@sha256:5195b8f4cfb19b1efe37dcc3bae8954a8fef9d1e4a53b2c55670d5194feba39c"
+      ],
+      "created": "2026-07-29T19:55:38.194992003+08:00",
+      "size": 582485250,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:7642a94c58b469f66d233c0934828c0814cce0f56f7f517cddbb897bd1e94812",
+      "tags": [
+        "swerebenchv2/duartegroup-autode:213-e2b90c0"
+      ],
+      "digests": [
+        "swerebenchv2/duartegroup-autode@sha256:7642a94c58b469f66d233c0934828c0814cce0f56f7f517cddbb897bd1e94812"
+      ],
+      "created": "2026-07-27T15:06:55.788445632+08:00",
+      "size": 582060292,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:574b45ccd4ba4dd53643453d52e1087d0964213da310b0bc67de524ac0f75d38",
+      "tags": [
+        "swerebenchv2/mitsuhiko-minijinja:677-f48b190"
+      ],
+      "digests": [
+        "swerebenchv2/mitsuhiko-minijinja@sha256:574b45ccd4ba4dd53643453d52e1087d0964213da310b0bc67de524ac0f75d38"
+      ],
+      "created": "2026-07-25T19:22:02.256148583+08:00",
+      "size": 581848614,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:7445597c452297a553ee2192d3978dc5f7038fe04e062c057c104816f7769018",
+      "tags": [
+        "swerebenchv2/djc-askama:394-810d5ad"
+      ],
+      "digests": [
+        "swerebenchv2/djc-askama@sha256:7445597c452297a553ee2192d3978dc5f7038fe04e062c057c104816f7769018"
+      ],
+      "created": "2026-07-25T19:39:00.858816815+08:00",
+      "size": 581839787,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:551e7cf0e1304724d1de53d2c8fe1bf9416f132c4bfef518e3f451cd9f1087b4",
+      "tags": [
+        "swerebenchv2/mitsuhiko-minijinja:554-c4423ef"
+      ],
+      "digests": [
+        "swerebenchv2/mitsuhiko-minijinja@sha256:551e7cf0e1304724d1de53d2c8fe1bf9416f132c4bfef518e3f451cd9f1087b4"
+      ],
+      "created": "2026-07-27T17:01:09.013174888+08:00",
+      "size": 581808269,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:deffc1e11fa7aba67f6b0523b179688540684e96e40e84f84953bc96b6199b07",
+      "tags": [
+        "swerebenchv2/crossbeam-rs-crossbeam:999-ce31c18"
+      ],
+      "digests": [
+        "swerebenchv2/crossbeam-rs-crossbeam@sha256:deffc1e11fa7aba67f6b0523b179688540684e96e40e84f84953bc96b6199b07"
+      ],
+      "created": "2026-07-23T15:35:37.773817273+08:00",
+      "size": 580852086,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:0e0420d104099e424b6f74f05e03239ee15ea20d566bb1d55748044bb2edc882",
+      "tags": [
+        "swerebenchv2/alibaba-fescar:501-8bc2c41"
+      ],
+      "digests": [
+        "swerebenchv2/alibaba-fescar@sha256:0e0420d104099e424b6f74f05e03239ee15ea20d566bb1d55748044bb2edc882"
+      ],
+      "created": "2026-07-29T19:58:07.103803391+08:00",
+      "size": 580848133,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:f86b41e39050805174d0793dac67920bc992f47bddf0245cacb4b00a0f383184",
+      "tags": [
+        "swerebenchv2/rust-lang-annotate-snippets-rs:3-6543d2a"
+      ],
+      "digests": [
+        "swerebenchv2/rust-lang-annotate-snippets-rs@sha256:f86b41e39050805174d0793dac67920bc992f47bddf0245cacb4b00a0f383184"
+      ],
+      "created": "2026-07-24T15:35:55.415931464+08:00",
+      "size": 580534663,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:cadf751ea72a6312639de51e66a8c115433566b1633687b7e8a7e9a02d3d6f36",
+      "tags": [
+        "swerebenchv2/servo-rust-url:734-6e5df8f"
+      ],
+      "digests": [
+        "swerebenchv2/servo-rust-url@sha256:cadf751ea72a6312639de51e66a8c115433566b1633687b7e8a7e9a02d3d6f36"
+      ],
+      "created": "2026-07-30T23:45:31.346527284+08:00",
+      "size": 579955802,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:e3ad4a3b597c228775d0f13f4865ddc932dfeb8c1842b34d0a9802da09fb2d0e",
+      "tags": [
+        "swerebenchv2/jugglerchris-rust-html2text:197-2a5a693"
+      ],
+      "digests": [
+        "swerebenchv2/jugglerchris-rust-html2text@sha256:e3ad4a3b597c228775d0f13f4865ddc932dfeb8c1842b34d0a9802da09fb2d0e"
+      ],
+      "created": "2026-07-24T22:09:48.950980895+08:00",
+      "size": 578280701,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:6fee8b621adbe904153f2d25820eb435b66b5c265a5ae298811f8befcfaa5011",
+      "tags": [
+        "swerebenchv2/alexcrichton-toml-rs:165-9942435"
+      ],
+      "digests": [
+        "swerebenchv2/alexcrichton-toml-rs@sha256:6fee8b621adbe904153f2d25820eb435b66b5c265a5ae298811f8befcfaa5011"
+      ],
+      "created": "2026-07-29T19:02:29.199051907+08:00",
+      "size": 578015570,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:dd679df9c04373bc98fe37f04ebe5562642911f3488d770f86b02074d45de46e",
+      "tags": [
+        "swerebenchv2/misawa-xq:68-a7d4cfb"
+      ],
+      "digests": [
+        "swerebenchv2/misawa-xq@sha256:dd679df9c04373bc98fe37f04ebe5562642911f3488d770f86b02074d45de46e"
+      ],
+      "created": "2026-07-27T17:57:17.002748383+08:00",
+      "size": 576449720,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:83711fc85dfb7fb9d8a5dcc1c9e8ce17c5e9005b9590c212fa0f60fe007eb698",
+      "tags": [
+        "swerebenchv2/not-fl3-nanoserde:102-2f538fa"
+      ],
+      "digests": [
+        "swerebenchv2/not-fl3-nanoserde@sha256:83711fc85dfb7fb9d8a5dcc1c9e8ce17c5e9005b9590c212fa0f60fe007eb698"
+      ],
+      "created": "2026-07-27T19:48:27.716489602+08:00",
+      "size": 575955062,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:c927129b3344a333d551a33c5c240aae4e74fd59f30883c38b8d474728a14bb2",
+      "tags": [
+        "swerebenchv2/pravega-zookeeper-operator:359-3359647"
+      ],
+      "digests": [
+        "swerebenchv2/pravega-zookeeper-operator@sha256:c927129b3344a333d551a33c5c240aae4e74fd59f30883c38b8d474728a14bb2"
+      ],
+      "created": "2026-07-27T18:30:28.505346489+08:00",
+      "size": 574486516,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:2e89e6ed7bed483c76b9abcb3fd5a664b4923d9943688495511f6373f13f1e3f",
+      "tags": [
+        "swerebenchv2/ontodev-robot:646-e687020"
+      ],
+      "digests": [
+        "swerebenchv2/ontodev-robot@sha256:2e89e6ed7bed483c76b9abcb3fd5a664b4923d9943688495511f6373f13f1e3f"
+      ],
+      "created": "2026-07-24T16:35:34.694438179+08:00",
+      "size": 572460108,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:d684fca857c8299ff1d9c8f65047fac774efda04b3d3156fe28fc424f65bcbc9",
+      "tags": [
+        "swerebenchv2/alibaba-fescar:408-aa19948"
+      ],
+      "digests": [
+        "swerebenchv2/alibaba-fescar@sha256:d684fca857c8299ff1d9c8f65047fac774efda04b3d3156fe28fc424f65bcbc9"
+      ],
+      "created": "2026-07-24T19:48:28.758013369+08:00",
+      "size": 572078872,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:d19c7993b388d3a3dceb14631d8b920057e0fb43e4ae2a023194db8a27cfd97e",
+      "tags": [
+        "swerebenchv2/plasmapy-plasmapy:517-0a5eb2e"
+      ],
+      "digests": [
+        "swerebenchv2/plasmapy-plasmapy@sha256:d19c7993b388d3a3dceb14631d8b920057e0fb43e4ae2a023194db8a27cfd97e"
+      ],
+      "created": "2026-07-25T21:56:25.570708523+08:00",
+      "size": 570010885,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:a910358bf0ea5079b5d9cef2a9ede35d9bd04aa98af280b6ff56354f692a0ee3",
+      "tags": [
+        "swerebenchv2/databricks-dbt-databricks:935-4b1d2d9"
+      ],
+      "digests": [
+        "swerebenchv2/databricks-dbt-databricks@sha256:a910358bf0ea5079b5d9cef2a9ede35d9bd04aa98af280b6ff56354f692a0ee3"
+      ],
+      "created": "2026-07-24T14:29:32.527643165+08:00",
+      "size": 569209282,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:9253807613a7d675fa258fb66553f504010fe2e617c0af8ccedaa935628705d5",
+      "tags": [
+        "swerebenchv2/misawa-xq:110-3a599ba"
+      ],
+      "digests": [
+        "swerebenchv2/misawa-xq@sha256:9253807613a7d675fa258fb66553f504010fe2e617c0af8ccedaa935628705d5"
+      ],
+      "created": "2026-07-30T23:52:27.175769384+08:00",
+      "size": 568305117,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:aaf35c8b21698ba395ce71879ca84754165cf89d16348593bd62652f2c8e6a5e",
+      "tags": [
+        "swerebenchv2/cs-si-eodag:795-2eb52b8"
+      ],
+      "digests": [
+        "swerebenchv2/cs-si-eodag@sha256:aaf35c8b21698ba395ce71879ca84754165cf89d16348593bd62652f2c8e6a5e"
+      ],
+      "created": "2026-07-25T22:46:05.062667063+08:00",
+      "size": 567201393,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:abaa5853c5f3a4edfdde871623cec3693811240d7b3a4ad6a36acda61f64b39a",
+      "tags": [
+        "swerebenchv2/cs-si-eodag:836-db336eb"
+      ],
+      "digests": [
+        "swerebenchv2/cs-si-eodag@sha256:abaa5853c5f3a4edfdde871623cec3693811240d7b3a4ad6a36acda61f64b39a"
+      ],
+      "created": "2026-07-27T18:18:11.792988121+08:00",
+      "size": 567112254,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:d50d230c4778a43fda77544215e9f4f236b8a46b9caa5dbf045ecf803fc5e7d6",
+      "tags": [
+        "swerebenchv2/googleapis-java-storage:1389-7c3aba2"
+      ],
+      "digests": [
+        "swerebenchv2/googleapis-java-storage@sha256:d50d230c4778a43fda77544215e9f4f236b8a46b9caa5dbf045ecf803fc5e7d6"
+      ],
+      "created": "2026-07-25T20:07:49.102809099+08:00",
+      "size": 565895232,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:dba170438630157401104f38f2c1c16b1c77ea3193ade941680e8bf4dd1288d5",
+      "tags": [
+        "swerebenchv2/pybamm-team-pybamm:4267-668e563"
+      ],
+      "digests": [
+        "swerebenchv2/pybamm-team-pybamm@sha256:dba170438630157401104f38f2c1c16b1c77ea3193ade941680e8bf4dd1288d5"
+      ],
+      "created": "2026-07-24T16:27:46.628810038+08:00",
+      "size": 565547410,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:9e3311c99aacf3c2c36c3eb2144deb452f33606e599a3bdaa8db0d7ff1c832bf",
+      "tags": [
+        "swerebenchv2/sktime-sktime:5977-32fa711"
+      ],
+      "digests": [
+        "swerebenchv2/sktime-sktime@sha256:9e3311c99aacf3c2c36c3eb2144deb452f33606e599a3bdaa8db0d7ff1c832bf"
+      ],
+      "created": "2026-07-30T15:31:56.444115858+08:00",
+      "size": 565545971,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:836049dca055885dd6ad816b8d57719b32110afbcf98fee7a0f4f347616f0646",
+      "tags": [
+        "swerebenchv2/googleapis-java-storage:1615-960b355"
+      ],
+      "digests": [
+        "swerebenchv2/googleapis-java-storage@sha256:836049dca055885dd6ad816b8d57719b32110afbcf98fee7a0f4f347616f0646"
+      ],
+      "created": "2026-07-25T21:31:15.87360465+08:00",
+      "size": 564411243,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:b5077ebecb4991e8ea131dcf4745de52911a80ed89c8f1cd02779cc2d3018703",
+      "tags": [
+        "swerebenchv2/cloudspannerecosystem-harbourbridge:246-93a9474"
+      ],
+      "digests": [
+        "swerebenchv2/cloudspannerecosystem-harbourbridge@sha256:b5077ebecb4991e8ea131dcf4745de52911a80ed89c8f1cd02779cc2d3018703"
+      ],
+      "created": "2026-07-30T14:25:06.115022651+08:00",
+      "size": 560799119,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:bdca9a835b57084c197ee89f1cf6e7cb10258d70b167754ca4c63fae33e7ce5d",
+      "tags": [
+        "swerebenchv2/cs-si-eodag:751-92a537f"
+      ],
+      "digests": [
+        "swerebenchv2/cs-si-eodag@sha256:bdca9a835b57084c197ee89f1cf6e7cb10258d70b167754ca4c63fae33e7ce5d"
+      ],
+      "created": "2026-07-30T19:17:43.721422052+08:00",
+      "size": 560613979,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:dd75a6bb61baa7ccfbe29e37582f42e93d8e22cb0fc195f4140de4843af0f123",
+      "tags": [
+        "swerebenchv2/vegaprotocol-go-wallet:241-5c108bb"
+      ],
+      "digests": [
+        "swerebenchv2/vegaprotocol-go-wallet@sha256:dd75a6bb61baa7ccfbe29e37582f42e93d8e22cb0fc195f4140de4843af0f123"
+      ],
+      "created": "2026-07-29T19:01:34.303682115+08:00",
+      "size": 559505425,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:289cc7681aac8cbb080095a9d585d6ffa0ccb9f1be1dda294b5b8f0320467c29",
+      "tags": [
+        "swerebenchv2/syself-cluster-api-provider-hetzner:1590-926a4c7"
+      ],
+      "digests": [
+        "swerebenchv2/syself-cluster-api-provider-hetzner@sha256:289cc7681aac8cbb080095a9d585d6ffa0ccb9f1be1dda294b5b8f0320467c29"
+      ],
+      "created": "2026-07-30T14:44:33.549473765+08:00",
+      "size": 558774918,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:87402facb68d77c721183c07d769974d880186da976b21f18ab1b17b994bed5d",
+      "tags": [
+        "swerebenchv2/fortio-fortio:516-6476d1e"
+      ],
+      "digests": [
+        "swerebenchv2/fortio-fortio@sha256:87402facb68d77c721183c07d769974d880186da976b21f18ab1b17b994bed5d"
+      ],
+      "created": "2026-07-24T18:12:31.486464943+08:00",
+      "size": 558743571,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:b1d9eff0161adbc403d3affb6c6ea25adc5121bc2ed64f98e4cba1a8b682ddb3",
+      "tags": [
+        "swerebenchv2/hyperledger-aries-framework-go:3483-25d5d00"
+      ],
+      "digests": [
+        "swerebenchv2/hyperledger-aries-framework-go@sha256:b1d9eff0161adbc403d3affb6c6ea25adc5121bc2ed64f98e4cba1a8b682ddb3"
+      ],
+      "created": "2026-07-27T14:46:02.016648289+08:00",
+      "size": 558490430,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:30dd89075ec1faf497f75bf9573394d702d3233254dfd92902cb3b0ca4d912cb",
+      "tags": [
+        "swerebenchv2/qiskit-qiskit-ibm-runtime:361-d69fe47"
+      ],
+      "digests": [
+        "swerebenchv2/qiskit-qiskit-ibm-runtime@sha256:30dd89075ec1faf497f75bf9573394d702d3233254dfd92902cb3b0ca4d912cb"
+      ],
+      "created": "2026-07-29T19:03:29.785089735+08:00",
+      "size": 556306307,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:e7eabca693b8a6e0a18de1507a0e9a82dcb48ff43f62e6b3654bc9208f3a894f",
+      "tags": [
+        "swerebenchv2/qiskit-qiskit-ibm-runtime:367-f1aac5b"
+      ],
+      "digests": [
+        "swerebenchv2/qiskit-qiskit-ibm-runtime@sha256:e7eabca693b8a6e0a18de1507a0e9a82dcb48ff43f62e6b3654bc9208f3a894f"
+      ],
+      "created": "2026-07-24T15:36:57.357833576+08:00",
+      "size": 556149826,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:b4b75cd8b061f1efdb7f1409badb1f3818b90d118680d8474eb14a67fd11b827",
+      "tags": [
+        "swerebenchv2/deepmap-oapi-codegen:72-e541104"
+      ],
+      "digests": [
+        "swerebenchv2/deepmap-oapi-codegen@sha256:b4b75cd8b061f1efdb7f1409badb1f3818b90d118680d8474eb14a67fd11b827"
+      ],
+      "created": "2026-07-31T14:40:39.492281137+08:00",
+      "size": 554265367,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:1da14b366854a8ddbf445624b681cb446be3d6a8ea8c006b2399ad1f980ff37f",
+      "tags": [
+        "swerebenchv2/yonahd-kor:403-38d6532"
+      ],
+      "digests": [
+        "swerebenchv2/yonahd-kor@sha256:1da14b366854a8ddbf445624b681cb446be3d6a8ea8c006b2399ad1f980ff37f"
+      ],
+      "created": "2026-07-31T18:45:56.778830396+08:00",
+      "size": 554213728,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:44fd372c1b45110f2b84c3079528e9b044f3fd754f632c73708fa59efc472d2f",
+      "tags": [
+        "swerebenchv2/pion-webrtc:2786-09461d5"
+      ],
+      "digests": [
+        "swerebenchv2/pion-webrtc@sha256:44fd372c1b45110f2b84c3079528e9b044f3fd754f632c73708fa59efc472d2f"
+      ],
+      "created": "2026-07-24T15:34:46.778561444+08:00",
+      "size": 553146324,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:f755fb51bfbd842d533c86511e9df0b76c078f5144a1f6d21397d81d3ac2dad7",
+      "tags": [
+        "swerebenchv2/oragono-oragono:1087-c1d4c55"
+      ],
+      "digests": [
+        "swerebenchv2/oragono-oragono@sha256:f755fb51bfbd842d533c86511e9df0b76c078f5144a1f6d21397d81d3ac2dad7"
+      ],
+      "created": "2026-07-24T20:05:42.102610859+08:00",
+      "size": 551754609,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:a32198174d0198f53525f9c0c6f938d21e1f0bbd5139a497bb6eee7d4a0f6a38",
+      "tags": [
+        "swerebenchv2/pyccel-pyccel:1971-4ad7d61"
+      ],
+      "digests": [
+        "swerebenchv2/pyccel-pyccel@sha256:a32198174d0198f53525f9c0c6f938d21e1f0bbd5139a497bb6eee7d4a0f6a38"
+      ],
+      "created": "2026-07-30T15:05:17.894280724+08:00",
+      "size": 550220453,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:2e9b7e41ac38ffc533a7ec9398394ca11077f7601407a24bfa9b9fcb63029e73",
+      "tags": [
+        "swerebenchv2/bluesky-bluesky:1579-7fb0123"
+      ],
+      "digests": [
+        "swerebenchv2/bluesky-bluesky@sha256:2e9b7e41ac38ffc533a7ec9398394ca11077f7601407a24bfa9b9fcb63029e73"
+      ],
+      "created": "2026-07-29T20:30:50.842429211+08:00",
+      "size": 546657818,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:75bd76c066a417171ae3d0dfe1ccadfb606b37ff2cf1ceb4e78e213d3225e1b1",
+      "tags": [
+        "swerebenchv2/hacker0x01-react-datepicker:4392-13c1136"
+      ],
+      "digests": [
+        "swerebenchv2/hacker0x01-react-datepicker@sha256:75bd76c066a417171ae3d0dfe1ccadfb606b37ff2cf1ceb4e78e213d3225e1b1"
+      ],
+      "created": "2026-07-27T19:15:31.044165864+08:00",
+      "size": 546397061,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:eb40091e5789246386ab15c944adfa97790eca08bbf66d39985485cc22338f9d",
+      "tags": [
+        "swerebenchv2/cs-si-eodag:490-0a782d7"
+      ],
+      "digests": [
+        "swerebenchv2/cs-si-eodag@sha256:eb40091e5789246386ab15c944adfa97790eca08bbf66d39985485cc22338f9d"
+      ],
+      "created": "2026-07-29T20:12:48.19880501+08:00",
+      "size": 545613448,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:1ec75545209c0ac7ded5ecf806396f7710fbc215803f13fce7cb0fa2969aca2e",
+      "tags": [
+        "swerebenchv2/codeforphilly-chime:559-45aeb49"
+      ],
+      "digests": [
+        "swerebenchv2/codeforphilly-chime@sha256:1ec75545209c0ac7ded5ecf806396f7710fbc215803f13fce7cb0fa2969aca2e"
+      ],
+      "created": "2026-07-30T16:49:39.860707127+08:00",
+      "size": 544549342,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:ef868d093fda0cc4bf2a6a09ae93ae86e8418d59acaa662053ca46ddb6cfce59",
+      "tags": [
+        "swerebenchv2/enmasseproject-enmasse:3538-5709bfd"
+      ],
+      "digests": [
+        "swerebenchv2/enmasseproject-enmasse@sha256:ef868d093fda0cc4bf2a6a09ae93ae86e8418d59acaa662053ca46ddb6cfce59"
+      ],
+      "created": "2026-07-31T17:00:50.100632198+08:00",
+      "size": 543864552,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:b56652cbb3096e54f7e5ef17c683af0b32d52f18f06b4e2a4a75c4d0ea0b0340",
+      "tags": [
+        "swerebenchv2/threefoldtech-zos:481-6d4f04f"
+      ],
+      "digests": [
+        "swerebenchv2/threefoldtech-zos@sha256:b56652cbb3096e54f7e5ef17c683af0b32d52f18f06b4e2a4a75c4d0ea0b0340"
+      ],
+      "created": "2026-07-31T16:36:24.167633145+08:00",
+      "size": 542563146,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:668ae29eac3ed6d89035791d5b40cf0aedb50517443baf4a346741df4b2b3359",
+      "tags": [
+        "swerebenchv2/speee-jsx-slack:207-e105a79"
+      ],
+      "digests": [
+        "swerebenchv2/speee-jsx-slack@sha256:668ae29eac3ed6d89035791d5b40cf0aedb50517443baf4a346741df4b2b3359"
+      ],
+      "created": "2026-07-24T19:53:12.410578804+08:00",
+      "size": 542454589,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:e3c52005adcab1f09c6cc500b68e1cc0c1f13acd54eb3859cc54690f55a45e86",
+      "tags": [
+        "swerebenchv2/tableauio-tableau:122-e116e35"
+      ],
+      "digests": [
+        "swerebenchv2/tableauio-tableau@sha256:e3c52005adcab1f09c6cc500b68e1cc0c1f13acd54eb3859cc54690f55a45e86"
+      ],
+      "created": "2026-07-30T13:22:44.717472226+08:00",
+      "size": 539370881,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:a6970c862ee4422a3c6fef93030c647a67c26c943ad8f2adda2c603556889117",
+      "tags": [
+        "swerebenchv2/narwhals-dev-narwhals:2372-7ae5a8c"
+      ],
+      "digests": [
+        "swerebenchv2/narwhals-dev-narwhals@sha256:a6970c862ee4422a3c6fef93030c647a67c26c943ad8f2adda2c603556889117"
+      ],
+      "created": "2026-07-31T16:55:01.467833993+08:00",
+      "size": 536830579,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:5bb7ff7cf3de9306294bdc4da60b8b94371a500c8e5bc73ce9bd555387bb3e98",
+      "tags": [
+        "swerebenchv2/narwhals-dev-narwhals:1909-a35ea4c"
+      ],
+      "digests": [
+        "swerebenchv2/narwhals-dev-narwhals@sha256:5bb7ff7cf3de9306294bdc4da60b8b94371a500c8e5bc73ce9bd555387bb3e98"
+      ],
+      "created": "2026-07-27T19:17:22.648770336+08:00",
+      "size": 536601789,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:e08eb54bca4276def10d21da583b6be2eb766a020dfde323b7f16b4138334976",
+      "tags": [
+        "swerebenchv2/searchbox-io-jest:386-f34fa45"
+      ],
+      "digests": [
+        "swerebenchv2/searchbox-io-jest@sha256:e08eb54bca4276def10d21da583b6be2eb766a020dfde323b7f16b4138334976"
+      ],
+      "created": "2026-07-30T19:00:41.786254177+08:00",
+      "size": 536003793,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:f824651a23703988800ac9ce2443713d59ce75ec996b057b8e012f1223832ff2",
+      "tags": [
+        "swerebenchv2/google-yamlfmt:40-abc4812"
+      ],
+      "digests": [
+        "swerebenchv2/google-yamlfmt@sha256:f824651a23703988800ac9ce2443713d59ce75ec996b057b8e012f1223832ff2"
+      ],
+      "created": "2026-07-31T18:34:29.003310424+08:00",
+      "size": 532540278,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:7d67bb4ea0d9a09bb04caef124820ea51fb565b4c97afa640c2ddfdc560943d8",
+      "tags": [
+        "swerebenchv2/google-yamlfmt:4-07d5e88"
+      ],
+      "digests": [
+        "swerebenchv2/google-yamlfmt@sha256:7d67bb4ea0d9a09bb04caef124820ea51fb565b4c97afa640c2ddfdc560943d8"
+      ],
+      "created": "2026-07-24T14:38:01.309594435+08:00",
+      "size": 532463624,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:aaf71ec5553619a9cde8685f1af3f2ab76ca2810751f86a64074d2b8ec98c2fc",
+      "tags": [
+        "swerebenchv2/urlaubsverwaltung-urlaubsverwaltung:5415-74aa63c"
+      ],
+      "digests": [
+        "swerebenchv2/urlaubsverwaltung-urlaubsverwaltung@sha256:aaf71ec5553619a9cde8685f1af3f2ab76ca2810751f86a64074d2b8ec98c2fc"
+      ],
+      "created": "2026-07-30T00:32:23.864879276+08:00",
+      "size": 532228048,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:8d7cab9c013cdaaed8b8b96557afb9171a355db49b70bfac09e352ec9c124bda",
+      "tags": [
+        "swerebenchv2/urlaubsverwaltung-urlaubsverwaltung:4666-77f1f71"
+      ],
+      "digests": [
+        "swerebenchv2/urlaubsverwaltung-urlaubsverwaltung@sha256:8d7cab9c013cdaaed8b8b96557afb9171a355db49b70bfac09e352ec9c124bda"
+      ],
+      "created": "2026-07-24T22:52:38.213995133+08:00",
+      "size": 532060295,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:516129832941fab1e5b45f33cb5596964e43ed60d62c66634b6049e07a722e68",
+      "tags": [
+        "swerebenchv2/pyccel-pyccel:1649-41fb93e"
+      ],
+      "digests": [
+        "swerebenchv2/pyccel-pyccel@sha256:516129832941fab1e5b45f33cb5596964e43ed60d62c66634b6049e07a722e68"
+      ],
+      "created": "2026-07-29T20:18:28.388030414+08:00",
+      "size": 531976076,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:ec54dd1e8863a078a5c2cefd022b7226abbfb99b62505ea604f4390357419669",
+      "tags": [
+        "swerebenchv2/urlaubsverwaltung-urlaubsverwaltung:5089-0ad49c6"
+      ],
+      "digests": [
+        "swerebenchv2/urlaubsverwaltung-urlaubsverwaltung@sha256:ec54dd1e8863a078a5c2cefd022b7226abbfb99b62505ea604f4390357419669"
+      ],
+      "created": "2026-07-31T14:46:20.683418937+08:00",
+      "size": 531658761,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:9e13b705808a9c0885958c4dd2f1521277f8e298f82194cda40778eaa464895c",
+      "tags": [
+        "swerebenchv2/nuveo-prest:111-4eb65dd"
+      ],
+      "digests": [
+        "swerebenchv2/nuveo-prest@sha256:9e13b705808a9c0885958c4dd2f1521277f8e298f82194cda40778eaa464895c"
+      ],
+      "created": "2026-07-25T20:21:33.263163278+08:00",
+      "size": 531267359,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:92c602d30e3267dc3bf67b183ff38e98017797534860275962785c4c309e7f85",
+      "tags": [
+        "swerebenchv2/gabriel-vasile-mimetype:466-02af149"
+      ],
+      "digests": [
+        "swerebenchv2/gabriel-vasile-mimetype@sha256:92c602d30e3267dc3bf67b183ff38e98017797534860275962785c4c309e7f85"
+      ],
+      "created": "2026-07-31T13:57:02.03274011+08:00",
+      "size": 531254862,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:7f70464bc33a100c0b24f7db01af498bb75868cc0c4020029d8ec3de8d574715",
+      "tags": [
+        "swerebenchv2/dusk-network-dusk-blockchain:1296-ef11b7b"
+      ],
+      "digests": [
+        "swerebenchv2/dusk-network-dusk-blockchain@sha256:7f70464bc33a100c0b24f7db01af498bb75868cc0c4020029d8ec3de8d574715"
+      ],
+      "created": "2026-07-25T21:11:36.467073021+08:00",
+      "size": 531248205,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:9633fdcc908357a265b54cdcafcb262708328834be6d28eb59db1086cfa928d4",
+      "tags": [
+        "swerebenchv2/hub4j-github-api:1425-d226125"
+      ],
+      "digests": [
+        "swerebenchv2/hub4j-github-api@sha256:9633fdcc908357a265b54cdcafcb262708328834be6d28eb59db1086cfa928d4"
+      ],
+      "created": "2026-07-24T22:23:18.591921716+08:00",
+      "size": 530739855,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:0aadd3d46c51dc143e1a70f07b630b2e2e47233240ea5a3edffddb05a7d93313",
+      "tags": [
+        "swerebenchv2/hub4j-github-api:1247-b92c060"
+      ],
+      "digests": [
+        "swerebenchv2/hub4j-github-api@sha256:0aadd3d46c51dc143e1a70f07b630b2e2e47233240ea5a3edffddb05a7d93313"
+      ],
+      "created": "2026-07-24T16:11:01.437399561+08:00",
+      "size": 530616263,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:15ea61e0846accbd271983faf2aecdb54b1c733cb1c8f8408fdb4f284a6ce20f",
+      "tags": [
+        "swerebenchv2/goadesign-goa:3584-07ae5c9"
+      ],
+      "digests": [
+        "swerebenchv2/goadesign-goa@sha256:15ea61e0846accbd271983faf2aecdb54b1c733cb1c8f8408fdb4f284a6ce20f"
+      ],
+      "created": "2026-07-26T00:15:02.907867645+08:00",
+      "size": 529648902,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:c7597c5e4aaaef5457b6dc94d248764cf14fa048c875abca53be18d84e36cb8a",
+      "tags": [
+        "swerebenchv2/peak-s5cmd:582-af8d725"
+      ],
+      "digests": [
+        "swerebenchv2/peak-s5cmd@sha256:c7597c5e4aaaef5457b6dc94d248764cf14fa048c875abca53be18d84e36cb8a"
+      ],
+      "created": "2026-07-31T17:54:04.45823631+08:00",
+      "size": 528827801,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:127027c0133c92f796296d643909b28d3264173cbe58b7e15e483b3ef4235046",
+      "tags": [
+        "swerebenchv2/ontodev-robot:138-625284f"
+      ],
+      "digests": [
+        "swerebenchv2/ontodev-robot@sha256:127027c0133c92f796296d643909b28d3264173cbe58b7e15e483b3ef4235046"
+      ],
+      "created": "2026-07-25T19:47:46.751403469+08:00",
+      "size": 525527894,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:98b0164900d086a52f454a020357357e3f0e93cce386f98e7b857373346d1808",
+      "tags": [
+        "swerebenchv2/bloomberg-memray:552-ce382d6"
+      ],
+      "digests": [
+        "swerebenchv2/bloomberg-memray@sha256:98b0164900d086a52f454a020357357e3f0e93cce386f98e7b857373346d1808"
+      ],
+      "created": "2026-07-29T23:49:30.956161586+08:00",
+      "size": 524762864,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:43769d81f09571f7cb462819e01c09fc7d1d2a5c07fa109465517af68c8485a3",
+      "tags": [
+        "swerebenchv2/mgechev-revive:638-baa70eb"
+      ],
+      "digests": [
+        "swerebenchv2/mgechev-revive@sha256:43769d81f09571f7cb462819e01c09fc7d1d2a5c07fa109465517af68c8485a3"
+      ],
+      "created": "2026-07-25T19:31:05.445628575+08:00",
+      "size": 524251126,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:f1bf491302bf7af90b4b3ec254868019262f0d7217d6d2a916dd0d7d4b015a91",
+      "tags": [
+        "swerebenchv2/ember-intl-ember-intl:1515-8b7f7ac"
+      ],
+      "digests": [
+        "swerebenchv2/ember-intl-ember-intl@sha256:f1bf491302bf7af90b4b3ec254868019262f0d7217d6d2a916dd0d7d4b015a91"
+      ],
+      "created": "2026-07-24T15:27:52.376120735+08:00",
+      "size": 523528703,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:42441da408edc9ff02b6fd7aa3cd41ea906bf0115b66b9201457b1373778600b",
+      "tags": [
+        "swerebenchv2/jhump-protoreflect:337-8d2d934"
+      ],
+      "digests": [
+        "swerebenchv2/jhump-protoreflect@sha256:42441da408edc9ff02b6fd7aa3cd41ea906bf0115b66b9201457b1373778600b"
+      ],
+      "created": "2026-07-27T15:04:38.601753089+08:00",
+      "size": 518818155,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:ada7a3a60b9ea1f78f8a37ca8c914478a358d60efa6f6586e952da30cb6aff25",
+      "tags": [
+        "swerebenchv2/go-piv-piv-go:130-55b6465"
+      ],
+      "digests": [
+        "swerebenchv2/go-piv-piv-go@sha256:ada7a3a60b9ea1f78f8a37ca8c914478a358d60efa6f6586e952da30cb6aff25"
+      ],
+      "created": "2026-07-25T20:59:40.739236628+08:00",
+      "size": 518066162,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:05e8576c35fdf8e65ceda0827c6341376648c64ca11735db99930508718ac24e",
+      "tags": [
+        "swerebenchv2/influxdata-influxdb-client-go:192-db8288b"
+      ],
+      "digests": [
+        "swerebenchv2/influxdata-influxdb-client-go@sha256:05e8576c35fdf8e65ceda0827c6341376648c64ca11735db99930508718ac24e"
+      ],
+      "created": "2026-07-30T22:44:26.297906215+08:00",
+      "size": 514604969,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:59ec17628333b3cd858e66c4620c5847611d6f839f4416a5a5a7e396825369fd",
+      "tags": [
+        "swerebenchv2/open-telemetry-opentelemetry-go:286-e99cac2"
+      ],
+      "digests": [
+        "swerebenchv2/open-telemetry-opentelemetry-go@sha256:59ec17628333b3cd858e66c4620c5847611d6f839f4416a5a5a7e396825369fd"
+      ],
+      "created": "2026-07-30T13:18:54.287091487+08:00",
+      "size": 514234816,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:e5c5bd3c4e6c1730083e349cf41bb076fc22c6a15bcc477fb0bd20051f8e1ea5",
+      "tags": [
+        "swerebenchv2/pulumi-pulumi-awsx:815-1fe6dd3"
+      ],
+      "digests": [
+        "swerebenchv2/pulumi-pulumi-awsx@sha256:e5c5bd3c4e6c1730083e349cf41bb076fc22c6a15bcc477fb0bd20051f8e1ea5"
+      ],
+      "created": "2026-07-31T18:33:40.074566931+08:00",
+      "size": 514150230,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:ac6cfc49626fe7c91364ab993cd53ce9e9acc53dd7d11ff073ae94ca490ed7af",
+      "tags": [
+        "swerebenchv2/srvaroa-labeler:60-f81537c"
+      ],
+      "digests": [
+        "swerebenchv2/srvaroa-labeler@sha256:ac6cfc49626fe7c91364ab993cd53ce9e9acc53dd7d11ff073ae94ca490ed7af"
+      ],
+      "created": "2026-07-29T23:44:52.107820314+08:00",
+      "size": 513555339,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:aeeb6e8bda97098d72eba1e4bb211075dc96e4e68cd1ec86357061c8f218b10c",
+      "tags": [
+        "swerebenchv2/getmoto-moto:7153-9098554"
+      ],
+      "digests": [
+        "swerebenchv2/getmoto-moto@sha256:aeeb6e8bda97098d72eba1e4bb211075dc96e4e68cd1ec86357061c8f218b10c"
+      ],
+      "created": "2026-07-30T14:58:32.989602564+08:00",
+      "size": 512856957,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:8e50169f02ab40b877943cd858e97f9092e269eb7e313be9c2dc7978d4150e7e",
+      "tags": [
+        "swerebenchv2/getmoto-moto:6923-069218e"
+      ],
+      "digests": [
+        "swerebenchv2/getmoto-moto@sha256:8e50169f02ab40b877943cd858e97f9092e269eb7e313be9c2dc7978d4150e7e"
+      ],
+      "created": "2026-07-29T21:47:22.884740478+08:00",
+      "size": 512185137,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:00ac1755850dfaac2ab2466dafc1bb6c63eb16130832680d4c8b7f2663bf8fef",
+      "tags": [
+        "swerebenchv2/getmoto-moto:6913-f59e178"
+      ],
+      "digests": [
+        "swerebenchv2/getmoto-moto@sha256:00ac1755850dfaac2ab2466dafc1bb6c63eb16130832680d4c8b7f2663bf8fef"
+      ],
+      "created": "2026-07-30T00:34:03.655856189+08:00",
+      "size": 512177258,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:eb007300cfc61af13ad770171bb76cf4a86edb2d216c23327ad35604fad6c35b",
+      "tags": [
+        "swerebenchv2/getmoto-moto:6802-03cc785"
+      ],
+      "digests": [
+        "swerebenchv2/getmoto-moto@sha256:eb007300cfc61af13ad770171bb76cf4a86edb2d216c23327ad35604fad6c35b"
+      ],
+      "created": "2026-07-30T21:01:28.703928556+08:00",
+      "size": 512134885,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:aeebcb6866cb83d0c83ced4bb58e3344a65055743da54c4e93a93bbfc181e992",
+      "tags": [
+        "swerebenchv2/getmoto-moto:9005-3a7f5ee"
+      ],
+      "digests": [
+        "swerebenchv2/getmoto-moto@sha256:aeebcb6866cb83d0c83ced4bb58e3344a65055743da54c4e93a93bbfc181e992"
+      ],
+      "created": "2026-07-27T13:41:43.647519978+08:00",
+      "size": 509203091,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:3ec5de3d7944c447d2fb223354d99abaa10abfbb6366e8867085fa4f6892d064",
+      "tags": [
+        "swerebenchv2/gotestyourself-gotestsum:149-b3209ee"
+      ],
+      "digests": [
+        "swerebenchv2/gotestyourself-gotestsum@sha256:3ec5de3d7944c447d2fb223354d99abaa10abfbb6366e8867085fa4f6892d064"
+      ],
+      "created": "2026-07-27T14:42:07.341292378+08:00",
+      "size": 507251295,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:f3e8b6c1e0fe9f8cb90efd623d7460cf1d347159b509d4dc4f5911eda8070957",
+      "tags": [
+        "swerebenchv2/getmoto-moto:8828-4375dfc"
+      ],
+      "digests": [
+        "swerebenchv2/getmoto-moto@sha256:f3e8b6c1e0fe9f8cb90efd623d7460cf1d347159b509d4dc4f5911eda8070957"
+      ],
+      "created": "2026-07-29T21:45:15.073963049+08:00",
+      "size": 506482788,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:dc06bd68ed84cd33d6e45db80d2321c2c00a411abdb188a13829e97e4c086775",
+      "tags": [
+        "swerebenchv2/google-go-github:1092-d8ef5e0"
+      ],
+      "digests": [
+        "swerebenchv2/google-go-github@sha256:dc06bd68ed84cd33d6e45db80d2321c2c00a411abdb188a13829e97e4c086775"
+      ],
+      "created": "2026-07-27T18:58:09.129495896+08:00",
+      "size": 505737162,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:57d6bded01c97a669668192dabad1883a8ec1d5d95cab268f64adfb16f939944",
+      "tags": [
+        "swerebenchv2/deepjavalibrary-djl:2056-1e9cf85"
+      ],
+      "digests": [
+        "swerebenchv2/deepjavalibrary-djl@sha256:57d6bded01c97a669668192dabad1883a8ec1d5d95cab268f64adfb16f939944"
+      ],
+      "created": "2026-07-27T13:28:31.525270736+08:00",
+      "size": 505508299,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:eaba92f79350f6738025d55730752b2aa3ac4102ef69e966e5021bfb4b432b07",
+      "tags": [
+        "swerebenchv2/getmoto-moto:7955-0c869c2"
+      ],
+      "digests": [
+        "swerebenchv2/getmoto-moto@sha256:eaba92f79350f6738025d55730752b2aa3ac4102ef69e966e5021bfb4b432b07"
+      ],
+      "created": "2026-07-24T16:09:07.489628807+08:00",
+      "size": 504671706,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:fa47a5ef2cdb9d403021c56b872086d2e5fa6c1dd650cfae105bda3e89b5ea1f",
+      "tags": [
+        "swerebenchv2/getmoto-moto:7795-4c99cbb"
+      ],
+      "digests": [
+        "swerebenchv2/getmoto-moto@sha256:fa47a5ef2cdb9d403021c56b872086d2e5fa6c1dd650cfae105bda3e89b5ea1f"
+      ],
+      "created": "2026-07-29T22:19:35.949966244+08:00",
+      "size": 504481717,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:eef958c88301a6571c3ca50dfd3a05d39e34e85f35eba1dfd49a1d3e0fb8d561",
+      "tags": [
+        "swerebenchv2/getmoto-moto:7728-c637076"
+      ],
+      "digests": [
+        "swerebenchv2/getmoto-moto@sha256:eef958c88301a6571c3ca50dfd3a05d39e34e85f35eba1dfd49a1d3e0fb8d561"
+      ],
+      "created": "2026-07-27T13:50:36.712137033+08:00",
+      "size": 504367995,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:e00e1487d6fc1e5845cbffacfd8339b4456065ba8797c7ad3e024d975107a26c",
+      "tags": [
+        "swerebenchv2/redis-lettuce:2986-bfbb85f"
+      ],
+      "digests": [
+        "swerebenchv2/redis-lettuce@sha256:e00e1487d6fc1e5845cbffacfd8339b4456065ba8797c7ad3e024d975107a26c"
+      ],
+      "created": "2026-07-31T17:37:36.039309407+08:00",
+      "size": 503858761,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:e46d580a8931efdefbf5d7bb32468c6ce53ffb44410123fc913507b1cc96b06e",
+      "tags": [
+        "swerebenchv2/redis-lettuce:3035-114755d"
+      ],
+      "digests": [
+        "swerebenchv2/redis-lettuce@sha256:e46d580a8931efdefbf5d7bb32468c6ce53ffb44410123fc913507b1cc96b06e"
+      ],
+      "created": "2026-07-31T14:43:50.468422779+08:00",
+      "size": 503412229,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:a56c52bb0a90be02654f8fe4baf7760d97cb1b6dc44827678937256efe0ffca3",
+      "tags": [
+        "swerebenchv2/edgexfoundry-device-sdk-go:265-3bfdd15"
+      ],
+      "digests": [
+        "swerebenchv2/edgexfoundry-device-sdk-go@sha256:a56c52bb0a90be02654f8fe4baf7760d97cb1b6dc44827678937256efe0ffca3"
+      ],
+      "created": "2026-07-29T18:26:22.100759909+08:00",
+      "size": 502986686,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:3276fbf9ea60ac17d67efb0f89b17a1762d265a509bcacc0ef0cae254a485e9b",
+      "tags": [
+        "swerebenchv2/redis-lettuce:3026-385275b"
+      ],
+      "digests": [
+        "swerebenchv2/redis-lettuce@sha256:3276fbf9ea60ac17d67efb0f89b17a1762d265a509bcacc0ef0cae254a485e9b"
+      ],
+      "created": "2026-07-24T20:12:48.418732458+08:00",
+      "size": 502553695,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:6ed30ac390504577d428d106083e1b60f3cf5fcbbb283c10514d493583c0ec2e",
+      "tags": [
+        "swerebenchv2/typedorm-typedorm:111-6ccc93e"
+      ],
+      "digests": [
+        "swerebenchv2/typedorm-typedorm@sha256:6ed30ac390504577d428d106083e1b60f3cf5fcbbb283c10514d493583c0ec2e"
+      ],
+      "created": "2026-07-24T14:40:40.533614776+08:00",
+      "size": 502241735,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:a016eece27d083af12fa8691bc7a05c36a10e8e51ddcf17bf7bfb9db6276cd47",
+      "tags": [
+        "swerebenchv2/core-gatech-group-serpent-tools:255-4a3905f"
+      ],
+      "digests": [
+        "swerebenchv2/core-gatech-group-serpent-tools@sha256:a016eece27d083af12fa8691bc7a05c36a10e8e51ddcf17bf7bfb9db6276cd47"
+      ],
+      "created": "2026-07-25T22:00:53.506278176+08:00",
+      "size": 501886282,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:31c0e5a586a14bbd2e6b6dcf265473f7abed001744409995bbc57d18026ae0b1",
+      "tags": [
+        "swerebenchv2/qutip-qutip:2596-dbce562"
+      ],
+      "digests": [
+        "swerebenchv2/qutip-qutip@sha256:31c0e5a586a14bbd2e6b6dcf265473f7abed001744409995bbc57d18026ae0b1"
+      ],
+      "created": "2026-07-29T20:38:49.72424247+08:00",
+      "size": 501276074,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:c33d35660bec6108643fe6d74a3b253e10077517c8327fa13548a30cda4b88af",
+      "tags": [
+        "swerebenchv2/ceph-go-ceph:447-1e15c36"
+      ],
+      "digests": [
+        "swerebenchv2/ceph-go-ceph@sha256:c33d35660bec6108643fe6d74a3b253e10077517c8327fa13548a30cda4b88af"
+      ],
+      "created": "2026-07-24T19:33:17.609883251+08:00",
+      "size": 500742077,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:9eaa95039321d47d2641eb1b0fd6c005690351d86904ebae4775ee4febd751b1",
+      "tags": [
+        "swerebenchv2/mlcommons-medperf:628-ea5a576"
+      ],
+      "digests": [
+        "swerebenchv2/mlcommons-medperf@sha256:9eaa95039321d47d2641eb1b0fd6c005690351d86904ebae4775ee4febd751b1"
+      ],
+      "created": "2026-07-29T21:40:15.169297775+08:00",
+      "size": 500549991,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:b011af84bed92779a0a8d2522edd7e3377dab915d24f4fc22d15b1bd3823f9b7",
+      "tags": [
+        "swerebenchv2/vackosar-gitflow-incremental-builder:174-1191e48"
+      ],
+      "digests": [
+        "swerebenchv2/vackosar-gitflow-incremental-builder@sha256:b011af84bed92779a0a8d2522edd7e3377dab915d24f4fc22d15b1bd3823f9b7"
+      ],
+      "created": "2026-07-29T20:26:16.827731483+08:00",
+      "size": 498709797,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:c0b35fd88887aebb888f4a8c56e7964313012cab105a5c32f3ac7ae93163a9a5",
+      "tags": [
+        "swerebenchv2/katex-katex:2040-3b80e01"
+      ],
+      "digests": [
+        "swerebenchv2/katex-katex@sha256:c0b35fd88887aebb888f4a8c56e7964313012cab105a5c32f3ac7ae93163a9a5"
+      ],
+      "created": "2026-07-24T18:57:26.772572679+08:00",
+      "size": 498406864,
+      "state": "removed"
+    },
+    {
+      "id": "sha256:b3f2c1824e02fcbe435bc309aeada2836cea205433c24884a1df9b2af3942075",
+      "tags": [
+        "swerebenchv2/ceph-go-ceph:221-301d8e4"
+      ],
+      "digests": [
+        "swerebenchv2/ceph-go-ceph@sha256:b3f2c1824e02fcbe435bc309aeada2836cea205433c24884a1df9b2af3942075"
+      ],
+      "created": "2026-07-23T15:32:47.014320074+08:00",
+      "size": 498156213,
+      "state": "removed"
+    }
+  ],
+  "removed": 240,
+  "free_before": 49977454592,
+  "free_after": 337653915648,
+  "protected_results_verified": 1332,
+  "historical_snapshots_preserved": 201,
+  "no_container_deletion": true,
+  "no_forced_removal": true
+}

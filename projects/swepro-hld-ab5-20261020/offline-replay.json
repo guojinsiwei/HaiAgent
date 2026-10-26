@@ -1,0 +1,561 @@
+{
+  "summary": {
+    "plans": 33,
+    "before_accepted": 26,
+    "after_accepted": 31,
+    "recovered": 5,
+    "regressions": 0,
+    "structured_followup_crashes_recovered": 11,
+    "note": "Offline protocol replay of frozen responses, not new model execution or task success."
+  },
+  "results": [
+    {
+      "index": 5,
+      "request": "session-dcfb59b3-ab09-4bf7-ac2b-c75f3e4f3d23:kz:semantic_planner:1",
+      "before": {
+        "accepted": true,
+        "route": "D1"
+      },
+      "after": {
+        "accepted": true,
+        "route": "D1"
+      }
+    },
+    {
+      "index": 5,
+      "request": "session-dcfb59b3-ab09-4bf7-ac2b-c75f3e4f3d23:kz:semantic_planner:4",
+      "before": {
+        "accepted": true,
+        "route": "D1"
+      },
+      "after": {
+        "accepted": true,
+        "route": "D1"
+      }
+    },
+    {
+      "index": 5,
+      "request": "session-dcfb59b3-ab09-4bf7-ac2b-c75f3e4f3d23:kz:semantic_planner:5",
+      "before": {
+        "accepted": true,
+        "route": "D4"
+      },
+      "after": {
+        "accepted": true,
+        "route": "D4"
+      }
+    },
+    {
+      "index": 5,
+      "request": "session-dcfb59b3-ab09-4bf7-ac2b-c75f3e4f3d23:kz:semantic_planner:7",
+      "before": {
+        "accepted": false,
+        "error": "invalid route evaluation or evidence"
+      },
+      "after": {
+        "accepted": true,
+        "route": "D4"
+      }
+    },
+    {
+      "index": 5,
+      "request": "session-dcfb59b3-ab09-4bf7-ac2b-c75f3e4f3d23:kz:semantic_planner:10",
+      "before": {
+        "accepted": false,
+        "error": "invalid route evaluation or evidence"
+      },
+      "after": {
+        "accepted": true,
+        "route": "D3"
+      }
+    },
+    {
+      "index": 5,
+      "request": "session-dcfb59b3-ab09-4bf7-ac2b-c75f3e4f3d23:kz:semantic_planner:19",
+      "before": {
+        "accepted": true,
+        "route": "D6"
+      },
+      "after": {
+        "accepted": true,
+        "route": "D6"
+      }
+    },
+    {
+      "index": 5,
+      "request": "session-dcfb59b3-ab09-4bf7-ac2b-c75f3e4f3d23:kz:semantic_planner:21",
+      "before": {
+        "accepted": true,
+        "route": "D8"
+      },
+      "after": {
+        "accepted": true,
+        "route": "D8"
+      }
+    },
+    {
+      "index": 5,
+      "request": "session-dcfb59b3-ab09-4bf7-ac2b-c75f3e4f3d23:kz:semantic_planner:22",
+      "before": {
+        "accepted": true,
+        "route": "D6"
+      },
+      "after": {
+        "accepted": true,
+        "route": "D6"
+      }
+    },
+    {
+      "index": 5,
+      "request": "session-dcfb59b3-ab09-4bf7-ac2b-c75f3e4f3d23:kz:semantic_planner:24",
+      "before": {
+        "accepted": true,
+        "route": "D6"
+      },
+      "after": {
+        "accepted": true,
+        "route": "D6"
+      }
+    },
+    {
+      "index": 8,
+      "request": "session-39a2685b-3428-4111-bb74-94d3109040e8:kz:semantic_planner:1",
+      "before": {
+        "accepted": true,
+        "route": "D1"
+      },
+      "after": {
+        "accepted": true,
+        "route": "D1"
+      }
+    },
+    {
+      "index": 8,
+      "request": "session-39a2685b-3428-4111-bb74-94d3109040e8:kz:semantic_planner:2",
+      "before": {
+        "accepted": true,
+        "route": "D3"
+      },
+      "after": {
+        "accepted": true,
+        "route": "D3"
+      }
+    },
+    {
+      "index": 8,
+      "request": "session-39a2685b-3428-4111-bb74-94d3109040e8:kz:semantic_planner:4",
+      "before": {
+        "accepted": false,
+        "error": "invalid route evaluation or evidence"
+      },
+      "after": {
+        "accepted": true,
+        "route": "D6"
+      }
+    },
+    {
+      "index": 8,
+      "request": "session-39a2685b-3428-4111-bb74-94d3109040e8:kz:semantic_planner:6",
+      "before": {
+        "accepted": true,
+        "route": "D5"
+      },
+      "after": {
+        "accepted": true,
+        "route": "D5"
+      }
+    },
+    {
+      "index": 8,
+      "request": "session-39a2685b-3428-4111-bb74-94d3109040e8:kz:semantic_planner:8",
+      "before": {
+        "accepted": true,
+        "route": "D6"
+      },
+      "after": {
+        "accepted": true,
+        "route": "D6"
+      }
+    },
+    {
+      "index": 11,
+      "request": "session-f67ac5cd-d224-4015-b767-c59ee2723f22:kz:semantic_planner:1",
+      "before": {
+        "accepted": true,
+        "route": "D1"
+      },
+      "after": {
+        "accepted": true,
+        "route": "D1"
+      }
+    },
+    {
+      "index": 11,
+      "request": "session-f67ac5cd-d224-4015-b767-c59ee2723f22:kz:semantic_planner:2",
+      "before": {
+        "accepted": true,
+        "route": "D3"
+      },
+      "after": {
+        "accepted": true,
+        "route": "D3"
+      }
+    },
+    {
+      "index": 11,
+      "request": "session-f67ac5cd-d224-4015-b767-c59ee2723f22:kz:semantic_planner:5",
+      "before": {
+        "accepted": true,
+        "route": "D3"
+      },
+      "after": {
+        "accepted": true,
+        "route": "D3"
+      }
+    },
+    {
+      "index": 11,
+      "request": "session-f67ac5cd-d224-4015-b767-c59ee2723f22:kz:semantic_planner:7",
+      "before": {
+        "accepted": true,
+        "route": "D6"
+      },
+      "after": {
+        "accepted": true,
+        "route": "D6"
+      }
+    },
+    {
+      "index": 11,
+      "request": "session-f67ac5cd-d224-4015-b767-c59ee2723f22:kz:semantic_planner:9",
+      "before": {
+        "accepted": true,
+        "route": "D8"
+      },
+      "after": {
+        "accepted": true,
+        "route": "D8"
+      }
+    },
+    {
+      "index": 11,
+      "request": "session-f67ac5cd-d224-4015-b767-c59ee2723f22:kz:semantic_planner:12",
+      "before": {
+        "accepted": true,
+        "route": "D10"
+      },
+      "after": {
+        "accepted": true,
+        "route": "D10"
+      }
+    },
+    {
+      "index": 11,
+      "request": "session-f67ac5cd-d224-4015-b767-c59ee2723f22:kz:semantic_planner:14",
+      "before": {
+        "accepted": false,
+        "error": "invalid route evaluation or evidence"
+      },
+      "after": {
+        "accepted": true,
+        "route": "D12"
+      }
+    },
+    {
+      "index": 12,
+      "request": "session-2e931bd2-28b0-4b69-90e2-acfc24695ccd:kz:semantic_planner:1",
+      "before": {
+        "accepted": true,
+        "route": "D1"
+      },
+      "after": {
+        "accepted": true,
+        "route": "D1"
+      }
+    },
+    {
+      "index": 12,
+      "request": "session-2e931bd2-28b0-4b69-90e2-acfc24695ccd:kz:semantic_planner:3",
+      "before": {
+        "accepted": true,
+        "route": "D3"
+      },
+      "after": {
+        "accepted": true,
+        "route": "D3"
+      }
+    },
+    {
+      "index": 12,
+      "request": "session-2e931bd2-28b0-4b69-90e2-acfc24695ccd:kz:semantic_planner:4",
+      "before": {
+        "accepted": true,
+        "route": "D4"
+      },
+      "after": {
+        "accepted": true,
+        "route": "D4"
+      }
+    },
+    {
+      "index": 12,
+      "request": "session-2e931bd2-28b0-4b69-90e2-acfc24695ccd:kz:semantic_planner:6",
+      "before": {
+        "accepted": true,
+        "route": "D4"
+      },
+      "after": {
+        "accepted": true,
+        "route": "D4"
+      }
+    },
+    {
+      "index": 12,
+      "request": "session-2e931bd2-28b0-4b69-90e2-acfc24695ccd:kz:semantic_planner:8",
+      "before": {
+        "accepted": false,
+        "error": "invalid or rewritten semantic route"
+      },
+      "after": {
+        "accepted": false,
+        "error": "invalid or rewritten semantic route"
+      }
+    },
+    {
+      "index": 12,
+      "request": "session-2e931bd2-28b0-4b69-90e2-acfc24695ccd:kz:semantic_planner:10",
+      "before": {
+        "accepted": false,
+        "error": "invalid or rewritten semantic route"
+      },
+      "after": {
+        "accepted": false,
+        "error": "invalid or rewritten semantic route"
+      }
+    },
+    {
+      "index": 12,
+      "request": "session-2e931bd2-28b0-4b69-90e2-acfc24695ccd:kz:semantic_planner:13",
+      "before": {
+        "accepted": true,
+        "route": "D8"
+      },
+      "after": {
+        "accepted": true,
+        "route": "D8"
+      }
+    },
+    {
+      "index": 12,
+      "request": "session-2e931bd2-28b0-4b69-90e2-acfc24695ccd:kz:semantic_planner:15",
+      "before": {
+        "accepted": true,
+        "route": "D11"
+      },
+      "after": {
+        "accepted": true,
+        "route": "D11"
+      }
+    },
+    {
+      "index": 10,
+      "request": "session-23029eaa-4d90-4abd-a782-74c7f1d77f95:kz:semantic_planner:1",
+      "before": {
+        "accepted": true,
+        "route": "D1"
+      },
+      "after": {
+        "accepted": true,
+        "route": "D1"
+      }
+    },
+    {
+      "index": 10,
+      "request": "session-23029eaa-4d90-4abd-a782-74c7f1d77f95:kz:semantic_planner:2",
+      "before": {
+        "accepted": true,
+        "route": "D2"
+      },
+      "after": {
+        "accepted": true,
+        "route": "D2"
+      }
+    },
+    {
+      "index": 10,
+      "request": "session-23029eaa-4d90-4abd-a782-74c7f1d77f95:kz:semantic_planner:4",
+      "before": {
+        "accepted": true,
+        "route": "D2"
+      },
+      "after": {
+        "accepted": true,
+        "route": "D2"
+      }
+    },
+    {
+      "index": 10,
+      "request": "session-23029eaa-4d90-4abd-a782-74c7f1d77f95:kz:semantic_planner:6",
+      "before": {
+        "accepted": false,
+        "error": "invalid route evaluation or evidence"
+      },
+      "after": {
+        "accepted": true,
+        "route": "D6"
+      }
+    }
+  ],
+  "projections": [
+    {
+      "index": 5,
+      "gap": "Gap-1",
+      "before_error": null,
+      "after_length": 300
+    },
+    {
+      "index": 5,
+      "gap": "Gap-2",
+      "before_error": null,
+      "after_length": 300
+    },
+    {
+      "index": 5,
+      "gap": "Gap-3",
+      "before_error": null,
+      "after_length": 300
+    },
+    {
+      "index": 5,
+      "gap": "Gap-4",
+      "before_error": null,
+      "after_length": 300
+    },
+    {
+      "index": 5,
+      "gap": "Gap-5",
+      "before_error": null,
+      "after_length": 300
+    },
+    {
+      "index": 5,
+      "gap": "Gap-6",
+      "before_error": null,
+      "after_length": 300
+    },
+    {
+      "index": 5,
+      "gap": "Gap-7",
+      "before_error": "text.slice is not a function",
+      "after_length": 103
+    },
+    {
+      "index": 5,
+      "gap": "Gap-8",
+      "before_error": "text.slice is not a function",
+      "after_length": 133
+    },
+    {
+      "index": 5,
+      "gap": "Gap-9",
+      "before_error": "text.slice is not a function",
+      "after_length": 149
+    },
+    {
+      "index": 8,
+      "gap": "Gap-1",
+      "before_error": null,
+      "after_length": 300
+    },
+    {
+      "index": 8,
+      "gap": "Gap-2",
+      "before_error": null,
+      "after_length": 300
+    },
+    {
+      "index": 8,
+      "gap": "Gap-3",
+      "before_error": "text.slice is not a function",
+      "after_length": 248
+    },
+    {
+      "index": 8,
+      "gap": "Gap-4",
+      "before_error": "text.slice is not a function",
+      "after_length": 121
+    },
+    {
+      "index": 8,
+      "gap": "Gap-5",
+      "before_error": "text.slice is not a function",
+      "after_length": 215
+    },
+    {
+      "index": 8,
+      "gap": "Gap-6",
+      "before_error": "text.slice is not a function",
+      "after_length": 200
+    },
+    {
+      "index": 8,
+      "gap": "Gap-7",
+      "before_error": "text.slice is not a function",
+      "after_length": 239
+    },
+    {
+      "index": 10,
+      "gap": "Gap-1",
+      "before_error": null,
+      "after_length": 146
+    },
+    {
+      "index": 10,
+      "gap": "Gap-2",
+      "before_error": null,
+      "after_length": 173
+    },
+    {
+      "index": 10,
+      "gap": "Gap-3",
+      "before_error": null,
+      "after_length": 161
+    },
+    {
+      "index": 10,
+      "gap": "Gap-4",
+      "before_error": null,
+      "after_length": 300
+    },
+    {
+      "index": 10,
+      "gap": "Gap-5",
+      "before_error": null,
+      "after_length": 300
+    },
+    {
+      "index": 10,
+      "gap": "Gap-6",
+      "before_error": null,
+      "after_length": 300
+    },
+    {
+      "index": 10,
+      "gap": "Gap-7",
+      "before_error": "text.slice is not a function",
+      "after_length": 154
+    },
+    {
+      "index": 10,
+      "gap": "Gap-8",
+      "before_error": "text.slice is not a function",
+      "after_length": 232
+    },
+    {
+      "index": 10,
+      "gap": "Gap-9",
+      "before_error": "text.slice is not a function",
+      "after_length": 138
+    }
+  ]
+}

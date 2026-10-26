@@ -4,6 +4,7 @@
 !.env.example
 !.env.*.example
 *.pem
+!**/cacert.pem
 *.key
 secrets/
 credentials/
@@ -30,6 +31,12 @@ test-results/
 *.zip
 raw-logs/
 checkpoints/
+runs/
+experiment_records/
+projects/**/audit-*/
+projects/**/analysis/
+*.sqlite
+*.sqlite3
 
 # Local editor and OS files
 .idea/

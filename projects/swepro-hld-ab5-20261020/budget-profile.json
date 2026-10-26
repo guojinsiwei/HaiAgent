@@ -1,0 +1,25 @@
+{
+  "endpoint": "https://api.taotoken.net/token/v1/messages",
+  "model": "deepseek-flash",
+  "campaign_limit_microcny": 80000000,
+  "task_limit_microcny": 8000000,
+  "input_ceiling_tokens": 128000,
+  "max_output_tokens": 16384,
+  "requests_per_task": 400,
+  "tools_per_task": 600,
+  "solver_seconds": 3000,
+  "rate_basis": "TaoToken official deepseek-flash peak prices viewed 2026-10-16: input 2, cached input 0.04, output 8 CNY/M; estimate, not Credits invoice",
+  "rate_source": "https://taotoken.net/models?modelId=deepseek-flash",
+  "jobs": [
+    "swp-05-old",
+    "swp-05-new",
+    "swp-08-old",
+    "swp-08-new",
+    "swp-11-old",
+    "swp-11-new",
+    "swp-12-old",
+    "swp-12-new",
+    "swp-10-old",
+    "swp-10-new"
+  ]
+}

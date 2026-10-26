@@ -1,0 +1,130 @@
+{
+  "scope": "KZDSH only",
+  "changed_files": [
+    "exploration-learning.mjs",
+    "exploration-measurement.mjs",
+    "exploration-trigger.mjs",
+    "full-integration.mjs",
+    "full-task.mjs",
+    "plugin.mjs",
+    "policy.mjs",
+    "structured-context.mjs"
+  ],
+  "linux_affected": {
+    "baseline": {
+      "passed": 111,
+      "failed": 0
+    },
+    "candidate": {
+      "passed": 123,
+      "failed": 0
+    }
+  },
+  "windows_broad": {
+    "baseline": {
+      "passed": 344,
+      "failed": 25,
+      "skipped": 18
+    },
+    "candidate": {
+      "passed": 355,
+      "failed": 25,
+      "skipped": 18
+    },
+    "new_failures": []
+  },
+  "deterministic_policy_comparison": {
+    "kind": "deterministic_policy_regression_comparison",
+    "model_calls": 0,
+    "benchmark_tasks_solved": 0,
+    "limitation": "Constructed policy-level cases grounded in observed failure patterns; these are not LLM task-success results.",
+    "baseline_passed": 3,
+    "candidate_passed": 8,
+    "total": 8,
+    "rows": [
+      {
+        "scenario": "related_failures_across_commands",
+        "expected": true,
+        "baseline": false,
+        "candidate": true
+      },
+      {
+        "scenario": "monitor_stall_with_successful_observations",
+        "expected": true,
+        "baseline": false,
+        "candidate": true
+      },
+      {
+        "scenario": "filename_cannot_support_content_equality",
+        "expected": "unknown",
+        "baseline": "supported",
+        "candidate": "unknown"
+      },
+      {
+        "scenario": "auxiliary_steps_end_exploration_window",
+        "expected": false,
+        "baseline": true,
+        "candidate": false
+      },
+      {
+        "scenario": "timeout_is_not_stable_failure_memory",
+        "expected": 0,
+        "baseline": 1,
+        "candidate": 0
+      },
+      {
+        "scenario": "repaired_original_check_remains_executable",
+        "expected": true,
+        "baseline": true,
+        "candidate": true
+      },
+      {
+        "scenario": "different_goals_do_not_aggregate",
+        "expected": false,
+        "baseline": false,
+        "candidate": false
+      },
+      {
+        "scenario": "two_format_errors_release_gate",
+        "expected": false,
+        "baseline": false,
+        "candidate": false
+      }
+    ]
+  },
+  "model_calls_during_development": 0,
+  "budget_authorized_cny": 96,
+  "budget_planned_cny": 48,
+  "per_trial_cny": 4,
+  "trials": 12,
+  "full_entry_acceptance": {
+    "passed": 4,
+    "failed": 0,
+    "network": "none",
+    "real_entrypoint": true,
+    "all_guards_enabled": true,
+    "paid_calls": 0
+  },
+  "official_grading_acceptance": {
+    "passed": 6,
+    "failed": 0,
+    "paid_calls": 0
+  },
+  "startup_faults": {
+    "first_attempt": "deadline module mounted at /opt/kz rather than beside entrypoint",
+    "preflight": "boot guard carried TB2 instruction filename",
+    "paid_calls": 0,
+    "results_excluded": true,
+    "remote_archive": "startup-failures/attempt1"
+  },
+  "launch_status": "running",
+  "launch_pid": 1475131,
+  "launch_verified": {
+    "concurrency": 2,
+    "active_task": "61810_util",
+    "both_arms_model_response_200": true,
+    "both_arms_tools_executed": true,
+    "settled_estimate_cny": 0.146372,
+    "uncertain_cny": 0
+  }
+}

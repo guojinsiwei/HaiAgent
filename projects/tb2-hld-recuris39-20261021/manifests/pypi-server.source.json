@@ -1,0 +1,8 @@
+{
+  "task": "pypi-server",
+  "image": "alexgshaw/pypi-server:20251031",
+  "digest": "sha256:d18bb30f47c7dcaa3acdbc31ac7413c98eadca2ea16540bbd380f2f063b95276",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/pypi-server/manifests/20251031",
+  "header_verified": true,
+  "time": 1792550878.8973024
+}

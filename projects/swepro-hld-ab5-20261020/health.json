@@ -1,0 +1,89 @@
+{
+  "updated": 1792484928.3510165,
+  "pid": 2421445,
+  "state": "running",
+  "rows": {
+    "swp-12-old": {
+      "task": "instance_protonmail__webclients-5e815cfa518b223a088fa9bb232a5fc90ab15691",
+      "arm": "old",
+      "state": "running",
+      "container": "swepro-hld-ab5-20261020-s-swp-12-old",
+      "started": 1792484789.0738165
+    },
+    "swp-12-new": {
+      "task": "instance_protonmail__webclients-5e815cfa518b223a088fa9bb232a5fc90ab15691",
+      "arm": "new",
+      "state": "running",
+      "container": "swepro-hld-ab5-20261020-s-swp-12-new",
+      "started": 1792484789.1073189
+    },
+    "swp-08-old": {
+      "task": "instance_gravitational__teleport-7744f72c6eb631791434b648ba41083b5f6d2278-vce94f93ad1030e3136852817f2423c1b3ac37bc4",
+      "arm": "old",
+      "state": "running",
+      "container": "swepro-hld-ab5-20261020-s-swp-08-old",
+      "started": 1792484827.4653463
+    },
+    "swp-08-new": {
+      "task": "instance_gravitational__teleport-7744f72c6eb631791434b648ba41083b5f6d2278-vce94f93ad1030e3136852817f2423c1b3ac37bc4",
+      "arm": "new",
+      "state": "running",
+      "container": "swepro-hld-ab5-20261020-s-swp-08-new",
+      "started": 1792484827.4386437
+    },
+    "swp-05-old": {
+      "task": "instance_internetarchive__openlibrary-53d376b148897466bb86d5accb51912bbbe9a8ed-v08d8e8889ec945ab821fb156c04c7d2e2810debb",
+      "arm": "old",
+      "state": "pending"
+    },
+    "swp-05-new": {
+      "task": "instance_internetarchive__openlibrary-53d376b148897466bb86d5accb51912bbbe9a8ed-v08d8e8889ec945ab821fb156c04c7d2e2810debb",
+      "arm": "new",
+      "state": "pending"
+    },
+    "swp-10-old": {
+      "task": "instance_element-hq__element-web-6205c70462e0ce2e1e77afb3a70b55d0fdfe1b31-vnan",
+      "arm": "old",
+      "state": "pending"
+    },
+    "swp-10-new": {
+      "task": "instance_element-hq__element-web-6205c70462e0ce2e1e77afb3a70b55d0fdfe1b31-vnan",
+      "arm": "new",
+      "state": "pending"
+    },
+    "swp-11-old": {
+      "task": "instance_future-architect__vuls-436341a4a522dc83eb8bddd1164b764c8dd6bc45",
+      "arm": "old",
+      "state": "pending"
+    },
+    "swp-11-new": {
+      "task": "instance_future-architect__vuls-436341a4a522dc83eb8bddd1164b764c8dd6bc45",
+      "arm": "new",
+      "state": "pending"
+    }
+  },
+  "summary": {
+    "old": {
+      "scored": 0,
+      "passed": 0,
+      "completed": 0,
+      "engineering_failed": 0
+    },
+    "new": {
+      "scored": 0,
+      "passed": 0,
+      "completed": 0,
+      "engineering_failed": 0
+    }
+  },
+  "spending": {
+    "limit_microcny": 80000000,
+    "settled_microcny": 1772768,
+    "reserved_microcny": 675840,
+    "uncertain_microcny": 0,
+    "remaining_microcny": 77551392,
+    "halt_reason": null,
+    "estimate_peak_cny": 80.0
+  },
+  "concurrency": 4
+}

@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "arm": "hld",
+      "passed": true
+    },
+    {
+      "arm": "recuris",
+      "passed": true
+    },
+    {
+      "client": true,
+      "passed": true,
+      "hidden_data_mounted": false
+    }
+  ],
+  "paid_calls": 0
+}

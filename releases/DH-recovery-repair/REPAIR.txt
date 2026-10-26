@@ -1,0 +1,38 @@
+DH v9 recovery repair — 2026-10-07 candidate
+
+Entry point: sources/bestfgs-project/src/bestfgs/lean_runtime.py
+Source baseline: the frozen DH release, with the already-tested large-budget
+argv/stdin capacity from experiment_records/longcli-dh-large20-20261007.
+Runtime version: DH-v9-recovery-repair. Existing experiment copies are unchanged.
+This directory is a candidate, not a newly started paid benchmark campaign.
+
+1. One counter across action-loop, contrastive and memory rejections. At seven,
+   invoke the existing advisor (bypass cooldown, respect role and task budgets).
+   One existing advisor slot is reserved for the first rescue. Seven further
+   rejections without relevant observed progress stop with current files retained
+   and stop_reason=recovery_rejection_limit. An unavailable/exhausted advisor is
+   explicitly logged; it never enables an unbounded retry loop.
+2. An observed change to related source/configuration/dependencies permits the
+   original test without another orthogonality proof. Traceback source files are
+   tracked, including imported code absent from argv. Cached results are reused
+   while known related dependencies are unchanged. Prose change claims do not
+   bypass the guard. Unknown process/network/dependency state remains unknown;
+   this is not a full dependency tracer.
+3. Diagnostic fallbacks use error line numbers or symbol search with bounded
+   source excerpts. Qualified symbols are not paths. Missing locations return
+   an explicit no-match. A cached harness diagnostic cannot recursively create
+   a new exploration episode. Genuine new related observations or actual related
+   file changes reset recovery; mere listings do not.
+
+Verification commands (no model API):
+  python -m unittest discover -s tests -p "test_*.py"
+  PYTHONPATH=sources/bestfgs-project/src python -m unittest discover \
+    -s sources/bestfgs-project/tests -p test_lean.py
+
+New acceptance: evidence/recovery-repair-acceptance.json.
+CHANGES.txt, copied cube-acceptance files and previous-rejected-candidates fixture
+are historical baseline material, NOT acceptance of this candidate. Current
+source hashes are in dh-source-manifest.json; frozen originals remain in releases/DH.
+
+No paid model experiment has validated score or cost improvements yet.
+The DH cow task will not be repaired or rerun under this change request.

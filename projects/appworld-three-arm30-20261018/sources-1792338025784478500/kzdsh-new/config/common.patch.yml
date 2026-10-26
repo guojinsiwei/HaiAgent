@@ -1,0 +1,24 @@
+# Fixed in BOTH native DSH and DSH+KZ arms; model/budget settings stay in a
+# separate, reviewed experiment overlay. No inherited historical budget.mjs.
+- id: tools
+  config:
+    mode: native
+# Native summaries bypass agent/request; pin their own output reservation too.
+# Deployment overlays must reduce this alongside their model/output budget.
+- id: compaction-basic
+  config:
+    maxTokens: 32768
+- id: agent-loop
+  config:
+    # Headless profile only: the headless runner creates the task agent.
+    agents: []
+    maxParallelToolCalls: 1
+# This candidate is one solver plus KZ's budgeted monitor/adviser/critic.
+# Disable native delegated solvers in BOTH arms until descendant budgets and
+# concurrent shared-workspace checkpoints receive a separate acceptance test.
+- id: tool-subagent
+  disabled: true
+- id: tool-subagent-fork
+  disabled: true
+- id: tool-workflow
+  disabled: true

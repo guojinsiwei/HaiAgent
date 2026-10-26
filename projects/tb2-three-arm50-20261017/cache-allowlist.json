@@ -1,0 +1,1977 @@
+[
+  {
+    "CreatedAt": "2026-10-13 14:49:13.832655298 +0000 UTC",
+    "Description": "local source for context",
+    "ID": "0qk2527it16l6x8yff10qnwf6",
+    "LastUsedAt": "26 hours ago",
+    "Mutable": true,
+    "Parents": null,
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "4.096kB",
+    "Type": "source.local",
+    "UsageCount": 32
+  },
+  {
+    "CreatedAt": "2026-10-13 14:49:13.837413131 +0000 UTC",
+    "Description": "local source for context",
+    "ID": "1fkpxv40lh6yta7yn1rshcvfk",
+    "LastUsedAt": "26 hours ago",
+    "Mutable": true,
+    "Parents": null,
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "4.096kB",
+    "Type": "source.local",
+    "UsageCount": 32
+  },
+  {
+    "CreatedAt": "2026-10-14 00:57:50.133821725 +0000 UTC",
+    "Description": "local source for context",
+    "ID": "56451twxgwe9eq4x41qoewz86",
+    "LastUsedAt": "26 hours ago",
+    "Mutable": true,
+    "Parents": null,
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "4.096kB",
+    "Type": "source.local",
+    "UsageCount": 272
+  },
+  {
+    "CreatedAt": "2026-10-11 13:15:26.438426289 +0000 UTC",
+    "Description": "local source for context",
+    "ID": "co8gmjygrqpcpgy2kdqv9tjzw",
+    "LastUsedAt": "26 hours ago",
+    "Mutable": true,
+    "Parents": null,
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "4.096kB",
+    "Type": "source.local",
+    "UsageCount": 276
+  },
+  {
+    "CreatedAt": "2026-10-14 01:03:21.133869084 +0000 UTC",
+    "Description": "local source for context",
+    "ID": "h4e3z4yfcvm09zky26cl780xv",
+    "LastUsedAt": "2 days ago",
+    "Mutable": true,
+    "Parents": null,
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "4.096kB",
+    "Type": "source.local",
+    "UsageCount": 10
+  },
+  {
+    "CreatedAt": "2026-10-13 15:35:16.69982175 +0000 UTC",
+    "Description": "local source for context",
+    "ID": "m9ltisagdroc23mw6ja15yi1n",
+    "LastUsedAt": "45 hours ago",
+    "Mutable": true,
+    "Parents": null,
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "4.096kB",
+    "Type": "source.local",
+    "UsageCount": 44
+  },
+  {
+    "CreatedAt": "2026-10-13 15:35:16.674900361 +0000 UTC",
+    "Description": "local source for context",
+    "ID": "nu1lft04sq8kwd3lbm87c6vco",
+    "LastUsedAt": "2 days ago",
+    "Mutable": true,
+    "Parents": null,
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "4.096kB",
+    "Type": "source.local",
+    "UsageCount": 9
+  },
+  {
+    "CreatedAt": "2026-10-13 15:35:16.669787489 +0000 UTC",
+    "Description": "local source for context",
+    "ID": "rkxk354tppjsdf6jb2jhj2zma",
+    "LastUsedAt": "2 days ago",
+    "Mutable": true,
+    "Parents": null,
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "4.096kB",
+    "Type": "source.local",
+    "UsageCount": 9
+  },
+  {
+    "CreatedAt": "2026-10-16 09:16:02.881880585 +0000 UTC",
+    "Description": "[12/12] WORKDIR /tests",
+    "ID": "6gq9iu3wh8e6ai2d70cwksers",
+    "LastUsedAt": "26 hours ago",
+    "Mutable": false,
+    "Parents": [
+      "zco5pux5674n6idzfwiiipslx"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "4.128kB",
+    "Type": "regular",
+    "UsageCount": 8
+  },
+  {
+    "CreatedAt": "2026-10-15 13:45:04.746189172 +0000 UTC",
+    "Description": "[12/12] WORKDIR /tests",
+    "ID": "9jlan6udk8oi73na610xixxla",
+    "LastUsedAt": "46 hours ago",
+    "Mutable": false,
+    "Parents": [
+      "u75dqeecerkp2llvsz5fdl9vc"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "4.128kB",
+    "Type": "regular",
+    "UsageCount": 8
+  },
+  {
+    "CreatedAt": "2026-10-15 13:33:03.88615728 +0000 UTC",
+    "Description": "[8/8] WORKDIR /app",
+    "ID": "anfpfc5xegzzfpkvxdbjp4tp7",
+    "LastUsedAt": "47 hours ago",
+    "Mutable": false,
+    "Parents": [
+      "ivyyn57azwp2yc8fv5j5h3l51"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "4.128kB",
+    "Type": "regular",
+    "UsageCount": 10
+  },
+  {
+    "CreatedAt": "2026-10-14 18:37:50.236596336 +0000 UTC",
+    "Description": "[9/9] WORKDIR /workspace",
+    "ID": "eceqj54wpxrbtim3sxtt4uayi",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "le3vs69syr90vomz5qj8pj77h"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "4.128kB",
+    "Type": "regular",
+    "UsageCount": 4
+  },
+  {
+    "CreatedAt": "2026-10-14 18:49:08.188704797 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c command -v curl >/dev/null 2>&1 ||   (apt-get update &&     apt-get install -y --no-install-recommends curl &&     rm -rf /var/lib/apt/lists/*)",
+    "ID": "kbvu34f415ty4l53wegj1to1u",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "2vc4ob5hwuhvg2brll6a0v5l9"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "4.128kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 13:56:42.424323332 +0000 UTC",
+    "Description": "[4/4] WORKDIR /app",
+    "ID": "ko0q1v7alxa4n0xij302n8v2p",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "yhauc6bdqs742tfm082fku8ug"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "4.128kB",
+    "Type": "regular",
+    "UsageCount": 16
+  },
+  {
+    "CreatedAt": "2026-10-15 13:10:21.934770219 +0000 UTC",
+    "Description": "[8/8] WORKDIR /app",
+    "ID": "q824cxwk6ubmwi11313z35263",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "g793mttxzutb34pe7kf689jkb"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "4.128kB",
+    "Type": "regular",
+    "UsageCount": 2
+  },
+  {
+    "CreatedAt": "2026-10-16 09:05:50.576482396 +0000 UTC",
+    "Description": "[8/8] WORKDIR /app",
+    "ID": "rsz5oi9ipggjhgc951mzy6cux",
+    "LastUsedAt": "26 hours ago",
+    "Mutable": false,
+    "Parents": [
+      "t894ntentbgswhgur1mhou08z"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "4.128kB",
+    "Type": "regular",
+    "UsageCount": 8
+  },
+  {
+    "CreatedAt": "2026-10-14 20:25:42.774909618 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c mkdir -p /app",
+    "ID": "uct9cy71bxtxphwo0jvokyfg2",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "rvnrkzraiwdii4415fdtn5ow6"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "4.128kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 18:49:20.548114115 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c mkdir -p /app",
+    "ID": "uxmq2eo5ruvywlvfer9ixty1n",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "7uw8aps0w8rt6p4mjm97h0sgy"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "4.128kB",
+    "Type": "regular",
+    "UsageCount": 4
+  },
+  {
+    "CreatedAt": "2026-10-13 14:49:13.862736717 +0000 UTC",
+    "Description": "local source for context",
+    "ID": "1d2tv7oi3glbumgg5oml77ps2",
+    "LastUsedAt": "26 hours ago",
+    "Mutable": true,
+    "Parents": null,
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "8.192kB",
+    "Type": "source.local",
+    "UsageCount": 32
+  },
+  {
+    "CreatedAt": "2026-10-13 14:49:09.477800755 +0000 UTC",
+    "Description": "local source for dockerfile",
+    "ID": "7qqi5l5bu1mm37b9iycyed685",
+    "LastUsedAt": "26 hours ago",
+    "Mutable": true,
+    "Parents": null,
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "8.192kB",
+    "Type": "source.local",
+    "UsageCount": 32
+  },
+  {
+    "CreatedAt": "2026-10-11 13:15:26.399624988 +0000 UTC",
+    "Description": "local source for dockerfile",
+    "ID": "avj1up8hto9cbmovkme9x6455",
+    "LastUsedAt": "26 hours ago",
+    "Mutable": true,
+    "Parents": null,
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "8.192kB",
+    "Type": "source.local",
+    "UsageCount": 272
+  },
+  {
+    "CreatedAt": "2026-10-13 15:35:16.619616291 +0000 UTC",
+    "Description": "local source for dockerfile",
+    "ID": "awxmxo0hc8w3upr0q7qjw0gua",
+    "LastUsedAt": "26 hours ago",
+    "Mutable": true,
+    "Parents": null,
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "8.192kB",
+    "Type": "source.local",
+    "UsageCount": 28
+  },
+  {
+    "CreatedAt": "2026-10-11 13:05:51.576258788 +0000 UTC",
+    "Description": "local source for dockerfile",
+    "ID": "chgltuvy9ijy7tmqrqevng4ld",
+    "LastUsedAt": "26 hours ago",
+    "Mutable": true,
+    "Parents": null,
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "8.192kB",
+    "Type": "source.local",
+    "UsageCount": 306
+  },
+  {
+    "CreatedAt": "2026-10-13 15:35:16.716702986 +0000 UTC",
+    "Description": "local source for context",
+    "ID": "fixiz1onwgq8z44oyd0lv78i2",
+    "LastUsedAt": "2 days ago",
+    "Mutable": true,
+    "Parents": null,
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "8.192kB",
+    "Type": "source.local",
+    "UsageCount": 9
+  },
+  {
+    "CreatedAt": "2026-10-13 14:49:13.866716831 +0000 UTC",
+    "Description": "local source for context",
+    "ID": "gx57d2spo8mn3oex8uqe8imsl",
+    "LastUsedAt": "26 hours ago",
+    "Mutable": true,
+    "Parents": null,
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "8.192kB",
+    "Type": "source.local",
+    "UsageCount": 32
+  },
+  {
+    "CreatedAt": "2026-10-13 14:49:09.482062193 +0000 UTC",
+    "Description": "local source for dockerfile",
+    "ID": "lurwd13qfeokd9xp9wp55pj0w",
+    "LastUsedAt": "2 days ago",
+    "Mutable": true,
+    "Parents": null,
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "8.192kB",
+    "Type": "source.local",
+    "UsageCount": 13
+  },
+  {
+    "CreatedAt": "2026-10-13 15:35:16.710948347 +0000 UTC",
+    "Description": "local source for context",
+    "ID": "m5yepv61c5ovk28jmy5x8kmug",
+    "LastUsedAt": "2 days ago",
+    "Mutable": true,
+    "Parents": null,
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "8.192kB",
+    "Type": "source.local",
+    "UsageCount": 9
+  },
+  {
+    "CreatedAt": "2026-10-13 15:35:16.622897639 +0000 UTC",
+    "Description": "local source for dockerfile",
+    "ID": "mbpk3ot1a6rcftwvsr32vglak",
+    "LastUsedAt": "2 days ago",
+    "Mutable": true,
+    "Parents": null,
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "8.192kB",
+    "Type": "source.local",
+    "UsageCount": 9
+  },
+  {
+    "CreatedAt": "2026-10-13 15:35:16.627163082 +0000 UTC",
+    "Description": "local source for dockerfile",
+    "ID": "myi5yn5ddw4xrhcw55we1ropv",
+    "LastUsedAt": "45 hours ago",
+    "Mutable": true,
+    "Parents": null,
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "8.192kB",
+    "Type": "source.local",
+    "UsageCount": 57
+  },
+  {
+    "CreatedAt": "2026-10-14 04:12:28.090826763 +0000 UTC",
+    "Description": "local source for dockerfile",
+    "ID": "t29d5koo55vlnxa82n2s7wghh",
+    "LastUsedAt": "2 days ago",
+    "Mutable": true,
+    "Parents": null,
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "8.192kB",
+    "Type": "source.local",
+    "UsageCount": 4
+  },
+  {
+    "CreatedAt": "2026-10-14 18:49:20.225462199 +0000 UTC",
+    "Description": "[15/17] WORKDIR /app",
+    "ID": "76ll2x6515vegp4ucl8c0a7as",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "hao3z7zxwhjxgybvzly6hl3fj"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "8.285kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 20:25:42.513914068 +0000 UTC",
+    "Description": "[stage-1 4/9] WORKDIR /app",
+    "ID": "rvnrkzraiwdii4415fdtn5ow6",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "zppat4uj9micpls6ebqajqlrh"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "8.285kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 18:30:40.872669312 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c mkdir -p /app",
+    "ID": "wc9dfww7bp2su9u268dxr8kby",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "opvgdu9dnstr4hnlsjupc3qyv"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "8.285kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 20:24:06.566921216 +0000 UTC",
+    "Description": "[stage-1 4/7] WORKDIR /app",
+    "ID": "z33tq1x0912endor4igsoh8jw",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "svplf6qhmbpwbxxp1ve82f8y2"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "8.285kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 19:41:15.041990559 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c mkdir -p /results",
+    "ID": "w7fklfgy9wgk2yhuxgkb031wr",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "5cyhyrh2c3pky3n5da045b6pj"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "12.38kB",
+    "Type": "regular",
+    "UsageCount": 4
+  },
+  {
+    "CreatedAt": "2026-10-14 18:49:10.749800756 +0000 UTC",
+    "Description": "[ 6/17] WORKDIR /opt/app-deps",
+    "ID": "sto1f4kvy8uzqc67tg8s17ne4",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "locxp1oo0gxx38tepqqirwtck"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "12.41kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 18:49:08.227670552 +0000 UTC",
+    "Description": "[ 3/17] WORKDIR /opt/verifier-deps",
+    "ID": "1fczaji9hqozag01gkix07ql0",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "kbvu34f415ty4l53wegj1to1u"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "12.41kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 18:49:18.278704289 +0000 UTC",
+    "Description": "[10/17] WORKDIR /srv/warehouse-api",
+    "ID": "zx5ddnbxoz7qdzjbvya3v1l3b",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "r7qni5yfbqfbhfs1lxy5g2npn"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "12.41kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-09 02:30:50.816251282 +0000 UTC",
+    "Description": "[8/9] COPY gitconfig /app/gitconfig",
+    "ID": "6pcagml6w5ki525nnragt99fg",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "xacc7cewg7wa7x34b6et823jb"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "12.48kB",
+    "Type": "regular",
+    "UsageCount": 2
+  },
+  {
+    "CreatedAt": "2026-10-09 03:18:24.752034118 +0000 UTC",
+    "Description": "[8/9] COPY gitconfig /app/gitconfig",
+    "ID": "dhlyqgqtbmao6qg933m853ftq",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "m7tuvkvath0e12t0uosr9hiin"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "12.48kB",
+    "Type": "regular",
+    "UsageCount": 2
+  },
+  {
+    "CreatedAt": "2026-10-09 02:27:33.464031169 +0000 UTC",
+    "Description": "[8/9] COPY gitconfig /app/gitconfig",
+    "ID": "y8r41lyfdhmhdknvdkdzeyhcz",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "828x38wlmnigcp0cgybb12f5f"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "12.48kB",
+    "Type": "regular",
+    "UsageCount": 2
+  },
+  {
+    "CreatedAt": "2026-10-16 09:16:02.219919992 +0000 UTC",
+    "Description": "[ 9/12] COPY test.sh /tests/test.sh",
+    "ID": "0ms0pw8kb9gqed4b14jzegha8",
+    "LastUsedAt": "28 hours ago",
+    "Mutable": false,
+    "Parents": [
+      "e2qs7ra14bshd2x49o25hpmz6"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "12.69kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-15 13:45:04.162103034 +0000 UTC",
+    "Description": "[ 9/12] COPY test.sh /tests/test.sh",
+    "ID": "kpbg1hp1w7lljazrewkxz2gg2",
+    "LastUsedAt": "47 hours ago",
+    "Mutable": false,
+    "Parents": [
+      "l0bfa6xwuutcoix8pc0onzbfk"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "12.69kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 18:30:40.906922379 +0000 UTC",
+    "Description": "[5/6] COPY oracle.hpp /app/oracle.hpp",
+    "ID": "1t5nzmt7l7q1nspywc0i9zhfc",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "wc9dfww7bp2su9u268dxr8kby"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "12.95kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-15 13:33:03.840920994 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c mkdir -p /app/output/generated_components",
+    "ID": "ivyyn57azwp2yc8fv5j5h3l51",
+    "LastUsedAt": "47 hours ago",
+    "Mutable": false,
+    "Parents": [
+      "tuir6c02x68byohl7jdwosm4z"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "16.53kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-15 13:10:21.898860679 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c mkdir -p /app/output/generated_components",
+    "ID": "g793mttxzutb34pe7kf689jkb",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "jtnsoflqsz4a6gm2ogehsycr1"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "16.53kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-16 09:05:50.540207361 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c mkdir -p /app/output/generated_components",
+    "ID": "t894ntentbgswhgur1mhou08z",
+    "LastUsedAt": "28 hours ago",
+    "Mutable": false,
+    "Parents": [
+      "nz2hmvefcrzsvkxgrbc89spen"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "16.53kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-15 13:45:04.716438349 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c mkdir -p /app/output/generated_components",
+    "ID": "u75dqeecerkp2llvsz5fdl9vc",
+    "LastUsedAt": "47 hours ago",
+    "Mutable": false,
+    "Parents": [
+      "cqsxtj2bkre3hbot4kc9woeer"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "16.53kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-16 09:16:02.841406024 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c mkdir -p /app/output/generated_components",
+    "ID": "zco5pux5674n6idzfwiiipslx",
+    "LastUsedAt": "28 hours ago",
+    "Mutable": false,
+    "Parents": [
+      "xtil6ogs1yei08tgaobz7wwbe"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "16.53kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-15 13:45:04.408457615 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c chmod +x /tests/test.sh",
+    "ID": "cqsxtj2bkre3hbot4kc9woeer",
+    "LastUsedAt": "47 hours ago",
+    "Mutable": false,
+    "Parents": [
+      "kpbg1hp1w7lljazrewkxz2gg2"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "16.78kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-16 09:16:02.466094205 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c chmod +x /tests/test.sh",
+    "ID": "xtil6ogs1yei08tgaobz7wwbe",
+    "LastUsedAt": "28 hours ago",
+    "Mutable": false,
+    "Parents": [
+      "0ms0pw8kb9gqed4b14jzegha8"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "16.78kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 20:24:28.512595722 +0000 UTC",
+    "Description": "[stage-1 5/7] COPY --from=input-builder /app/policy.yaml /app/policy.yaml",
+    "ID": "0k9b5ouag7xw5p2nlttfurygw",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "z33tq1x0912endor4igsoh8jw"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "17.86kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 20:25:42.839277674 +0000 UTC",
+    "Description": "[stage-1 7/9] COPY --from=input-builder /app/policy.yaml /app/policy.yaml",
+    "ID": "j1dxkc1ttkyyoowzgcm8zi8q4",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "0esahs5rbdlkpkg9p8ktw0fpy"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "17.86kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-09 02:30:50.491936722 +0000 UTC",
+    "Description": "[5/9] COPY container_entry.py /app/container_entry.py",
+    "ID": "ppmi2itozsq9hr0mqv3ionr3v",
+    "LastUsedAt": "8 days ago",
+    "Mutable": false,
+    "Parents": [
+      "2idu152i8wjwm7slzefk79c7x"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "19.32kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-09 02:27:33.12486728 +0000 UTC",
+    "Description": "[5/9] COPY container_entry.py /app/container_entry.py",
+    "ID": "yeda4vuosgni6s1u96roq9xhr",
+    "LastUsedAt": "8 days ago",
+    "Mutable": false,
+    "Parents": [
+      "2idu152i8wjwm7slzefk79c7x"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "19.32kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-09 03:18:24.409332788 +0000 UTC",
+    "Description": "[5/9] COPY container_entry.py /app/container_entry.py",
+    "ID": "7n22rju1bcs3zuzc9fhjcj6fi",
+    "LastUsedAt": "8 days ago",
+    "Mutable": false,
+    "Parents": [
+      "2idu152i8wjwm7slzefk79c7x"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "19.35kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 18:37:50.206996141 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c chmod +x /tests/test.sh",
+    "ID": "le3vs69syr90vomz5qj8pj77h",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "f08znyw7c6azc0e3m9dkm6mf1"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "20.51kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 18:49:10.779568049 +0000 UTC",
+    "Description": "[ 7/17] COPY app-package.json package.json",
+    "ID": "xs2vkms81qqerzqt45v3nczaw",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "sto1f4kvy8uzqc67tg8s17ne4"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "20.84kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 19:41:14.797128893 +0000 UTC",
+    "Description": "[6/7] COPY . /tests/",
+    "ID": "5cyhyrh2c3pky3n5da045b6pj",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "w5xzv7s8i8pwo32v2530r8hwq"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "22.11kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-16 09:05:50.263334472 +0000 UTC",
+    "Description": "[5/8] COPY render.py /app/render.py",
+    "ID": "6c8vy6f854rgn2hhn38zkufi4",
+    "LastUsedAt": "28 hours ago",
+    "Mutable": false,
+    "Parents": [
+      "3ivetjlnkeayetcw0fl4nl5mk"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "24.44kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-15 13:10:21.619721329 +0000 UTC",
+    "Description": "[5/8] COPY render.py /app/render.py",
+    "ID": "i8h04lai9dttitquuxh9td18u",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "jgxpyxxakpiq2iurfw64zez90"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "24.44kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-15 13:33:03.530784573 +0000 UTC",
+    "Description": "[5/8] COPY render.py /app/render.py",
+    "ID": "li24tljaebbwflkdvm56cmy5o",
+    "LastUsedAt": "47 hours ago",
+    "Mutable": false,
+    "Parents": [
+      "9zedypmhfvi0lnh3wb01yqxj7"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "24.44kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-15 13:45:04.014618343 +0000 UTC",
+    "Description": "[ 5/12] COPY render.py /app/render.py",
+    "ID": "55umbsr9zvlffloyppom5zcmx",
+    "LastUsedAt": "47 hours ago",
+    "Mutable": false,
+    "Parents": [
+      "7qr3wwhbelyj85qzej9u3q6ha"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "24.58kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-16 09:16:02.07933431 +0000 UTC",
+    "Description": "[ 5/12] COPY render.py /app/render.py",
+    "ID": "k2c36tskvzq669c2zhhx9c2xw",
+    "LastUsedAt": "28 hours ago",
+    "Mutable": false,
+    "Parents": [
+      "tpuqrbsxbkl9s8084h9gnbsao"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "24.58kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 18:49:08.267181471 +0000 UTC",
+    "Description": "[ 4/17] COPY package.json package-lock.json ./",
+    "ID": "7n3ssp8pfehe9ntkdr94qjp3t",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "1fczaji9hqozag01gkix07ql0"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "25.53kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 18:37:49.780260381 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c mkdir -p /workspace /shared /logs/verifier /logs/agent",
+    "ID": "cfv5xt83x0jwzw899cimtvc3e",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "nuyd7bq3x198r1wkqflr12u1r"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "28.84kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 18:49:18.323656531 +0000 UTC",
+    "Description": "[11/17] COPY warehouse-api/package.json warehouse-api/package-lock.json warehouse-api/tsconfig.json ./",
+    "ID": "p0rt9hqiqj2ad4p0kcws2eufm",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "zx5ddnbxoz7qdzjbvya3v1l3b"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "29.67kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 18:49:19.110590054 +0000 UTC",
+    "Description": "[13/17] COPY warehouse-api/server.ts ./",
+    "ID": "p8kfv54pj6fidvvw6y2zga4nu",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "7bg1h7r2j8i85hwz0m51x72lh"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "31.98kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-16 09:16:02.184363562 +0000 UTC",
+    "Description": "[ 8/12] COPY test_state.py /tests/test_state.py",
+    "ID": "e2qs7ra14bshd2x49o25hpmz6",
+    "LastUsedAt": "28 hours ago",
+    "Mutable": false,
+    "Parents": [
+      "z0iri9kd0y0zelu9trslc58ri"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "33.3kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-15 13:45:04.12906328 +0000 UTC",
+    "Description": "[ 8/12] COPY test_state.py /tests/test_state.py",
+    "ID": "l0bfa6xwuutcoix8pc0onzbfk",
+    "LastUsedAt": "47 hours ago",
+    "Mutable": false,
+    "Parents": [
+      "z4wb4dbgp6429g8s1bwrvdhys"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "33.3kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-09 02:30:50.512888911 +0000 UTC",
+    "Description": "[6/9] COPY configs/ /app/configs/",
+    "ID": "e0hc9f6j46nwgqilq4g4mf3ls",
+    "LastUsedAt": "8 days ago",
+    "Mutable": false,
+    "Parents": [
+      "ppmi2itozsq9hr0mqv3ionr3v"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "36.66kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-09 03:18:24.439544856 +0000 UTC",
+    "Description": "[6/9] COPY configs/ /app/configs/",
+    "ID": "sd2q0oypv2ry7fh2znv6mt8hy",
+    "LastUsedAt": "8 days ago",
+    "Mutable": false,
+    "Parents": [
+      "7n22rju1bcs3zuzc9fhjcj6fi"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "36.66kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-09 02:27:33.151629641 +0000 UTC",
+    "Description": "[6/9] COPY configs/ /app/configs/",
+    "ID": "j8u0yp20bac2in9ekukjjclk3",
+    "LastUsedAt": "8 days ago",
+    "Mutable": false,
+    "Parents": [
+      "yeda4vuosgni6s1u96roq9xhr"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "36.67kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 18:49:10.820793974 +0000 UTC",
+    "Description": "[ 8/17] COPY app-package-lock.json package-lock.json",
+    "ID": "lwggyh8nht91x7vbqipb4v61s",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "xs2vkms81qqerzqt45v3nczaw"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "56.06kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 18:37:49.879087419 +0000 UTC",
+    "Description": "[6/9] COPY test.sh test_scoring.py test_trace_runner.py test_verifier_hygiene.py /tests/",
+    "ID": "l7xtzks7ic9v0b0zt9uakfysq",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "t4okuvfdw09gpgcxafgo4umly"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "57.01kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-13 15:35:16.743896114 +0000 UTC",
+    "Description": "local source for context",
+    "ID": "5u7kvfyxfkoeh7gd757dq7ma9",
+    "LastUsedAt": "45 hours ago",
+    "Mutable": true,
+    "Parents": null,
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "65.54kB",
+    "Type": "source.local",
+    "UsageCount": 46
+  },
+  {
+    "CreatedAt": "2026-10-14 13:56:42.394886086 +0000 UTC",
+    "Description": "[3/4] COPY app /app",
+    "ID": "yhauc6bdqs742tfm082fku8ug",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "sgz1si1w6w6yzg09utjcr4xwh"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "86.94kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-09 03:18:24.71340381 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c useradd -u 1013 -s /bin/bash agent && chmod -R a+rX /app && mkdir -p /inputs && chmod a+rx /inputs",
+    "ID": "m7tuvkvath0e12t0uosr9hiin",
+    "LastUsedAt": "8 days ago",
+    "Mutable": false,
+    "Parents": [
+      "sd2q0oypv2ry7fh2znv6mt8hy"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "103.6kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-09 02:30:50.788245799 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c useradd -u 1013 -s /bin/bash agent && chmod -R a+rX /app && mkdir -p /inputs && chmod a+rx /inputs",
+    "ID": "xacc7cewg7wa7x34b6et823jb",
+    "LastUsedAt": "8 days ago",
+    "Mutable": false,
+    "Parents": [
+      "e0hc9f6j46nwgqilq4g4mf3ls"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "103.6kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-09 02:27:33.4321806 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c useradd -u 1013 -s /bin/bash agent && chmod -R a+rX /app && rm -rf /root/.cache",
+    "ID": "828x38wlmnigcp0cgybb12f5f",
+    "LastUsedAt": "8 days ago",
+    "Mutable": false,
+    "Parents": [
+      "j8u0yp20bac2in9ekukjjclk3"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "107.7kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 18:49:20.258594712 +0000 UTC",
+    "Description": "[16/17] COPY . /tests/",
+    "ID": "7uw8aps0w8rt6p4mjm97h0sgy",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "76ll2x6515vegp4ucl8c0a7as"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "131.1kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 18:37:49.919143414 +0000 UTC",
+    "Description": "[7/9] COPY traces /tests/traces",
+    "ID": "f08znyw7c6azc0e3m9dkm6mf1",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "l7xtzks7ic9v0b0zt9uakfysq"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "131.6kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 19:41:10.167306577 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c uv venv /opt/venv --python 3.11",
+    "ID": "wn5elsfktxfban5ea1di0p6ln",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "uihcjwbhcwyog2c8ko62jge2v"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "144kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 20:25:42.812219737 +0000 UTC",
+    "Description": "[stage-1 6/9] COPY . /tests/",
+    "ID": "0esahs5rbdlkpkg9p8ktw0fpy",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "uct9cy71bxtxphwo0jvokyfg2"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "159.5kB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-11 13:24:36.68459372 +0000 UTC",
+    "Description": "[3/4] COPY . /tests/",
+    "ID": "q2u36e5d1bd2t14nqbahfn0wt",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "oe8e8jdehahff6bzn64vwkjkk"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "191.6kB",
+    "Type": "regular",
+    "UsageCount": 2
+  },
+  {
+    "CreatedAt": "2026-10-16 09:16:02.158959683 +0000 UTC",
+    "Description": "[ 7/12] COPY fixtures /tests/fixtures",
+    "ID": "z0iri9kd0y0zelu9trslc58ri",
+    "LastUsedAt": "28 hours ago",
+    "Mutable": false,
+    "Parents": [
+      "x0c8y8myd3e4towazfhp4197c"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "1.021MB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-15 13:45:04.09463068 +0000 UTC",
+    "Description": "[ 7/12] COPY fixtures /tests/fixtures",
+    "ID": "z4wb4dbgp6429g8s1bwrvdhys",
+    "LastUsedAt": "47 hours ago",
+    "Mutable": false,
+    "Parents": [
+      "wuc8xirisymjvy94x713br8ng"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "1.021MB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 18:49:20.196533796 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c npm run build",
+    "ID": "hao3z7zxwhjxgybvzly6hl3fj",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "p8kfv54pj6fidvvw6y2zga4nu"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "1.894MB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 00:57:50.165304663 +0000 UTC",
+    "Description": "local source for context",
+    "ID": "0hqj22ebq2hfheyihme47p6it",
+    "LastUsedAt": "26 hours ago",
+    "Mutable": true,
+    "Parents": null,
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "2.896MB",
+    "Type": "source.local",
+    "UsageCount": 253
+  },
+  {
+    "CreatedAt": "2026-10-14 01:03:21.180812279 +0000 UTC",
+    "Description": "local source for context",
+    "ID": "aldxdtixy44wwfrk3ijd5ez3t",
+    "LastUsedAt": "26 hours ago",
+    "Mutable": true,
+    "Parents": null,
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "3.072MB",
+    "Type": "source.local",
+    "UsageCount": 253
+  },
+  {
+    "CreatedAt": "2026-10-14 06:32:33.332634077 +0000 UTC",
+    "Description": "pulled from mcr.microsoft.com/playwright:v1.53.0-noble@sha256:c30040b375c6daebbc1997818ea5889e74a26916c7837e0354cfa1de30fafbed",
+    "ID": "55ylvvrx9fn287yl8dhh8oej3",
+    "LastUsedAt": "3 days ago",
+    "Mutable": false,
+    "Parents": [
+      "i7kztklznskjey63v4e9k442p"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "3.807MB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-15 13:45:04.055614738 +0000 UTC",
+    "Description": "[ 6/12] COPY data /app/data",
+    "ID": "wuc8xirisymjvy94x713br8ng",
+    "LastUsedAt": "47 hours ago",
+    "Mutable": false,
+    "Parents": [
+      "55umbsr9zvlffloyppom5zcmx"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "4.897MB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-16 09:16:02.120005433 +0000 UTC",
+    "Description": "[ 6/12] COPY data /app/data",
+    "ID": "x0c8y8myd3e4towazfhp4197c",
+    "LastUsedAt": "28 hours ago",
+    "Mutable": false,
+    "Parents": [
+      "k2c36tskvzq669c2zhhx9c2xw"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "4.897MB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 18:37:49.831917906 +0000 UTC",
+    "Description": "[5/9] COPY legacy_app /shared/legacy_app",
+    "ID": "t4okuvfdw09gpgcxafgo4umly",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "cfv5xt83x0jwzw899cimtvc3e"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "5.056MB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-15 13:10:21.664819422 +0000 UTC",
+    "Description": "[6/8] COPY data /app/data",
+    "ID": "jtnsoflqsz4a6gm2ogehsycr1",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "i8h04lai9dttitquuxh9td18u"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "5.743MB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-16 09:05:50.301809165 +0000 UTC",
+    "Description": "[6/8] COPY data /app/data",
+    "ID": "nz2hmvefcrzsvkxgrbc89spen",
+    "LastUsedAt": "28 hours ago",
+    "Mutable": false,
+    "Parents": [
+      "6c8vy6f854rgn2hhn38zkufi4"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "5.743MB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-15 13:33:03.577773488 +0000 UTC",
+    "Description": "[6/8] COPY data /app/data",
+    "ID": "tuir6c02x68byohl7jdwosm4z",
+    "LastUsedAt": "47 hours ago",
+    "Mutable": false,
+    "Parents": [
+      "li24tljaebbwflkdvm56cmy5o"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "5.743MB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 20:24:06.529402941 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c pip3 install --break-system-packages PyYAML==6.0.2",
+    "ID": "svplf6qhmbpwbxxp1ve82f8y2",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "cnv88qsbtniw4t9mjo3xtou5b"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "5.75MB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-16 09:09:38.477479126 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c apt-get update && apt-get install -y     curl     && rm -rf /var/lib/apt/lists/*",
+    "ID": "1zjjshjls1nhh1hj1hvclupyj",
+    "LastUsedAt": "28 hours ago",
+    "Mutable": false,
+    "Parents": [
+      "v7finuuarl0xs4cjagts4ijmj"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "6.25MB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-16 08:59:24.924653978 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c apt-get update && apt-get install -y     curl     && rm -rf /var/lib/apt/lists/*",
+    "ID": "uprhajlrdbij88kr3cdwmwxza",
+    "LastUsedAt": "28 hours ago",
+    "Mutable": false,
+    "Parents": [
+      "al9x32b5k8tmlcmsyg9qmg6c1"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "6.25MB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-15 13:38:40.774500462 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c apt-get update && apt-get install -y     curl     && rm -rf /var/lib/apt/lists/*",
+    "ID": "lqihdtmrmilgam9xt70qwizin",
+    "LastUsedAt": "47 hours ago",
+    "Mutable": false,
+    "Parents": [
+      "rjyvbfkpl823bg5f9lf6ouamy"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "6.25MB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-15 13:26:37.376316531 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c apt-get update && apt-get install -y     curl     && rm -rf /var/lib/apt/lists/*",
+    "ID": "k630rkv72fe87vhwyuh37j7zo",
+    "LastUsedAt": "47 hours ago",
+    "Mutable": false,
+    "Parents": [
+      "dgdoe5bcycsq5y44bgfvkqlvc"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "6.25MB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-15 13:03:44.675620759 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c apt-get update && apt-get install -y     curl     && rm -rf /var/lib/apt/lists/*",
+    "ID": "rnbt7tylrovyzznu4asordx07",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "xdop8uzokyqrxkjkjujtj9iel"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "6.25MB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 18:49:10.711037194 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c npm ci --no-audit --no-fund",
+    "ID": "locxp1oo0gxx38tepqqirwtck",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "7n3ssp8pfehe9ntkdr94qjp3t"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "23.97MB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 18:49:19.074153454 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c npm ci --no-audit --no-fund",
+    "ID": "7bg1h7r2j8i85hwz0m51x72lh",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "p0rt9hqiqj2ad4p0kcws2eufm"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "30.78MB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 20:25:42.383225939 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c pip3 install --break-system-packages     psutil==7.0.0     PyYAML==6.0.2     pytest==9.1.1     pytest-json-ctrf==0.5.2",
+    "ID": "zppat4uj9micpls6ebqajqlrh",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "2vwfvanffvf8l3eo8pj9jv9xq"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "33.11MB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 19:42:50.367964874 +0000 UTC",
+    "Description": "pulled from docker.io/docker/dockerfile:1.6@sha256:ac85f380a63b13dfcefa89046420e1781752bab202122f8f50032edf31be0021",
+    "ID": "zocucjw90x3d8i44mdgmfi687",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": null,
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "35.41MB",
+    "Type": "frontend",
+    "UsageCount": 4
+  },
+  {
+    "CreatedAt": "2026-10-11 13:24:36.640923408 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c HTTPS_PROXY=http://10.123.0.1:28476 pip install --no-cache-dir pytest==9.1.1 pytest-json-ctrf==0.5.2 hypothesis==6.122.3",
+    "ID": "oe8e8jdehahff6bzn64vwkjkk",
+    "LastUsedAt": "6 days ago",
+    "Mutable": false,
+    "Parents": [
+      "hg6nare0huf9yt8k3qvwj5c1x"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "38.5MB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 20:25:35.853300792 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c apt-get update && apt-get install -y --no-install-recommends     python3     python3-pip     && rm -rf /var/lib/apt/lists/*",
+    "ID": "2vwfvanffvf8l3eo8pj9jv9xq",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "y7rjs721umk6qnbdargtg4ucy"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "99.48MB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 20:24:03.878178765 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c apt-get update && apt-get install -y --no-install-recommends     python3     python3-pip     && rm -rf /var/lib/apt/lists/*",
+    "ID": "cnv88qsbtniw4t9mjo3xtou5b",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "y7rjs721umk6qnbdargtg4ucy"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "99.48MB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 18:30:40.381724484 +0000 UTC",
+    "Description": "[3/6] COPY . /tests/",
+    "ID": "opvgdu9dnstr4hnlsjupc3qyv",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "6snj06t4mxh6ldgl8817hv0sg"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "113.1MB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 06:32:33.311703783 +0000 UTC",
+    "Description": "pulled from mcr.microsoft.com/playwright:v1.53.0-noble@sha256:c30040b375c6daebbc1997818ea5889e74a26916c7837e0354cfa1de30fafbed",
+    "ID": "uavcsney041z5e5qx9mhch4v4",
+    "LastUsedAt": "3 days ago",
+    "Mutable": false,
+    "Parents": null,
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "118.2MB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 19:41:14.715140511 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c uv pip install     pytest==9.1.1     pytest-json-ctrf==0.5.2     pandas==3.0.3",
+    "ID": "w5xzv7s8i8pwo32v2530r8hwq",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "wn5elsfktxfban5ea1di0p6ln"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "149MB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-15 13:26:02.676283281 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c pip install --no-cache-dir Pillow==11.2.1 playwright==1.52.0",
+    "ID": "dgdoe5bcycsq5y44bgfvkqlvc",
+    "LastUsedAt": "47 hours ago",
+    "Mutable": false,
+    "Parents": [
+      "i2f4c681ayifoapngql64h348"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "207.9MB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-15 13:03:28.293375418 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c pip install --no-cache-dir Pillow==11.2.1 playwright==1.52.0",
+    "ID": "xdop8uzokyqrxkjkjujtj9iel",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "i2f4c681ayifoapngql64h348"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "207.9MB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-16 08:59:09.735808696 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c pip install --no-cache-dir Pillow==11.2.1 playwright==1.52.0",
+    "ID": "al9x32b5k8tmlcmsyg9qmg6c1",
+    "LastUsedAt": "28 hours ago",
+    "Mutable": false,
+    "Parents": [
+      "i2f4c681ayifoapngql64h348"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "207.9MB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 18:37:49.410438336 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c python -m venv /opt/vba-verifier-venv &&     /opt/vba-verifier-venv/bin/python -m pip install --no-cache-dir         pytest==9.1.1         pytest-json-ctrf==0.5.2         requests==2.32.3         playwright==1.49.1",
+    "ID": "nuyd7bq3x198r1wkqflr12u1r",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "0krri13167cicr1r5b3qbd2ht"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "231.5MB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 18:30:42.337903569 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c python3 -c \"import pathlib, zipfile; wheels = sorted(pathlib.Path('/tests/wheels').glob('*.whl')); assert wheels, 'No wheels found in /tests/wheels'; site = pathlib.Path('/opt/ks_verifier_site'); site.mkdir(parents=True, exist_ok=True); [zipfile.ZipFile(wheel).extractall(site) for wheel in wheels]\"",
+    "ID": "v4gdr8qqv1wsfzd8zdxq2ic4r",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "1t5nzmt7l7q1nspywc0i9zhfc"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "249.4MB",
+    "Type": "regular",
+    "UsageCount": 4
+  },
+  {
+    "CreatedAt": "2026-10-16 09:09:23.935202229 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c pip install --no-cache-dir     Pillow==11.2.1     playwright==1.52.0     pytest==9.1.1     pytest-json-ctrf==0.5.2     numpy==2.2.5",
+    "ID": "v7finuuarl0xs4cjagts4ijmj",
+    "LastUsedAt": "28 hours ago",
+    "Mutable": false,
+    "Parents": [
+      "i2f4c681ayifoapngql64h348"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "317.6MB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-15 13:38:21.018806634 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c pip install --no-cache-dir     Pillow==11.2.1     playwright==1.52.0     pytest==9.1.1     pytest-json-ctrf==0.5.2     numpy==2.2.5",
+    "ID": "rjyvbfkpl823bg5f9lf6ouamy",
+    "LastUsedAt": "47 hours ago",
+    "Mutable": false,
+    "Parents": [
+      "i2f4c681ayifoapngql64h348"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "317.6MB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 18:30:40.209725144 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c apt-get update && apt-get install -y --no-install-recommends     g++     python3     && rm -rf /var/lib/apt/lists/*",
+    "ID": "6snj06t4mxh6ldgl8817hv0sg",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "y7rjs721umk6qnbdargtg4ucy"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "418.5MB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 06:32:33.321137729 +0000 UTC",
+    "Description": "pulled from mcr.microsoft.com/playwright:v1.53.0-noble@sha256:c30040b375c6daebbc1997818ea5889e74a26916c7837e0354cfa1de30fafbed",
+    "ID": "i7kztklznskjey63v4e9k442p",
+    "LastUsedAt": "3 days ago",
+    "Mutable": false,
+    "Parents": [
+      "uavcsney041z5e5qx9mhch4v4"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "444.5MB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 20:25:43.635730388 +0000 UTC",
+    "Description": "[stage-1 8/9] COPY --from=input-builder /app/input /app/input",
+    "ID": "3n8mqs1tu2hy0b891w24jvogi",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "j1dxkc1ttkyyoowzgcm8zi8q4"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "491.3MB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 20:24:29.259098463 +0000 UTC",
+    "Description": "[stage-1 6/7] COPY --from=input-builder /app/input /app/input",
+    "ID": "j144f3qp4fjxyj3nd6jvtt05r",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "0k9b5ouag7xw5p2nlttfurygw"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "491.3MB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 20:25:44.579037442 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c chmod a-w /app/policy.yaml && chmod -R a-w /app/input",
+    "ID": "m74yahjdmg1z2gz897qpnuy69",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "3n8mqs1tu2hy0b891w24jvogi"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "491.4MB",
+    "Type": "regular",
+    "UsageCount": 4
+  },
+  {
+    "CreatedAt": "2026-10-14 20:24:30.205302399 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c chmod a-w /app/policy.yaml && chmod -R a-w /app/input",
+    "ID": "u9u0tsalhhow89n80x0maa9i8",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "j144f3qp4fjxyj3nd6jvtt05r"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "491.4MB",
+    "Type": "regular",
+    "UsageCount": 4
+  },
+  {
+    "CreatedAt": "2026-10-14 13:56:42.299913989 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c apt-get update     && apt-get install -y --no-install-recommends build-essential make patch python3 ca-certificates     && rm -rf /var/lib/apt/lists/*",
+    "ID": "sgz1si1w6w6yzg09utjcr4xwh",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "y7rjs721umk6qnbdargtg4ucy"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "513.5MB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 18:49:18.167537847 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c npm ci --no-audit --no-fund",
+    "ID": "r7qni5yfbqfbhfs1lxy5g2npn",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "lwggyh8nht91x7vbqipb4v61s"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "963.2MB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 18:37:33.483020704 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c apt-get update &&     apt-get install -y --no-install-recommends         bash         ca-certificates         chromium         curl         nodejs         npm         sqlite3     && rm -rf /var/lib/apt/lists/*",
+    "ID": "0krri13167cicr1r5b3qbd2ht",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "z4bebnsx54ktj9rg5mfjs7skl"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "1.436GB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-14 06:32:33.344144498 +0000 UTC",
+    "Description": "pulled from mcr.microsoft.com/playwright:v1.53.0-noble@sha256:c30040b375c6daebbc1997818ea5889e74a26916c7837e0354cfa1de30fafbed",
+    "ID": "2vc4ob5hwuhvg2brll6a0v5l9",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "55ylvvrx9fn287yl8dhh8oej3"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "3.045GB",
+    "Type": "regular",
+    "UsageCount": 2
+  },
+  {
+    "CreatedAt": "2026-10-15 13:45:03.950200007 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c mkdir -p /tmp/google_fonts_cache /tmp/google-fonts-src &&     curl -fsSL \"https://github.com/google/fonts/archive/${GOOGLE_FONTS_REV}.tar.gz\"         -o /tmp/google-fonts.tar.gz &&     tar -xzf /tmp/google-fonts.tar.gz --strip-components=1 -C /tmp/google-fonts-src &&     find /tmp/google-fonts-src -type f \\( -name '*.ttf' -o -name '*.otf' -o -name '*.woff2' -o -name '*.woff' \\)         ! -iname '*Italic*' -exec cp --update=none {} /tmp/google_fonts_cache/ \\; &&     rm -rf /tmp/google-fonts.tar.gz /tmp/google-fonts-src",
+    "ID": "7qr3wwhbelyj85qzej9u3q6ha",
+    "LastUsedAt": "47 hours ago",
+    "Mutable": false,
+    "Parents": [
+      "lqihdtmrmilgam9xt70qwizin"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "3.261GB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-16 09:16:02.025842013 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c mkdir -p /tmp/google_fonts_cache /tmp/google-fonts-src &&     curl -fsSL \"https://github.com/google/fonts/archive/${GOOGLE_FONTS_REV}.tar.gz\"         -o /tmp/google-fonts.tar.gz &&     tar -xzf /tmp/google-fonts.tar.gz --strip-components=1 -C /tmp/google-fonts-src &&     find /tmp/google-fonts-src -type f \\( -name '*.ttf' -o -name '*.otf' -o -name '*.woff2' -o -name '*.woff' \\)         ! -iname '*Italic*' -exec cp --update=none {} /tmp/google_fonts_cache/ \\; &&     rm -rf /tmp/google-fonts.tar.gz /tmp/google-fonts-src",
+    "ID": "tpuqrbsxbkl9s8084h9gnbsao",
+    "LastUsedAt": "28 hours ago",
+    "Mutable": false,
+    "Parents": [
+      "1zjjshjls1nhh1hj1hvclupyj"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "3.261GB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-15 13:33:03.476001826 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c mkdir -p /tmp/google_fonts_cache /tmp/google-fonts-src &&     curl -fsSL \"https://github.com/google/fonts/archive/${GOOGLE_FONTS_REV}.tar.gz\"         -o /tmp/google-fonts.tar.gz &&     tar -xzf /tmp/google-fonts.tar.gz --strip-components=1 -C /tmp/google-fonts-src &&     find /tmp/google-fonts-src -type f \\( -name '*.ttf' -o -name '*.otf' -o -name '*.woff2' -o -name '*.woff' \\)         ! -iname '*Italic*' -exec cp --update=none {} /tmp/google_fonts_cache/ \\; &&     rm -rf /tmp/google-fonts.tar.gz /tmp/google-fonts-src",
+    "ID": "9zedypmhfvi0lnh3wb01yqxj7",
+    "LastUsedAt": "47 hours ago",
+    "Mutable": false,
+    "Parents": [
+      "k630rkv72fe87vhwyuh37j7zo"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "3.261GB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-15 13:10:21.559855034 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c mkdir -p /tmp/google_fonts_cache /tmp/google-fonts-src &&     curl -fsSL \"https://github.com/google/fonts/archive/${GOOGLE_FONTS_REV}.tar.gz\"         -o /tmp/google-fonts.tar.gz &&     tar -xzf /tmp/google-fonts.tar.gz --strip-components=1 -C /tmp/google-fonts-src &&     find /tmp/google-fonts-src -type f \\( -name '*.ttf' -o -name '*.otf' -o -name '*.woff2' -o -name '*.woff' \\)         ! -iname '*Italic*' -exec cp --update=none {} /tmp/google_fonts_cache/ \\; &&     rm -rf /tmp/google-fonts.tar.gz /tmp/google-fonts-src",
+    "ID": "jgxpyxxakpiq2iurfw64zez90",
+    "LastUsedAt": "2 days ago",
+    "Mutable": false,
+    "Parents": [
+      "rnbt7tylrovyzznu4asordx07"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "3.261GB",
+    "Type": "regular",
+    "UsageCount": 1
+  },
+  {
+    "CreatedAt": "2026-10-16 09:05:50.202564665 +0000 UTC",
+    "Description": "mount / from exec /bin/sh -c mkdir -p /tmp/google_fonts_cache /tmp/google-fonts-src &&     curl -fsSL \"https://github.com/google/fonts/archive/${GOOGLE_FONTS_REV}.tar.gz\"         -o /tmp/google-fonts.tar.gz &&     tar -xzf /tmp/google-fonts.tar.gz --strip-components=1 -C /tmp/google-fonts-src &&     find /tmp/google-fonts-src -type f \\( -name '*.ttf' -o -name '*.otf' -o -name '*.woff2' -o -name '*.woff' \\)         ! -iname '*Italic*' -exec cp --update=none {} /tmp/google_fonts_cache/ \\; &&     rm -rf /tmp/google-fonts.tar.gz /tmp/google-fonts-src",
+    "ID": "3ivetjlnkeayetcw0fl4nl5mk",
+    "LastUsedAt": "28 hours ago",
+    "Mutable": false,
+    "Parents": [
+      "uprhajlrdbij88kr3cdwmwxza"
+    ],
+    "Reclaimable": true,
+    "Shared": false,
+    "Size": "3.261GB",
+    "Type": "regular",
+    "UsageCount": 1
+  }
+]

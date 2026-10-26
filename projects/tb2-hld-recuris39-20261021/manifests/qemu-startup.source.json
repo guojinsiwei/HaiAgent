@@ -1,0 +1,8 @@
+{
+  "task": "qemu-startup",
+  "image": "alexgshaw/qemu-startup:20251031",
+  "digest": "sha256:1a666e049db553c5e713830b1f5de1953210ab7c99212d006bb4e46cbc6b6d04",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/qemu-startup/manifests/20251031",
+  "header_verified": true,
+  "time": 1792550879.7094352
+}

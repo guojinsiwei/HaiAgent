@@ -1,0 +1,5 @@
+{
+  "exit_code": 0,
+  "output": "{\"started\": true, \"pid\": 2961432, \"queued_attempts\": 15, \"workers\": 6, \"campaign_cny\": 720, \"repair_version\": 2}\n",
+  "stderr": ""
+}

@@ -1,0 +1,8 @@
+{
+  "task": "cobol-modernization",
+  "image": "alexgshaw/cobol-modernization:20251031",
+  "digest": "sha256:593ab9df3d83f771e927888b2d9436b380cdf7ec4d0af2a9f0802d541edebba0",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/cobol-modernization/manifests/20251031",
+  "header_verified": true,
+  "time": 1792510258.1935778
+}

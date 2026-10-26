@@ -1,0 +1,8 @@
+{
+  "task": "large-scale-text-editing",
+  "image": "alexgshaw/large-scale-text-editing:20251031",
+  "digest": "sha256:719adca3f1388220546ce6a155eee56eff3c4fe318183100320606a210f6b59c",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/large-scale-text-editing/manifests/20251031",
+  "header_verified": true,
+  "time": 1792550867.8465815
+}
