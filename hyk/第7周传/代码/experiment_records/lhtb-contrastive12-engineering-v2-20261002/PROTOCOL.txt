@@ -1,0 +1,18 @@
+Engineering v2 follow-up: same 12 RAW reference tasks, two exploration arms.
+This is 24 NEW isolated trials, not resumption of an interrupted solver context.
+The original 24-trial campaign, ledgers, results and memories remain unchanged.
+No old outcomes/memories are carried. The old campaign was already fully ended.
+
+Both arms share the regression-verified engineering repair. Only exploration
+mode differs: evidence1 / orthogonal1. Similarity threshold 0.8, memory safety,
+600 tools, 800 logical requests, adviser capacity 6 and original wall limits
+remain unchanged. Model deepseek-flash, thinking disabled, temperature 0.
+Four slots; same paired task order and official image identities as before.
+No additional RAW arm and no HAI route search or stagnation control.
+
+Readiness requires sealed source hashes, campaign tests and two no-model Docker
+official continuation fixtures. Paid trials start only after local hidden key
+entry. Key is transmitted via SSH stdin/anonymous pipes, not files or argv.
+No credential reuse, silent task replay or GPT scheduled monitoring. Python
+supervision is local server code. Repeated shared format faults stop admissions
+and drain active workers, preserving failed reports rather than replacing them.

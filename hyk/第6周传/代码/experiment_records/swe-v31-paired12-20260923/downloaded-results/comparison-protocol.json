@@ -1,0 +1,275 @@
+{
+  "schema_version": 2,
+  "runtime_version": "blocking-cli-v12",
+  "method_configurations": {
+    "bestfgs": {
+      "algorithm": "evidence_guided_cli",
+      "experience_mode": "conditioned",
+      "branching_enabled": true,
+      "blocking_memory_mode": "control"
+    },
+    "raw": {
+      "algorithm": "raw_cli",
+      "experience_mode": "off",
+      "branching_enabled": false,
+      "blocking_memory_mode": "off"
+    }
+  },
+  "method_args": {
+    "bestfgs": [
+      "--experience-mode",
+      "conditioned",
+      "--blocking-memory",
+      "control"
+    ],
+    "raw": [
+      "--experience-mode",
+      "off",
+      "--blocking-memory",
+      "off",
+      "--disable-evidence-branching"
+    ]
+  },
+  "metric_version": "cli-comparison-v2",
+  "metric_report_version": "cli-metrics-report-v3",
+  "plan_sha256": "4047fee202b51df2e89cbb7fb0c1b2095cfb26d092d6b2b939e91351692aa266",
+  "dataset": "SWE-bench/SWE-bench_Verified",
+  "split": "test",
+  "expected_ids": [
+    "scikit-learn__scikit-learn-25747",
+    "django__django-13121",
+    "sphinx-doc__sphinx-9658",
+    "django__django-11066",
+    "django__django-13809",
+    "django__django-14752",
+    "sympy__sympy-22080",
+    "pydata__xarray-3095",
+    "django__django-11749",
+    "django__django-15957",
+    "django__django-15382",
+    "django__django-15467"
+  ],
+  "implementation_sha256": "2ede9d5f8b8c1d85ee33059da89264b7dad0e471946d14545176dd2e340b5ec0",
+  "agent_python": "/mnt/lizh639/envs/bestfgs/bin/python3.11",
+  "agent_python_version": "3.11.16 (main, Sep  2 2026, 23:39:52) [GCC 15.3.0]",
+  "common_args": [
+    "--engine",
+    "evidence",
+    "--provider",
+    "dashscope",
+    "--model",
+    "deepseek-v3.1",
+    "--base-url",
+    "https://ws-h0e5tm7nwwej9gk9.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+    "--api-key-env",
+    "DASHSCOPE_API_KEY",
+    "--temperature",
+    "0.6",
+    "--reasoning-effort",
+    "high",
+    "--solve-reasoning-effort",
+    "high",
+    "--max-iterations",
+    "24",
+    "--max-tool-calls",
+    "80",
+    "--max-commands-per-action",
+    "6",
+    "--budget-multiplier",
+    "1",
+    "--no-adaptive-budget",
+    "--success-judge-mode",
+    "off",
+    "--comparison-metrics",
+    "--model-timeout",
+    "90",
+    "--model-max-wall-time",
+    "600",
+    "--model-request-attempts",
+    "5",
+    "--model-parse-attempts",
+    "3",
+    "--model-retry-interval",
+    "2",
+    "--model-max-retry-interval",
+    "30",
+    "--top-p",
+    "0.95"
+  ],
+  "task_timeout": 14400,
+  "prepared": {
+    "scikit-learn__scikit-learn-25747": {
+      "ready_sha256": "07b794ec36a176379504853280e0e021cbeb1dd4c55233b352cd5cfc2c8c2146",
+      "pip_freeze_sha256": "c0bc2fe5d74b8e013ad56082d452bd1dfbc8f2ff03e3d67f9402ffa5a46ebb99",
+      "seed_sha256": "ec77f21f503e29af33d001fd3160d0d8ed70c8802bb9324b5078f800a283fb44",
+      "prepared_commit": "4c2bdcdff30eba5abf81a4a241b273b4ab89f6af",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/scikit-learn__scikit-learn-25747/attempt-01b0380d4032/env/bin/python",
+      "base_commit": "2c867b8f822eb7a684f0d5c4359e4426e1c9cfe0"
+    },
+    "django__django-13121": {
+      "ready_sha256": "5a1a3fe6ccaa8d87e52e0061d698543ddc9d9c40106f44ea9c67bdd4c3453e21",
+      "pip_freeze_sha256": "755fa846efcf1985c1b32ffdc0982768c1016ed727ee8090a2d13385e1093158",
+      "seed_sha256": "28a81bbda4b1254da1cfcbe5fd5da56e56d7f954fddab3d3795fdb9596013f42",
+      "prepared_commit": "5485d01788c9f4fa861f311fbd843e92ec556a35",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-13121/attempt-efac8c9164cb/env/bin/python",
+      "base_commit": "ec5aa2161d8015a3fe57dcbbfe14200cd18f0a16"
+    },
+    "sphinx-doc__sphinx-9658": {
+      "ready_sha256": "610475b059af608da891e8ed3b936dd8517f563e0bbf7e7f7d4d2ee1eaa2ff71",
+      "pip_freeze_sha256": "5dbb856afb2c4b2154f05f4434cd9bb10d7e1f3d734d2990026dde122beee319",
+      "seed_sha256": "e120e55fb526f55d17b95167292b13be683195dd042b6a7a2d4d80a4c6b1c744",
+      "prepared_commit": "525e03ce7298dd8e33d9451805af576976bc49c9",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/sphinx-doc__sphinx-9658/attempt-1da256a15b2a/env/bin/python",
+      "base_commit": "232dbe41c5250eb7d559d40438c4743483e95f15"
+    },
+    "django__django-11066": {
+      "ready_sha256": "f6814581b4f654ac2abfdc399ae91dac76c60735978bfc43c80a6724b846f3ed",
+      "pip_freeze_sha256": "a0622696cf729fe42386e849abc93c0a6dc8da1cc98902f69bdace9d73f04464",
+      "seed_sha256": "bc8eb176eb6438d88069dd79257061c7bb042810027e1939d0d8746577564b48",
+      "prepared_commit": "257c01580bb42e19c6dc8640351a3fd9e5e3e78c",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-reserve-v2/prepared/django__django-11066/attempt-be59bd6b5ec9/env/bin/python",
+      "base_commit": "4b45b6c8e4d7c9701a332e80d3b1c84209dc36e2"
+    },
+    "django__django-13809": {
+      "ready_sha256": "533409e8d0b075a000d636a6505217b594b84923d5a7b28a2afe317052fe74f7",
+      "pip_freeze_sha256": "4f7a23587b452428a8acd28924a726327edb36a9b4834c3130f4e768513b0501",
+      "seed_sha256": "39952238cd539552ae30877a5e3c0f47631c53c10669d625aeeba983ab5f0947",
+      "prepared_commit": "430f16864572942599e59c9a76fb190c5c5d6de4",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-13809/attempt-ffce9e3ca45a/env/bin/python",
+      "base_commit": "bef6f7584280f1cc80e5e2d80b7ad073a93d26ec"
+    },
+    "django__django-14752": {
+      "ready_sha256": "98449db32c5a313bcf0de236e746047b7132240eca6399e17684536110ddd313",
+      "pip_freeze_sha256": "1e2d8fee66f98a23c211d3884914871305a2867c0576d694435c9345b88e9e62",
+      "seed_sha256": "74b19987ab1793ff0ed28f9db3b8aaff14e06217f10663cb47d86fa27597fb75",
+      "prepared_commit": "ee168320d7b2bccf5e293c14f7dc233b1ab30109",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-14752/attempt-1573396561c8/env/bin/python",
+      "base_commit": "b64db05b9cedd96905d637a2d824cbbf428e40e7"
+    },
+    "sympy__sympy-22080": {
+      "ready_sha256": "27785849d703156181b22cf97b1662ec41935ef62cdaacf72230efcf36f695ec",
+      "pip_freeze_sha256": "353bf68342d14566f7866f29de57d92140d5e4800a7ae88efc3f03784e62c6f5",
+      "seed_sha256": "bf93aad89cc4ffc7374538f992ff885e15e8c0444d570dc23dd020dfad36a0bb",
+      "prepared_commit": "c0065277119ac6b5430ffdaac727edc8804920fa",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/sympy__sympy-22080/attempt-c32344602f19/env/bin/python",
+      "base_commit": "3f8c8c2377cb8e0daaf8073e8d03ac7d87580813"
+    },
+    "pydata__xarray-3095": {
+      "ready_sha256": "23b67de22427bcba07dd9bccd1a3d0439ba123ab518ec2111579bf2f2d153551",
+      "pip_freeze_sha256": "f9a929c7872e898685cc21198f80a314a4c246c820fd4c439f2b4a55f3c98b9f",
+      "seed_sha256": "2c49e5d5a50d12e7a44fcf006384ed63be1af4dd8e63152393358d8ab5c3c926",
+      "prepared_commit": "99bda41d42075a9a69cb7411b13d1ef76a6743e8",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/pydata__xarray-3095/attempt-a127cd5d4cda/env/bin/python",
+      "base_commit": "1757dffac2fa493d7b9a074b84cf8c830a706688"
+    },
+    "django__django-11749": {
+      "ready_sha256": "4de4cd235e62296511e27f7215cb6b4946649980b39d46c95bb7089582e40130",
+      "pip_freeze_sha256": "46427be084a561abfa167b8a64f1663247986f76b07bda17b044a1a208faf4d6",
+      "seed_sha256": "d1a9aaaf74ce2517ab7412350d7ce37e67adf28d6b1f97d5ad4fba4def131fb4",
+      "prepared_commit": "9962178f503acb4dc028c245c28cfbdd621dadf6",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-11749/attempt-81966cf1e0b0/env/bin/python",
+      "base_commit": "350123f38c2b6217c38d70bfbd924a9ba3df1289"
+    },
+    "django__django-15957": {
+      "ready_sha256": "86f8f231759cbf8a71fb3612b06aa7988bf64642aec18da8f2f970646d6766b3",
+      "pip_freeze_sha256": "87e008b20c9bf8c3dfcef6f36f92a8d8bf4d45f4189ff51c4bd03f5782bf6f1f",
+      "seed_sha256": "88000a77e06cba2cbebf75c727245baae9cafd41c54eb543a7421f09eeca536b",
+      "prepared_commit": "e2f1ed024232175808ea918ccf15d75835fe0533",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-15957/attempt-a1f1f3121f0d/env/bin/python",
+      "base_commit": "f387d024fc75569d2a4a338bfda76cc2f328f627"
+    },
+    "django__django-15382": {
+      "ready_sha256": "5f6617dea68c422189072d222a10d590dd6344ef5ce2f99756d2a4f2cd73fb15",
+      "pip_freeze_sha256": "35f9bd708b496682386e814c4719503938db1e96918cc5af6c391143aca36f64",
+      "seed_sha256": "21b5bf2f684d3857a86529e641ff34a37e109b01f6a348400dc1e2f7ac56695b",
+      "prepared_commit": "63452e116cdac72c4bcc0beb5b8090fbf5a857c6",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-reserve-v1/prepared/django__django-15382/attempt-695c195c5d1b/env/bin/python",
+      "base_commit": "770d3e6a4ce8e0a91a9e27156036c1985e74d4a3"
+    },
+    "django__django-15467": {
+      "ready_sha256": "f61cd734a81126f959f26c576c470ba7111e91eb2113aa0bb94aac8be32c2771",
+      "pip_freeze_sha256": "7b0caf91ec9125ba9edfb3ba31f539f07b9f026d7a48e1eed19d669992440a83",
+      "seed_sha256": "9a74744f878dc80f9819cda6101921c811ddef3ce4d10b8149e0325705978184",
+      "prepared_commit": "3a973513ee1d8a418eebb62898adb126c8e0caf8",
+      "task_python": "/mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-15467/attempt-63d005981fbc/env/bin/python",
+      "base_commit": "e0442a628eb480eac6a7888aed5a86f83499e299"
+    }
+  },
+  "runtime_env": {
+    "BESTFGS_TASK_SOURCE_PATH": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MPLBACKEND": "Agg"
+  },
+  "method_order": "paired; first arm = parity of SHA256(instance_id); second arm follows immediately",
+  "success_source": "official SWE-bench Docker harness; never internal succeeded",
+  "efficiency_budget": "same decision-turn and total CLI-call caps; NOT equal LLM-token budgets",
+  "budget_semantics": {
+    "max_iterations": "model decision turns, including done, cache reuse and snapshot restore",
+    "max_tool_calls": "all actually executed CLI commands including in-loop verification",
+    "interaction_rounds": "executed CLI feedback batches, not decision turns or model requests",
+    "model_calls": "record all logical requests, including schema retries; separately report wire requests",
+    "final_checks": "no extra paid model decisions or unmetered task-verification CLI",
+    "history": "chronological actual command/output history retained in both arms",
+    "shared_delivery": "same immutable final artifact materialization; submission is not official success",
+    "blocking_diagnostics": "actual diagnostic CLI consumes common tool budget and feedback rounds; deferrals consume decisions only"
+  },
+  "budget_limits": {
+    "decision_turns": 24,
+    "tool_calls": 80,
+    "commands_per_turn": 6,
+    "task_timeout_seconds": 14400
+  },
+  "blocking_policy": {
+    "max_probes_per_attempt": 8,
+    "max_probes_per_record_epoch": 2,
+    "max_defer_uses_per_probe": 1,
+    "max_records": 128,
+    "guard_scope": "first_uncached_command_only"
+  },
+  "historical_baseline_reuse": false,
+  "model_interface": {
+    "version": "wire-v5",
+    "stream_requires_done_and_finish": true,
+    "accepted_finish_reason": "stop",
+    "json_syntax_feedback": true,
+    "retry_budget": "existing 5 requests per complete_json, existing 3 schema attempts",
+    "failed_output_execution": false,
+    "diagnostics": "redacted bounded model-failures.jsonl",
+    "usage_policy": "all received usage, missing usage explicitly counted"
+  },
+  "sharding": {
+    "count": 2,
+    "assignment": "SHA256(instance_id) ascending; round-robin",
+    "workers": [
+      [
+        "django__django-13809",
+        "django__django-15957",
+        "pydata__xarray-3095",
+        "sphinx-doc__sphinx-9658",
+        "django__django-11066",
+        "django__django-15467"
+      ],
+      [
+        "scikit-learn__scikit-learn-25747",
+        "django__django-13121",
+        "django__django-14752",
+        "django__django-15382",
+        "sympy__sympy-22080",
+        "django__django-11749"
+      ]
+    ],
+    "both_methods_per_task": true
+  },
+  "provider_adapter_sha256": "2f576ed4a31bdb13df12108d354ab4b05018cba0eb49975eb08bb24eae95ea06",
+  "model_service": {
+    "provider": "alibaba_model_studio",
+    "api_protocol": "openai_compatible_chat_completions",
+    "model": "deepseek-v3.1",
+    "thinking": "enabled",
+    "reasoning_effort_mapping": "BestFGS high -> enable_thinking=true",
+    "credential_env": "DASHSCOPE_API_KEY",
+    "endpoint_frozen_in_protocol": true
+  },
+  "study_scope": "Exploratory same-model paired test of harness benefit at a lower model tier; not a direct estimate of model-capability causality."
+}

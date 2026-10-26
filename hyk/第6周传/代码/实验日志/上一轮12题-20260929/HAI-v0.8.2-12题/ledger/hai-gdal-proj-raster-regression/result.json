@@ -1,0 +1,62 @@
+{
+  "task": "gdal-proj-raster-regression",
+  "method": "hai",
+  "report": "/var/tmp/lizh639-lhtb-hai082-only-r1/runs/hai-gdal-proj-raster-regression/gdal-proj-raster-regression__m5BLk3Q/result.json",
+  "verifier_result": {
+    "rewards": {
+      "reward": 0.0
+    }
+  },
+  "exception_info": null,
+  "process_exit_code": 0,
+  "audit_chain": {
+    "events": 1242,
+    "tail_sha256": "2e98bcfc9ee794a7cefb023c6d9c732feb3f9a2634665422c48da9438a61b2e8"
+  },
+  "mechanism_utilization": {
+    "automatic_memory_updates": 8,
+    "direction_stalls": 4,
+    "enabled": true,
+    "explained_retries": 0,
+    "inferred_strategy_actions": 0,
+    "inferred_subgoal_actions": 0,
+    "memory_action_changed": 3,
+    "memory_action_unchanged": 0,
+    "memory_behavior_chain_is_association_not_causation": true,
+    "memory_direction_changed": 3,
+    "memory_direction_unchanged": 0,
+    "memory_exact_action_changed": 3,
+    "memory_followup_actions": 3,
+    "memory_followup_runs": 3,
+    "memory_followup_succeeded": 3,
+    "memory_followup_workspace_changed": 0,
+    "memory_intervention_followup_coverage": 1.0,
+    "memory_interventions": 3,
+    "memory_override_reasons": 0,
+    "memory_override_reasons_exhausted": 0,
+    "memory_overrides_exhausted": 0,
+    "memory_recall_exposures": 247,
+    "memory_reconsiderations": 3,
+    "memory_rejections": 0,
+    "memory_use_self_reports": 0,
+    "model_declared_strategy_actions": 414,
+    "model_declared_subgoal_actions": 414,
+    "model_memory_admissions": 0,
+    "repeat_blocked": 0,
+    "repeat_decisions": 0,
+    "repeat_executed": 0,
+    "repetition_observations": 4,
+    "requests_with_recalled_memory": 247,
+    "run_decisions": 414,
+    "strategy_switches": 27,
+    "subgoal_switches": 53,
+    "unique_strategies": 2,
+    "unique_subgoals": 5,
+    "unverified_scope_soft_retries": 0
+  },
+  "classification": {
+    "stop_reason": "wall_budget",
+    "infrastructure_ok": true,
+    "reasons": []
+  }
+}

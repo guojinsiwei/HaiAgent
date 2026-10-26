@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "tests_run": 7,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "paid_model_calls": 0,
+  "hashes": {
+    "launch_parallel.py": "9dbcb72a52588b9a63f08792a2f28e281526eee881aff3bcebf9369d44b30d2f",
+    "identity.py": "1f2a52f9881fe9f955f35d1032bfd5b40a98f3ad41f94efabf04354e26b49e8e",
+    "accept_ops.py": "2a05e7fa9cc3fcdf780191b50d328a59521790c151b2143fd0cc03425e340684",
+    "scheduler_ops.py": "5a80dece4bc902542835de1bd7f943e39348d6830c6db566d7dc0c861500fd5e",
+    "resume_worker.py": "9b8bb0b5a6a827775dd2c1f8dec1fe2ffc56607ef4f869cf3032e5b3883636d9",
+    "fixture_run_worker.py": "fe6fff69ec74e5fa6b3a9ac822e69e9024fa928bbf2d8d85f99d551b9d630982"
+  }
+}

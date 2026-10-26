@@ -1,0 +1,126 @@
+========== HW2 Start ==========
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Error at /usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake:230 (message):
+  Could NOT find OpenSSL, try to set the path to OpenSSL root folder in the
+  system variable OPENSSL_ROOT_DIR (missing: OPENSSL_CRYPTO_LIBRARY
+  OPENSSL_INCLUDE_DIR)
+Call Stack (most recent call first):
+  /usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake:600 (_FPHSA_FAILURE_MESSAGE)
+  /usr/share/cmake-3.28/Modules/FindOpenSSL.cmake:668 (find_package_handle_standard_args)
+  CMakeLists.txt:6 (find_package)
+
+
+-- Configuring incomplete, errors occurred!
+make: *** No targets specified and no makefile found.  Stop.
+HW2 compile failed, cannot run program
+
+========== HW6 Start ==========
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found GTest: /usr/local/lib/cmake/GTest/GTestConfig.cmake (found version "1.18.0")  
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /app/ap1400_2_hw/ap1400_2_hw6/build_hw6
+[ 33%] Building CXX object CMakeFiles/main.dir/src/unit_test.cpp.o
+[ 66%] Building CXX object CMakeFiles/main.dir/src/main.cpp.o
+[100%] Linking CXX executable main
+[100%] Built target main
+RUNNING TESTS ...
+[==========] Running 9 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 9 tests from HW6Test
+[ RUN      ] HW6Test.TEST1
+[       OK ] HW6Test.TEST1 (16 ms)
+[ RUN      ] HW6Test.TEST2
+[       OK ] HW6Test.TEST2 (5 ms)
+[ RUN      ] HW6Test.TEST3
+[       OK ] HW6Test.TEST3 (4 ms)
+[ RUN      ] HW6Test.TEST4
+[       OK ] HW6Test.TEST4 (2 ms)
+[ RUN      ] HW6Test.TEST5
+[       OK ] HW6Test.TEST5 (0 ms)
+[ RUN      ] HW6Test.TEST6
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:63: Failure
+Expected equality of these values:
+  patients[10].name
+    Which is: "Diego Maradona"
+  "Sidney Poitier"
+
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:64: Failure
+Expected equality of these values:
+  patients[30].name
+    Which is: "Joan Crawford"
+  "Jane Wyman"
+
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:65: Failure
+Expected equality of these values:
+  patients[58].name
+    Which is: "Yul Brynner"
+  "Joan Crawford"
+
+[  FAILED  ] HW6Test.TEST6 (0 ms)
+[ RUN      ] HW6Test.TEST7
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:78: Failure
+Expected equality of these values:
+  flight_numbers
+    Which is: { "1- flight_number:QR492 - duration:11h30m - connections:3 - connection_times:2h", "6- flight_number:GH758 - duration:24h10m - connections:2 - connection_times:3h", "3- flight_number:9724 - duration:13h - connections:2 - connection_times:5h15m" }
+  correct
+    Which is: { "9725", "QR720", "MA127", "9724", "QR492", "GH758" }
+
+[  FAILED  ] HW6Test.TEST7 (0 ms)
+[ RUN      ] HW6Test.TEST8
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:85: Failure
+The difference between kalman.x and 0.142 is 0.28903448275862065, which exceeds 0.01, where
+kalman.x evaluates to 0.43103448275862066,
+0.142 evaluates to 0.14199999999999999, and
+0.01 evaluates to 0.01.
+
+[  FAILED  ] HW6Test.TEST8 (0 ms)
+[ RUN      ] HW6Test.TEST9
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:96: Failure
+The difference between kalman.x and 1.102 is 0.61693558702603912, which exceeds 0.01, where
+kalman.x evaluates to 1.7189355870260392,
+1.102 evaluates to 1.1020000000000001, and
+0.01 evaluates to 0.01.
+
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:97: Failure
+The difference between kalman.y and 0.4440 is 0.2350918227501142, which exceeds 0.01, where
+kalman.y evaluates to 0.20890817724988581,
+0.4440 evaluates to 0.44400000000000001, and
+0.01 evaluates to 0.01.
+
+[  FAILED  ] HW6Test.TEST9 (0 ms)
+[----------] 9 tests from HW6Test (29 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 1 test suite ran. (29 ms total)
+[  PASSED  ] 5 tests.
+[  FAILED  ] 4 tests, listed below:
+[  FAILED  ] HW6Test.TEST6
+[  FAILED  ] HW6Test.TEST7
+[  FAILED  ] HW6Test.TEST8
+[  FAILED  ] HW6Test.TEST9
+
+ 4 FAILED TESTS
+FAILED

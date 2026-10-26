@@ -1,0 +1,140 @@
+{
+  "version": "bestfgs-monitor-control-v6.1",
+  "task_id": "cmu15_445_p2",
+  "submitted": false,
+  "stop_reason": "request_or_tool_budget",
+  "artifact": {
+    "path": "/mnt/lizh639/longcli-v6-raw-paired10-20261001/roots/bestfgs-v6.1--cmu15_445_p2/app",
+    "fingerprint": "372b9ab54ce1efd313e760c65e57302ddf3d4539e35103cbff3b3b456c960838",
+    "restoration": "workspace_files_only"
+  },
+  "official_success": null,
+  "error_type": null,
+  "interaction_rounds": 669,
+  "action_rounds": 651,
+  "advisor_rounds": 6,
+  "monitor_rounds": 12,
+  "tool_calls": 600,
+  "wall_seconds": 2734.51483898703,
+  "model_usage": {
+    "action": {
+      "model_calls": 651,
+      "api_requests": 657,
+      "api_responses": 657,
+      "prompt_tokens": 8640724,
+      "cached_prompt_tokens": 671232,
+      "cache_miss_prompt_tokens": 7969492,
+      "cache_write_prompt_tokens": 0,
+      "completion_tokens": 168857,
+      "cache_hit_rate": 0.077682,
+      "usage_missing_responses": 0,
+      "response_models": [
+        "deepseek-flash"
+      ],
+      "system_fingerprints": [
+        "aeb56401ca74e127821c4f9126dcb669"
+      ],
+      "last_failure_kind": null,
+      "last_failure_detail": null,
+      "failure_counts": {
+        "json_syntax": 6
+      },
+      "usage_unreported_requests": 0
+    },
+    "advisor": {
+      "model_calls": 6,
+      "api_requests": 6,
+      "api_responses": 6,
+      "prompt_tokens": 82312,
+      "cached_prompt_tokens": 1024,
+      "cache_miss_prompt_tokens": 81288,
+      "cache_write_prompt_tokens": 0,
+      "completion_tokens": 2483,
+      "cache_hit_rate": 0.01244,
+      "usage_missing_responses": 0,
+      "response_models": [
+        "deepseek-flash"
+      ],
+      "system_fingerprints": [
+        "aeb56401ca74e127821c4f9126dcb669"
+      ],
+      "last_failure_kind": null,
+      "last_failure_detail": null,
+      "failure_counts": {},
+      "usage_unreported_requests": 0
+    },
+    "monitor": {
+      "model_calls": 12,
+      "api_requests": 12,
+      "api_responses": 12,
+      "prompt_tokens": 65282,
+      "cached_prompt_tokens": 6144,
+      "cache_miss_prompt_tokens": 59138,
+      "cache_write_prompt_tokens": 0,
+      "completion_tokens": 7138,
+      "cache_hit_rate": 0.094115,
+      "usage_missing_responses": 0,
+      "response_models": [
+        "deepseek-flash"
+      ],
+      "system_fingerprints": [
+        "aeb56401ca74e127821c4f9126dcb669"
+      ],
+      "last_failure_kind": null,
+      "last_failure_detail": null,
+      "failure_counts": {},
+      "usage_unreported_requests": 0
+    }
+  },
+  "mechanism_utilization": {
+    "model_requests": 669,
+    "action_calls": 651,
+    "advisor_calls": 6,
+    "tool_calls": 600,
+    "memory_exposures": 2219,
+    "requests_with_memory": 600,
+    "memories_admitted": 39,
+    "memories_rejected": 2,
+    "memory_use_self_reports": 186,
+    "advisor_responses_accepted": 4,
+    "advisor_deferred": 2,
+    "checkpoints_created": 1,
+    "branch_restores": 0,
+    "submissions": 0,
+    "protocol_errors": 4,
+    "memory_interventions": 1,
+    "memory_action_changed": 1,
+    "memory_action_unchanged": 0,
+    "memory_followup_actions": 86,
+    "memory_followup_runs": 86,
+    "memory_followup_succeeded": 82,
+    "memory_followup_workspace_changed": 5,
+    "post_advice_actions": 4,
+    "monitor_calls": 12,
+    "monitor_reviews_accepted": 10,
+    "monitor_deferred": 2,
+    "semantic_stalls": 7,
+    "auto_memory_candidates": 17,
+    "auto_memories_admitted": 16,
+    "auto_memories_rejected": 1,
+    "observed_memories_admitted": 0,
+    "recovery_started": 73,
+    "recovery_plans": 73,
+    "recovery_verified_repairs": 0,
+    "recovery_checked_hypotheses": 0,
+    "recovery_failed": 72,
+    "memory_exposure_is_not_benefit": true,
+    "memory_use_is_self_report": true
+  },
+  "time_by_role": {
+    "action": 1258.1137593574822,
+    "tools": 338.51326331403106,
+    "monitor": 37.813098394311965,
+    "advisor": 18.62075638305396
+  },
+  "contextual_tool_redundancy": {
+    "status": "requires_independent_audit",
+    "rate": null,
+    "denominator": 600
+  }
+}

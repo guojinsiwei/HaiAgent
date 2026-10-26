@@ -1,0 +1,14 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.4.1, pluggy-1.6.0
+rootdir: /tests
+collected 4 items
+
+../tests/p2p.py ....                                                     [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/p2p.py::test_file_integrity[/app/ap1400_2_hw/ap1400_2_hw3/Dockerfile-03ac1a3d1fbcbd9f0d5de84b9f6f9341]
+PASSED ../tests/p2p.py::test_file_integrity[/app/ap1400_2_hw/ap1400_2_hw3/src/main.cpp-19dfaf5436274303a25b436ee8022537]
+PASSED ../tests/p2p.py::test_file_integrity[/app/ap1400_2_hw/ap1400_2_hw5/Dockerfile-03ac1a3d1fbcbd9f0d5de84b9f6f9341]
+PASSED ../tests/p2p.py::test_file_integrity[/app/ap1400_2_hw/ap1400_2_hw5/src/main.cpp-3c30886fd2a66add982a4256066ff8ab]
+============================== 4 passed in 0.01s ===============================

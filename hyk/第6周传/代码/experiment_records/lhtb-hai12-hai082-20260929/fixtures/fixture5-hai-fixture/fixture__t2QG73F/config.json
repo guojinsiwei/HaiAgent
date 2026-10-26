@@ -1,0 +1,58 @@
+{
+    "task": {
+        "path": "/var/tmp/lizh639-lhtb-hai082-only-r1/fixture",
+        "git_url": null,
+        "git_commit_id": null,
+        "name": null,
+        "ref": null,
+        "overwrite": false,
+        "download_dir": null,
+        "source": null
+    },
+    "trial_name": "fixture__t2QG73F",
+    "trials_dir": "/var/tmp/lizh639-lhtb-hai082-only-r1/fixtures/fixture5-hai-fixture",
+    "timeout_multiplier": 1.0,
+    "agent_timeout_multiplier": null,
+    "verifier_timeout_multiplier": null,
+    "agent_setup_timeout_multiplier": null,
+    "environment_build_timeout_multiplier": null,
+    "agent": {
+        "name": null,
+        "import_path": "transport:TripleAgent",
+        "model_name": "deepseek-flash",
+        "override_timeout_sec": null,
+        "override_setup_timeout_sec": 600.0,
+        "max_timeout_sec": null,
+        "kwargs": {
+            "method": "hai",
+            "task_id": "fixture",
+            "wall_seconds": 240,
+            "cpu": 2,
+            "memory_mb": 4096,
+            "fixture": "budget"
+        },
+        "env": {}
+    },
+    "environment": {
+        "type": "docker",
+        "import_path": null,
+        "force_build": false,
+        "delete": true,
+        "override_cpus": null,
+        "override_memory_mb": null,
+        "override_storage_mb": null,
+        "override_gpus": null,
+        "suppress_override_warnings": false,
+        "mounts": null,
+        "env": {},
+        "kwargs": {}
+    },
+    "verifier": {
+        "override_timeout_sec": null,
+        "max_timeout_sec": null,
+        "env": {},
+        "disable": false
+    },
+    "artifacts": [],
+    "job_id": "95b58dda-d8a5-4325-b9e2-804fd5abb2af"
+}

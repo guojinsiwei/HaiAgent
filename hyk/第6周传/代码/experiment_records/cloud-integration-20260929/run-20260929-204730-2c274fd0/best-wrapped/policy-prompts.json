@@ -1,0 +1,2607 @@
+{
+  "actor": [
+    {
+      "task": {
+        "task_id": "best-wrapped",
+        "goal": "Inspect file.txt and deliver result.txt when requested",
+        "success_criteria": [],
+        "constraints": []
+      },
+      "fixed_context": {
+        "current_workspace": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+        "external_state": "unverified",
+        "evidence": [],
+        "memories": [],
+        "advice": {},
+        "delivery_progress": {
+          "criteria": [
+            {
+              "criterion": "Inspect file.txt and deliver result.txt when requested",
+              "status": "unverified_by_controller"
+            }
+          ],
+          "requested_artifacts": [
+            {
+              "path": "file.txt",
+              "exists": true,
+              "state": "file:27:88287527654b18eb2300d4b4802f8c550881f7e4ddf378f3337457a710933871"
+            },
+            {
+              "path": "result.txt",
+              "exists": false,
+              "state": "missing"
+            }
+          ],
+          "missing_artifacts": [
+            "result.txt"
+          ],
+          "controller_claims_success": false,
+          "delivery_gap": "Explicitly requested artifact paths still missing: result.txt"
+        },
+        "budget_pressure": {
+          "stage": "normal",
+          "used_ratio": 0.001
+        },
+        "memory_intervention": null,
+        "checkpoints": [
+          {
+            "id": "C1",
+            "label": "initial state",
+            "hypothesis": "Root before any attempted solution",
+            "fingerprint": "2a54ca27aad056fb40e3a996ad05a279417e00f18957a4c872b1f78d2b2cb1fd"
+          }
+        ],
+        "budgets": {
+          "model_requests": 40,
+          "tools": 30,
+          "advisor_calls": 6,
+          "wall_seconds": 499.63
+        },
+        "feedback": {}
+      },
+      "recent_decisions": []
+    },
+    {
+      "task": {
+        "task_id": "best-wrapped",
+        "goal": "Inspect file.txt and deliver result.txt when requested",
+        "success_criteria": [],
+        "constraints": []
+      },
+      "fixed_context": {
+        "current_workspace": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+        "external_state": "unverified",
+        "evidence": [
+          {
+            "id": "E1",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          }
+        ],
+        "memories": [],
+        "advice": {},
+        "delivery_progress": {
+          "criteria": [
+            {
+              "criterion": "Inspect file.txt and deliver result.txt when requested",
+              "status": "unverified_by_controller"
+            }
+          ],
+          "requested_artifacts": [
+            {
+              "path": "file.txt",
+              "exists": true,
+              "state": "file:27:88287527654b18eb2300d4b4802f8c550881f7e4ddf378f3337457a710933871"
+            },
+            {
+              "path": "result.txt",
+              "exists": false,
+              "state": "missing"
+            }
+          ],
+          "missing_artifacts": [
+            "result.txt"
+          ],
+          "controller_claims_success": false,
+          "delivery_gap": "Explicitly requested artifact paths still missing: result.txt"
+        },
+        "budget_pressure": {
+          "stage": "normal",
+          "used_ratio": 0.033
+        },
+        "memory_intervention": null,
+        "checkpoints": [
+          {
+            "id": "C1",
+            "label": "initial state",
+            "hypothesis": "Root before any attempted solution",
+            "fingerprint": "2a54ca27aad056fb40e3a996ad05a279417e00f18957a4c872b1f78d2b2cb1fd"
+          }
+        ],
+        "budgets": {
+          "model_requests": 39,
+          "tools": 29,
+          "advisor_calls": 6,
+          "wall_seconds": 498.98
+        },
+        "feedback": {
+          "evidence": {
+            "id": "E1",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          }
+        }
+      },
+      "recent_decisions": [
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E1"
+          }
+        }
+      ]
+    },
+    {
+      "task": {
+        "task_id": "best-wrapped",
+        "goal": "Inspect file.txt and deliver result.txt when requested",
+        "success_criteria": [],
+        "constraints": []
+      },
+      "fixed_context": {
+        "current_workspace": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+        "external_state": "unverified",
+        "evidence": [
+          {
+            "id": "E1",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E2",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          }
+        ],
+        "memories": [],
+        "advice": {},
+        "delivery_progress": {
+          "criteria": [
+            {
+              "criterion": "Inspect file.txt and deliver result.txt when requested",
+              "status": "unverified_by_controller"
+            }
+          ],
+          "requested_artifacts": [
+            {
+              "path": "file.txt",
+              "exists": true,
+              "state": "file:27:88287527654b18eb2300d4b4802f8c550881f7e4ddf378f3337457a710933871"
+            },
+            {
+              "path": "result.txt",
+              "exists": false,
+              "state": "missing"
+            }
+          ],
+          "missing_artifacts": [
+            "result.txt"
+          ],
+          "controller_claims_success": false,
+          "delivery_gap": "Explicitly requested artifact paths still missing: result.txt"
+        },
+        "budget_pressure": {
+          "stage": "normal",
+          "used_ratio": 0.067
+        },
+        "memory_intervention": null,
+        "checkpoints": [
+          {
+            "id": "C1",
+            "label": "initial state",
+            "hypothesis": "Root before any attempted solution",
+            "fingerprint": "2a54ca27aad056fb40e3a996ad05a279417e00f18957a4c872b1f78d2b2cb1fd"
+          }
+        ],
+        "budgets": {
+          "model_requests": 38,
+          "tools": 28,
+          "advisor_calls": 6,
+          "wall_seconds": 498.36
+        },
+        "feedback": {
+          "evidence": {
+            "id": "E2",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          }
+        }
+      },
+      "recent_decisions": [
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E1"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E2"
+          }
+        }
+      ]
+    },
+    {
+      "task": {
+        "task_id": "best-wrapped",
+        "goal": "Inspect file.txt and deliver result.txt when requested",
+        "success_criteria": [],
+        "constraints": []
+      },
+      "fixed_context": {
+        "current_workspace": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+        "external_state": "unverified",
+        "evidence": [
+          {
+            "id": "E1",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E2",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E3",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          }
+        ],
+        "memories": [],
+        "advice": {},
+        "delivery_progress": {
+          "criteria": [
+            {
+              "criterion": "Inspect file.txt and deliver result.txt when requested",
+              "status": "unverified_by_controller"
+            }
+          ],
+          "requested_artifacts": [
+            {
+              "path": "file.txt",
+              "exists": true,
+              "state": "file:27:88287527654b18eb2300d4b4802f8c550881f7e4ddf378f3337457a710933871"
+            },
+            {
+              "path": "result.txt",
+              "exists": false,
+              "state": "missing"
+            }
+          ],
+          "missing_artifacts": [
+            "result.txt"
+          ],
+          "controller_claims_success": false,
+          "delivery_gap": "Explicitly requested artifact paths still missing: result.txt"
+        },
+        "budget_pressure": {
+          "stage": "normal",
+          "used_ratio": 0.1
+        },
+        "memory_intervention": null,
+        "checkpoints": [
+          {
+            "id": "C1",
+            "label": "initial state",
+            "hypothesis": "Root before any attempted solution",
+            "fingerprint": "2a54ca27aad056fb40e3a996ad05a279417e00f18957a4c872b1f78d2b2cb1fd"
+          }
+        ],
+        "budgets": {
+          "model_requests": 37,
+          "tools": 27,
+          "advisor_calls": 6,
+          "wall_seconds": 497.75
+        },
+        "feedback": {
+          "evidence": {
+            "id": "E3",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          }
+        }
+      },
+      "recent_decisions": [
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E1"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E2"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E3"
+          }
+        }
+      ]
+    },
+    {
+      "task": {
+        "task_id": "best-wrapped",
+        "goal": "Inspect file.txt and deliver result.txt when requested",
+        "success_criteria": [],
+        "constraints": []
+      },
+      "fixed_context": {
+        "current_workspace": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+        "external_state": "unverified",
+        "evidence": [
+          {
+            "id": "E1",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E2",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E3",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E4",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          }
+        ],
+        "memories": [],
+        "advice": {},
+        "delivery_progress": {
+          "criteria": [
+            {
+              "criterion": "Inspect file.txt and deliver result.txt when requested",
+              "status": "unverified_by_controller"
+            }
+          ],
+          "requested_artifacts": [
+            {
+              "path": "file.txt",
+              "exists": true,
+              "state": "file:27:88287527654b18eb2300d4b4802f8c550881f7e4ddf378f3337457a710933871"
+            },
+            {
+              "path": "result.txt",
+              "exists": false,
+              "state": "missing"
+            }
+          ],
+          "missing_artifacts": [
+            "result.txt"
+          ],
+          "controller_claims_success": false,
+          "delivery_gap": "Explicitly requested artifact paths still missing: result.txt"
+        },
+        "budget_pressure": {
+          "stage": "normal",
+          "used_ratio": 0.133
+        },
+        "memory_intervention": null,
+        "checkpoints": [
+          {
+            "id": "C1",
+            "label": "initial state",
+            "hypothesis": "Root before any attempted solution",
+            "fingerprint": "2a54ca27aad056fb40e3a996ad05a279417e00f18957a4c872b1f78d2b2cb1fd"
+          }
+        ],
+        "budgets": {
+          "model_requests": 36,
+          "tools": 26,
+          "advisor_calls": 6,
+          "wall_seconds": 497.13
+        },
+        "feedback": {
+          "evidence": {
+            "id": "E4",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          }
+        }
+      },
+      "recent_decisions": [
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E1"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E2"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E3"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E4"
+          }
+        }
+      ]
+    },
+    {
+      "task": {
+        "task_id": "best-wrapped",
+        "goal": "Inspect file.txt and deliver result.txt when requested",
+        "success_criteria": [],
+        "constraints": []
+      },
+      "fixed_context": {
+        "current_workspace": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+        "external_state": "unverified",
+        "evidence": [
+          {
+            "id": "E1",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E2",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E3",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E4",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E5",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          }
+        ],
+        "memories": [],
+        "advice": {},
+        "delivery_progress": {
+          "criteria": [
+            {
+              "criterion": "Inspect file.txt and deliver result.txt when requested",
+              "status": "unverified_by_controller"
+            }
+          ],
+          "requested_artifacts": [
+            {
+              "path": "file.txt",
+              "exists": true,
+              "state": "file:27:88287527654b18eb2300d4b4802f8c550881f7e4ddf378f3337457a710933871"
+            },
+            {
+              "path": "result.txt",
+              "exists": false,
+              "state": "missing"
+            }
+          ],
+          "missing_artifacts": [
+            "result.txt"
+          ],
+          "controller_claims_success": false,
+          "delivery_gap": "Explicitly requested artifact paths still missing: result.txt"
+        },
+        "budget_pressure": {
+          "stage": "normal",
+          "used_ratio": 0.167
+        },
+        "memory_intervention": null,
+        "checkpoints": [
+          {
+            "id": "C1",
+            "label": "initial state",
+            "hypothesis": "Root before any attempted solution",
+            "fingerprint": "2a54ca27aad056fb40e3a996ad05a279417e00f18957a4c872b1f78d2b2cb1fd"
+          }
+        ],
+        "budgets": {
+          "model_requests": 35,
+          "tools": 25,
+          "advisor_calls": 6,
+          "wall_seconds": 496.53
+        },
+        "feedback": {
+          "evidence": {
+            "id": "E5",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          }
+        }
+      },
+      "recent_decisions": [
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E1"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E2"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E3"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E4"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E5"
+          }
+        }
+      ]
+    },
+    {
+      "task": {
+        "task_id": "best-wrapped",
+        "goal": "Inspect file.txt and deliver result.txt when requested",
+        "success_criteria": [],
+        "constraints": []
+      },
+      "fixed_context": {
+        "current_workspace": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+        "external_state": "unverified",
+        "evidence": [
+          {
+            "id": "E1",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E2",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E3",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E4",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E5",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E6",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          }
+        ],
+        "memories": [],
+        "advice": {},
+        "delivery_progress": {
+          "criteria": [
+            {
+              "criterion": "Inspect file.txt and deliver result.txt when requested",
+              "status": "unverified_by_controller"
+            }
+          ],
+          "requested_artifacts": [
+            {
+              "path": "file.txt",
+              "exists": true,
+              "state": "file:27:88287527654b18eb2300d4b4802f8c550881f7e4ddf378f3337457a710933871"
+            },
+            {
+              "path": "result.txt",
+              "exists": false,
+              "state": "missing"
+            }
+          ],
+          "missing_artifacts": [
+            "result.txt"
+          ],
+          "controller_claims_success": false,
+          "delivery_gap": "Explicitly requested artifact paths still missing: result.txt"
+        },
+        "budget_pressure": {
+          "stage": "normal",
+          "used_ratio": 0.2
+        },
+        "memory_intervention": null,
+        "checkpoints": [
+          {
+            "id": "C1",
+            "label": "initial state",
+            "hypothesis": "Root before any attempted solution",
+            "fingerprint": "2a54ca27aad056fb40e3a996ad05a279417e00f18957a4c872b1f78d2b2cb1fd"
+          }
+        ],
+        "budgets": {
+          "model_requests": 34,
+          "tools": 24,
+          "advisor_calls": 6,
+          "wall_seconds": 495.89
+        },
+        "feedback": {
+          "evidence": {
+            "id": "E6",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          }
+        }
+      },
+      "recent_decisions": [
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E1"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E2"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E3"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E4"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E5"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E6"
+          }
+        }
+      ]
+    },
+    {
+      "task": {
+        "task_id": "best-wrapped",
+        "goal": "Inspect file.txt and deliver result.txt when requested",
+        "success_criteria": [],
+        "constraints": []
+      },
+      "fixed_context": {
+        "current_workspace": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+        "external_state": "unverified",
+        "evidence": [
+          {
+            "id": "E2",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E3",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E4",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E5",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E6",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E7",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          }
+        ],
+        "memories": [],
+        "advice": {},
+        "delivery_progress": {
+          "criteria": [
+            {
+              "criterion": "Inspect file.txt and deliver result.txt when requested",
+              "status": "unverified_by_controller"
+            }
+          ],
+          "requested_artifacts": [
+            {
+              "path": "file.txt",
+              "exists": true,
+              "state": "file:27:88287527654b18eb2300d4b4802f8c550881f7e4ddf378f3337457a710933871"
+            },
+            {
+              "path": "result.txt",
+              "exists": false,
+              "state": "missing"
+            }
+          ],
+          "missing_artifacts": [
+            "result.txt"
+          ],
+          "controller_claims_success": false,
+          "delivery_gap": "Explicitly requested artifact paths still missing: result.txt"
+        },
+        "budget_pressure": {
+          "stage": "normal",
+          "used_ratio": 0.233
+        },
+        "memory_intervention": null,
+        "checkpoints": [
+          {
+            "id": "C1",
+            "label": "initial state",
+            "hypothesis": "Root before any attempted solution",
+            "fingerprint": "2a54ca27aad056fb40e3a996ad05a279417e00f18957a4c872b1f78d2b2cb1fd"
+          }
+        ],
+        "budgets": {
+          "model_requests": 33,
+          "tools": 23,
+          "advisor_calls": 6,
+          "wall_seconds": 495.25
+        },
+        "feedback": {
+          "evidence": {
+            "id": "E7",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          }
+        }
+      },
+      "recent_decisions": [
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E2"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E3"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E4"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E5"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E6"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E7"
+          }
+        }
+      ]
+    },
+    {
+      "task": {
+        "task_id": "best-wrapped",
+        "goal": "Inspect file.txt and deliver result.txt when requested",
+        "success_criteria": [],
+        "constraints": []
+      },
+      "fixed_context": {
+        "current_workspace": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+        "external_state": "unverified",
+        "evidence": [
+          {
+            "id": "E3",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E4",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E5",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E6",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E7",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E8",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          }
+        ],
+        "memories": [],
+        "advice": {},
+        "delivery_progress": {
+          "criteria": [
+            {
+              "criterion": "Inspect file.txt and deliver result.txt when requested",
+              "status": "unverified_by_controller"
+            }
+          ],
+          "requested_artifacts": [
+            {
+              "path": "file.txt",
+              "exists": true,
+              "state": "file:27:88287527654b18eb2300d4b4802f8c550881f7e4ddf378f3337457a710933871"
+            },
+            {
+              "path": "result.txt",
+              "exists": false,
+              "state": "missing"
+            }
+          ],
+          "missing_artifacts": [
+            "result.txt"
+          ],
+          "controller_claims_success": false,
+          "delivery_gap": "Explicitly requested artifact paths still missing: result.txt"
+        },
+        "budget_pressure": {
+          "stage": "normal",
+          "used_ratio": 0.267
+        },
+        "memory_intervention": null,
+        "checkpoints": [
+          {
+            "id": "C1",
+            "label": "initial state",
+            "hypothesis": "Root before any attempted solution",
+            "fingerprint": "2a54ca27aad056fb40e3a996ad05a279417e00f18957a4c872b1f78d2b2cb1fd"
+          }
+        ],
+        "budgets": {
+          "model_requests": 32,
+          "tools": 22,
+          "advisor_calls": 6,
+          "wall_seconds": 494.63
+        },
+        "feedback": {
+          "evidence": {
+            "id": "E8",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          }
+        }
+      },
+      "recent_decisions": [
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E3"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E4"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E5"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E6"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E7"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E8"
+          }
+        }
+      ]
+    },
+    {
+      "task": {
+        "task_id": "best-wrapped",
+        "goal": "Inspect file.txt and deliver result.txt when requested",
+        "success_criteria": [],
+        "constraints": []
+      },
+      "fixed_context": {
+        "current_workspace": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+        "external_state": "unverified",
+        "evidence": [
+          {
+            "id": "E4",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E5",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E6",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E7",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E8",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E9",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          }
+        ],
+        "memories": [],
+        "advice": {},
+        "delivery_progress": {
+          "criteria": [
+            {
+              "criterion": "Inspect file.txt and deliver result.txt when requested",
+              "status": "unverified_by_controller"
+            }
+          ],
+          "requested_artifacts": [
+            {
+              "path": "file.txt",
+              "exists": true,
+              "state": "file:27:88287527654b18eb2300d4b4802f8c550881f7e4ddf378f3337457a710933871"
+            },
+            {
+              "path": "result.txt",
+              "exists": false,
+              "state": "missing"
+            }
+          ],
+          "missing_artifacts": [
+            "result.txt"
+          ],
+          "controller_claims_success": false,
+          "delivery_gap": "Explicitly requested artifact paths still missing: result.txt"
+        },
+        "budget_pressure": {
+          "stage": "normal",
+          "used_ratio": 0.3
+        },
+        "memory_intervention": null,
+        "checkpoints": [
+          {
+            "id": "C1",
+            "label": "initial state",
+            "hypothesis": "Root before any attempted solution",
+            "fingerprint": "2a54ca27aad056fb40e3a996ad05a279417e00f18957a4c872b1f78d2b2cb1fd"
+          }
+        ],
+        "budgets": {
+          "model_requests": 31,
+          "tools": 21,
+          "advisor_calls": 6,
+          "wall_seconds": 494.0
+        },
+        "feedback": {
+          "evidence": {
+            "id": "E9",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          }
+        }
+      },
+      "recent_decisions": [
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E4"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E5"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E6"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E7"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E8"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E9"
+          }
+        }
+      ]
+    },
+    {
+      "task": {
+        "task_id": "best-wrapped",
+        "goal": "Inspect file.txt and deliver result.txt when requested",
+        "success_criteria": [],
+        "constraints": []
+      },
+      "fixed_context": {
+        "current_workspace": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+        "external_state": "unverified",
+        "evidence": [
+          {
+            "id": "E5",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E6",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E7",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E8",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E9",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E10",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          }
+        ],
+        "memories": [],
+        "advice": {},
+        "delivery_progress": {
+          "criteria": [
+            {
+              "criterion": "Inspect file.txt and deliver result.txt when requested",
+              "status": "unverified_by_controller"
+            }
+          ],
+          "requested_artifacts": [
+            {
+              "path": "file.txt",
+              "exists": true,
+              "state": "file:27:88287527654b18eb2300d4b4802f8c550881f7e4ddf378f3337457a710933871"
+            },
+            {
+              "path": "result.txt",
+              "exists": false,
+              "state": "missing"
+            }
+          ],
+          "missing_artifacts": [
+            "result.txt"
+          ],
+          "controller_claims_success": false,
+          "delivery_gap": "Explicitly requested artifact paths still missing: result.txt"
+        },
+        "budget_pressure": {
+          "stage": "normal",
+          "used_ratio": 0.333
+        },
+        "memory_intervention": null,
+        "checkpoints": [
+          {
+            "id": "C1",
+            "label": "initial state",
+            "hypothesis": "Root before any attempted solution",
+            "fingerprint": "2a54ca27aad056fb40e3a996ad05a279417e00f18957a4c872b1f78d2b2cb1fd"
+          }
+        ],
+        "budgets": {
+          "model_requests": 30,
+          "tools": 20,
+          "advisor_calls": 6,
+          "wall_seconds": 493.39
+        },
+        "feedback": {
+          "evidence": {
+            "id": "E10",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          }
+        }
+      },
+      "recent_decisions": [
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E5"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E6"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E7"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E8"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E9"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E10"
+          }
+        }
+      ]
+    },
+    {
+      "task": {
+        "task_id": "best-wrapped",
+        "goal": "Inspect file.txt and deliver result.txt when requested",
+        "success_criteria": [],
+        "constraints": []
+      },
+      "fixed_context": {
+        "current_workspace": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+        "external_state": "unverified",
+        "evidence": [
+          {
+            "id": "E6",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E7",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E8",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E9",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E10",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E11",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          }
+        ],
+        "memories": [],
+        "advice": {},
+        "delivery_progress": {
+          "criteria": [
+            {
+              "criterion": "Inspect file.txt and deliver result.txt when requested",
+              "status": "unverified_by_controller"
+            }
+          ],
+          "requested_artifacts": [
+            {
+              "path": "file.txt",
+              "exists": true,
+              "state": "file:27:88287527654b18eb2300d4b4802f8c550881f7e4ddf378f3337457a710933871"
+            },
+            {
+              "path": "result.txt",
+              "exists": false,
+              "state": "missing"
+            }
+          ],
+          "missing_artifacts": [
+            "result.txt"
+          ],
+          "controller_claims_success": false,
+          "delivery_gap": "Explicitly requested artifact paths still missing: result.txt"
+        },
+        "budget_pressure": {
+          "stage": "normal",
+          "used_ratio": 0.367
+        },
+        "memory_intervention": null,
+        "checkpoints": [
+          {
+            "id": "C1",
+            "label": "initial state",
+            "hypothesis": "Root before any attempted solution",
+            "fingerprint": "2a54ca27aad056fb40e3a996ad05a279417e00f18957a4c872b1f78d2b2cb1fd"
+          }
+        ],
+        "budgets": {
+          "model_requests": 29,
+          "tools": 19,
+          "advisor_calls": 6,
+          "wall_seconds": 492.76
+        },
+        "feedback": {
+          "evidence": {
+            "id": "E11",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          }
+        }
+      },
+      "recent_decisions": [
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E6"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E7"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E8"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E9"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E10"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E11"
+          }
+        }
+      ]
+    },
+    {
+      "task": {
+        "task_id": "best-wrapped",
+        "goal": "Inspect file.txt and deliver result.txt when requested",
+        "success_criteria": [],
+        "constraints": []
+      },
+      "fixed_context": {
+        "current_workspace": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+        "external_state": "unverified",
+        "evidence": [
+          {
+            "id": "E7",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E8",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E9",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E10",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E11",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E12",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          }
+        ],
+        "memories": [],
+        "advice": {},
+        "delivery_progress": {
+          "criteria": [
+            {
+              "criterion": "Inspect file.txt and deliver result.txt when requested",
+              "status": "unverified_by_controller"
+            }
+          ],
+          "requested_artifacts": [
+            {
+              "path": "file.txt",
+              "exists": true,
+              "state": "file:27:88287527654b18eb2300d4b4802f8c550881f7e4ddf378f3337457a710933871"
+            },
+            {
+              "path": "result.txt",
+              "exists": false,
+              "state": "missing"
+            }
+          ],
+          "missing_artifacts": [
+            "result.txt"
+          ],
+          "controller_claims_success": false,
+          "delivery_gap": "Explicitly requested artifact paths still missing: result.txt"
+        },
+        "budget_pressure": {
+          "stage": "normal",
+          "used_ratio": 0.4
+        },
+        "memory_intervention": null,
+        "checkpoints": [
+          {
+            "id": "C1",
+            "label": "initial state",
+            "hypothesis": "Root before any attempted solution",
+            "fingerprint": "2a54ca27aad056fb40e3a996ad05a279417e00f18957a4c872b1f78d2b2cb1fd"
+          }
+        ],
+        "budgets": {
+          "model_requests": 28,
+          "tools": 18,
+          "advisor_calls": 6,
+          "wall_seconds": 492.12
+        },
+        "feedback": {
+          "evidence": {
+            "id": "E12",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          }
+        }
+      },
+      "recent_decisions": [
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E7"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E8"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E9"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E10"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E11"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E12"
+          }
+        }
+      ]
+    },
+    {
+      "task": {
+        "task_id": "best-wrapped",
+        "goal": "Inspect file.txt and deliver result.txt when requested",
+        "success_criteria": [],
+        "constraints": []
+      },
+      "fixed_context": {
+        "current_workspace": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+        "external_state": "unverified",
+        "evidence": [
+          {
+            "id": "E8",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E9",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E10",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E11",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E12",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E13",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          }
+        ],
+        "memories": [],
+        "advice": {},
+        "delivery_progress": {
+          "criteria": [
+            {
+              "criterion": "Inspect file.txt and deliver result.txt when requested",
+              "status": "unverified_by_controller"
+            }
+          ],
+          "requested_artifacts": [
+            {
+              "path": "file.txt",
+              "exists": true,
+              "state": "file:27:88287527654b18eb2300d4b4802f8c550881f7e4ddf378f3337457a710933871"
+            },
+            {
+              "path": "result.txt",
+              "exists": false,
+              "state": "missing"
+            }
+          ],
+          "missing_artifacts": [
+            "result.txt"
+          ],
+          "controller_claims_success": false,
+          "delivery_gap": "Explicitly requested artifact paths still missing: result.txt"
+        },
+        "budget_pressure": {
+          "stage": "normal",
+          "used_ratio": 0.433
+        },
+        "memory_intervention": null,
+        "checkpoints": [
+          {
+            "id": "C1",
+            "label": "initial state",
+            "hypothesis": "Root before any attempted solution",
+            "fingerprint": "2a54ca27aad056fb40e3a996ad05a279417e00f18957a4c872b1f78d2b2cb1fd"
+          }
+        ],
+        "budgets": {
+          "model_requests": 27,
+          "tools": 17,
+          "advisor_calls": 6,
+          "wall_seconds": 491.5
+        },
+        "feedback": {
+          "evidence": {
+            "id": "E13",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          }
+        }
+      },
+      "recent_decisions": [
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E8"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E9"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E10"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E11"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E12"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E13"
+          }
+        }
+      ]
+    },
+    {
+      "task": {
+        "task_id": "best-wrapped",
+        "goal": "Inspect file.txt and deliver result.txt when requested",
+        "success_criteria": [],
+        "constraints": []
+      },
+      "fixed_context": {
+        "current_workspace": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+        "external_state": "unverified",
+        "evidence": [
+          {
+            "id": "E9",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E10",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E11",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E12",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E13",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          },
+          {
+            "id": "E14",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          }
+        ],
+        "memories": [],
+        "advice": {},
+        "delivery_progress": {
+          "criteria": [
+            {
+              "criterion": "Inspect file.txt and deliver result.txt when requested",
+              "status": "unverified_by_controller"
+            }
+          ],
+          "requested_artifacts": [
+            {
+              "path": "file.txt",
+              "exists": true,
+              "state": "file:27:88287527654b18eb2300d4b4802f8c550881f7e4ddf378f3337457a710933871"
+            },
+            {
+              "path": "result.txt",
+              "exists": false,
+              "state": "missing"
+            }
+          ],
+          "missing_artifacts": [
+            "result.txt"
+          ],
+          "controller_claims_success": false,
+          "delivery_gap": "Explicitly requested artifact paths still missing: result.txt"
+        },
+        "budget_pressure": {
+          "stage": "normal",
+          "used_ratio": 0.467
+        },
+        "memory_intervention": null,
+        "checkpoints": [
+          {
+            "id": "C1",
+            "label": "initial state",
+            "hypothesis": "Root before any attempted solution",
+            "fingerprint": "2a54ca27aad056fb40e3a996ad05a279417e00f18957a4c872b1f78d2b2cb1fd"
+          }
+        ],
+        "budgets": {
+          "model_requests": 26,
+          "tools": 16,
+          "advisor_calls": 6,
+          "wall_seconds": 490.85
+        },
+        "feedback": {
+          "evidence": {
+            "id": "E14",
+            "argv": "[\"bash\", \"-lc\", \"cd /app && cat file.txt\"]",
+            "purpose": "integration test",
+            "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "after": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "return_code": 0,
+            "timed_out": false,
+            "blocked": false,
+            "stdout": "stable fixture observation\n",
+            "stderr": "",
+            "capture_incomplete": false,
+            "category": "generic"
+          }
+        }
+      },
+      "recent_decisions": [
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E9"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E10"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E11"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E12"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E13"
+          }
+        },
+        {
+          "action": "run",
+          "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cd /app && cat file.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+          "response": {
+            "evidence_id": "E14"
+          }
+        }
+      ]
+    }
+  ],
+  "advisor": []
+}

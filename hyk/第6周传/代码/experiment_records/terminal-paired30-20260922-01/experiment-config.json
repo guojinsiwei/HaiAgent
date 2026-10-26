@@ -1,0 +1,45 @@
+{
+  "experiment_id": "terminal-paired30-20260922-01",
+  "benchmark": "terminal-bench/terminal-bench-2",
+  "official_harness": "harbor-0.20.0",
+  "environment": "daytona",
+  "task_count": 30,
+  "method_trials": 60,
+  "sample_seed": 20260922,
+  "selection_sha256": "21f67878b6aae59e76d860121e1027ffc110a1dff3c0d005c81c839b77bca847",
+  "selection_file_sha256": "93201da2c285bef72a2450891c3a09bdd28bda886b026a8aacfa39166f2605e6",
+  "runner_sha256": "4864a77e52fd859450fc87854350c76d9d0a655da0e66d0d0fa512b560168b85",
+  "arms": {
+    "bestfgs": {
+      "algorithm": "phase_adaptive_semantic_best_first",
+      "experience_mode": "conditioned",
+      "orchestrator": "cubestudio_container"
+    },
+    "raw": {
+      "algorithm": "raw_sequential_cli",
+      "experience_mode": "off",
+      "orchestrator": "cubestudio_container2"
+    }
+  },
+  "shared": {
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com",
+    "max_iterations": 24,
+    "max_tool_calls": 80,
+    "max_commands_per_action": 6,
+    "adaptive_budget": false,
+    "temperature": 0.2,
+    "reasoning_effort": "high",
+    "solve_reasoning_effort": "high",
+    "model_timeout_seconds": 90,
+    "model_max_wall_time_seconds": 600,
+    "model_request_attempts": 5,
+    "model_parse_attempts": 3,
+    "n_concurrent_per_arm": 2,
+    "attempts_per_task": 1,
+    "whole_task_retries": 0,
+    "success_judge_mode": "off",
+    "scoring": "official_harbor_verifier"
+  }
+}

@@ -1,0 +1,25 @@
+KZ-on-DSH evidence-control-2 / engineering-1 / 三题小测
+用户于 2026-10-15 明确授权部署，并确认冻结前 3 题方案。
+
+独立服务器目录：
+/mnt/sdb/home/lizh639/tb4-kz-dsh-engineering-smoke3-20261015
+
+题目：payments-pipeline-fix、layout-config-recreation、fin-saccr-rwa。
+并行 1，每次解题进程 10800 秒；首轮三题后只对工程故障重试一次，最多 6 次。
+正常零分及有效时限耗尽不重试；所有尝试保留成本。
+模型：deepseek-flash，TaoToken Token Plan，https://api.taotoken.net/token。
+模型、上下文、压缩及计数配置继承冻结基线，未改算法行为。
+
+三题专用部署源：deploy/terminalbench。
+十题工程修复副本及原实验目录均保留。
+本目录不存 API Key。secure_start.py 使用密码框，经过 SSH stdin 启动；
+启动回执保存 audit/launch-receipt.json，失败或超时不得盲目重启。
+
+服务器上的只读状态入口：venv/bin/python campaign_admin.py inspect
+请求当前题结束后暂停新派发：venv/bin/python campaign_admin.py drain
+恢复必须先核对 reconciliation；使用新凭据及 campaign.py --resume。
+不要删除 launch-once.marker 或 admissions.json 来强行重启。
+
+本地 audit 中保存本次真实测试、验收、封存、启动及状态回执。
+是否已启动以 launch-receipt 与服务器 health/admissions 为准；
+无模型验收通过不代表真实模型得分。

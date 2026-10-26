@@ -1,0 +1,140 @@
+{
+  "version": "bestfgs-memory-injection-v8-engineering-v2",
+  "task_id": "ap1400_2_hw35",
+  "submitted": false,
+  "stop_reason": "request_or_tool_budget",
+  "artifact": {
+    "path": "/mnt/lizh639/longcli-threeway-engineering-20261003/roots/orthogonal-v8--ap1400_2_hw35/app",
+    "fingerprint": "7b0cd2a338decafb190e2d0261d7cfd90b03619c05305d5d4a6ada40de66989d",
+    "restoration": "workspace_files_only"
+  },
+  "official_success": null,
+  "error_type": null,
+  "interaction_rounds": 630,
+  "action_rounds": 614,
+  "advisor_rounds": 4,
+  "monitor_rounds": 12,
+  "tool_calls": 600,
+  "wall_seconds": 2457.604150949046,
+  "model_usage": {
+    "action": {
+      "model_calls": 614,
+      "api_requests": 615,
+      "api_responses": 613,
+      "prompt_tokens": 8712162,
+      "completion_tokens": 194982,
+      "total_tokens": 8907144,
+      "cached_prompt_tokens": 1256064,
+      "cache_miss_prompt_tokens": 7456098,
+      "usage_reports": 613,
+      "usage_missing_responses": 0,
+      "failure_counts": {
+        "transport": 2
+      },
+      "response_models": [
+        "deepseek-flash"
+      ]
+    },
+    "advisor": {
+      "model_calls": 4,
+      "api_requests": 4,
+      "api_responses": 4,
+      "prompt_tokens": 62864,
+      "completion_tokens": 1911,
+      "total_tokens": 64775,
+      "cached_prompt_tokens": 896,
+      "cache_miss_prompt_tokens": 61968,
+      "usage_reports": 4,
+      "usage_missing_responses": 0,
+      "failure_counts": {},
+      "response_models": [
+        "deepseek-flash"
+      ]
+    },
+    "monitor": {
+      "model_calls": 12,
+      "api_requests": 12,
+      "api_responses": 12,
+      "prompt_tokens": 69642,
+      "completion_tokens": 7216,
+      "total_tokens": 76858,
+      "cached_prompt_tokens": 6400,
+      "cache_miss_prompt_tokens": 63242,
+      "usage_reports": 12,
+      "usage_missing_responses": 0,
+      "failure_counts": {
+        "json_syntax": 1
+      },
+      "response_models": [
+        "deepseek-flash"
+      ]
+    }
+  },
+  "mechanism_utilization": {
+    "model_requests": 630,
+    "action_calls": 614,
+    "advisor_calls": 4,
+    "tool_calls": 600,
+    "memory_exposures": 2284,
+    "requests_with_memory": 600,
+    "memories_admitted": 13,
+    "memories_rejected": 0,
+    "memory_use_self_reports": 14,
+    "advisor_responses_accepted": 4,
+    "advisor_deferred": 0,
+    "checkpoints_created": 1,
+    "branch_restores": 0,
+    "submissions": 0,
+    "protocol_errors": 11,
+    "memory_interventions": 1,
+    "memory_action_changed": 0,
+    "memory_action_unchanged": 1,
+    "memory_followup_actions": 8,
+    "memory_followup_runs": 8,
+    "memory_followup_succeeded": 3,
+    "memory_followup_workspace_changed": 0,
+    "post_advice_actions": 4,
+    "monitor_calls": 12,
+    "monitor_reviews_accepted": 9,
+    "monitor_deferred": 3,
+    "semantic_stalls": 3,
+    "auto_memory_candidates": 15,
+    "auto_memories_admitted": 12,
+    "auto_memories_rejected": 3,
+    "observed_memories_admitted": 1,
+    "recovery_started": 0,
+    "recovery_plans": 0,
+    "recovery_verified_repairs": 0,
+    "recovery_checked_hypotheses": 0,
+    "recovery_failed": 0,
+    "route_episodes": 0,
+    "route_plans": 0,
+    "route_tools": 0,
+    "route_trials": 0,
+    "route_pruned": 0,
+    "route_selected": 0,
+    "route_no_gain": 0,
+    "route_rejected": 0,
+    "route_restore_failures": 0,
+    "contrastive_failure_records": 21,
+    "contrastive_episodes": 1,
+    "contrastive_proposals": 19,
+    "contrastive_rejections": 11,
+    "contrastive_accepted": 8,
+    "contrastive_observations": 8,
+    "contrastive_informative_predictions": 0,
+    "memory_exposure_is_not_benefit": true,
+    "memory_use_is_self_report": true
+  },
+  "time_by_role": {
+    "action": 1370.3005429273471,
+    "tools": 636.8902922812849,
+    "monitor": 40.44930585473776,
+    "advisor": 13.160596086643636
+  },
+  "contextual_tool_redundancy": {
+    "status": "requires_independent_audit",
+    "rate": null,
+    "denominator": 600
+  }
+}

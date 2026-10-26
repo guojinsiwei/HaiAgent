@@ -1,0 +1,872 @@
+{
+  "source": "/mnt/sdb/home/lizh639/kz2-cow-timeout-retry-20261009",
+  "version": "KZ2.0",
+  "revision": "cow-timeout-retry1",
+  "files": [
+    {
+      "path": "accept.py",
+      "bytes": 2989,
+      "sha256": "d44298222963cc27b1d053e7f069cbd1980ee8591953602c247a78a75114fe53"
+    },
+    {
+      "path": "accept_cow.py",
+      "bytes": 3861,
+      "sha256": "716f2d19f8f39f3713f276839ecfc8a3afc870cfc82b156f7770da7782edb922"
+    },
+    {
+      "path": "accept_retry.py",
+      "bytes": 3192,
+      "sha256": "b47ca4f406f70e5dcc835a0d41e8891319fc1d3649ae3dfb6e1ff24dc1d87da4"
+    },
+    {
+      "path": "accept_supplement.py",
+      "bytes": 2446,
+      "sha256": "ee1abe6aaaa1deb33ae5ddb29d7ac6fadf77eb2add82eef6c2e04fbf466c19be"
+    },
+    {
+      "path": "audit.py",
+      "bytes": 5577,
+      "sha256": "346bc76df3cc6015886e93778c8082b95619d0be40a7148ae521e970096bc8db"
+    },
+    {
+      "path": "budget_adapter.py",
+      "bytes": 2320,
+      "sha256": "06c99989feee99dfc50be0eff047cc57d817d3c2c8a71c08dc5478c68dd3523e"
+    },
+    {
+      "path": "college_grader.py",
+      "bytes": 5817,
+      "sha256": "e557933f3896136ec32b0827e255b7f1b96027c56ec336de4403018425acd298"
+    },
+    {
+      "path": "common.py",
+      "bytes": 4755,
+      "sha256": "c75bbfacae1b783546fb810a8abee158e4d23bdc65481b0521ea20b84a0ab2d1"
+    },
+    {
+      "path": "compatibility/src/hai_agent.egg-info/SOURCES.txt",
+      "bytes": 937,
+      "sha256": "ed3195553274bce9ed0d05c4c9dcfb6ed8ac348e75baf87200d2b960f3a69d8f"
+    },
+    {
+      "path": "compatibility/src/hai_agent.egg-info/dependency_links.txt",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "compatibility/src/hai_agent.egg-info/entry_points.txt",
+      "bytes": 48,
+      "sha256": "2c370054de92db60c9142ae458cd2d461e990bf16b8f557f8e27aeac270337c7"
+    },
+    {
+      "path": "compatibility/src/hai_agent.egg-info/top_level.txt",
+      "bytes": 26,
+      "sha256": "d6a3b36f62cee02b2a6f09b53358a0137cc44448b8b804c8a1594c55db2e8025"
+    },
+    {
+      "path": "compatibility/src/haiagent/__init__.py",
+      "bytes": 102,
+      "sha256": "5337d13fc2e1419ece1cd9bb656e5e7757f52708fab0247a7087f4dc20f9ede4"
+    },
+    {
+      "path": "compatibility/src/haiagent/__main__.py",
+      "bytes": 79,
+      "sha256": "307299fda7b77d22c64cb51430ec75e5f59d78e9c948786afb3b2544fe45e4b7"
+    },
+    {
+      "path": "compatibility/src/haiagent/action_protocol.py",
+      "bytes": 5330,
+      "sha256": "a683ac087dc0edfa9cbe0f1786ef6e80bf706123f43daab1ace566f413431f5a"
+    },
+    {
+      "path": "compatibility/src/haiagent/cli.py",
+      "bytes": 5516,
+      "sha256": "4e5dfbd7884621fa17eee6d48d4c056c7ff973c672731f341a04711c327dd5d2"
+    },
+    {
+      "path": "compatibility/src/haiagent/demo.py",
+      "bytes": 2675,
+      "sha256": "74d59bf8cb4cdc16384cfbd50ebf454dcd580fdd10b9abe05ef0bf62f48381d6"
+    },
+    {
+      "path": "compatibility/src/haiagent/evaluation.py",
+      "bytes": 1937,
+      "sha256": "ba541555a32925af3e284f774f988a995c7bff9bf40d4de63023173715814288"
+    },
+    {
+      "path": "compatibility/src/haiagent/executor.py",
+      "bytes": 8704,
+      "sha256": "000336493fbf69051f13091d451e1351277a09cba507e875c6f8a35d4b9bab8c"
+    },
+    {
+      "path": "compatibility/src/haiagent/file_evidence.py",
+      "bytes": 2623,
+      "sha256": "97f16daa202e105fccfdd6017c4e5e22c7d2fbd2590a84b2e3322891a0f9ae79"
+    },
+    {
+      "path": "compatibility/src/haiagent/metrics.py",
+      "bytes": 23998,
+      "sha256": "5643fa9443968f0dc1c0a4318d0111487c0fe3fc1fbc9d3e1f0216864639eab0"
+    },
+    {
+      "path": "compatibility/src/haiagent/model.py",
+      "bytes": 10904,
+      "sha256": "77a640602828431cc624ba0f32cb9e4d01aa0850d88969d2305a84e81caeceee"
+    },
+    {
+      "path": "compatibility/src/haiagent/protocol.py",
+      "bytes": 11815,
+      "sha256": "5f3fd55a369f08b69d43dffb952e3b7107cd218862b051fe4d6c04b9bf444874"
+    },
+    {
+      "path": "compatibility/src/haiagent/runtime.py",
+      "bytes": 42219,
+      "sha256": "6d6ec919089be6ecd71ecefcf64fe438caea4f8d4bfe330d78101b6207672081"
+    },
+    {
+      "path": "compatibility/src/haiagent/semantic.py",
+      "bytes": 9914,
+      "sha256": "1987f6e64e55f3e59356186f5df9ed1eae68bdf5b54903bfe5842f54c5037db1"
+    },
+    {
+      "path": "compatibility/src/haiagent/storage.py",
+      "bytes": 2747,
+      "sha256": "3fb0266a46fb715d238343d38ebc61447abbcc01e0ee86a194d19cf1f8607dd6"
+    },
+    {
+      "path": "compatibility/src/haiagent/submission.py",
+      "bytes": 13144,
+      "sha256": "c8789a0bdad1414617998bd25f44aca29b11fe1eaae6bedaa5551f17bf5d458b"
+    },
+    {
+      "path": "compatibility/src/terminal_context/__init__.py",
+      "bytes": 293,
+      "sha256": "b647214eb536046c467cc1ca14bd62617d8ec144c224675cefdcbabdd657dc7d"
+    },
+    {
+      "path": "compatibility/src/terminal_context/adapters.py",
+      "bytes": 1161,
+      "sha256": "bee3ef15eecc7bc2f1729bd6ffde3d44c8ce404c689c87a07dace4fd7810cd67"
+    },
+    {
+      "path": "compatibility/src/terminal_context/compression.py",
+      "bytes": 5401,
+      "sha256": "72f89ed2e261a2c279424fa4ba6c458b9a278cb63510efcdc9ac0d7d043e2f9c"
+    },
+    {
+      "path": "compatibility/src/terminal_context/core.py",
+      "bytes": 36917,
+      "sha256": "4e121ef0c13b3e2734cb7bae18d49255fa496ffdda88a4cd1804a614987cf90f"
+    },
+    {
+      "path": "compatibility/src/terminal_context/stagnation.py",
+      "bytes": 14444,
+      "sha256": "220428cb9d47774893921030051a111f018e8c813e3a3118ec6f82b8c56d71c1"
+    },
+    {
+      "path": "compatibility/src/terminal_context/types.py",
+      "bytes": 3653,
+      "sha256": "fd55fcca350f316391657dbadd4198c87c1b74f8a36eb76291eaa3327dcc993d"
+    },
+    {
+      "path": "cost_bar.py",
+      "bytes": 10757,
+      "sha256": "e817536a19bcad18005f135903087634fa78fe4b21ba9c12bf43fe5615872f33"
+    },
+    {
+      "path": "docker_environment.py",
+      "bytes": 8846,
+      "sha256": "14543638a06c22751f8743cc311f31871053091abb4fd43445c76136d8362721"
+    },
+    {
+      "path": "environment.py",
+      "bytes": 6170,
+      "sha256": "04e3ad40c0bb34f0674748a3322f28e095e1de1dad9259f46879d6c76d40a443"
+    },
+    {
+      "path": "grade_accept.py",
+      "bytes": 1599,
+      "sha256": "848cc45922fea4e77e54965bb2c0cc32baf5119af6fcf998eac7814b22b837e3"
+    },
+    {
+      "path": "grade_one.py",
+      "bytes": 4814,
+      "sha256": "7ab1b3e18d97fd46a2efd01e748aab19d057d2797488ef76953a484431e622e2"
+    },
+    {
+      "path": "grading_adapter.py",
+      "bytes": 2135,
+      "sha256": "103206984097e268155e78ba785103db4c6066a498193d2510cfd5d1884e49b7"
+    },
+    {
+      "path": "grading_worker.py",
+      "bytes": 2307,
+      "sha256": "502ca88a4753f882197a49bdde81761dd626d57709896ca911ec1941e0426440"
+    },
+    {
+      "path": "guarded_trial.py",
+      "bytes": 1616,
+      "sha256": "b44d180a10fbd62e190bfb6b958f0ce58b121fffbb5fc1ef0348990382793cea"
+    },
+    {
+      "path": "historic-config-lock.json",
+      "bytes": 34233,
+      "sha256": "d9f30d681dadfa8b5ff9cfd40a51d75379723f3bc362af322d6c2a82a963d79e"
+    },
+    {
+      "path": "launch.py",
+      "bytes": 2141,
+      "sha256": "bb34d3649118714ef09190406b57b3faaec3556ab1db2713d532bff2cb91a52a"
+    },
+    {
+      "path": "net_transport.py",
+      "bytes": 4432,
+      "sha256": "7c17759a4011c6a08c00913b291695ba3d6eabcec86fbbd18febfd696f455daa"
+    },
+    {
+      "path": "prepare.py",
+      "bytes": 2569,
+      "sha256": "429d53f8407d5631e0bfda3c5f1deb6f4af04f08a6470ba6942b75a1123096de"
+    },
+    {
+      "path": "prepare_cow.py",
+      "bytes": 2936,
+      "sha256": "89d96f3811f67c81c0d001d1bb46d43e04b4b678f80424092f0004342bcc4546"
+    },
+    {
+      "path": "prepare_retry.py",
+      "bytes": 2310,
+      "sha256": "1033fc85f830385c13cdffb2f70c80a45c488469c7ddcfb8abff6978cf86dfa3"
+    },
+    {
+      "path": "prepare_supplement.py",
+      "bytes": 3381,
+      "sha256": "af44b3737e9f7b82b5643e7e584e91b25e1a9d0eacde3210c6213c6d2b32c293"
+    },
+    {
+      "path": "protocol.json",
+      "bytes": 3505,
+      "sha256": "2282187797c5c0b196addb7b8a6de16500c94bc535d6d5a535dff077ee2e9dc5"
+    },
+    {
+      "path": "ready.json",
+      "bytes": 20332,
+      "sha256": "cee3a2750441bf7fdb0f6c67ef854c9d18e6ddf4df813ff059cc32fa274bb119"
+    },
+    {
+      "path": "repair_runtime.py",
+      "bytes": 8653,
+      "sha256": "0a5c635be14c9d49d95a9770ebc58dab53f20b08279400fa05d6dc8143cb7161"
+    },
+    {
+      "path": "runner.py",
+      "bytes": 12339,
+      "sha256": "47565e1d1f2e3fbd70ebd7fe46047ac784e5312dd6defe605987f156cfbb0ead"
+    },
+    {
+      "path": "safe_process.py",
+      "bytes": 1557,
+      "sha256": "bdd96fc6bb96f65c6d1096c1526e8dc0674a2b0862ef70b0b19aae1923c860c8"
+    },
+    {
+      "path": "shared_wire.py",
+      "bytes": 9259,
+      "sha256": "7607d01bfc87ee5ec913d9ae697a5642c85d4272974d4551a5f2353de4ac926c"
+    },
+    {
+      "path": "source-provenance.json",
+      "bytes": 17497,
+      "sha256": "2be3f31e0d00fd70ea2f3b629a61b0b202d8dee6cd4b196ac74b8e9915676696"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/__init__.py",
+      "bytes": 1226,
+      "sha256": "6018a4713374b5c16cc476264e835e5e0ab55468914bb87513cfa906d85fa4fe"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/__main__.py",
+      "bytes": 21799,
+      "sha256": "c312c3eaefc2a59d5210ac1c9f360ebdc108b43605b5c10f98a6bd1e7ff0d95e"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/action_loop.py",
+      "bytes": 3835,
+      "sha256": "23392d8975d8f9e7450e2d3377bd3999e6f25b221701c973ef26918ca2e3eee6"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/advisor_handover.py",
+      "bytes": 3671,
+      "sha256": "43f37e79ae888eb81b897ab2268ce9c25d3d04eae6ec942cb260903a01aa2f1d"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/agent.py",
+      "bytes": 2518,
+      "sha256": "272cdeed5a8ec247fabde0674019639d82db76dfd4f0b01af5d4add66b223c76"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/best_first.py",
+      "bytes": 33690,
+      "sha256": "3142ffef1cc70d4b0e8804929947ec559b91bb4ae9c73ab4d22b572e1bccb857"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/best_first_runtime.py",
+      "bytes": 143103,
+      "sha256": "4cc7308d74ca130068c6c5f80cbc83954149d0c5993ac6625e065d549e81c1aa"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/blocking_memory.py",
+      "bytes": 24378,
+      "sha256": "38d51430257f87120771287cc30b0b4feccf2ec99cf19aadac175bc79948baf4"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/cli_config.py",
+      "bytes": 915,
+      "sha256": "8b7aeac7671cb3857795bfbcddd84dbdf171389b4693e99c3736c8406e0dca4f"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/collaboration.py",
+      "bytes": 13533,
+      "sha256": "cf097b1336f1776c1f577b157b13375397b67c40daa7f3bd78bfab5135c07aae"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/context_updates.py",
+      "bytes": 3212,
+      "sha256": "6bc675cee320b1a9a70ad6bbe7b1a6c6dec16b0f48b6b9e67b60ab5d0e4a78d4"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/contrastive_exploration.py",
+      "bytes": 28047,
+      "sha256": "75e2d73dc79be198c6710badeed0e375d7cee3fc971043dc25bba9d4d772ef7b"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/environment.py",
+      "bytes": 29505,
+      "sha256": "76096a6f909f42124424772040d04d30a6e801184d478d9c5a43f721bf514720"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/error_routing.py",
+      "bytes": 20461,
+      "sha256": "b3464172af8729014784c690c70fec979c9ca7c2512e1ebb71041ac2a3b41347"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/evidence_memory.py",
+      "bytes": 29562,
+      "sha256": "67d39b5f737c64b3aa1a29b7980050f2f3fb076c93a8e4bf3760df7fca502d3b"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/evidence_runtime.py",
+      "bytes": 37524,
+      "sha256": "f24cc8839cedeaf09c43bb7cb6ad4bf466adee3d48484418c0b9252943a35122"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/experience.py",
+      "bytes": 32848,
+      "sha256": "26441b1ccfb7637b64bb1166c815469c6fdd6b2cac1da084dabbfe758b1e83d5"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/experiment_metrics.py",
+      "bytes": 13793,
+      "sha256": "55b34dd564b514ed9495d7d7806eb7d921d70853185283ca8ee1098ad6697ad8"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/lean_audit.py",
+      "bytes": 2747,
+      "sha256": "3fb0266a46fb715d238343d38ebc61447abbcc01e0ee86a194d19cf1f8607dd6"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/lean_cli.py",
+      "bytes": 5340,
+      "sha256": "92232653cbe2ec21b57ee4d7b5d3fddffc45c2d680b3214f704287815a331466"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/lean_conversation.py",
+      "bytes": 6195,
+      "sha256": "8d9e512becd920a93dd355d6e0d768f5ebd16b9347ad822bdd8ab6dd28d8924b"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/lean_docker.py",
+      "bytes": 7246,
+      "sha256": "56113c10fb0afb64a26a7b75e6878c72b4f33862e81bc9bec9978859b95d6efc"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/lean_environment.py",
+      "bytes": 6932,
+      "sha256": "7af5c298dbc976e4bf977fc174129b39aa8fc13b6b23c9e9726f7d6f8cf7c262"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/lean_lhtb.py",
+      "bytes": 1421,
+      "sha256": "cf714201309e67e4afddbb92eabbbd8a646a518bc15d3666e8df617f2a3d12fa"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/lean_memory.py",
+      "bytes": 11427,
+      "sha256": "474e8ac7cb1f3ee91939b4c1174dfe71ec1b0920bc53726f9c878f3f1bcc4a8f"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/lean_monitor.py",
+      "bytes": 15656,
+      "sha256": "71a855f06197ce0f522ab660d6bfa225c1e1223c061dd8af3422b71aafa3d268"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/lean_progress.py",
+      "bytes": 4526,
+      "sha256": "3f45c983459b9e7985b2657c3454ec2864a243555ae373db3f6d6b470390168b"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/lean_protocol.py",
+      "bytes": 12395,
+      "sha256": "49d6a64b324c6a84e74de8cdeaa6e1d4ddcb0ada6565bbe6f7aad5585e6048f8"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/lean_runtime.py",
+      "bytes": 65406,
+      "sha256": "06a598a5af4a0fcce6753d48854d260d62c4432027ef45668a9736ae40dedd93"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/memory_events.py",
+      "bytes": 5880,
+      "sha256": "2b8d305e6629cba78767dfb8d3313c3b2ef396a0a45ed6a1841e3220117218da"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/memory_injection.py",
+      "bytes": 11000,
+      "sha256": "8eb149a0ab9632c1806cf33fd351d8e4e80b4ac2ac71262c15307252d66fad3d"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/metrics.py",
+      "bytes": 10631,
+      "sha256": "80bcd0a21b5325616567e9f3fa34270cff2bd90e0dadd62568e67b7b590ee81a"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/micro_experience.py",
+      "bytes": 25504,
+      "sha256": "ae39673a162acbe71f1d356be5624b4378f93592ce2121520675fe307830eeb4"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/model_wire.py",
+      "bytes": 3367,
+      "sha256": "dd92ce356d6e541c98f2ce62ef6b759b1441b8ad7076230ef0d651541a18d1cd"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/models.py",
+      "bytes": 30341,
+      "sha256": "6fcaa1666a299e42ddb80f4a7916efe9ddee5e9950b06ca759208d5ef681e2a6"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/monitor_config.py",
+      "bytes": 1027,
+      "sha256": "b400cbe6cd2e9f5e06ec6eaeb981d60b5acb20a2f7b7b4c17e77e0e734c6bec8"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/monitor_context.py",
+      "bytes": 6466,
+      "sha256": "7e361e6bea572ba720f2fe14315ca4c23050e9d383d71cdddcffc24540f10ee5"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/priority.py",
+      "bytes": 8115,
+      "sha256": "0302096792461befc586ded59314b308673902f6a26b1852a1888f3e18daeb98"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/prompt_views.py",
+      "bytes": 14007,
+      "sha256": "cc1c4752c2d4875586718804d4c04f63b176d09a34dcd8e0778bba7e19fc4275"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/raw_baseline.py",
+      "bytes": 1616,
+      "sha256": "415fd3b05cbf613c93c9d5f85d599944579db5a8734a05b495c84bd61e270661"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/recovery_clock.py",
+      "bytes": 453,
+      "sha256": "133a3f6a26ff9245d53ea00581fee16b6cd3c38f3ffe8af64dcb1a40f2023301"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/redundancy.py",
+      "bytes": 18415,
+      "sha256": "203facd6a0bb31d31f9cc87318c670bd7d8de6a5738e35a5c869c040e7ed1267"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/rejection_recovery.py",
+      "bytes": 2582,
+      "sha256": "80bc31f68c4479a65fbcb11f9b60cf94cc7bc7085f40d7041b85f9d5c43a5ba4"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/response_repair.py",
+      "bytes": 1447,
+      "sha256": "fdafb17f8b0b1cfc342230bd4e1d793f54787a1881b1b79e061eaedd09470a4a"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/retrac_adapter.py",
+      "bytes": 113289,
+      "sha256": "1cf7074613e66cb3900b0ea6dc0f0402d3f3484b6e76454ae6ccd7c8a64aea32"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/rl.py",
+      "bytes": 3234,
+      "sha256": "a8e583f9178f8e57cdf790625c128f3a6f90f90f2abbfbc82a937b7d9de65522"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/route_selection.py",
+      "bytes": 21361,
+      "sha256": "42ddbe518b805f3bd649d79fe439dcd603a4578af6fa80ca6dbe5faf074e09d5"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/rules.py",
+      "bytes": 17418,
+      "sha256": "5885e154a61e6d13cfbff74ef892b560b0560ce2585f1ec0e58cf507e6cfe55e"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/semantic.py",
+      "bytes": 51968,
+      "sha256": "0192724c9927093914e38848a108a922fceed8aee4780b608265ad154ca84f82"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/shell_probe.py",
+      "bytes": 3474,
+      "sha256": "13beadecbeef458b2026881f43d58d98304384fe0ee775ba2641f1593627d79c"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/stagnation_control.py",
+      "bytes": 9444,
+      "sha256": "428072f2b079f0f243b863dc66ee7bea2393ad36525377ae8421a68582edbce1"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/subgoals.py",
+      "bytes": 14111,
+      "sha256": "390518df3e1fbef752e7402326e5c748073b8e737f38547bae6fd85e7e1070ca"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/submission.py",
+      "bytes": 12552,
+      "sha256": "50c452b3b85273c8a3dd993289072f3e03d404653ac5139e816bdd80e32babb9"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/success_judge.py",
+      "bytes": 25591,
+      "sha256": "e497fb4bd41cc98243663e3deae318bcdd406dbb6c1e174d5227b8b2173e2a6c"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/targeted_diagnostics.py",
+      "bytes": 5511,
+      "sha256": "b9727ef56979c442884c316f99283f4b966deedbc367541f9f27fdef487307dd"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/terminal_text.py",
+      "bytes": 2824,
+      "sha256": "e029b1e77f59ee70764376a4fd806f4e838bf5b2bd9ed6167f08fda8f0c817e1"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/tool_outcomes.py",
+      "bytes": 2757,
+      "sha256": "5a0dea9925ba3e1e01da810816074fcff6c9ec21525c485c511a8e6c58e5d36e"
+    },
+    {
+      "path": "sources/bestfgs-project/src/bestfgs/validation.py",
+      "bytes": 1590,
+      "sha256": "9fe2c536f68da5a473b77308c5579822fd16b126759583adcb75aee2a3587006"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_architecture.py",
+      "bytes": 1945,
+      "sha256": "f87e0181fc31db266f5ccacc0083bf81d87d9ae752ad1485bc3f1231ea69dcdc"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_benchmark_runners.py",
+      "bytes": 24997,
+      "sha256": "64ee0325cd416d8ae101cfc90f3892048312d5055a3d7d5b892d40e305950f48"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_benchmark_selection.py",
+      "bytes": 24700,
+      "sha256": "6f7c4f8ee194d79f8c331bed7c5b8e4f20ceea1134fcde28947ecb56051ec757"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_best_first.py",
+      "bytes": 28002,
+      "sha256": "ffb02d8d6e771efcf2afc01d6dda0dca8e5d2524db000bbab5f63d3fc05926dc"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_budget_runtime.py",
+      "bytes": 16614,
+      "sha256": "55797e3926ffdeb52586a636c100e9c191e89e40f395058ca6be007f9f4a86e5"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_collaboration.py",
+      "bytes": 8959,
+      "sha256": "1057c42389f406518af0e3fe35b89b7b81c0ddc9b560ddd96ddd06bcf2751b48"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_comparison_preparation.py",
+      "bytes": 5174,
+      "sha256": "2fa847e26fbf8442c59a1c24cd7743114095709664a0caa1eb263a96e534c600"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_comparison_sharding.py",
+      "bytes": 3877,
+      "sha256": "a5a865638c9500f1055ce724514863845d11272dbf1b7d21e911e09ef070f7f0"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_context_updates.py",
+      "bytes": 6915,
+      "sha256": "64de932da75bc051d619d6d4dcdffbdafd4965ba29b68ddcbe8e71e1a6a36ced"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_delivery_runtime.py",
+      "bytes": 16026,
+      "sha256": "5c46a45db4bba19025eef49bf3e9fa15c178979affdacf09ce62e846bbb70257"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_environment.py",
+      "bytes": 24146,
+      "sha256": "be8db374694683d4ec2b0e04fdf367530e729fe983b5f2be0ef925453b00a9f2"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_experience.py",
+      "bytes": 18573,
+      "sha256": "fbc2ffaa772ac88d5711f48d938dbc4d002298f38101139b831827ad95430621"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_experience_ablation.py",
+      "bytes": 17990,
+      "sha256": "a1d81afa736019e270532eaf0b415b2c57bd7937e4281dc9dc8150782f47b7b2"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_experience_cli.py",
+      "bytes": 4978,
+      "sha256": "f5e075ff7d898b805055ee7b5586e0870bf0991fcf624d6dea2abd2907074d82"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_experience_runtime.py",
+      "bytes": 11162,
+      "sha256": "bd26bb113b3221de89432b4946c7ed2de558832703cb6b4d7f3b1d44721db592"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_lean.py",
+      "bytes": 22761,
+      "sha256": "e5f15db8823a108877e8e0f8b7efdf13dfa60d894470c75c9a4dbaf961c4e4b1"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_lean_docker.py",
+      "bytes": 3790,
+      "sha256": "9ab39f2029de58c4b4ea2cb160c074620c026e548bcb11f211b52eec7932c882"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_metrics.py",
+      "bytes": 7861,
+      "sha256": "2de7cf275c69edb1b2d3dea44a5e48b091048a6009342a3412361e06b29d99df"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_metrics_report_v2.py",
+      "bytes": 9039,
+      "sha256": "c18675403711a9186268fdf9519299b1605be85ecc1c64ffb79068e6174907ec"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_micro_experience.py",
+      "bytes": 23478,
+      "sha256": "87e8bc685bf5f6673a57f1cbcd7d0448765700142af8bf5a8bc9b7b59f66ea3e"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_micro_experience_integration.py",
+      "bytes": 15194,
+      "sha256": "5a8e9ebbf82149ecc2e6083f91329d56a998f68defa920e49df33fa89b3484cd"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_micro_experience_store.py",
+      "bytes": 6468,
+      "sha256": "a76e492e18f90373a31834bec52fd7123949fa913e2cb0861484915d069b9e21"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_micro_experience_wire.py",
+      "bytes": 16867,
+      "sha256": "887db959d04bc85a175138a6c3d123c45960ac165d4bfd23acb18e8165fb616e"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_model_wire.py",
+      "bytes": 8073,
+      "sha256": "bad16bb0d857508dfeb4b4c06d019338c9bfb487daf588bbb5b5c457780e2125"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_no_judge_entrypoints.py",
+      "bytes": 3852,
+      "sha256": "17314035437fb38c589924350969fa6a963022b2c0deee0bfd8986cdb6b2f7f8"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_notebook_runner.py",
+      "bytes": 25960,
+      "sha256": "5ff983dd23032769a563f06717fa73b8780acd652854c771de30ee1be59b5108"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_prompt_views.py",
+      "bytes": 9085,
+      "sha256": "60ed045a4e75dbc5e679cbc6178370aa6b6d8e052bedbfd98cd7e855c1f64b30"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_raw_comparison.py",
+      "bytes": 23977,
+      "sha256": "a9353e6168f6e36031713a37b7a49668816933072c259bfa10b016ce1e3f8320"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_redundancy_v10.py",
+      "bytes": 13045,
+      "sha256": "d6f4829ac874ae2ee038ed9cd29a427d34bc88c6a6578ca40ca45932db6fad06"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_retrac_adapter.py",
+      "bytes": 46819,
+      "sha256": "ea5b52ecf9748c9b5a6b5c081a136aa40e131348249e94386a70a2ab08c6fb24"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_rl.py",
+      "bytes": 784,
+      "sha256": "536476e676d147f4aa51e8f04c58823a0699dfab9350b59186d7b9dd45ecc034"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_rules.py",
+      "bytes": 11506,
+      "sha256": "b39ca0e77440c8cfe0c764c6c16ca210c9ce6c2651b8166c1c0d7446a3ef1729"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_runtime.py",
+      "bytes": 40594,
+      "sha256": "30e07b68ac151169212cd0b32d5326fa0cf3a1a22c2377a23087c996252209a7"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_semantic.py",
+      "bytes": 22112,
+      "sha256": "acd2a685feab798751b88025438995181cde2b8d12d7208ceec0f5ffe8a9d4b2"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_submission.py",
+      "bytes": 7470,
+      "sha256": "d19198ec4d6eb04bb8799c28c1359a87273f94e98f6cfdb8ae901f85146da02e"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_success_judge.py",
+      "bytes": 18873,
+      "sha256": "a8646254df97af205baa18225e86cbb5b454dee99379f93a619eeefc31708844"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_swe_batch.py",
+      "bytes": 18383,
+      "sha256": "e1da4cb28758845358013c9510789727565f29213ef3b53043ada0f542752631"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_swe_preparation.py",
+      "bytes": 2210,
+      "sha256": "d484a1d76e85ba3e9152f0e5a6ef3fd07f6a917f292676d45d072291a584f4f0"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_v11_delivery.py",
+      "bytes": 14282,
+      "sha256": "b2f72b05bc55c9585bab488e4047c8843cb213f151f8a3b3217e8e531bec99e9"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_v11_evidence_memory.py",
+      "bytes": 19566,
+      "sha256": "2ee67bd2dd40507fbf8bae7945fe445744492ef7e421e8628242187d74274a1a"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_v11_protocol.py",
+      "bytes": 8836,
+      "sha256": "9f74071135875c4dc492eb900d60810f6c0c9af8a8efbc792928e22deb8e8ab0"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_v11_runtime.py",
+      "bytes": 18349,
+      "sha256": "9d7955d8a84beb941e9fb7e2e9c9ad0bb71fb6c4bbc0a05f60e21d66250a0b75"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_v11_runtime_delivery.py",
+      "bytes": 6013,
+      "sha256": "0ea37911ae001b0d174e408e3410cabaafb79701406d3f4486d2ccf9b206b9f4"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_v12_blocking_memory.py",
+      "bytes": 17348,
+      "sha256": "75cb939230fde40e7382152deac9c8c306e6d1eb145c17250d1dda91cbfe4d70"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_v12_blocking_protocol.py",
+      "bytes": 9172,
+      "sha256": "0f096cc8e9e257588986b99810f3512090d6285326f7e0e25d6bf7af2213db41"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_v12_blocking_runtime.py",
+      "bytes": 14600,
+      "sha256": "b26e7c186cbd753cd06a0477f96bfedfd9ac89a92c34653fc158033cecd33b77"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_v13_branching_restore.py",
+      "bytes": 1733,
+      "sha256": "3defdadd5e2414bab7b664bc0ad865de2ba77ee19e5b5307e6fe345d993a4f05"
+    },
+    {
+      "path": "sources/bestfgs-project/tests/test_v17_reliability.py",
+      "bytes": 6662,
+      "sha256": "f4511234fed7a97088ef1a2dac8209d83f34edd94e042ab321289f4a0644c84d"
+    },
+    {
+      "path": "supervisor.py",
+      "bytes": 3895,
+      "sha256": "c777e236049344c92d668d234c68f2399718c2412042954993017d2874e446d6"
+    },
+    {
+      "path": "supplement_grader.py",
+      "bytes": 2619,
+      "sha256": "403fa0f31b0a18fa08873b8396a219af2a6054dd1897d04048c4efb9dc2aedbf"
+    },
+    {
+      "path": "test_cost_bar.py",
+      "bytes": 3540,
+      "sha256": "ccd033aa83b097cb08fcc7640121829ec4c4069d793572850e667522df3c2849"
+    },
+    {
+      "path": "test_guarded_delivery.py",
+      "bytes": 1774,
+      "sha256": "144a89751af3b029fc2e4e4f03ec12e31f03baac34b7864c53228feb3ccffe2c"
+    },
+    {
+      "path": "test_soft_review.py",
+      "bytes": 4006,
+      "sha256": "1bc94098b8aec9dd170f97039d2e19c3ec141173fe2d0a8e08593351e083737b"
+    },
+    {
+      "path": "test_timeout_contract.py",
+      "bytes": 5409,
+      "sha256": "76e7edebd0cb18cf078d99f9b0069c94fa6868d37339974624011f249d12983f"
+    },
+    {
+      "path": "tests/test_error_routing.py",
+      "bytes": 9116,
+      "sha256": "882e565428e702333839fcb252bf642ce9b0095b6e70640fdc8e2fd1b7eb4451"
+    },
+    {
+      "path": "tests/test_no_recovery_stop.py",
+      "bytes": 5377,
+      "sha256": "c83bee90671423b6f9434a778dc1869954e6ad1e7d7dfdc122d08132d27e5441"
+    },
+    {
+      "path": "tests/test_subgoals.py",
+      "bytes": 15692,
+      "sha256": "27a241496e8e083499a27af9d940c277c3e500ae2837d7ee3f2d21219e9c1b45"
+    },
+    {
+      "path": "verify_contract.py",
+      "bytes": 1943,
+      "sha256": "6306a65afc2624f74a1067764278e643ff74d576018c2d3397f1ccd38c550a40"
+    },
+    {
+      "path": "verify_kz.py",
+      "bytes": 3174,
+      "sha256": "e3ac99c887828a04d641535b2aa804dbb150d10c1522671e84817bd6fd1d25b8"
+    }
+  ],
+  "core_files_verified": 136,
+  "remote_writes": 0,
+  "model_api_calls": 0,
+  "credentials_or_trial_logs_included": false,
+  "scope": "All exported solver modules, tests, compatibility modules and root Python adapters; no benchmark inputs/images"
+}

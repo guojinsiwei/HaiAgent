@@ -1,0 +1,53 @@
+LongCLI v9 repair candidate — 2026-10-03
+
+Code: sources/bestfgs-project/src/bestfgs
+Shared executor patch: harness/device_setup.py, cube_prepare.py, chroot_entry.py
+Base: frozen orthogonal v8 from longcli-threeway-engineering-20261003/arms/v8.
+Historical solver sources and official grades have not been edited.
+
+Implemented changes
+1. Exported solver roots receive real null/zero/random/urandom character devices.
+   /dev/null is required to have major/minor 1:3 and mode 0666. Every command
+   launcher checks it. Preparation checks EOF/discard behavior and clean stderr.
+   The fix is in common environment preparation, so future v6/RAW comparisons
+   must use it as well. chmod on a regular file is deliberately insufficient.
+2. Contrastive rejections return recoverable feedback and do not increment the
+   protocol-error counter. Two consecutive rejections execute one counted,
+   read-only diagnostic, close the exploration episode, and return to normal
+   decisions. Model requests, tools, and wall budgets are still enforced.
+3. Orthogonal planning now proposes two short executable hypotheses with literal
+   supports/refutes markers, selects one, and executes only that candidate.
+   Follow-up requires one candidate. The selected action must match argv/cwd/stdin.
+   This is a bounded forecast inside the existing actor request, not HAI routing,
+   a new model, tree search, or extra candidate execution.
+4. The final dispatch checks normalized command identity and current workspace
+   state against up to 48 prior unchanged observations. Repeated commands get a
+   cached result without consuming a tool call. Source edits change the state
+   and allow rechecking. An external state claim allows one explicit loop_retry.
+   Normalization preserves quoted data, stdin, cwd, expansion and heredoc syntax.
+5. Repeating a failed check after an observed relevant dependency repair is
+   permitted by the contrastive gate. Unrelated file changes do not clear it.
+6. contrastive_outcome records prediction, unseen observation, workspace change,
+   and improvement of the same explicit public pytest check. Proposal acceptance
+   is not called success. Both/no prediction markers, incomplete captures, timeouts,
+   and blocked commands remain unknown. Public checks are not official task scores.
+
+Verification
+- 122 current-feature tests pass locally and on both CubeStudio workers.
+- Both make-pytest and c-env image families pass actual namespace-executor checks:
+  clean bash startup, real /dev/null semantics, masked pipeline failures detected,
+  host/network/test isolation, checkpoint restoration, and C++ compilation.
+- Evidence: evidence/cube-acceptance-0.json and cube-acceptance-1.json.
+- No model API calls in this repair/acceptance run.
+- The copied legacy test_lean suite has five pre-existing memory expectation
+  failures; the frozen original was tested and exhibits the identical five.
+  No claim is made that the entire historical repository suite passes.
+
+Five-task model retest
+retest-plan.json pins ap1400_2_hw35, cs61_fa24_hog, cs61_fa24_cats,
+cs61_fa24_scheme, cmu15_445_p1, original task/image IDs, and original budgets.
+Recommended comparison: v6.1 / repaired orthogonal v9 / RAW, each five tasks,
+all on the repaired executor. The plan is prepared, not a launched paid campaign.
+Packaging/sealing a fresh campaign and local hidden credential input are still
+required before model execution. No existing result, task claim or credential
+will be reused. Solver/official evaluator inputs remain independent.

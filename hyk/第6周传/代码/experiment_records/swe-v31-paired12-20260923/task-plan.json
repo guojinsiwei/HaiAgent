@@ -1,0 +1,373 @@
+{
+  "schema_version": 1,
+  "dataset": "SWE-bench/SWE-bench_Verified",
+  "split": "test",
+  "sample_seed": 20260918,
+  "excluded_ids": [
+    "astropy__astropy-13453",
+    "astropy__astropy-13579",
+    "astropy__astropy-14096",
+    "astropy__astropy-7606",
+    "django__django-11141",
+    "django__django-11532",
+    "django__django-11551",
+    "django__django-11555",
+    "django__django-11603",
+    "django__django-11964",
+    "django__django-12039",
+    "django__django-12050",
+    "django__django-12155",
+    "django__django-12273",
+    "django__django-12276",
+    "django__django-13128",
+    "django__django-13346",
+    "django__django-13410",
+    "django__django-13820",
+    "django__django-14011",
+    "django__django-14017",
+    "django__django-14155",
+    "django__django-14434",
+    "django__django-14500",
+    "django__django-15128",
+    "django__django-15315",
+    "django__django-15499",
+    "django__django-15563",
+    "django__django-15731",
+    "django__django-15916",
+    "django__django-15930",
+    "django__django-15973",
+    "django__django-16032",
+    "django__django-16315",
+    "django__django-16631",
+    "matplotlib__matplotlib-14623",
+    "matplotlib__matplotlib-20859",
+    "matplotlib__matplotlib-22871",
+    "matplotlib__matplotlib-24970",
+    "matplotlib__matplotlib-25311",
+    "matplotlib__matplotlib-26113",
+    "matplotlib__matplotlib-26208",
+    "psf__requests-1142",
+    "psf__requests-1921",
+    "psf__requests-5414",
+    "pydata__xarray-4629",
+    "pylint-dev__pylint-4970",
+    "pylint-dev__pylint-6903",
+    "pylint-dev__pylint-7277",
+    "pytest-dev__pytest-5809",
+    "pytest-dev__pytest-7236",
+    "scikit-learn__scikit-learn-10844",
+    "scikit-learn__scikit-learn-12585",
+    "scikit-learn__scikit-learn-12973",
+    "scikit-learn__scikit-learn-15100",
+    "sphinx-doc__sphinx-7889",
+    "sphinx-doc__sphinx-8721",
+    "sphinx-doc__sphinx-9461",
+    "sphinx-doc__sphinx-9698",
+    "sympy__sympy-13091",
+    "sympy__sympy-13974",
+    "sympy__sympy-14531",
+    "sympy__sympy-14711",
+    "sympy__sympy-15345",
+    "sympy__sympy-16450",
+    "sympy__sympy-16597",
+    "sympy__sympy-16766",
+    "sympy__sympy-17630",
+    "sympy__sympy-17655",
+    "sympy__sympy-18698",
+    "sympy__sympy-19346",
+    "sympy__sympy-20154",
+    "sympy__sympy-20438",
+    "sympy__sympy-21930",
+    "sympy__sympy-23534",
+    "sympy__sympy-23824"
+  ],
+  "frozen_manifest_sha256": "56502da3f4b25af4be6289494f29053e799ac11fd0c7a7756a9ba11c7394d796",
+  "dataset_fingerprint": "15c98964597a453d",
+  "harness_commit": "f7bbbb2ccdf479001d6467c9e34af59e44a840f9",
+  "original_plan_sha256": "82b30230e7a4504e92dd98f154ba39ed10dceb141a3e0d975e83154c5ee8709e",
+  "reserve_plan_sha256": "ac4699a544588ae08c63d883b0e6ab87b815737434ab2e79bbe74fb43e3a6366",
+  "replacement_seed": 2026091802,
+  "replacement_policy": "retain ready originals; take first ready reserves in frozen random order; no solver outcomes",
+  "replacements": [
+    {
+      "removed": "scikit-learn__scikit-learn-25931",
+      "added": "django__django-15382",
+      "reason": "environment_preparation_not_ready"
+    },
+    {
+      "removed": "pydata__xarray-2905",
+      "added": "django__django-13807",
+      "reason": "environment_preparation_not_ready"
+    },
+    {
+      "removed": "pydata__xarray-4075",
+      "added": "django__django-13933",
+      "reason": "environment_preparation_not_ready"
+    },
+    {
+      "removed": "sphinx-doc__sphinx-10614",
+      "added": "django__django-11400",
+      "reason": "environment_preparation_not_ready"
+    },
+    {
+      "removed": "pydata__xarray-4356",
+      "added": "django__django-12741",
+      "reason": "environment_preparation_not_ready"
+    },
+    {
+      "removed": "pylint-dev__pylint-8898",
+      "added": "django__django-12209",
+      "reason": "environment_preparation_not_ready"
+    },
+    {
+      "removed": "scikit-learn__scikit-learn-25232",
+      "added": "sphinx-doc__sphinx-10435",
+      "reason": "environment_preparation_not_ready"
+    },
+    {
+      "removed": "astropy__astropy-14369",
+      "added": "sphinx-doc__sphinx-8056",
+      "reason": "environment_preparation_not_ready"
+    },
+    {
+      "removed": "matplotlib__matplotlib-24026",
+      "added": "sphinx-doc__sphinx-9602",
+      "reason": "environment_preparation_not_ready"
+    },
+    {
+      "removed": "matplotlib__matplotlib-24149",
+      "added": "scikit-learn__scikit-learn-14629",
+      "reason": "environment_preparation_not_ready"
+    },
+    {
+      "removed": "matplotlib__matplotlib-24570",
+      "added": "django__django-15127",
+      "reason": "environment_preparation_not_ready"
+    },
+    {
+      "removed": "scikit-learn__scikit-learn-26194",
+      "added": "django__django-14771",
+      "reason": "environment_preparation_not_ready"
+    },
+    {
+      "removed": "astropy__astropy-13033",
+      "added": "django__django-11066",
+      "reason": "environment_preparation_not_ready"
+    }
+  ],
+  "frozen_at": "2026-09-18T13:37:53.748302+00:00",
+  "count": 12,
+  "tasks": [
+    {
+      "instance_id": "scikit-learn__scikit-learn-25747",
+      "repo": "scikit-learn/scikit-learn",
+      "base_commit": "2c867b8f822eb7a684f0d5c4359e4426e1c9cfe0",
+      "version": "1.3",
+      "problem_statement": "FeatureUnion not working when aggregating data and pandas transform output selected\n### Describe the bug\n\nI would like to use `pandas` transform output and use a custom transformer in a feature union which aggregates data. When I'm using this combination I got an error. When I use default `numpy` output it works fine.\n\n### Steps/Code to Reproduce\n\n```python\r\nimport pandas as pd\r\nfrom sklearn.base import BaseEstimator, TransformerMixin\r\nfrom sklearn import set_config\r\nfrom sklearn.pipeline import make_union\r\n\r\nindex = pd.date_range(start=\"2020-01-01\", end=\"2020-01-05\", inclusive=\"left\", freq=\"H\")\r\ndata = pd.DataFrame(index=index, data=[10] * len(index), columns=[\"value\"])\r\ndata[\"date\"] = index.date\r\n\r\n\r\nclass MyTransformer(BaseEstimator, TransformerMixin):\r\n    def fit(self, X: pd.DataFrame, y: pd.Series | None = None, **kwargs):\r\n        return self\r\n\r\n    def transform(self, X: pd.DataFrame, y: pd.Series | None = None) -> pd.DataFrame:\r\n        return X[\"value\"].groupby(X[\"date\"]).sum()\r\n\r\n\r\n# This works.\r\nset_config(transform_output=\"default\")\r\nprint(make_union(MyTransformer()).fit_transform(data))\r\n\r\n# This does not work.\r\nset_config(transform_output=\"pandas\")\r\nprint(make_union(MyTransformer()).fit_transform(data))\r\n```\n\n### Expected Results\n\nNo error is thrown when using `pandas` transform output.\n\n### Actual Results\n\n```python\r\n---------------------------------------------------------------------------\r\nValueError                                Traceback (most recent call last)\r\nCell In[5], line 25\r\n     23 # This does not work.\r\n     24 set_config(transform_output=\"pandas\")\r\n---> 25 print(make_union(MyTransformer()).fit_transform(data))\r\n\r\nFile ~/.local/share/virtualenvs/3e_VBrf2/lib/python3.10/site-packages/sklearn/utils/_set_output.py:150, in _wrap_method_output.<locals>.wrapped(self, X, *args, **kwargs)\r\n    143 if isinstance(data_to_wrap, tuple):\r\n    144     # only wrap the first output for cross decomposition\r\n    145     return (\r\n    146         _wrap_data_with_container(method, data_to_wrap[0], X, self),\r\n    147         *data_to_wrap[1:],\r\n    148     )\r\n--> 150 return _wrap_data_with_container(method, data_to_wrap, X, self)\r\n\r\nFile ~/.local/share/virtualenvs/3e_VBrf2/lib/python3.10/site-packages/sklearn/utils/_set_output.py:130, in _wrap_data_with_container(method, data_to_wrap, original_input, estimator)\r\n    127     return data_to_wrap\r\n    129 # dense_config == \"pandas\"\r\n--> 130 return _wrap_in_pandas_container(\r\n    131     data_to_wrap=data_to_wrap,\r\n    132     index=getattr(original_input, \"index\", None),\r\n    133     columns=estimator.get_feature_names_out,\r\n    134 )\r\n\r\nFile ~/.local/share/virtualenvs/3e_VBrf2/lib/python3.10/site-packages/sklearn/utils/_set_output.py:59, in _wrap_in_pandas_container(data_to_wrap, columns, index)\r\n     57         data_to_wrap.columns = columns\r\n     58     if index is not None:\r\n---> 59         data_to_wrap.index = index\r\n     60     return data_to_wrap\r\n     62 return pd.DataFrame(data_to_wrap, index=index, columns=columns)\r\n\r\nFile ~/.local/share/virtualenvs/3e_VBrf2/lib/python3.10/site-packages/pandas/core/generic.py:5588, in NDFrame.__setattr__(self, name, value)\r\n   5586 try:\r\n   5587     object.__getattribute__(self, name)\r\n-> 5588     return object.__setattr__(self, name, value)\r\n   5589 except AttributeError:\r\n   5590     pass\r\n\r\nFile ~/.local/share/virtualenvs/3e_VBrf2/lib/python3.10/site-packages/pandas/_libs/properties.pyx:70, in pandas._libs.properties.AxisProperty.__set__()\r\n\r\nFile ~/.local/share/virtualenvs/3e_VBrf2/lib/python3.10/site-packages/pandas/core/generic.py:769, in NDFrame._set_axis(self, axis, labels)\r\n    767 def _set_axis(self, axis: int, labels: Index) -> None:\r\n    768     labels = ensure_index(labels)\r\n--> 769     self._mgr.set_axis(axis, labels)\r\n    770     self._clear_item_cache()\r\n\r\nFile ~/.local/share/virtualenvs/3e_VBrf2/lib/python3.10/site-packages/pandas/core/internals/managers.py:214, in BaseBlockManager.set_axis(self, axis, new_labels)\r\n    212 def set_axis(self, axis: int, new_labels: Index) -> None:\r\n    213     # Caller is responsible for ensuring we have an Index object.\r\n--> 214     self._validate_set_axis(axis, new_labels)\r\n    215     self.axes[axis] = new_labels\r\n\r\nFile ~/.local/share/virtualenvs/3e_VBrf2/lib/python3.10/site-packages/pandas/core/internals/base.py:69, in DataManager._validate_set_axis(self, axis, new_labels)\r\n     66     pass\r\n     68 elif new_len != old_len:\r\n---> 69     raise ValueError(\r\n     70         f\"Length mismatch: Expected axis has {old_len} elements, new \"\r\n     71         f\"values have {new_len} elements\"\r\n     72     )\r\n\r\nValueError: Length mismatch: Expected axis has 4 elements, new values have 96 elements\r\n```\n\n### Versions\n\n```shell\nSystem:\r\n    python: 3.10.6 (main, Aug 30 2022, 05:11:14) [Clang 13.0.0 (clang-1300.0.29.30)]\r\nexecutable: /Users/macbookpro/.local/share/virtualenvs/3e_VBrf2/bin/python\r\n   machine: macOS-11.3-x86_64-i386-64bit\r\n\r\nPython dependencies:\r\n      sklearn: 1.2.1\r\n          pip: 22.3.1\r\n   setuptools: 67.3.2\r\n        numpy: 1.23.5\r\n        scipy: 1.10.1\r\n       Cython: None\r\n       pandas: 1.4.4\r\n   matplotlib: 3.7.0\r\n       joblib: 1.2.0\r\nthreadpoolctl: 3.1.0\r\n\r\nBuilt with OpenMP: True\r\n\r\nthreadpoolctl info:\r\n       user_api: blas\r\n   internal_api: openblas\r\n         prefix: libopenblas\r\n       filepath: /Users/macbookpro/.local/share/virtualenvs/3e_VBrf2/lib/python3.10/site-packages/numpy/.dylibs/libopenblas64_.0.dylib\r\n        version: 0.3.20\r\nthreading_layer: pthreads\r\n   architecture: Haswell\r\n    num_threads: 4\r\n\r\n       user_api: openmp\r\n   internal_api: openmp\r\n         prefix: libomp\r\n       filepath: /Users/macbookpro/.local/share/virtualenvs/3e_VBrf2/lib/python3.10/site-packages/sklearn/.dylibs/libomp.dylib\r\n        version: None\r\n    num_threads: 8\r\n\r\n       user_api: blas\r\n   internal_api: openblas\r\n         prefix: libopenblas\r\n       filepath: /Users/macbookpro/.local/share/virtualenvs/3e_VBrf2/lib/python3.10/site-packages/scipy/.dylibs/libopenblas.0.dylib\r\n        version: 0.3.18\r\nthreading_layer: pthreads\r\n   architecture: Haswell\r\n    num_threads: 4\n```\n\n",
+      "recipe": {
+        "python": "3.9",
+        "packages": "'numpy==1.19.2' 'scipy==1.5.2' 'cython==3.0.10' pytest 'pandas<2.0.0' 'matplotlib<3.9.0' setuptools pytest joblib threadpoolctl",
+        "pip_packages": [
+          "cython",
+          "setuptools",
+          "numpy",
+          "scipy"
+        ],
+        "install": "python -m pip install -v --no-use-pep517 --no-build-isolation -e .",
+        "repo_setup": "",
+        "cached_environment_yml": "name: testbed\nchannels:\n  - defaults\n  - conda-forge\ndependencies:\n  - _libgcc_mutex=0.1=conda_forge\n  - _openmp_mutex=4.5=2_gnu\n  - blas=1.0=openblas\n  - bottleneck=1.4.2=py39ha9d4c09_0\n  - brotli=1.0.9=h5eee18b_8\n  - brotli-bin=1.0.9=h5eee18b_8\n  - bzip2=1.0.8=h5eee18b_6\n  - c-ares=1.19.1=h5eee18b_0\n  - ca-certificates=2024.9.24=h06a4308_0\n  - contourpy=1.0.5=py39hdb19cb5_0\n  - cycler=0.11.0=pyhd3eb1b0_0\n  - cyrus-sasl=2.1.28=h52b45da_1\n  - cython=3.0.10=py39h5eee18b_0\n  - dbus=1.13.18=hb2f20db_0\n  - exceptiongroup=1.2.0=py39h06a4308_0\n  - expat=2.6.3=h6a678d5_0\n  - fontconfig=2.14.1=h55d465d_3\n  - fonttools=4.51.0=py39h5eee18b_0\n  - freetype=2.12.1=h4a9f257_0\n  - glib=2.78.4=h6a678d5_0\n  - glib-tools=2.78.4=h6a678d5_0\n  - gst-plugins-base=1.14.1=h6a678d5_1\n  - gstreamer=1.14.1=h5eee18b_1\n  - icu=73.1=h6a678d5_0\n  - iniconfig=1.1.1=pyhd3eb1b0_0\n  - joblib=1.4.2=py39h06a4308_0\n  - jpeg=9e=h5eee18b_3\n  - kiwisolver=1.4.4=py39h6a678d5_0\n  - krb5=1.20.1=h143b758_1\n  - lcms2=2.12=h3be6417_0\n  - ld_impl_linux-64=2.40=h12ee557_0\n  - lerc=3.0=h295c915_0\n  - libabseil=20240116.2=cxx17_h6a678d5_0\n  - libbrotlicommon=1.0.9=h5eee18b_8\n  - libbrotlidec=1.0.9=h5eee18b_8\n  - libbrotlienc=1.0.9=h5eee18b_8\n  - libclang=14.0.6=default_hc6dbbc7_1\n  - libclang13=14.0.6=default_he11475f_1\n  - libcups=2.4.2=h2d74bed_1\n  - libcurl=8.9.1=h251f7ec_0\n  - libdeflate=1.17=h5eee18b_1\n  - libedit=3.1.20230828=h5eee18b_0\n  - libev=4.33=h7f8727e_1\n  - libffi=3.4.4=h6a678d5_1\n  - libgcc=14.2.0=h77fa898_1\n  - libgcc-ng=14.2.0=h69a702a_1\n  - libgfortran-ng=7.5.0=ha8ba4b0_17\n  - libgfortran4=7.5.0=ha8ba4b0_17\n  - libgfortran5=14.2.0=hd5240d6_1\n  - libglib=2.78.4=hdc74915_0\n  - libgomp=14.2.0=h77fa898_1\n  - libiconv=1.16=h5eee18b_3\n  - libllvm14=14.0.6=hecde1de_4\n  - libnghttp2=1.57.0=h2d74bed_0\n  - libopenblas=0.3.21=h043d6bf_0\n  - libpng=1.6.39=h5eee18b_0\n  - libpq=17.0=hdbd6064_0\n  - libprotobuf=4.25.3=he621ea3_0\n  - libssh2=1.11.0=h251f7ec_0\n  - libstdcxx-ng=11.2.0=h1234567_1\n  - libtiff=4.5.1=h6a678d5_0\n  - libuuid=1.41.5=h5eee18b_0\n  - libwebp-base=1.3.2=h5eee18b_1\n  - libxcb=1.15=h7f8727e_0\n  - libxkbcommon=1.0.1=h097e994_2\n  - libxml2=2.13.1=hfdd30dd_2\n  - lz4-c=1.9.4=h6a678d5_1\n  - matplotlib=3.6.2=py39h06a4308_0\n  - matplotlib-base=3.6.2=py39h945d387_0\n  - mysql=8.4.0=h29a9f33_1\n  - ncurses=6.4=h6a678d5_0\n  - numexpr=2.8.4=py39hd2a5715_1\n  - numpy=1.19.2=py39hc896f84_1\n  - numpy-base=1.19.2=py39h21a3de8_1\n  - openjpeg=2.5.2=he7f1fd0_0\n  - openldap=2.6.4=h42fbc30_0\n  - openssl=3.0.15=h5eee18b_0\n  - packaging=24.1=py39h06a4308_0\n  - pandas=1.4.4=py39h6a678d5_0\n  - pcre2=10.42=hebb0a14_1\n  - pillow=11.0.0=py39hfdbf927_0\n  - pip=24.2=py39h06a4308_0\n  - pluggy=1.0.0=py39h06a4308_1\n  - ply=3.11=py39h06a4308_0\n  - pyparsing=3.2.0=py39h06a4308_0\n  - pyqt=5.15.10=py39h6a678d5_0\n  - pyqt5-sip=12.13.0=py39h5eee18b_0\n  - pytest=7.4.4=py39h06a4308_0\n  - python=3.9.20=he870216_1\n  - python-dateutil=2.9.0post0=py39h06a4308_2\n  - pytz=2024.1=py39h06a4308_0\n  - qt-main=5.15.2=hb6262e9_11\n  - readline=8.2=h5eee18b_0\n  - scipy=1.5.2=py39hf56f3a7_0\n  - setuptools=75.1.0=py39h06a4308_0\n  - sip=6.7.12=py39h6a678d5_0\n  - six=1.16.0=pyhd3eb1b0_1\n  - sqlite=3.45.3=h5eee18b_0\n  - threadpoolctl=3.5.0=py39h2f386ee_0\n  - tk=8.6.14=h39e8969_0\n  - tomli=2.0.1=py39h06a4308_0\n  - tornado=6.4.1=py39h5eee18b_0\n  - tzdata=2024b=h04d1e81_0\n  - unicodedata2=15.1.0=py39h5eee18b_0\n  - wheel=0.44.0=py39h06a4308_0\n  - xz=5.4.6=h5eee18b_1\n  - zlib=1.2.13=h5eee18b_1\n  - zstd=1.5.6=hc292b87_0\nprefix: /opt/miniconda3/envs/testbed\n"
+      }
+    },
+    {
+      "instance_id": "django__django-13121",
+      "repo": "django/django",
+      "base_commit": "ec5aa2161d8015a3fe57dcbbfe14200cd18f0a16",
+      "version": "3.2",
+      "problem_statement": "durations-only expressions doesn't work on SQLite and MySQL\nDescription\n\t\nclass Experiment(models.Model):\n\testimated_time = models.DurationField()\nlist(Experiment.objects.annotate(duration=F('estimated_time') + datime.timedelta(1)))\nTraceback (most recent call last):\n File \"/home/sergey/dev/django/tests/expressions/tests.py\", line 1218, in test_duration_expressions\n\tlist(Experiment.objects.annotate(duration=F('estimated_time') + delta))\n File \"/home/sergey/dev/django/django/db/models/query.py\", line 269, in __iter__\n\tself._fetch_all()\n File \"/home/sergey/dev/django/django/db/models/query.py\", line 1172, in _fetch_all\n\tself._result_cache = list(self._iterable_class(self))\n File \"/home/sergey/dev/django/django/db/models/query.py\", line 63, in __iter__\n\tfor row in compiler.results_iter(results):\n File \"/home/sergey/dev/django/django/db/models/sql/compiler.py\", line 998, in apply_converters\n\tvalue = converter(value, expression, connection)\n File \"/home/sergey/dev/django/django/db/backends/base/operations.py\", line 571, in convert_durationfield_value\n\tvalue = str(decimal.Decimal(value) / decimal.Decimal(1000000))\ndecimal.InvalidOperation: [<class 'decimal.ConversionSyntax'>]\n",
+      "recipe": {
+        "python": "3.6",
+        "packages": "requirements.txt",
+        "install": "python -m pip install -e .",
+        "repo_setup": "",
+        "cached_environment_yml": "name: testbed\nchannels:\n  - defaults\n  - conda-forge\ndependencies:\n  - _libgcc_mutex=0.1=main\n  - _openmp_mutex=5.1=1_gnu\n  - ca-certificates=2024.9.24=h06a4308_0\n  - certifi=2021.5.30=py36h06a4308_0\n  - ld_impl_linux-64=2.40=h12ee557_0\n  - libffi=3.3=he6710b0_2\n  - libgcc-ng=11.2.0=h1234567_1\n  - libgomp=11.2.0=h1234567_1\n  - libstdcxx-ng=11.2.0=h1234567_1\n  - ncurses=6.4=h6a678d5_0\n  - openssl=1.1.1w=h7f8727e_0\n  - pip=21.2.2=py36h06a4308_0\n  - python=3.6.13=h12debd9_1\n  - readline=8.2=h5eee18b_0\n  - setuptools=58.0.4=py36h06a4308_0\n  - sqlite=3.45.3=h5eee18b_0\n  - tk=8.6.14=h39e8969_0\n  - wheel=0.37.1=pyhd3eb1b0_0\n  - xz=5.4.6=h5eee18b_1\n  - zlib=1.2.13=h5eee18b_1\n  - pip:\n      - aiohttp==3.8.6\n      - aiosignal==1.2.0\n      - argon2-cffi==21.3.0\n      - argon2-cffi-bindings==21.2.0\n      - asgiref==3.4.1\n      - async-timeout==4.0.2\n      - asynctest==0.13.0\n      - attrs==22.2.0\n      - backports-zoneinfo==0.2.1\n      - bcrypt==4.0.1\n      - cffi==1.15.1\n      - charset-normalizer==2.0.12\n      - dataclasses==0.8\n      - docutils==0.18.1\n      - frozenlist==1.2.0\n      - geoip2==4.6.0\n      - idna==3.10\n      - idna-ssl==1.1.0\n      - importlib-resources==5.4.0\n      - jinja2==3.0.3\n      - markupsafe==2.0.1\n      - maxminddb==2.2.0\n      - multidict==5.2.0\n      - numpy==1.19.5\n      - pillow==8.4.0\n      - pycparser==2.21\n      - pylibmc==1.6.3\n      - pymemcache==3.5.2\n      - python-memcached==1.62\n      - pytz==2024.2\n      - pywatchman==1.4.1\n      - pyyaml==6.0.1\n      - requests==2.27.1\n      - selenium==3.141.0\n      - six==1.16.0\n      - sqlparse==0.4.4\n      - tblib==1.7.0\n      - typing-extensions==4.1.1\n      - tzdata==2024.2\n      - urllib3==1.26.20\n      - yarl==1.7.2\n      - zipp==3.6.0\nprefix: /opt/miniconda3/envs/testbed\n"
+      }
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9658",
+      "repo": "sphinx-doc/sphinx",
+      "base_commit": "232dbe41c5250eb7d559d40438c4743483e95f15",
+      "version": "4.3",
+      "problem_statement": "Inherited classes not correctly documented when mocked\n### Describe the bug\r\n\r\nWe're experiencing an issue when documenting classes that inherit mocked classes. However, classes which inherit other classes from our own package are ok.\r\n\r\nThis issue appears to be dependent on the `sphinx` version:\r\n\r\n- `sphinx<3.0`: Everything is OK. \r\n- `sphinx>=3.0 < 3.4.2`: Classes that inherit mocked classes are not documented. (see [sphinx #8164](https://github.com/sphinx-doc/sphinx/issues/8164)). This is fixed in `sphinx 3.4.2`. \r\n- `sphinx>=3.4.2`: The previously missing classes are now documented, but there is a problem with the \"Bases\" section in the docs. \r\n \r\nExample: In the docs for `alibi_detect.utils.pytorch.kernels.DeepKernel` in this readthedocs build https://seldon--338.org.readthedocs.build/projects/alibi-detect/en/338/api/alibi_detect.utils.pytorch.kernels.html, the base class is listed as \"Bases: `torch.nn.`\" instead of \"Bases: `torch.nn.Module`\". \r\n\r\n\r\n### How to Reproduce\r\n\r\n```\r\n$ git clone https://github.com/ascillitoe/alibi-detect.git\r\n$ cd alibi-detect\r\n$ pip install -r requirements/docs.txt\r\n$ make build_docs\r\n$ # open doc/_build/html/api/alibi_detect.utils.pytorch.kernels.html and see \"Bases\" section.\r\n```\r\n\r\n\r\n### Expected behavior\r\n\r\nThe \"Bases\" section should report `torch.nn.Module` not `torch.nn.`. \r\n\r\ni.e. see\r\nhttps://seldon--325.org.readthedocs.build/projects/alibi-detect/en/325/api/alibi_detect.utils.pytorch.kernels.html\r\n\r\n### Your project\r\n\r\nhttps://github.com/ascillitoe/alibi-detect/tree/feature_sphinx4\r\n\r\n### Screenshots\r\n\r\n### Screenshot with `sphinx==4.2`\r\n![sphinx_problem](https://user-images.githubusercontent.com/32061685/133816582-ca162b07-41c7-4b8e-98ea-781e7c659229.png)\r\n\r\n### Screenshot with `sphinx<3.0`\r\n![sphinx_working](https://user-images.githubusercontent.com/32061685/133816065-6291ce1b-96cf-4b0f-9648-7f993fc15611.png)\r\n\r\n\r\n\r\n### OS\r\n\r\nUbuntu 18.04 (used by readthedocs/build:6.0)\r\n\r\n### Python version\r\n\r\n3.8.11\r\n\r\n### Sphinx version\r\n\r\n`>=3.4.2`\r\n\r\n### Sphinx extensions\r\n\r\n    [\"sphinx.ext.autodoc\",\r\n    \"sphinx.ext.doctest\",\r\n    \"sphinx.ext.intersphinx\",\r\n    \"sphinx.ext.todo\",\r\n    \"sphinx.ext.coverage\",\r\n    \"sphinx.ext.mathjax\",\r\n    \"sphinx.ext.ifconfig\",\r\n    \"sphinx.ext.viewcode\",\r\n    \"sphinx.ext.napoleon\",\r\n    \"sphinx_autodoc_typehints\",\r\n    \"sphinxcontrib.apidoc\", \r\n    \"nbsphinx\",\r\n    \"nbsphinx_link\",  \r\n    \"myst_parser\"]\r\n\r\n\r\n### Extra tools\r\n\r\n_No response_\r\n\r\n### Additional context\r\n\r\ndemo PR:\r\nhttps://github.com/SeldonIO/alibi-detect/pull/338\r\n\r\nreadthedocs demo build:\r\nhttps://seldon--338.org.readthedocs.build/projects/alibi-detect/en/338/api/alibi_detect.utils.pytorch.kernels.html\r\n\r\n\n",
+      "recipe": {
+        "python": "3.9",
+        "pip_packages": [
+          "tox==4.16.0",
+          "tox-current-env==0.0.11",
+          "Jinja2==3.0.3"
+        ],
+        "pre_install": [
+          "sed -i 's/pytest/pytest -rA/' tox.ini",
+          "sed -i 's/Jinja2>=2.3/Jinja2<3.0/' setup.py",
+          "sed -i 's/sphinxcontrib-applehelp/sphinxcontrib-applehelp<=1.0.7/' setup.py",
+          "sed -i 's/sphinxcontrib-devhelp/sphinxcontrib-devhelp<=1.0.5/' setup.py",
+          "sed -i 's/sphinxcontrib-qthelp/sphinxcontrib-qthelp<=1.0.6/' setup.py",
+          "sed -i 's/alabaster>=0.7,<0.8/alabaster>=0.7,<0.7.12/' setup.py",
+          "sed -i \"s/'packaging',/'packaging', 'markupsafe<=2.0.1',/\" setup.py",
+          "sed -i 's/sphinxcontrib-htmlhelp>=2.0.0/sphinxcontrib-htmlhelp>=2.0.0,<=2.0.4/' setup.py",
+          "sed -i 's/sphinxcontrib-serializinghtml>=1.1.5/sphinxcontrib-serializinghtml>=1.1.5,<=1.1.9/' setup.py"
+        ],
+        "install": "python -m pip install -e .[test]",
+        "repo_setup": "",
+        "cached_environment_yml": "name: testbed\nchannels:\n  - defaults\n  - conda-forge\ndependencies:\n  - _libgcc_mutex=0.1=main\n  - _openmp_mutex=5.1=1_gnu\n  - ca-certificates=2024.9.24=h06a4308_0\n  - ld_impl_linux-64=2.40=h12ee557_0\n  - libffi=3.4.4=h6a678d5_1\n  - libgcc-ng=11.2.0=h1234567_1\n  - libgomp=11.2.0=h1234567_1\n  - libstdcxx-ng=11.2.0=h1234567_1\n  - ncurses=6.4=h6a678d5_0\n  - openssl=3.0.15=h5eee18b_0\n  - pip=24.2=py39h06a4308_0\n  - python=3.9.20=he870216_1\n  - readline=8.2=h5eee18b_0\n  - setuptools=75.1.0=py39h06a4308_0\n  - sqlite=3.45.3=h5eee18b_0\n  - tk=8.6.14=h39e8969_0\n  - tzdata=2024b=h04d1e81_0\n  - wheel=0.44.0=py39h06a4308_0\n  - xz=5.4.6=h5eee18b_1\n  - zlib=1.2.13=h5eee18b_1\n  - pip:\n      - alabaster==0.7.11\n      - babel==2.16.0\n      - cachetools==5.5.0\n      - certifi==2024.8.30\n      - chardet==5.2.0\n      - charset-normalizer==3.4.0\n      - colorama==0.4.6\n      - coverage==7.6.4\n      - cython==3.0.11\n      - distlib==0.3.9\n      - docutils==0.17.1\n      - exceptiongroup==1.2.2\n      - filelock==3.16.1\n      - html5lib==1.1\n      - idna==3.10\n      - imagesize==1.4.1\n      - iniconfig==2.0.0\n      - jinja2==2.11.3\n      - markupsafe==2.0.1\n      - packaging==24.1\n      - platformdirs==4.3.6\n      - pluggy==1.5.0\n      - pygments==2.18.0\n      - pyproject-api==1.8.0\n      - pytest==8.3.3\n      - pytest-cov==5.0.0\n      - requests==2.32.3\n      - six==1.16.0\n      - snowballstemmer==2.2.0\n      - tomli==2.0.2\n      - tox==4.16.0\n      - tox-current-env==0.0.11\n      - urllib3==2.2.3\n      - virtualenv==20.26.6\n      - webencodings==0.5.1\nprefix: /opt/miniconda3/envs/testbed\n"
+      }
+    },
+    {
+      "instance_id": "django__django-11066",
+      "repo": "django/django",
+      "base_commit": "4b45b6c8e4d7c9701a332e80d3b1c84209dc36e2",
+      "version": "3.0",
+      "problem_statement": "RenameContentType._rename() doesn't save the content type on the correct database\nDescription\n\t\nThe commit in question:\n​https://github.com/django/django/commit/f179113e6cbc8ba0a8d4e87e1d4410fb61d63e75\nThe specific lines in question:\n​https://github.com/django/django/blob/586a9dc4295357de1f5ad0590ad34bf2bc008f79/django/contrib/contenttypes/management/__init__.py#L27\nwith transaction.atomic(using=db): \n\tcontent_type.save(update_fields={'model'})\nThe issue:\nFor some background, we run a dynamic database router and have no \"real\" databases configured in the settings file, just a default sqlite3 backend which is never actually generated or used. We forked the migrate.py management command and modified it to accept a dictionary containing database connection parameters as the --database argument. \nThe dynamic database router is based on, and very similar to this: ​https://github.com/ambitioninc/django-dynamic-db-router/blob/master/dynamic_db_router/router.py\nThis has worked beautifully for all migrations up until this point.\nThe issue we're running into is that when attempting to run a migration which contains a call to migrations.RenameModel, and while specifying the database parameters to the migrate command, the migration fails with an OperationalError, stating that no such table: django_content_types exists.\nAfter having exhaustively stepped through the traceback, it appears that even though the content_type.save call is wrapped in the with transaction.atomic(using=db) context manager, the actual database operation is being attempted on the default database (which in our case does not exist) rather than the database specified via schema_editor.connection.alias (on line 15 of the same file) and thus fails loudly.\nSo, I believe that:\ncontent_type.save(update_fields={'model'})\nshould be\ncontent_type.save(using=db, update_fields={'model'})\n",
+      "recipe": {
+        "python": "3.6",
+        "packages": "requirements.txt",
+        "install": "python -m pip install -e .",
+        "repo_setup": "",
+        "cached_environment_yml": "name: testbed\nchannels:\n  - defaults\n  - conda-forge\ndependencies:\n  - _libgcc_mutex=0.1=main\n  - _openmp_mutex=5.1=1_gnu\n  - ca-certificates=2024.9.24=h06a4308_0\n  - certifi=2021.5.30=py36h06a4308_0\n  - ld_impl_linux-64=2.40=h12ee557_0\n  - libffi=3.3=he6710b0_2\n  - libgcc-ng=11.2.0=h1234567_1\n  - libgomp=11.2.0=h1234567_1\n  - libstdcxx-ng=11.2.0=h1234567_1\n  - ncurses=6.4=h6a678d5_0\n  - openssl=1.1.1w=h7f8727e_0\n  - pip=21.2.2=py36h06a4308_0\n  - python=3.6.13=h12debd9_1\n  - readline=8.2=h5eee18b_0\n  - setuptools=58.0.4=py36h06a4308_0\n  - sqlite=3.45.3=h5eee18b_0\n  - tk=8.6.14=h39e8969_0\n  - wheel=0.37.1=pyhd3eb1b0_0\n  - xz=5.4.6=h5eee18b_1\n  - zlib=1.2.13=h5eee18b_1\n  - pip:\n      - aiohttp==3.8.6\n      - aiosignal==1.2.0\n      - argon2-cffi==21.3.0\n      - argon2-cffi-bindings==21.2.0\n      - asgiref==3.4.1\n      - async-timeout==4.0.2\n      - asynctest==0.13.0\n      - attrs==22.2.0\n      - bcrypt==4.0.1\n      - cffi==1.15.1\n      - charset-normalizer==2.0.12\n      - dataclasses==0.8\n      - docutils==0.18.1\n      - frozenlist==1.2.0\n      - geoip2==4.6.0\n      - idna==3.10\n      - idna-ssl==1.1.0\n      - jinja2==3.0.3\n      - markupsafe==2.0.1\n      - maxminddb==2.2.0\n      - multidict==5.2.0\n      - numpy==1.19.5\n      - pillow==8.4.0\n      - pycparser==2.21\n      - pylibmc==1.6.3\n      - python-memcached==1.62\n      - pytz==2024.2\n      - pywatchman==1.4.1\n      - pyyaml==6.0.1\n      - requests==2.27.1\n      - selenium==3.141.0\n      - sqlparse==0.4.4\n      - tblib==1.7.0\n      - typing-extensions==4.1.1\n      - urllib3==1.26.20\n      - yarl==1.7.2\nprefix: /opt/miniconda3/envs/testbed\n"
+      }
+    },
+    {
+      "instance_id": "django__django-13809",
+      "repo": "django/django",
+      "base_commit": "bef6f7584280f1cc80e5e2d80b7ad073a93d26ec",
+      "version": "4.0",
+      "problem_statement": "Add --skip-checks option to the runserver command.\nDescription\n\t\nRationale:\nIt would be consistent with other management commands performing system checks\nIt would help people like me who would rather have checks enabled exclusively in CI/CD than wait 15-20 seconds for each project reload during development\nRelated StackOverflow question:\n​https://stackoverflow.com/questions/41438593/skip-system-checks-on-django-server-in-debug-mode-in-pycharm/41725866\n",
+      "recipe": {
+        "python": "3.8",
+        "packages": "requirements.txt",
+        "install": "python -m pip install -e .",
+        "repo_setup": "",
+        "cached_environment_yml": "name: testbed\nchannels:\n  - defaults\n  - conda-forge\ndependencies:\n  - _libgcc_mutex=0.1=main\n  - _openmp_mutex=5.1=1_gnu\n  - ca-certificates=2024.9.24=h06a4308_0\n  - ld_impl_linux-64=2.40=h12ee557_0\n  - libffi=3.4.4=h6a678d5_1\n  - libgcc-ng=11.2.0=h1234567_1\n  - libgomp=11.2.0=h1234567_1\n  - libstdcxx-ng=11.2.0=h1234567_1\n  - ncurses=6.4=h6a678d5_0\n  - openssl=3.0.15=h5eee18b_0\n  - pip=24.2=py38h06a4308_0\n  - python=3.8.20=he870216_0\n  - readline=8.2=h5eee18b_0\n  - setuptools=75.1.0=py38h06a4308_0\n  - sqlite=3.45.3=h5eee18b_0\n  - tk=8.6.14=h39e8969_0\n  - wheel=0.44.0=py38h06a4308_0\n  - xz=5.4.6=h5eee18b_1\n  - zlib=1.2.13=h5eee18b_1\n  - pip:\n      - aiohappyeyeballs==2.4.3\n      - aiohttp==3.10.9\n      - aiosignal==1.3.1\n      - argon2-cffi==23.1.0\n      - argon2-cffi-bindings==21.2.0\n      - asgiref==3.8.1\n      - async-timeout==4.0.3\n      - attrs==24.2.0\n      - backports-zoneinfo==0.2.1\n      - bcrypt==4.2.0\n      - certifi==2024.8.30\n      - cffi==1.17.1\n      - charset-normalizer==3.4.0\n      - docutils==0.20.1\n      - exceptiongroup==1.2.2\n      - frozenlist==1.4.1\n      - geoip2==4.8.0\n      - h11==0.14.0\n      - idna==3.10\n      - jinja2==3.1.4\n      - markupsafe==2.1.5\n      - maxminddb==2.6.2\n      - multidict==6.1.0\n      - numpy==1.24.4\n      - outcome==1.3.0.post0\n      - pillow==10.4.0\n      - propcache==0.2.0\n      - pycparser==2.22\n      - pylibmc==1.6.3\n      - pymemcache==4.0.0\n      - pysocks==1.7.1\n      - python-memcached==1.62\n      - pytz==2024.2\n      - pywatchman==2.0.0\n      - pyyaml==6.0.2\n      - redis==5.1.1\n      - requests==2.32.3\n      - selenium==4.25.0\n      - sniffio==1.3.1\n      - sortedcontainers==2.4.0\n      - sqlparse==0.5.1\n      - tblib==3.0.0\n      - trio==0.26.2\n      - trio-websocket==0.11.1\n      - typing-extensions==4.12.2\n      - tzdata==2024.2\n      - urllib3==2.2.3\n      - websocket-client==1.8.0\n      - wsproto==1.2.0\n      - yarl==1.14.0\nprefix: /opt/miniconda3/envs/testbed\n"
+      }
+    },
+    {
+      "instance_id": "django__django-14752",
+      "repo": "django/django",
+      "base_commit": "b64db05b9cedd96905d637a2d824cbbf428e40e7",
+      "version": "4.0",
+      "problem_statement": "Refactor AutocompleteJsonView to support extra fields in autocomplete response\nDescription\n\t \n\t\t(last modified by mrts)\n\t \nAdding data attributes to items in ordinary non-autocomplete foreign key fields that use forms.widgets.Select-based widgets is relatively easy. This enables powerful and dynamic admin site customizations where fields from related models are updated immediately when users change the selected item.\nHowever, adding new attributes to autocomplete field results currently requires extending contrib.admin.views.autocomplete.AutocompleteJsonView and fully overriding the AutocompleteJsonView.get() method. Here's an example:\nclass MyModelAdmin(admin.ModelAdmin):\n\tdef get_urls(self):\n\t\treturn [\n\t\t\tpath('autocomplete/', CustomAutocompleteJsonView.as_view(admin_site=self.admin_site))\n\t\t\tif url.pattern.match('autocomplete/')\n\t\t\telse url for url in super().get_urls()\n\t\t]\nclass CustomAutocompleteJsonView(AutocompleteJsonView):\n\tdef get(self, request, *args, **kwargs):\n\t\tself.term, self.model_admin, self.source_field, to_field_name = self.process_request(request)\n\t\tif not self.has_perm(request):\n\t\t\traise PermissionDenied\n\t\tself.object_list = self.get_queryset()\n\t\tcontext = self.get_context_data()\n\t\treturn JsonResponse({\n\t\t\t'results': [\n\t\t\t\t{'id': str(getattr(obj, to_field_name)), 'text': str(obj), 'notes': obj.notes} # <-- customization here\n\t\t\t\tfor obj in context['object_list']\n\t\t\t],\n\t\t\t'pagination': {'more': context['page_obj'].has_next()},\n\t\t})\nThe problem with this is that as AutocompleteJsonView.get() keeps evolving, there's quite a lot of maintenance overhead required to catch up.\nThe solutions is simple, side-effect- and risk-free: adding a result customization extension point to get() by moving the lines that construct the results inside JsonResponse constructor to a separate method. So instead of\n\t\treturn JsonResponse({\n\t\t\t'results': [\n\t\t\t\t{'id': str(getattr(obj, to_field_name)), 'text': str(obj)}\n\t\t\t\tfor obj in context['object_list']\n\t\t\t],\n\t\t\t'pagination': {'more': context['page_obj'].has_next()},\n\t\t})\nthere would be\n\t\treturn JsonResponse({\n\t\t\t'results': [\n\t\t\t\tself.serialize_result(obj, to_field_name) for obj in context['object_list']\n\t\t\t],\n\t\t\t'pagination': {'more': context['page_obj'].has_next()},\n\t\t})\nwhere serialize_result() contains the original object to dictionary conversion code that would be now easy to override:\ndef serialize_result(self, obj, to_field_name):\n\treturn {'id': str(getattr(obj, to_field_name)), 'text': str(obj)}\nThe example CustomAutocompleteJsonView from above would now become succinct and maintainable:\nclass CustomAutocompleteJsonView(AutocompleteJsonView):\n\tdef serialize_result(self, obj, to_field_name):\n\t\treturn super.serialize_result(obj, to_field_name) | {'notes': obj.notes}\nWhat do you think, is this acceptable? I'm more than happy to provide the patch.\n",
+      "recipe": {
+        "python": "3.8",
+        "packages": "requirements.txt",
+        "install": "python -m pip install -e .",
+        "repo_setup": "",
+        "cached_environment_yml": "name: testbed\nchannels:\n  - defaults\n  - conda-forge\ndependencies:\n  - _libgcc_mutex=0.1=main\n  - _openmp_mutex=5.1=1_gnu\n  - ca-certificates=2024.9.24=h06a4308_0\n  - ld_impl_linux-64=2.40=h12ee557_0\n  - libffi=3.4.4=h6a678d5_1\n  - libgcc-ng=11.2.0=h1234567_1\n  - libgomp=11.2.0=h1234567_1\n  - libstdcxx-ng=11.2.0=h1234567_1\n  - ncurses=6.4=h6a678d5_0\n  - openssl=3.0.15=h5eee18b_0\n  - pip=24.2=py38h06a4308_0\n  - python=3.8.20=he870216_0\n  - readline=8.2=h5eee18b_0\n  - setuptools=75.1.0=py38h06a4308_0\n  - sqlite=3.45.3=h5eee18b_0\n  - tk=8.6.14=h39e8969_0\n  - wheel=0.44.0=py38h06a4308_0\n  - xz=5.4.6=h5eee18b_1\n  - zlib=1.2.13=h5eee18b_1\n  - pip:\n      - aiohappyeyeballs==2.4.3\n      - aiohttp==3.10.9\n      - aiosignal==1.3.1\n      - argon2-cffi==23.1.0\n      - argon2-cffi-bindings==21.2.0\n      - asgiref==3.8.1\n      - async-timeout==4.0.3\n      - attrs==24.2.0\n      - backports-zoneinfo==0.2.1\n      - bcrypt==4.2.0\n      - certifi==2024.8.30\n      - cffi==1.17.1\n      - charset-normalizer==3.4.0\n      - docutils==0.20.1\n      - exceptiongroup==1.2.2\n      - frozenlist==1.4.1\n      - geoip2==4.8.0\n      - h11==0.14.0\n      - idna==3.10\n      - jinja2==3.1.4\n      - markupsafe==2.1.5\n      - maxminddb==2.6.2\n      - multidict==6.1.0\n      - numpy==1.24.4\n      - outcome==1.3.0.post0\n      - pillow==10.4.0\n      - propcache==0.2.0\n      - pycparser==2.22\n      - pylibmc==1.6.3\n      - pymemcache==4.0.0\n      - pysocks==1.7.1\n      - python-memcached==1.62\n      - pytz==2024.2\n      - pywatchman==2.0.0\n      - pyyaml==6.0.2\n      - redis==5.1.1\n      - requests==2.32.3\n      - selenium==4.25.0\n      - sniffio==1.3.1\n      - sortedcontainers==2.4.0\n      - sqlparse==0.5.1\n      - tblib==3.0.0\n      - trio==0.26.2\n      - trio-websocket==0.11.1\n      - typing-extensions==4.12.2\n      - tzdata==2024.2\n      - urllib3==2.2.3\n      - websocket-client==1.8.0\n      - wsproto==1.2.0\n      - yarl==1.14.0\nprefix: /opt/miniconda3/envs/testbed\n"
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-22080",
+      "repo": "sympy/sympy",
+      "base_commit": "3f8c8c2377cb8e0daaf8073e8d03ac7d87580813",
+      "version": "1.10",
+      "problem_statement": "Mod function lambdify bug\nDescription:\r\nWhen lambdifying any function of structure like `expr * Mod(a, b)` sympy moves the multiplier into the first argument of Mod, like `Mod(expr * a, b)`, WHEN we specify `modules=[]`\r\n\r\nThis is an example from Sympy online shell\r\n```\r\n>>> from sympy import Mod, lambdify, symbols\r\n>>> x, y = symbols('x y')\r\n>>> expr = -Mod(x, y)\r\n>>> f = lambdify([x, y], expr)\r\n>>> f(3, 7)\r\n-3\r\n>>> inspect.getsource(f)\r\ndef _lambdifygenerated(x, y):\r\n    return (-mod(x, y))\r\n\r\n\r\n>>> g = lambdify([x, y], expr, modules=[])\r\n>>> g(3, 7)\r\n4\r\n>>> inspect.getsource(g)\r\ndef _lambdifygenerated(x, y):\r\n    return (-x % y)\r\n```\n",
+      "recipe": {
+        "python": "3.9",
+        "packages": "mpmath flake8",
+        "pip_packages": [
+          "mpmath==1.3.0",
+          "flake8-comprehensions"
+        ],
+        "install": "python -m pip install -e .",
+        "repo_setup": "",
+        "cached_environment_yml": "name: testbed\nchannels:\n  - defaults\n  - conda-forge\ndependencies:\n  - _libgcc_mutex=0.1=main\n  - _openmp_mutex=5.1=1_gnu\n  - ca-certificates=2024.9.24=h06a4308_0\n  - flake8=7.1.1=py39h06a4308_0\n  - ld_impl_linux-64=2.40=h12ee557_0\n  - libffi=3.4.4=h6a678d5_1\n  - libgcc-ng=11.2.0=h1234567_1\n  - libgomp=11.2.0=h1234567_1\n  - libstdcxx-ng=11.2.0=h1234567_1\n  - mccabe=0.7.0=pyhd3eb1b0_0\n  - mpmath=1.3.0=py39h06a4308_0\n  - ncurses=6.4=h6a678d5_0\n  - openssl=3.0.15=h5eee18b_0\n  - pip=24.2=py39h06a4308_0\n  - pycodestyle=2.12.1=py39h06a4308_0\n  - pyflakes=3.2.0=py39h06a4308_0\n  - python=3.9.20=he870216_1\n  - readline=8.2=h5eee18b_0\n  - setuptools=75.1.0=py39h06a4308_0\n  - sqlite=3.45.3=h5eee18b_0\n  - tk=8.6.14=h39e8969_0\n  - tzdata=2024b=h04d1e81_0\n  - wheel=0.44.0=py39h06a4308_0\n  - xz=5.4.6=h5eee18b_1\n  - zlib=1.2.13=h5eee18b_1\n  - pip:\n      - flake8-comprehensions==3.15.0\nprefix: /opt/miniconda3/envs/testbed\n"
+      }
+    },
+    {
+      "instance_id": "pydata__xarray-3095",
+      "repo": "pydata/xarray",
+      "base_commit": "1757dffac2fa493d7b9a074b84cf8c830a706688",
+      "version": "0.12",
+      "problem_statement": "REGRESSION: copy(deep=True) casts unicode indices to object\nDataset.copy(deep=True) and DataArray.copy (deep=True/False) accidentally cast IndexVariable's with dtype='<U*' to object. Same applies to copy.copy() and copy.deepcopy().\r\n\r\nThis is a regression in xarray >= 0.12.2. xarray 0.12.1 and earlier are unaffected.\r\n\r\n```\r\n\r\nIn [1]: ds = xarray.Dataset(\r\n   ...:     coords={'x': ['foo'], 'y': ('x', ['bar'])},\r\n   ...:     data_vars={'z': ('x', ['baz'])})                                                              \r\n\r\nIn [2]: ds                                                                                                                                                                                                                     \r\nOut[2]: \r\n<xarray.Dataset>\r\nDimensions:  (x: 1)\r\nCoordinates:\r\n  * x        (x) <U3 'foo'\r\n    y        (x) <U3 'bar'\r\nData variables:\r\n    z        (x) <U3 'baz'\r\n\r\nIn [3]: ds.copy()                                                                                                                                                                                                              \r\nOut[3]: \r\n<xarray.Dataset>\r\nDimensions:  (x: 1)\r\nCoordinates:\r\n  * x        (x) <U3 'foo'\r\n    y        (x) <U3 'bar'\r\nData variables:\r\n    z        (x) <U3 'baz'\r\n\r\nIn [4]: ds.copy(deep=True)                                                                                                                                                                                                     \r\nOut[4]: \r\n<xarray.Dataset>\r\nDimensions:  (x: 1)\r\nCoordinates:\r\n  * x        (x) object 'foo'\r\n    y        (x) <U3 'bar'\r\nData variables:\r\n    z        (x) <U3 'baz'\r\n\r\nIn [5]: ds.z                                                                                                                                                                                                                   \r\nOut[5]: \r\n<xarray.DataArray 'z' (x: 1)>\r\narray(['baz'], dtype='<U3')\r\nCoordinates:\r\n  * x        (x) <U3 'foo'\r\n    y        (x) <U3 'bar'\r\n\r\nIn [6]: ds.z.copy()                                                                                                                                                                                                            \r\nOut[6]: \r\n<xarray.DataArray 'z' (x: 1)>\r\narray(['baz'], dtype='<U3')\r\nCoordinates:\r\n  * x        (x) object 'foo'\r\n    y        (x) <U3 'bar'\r\n\r\nIn [7]: ds.z.copy(deep=True)                                                                                                                                                                                                   \r\nOut[7]: \r\n<xarray.DataArray 'z' (x: 1)>\r\narray(['baz'], dtype='<U3')\r\nCoordinates:\r\n  * x        (x) object 'foo'\r\n    y        (x) <U3 'bar'\r\n```\n",
+      "recipe": {
+        "python": "3.10",
+        "packages": "environment.yml",
+        "pip_packages": [
+          "numpy==1.23.0",
+          "packaging==23.1",
+          "pandas==1.5.3",
+          "pytest==7.4.0",
+          "python-dateutil==2.8.2",
+          "pytz==2023.3",
+          "six==1.16.0",
+          "scipy==1.11.1",
+          "setuptools==68.0.0",
+          "dask==2022.8.1"
+        ],
+        "install": "python -m pip install -e .",
+        "no_use_env": true,
+        "repo_setup": "",
+        "cached_environment_yml": "name: testbed\nchannels:\n  - defaults\n  - conda-forge\ndependencies:\n  - _libgcc_mutex=0.1=conda_forge\n  - _openmp_mutex=4.5=2_gnu\n  - affine=2.4.0=pyhd8ed1ab_0\n  - aiobotocore=2.15.1=pyhd8ed1ab_0\n  - aiohappyeyeballs=2.4.3=pyhd8ed1ab_0\n  - aiohttp=3.10.9=py310ha75aee5_0\n  - aioitertools=0.12.0=pyhd8ed1ab_0\n  - aiosignal=1.3.1=pyhd8ed1ab_0\n  - antlr-python-runtime=4.11.1=pyhd8ed1ab_0\n  - appdirs=1.4.4=pyh9f0ad1d_0\n  - asciitree=0.3.3=py_2\n  - async-timeout=4.0.3=pyhd8ed1ab_0\n  - attrs=24.2.0=pyh71513ae_0\n  - aws-c-auth=0.7.31=h57bd9a3_0\n  - aws-c-cal=0.7.4=hfd43aa1_1\n  - aws-c-common=0.9.28=hb9d3cd8_0\n  - aws-c-compression=0.2.19=h756ea98_1\n  - aws-c-event-stream=0.4.3=h29ce20c_2\n  - aws-c-http=0.8.10=h5e77a74_0\n  - aws-c-io=0.14.18=h4e6ae90_11\n  - aws-c-mqtt=0.10.7=h02abb05_0\n  - aws-c-s3=0.6.6=h834ce55_0\n  - aws-c-sdkutils=0.1.19=h756ea98_3\n  - aws-checksums=0.1.20=h756ea98_0\n  - aws-crt-cpp=0.28.3=h3e6eb3e_6\n  - aws-sdk-cpp=1.11.407=h9f1560d_0\n  - azure-core-cpp=1.13.0=h935415a_0\n  - azure-identity-cpp=1.9.0=hd126650_0\n  - azure-storage-blobs-cpp=12.13.0=h1d30c4a_0\n  - azure-storage-common-cpp=12.8.0=ha3822c6_0\n  - azure-storage-files-datalake-cpp=12.12.0=h0f25b8a_0\n  - backports.zoneinfo=0.2.1=py310hff52083_9\n  - beautifulsoup4=4.12.3=pyha770c72_0\n  - blosc=1.21.6=hef167b5_0\n  - bokeh=3.5.2=pyhd8ed1ab_0\n  - boto3=1.35.23=pyhd8ed1ab_0\n  - botocore=1.35.23=pyge310_1234567_0\n  - bottleneck=1.4.0=py310hf462985_2\n  - brotli=1.1.0=hb9d3cd8_2\n  - brotli-bin=1.1.0=hb9d3cd8_2\n  - brotli-python=1.1.0=py310hf71b8c6_2\n  - bzip2=1.0.8=h4bc722e_7\n  - c-ares=1.33.1=heb4867d_0\n  - ca-certificates=2024.8.30=hbcca054_0\n  - cached-property=1.5.2=hd8ed1ab_1\n  - cached_property=1.5.2=pyha770c72_1\n  - cartopy=0.24.0=py310h5eaa309_0\n  - cdat_info=8.2.1=pyhd8ed1ab_2\n  - cdms2=3.1.5=py310h366d46e_22\n  - cdtime=3.1.4=py310h7a088e3_13\n  - certifi=2024.8.30=pyhd8ed1ab_0\n  - cf-units=3.2.0=py310hf462985_6\n  - cffi=1.17.1=py310h8deb56e_0\n  - cfgrib=0.9.14.1=pyhd8ed1ab_0\n  - cfgv=3.3.1=pyhd8ed1ab_0\n  - cftime=1.6.4=py310hf462985_1\n  - charset-normalizer=3.4.0=pyhd8ed1ab_0\n  - click=8.1.7=unix_pyh707e725_0\n  - click-plugins=1.1.1=py_0\n  - cligj=0.7.2=pyhd8ed1ab_1\n  - cloudpickle=3.0.0=pyhd8ed1ab_0\n  - colorama=0.4.6=pyhd8ed1ab_0\n  - contourpy=1.3.0=py310h3788b33_2\n  - coverage=7.6.1=py310ha75aee5_1\n  - curl=8.10.1=hbbe4b11_0\n  - cycler=0.12.1=pyhd8ed1ab_0\n  - cytoolz=1.0.0=py310ha75aee5_1\n  - dask-expr=1.1.15=pyhd8ed1ab_0\n  - distarray=2.12.2=pyh050c7b8_4\n  - distlib=0.3.8=pyhd8ed1ab_0\n  - distributed=2024.9.1=pyhd8ed1ab_0\n  - docopt-ng=0.9.0=pyhd8ed1ab_0\n  - eccodes=2.38.0=h8bb6dbc_0\n  - esmf=8.6.1=nompi_h4441c20_3\n  - esmpy=8.6.1=pyhc1e730c_0\n  - exceptiongroup=1.2.2=pyhd8ed1ab_0\n  - execnet=2.1.1=pyhd8ed1ab_0\n  - fasteners=0.17.3=pyhd8ed1ab_0\n  - filelock=3.16.1=pyhd8ed1ab_0\n  - findlibs=0.0.5=pyhd8ed1ab_0\n  - flexcache=0.3=pyhd8ed1ab_0\n  - flexparser=0.3.1=pyhd8ed1ab_0\n  - fonttools=4.54.1=py310ha75aee5_0\n  - freeglut=3.2.2=ha6d2627_3\n  - freetype=2.12.1=h267a509_2\n  - freexl=2.0.0=h743c826_0\n  - frozenlist=1.4.1=py310ha75aee5_1\n  - fsspec=2024.9.0=pyhff2d567_0\n  - future=1.0.0=pyhd8ed1ab_0\n  - g2clib=1.9.0=ha770c72_1\n  - geos=3.13.0=h5888daf_0\n  - geotiff=1.7.3=h77b800c_3\n  - gflags=2.2.2=h5888daf_1005\n  - giflib=5.2.2=hd590300_0\n  - glog=0.7.1=hbabe93e_0\n  - h2=4.1.0=pyhd8ed1ab_0\n  - h5netcdf=1.4.0=pyhd8ed1ab_0\n  - h5py=3.11.0=nompi_py310hf054cd7_102\n  - hdf4=4.2.15=h2a13503_7\n  - hdf5=1.14.3=nompi_hdf9ad27_105\n  - hpack=4.0.0=pyh9f0ad1d_0\n  - hyperframe=6.0.1=pyhd8ed1ab_0\n  - hypothesis=6.114.0=pyha770c72_0\n  - icu=75.1=he02047a_0\n  - identify=2.6.1=pyhd8ed1ab_0\n  - idna=3.10=pyhd8ed1ab_0\n  - importlib-metadata=8.5.0=pyha770c72_0\n  - importlib-resources=6.4.5=pyhd8ed1ab_0\n  - importlib_metadata=8.5.0=hd8ed1ab_0\n  - importlib_resources=6.4.5=pyhd8ed1ab_0\n  - iniconfig=2.0.0=pyhd8ed1ab_0\n  - iris=3.10.0=pyha770c72_1\n  - jasper=4.2.4=h536e39c_0\n  - jinja2=3.1.4=pyhd8ed1ab_0\n  - jmespath=1.0.1=pyhd8ed1ab_0\n  - json-c=0.18=h6688a6e_0\n  - jsonschema=4.23.0=pyhd8ed1ab_0\n  - jsonschema-specifications=2024.10.1=pyhd8ed1ab_0\n  - jupyter_core=5.7.2=pyh31011fe_1\n  - keyutils=1.6.1=h166bdaf_0\n  - kiwisolver=1.4.7=py310h3788b33_0\n  - krb5=1.21.3=h659f571_0\n  - lazy-object-proxy=1.10.0=py310h2372a71_0\n  - lcms2=2.16=hb7c19ff_0\n  - ld_impl_linux-64=2.43=h712a8e2_1\n  - lerc=4.0.0=h27087fc_0\n  - libabseil=20240722.0=cxx17_h5888daf_1\n  - libaec=1.1.3=h59595ed_0\n  - libarchive=3.7.4=hfca40fe_0\n  - libarrow=17.0.0=h364f349_19_cpu\n  - libarrow-acero=17.0.0=h5888daf_19_cpu\n  - libarrow-dataset=17.0.0=h5888daf_19_cpu\n  - libarrow-substrait=17.0.0=he882d9a_19_cpu\n  - libblas=3.9.0=24_linux64_openblas\n  - libbrotlicommon=1.1.0=hb9d3cd8_2\n  - libbrotlidec=1.1.0=hb9d3cd8_2\n  - libbrotlienc=1.1.0=hb9d3cd8_2\n  - libcblas=3.9.0=24_linux64_openblas\n  - libcdms=3.1.2=h0cec689_129\n  - libcf=1.0.3=py310h1588dd5_117\n  - libcrc32c=1.1.2=h9c3ff4c_0\n  - libcurl=8.10.1=hbbe4b11_0\n  - libdeflate=1.22=hb9d3cd8_0\n  - libedit=3.1.20191231=he28a2e2_2\n  - libev=4.33=hd590300_2\n  - libevent=2.1.12=hf998b51_1\n  - libexpat=2.6.3=h5888daf_0\n  - libffi=3.4.2=h7f98852_5\n  - libgcc=14.1.0=h77fa898_1\n  - libgcc-ng=14.1.0=h69a702a_1\n  - libgdal-core=3.9.2=hd5b9bfb_7\n  - libgfortran=14.1.0=h69a702a_1\n  - libgfortran-ng=14.1.0=h69a702a_1\n  - libgfortran5=14.1.0=hc5f4f2c_1\n  - libglu=9.0.0=ha6d2627_1004\n  - libgomp=14.1.0=h77fa898_1\n  - libgoogle-cloud=2.29.0=h438788a_1\n  - libgoogle-cloud-storage=2.29.0=h0121fbd_1\n  - libgrpc=1.65.5=hf5c653b_0\n  - libiconv=1.17=hd590300_2\n  - libjpeg-turbo=3.0.0=hd590300_1\n  - libkml=1.3.0=hf539b9f_1021\n  - liblapack=3.9.0=24_linux64_openblas\n  - libllvm14=14.0.6=hcd5def8_4\n  - libnetcdf=4.9.2=nompi_h135f659_114\n  - libnghttp2=1.58.0=h47da74e_1\n  - libnsl=2.0.1=hd590300_0\n  - libopenblas=0.3.27=pthreads_hac2b453_1\n  - libparquet=17.0.0=h6bd9018_19_cpu\n  - libpng=1.6.44=hadc24fc_0\n  - libprotobuf=5.27.5=h5b01275_2\n  - libre2-11=2023.11.01=hbbce691_0\n  - librttopo=1.1.0=h97f6797_17\n  - libspatialite=5.1.0=h1b4f908_11\n  - libsqlite=3.46.1=hadc24fc_0\n  - libssh2=1.11.0=h0841786_0\n  - libstdcxx=14.1.0=hc0a3c3a_1\n  - libstdcxx-ng=14.1.0=h4852527_1\n  - libthrift=0.21.0=h0e7cc3e_0\n  - libtiff=4.7.0=he137b08_1\n  - libudunits2=2.2.28=h40f5838_3\n  - libutf8proc=2.8.0=h166bdaf_0\n  - libuuid=2.38.1=h0b41bf4_0\n  - libwebp-base=1.4.0=hd590300_0\n  - libxcb=1.17.0=h8a09558_0\n  - libxcrypt=4.4.36=hd590300_1\n  - libxml2=2.12.7=he7c6b58_4\n  - libxslt=1.1.39=h76b75d6_0\n  - libzip=1.11.1=hf83b1b0_0\n  - libzlib=1.3.1=hb9d3cd8_2\n  - llvmlite=0.43.0=py310h1a6248f_1\n  - locket=1.0.0=pyhd8ed1ab_0\n  - lxml=5.3.0=py310h6ee67d5_1\n  - lz4=4.3.3=py310hb259640_1\n  - lz4-c=1.9.4=hcb278e6_0\n  - lzo=2.10=hd590300_1001\n  - markupsafe=3.0.1=py310h89163eb_1\n  - matplotlib-base=3.9.2=py310h68603db_1\n  - minizip=4.0.7=h401b404_0\n  - msgpack-python=1.1.0=py310h3788b33_0\n  - multidict=6.1.0=py310ha75aee5_0\n  - munkres=1.1.4=pyh9f0ad1d_0\n  - nbformat=5.10.4=pyhd8ed1ab_0\n  - nc-time-axis=1.4.1=pyhd8ed1ab_0\n  - nceplibs-g2c=1.9.0=ha39ef1c_1\n  - ncurses=6.5=he02047a_1\n  - netcdf-fortran=4.6.1=nompi_h22f9119_106\n  - netcdf4=1.7.1=nompi_py310h9f0ad05_102\n  - nodeenv=1.9.1=pyhd8ed1ab_0\n  - nomkl=1.0=h5ca1d4c_0\n  - numba=0.60.0=py310h5dc88bb_0\n  - numcodecs=0.13.0=py310h0cd1892_0\n  - numexpr=2.10.0=py310h3ea09b0_100\n  - openblas=0.3.27=pthreads_h9eca1d5_1\n  - openjpeg=2.5.2=h488ebb8_0\n  - openssl=3.3.2=hb9d3cd8_0\n  - orc=2.0.2=h690cf93_1\n  - partd=1.4.2=pyhd8ed1ab_0\n  - patsy=0.5.6=pyhd8ed1ab_0\n  - pcre2=10.44=hba22ea6_2\n  - pillow=10.4.0=py310he228d35_1\n  - pint=0.24.3=pyhd8ed1ab_0\n  - pip=24.2=pyh8b19718_1\n  - pkgutil-resolve-name=1.3.10=pyhd8ed1ab_1\n  - platformdirs=4.3.6=pyhd8ed1ab_0\n  - pluggy=1.5.0=pyhd8ed1ab_0\n  - pooch=1.8.2=pyhd8ed1ab_0\n  - pre-commit=4.0.1=pyha770c72_0\n  - proj=9.5.0=h12925eb_0\n  - pseudonetcdf=3.4.0=pyhd8ed1ab_0\n  - psutil=6.0.0=py310ha75aee5_1\n  - pthread-stubs=0.4=hb9d3cd8_1002\n  - pyarrow=17.0.0=py310hb7f781d_1\n  - pyarrow-core=17.0.0=py310h85d79f8_1_cpu\n  - pyarrow-hotfix=0.6=pyhd8ed1ab_0\n  - pycparser=2.22=pyhd8ed1ab_0\n  - pydap=3.5=pyhd8ed1ab_0\n  - pyparsing=3.1.4=pyhd8ed1ab_0\n  - pyproj=3.7.0=py310h2e9f774_0\n  - pyshp=2.3.1=pyhd8ed1ab_0\n  - pysocks=1.7.1=pyha2e5f31_6\n  - pytest-cov=5.0.0=pyhd8ed1ab_0\n  - pytest-env=1.1.5=pyhd8ed1ab_0\n  - pytest-xdist=3.6.1=pyhd8ed1ab_0\n  - python=3.10.15=h4a871b0_1_cpython\n  - python-eccodes=2.37.0=py310hf462985_0\n  - python-fastjsonschema=2.20.0=pyhd8ed1ab_0\n  - python-tzdata=2024.2=pyhd8ed1ab_0\n  - python-xxhash=3.5.0=py310ha75aee5_1\n  - python_abi=3.10=5_cp310\n  - pyyaml=6.0.2=py310ha75aee5_1\n  - qhull=2020.2=h434a139_5\n  - rasterio=1.4.1=py310hf6c6cbe_0\n  - re2=2023.11.01=h77b4e00_0\n  - readline=8.2=h8228510_1\n  - referencing=0.35.1=pyhd8ed1ab_0\n  - requests=2.32.3=pyhd8ed1ab_0\n  - rpds-py=0.20.0=py310h505e2c1_1\n  - s2n=1.5.4=h1380c3d_0\n  - s3transfer=0.10.3=pyhd8ed1ab_0\n  - seaborn=0.13.2=hd8ed1ab_2\n  - seaborn-base=0.13.2=pyhd8ed1ab_2\n  - shapely=2.0.6=py310had3dfd6_2\n  - six=1.16.0=pyh6c4a22f_0\n  - snappy=1.2.1=ha2e4443_0\n  - snuggs=1.4.7=pyhd8ed1ab_1\n  - sortedcontainers=2.4.0=pyhd8ed1ab_0\n  - soupsieve=2.5=pyhd8ed1ab_1\n  - sparse=0.15.4=pyh267e887_1\n  - sqlite=3.46.1=h9eae976_0\n  - statsmodels=0.14.4=py310hf462985_0\n  - tblib=3.0.0=pyhd8ed1ab_0\n  - tk=8.6.13=noxft_h4845f30_101\n  - toml=0.10.2=pyhd8ed1ab_0\n  - tomli=2.0.2=pyhd8ed1ab_0\n  - toolz=1.0.0=pyhd8ed1ab_0\n  - tornado=6.4.1=py310ha75aee5_1\n  - traitlets=5.14.3=pyhd8ed1ab_0\n  - typing-extensions=4.12.2=hd8ed1ab_0\n  - typing_extensions=4.12.2=pyha770c72_0\n  - tzdata=2024b=hc8b5060_0\n  - udunits2=2.2.28=h40f5838_3\n  - ukkonen=1.0.1=py310h3788b33_5\n  - unicodedata2=15.1.0=py310h2372a71_0\n  - uriparser=0.9.8=hac33072_0\n  - urllib3=2.2.3=pyhd8ed1ab_0\n  - virtualenv=20.26.6=pyhd8ed1ab_0\n  - webob=1.8.8=pyhd8ed1ab_0\n  - wheel=0.44.0=pyhd8ed1ab_0\n  - wrapt=1.16.0=py310ha75aee5_1\n  - xerces-c=3.2.5=h988505b_2\n  - xorg-libx11=1.8.10=h4f16b4b_0\n  - xorg-libxau=1.0.11=hb9d3cd8_1\n  - xorg-libxdmcp=1.1.5=hb9d3cd8_0\n  - xorg-libxext=1.3.6=hb9d3cd8_0\n  - xorg-libxfixes=6.0.1=hb9d3cd8_0\n  - xorg-libxi=1.8.2=hb9d3cd8_0\n  - xorg-xextproto=7.3.0=hb9d3cd8_1004\n  - xorg-xorgproto=2024.1=hb9d3cd8_1\n  - xxhash=0.8.2=hd590300_0\n  - xyzservices=2024.9.0=pyhd8ed1ab_0\n  - xz=5.2.6=h166bdaf_0\n  - yaml=0.2.5=h7f98852_2\n  - yarl=1.13.1=py310ha75aee5_0\n  - zarr=2.18.3=pyhd8ed1ab_0\n  - zict=3.0.0=pyhd8ed1ab_0\n  - zipp=3.20.2=pyhd8ed1ab_0\n  - zlib=1.3.1=hb9d3cd8_2\n  - zstandard=0.23.0=py310ha39cb0e_1\n  - zstd=1.5.6=ha6fb4c9_0\n  - pip:\n      - dask==2022.8.1\n      - numbagg==0.8.2\n      - numpy==1.23.0\n      - packaging==23.1\n      - pandas==1.5.3\n      - pytest==7.4.0\n      - python-dateutil==2.8.2\n      - pytz==2023.3\n      - scipy==1.11.1\n      - setuptools==68.0.0\nprefix: /opt/miniconda3/envs/testbed\n"
+      }
+    },
+    {
+      "instance_id": "django__django-11749",
+      "repo": "django/django",
+      "base_commit": "350123f38c2b6217c38d70bfbd924a9ba3df1289",
+      "version": "3.0",
+      "problem_statement": "call_command fails when argument of required mutually exclusive group is passed in kwargs.\nDescription\n\t\nThis error \ndjango.core.management.base.CommandError: Error: one of the arguments --shop-id --shop is required\nis raised when I run \ncall_command('my_command', shop_id=1)\nthe argument 'shop_id' is part of a required mutually exclusive group:\nshop = parser.add_mutually_exclusive_group(required=True)\nshop.add_argument('--shop-id', nargs='?', type=int, default=None, dest='shop_id')\nshop.add_argument('--shop', nargs='?', type=str, default=None, dest='shop_name')\nHowever, everything is fine when I call this command in this way:\ncall_command('my_command, '--shop-id=1')\nIn django sources I found that only those keyword arguments of call_command are passed to the parser that are defined as required:\n# Any required arguments which are passed in via '**options' must be passed\n# to parse_args().\nparse_args += [\n\t'{}={}'.format(min(opt.option_strings), arg_options[opt.dest])\n\tfor opt in parser._actions if opt.required and opt.dest in options\n]\nbut in this special case both of them individually are not required, they are actually part of a group that is required. And the code of call_command does nothing with groups defined in the parser.\n",
+      "recipe": {
+        "python": "3.6",
+        "packages": "requirements.txt",
+        "install": "python -m pip install -e .",
+        "repo_setup": "",
+        "cached_environment_yml": "name: testbed\nchannels:\n  - defaults\n  - conda-forge\ndependencies:\n  - _libgcc_mutex=0.1=main\n  - _openmp_mutex=5.1=1_gnu\n  - ca-certificates=2024.9.24=h06a4308_0\n  - certifi=2021.5.30=py36h06a4308_0\n  - ld_impl_linux-64=2.40=h12ee557_0\n  - libffi=3.3=he6710b0_2\n  - libgcc-ng=11.2.0=h1234567_1\n  - libgomp=11.2.0=h1234567_1\n  - libstdcxx-ng=11.2.0=h1234567_1\n  - ncurses=6.4=h6a678d5_0\n  - openssl=1.1.1w=h7f8727e_0\n  - pip=21.2.2=py36h06a4308_0\n  - python=3.6.13=h12debd9_1\n  - readline=8.2=h5eee18b_0\n  - setuptools=58.0.4=py36h06a4308_0\n  - sqlite=3.45.3=h5eee18b_0\n  - tk=8.6.14=h39e8969_0\n  - wheel=0.37.1=pyhd3eb1b0_0\n  - xz=5.4.6=h5eee18b_1\n  - zlib=1.2.13=h5eee18b_1\n  - pip:\n      - aiohttp==3.8.6\n      - aiosignal==1.2.0\n      - argon2-cffi==21.3.0\n      - argon2-cffi-bindings==21.2.0\n      - asgiref==3.4.1\n      - async-timeout==4.0.2\n      - asynctest==0.13.0\n      - attrs==22.2.0\n      - bcrypt==4.0.1\n      - cffi==1.15.1\n      - charset-normalizer==2.0.12\n      - dataclasses==0.8\n      - docutils==0.18.1\n      - frozenlist==1.2.0\n      - geoip2==4.6.0\n      - idna==3.10\n      - idna-ssl==1.1.0\n      - jinja2==3.0.3\n      - markupsafe==2.0.1\n      - maxminddb==2.2.0\n      - multidict==5.2.0\n      - numpy==1.19.5\n      - pillow==8.4.0\n      - pycparser==2.21\n      - pylibmc==1.6.3\n      - python-memcached==1.62\n      - pytz==2024.2\n      - pywatchman==1.4.1\n      - pyyaml==6.0.1\n      - requests==2.27.1\n      - selenium==3.141.0\n      - sqlparse==0.4.4\n      - tblib==1.7.0\n      - typing-extensions==4.1.1\n      - urllib3==1.26.20\n      - yarl==1.7.2\nprefix: /opt/miniconda3/envs/testbed\n"
+      }
+    },
+    {
+      "instance_id": "django__django-15957",
+      "repo": "django/django",
+      "base_commit": "f387d024fc75569d2a4a338bfda76cc2f328f627",
+      "version": "4.2",
+      "problem_statement": "Prefetch objects don't work with slices\nDescription\n\t\n​Prefetch() objects does not work with sliced querysets. For example the following code results in AssertionError: Cannot filter a query once a slice has been taken.:\nCategory.objects.prefetch_related(Prefetch(\n\t'post_set',\n\tqueryset=Post.objects.all()[:3],\n\tto_attr='example_posts',\n))\nThis behavior is also mentioned in ​this StackOverflow answer. On the other hand it does not seem to be documented in Django Docs.\nWhy is it needed?\nMy use case seems to be a common one: I want to display a list of categories while displaying couple of example objects from each category next to it. If I'm not mistaken there isn't currently an efficient way of doing this. Prefetching without slicing would prefetch all objects (and there may be thousands of them) instead of the three examples that are needed.\n",
+      "recipe": {
+        "python": "3.9",
+        "packages": "requirements.txt",
+        "install": "python -m pip install -e .",
+        "repo_setup": "",
+        "cached_environment_yml": "name: testbed\nchannels:\n  - defaults\n  - conda-forge\ndependencies:\n  - _libgcc_mutex=0.1=main\n  - _openmp_mutex=5.1=1_gnu\n  - ca-certificates=2024.9.24=h06a4308_0\n  - ld_impl_linux-64=2.40=h12ee557_0\n  - libffi=3.4.4=h6a678d5_1\n  - libgcc-ng=11.2.0=h1234567_1\n  - libgomp=11.2.0=h1234567_1\n  - libstdcxx-ng=11.2.0=h1234567_1\n  - ncurses=6.4=h6a678d5_0\n  - openssl=3.0.15=h5eee18b_0\n  - pip=24.2=py39h06a4308_0\n  - python=3.9.20=he870216_1\n  - readline=8.2=h5eee18b_0\n  - setuptools=75.1.0=py39h06a4308_0\n  - sqlite=3.45.3=h5eee18b_0\n  - tk=8.6.14=h39e8969_0\n  - wheel=0.44.0=py39h06a4308_0\n  - xz=5.4.6=h5eee18b_1\n  - zlib=1.2.13=h5eee18b_1\n  - pip:\n      - aiohappyeyeballs==2.4.3\n      - aiohttp==3.10.9\n      - aiosignal==1.3.1\n      - aiosmtpd==1.4.6\n      - argon2-cffi==23.1.0\n      - argon2-cffi-bindings==21.2.0\n      - asgiref==3.8.1\n      - async-timeout==4.0.3\n      - atpublic==5.0\n      - attrs==24.2.0\n      - bcrypt==4.2.0\n      - black==24.10.0\n      - certifi==2024.8.30\n      - cffi==1.17.1\n      - charset-normalizer==3.4.0\n      - click==8.1.7\n      - docutils==0.21.2\n      - exceptiongroup==1.2.2\n      - frozenlist==1.4.1\n      - geoip2==4.8.0\n      - h11==0.14.0\n      - idna==3.10\n      - jinja2==3.1.4\n      - markupsafe==3.0.1\n      - maxminddb==2.6.2\n      - multidict==6.1.0\n      - mypy-extensions==1.0.0\n      - numpy==2.0.2\n      - outcome==1.3.0.post0\n      - packaging==24.1\n      - pathspec==0.12.1\n      - pillow==10.4.0\n      - platformdirs==4.3.6\n      - propcache==0.2.0\n      - pycparser==2.22\n      - pylibmc==1.6.3\n      - pymemcache==4.0.0\n      - pysocks==1.7.1\n      - pytz==2024.2\n      - pywatchman==2.0.0\n      - pyyaml==6.0.2\n      - redis==5.1.1\n      - requests==2.32.3\n      - selenium==4.25.0\n      - sniffio==1.3.1\n      - sortedcontainers==2.4.0\n      - sqlparse==0.5.1\n      - tblib==3.0.0\n      - tomli==2.0.2\n      - trio==0.26.2\n      - trio-websocket==0.11.1\n      - typing-extensions==4.12.2\n      - tzdata==2024.2\n      - urllib3==2.2.3\n      - websocket-client==1.8.0\n      - wsproto==1.2.0\n      - yarl==1.14.0\nprefix: /opt/miniconda3/envs/testbed\n"
+      }
+    },
+    {
+      "instance_id": "django__django-15382",
+      "repo": "django/django",
+      "base_commit": "770d3e6a4ce8e0a91a9e27156036c1985e74d4a3",
+      "version": "4.1",
+      "problem_statement": "filter on exists-subquery with empty queryset removes whole WHERE block\nDescription\n\t \n\t\t(last modified by Tobias Bengfort)\n\t \n>>> qs = MyModel.objects.filter(~models.Exists(MyModel.objects.none()), name='test')\n>>> qs\n<QuerySet []>\n>>> print(qs.query)\nEmptyResultSet\nWith django-debug-toolbar I can still see the query, but there WHERE block is missing completely.\nThis seems to be very similar to #33018.\n",
+      "recipe": {
+        "python": "3.9",
+        "packages": "requirements.txt",
+        "install": "python -m pip install -e .",
+        "repo_setup": "",
+        "cached_environment_yml": "name: testbed\nchannels:\n  - defaults\n  - conda-forge\ndependencies:\n  - _libgcc_mutex=0.1=main\n  - _openmp_mutex=5.1=1_gnu\n  - ca-certificates=2024.9.24=h06a4308_0\n  - ld_impl_linux-64=2.40=h12ee557_0\n  - libffi=3.4.4=h6a678d5_1\n  - libgcc-ng=11.2.0=h1234567_1\n  - libgomp=11.2.0=h1234567_1\n  - libstdcxx-ng=11.2.0=h1234567_1\n  - ncurses=6.4=h6a678d5_0\n  - openssl=3.0.15=h5eee18b_0\n  - pip=24.2=py39h06a4308_0\n  - python=3.9.20=he870216_1\n  - readline=8.2=h5eee18b_0\n  - setuptools=75.1.0=py39h06a4308_0\n  - sqlite=3.45.3=h5eee18b_0\n  - tk=8.6.14=h39e8969_0\n  - wheel=0.44.0=py39h06a4308_0\n  - xz=5.4.6=h5eee18b_1\n  - zlib=1.2.13=h5eee18b_1\n  - pip:\n      - aiohappyeyeballs==2.4.3\n      - aiohttp==3.10.9\n      - aiosignal==1.3.1\n      - aiosmtpd==1.4.6\n      - argon2-cffi==23.1.0\n      - argon2-cffi-bindings==21.2.0\n      - asgiref==3.8.1\n      - async-timeout==4.0.3\n      - atpublic==5.0\n      - attrs==24.2.0\n      - bcrypt==4.2.0\n      - black==24.10.0\n      - certifi==2024.8.30\n      - cffi==1.17.1\n      - charset-normalizer==3.4.0\n      - click==8.1.7\n      - docutils==0.21.2\n      - exceptiongroup==1.2.2\n      - frozenlist==1.4.1\n      - geoip2==4.8.0\n      - h11==0.14.0\n      - idna==3.10\n      - jinja2==3.1.4\n      - markupsafe==3.0.1\n      - maxminddb==2.6.2\n      - multidict==6.1.0\n      - mypy-extensions==1.0.0\n      - numpy==2.0.2\n      - outcome==1.3.0.post0\n      - packaging==24.1\n      - pathspec==0.12.1\n      - pillow==10.4.0\n      - platformdirs==4.3.6\n      - propcache==0.2.0\n      - pycparser==2.22\n      - pylibmc==1.6.3\n      - pymemcache==4.0.0\n      - pysocks==1.7.1\n      - pytz==2024.2\n      - pywatchman==2.0.0\n      - pyyaml==6.0.2\n      - redis==5.1.1\n      - requests==2.32.3\n      - selenium==4.25.0\n      - sniffio==1.3.1\n      - sortedcontainers==2.4.0\n      - sqlparse==0.5.1\n      - tblib==3.0.0\n      - tomli==2.0.2\n      - trio==0.26.2\n      - trio-websocket==0.11.1\n      - typing-extensions==4.12.2\n      - tzdata==2024.2\n      - urllib3==2.2.3\n      - websocket-client==1.8.0\n      - wsproto==1.2.0\n      - yarl==1.14.0\nprefix: /opt/miniconda3/envs/testbed\n"
+      }
+    },
+    {
+      "instance_id": "django__django-15467",
+      "repo": "django/django",
+      "base_commit": "e0442a628eb480eac6a7888aed5a86f83499e299",
+      "version": "4.1",
+      "problem_statement": "ModelAdmin with defined radio_fields override empty_label\nDescription\n\t\nModelAdmin drops my \"empty_label\" and set \"default_empty_label\". For example:\nclass MyModelAdmin(ModelAdmin):\n\tradio_fields = 'myfield',\n\tdef formfield_for_foreignkey(self, db_field, *args, **kwargs):\n\t\tif db_field.name == 'myfield':\n\t\t\tkwargs['empty_label'] = \"I WANT TO SET MY OWN EMPTY LABEL\"\n\t\treturn super().formfield_for_foreignkey(db_field, *args, **kwargs)\nYou get never the \"I WANT TO SET MY OWN EMPTY LABEL\"\nHow to fix it:\nIn django\\contrib\\admin\\options.py, row 234:\nkwargs['empty_label'] = _('None') if db_field.blank else None\nShould be changed on:\nkwargs['empty_label'] = (kwargs.get('empty_label') or _('None')) if db_field.blank else None\n",
+      "recipe": {
+        "python": "3.9",
+        "packages": "requirements.txt",
+        "install": "python -m pip install -e .",
+        "repo_setup": "",
+        "cached_environment_yml": "name: testbed\nchannels:\n  - defaults\n  - conda-forge\ndependencies:\n  - _libgcc_mutex=0.1=main\n  - _openmp_mutex=5.1=1_gnu\n  - ca-certificates=2024.9.24=h06a4308_0\n  - ld_impl_linux-64=2.40=h12ee557_0\n  - libffi=3.4.4=h6a678d5_1\n  - libgcc-ng=11.2.0=h1234567_1\n  - libgomp=11.2.0=h1234567_1\n  - libstdcxx-ng=11.2.0=h1234567_1\n  - ncurses=6.4=h6a678d5_0\n  - openssl=3.0.15=h5eee18b_0\n  - pip=24.2=py39h06a4308_0\n  - python=3.9.20=he870216_1\n  - readline=8.2=h5eee18b_0\n  - setuptools=75.1.0=py39h06a4308_0\n  - sqlite=3.45.3=h5eee18b_0\n  - tk=8.6.14=h39e8969_0\n  - wheel=0.44.0=py39h06a4308_0\n  - xz=5.4.6=h5eee18b_1\n  - zlib=1.2.13=h5eee18b_1\n  - pip:\n      - aiohappyeyeballs==2.4.3\n      - aiohttp==3.10.9\n      - aiosignal==1.3.1\n      - aiosmtpd==1.4.6\n      - argon2-cffi==23.1.0\n      - argon2-cffi-bindings==21.2.0\n      - asgiref==3.8.1\n      - async-timeout==4.0.3\n      - atpublic==5.0\n      - attrs==24.2.0\n      - bcrypt==4.2.0\n      - black==24.10.0\n      - certifi==2024.8.30\n      - cffi==1.17.1\n      - charset-normalizer==3.4.0\n      - click==8.1.7\n      - docutils==0.21.2\n      - exceptiongroup==1.2.2\n      - frozenlist==1.4.1\n      - geoip2==4.8.0\n      - h11==0.14.0\n      - idna==3.10\n      - jinja2==3.1.4\n      - markupsafe==3.0.1\n      - maxminddb==2.6.2\n      - multidict==6.1.0\n      - mypy-extensions==1.0.0\n      - numpy==2.0.2\n      - outcome==1.3.0.post0\n      - packaging==24.1\n      - pathspec==0.12.1\n      - pillow==10.4.0\n      - platformdirs==4.3.6\n      - propcache==0.2.0\n      - pycparser==2.22\n      - pylibmc==1.6.3\n      - pymemcache==4.0.0\n      - pysocks==1.7.1\n      - pytz==2024.2\n      - pywatchman==2.0.0\n      - pyyaml==6.0.2\n      - redis==5.1.1\n      - requests==2.32.3\n      - selenium==4.25.0\n      - sniffio==1.3.1\n      - sortedcontainers==2.4.0\n      - sqlparse==0.5.1\n      - tblib==3.0.0\n      - tomli==2.0.2\n      - trio==0.26.2\n      - trio-websocket==0.11.1\n      - typing-extensions==4.12.2\n      - tzdata==2024.2\n      - urllib3==2.2.3\n      - websocket-client==1.8.0\n      - wsproto==1.2.0\n      - yarl==1.14.0\nprefix: /opt/miniconda3/envs/testbed\n"
+      }
+    }
+  ],
+  "purpose": "exploratory_paired_harness_benefit_lower_model_tier",
+  "source_plan_sha256": "8e46676a0b79150c84a9fca745bed3638dd1f4f6e8bad6df4ca62405609affe7",
+  "subset_seed": "swe-v31-paired12-20260923",
+  "subset_rule": "sort by SHA256(seed + NUL + instance_id), take first 12; no outcome filtering",
+  "plan_sha256": "4047fee202b51df2e89cbb7fb0c1b2095cfb26d092d6b2b939e91351692aa266"
+}

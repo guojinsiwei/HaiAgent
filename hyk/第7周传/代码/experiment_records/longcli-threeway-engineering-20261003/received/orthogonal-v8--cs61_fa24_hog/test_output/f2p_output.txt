@@ -1,0 +1,158 @@
+=====================================================================
+Assignment: Project 1: Hog
+OK, version v1.18.1
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Scoring tests
+
+---------------------------------------------------------------------
+Question 0
+    Passed: 1
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Question 1
+    Passed: 3
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Question 2
+    Passed: 1
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Question 3
+    Passed: 2
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Question 4 > Suite 1 > Case 1
+
+>>> from hog import *
+>>> import tests.construct_check as test
+>>> num_factors(1)
+NameError: name 'num_factors' is not defined
+
+# Error: expected
+#     1
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     NameError: name 'num_factors' is not defined
+
+Run only this test case with "python3 ok -q 04 --suite 1 --case 1"
+---------------------------------------------------------------------
+Question 4
+    Passed: 0
+    Failed: 1
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Question 5 > Suite 2 > Case 1
+
+>>> # Fuzz Testing
+>>> # Plays a lot of random games, and calculates a secret value.
+>>> # Failing this test means something is wrong, but you should
+>>> # look at other tests to see where the problem might be.
+>>> # Hint: make sure you're only calling update once per turn!
+>>> #
+>>> import hog, importlib
+>>> # importlib.reload(hog)
+>>> import tests.play_utils
+>>> turns = tests.play_utils.describe_game(hog, test_number=69484, score0=15, score1=10, goal=32, update=hog.simple_update)
+AttributeError: module 'hog' has no attribute 'simple_update'. Did you mean: 'simple_strategy'?
+
+# Error: expected
+
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     AttributeError: module 'hog' has no attribute 'simple_update'
+
+Run only this test case with "python3 ok -q 05 --suite 2 --case 1"
+---------------------------------------------------------------------
+Question 5
+    Passed: 0
+    Failed: 1
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Question 6
+    Passed: 1
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Question 7
+    Passed: 1
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Question 8
+    Passed: 2
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Question 9
+    Passed: 2
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Question 10
+    Passed: 1
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Question 11 > Suite 1 > Case 3
+
+>>> from hog import *
+>>> sus_strategy(53, 60, threshold=14, num_rolls=2)
+2
+
+# Error: expected
+#     0
+# but got
+#     2
+
+Run only this test case with "python3 ok -q 11 --suite 1 --case 3"
+---------------------------------------------------------------------
+Question 11
+    Passed: 0
+    Failed: 1
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Question 12
+    Passed: 0
+    Failed: 0
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Point breakdown
+    Question 0: 0.0/0
+    Question 1: 2.0/2
+    Question 2: 2.0/2
+    Question 3: 2.0/2
+    Question 4: 0.0/2
+    Question 5: 0.0/4
+    Question 6: 2.0/2
+    Question 7: 2.0/2
+    Question 8: 2.0/2
+    Question 9: 2.0/2
+    Question 10: 2.0/2
+    Question 11: 0.0/2
+    Question 12: 0.0/0
+
+Score:
+    Total: 16.0
+
+Cannot backup when running ok with --local.

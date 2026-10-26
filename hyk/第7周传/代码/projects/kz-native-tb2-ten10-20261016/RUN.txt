@@ -1,0 +1,32 @@
+Terminal-Bench 2.0 原生 KZ：独立 10 次试验
+用户授权：新增独立总上限 40 元，每次最多 4 元。TaoToken Token Plan 已购额度。
+费用与现有 KZDSH / DSH 的 80 元账本分离；采用同一冻结峰值费率、调用前保守预留，不等同于 Credits 精确兑换。
+每题 120 次实际 HTTP / 180 次工具 / 45 分钟。四角色、纠错、重试均计入。
+并发 1，无自动付费重跑。单题故障独立记录后继续后续题。
+
+原生算法：experiment_records/tb4-runtime-repair-20261015/native 的 KZ2.0 repair1 Python 循环。
+保留原生执行器、Action/Advisor/Monitor/Critic、任务内记忆和正交机制；不接入 DSH 求解循环。
+预算、上下文、输出限制和 TB2 生命周期在本次独立部署中适配。
+模型 deepseek-flash；thinking off；temperature 0；上下文额度 128000；输出最多 16384。
+只使用 TaoToken；不调用 GPT，不创建 GPT 子代理或定时唤醒。
+
+题目、官方评分器、资源配置、任务顺序，与 projects/kz-dsh-tb2-paired10-20261016 相同。
+固定提交 69671fbaac6d67a7ef0dfec016cc38a64ef7a77c。
+build-cython-ext, chess-best-move, configure-git-webserver, fix-code-vulnerability,
+log-summary-date-ranges, polyglot-c-py, qemu-alpine-ssh, qemu-startup, regex-log, sqlite-with-gcov。
+独立容器和日志；已有环境指纹锁复制至新轮，阻止不一致镜像进入付费阶段。
+这十题是官方 sample 名单、完整 TB2.0 内容，不是完整 89 题榜单。
+
+新增验收：实际 Harbor CLI 的 agent.name / import_path 两种标识均应用正确时限；
+运行原生脚本循环后强制终止模拟求解进程，验证私有日志交接、官方评分、清理。
+历史回归仍有 5 个已知旧协议预期失败，要求与冻结记录一致，无新增失败；不宣称历史套件全绿。
+
+解释比较：原生 KZ 与 DSH 执行器不同，是完整 Harness 比较。
+原 KZDSH 第一题被 900 秒框架超时中断且无有效评分，不能把缺分算成官方判错。
+旧组结果保留，不静默重跑或覆盖。
+
+服务器 /mnt/sdb/home/lizh639/tb2-native-kz-ten10-20261016。
+验收完成后通过 secure_start.py 隐藏输入密钥启动；密钥走 SSH 标准输入、不写入文件。
+
+运行时：官方 python-build-standalone 20261013，CPython 3.12.15 Linux x86_64。安装在 /opt/kz-python，控制器使用绝对路径；不替换系统 Python。
+下载来源和官方 SHA256 校验记录在 audit/python-source.json；已验收归档保存在服务器 python-runtime.tar.gz。

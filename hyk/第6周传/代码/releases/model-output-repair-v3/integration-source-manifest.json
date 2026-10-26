@@ -1,0 +1,7 @@
+{
+  "outcomes.py": "dc31efdf2c32872efd0c41e77161ecf8fcada9c15e23aecc46f39c0bee22e8f0",
+  "supervisor.py": "9c8e8635d1bc278e4580c355990cbf7305279d896ab2ce5c8beba1aa58fb4ed4",
+  "test_outcomes.py": "04eba1f2c453382cf462362911b5be4f79b5083b79993d0022192e7585bdee23",
+  "test_supervisor.py": "a5ec55bed231999080a531db918e1a24d4cfe300a2f6ef13794a937d2b848a0d",
+  "transport.py": "d1dd5d54561a1cb82be99525b506bcc8b99df93ea2d5accee0bb47aaaf4ab6f3"
+}

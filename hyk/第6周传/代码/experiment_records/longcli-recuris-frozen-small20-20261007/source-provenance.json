@@ -1,0 +1,16 @@
+{
+  "handoff_archive_sha256": "c762036c0bacd137112a260f1ef541a3b469f9d6edf8e1f35966712b5a5447c2",
+  "handoff_files_verified": 54,
+  "paper": "https://arxiv.org/abs/2608.24876",
+  "author_reference_commit": "7d3745ab787b1206ccd981cb1511100476097266",
+  "handoff_modules_verbatim": true,
+  "shared_infrastructure": {
+    "client.py": "09be8482800ad0c200c48c0c6f25c14fe95225b9a9475468929f368096666d02",
+    "sandbox.py": "8f6b7fdddd52388cc63df077e881d5f427f2ba58459cbca54b83139ddf5bbcc6",
+    "command_driver.py": "14d9e9b292239b20d9be0088c7e4e4524770c3331d94defc065aec600e747fe0",
+    "safe_process.py": "bdd96fc6bb96f65c6d1096c1526e8dc0674a2b0862ef70b0b19aae1923c860c8",
+    "grade_one.py": "7ab1b3e18d97fd46a2efd01e748aab19d057d2797488ef76953a484431e622e2",
+    "grading_adapter.py": "103206984097e268155e78ba785103db4c6066a498193d2510cfd5d1884e49b7"
+  },
+  "experimental_mode_user_choice": "No official feedback; same configuration as other arms"
+}

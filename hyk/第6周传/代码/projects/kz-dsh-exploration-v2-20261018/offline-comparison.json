@@ -1,0 +1,59 @@
+{
+  "kind": "deterministic_policy_regression_comparison",
+  "model_calls": 0,
+  "benchmark_tasks_solved": 0,
+  "limitation": "Constructed policy-level cases grounded in observed failure patterns; these are not LLM task-success results.",
+  "baseline_passed": 3,
+  "candidate_passed": 8,
+  "total": 8,
+  "rows": [
+    {
+      "scenario": "related_failures_across_commands",
+      "expected": true,
+      "baseline": false,
+      "candidate": true
+    },
+    {
+      "scenario": "monitor_stall_with_successful_observations",
+      "expected": true,
+      "baseline": false,
+      "candidate": true
+    },
+    {
+      "scenario": "filename_cannot_support_content_equality",
+      "expected": "unknown",
+      "baseline": "supported",
+      "candidate": "unknown"
+    },
+    {
+      "scenario": "auxiliary_steps_end_exploration_window",
+      "expected": false,
+      "baseline": true,
+      "candidate": false
+    },
+    {
+      "scenario": "timeout_is_not_stable_failure_memory",
+      "expected": 0,
+      "baseline": 1,
+      "candidate": 0
+    },
+    {
+      "scenario": "repaired_original_check_remains_executable",
+      "expected": true,
+      "baseline": true,
+      "candidate": true
+    },
+    {
+      "scenario": "different_goals_do_not_aggregate",
+      "expected": false,
+      "baseline": false,
+      "candidate": false
+    },
+    {
+      "scenario": "two_format_errors_release_gate",
+      "expected": false,
+      "baseline": false,
+      "candidate": false
+    }
+  ]
+}

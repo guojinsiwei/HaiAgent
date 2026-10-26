@@ -1,0 +1,25 @@
+Terminal-Bench 2.0：KZ 对纯 DSH，10 题 / 20 次
+
+用户授权：独立全轮 80 元，每次最多 4 元；TaoToken 已购 Token Plan。
+金额按冻结峰值单价及用量保守估算，不代表套餐 Credits 的精确兑换。
+并发 1，题间交替先运行 DSH / KZ，每组每题只运行一次；无付费自动重试。
+同题独立容器、相同模型 deepseek-flash、thinking off、temperature 0、上下文 128000、输出上限 16384。
+单次包含全部角色成本，上限 120 次 HTTP 请求、180 次工具调用、45 分钟。
+单题超时、预算不足、服务错误只结束该次，继续后续题；全轮预算不足或人工停止才停止全轮。
+未知用量按完整预留金额计入保护账本，不释放额度。请求前预留，因此可能在 4 元之前停止。
+
+KZ 使用 evidence-control-3 / v0.3.2；保留逐项证据闭环、正确性来源检查、审查协议修复。
+纯 DSH 使用同版主解题器、工具、传输和预算保护，不加载 KZ 插件。
+没有 GPT 模型调用、GPT 子代理或定时唤醒。
+
+题目：官方 terminal-bench-sample@2.0 名单的十题；内容来自完整 terminal-bench@2.0 固定提交
+69671fbaac6d67a7ef0dfec016cc38a64ef7a77c。
+官方题目内容、环境资源和评分器不修改；自定义求解时限 45 分钟两组一致。
+名单：build-cython-ext, chess-best-move, configure-git-webserver, fix-code-vulnerability,
+log-summary-date-ranges, polyglot-c-py, qemu-alpine-ssh, qemu-startup, regex-log, sqlite-with-gcov。
+这是一轮小样本预算约束对照，不是完整 89 题榜单得分。
+
+启动：部署及无密钥验收成功后，secure_start.py 弹出隐藏输入窗口；仅在用户输入密钥并点击后启动。
+密钥通过 SSH 标准输入送入服务器进程，不写入本地文件、不显示在聊天中。
+服务器目录：/mnt/sdb/home/lizh639/tb2-kz-dsh-paired10-20261016
+原 TB4 已停止，旧轮账本与这轮完全分离。

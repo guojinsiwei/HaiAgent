@@ -1,0 +1,10 @@
+{
+  "total_concurrency": 6,
+  "per_arm": 2,
+  "preserve_old_children": true,
+  "only_transfer_pending": true,
+  "paid_tasks_not_repeated": true,
+  "shared_budget": "Original 600 CNY ledger and cumulative 4 CNY per arm/task",
+  "runtime_changed": false,
+  "solver_seconds": 2700
+}

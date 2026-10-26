@@ -1,0 +1,38 @@
+LHTB contrastive exploration: exact previous RAW twelve tasks, 2026-10-02.
+
+Two groups, one fresh trial per task/group, 24 official trials. No new RAW run.
+Historical RAW outcomes are background only, not pooled with this paired trial.
+Task rows, seeded order, benchmark commit and Docker image IDs/digests match the
+previous RAW twelve-task manifest. No outcome-based task selection/replacement.
+
+Common v8 candidate exactly matches the 135-test validated contrastive-v1 seal.
+A=evidence1: changed causal lever/discriminating evidence, conditional retry.
+B=orthogonal1: three declared dimensions + TF-IDF cosine hard gate >0.8.
+HAI route_search and stagnation_control are OFF; no HAI exploration algorithm.
+Both use the same memory features, semantic monitor, adviser, continuous CLI
+executor, source version, provider and cumulative budgets. No scripted failures
+or restricted microtool actions in these actual tasks. Natural CLI behavior.
+
+deepseek-flash, thinking disabled, temperature=0, actor max output 4096 tokens,
+600 task tool calls, 800 total logical model requests, adviser capacity 6;
+monitor/adviser requests, wire retries and local rejections are also audited.
+Original task-specific wall limits (1h/1.5h/3h) are retained; setup and official
+verification are separately bounded. Four parallel trial slots; arm ordering
+alternates within each task. Each trial gets a fresh isolated Docker state and
+fresh memory. No task restart/replay; infrastructure outcomes remain explicit.
+
+Official verifier reward is the outcome; actor submit, command exit zero, local
+check, memory count and similarity score are NOT task success. Original official
+same-conversation binary continuation remains enabled within cumulative budgets.
+Audit prompts, tool trajectories, rejection causes, memory exposure, official
+rewards, API usage, elapsed time and model/protocol failures separately.
+Do not claim novelty/three-axis semantic proof from nonempty fields or TF-IDF.
+
+Existing user-authorized disabled disk admission guard is retained. No prune or
+deletion of old experiment data. Cleanup only owned per-trial containers.
+
+Credential input: hidden local entry -> encrypted SSH stdin -> inherited anonymous
+pipes/process memory/host model-worker environment. No key in argv, disk/tmpfs
+files, logs or task containers. No reuse of another campaign's private key.
+If the in-memory guard dies, a new local entry is required; never recover a key
+from other workers or rerun an already attempted job.

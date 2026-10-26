@@ -1,0 +1,50 @@
+TB2.0 three-arm50 scoring repair and continuation
+Date: 2026-10-18 (Asia/Shanghai)
+Remote: /mnt/sdb/home/lizh639/tb2-three-arm50-scorefix-20261018
+
+Launched successfully around 15:50. Supervisor PID 854668.
+At 15:50:59 the controller reported running with six actual child processes,
+two per arm, all in free instance preflight. Twenty-one paid solver retries are
+queued after preflight; one historical DSH result is score-only and already done.
+
+Pre-launch evidence:
+- 10/10 affected task types completed real official grading with valid receipts.
+- 36 official test cases executed in total. Nine tasks used empty keyless solvers;
+  the tenth replayed the original DSH submission. Infrastructure acceptance does
+  not add benchmark passes from empty solvers.
+- 3 regression tests passed: reject invalid grading reports, preserve original
+  budget IDs and six-way/per-arm scheduling, forbid paid replay of finished solver.
+- All model runtime archives unchanged. Official tests and verifier limits unchanged.
+- Original submission recovered from exact read/edit logs: 362 lines, SHA256
+  6fc675095f946f96f5b81aab19ae7d588d77311a09a47100afbdf1b0cd5a1a5d.
+- DSH torch-pipeline-parallelism regrade completed: 1/3 tests passed, reward 0.
+  Original syntax and hook-check failures retained. Additional model calls: zero.
+- Paid solver filesystem snapshots are saved before verifier setup so future
+  grading-only failures can reuse the actual solver output.
+
+Scope by arm: native KZ 8 paid retries; KZDSH 7 paid retries; pure DSH 6 paid
+retries plus the one completed score-only repair. Do not run --launch again.
+
+Budget: original tb2-three-arm50-20261017/spending.sqlite, total 600 CNY and
+cumulative 4 CNY per original arm/task. No reset or refund of uncertain charges.
+Before launch: 7,671 requests, settled 286.634675 CNY, uncertain 3.096576 CNY,
+remaining 310.268749 CNY. Acceptance and regrading caused no new model charges.
+
+At launch, merged benchmark passes remained KZ 21/50, KZDSH 19/50, DSH 24/50.
+Valid grading counts were 42/50, 42/50, 44/50 respectively.
+
+Credential: existing TaoToken key copied through the authorized sidebar page,
+RSA-encrypted locally, sent via SSH stdin to server process memory. No plaintext
+key was written or displayed. Cipher/public-key handoff files removed, clipboard
+cleared. Existing token-plan endpoint and deepseek-flash model remain unchanged.
+
+Status: remote venv/bin/python status_scorefix.py
+Live receipts: health.json, admissions.json, per-trial result.json/lifecycle.json.
+Acceptance: acceptance-scoring.json. Frozen source: scorefix-seal.json.
+
+15:53:09 verification: actual concurrency remains six (two per arm). DSH
+mteb-leaderboard has entered paid solving; the other five are finishing instance
+preflight. First model usage settled successfully in the ORIGINAL ledger:
+settled 286.667159 CNY, reserved 0.387072, uncertain 3.096576, remaining 309.849193;
+halt_reason null. Docker free space 152.16 GiB. Deployment and real API/budget path
+are operational. Follow live health.json for subsequent results.

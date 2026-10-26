@@ -1,0 +1,1 @@
+{"pid": 1120879, "server_detached": true, "legacy_tasks": 3, "dsh_mode": "resume_only_pending", "max_legacy": 1, "max_dsh_including_old": 2}

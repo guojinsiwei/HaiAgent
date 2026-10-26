@@ -1,0 +1,1 @@
+{"trial_name": "demo_task.1-of-1.recuris-a5762bc97a8d44d7938ca963312b302b", "task_id": "demo_task", "is_resolved": true, "failure_mode": "unset", "test_started_at": "start", "test_ended_at": "end", "trial_ended_at": "end", "long_cli_test_turns": [{"hidden_checker": "PRIVATE"}], "instruction": "must never send official envelope to meta"}

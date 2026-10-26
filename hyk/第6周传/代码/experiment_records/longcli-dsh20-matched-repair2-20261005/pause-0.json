@@ -1,0 +1,11 @@
+{
+  "state": "paused",
+  "worker": 0,
+  "time": 1791207035.0835512,
+  "reason": "context_adapter_repair_worker_already_exited",
+  "worker_and_descendants_stopped": true,
+  "selected_process_count": 0,
+  "interrupted": [],
+  "finished_original_results_preserved": 2,
+  "replacement_requires_new_hidden_input": true
+}

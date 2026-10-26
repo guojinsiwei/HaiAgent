@@ -1,0 +1,173 @@
+{
+  "owner": "hyk",
+  "github_user": "1sourcegod",
+  "weeks": [
+    6,
+    7
+  ],
+  "source_file_count": 30986,
+  "reviewed_findings": [
+    {
+      "path": "hyk/第6周传/代码/tmp/SWE-bench_Pro-os/v2/tasks/instance_NodeBB__NodeBB-3c85b944e30a0ba8b3ec9e1f441c74f383625a15-v4fbcfae8b15e4ce5d132c408bca69ebb9cf146ed/tests/test_patch.patch",
+      "original_flags": [
+        {
+          "kind": "literal_credential",
+          "line": 26
+        },
+        {
+          "kind": "literal_credential",
+          "line": 52
+        }
+      ],
+      "resolution": "测试夹具中的示例值，不用于真实认证"
+    },
+    {
+      "path": "hyk/第6周传/代码/tmp/SWE-bench_Pro-os/v2/tasks/instance_ansible__ansible-bf98f031f3f5af31a2d78dc2f0a58fe92ebae0bb-v1055803c3a812189a1133297f7f5468579283f86/tests/test_patch.patch",
+      "original_flags": [
+        {
+          "kind": "literal_credential",
+          "line": 18
+        },
+        {
+          "kind": "literal_credential",
+          "line": 96
+        },
+        {
+          "kind": "literal_credential",
+          "line": 98
+        }
+      ],
+      "resolution": "测试夹具中的示例值，不用于真实认证"
+    },
+    {
+      "path": "hyk/第6周传/代码/tmp/SWE-bench_Pro-os/v2/tasks/instance_future-architect__vuls-999529a05b202b0fd29c6fca5039a4c47a3766bb/tests/test_patch.patch",
+      "original_flags": [
+        {
+          "kind": "provider_token",
+          "line": 73
+        },
+        {
+          "kind": "provider_token",
+          "line": 73
+        },
+        {
+          "kind": "provider_token",
+          "line": 75
+        },
+        {
+          "kind": "provider_token",
+          "line": 75
+        },
+        {
+          "kind": "provider_token",
+          "line": 81
+        },
+        {
+          "kind": "provider_token",
+          "line": 81
+        }
+      ],
+      "resolution": "SSH 算法标识，不是提供商令牌"
+    },
+    {
+      "path": "hyk/第6周传/代码/tmp/SWE-bench_Pro-os/v2/tasks/instance_gravitational__teleport-f432a71a13e698b6e1c4672a2e9e9c1f32d35c12/tests/test_patch.patch",
+      "original_flags": [
+        {
+          "kind": "private_key",
+          "line": 44
+        }
+      ],
+      "resolution": "基准测试夹具中的固定测试密钥，非部署密钥"
+    },
+    {
+      "path": "hyk/第6周传/代码/tmp/SWE-bench_Pro-os/v2/tasks/instance_navidrome__navidrome-b3980532237e57ab15b2b93c49d5cd5b2d050013/solution/gold_patch.diff",
+      "original_flags": [
+        {
+          "kind": "literal_credential",
+          "line": 32
+        }
+      ],
+      "resolution": "已脱敏第三方 API 常量"
+    },
+    {
+      "path": "hyk/第6周传/代码/tmp/SWE-bench_Pro-os/v2/tasks/instance_tutao__tutanota-de49d486feef842101506adf040a0f00ded59519-v10a26bfb45a064b93f4fc044a0254925037b88f1/tests/test_patch.patch",
+      "original_flags": [
+        {
+          "kind": "literal_credential",
+          "line": 64
+        },
+        {
+          "kind": "literal_credential",
+          "line": 96
+        },
+        {
+          "kind": "literal_credential",
+          "line": 140
+        }
+      ],
+      "resolution": "测试夹具中的示例值，不用于真实认证"
+    },
+    {
+      "path": "hyk/第7周传/代码/.codex-second-notebook-tools/cryptography/hazmat/_oid.py",
+      "original_flags": [
+        {
+          "kind": "literal_credential",
+          "line": 372
+        }
+      ],
+      "resolution": "ASN.1 属性名称映射，不是密码值"
+    },
+    {
+      "path": "hyk/第7周传/代码/.codex-second-notebook-tools/cryptography/hazmat/primitives/serialization/ssh.py",
+      "original_flags": [
+        {
+          "kind": "private_key",
+          "line": 77
+        }
+      ],
+      "resolution": "私钥格式起始标记，不含密钥正文"
+    },
+    {
+      "path": "hyk/第7周传/代码/experiment_records/ecs-terminal-20260923/fixture_harbor.py",
+      "original_flags": [
+        {
+          "kind": "literal_credential",
+          "line": 20
+        }
+      ],
+      "resolution": "测试夹具中的示例值，不用于真实认证"
+    },
+    {
+      "path": "hyk/第7周传/代码/experiment_records/ecs-terminal-20260923/smoke_paired.py",
+      "original_flags": [
+        {
+          "kind": "literal_credential",
+          "line": 30
+        }
+      ],
+      "resolution": "测试夹具中的示例值，不用于真实认证"
+    },
+    {
+      "path": "hyk/第7周传/代码/experiment_records/longcli-feasibility-20260927/upstream/terminal_bench/registry/client.py",
+      "original_flags": [
+        {
+          "kind": "literal_credential",
+          "line": 14
+        }
+      ],
+      "resolution": "公开基准数据包的解压密码，不是账号密码"
+    },
+    {
+      "path": "hyk/第7周传/代码/experiment_records/longcli-v6-raw-paired10-20261001/upstream/terminal_bench/registry/client.py",
+      "original_flags": [
+        {
+          "kind": "literal_credential",
+          "line": 14
+        }
+      ],
+      "resolution": "公开基准数据包的解压密码，不是账号密码"
+    }
+  ],
+  "scope": "Only HYK weeks 6 and 7; archive responsibility does not imply original authorship",
+  "runtime_verified": false
+}

@@ -1,0 +1,141 @@
+{
+  "version": "bestfgs-monitor-control-v6.1",
+  "task_id": "cs61_fa24_ants",
+  "submitted": true,
+  "stop_reason": "model_submit",
+  "artifact": {
+    "path": "/mnt/lizh639/longcli-v6-raw-paired10-20261001/roots/bestfgs-v6.1--cs61_fa24_ants/app",
+    "fingerprint": "1b2d5baa9fab5d867f3b240324419eefdacc055f7eb3dc4ca735ffaf3a0387c3",
+    "restoration": "workspace_files_only"
+  },
+  "official_success": null,
+  "error_type": null,
+  "interaction_rounds": 280,
+  "action_rounds": 269,
+  "advisor_rounds": 6,
+  "monitor_rounds": 5,
+  "tool_calls": 248,
+  "wall_seconds": 989.6524774907157,
+  "model_usage": {
+    "action": {
+      "model_calls": 269,
+      "api_requests": 273,
+      "api_responses": 272,
+      "prompt_tokens": 3774503,
+      "cached_prompt_tokens": 287744,
+      "cache_miss_prompt_tokens": 3486759,
+      "cache_write_prompt_tokens": 0,
+      "completion_tokens": 75808,
+      "cache_hit_rate": 0.076234,
+      "usage_missing_responses": 0,
+      "response_models": [
+        "deepseek-flash"
+      ],
+      "system_fingerprints": [
+        "aeb56401ca74e127821c4f9126dcb669"
+      ],
+      "last_failure_kind": null,
+      "last_failure_detail": null,
+      "failure_counts": {
+        "transport": 1,
+        "json_syntax": 4
+      },
+      "usage_unreported_requests": 1
+    },
+    "advisor": {
+      "model_calls": 6,
+      "api_requests": 6,
+      "api_responses": 6,
+      "prompt_tokens": 72213,
+      "cached_prompt_tokens": 768,
+      "cache_miss_prompt_tokens": 71445,
+      "cache_write_prompt_tokens": 0,
+      "completion_tokens": 2556,
+      "cache_hit_rate": 0.010635,
+      "usage_missing_responses": 0,
+      "response_models": [
+        "deepseek-flash"
+      ],
+      "system_fingerprints": [
+        "aeb56401ca74e127821c4f9126dcb669"
+      ],
+      "last_failure_kind": null,
+      "last_failure_detail": null,
+      "failure_counts": {},
+      "usage_unreported_requests": 0
+    },
+    "monitor": {
+      "model_calls": 5,
+      "api_requests": 5,
+      "api_responses": 5,
+      "prompt_tokens": 27686,
+      "cached_prompt_tokens": 2304,
+      "cache_miss_prompt_tokens": 25382,
+      "cache_write_prompt_tokens": 0,
+      "completion_tokens": 2760,
+      "cache_hit_rate": 0.083219,
+      "usage_missing_responses": 0,
+      "response_models": [
+        "deepseek-flash"
+      ],
+      "system_fingerprints": [
+        "aeb56401ca74e127821c4f9126dcb669"
+      ],
+      "last_failure_kind": null,
+      "last_failure_detail": null,
+      "failure_counts": {},
+      "usage_unreported_requests": 0
+    }
+  },
+  "mechanism_utilization": {
+    "model_requests": 280,
+    "action_calls": 269,
+    "advisor_calls": 6,
+    "tool_calls": 248,
+    "memory_exposures": 797,
+    "requests_with_memory": 215,
+    "memories_admitted": 17,
+    "memories_rejected": 0,
+    "memory_use_self_reports": 53,
+    "advisor_responses_accepted": 6,
+    "advisor_deferred": 0,
+    "checkpoints_created": 1,
+    "branch_restores": 0,
+    "submissions": 1,
+    "protocol_errors": 2,
+    "memory_interventions": 0,
+    "memory_action_changed": 0,
+    "memory_action_unchanged": 0,
+    "memory_followup_actions": 33,
+    "memory_followup_runs": 33,
+    "memory_followup_succeeded": 27,
+    "memory_followup_workspace_changed": 2,
+    "post_advice_actions": 6,
+    "monitor_calls": 5,
+    "monitor_reviews_accepted": 4,
+    "monitor_deferred": 1,
+    "semantic_stalls": 2,
+    "auto_memory_candidates": 7,
+    "auto_memories_admitted": 7,
+    "auto_memories_rejected": 0,
+    "observed_memories_admitted": 3,
+    "recovery_started": 34,
+    "recovery_plans": 34,
+    "recovery_verified_repairs": 1,
+    "recovery_checked_hypotheses": 3,
+    "recovery_failed": 30,
+    "memory_exposure_is_not_benefit": true,
+    "memory_use_is_self_report": true
+  },
+  "time_by_role": {
+    "action": 566.7035274719819,
+    "tools": 67.97328828088939,
+    "monitor": 15.691033228300512,
+    "advisor": 17.87983786687255
+  },
+  "contextual_tool_redundancy": {
+    "status": "requires_independent_audit",
+    "rate": null,
+    "denominator": 248
+  }
+}

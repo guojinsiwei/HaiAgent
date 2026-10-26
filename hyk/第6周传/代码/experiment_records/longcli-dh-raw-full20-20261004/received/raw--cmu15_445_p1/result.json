@@ -1,0 +1,43 @@
+{
+  "version": "hai-result-v1",
+  "run_id": "f18a7c791fc744faa3b4e848b4cde76e",
+  "task_id": "cmu15_445_p1",
+  "method": "raw",
+  "submitted": false,
+  "stop_reason": "tool_budget",
+  "model_summary": "",
+  "artifact": null,
+  "success": null,
+  "success_status": "requires_independent_evaluation",
+  "interaction_rounds": 601,
+  "tool_calls": 600,
+  "wall_seconds": 1176.5445792153478,
+  "protocol_sha256": "19f4e6e0c7f26c2c4d0861c9010f33b1482637622cb1ca02007bccd46fd2963e",
+  "trace_sha256": "6b3f53018ca17a875905d3624cb91abe2fd3a9dfe994098725ebfc665b56c0f5",
+  "model_usage": {
+    "action": {
+      "model_calls": 601,
+      "api_requests": 652,
+      "api_responses": 652,
+      "prompt_tokens": 7038583,
+      "completion_tokens": 45487,
+      "total_tokens": 7084070,
+      "cached_prompt_tokens": 590976,
+      "cache_miss_prompt_tokens": 6447607,
+      "usage_reports": 652,
+      "usage_missing_responses": 0,
+      "failure_counts": {
+        "json_syntax": 51
+      },
+      "response_models": [
+        "deepseek-flash"
+      ]
+    }
+  },
+  "mechanism_utilization": {
+    "memory": false,
+    "advisor": false,
+    "monitor": false,
+    "branch_restore": false
+  }
+}

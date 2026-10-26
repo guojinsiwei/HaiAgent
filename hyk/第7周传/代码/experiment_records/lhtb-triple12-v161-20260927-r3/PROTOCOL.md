@@ -1,0 +1,66 @@
+# LHTB three-arm file-artifact pilot: 12 tasks x 3
+
+## Repair revision 3 (2026-09-27)
+
+Operational repair only; predecessor r2 remains immutable. Carry all 11 officially
+scored results (including zero scores), dispatch only the 25 unstarted trials.
+Accept HAI nested `result.stop_reason=wall_budget` and graph top-level deadline
+endings. Only an immediately adjacent terminal model error may be explained by
+that deadline; adapter errors and earlier model errors remain failures.
+Independent trial workers and exclusive durable dispatch intents prevent duplicate
+starts. The cloud guard may restart the scheduler at most three times, reconnecting
+to existing workers using PID/start identity; it never reruns a model trial. An
+ambiguous/lost trial stops dispatch for inspection. Disk below 60 GiB pauses NEW
+dispatch with live heartbeat, and automatically resumes when storage recovers.
+Active trials retain their original disk safety checks and wall budgets. No pruning.
+Credentials live only in a mode-0600 file inside a mode-0700 /dev/shm directory
+until the guard finishes. Node reboot destroys these credentials; not automatic
+reboot recovery. Method sources, benchmark, models, task budgets and metrics unchanged.
+These operational rules supersede the r2 scheduler description below.
+
+## Repair revision 2 (2026-09-27)
+
+Predecessor frozen protocol: 4107f2da63cbf4eb5e573c7ca9cb71cd8d689db758efad3d9b0afa93342395c7.
+Preserve predecessor directory unchanged. Carry forward four normally scored trials;
+retry only two BestFGS infrastructure failures and execute 30 previously unstarted trials.
+Report both failed attempts and retry costs; do not present this as one uninterrupted run.
+Changes: filesystem dependency extraction ignores non-path/unresolvable command tokens;
+normal work deadline delivers the graph checkpoint candidate to the official verifier;
+adapter exceptions now include redacted traceback/errno. Model, graph strategy, memory
+algorithm, task list, timeout and budgets remain unchanged. Compare results with revision
+labels; do not rerun low scores for outcome selection. No extra wall time is allocated.
+
+Directory retains its old `triple25` name; only manifest's fixed 12 tasks run.
+Same tasks, image digests, task timeouts, tool limits and model in all arms.
+BestFGS 0.16.1 collaborative graph; HAI 0.4.0; Raw uses HAI runtime with component disabled.
+Model: deepseek-flash, official endpoint, thinking disabled, temperature 0, max output 4096.
+Max action turns/graph iterations 800, executed tools 600, individual command 900 s.
+Additional BestFGS assessment/memory calls count toward API/token cost, not hidden in action rounds.
+Three concurrent trial slots, each reserves two 2-CPU/4-GiB containers (12 CPU/24 GiB total).
+
+Official pinned Harbor same-conversation continuation; only binary rejection is exposed.
+No hidden tests, reward files, controller keys, Docker socket or host paths enter agent branches.
+Final success comes from official verifier rewards, never the agent's submit claim.
+Task subset only covers synchronous file artifacts under /app, not live services/process restoration.
+Rootfs snapshots preserve branch package/filesystem changes, not running processes.
+Grading receives /app artifacts, not arbitrary branch OS package changes.
+External symlinks in host evidence mirrors are refused rather than read on the host.
+120 seconds of each official wall budget is reserved for delivery; setup is separately bounded.
+
+Audit: hash-chained model prompts/responses, errors, tools and outputs; memory/runtime records;
+graph selections/checkpoints; official result reports; source/task/image hashes. Output truncation
+follows common execution limits. Fixtures validate continuation transport, not algorithm quality.
+
+Metrics: official success over all fixed tasks, plus separately reported infrastructure exclusions;
+action-model decision rounds, auxiliary model requests, executed tool calls, tokens and elapsed time.
+Mean rounds must report both all runs and paired jointly successful tasks to avoid early-failure bias.
+Tool redundancy is NOT command-string repetition. Tool calls remain `unreviewed` until a shared,
+method-blinded evidence audit judges whether a call duplicated already valid evidence without a
+state/dependency change or reasonable verification purpose. Report ambiguous labels separately;
+do not silently report an unimplemented semantic redundancy metric as zero.
+
+No automatic rerun of completed/failed trials. Scheduler heartbeats every <=30 s while waiting.
+Detected model/adapter/infrastructure errors stop new dispatch; already active trials finish within
+their bounds. No unlimited retries. Low disk (<60 GiB free) also stops dispatch/mutations.
+Snapshots and logs retained; no shared-host prune. Completion with errors is `needs_attention`.
+No desktop recurring monitor is created. Cloud tmux survives client disconnection, not node failure.

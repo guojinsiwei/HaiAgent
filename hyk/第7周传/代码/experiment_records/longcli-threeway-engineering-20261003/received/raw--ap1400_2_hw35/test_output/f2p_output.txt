@@ -1,0 +1,791 @@
+========== HW3 Start ==========
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found GTest: /usr/local/lib/cmake/GTest/GTestConfig.cmake (found version "1.18.0")  
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /app/ap1400_2_hw/ap1400_2_hw3/build_hw3
+[ 25%] Building CXX object CMakeFiles/main.dir/src/main.cpp.o
+[ 50%] Building CXX object CMakeFiles/main.dir/src/bst.cpp.o
+[ 75%] Building CXX object CMakeFiles/main.dir/src/unit_test.cpp.o
+[100%] Linking CXX executable main
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST1_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:8:(.text+0x3d): undefined reference to `BST::Node::Node(int, BST::Node*, BST::Node*)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:9:(.text+0x58): undefined reference to `BST::Node::Node(int, BST::Node*, BST::Node*)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:10:(.text+0x71): undefined reference to `BST::Node::Node(int, BST::Node*, BST::Node*)'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST2_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:17:(.text+0x33a): undefined reference to `BST::Node::Node(int, BST::Node*, BST::Node*)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:18:(.text+0x355): undefined reference to `BST::Node::Node(int, BST::Node*, BST::Node*)'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o:/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:19: more undefined references to `BST::Node::Node(int, BST::Node*, BST::Node*)' follow
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST2_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:20:(.text+0x384): undefined reference to `BST::Node::Node(BST::Node const&)'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST3_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:28:(.text+0x76c): undefined reference to `BST::Node::Node()'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST4_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:36:(.text+0xb06): undefined reference to `BST::Node::Node(int, BST::Node*, BST::Node*)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:37:(.text+0xb21): undefined reference to `BST::Node::Node(int, BST::Node*, BST::Node*)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:38:(.text+0xb3d): undefined reference to `BST::Node::Node(int, BST::Node*, BST::Node*)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:45:(.text+0xc9d): undefined reference to `operator<<(std::ostream&, BST::Node const&)'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST5_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:50:(.text+0xdec): undefined reference to `BST::Node::Node(int, BST::Node*, BST::Node*)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:52:(.text+0xe11): undefined reference to `operator>(BST::Node const&, int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:53:(.text+0xf46): undefined reference to `operator>(BST::Node const&, int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:54:(.text+0x107f): undefined reference to `operator>=(BST::Node const&, int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:55:(.text+0x11b4): undefined reference to `operator>=(BST::Node const&, int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:56:(.text+0x12ed): undefined reference to `operator<(BST::Node const&, int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:57:(.text+0x1422): undefined reference to `operator<(BST::Node const&, int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:58:(.text+0x155b): undefined reference to `operator<=(BST::Node const&, int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:59:(.text+0x1690): undefined reference to `operator<=(BST::Node const&, int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:60:(.text+0x17c9): undefined reference to `operator==(BST::Node const&, int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:61:(.text+0x18fe): undefined reference to `operator==(BST::Node const&, int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:63:(.text+0x1a37): undefined reference to `operator<(int, BST::Node const&)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:64:(.text+0x1b6c): undefined reference to `operator<(int, BST::Node const&)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:65:(.text+0x1ca5): undefined reference to `operator<=(int, BST::Node const&)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:66:(.text+0x1dda): undefined reference to `operator<=(int, BST::Node const&)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:67:(.text+0x1f13): undefined reference to `operator>(int, BST::Node const&)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:68:(.text+0x2048): undefined reference to `operator>(int, BST::Node const&)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:69:(.text+0x2181): undefined reference to `operator>=(int, BST::Node const&)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:70:(.text+0x22b6): undefined reference to `operator>=(int, BST::Node const&)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:71:(.text+0x23ef): undefined reference to `operator==(int, BST::Node const&)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:72:(.text+0x2524): undefined reference to `operator==(int, BST::Node const&)'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST6_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:77:(.text+0x2fda): undefined reference to `BST::BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:78:(.text+0x2fee): undefined reference to `BST::get_root()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:79:(.text+0x30a3): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:79:(.text+0x3106): undefined reference to `BST::~BST()'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST7_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:82:(.text+0x315c): undefined reference to `BST::BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:83:(.text+0x316d): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:84:(.text+0x317e): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:85:(.text+0x318f): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:86:(.text+0x31a2): undefined reference to `BST::get_root()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:87:(.text+0x325e): undefined reference to `BST::get_root()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:88:(.text+0x331e): undefined reference to `BST::get_root()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:89:(.text+0x33d7): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:89:(.text+0x34c2): undefined reference to `BST::~BST()'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST8_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:92:(.text+0x3525): undefined reference to `BST::BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:93:(.text+0x3539): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:94:(.text+0x354d): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:95:(.text+0x3561): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:96:(.text+0x3575): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:97:(.text+0x3589): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o:/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:98: more undefined references to `BST::add_node(int)' follow
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST8_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:101:(.text+0x36d9): undefined reference to `BST::get_root()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:102:(.text+0x37a9): undefined reference to `BST::get_root()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:103:(.text+0x3879): undefined reference to `BST::get_root()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:104:(.text+0x3942): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:104:(.text+0x3a96): undefined reference to `BST::~BST()'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST9_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:107:(.text+0x3b2b): undefined reference to `BST::BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:108:(.text+0x3b3f): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:109:(.text+0x3b53): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:110:(.text+0x3b67): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:111:(.text+0x3b7b): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:113:(.text+0x3b9c): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:116:(.text+0x3cf4): undefined reference to `BST::bfs(std::function<void (BST::Node*&)>)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:122:(.text+0x4484): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:122:(.text+0x46f5): undefined reference to `BST::~BST()'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST10_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:125:(.text+0x4750): undefined reference to `BST::BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:126:(.text+0x4761): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:127:(.text+0x4772): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:128:(.text+0x4783): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:129:(.text+0x4794): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:130:(.text+0x47a5): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o:/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:131: more undefined references to `BST::add_node(int)' follow
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST10_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:133:(.text+0x47c9): undefined reference to `BST::length()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:134:(.text+0x4883): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:134:(.text+0x48e6): undefined reference to `BST::~BST()'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST11_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:137:(.text+0x493c): undefined reference to `BST::BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:138:(.text+0x494d): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:139:(.text+0x495e): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:140:(.text+0x496f): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:141:(.text+0x4980): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:142:(.text+0x4991): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o:/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:143: more undefined references to `BST::add_node(int)' follow
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST11_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:146:(.text+0x49e3): undefined reference to `operator<<(std::ostream&, BST&)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:147:(.text+0x4a01): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:147:(.text+0x4a25): undefined reference to `BST::~BST()'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST12_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:150:(.text+0x4a7c): undefined reference to `BST::BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:151:(.text+0x4a8d): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:152:(.text+0x4a9e): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:153:(.text+0x4aaf): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:154:(.text+0x4ac0): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:155:(.text+0x4ad1): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o:/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:156: more undefined references to `BST::add_node(int)' follow
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST12_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:158:(.text+0x4af3): undefined reference to `BST::find_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:162:(.text+0x4d27): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:162:(.text+0x4e12): undefined reference to `BST::~BST()'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST13_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:165:(.text+0x4e68): undefined reference to `BST::BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:166:(.text+0x4e79): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:167:(.text+0x4e8a): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:168:(.text+0x4e9b): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:169:(.text+0x4eac): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:170:(.text+0x4ebd): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o:/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:171: more undefined references to `BST::add_node(int)' follow
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST13_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:173:(.text+0x4edf): undefined reference to `BST::find_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:175:(.text+0x4fa1): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:175:(.text+0x5004): undefined reference to `BST::~BST()'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST14_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:178:(.text+0x505a): undefined reference to `BST::BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:179:(.text+0x506b): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:180:(.text+0x507c): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:181:(.text+0x508d): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:182:(.text+0x509e): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:183:(.text+0x50af): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o:/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:184: more undefined references to `BST::add_node(int)' follow
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST14_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:187:(.text+0x50fc): undefined reference to `BST::find_parrent(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:192:(.text+0x535b): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:192:(.text+0x5446): undefined reference to `BST::~BST()'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST15_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:195:(.text+0x549c): undefined reference to `BST::BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:196:(.text+0x54ad): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:197:(.text+0x54be): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:198:(.text+0x54cf): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:199:(.text+0x54e0): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:200:(.text+0x54f1): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o:/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:201: more undefined references to `BST::add_node(int)' follow
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST15_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:205:(.text+0x5535): undefined reference to `BST::find_successor(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:209:(.text+0x576b): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:209:(.text+0x5856): undefined reference to `BST::~BST()'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST16_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:212:(.text+0x58b9): undefined reference to `BST::BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:213:(.text+0x58cd): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:214:(.text+0x58e1): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:215:(.text+0x58f5): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:216:(.text+0x5909): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:217:(.text+0x591d): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o:/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:218: more undefined references to `BST::add_node(int)' follow
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST16_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:222:(.text+0x597a): undefined reference to `BST::delete_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:223:(.text+0x5a8e): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:223:(.text+0x5b16): undefined reference to `BST::~BST()'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST17_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:226:(.text+0x5b7f): undefined reference to `BST::BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:227:(.text+0x5b93): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:228:(.text+0x5ba7): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:229:(.text+0x5bbb): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:230:(.text+0x5bcf): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:231:(.text+0x5be3): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o:/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:232: more undefined references to `BST::add_node(int)' follow
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST17_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:236:(.text+0x5c38): undefined reference to `BST::length()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:237:(.text+0x5d17): undefined reference to `BST::delete_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:238:(.text+0x5e35): undefined reference to `BST::length()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:239:(.text+0x5f06): undefined reference to `BST::get_root()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:240:(.text+0x5fcf): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:240:(.text+0x6123): undefined reference to `BST::~BST()'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST18_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:243:(.text+0x618b): undefined reference to `BST::BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:244:(.text+0x619f): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:245:(.text+0x61b3): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:246:(.text+0x61c7): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:247:(.text+0x61db): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:248:(.text+0x61ef): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o:/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:249: more undefined references to `BST::add_node(int)' follow
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST18_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:255:(.text+0x626c): undefined reference to `BST::length()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:256:(.text+0x634b): undefined reference to `BST::delete_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:257:(.text+0x6469): undefined reference to `BST::length()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:258:(.text+0x6539): undefined reference to `BST::get_root()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:259:(.text+0x6605): undefined reference to `BST::get_root()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:260:(.text+0x66d5): undefined reference to `BST::get_root()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:261:(.text+0x67a6): undefined reference to `BST::get_root()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:262:(.text+0x687b): undefined reference to `BST::get_root()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:263:(.text+0x6948): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:263:(.text+0x6bb0): undefined reference to `BST::~BST()'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST19_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:266:(.text+0x6c19): undefined reference to `BST::BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:267:(.text+0x6c2d): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:268:(.text+0x6c41): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:269:(.text+0x6c55): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:270:(.text+0x6c69): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:271:(.text+0x6c7d): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o:/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:272: more undefined references to `BST::add_node(int)' follow
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST19_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:278:(.text+0x6cf5): undefined reference to `BST::find_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:279:(.text+0x6d13): undefined reference to `BST::find_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:281:(.text+0x6d42): undefined reference to `BST::delete_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:286:(.text+0x6e5b): undefined reference to `BST::find_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:287:(.text+0x6f24): undefined reference to `BST::find_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:289:(.text+0x6fe8): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:289:(.text+0x70f7): undefined reference to `BST::~BST()'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST20_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:292:(.text+0x715f): undefined reference to `BST::BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:293:(.text+0x7173): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:294:(.text+0x7187): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:295:(.text+0x719b): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:296:(.text+0x71af): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:297:(.text+0x71c3): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o:/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:298: more undefined references to `BST::add_node(int)' follow
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST20_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:304:(.text+0x7240): undefined reference to `BST::length()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:305:(.text+0x731f): undefined reference to `BST::delete_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:306:(.text+0x743d): undefined reference to `BST::length()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:307:(.text+0x750d): undefined reference to `BST::get_root()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:308:(.text+0x75d9): undefined reference to `BST::get_root()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:309:(.text+0x76a9): undefined reference to `BST::get_root()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:310:(.text+0x777d): undefined reference to `BST::get_root()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:311:(.text+0x784e): undefined reference to `BST::get_root()'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o:/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:312: more undefined references to `BST::get_root()' follow
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST20_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:313:(.text+0x79f0): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:313:(.text+0x7c9d): undefined reference to `BST::~BST()'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST21_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:316:(.text+0x7d05): undefined reference to `BST::BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:317:(.text+0x7d19): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:318:(.text+0x7d2d): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:319:(.text+0x7d41): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:320:(.text+0x7d55): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:321:(.text+0x7d69): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o:/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:322: more undefined references to `BST::add_node(int)' follow
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST21_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:328:(.text+0x7de1): undefined reference to `BST::find_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:329:(.text+0x7dff): undefined reference to `BST::find_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:331:(.text+0x7e2e): undefined reference to `BST::delete_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:336:(.text+0x7f47): undefined reference to `BST::find_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:337:(.text+0x8010): undefined reference to `BST::find_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:338:(.text+0x80d4): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:338:(.text+0x81e3): undefined reference to `BST::~BST()'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST22_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:341:(.text+0x824b): undefined reference to `BST::BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:342:(.text+0x825f): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:343:(.text+0x8273): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:344:(.text+0x8287): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:345:(.text+0x829b): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:346:(.text+0x82af): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o:/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:347: more undefined references to `BST::add_node(int)' follow
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST22_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:355:(.text+0x8354): undefined reference to `BST::length()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:356:(.text+0x8433): undefined reference to `BST::delete_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:357:(.text+0x8551): undefined reference to `BST::length()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:358:(.text+0x8621): undefined reference to `BST::get_root()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:359:(.text+0x86ee): undefined reference to `BST::get_root()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:360:(.text+0x87c2): undefined reference to `BST::get_root()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:361:(.text+0x888b): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:361:(.text+0x8a69): undefined reference to `BST::~BST()'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST23_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:364:(.text+0x8ad1): undefined reference to `BST::BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:365:(.text+0x8ae5): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:366:(.text+0x8af9): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:367:(.text+0x8b0d): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:368:(.text+0x8b21): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:369:(.text+0x8b35): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o:/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:370: more undefined references to `BST::add_node(int)' follow
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST23_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:379:(.text+0x8bee): undefined reference to `BST::length()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:380:(.text+0x8ccd): undefined reference to `BST::delete_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:381:(.text+0x8deb): undefined reference to `BST::length()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:382:(.text+0x8ebb): undefined reference to `BST::get_root()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:383:(.text+0x8f83): undefined reference to `BST::get_root()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:384:(.text+0x9050): undefined reference to `BST::get_root()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:385:(.text+0x911d): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:385:(.text+0x92fb): undefined reference to `BST::~BST()'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST24_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:388:(.text+0x9356): undefined reference to `BST::BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:389:(.text+0x9367): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:390:(.text+0x9378): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:391:(.text+0x9389): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:392:(.text+0x939c): undefined reference to `BST::BST(BST const&)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:393:(.text+0x93a8): undefined reference to `BST::length()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:393:(.text+0x93b8): undefined reference to `BST::length()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:394:(.text+0x9472): undefined reference to `BST::get_root()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:394:(.text+0x9488): undefined reference to `BST::get_root()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:395:(.text+0x9540): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:395:(.text+0x954c): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:395:(.text+0x95f5): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:395:(.text+0x960a): undefined reference to `BST::~BST()'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST25_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:398:(.text+0x9660): undefined reference to `BST::BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:399:(.text+0x9671): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:400:(.text+0x9682): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:401:(.text+0x9693): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:403:(.text+0x969f): undefined reference to `BST::BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:404:(.text+0x96b0): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:405:(.text+0x96c1): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:406:(.text+0x96d2): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:407:(.text+0x96e5): undefined reference to `BST::operator=(BST const&)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:408:(.text+0x96f1): undefined reference to `BST::length()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:408:(.text+0x9701): undefined reference to `BST::length()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:409:(.text+0x97bb): undefined reference to `BST::get_root()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:409:(.text+0x97d5): undefined reference to `BST::get_root()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:410:(.text+0x9891): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:410:(.text+0x989d): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:410:(.text+0x9946): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:410:(.text+0x995b): undefined reference to `BST::~BST()'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST26_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:413:(.text+0x99b2): undefined reference to `BST::BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:414:(.text+0x99c3): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:415:(.text+0x99d4): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:416:(.text+0x99e5): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:417:(.text+0x99f6): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:418:(.text+0x9a07): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o:/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:419: more undefined references to `BST::add_node(int)' follow
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST26_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:423:(.text+0x9a4d): undefined reference to `BST::operator=(BST const&)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:424:(.text+0x9a60): undefined reference to `BST::get_root()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:425:(.text+0x9b1d): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:425:(.text+0x9b80): undefined reference to `BST::~BST()'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST27_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:428:(.text+0x9bd6): undefined reference to `BST::BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:429:(.text+0x9be7): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:430:(.text+0x9bf8): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:431:(.text+0x9c09): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:433:(.text+0x9c15): undefined reference to `BST::get_root()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:434:(.text+0x9c32): undefined reference to `BST::find_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:436:(.text+0x9c57): undefined reference to `BST::BST(BST&&)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:437:(.text+0x9c63): undefined reference to `BST::get_root()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:438:(.text+0x9d18): undefined reference to `BST::get_root()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:439:(.text+0x9dd4): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:439:(.text+0x9de0): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:439:(.text+0x9e89): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:439:(.text+0x9e9e): undefined reference to `BST::~BST()'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST28_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:442:(.text+0x9ef4): undefined reference to `BST::BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:443:(.text+0x9f05): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:444:(.text+0x9f16): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:445:(.text+0x9f27): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:446:(.text+0x9f38): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:447:(.text+0x9f49): undefined reference to `BST::add_node(int)'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o:/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:448: more undefined references to `BST::add_node(int)' follow
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST28_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:451:(.text+0x9f77): undefined reference to `BST::get_root()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:452:(.text+0x9f98): undefined reference to `BST::find_node(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:454:(.text+0x9fab): undefined reference to `BST::BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:455:(.text+0x9fc9): undefined reference to `BST::operator=(BST&&)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:456:(.text+0x9fd5): undefined reference to `BST::get_root()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:457:(.text+0xa08a): undefined reference to `BST::get_root()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:458:(.text+0xa14a): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:458:(.text+0xa156): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:458:(.text+0xa1ff): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:458:(.text+0xa214): undefined reference to `BST::~BST()'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST29_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:461:(.text+0xa2be): undefined reference to `BST::BST(std::initializer_list<int>)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:462:(.text+0xa32c): undefined reference to `BST::BST(std::initializer_list<int>)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:463:(.text+0xa344): undefined reference to `BST::find_successor(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:464:(.text+0xa400): undefined reference to `BST::length()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:465:(.text+0xa4ba): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:465:(.text+0xa4c6): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:465:(.text+0xa56f): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:465:(.text+0xa584): undefined reference to `BST::~BST()'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST30_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:468:(.text+0xa636): undefined reference to `BST::BST(std::initializer_list<int>)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:469:(.text+0xa645): undefined reference to `BST::operator++()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:469:(.text+0xa65a): undefined reference to `BST::BST(BST const&)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:472:(.text+0xa67d): undefined reference to `BST::get_root()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:473:(.text+0xa73c): undefined reference to `BST::get_root()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:474:(.text+0xa7fb): undefined reference to `BST::get_root()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:475:(.text+0xa8c6): undefined reference to `BST::get_root()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:477:(.text+0xa996): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:477:(.text+0xa9a5): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:477:(.text+0xaae1): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:477:(.text+0xaaf9): undefined reference to `BST::~BST()'
+/usr/bin/ld: CMakeFiles/main.dir/src/unit_test.cpp.o: in function `HW3Test_TEST31_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:480:(.text+0xabfe): undefined reference to `BST::BST(std::initializer_list<int>)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:481:(.text+0xac1c): undefined reference to `BST::operator++(int)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:484:(.text+0xac5a): undefined reference to `BST::bfs(std::function<void (BST::Node*&)>)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:487:(.text+0xacaa): undefined reference to `BST::bfs(std::function<void (BST::Node*&)>)'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:491:(.text+0xae14): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:491:(.text+0xae23): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:491:(.text+0xaedb): undefined reference to `BST::~BST()'
+/usr/bin/ld: /app/ap1400_2_hw/ap1400_2_hw3/src/unit_test.cpp:491:(.text+0xaef3): undefined reference to `BST::~BST()'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/main.dir/build.make:131: main] Error 1
+make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/main.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2
+HW3 compile failed, cannot run program
+
+========== HW5 Start ==========
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found GTest: /usr/local/lib/cmake/GTest/GTestConfig.cmake (found version "1.18.0")  
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /app/ap1400_2_hw/ap1400_2_hw5/build_hw5
+[ 16%] Building CXX object CMakeFiles/main.dir/src/espresso_based.cpp.o
+[ 33%] Building CXX object CMakeFiles/main.dir/src/main.cpp.o
+[ 50%] Building CXX object CMakeFiles/main.dir/src/cappuccino.cpp.o
+[ 66%] Building CXX object CMakeFiles/main.dir/src/unit_test.cpp.o
+[ 83%] Building CXX object CMakeFiles/main.dir/src/mocha.cpp.o
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp: In member function 'virtual void HW5Test_TEST1_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:10:5: error: 'Cinnamon' was not declared in this scope
+   10 |     Cinnamon    cinnamon{2};
+      |     ^~~~~~~~
+In file included from /usr/local/include/gtest/gtest.h:72,
+                 from /app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:1:
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:11:15: error: 'cinnamon' was not declared in this scope
+   11 |     EXPECT_EQ(cinnamon.get_name(), "Cinnamon");
+      |               ^~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:12:15: error: 'cinnamon' was not declared in this scope
+   12 |     EXPECT_EQ(cinnamon.get_price_unit(), 5);
+      |               ^~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:13:15: error: 'cinnamon' was not declared in this scope
+   13 |     EXPECT_EQ(cinnamon.get_units(), 2);
+      |               ^~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:14:15: error: 'cinnamon' was not declared in this scope
+   14 |     EXPECT_EQ(cinnamon.price(), 10);
+      |               ^~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp: In member function 'virtual void HW5Test_TEST2_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:18:5: error: 'Cinnamon' was not declared in this scope
+   18 |     Cinnamon    cinnamon{1};
+      |     ^~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:19:5: error: 'Chocolate' was not declared in this scope
+   19 |     Chocolate   chocolate{1};
+      |     ^~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:20:5: error: 'Sugar' was not declared in this scope
+   20 |     Sugar       sugar{2};
+      |     ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:21:5: error: 'Cookie' was not declared in this scope
+   21 |     Cookie      cookie{1};
+      |     ^~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:22:5: error: 'Espresso' was not declared in this scope
+   22 |     Espresso    espresso{2};
+      |     ^~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:23:5: error: 'Milk' was not declared in this scope
+   23 |     Milk        milk{2} ;
+      |     ^~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:24:5: error: 'MilkFoam' was not declared in this scope
+   24 |     MilkFoam    milkFoam{1};
+      |     ^~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:25:5: error: 'Water' was not declared in this scope
+   25 |     Water       water{2};
+      |     ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp: In member function 'virtual void HW5Test_TEST3_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:29:5: error: 'Cinnamon' was not declared in this scope
+   29 |     Cinnamon    cinnamon{1};
+      |     ^~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:30:5: error: 'Sugar' was not declared in this scope
+   30 |     Sugar       sugar{2};
+      |     ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:31:5: error: 'Cookie' was not declared in this scope
+   31 |     Cookie      cookie{1};
+      |     ^~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:32:5: error: 'Water' was not declared in this scope
+   32 |     Water       water{2};
+      |     ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:34:5: error: 'Ingredient' was not declared in this scope
+   34 |     Ingredient* ingredient;
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:34:17: error: 'ingredient' was not declared in this scope
+   34 |     Ingredient* ingredient;
+      |                 ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:35:19: error: 'cinnamon' was not declared in this scope
+   35 |     ingredient = &cinnamon;
+      |                   ^~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:37:19: error: 'sugar' was not declared in this scope
+   37 |     ingredient = &sugar;
+      |                   ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:39:19: error: 'cookie' was not declared in this scope
+   39 |     ingredient = &cookie;
+      |                   ^~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:41:19: error: 'water' was not declared in this scope
+   41 |     ingredient = &water;
+      |                   ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp: In member function 'virtual void HW5Test_TEST4_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:46:5: error: 'Cappuccino' was not declared in this scope
+   46 |     Cappuccino cappuccino{};
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:47:15: error: 'cappuccino' was not declared in this scope
+   47 |     EXPECT_EQ(cappuccino.get_name(), "Cappuccino");
+      |               ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:48:24: error: 'cappuccino' was not declared in this scope
+   48 |     auto ingredients = cappuccino.get_ingredients();
+      |                        ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp: In member function 'virtual void HW5Test_TEST5_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:56:5: error: 'Cappuccino' was not declared in this scope
+   56 |     Cappuccino cappuccino{};
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:57:22: error: 'cappuccino' was not declared in this scope
+   57 |     EXPECT_DOUBLE_EQ(cappuccino.price(), 55);
+      |                      ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:58:5: error: 'cappuccino' was not declared in this scope
+   58 |     cappuccino.add_side_item(new Cinnamon{1});
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:58:34: error: 'Cinnamon' does not name a type
+   58 |     cappuccino.add_side_item(new Cinnamon{1});
+      |                                  ^~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp: In member function 'virtual void HW5Test_TEST6_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:63:5: error: 'EspressoBased' was not declared in this scope
+   63 |     EspressoBased* esp{new Cappuccino{}};
+      |     ^~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:63:20: error: 'esp' was not declared in this scope; did you mean 'exp'?
+   63 |     EspressoBased* esp{new Cappuccino{}};
+      |                    ^~~
+      |                    exp
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:64:22: error: 'Cappuccino' does not name a type
+   64 |     reinterpret_cast<Cappuccino*>(esp)->add_side_item(new Cookie{1});
+      |                      ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:64:32: error: expected '>' before '*' token
+   64 |     reinterpret_cast<Cappuccino*>(esp)->add_side_item(new Cookie{1});
+      |                                ^
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:64:32: error: expected '(' before '*' token
+   64 |     reinterpret_cast<Cappuccino*>(esp)->add_side_item(new Cookie{1});
+      |                                ^
+      |                                (
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:64:33: error: expected primary-expression before '>' token
+   64 |     reinterpret_cast<Cappuccino*>(esp)->add_side_item(new Cookie{1});
+      |                                 ^
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:64:59: error: 'Cookie' does not name a type
+   64 |     reinterpret_cast<Cappuccino*>(esp)->add_side_item(new Cookie{1});
+      |                                                           ^~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:64:69: error: expected ')' before ';' token
+   64 |     reinterpret_cast<Cappuccino*>(esp)->add_side_item(new Cookie{1});
+      |                                                                     ^
+      |                                                                     )
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:65:17: error: 'Ingredient' was not declared in this scope
+   65 |     std::vector<Ingredient*>& sides = reinterpret_cast<Cappuccino*>(esp)->get_side_items();
+      |                 ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:65:28: error: template argument 1 is invalid
+   65 |     std::vector<Ingredient*>& sides = reinterpret_cast<Cappuccino*>(esp)->get_side_items();
+      |                            ^
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:65:28: error: template argument 2 is invalid
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:65:56: error: 'Cappuccino' does not name a type
+   65 |     std::vector<Ingredient*>& sides = reinterpret_cast<Cappuccino*>(esp)->get_side_items();
+      |                                                        ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:65:66: error: expected '>' before '*' token
+   65 |     std::vector<Ingredient*>& sides = reinterpret_cast<Cappuccino*>(esp)->get_side_items();
+      |                                                                  ^
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:65:66: error: expected '(' before '*' token
+   65 |     std::vector<Ingredient*>& sides = reinterpret_cast<Cappuccino*>(esp)->get_side_items();
+      |                                                                  ^
+      |                                                                  (
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:65:67: error: expected primary-expression before '>' token
+   65 |     std::vector<Ingredient*>& sides = reinterpret_cast<Cappuccino*>(esp)->get_side_items();
+      |                                                                   ^
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:65:91: error: expected ')' before ';' token
+   65 |     std::vector<Ingredient*>& sides = reinterpret_cast<Cappuccino*>(esp)->get_side_items();
+      |                                                                                           ^
+      |                                                                                           )
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:66:21: error: request for member 'size' in 'sides', which is of non-class type 'int'
+   66 |     EXPECT_EQ(sides.size(), 1);
+      |                     ^~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:67:5: error: type '<type error>' argument given to 'delete', expected pointer
+   67 |     delete esp;
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:68:21: error: request for member 'size' in 'sides', which is of non-class type 'int'
+   68 |     EXPECT_EQ(sides.size(), 0);
+      |                     ^~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp: In member function 'virtual void HW5Test_TEST7_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:72:5: error: 'Cappuccino' was not declared in this scope
+   72 |     Cappuccino cappuccino;
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:73:5: error: 'cappuccino' was not declared in this scope
+   73 |     cappuccino.add_side_item(new Chocolate{2});
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:73:34: error: 'Chocolate' does not name a type
+   73 |     cappuccino.add_side_item(new Chocolate{2});
+      |                                  ^~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:74:15: error: expected ';' before 'copy'
+   74 |     Cappuccino copy{cappuccino};
+      |               ^~~~~
+      |               ;
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:75:15: error: 'copy' was not declared in this scope
+   75 |     EXPECT_EQ(copy.get_name(), "Cappuccino");
+      |               ^~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:75:15: note: suggested alternatives:
+In file included from /usr/include/c++/13/algorithm:73,
+                 from /usr/local/include/gmock/gmock-actions.h:137,
+                 from /usr/local/include/gmock/gmock.h:56,
+                 from /app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:2:
+/usr/include/c++/13/pstl/glue_algorithm_defs.h:134:1: note:   'std::copy'
+  134 | copy(_ExecutionPolicy&& __exec, _ForwardIterator1 __first, _ForwardIterator1 __last, _ForwardIterator2 __result);
+      | ^~~~
+In file included from /usr/include/c++/13/bits/ranges_uninitialized.h:36,
+                 from /usr/include/c++/13/memory:90,
+                 from /usr/local/include/gtest/gtest.h:55:
+/usr/include/c++/13/bits/ranges_algobase.h:318:30: note:   'std::ranges::copy'
+  318 |   inline constexpr __copy_fn copy{};
+      |                              ^~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:76:22: error: 'copy' was not declared in this scope
+   76 |     EXPECT_DOUBLE_EQ(copy.price(), 65);
+      |                      ^~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:76:22: note: suggested alternatives:
+/usr/include/c++/13/pstl/glue_algorithm_defs.h:134:1: note:   'std::copy'
+  134 | copy(_ExecutionPolicy&& __exec, _ForwardIterator1 __first, _ForwardIterator1 __last, _ForwardIterator2 __result);
+      | ^~~~
+/usr/include/c++/13/bits/ranges_algobase.h:318:30: note:   'std::ranges::copy'
+  318 |   inline constexpr __copy_fn copy{};
+      |                              ^~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp: In member function 'virtual void HW5Test_TEST8_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:80:5: error: 'Cappuccino' was not declared in this scope
+   80 |     Cappuccino cappuccino;
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:81:5: error: 'cappuccino' was not declared in this scope
+   81 |     cappuccino.add_side_item(new Water{1});
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:81:34: error: 'Water' does not name a type
+   81 |     cappuccino.add_side_item(new Water{1});
+      |                                  ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:82:15: error: expected ';' before 'equal'
+   82 |     Cappuccino equal;
+      |               ^~~~~~
+      |               ;
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:83:5: error: 'equal' was not declared in this scope
+   83 |     equal.add_side_item(new Sugar{1});
+      |     ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:83:5: note: suggested alternatives:
+/usr/include/c++/13/pstl/glue_algorithm_defs.h:347:1: note:   'std::equal'
+  347 | equal(_ExecutionPolicy&& __exec, _ForwardIterator1 __first1, _ForwardIterator1 __last1, _ForwardIterator2 __first2,
+      | ^~~~~
+/usr/include/c++/13/bits/ranges_algobase.h:158:31: note:   'std::ranges::equal'
+  158 |   inline constexpr __equal_fn equal{};
+      |                               ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:83:29: error: 'Sugar' does not name a type
+   83 |     equal.add_side_item(new Sugar{1});
+      |                             ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp: In member function 'virtual void HW5Test_TEST9_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:89:5: error: 'Cappuccino' was not declared in this scope
+   89 |     Cappuccino equal;
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:90:5: error: 'equal' was not declared in this scope
+   90 |     equal.add_side_item(new Sugar{2});
+      |     ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:90:5: note: suggested alternatives:
+/usr/include/c++/13/pstl/glue_algorithm_defs.h:347:1: note:   'std::equal'
+  347 | equal(_ExecutionPolicy&& __exec, _ForwardIterator1 __first1, _ForwardIterator1 __last1, _ForwardIterator2 __first2,
+      | ^~~~~
+/usr/include/c++/13/bits/ranges_algobase.h:158:31: note:   'std::ranges::equal'
+  158 |   inline constexpr __equal_fn equal{};
+      |                               ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:90:29: error: 'Sugar' does not name a type
+   90 |     equal.add_side_item(new Sugar{2});
+      |                             ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp: In member function 'virtual void HW5Test_TEST10_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:96:5: error: 'Mocha' was not declared in this scope
+   96 |     Mocha mocha{};
+      |     ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:97:15: error: 'mocha' was not declared in this scope
+   97 |     EXPECT_EQ(mocha.get_name(), "Mocha");
+      |               ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:98:24: error: 'mocha' was not declared in this scope
+   98 |     auto ingredients = mocha.get_ingredients();
+      |                        ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:105:5: error: 'EspressoBased' was not declared in this scope
+  105 |     EspressoBased* esp{new Mocha{}};
+      |     ^~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:105:20: error: 'esp' was not declared in this scope; did you mean 'exp'?
+  105 |     EspressoBased* esp{new Mocha{}};
+      |                    ^~~
+      |                    exp
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:106:22: error: 'Cappuccino' does not name a type
+  106 |     reinterpret_cast<Cappuccino*>(esp)->add_side_item(new Cookie{1});
+      |                      ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:106:32: error: expected '>' before '*' token
+  106 |     reinterpret_cast<Cappuccino*>(esp)->add_side_item(new Cookie{1});
+      |                                ^
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:106:32: error: expected '(' before '*' token
+  106 |     reinterpret_cast<Cappuccino*>(esp)->add_side_item(new Cookie{1});
+      |                                ^
+      |                                (
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:106:33: error: expected primary-expression before '>' token
+  106 |     reinterpret_cast<Cappuccino*>(esp)->add_side_item(new Cookie{1});
+      |                                 ^
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:106:59: error: 'Cookie' does not name a type
+  106 |     reinterpret_cast<Cappuccino*>(esp)->add_side_item(new Cookie{1});
+      |                                                           ^~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:106:69: error: expected ')' before ';' token
+  106 |     reinterpret_cast<Cappuccino*>(esp)->add_side_item(new Cookie{1});
+      |                                                                     ^
+      |                                                                     )
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:107:22: error: 'Cappuccino' does not name a type
+  107 |     reinterpret_cast<Cappuccino*>(esp)->add_side_item(new Sugar{2});
+      |                      ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:107:32: error: expected '>' before '*' token
+  107 |     reinterpret_cast<Cappuccino*>(esp)->add_side_item(new Sugar{2});
+      |                                ^
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:107:32: error: expected '(' before '*' token
+  107 |     reinterpret_cast<Cappuccino*>(esp)->add_side_item(new Sugar{2});
+      |                                ^
+      |                                (
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:107:33: error: expected primary-expression before '>' token
+  107 |     reinterpret_cast<Cappuccino*>(esp)->add_side_item(new Sugar{2});
+      |                                 ^
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:107:59: error: 'Sugar' does not name a type
+  107 |     reinterpret_cast<Cappuccino*>(esp)->add_side_item(new Sugar{2});
+      |                                                           ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:107:68: error: expected ')' before ';' token
+  107 |     reinterpret_cast<Cappuccino*>(esp)->add_side_item(new Sugar{2});
+      |                                                                    ^
+      |                                                                    )
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:108:17: error: 'Ingredient' was not declared in this scope
+  108 |     std::vector<Ingredient*>& sides = reinterpret_cast<Cappuccino*>(esp)->get_side_items();
+      |                 ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:108:28: error: template argument 1 is invalid
+  108 |     std::vector<Ingredient*>& sides = reinterpret_cast<Cappuccino*>(esp)->get_side_items();
+      |                            ^
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:108:28: error: template argument 2 is invalid
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:108:56: error: 'Cappuccino' does not name a type
+  108 |     std::vector<Ingredient*>& sides = reinterpret_cast<Cappuccino*>(esp)->get_side_items();
+      |                                                        ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:108:66: error: expected '>' before '*' token
+  108 |     std::vector<Ingredient*>& sides = reinterpret_cast<Cappuccino*>(esp)->get_side_items();
+      |                                                                  ^
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:108:66: error: expected '(' before '*' token
+  108 |     std::vector<Ingredient*>& sides = reinterpret_cast<Cappuccino*>(esp)->get_side_items();
+      |                                                                  ^
+      |                                                                  (
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:108:67: error: expected primary-expression before '>' token
+  108 |     std::vector<Ingredient*>& sides = reinterpret_cast<Cappuccino*>(esp)->get_side_items();
+      |                                                                   ^
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:108:91: error: expected ')' before ';' token
+  108 |     std::vector<Ingredient*>& sides = reinterpret_cast<Cappuccino*>(esp)->get_side_items();
+      |                                                                                           ^
+      |                                                                                           )
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:109:21: error: request for member 'size' in 'sides', which is of non-class type 'int'
+  109 |     EXPECT_EQ(sides.size(), 2);
+      |                     ^~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:110:5: error: type '<type error>' argument given to 'delete', expected pointer
+  110 |     delete esp;
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:111:21: error: request for member 'size' in 'sides', which is of non-class type 'int'
+  111 |     EXPECT_EQ(sides.size(), 0);
+      |                     ^~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp: In member function 'virtual void HW5Test_TEST11_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:115:5: error: 'Cappuccino' was not declared in this scope
+  115 |     Cappuccino cappuccino{};
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:116:5: error: 'cappuccino' was not declared in this scope
+  116 |     cappuccino.brew();
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp: In member function 'virtual void HW5Test_TEST12_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:120:5: error: 'Mocha' was not declared in this scope
+  120 |     Mocha mocha{};
+      |     ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:121:5: error: 'mocha' was not declared in this scope
+  121 |     mocha.brew();
+      |     ^~~~~
+make[2]: *** [CMakeFiles/main.dir/build.make:90: CMakeFiles/main.dir/src/unit_test.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/main.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2
+HW5 compile failed, cannot run program

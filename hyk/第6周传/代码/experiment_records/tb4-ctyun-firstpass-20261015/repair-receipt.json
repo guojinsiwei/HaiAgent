@@ -1,0 +1,287 @@
+{
+  "deployed_utc": "2026-10-16T06:55:41.152643+00:00",
+  "state": "repaired_stopped",
+  "paid_calls": 0,
+  "tests": {
+    "node": 20,
+    "python": 21
+  },
+  "protected_state_unchanged": true,
+  "before": {
+    "health_sha256": "3a56fd050dcc07e0061aae067627dc9d902db09c2c568397855f46d60a1e6a4e",
+    "ledger_sha256": "30c72214f2eab6bb3e527c4db8e3623575cf46b68c97a1f090750e65a3df0884",
+    "audit": {
+      "attempt_files": 10,
+      "latest_results": [
+        {
+          "task": "fin-saccr-rwa",
+          "arm": "dsh",
+          "finished_utc": "2026-10-15T16:15:27.181496Z",
+          "reward": 0.0,
+          "passed": false,
+          "outcome": "budget_interrupted",
+          "source": "jobs/03-dsh-fin-saccr-rwa/fin-saccr-rwa__UwiQCxw/result.json",
+          "source_sha256": "85abed301251724ab87f0a8542a6ee046b5c8001efc2e98a5ce09b94574f15e1"
+        },
+        {
+          "task": "fin-saccr-rwa",
+          "arm": "kz",
+          "finished_utc": "2026-10-15T16:04:11.167570Z",
+          "reward": 0.0,
+          "passed": false,
+          "outcome": "provider_refusal",
+          "source": "jobs/03-kz-fin-saccr-rwa/fin-saccr-rwa__cs35anx/result.json",
+          "source_sha256": "04daf79ace550e94b78e10c3215b3bac9873656e652cb75c9d7516798b897e18"
+        },
+        {
+          "task": "layout-config-recreation",
+          "arm": "dsh",
+          "finished_utc": "2026-10-15T13:47:49.158680Z",
+          "reward": 0.0,
+          "passed": false,
+          "outcome": "provider_protocol",
+          "source": "task2-complete-history-1792078654751459448/jobs/02-dsh-layout-config-recreation/layout-config-recreation__c3UGEZF/result.json",
+          "source_sha256": "d11069abc7c56e4838780467f22cedb870aba1d3ddb96a6c354727218005ccde"
+        },
+        {
+          "task": "layout-config-recreation",
+          "arm": "kz",
+          "finished_utc": "2026-10-15T13:51:48.917465Z",
+          "reward": 0.0,
+          "passed": false,
+          "outcome": "provider_refusal",
+          "source": "task2-complete-history-1792078654751459448/jobs/02-kz-layout-config-recreation/layout-config-recreation__3VSUYPL/result.json",
+          "source_sha256": "09148bb0ccfb769023e594a29225a8392cb735738269803b5b72b0d803c153c9"
+        },
+        {
+          "task": "payments-pipeline-fix",
+          "arm": "dsh",
+          "finished_utc": "2026-10-15T12:41:15.214964Z",
+          "reward": 0.0,
+          "passed": false,
+          "outcome": "answer_failed",
+          "source": "build-interrupted-history-1792068866672996749/jobs/01-dsh-payments-pipeline-fix/payments-pipeline-fix__izb3JvW/result.json",
+          "source_sha256": "7589b32c494e3acb86715539e147321131699c72dd8694060cd663cc7178f847"
+        },
+        {
+          "task": "payments-pipeline-fix",
+          "arm": "kz",
+          "finished_utc": "2026-10-15T12:18:06.721792Z",
+          "reward": 0.0,
+          "passed": false,
+          "outcome": "provider_refusal",
+          "source": "build-interrupted-history-1792068866672996749/jobs/01-kz-payments-pipeline-fix/payments-pipeline-fix__S4ua5to/result.json",
+          "source_sha256": "d7b45d26924f2739da2e7427a004cc17ab4d96422f0c308da5d13e598988a2fc"
+        }
+      ],
+      "accounting": {
+        "limit_tokens": 33370411,
+        "states": {
+          "settled": {
+            "calls": 239,
+            "tokens": 19434370
+          },
+          "unknown": {
+            "calls": 12,
+            "tokens": 12910848
+          }
+        },
+        "remaining_tokens": 1025193,
+        "halt_reason": "provider_budget"
+      },
+      "reconciliation": "Unknown historical calls remain fully reserved; no invoice/request-level proof supplied."
+    }
+  },
+  "after": {
+    "health_sha256": "3a56fd050dcc07e0061aae067627dc9d902db09c2c568397855f46d60a1e6a4e",
+    "ledger_sha256": "30c72214f2eab6bb3e527c4db8e3623575cf46b68c97a1f090750e65a3df0884",
+    "audit": {
+      "attempt_files": 10,
+      "latest_results": [
+        {
+          "task": "fin-saccr-rwa",
+          "arm": "dsh",
+          "finished_utc": "2026-10-15T16:15:27.181496Z",
+          "reward": 0.0,
+          "passed": false,
+          "outcome": "budget_interrupted",
+          "source": "jobs/03-dsh-fin-saccr-rwa/fin-saccr-rwa__UwiQCxw/result.json",
+          "source_sha256": "85abed301251724ab87f0a8542a6ee046b5c8001efc2e98a5ce09b94574f15e1"
+        },
+        {
+          "task": "fin-saccr-rwa",
+          "arm": "kz",
+          "finished_utc": "2026-10-15T16:04:11.167570Z",
+          "reward": 0.0,
+          "passed": false,
+          "outcome": "provider_refusal",
+          "source": "jobs/03-kz-fin-saccr-rwa/fin-saccr-rwa__cs35anx/result.json",
+          "source_sha256": "04daf79ace550e94b78e10c3215b3bac9873656e652cb75c9d7516798b897e18"
+        },
+        {
+          "task": "layout-config-recreation",
+          "arm": "dsh",
+          "finished_utc": "2026-10-15T13:47:49.158680Z",
+          "reward": 0.0,
+          "passed": false,
+          "outcome": "provider_protocol",
+          "source": "task2-complete-history-1792078654751459448/jobs/02-dsh-layout-config-recreation/layout-config-recreation__c3UGEZF/result.json",
+          "source_sha256": "d11069abc7c56e4838780467f22cedb870aba1d3ddb96a6c354727218005ccde"
+        },
+        {
+          "task": "layout-config-recreation",
+          "arm": "kz",
+          "finished_utc": "2026-10-15T13:51:48.917465Z",
+          "reward": 0.0,
+          "passed": false,
+          "outcome": "provider_refusal",
+          "source": "task2-complete-history-1792078654751459448/jobs/02-kz-layout-config-recreation/layout-config-recreation__3VSUYPL/result.json",
+          "source_sha256": "09148bb0ccfb769023e594a29225a8392cb735738269803b5b72b0d803c153c9"
+        },
+        {
+          "task": "payments-pipeline-fix",
+          "arm": "dsh",
+          "finished_utc": "2026-10-15T12:41:15.214964Z",
+          "reward": 0.0,
+          "passed": false,
+          "outcome": "answer_failed",
+          "source": "build-interrupted-history-1792068866672996749/jobs/01-dsh-payments-pipeline-fix/payments-pipeline-fix__izb3JvW/result.json",
+          "source_sha256": "7589b32c494e3acb86715539e147321131699c72dd8694060cd663cc7178f847"
+        },
+        {
+          "task": "payments-pipeline-fix",
+          "arm": "kz",
+          "finished_utc": "2026-10-15T12:18:06.721792Z",
+          "reward": 0.0,
+          "passed": false,
+          "outcome": "provider_refusal",
+          "source": "build-interrupted-history-1792068866672996749/jobs/01-kz-payments-pipeline-fix/payments-pipeline-fix__S4ua5to/result.json",
+          "source_sha256": "d7b45d26924f2739da2e7427a004cc17ab4d96422f0c308da5d13e598988a2fc"
+        }
+      ],
+      "accounting": {
+        "limit_tokens": 33370411,
+        "states": {
+          "settled": {
+            "calls": 239,
+            "tokens": 19434370
+          },
+          "unknown": {
+            "calls": 12,
+            "tokens": 12910848
+          }
+        },
+        "remaining_tokens": 1025193,
+        "halt_reason": "provider_budget"
+      },
+      "reconciliation": "Unknown historical calls remain fully reserved; no invoice/request-level proof supplied."
+    }
+  },
+  "files": [
+    {
+      "name": "agents.py",
+      "before": "dd3203ae70e2b194e6ea6dd2ec680a8ed6afb5ab686baad3290296073042c62e",
+      "after": "0fbc3644f9a790f47faae1ae52e6e7fbe335c0191858253f43fbee73a83db345"
+    },
+    {
+      "name": "audit_campaign.py",
+      "before": null,
+      "after": "42597d3cbe7673e42dd282daf4b07d15732410b3548787a7661f9ca6a8bbf7e2"
+    },
+    {
+      "name": "container-run.mjs",
+      "before": "f1dbdc37c0fe88a37de3fd06b2a00b99030009b42b01939abd9a558356fd5c1a",
+      "after": "1f3ea825cb25bf9650a3e29c333f17df8d99e9d604bcf2bfa5e8517af6c7b211"
+    },
+    {
+      "name": "deadline.mjs",
+      "before": "8bfc8bca08c1a365c522bbf0ee65e9cc0f7b526aac3a330afc82c76a2c9a9614",
+      "after": "479eb1be1b4035889becd4c8d017faf195b3c4b41cc127f2a0e6661f6c1807b5"
+    },
+    {
+      "name": "entry_harbor.py",
+      "before": "9f82b6141a694b43eedbdea4db0f61b7a18726c11ce3c1c46f8832272bba9a6a",
+      "after": "a53c7596cb401595a1179fcdd90cb13c8b9799bd01b91d44069e017ea7dfa476"
+    },
+    {
+      "name": "inspect-messages.mjs",
+      "before": null,
+      "after": "3e703cc2c47603754900d6ccd720487e058bce0ed450efc337e66b9a98f6dc99"
+    },
+    {
+      "name": "messages-protocol.mjs",
+      "before": null,
+      "after": "0f2f609fc02d90cf6f2f0dab90b60ce4b52e5bbc0c65c11f08d8c890b60f1c69"
+    },
+    {
+      "name": "policy.py",
+      "before": "0f870c146deeabbe43bcc26ea542ca167874e790e30d83a18621ab702438a23e",
+      "after": "6fe552db7e242d8b4bd3d6af1c588429b0471ea8315c59c7a6dcfbe2808210fd"
+    },
+    {
+      "name": "protocol-fixtures.mjs",
+      "before": null,
+      "after": "7f536661e9bbbd197a521d2e8714eb949e439784c41cc21ab4a58b652a965a5d"
+    },
+    {
+      "name": "provider-guard.mjs",
+      "before": "dc4f40112e9da1fae55dc0ffef33c0faac40d51242b0eefb04dfec49ae219f0d",
+      "after": "9b62161043f8dffcfe0b768f2cc77d61e35f745332c08b4795f6449f2b28e94c"
+    },
+    {
+      "name": "run.py",
+      "before": "62a230e951e542ad34945c7a2f2a4d3e6085cfbc84ec4c0a54d6c1d25168630f",
+      "after": "6af6d089958c15e3ac284ffe5d45f9a4d4e8b95645aae151a1dc5cab86c066eb"
+    },
+    {
+      "name": "seal.py",
+      "before": "289774ccdcc2ffb4e2ac3ae55b4ae3df2dbae6dab47a85ee3195d6610b1022a0",
+      "after": "4cf13250e4c3423e6d2156768f87490501634731d9474adf29c267beec59e9ef"
+    },
+    {
+      "name": "spending-client.mjs",
+      "before": "eebf075954fbca3d247463ea4f5118ccc6e286c4e96cfc0e997ca5c91d549958",
+      "after": "962d38c5324f4d4e0117af1baea0cb879ce3613fcfb0b0fb4fb2a5a443f506c6"
+    },
+    {
+      "name": "spending.py",
+      "before": "f14561d87e548a3b888126a60edb303b42f50f2fe337c6731b77c410175b3944",
+      "after": "1f45075248c3b746876a62bf6133cb2810b3b027e51bf4e76bffdf77ff9d119a"
+    },
+    {
+      "name": "test_build_lock.py",
+      "before": null,
+      "after": "e87b6605fcc1e226e44ed0e37f6c2cdd7620943b7db3df863c4a04edcef103aa"
+    },
+    {
+      "name": "test_ledger.py",
+      "before": "1345009f627ada6c21caeaa8654803ad532b8e4976b4b803301e4bba36621cb5",
+      "after": "5f9c95c19d9972c1e1d8bf662be78ede4357e2a112bce3c1383338f17b8a6cf7"
+    },
+    {
+      "name": "test_policy.py",
+      "before": "2ce493cbdc626809f4d3730d513713108f8369aaaf04fa1c04b8324e462ca2dc",
+      "after": "c33e831ec1a9b08b0c5df6c167ff58c30dbea3bc3d329da3dfef84e6308cd61b"
+    },
+    {
+      "name": "test_repair_integration.py",
+      "before": null,
+      "after": "bbc9a61ecf93473bee25e19b8c616083ba377f95d280b66da5217693842fbf66"
+    },
+    {
+      "name": "test_supervisor.py",
+      "before": null,
+      "after": "bf08450f087769e53141a3067971f48bca464dd1c0f6d9534a7b2ca32a222054"
+    },
+    {
+      "name": "test-provider-guard.mjs",
+      "before": "75a3e2cd1217702a5b9fbcd27ee4be356968838c8b046a931e9edfe3fde4c702",
+      "after": "64afca606187086ec4216c0eb49dfad2d258afe17be69b23d73667a4fa61cbc1"
+    },
+    {
+      "name": "test-spending-client.mjs",
+      "before": "5d70f4a41166aa0d919f5f53556e38538b9e7042f2dff3838e250d30034b4830",
+      "after": "0fa827fe8976e99a0ab4cb0adb0dedaf6d59135bbe7678e138a4bacb78a306a9"
+    }
+  ]
+}

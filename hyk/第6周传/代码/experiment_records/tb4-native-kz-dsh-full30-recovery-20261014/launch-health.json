@@ -1,0 +1,464 @@
+{
+  "state": "running",
+  "updated_utc": "2026-10-14T14:13:53.500417+00:00",
+  "pid": 148222,
+  "phase": "first",
+  "summary": {
+    "native-kz": {
+      "first_finished": 0,
+      "total": 30,
+      "retry_finished": 0,
+      "retry_total": 0,
+      "clean": 0,
+      "passed": 0
+    },
+    "dsh": {
+      "first_finished": 0,
+      "total": 30,
+      "retry_finished": 0,
+      "retry_total": 0,
+      "clean": 0,
+      "passed": 0
+    }
+  },
+  "rows": [
+    {
+      "task": "payments-pipeline-fix",
+      "arm": "native-kz",
+      "stage": "first",
+      "job": "first-01-native-kz-payments-pipeline-fix",
+      "state": "preflighting",
+      "admitted_utc": "2026-10-14T14:13:03.263817+00:00",
+      "pid": 148284,
+      "live": {}
+    },
+    {
+      "task": "payments-pipeline-fix",
+      "arm": "dsh",
+      "stage": "first",
+      "job": "first-01-dsh-payments-pipeline-fix",
+      "state": "preflighting",
+      "admitted_utc": "2026-10-14T14:13:03.288508+00:00",
+      "pid": 148285,
+      "live": {}
+    },
+    {
+      "task": "layout-config-recreation",
+      "arm": "native-kz",
+      "stage": "first",
+      "job": "first-02-native-kz-layout-config-recreation",
+      "state": "pending"
+    },
+    {
+      "task": "layout-config-recreation",
+      "arm": "dsh",
+      "stage": "first",
+      "job": "first-02-dsh-layout-config-recreation",
+      "state": "pending"
+    },
+    {
+      "task": "fin-saccr-rwa",
+      "arm": "native-kz",
+      "stage": "first",
+      "job": "first-03-native-kz-fin-saccr-rwa",
+      "state": "pending"
+    },
+    {
+      "task": "fin-saccr-rwa",
+      "arm": "dsh",
+      "stage": "first",
+      "job": "first-03-dsh-fin-saccr-rwa",
+      "state": "pending"
+    },
+    {
+      "task": "mvcc-lsm-compaction",
+      "arm": "native-kz",
+      "stage": "first",
+      "job": "first-04-native-kz-mvcc-lsm-compaction",
+      "state": "pending"
+    },
+    {
+      "task": "mvcc-lsm-compaction",
+      "arm": "dsh",
+      "stage": "first",
+      "job": "first-04-dsh-mvcc-lsm-compaction",
+      "state": "pending"
+    },
+    {
+      "task": "uefi-bootkit",
+      "arm": "native-kz",
+      "stage": "first",
+      "job": "first-05-native-kz-uefi-bootkit",
+      "state": "pending"
+    },
+    {
+      "task": "uefi-bootkit",
+      "arm": "dsh",
+      "stage": "first",
+      "job": "first-05-dsh-uefi-bootkit",
+      "state": "pending"
+    },
+    {
+      "task": "retro-console-soc",
+      "arm": "native-kz",
+      "stage": "first",
+      "job": "first-06-native-kz-retro-console-soc",
+      "state": "pending"
+    },
+    {
+      "task": "retro-console-soc",
+      "arm": "dsh",
+      "stage": "first",
+      "job": "first-06-dsh-retro-console-soc",
+      "state": "pending"
+    },
+    {
+      "task": "gsea-proteomics",
+      "arm": "native-kz",
+      "stage": "first",
+      "job": "first-07-native-kz-gsea-proteomics",
+      "state": "pending"
+    },
+    {
+      "task": "gsea-proteomics",
+      "arm": "dsh",
+      "stage": "first",
+      "job": "first-07-dsh-gsea-proteomics",
+      "state": "pending"
+    },
+    {
+      "task": "layout-config-recreation2",
+      "arm": "native-kz",
+      "stage": "first",
+      "job": "first-08-native-kz-layout-config-recreation2",
+      "state": "pending"
+    },
+    {
+      "task": "layout-config-recreation2",
+      "arm": "dsh",
+      "stage": "first",
+      "job": "first-08-dsh-layout-config-recreation2",
+      "state": "pending"
+    },
+    {
+      "task": "coq-block-bound",
+      "arm": "native-kz",
+      "stage": "first",
+      "job": "first-09-native-kz-coq-block-bound",
+      "state": "pending"
+    },
+    {
+      "task": "coq-block-bound",
+      "arm": "dsh",
+      "stage": "first",
+      "job": "first-09-dsh-coq-block-bound",
+      "state": "pending"
+    },
+    {
+      "task": "ks-solver-cpp",
+      "arm": "native-kz",
+      "stage": "first",
+      "job": "first-10-native-kz-ks-solver-cpp",
+      "state": "pending"
+    },
+    {
+      "task": "ks-solver-cpp",
+      "arm": "dsh",
+      "stage": "first",
+      "job": "first-10-dsh-ks-solver-cpp",
+      "state": "pending"
+    },
+    {
+      "task": "wdm-design",
+      "arm": "native-kz",
+      "stage": "first",
+      "job": "first-11-native-kz-wdm-design",
+      "state": "pending"
+    },
+    {
+      "task": "wdm-design",
+      "arm": "dsh",
+      "stage": "first",
+      "job": "first-11-dsh-wdm-design",
+      "state": "pending"
+    },
+    {
+      "task": "shadow-relay",
+      "arm": "native-kz",
+      "stage": "first",
+      "job": "first-12-native-kz-shadow-relay",
+      "state": "pending"
+    },
+    {
+      "task": "shadow-relay",
+      "arm": "dsh",
+      "stage": "first",
+      "job": "first-12-dsh-shadow-relay",
+      "state": "pending"
+    },
+    {
+      "task": "vba-userform-port",
+      "arm": "native-kz",
+      "stage": "first",
+      "job": "first-13-native-kz-vba-userform-port",
+      "state": "pending"
+    },
+    {
+      "task": "vba-userform-port",
+      "arm": "dsh",
+      "stage": "first",
+      "job": "first-13-dsh-vba-userform-port",
+      "state": "pending"
+    },
+    {
+      "task": "ontology-kg-querying",
+      "arm": "native-kz",
+      "stage": "first",
+      "job": "first-14-native-kz-ontology-kg-querying",
+      "state": "pending"
+    },
+    {
+      "task": "ontology-kg-querying",
+      "arm": "dsh",
+      "stage": "first",
+      "job": "first-14-dsh-ontology-kg-querying",
+      "state": "pending"
+    },
+    {
+      "task": "bun-sourcemap-leak",
+      "arm": "native-kz",
+      "stage": "first",
+      "job": "first-15-native-kz-bun-sourcemap-leak",
+      "state": "pending"
+    },
+    {
+      "task": "bun-sourcemap-leak",
+      "arm": "dsh",
+      "stage": "first",
+      "job": "first-15-dsh-bun-sourcemap-leak",
+      "state": "pending"
+    },
+    {
+      "task": "risk-scorer-replay",
+      "arm": "native-kz",
+      "stage": "first",
+      "job": "first-16-native-kz-risk-scorer-replay",
+      "state": "pending"
+    },
+    {
+      "task": "risk-scorer-replay",
+      "arm": "dsh",
+      "stage": "first",
+      "job": "first-16-dsh-risk-scorer-replay",
+      "state": "pending"
+    },
+    {
+      "task": "freecad-impeller",
+      "arm": "native-kz",
+      "stage": "first",
+      "job": "first-17-native-kz-freecad-impeller",
+      "state": "pending"
+    },
+    {
+      "task": "freecad-impeller",
+      "arm": "dsh",
+      "stage": "first",
+      "job": "first-17-dsh-freecad-impeller",
+      "state": "pending"
+    },
+    {
+      "task": "nextjs-performance",
+      "arm": "native-kz",
+      "stage": "first",
+      "job": "first-18-native-kz-nextjs-performance",
+      "state": "pending"
+    },
+    {
+      "task": "nextjs-performance",
+      "arm": "dsh",
+      "stage": "first",
+      "job": "first-18-dsh-nextjs-performance",
+      "state": "pending"
+    },
+    {
+      "task": "cad-model",
+      "arm": "native-kz",
+      "stage": "first",
+      "job": "first-19-native-kz-cad-model",
+      "state": "pending"
+    },
+    {
+      "task": "cad-model",
+      "arm": "dsh",
+      "stage": "first",
+      "job": "first-19-dsh-cad-model",
+      "state": "pending"
+    },
+    {
+      "task": "batched-eval-parity",
+      "arm": "native-kz",
+      "stage": "first",
+      "job": "first-20-native-kz-batched-eval-parity",
+      "state": "pending"
+    },
+    {
+      "task": "batched-eval-parity",
+      "arm": "dsh",
+      "stage": "first",
+      "job": "first-20-dsh-batched-eval-parity",
+      "state": "pending"
+    },
+    {
+      "task": "formal-crypto",
+      "arm": "native-kz",
+      "stage": "first",
+      "job": "first-21-native-kz-formal-crypto",
+      "state": "pending"
+    },
+    {
+      "task": "formal-crypto",
+      "arm": "dsh",
+      "stage": "first",
+      "job": "first-21-dsh-formal-crypto",
+      "state": "pending"
+    },
+    {
+      "task": "vllm-deepseek-streaming",
+      "arm": "native-kz",
+      "stage": "first",
+      "job": "first-22-native-kz-vllm-deepseek-streaming",
+      "state": "pending"
+    },
+    {
+      "task": "vllm-deepseek-streaming",
+      "arm": "dsh",
+      "stage": "first",
+      "job": "first-22-dsh-vllm-deepseek-streaming",
+      "state": "pending"
+    },
+    {
+      "task": "music-harmony",
+      "arm": "native-kz",
+      "stage": "first",
+      "job": "first-23-native-kz-music-harmony",
+      "state": "pending"
+    },
+    {
+      "task": "music-harmony",
+      "arm": "dsh",
+      "stage": "first",
+      "job": "first-23-dsh-music-harmony",
+      "state": "pending"
+    },
+    {
+      "task": "takens-embedding-lean",
+      "arm": "native-kz",
+      "stage": "first",
+      "job": "first-24-native-kz-takens-embedding-lean",
+      "state": "pending"
+    },
+    {
+      "task": "takens-embedding-lean",
+      "arm": "dsh",
+      "stage": "first",
+      "job": "first-24-dsh-takens-embedding-lean",
+      "state": "pending"
+    },
+    {
+      "task": "roy-polymorph-cn",
+      "arm": "native-kz",
+      "stage": "first",
+      "job": "first-25-native-kz-roy-polymorph-cn",
+      "state": "pending"
+    },
+    {
+      "task": "roy-polymorph-cn",
+      "arm": "dsh",
+      "stage": "first",
+      "job": "first-25-dsh-roy-polymorph-cn",
+      "state": "pending"
+    },
+    {
+      "task": "cumulative-layout-shift",
+      "arm": "native-kz",
+      "stage": "first",
+      "job": "first-26-native-kz-cumulative-layout-shift",
+      "state": "pending"
+    },
+    {
+      "task": "cumulative-layout-shift",
+      "arm": "dsh",
+      "stage": "first",
+      "job": "first-26-dsh-cumulative-layout-shift",
+      "state": "pending"
+    },
+    {
+      "task": "vpp-loss-divergence",
+      "arm": "native-kz",
+      "stage": "first",
+      "job": "first-27-native-kz-vpp-loss-divergence",
+      "state": "pending"
+    },
+    {
+      "task": "vpp-loss-divergence",
+      "arm": "dsh",
+      "stage": "first",
+      "job": "first-27-dsh-vpp-loss-divergence",
+      "state": "pending"
+    },
+    {
+      "task": "lake-temp-glm",
+      "arm": "native-kz",
+      "stage": "first",
+      "job": "first-28-native-kz-lake-temp-glm",
+      "state": "pending"
+    },
+    {
+      "task": "lake-temp-glm",
+      "arm": "dsh",
+      "stage": "first",
+      "job": "first-28-dsh-lake-temp-glm",
+      "state": "pending"
+    },
+    {
+      "task": "legacy-utility-triage",
+      "arm": "native-kz",
+      "stage": "first",
+      "job": "first-29-native-kz-legacy-utility-triage",
+      "state": "pending"
+    },
+    {
+      "task": "legacy-utility-triage",
+      "arm": "dsh",
+      "stage": "first",
+      "job": "first-29-dsh-legacy-utility-triage",
+      "state": "pending"
+    },
+    {
+      "task": "data-anonymization",
+      "arm": "native-kz",
+      "stage": "first",
+      "job": "first-30-native-kz-data-anonymization",
+      "state": "pending"
+    },
+    {
+      "task": "data-anonymization",
+      "arm": "dsh",
+      "stage": "first",
+      "job": "first-30-dsh-data-anonymization",
+      "state": "pending"
+    }
+  ],
+  "active": [
+    {
+      "job": "first-01-native-kz-payments-pipeline-fix",
+      "pid": 148284,
+      "offline": true
+    },
+    {
+      "job": "first-01-dsh-payments-pipeline-fix",
+      "pid": 148285,
+      "offline": true
+    }
+  ]
+}

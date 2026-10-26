@@ -1,0 +1,22 @@
+{
+  "files": {
+    "projects/kz-dsh/src/exploration-learning.mjs": "87c6aa9745ae1855aa3b46c896d74b073445f372d46d940d1222afd86b25c8cf",
+    "projects/kz-dsh/src/full-integration.mjs": "e5a247e81b5aee077cfa92dbcba810cfd7bb33cfe5dccffaa9a47a4bc85e828c",
+    "projects/kz-dsh/src/full-task.mjs": "7625df8519267424cb49bf821d8275fd63d2aed5b7ac66fedffa76e847adfb28",
+    "projects/kz-dsh/src/plugin.mjs": "84e400925021805b7204d414ad09e93364c79fcd851cbf49c36cc0c6473a02b4",
+    "projects/kz-dsh/src/policy.mjs": "281b859e402e4f6a6af79df30012119a92008687d559bf6ee7192c7504faf84f",
+    "projects/kz-dsh/src/structured-context.mjs": "0f146af5aab8b9d53180a9ec85c0ced88c021a8afb8497909b80fcd615ce8c2b",
+    "projects/kz-native-orthogonal-trigger-20261017/native/legacy/sources/bestfgs-project/src/bestfgs/contrastive_exploration.py": "44880546189adbfd6f121eea387e4e18da7e9ffd2c6355ca97dd622e9694edbb",
+    "projects/kz-native-orthogonal-trigger-20261017/native/legacy/sources/bestfgs-project/src/bestfgs/error_routing.py": "a1a00602b599acd69c6681d1e0c98e0f6c175d093db6839293880079b6f3211b",
+    "projects/kz-native-orthogonal-trigger-20261017/native/legacy/sources/bestfgs-project/src/bestfgs/exploration_learning.py": "5d7572bb08f7b79fb3cc82007e0a374fc90b52ae79dc501ba667d69da306e1cd"
+  },
+  "native_legacy_failures": [
+    "test_action_conditioned_memory_reminds_before_execution_and_audits_followup (test_lean.LeanTests.test_action_conditioned_memory_reminds_before_execution_and_audits_followup)",
+    "test_deliberate_same_action_runs_after_one_memory_reminder (test_lean.LeanTests.test_deliberate_same_action_runs_after_one_memory_reminder)",
+    "test_memory_is_in_fixed_panel_after_old_history_eviction (test_lean.LeanTests.test_memory_is_in_fixed_panel_after_old_history_eviction)",
+    "test_memory_preserved_but_marked_historical_after_restore (test_lean.LeanTests.test_memory_preserved_but_marked_historical_after_restore)",
+    "test_memory_reconsideration_to_submit_does_not_leak_into_later_tool (test_lean.LeanTests.test_memory_reconsideration_to_submit_does_not_leak_into_later_tool)"
+  ],
+  "deployed": false,
+  "paid_model_requests": 0
+}

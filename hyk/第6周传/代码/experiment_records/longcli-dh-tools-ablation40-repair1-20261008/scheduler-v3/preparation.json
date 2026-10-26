@@ -1,0 +1,52 @@
+{
+  "time": 1791464551.0023546,
+  "old_controller_retired": true,
+  "archived_attempts": [
+    "cs61_fa24_ants",
+    "cmu15_445_p0",
+    "ap1400_2_hw26"
+  ],
+  "moves": [
+    {
+      "source": "/mnt/sdb/home/lizh639/longcli-dh-tools-ablation40-repair1-20261008/jobs/dh_1234_no_tools--cs61_fa24_ants",
+      "archived": "/mnt/sdb/home/lizh639/longcli-dh-tools-ablation40-repair1-20261008/retry-archive/supervisor-v2-failure/jobs/dh_1234_no_tools--cs61_fa24_ants"
+    },
+    {
+      "source": "/mnt/sdb/home/lizh639/longcli-dh-tools-ablation40-repair1-20261008/grades/dh_1234_no_tools--cs61_fa24_ants",
+      "archived": "/mnt/sdb/home/lizh639/longcli-dh-tools-ablation40-repair1-20261008/retry-archive/supervisor-v2-failure/grades/dh_1234_no_tools--cs61_fa24_ants"
+    },
+    {
+      "source": "/mnt/sdb/home/lizh639/longcli-dh-tools-ablation40-repair1-20261008/incoming/dh_1234_no_tools--cs61_fa24_ants",
+      "archived": "/mnt/sdb/home/lizh639/longcli-dh-tools-ablation40-repair1-20261008/retry-archive/supervisor-v2-failure/incoming/dh_1234_no_tools--cs61_fa24_ants"
+    },
+    {
+      "source": "/mnt/sdb/home/lizh639/longcli-dh-tools-ablation40-repair1-20261008/jobs/dh_1234_no_tools--cmu15_445_p0",
+      "archived": "/mnt/sdb/home/lizh639/longcli-dh-tools-ablation40-repair1-20261008/retry-archive/supervisor-v2-failure/jobs/dh_1234_no_tools--cmu15_445_p0"
+    },
+    {
+      "source": "/mnt/sdb/home/lizh639/longcli-dh-tools-ablation40-repair1-20261008/grades/dh_1234_no_tools--cmu15_445_p0",
+      "archived": "/mnt/sdb/home/lizh639/longcli-dh-tools-ablation40-repair1-20261008/retry-archive/supervisor-v2-failure/grades/dh_1234_no_tools--cmu15_445_p0"
+    },
+    {
+      "source": "/mnt/sdb/home/lizh639/longcli-dh-tools-ablation40-repair1-20261008/incoming/dh_1234_no_tools--cmu15_445_p0",
+      "archived": "/mnt/sdb/home/lizh639/longcli-dh-tools-ablation40-repair1-20261008/retry-archive/supervisor-v2-failure/incoming/dh_1234_no_tools--cmu15_445_p0"
+    },
+    {
+      "source": "/mnt/sdb/home/lizh639/longcli-dh-tools-ablation40-repair1-20261008/jobs/dh_1234_no_tools--ap1400_2_hw26",
+      "archived": "/mnt/sdb/home/lizh639/longcli-dh-tools-ablation40-repair1-20261008/retry-archive/supervisor-v2-failure/jobs/dh_1234_no_tools--ap1400_2_hw26"
+    },
+    {
+      "source": "/mnt/sdb/home/lizh639/longcli-dh-tools-ablation40-repair1-20261008/grades/dh_1234_no_tools--ap1400_2_hw26",
+      "archived": "/mnt/sdb/home/lizh639/longcli-dh-tools-ablation40-repair1-20261008/retry-archive/supervisor-v2-failure/grades/dh_1234_no_tools--ap1400_2_hw26"
+    },
+    {
+      "source": "/mnt/sdb/home/lizh639/longcli-dh-tools-ablation40-repair1-20261008/incoming/dh_1234_no_tools--ap1400_2_hw26",
+      "archived": "/mnt/sdb/home/lizh639/longcli-dh-tools-ablation40-repair1-20261008/retry-archive/supervisor-v2-failure/incoming/dh_1234_no_tools--ap1400_2_hw26"
+    }
+  ],
+  "cow_running_preserved": false,
+  "cow_already_finished": true,
+  "source_unchanged": true,
+  "pending_count": 11,
+  "normal_results_preserved": 9
+}

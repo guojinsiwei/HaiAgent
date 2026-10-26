@@ -1,0 +1,14 @@
+{
+  "zli12321/lhtb-spot-scheduler-traces:20260615": "sha256:4617479c6226fcf72d83d7cb3e4e823c8e0c6289b1b7e4c5c4af4597a63bf8a1",
+  "zli12321/lhtb-gdal-proj-raster-regression:20260615": "sha256:9a0ded6d51ce0c5a3d7b311f3f35b797bda88f5767386a8c1d1f737f10fdb61f",
+  "zhongzhi660/lhtb-climate-netcdf-extreme-event-audit:20260709": "sha256:354f0aac6a0128a3c7d48328bcaa37c238acde68b1b5df2e576a64fd9078d40d",
+  "zli12321/lhtb-great-expectations-audit:20260615": "sha256:30db89ec62c1d36d8b944f5fcfae2dd5ebad3f9adcb6bca79faff715c09a11bf",
+  "zhongzhi660/lhtb-microscopy-cell-count-qc-audit:20260709": "sha256:f34d8f16ff2c9dd155203de1eda9cde8976482d5d8e5e5563cf5a923f7ed332c",
+  "zli12321/lhtb-epa-swmm-stormwater-regression-audit:20260615": "sha256:ea5b7e4716d30676d904c6390e2229c49448b027437b768b712601ef098d688b",
+  "zhongzhi660/lhtb-satellite-flood-change-detection-audit:20260709": "sha256:85c8442bd4adf28f11551099e9f4339b42695855d84518e00e959348f2c2aff9",
+  "zli12321/lhtb-matpower-opf-regression:20260615": "sha256:a92798c18dc53ca6605cbed609a7a20131287abaeb2a45d6ff854c0ff82f0cff",
+  "zli12321/lhtb-modflow6-groundwater-regression-audit:20260615": "sha256:bedeaecd1bc6249440433c6735c8deb60f35965136bf700a49201be1eb7b9e9f",
+  "zli12321/lhtb-foldseek-paper-reproduction:20260615": "sha256:e0aa5be7b3c49155fb347e15beebc93e956d125ae74739f2b91cbd4a7612ee9f",
+  "zli12321/lhtb-opensees-seismic-structural-regression-audit:20260615": "sha256:3f51668dc95b7c903840370ed16c40e1fd1f358dc1f0a06dc767aa02c538ff1a",
+  "zli12321/lhtb-unison-paper-reproduction:20260615": "sha256:4e80a104af85cccd260ada0b737513aae8722acd4bea22f9f3002ba7b9c222d4"
+}

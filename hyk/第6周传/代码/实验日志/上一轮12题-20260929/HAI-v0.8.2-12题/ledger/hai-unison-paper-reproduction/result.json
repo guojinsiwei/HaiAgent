@@ -1,0 +1,62 @@
+{
+  "task": "unison-paper-reproduction",
+  "method": "hai",
+  "report": "/var/tmp/lizh639-lhtb-hai082-only-r1/runs/hai-unison-paper-reproduction/unison-paper-reproduction__Uwmcgg7/result.json",
+  "verifier_result": {
+    "rewards": {
+      "reward": 0.16666666666666666
+    }
+  },
+  "exception_info": null,
+  "process_exit_code": 0,
+  "audit_chain": {
+    "events": 1722,
+    "tail_sha256": "9e644a4ed242fd62de2fe309d7f2842a3757de0417cfeb71d8afcd4fe1323215"
+  },
+  "mechanism_utilization": {
+    "automatic_memory_updates": 81,
+    "direction_stalls": 81,
+    "enabled": true,
+    "explained_retries": 0,
+    "inferred_strategy_actions": 0,
+    "inferred_subgoal_actions": 0,
+    "memory_action_changed": 0,
+    "memory_action_unchanged": 0,
+    "memory_behavior_chain_is_association_not_causation": true,
+    "memory_direction_changed": 0,
+    "memory_direction_unchanged": 0,
+    "memory_exact_action_changed": 0,
+    "memory_followup_actions": 0,
+    "memory_followup_runs": 0,
+    "memory_followup_succeeded": 0,
+    "memory_followup_workspace_changed": 0,
+    "memory_intervention_followup_coverage": null,
+    "memory_interventions": 0,
+    "memory_override_reasons": 0,
+    "memory_override_reasons_exhausted": 0,
+    "memory_overrides_exhausted": 0,
+    "memory_recall_exposures": 0,
+    "memory_reconsiderations": 0,
+    "memory_rejections": 0,
+    "memory_use_self_reports": 0,
+    "model_declared_strategy_actions": 573,
+    "model_declared_subgoal_actions": 573,
+    "model_memory_admissions": 0,
+    "repeat_blocked": 0,
+    "repeat_decisions": 0,
+    "repeat_executed": 0,
+    "repetition_observations": 0,
+    "requests_with_recalled_memory": 0,
+    "run_decisions": 573,
+    "strategy_switches": 13,
+    "subgoal_switches": 10,
+    "unique_strategies": 4,
+    "unique_subgoals": 3,
+    "unverified_scope_soft_retries": 0
+  },
+  "classification": {
+    "stop_reason": "wall_budget",
+    "infrastructure_ok": true,
+    "reasons": []
+  }
+}

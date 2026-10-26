@@ -1,0 +1,9 @@
+{
+  "task": "asset001",
+  "artifact_sha256": "0da0cc6f8e86616e0afda67e223a5f591f782e5353a825e7a406e70fad7a4975",
+  "database_sha256": "f728a00b03236dd21863d5845edcd397666600cc8da086edd19f8bf44b239687",
+  "score": 0,
+  "roundtrip_verified": true,
+  "model_calls": 0,
+  "not_a_solution": true
+}

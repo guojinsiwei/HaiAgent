@@ -1,0 +1,9 @@
+{
+  "id": "openssl-selfsigned-cert",
+  "package_ref": "sha256:43b288549abe880ce4a3c735f30e746c4440c0159c5411e9ae5aafb547ba2d8c",
+  "files": {
+    "instruction.md": "38054a3371f7c2c853478a2f9af0bff858437d5b28a9a07483238f06e566921f",
+    "task.toml": "eb3e6e317f7f65aa495b38cf1b1609a99c727d42329eded2c82832e8fb234c2a",
+    "environment/Dockerfile": "f590b523038be43afcaf5291d7b9e8ed1333c48d9994e77b8dee2f2c352f0f40"
+  }
+}

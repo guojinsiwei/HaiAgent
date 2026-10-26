@@ -1,0 +1,18 @@
+{
+  "checks": [
+    {
+      "check": "configure",
+      "exit_code": 0,
+      "seconds": 2.1717827320098877
+    },
+    {
+      "check": "primer",
+      "exit_code": 0,
+      "seconds": 3.5769593715667725
+    }
+  ],
+  "scratch": "/mnt/lizh639/longcli-portability-20260927/public-build-nv2voq7k",
+  "original_unchanged": true,
+  "original_cmake_sha256": "d21e83f732dfef60585dcc3f56609d9c02d3a0f21b1e88e1ce7008cd32814d8b",
+  "scope": "public source-only build; not official scoring or a full build"
+}

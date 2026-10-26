@@ -1,0 +1,51 @@
+{
+  "task": "matpower-opf-regression",
+  "method": "bestfgs",
+  "report": "/var/tmp/lizh639-lhtb-bestfgs-v181-only-r1/runs/bestfgs-matpower-opf-regression/matpower-opf-regression__o2BZLr6/result.json",
+  "verifier_result": {
+    "rewards": {
+      "reward": 0.0
+    }
+  },
+  "exception_info": null,
+  "process_exit_code": 0,
+  "audit_chain": {
+    "events": 1727,
+    "tail_sha256": "231cf4197c374f4eb863ff6d02ed9dac92469ad1f2c3aa22ace60868b6719853"
+  },
+  "mechanism_utilization": {
+    "action_calls": 579,
+    "advisor_calls": 1,
+    "advisor_deferred": 1,
+    "advisor_responses_accepted": 0,
+    "branch_restores": 0,
+    "checkpoints_created": 1,
+    "memories_admitted": 0,
+    "memories_rejected": 0,
+    "memory_action_changed": 0,
+    "memory_action_unchanged": 0,
+    "memory_exposure_is_not_benefit": true,
+    "memory_exposures": 0,
+    "memory_followup_actions": 0,
+    "memory_followup_runs": 0,
+    "memory_followup_succeeded": 0,
+    "memory_followup_workspace_changed": 0,
+    "memory_interventions": 0,
+    "memory_use_is_self_report": true,
+    "memory_use_self_reports": 0,
+    "model_requests": 580,
+    "post_advice_actions": 0,
+    "protocol_errors": 2,
+    "requests_with_memory": 0,
+    "submissions": 0,
+    "tool_calls": 563
+  },
+  "classification": {
+    "stop_reason": "model_or_protocol_error_limit",
+    "infrastructure_ok": true,
+    "reasons": [],
+    "method_issues": [
+      "model_error"
+    ]
+  }
+}

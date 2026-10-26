@@ -1,0 +1,18 @@
+{
+  "scope": "infrastructure_only",
+  "image": "alexgshaw/regex-log@sha256:90101b2e815323a8da20528a1439bebc407eb9761c9c68a3d557730856c878e9",
+  "model_calls": 0,
+  "rounds": [
+    {
+      "fresh_environment": true,
+      "exec": true,
+      "upload_download": true
+    },
+    {
+      "fresh_environment": true,
+      "exec": true,
+      "upload_download": true
+    }
+  ],
+  "passed": true
+}

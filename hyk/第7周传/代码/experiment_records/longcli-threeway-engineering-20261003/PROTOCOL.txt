@@ -1,0 +1,19 @@
+Authorized 2026-10-03: repair LongCLI engineering first; rerun v6.1, user's orthogonal v8, RAW.
+Exact same original ten tasks and pinned official tests/images; 30 fresh independent trials.
+Two CubeStudio workers, 15 jobs each, rotating method order. No Docker on solver hosts.
+Source-only frozen artifacts graded once in fresh college Docker; no hidden feedback to solvers.
+No prior scores, task memories, workspaces or private credentials reused. Existing LHTB untouched.
+v6.1 and orthogonal-v8 engineering-v2 sources copied byte-identically from their frozen releases.
+The only new shared actor infrastructure is strict JSON transmission and bounded format correction.
+Actor/adviser at most 2 wire attempts per logical request; monitor 1 (unchanged original budget).
+4096 actor output; 1536 monitor/adviser output; thinking off; T=0.
+600 tools,800 logical requests, original 7200/10800-second task budgets and300-second command caps.
+One entire optional JSON Markdown enclosure is accepted; never salvage DSML or a JSON substring.
+Malformed, duplicate, multi-action, non-finite, mixed-tool and truncated output never executes.
+RAW retains its native sequential prompt/history, no memory/monitor/adviser/branch restoration.
+Native solver context policies and semantic gates remain part of each method; not a memory-only ablation.
+Known Cats starter READMD.md/P2P defect remains explicitly reported. Missing scores are not zero.
+No automatic failed-task replay. Two confirmed terminal wire faults pause further admissions.
+User-authorized college storage-floor bypass; genuine ENOSPC is still a recorded failure.
+No GPT automation or LLM monitoring job; supervision/relay uses only ordinary Python processes.
+Historical9 raw protocol failures replayed as redacted offline fixtures, not paid trial attempts.

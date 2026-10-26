@@ -1,0 +1,739 @@
+{
+  "source_experiment": "longcli-v6-raw-paired10-20261001",
+  "algorithm": "monitor-control-v6.1",
+  "benchmark_commit": "2015f37b5c458f2562354de6b415e9182c91af64",
+  "original_project_untouched": true,
+  "files": [
+    {
+      "path": "src/bestfgs/environment.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\bestfgs-project\\src\\bestfgs\\environment.py",
+      "source_sha256": "76096a6f909f42124424772040d04d30a6e801184d478d9c5a43f721bf514720",
+      "extracted_sha256": "53c169b805a3e89b79dfbb3d951367b58bf3734b33b45facd597a7e2ff519c0d",
+      "extraction": "top_level_symbol_closure",
+      "detail": {
+        "symbols": [
+          "Path",
+          "_copy_workspace",
+          "_entry_manifest_value",
+          "_file_digest",
+          "_manifest_fingerprint",
+          "_tree_fingerprint",
+          "_tree_manifest",
+          "hashlib",
+          "os",
+          "shutil",
+          "stat"
+        ],
+        "original_line_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            95,
+            96
+          ],
+          [
+            99,
+            110
+          ],
+          [
+            113,
+            122
+          ],
+          [
+            125,
+            131
+          ],
+          [
+            208,
+            214
+          ],
+          [
+            273,
+            278
+          ]
+        ]
+      }
+    },
+    {
+      "path": "src/bestfgs/lean_audit.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\bestfgs-project\\src\\bestfgs\\lean_audit.py",
+      "source_sha256": "3fb0266a46fb715d238343d38ebc61447abbcc01e0ee86a194d19cf1f8607dd6",
+      "extracted_sha256": "3fb0266a46fb715d238343d38ebc61447abbcc01e0ee86a194d19cf1f8607dd6",
+      "extraction": "verbatim",
+      "detail": null
+    },
+    {
+      "path": "src/bestfgs/lean_conversation.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\bestfgs-project\\src\\bestfgs\\lean_conversation.py",
+      "source_sha256": "b62e7cacf9726bb59cc5690d53defe343e7a3f8a5fbc6455872de6de76608c35",
+      "extracted_sha256": "b62e7cacf9726bb59cc5690d53defe343e7a3f8a5fbc6455872de6de76608c35",
+      "extraction": "verbatim",
+      "detail": null
+    },
+    {
+      "path": "src/bestfgs/lean_docker.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\bestfgs-project\\src\\bestfgs\\lean_docker.py",
+      "source_sha256": "56113c10fb0afb64a26a7b75e6878c72b4f33862e81bc9bec9978859b95d6efc",
+      "extracted_sha256": "685990664e39cf57f49fcfb1e3b079285141bdf4e826da7fb6b6f8929a7bf83c",
+      "extraction": "top_level_symbol_closure",
+      "detail": {
+        "symbols": [
+          "DEPENDENCY_SCRIPT",
+          "FINGERPRINT_SCRIPT"
+        ],
+        "original_line_ranges": [
+          [
+            15,
+            30
+          ],
+          [
+            32,
+            59
+          ]
+        ]
+      }
+    },
+    {
+      "path": "src/bestfgs/lean_environment.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\bestfgs-project\\src\\bestfgs\\lean_environment.py",
+      "source_sha256": "7af5c298dbc976e4bf977fc174129b39aa8fc13b6b23c9e9726f7d6f8cf7c262",
+      "extracted_sha256": "7af5c298dbc976e4bf977fc174129b39aa8fc13b6b23c9e9726f7d6f8cf7c262",
+      "extraction": "verbatim",
+      "detail": null
+    },
+    {
+      "path": "src/bestfgs/lean_memory.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\bestfgs-project\\src\\bestfgs\\lean_memory.py",
+      "source_sha256": "1795176b0f57c03275a086e937e05fd2a75994291952fced8fada8a7919b41b8",
+      "extracted_sha256": "1795176b0f57c03275a086e937e05fd2a75994291952fced8fada8a7919b41b8",
+      "extraction": "verbatim",
+      "detail": null
+    },
+    {
+      "path": "src/bestfgs/lean_monitor.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\bestfgs-project\\src\\bestfgs\\lean_monitor.py",
+      "source_sha256": "136ad6aa2e32f1ba0785fa2bc4b610a9281c2c420c49c77f610ab6d52e67c1dd",
+      "extracted_sha256": "136ad6aa2e32f1ba0785fa2bc4b610a9281c2c420c49c77f610ab6d52e67c1dd",
+      "extraction": "verbatim",
+      "detail": null
+    },
+    {
+      "path": "src/bestfgs/lean_progress.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\bestfgs-project\\src\\bestfgs\\lean_progress.py",
+      "source_sha256": "3f45c983459b9e7985b2657c3454ec2864a243555ae373db3f6d6b470390168b",
+      "extracted_sha256": "3f45c983459b9e7985b2657c3454ec2864a243555ae373db3f6d6b470390168b",
+      "extraction": "verbatim",
+      "detail": null
+    },
+    {
+      "path": "src/bestfgs/lean_protocol.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\bestfgs-project\\src\\bestfgs\\lean_protocol.py",
+      "source_sha256": "5dd433458699c9a7552ffa18f9d38181fdd04ef116f27a49e9686146bcea63c5",
+      "extracted_sha256": "5dd433458699c9a7552ffa18f9d38181fdd04ef116f27a49e9686146bcea63c5",
+      "extraction": "verbatim",
+      "detail": null
+    },
+    {
+      "path": "src/bestfgs/lean_runtime.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\bestfgs-project\\src\\bestfgs\\lean_runtime.py",
+      "source_sha256": "761437c65109b6ec379e2f0604aaef07f11a85f9ca82ff3aae3b83afffc1cda3",
+      "extracted_sha256": "761437c65109b6ec379e2f0604aaef07f11a85f9ca82ff3aae3b83afffc1cda3",
+      "extraction": "verbatim",
+      "detail": null
+    },
+    {
+      "path": "src/bestfgs/memory_events.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\bestfgs-project\\src\\bestfgs\\memory_events.py",
+      "source_sha256": "488ea087c7094f57d42b6c3865ffc193651ff06f4cf4624186499e832b0ac6ef",
+      "extracted_sha256": "488ea087c7094f57d42b6c3865ffc193651ff06f4cf4624186499e832b0ac6ef",
+      "extraction": "verbatim",
+      "detail": null
+    },
+    {
+      "path": "src/bestfgs/model_wire.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\bestfgs-project\\src\\bestfgs\\model_wire.py",
+      "source_sha256": "dd92ce356d6e541c98f2ce62ef6b759b1441b8ad7076230ef0d651541a18d1cd",
+      "extracted_sha256": "dd92ce356d6e541c98f2ce62ef6b759b1441b8ad7076230ef0d651541a18d1cd",
+      "extraction": "verbatim",
+      "detail": null
+    },
+    {
+      "path": "src/bestfgs/models.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\bestfgs-project\\src\\bestfgs\\models.py",
+      "source_sha256": "6fcaa1666a299e42ddb80f4a7916efe9ddee5e9950b06ca759208d5ef681e2a6",
+      "extracted_sha256": "8cd7b93be4615e57aec92d51fe457f98f9f7aa69e86ab4e9b6bd94f18b206081",
+      "extraction": "top_level_symbol_closure",
+      "detail": {
+        "symbols": [
+          "CommandResult",
+          "CommandSpec",
+          "ModelCallError",
+          "TaskSpec",
+          "dataclass",
+          "json",
+          "new_id",
+          "uuid"
+        ],
+        "original_line_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            98,
+            99
+          ],
+          [
+            107,
+            108
+          ],
+          [
+            113,
+            134
+          ],
+          [
+            233,
+            247
+          ],
+          [
+            374,
+            391
+          ]
+        ]
+      }
+    },
+    {
+      "path": "src/bestfgs/monitor_config.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\bestfgs-project\\src\\bestfgs\\monitor_config.py",
+      "source_sha256": "b400cbe6cd2e9f5e06ec6eaeb981d60b5acb20a2f7b7b4c17e77e0e734c6bec8",
+      "extracted_sha256": "b400cbe6cd2e9f5e06ec6eaeb981d60b5acb20a2f7b7b4c17e77e0e734c6bec8",
+      "extraction": "verbatim",
+      "detail": null
+    },
+    {
+      "path": "src/bestfgs/monitor_context.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\bestfgs-project\\src\\bestfgs\\monitor_context.py",
+      "source_sha256": "ec79a31b67798553348cb904ae339cdcd3d8f6228d532a05ef3b52762d071415",
+      "extracted_sha256": "ec79a31b67798553348cb904ae339cdcd3d8f6228d532a05ef3b52762d071415",
+      "extraction": "verbatim",
+      "detail": null
+    },
+    {
+      "path": "src/bestfgs/prompt_views.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\bestfgs-project\\src\\bestfgs\\prompt_views.py",
+      "source_sha256": "68353387a320b28f05230f649887faa0e1c2b0445d89e6c8cc8986986a315723",
+      "extracted_sha256": "e6c8b8c72df08d5ccea242c7fc46b4025e912cb6ec26b6be7b20bca6484a0fac",
+      "extraction": "top_level_symbol_closure",
+      "detail": {
+        "symbols": [
+          "DIAGNOSTIC",
+          "SHELL_OPS",
+          "classify",
+          "clip",
+          "compress_stream",
+          "diagnostic_category",
+          "re",
+          "shlex"
+        ],
+        "original_line_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            13,
+            13
+          ],
+          [
+            18,
+            26
+          ],
+          [
+            28,
+            65
+          ],
+          [
+            67,
+            137
+          ],
+          [
+            140,
+            188
+          ]
+        ]
+      }
+    },
+    {
+      "path": "src/bestfgs/response_repair.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\bestfgs-project\\src\\bestfgs\\response_repair.py",
+      "source_sha256": "fdafb17f8b0b1cfc342230bd4e1d793f54787a1881b1b79e061eaedd09470a4a",
+      "extracted_sha256": "fdafb17f8b0b1cfc342230bd4e1d793f54787a1881b1b79e061eaedd09470a4a",
+      "extraction": "verbatim",
+      "detail": null
+    },
+    {
+      "path": "src/bestfgs/retrac_adapter.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\bestfgs-project\\src\\bestfgs\\retrac_adapter.py",
+      "source_sha256": "a6b5c7bf19b6e161ea0bc0d7ab4bf6ccc9d9429251d060281f8957c65fc5bdef",
+      "extracted_sha256": "89d7ca2ad278b82613370a4180095e0a66a3f1ceeea0af3bd0139a56bdf1c0f6",
+      "extraction": "top_level_symbol_closure",
+      "detail": {
+        "symbols": [
+          "Any",
+          "Literal",
+          "ModelCallError",
+          "ModelProvider",
+          "OpenAICompatibleJSONClient",
+          "PROVIDER_DEFAULTS",
+          "Path",
+          "ProviderDefaults",
+          "REPAIRABLE_OUTPUT",
+          "ReasoningEffort",
+          "RetracModelConfig",
+          "_API_KEY_PATTERN",
+          "_BEARER_PATTERN",
+          "_SerializedHTTPError",
+          "_TransportFailure",
+          "_coalesce_streaming_body",
+          "_nonnegative_int",
+          "_read_streaming_response",
+          "_request_bytes_with_hard_timeout",
+          "_request_bytes_worker",
+          "_retry_after_seconds",
+          "_safe_error_text",
+          "_strip_json_fence",
+          "_terminate_request_process",
+          "coalesce_stream",
+          "collect_stream",
+          "dataclass",
+          "field",
+          "hashlib",
+          "json",
+          "logger",
+          "logging",
+          "multiprocessing",
+          "os",
+          "re",
+          "repair_feedback",
+          "time",
+          "urllib"
+        ],
+        "original_line_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            13,
+            13
+          ],
+          [
+            14,
+            14
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            16,
+            16
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            19,
+            19
+          ],
+          [
+            21,
+            35
+          ],
+          [
+            46,
+            46
+          ],
+          [
+            48,
+            48
+          ],
+          [
+            49,
+            49
+          ],
+          [
+            71,
+            71
+          ],
+          [
+            72,
+            72
+          ],
+          [
+            81,
+            87
+          ],
+          [
+            90,
+            111
+          ],
+          [
+            115,
+            225
+          ],
+          [
+            241,
+            245
+          ],
+          [
+            273,
+            274
+          ],
+          [
+            277,
+            625
+          ],
+          [
+            1576,
+            1652
+          ],
+          [
+            1655,
+            1681
+          ],
+          [
+            1684,
+            1685
+          ],
+          [
+            1688,
+            1689
+          ],
+          [
+            1710,
+            1716
+          ],
+          [
+            1764,
+            1767
+          ],
+          [
+            2083,
+            2086
+          ],
+          [
+            2147,
+            2151
+          ],
+          [
+            2154,
+            2161
+          ]
+        ]
+      }
+    },
+    {
+      "path": "src/bestfgs/shell_probe.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\bestfgs-project\\src\\bestfgs\\shell_probe.py",
+      "source_sha256": "13beadecbeef458b2026881f43d58d98304384fe0ee775ba2641f1593627d79c",
+      "extracted_sha256": "13beadecbeef458b2026881f43d58d98304384fe0ee775ba2641f1593627d79c",
+      "extraction": "verbatim",
+      "detail": null
+    },
+    {
+      "path": "src/bestfgs/stagnation_control.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\bestfgs-project\\src\\bestfgs\\stagnation_control.py",
+      "source_sha256": "2ab0a158860288be52c48ff9a5caae5a7df24ba2877ec592f6a0f79198d1e744",
+      "extracted_sha256": "2ab0a158860288be52c48ff9a5caae5a7df24ba2877ec592f6a0f79198d1e744",
+      "extraction": "verbatim",
+      "detail": null
+    },
+    {
+      "path": "src/bestfgs/tool_outcomes.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\bestfgs-project\\src\\bestfgs\\tool_outcomes.py",
+      "source_sha256": "08bad4d49646ca783abca8cabfee0292f2e555e5e4bab5c5082d5d66c9713315",
+      "extracted_sha256": "08bad4d49646ca783abca8cabfee0292f2e555e5e4bab5c5082d5d66c9713315",
+      "extraction": "verbatim",
+      "detail": null
+    },
+    {
+      "path": "src/haiagent/__init__.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\hai-project\\src\\haiagent\\__init__.py",
+      "source_sha256": "5337d13fc2e1419ece1cd9bb656e5e7757f52708fab0247a7087f4dc20f9ede4",
+      "extracted_sha256": "5337d13fc2e1419ece1cd9bb656e5e7757f52708fab0247a7087f4dc20f9ede4",
+      "extraction": "verbatim",
+      "detail": null
+    },
+    {
+      "path": "src/haiagent/action_protocol.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\hai-project\\src\\haiagent\\action_protocol.py",
+      "source_sha256": "a683ac087dc0edfa9cbe0f1786ef6e80bf706123f43daab1ace566f413431f5a",
+      "extracted_sha256": "a683ac087dc0edfa9cbe0f1786ef6e80bf706123f43daab1ace566f413431f5a",
+      "extraction": "verbatim",
+      "detail": null
+    },
+    {
+      "path": "src/haiagent/demo.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\hai-project\\src\\haiagent\\demo.py",
+      "source_sha256": "74d59bf8cb4cdc16384cfbd50ebf454dcd580fdd10b9abe05ef0bf62f48381d6",
+      "extracted_sha256": "27290f558e881696cb968563d1c324e6ebabb195d58c3d80bb58e8a695d3861e",
+      "extraction": "top_level_symbol_closure",
+      "detail": {
+        "symbols": [
+          "ScriptedClient",
+          "json"
+        ],
+        "original_line_ranges": [
+          [
+            3,
+            3
+          ],
+          [
+            14,
+            23
+          ]
+        ]
+      }
+    },
+    {
+      "path": "src/haiagent/executor.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\hai-project\\src\\haiagent\\executor.py",
+      "source_sha256": "000336493fbf69051f13091d451e1351277a09cba507e875c6f8a35d4b9bab8c",
+      "extracted_sha256": "000336493fbf69051f13091d451e1351277a09cba507e875c6f8a35d4b9bab8c",
+      "extraction": "verbatim",
+      "detail": null
+    },
+    {
+      "path": "src/haiagent/file_evidence.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\hai-project\\src\\haiagent\\file_evidence.py",
+      "source_sha256": "97f16daa202e105fccfdd6017c4e5e22c7d2fbd2590a84b2e3322891a0f9ae79",
+      "extracted_sha256": "97f16daa202e105fccfdd6017c4e5e22c7d2fbd2590a84b2e3322891a0f9ae79",
+      "extraction": "verbatim",
+      "detail": null
+    },
+    {
+      "path": "src/haiagent/model.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\hai-project\\src\\haiagent\\model.py",
+      "source_sha256": "77a640602828431cc624ba0f32cb9e4d01aa0850d88969d2305a84e81caeceee",
+      "extracted_sha256": "77a640602828431cc624ba0f32cb9e4d01aa0850d88969d2305a84e81caeceee",
+      "extraction": "verbatim",
+      "detail": null
+    },
+    {
+      "path": "src/haiagent/protocol.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\hai-project\\src\\haiagent\\protocol.py",
+      "source_sha256": "5f3fd55a369f08b69d43dffb952e3b7107cd218862b051fe4d6c04b9bf444874",
+      "extracted_sha256": "5f3fd55a369f08b69d43dffb952e3b7107cd218862b051fe4d6c04b9bf444874",
+      "extraction": "verbatim",
+      "detail": null
+    },
+    {
+      "path": "src/haiagent/runtime.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\hai-project\\src\\haiagent\\runtime.py",
+      "source_sha256": "6d6ec919089be6ecd71ecefcf64fe438caea4f8d4bfe330d78101b6207672081",
+      "extracted_sha256": "6d6ec919089be6ecd71ecefcf64fe438caea4f8d4bfe330d78101b6207672081",
+      "extraction": "verbatim",
+      "detail": null
+    },
+    {
+      "path": "src/haiagent/semantic.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\hai-project\\src\\haiagent\\semantic.py",
+      "source_sha256": "1987f6e64e55f3e59356186f5df9ed1eae68bdf5b54903bfe5842f54c5037db1",
+      "extracted_sha256": "1987f6e64e55f3e59356186f5df9ed1eae68bdf5b54903bfe5842f54c5037db1",
+      "extraction": "verbatim",
+      "detail": null
+    },
+    {
+      "path": "src/haiagent/storage.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\hai-project\\src\\haiagent\\storage.py",
+      "source_sha256": "3fb0266a46fb715d238343d38ebc61447abbcc01e0ee86a194d19cf1f8607dd6",
+      "extracted_sha256": "3fb0266a46fb715d238343d38ebc61447abbcc01e0ee86a194d19cf1f8607dd6",
+      "extraction": "verbatim",
+      "detail": null
+    },
+    {
+      "path": "src/haiagent/submission.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\hai-project\\src\\haiagent\\submission.py",
+      "source_sha256": "c8789a0bdad1414617998bd25f44aca29b11fe1eaae6bedaa5551f17bf5d458b",
+      "extracted_sha256": "c8789a0bdad1414617998bd25f44aca29b11fe1eaae6bedaa5551f17bf5d458b",
+      "extraction": "verbatim",
+      "detail": null
+    },
+    {
+      "path": "src/terminal_context/__init__.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\hai-project\\src\\terminal_context\\__init__.py",
+      "source_sha256": "b647214eb536046c467cc1ca14bd62617d8ec144c224675cefdcbabdd657dc7d",
+      "extracted_sha256": "b647214eb536046c467cc1ca14bd62617d8ec144c224675cefdcbabdd657dc7d",
+      "extraction": "verbatim",
+      "detail": null
+    },
+    {
+      "path": "src/terminal_context/compression.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\hai-project\\src\\terminal_context\\compression.py",
+      "source_sha256": "72f89ed2e261a2c279424fa4ba6c458b9a278cb63510efcdc9ac0d7d043e2f9c",
+      "extracted_sha256": "72f89ed2e261a2c279424fa4ba6c458b9a278cb63510efcdc9ac0d7d043e2f9c",
+      "extraction": "verbatim",
+      "detail": null
+    },
+    {
+      "path": "src/terminal_context/core.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\hai-project\\src\\terminal_context\\core.py",
+      "source_sha256": "4e121ef0c13b3e2734cb7bae18d49255fa496ffdda88a4cd1804a614987cf90f",
+      "extracted_sha256": "4e121ef0c13b3e2734cb7bae18d49255fa496ffdda88a4cd1804a614987cf90f",
+      "extraction": "verbatim",
+      "detail": null
+    },
+    {
+      "path": "src/terminal_context/stagnation.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\hai-project\\src\\terminal_context\\stagnation.py",
+      "source_sha256": "220428cb9d47774893921030051a111f018e8c813e3a3118ec6f82b8c56d71c1",
+      "extracted_sha256": "220428cb9d47774893921030051a111f018e8c813e3a3118ec6f82b8c56d71c1",
+      "extraction": "verbatim",
+      "detail": null
+    },
+    {
+      "path": "src/terminal_context/types.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\hai-project\\src\\terminal_context\\types.py",
+      "source_sha256": "fd55fcca350f316391657dbadd4198c87c1b74f8a36eb76291eaa3327dcc993d",
+      "extracted_sha256": "fd55fcca350f316391657dbadd4198c87c1b74f8a36eb76291eaa3327dcc993d",
+      "extraction": "verbatim",
+      "detail": null
+    },
+    {
+      "path": "tests/test_lean.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\bestfgs-project\\tests\\test_lean.py",
+      "source_sha256": "e5f15db8823a108877e8e0f8b7efdf13dfa60d894470c75c9a4dbaf961c4e4b1",
+      "extracted_sha256": "e5f15db8823a108877e8e0f8b7efdf13dfa60d894470c75c9a4dbaf961c4e4b1",
+      "extraction": "verbatim"
+    },
+    {
+      "path": "tests/test_model_wire.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\sources\\bestfgs-project\\tests\\test_model_wire.py",
+      "source_sha256": "bad16bb0d857508dfeb4b4c06d019338c9bfb487daf588bbb5b5c457780e2125",
+      "extracted_sha256": "bad16bb0d857508dfeb4b4c06d019338c9bfb487daf588bbb5b5c457780e2125",
+      "extraction": "verbatim"
+    },
+    {
+      "path": "experiment_adapter/runner.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\runner.py",
+      "source_sha256": "26828f882d47ba448df5e9bbe534117268148b42eda6e853947cbf3327a17cfc",
+      "extracted_sha256": "26828f882d47ba448df5e9bbe534117268148b42eda6e853947cbf3327a17cfc",
+      "extraction": "verbatim_reference"
+    },
+    {
+      "path": "experiment_adapter/environment.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\environment.py",
+      "source_sha256": "6875112b9501b509024f8ce8b70c8cc6d7e501f97846c862633222a883ad08f4",
+      "extracted_sha256": "6875112b9501b509024f8ce8b70c8cc6d7e501f97846c862633222a883ad08f4",
+      "extraction": "verbatim_reference"
+    },
+    {
+      "path": "experiment_adapter/audit.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\audit.py",
+      "source_sha256": "346bc76df3cc6015886e93778c8082b95619d0be40a7148ae521e970096bc8db",
+      "extracted_sha256": "346bc76df3cc6015886e93778c8082b95619d0be40a7148ae521e970096bc8db",
+      "extraction": "verbatim_reference"
+    },
+    {
+      "path": "experiment_adapter/net_transport.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\net_transport.py",
+      "source_sha256": "7c17759a4011c6a08c00913b291695ba3d6eabcec86fbbd18febfd696f455daa",
+      "extracted_sha256": "7c17759a4011c6a08c00913b291695ba3d6eabcec86fbbd18febfd696f455daa",
+      "extraction": "verbatim_reference"
+    },
+    {
+      "path": "experiment_adapter/common.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\common.py",
+      "source_sha256": "96e0cd8d4ab428b0f67d04d140597c3fd20b4d6ff7b65825e685dfaef94269f4",
+      "extracted_sha256": "96e0cd8d4ab428b0f67d04d140597c3fd20b4d6ff7b65825e685dfaef94269f4",
+      "extraction": "verbatim_reference"
+    },
+    {
+      "path": "experiment_adapter/chroot_entry.py",
+      "source": "experiment_records\\longcli-v6-raw-paired10-20261001\\chroot_entry.py",
+      "source_sha256": "f961ba5b9dfa0cdadb1724d87bb52fc5eabbca10bb93544d4101d14c3783c5e7",
+      "extracted_sha256": "f961ba5b9dfa0cdadb1724d87bb52fc5eabbca10bb93544d4101d14c3783c5e7",
+      "extraction": "verbatim_reference"
+    }
+  ]
+}

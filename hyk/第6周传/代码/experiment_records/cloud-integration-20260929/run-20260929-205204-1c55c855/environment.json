@@ -1,0 +1,12 @@
+{
+  "host": "BC-Server01",
+  "owner": "integration-02fe0ba070de432ca7ea7f6e1c55c855",
+  "source_image": "zli12321/lhtb-matpower-opf-regression:20260615",
+  "source_image_id": "sha256:a92798c18dc53ca6605cbed609a7a20131287abaeb2a45d6ff854c0ff82f0cff",
+  "docker": "29.3.0",
+  "network": "none",
+  "cpus": 1,
+  "memory_mb": 1024,
+  "model_api_calls": 0,
+  "scope": "Real adapters and runtimes; scripted policy, not Harbor grading or real-model evaluation"
+}

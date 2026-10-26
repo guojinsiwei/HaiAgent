@@ -1,0 +1,6 @@
+{
+  "error_type": "RelayNetworkError",
+  "message": "worker 1 health read unavailable after 3 attempt(s); remote state is unknown",
+  "state": "network_unknown_retrying",
+  "time": 1791128468.4821904
+}

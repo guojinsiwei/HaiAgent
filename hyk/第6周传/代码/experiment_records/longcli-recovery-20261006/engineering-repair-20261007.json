@@ -1,0 +1,59 @@
+{
+  "scope": ["DSH", "Re-TRAC", "Reflexion"],
+  "solver_algorithm_changed": false,
+  "per_task_budgets_changed": false,
+  "original_attempts_retained": true,
+  "gpt_automation_created": false,
+  "repairs": [
+    "Stopped exact orphan DSH grader only after verifying experiment label, dead grader PID and frozen source SHA256",
+    "Transferred missing DSH lock and traps frozen artifacts from Cube to academy",
+    "Replaced blocked grading dispatch with isolated model-free repair attempts; canonical scores published only after complete grading",
+    "Preserve official scores before container cleanup; scoped cleanup also runs on container creation failure",
+    "Shared owned-grader lock replaces global container-name scanning in the new candidate",
+    "Normalize only identical duplicate JSON metadata suffixes; do not infer, rewrite or replay commands",
+    "Recover failure reason and counters from durable result/health after controller kill",
+    "Separate confirmed container stop from failed snapshot and retain original source on copy failure"
+  ],
+  "validation": {
+    "retrac_linux_regressions_passed": 37,
+    "reflexion_candidate_linux_regressions_passed": 26,
+    "real_docker_fixtures": ["cs61_fa24_scheme", "cmu15_445_p0"],
+    "fixture_model_calls": 0,
+    "historical_valid_actions_unchanged": 33,
+    "historical_duplicate_suffix_actions_recovered": 4,
+    "historical_other_invalid_actions_still_rejected": 2
+  },
+  "dsh": {
+    "campaign": "/var/tmp/lizh639-longcli-dsh20-byte-context-repair-20261006",
+    "complete_official_scores": 20,
+    "mean_f2p": 0.4692233062004577,
+    "paid_solver_reruns": 0,
+    "scores_returned_locally": true
+  },
+  "retrac": {
+    "campaign": "/var/tmp/lizh639-longcli-retrac-recovery2-20261007",
+    "unfinished_tasks": 18,
+    "previous_deliveries_retained": 2,
+    "state_at_verification": "running_canaries",
+    "delivered_at_final_check": 1,
+    "active_at_final_check": ["cs61_fa24_scheme"],
+    "pending_at_final_check": 16,
+    "fresh_key_entered_locally": true,
+    "canaries": [
+      {"task": "cs61_fa24_scheme", "model_calls": 51, "tool_calls": 50, "committed_states": 5, "api_errors": []},
+      {"task": "cs61_fa24_ants", "model_calls": 54, "tool_calls": 47, "committed_states": 6, "api_errors": []}
+    ]
+  },
+  "reflexion": {
+    "campaign": "/var/tmp/lizh639-longcli-reflexion-recovery-20261006",
+    "new_deliveries": 17,
+    "previous_deliveries_retained": 3,
+    "all_20_solver_deliveries_available": true,
+    "complete_scores_at_verification": 14,
+    "grading_state": "advancing",
+    "healthy_solver_not_interrupted": true,
+    "solver_receipt_patches_tested_as_candidate_not_hot_patched": true
+  },
+  "grading_queue": "/var/tmp/lizh639-longcli-scoring-repair-20261007",
+  "grading_repair_model_calls": 0
+}

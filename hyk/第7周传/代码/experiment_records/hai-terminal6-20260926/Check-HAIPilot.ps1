@@ -1,0 +1,4 @@
+$ErrorActionPreference = 'Stop'
+$haiSshKey = Join-Path $env:USERPROFILE '.ssh\cubestudio_notebook'
+& ssh -i $haiSshKey -o BatchMode=yes -o ConnectTimeout=15 lizh639@172.16.108.236 'cd /mnt/sdb/home/lizh639/hai-terminal6-20260926 && /mnt/sdb/home/lizh639/terminalbench-v14-setup/runtime/bin/python -B -c "import json,pathlib,time; h=pathlib.Path(\"health.json\"); r=pathlib.Path(\"ready.json\"); s=pathlib.Path(\"summary.json\"); d=json.loads(h.read_text()) if h.exists() else {\"state\":\"ready_for_key\" if r.exists() else \"preparing\"}; d[\"heartbeat_age_seconds\"]=round(time.time()-d[\"heartbeat\"],1) if \"heartbeat\" in d else None; print(json.dumps(d,indent=2)); print(json.dumps(json.loads(s.read_text())[\"groups\"],indent=2) if s.exists() else \"No scored model trials yet\")"'
+if ($LASTEXITCODE -ne 0) { throw 'Status query failed; this does not restart the experiment.' }

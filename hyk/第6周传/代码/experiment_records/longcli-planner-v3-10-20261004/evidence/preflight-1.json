@@ -1,0 +1,87 @@
+{
+  "passed": true,
+  "worker": 1,
+  "checks": [
+    {
+      "task": "cs61_fa24_ants",
+      "method": "planner-v3",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "graph_parent_restore": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "cs61_fa24_hog",
+      "method": "planner-v3",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "graph_parent_restore": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "cmu15_445_p0",
+      "method": "planner-v3",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "graph_parent_restore": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "cmu15_445_p2",
+      "method": "planner-v3",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "graph_parent_restore": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "ap1400_2_hw35",
+      "method": "planner-v3",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "graph_parent_restore": true,
+      "submitted": true,
+      "model_calls": 0
+    }
+  ],
+  "model_calls": 0
+}

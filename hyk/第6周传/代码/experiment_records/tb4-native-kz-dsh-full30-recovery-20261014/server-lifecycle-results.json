@@ -1,0 +1,23 @@
+{
+  "results": [
+    {
+      "trial": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-acceptance-v2-native-kz/mvcc-lsm-compaction__CsS5GM6",
+      "reward": 0.0,
+      "exception_type": null,
+      "engineering_clean": true,
+      "arm": "native-kz",
+      "harbor_exit": 0,
+      "paid_calls": 0
+    },
+    {
+      "trial": "/mnt/sdb/home/lizh639/tb4-native-kz-dsh-full30-recovery-20261014/preflight/preflight-acceptance-v2-dsh/mvcc-lsm-compaction__gkGaXqw",
+      "reward": 0.0,
+      "exception_type": null,
+      "engineering_clean": true,
+      "arm": "dsh",
+      "harbor_exit": 0,
+      "paid_calls": 0
+    }
+  ],
+  "paid_calls": 0
+}

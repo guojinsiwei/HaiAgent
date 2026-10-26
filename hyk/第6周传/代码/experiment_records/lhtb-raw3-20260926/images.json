@@ -1,0 +1,29 @@
+[
+  {
+    "task": "langchain-version-migration",
+    "image": "zli12321/lhtb-langchain-version-migration:20260615",
+    "id": "sha256:bcfdd1c8e0894e847d1b5eaf4121c76a1072a8c65889eb6fa6425343ac8b574a",
+    "size": 151079677,
+    "digests": [
+      "dockerproxy.net/zli12321/lhtb-langchain-version-migration@sha256:bcfdd1c8e0894e847d1b5eaf4121c76a1072a8c65889eb6fa6425343ac8b574a"
+    ]
+  },
+  {
+    "task": "nbody-accel-iterative",
+    "image": "zli12321/lhtb-nbody-accel-iterative:20260615",
+    "id": "sha256:b80b04f75c3db6d15c0e8ac3faf38b468a2f01f81f0a83ff1968020c7a953571",
+    "size": 66870790,
+    "digests": [
+      "dockerproxy.net/zli12321/lhtb-nbody-accel-iterative@sha256:b80b04f75c3db6d15c0e8ac3faf38b468a2f01f81f0a83ff1968020c7a953571"
+    ]
+  },
+  {
+    "task": "duckdb-optimizer-closure",
+    "image": "zli12321/lhtb-duckdb-optimizer-closure:20260615",
+    "id": "sha256:0d26b68533314b06db6752d7abda3a75309ec6a5b68914cfd4d417d02153559e",
+    "size": 825458430,
+    "digests": [
+      "dockerproxy.net/zli12321/lhtb-duckdb-optimizer-closure@sha256:0d26b68533314b06db6752d7abda3a75309ec6a5b68914cfd4d417d02153559e"
+    ]
+  }
+]

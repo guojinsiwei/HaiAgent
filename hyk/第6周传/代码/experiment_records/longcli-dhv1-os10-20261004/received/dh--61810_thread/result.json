@@ -1,0 +1,161 @@
+{
+  "version": "DHv1",
+  "task_id": "61810_thread",
+  "submitted": false,
+  "stop_reason": "model_budget",
+  "artifact": {
+    "path": "/mnt/lizh639/longcli-dhv1-os10-20261004/roots/dh--61810_thread/app",
+    "fingerprint": "46efb0358057ab49097ae72efd539c6c8dc93b9e33b774a906bbc7efd7484a59",
+    "restoration": "workspace_files_only",
+    "delivery_preflight": {
+      "passed": true,
+      "issues": [],
+      "source": "public_starter_boot_dispatch",
+      "task_success": null,
+      "automatic_revert": false,
+      "instruction": "Restore temporary test-only boot substitutions before delivery. Do not revert unrelated implementation changes. This audit does not establish overall correctness."
+    }
+  },
+  "official_success": null,
+  "error_type": null,
+  "interaction_rounds": 800,
+  "action_rounds": 784,
+  "advisor_rounds": 4,
+  "monitor_rounds": 12,
+  "tool_calls": 369,
+  "wall_seconds": 5266.707975995727,
+  "model_usage": {
+    "action": {
+      "model_calls": 784,
+      "api_requests": 785,
+      "api_responses": 784,
+      "prompt_tokens": 10184712,
+      "completion_tokens": 354194,
+      "total_tokens": 10538906,
+      "cached_prompt_tokens": 1906688,
+      "cache_miss_prompt_tokens": 8278024,
+      "usage_reports": 784,
+      "usage_missing_responses": 0,
+      "failure_counts": {
+        "transport": 1
+      },
+      "response_models": [
+        "deepseek-flash"
+      ]
+    },
+    "advisor": {
+      "model_calls": 4,
+      "api_requests": 4,
+      "api_responses": 4,
+      "prompt_tokens": 60939,
+      "completion_tokens": 1970,
+      "total_tokens": 62909,
+      "cached_prompt_tokens": 896,
+      "cache_miss_prompt_tokens": 60043,
+      "usage_reports": 4,
+      "usage_missing_responses": 0,
+      "failure_counts": {},
+      "response_models": [
+        "deepseek-flash"
+      ]
+    },
+    "monitor": {
+      "model_calls": 12,
+      "api_requests": 12,
+      "api_responses": 12,
+      "prompt_tokens": 65679,
+      "completion_tokens": 6743,
+      "total_tokens": 72422,
+      "cached_prompt_tokens": 6272,
+      "cache_miss_prompt_tokens": 59407,
+      "usage_reports": 12,
+      "usage_missing_responses": 0,
+      "failure_counts": {
+        "json_syntax": 2
+      },
+      "response_models": [
+        "deepseek-flash"
+      ]
+    }
+  },
+  "mechanism_utilization": {
+    "model_requests": 800,
+    "action_calls": 784,
+    "advisor_calls": 4,
+    "tool_calls": 369,
+    "memory_exposures": 2662,
+    "requests_with_memory": 690,
+    "memories_admitted": 9,
+    "memories_rejected": 0,
+    "memory_use_self_reports": 24,
+    "advisor_responses_accepted": 4,
+    "advisor_deferred": 0,
+    "checkpoints_created": 1,
+    "branch_restores": 0,
+    "submissions": 0,
+    "protocol_errors": 0,
+    "memory_interventions": 4,
+    "memory_action_changed": 1,
+    "memory_action_unchanged": 3,
+    "memory_followup_actions": 16,
+    "memory_followup_runs": 13,
+    "memory_followup_succeeded": 8,
+    "memory_followup_not_executed": 3,
+    "memory_followup_mismatches": 0,
+    "memory_followup_workspace_changed": 2,
+    "post_advice_actions": 4,
+    "monitor_calls": 12,
+    "monitor_reviews_accepted": 7,
+    "monitor_deferred": 5,
+    "semantic_stalls": 4,
+    "auto_memory_candidates": 10,
+    "auto_memories_admitted": 9,
+    "auto_memories_rejected": 1,
+    "observed_memories_admitted": 0,
+    "recovery_started": 0,
+    "recovery_plans": 0,
+    "recovery_verified_repairs": 0,
+    "recovery_checked_hypotheses": 0,
+    "recovery_failed": 0,
+    "expectations_registered": 369,
+    "expectations_matched": 293,
+    "expectations_contradicted": 33,
+    "expectations_unknown": 43,
+    "expectation_contract_missing": 6,
+    "expectation_contract_invalid": 0,
+    "route_episodes": 0,
+    "route_plans": 0,
+    "route_tools": 0,
+    "route_trials": 0,
+    "route_pruned": 0,
+    "route_selected": 0,
+    "route_no_gain": 0,
+    "route_rejected": 0,
+    "route_restore_failures": 0,
+    "contrastive_failure_records": 26,
+    "action_loop_blocks": 384,
+    "contrastive_episodes": 22,
+    "contrastive_proposals": 508,
+    "contrastive_rejections": 35,
+    "contrastive_diagnostic_fallbacks": 8,
+    "contrastive_accepted": 473,
+    "contrastive_observations": 121,
+    "contrastive_informative_predictions": 0,
+    "contrastive_new_evidence": 100,
+    "contrastive_workspace_changes": 8,
+    "contrastive_public_check_improvements": 0,
+    "memory_exposure_is_not_benefit": true,
+    "memory_use_is_self_report": true
+  },
+  "time_by_role": {
+    "action": 2040.1252777660266,
+    "tools": 2834.2085198732093,
+    "monitor": 39.00918275490403,
+    "advisor": 13.37538607697934
+  },
+  "contextual_tool_redundancy": {
+    "status": "requires_independent_audit",
+    "rate": null,
+    "denominator": 369
+  }
+}

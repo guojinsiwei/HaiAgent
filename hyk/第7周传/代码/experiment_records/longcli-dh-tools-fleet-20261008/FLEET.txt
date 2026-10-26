@@ -1,0 +1,17 @@
+2026-10-08: 同一轮 DH 三工具修复版的三节点扩展，不是新一轮20题重跑。
+原学院根目录 /var/tmp/longcli-dh-tools-execution-repair3-20261008。
+已有10题不重新分配，包含原来已完成及仍运行的题。只派剩余10题：
+学院 cow/fs/lock/mmap/net/pgtbl；Cube0 syscall/thread；Cube1 traps/util。
+总并发上限12：学院8（包含旧任务），Cube0、Cube1各2。
+原Solver、Planner配置/监控/向导/记忆/正交算法源码保持封存。
+每题800实际API尝试、600工具、7200秒、4096输出tokens、48000输入字节不变。
+旧调度器暂停派新题，旧子进程继续；它们完成后只终止旧调度器。
+新任务不重放未知是否执行完成的命令。各题新工作区、新home、独立记忆。
+学院继续Docker/每题2CPU+8GiB；Cube不支持Docker，使用原有private-rootfs
+加user/PID/network namespaces隔离，每题2CPU和8GiB进程地址空间上限。
+Cube各自容器16GB共用内存，不能宣称与独立Docker8GiB内存控制完全相同。
+官方评分全部在学院进行；完整产物SHA验真，摘要最后发布，成绩不回传给Solver。
+本机普通Python程序负责桥接和评分回传，不调用GPT，不需要邮箱或SMTP授权码。
+启动需用户重新隐藏输入API密钥，一次经SSH stdin分别送给三个worker，仅在RAM持有。
+三节点--accept零API验收完成后，才可通过Start-Fleet.ps1启动剩余10题。
+关闭本机或网络断开不会自动停止远端solver，但结果回传需要恢复本机桥接程序。

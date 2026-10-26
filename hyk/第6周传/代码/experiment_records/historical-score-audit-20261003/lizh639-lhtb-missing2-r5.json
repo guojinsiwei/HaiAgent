@@ -1,0 +1,38 @@
+[
+  {
+    "task": "great-expectations-audit",
+    "method": "bestfgs",
+    "report": "/var/tmp/lizh639-lhtb-missing2-r5/runs/bestfgs-great-expectations-audit/great-expectations-audit__cuuvir9/result.json",
+    "verifier_result": {
+      "rewards": {
+        "reward": 0.0
+      }
+    },
+    "exception_info": null,
+    "process_exit_code": 0,
+    "audit_chain": {
+      "events": 618,
+      "tail_sha256": "d69138a413978eb2dfd0d909f98f49636ddac3920c67455ecf4cf54c49169311"
+    },
+    "replacement_for": "disk_reserve_exhausted_without_official_score",
+    "supplement_protocol_sha256": "25463858461e69ee9b11515c9b68cc992ff91d31ffcaaf5e7cd056fc2cce5e99"
+  },
+  {
+    "task": "great-expectations-audit",
+    "method": "raw",
+    "report": "/var/tmp/lizh639-lhtb-missing2-r5/runs/raw-great-expectations-audit/great-expectations-audit__fiRUW9V/result.json",
+    "verifier_result": {
+      "rewards": {
+        "reward": 0.0
+      }
+    },
+    "exception_info": null,
+    "process_exit_code": 0,
+    "audit_chain": {
+      "events": 766,
+      "tail_sha256": "6d4641d270f120e3f37cbc66a15082e5e59832a02652a3317cd5837672023f25"
+    },
+    "replacement_for": "disk_reserve_exhausted_without_official_score",
+    "supplement_protocol_sha256": "25463858461e69ee9b11515c9b68cc992ff91d31ffcaaf5e7cd056fc2cce5e99"
+  }
+]

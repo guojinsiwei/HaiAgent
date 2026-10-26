@@ -1,0 +1,22 @@
+{
+  "state": "running",
+  "updated": 1790494615.1355865,
+  "completed": 8,
+  "total": 36,
+  "pending": 25,
+  "active": [
+    {
+      "task": "spot-scheduler-traces",
+      "method": "bestfgs"
+    },
+    {
+      "task": "gdal-proj-raster-regression",
+      "method": "bestfgs"
+    },
+    {
+      "task": "gdal-proj-raster-regression",
+      "method": "hai"
+    }
+  ],
+  "protocol_sha256": "00ebce928727bbf4ede937fd7e1bfca86558f0e62d4739f2d970b915d3fe2483"
+}

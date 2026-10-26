@@ -1,0 +1,140 @@
+{
+  "version": "bestfgs-monitor-control-v6.1",
+  "task_id": "ap1400_2_hw26",
+  "submitted": false,
+  "stop_reason": "request_or_tool_budget",
+  "artifact": {
+    "path": "/mnt/lizh639/longcli-v6-raw-paired10-20261001/roots/bestfgs-v6.1--ap1400_2_hw26/app",
+    "fingerprint": "c1f0f46bbbfd44dee322d320a4f89607f0d5b58e76b1195def643b1608e51daa",
+    "restoration": "workspace_files_only"
+  },
+  "official_success": null,
+  "error_type": null,
+  "interaction_rounds": 690,
+  "action_rounds": 672,
+  "advisor_rounds": 6,
+  "monitor_rounds": 12,
+  "tool_calls": 600,
+  "wall_seconds": 1967.2125920802355,
+  "model_usage": {
+    "action": {
+      "model_calls": 672,
+      "api_requests": 686,
+      "api_responses": 686,
+      "prompt_tokens": 10983800,
+      "cached_prompt_tokens": 829440,
+      "cache_miss_prompt_tokens": 10154360,
+      "cache_write_prompt_tokens": 0,
+      "completion_tokens": 187756,
+      "cache_hit_rate": 0.075515,
+      "usage_missing_responses": 0,
+      "response_models": [
+        "deepseek-flash"
+      ],
+      "system_fingerprints": [
+        "aeb56401ca74e127821c4f9126dcb669"
+      ],
+      "last_failure_kind": null,
+      "last_failure_detail": null,
+      "failure_counts": {
+        "json_syntax": 15
+      },
+      "usage_unreported_requests": 0
+    },
+    "advisor": {
+      "model_calls": 6,
+      "api_requests": 6,
+      "api_responses": 6,
+      "prompt_tokens": 114923,
+      "cached_prompt_tokens": 896,
+      "cache_miss_prompt_tokens": 114027,
+      "cache_write_prompt_tokens": 0,
+      "completion_tokens": 2727,
+      "cache_hit_rate": 0.007797,
+      "usage_missing_responses": 0,
+      "response_models": [
+        "deepseek-flash"
+      ],
+      "system_fingerprints": [
+        "aeb56401ca74e127821c4f9126dcb669"
+      ],
+      "last_failure_kind": null,
+      "last_failure_detail": null,
+      "failure_counts": {},
+      "usage_unreported_requests": 0
+    },
+    "monitor": {
+      "model_calls": 12,
+      "api_requests": 12,
+      "api_responses": 12,
+      "prompt_tokens": 69601,
+      "cached_prompt_tokens": 5760,
+      "cache_miss_prompt_tokens": 63841,
+      "cache_write_prompt_tokens": 0,
+      "completion_tokens": 7483,
+      "cache_hit_rate": 0.082757,
+      "usage_missing_responses": 0,
+      "response_models": [
+        "deepseek-flash"
+      ],
+      "system_fingerprints": [
+        "aeb56401ca74e127821c4f9126dcb669"
+      ],
+      "last_failure_kind": null,
+      "last_failure_detail": null,
+      "failure_counts": {},
+      "usage_unreported_requests": 0
+    }
+  },
+  "mechanism_utilization": {
+    "model_requests": 690,
+    "action_calls": 672,
+    "advisor_calls": 6,
+    "tool_calls": 600,
+    "memory_exposures": 1461,
+    "requests_with_memory": 604,
+    "memories_admitted": 51,
+    "memories_rejected": 0,
+    "memory_use_self_reports": 109,
+    "advisor_responses_accepted": 6,
+    "advisor_deferred": 0,
+    "checkpoints_created": 1,
+    "branch_restores": 0,
+    "submissions": 0,
+    "protocol_errors": 6,
+    "memory_interventions": 4,
+    "memory_action_changed": 3,
+    "memory_action_unchanged": 1,
+    "memory_followup_actions": 71,
+    "memory_followup_runs": 71,
+    "memory_followup_succeeded": 61,
+    "memory_followup_workspace_changed": 3,
+    "post_advice_actions": 6,
+    "monitor_calls": 12,
+    "monitor_reviews_accepted": 11,
+    "monitor_deferred": 1,
+    "semantic_stalls": 6,
+    "auto_memory_candidates": 20,
+    "auto_memories_admitted": 19,
+    "auto_memories_rejected": 1,
+    "observed_memories_admitted": 6,
+    "recovery_started": 73,
+    "recovery_plans": 73,
+    "recovery_verified_repairs": 1,
+    "recovery_checked_hypotheses": 0,
+    "recovery_failed": 71,
+    "memory_exposure_is_not_benefit": true,
+    "memory_use_is_self_report": true
+  },
+  "time_by_role": {
+    "action": 1358.40999650117,
+    "tools": 176.88390111364424,
+    "monitor": 40.52606296353042,
+    "advisor": 19.274939018301666
+  },
+  "contextual_tool_redundancy": {
+    "status": "requires_independent_audit",
+    "rate": null,
+    "denominator": 600
+  }
+}

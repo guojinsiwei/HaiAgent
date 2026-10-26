@@ -1,0 +1,5 @@
+{
+  "exit_code": 0,
+  "output": "{\"started\": true, \"pid\": 1475131, \"campaign\": \"kz-dsh-exploration-v2-20261018\", \"trials\": 12, \"concurrency\": 2, \"maximum_cny\": 48}\n",
+  "stderr": ""
+}

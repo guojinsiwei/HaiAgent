@@ -1,0 +1,16 @@
+[Unit]
+Description=KZ TB4 scoped three-hour solver watchdog
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+WorkingDirectory=/var/tmp/lizh639-tb4-server-watchdog-20261014
+ExecStart=/var/tmp/lizh639-tb4-taotoken-smoke-20261011/venv/bin/python /var/tmp/lizh639-tb4-server-watchdog-20261014/watchdog.py
+Restart=always
+RestartSec=5
+UMask=0077
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,9 @@
+{
+  "python_syntax": 92,
+  "javascript_syntax": 69,
+  "failures": [],
+  "smoke_checks": [
+    "queue: 50 tasks x 3 arms, unique jobs, total concurrency 6, per-arm concurrency 2, no automatic retry",
+    "ledger: reservation/settlement idempotency, persistent accounting, unresolved reservations retained after restart"
+  ]
+}

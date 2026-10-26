@@ -1,0 +1,20 @@
+2026-10-02 RAW12 deployment ready; paid trials NOT started.
+Remote: /var/tmp/lizh639-lhtb-raw12-engineering-v2-20261002-r1
+Local launcher: Start-RAW12.ps1
+Same original twelve-task list, one raw1 arm, four parallel slots.
+Fresh hidden local DeepSeek key entry is required; no credential reuse.
+Linux: 13 tests passed, zero skips (0.397s). Windows: 12 passed, one
+Harbor adapter test deferred to Linux (0.375s). Launcher parses successfully.
+Actual adapter test proves one actor client, no BestFGS/HAI decision runner.
+Repeated observed failed command is executable; no memory/gate intervention.
+The same logical-request/tool/format/wall budgets and shared infra are retained.
+Official no-model Docker continuation/isolation/budget-delivery fixture passed.
+Final source seal validate passed. No active workers or ledger blockers.
+Generation/model API calls during all preparation: 0.
+
+First preparation failed because a copied environment() default still selected
+evidence1 rather than raw1. This default was fixed and covered by a regression
+assertion. The incomplete initial directory was retained, not resealed or run.
+The -r1 directory is the only launcher target; its full preflight passed.
+Original paired campaign, all past results and source seals are untouched.
+No GPT scheduled task, prune, previous-task restart or API budget expansion.

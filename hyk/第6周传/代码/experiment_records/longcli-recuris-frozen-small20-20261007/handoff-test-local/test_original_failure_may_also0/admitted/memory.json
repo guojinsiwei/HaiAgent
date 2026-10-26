@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "E": [
+    {
+      "id": "check",
+      "description": "Check requirements",
+      "content": "Read back all requested fields.",
+      "tags": []
+    }
+  ],
+  "W": {
+    "init_guidance": "Track goals",
+    "update_guidance": "Use evidence",
+    "max_goals": 8
+  },
+  "rho": {
+    "trigger": "first_turn",
+    "retrieval": "all",
+    "max_skills": 8
+  },
+  "C": {
+    "required_output": [],
+    "forbidden_output": []
+  }
+}

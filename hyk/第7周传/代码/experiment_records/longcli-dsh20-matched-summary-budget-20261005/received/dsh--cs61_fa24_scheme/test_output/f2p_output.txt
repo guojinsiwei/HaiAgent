@@ -1,0 +1,213 @@
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.18.1
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Scoring tests
+
+---------------------------------------------------------------------
+Understanding Eval/Apply
+    Passed: 0
+    Failed: 0
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Problem 1
+    Passed: 2
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Problem 2
+    Passed: 1
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Problem 3
+    Passed: 2
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Problem 4
+    Passed: 1
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Problem 5
+    Passed: 3
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Problem 6
+    Passed: 2
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Problem 7
+    Passed: 2
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Problem 8
+    Passed: 2
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Problem 9
+    Passed: 3
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Problem 10 > Suite 1 > Case 6
+
+scm> (define (f 1 2 3) 4) ; check that you have valid formals
+f
+
+# Error: expected
+#     SchemeError
+# but got
+#     f
+
+Run only this test case with "python3 ok -q 10 --suite 1 --case 6"
+---------------------------------------------------------------------
+Problem 10
+    Passed: 1
+    Failed: 1
+[oooook.....] 50.0% passed
+
+---------------------------------------------------------------------
+Problem 11
+    Passed: 2
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Problem 12
+    Passed: 2
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Problem 13
+    Passed: 2
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Problem 14 > Suite 1 > Case 4
+
+scm> (let ((a 2) (a 3)) (+ a a)) ; how should we catch something like this?
+4
+
+# Error: expected
+#     SchemeError
+# but got
+#     4
+
+Run only this test case with "python3 ok -q 14 --suite 1 --case 4"
+---------------------------------------------------------------------
+Problem 14 > Suite 2 > Case 2
+
+>>> from scheme import *
+>>> global_frame = create_global_frame()
+>>> # Improper formals list - used same variable name twice
+>>> bindings = Pair(Pair('x', Pair(2, nil)), Pair(Pair('x', Pair(3, nil)), nil)) # equivalent to ((x 2) (x 3))
+>>> make_let_frame(bindings, global_frame)
+<{x: 2} -> <Global Frame>>
+
+# Error: expected
+#     SchemeError
+# but got
+#     <{x: 2} -> <Global Frame>>
+
+Run only this test case with "python3 ok -q 14 --suite 2 --case 2"
+---------------------------------------------------------------------
+Problem 14 > Suite 3 > Case 1
+
+scm> (define x 3)
+x
+scm> (define y 4)
+y
+scm> (let ((x (+ y 2))
+....       (y (+ x 2)))
+....      (cons x (cons y nil)))
+(6 5)
+scm> (let ((x 'hello)) x)
+hello
+scm> (let ((a 1) (b 2) (c 3)) (+ a b c))
+6
+scm> (define z 0)
+z
+scm> (let ((a (define z (+ z 1)))) z)
+1
+scm> (let ((x 1)
+....       (y 3))
+....    (define x (+ x 1))
+....    (list x y))
+(2 3)
+scm> (let ((a 1 1)) a)
+1
+
+# Error: expected
+#     SchemeError
+# but got
+#     1
+
+Run only this test case with "python3 ok -q 14 --suite 3 --case 1"
+---------------------------------------------------------------------
+Problem 14
+    Passed: 0
+    Failed: 3
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Scheme tests in tests.scm
+
+Score: 1.0/1
+
+---------------------------------------------------------------------
+Problem 15
+    Passed: 1
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Problem 16
+    Passed: 1
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Point breakdown
+    Understanding Eval/Apply: 0.0/0
+    Problem 1: 1.0/1
+    Problem 2: 2.0/2
+    Problem 3: 2.0/2
+    Problem 4: 2.0/2
+    Problem 5: 1.0/1
+    Problem 6: 1.0/1
+    Problem 7: 2.0/2
+    Problem 8: 2.0/2
+    Problem 9: 2.0/2
+    Problem 10: 1.0/2
+    Problem 11: 1.0/1
+    Problem 12: 2.0/2
+    Problem 13: 2.0/2
+    Problem 14: 0.0/2
+    tests.scm: 1.0/1
+    Problem 15: 1.0/1
+    Problem 16: 2.0/2
+
+Score:
+    Total: 25.0
+
+Cannot backup when running ok with --local.

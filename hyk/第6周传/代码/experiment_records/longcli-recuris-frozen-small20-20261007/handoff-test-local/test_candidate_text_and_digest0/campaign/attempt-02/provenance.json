@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "benchmark_commit": "2015f37b5c458f2562354de6b415e9182c91af64",
+  "task_id": "demo_task",
+  "task_sha256": "5c84380484882f07f1322ca942af3f5d030ba0cdee0c2699c26a66ae370ec73e",
+  "model_name": "provider/model",
+  "agent_import_path": "recuris.longcli:RecurisAgent",
+  "agent_options": [
+    {
+      "name": "api_key_env",
+      "value": "OPENAI_API_KEY"
+    }
+  ],
+  "endpoint_environment": {
+    "OPENAI_BASE_URL": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "OPENAI_API_BASE": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "DEEPSEEK_BASE_URL": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "DEEPSEEK_API_BASE": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "memory_digest": "fea94d6874067856cf4e13aaa502147007db4dad43938149657b2ae6b20cac9c",
+  "adapter_code_digest": "b0e21132ec8e583a2c325496c04cf1a5474a861d84c63399c75ecd7148dff43f",
+  "harness_timeout_seconds": 3900,
+  "process_timeout_seconds": 4500,
+  "n_attempts": 1,
+  "give_test_output": 1
+}

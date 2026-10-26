@@ -1,0 +1,147 @@
+========== HW3 Start ==========
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found GTest: /usr/local/lib/cmake/GTest/GTestConfig.cmake (found version "1.18.0")  
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /app/ap1400_2_hw/ap1400_2_hw3/build_hw3
+[ 25%] Building CXX object CMakeFiles/main.dir/src/main.cpp.o
+[ 50%] Building CXX object CMakeFiles/main.dir/src/bst.cpp.o
+[ 75%] Building CXX object CMakeFiles/main.dir/src/unit_test.cpp.o
+[100%] Linking CXX executable main
+[100%] Built target main
+RUNNING TESTS ...
+[==========] Running 31 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 31 tests from HW3Test
+[ RUN      ] HW3Test.TEST1
+[       OK ] HW3Test.TEST1 (0 ms)
+[ RUN      ] HW3Test.TEST2
+[       OK ] HW3Test.TEST2 (0 ms)
+[ RUN      ] HW3Test.TEST3
+[       OK ] HW3Test.TEST3 (0 ms)
+[ RUN      ] HW3Test.TEST4
+adress of node: 0x7fff74d150b0
+adress of left: 0x7fff74d15070
+adress of right: 0x7fff74d15090
+********************************************************************************
+PRINT A NODE
+0x7fff74d150b0 => value:10  	left:0x7fff74d15070	right:0x7fff74d15090
+********************************************************************************
+[       OK ] HW3Test.TEST4 (0 ms)
+[ RUN      ] HW3Test.TEST5
+[       OK ] HW3Test.TEST5 (0 ms)
+[ RUN      ] HW3Test.TEST6
+[       OK ] HW3Test.TEST6 (0 ms)
+[ RUN      ] HW3Test.TEST7
+[       OK ] HW3Test.TEST7 (0 ms)
+[ RUN      ] HW3Test.TEST8
+[       OK ] HW3Test.TEST8 (0 ms)
+[ RUN      ] HW3Test.TEST9
+[       OK ] HW3Test.TEST9 (0 ms)
+[ RUN      ] HW3Test.TEST10
+[       OK ] HW3Test.TEST10 (0 ms)
+[ RUN      ] HW3Test.TEST11
+PRINT A BINARY SEARCH TREE
+0x6446d44300d0 => value:25  	left:0x6446d44300f0	right:0x6446d4430110
+0x6446d44300f0 => value:10  	left:0x6446d4430170	right:0x6446d4430150
+0x6446d4430110 => value:50  	left:0             	right:0x6446d4430130
+0x6446d4430170 => value:7   	left:0             	right:0             
+0x6446d4430150 => value:15  	left:0             	right:0             
+0x6446d4430130 => value:53  	left:0             	right:0             
+binary tree size: 6
+[       OK ] HW3Test.TEST11 (0 ms)
+[ RUN      ] HW3Test.TEST12
+[       OK ] HW3Test.TEST12 (0 ms)
+[ RUN      ] HW3Test.TEST13
+[       OK ] HW3Test.TEST13 (0 ms)
+[ RUN      ] HW3Test.TEST14
+here
+here2
+[       OK ] HW3Test.TEST14 (0 ms)
+[ RUN      ] HW3Test.TEST15
+[       OK ] HW3Test.TEST15 (0 ms)
+[ RUN      ] HW3Test.TEST16
+[       OK ] HW3Test.TEST16 (0 ms)
+[ RUN      ] HW3Test.TEST17
+[       OK ] HW3Test.TEST17 (0 ms)
+[ RUN      ] HW3Test.TEST18
+[       OK ] HW3Test.TEST18 (0 ms)
+[ RUN      ] HW3Test.TEST19
+[       OK ] HW3Test.TEST19 (0 ms)
+[ RUN      ] HW3Test.TEST20
+[       OK ] HW3Test.TEST20 (0 ms)
+[ RUN      ] HW3Test.TEST21
+[       OK ] HW3Test.TEST21 (0 ms)
+[ RUN      ] HW3Test.TEST22
+[       OK ] HW3Test.TEST22 (0 ms)
+[ RUN      ] HW3Test.TEST23
+[       OK ] HW3Test.TEST23 (0 ms)
+[ RUN      ] HW3Test.TEST24
+[       OK ] HW3Test.TEST24 (0 ms)
+[ RUN      ] HW3Test.TEST25
+[       OK ] HW3Test.TEST25 (0 ms)
+[ RUN      ] HW3Test.TEST26
+[       OK ] HW3Test.TEST26 (0 ms)
+[ RUN      ] HW3Test.TEST27
+[       OK ] HW3Test.TEST27 (0 ms)
+[ RUN      ] HW3Test.TEST28
+[       OK ] HW3Test.TEST28 (0 ms)
+[ RUN      ] HW3Test.TEST29
+[       OK ] HW3Test.TEST29 (0 ms)
+[ RUN      ] HW3Test.TEST30
+[       OK ] HW3Test.TEST30 (0 ms)
+[ RUN      ] HW3Test.TEST31
+[       OK ] HW3Test.TEST31 (0 ms)
+[----------] 31 tests from HW3Test (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 31 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 31 tests.
+<<<SUCCESS>>>
+
+========== HW5 Start ==========
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found GTest: /usr/local/lib/cmake/GTest/GTestConfig.cmake (found version "1.18.0")  
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /app/ap1400_2_hw/ap1400_2_hw5/build_hw5
+[  8%] Building CXX object CMakeFiles/test_runner.dir/src/espresso_based.cpp.o
+[ 16%] Building CXX object CMakeFiles/main.dir/src/espresso_based.cpp.o
+[ 25%] Building CXX object CMakeFiles/main.dir/src/cappuccino.cpp.o
+[ 33%] Building CXX object CMakeFiles/test_runner.dir/src/unit_test.cpp.o
+[ 41%] Building CXX object CMakeFiles/test_runner.dir/src/test_runner.cpp.o
+[ 50%] Building CXX object CMakeFiles/main.dir/src/main.cpp.o
+[ 66%] Building CXX object CMakeFiles/test_runner.dir/src/cappuccino.cpp.o
+[ 66%] Building CXX object CMakeFiles/main.dir/src/unit_test.cpp.o
+[ 83%] Building CXX object CMakeFiles/test_runner.dir/src/mocha.cpp.o
+[ 83%] Building CXX object CMakeFiles/main.dir/src/mocha.cpp.o
+[ 91%] Linking CXX executable main
+[100%] Linking CXX executable test_runner
+[100%] Built target main
+[100%] Built target test_runner
+Cappuccino price: 60
+Brewing Cappuccino
+Mocha price: 65
+Brewing Mocha

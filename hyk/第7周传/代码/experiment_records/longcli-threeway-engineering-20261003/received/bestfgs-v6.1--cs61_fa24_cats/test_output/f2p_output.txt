@@ -1,0 +1,120 @@
+=====================================================================
+Assignment: Cats Project
+OK, version v1.18.1
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Scoring tests
+
+---------------------------------------------------------------------
+Problem 1
+    Passed: 1
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Problem 2 > Suite 1 > Case 1
+
+>>> from cats import about
+>>> from cats import pick
+>>> dogs = about(['dogs', 'hounds'])
+>>> dogs('A paragraph about cats.')
+False
+>>> dogs('A paragraph about dogs.')
+True
+>>> dogs('Release the Hounds!')
+True
+>>> dogs('"DOGS" stands for Department Of Geophysical Science.')
+False
+
+# Error: expected
+#     True
+# but got
+#     False
+
+Run only this test case with "python3 ok -q 02 --suite 1 --case 1"
+---------------------------------------------------------------------
+Problem 2 > Suite 2 > Case 2
+
+>>> from cats import about
+>>> ab = about(['unsimilar', 'conditioning', 'crystallogenical', 'mennom', 'foreannouncement', 'neomorph'])
+>>> ab('#crystallogenIcalW podded reorganizationist neomorPhf hneomorphj')
+True
+
+# Error: expected
+#     False
+# but got
+#     True
+
+Run only this test case with "python3 ok -q 02 --suite 2 --case 2"
+---------------------------------------------------------------------
+Problem 2
+    Passed: 0
+    Failed: 2
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Problem 3
+    Passed: 1
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Problem 4
+    Passed: 1
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Problem 5
+    Passed: 1
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Problem 6
+    Passed: 1
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Problem 7
+    Passed: 1
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Problem 8
+    Passed: 1
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Problem 9
+    Passed: 1
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Problem 10
+    Passed: 1
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Point breakdown
+    Problem 1: 1.0/1
+    Problem 2: 0.0/1
+    Problem 3: 2.0/2
+    Problem 4: 1.0/1
+    Problem 5: 2.0/2
+    Problem 6: 3.0/3
+    Problem 7: 3.0/3
+    Problem 8: 2.0/2
+    Problem 9: 1.0/1
+    Problem 10: 3.0/3
+
+Score:
+    Total: 18.0
+
+Cannot backup when running ok with --local.

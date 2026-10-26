@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "campaign": "tb4-ctyun-paired60-30yuan",
+  "provider": "ctyun-token-package",
+  "endpoint": "https://ai.ctaigw.cn/v1/messages",
+  "model": "deepseek-v4-flash-0428",
+  "package_price_fen": 8990,
+  "package_tokens": 100000000,
+  "campaign_limit_fen": 3000,
+  "input_ceiling_tokens": 1048576,
+  "max_output_tokens": 32768,
+  "billing": "input_including_cache_plus_output",
+  "price_source": "https://www.ctyun.cn/document/11061839/11071205",
+  "activation_required": true
+}

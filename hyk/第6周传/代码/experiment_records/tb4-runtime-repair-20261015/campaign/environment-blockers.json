@@ -1,0 +1,6 @@
+{
+  "freecad-impeller": {
+    "reason": "Official verifier image has pip/conda VTK dependency conflict; no validated repair yet",
+    "required_before_paid_admission": "Validate a declared verifier dependency repair shared by both arms"
+  }
+}

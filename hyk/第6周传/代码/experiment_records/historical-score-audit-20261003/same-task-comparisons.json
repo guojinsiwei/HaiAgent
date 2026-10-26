@@ -1,0 +1,533 @@
+{
+  "reference": "orthogonal1/engineering-v2",
+  "comparisons": [
+    {
+      "campaign": "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r2",
+      "method": "raw",
+      "n": 3,
+      "history_mean_pct": 38.221111111111114,
+      "orthogonal_same_tasks_pct": 41.41834196891191,
+      "difference_pp": -3.197230857800797,
+      "all12": false,
+      "tasks": [
+        "spot-scheduler-traces",
+        "modflow6-groundwater-regression-audit",
+        "foldseek-paper-reproduction"
+      ],
+      "infrastructure_failures": 0
+    },
+    {
+      "campaign": "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r2",
+      "method": "hai",
+      "n": 4,
+      "history_mean_pct": 8.333333333333332,
+      "orthogonal_same_tasks_pct": 31.069798042657837,
+      "difference_pp": -22.736464709324505,
+      "all12": false,
+      "tasks": [
+        "spot-scheduler-traces",
+        "modflow6-groundwater-regression-audit",
+        "foldseek-paper-reproduction",
+        "gdal-proj-raster-regression"
+      ],
+      "infrastructure_failures": 0
+    },
+    {
+      "campaign": "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r2",
+      "method": "bestfgs",
+      "n": 4,
+      "history_mean_pct": 8.345416465281135,
+      "orthogonal_same_tasks_pct": 31.069798042657837,
+      "difference_pp": -22.724381577376704,
+      "all12": false,
+      "tasks": [
+        "modflow6-groundwater-regression-audit",
+        "foldseek-paper-reproduction",
+        "gdal-proj-raster-regression",
+        "spot-scheduler-traces"
+      ],
+      "infrastructure_failures": 0
+    },
+    {
+      "campaign": "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r3",
+      "method": "raw",
+      "n": 5,
+      "history_mean_pct": 24.265092813806667,
+      "orthogonal_same_tasks_pct": 26.304076689166273,
+      "difference_pp": -2.0389838753596052,
+      "all12": false,
+      "tasks": [
+        "spot-scheduler-traces",
+        "modflow6-groundwater-regression-audit",
+        "foldseek-paper-reproduction",
+        "climate-netcdf-extreme-event-audit",
+        "gdal-proj-raster-regression"
+      ],
+      "infrastructure_failures": 0
+    },
+    {
+      "campaign": "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r3",
+      "method": "hai",
+      "n": 5,
+      "history_mean_pct": 7.999092813806667,
+      "orthogonal_same_tasks_pct": 26.304076689166273,
+      "difference_pp": -18.304983875359607,
+      "all12": false,
+      "tasks": [
+        "spot-scheduler-traces",
+        "modflow6-groundwater-regression-audit",
+        "foldseek-paper-reproduction",
+        "gdal-proj-raster-regression",
+        "climate-netcdf-extreme-event-audit"
+      ],
+      "infrastructure_failures": 0
+    },
+    {
+      "campaign": "/mnt/sdb/home/lizh639/lhtb-triple12-v161-20260927-r3",
+      "method": "bestfgs",
+      "n": 5,
+      "history_mean_pct": 8.008759319364907,
+      "orthogonal_same_tasks_pct": 26.304076689166273,
+      "difference_pp": -18.295317369801367,
+      "all12": false,
+      "tasks": [
+        "modflow6-groundwater-regression-audit",
+        "foldseek-paper-reproduction",
+        "gdal-proj-raster-regression",
+        "spot-scheduler-traces",
+        "climate-netcdf-extreme-event-audit"
+      ],
+      "infrastructure_failures": 1
+    },
+    {
+      "campaign": "/mnt/sdb/home/lizh639/lhtb-triple25-v161-20260926",
+      "method": "raw",
+      "n": 2,
+      "history_mean_pct": 40.665,
+      "orthogonal_same_tasks_pct": 45.460846286701205,
+      "difference_pp": -4.795846286701206,
+      "all12": false,
+      "tasks": [
+        "spot-scheduler-traces",
+        "modflow6-groundwater-regression-audit"
+      ],
+      "infrastructure_failures": 0
+    },
+    {
+      "campaign": "/mnt/sdb/home/lizh639/lhtb-triple25-v161-20260926",
+      "method": "hai",
+      "n": 2,
+      "history_mean_pct": 0.0,
+      "orthogonal_same_tasks_pct": 45.460846286701205,
+      "difference_pp": -45.460846286701205,
+      "all12": false,
+      "tasks": [
+        "spot-scheduler-traces",
+        "modflow6-groundwater-regression-audit"
+      ],
+      "infrastructure_failures": 0
+    },
+    {
+      "campaign": "/var/tmp/lizh639-lhtb-bestfgs-v181-only-r1",
+      "method": "bestfgs",
+      "n": 12,
+      "history_mean_pct": 13.873619850288073,
+      "orthogonal_same_tasks_pct": 25.387534127033394,
+      "difference_pp": -11.513914276745322,
+      "all12": true,
+      "tasks": [
+        "spot-scheduler-traces",
+        "modflow6-groundwater-regression-audit",
+        "foldseek-paper-reproduction",
+        "gdal-proj-raster-regression",
+        "climate-netcdf-extreme-event-audit",
+        "great-expectations-audit",
+        "microscopy-cell-count-qc-audit",
+        "epa-swmm-stormwater-regression-audit",
+        "satellite-flood-change-detection-audit",
+        "opensees-seismic-structural-regression-audit",
+        "unison-paper-reproduction",
+        "matpower-opf-regression"
+      ],
+      "infrastructure_failures": 0
+    },
+    {
+      "campaign": "/var/tmp/lizh639-lhtb-bestfgs12-memory-v5-20260930",
+      "method": "bestfgs",
+      "n": 12,
+      "history_mean_pct": 14.467485473112006,
+      "orthogonal_same_tasks_pct": 25.387534127033394,
+      "difference_pp": -10.920048653921388,
+      "all12": true,
+      "tasks": [
+        "modflow6-groundwater-regression-audit",
+        "spot-scheduler-traces",
+        "foldseek-paper-reproduction",
+        "gdal-proj-raster-regression",
+        "climate-netcdf-extreme-event-audit",
+        "great-expectations-audit",
+        "microscopy-cell-count-qc-audit",
+        "epa-swmm-stormwater-regression-audit",
+        "satellite-flood-change-detection-audit",
+        "opensees-seismic-structural-regression-audit",
+        "unison-paper-reproduction",
+        "matpower-opf-regression"
+      ],
+      "infrastructure_failures": 0
+    },
+    {
+      "campaign": "/var/tmp/lizh639-lhtb-contrastive12-engineering-v2-20261002-r1",
+      "method": "evidence1",
+      "n": 12,
+      "history_mean_pct": 19.133401956933408,
+      "orthogonal_same_tasks_pct": 25.387534127033394,
+      "difference_pp": -6.254132170099986,
+      "all12": true,
+      "tasks": [
+        "modflow6-groundwater-regression-audit",
+        "spot-scheduler-traces",
+        "foldseek-paper-reproduction",
+        "climate-netcdf-extreme-event-audit",
+        "gdal-proj-raster-regression",
+        "great-expectations-audit",
+        "microscopy-cell-count-qc-audit",
+        "epa-swmm-stormwater-regression-audit",
+        "satellite-flood-change-detection-audit",
+        "opensees-seismic-structural-regression-audit",
+        "matpower-opf-regression",
+        "unison-paper-reproduction"
+      ],
+      "infrastructure_failures": 0
+    },
+    {
+      "campaign": "/var/tmp/lizh639-lhtb-contrastive12-engineering-v2-20261002-r1",
+      "method": "orthogonal1",
+      "n": 12,
+      "history_mean_pct": 25.387534127033394,
+      "orthogonal_same_tasks_pct": 25.387534127033394,
+      "difference_pp": 0.0,
+      "all12": true,
+      "tasks": [
+        "modflow6-groundwater-regression-audit",
+        "spot-scheduler-traces",
+        "gdal-proj-raster-regression",
+        "foldseek-paper-reproduction",
+        "climate-netcdf-extreme-event-audit",
+        "great-expectations-audit",
+        "epa-swmm-stormwater-regression-audit",
+        "microscopy-cell-count-qc-audit",
+        "satellite-flood-change-detection-audit",
+        "opensees-seismic-structural-regression-audit",
+        "unison-paper-reproduction",
+        "matpower-opf-regression"
+      ],
+      "infrastructure_failures": 0
+    },
+    {
+      "campaign": "/var/tmp/lizh639-lhtb-contrastive12-v8-20261002",
+      "method": "orthogonal1",
+      "n": 12,
+      "history_mean_pct": 17.4808060068076,
+      "orthogonal_same_tasks_pct": 25.387534127033394,
+      "difference_pp": -7.906728120225793,
+      "all12": true,
+      "tasks": [
+        "modflow6-groundwater-regression-audit",
+        "spot-scheduler-traces",
+        "foldseek-paper-reproduction",
+        "great-expectations-audit",
+        "gdal-proj-raster-regression",
+        "climate-netcdf-extreme-event-audit",
+        "satellite-flood-change-detection-audit",
+        "microscopy-cell-count-qc-audit",
+        "opensees-seismic-structural-regression-audit",
+        "epa-swmm-stormwater-regression-audit",
+        "matpower-opf-regression",
+        "unison-paper-reproduction"
+      ],
+      "infrastructure_failures": 0
+    },
+    {
+      "campaign": "/var/tmp/lizh639-lhtb-contrastive12-v8-20261002",
+      "method": "evidence1",
+      "n": 12,
+      "history_mean_pct": 20.25039582532281,
+      "orthogonal_same_tasks_pct": 25.387534127033394,
+      "difference_pp": -5.137138301710586,
+      "all12": true,
+      "tasks": [
+        "modflow6-groundwater-regression-audit",
+        "spot-scheduler-traces",
+        "climate-netcdf-extreme-event-audit",
+        "foldseek-paper-reproduction",
+        "great-expectations-audit",
+        "microscopy-cell-count-qc-audit",
+        "gdal-proj-raster-regression",
+        "epa-swmm-stormwater-regression-audit",
+        "unison-paper-reproduction",
+        "satellite-flood-change-detection-audit",
+        "opensees-seismic-structural-regression-audit",
+        "matpower-opf-regression"
+      ],
+      "infrastructure_failures": 1
+    },
+    {
+      "campaign": "/var/tmp/lizh639-lhtb-hai070-only-r1",
+      "method": "hai",
+      "n": 12,
+      "history_mean_pct": 5.926705339083333,
+      "orthogonal_same_tasks_pct": 25.387534127033394,
+      "difference_pp": -19.46082878795006,
+      "all12": true,
+      "tasks": [
+        "modflow6-groundwater-regression-audit",
+        "spot-scheduler-traces",
+        "climate-netcdf-extreme-event-audit",
+        "foldseek-paper-reproduction",
+        "gdal-proj-raster-regression",
+        "great-expectations-audit",
+        "epa-swmm-stormwater-regression-audit",
+        "microscopy-cell-count-qc-audit",
+        "opensees-seismic-structural-regression-audit",
+        "satellite-flood-change-detection-audit",
+        "matpower-opf-regression",
+        "unison-paper-reproduction"
+      ],
+      "infrastructure_failures": 0
+    },
+    {
+      "campaign": "/var/tmp/lizh639-lhtb-hai082-only-r1",
+      "method": "hai",
+      "n": 12,
+      "history_mean_pct": 13.915038672416665,
+      "orthogonal_same_tasks_pct": 25.387534127033394,
+      "difference_pp": -11.472495454616729,
+      "all12": true,
+      "tasks": [
+        "modflow6-groundwater-regression-audit",
+        "foldseek-paper-reproduction",
+        "spot-scheduler-traces",
+        "gdal-proj-raster-regression",
+        "climate-netcdf-extreme-event-audit",
+        "great-expectations-audit",
+        "epa-swmm-stormwater-regression-audit",
+        "opensees-seismic-structural-regression-audit",
+        "microscopy-cell-count-qc-audit",
+        "satellite-flood-change-detection-audit",
+        "matpower-opf-regression",
+        "unison-paper-reproduction"
+      ],
+      "infrastructure_failures": 2
+    },
+    {
+      "campaign": "/var/tmp/lizh639-lhtb-mechanism-large-20261001",
+      "method": "B1",
+      "n": 5,
+      "history_mean_pct": 24.80149991944578,
+      "orthogonal_same_tasks_pct": 30.310383888671726,
+      "difference_pp": -5.508883969225945,
+      "all12": false,
+      "tasks": [
+        "modflow6-groundwater-regression-audit",
+        "spot-scheduler-traces",
+        "great-expectations-audit",
+        "foldseek-paper-reproduction",
+        "gdal-proj-raster-regression"
+      ],
+      "infrastructure_failures": 1
+    },
+    {
+      "campaign": "/var/tmp/lizh639-lhtb-mechanism-large-20261001",
+      "method": "C1",
+      "n": 5,
+      "history_mean_pct": 24.225118113066948,
+      "orthogonal_same_tasks_pct": 30.310383888671726,
+      "difference_pp": -6.085265775604778,
+      "all12": false,
+      "tasks": [
+        "modflow6-groundwater-regression-audit",
+        "great-expectations-audit",
+        "spot-scheduler-traces",
+        "foldseek-paper-reproduction",
+        "gdal-proj-raster-regression"
+      ],
+      "infrastructure_failures": 0
+    },
+    {
+      "campaign": "/var/tmp/lizh639-lhtb-mechanism-large-20261001",
+      "method": "E1",
+      "n": 5,
+      "history_mean_pct": 25.58352718489042,
+      "orthogonal_same_tasks_pct": 30.310383888671726,
+      "difference_pp": -4.726856703781305,
+      "all12": false,
+      "tasks": [
+        "modflow6-groundwater-regression-audit",
+        "great-expectations-audit",
+        "foldseek-paper-reproduction",
+        "spot-scheduler-traces",
+        "gdal-proj-raster-regression"
+      ],
+      "infrastructure_failures": 0
+    },
+    {
+      "campaign": "/var/tmp/lizh639-lhtb-mechanism-large-20261001",
+      "method": "D1",
+      "n": 5,
+      "history_mean_pct": 34.525079802500144,
+      "orthogonal_same_tasks_pct": 30.310383888671726,
+      "difference_pp": 4.214695913828418,
+      "all12": false,
+      "tasks": [
+        "modflow6-groundwater-regression-audit",
+        "great-expectations-audit",
+        "spot-scheduler-traces",
+        "foldseek-paper-reproduction",
+        "gdal-proj-raster-regression"
+      ],
+      "infrastructure_failures": 0
+    },
+    {
+      "campaign": "/var/tmp/lizh639-lhtb-mechanism-large-20261001",
+      "method": "A1",
+      "n": 5,
+      "history_mean_pct": 35.25267163661751,
+      "orthogonal_same_tasks_pct": 30.310383888671726,
+      "difference_pp": 4.94228774794578,
+      "all12": false,
+      "tasks": [
+        "modflow6-groundwater-regression-audit",
+        "great-expectations-audit",
+        "spot-scheduler-traces",
+        "foldseek-paper-reproduction",
+        "gdal-proj-raster-regression"
+      ],
+      "infrastructure_failures": 0
+    },
+    {
+      "campaign": "/var/tmp/lizh639-lhtb-paired6-repair-v2-20260929",
+      "method": "bestfgs",
+      "n": 6,
+      "history_mean_pct": 24.985966082703698,
+      "orthogonal_same_tasks_pct": 26.4655184530931,
+      "difference_pp": -1.4795523703894027,
+      "all12": false,
+      "tasks": [
+        "spot-scheduler-traces",
+        "modflow6-groundwater-regression-audit",
+        "foldseek-paper-reproduction",
+        "gdal-proj-raster-regression",
+        "climate-netcdf-extreme-event-audit",
+        "great-expectations-audit"
+      ],
+      "infrastructure_failures": 0
+    },
+    {
+      "campaign": "/var/tmp/lizh639-lhtb-paired6-repair-v2-20260929",
+      "method": "hai",
+      "n": 6,
+      "history_mean_pct": 10.19257734483889,
+      "orthogonal_same_tasks_pct": 26.4655184530931,
+      "difference_pp": -16.27294110825421,
+      "all12": false,
+      "tasks": [
+        "spot-scheduler-traces",
+        "modflow6-groundwater-regression-audit",
+        "foldseek-paper-reproduction",
+        "gdal-proj-raster-regression",
+        "great-expectations-audit",
+        "climate-netcdf-extreme-event-audit"
+      ],
+      "infrastructure_failures": 0
+    },
+    {
+      "campaign": "/var/tmp/lizh639-lhtb-r4",
+      "method": "hai",
+      "n": 12,
+      "history_mean_pct": 5.926705339083333,
+      "orthogonal_same_tasks_pct": 25.387534127033394,
+      "difference_pp": -19.46082878795006,
+      "all12": true,
+      "tasks": [
+        "spot-scheduler-traces",
+        "modflow6-groundwater-regression-audit",
+        "foldseek-paper-reproduction",
+        "gdal-proj-raster-regression",
+        "climate-netcdf-extreme-event-audit",
+        "microscopy-cell-count-qc-audit",
+        "great-expectations-audit",
+        "epa-swmm-stormwater-regression-audit",
+        "satellite-flood-change-detection-audit",
+        "opensees-seismic-structural-regression-audit",
+        "unison-paper-reproduction",
+        "matpower-opf-regression"
+      ],
+      "infrastructure_failures": 0
+    },
+    {
+      "campaign": "/var/tmp/lizh639-lhtb-raw12-engineering-v2-20261002-r1",
+      "method": "raw1",
+      "n": 12,
+      "history_mean_pct": 26.267990578673178,
+      "orthogonal_same_tasks_pct": 25.387534127033394,
+      "difference_pp": 0.8804564516397839,
+      "all12": true,
+      "tasks": [
+        "gdal-proj-raster-regression",
+        "foldseek-paper-reproduction",
+        "modflow6-groundwater-regression-audit",
+        "climate-netcdf-extreme-event-audit",
+        "great-expectations-audit",
+        "microscopy-cell-count-qc-audit",
+        "epa-swmm-stormwater-regression-audit",
+        "satellite-flood-change-detection-audit",
+        "unison-paper-reproduction",
+        "opensees-seismic-structural-regression-audit",
+        "matpower-opf-regression",
+        "spot-scheduler-traces"
+      ],
+      "infrastructure_failures": 0
+    },
+    {
+      "campaign": "/var/tmp/lizh639-lhtb-v6-v7-paired8-20260930",
+      "method": "v6",
+      "n": 8,
+      "history_mean_pct": 21.35252268921374,
+      "orthogonal_same_tasks_pct": 20.701583743405262,
+      "difference_pp": 0.6509389458084769,
+      "all12": false,
+      "tasks": [
+        "spot-scheduler-traces",
+        "modflow6-groundwater-regression-audit",
+        "foldseek-paper-reproduction",
+        "gdal-proj-raster-regression",
+        "climate-netcdf-extreme-event-audit",
+        "great-expectations-audit",
+        "microscopy-cell-count-qc-audit",
+        "epa-swmm-stormwater-regression-audit"
+      ],
+      "infrastructure_failures": 5
+    },
+    {
+      "campaign": "/var/tmp/lizh639-lhtb-v6-v7-paired8-20260930",
+      "method": "v7",
+      "n": 8,
+      "history_mean_pct": 6.161259419354753,
+      "orthogonal_same_tasks_pct": 20.701583743405262,
+      "difference_pp": -14.54032432405051,
+      "all12": false,
+      "tasks": [
+        "modflow6-groundwater-regression-audit",
+        "spot-scheduler-traces",
+        "foldseek-paper-reproduction",
+        "gdal-proj-raster-regression",
+        "climate-netcdf-extreme-event-audit",
+        "great-expectations-audit",
+        "microscopy-cell-count-qc-audit",
+        "epa-swmm-stormwater-regression-audit"
+      ],
+      "infrastructure_failures": 0
+    }
+  ],
+  "caveat": "Same task subsets, but different dates and harness/implementation versions; descriptive single-run comparisons, not causal superiority."
+}

@@ -1,0 +1,43 @@
+{
+  "version": "hai-result-v1",
+  "run_id": "2a22aa23309949b780a58bdeecd0a0c8",
+  "task_id": "ap1400_2_hw35",
+  "method": "raw",
+  "submitted": false,
+  "stop_reason": "protocol_error",
+  "model_summary": "",
+  "artifact": null,
+  "success": null,
+  "success_status": "requires_independent_evaluation",
+  "interaction_rounds": 39,
+  "tool_calls": 36,
+  "wall_seconds": 77.31212023552507,
+  "protocol_sha256": "4e0c65d91f3987bb0a18795ef9127f53f93159cb035281751010e53a4b810083",
+  "trace_sha256": "0afd4e476159c52bf623fe76219a6db93cb64e78dee2c42c8371a3d939339eb3",
+  "model_usage": {
+    "action": {
+      "model_calls": 39,
+      "api_requests": 44,
+      "api_responses": 44,
+      "prompt_tokens": 514103,
+      "completion_tokens": 11234,
+      "total_tokens": 525337,
+      "cached_prompt_tokens": 47488,
+      "cache_miss_prompt_tokens": 466615,
+      "usage_reports": 44,
+      "usage_missing_responses": 0,
+      "failure_counts": {
+        "json_syntax": 5
+      },
+      "response_models": [
+        "deepseek-flash"
+      ]
+    }
+  },
+  "mechanism_utilization": {
+    "memory": false,
+    "advisor": false,
+    "monitor": false,
+    "branch_restore": false
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "version": "bestfgs-contrastive-repair-v9",
+  "task_id": "cmu15_445_p1",
+  "submitted": false,
+  "stop_reason": "wall_budget",
+  "artifact": {
+    "path": "/mnt/lizh639/longcli-prediction-toggle10-20261003/roots/prediction-on--cmu15_445_p1/app",
+    "fingerprint": "bf7dee508598ef03cbeb4816cd8994267c973b4533fa60692e018685a94627da",
+    "restoration": "workspace_files_only"
+  },
+  "official_success": null,
+  "error_type": null,
+  "interaction_rounds": 691,
+  "action_rounds": 674,
+  "advisor_rounds": 5,
+  "monitor_rounds": 12,
+  "tool_calls": 401,
+  "wall_seconds": 7214.131909352727,
+  "model_usage": {
+    "action": {
+      "model_calls": 674,
+      "api_requests": 675,
+      "api_responses": 675,
+      "prompt_tokens": 8666445,
+      "completion_tokens": 257756,
+      "total_tokens": 8924201,
+      "cached_prompt_tokens": 1479808,
+      "cache_miss_prompt_tokens": 7186637,
+      "usage_reports": 675,
+      "usage_missing_responses": 0,
+      "failure_counts": {
+        "json_syntax": 1
+      },
+      "response_models": [
+        "deepseek-flash"
+      ]
+    },
+    "advisor": {
+      "model_calls": 5,
+      "api_requests": 5,
+      "api_responses": 5,
+      "prompt_tokens": 68922,
+      "completion_tokens": 2422,
+      "total_tokens": 71344,
+      "cached_prompt_tokens": 1280,
+      "cache_miss_prompt_tokens": 67642,
+      "usage_reports": 5,
+      "usage_missing_responses": 0,
+      "failure_counts": {},
+      "response_models": [
+        "deepseek-flash"
+      ]
+    },
+    "monitor": {
+      "model_calls": 12,
+      "api_requests": 12,
+      "api_responses": 12,
+      "prompt_tokens": 65560,
+      "completion_tokens": 7623,
+      "total_tokens": 73183,
+      "cached_prompt_tokens": 6272,
+      "cache_miss_prompt_tokens": 59288,
+      "usage_reports": 12,
+      "usage_missing_responses": 0,
+      "failure_counts": {},
+      "response_models": [
+        "deepseek-flash"
+      ]
+    }
+  },
+  "mechanism_utilization": {
+    "model_requests": 691,
+    "action_calls": 674,
+    "advisor_calls": 5,
+    "tool_calls": 401,
+    "memory_exposures": 2327,
+    "requests_with_memory": 671,
+    "memories_admitted": 16,
+    "memories_rejected": 0,
+    "memory_use_self_reports": 25,
+    "advisor_responses_accepted": 5,
+    "advisor_deferred": 0,
+    "checkpoints_created": 1,
+    "branch_restores": 0,
+    "submissions": 0,
+    "protocol_errors": 1,
+    "memory_interventions": 6,
+    "memory_action_changed": 4,
+    "memory_action_unchanged": 2,
+    "memory_followup_actions": 19,
+    "memory_followup_runs": 19,
+    "memory_followup_succeeded": 15,
+    "memory_followup_workspace_changed": 3,
+    "post_advice_actions": 5,
+    "monitor_calls": 12,
+    "monitor_reviews_accepted": 10,
+    "monitor_deferred": 2,
+    "semantic_stalls": 5,
+    "auto_memory_candidates": 17,
+    "auto_memories_admitted": 16,
+    "auto_memories_rejected": 1,
+    "observed_memories_admitted": 0,
+    "recovery_started": 0,
+    "recovery_plans": 0,
+    "recovery_verified_repairs": 0,
+    "recovery_checked_hypotheses": 0,
+    "recovery_failed": 0,
+    "route_episodes": 0,
+    "route_plans": 0,
+    "route_tools": 0,
+    "route_trials": 0,
+    "route_pruned": 0,
+    "route_selected": 0,
+    "route_no_gain": 0,
+    "route_rejected": 0,
+    "route_restore_failures": 0,
+    "action_loop_blocks": 238,
+    "contrastive_failure_records": 33,
+    "contrastive_episodes": 26,
+    "contrastive_proposals": 56,
+    "contrastive_rejections": 54,
+    "contrastive_diagnostic_fallbacks": 26,
+    "contrastive_accepted": 2,
+    "contrastive_observations": 2,
+    "contrastive_informative_predictions": 2,
+    "contrastive_new_evidence": 1,
+    "contrastive_workspace_changes": 1,
+    "contrastive_public_check_improvements": 0,
+    "memory_exposure_is_not_benefit": true,
+    "memory_use_is_self_report": true
+  },
+  "time_by_role": {
+    "action": 1726.9144366700202,
+    "tools": 627.3595009408891,
+    "monitor": 43.34613573830575,
+    "advisor": 17.49554201774299
+  },
+  "contextual_tool_redundancy": {
+    "status": "requires_independent_audit",
+    "rate": null,
+    "denominator": 401
+  }
+}

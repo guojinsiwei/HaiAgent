@@ -1,0 +1,104 @@
+========== HW2 Start ==========
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Error at /usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake:230 (message):
+  Could NOT find OpenSSL, try to set the path to OpenSSL root folder in the
+  system variable OPENSSL_ROOT_DIR (missing: OPENSSL_CRYPTO_LIBRARY
+  OPENSSL_INCLUDE_DIR)
+Call Stack (most recent call first):
+  /usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake:600 (_FPHSA_FAILURE_MESSAGE)
+  /usr/share/cmake-3.28/Modules/FindOpenSSL.cmake:668 (find_package_handle_standard_args)
+  CMakeLists.txt:6 (find_package)
+
+
+-- Configuring incomplete, errors occurred!
+make: *** No targets specified and no makefile found.  Stop.
+HW2 compile failed, cannot run program
+
+========== HW6 Start ==========
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found GTest: /usr/local/lib/cmake/GTest/GTestConfig.cmake (found version "1.18.0")  
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /app/ap1400_2_hw/ap1400_2_hw6/build_hw6
+[ 33%] Building CXX object CMakeFiles/main.dir/src/unit_test.cpp.o
+[ 66%] Building CXX object CMakeFiles/main.dir/src/main.cpp.o
+[100%] Linking CXX executable main
+[100%] Built target main
+RUNNING TESTS ...
+[==========] Running 9 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 9 tests from HW6Test
+[ RUN      ] HW6Test.TEST1
+[       OK ] HW6Test.TEST1 (9 ms)
+[ RUN      ] HW6Test.TEST2
+[       OK ] HW6Test.TEST2 (5 ms)
+[ RUN      ] HW6Test.TEST3
+[       OK ] HW6Test.TEST3 (4 ms)
+[ RUN      ] HW6Test.TEST4
+[       OK ] HW6Test.TEST4 (3 ms)
+[ RUN      ] HW6Test.TEST5
+[       OK ] HW6Test.TEST5 (0 ms)
+[ RUN      ] HW6Test.TEST6
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:62: Failure
+Expected equality of these values:
+  patients[0].name
+    Which is: "Joan Crawford"
+  "Alec Guinness"
+
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:63: Failure
+Expected equality of these values:
+  patients[10].name
+    Which is: "Richard Dreyfuss"
+  "Sidney Poitier"
+
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:64: Failure
+Expected equality of these values:
+  patients[30].name
+    Which is: "Katharine Hepburn"
+  "Jane Wyman"
+
+/app/ap1400_2_hw/ap1400_2_hw6/src/unit_test.cpp:65: Failure
+Expected equality of these values:
+  patients[58].name
+    Which is: "Alec Guinness"
+  "Joan Crawford"
+
+[  FAILED  ] HW6Test.TEST6 (0 ms)
+[ RUN      ] HW6Test.TEST7
+[       OK ] HW6Test.TEST7 (0 ms)
+[ RUN      ] HW6Test.TEST8
+[       OK ] HW6Test.TEST8 (0 ms)
+[ RUN      ] HW6Test.TEST9
+[       OK ] HW6Test.TEST9 (0 ms)
+[----------] 9 tests from HW6Test (23 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 1 test suite ran. (23 ms total)
+[  PASSED  ] 8 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] HW6Test.TEST6
+
+ 1 FAILED TEST
+FAILED

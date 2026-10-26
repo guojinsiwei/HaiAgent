@@ -1,0 +1,290 @@
+{
+  "state": "ready_awaiting_credential",
+  "generation_trials_started": 0,
+  "generation_api_calls": 0,
+  "requested_trials": 20,
+  "requested_tasks_per_arm": 10,
+  "workers": 2,
+  "solver_preflights": 20,
+  "official_starter_grades": 10,
+  "representative_roundtrip_equalities": 2,
+  "frozen_lean_regression_passes": 38,
+  "adapter_tests_per_linux_worker": 7,
+  "algorithm_modules_unchanged": [
+    {
+      "path": "bestfgs-project/src/bestfgs/agent.py",
+      "sha256": "272cdeed5a8ec247fabde0674019639d82db76dfd4f0b01af5d4add66b223c76"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/best_first.py",
+      "sha256": "3142ffef1cc70d4b0e8804929947ec559b91bb4ae9c73ab4d22b572e1bccb857"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/best_first_runtime.py",
+      "sha256": "4cc7308d74ca130068c6c5f80cbc83954149d0c5993ac6625e065d549e81c1aa"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/blocking_memory.py",
+      "sha256": "38d51430257f87120771287cc30b0b4feccf2ec99cf19aadac175bc79948baf4"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/cli_config.py",
+      "sha256": "8b7aeac7671cb3857795bfbcddd84dbdf171389b4693e99c3736c8406e0dca4f"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/collaboration.py",
+      "sha256": "cf097b1336f1776c1f577b157b13375397b67c40daa7f3bd78bfab5135c07aae"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/context_updates.py",
+      "sha256": "6bc675cee320b1a9a70ad6bbe7b1a6c6dec16b0f48b6b9e67b60ab5d0e4a78d4"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/environment.py",
+      "sha256": "76096a6f909f42124424772040d04d30a6e801184d478d9c5a43f721bf514720"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/evidence_memory.py",
+      "sha256": "67d39b5f737c64b3aa1a29b7980050f2f3fb076c93a8e4bf3760df7fca502d3b"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/evidence_runtime.py",
+      "sha256": "f24cc8839cedeaf09c43bb7cb6ad4bf466adee3d48484418c0b9252943a35122"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/experience.py",
+      "sha256": "26441b1ccfb7637b64bb1166c815469c6fdd6b2cac1da084dabbfe758b1e83d5"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/experiment_metrics.py",
+      "sha256": "55b34dd564b514ed9495d7d7806eb7d921d70853185283ca8ee1098ad6697ad8"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/lean_audit.py",
+      "sha256": "3fb0266a46fb715d238343d38ebc61447abbcc01e0ee86a194d19cf1f8607dd6"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/lean_cli.py",
+      "sha256": "c8a0367ba06d8f8e4e8ab724ae9930c82af0f3e245118723481469b7100670ab"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/lean_conversation.py",
+      "sha256": "b62e7cacf9726bb59cc5690d53defe343e7a3f8a5fbc6455872de6de76608c35"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/lean_docker.py",
+      "sha256": "56113c10fb0afb64a26a7b75e6878c72b4f33862e81bc9bec9978859b95d6efc"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/lean_environment.py",
+      "sha256": "7af5c298dbc976e4bf977fc174129b39aa8fc13b6b23c9e9726f7d6f8cf7c262"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/lean_lhtb.py",
+      "sha256": "cf714201309e67e4afddbb92eabbbd8a646a518bc15d3666e8df617f2a3d12fa"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/lean_memory.py",
+      "sha256": "1795176b0f57c03275a086e937e05fd2a75994291952fced8fada8a7919b41b8"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/lean_monitor.py",
+      "sha256": "136ad6aa2e32f1ba0785fa2bc4b610a9281c2c420c49c77f610ab6d52e67c1dd"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/lean_progress.py",
+      "sha256": "3f45c983459b9e7985b2657c3454ec2864a243555ae373db3f6d6b470390168b"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/lean_protocol.py",
+      "sha256": "5dd433458699c9a7552ffa18f9d38181fdd04ef116f27a49e9686146bcea63c5"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/lean_runtime.py",
+      "sha256": "761437c65109b6ec379e2f0604aaef07f11a85f9ca82ff3aae3b83afffc1cda3"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/memory_events.py",
+      "sha256": "488ea087c7094f57d42b6c3865ffc193651ff06f4cf4624186499e832b0ac6ef"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/metrics.py",
+      "sha256": "80bcd0a21b5325616567e9f3fa34270cff2bd90e0dadd62568e67b7b590ee81a"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/micro_experience.py",
+      "sha256": "ae39673a162acbe71f1d356be5624b4378f93592ce2121520675fe307830eeb4"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/models.py",
+      "sha256": "6fcaa1666a299e42ddb80f4a7916efe9ddee5e9950b06ca759208d5ef681e2a6"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/model_wire.py",
+      "sha256": "dd92ce356d6e541c98f2ce62ef6b759b1441b8ad7076230ef0d651541a18d1cd"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/monitor_config.py",
+      "sha256": "b400cbe6cd2e9f5e06ec6eaeb981d60b5acb20a2f7b7b4c17e77e0e734c6bec8"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/monitor_context.py",
+      "sha256": "ec79a31b67798553348cb904ae339cdcd3d8f6228d532a05ef3b52762d071415"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/priority.py",
+      "sha256": "0302096792461befc586ded59314b308673902f6a26b1852a1888f3e18daeb98"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/prompt_views.py",
+      "sha256": "68353387a320b28f05230f649887faa0e1c2b0445d89e6c8cc8986986a315723"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/raw_baseline.py",
+      "sha256": "415fd3b05cbf613c93c9d5f85d599944579db5a8734a05b495c84bd61e270661"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/redundancy.py",
+      "sha256": "203facd6a0bb31d31f9cc87318c670bd7d8de6a5738e35a5c869c040e7ed1267"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/response_repair.py",
+      "sha256": "fdafb17f8b0b1cfc342230bd4e1d793f54787a1881b1b79e061eaedd09470a4a"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/retrac_adapter.py",
+      "sha256": "a6b5c7bf19b6e161ea0bc0d7ab4bf6ccc9d9429251d060281f8957c65fc5bdef"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/rl.py",
+      "sha256": "a8e583f9178f8e57cdf790625c128f3a6f90f90f2abbfbc82a937b7d9de65522"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/rules.py",
+      "sha256": "5885e154a61e6d13cfbff74ef892b560b0560ce2585f1ec0e58cf507e6cfe55e"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/semantic.py",
+      "sha256": "0192724c9927093914e38848a108a922fceed8aee4780b608265ad154ca84f82"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/shell_probe.py",
+      "sha256": "13beadecbeef458b2026881f43d58d98304384fe0ee775ba2641f1593627d79c"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/stagnation_control.py",
+      "sha256": "2ab0a158860288be52c48ff9a5caae5a7df24ba2877ec592f6a0f79198d1e744"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/submission.py",
+      "sha256": "50c452b3b85273c8a3dd993289072f3e03d404653ac5139e816bdd80e32babb9"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/success_judge.py",
+      "sha256": "e497fb4bd41cc98243663e3deae318bcdd406dbb6c1e174d5227b8b2173e2a6c"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/tool_outcomes.py",
+      "sha256": "08bad4d49646ca783abca8cabfee0292f2e555e5e4bab5c5082d5d66c9713315"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/validation.py",
+      "sha256": "9fe2c536f68da5a473b77308c5579822fd16b126759583adcb75aee2a3587006"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/__init__.py",
+      "sha256": "6018a4713374b5c16cc476264e835e5e0ab55468914bb87513cfa906d85fa4fe"
+    },
+    {
+      "path": "bestfgs-project/src/bestfgs/__main__.py",
+      "sha256": "c312c3eaefc2a59d5210ac1c9f360ebdc108b43605b5c10f98a6bd1e7ff0d95e"
+    },
+    {
+      "path": "hai-project/src/haiagent/action_protocol.py",
+      "sha256": "a683ac087dc0edfa9cbe0f1786ef6e80bf706123f43daab1ace566f413431f5a"
+    },
+    {
+      "path": "hai-project/src/haiagent/cli.py",
+      "sha256": "4e5dfbd7884621fa17eee6d48d4c056c7ff973c672731f341a04711c327dd5d2"
+    },
+    {
+      "path": "hai-project/src/haiagent/demo.py",
+      "sha256": "74d59bf8cb4cdc16384cfbd50ebf454dcd580fdd10b9abe05ef0bf62f48381d6"
+    },
+    {
+      "path": "hai-project/src/haiagent/evaluation.py",
+      "sha256": "ba541555a32925af3e284f774f988a995c7bff9bf40d4de63023173715814288"
+    },
+    {
+      "path": "hai-project/src/haiagent/executor.py",
+      "sha256": "000336493fbf69051f13091d451e1351277a09cba507e875c6f8a35d4b9bab8c"
+    },
+    {
+      "path": "hai-project/src/haiagent/file_evidence.py",
+      "sha256": "97f16daa202e105fccfdd6017c4e5e22c7d2fbd2590a84b2e3322891a0f9ae79"
+    },
+    {
+      "path": "hai-project/src/haiagent/metrics.py",
+      "sha256": "5643fa9443968f0dc1c0a4318d0111487c0fe3fc1fbc9d3e1f0216864639eab0"
+    },
+    {
+      "path": "hai-project/src/haiagent/model.py",
+      "sha256": "77a640602828431cc624ba0f32cb9e4d01aa0850d88969d2305a84e81caeceee"
+    },
+    {
+      "path": "hai-project/src/haiagent/protocol.py",
+      "sha256": "5f3fd55a369f08b69d43dffb952e3b7107cd218862b051fe4d6c04b9bf444874"
+    },
+    {
+      "path": "hai-project/src/haiagent/runtime.py",
+      "sha256": "6d6ec919089be6ecd71ecefcf64fe438caea4f8d4bfe330d78101b6207672081"
+    },
+    {
+      "path": "hai-project/src/haiagent/semantic.py",
+      "sha256": "1987f6e64e55f3e59356186f5df9ed1eae68bdf5b54903bfe5842f54c5037db1"
+    },
+    {
+      "path": "hai-project/src/haiagent/storage.py",
+      "sha256": "3fb0266a46fb715d238343d38ebc61447abbcc01e0ee86a194d19cf1f8607dd6"
+    },
+    {
+      "path": "hai-project/src/haiagent/submission.py",
+      "sha256": "c8789a0bdad1414617998bd25f44aca29b11fe1eaae6bedaa5551f17bf5d458b"
+    },
+    {
+      "path": "hai-project/src/haiagent/__init__.py",
+      "sha256": "5337d13fc2e1419ece1cd9bb656e5e7757f52708fab0247a7087f4dc20f9ede4"
+    },
+    {
+      "path": "hai-project/src/haiagent/__main__.py",
+      "sha256": "307299fda7b77d22c64cb51430ec75e5f59d78e9c948786afb3b2544fe45e4b7"
+    },
+    {
+      "path": "hai-project/src/terminal_context/adapters.py",
+      "sha256": "bee3ef15eecc7bc2f1729bd6ffde3d44c8ce404c689c87a07dace4fd7810cd67"
+    },
+    {
+      "path": "hai-project/src/terminal_context/compression.py",
+      "sha256": "72f89ed2e261a2c279424fa4ba6c458b9a278cb63510efcdc9ac0d7d043e2f9c"
+    },
+    {
+      "path": "hai-project/src/terminal_context/core.py",
+      "sha256": "4e121ef0c13b3e2734cb7bae18d49255fa496ffdda88a4cd1804a614987cf90f"
+    },
+    {
+      "path": "hai-project/src/terminal_context/stagnation.py",
+      "sha256": "220428cb9d47774893921030051a111f018e8c813e3a3118ec6f82b8c56d71c1"
+    },
+    {
+      "path": "hai-project/src/terminal_context/types.py",
+      "sha256": "fd55fcca350f316391657dbadd4198c87c1b74f8a36eb76291eaa3327dcc993d"
+    },
+    {
+      "path": "hai-project/src/terminal_context/__init__.py",
+      "sha256": "b647214eb536046c467cc1ca14bd62617d8ec144c224675cefdcbabdd657dc7d"
+    }
+  ],
+  "ready_sha256": "6c819a1ff916993cd68b66c34822184c68cb3375cf65fca7d68fa0546305986d",
+  "recorded": 1790840691.2361379,
+  "note": "No model performance results exist yet. Run hidden-input launcher to start."
+}

@@ -1,0 +1,5 @@
+{
+  "stage": "screen",
+  "parallel_slots": 4,
+  "disable_disk_guard": true
+}

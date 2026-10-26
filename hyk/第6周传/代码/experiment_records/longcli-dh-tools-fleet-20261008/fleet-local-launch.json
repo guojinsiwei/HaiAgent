@@ -1,0 +1,1 @@
+{"started": true, "workers": [{"started": true, "slot": "college", "pid": 2229884, "tasks": 6}, {"started": true, "slot": "cube0", "pid": 1287016, "tasks": 2}, {"started": true, "slot": "cube1", "pid": 1018945, "tasks": 2}], "relay_pid": 44384, "max_concurrency": 12, "mail_enabled": false, "time": 1791457362.0275402}

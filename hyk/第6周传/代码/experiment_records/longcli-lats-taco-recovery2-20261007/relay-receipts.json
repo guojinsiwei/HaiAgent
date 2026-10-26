@@ -1,0 +1,42 @@
+{
+  "taco--cs61_fa24_hog": {
+    "time": 1791387963.9635007,
+    "state": "awaiting_grade",
+    "receipt": {
+      "received": "taco--cs61_fa24_hog",
+      "total_received": 1
+    }
+  },
+  "taco--61810_fs": {
+    "time": 1791391455.6755102,
+    "state": "awaiting_grade",
+    "receipt": {
+      "received": "taco--61810_fs",
+      "total_received": 2
+    }
+  },
+  "taco--61810_cow": {
+    "time": 1791425471.166505,
+    "state": "awaiting_grade",
+    "receipt": {
+      "received": "taco--61810_cow",
+      "total_received": 3
+    }
+  },
+  "taco--61810_lock": {
+    "time": 1791425482.459714,
+    "state": "awaiting_grade",
+    "receipt": {
+      "received": "taco--61810_lock",
+      "total_received": 4
+    }
+  },
+  "taco--61810_mmap": {
+    "time": 1791425526.6036274,
+    "state": "awaiting_grade",
+    "receipt": {
+      "received": "taco--61810_mmap",
+      "total_received": 5
+    }
+  }
+}

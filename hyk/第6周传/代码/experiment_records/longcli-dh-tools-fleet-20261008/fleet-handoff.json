@@ -1,0 +1,30 @@
+{
+  "original_controller_pid": 1861130,
+  "time": 1791450515.736601,
+  "state": "admission_paused_children_continue",
+  "started_jobs": [
+    "dh_tools--ap1400_2_hw26",
+    "dh_tools--ap1400_2_hw35",
+    "dh_tools--cmu15_445_p0",
+    "dh_tools--cmu15_445_p1",
+    "dh_tools--cmu15_445_p2",
+    "dh_tools--cs61_fa24_ants",
+    "dh_tools--cs61_fa24_cats",
+    "dh_tools--cs61_fa24_hog",
+    "dh_tools--cs61_fa24_hw08",
+    "dh_tools--cs61_fa24_scheme"
+  ],
+  "pending_tasks": [
+    "61810_cow",
+    "61810_fs",
+    "61810_lock",
+    "61810_mmap",
+    "61810_net",
+    "61810_pgtbl",
+    "61810_syscall",
+    "61810_thread",
+    "61810_traps",
+    "61810_util"
+  ],
+  "child_tasks_not_interrupted": true
+}

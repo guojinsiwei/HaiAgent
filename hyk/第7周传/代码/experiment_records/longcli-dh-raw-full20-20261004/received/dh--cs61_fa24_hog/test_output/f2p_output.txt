@@ -1,0 +1,121 @@
+=====================================================================
+Assignment: Project 1: Hog
+OK, version v1.18.1
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Scoring tests
+
+---------------------------------------------------------------------
+Question 0
+    Passed: 1
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Question 1
+    Passed: 3
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Question 2
+    Passed: 1
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Question 3
+    Passed: 2
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Question 4
+    Passed: 1
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Question 5
+    Passed: 1
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Question 6
+    Passed: 1
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Question 7 > Suite 1 > Case 1
+
+>>> from hog import *
+>>> is_always_roll(always_roll_5)
+NameError: name 'is_always_roll' is not defined. Did you mean: 'always_roll'?
+
+# Error: expected
+#     True
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     NameError: name 'is_always_roll' is not defined
+
+Run only this test case with "python3 ok -q 07 --suite 1 --case 1"
+---------------------------------------------------------------------
+Question 7
+    Passed: 0
+    Failed: 1
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Question 8
+    Passed: 2
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Question 9
+    Passed: 2
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Question 10
+    Passed: 1
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Question 11
+    Passed: 1
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Question 12
+    Passed: 0
+    Failed: 0
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Point breakdown
+    Question 0: 0.0/0
+    Question 1: 2.0/2
+    Question 2: 2.0/2
+    Question 3: 2.0/2
+    Question 4: 2.0/2
+    Question 5: 4.0/4
+    Question 6: 2.0/2
+    Question 7: 0.0/2
+    Question 8: 2.0/2
+    Question 9: 2.0/2
+    Question 10: 2.0/2
+    Question 11: 2.0/2
+    Question 12: 0.0/0
+
+Score:
+    Total: 22.0
+
+Cannot backup when running ok with --local.

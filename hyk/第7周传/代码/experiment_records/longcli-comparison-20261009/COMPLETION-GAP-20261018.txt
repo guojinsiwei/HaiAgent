@@ -1,0 +1,48 @@
+LongCLI：KZ 补跑合并 7 题完整通过，DSH 大预算 9 题完整通过的差距
+审计日期：2026-10-18。仅读取已有结果与轨迹，没有模型调用、重跑或部署修改。
+
+一、逐题集合
+共同通过 6 题：61810_syscall、61810_thread、ap1400_2_hw35、cmu15_445_p1、cs61_fa24_hog、cs61_fa24_hw08。
+DSH 独有通过 3 题：61810_util、cs61_fa24_ants、cs61_fa24_scheme。
+KZ 独有通过 1 题：ap1400_2_hw26。
+因此净差为 3-1=2 题。DSH 缺少 lock 的评分，KZ 合并展示排除了 cmu_p2 的零分；这两项均未给 KZ 增加通过数。
+
+二、三个具体失分案例
+
+61810_util：KZ F2P=0.60，DSH=1 且完整通过。
+KZ 47 次模型请求、33 次工具调用，约 608 秒后 stop_reason=recovery_rejection_limit，submitted=false。
+官方测试：sleep、pingpong、primes 通过；find 当前目录与递归查找均缺少预期输出；xargs 的 hello 次数为 0、预期 3；time.txt 缺失。
+轨迹：4 次 contrastive_episode_start、7 次 contrastive_validation 全部拒绝，原因均为 orthogonal policy requires contrastive comparison；8 次 action_loop_block、14 次 recovery_rejection。
+E33 的命令内部写 timeout 400 make qemu，工具外层 timeout_seconds 仍为 60，结果 return_code=124、timed_out=true。随后同一命令被重复调用检查拦截；Advisor 后仍累计 7 次拒绝，触发终止。
+结论：存在真实未完成行为，恢复控制流程又把求解阻断。无法仅靠放开限制保证任务通过，但本次停止原因明确来自控制器拒绝上限。
+
+cs61_fa24_ants：KZ F2P=0.8657117278424351，DSH=1 且完整通过。
+KZ 36 次模型请求、31 次工具调用，约 171 秒后提交。
+官方失败：ThrowerAnt.food_cost 返回 0，预期 3；ShortThrower 实例调整 upper_bound 后行为不符合预期；自定义 JustSixThrower 的 lower_bound/upper_bound 未正确生效。
+求解器末次自写功能检查打印 ALL FUNCTIONAL CHECKS PASSED，未覆盖上述属性、实例覆盖和子类扩展情形。
+Critic 发现的若干检查缺口未形成完整验证；trace/events.jsonl 第 364 行记录 critic_partial_delivery，reason=review_limit，第 365 行提交。
+结论：自测覆盖不足，审查达到上限允许部分交付，具体行为错误随提交保留下来。
+
+cs61_fa24_scheme：KZ F2P=27/28=0.9642857142857143，DSH=1 且完整通过。
+KZ 36 次模型请求、32 次工具调用，约 133 秒后提交。
+官方唯一失分组：Problem 10 Suite 1 Case 6，(define (f 1 2 3) 4) 应抛 SchemeError，实际返回 f；非法形式参数检查缺失。
+Critic 多次围绕 merge 的调用方式、doctest 命名空间和 tests.scm 输出展开检查，未抓住该非法输入边界。
+trace/events.jsonl 第 345 行记录 critic_partial_delivery，reason=review_limit；第 346 行提交。
+求解器提到未实现 optional 尾递归等，但官方日志的实际失分点为非法形式参数，不能把 optional 未做直接当成本题失分原因。
+
+这三题 KZ 的 p2p_is_pass 均为 1。差距由 F2P 未全通过产生。
+
+三、平均分与完整通过数的关系
+KZ 在 mmap 上为 0.8642857、DSH 为 0；在 hw26 上为 1、DSH 为 0.375。这些提升可以抬高均分。
+ants 和 scheme 从满分掉到 86.57% 和 96.43%，仍会各损失一整题的二元成功计数。
+因此整体平均分较高与全通过题数较少可以同时发生。
+
+四、结论与修改方向
+本次两题净差的直接证据指向：验证没有覆盖关键边界、部分交付出口过早、恢复拒绝循环中断求解。
+优先应改进需求到边界检查的对应关系、让审查轮数耗尽后合理返回求解器、区分超时未完成和已证实无效动作，并为正交提案提供可靠的协议适配。
+这些结论针对 10 月 8–9 日这批 LongCLI 历史运行；当前 TB2 部署代码后来有修改，不能直接当作当前版本的逐项缺陷清单。
+
+证据位置
+本地：summary.json / groups 中 DSH 大预算及 KZ＋KZ2.0补跑合并的 sources。
+远程 util：/mnt/sdb/home/lizh639/longcli-dh-1342-complete20-20261009/jobs/1342--61810_util/summary.json、trace/events.jsonl；对应 grades/1342--61810_util/result.json、console.log。
+远程 ants、scheme：/var/tmp/longcli-dh-routing3x7-20261008/jobs/1342--cs61_fa24_ants 和 jobs/1342--cs61_fa24_scheme 的 summary.json、trace/events.jsonl；对应 grades 下 result.json、console.log。

@@ -1,0 +1,18 @@
+[
+  {
+    "filename": "torch-2.7.1+cpu-cp313-cp313-manylinux_2_28_x86_64.whl",
+    "bytes": 175839558,
+    "sha256": "84ea1f6a1d15663037d01b121d6e33bb9da3c90af8e069e5072c30f413455a57",
+    "official_url": "https://download-r2.pytorch.org/whl/cpu/torch-2.7.1%2Bcpu-cp313-cp313-manylinux_2_28_x86_64.whl",
+    "verified": true,
+    "source_note": "Official pytorch-model-cli verifier explicitly selects CPU index with unsafe-best-match."
+  },
+  {
+    "filename": "torchvision-0.22.1+cpu-cp313-cp313-manylinux_2_28_x86_64.whl",
+    "bytes": 2016913,
+    "sha256": "a93c21f18c33a819616b3dda7655aa4de40b219682c654175b6bbeb65ecc2e5f",
+    "official_url": "https://download-r2.pytorch.org/whl/cpu/torchvision-0.22.1%2Bcpu-cp313-cp313-manylinux_2_28_x86_64.whl",
+    "verified": true,
+    "source_note": "Official pytorch-model-cli verifier explicitly selects CPU index with unsafe-best-match."
+  }
+]

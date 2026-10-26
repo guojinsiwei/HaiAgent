@@ -1,0 +1,232 @@
+{
+  "passed": true,
+  "worker": 0,
+  "checks": [
+    {
+      "task": "cs61_fa24_scheme",
+      "method": "bestfgs-v6.1",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "cs61_fa24_scheme",
+      "method": "raw",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "cs61_fa24_ants",
+      "method": "raw",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "cs61_fa24_cats",
+      "method": "raw",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "cs61_fa24_cats",
+      "method": "orthogonal-v8",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "cs61_fa24_hog",
+      "method": "orthogonal-v8",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "cs61_fa24_hw08",
+      "method": "orthogonal-v8",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "cs61_fa24_hw08",
+      "method": "bestfgs-v6.1",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "cmu15_445_p0",
+      "method": "bestfgs-v6.1",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "cmu15_445_p1",
+      "method": "bestfgs-v6.1",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "cmu15_445_p1",
+      "method": "raw",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "cmu15_445_p2",
+      "method": "raw",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "ap1400_2_hw26",
+      "method": "raw",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "ap1400_2_hw26",
+      "method": "orthogonal-v8",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "submitted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "ap1400_2_hw35",
+      "method": "orthogonal-v8",
+      "isolation": {
+        "uid": 0,
+        "no_proc": true,
+        "no_host": true,
+        "no_tests": true,
+        "no_network": true
+      },
+      "checkpoint_restore": true,
+      "masked_pipeline_failure": true,
+      "submitted": true,
+      "model_calls": 0
+    }
+  ],
+  "model_calls": 0
+}

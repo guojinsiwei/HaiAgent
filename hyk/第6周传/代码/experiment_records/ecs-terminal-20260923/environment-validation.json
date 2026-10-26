@@ -1,0 +1,27 @@
+{
+  "python": "3.12.14",
+  "harbor": "0.20.0",
+  "docker": "29.8.1",
+  "compose": "5.5.1",
+  "harbor_smoke": {
+    "scope": "infrastructure_only",
+    "image": "alexgshaw/regex-log@sha256:90101b2e815323a8da20528a1439bebc407eb9761c9c68a3d557730856c878e9",
+    "model_calls": 0,
+    "rounds": [
+      {
+        "fresh_environment": true,
+        "exec": true,
+        "upload_download": true
+      },
+      {
+        "fresh_environment": true,
+        "exec": true,
+        "upload_download": true
+      }
+    ],
+    "passed": true
+  },
+  "formal_trials_started": false,
+  "model_credentials_configured_by_this_setup": false,
+  "deployed_python_files": 54
+}

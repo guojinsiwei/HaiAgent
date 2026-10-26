@@ -1,0 +1,30 @@
+{
+  "state": "passed",
+  "purpose": "Task-local model, protocol, delivery, and stall failures do not stop the campaign; shared infrastructure and credential faults still stop it.",
+  "paid_model_calls": 0,
+  "base_acceptance_sha256": "164793df61eac77e8f53deee48b4a9d51759d54da31bc3d236e2d196a54b7d53",
+  "original_hashes": {
+    "runner.py": "c1bdec90ac3a5a7b156da90384420f8cdf51276977e853fd2c61637f8bba22ba",
+    "grading_worker.py": "03b9a9a9db2bbc28bdd6ba992e1f6408326fc5d6fedd2578cfb2afe651a1d756",
+    "test_controller.py": "1cacca428379e29a77e84eadc75160f9791ebc0220481ed7b4e6174d92691a12"
+  },
+  "hashes": {
+    "runner.py": "aa5ad27dc7641e471f09b5e01656e6aa40eed285990c1544806d8fcdb6024308",
+    "grading_worker.py": "c912824fe2673efc5df449f518386c380aebc8724e94fd8bdb998da3fbacb754",
+    "test_controller.py": "6baf4ce417ddda0bad6cf2a2f69f27b0e549e359b1e4283f2a9126acb435febc"
+  },
+  "checks": {
+    "controller_model_calls": 0,
+    "cases": [
+      "normal_launches_20",
+      "one_model_or_protocol_error_launches_20",
+      "one_protocol_error_launches_20",
+      "one_delivery_error_launches_20",
+      "two_model_errors_launch_20",
+      "one_stalled_trial_launches_20",
+      "credential_fault_stops_after_1",
+      "infrastructure_fault_stops_after_1",
+      "grader_completes_available_artifact_after_task_error"
+    ]
+  }
+}

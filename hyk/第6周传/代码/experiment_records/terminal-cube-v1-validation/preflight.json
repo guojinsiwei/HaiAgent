@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "ready_for_portable_pilot": true,
+  "official_evaluation": false,
+  "official_environment_ready": false,
+  "host": "lizh639-aa91",
+  "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.35",
+  "dataset_count": 89,
+  "development_count": 80,
+  "frozen_count": 9,
+  "pilot_tasks": [
+    "polyglot-c-py",
+    "openssl-selfsigned-cert"
+  ],
+  "original_images": {
+    "polyglot-c-py": "alexgshaw/polyglot-c-py:20251031",
+    "openssl-selfsigned-cert": "alexgshaw/openssl-selfsigned-cert:20251031"
+  },
+  "runtime": {
+    "python": {
+      "returncode": 0,
+      "stdout": "Python 3.11.16\n",
+      "stderr": ""
+    },
+    "python3": {
+      "returncode": 0,
+      "stdout": "Python 3.11.16\n",
+      "stderr": ""
+    },
+    "gcc": {
+      "returncode": 0,
+      "stdout": "gcc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0\nCopyright (C) 2021 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+      "stderr": ""
+    },
+    "openssl": {
+      "returncode": 0,
+      "stdout": "OpenSSL 3.6.4 25 Aug 2026 (Library: OpenSSL 3.6.4 25 Aug 2026)\n",
+      "stderr": ""
+    }
+  },
+  "implementation_sha256": "d02d0462f9ed8e2ff108c62bcb82274850dbe786123773a095ce843d478b687d",
+  "dataset_lock_sha256": "4eb9932540f34f136a5a9d25c3b6afeb6845ecae7f4058b131b1e932c3f26c6d",
+  "limitations": [
+    "Public instructions relocated from /app to the current workspace; original instructions retained.",
+    "Notebook system packages differ from the original task images.",
+    "File snapshots cannot reset processes, system packages, absolute paths or external services.",
+    "Public smoke checks are incomplete diagnostics, not official Terminal-Bench rewards.",
+    "Two dependency-compatible tasks selected for integration testing; not a representative sample."
+  ]
+}

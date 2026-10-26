@@ -1,0 +1,123 @@
+{
+  "method": "lats",
+  "root": "/var/tmp/lizh639-lats-recovery4-two-20261008",
+  "source": "/var/tmp/lizh639-lats-recovery3-six-20261008",
+  "concurrency": 2,
+  "preserved": [
+    {
+      "task": "cs61_fa24_hog",
+      "report": "/mnt/sdb/home/lizh639/longcli-resume-five-20261007/lats-resume-20261007/grades/lats--cs61_fa24_hog/result.json",
+      "report_sha256": "405b216ba84966fba8b2c374a8c9883593d031fb798dc31659756ffade9744fa"
+    },
+    {
+      "task": "cs61_fa24_hw08",
+      "report": "/mnt/sdb/home/lizh639/longcli-resume-five-20261007/lats-resume-20261007/grades/lats--cs61_fa24_hw08/result.json",
+      "report_sha256": "64dea75bf2d30d762fd9cfccbf168b31258aa91dcbc73c908e93c96f907ca29e"
+    },
+    {
+      "task": "cs61_fa24_ants",
+      "report": "/mnt/sdb/home/lizh639/longcli-resume-five-20261007/lats-resume-20261007/grades/lats--cs61_fa24_ants/result.json",
+      "report_sha256": "92ab629a1941712946635d4b22932feceb509e39aa8c59a9b091c3c7965e59d1"
+    },
+    {
+      "task": "cs61_fa24_scheme",
+      "report": "/mnt/sdb/home/lizh639/longcli-resume-five-20261007/lats-resume-20261007/grades/lats--cs61_fa24_scheme/result.json",
+      "report_sha256": "aa8b5e91c1888b94944fc4a84a1870874b6f3efd2ecc5e199b4c0e01022f2102"
+    },
+    {
+      "task": "61810_cow",
+      "report": "/var/tmp/lizh639-longcli-lats-taco-recovery2-20261007/lats/grades/lats--61810_cow/result.json",
+      "report_sha256": "329279f15ecb23b3f9ae9f0f410b141c3e9770fa21c78803f70d211f0e1291e0"
+    },
+    {
+      "task": "61810_mmap",
+      "report": "/var/tmp/lizh639-longcli-lats-taco-recovery2-20261007/lats/grades/lats--61810_mmap/result.json",
+      "report_sha256": "f922c2568ed7d3d030db800f881ca439686e7d9f07dc54c02d977e9a2e324c6d"
+    },
+    {
+      "task": "61810_thread",
+      "report": "/var/tmp/lizh639-longcli-lats-taco-recovery2-20261007/lats/grades/lats--61810_thread/result.json",
+      "report_sha256": "0d7d807f23f0afd7ffe80ffa5c086364fc5f7c626f3baf22c2fe702090e931e5"
+    },
+    {
+      "task": "cs61_fa24_cats",
+      "report": "/var/tmp/lizh639-longcli-lats-taco-recovery2-20261007/lats/grades/lats--cs61_fa24_cats/result.json",
+      "report_sha256": "b77f81bb4d83bbd7bd9083876cb84fc0dc6c3b19e37c7f751df4150d5ab98c82"
+    },
+    {
+      "task": "61810_net",
+      "report": "/var/tmp/lizh639-longcli-lats-taco-recovery2-20261007/lats/grades/lats--61810_net/result.json",
+      "report_sha256": "5e23c8b70a2aabee634d9e222cb1ba6b086603487ea89b236f5873b97b665c05"
+    },
+    {
+      "task": "61810_util",
+      "report": "/var/tmp/lizh639-longcli-lats-taco-recovery2-20261007/lats/grades/lats--61810_util/result.json",
+      "report_sha256": "74040366ad31eb17ca6ec61464bc8dfa199872cce396636b2397bbe679bcf783"
+    },
+    {
+      "task": "cmu15_445_p2",
+      "report": "/var/tmp/lizh639-longcli-lats-taco-recovery2-20261007/lats/grades/lats--cmu15_445_p2/result.json",
+      "report_sha256": "2fdc25f5e7116513837d3db892da99ca938215b9aa2421eb5f55976f00692e67"
+    },
+    {
+      "task": "61810_syscall",
+      "report": "/var/tmp/lizh639-longcli-lats-taco-recovery2-20261007/lats/grades/lats--61810_syscall/result.json",
+      "report_sha256": "7a6c23ac9bfcf74b27bf1aa553b22c1894fc251e2c39bddd9f697e5665573836"
+    },
+    {
+      "task": "61810_pgtbl",
+      "report": "/var/tmp/lizh639-longcli-lats-taco-recovery2-20261007/lats/grades/lats--61810_pgtbl/result.json",
+      "report_sha256": "de02b50003c9fcbbfe8cacd557ee99c3ba1adb8c6aa7a9dfc2f8c5a75ed41df6"
+    },
+    {
+      "task": "ap1400_2_hw26",
+      "report": "/var/tmp/lizh639-longcli-lats-taco-recovery2-20261007/lats/grades/lats--ap1400_2_hw26/result.json",
+      "report_sha256": "a9504cd14ee22bc41aae06e4ea02831d0bd0aa3fdf8984622ced9268ef11ba78"
+    },
+    {
+      "task": "cmu15_445_p1",
+      "report": "/var/tmp/lizh639-lats-recovery3-six-20261008/grades/lats--cmu15_445_p1/result.json",
+      "report_sha256": "9f8bcb9767d58b4323da72977e7f6376ccf6594065c8d479c52c3e9d792af99e"
+    },
+    {
+      "task": "61810_traps",
+      "report": "/var/tmp/lizh639-lats-recovery3-six-20261008/grades/lats--61810_traps/result.json",
+      "report_sha256": "6f0408c32d7511092a229a51292ebddcea84571c7090e9fbb97e81f19222528b"
+    },
+    {
+      "task": "61810_lock",
+      "report": "/var/tmp/lizh639-lats-recovery3-six-20261008/grades/lats--61810_lock/result.json",
+      "report_sha256": "04ff3771928fb1de7343df8fc93f4e06d0105bb5d38fa5335548bd48b9b5825f"
+    },
+    {
+      "task": "ap1400_2_hw35",
+      "report": "/var/tmp/lizh639-lats-recovery3-six-20261008/grades/lats--ap1400_2_hw35/result.json",
+      "report_sha256": "e35d989c66b0983da9e6c701fdbdc45fe1b80121d3309a6ae708ecc0c8aff444"
+    }
+  ],
+  "run_tasks": [
+    {
+      "task": "cmu15_445_p0",
+      "family": "c-env",
+      "project": "cmu15_445",
+      "index": 5,
+      "image": "longcli-paired10-20261001/task-cmu15_445_p0:2015f37",
+      "image_id": "sha256:22d90a6f9fad966c7f8e265c396cab0de64e58edb5ccd7f861a47fb4ec74958a",
+      "wall_seconds": 7200.0,
+      "test_seconds": 720.0,
+      "instruction": "Open and follow the detailed project specification at INSTRUCTION.md. Implement the project tasks accordingly in folder cmu15_445."
+    },
+    {
+      "task": "61810_fs",
+      "family": "make-pytest",
+      "project": "fs",
+      "index": 11,
+      "image": "longcli-dh-raw-full20-20261004/task-61810_fs:2015f37",
+      "image_id": "sha256:060fdd756cc6ad5c7ea433c9d469241dfa7e0b60d3f9726ca7e2212f7d461b3f",
+      "wall_seconds": 7200.0,
+      "test_seconds": 1800.0,
+      "instruction": "Open and follow the detailed project specification at INSTRUCTION.md. Implement the project tasks accordingly in folder fs."
+    }
+  ],
+  "time": 1791441922.7329173
+}

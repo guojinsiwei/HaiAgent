@@ -1,0 +1,11 @@
+{
+  "replayed_requests": 1404,
+  "errors": [],
+  "peak_input_bytes": 44975,
+  "paid_model_calls": 0,
+  "passed": true,
+  "scope": "historical prompts and accumulated original conversation",
+  "cmu_p2_current_failure_fixed": true,
+  "cmu_p2_original_bytes": 101135,
+  "cmu_p2_projected_bytes": 41289
+}

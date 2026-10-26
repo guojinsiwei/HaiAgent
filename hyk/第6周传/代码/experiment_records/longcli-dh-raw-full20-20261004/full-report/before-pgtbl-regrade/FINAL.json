@@ -1,0 +1,147 @@
+{
+  "complete": true,
+  "updated": "2026-10-04T14:46:18+08:00",
+  "original_reports": 40,
+  "supplementary_reports": 1,
+  "grading_faults": [
+    "dh--61810_pgtbl"
+  ],
+  "paired_comparison": {
+    "paired_tasks": 19,
+    "dh_wins": 6,
+    "raw_wins": 7,
+    "ties": 6,
+    "mean_delta": 0.0931156955112323,
+    "rows": [
+      {
+        "task": "cs61_fa24_scheme",
+        "dh": 0.5595238095238095,
+        "raw": 0.30357142857142855,
+        "delta": 0.255952380952381
+      },
+      {
+        "task": "cs61_fa24_ants",
+        "dh": 0.34720978812294834,
+        "raw": 0.03014025663980901,
+        "delta": 0.3170695314831393
+      },
+      {
+        "task": "cs61_fa24_cats",
+        "dh": 0.7894736842105263,
+        "raw": 0.0,
+        "delta": 0.7894736842105263
+      },
+      {
+        "task": "cs61_fa24_hog",
+        "dh": 0.9166666666666666,
+        "raw": 0.0,
+        "delta": 0.9166666666666666
+      },
+      {
+        "task": "cs61_fa24_hw08",
+        "dh": 1.0,
+        "raw": 1.0,
+        "delta": 0.0
+      },
+      {
+        "task": "cmu15_445_p0",
+        "dh": 0.5,
+        "raw": 0.0,
+        "delta": 0.5
+      },
+      {
+        "task": "cmu15_445_p1",
+        "dh": 0.0,
+        "raw": 0.0,
+        "delta": 0.0
+      },
+      {
+        "task": "cmu15_445_p2",
+        "dh": 0.0,
+        "raw": 0.0,
+        "delta": 0.0
+      },
+      {
+        "task": "ap1400_2_hw26",
+        "dh": 0.2916666666666667,
+        "raw": 0.3333333333333333,
+        "delta": -0.04166666666666663
+      },
+      {
+        "task": "ap1400_2_hw35",
+        "dh": 0.7209302325581395,
+        "raw": 0.0,
+        "delta": 0.7209302325581395
+      },
+      {
+        "task": "61810_cow",
+        "dh": 0.0,
+        "raw": 0.7272727272727273,
+        "delta": -0.7272727272727273
+      },
+      {
+        "task": "61810_fs",
+        "dh": 0.4,
+        "raw": 0.81,
+        "delta": -0.41000000000000003
+      },
+      {
+        "task": "61810_lock",
+        "dh": 0.0,
+        "raw": 0.25,
+        "delta": -0.25
+      },
+      {
+        "task": "61810_mmap",
+        "dh": 0.0,
+        "raw": 0.0,
+        "delta": 0.0
+      },
+      {
+        "task": "61810_net",
+        "dh": 1.0,
+        "raw": 1.0,
+        "delta": 0.0
+      },
+      {
+        "task": "61810_syscall",
+        "dh": 0.6857142857142857,
+        "raw": 0.8571428571428571,
+        "delta": -0.17142857142857137
+      },
+      {
+        "task": "61810_thread",
+        "dh": 0.88,
+        "raw": 1.0,
+        "delta": -0.12
+      },
+      {
+        "task": "61810_traps",
+        "dh": 0.7894736842105263,
+        "raw": 0.8,
+        "delta": -0.010526315789473717
+      },
+      {
+        "task": "61810_util",
+        "dh": 1.0,
+        "raw": 1.0,
+        "delta": 0.0
+      }
+    ],
+    "raw_scheme_uses_authorized_network_retry": true
+  },
+  "quality": {
+    "dh": {
+      "valid_grades": 19,
+      "official_successes": 2,
+      "mean_f2p": 0.5200346746143983,
+      "all_20_valid": false
+    },
+    "raw": {
+      "valid_grades": 20,
+      "official_successes": 3,
+      "mean_f2p": 0.43818172580018167,
+      "all_20_valid": true
+    }
+  }
+}

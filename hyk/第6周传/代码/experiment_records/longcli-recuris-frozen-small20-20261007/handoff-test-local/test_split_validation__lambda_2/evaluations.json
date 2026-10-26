@@ -1,0 +1,44 @@
+{
+  "base_digest": "843aaf6704712b73b35fd3c50160ff1f967daa36c57593a7e9f193f095186f75",
+  "candidate_digest": "90ebd8db54a6ecfe045eb376769c07ef56f98280d0ca47297f4c815bdd018999",
+  "source": [
+    {
+      "task_id": "source",
+      "seed": 0,
+      "baseline_attempt_dir": "source-0-baseline",
+      "candidate_attempt_dir": "source-0-candidate"
+    },
+    {
+      "task_id": "source",
+      "seed": 1,
+      "baseline_attempt_dir": "source-1-baseline",
+      "candidate_attempt_dir": "source-1-candidate"
+    }
+  ],
+  "dev": [
+    {
+      "task_id": "dev-anchor",
+      "seed": 0,
+      "baseline_attempt_dir": "dev-anchor-0-baseline",
+      "candidate_attempt_dir": "dev-anchor-0-candidate"
+    },
+    {
+      "task_id": "dev-anchor",
+      "seed": 1,
+      "baseline_attempt_dir": "dev-anchor-1-baseline",
+      "candidate_attempt_dir": "dev-anchor-1-candidate"
+    },
+    {
+      "task_id": "dev-other",
+      "seed": 0,
+      "baseline_attempt_dir": "dev-other-0-baseline",
+      "candidate_attempt_dir": "dev-other-0-candidate"
+    },
+    {
+      "task_id": "dev-other",
+      "seed": 1,
+      "baseline_attempt_dir": "dev-other-1-baseline",
+      "candidate_attempt_dir": "dev-other-1-candidate"
+    }
+  ]
+}

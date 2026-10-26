@@ -1,0 +1,182 @@
+{
+  "sourceStats": {
+    "system-prompt": {
+      "count": 1,
+      "totalChars": 8647,
+      "minChars": 8647,
+      "maxChars": 8647
+    },
+    "user": {
+      "count": 1,
+      "totalChars": 3279,
+      "minChars": 3279,
+      "maxChars": 3279
+    },
+    "runtime-context": {
+      "count": 28,
+      "totalChars": 345378,
+      "minChars": 1876,
+      "maxChars": 15079
+    },
+    "kz-state-update": {
+      "count": 21,
+      "totalChars": 250539,
+      "minChars": 1952,
+      "maxChars": 15777
+    },
+    "compact-checkpoint": {
+      "count": 8,
+      "totalChars": 122246,
+      "minChars": 12387,
+      "maxChars": 17351
+    }
+  },
+  "updateCharsTotal": 250539,
+  "compactionOutputTokens": 34398,
+  "compactions": [
+    {
+      "seq": 86,
+      "usage": {
+        "inputTokens": 2203,
+        "outputTokens": 3276,
+        "cacheReadTokens": 26624,
+        "cacheWriteTokens": 0,
+        "totalTokens": 32103
+      },
+      "shadowedTokenCount": 17994,
+      "maxTokens": 8192
+    },
+    {
+      "seq": 108,
+      "usage": {
+        "inputTokens": 485,
+        "outputTokens": 3738,
+        "cacheReadTokens": 31104,
+        "cacheWriteTokens": 0,
+        "totalTokens": 35327
+      },
+      "shadowedTokenCount": 20413,
+      "maxTokens": 8192
+    },
+    {
+      "seq": 136,
+      "usage": {
+        "inputTokens": 491,
+        "outputTokens": 4305,
+        "cacheReadTokens": 30592,
+        "cacheWriteTokens": 0,
+        "totalTokens": 35388
+      },
+      "shadowedTokenCount": 20366,
+      "maxTokens": 8192
+    },
+    {
+      "seq": 165,
+      "usage": {
+        "inputTokens": 425,
+        "outputTokens": 4304,
+        "cacheReadTokens": 35712,
+        "cacheWriteTokens": 0,
+        "totalTokens": 40441
+      },
+      "shadowedTokenCount": 24781,
+      "maxTokens": 8192
+    },
+    {
+      "seq": 194,
+      "usage": {
+        "inputTokens": 451,
+        "outputTokens": 4505,
+        "cacheReadTokens": 29056,
+        "cacheWriteTokens": 0,
+        "totalTokens": 34012
+      },
+      "shadowedTokenCount": 19397,
+      "maxTokens": 8192
+    },
+    {
+      "seq": 223,
+      "usage": {
+        "inputTokens": 492,
+        "outputTokens": 4729,
+        "cacheReadTokens": 32384,
+        "cacheWriteTokens": 0,
+        "totalTokens": 37605
+      },
+      "shadowedTokenCount": 22052,
+      "maxTokens": 8192
+    },
+    {
+      "seq": 254,
+      "usage": {
+        "inputTokens": 1786,
+        "outputTokens": 4599,
+        "cacheReadTokens": 28672,
+        "cacheWriteTokens": 0,
+        "totalTokens": 35057
+      },
+      "shadowedTokenCount": 20186,
+      "maxTokens": 8192
+    },
+    {
+      "seq": 283,
+      "usage": {
+        "inputTokens": 382,
+        "outputTokens": 4942,
+        "cacheReadTokens": 31360,
+        "cacheWriteTokens": 0,
+        "totalTokens": 36684
+      },
+      "shadowedTokenCount": 21714,
+      "maxTokens": 8192
+    }
+  ],
+  "ends": [
+    {
+      "seq": 88,
+      "compactionId": "01249241-2603-4cd4-a000-f862563b250d",
+      "turn": 1
+    },
+    {
+      "seq": 110,
+      "compactionId": "cfed0dbc-709a-44e8-aac7-64635c8fb219",
+      "turn": 1
+    },
+    {
+      "seq": 138,
+      "compactionId": "11e6d806-050f-4882-a595-61670a0f2388",
+      "turn": 1
+    },
+    {
+      "seq": 167,
+      "compactionId": "20f7e1c4-bcd4-4d78-9ceb-882c2112bd26",
+      "turn": 1
+    },
+    {
+      "seq": 196,
+      "compactionId": "b9087e68-4f0b-4c18-a34f-455ed5641669",
+      "turn": 1
+    },
+    {
+      "seq": 225,
+      "compactionId": "48a91b16-8375-4c75-a123-53efc48b61b0",
+      "turn": 1
+    },
+    {
+      "seq": 256,
+      "compactionId": "7ddc6416-0a2f-43f0-92a3-f6df4c8c977a",
+      "turn": 1
+    },
+    {
+      "seq": 285,
+      "compactionId": "b700db54-4fc8-4eb9-b867-b874baafb515",
+      "turn": 1
+    },
+    {
+      "seq": 304,
+      "compactionId": "b10a43f4-88c6-4044-b104-3a008b408413",
+      "turn": 1,
+      "error": "KZ shared task request budget exhausted; artifacts retained"
+    }
+  ]
+}

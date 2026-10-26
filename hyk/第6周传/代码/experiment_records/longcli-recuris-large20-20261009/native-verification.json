@@ -1,0 +1,11 @@
+{
+  "author_python_files_verified": 29,
+  "resource_profile_equal": true,
+  "source": "/mnt/sdb/home/lizh639/longcli-recuris-taco-large7-20261009",
+  "native_tests_passed": 274,
+  "native_subtests_passed": 33,
+  "native_tests_exit": 0,
+  "paid_model_calls": 0,
+  "cross_task_memory": false,
+  "prior_results_carried": 0
+}

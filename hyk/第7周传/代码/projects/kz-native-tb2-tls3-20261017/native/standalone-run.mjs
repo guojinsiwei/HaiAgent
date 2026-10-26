@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+import {spawn} from 'node:child_process';
+import {deadline} from './deadline.mjs';
+const b=JSON.parse(fs.readFileSync(0,'utf8')),logs='/logs/agent/live';fs.mkdirSync(logs,{recursive:true});
+if(!b.offline && b.spending?.CAMPAIGN_BUDGET_REQUIRED!=='1')throw Error('Shared budget required');
+const env={...process.env,PATH:'/opt/kz-python/bin:'+process.env.PATH,...b.spending,HTTPS_PROXY:b.proxy??'',HTTP_PROXY:b.proxy??'',NO_PROXY:b.no_proxy??'',SSL_CERT_FILE:'/opt/kz-standalone/cacert.pem',PYTHONUNBUFFERED:'1',PYTHONDONTWRITEBYTECODE:'1'};
+for(const k of ['TAOTOKEN_API_KEY','DEEPSEEK_API_KEY','OPENAI_API_KEY','ANTHROPIC_API_KEY'])delete env[k];
+const command=b.offline?['-c','import pathlib,time; p=pathlib.Path("/logs/agent/live/private-probe.txt"); p.write_text("offline private probe"); p.chmod(0o600); time.sleep(60)']:['/opt/kz-standalone/solve.py'];
+const child=spawn('/opt/kz-python/bin/python3',command,{env,cwd:process.cwd(),detached:true,stdio:['pipe',fs.openSync(logs+'/solver.stdout.log','wx'),fs.openSync(logs+'/solver.stderr.log','wx')]});
+child.stdin.on('error',()=>{});child.stdin.end(JSON.stringify(b));b.key='';
+const guard=deadline(child,b.offline?1:2700,r=>fs.writeFileSync(logs+'/server-timeout.json',JSON.stringify({...r,attempt_id:b.attempt_id})),1000);
+const watch=setInterval(()=>{if(fs.existsSync(logs+'/budget-stop.json'))guard.terminate('budget-stop.json');},250);
+for(const signal of ['SIGTERM','SIGINT'])process.on(signal,()=>guard.terminate(signal));
+const result=await new Promise(resolve=>{child.on('error',()=>resolve({exit_code:127,signal:null}));child.on('exit',(c,s)=>resolve({exit_code:c??(s==='SIGKILL'?137:143),signal:s}));});
+guard.finish();clearInterval(watch);
+fs.writeFileSync(logs+'/agent-exit.json',JSON.stringify({...result,attempt_id:b.attempt_id,arm:'native-kz',timed_out:guard.reason==='solver_wall_limit',stopped_by:guard.reason}));
+process.exitCode=result.exit_code;

@@ -1,0 +1,29 @@
+{
+  "job": "dsh--cs61_fa24_ants",
+  "task": "cs61_fa24_ants",
+  "artifact_sha256": "b2607c8a3142caa0726ddbeed893249e8cbbe5a3547f404b3dd4a8a99a964659",
+  "image_id": "sha256:d368cc71ff651b0163cd543b7ec0165379ecac260ba2e9c9eb88507a7ade842e",
+  "container": "longcli-paired10-f8118a682c8e",
+  "grading_cpu": 8,
+  "grading_memory_gib": 8,
+  "grading_cpuset": "8-15",
+  "official_success": false,
+  "grading_state": "complete",
+  "fixture": false,
+  "script_exit": 0,
+  "f2p": {
+    "is_pass": 0,
+    "step_score": 0.03014025663980901
+  },
+  "p2p_is_pass": 1,
+  "p2p_step_score": 1.0,
+  "p2p_count": 4,
+  "p2p_cases": {
+    "test_file_integrity[/app/cs61_fa24_ants/ants_plans.py-e62d83ebd3eeccf11d321a1ecb8ebaff]": 1,
+    "test_file_integrity[/app/cs61_fa24_ants/gui.py-68e8cc6e77d685f7d1f727669a42bf32]": 1,
+    "test_file_integrity[/app/cs61_fa24_ants/ucb.py-0be13f7cef1751f21add38857f23f1bd]": 1,
+    "test_file_integrity[/app/cs61_fa24_ants/templates/index.html-a15a93e55387cab94144f6ebe567f546]": 1
+  },
+  "f2p_output_nonempty": true,
+  "grading_container_destroyed": true
+}

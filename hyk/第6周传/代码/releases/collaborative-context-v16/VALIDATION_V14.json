@@ -1,0 +1,31 @@
+{
+  "version": "v14",
+  "validated_at": "2026-09-24T21:55:47+08:00",
+  "scope": "offline full regression after final protocol wording fix",
+  "command": "env PYTHONPATH=src:tests python3 -B -m unittest discover -s tests -q",
+  "environment": "WSL Ubuntu; network and paid model APIs not used",
+  "result": {
+    "tests_run": 637,
+    "skipped": 26,
+    "failures": 0,
+    "errors": 0,
+    "status": "passed"
+  },
+  "protocol_versions": {
+    "runtime": "branching-graph-v14 / blocking-cli-v14",
+    "comparison_metrics": "cli-comparison-v3",
+    "metric_report": "cli-metrics-report-v4",
+    "reusable_evidence_classifier": "confirmed-reusable-call-v2"
+  },
+  "validated_properties": [
+    "shared explicit final submission gate for sequential and graph arms",
+    "four fixed causal arms: raw, memory_only, search_only, bestfgs",
+    "confirmed reusable-call lower bound with explicit unknown coverage and sensitivity range",
+    "mechanical and legacy same-command rates remain diagnostics only",
+    "model-cost and graph-search-efficiency fields are reporting-only",
+    "legacy metric versions are not pooled into v14 summaries",
+    "v12 and v13 release copies and running experiments were not modified"
+  ],
+  "performance_claim": false,
+  "notes": "Offline tests establish implementation consistency only. They do not show that v14 outperforms the raw baseline or succeeds on an official benchmark."
+}

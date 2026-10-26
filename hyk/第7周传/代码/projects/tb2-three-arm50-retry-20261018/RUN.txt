@@ -1,0 +1,43 @@
+TB2.0 three-arm50 engineering retry batch
+Deployed and checked: 2026-10-18 00:55 Asia/Shanghai
+
+Remote root: /mnt/sdb/home/lizh639/tb2-three-arm50-retry-20261018
+Parent: /mnt/sdb/home/lizh639/tb2-three-arm50-20261017
+Supervisor PID: 3255364; start=814780329; boot=2861b57d-7d78-4a80-a96b-0854417097ca
+State at verification: waiting_first_pass, model calls for retry=0.
+Key: authorized existing TaoToken key read from sidebar, RSA-encrypted handoff,
+SSH stdin to original server, retained in detached process memory; no plaintext file.
+
+One retry batch after parent reports finished, has no active trials, and its
+supervisor identity has exited. Final engineering failure list is frozen then.
+Current eligible: native KZ 5, KZDSH 5, DSH 4 = 14 runs.
+Current skipped: KZDSH dna-assembly, original cumulative charge 3.895065 CNY,
+remaining 0.104935 CNY, insufficient for 0.387072 CNY request reservation.
+New first-pass engineering failures will be checked by the same selection rules.
+Never retry clean score zero or valid budget exhaustion. Ambiguous ownership is held.
+
+Concurrency: total 3, at most 1 per arm. Every retry first runs a keyless full
+adapter/verifier preflight. One task failure leaves other candidates runnable.
+Budget: same parent SQLite ledger, total 600 CNY; retry budget_job remains original
+job identity. Original charges plus retry charges remain under 4 CNY per arm/task.
+Unknown usage retains its full reservation. No ledger reset/repricing/reconciliation.
+Model and endpoint unchanged: deepseek-flash, TaoToken Token Plan messages endpoint.
+
+Engineering changes:
+- Verifier uses official PyPI instead of rate-limited USTC PyPI; bounded retries
+  and two concurrent downloads. Official test files are untouched.
+- Startup-timeout tasks receive serial docker image warmup, 1800 seconds maximum.
+  Environment startup ceiling is 1800 seconds; solver remains 2700 seconds.
+- Successful HTTP SSE missing final usage can recover once under the shared
+  uncertain-response limit. Original unknown charge remains and retry reserves
+  a new charge. Incomplete tool calls are never passed to the solver.
+
+Validation: 9 Python and 21 JavaScript tests passed with zero model calls.
+Verified all original DSH archive members byte-identical except provider-guard.mjs;
+native archive byte-identical. Official tasks symlink the original frozen sources.
+Parent and retry source hashes are validated before launch and before retry start.
+Per-task real preflight occurs when the queued batch begins; it has not yet run.
+
+Status: read schedule.json while waiting; health.json and retry-plan.json after
+the first pass finishes. Do not rerun --launch or edit sealed sources in place.
+Historical parent results are preserved separately from retry results.

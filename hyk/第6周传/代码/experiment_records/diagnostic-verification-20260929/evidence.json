@@ -1,0 +1,1624 @@
+{
+  "scope": "Read-only frozen-run verification; no production changes or paid model requests.",
+  "offline": {
+    "diagnostic_trigger": {
+      "plain_category": "read",
+      "wrapped_category": "generic",
+      "plain_advisor_calls": 1,
+      "wrapped_advisor_calls": 0
+    },
+    "advisor_four_visible_ids": {
+      "visible": [
+        "E1",
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "accepted": 0,
+      "deferred": [
+        "advisor cited unavailable evidence"
+      ],
+      "prompt_mentions_three_limit": false,
+      "three_ids_accepted": 1
+    },
+    "memory_five_visible_ids": {
+      "reason": "memory requires visible real evidence",
+      "all_ids_visible": true,
+      "three_ids_admitted": "M1"
+    },
+    "conversation_wire": {
+      "message_counts": [
+        2,
+        2
+      ],
+      "second_request_contains_previous_turn": false,
+      "roles_second_request": [
+        "system",
+        "user"
+      ]
+    },
+    "outcome_classifier": {
+      "deadline_adjacent": {
+        "stop_reason": "wall_budget",
+        "infrastructure_ok": true,
+        "reasons": []
+      },
+      "deadline_with_metrics": {
+        "stop_reason": "wall_budget",
+        "infrastructure_ok": false,
+        "reasons": [
+          "model_error"
+        ]
+      },
+      "infrastructure_stop": {
+        "stop_reason": "infrastructure_error",
+        "infrastructure_ok": true,
+        "reasons": []
+      }
+    }
+  },
+  "hai_memory_replay": [
+    {
+      "task": "foldseek-paper-reproduction",
+      "source_hash_matches": true,
+      "unsupported_file_tracker_commands": 0,
+      "first_memory_replay": [
+        {
+          "call_id": 16,
+          "memory_id": "M1",
+          "serialized_memory_bytes": 3251,
+          "memory_budget_bytes": 3000,
+          "recall_ids": [
+            "M1"
+          ],
+          "selected_ids": [],
+          "validity": "stale",
+          "scope": {
+            "cwd": "/var/tmp/lizh639-lhtb-hai082-only-r1/runs/hai-foldseek-paper-reproduction/foldseek-paper-reproduction__4A7c6XF/agent/host-state/live",
+            "workspace": "30a807d1ea0ca955ddaea126be0c5980888c03e83a6fb1a04dd07537d7615a29",
+            "environment": null
+          },
+          "memory_scope": {
+            "cwd": "/app",
+            "environment": null,
+            "workspace": "30a807d1ea0ca955ddaea126be0c5980888c03e83a6fb1a04dd07537d7615a29"
+          },
+          "observed_validity": "current",
+          "match_count_original_scope": 0,
+          "match_count_normalized_scope": 1,
+          "selected_normalized_3000_bytes": [],
+          "selected_normalized_4500_bytes": [
+            "M1"
+          ],
+          "conclusion_matches_log": true,
+          "evidence_ids_match_log": true
+        }
+      ]
+    },
+    {
+      "task": "satellite-flood-change-detection-audit",
+      "source_hash_matches": true,
+      "unsupported_file_tracker_commands": 0,
+      "first_memory_replay": [
+        {
+          "call_id": 21,
+          "memory_id": "M1",
+          "serialized_memory_bytes": 4241,
+          "memory_budget_bytes": 3000,
+          "recall_ids": [
+            "M1"
+          ],
+          "selected_ids": [],
+          "validity": "stale",
+          "scope": {
+            "cwd": "/var/tmp/lizh639-lhtb-hai082-only-r1/runs/hai-satellite-flood-change-detection-audit/satellite-flood-change-detection__U6bRoJF/agent/host-state/live",
+            "workspace": "8bcece6b66935fca8f8a9b0ba0016cea12c48c81cc31f200b6d370dd8fde867f",
+            "environment": null
+          },
+          "memory_scope": {
+            "cwd": "/app",
+            "environment": null,
+            "workspace": "8bcece6b66935fca8f8a9b0ba0016cea12c48c81cc31f200b6d370dd8fde867f"
+          },
+          "observed_validity": "current",
+          "match_count_original_scope": 0,
+          "match_count_normalized_scope": 1,
+          "selected_normalized_3000_bytes": [],
+          "selected_normalized_4500_bytes": [
+            "M1"
+          ],
+          "conclusion_matches_log": true,
+          "evidence_ids_match_log": true
+        }
+      ]
+    },
+    {
+      "task": "unison-paper-reproduction",
+      "source_hash_matches": true,
+      "unsupported_file_tracker_commands": 0,
+      "first_memory_replay": [
+        {
+          "call_id": 29,
+          "memory_id": "M1",
+          "serialized_memory_bytes": 3411,
+          "memory_budget_bytes": 3000,
+          "recall_ids": [
+            "M1"
+          ],
+          "selected_ids": [],
+          "validity": "stale",
+          "scope": {
+            "cwd": "/var/tmp/lizh639-lhtb-hai082-only-r1/runs/hai-unison-paper-reproduction/unison-paper-reproduction__Uwmcgg7/agent/host-state/live",
+            "workspace": "b0f564e977fe212555337d2678db8bd790b3d487029750cc7994748a28ac6a5e",
+            "environment": null
+          },
+          "memory_scope": {
+            "cwd": "/app",
+            "environment": null,
+            "workspace": "b0f564e977fe212555337d2678db8bd790b3d487029750cc7994748a28ac6a5e"
+          },
+          "observed_validity": "current",
+          "match_count_original_scope": 0,
+          "match_count_normalized_scope": 1,
+          "selected_normalized_3000_bytes": [],
+          "selected_normalized_4500_bytes": [
+            "M1"
+          ],
+          "conclusion_matches_log": true,
+          "evidence_ids_match_log": true
+        }
+      ]
+    }
+  ],
+  "trial_evidence": [
+    {
+      "method": "hai",
+      "task": "modflow6-groundwater-regression-audit",
+      "counts": {
+        "header": 1,
+        "request_context": 327,
+        "api_start": 327,
+        "api_end": 327,
+        "model_response": 327,
+        "decision": 326,
+        "tool_start": 326,
+        "tool_end": 326,
+        "strategy_observed": 326,
+        "subgoal_observed": 326,
+        "format_error": 1,
+        "automatic_memory": 2,
+        "repetition_observed": 1,
+        "run_end": 1
+      },
+      "categories": {},
+      "no_workspace_change": 0,
+      "diagnostic_max": 0,
+      "triggers": [],
+      "failures": [],
+      "source_matches": {}
+    },
+    {
+      "method": "hai",
+      "task": "foldseek-paper-reproduction",
+      "counts": {
+        "header": 1,
+        "request_context": 429,
+        "api_start": 429,
+        "api_end": 429,
+        "model_response": 428,
+        "decision": 428,
+        "tool_start": 428,
+        "tool_end": 428,
+        "strategy_observed": 428,
+        "subgoal_observed": 428,
+        "automatic_memory": 81,
+        "failure": 1,
+        "run_end": 1
+      },
+      "categories": {},
+      "no_workspace_change": 0,
+      "diagnostic_max": 0,
+      "triggers": [],
+      "failures": [
+        {
+          "category": "wall_budget",
+          "detail": "task_deadline",
+          "event": "failure",
+          "previous": "1967a64b1d2fca40edd2b6f49f824934c695b95646d699da1f16b0000be600cd",
+          "sequence": 3938,
+          "sha256": "593997edaed63295b39bf3af4151daf8682f70b8a19501c3f04ccde7dd210221",
+          "time": 1790654084.9401987
+        }
+      ],
+      "source_matches": {}
+    },
+    {
+      "method": "hai",
+      "task": "spot-scheduler-traces",
+      "counts": {
+        "header": 1,
+        "request_context": 603,
+        "api_start": 603,
+        "api_end": 603,
+        "model_response": 603,
+        "decision": 603,
+        "tool_start": 600,
+        "tool_end": 600,
+        "strategy_observed": 600,
+        "subgoal_observed": 600,
+        "automatic_memory": 162,
+        "submission": 2,
+        "run_end": 1
+      },
+      "categories": {},
+      "no_workspace_change": 0,
+      "diagnostic_max": 0,
+      "triggers": [],
+      "failures": [],
+      "source_matches": {}
+    },
+    {
+      "method": "hai",
+      "task": "gdal-proj-raster-regression",
+      "counts": {
+        "header": 1,
+        "request_context": 414,
+        "api_start": 414,
+        "api_end": 414,
+        "model_response": 414,
+        "decision": 414,
+        "tool_start": 411,
+        "tool_end": 411,
+        "strategy_observed": 411,
+        "subgoal_observed": 411,
+        "automatic_memory": 8,
+        "repetition_observed": 4,
+        "memory_intervention": 3,
+        "memory_reconsideration": 3,
+        "memory_followup_outcome": 3,
+        "run_end": 1
+      },
+      "categories": {},
+      "no_workspace_change": 0,
+      "diagnostic_max": 0,
+      "triggers": [],
+      "failures": [],
+      "source_matches": {}
+    },
+    {
+      "method": "hai",
+      "task": "climate-netcdf-extreme-event-audit",
+      "counts": {
+        "header": 1,
+        "request_context": 413,
+        "api_start": 413,
+        "api_end": 413,
+        "model_response": 413,
+        "decision": 411,
+        "tool_start": 411,
+        "tool_end": 411,
+        "strategy_observed": 411,
+        "subgoal_observed": 411,
+        "automatic_memory": 1642,
+        "format_error": 2,
+        "run_end": 1
+      },
+      "categories": {},
+      "no_workspace_change": 0,
+      "diagnostic_max": 0,
+      "triggers": [],
+      "failures": [],
+      "source_matches": {}
+    },
+    {
+      "method": "hai",
+      "task": "great-expectations-audit",
+      "counts": {
+        "header": 1,
+        "request_context": 285,
+        "api_start": 285,
+        "api_end": 285,
+        "model_response": 285,
+        "decision": 283,
+        "tool_start": 283,
+        "tool_end": 282,
+        "strategy_observed": 282,
+        "subgoal_observed": 282,
+        "automatic_memory": 948,
+        "format_error": 2,
+        "failure": 1,
+        "run_end": 1
+      },
+      "categories": {},
+      "no_workspace_change": 0,
+      "diagnostic_max": 0,
+      "triggers": [],
+      "failures": [
+        {
+          "category": "wall_budget",
+          "detail": "WorkBudgetExhausted",
+          "event": "failure",
+          "previous": "6efaf28c34916b5fcf891f5970b8f0cd7ea50fb364826c5e06e949ebe04a50ef",
+          "sequence": 3504,
+          "sha256": "c6f672da920e18d2bd629e872d68f5db13ca380dd039c46b4a226b626ce42267",
+          "time": 1790659076.2705848,
+          "traceback": "Traceback (most recent call last):\n  File \"/var/tmp/lizh639-lhtb-hai082-only-r1/hai-project/src/haiagent/runtime.py\", line 578, in run\n    result = executor.execute(decision, deadline)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/tmp/lizh639-lhtb-hai082-only-r1/transport.py\", line 70, in execute\n    result = self.state.command(container, command)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/tmp/lizh639-lhtb-hai082-only-r1/docker_state.py\", line 194, in command\n    raise WorkBudgetExhausted('Cumulative trial work budget exhausted')\ndocker_state.WorkBudgetExhausted: Cumulative trial work budget exhausted\n"
+        }
+      ],
+      "source_matches": {}
+    },
+    {
+      "method": "hai",
+      "task": "epa-swmm-stormwater-regression-audit",
+      "counts": {
+        "header": 1,
+        "request_context": 252,
+        "api_start": 252,
+        "api_end": 252,
+        "model_response": 252,
+        "decision": 252,
+        "tool_start": 252,
+        "tool_end": 251,
+        "strategy_observed": 251,
+        "subgoal_observed": 251,
+        "automatic_memory": 2,
+        "failure": 1,
+        "run_end": 1
+      },
+      "categories": {},
+      "no_workspace_change": 0,
+      "diagnostic_max": 0,
+      "triggers": [],
+      "failures": [
+        {
+          "category": "infrastructure_error",
+          "detail": "RuntimeError",
+          "event": "failure",
+          "previous": "97026775258f34d15e67cbe4829db16c75df45a21b4aa738ed4af63e963a983b",
+          "sequence": 2269,
+          "sha256": "cb1145f35c25f15a0fe069b3da4126a4db487edec5a50a26c160f15c123ec6b7",
+          "time": 1790660548.0758915,
+          "traceback": "Traceback (most recent call last):\n  File \"/var/tmp/lizh639-lhtb-hai082-only-r1/hai-project/src/haiagent/runtime.py\", line 578, in run\n    result = executor.execute(decision, deadline)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/tmp/lizh639-lhtb-hai082-only-r1/transport.py\", line 62, in execute\n    container = self.state.branch(self.current)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/tmp/lizh639-lhtb-hai082-only-r1/docker_state.py\", line 92, in branch\n    container = self.docker(*args).strip()\n                ^^^^^^^^^^^^^^^^^^\n  File \"/var/tmp/lizh639-lhtb-hai082-only-r1/docker_state.py\", line 57, in docker\n    raise RuntimeError('Docker operation failed: ' + args[0])\nRuntimeError: Docker operation failed: run\n"
+        }
+      ],
+      "source_matches": {}
+    },
+    {
+      "method": "hai",
+      "task": "opensees-seismic-structural-regression-audit",
+      "counts": {
+        "header": 1,
+        "request_context": 36,
+        "api_start": 36,
+        "api_end": 36,
+        "model_response": 36,
+        "decision": 36,
+        "tool_start": 31,
+        "tool_end": 31,
+        "strategy_observed": 31,
+        "subgoal_observed": 31,
+        "automatic_memory": 5,
+        "repetition_observed": 4,
+        "memory_intervention": 5,
+        "memory_reconsideration": 4,
+        "memory_use_self_report": 1,
+        "repeat_decision": 2,
+        "memory_followup_outcome": 4,
+        "memory_override_exhausted": 1,
+        "memory_override_reason": 1,
+        "failure": 1,
+        "run_end": 1
+      },
+      "categories": {},
+      "no_workspace_change": 0,
+      "diagnostic_max": 0,
+      "triggers": [],
+      "failures": [
+        {
+          "category": "stagnation_limit",
+          "detail": "Policy repeatedly ignored action-conditioned task memory",
+          "event": "failure",
+          "intervention_id": "MI5",
+          "previous": "a4c7a539050142a8ce6ccfdf6cbb1a40559f351d4c8241908508fa4353d0c6fb",
+          "profile": {
+            "action_key": "b0bbec7193f5208e1ab5c16851a4aa8605a50dc18bfa566378e8e1e3ff8ba331",
+            "anchors": [
+              "/app",
+              "-",
+              "<<__hai_heredoc__",
+              "import",
+              "openseespy.opensees",
+              "as",
+              "ops",
+              "ops.wipe()",
+              "ops.model(basic,-ndm,2,-ndf,2)",
+              "ops.node(1,0.0,0.0)",
+              "ops.node(2,0.0,0.0)",
+              "ops.uniaxialmaterial(elastic,1,100000.0)"
+            ],
+            "canonical_sha256": "3739b7094bd6134eaccf716556ed1433f8a40eb6c89380046c899f3c1d2d29f4",
+            "direction_key": "3cb5c26f6fd50d4882092ce17912410a2058a4a72b54470d864fefa5f906cca9",
+            "exploration_scope": [
+              "1,0",
+              "0,0",
+              "1,1",
+              "2,0",
+              "2,1000",
+              "1,100000",
+              "2,1"
+            ],
+            "kind": "execute",
+            "payload_sha256": "fd655827a1cb2897bc7d0ccb84ddcb684bab231ab2e3a5b9ac4b866d6da20969",
+            "program": "cd",
+            "stdin_direction_sha256": null,
+            "summary": "execute via cd -> python -> ops.fix(1,1,1) -> ops.mass(2,1000.0,0.0): ops.m; scope=1,0,0,0,1,1",
+            "targets": [
+              "ops.m"
+            ],
+            "tool_chain": [
+              "cd",
+              "python",
+              "ops.fix(1,1,1)",
+              "ops.mass(2,1000.0,0.0)"
+            ]
+          },
+          "sequence": 333,
+          "sha256": "0460e0bd30b5f1c1dc472255293b0eabd9eb0347c5c8d9ccf049ae362ff16efb",
+          "time": 1790660936.9417171
+        }
+      ],
+      "source_matches": {}
+    },
+    {
+      "method": "hai",
+      "task": "microscopy-cell-count-qc-audit",
+      "counts": {
+        "header": 1,
+        "request_context": 408,
+        "api_start": 408,
+        "api_end": 408,
+        "model_response": 408,
+        "decision": 408,
+        "tool_start": 398,
+        "tool_end": 398,
+        "strategy_observed": 398,
+        "subgoal_observed": 398,
+        "automatic_memory": 22,
+        "repetition_observed": 19,
+        "memory_intervention": 10,
+        "memory_reconsideration": 9,
+        "memory_followup_outcome": 9,
+        "repeat_decision": 5,
+        "memory_use_self_report": 1,
+        "memory_override_exhausted": 1,
+        "memory_override_reason": 3,
+        "memory_override_reason_exhausted": 3,
+        "failure": 1,
+        "run_end": 1
+      },
+      "categories": {},
+      "no_workspace_change": 0,
+      "diagnostic_max": 0,
+      "triggers": [],
+      "failures": [
+        {
+          "category": "stagnation_limit",
+          "detail": "Policy repeatedly ignored action-conditioned task memory",
+          "event": "failure",
+          "intervention_id": "MI10",
+          "previous": "f3825b99afafd0ff0024e385b2cf9e4384ea56b321a0a3810046cf34a4b63de4",
+          "profile": {
+            "action_key": "7f375228609bd26f9ce2f7d86037279938ec2a765c9231991f559580fadf61b9",
+            "anchors": [
+              "-",
+              "<<__hai_heredoc__",
+              "import",
+              "cv2,",
+              "numpy",
+              "as",
+              "np",
+              "t",
+              "[public_platea_field01,public_platea_field02_blur]:",
+              "img=cv2.imread(fdata/public/{t}.png)",
+              "print(==,t)",
+              "name,ch"
+            ],
+            "canonical_sha256": "e9195e6ec2f05612f2f091018e305e69863e2ab25c8db18e935ba475a0fa4bf8",
+            "direction_key": "eca86768eb8affbbfca703a31c7cb51e3341eeda39756adddc2c290b9dda4968",
+            "exploration_scope": [
+              "20,30",
+              "40,60"
+            ],
+            "kind": "execute",
+            "payload_sha256": "1f053ff70ccbf3a2b0f1695ce4dd4be2e729a7b108ca29141622f41f02a990d5",
+            "program": "python",
+            "stdin_direction_sha256": null,
+            "summary": "execute via python: data/public; scope=20,30,40,60",
+            "targets": [
+              "data/public"
+            ],
+            "tool_chain": [
+              "python"
+            ]
+          },
+          "sequence": 3716,
+          "sha256": "ff5973e27b32850bcb5e2084e982cb4b48db01abd7713332c916c7a90efb4155",
+          "time": 1790661115.4739513
+        }
+      ],
+      "source_matches": {}
+    },
+    {
+      "method": "hai",
+      "task": "satellite-flood-change-detection-audit",
+      "counts": {
+        "header": 1,
+        "request_context": 569,
+        "api_start": 569,
+        "api_end": 569,
+        "model_response": 568,
+        "decision": 568,
+        "tool_start": 568,
+        "tool_end": 568,
+        "strategy_observed": 568,
+        "subgoal_observed": 568,
+        "automatic_memory": 81,
+        "failure": 1,
+        "run_end": 1
+      },
+      "categories": {},
+      "no_workspace_change": 0,
+      "diagnostic_max": 0,
+      "triggers": [],
+      "failures": [
+        {
+          "category": "wall_budget",
+          "detail": "task_deadline",
+          "event": "failure",
+          "previous": "b1ac9e6a0506c5c871d3d6a0343b066eac8218e675d79ef38d460b3172c14f87",
+          "sequence": 5198,
+          "sha256": "19b37af0e2a34c310eb927058652dd114e66b8b98f9b94b7b3342c7ed957348a",
+          "time": 1790664560.3906164
+        }
+      ],
+      "source_matches": {},
+      "scorecard": {
+        "groups": {
+          "G_cli_schema": 1,
+          "G_hidden_end_to_end_stress": 0,
+          "G_hidden_masks_components": 0,
+          "G_hidden_wrapper": 1,
+          "G_public_extent": 0,
+          "G_public_sanity": 0.3333333333333333,
+          "G_tool_references": 1
+        },
+        "reward": 0.09333333333333334,
+        "weights": {
+          "G_cli_schema": 0.01,
+          "G_hidden_end_to_end_stress": 0.79,
+          "G_hidden_masks_components": 0.1,
+          "G_hidden_wrapper": 0.07,
+          "G_public_extent": 0.01,
+          "G_public_sanity": 0.01,
+          "G_tool_references": 0.01
+        }
+      }
+    },
+    {
+      "method": "hai",
+      "task": "matpower-opf-regression",
+      "counts": {
+        "header": 1,
+        "request_context": 335,
+        "api_start": 335,
+        "api_end": 335,
+        "model_response": 335,
+        "decision": 335,
+        "tool_start": 335,
+        "tool_end": 335,
+        "strategy_observed": 335,
+        "subgoal_observed": 335,
+        "run_end": 1
+      },
+      "categories": {},
+      "no_workspace_change": 0,
+      "diagnostic_max": 0,
+      "triggers": [],
+      "failures": [],
+      "source_matches": {}
+    },
+    {
+      "method": "hai",
+      "task": "unison-paper-reproduction",
+      "counts": {
+        "header": 1,
+        "request_context": 573,
+        "api_start": 573,
+        "api_end": 573,
+        "model_response": 573,
+        "decision": 573,
+        "tool_start": 573,
+        "tool_end": 573,
+        "strategy_observed": 573,
+        "subgoal_observed": 573,
+        "automatic_memory": 81,
+        "run_end": 1
+      },
+      "categories": {},
+      "no_workspace_change": 0,
+      "diagnostic_max": 0,
+      "triggers": [],
+      "failures": [],
+      "source_matches": {}
+    },
+    {
+      "method": "bestfgs",
+      "task": "spot-scheduler-traces",
+      "counts": {
+        "header": 1,
+        "checkpoint": 1,
+        "model_request": 610,
+        "model_response": 610,
+        "tool_attempt": 600,
+        "tool_call": 600,
+        "submission": 9,
+        "submission_feedback": 9,
+        "method_end": 1
+      },
+      "categories": {
+        "listing": 1,
+        "read": 6,
+        "generic": 593
+      },
+      "no_workspace_change": 575,
+      "diagnostic_max": 4,
+      "triggers": [],
+      "failures": [],
+      "source_matches": {
+        "lean_memory.py": true,
+        "lean_protocol.py": true,
+        "lean_runtime.py": true,
+        "prompt_views.py": true
+      }
+    },
+    {
+      "method": "bestfgs",
+      "task": "modflow6-groundwater-regression-audit",
+      "counts": {
+        "header": 1,
+        "checkpoint": 1,
+        "model_request": 612,
+        "model_response": 602,
+        "tool_attempt": 600,
+        "tool_call": 600,
+        "model_error": 10,
+        "submission": 1,
+        "submission_feedback": 1,
+        "method_end": 1
+      },
+      "categories": {
+        "generic": 599,
+        "read": 1
+      },
+      "no_workspace_change": 592,
+      "diagnostic_max": 1,
+      "triggers": [],
+      "failures": [],
+      "source_matches": {
+        "lean_memory.py": true,
+        "lean_protocol.py": true,
+        "lean_runtime.py": true,
+        "prompt_views.py": true
+      }
+    },
+    {
+      "method": "bestfgs",
+      "task": "foldseek-paper-reproduction",
+      "counts": {
+        "header": 1,
+        "checkpoint": 1,
+        "model_request": 604,
+        "model_response": 601,
+        "tool_attempt": 600,
+        "tool_call": 600,
+        "model_error": 3,
+        "method_end": 1
+      },
+      "categories": {
+        "generic": 600
+      },
+      "no_workspace_change": 598,
+      "diagnostic_max": 0,
+      "triggers": [],
+      "failures": [],
+      "source_matches": {
+        "lean_memory.py": true,
+        "lean_protocol.py": true,
+        "lean_runtime.py": true,
+        "prompt_views.py": true
+      }
+    },
+    {
+      "method": "bestfgs",
+      "task": "gdal-proj-raster-regression",
+      "counts": {
+        "header": 1,
+        "checkpoint": 1,
+        "model_request": 605,
+        "model_response": 603,
+        "tool_attempt": 600,
+        "tool_call": 600,
+        "protocol_error": 2,
+        "model_error": 2,
+        "method_end": 1
+      },
+      "categories": {
+        "generic": 598,
+        "read": 2
+      },
+      "no_workspace_change": 600,
+      "diagnostic_max": 1,
+      "triggers": [],
+      "failures": [],
+      "source_matches": {
+        "lean_memory.py": true,
+        "lean_protocol.py": true,
+        "lean_runtime.py": true,
+        "prompt_views.py": true
+      }
+    },
+    {
+      "method": "bestfgs",
+      "task": "climate-netcdf-extreme-event-audit",
+      "counts": {
+        "header": 1,
+        "checkpoint": 1,
+        "model_request": 603,
+        "model_response": 601,
+        "tool_attempt": 600,
+        "tool_call": 600,
+        "model_error": 2,
+        "method_end": 1
+      },
+      "categories": {
+        "generic": 466,
+        "read": 134
+      },
+      "no_workspace_change": 597,
+      "diagnostic_max": 8,
+      "triggers": [],
+      "failures": [],
+      "source_matches": {
+        "lean_memory.py": true,
+        "lean_protocol.py": true,
+        "lean_runtime.py": true,
+        "prompt_views.py": true
+      }
+    },
+    {
+      "method": "bestfgs",
+      "task": "great-expectations-audit",
+      "counts": {
+        "header": 1,
+        "checkpoint": 1,
+        "model_request": 608,
+        "model_response": 601,
+        "tool_attempt": 600,
+        "tool_call": 600,
+        "model_error": 7,
+        "method_end": 1
+      },
+      "categories": {
+        "generic": 600
+      },
+      "no_workspace_change": 600,
+      "diagnostic_max": 0,
+      "triggers": [],
+      "failures": [],
+      "source_matches": {
+        "lean_memory.py": true,
+        "lean_protocol.py": true,
+        "lean_runtime.py": true,
+        "prompt_views.py": true
+      }
+    },
+    {
+      "method": "bestfgs",
+      "task": "microscopy-cell-count-qc-audit",
+      "counts": {
+        "header": 1,
+        "checkpoint": 1,
+        "model_request": 615,
+        "model_response": 613,
+        "tool_attempt": 600,
+        "tool_call": 600,
+        "model_error": 2,
+        "submission": 11,
+        "submission_feedback": 11,
+        "memory_rejected": 2,
+        "protocol_error": 1,
+        "method_end": 1
+      },
+      "categories": {
+        "generic": 600
+      },
+      "no_workspace_change": 594,
+      "diagnostic_max": 0,
+      "triggers": [
+        {
+          "event": "memory_rejected",
+          "previous": "4d12e9562138e478fdf239f295a6197e623c8e51f256f6a2456085a176778fb2",
+          "reason": "memory requires visible real evidence",
+          "sequence": 1929,
+          "sha256": "cf823c437eca01a0f662d05776a060334e6a4fb8fbe8f68e4dcc3eae50f10c62",
+          "time": 1790663770.6738641
+        },
+        {
+          "event": "memory_rejected",
+          "previous": "954c936c075d352e45878878788905e74f25dc0a0872dde01ed0178100c6f583",
+          "reason": "memory requires visible real evidence",
+          "sequence": 2329,
+          "sha256": "ad92e84eb6339baf77ba4c0e9a1fbc39b7e5fec0f6fd8d3018aad3427e5e5b04",
+          "time": 1790664047.58812
+        }
+      ],
+      "failures": [],
+      "source_matches": {
+        "lean_memory.py": true,
+        "lean_protocol.py": true,
+        "lean_runtime.py": true,
+        "prompt_views.py": true
+      }
+    },
+    {
+      "method": "bestfgs",
+      "task": "epa-swmm-stormwater-regression-audit",
+      "counts": {
+        "header": 1,
+        "checkpoint": 1,
+        "model_request": 605,
+        "model_response": 602,
+        "tool_attempt": 600,
+        "tool_call": 600,
+        "model_error": 3,
+        "advisor_trigger": 1,
+        "advisor_deferred": 1,
+        "method_end": 1
+      },
+      "categories": {
+        "generic": 595,
+        "read": 5
+      },
+      "no_workspace_change": 529,
+      "diagnostic_max": 1,
+      "triggers": [
+        {
+          "event": "advisor_trigger",
+          "previous": "aac1a28be37e3508663e8f59ddfdbf96125510797d14a5c96a7a2cfd30d5cbcf",
+          "question": "The same command failed repeatedly with identical captured output. What different explanation or information source should be checked?",
+          "sequence": 2321,
+          "sha256": "93bcbbac0ab5c0b980bc35efaac3ef98b4c4af33e4bb1bc69b6ba62c801d3433",
+          "time": 1790665773.174308,
+          "trigger": "repeated_failure"
+        },
+        {
+          "event": "advisor_deferred",
+          "previous": "ac801bcb1f41939476a244174cb2c5c428fb5506a92218b30ee5834f042e7330",
+          "reason": "advisor cited unavailable evidence",
+          "sequence": 2324,
+          "sha256": "15d12029100cd83c0acd4470d45ec11b9031f458721ea521078dc108ca87bb16",
+          "time": 1790665776.1806455
+        }
+      ],
+      "failures": [],
+      "source_matches": {
+        "lean_memory.py": true,
+        "lean_protocol.py": true,
+        "lean_runtime.py": true,
+        "prompt_views.py": true
+      }
+    },
+    {
+      "method": "bestfgs",
+      "task": "satellite-flood-change-detection-audit",
+      "counts": {
+        "header": 1,
+        "checkpoint": 1,
+        "model_request": 5,
+        "model_response": 2,
+        "tool_attempt": 2,
+        "tool_call": 2,
+        "model_error": 3,
+        "method_end": 1
+      },
+      "categories": {
+        "generic": 2
+      },
+      "no_workspace_change": 2,
+      "diagnostic_max": 0,
+      "triggers": [],
+      "failures": [],
+      "source_matches": {
+        "lean_memory.py": true,
+        "lean_protocol.py": true,
+        "lean_runtime.py": true,
+        "prompt_views.py": true
+      },
+      "scorecard": {
+        "groups": {
+          "G_cli_schema": 1,
+          "G_hidden_end_to_end_stress": 0,
+          "G_hidden_masks_components": 0,
+          "G_hidden_wrapper": 1,
+          "G_public_extent": 0,
+          "G_public_sanity": 0.3333333333333333,
+          "G_tool_references": 1
+        },
+        "reward": 0.09333333333333334,
+        "weights": {
+          "G_cli_schema": 0.01,
+          "G_hidden_end_to_end_stress": 0.79,
+          "G_hidden_masks_components": 0.1,
+          "G_hidden_wrapper": 0.07,
+          "G_public_extent": 0.01,
+          "G_public_sanity": 0.01,
+          "G_tool_references": 0.01
+        }
+      }
+    },
+    {
+      "method": "bestfgs",
+      "task": "opensees-seismic-structural-regression-audit",
+      "counts": {
+        "header": 1,
+        "checkpoint": 1,
+        "model_request": 608,
+        "model_response": 603,
+        "tool_attempt": 600,
+        "tool_call": 600,
+        "model_error": 5,
+        "memory_rejected": 1,
+        "submission": 2,
+        "submission_feedback": 2,
+        "method_end": 1
+      },
+      "categories": {
+        "generic": 599,
+        "read": 1
+      },
+      "no_workspace_change": 596,
+      "diagnostic_max": 1,
+      "triggers": [
+        {
+          "event": "memory_rejected",
+          "previous": "e7cacc55d9b65d876d9451adb48fbd28bc5c864b3b8fd0ae8c70fec382374c70",
+          "reason": "memory requires visible real evidence",
+          "sequence": 2267,
+          "sha256": "cb93d0698651a6e1f5f1602c74e1c077d438a08767fef4d328bfa27b9a40ce16",
+          "time": 1790667479.1562102
+        }
+      ],
+      "failures": [],
+      "source_matches": {
+        "lean_memory.py": true,
+        "lean_protocol.py": true,
+        "lean_runtime.py": true,
+        "prompt_views.py": true
+      }
+    },
+    {
+      "method": "bestfgs",
+      "task": "unison-paper-reproduction",
+      "counts": {
+        "header": 1,
+        "checkpoint": 1,
+        "model_request": 603,
+        "model_response": 601,
+        "tool_attempt": 600,
+        "tool_call": 600,
+        "model_error": 2,
+        "method_end": 1
+      },
+      "categories": {
+        "generic": 600
+      },
+      "no_workspace_change": 586,
+      "diagnostic_max": 0,
+      "triggers": [],
+      "failures": [],
+      "source_matches": {
+        "lean_memory.py": true,
+        "lean_protocol.py": true,
+        "lean_runtime.py": true,
+        "prompt_views.py": true
+      }
+    },
+    {
+      "method": "bestfgs",
+      "task": "matpower-opf-regression",
+      "counts": {
+        "header": 1,
+        "checkpoint": 1,
+        "model_request": 580,
+        "model_response": 566,
+        "tool_attempt": 563,
+        "tool_call": 563,
+        "model_error": 14,
+        "protocol_error": 2,
+        "advisor_trigger": 1,
+        "advisor_deferred": 1,
+        "method_end": 1
+      },
+      "categories": {
+        "generic": 563
+      },
+      "no_workspace_change": 563,
+      "diagnostic_max": 0,
+      "triggers": [
+        {
+          "event": "advisor_trigger",
+          "previous": "8c625f331fa974343962ad49164fef7a420630959b5f38563899728a5b5bdd88",
+          "question": "The same command failed repeatedly with identical captured output. What different explanation or information source should be checked?",
+          "sequence": 1769,
+          "sha256": "4e97ce33a0d62f8f43f5d407513efa1449d81699223b0d189d5fe63a77c8dced",
+          "time": 1790670732.5141327,
+          "trigger": "repeated_failure"
+        },
+        {
+          "event": "advisor_deferred",
+          "previous": "d12b65aa5603afa83d976f5e425df191708a8f1264c368f46a7d4df733a47f06",
+          "reason": "advisor cited unavailable evidence",
+          "sequence": 1772,
+          "sha256": "ba2b4296527a3f761e48949e6d326b3455582ecac9f9bd8422b3020a245422eb",
+          "time": 1790670736.2336566
+        }
+      ],
+      "failures": [],
+      "source_matches": {
+        "lean_memory.py": true,
+        "lean_protocol.py": true,
+        "lean_runtime.py": true,
+        "prompt_views.py": true
+      }
+    }
+  ],
+  "detail_evidence": [
+    {
+      "method": "hai",
+      "task": "modflow6-groundwater-regression-audit",
+      "memory_events": 2,
+      "distinct_memory_ids": 2,
+      "requests_with_stored_memory": 81,
+      "requests_with_visible_memory": 0,
+      "max_stored_memory": 2,
+      "usage": {
+        "prompt_tokens": 5122297,
+        "completion_tokens": 88738,
+        "prompt_cache_hit_tokens": 418560
+      },
+      "api_end_status": {
+        "response": 327
+      },
+      "api_failures": []
+    },
+    {
+      "method": "hai",
+      "task": "foldseek-paper-reproduction",
+      "memory_events": 81,
+      "distinct_memory_ids": 1,
+      "requests_with_stored_memory": 81,
+      "requests_with_visible_memory": 0,
+      "max_stored_memory": 1,
+      "usage": {
+        "prompt_tokens": 6368347,
+        "completion_tokens": 124139,
+        "prompt_cache_hit_tokens": 546688
+      },
+      "api_end_status": {
+        "response": 428,
+        "absolute_request_timeout": 1
+      },
+      "api_failures": [
+        {
+          "duration_seconds": 1.3416758617386222,
+          "event": "api_end",
+          "previous": "eee5bd470db226aa00c2fc3c256c7950374bf1931e03fb21e322ef0eb004b29e",
+          "sequence": 3937,
+          "sha256": "1967a64b1d2fca40edd2b6f49f824934c695b95646d699da1f16b0000be600cd",
+          "status": "absolute_request_timeout",
+          "time": 1790654084.9385216,
+          "usage": null
+        }
+      ],
+      "original_classification": {
+        "stop_reason": "wall_budget",
+        "infrastructure_ok": false,
+        "reasons": [
+          "model_error"
+        ]
+      },
+      "classification_without_utilization_event": {
+        "stop_reason": "wall_budget",
+        "infrastructure_ok": true,
+        "reasons": []
+      },
+      "method_files": [
+        "events.jsonl",
+        "progress.json",
+        "result.json"
+      ],
+      "panel_keys": [
+        "budget_pressure",
+        "budgets_remaining",
+        "constraints",
+        "context",
+        "delivery_progress",
+        "instruction",
+        "latest_notice",
+        "task_id",
+        "workspace"
+      ],
+      "context_keys": [
+        "constraints",
+        "current_scope",
+        "current_state",
+        "data_policy",
+        "exploration_history",
+        "goal",
+        "latest_feedback",
+        "memory_intervention",
+        "omitted",
+        "recent",
+        "semantic_directions",
+        "task_id",
+        "task_memory",
+        "task_progress"
+      ]
+    },
+    {
+      "method": "hai",
+      "task": "spot-scheduler-traces",
+      "memory_events": 162,
+      "distinct_memory_ids": 2,
+      "requests_with_stored_memory": 108,
+      "requests_with_visible_memory": 81,
+      "max_stored_memory": 2,
+      "usage": {
+        "prompt_tokens": 9538133,
+        "completion_tokens": 258656,
+        "prompt_cache_hit_tokens": 770816
+      },
+      "api_end_status": {
+        "response": 603
+      },
+      "api_failures": []
+    },
+    {
+      "method": "hai",
+      "task": "gdal-proj-raster-regression",
+      "memory_events": 8,
+      "distinct_memory_ids": 8,
+      "requests_with_stored_memory": 247,
+      "requests_with_visible_memory": 247,
+      "max_stored_memory": 4,
+      "usage": {
+        "prompt_tokens": 5675987,
+        "completion_tokens": 92769,
+        "prompt_cache_hit_tokens": 529920
+      },
+      "api_end_status": {
+        "response": 414
+      },
+      "api_failures": []
+    },
+    {
+      "method": "hai",
+      "task": "climate-netcdf-extreme-event-audit",
+      "memory_events": 1642,
+      "distinct_memory_ids": 33,
+      "requests_with_stored_memory": 383,
+      "requests_with_visible_memory": 383,
+      "max_stored_memory": 5,
+      "usage": {
+        "prompt_tokens": 5675832,
+        "completion_tokens": 76285,
+        "prompt_cache_hit_tokens": 528640
+      },
+      "api_end_status": {
+        "response": 413
+      },
+      "api_failures": []
+    },
+    {
+      "method": "hai",
+      "task": "great-expectations-audit",
+      "memory_events": 948,
+      "distinct_memory_ids": 18,
+      "requests_with_stored_memory": 253,
+      "requests_with_visible_memory": 253,
+      "max_stored_memory": 4,
+      "usage": {
+        "prompt_tokens": 4061693,
+        "completion_tokens": 65357,
+        "prompt_cache_hit_tokens": 364800
+      },
+      "api_end_status": {
+        "response": 285
+      },
+      "api_failures": []
+    },
+    {
+      "method": "hai",
+      "task": "epa-swmm-stormwater-regression-audit",
+      "memory_events": 2,
+      "distinct_memory_ids": 1,
+      "requests_with_stored_memory": 81,
+      "requests_with_visible_memory": 81,
+      "max_stored_memory": 1,
+      "usage": {
+        "prompt_tokens": 3811468,
+        "completion_tokens": 90137,
+        "prompt_cache_hit_tokens": 322560
+      },
+      "api_end_status": {
+        "response": 252
+      },
+      "api_failures": [],
+      "original_classification": {
+        "stop_reason": "infrastructure_error",
+        "infrastructure_ok": true,
+        "reasons": []
+      },
+      "classification_without_utilization_event": {
+        "stop_reason": "infrastructure_error",
+        "infrastructure_ok": true,
+        "reasons": []
+      }
+    },
+    {
+      "method": "hai",
+      "task": "opensees-seismic-structural-regression-audit",
+      "memory_events": 5,
+      "distinct_memory_ids": 3,
+      "requests_with_stored_memory": 23,
+      "requests_with_visible_memory": 23,
+      "max_stored_memory": 2,
+      "usage": {
+        "prompt_tokens": 478182,
+        "completion_tokens": 12895,
+        "prompt_cache_hit_tokens": 46080
+      },
+      "api_end_status": {
+        "response": 36
+      },
+      "api_failures": []
+    },
+    {
+      "method": "hai",
+      "task": "microscopy-cell-count-qc-audit",
+      "memory_events": 22,
+      "distinct_memory_ids": 21,
+      "requests_with_stored_memory": 350,
+      "requests_with_visible_memory": 350,
+      "max_stored_memory": 4,
+      "usage": {
+        "prompt_tokens": 5640748,
+        "completion_tokens": 81789,
+        "prompt_cache_hit_tokens": 522240
+      },
+      "api_end_status": {
+        "response": 408
+      },
+      "api_failures": []
+    },
+    {
+      "method": "hai",
+      "task": "satellite-flood-change-detection-audit",
+      "memory_events": 81,
+      "distinct_memory_ids": 1,
+      "requests_with_stored_memory": 81,
+      "requests_with_visible_memory": 0,
+      "max_stored_memory": 1,
+      "usage": {
+        "prompt_tokens": 9412874,
+        "completion_tokens": 165182,
+        "prompt_cache_hit_tokens": 727040
+      },
+      "api_end_status": {
+        "response": 568,
+        "absolute_request_timeout": 1
+      },
+      "api_failures": [
+        {
+          "duration_seconds": 0.8957416461780667,
+          "event": "api_end",
+          "previous": "1a2f4084b8a604b629924290a51fe43f8011d6ae862a4df48c9ddd503ea797bb",
+          "sequence": 5197,
+          "sha256": "b1ac9e6a0506c5c871d3d6a0343b066eac8218e675d79ef38d460b3172c14f87",
+          "status": "absolute_request_timeout",
+          "time": 1790664560.3066607,
+          "usage": null
+        }
+      ],
+      "original_classification": {
+        "stop_reason": "wall_budget",
+        "infrastructure_ok": false,
+        "reasons": [
+          "model_error"
+        ]
+      },
+      "classification_without_utilization_event": {
+        "stop_reason": "wall_budget",
+        "infrastructure_ok": true,
+        "reasons": []
+      }
+    },
+    {
+      "method": "hai",
+      "task": "matpower-opf-regression",
+      "memory_events": 0,
+      "distinct_memory_ids": 0,
+      "requests_with_stored_memory": 0,
+      "requests_with_visible_memory": 0,
+      "max_stored_memory": 0,
+      "usage": {
+        "prompt_tokens": 5006673,
+        "completion_tokens": 117277,
+        "prompt_cache_hit_tokens": 428800
+      },
+      "api_end_status": {
+        "response": 335
+      },
+      "api_failures": []
+    },
+    {
+      "method": "hai",
+      "task": "unison-paper-reproduction",
+      "memory_events": 81,
+      "distinct_memory_ids": 1,
+      "requests_with_stored_memory": 81,
+      "requests_with_visible_memory": 0,
+      "max_stored_memory": 1,
+      "usage": {
+        "prompt_tokens": 8601607,
+        "completion_tokens": 273834,
+        "prompt_cache_hit_tokens": 733440
+      },
+      "api_end_status": {
+        "response": 573
+      },
+      "api_failures": []
+    },
+    {
+      "method": "bestfgs",
+      "task": "spot-scheduler-traces",
+      "max_recent_decisions": 6,
+      "max_visible_evidence": 6,
+      "wire_source_matches": true
+    },
+    {
+      "method": "bestfgs",
+      "task": "modflow6-groundwater-regression-audit",
+      "max_recent_decisions": 6,
+      "max_visible_evidence": 6,
+      "wire_source_matches": true
+    },
+    {
+      "method": "bestfgs",
+      "task": "foldseek-paper-reproduction",
+      "max_recent_decisions": 6,
+      "max_visible_evidence": 6,
+      "wire_source_matches": true
+    },
+    {
+      "method": "bestfgs",
+      "task": "gdal-proj-raster-regression",
+      "max_recent_decisions": 6,
+      "max_visible_evidence": 6,
+      "wire_source_matches": true
+    },
+    {
+      "method": "bestfgs",
+      "task": "climate-netcdf-extreme-event-audit",
+      "max_recent_decisions": 6,
+      "max_visible_evidence": 6,
+      "wire_source_matches": true
+    },
+    {
+      "method": "bestfgs",
+      "task": "great-expectations-audit",
+      "max_recent_decisions": 6,
+      "max_visible_evidence": 6,
+      "wire_source_matches": true
+    },
+    {
+      "method": "bestfgs",
+      "task": "microscopy-cell-count-qc-audit",
+      "max_recent_decisions": 6,
+      "max_visible_evidence": 6,
+      "wire_source_matches": true,
+      "memory_evidence_checks": [
+        {
+          "memory": {
+            "conclusion": "Synthetic hidden-style manifest (nested assets + gzip+base64) can validate robustness of _load_manifest/_extract_tiles/_get_path without grader access",
+            "condition": "when verifying hidden-manifest handling before submit",
+            "kind": "procedure",
+            "next_step": "fix any parsing gaps revealed",
+            "operation": "generate synthetic tiles + wrapped manifest, run CLI, inspect outputs",
+            "targets": [
+              "src/microscopy_audit/audit.py"
+            ]
+          },
+          "visible": [
+            "E473",
+            "E474",
+            "E475",
+            "E476",
+            "E477",
+            "E478"
+          ]
+        },
+        {
+          "memory": {
+            "conclusion": "audit.py handles plain JSON, gzip+base64, and raw gzip manifests plus nested asset schemas, and produces all six required outputs with real OpenCV segmentation and QC.",
+            "condition": "when validating or extending the microscopy audit CLI",
+            "evidence_ids": [
+              "E567",
+              "E568",
+              "E570",
+              "E571",
+              "E572"
+            ],
+            "kind": "finding",
+            "next_step": "Calibrate segmentation thresholds against partial annotations if ground truth becomes available.",
+            "operation": "run: python -m microscopy_audit.cli run --manifest data/public/manifest.json --out-dir outputs",
+            "targets": [
+              "src/microscopy_audit/audit.py",
+              "outputs/cell_counts.csv",
+              "outputs/qc_report.json"
+            ]
+          },
+          "visible": [
+            "E567",
+            "E568",
+            "E569",
+            "E570",
+            "E571",
+            "E572"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "bestfgs",
+      "task": "epa-swmm-stormwater-regression-audit",
+      "max_recent_decisions": 6,
+      "max_visible_evidence": 6,
+      "wire_source_matches": true,
+      "advisor_evidence_check": {
+        "visible": [
+          "E573",
+          "E574",
+          "E575",
+          "E576",
+          "E577",
+          "E578"
+        ],
+        "response": {
+          "alternatives": [
+            {
+              "check": "Run a trivially different command that cannot share output, e.g. `python -c \"print(12345)\"` and `date +%s`, and confirm the captured stdout actually changes between invocations.",
+              "difference": "Prior attempts all re-ran the same get_proj_size probe and got byte-identical output; this check uses a command whose output must vary, distinguishing a genuine execution from a cached/replayed record.",
+              "evidence_ids": [
+                "E575",
+                "E576",
+                "E577",
+                "E578"
+              ],
+              "hypothesis": "The repeated failures are not a real API-signature problem but a stale/duplicated capture: the identical stdout (including the SWIG memory-leak line) across E575-E578 suggests the harness is replaying the same cached result rather than executing new commands, so the agent is stuck re-running an already-known-failing probe instead of moving on."
+            },
+            {
+              "check": "Inspect the installed source directly: `python -c \"import inspect,swmm.toolkit.output as o; print(inspect.signature(o.get_proj_size)); print([n for n in dir(o) if 'size' in n or 'count' in n])\"` and read /usr/local/lib/python3.11/site-packages/swmm/toolkit/output.py around line 142.",
+              "difference": "Instead of guessing call forms by trial-and-error (as E575-E578 did), this reads the actual installed signature/source to settle the correct call once.",
+              "evidence_ids": [
+                "E575",
+                "E576",
+                "E577",
+                "E578"
+              ],
+              "hypothesis": "get_proj_size in this swmm-toolkit build takes only the handle (no ElementType argument), so element counts must be obtained differently (e.g. via get_element_count or by iterating get_elem_name until it fails), and the repeated TypeError is a genuine signature mismatch rather than a capture artifact."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "bestfgs",
+      "task": "satellite-flood-change-detection-audit",
+      "max_recent_decisions": 2,
+      "max_visible_evidence": 2,
+      "wire_source_matches": true
+    },
+    {
+      "method": "bestfgs",
+      "task": "opensees-seismic-structural-regression-audit",
+      "max_recent_decisions": 6,
+      "max_visible_evidence": 6,
+      "wire_source_matches": true,
+      "memory_evidence_checks": [
+        {
+          "memory": {
+            "conclusion": "energy_balance.csv currently emits all-zero kinetic/damping/hysteretic columns; OpenSeesPy exposes no energy query API, so energy must be computed manually from mass, velocity, element forces, and damping coefficients",
+            "condition": "when finalizing energy_balance.csv correctness",
+            "kind": "finding",
+            "next_step": "rewrite the transient loop to accumulate real energy terms",
+            "operation": "compute kinetic=0.5*m*v^2, damping and hysteretic via element force-displacement work and Rayleigh coefficients",
+            "targets": [
+              "src/opensees_audit/audit.py"
+            ]
+          },
+          "visible": [
+            "E558",
+            "E559",
+            "E560",
+            "E561",
+            "E562",
+            "E563"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "bestfgs",
+      "task": "unison-paper-reproduction",
+      "max_recent_decisions": 6,
+      "max_visible_evidence": 6,
+      "wire_source_matches": true
+    },
+    {
+      "method": "bestfgs",
+      "task": "matpower-opf-regression",
+      "max_recent_decisions": 6,
+      "max_visible_evidence": 6,
+      "wire_source_matches": true,
+      "advisor_evidence_check": {
+        "visible": [
+          "E434",
+          "E435",
+          "E436",
+          "E437",
+          "E438",
+          "E439"
+        ],
+        "response": {
+          "alternatives": [
+            {
+              "check": "Run a minimal probe that only does `rdc = rundcopf(case9(), ppopt); print(type(rdc), rdc['success'], rdc['f'])` with no `[0]` indexing, and separately `rf = runopf(stressed_case30, ppopt); print(type(rf), rf['success'], 'bus' in rf, 'gen' in rf, rf.get('f'))`.",
+              "difference": "Prior attempts (E436-E439) all assumed a uniform return type and crashed on `rdc[0]`; this check isolates the actual return-type asymmetry and directly tests the failure-dict contents that were never observed.",
+              "evidence_ids": [
+                "E436",
+                "E437",
+                "E438",
+                "E439"
+              ],
+              "hypothesis": "The repeated failures are not a PYPOWER behavior issue but a bug in the probe script itself: `runpf` returns a 2-tuple `(results, success)` while `rundcopf`/`runopf` return a plain dict, so indexing `rdc[0]` raises KeyError: 0. The identical output across E436-E439 is because the script crashes at the same line every time, before reaching the failure-behavior checks."
+            },
+            {
+              "check": "Check whether `/app/src/power_audit/audit.py` and `/app/src/power_audit/cli.py` exist and whether `python -m power_audit.cli run --manifest configs/public_manifest.yml --out-dir outputs` produces any of the seven files.",
+              "difference": "Instead of another PYPOWER introspection probe, this verifies the actual deliverable state and redirects effort to implementing the pipeline using the already-confirmed facts (tuple vs dict returns, VMIN/VMAX column order, infeasible case30 behavior).",
+              "evidence_ids": [
+                "E434",
+                "E435"
+              ],
+              "hypothesis": "The real blocker is not solver introspection at all but that no implementation exists yet: all seven required output artifacts are missing and `audit.py`/CLI have not been written, so continued probing of PYPOWER return types is wasted budget."
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "existing_tests": {
+    "bestfgs_lean": 33,
+    "hai_semantic_memory": 11
+  }
+}

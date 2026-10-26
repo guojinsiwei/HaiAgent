@@ -1,0 +1,37 @@
+TB2 three-arm 50 tasks: six-way continuation
+Verified 2026-10-18 14:28:33 Asia/Shanghai.
+
+Remote active continuation root:
+/mnt/sdb/home/lizh639/tb2-three-arm50-boost6-20261018
+Supervisor PID 632734; start 819628218; boot 2861b57d-7d78-4a80-a96b-0854417097ca.
+Old retry2 supervisor 583179 drains admissions while its current children finish.
+Its source, running children, proxy, budget server and output directories are intact.
+Old active child PIDs 609747, 616881, 626306 were still present at final verification.
+New child PIDs 651346, 651361, 653414 bring combined concurrency to six, two per arm.
+
+Takeover rules:
+- New scheduler waits for old controller's draining acknowledgement.
+- Only pending tasks are transferred. Existing paid runs never replay.
+- Existing preflights can finish before their pending paid run transfers.
+- New admissions count both controllers' active tasks, maximum six and two per arm.
+- All execution archives and solver/verifier behavior are unchanged.
+- Four takeover regression tests passed; sealed source validated before launch.
+- Same original SQLite ledger: 600 CNY total, cumulative 4 CNY per original arm/task.
+- Existing authorized key transferred in process memory on the same server only.
+
+Progress queries: run venv/bin/python status_all.py in this directory.
+It merges original, retry1, retry2 and boost results by original budget job so
+inherited results are never counted twice. At verification passes were:
+native KZ 21/50, KZDSH 19/50, DSH 24/50; six jobs were active.
+
+Cleanup audit: /mnt/sdb/home/lizh639/docker-cleanup-20261018
+39 old official task images + 165 old Compose trial images + 11 old SkillsBench
+images removed = 215. Every deletion rechecked all container references, used
+explicit tags, and omitted force. Current and pending TB2 images were protected.
+User explicitly authorized unreferenced old images of unknown project ownership.
+Old unshared reclaimable build-cache ID allowlist + unused 24h filter reclaimed
+8.148 GB. No containers, volumes, trial logs, result files or source files deleted.
+Official historical result hashes verified. Free space rose from roughly 56 GiB
+to 182.58 GiB at cleanup completion, 180.60 GiB after new tasks began.
+
+Do not relaunch either supervisor or reset its queue. Use the merged status script.

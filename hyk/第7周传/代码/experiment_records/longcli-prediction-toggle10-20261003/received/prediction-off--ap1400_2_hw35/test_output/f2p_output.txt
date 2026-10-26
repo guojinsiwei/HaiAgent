@@ -1,0 +1,170 @@
+========== HW3 Start ==========
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found GTest: /usr/local/lib/cmake/GTest/GTestConfig.cmake (found version "1.18.0")  
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /app/ap1400_2_hw/ap1400_2_hw3/build_hw3
+[ 25%] Building CXX object CMakeFiles/main.dir/src/main.cpp.o
+[ 50%] Building CXX object CMakeFiles/main.dir/src/bst.cpp.o
+[ 75%] Building CXX object CMakeFiles/main.dir/src/unit_test.cpp.o
+[100%] Linking CXX executable main
+[100%] Built target main
+RUNNING TESTS ...
+[==========] Running 31 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 31 tests from HW3Test
+[ RUN      ] HW3Test.TEST1
+[       OK ] HW3Test.TEST1 (0 ms)
+[ RUN      ] HW3Test.TEST2
+[       OK ] HW3Test.TEST2 (0 ms)
+[ RUN      ] HW3Test.TEST3
+[       OK ] HW3Test.TEST3 (0 ms)
+[ RUN      ] HW3Test.TEST4
+adress of node: 0x7ffcd876f410
+adress of left: 0x7ffcd876f3d0
+adress of right: 0x7ffcd876f3f0
+********************************************************************************
+PRINT A NODE
+10
+********************************************************************************
+[       OK ] HW3Test.TEST4 (0 ms)
+[ RUN      ] HW3Test.TEST5
+[       OK ] HW3Test.TEST5 (0 ms)
+[ RUN      ] HW3Test.TEST6
+[       OK ] HW3Test.TEST6 (0 ms)
+[ RUN      ] HW3Test.TEST7
+[       OK ] HW3Test.TEST7 (0 ms)
+[ RUN      ] HW3Test.TEST8
+[       OK ] HW3Test.TEST8 (0 ms)
+[ RUN      ] HW3Test.TEST9
+[       OK ] HW3Test.TEST9 (0 ms)
+[ RUN      ] HW3Test.TEST10
+[       OK ] HW3Test.TEST10 (0 ms)
+[ RUN      ] HW3Test.TEST11
+PRINT A BINARY SEARCH TREE
+        25  0x5a91dbafb130  0x5a91dbafb110  0x5a91dbafb0f0
+        10  0x5a91dbafb110  0x5a91dbafb0d0  0x5a91dbafb170
+        50  0x5a91dbafb0f0           0  0x5a91dbafb150
+         7  0x5a91dbafb0d0           0           0
+        15  0x5a91dbafb170           0           0
+        53  0x5a91dbafb150           0           0
+
+[       OK ] HW3Test.TEST11 (0 ms)
+[ RUN      ] HW3Test.TEST12
+[       OK ] HW3Test.TEST12 (0 ms)
+[ RUN      ] HW3Test.TEST13
+[       OK ] HW3Test.TEST13 (0 ms)
+[ RUN      ] HW3Test.TEST14
+here
+here2
+[       OK ] HW3Test.TEST14 (0 ms)
+[ RUN      ] HW3Test.TEST15
+[       OK ] HW3Test.TEST15 (0 ms)
+[ RUN      ] HW3Test.TEST16
+[       OK ] HW3Test.TEST16 (0 ms)
+[ RUN      ] HW3Test.TEST17
+[       OK ] HW3Test.TEST17 (0 ms)
+[ RUN      ] HW3Test.TEST18
+[       OK ] HW3Test.TEST18 (0 ms)
+[ RUN      ] HW3Test.TEST19
+[       OK ] HW3Test.TEST19 (0 ms)
+[ RUN      ] HW3Test.TEST20
+[       OK ] HW3Test.TEST20 (0 ms)
+[ RUN      ] HW3Test.TEST21
+[       OK ] HW3Test.TEST21 (0 ms)
+[ RUN      ] HW3Test.TEST22
+[       OK ] HW3Test.TEST22 (0 ms)
+[ RUN      ] HW3Test.TEST23
+[       OK ] HW3Test.TEST23 (0 ms)
+[ RUN      ] HW3Test.TEST24
+[       OK ] HW3Test.TEST24 (0 ms)
+[ RUN      ] HW3Test.TEST25
+[       OK ] HW3Test.TEST25 (0 ms)
+[ RUN      ] HW3Test.TEST26
+[       OK ] HW3Test.TEST26 (0 ms)
+[ RUN      ] HW3Test.TEST27
+[       OK ] HW3Test.TEST27 (0 ms)
+[ RUN      ] HW3Test.TEST28
+[       OK ] HW3Test.TEST28 (0 ms)
+[ RUN      ] HW3Test.TEST29
+[       OK ] HW3Test.TEST29 (0 ms)
+[ RUN      ] HW3Test.TEST30
+[       OK ] HW3Test.TEST30 (0 ms)
+[ RUN      ] HW3Test.TEST31
+[       OK ] HW3Test.TEST31 (0 ms)
+[----------] 31 tests from HW3Test (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 31 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 31 tests.
+<<<SUCCESS>>>
+
+========== HW5 Start ==========
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found GTest: /usr/local/lib/cmake/GTest/GTestConfig.cmake (found version "1.18.0")  
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /app/ap1400_2_hw/ap1400_2_hw5/build_hw5
+[ 16%] Building CXX object CMakeFiles/main.dir/src/espresso_based.cpp.o
+[ 33%] Building CXX object CMakeFiles/main.dir/src/mocha.cpp.o
+[ 50%] Building CXX object CMakeFiles/main.dir/src/main.cpp.o
+[ 66%] Building CXX object CMakeFiles/main.dir/src/unit_test.cpp.o
+[ 83%] Building CXX object CMakeFiles/main.dir/src/cappuccino.cpp.o
+[100%] Linking CXX executable main
+[100%] Built target main
+RUNNING TESTS ...
+[==========] Running 12 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 12 tests from HW5Test
+[ RUN      ] HW5Test.TEST1
+[       OK ] HW5Test.TEST1 (0 ms)
+[ RUN      ] HW5Test.TEST2
+[       OK ] HW5Test.TEST2 (0 ms)
+[ RUN      ] HW5Test.TEST3
+[       OK ] HW5Test.TEST3 (0 ms)
+[ RUN      ] HW5Test.TEST4
+[       OK ] HW5Test.TEST4 (0 ms)
+[ RUN      ] HW5Test.TEST5
+[       OK ] HW5Test.TEST5 (0 ms)
+[ RUN      ] HW5Test.TEST6
+[       OK ] HW5Test.TEST6 (0 ms)
+[ RUN      ] HW5Test.TEST7
+[       OK ] HW5Test.TEST7 (0 ms)
+[ RUN      ] HW5Test.TEST8
+[       OK ] HW5Test.TEST8 (0 ms)
+[ RUN      ] HW5Test.TEST9
+[       OK ] HW5Test.TEST9 (0 ms)
+[ RUN      ] HW5Test.TEST10
+[       OK ] HW5Test.TEST10 (0 ms)
+[ RUN      ] HW5Test.TEST11
+[       OK ] HW5Test.TEST11 (0 ms)
+[ RUN      ] HW5Test.TEST12
+[       OK ] HW5Test.TEST12 (0 ms)
+[----------] 12 tests from HW5Test (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 12 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 12 tests.
+<<<SUCCESS>>>

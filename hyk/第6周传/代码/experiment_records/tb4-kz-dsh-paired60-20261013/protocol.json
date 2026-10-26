@@ -1,0 +1,40 @@
+{
+  "benchmark": "TerminalBench 4.0.0",
+  "commit": "452bf305c6daa62fc59061d22133a7cbc7c1572e",
+  "tasks_sha256": "a040e6711e88aff0fff53d6e43ae58610ff94e80a431d2d967021b99f2f6ce35",
+  "paired_tasks": 30,
+  "total_trials": 60,
+  "arms": [
+    "KZ 0.2.7 on DSH 0.2.0-rc.2",
+    "DSH 0.2.0-rc.2, common transport/accounting patches only"
+  ],
+  "endpoint": "https://api.taotoken.net/token/v1/messages",
+  "model": "deepseek-flash",
+  "thinking": false,
+  "temperature": 0,
+  "budget": {
+    "requests": 800,
+    "tools": 600,
+    "solver_seconds": 7200,
+    "outer_cleanup_grace_seconds": 120,
+    "context": 1000000,
+    "output": 32768,
+    "cost_upper_estimate_cny": 50,
+    "cost_price_basis": "historical 2/8 per million, NOT TokenPlan actual invoice"
+  },
+  "concurrency": {
+    "pilot_pair": 2,
+    "after_pilot_total": 4
+  },
+  "fresh_container": true,
+  "fresh_home": true,
+  "cross_task_memory": false,
+  "backtracking": false,
+  "original_task_resources": true,
+  "original_official_verifier": true,
+  "paid_attempts_per_arm_task": 1,
+  "no_automatic_paid_retries": true,
+  "task_preflight": "Before either paid arm of each new task: install + empty-agent official grading. Stop dispatch on infrastructure failure.",
+  "known_scope": "CPU-only seeded sample; text-only provider route; image/CAD tasks retained, not replaced after scores.",
+  "independence": "Detached server process; key only in process memory; no local connection needed; no GPT automation or email."
+}

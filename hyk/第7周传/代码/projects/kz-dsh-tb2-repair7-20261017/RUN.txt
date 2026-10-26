@@ -1,0 +1,51 @@
+TB2.0 KZDSH / Pure DSH engineering repair rerun — 2026-10-17
+
+Remote: /mnt/sdb/home/lizh639/tb2-kz-dsh-repair7-20261017
+Parent (unchanged): /mnt/sdb/home/lizh639/tb2-kz-dsh-paired10-20261016
+
+Authorized scope: only seven first-round engineering failures:
+  KZDSH: build-cython-ext, qemu-alpine-ssh, qemu-startup, regex-log, sqlite-with-gcov
+  Pure DSH: qemu-alpine-ssh, sqlite-with-gcov
+No repeats of ordinary score-zero outcomes. Each listed pair receives one new attempt;
+no automatic paid retry batch. Fresh original task container and frozen task content.
+Model, algorithm, task selection and solver runtime archive are unchanged.
+
+Limits: concurrency2 total, at most1 per arm; disk reservation can defer a second trial.
+Each paid attempt: max4 CNY peak-price estimate,120 HTTP requests,180 tool calls,2700s.
+Original combined80 CNY cap continues. Copied ledger retains every old call and charge:
+31.113386 CNY settled +0.387072 CNY unresolved reservation =31.500458 CNY charged.
+Initial remaining48.499542 CNY. Old unresolved reservation becomes unknown at restart,
+with its entire amount retained. Original database and results are not modified.
+These are conservative monetary estimates, not exact TaoToken Credits consumption.
+
+Repairs:
+1. Harbor identifies custom agents through name OR import_path. Its unintended900s
+   agent timeout is disabled only for our adapters; the existing2700s process-tree
+   deadline remains authoritative. Other Harbor agents retain original timeouts.
+2. Fixed log mount is handed to the host before collection/stop, including mode600
+   files; symbolic links are not traversed. Permission failures remain explicit.
+3. Verifier-only setup after solver collection: official uv0.9.5 (official SHA256
+   checked) and uv-selected official CPython3.13.9 are prefetched and sealed.
+   Public egress proxy and USTC Debian/PyPI mirrors avoid inaccessible direct hosts.
+   Removed security-index curl/nghttp2 files are avoided by selecting signed
+   bullseye release download tools: curl/libcurl4 deb11u13,nghttp2 deb11u1.
+   Original official test scripts/assertions remain byte-identical. Solver image,
+   packages and workspace do not receive verifier setup during solving.
+   Dependency bootstrap has360s cap; official test deadline stays900s.
+4. Require a nonempty official CTRF report: failed dependency installation cannot
+   masquerade as an ordinary reward0. Each task still preflights without a key.
+5. Fixed seven-pair queue; two slots with shared transactional budget reservations.
+   A single trial failure does not consume or stop another trial's slot/budget.
+
+Validation:396 algorithm JS tests,47 Python deployment tests,18 deadline/provider
+tests passed. Initial parallel JS run cancelled one15s test; complete serial rerun
+passed all396. Python-only changes are rechecked separately with exact hash equality
+required before reusing successful unchanged JS suite evidence.
+Real keyless acceptance covers sqlite grading,qemu grading,private log handoff,
+forced child timeout,official numeric score and cleanup. Empty solver reward0 is
+expected and is not a paid model result. Only successful final sealed receipts count.
+Failed intermediate network/bootstrap receipts and logs remain for diagnosis.
+
+Launch: secure_start.py opens a masked API-key field. Key goes only via SSH stdin
+and process memory, never to this file or chat. launch-once.marker prevents duplicate
+submission. audit/launch-status.json records waiting/acknowledged state without key.

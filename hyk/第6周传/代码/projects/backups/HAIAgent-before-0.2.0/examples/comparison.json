@@ -1,0 +1,9 @@
+{
+  "task_ids": ["task-001", "task-002"],
+  "methods": {
+    "hai": {
+      "task-001": {"run": "../runs/hai-task-001", "audit": "../audits/hai-task-001.json"}
+    },
+    "raw": {}
+  }
+}

@@ -1,0 +1,1065 @@
+========== HW3 Start ==========
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found GTest: /usr/local/lib/cmake/GTest/GTestConfig.cmake (found version "1.18.0")  
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /app/ap1400_2_hw/ap1400_2_hw3/build_hw3
+[ 25%] Building CXX object CMakeFiles/main.dir/src/unit_test.cpp.o
+[ 50%] Building CXX object CMakeFiles/main.dir/src/bst.cpp.o
+[ 75%] Building CXX object CMakeFiles/main.dir/src/main.cpp.o
+[100%] Linking CXX executable main
+[100%] Built target main
+RUNNING TESTS ...
+[==========] Running 31 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 31 tests from HW3Test
+[ RUN      ] HW3Test.TEST1
+[       OK ] HW3Test.TEST1 (0 ms)
+[ RUN      ] HW3Test.TEST2
+[       OK ] HW3Test.TEST2 (0 ms)
+[ RUN      ] HW3Test.TEST3
+[       OK ] HW3Test.TEST3 (0 ms)
+[ RUN      ] HW3Test.TEST4
+adress of node: 0x7ffe5ec4ce30
+adress of left: 0x7ffe5ec4cdf0
+adress of right: 0x7ffe5ec4ce10
+********************************************************************************
+PRINT A NODE
+10
+********************************************************************************
+[       OK ] HW3Test.TEST4 (0 ms)
+[ RUN      ] HW3Test.TEST5
+[       OK ] HW3Test.TEST5 (0 ms)
+[ RUN      ] HW3Test.TEST6
+[       OK ] HW3Test.TEST6 (0 ms)
+[ RUN      ] HW3Test.TEST7
+[       OK ] HW3Test.TEST7 (0 ms)
+[ RUN      ] HW3Test.TEST8
+[       OK ] HW3Test.TEST8 (0 ms)
+[ RUN      ] HW3Test.TEST9
+[       OK ] HW3Test.TEST9 (0 ms)
+[ RUN      ] HW3Test.TEST10
+[       OK ] HW3Test.TEST10 (0 ms)
+[ RUN      ] HW3Test.TEST11
+PRINT A BINARY SEARCH TREE
+                53
+        50
+25
+                15
+        10
+                7
+
+[       OK ] HW3Test.TEST11 (0 ms)
+[ RUN      ] HW3Test.TEST12
+[       OK ] HW3Test.TEST12 (0 ms)
+[ RUN      ] HW3Test.TEST13
+[       OK ] HW3Test.TEST13 (0 ms)
+[ RUN      ] HW3Test.TEST14
+here
+here2
+[       OK ] HW3Test.TEST14 (0 ms)
+[ RUN      ] HW3Test.TEST15
+[       OK ] HW3Test.TEST15 (0 ms)
+[ RUN      ] HW3Test.TEST16
+[       OK ] HW3Test.TEST16 (0 ms)
+[ RUN      ] HW3Test.TEST17
+[       OK ] HW3Test.TEST17 (0 ms)
+[ RUN      ] HW3Test.TEST18
+[       OK ] HW3Test.TEST18 (0 ms)
+[ RUN      ] HW3Test.TEST19
+[       OK ] HW3Test.TEST19 (0 ms)
+[ RUN      ] HW3Test.TEST20
+[       OK ] HW3Test.TEST20 (0 ms)
+[ RUN      ] HW3Test.TEST21
+[       OK ] HW3Test.TEST21 (0 ms)
+[ RUN      ] HW3Test.TEST22
+[       OK ] HW3Test.TEST22 (0 ms)
+[ RUN      ] HW3Test.TEST23
+[       OK ] HW3Test.TEST23 (0 ms)
+[ RUN      ] HW3Test.TEST24
+[       OK ] HW3Test.TEST24 (0 ms)
+[ RUN      ] HW3Test.TEST25
+[       OK ] HW3Test.TEST25 (0 ms)
+[ RUN      ] HW3Test.TEST26
+[       OK ] HW3Test.TEST26 (0 ms)
+[ RUN      ] HW3Test.TEST27
+[       OK ] HW3Test.TEST27 (0 ms)
+[ RUN      ] HW3Test.TEST28
+[       OK ] HW3Test.TEST28 (0 ms)
+[ RUN      ] HW3Test.TEST29
+[       OK ] HW3Test.TEST29 (0 ms)
+[ RUN      ] HW3Test.TEST30
+[       OK ] HW3Test.TEST30 (0 ms)
+[ RUN      ] HW3Test.TEST31
+[       OK ] HW3Test.TEST31 (0 ms)
+[----------] 31 tests from HW3Test (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 31 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 31 tests.
+<<<SUCCESS>>>
+
+========== HW5 Start ==========
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found GTest: /usr/local/lib/cmake/GTest/GTestConfig.cmake (found version "1.18.0")  
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /app/ap1400_2_hw/ap1400_2_hw5/build_hw5
+[ 33%] Building CXX object CMakeFiles/main.dir/src/espresso_based.cpp.o
+[ 33%] Building CXX object CMakeFiles/main.dir/src/cappuccino.cpp.o
+[ 66%] Building CXX object CMakeFiles/main.dir/src/main.cpp.o
+[ 66%] Building CXX object CMakeFiles/main.dir/src/unit_test.cpp.o
+[ 83%] Building CXX object CMakeFiles/main.dir/src/mocha.cpp.o
+In file included from /app/ap1400_2_hw/ap1400_2_hw5/src/espresso_based.cpp:1:
+/app/ap1400_2_hw/ap1400_2_hw5/include/espresso_based.h:11:31: error: 'Ingredient' does not name a type
+   11 |     void add_ingredient(const Ingredient& ing);
+      |                               ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/espresso_based.h:12:25: error: 'Ingredient' has not been declared
+   12 |     void add_ingredient(Ingredient* ing);
+      |                         ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/espresso_based.h:14:17: error: 'Ingredient' was not declared in this scope; did you mean 'add_ingredient'?
+   14 |     std::vector<Ingredient*> get_ingredients() const { return ingredients; }
+      |                 ^~~~~~~~~~
+      |                 add_ingredient
+/app/ap1400_2_hw/ap1400_2_hw5/include/espresso_based.h:14:28: error: template argument 1 is invalid
+   14 |     std::vector<Ingredient*> get_ingredients() const { return ingredients; }
+      |                            ^
+/app/ap1400_2_hw/ap1400_2_hw5/include/espresso_based.h:14:28: error: template argument 2 is invalid
+/app/ap1400_2_hw/ap1400_2_hw5/include/espresso_based.h:14:10: error: '<expression error>' in namespace 'std' does not name a type
+   14 |     std::vector<Ingredient*> get_ingredients() const { return ingredients; }
+      |          ^~~~~~~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/espresso_based.h:21:17: error: 'Ingredient' was not declared in this scope; did you mean 'add_ingredient'?
+   21 |     std::vector<Ingredient*> ingredients;
+      |                 ^~~~~~~~~~
+      |                 add_ingredient
+/app/ap1400_2_hw/ap1400_2_hw5/include/espresso_based.h:21:28: error: template argument 1 is invalid
+   21 |     std::vector<Ingredient*> ingredients;
+      |                            ^
+/app/ap1400_2_hw/ap1400_2_hw5/include/espresso_based.h:21:28: error: template argument 2 is invalid
+/app/ap1400_2_hw/ap1400_2_hw5/include/espresso_based.h:21:10: error: '<expression error>' in namespace 'std' does not name a type
+   21 |     std::vector<Ingredient*> ingredients;
+      |          ^~~~~~~~~~~~~~~~~~~
+make[2]: *** [CMakeFiles/main.dir/build.make:104: CMakeFiles/main.dir/src/espresso_based.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from /app/ap1400_2_hw/ap1400_2_hw5/src/main.cpp:4:
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:6:32: error: expected class-name before '{' token
+    6 | class NAME : public Ingredient { \
+      |                                ^
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:18:1: note: in expansion of macro 'DEF_INGREDIENT'
+   18 | DEF_INGREDIENT(Cinnamon, 5)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:13:5: error: 'Ingredient' does not name a type
+   13 |     Ingredient* clone() const override { return new NAME{*this}; } \
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:18:1: note: in expansion of macro 'DEF_INGREDIENT'
+   18 | DEF_INGREDIENT(Cinnamon, 5)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:9:17: error: 'std::string Cinnamon::get_name() const' marked 'override', but does not override
+    9 |     std::string get_name() const override { return #NAME; } \
+      |                 ^~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:18:1: note: in expansion of macro 'DEF_INGREDIENT'
+   18 | DEF_INGREDIENT(Cinnamon, 5)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:10:12: error: 'double Cinnamon::get_price_unit() const' marked 'override', but does not override
+   10 |     double get_price_unit() const override { return PRICE; } \
+      |            ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:18:1: note: in expansion of macro 'DEF_INGREDIENT'
+   18 | DEF_INGREDIENT(Cinnamon, 5)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:11:12: error: 'size_t Cinnamon::get_units() const' marked 'override', but does not override
+   11 |     size_t get_units() const override { return units_; } \
+      |            ^~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:18:1: note: in expansion of macro 'DEF_INGREDIENT'
+   18 | DEF_INGREDIENT(Cinnamon, 5)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:12:12: error: 'double Cinnamon::price() const' marked 'override', but does not override
+   12 |     double price() const override { return PRICE * units_; } \
+      |            ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:18:1: note: in expansion of macro 'DEF_INGREDIENT'
+   18 | DEF_INGREDIENT(Cinnamon, 5)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:6:32: error: expected class-name before '{' token
+    6 | class NAME : public Ingredient { \
+      |                                ^
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:19:1: note: in expansion of macro 'DEF_INGREDIENT'
+   19 | DEF_INGREDIENT(Chocolate, 5)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:13:5: error: 'Ingredient' does not name a type
+   13 |     Ingredient* clone() const override { return new NAME{*this}; } \
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:19:1: note: in expansion of macro 'DEF_INGREDIENT'
+   19 | DEF_INGREDIENT(Chocolate, 5)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:9:17: error: 'std::string Chocolate::get_name() const' marked 'override', but does not override
+    9 |     std::string get_name() const override { return #NAME; } \
+      |                 ^~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:19:1: note: in expansion of macro 'DEF_INGREDIENT'
+   19 | DEF_INGREDIENT(Chocolate, 5)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:10:12: error: 'double Chocolate::get_price_unit() const' marked 'override', but does not override
+   10 |     double get_price_unit() const override { return PRICE; } \
+      |            ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:19:1: note: in expansion of macro 'DEF_INGREDIENT'
+   19 | DEF_INGREDIENT(Chocolate, 5)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:11:12: error: 'size_t Chocolate::get_units() const' marked 'override', but does not override
+   11 |     size_t get_units() const override { return units_; } \
+      |            ^~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:19:1: note: in expansion of macro 'DEF_INGREDIENT'
+   19 | DEF_INGREDIENT(Chocolate, 5)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:12:12: error: 'double Chocolate::price() const' marked 'override', but does not override
+   12 |     double price() const override { return PRICE * units_; } \
+      |            ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:19:1: note: in expansion of macro 'DEF_INGREDIENT'
+   19 | DEF_INGREDIENT(Chocolate, 5)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:6:32: error: expected class-name before '{' token
+    6 | class NAME : public Ingredient { \
+      |                                ^
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:20:1: note: in expansion of macro 'DEF_INGREDIENT'
+   20 | DEF_INGREDIENT(Sugar, 1)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:13:5: error: 'Ingredient' does not name a type
+   13 |     Ingredient* clone() const override { return new NAME{*this}; } \
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:20:1: note: in expansion of macro 'DEF_INGREDIENT'
+   20 | DEF_INGREDIENT(Sugar, 1)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:9:17: error: 'std::string Sugar::get_name() const' marked 'override', but does not override
+    9 |     std::string get_name() const override { return #NAME; } \
+      |                 ^~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:20:1: note: in expansion of macro 'DEF_INGREDIENT'
+   20 | DEF_INGREDIENT(Sugar, 1)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:10:12: error: 'double Sugar::get_price_unit() const' marked 'override', but does not override
+   10 |     double get_price_unit() const override { return PRICE; } \
+      |            ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:20:1: note: in expansion of macro 'DEF_INGREDIENT'
+   20 | DEF_INGREDIENT(Sugar, 1)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:11:12: error: 'size_t Sugar::get_units() const' marked 'override', but does not override
+   11 |     size_t get_units() const override { return units_; } \
+      |            ^~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:20:1: note: in expansion of macro 'DEF_INGREDIENT'
+   20 | DEF_INGREDIENT(Sugar, 1)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:12:12: error: 'double Sugar::price() const' marked 'override', but does not override
+   12 |     double price() const override { return PRICE * units_; } \
+      |            ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:20:1: note: in expansion of macro 'DEF_INGREDIENT'
+   20 | DEF_INGREDIENT(Sugar, 1)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:6:32: error: expected class-name before '{' token
+    6 | class NAME : public Ingredient { \
+      |                                ^
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:21:1: note: in expansion of macro 'DEF_INGREDIENT'
+   21 | DEF_INGREDIENT(Cookie, 4)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:13:5: error: 'Ingredient' does not name a type
+   13 |     Ingredient* clone() const override { return new NAME{*this}; } \
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:21:1: note: in expansion of macro 'DEF_INGREDIENT'
+   21 | DEF_INGREDIENT(Cookie, 4)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:9:17: error: 'std::string Cookie::get_name() const' marked 'override', but does not override
+    9 |     std::string get_name() const override { return #NAME; } \
+      |                 ^~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:21:1: note: in expansion of macro 'DEF_INGREDIENT'
+   21 | DEF_INGREDIENT(Cookie, 4)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:10:12: error: 'double Cookie::get_price_unit() const' marked 'override', but does not override
+   10 |     double get_price_unit() const override { return PRICE; } \
+      |            ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:21:1: note: in expansion of macro 'DEF_INGREDIENT'
+   21 | DEF_INGREDIENT(Cookie, 4)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:11:12: error: 'size_t Cookie::get_units() const' marked 'override', but does not override
+   11 |     size_t get_units() const override { return units_; } \
+      |            ^~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:21:1: note: in expansion of macro 'DEF_INGREDIENT'
+   21 | DEF_INGREDIENT(Cookie, 4)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:12:12: error: 'double Cookie::price() const' marked 'override', but does not override
+   12 |     double price() const override { return PRICE * units_; } \
+      |            ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:21:1: note: in expansion of macro 'DEF_INGREDIENT'
+   21 | DEF_INGREDIENT(Cookie, 4)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:6:32: error: expected class-name before '{' token
+    6 | class NAME : public Ingredient { \
+      |                                ^
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:22:1: note: in expansion of macro 'DEF_INGREDIENT'
+   22 | DEF_INGREDIENT(Espresso, 15)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:13:5: error: 'Ingredient' does not name a type
+   13 |     Ingredient* clone() const override { return new NAME{*this}; } \
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:22:1: note: in expansion of macro 'DEF_INGREDIENT'
+   22 | DEF_INGREDIENT(Espresso, 15)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:9:17: error: 'std::string Espresso::get_name() const' marked 'override', but does not override
+    9 |     std::string get_name() const override { return #NAME; } \
+      |                 ^~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:22:1: note: in expansion of macro 'DEF_INGREDIENT'
+   22 | DEF_INGREDIENT(Espresso, 15)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:10:12: error: 'double Espresso::get_price_unit() const' marked 'override', but does not override
+   10 |     double get_price_unit() const override { return PRICE; } \
+      |            ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:22:1: note: in expansion of macro 'DEF_INGREDIENT'
+   22 | DEF_INGREDIENT(Espresso, 15)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:11:12: error: 'size_t Espresso::get_units() const' marked 'override', but does not override
+   11 |     size_t get_units() const override { return units_; } \
+      |            ^~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:22:1: note: in expansion of macro 'DEF_INGREDIENT'
+   22 | DEF_INGREDIENT(Espresso, 15)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:12:12: error: 'double Espresso::price() const' marked 'override', but does not override
+   12 |     double price() const override { return PRICE * units_; } \
+      |            ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:22:1: note: in expansion of macro 'DEF_INGREDIENT'
+   22 | DEF_INGREDIENT(Espresso, 15)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:6:32: error: expected class-name before '{' token
+    6 | class NAME : public Ingredient { \
+      |                                ^
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:23:1: note: in expansion of macro 'DEF_INGREDIENT'
+   23 | DEF_INGREDIENT(Milk, 10)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:13:5: error: 'Ingredient' does not name a type
+   13 |     Ingredient* clone() const override { return new NAME{*this}; } \
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:23:1: note: in expansion of macro 'DEF_INGREDIENT'
+   23 | DEF_INGREDIENT(Milk, 10)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:9:17: error: 'std::string Milk::get_name() const' marked 'override', but does not override
+    9 |     std::string get_name() const override { return #NAME; } \
+      |                 ^~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:23:1: note: in expansion of macro 'DEF_INGREDIENT'
+   23 | DEF_INGREDIENT(Milk, 10)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:10:12: error: 'double Milk::get_price_unit() const' marked 'override', but does not override
+   10 |     double get_price_unit() const override { return PRICE; } \
+      |            ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:23:1: note: in expansion of macro 'DEF_INGREDIENT'
+   23 | DEF_INGREDIENT(Milk, 10)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:11:12: error: 'size_t Milk::get_units() const' marked 'override', but does not override
+   11 |     size_t get_units() const override { return units_; } \
+      |            ^~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:23:1: note: in expansion of macro 'DEF_INGREDIENT'
+   23 | DEF_INGREDIENT(Milk, 10)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:12:12: error: 'double Milk::price() const' marked 'override', but does not override
+   12 |     double price() const override { return PRICE * units_; } \
+      |            ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:23:1: note: in expansion of macro 'DEF_INGREDIENT'
+   23 | DEF_INGREDIENT(Milk, 10)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:6:32: error: expected class-name before '{' token
+    6 | class NAME : public Ingredient { \
+      |                                ^
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:24:1: note: in expansion of macro 'DEF_INGREDIENT'
+   24 | DEF_INGREDIENT(MilkFoam, 5)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:13:5: error: 'Ingredient' does not name a type
+   13 |     Ingredient* clone() const override { return new NAME{*this}; } \
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:24:1: note: in expansion of macro 'DEF_INGREDIENT'
+   24 | DEF_INGREDIENT(MilkFoam, 5)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:9:17: error: 'std::string MilkFoam::get_name() const' marked 'override', but does not override
+    9 |     std::string get_name() const override { return #NAME; } \
+      |                 ^~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:24:1: note: in expansion of macro 'DEF_INGREDIENT'
+   24 | DEF_INGREDIENT(MilkFoam, 5)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:10:12: error: 'double MilkFoam::get_price_unit() const' marked 'override', but does not override
+   10 |     double get_price_unit() const override { return PRICE; } \
+      |            ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:24:1: note: in expansion of macro 'DEF_INGREDIENT'
+   24 | DEF_INGREDIENT(MilkFoam, 5)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:11:12: error: 'size_t MilkFoam::get_units() const' marked 'override', but does not override
+   11 |     size_t get_units() const override { return units_; } \
+      |            ^~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:24:1: note: in expansion of macro 'DEF_INGREDIENT'
+   24 | DEF_INGREDIENT(MilkFoam, 5)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:12:12: error: 'double MilkFoam::price() const' marked 'override', but does not override
+   12 |     double price() const override { return PRICE * units_; } \
+      |            ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:24:1: note: in expansion of macro 'DEF_INGREDIENT'
+   24 | DEF_INGREDIENT(MilkFoam, 5)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:6:32: error: expected class-name before '{' token
+    6 | class NAME : public Ingredient { \
+      |                                ^
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:25:1: note: in expansion of macro 'DEF_INGREDIENT'
+   25 | DEF_INGREDIENT(Water, 1)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:13:5: error: 'Ingredient' does not name a type
+   13 |     Ingredient* clone() const override { return new NAME{*this}; } \
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:25:1: note: in expansion of macro 'DEF_INGREDIENT'
+   25 | DEF_INGREDIENT(Water, 1)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:9:17: error: 'std::string Water::get_name() const' marked 'override', but does not override
+    9 |     std::string get_name() const override { return #NAME; } \
+      |                 ^~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:25:1: note: in expansion of macro 'DEF_INGREDIENT'
+   25 | DEF_INGREDIENT(Water, 1)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:10:12: error: 'double Water::get_price_unit() const' marked 'override', but does not override
+   10 |     double get_price_unit() const override { return PRICE; } \
+      |            ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:25:1: note: in expansion of macro 'DEF_INGREDIENT'
+   25 | DEF_INGREDIENT(Water, 1)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:11:12: error: 'size_t Water::get_units() const' marked 'override', but does not override
+   11 |     size_t get_units() const override { return units_; } \
+      |            ^~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:25:1: note: in expansion of macro 'DEF_INGREDIENT'
+   25 | DEF_INGREDIENT(Water, 1)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:12:12: error: 'double Water::price() const' marked 'override', but does not override
+   12 |     double price() const override { return PRICE * units_; } \
+      |            ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:25:1: note: in expansion of macro 'DEF_INGREDIENT'
+   25 | DEF_INGREDIENT(Water, 1)
+      | ^~~~~~~~~~~~~~
+In file included from /app/ap1400_2_hw/ap1400_2_hw5/src/main.cpp:5:
+/app/ap1400_2_hw/ap1400_2_hw5/include/espresso_based.h:11:31: error: 'Ingredient' does not name a type
+   11 |     void add_ingredient(const Ingredient& ing);
+      |                               ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/espresso_based.h:12:25: error: 'Ingredient' has not been declared
+   12 |     void add_ingredient(Ingredient* ing);
+      |                         ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/espresso_based.h:14:17: error: 'Ingredient' was not declared in this scope; did you mean 'add_ingredient'?
+   14 |     std::vector<Ingredient*> get_ingredients() const { return ingredients; }
+      |                 ^~~~~~~~~~
+      |                 add_ingredient
+/app/ap1400_2_hw/ap1400_2_hw5/include/espresso_based.h:14:28: error: template argument 1 is invalid
+   14 |     std::vector<Ingredient*> get_ingredients() const { return ingredients; }
+      |                            ^
+/app/ap1400_2_hw/ap1400_2_hw5/include/espresso_based.h:14:28: error: template argument 2 is invalid
+/app/ap1400_2_hw/ap1400_2_hw5/include/espresso_based.h:14:10: error: '<expression error>' in namespace 'std' does not name a type
+   14 |     std::vector<Ingredient*> get_ingredients() const { return ingredients; }
+      |          ^~~~~~~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/espresso_based.h:21:17: error: 'Ingredient' was not declared in this scope; did you mean 'add_ingredient'?
+   21 |     std::vector<Ingredient*> ingredients;
+      |                 ^~~~~~~~~~
+      |                 add_ingredient
+/app/ap1400_2_hw/ap1400_2_hw5/include/espresso_based.h:21:28: error: template argument 1 is invalid
+   21 |     std::vector<Ingredient*> ingredients;
+      |                            ^
+/app/ap1400_2_hw/ap1400_2_hw5/include/espresso_based.h:21:28: error: template argument 2 is invalid
+/app/ap1400_2_hw/ap1400_2_hw5/include/espresso_based.h:21:10: error: '<expression error>' in namespace 'std' does not name a type
+   21 |     std::vector<Ingredient*> ingredients;
+      |          ^~~~~~~~~~~~~~~~~~~
+In file included from /app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:4:
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:6:32: error: expected class-name before '{' token
+    6 | class NAME : public Ingredient { \
+      |                                ^
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:18:1: note: in expansion of macro 'DEF_INGREDIENT'
+   18 | DEF_INGREDIENT(Cinnamon, 5)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:13:5: error: 'Ingredient' does not name a type
+   13 |     Ingredient* clone() const override { return new NAME{*this}; } \
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:18:1: note: in expansion of macro 'DEF_INGREDIENT'
+   18 | DEF_INGREDIENT(Cinnamon, 5)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:9:17: error: 'std::string Cinnamon::get_name() const' marked 'override', but does not override
+    9 |     std::string get_name() const override { return #NAME; } \
+      |                 ^~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:18:1: note: in expansion of macro 'DEF_INGREDIENT'
+   18 | DEF_INGREDIENT(Cinnamon, 5)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:10:12: error: 'double Cinnamon::get_price_unit() const' marked 'override', but does not override
+   10 |     double get_price_unit() const override { return PRICE; } \
+      |            ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:18:1: note: in expansion of macro 'DEF_INGREDIENT'
+   18 | DEF_INGREDIENT(Cinnamon, 5)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:11:12: error: 'size_t Cinnamon::get_units() const' marked 'override', but does not override
+   11 |     size_t get_units() const override { return units_; } \
+      |            ^~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:18:1: note: in expansion of macro 'DEF_INGREDIENT'
+   18 | DEF_INGREDIENT(Cinnamon, 5)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:12:12: error: 'double Cinnamon::price() const' marked 'override', but does not override
+   12 |     double price() const override { return PRICE * units_; } \
+      |            ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:18:1: note: in expansion of macro 'DEF_INGREDIENT'
+   18 | DEF_INGREDIENT(Cinnamon, 5)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:6:32: error: expected class-name before '{' token
+    6 | class NAME : public Ingredient { \
+      |                                ^
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:19:1: note: in expansion of macro 'DEF_INGREDIENT'
+   19 | DEF_INGREDIENT(Chocolate, 5)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:13:5: error: 'Ingredient' does not name a type
+   13 |     Ingredient* clone() const override { return new NAME{*this}; } \
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:19:1: note: in expansion of macro 'DEF_INGREDIENT'
+   19 | DEF_INGREDIENT(Chocolate, 5)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:9:17: error: 'std::string Chocolate::get_name() const' marked 'override', but does not override
+    9 |     std::string get_name() const override { return #NAME; } \
+      |                 ^~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:19:1: note: in expansion of macro 'DEF_INGREDIENT'
+   19 | DEF_INGREDIENT(Chocolate, 5)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:10:12: error: 'double Chocolate::get_price_unit() const' marked 'override', but does not override
+   10 |     double get_price_unit() const override { return PRICE; } \
+      |            ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:19:1: note: in expansion of macro 'DEF_INGREDIENT'
+   19 | DEF_INGREDIENT(Chocolate, 5)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:11:12: error: 'size_t Chocolate::get_units() const' marked 'override', but does not override
+   11 |     size_t get_units() const override { return units_; } \
+      |            ^~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:19:1: note: in expansion of macro 'DEF_INGREDIENT'
+   19 | DEF_INGREDIENT(Chocolate, 5)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:12:12: error: 'double Chocolate::price() const' marked 'override', but does not override
+   12 |     double price() const override { return PRICE * units_; } \
+      |            ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:19:1: note: in expansion of macro 'DEF_INGREDIENT'
+   19 | DEF_INGREDIENT(Chocolate, 5)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:6:32: error: expected class-name before '{' token
+    6 | class NAME : public Ingredient { \
+      |                                ^
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:20:1: note: in expansion of macro 'DEF_INGREDIENT'
+   20 | DEF_INGREDIENT(Sugar, 1)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:13:5: error: 'Ingredient' does not name a type
+   13 |     Ingredient* clone() const override { return new NAME{*this}; } \
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:20:1: note: in expansion of macro 'DEF_INGREDIENT'
+   20 | DEF_INGREDIENT(Sugar, 1)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:9:17: error: 'std::string Sugar::get_name() const' marked 'override', but does not override
+    9 |     std::string get_name() const override { return #NAME; } \
+      |                 ^~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:20:1: note: in expansion of macro 'DEF_INGREDIENT'
+   20 | DEF_INGREDIENT(Sugar, 1)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:10:12: error: 'double Sugar::get_price_unit() const' marked 'override', but does not override
+   10 |     double get_price_unit() const override { return PRICE; } \
+      |            ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:20:1: note: in expansion of macro 'DEF_INGREDIENT'
+   20 | DEF_INGREDIENT(Sugar, 1)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:11:12: error: 'size_t Sugar::get_units() const' marked 'override', but does not override
+   11 |     size_t get_units() const override { return units_; } \
+      |            ^~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:20:1: note: in expansion of macro 'DEF_INGREDIENT'
+   20 | DEF_INGREDIENT(Sugar, 1)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:12:12: error: 'double Sugar::price() const' marked 'override', but does not override
+   12 |     double price() const override { return PRICE * units_; } \
+      |            ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:20:1: note: in expansion of macro 'DEF_INGREDIENT'
+   20 | DEF_INGREDIENT(Sugar, 1)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:6:32: error: expected class-name before '{' token
+    6 | class NAME : public Ingredient { \
+      |                                ^
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:21:1: note: in expansion of macro 'DEF_INGREDIENT'
+   21 | DEF_INGREDIENT(Cookie, 4)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:13:5: error: 'Ingredient' does not name a type
+   13 |     Ingredient* clone() const override { return new NAME{*this}; } \
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:21:1: note: in expansion of macro 'DEF_INGREDIENT'
+   21 | DEF_INGREDIENT(Cookie, 4)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:9:17: error: 'std::string Cookie::get_name() const' marked 'override', but does not override
+    9 |     std::string get_name() const override { return #NAME; } \
+      |                 ^~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:21:1: note: in expansion of macro 'DEF_INGREDIENT'
+   21 | DEF_INGREDIENT(Cookie, 4)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:10:12: error: 'double Cookie::get_price_unit() const' marked 'override', but does not override
+   10 |     double get_price_unit() const override { return PRICE; } \
+      |            ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:21:1: note: in expansion of macro 'DEF_INGREDIENT'
+   21 | DEF_INGREDIENT(Cookie, 4)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:11:12: error: 'size_t Cookie::get_units() const' marked 'override', but does not override
+   11 |     size_t get_units() const override { return units_; } \
+      |            ^~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:21:1: note: in expansion of macro 'DEF_INGREDIENT'
+   21 | DEF_INGREDIENT(Cookie, 4)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:12:12: error: 'double Cookie::price() const' marked 'override', but does not override
+   12 |     double price() const override { return PRICE * units_; } \
+      |            ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:21:1: note: in expansion of macro 'DEF_INGREDIENT'
+   21 | DEF_INGREDIENT(Cookie, 4)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:6:32: error: expected class-name before '{' token
+    6 | class NAME : public Ingredient { \
+      |                                ^
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:22:1: note: in expansion of macro 'DEF_INGREDIENT'
+   22 | DEF_INGREDIENT(Espresso, 15)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:13:5: error: 'Ingredient' does not name a type
+   13 |     Ingredient* clone() const override { return new NAME{*this}; } \
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:22:1: note: in expansion of macro 'DEF_INGREDIENT'
+   22 | DEF_INGREDIENT(Espresso, 15)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:9:17: error: 'std::string Espresso::get_name() const' marked 'override', but does not override
+    9 |     std::string get_name() const override { return #NAME; } \
+      |                 ^~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:22:1: note: in expansion of macro 'DEF_INGREDIENT'
+   22 | DEF_INGREDIENT(Espresso, 15)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:10:12: error: 'double Espresso::get_price_unit() const' marked 'override', but does not override
+   10 |     double get_price_unit() const override { return PRICE; } \
+      |            ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:22:1: note: in expansion of macro 'DEF_INGREDIENT'
+   22 | DEF_INGREDIENT(Espresso, 15)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:11:12: error: 'size_t Espresso::get_units() const' marked 'override', but does not override
+   11 |     size_t get_units() const override { return units_; } \
+      |            ^~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:22:1: note: in expansion of macro 'DEF_INGREDIENT'
+   22 | DEF_INGREDIENT(Espresso, 15)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:12:12: error: 'double Espresso::price() const' marked 'override', but does not override
+   12 |     double price() const override { return PRICE * units_; } \
+      |            ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:22:1: note: in expansion of macro 'DEF_INGREDIENT'
+   22 | DEF_INGREDIENT(Espresso, 15)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:6:32: error: expected class-name before '{' token
+    6 | class NAME : public Ingredient { \
+      |                                ^
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:23:1: note: in expansion of macro 'DEF_INGREDIENT'
+   23 | DEF_INGREDIENT(Milk, 10)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:13:5: error: 'Ingredient' does not name a type
+   13 |     Ingredient* clone() const override { return new NAME{*this}; } \
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:23:1: note: in expansion of macro 'DEF_INGREDIENT'
+   23 | DEF_INGREDIENT(Milk, 10)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:9:17: error: 'std::string Milk::get_name() const' marked 'override', but does not override
+    9 |     std::string get_name() const override { return #NAME; } \
+      |                 ^~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:23:1: note: in expansion of macro 'DEF_INGREDIENT'
+   23 | DEF_INGREDIENT(Milk, 10)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:10:12: error: 'double Milk::get_price_unit() const' marked 'override', but does not override
+   10 |     double get_price_unit() const override { return PRICE; } \
+      |            ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:23:1: note: in expansion of macro 'DEF_INGREDIENT'
+   23 | DEF_INGREDIENT(Milk, 10)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:11:12: error: 'size_t Milk::get_units() const' marked 'override', but does not override
+   11 |     size_t get_units() const override { return units_; } \
+      |            ^~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:23:1: note: in expansion of macro 'DEF_INGREDIENT'
+   23 | DEF_INGREDIENT(Milk, 10)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:12:12: error: 'double Milk::price() const' marked 'override', but does not override
+   12 |     double price() const override { return PRICE * units_; } \
+      |            ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:23:1: note: in expansion of macro 'DEF_INGREDIENT'
+   23 | DEF_INGREDIENT(Milk, 10)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:6:32: error: expected class-name before '{' token
+    6 | class NAME : public Ingredient { \
+      |                                ^
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:24:1: note: in expansion of macro 'DEF_INGREDIENT'
+   24 | DEF_INGREDIENT(MilkFoam, 5)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:13:5: error: 'Ingredient' does not name a type
+   13 |     Ingredient* clone() const override { return new NAME{*this}; } \
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:24:1: note: in expansion of macro 'DEF_INGREDIENT'
+   24 | DEF_INGREDIENT(MilkFoam, 5)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:9:17: error: 'std::string MilkFoam::get_name() const' marked 'override', but does not override
+    9 |     std::string get_name() const override { return #NAME; } \
+      |                 ^~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:24:1: note: in expansion of macro 'DEF_INGREDIENT'
+   24 | DEF_INGREDIENT(MilkFoam, 5)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:10:12: error: 'double MilkFoam::get_price_unit() const' marked 'override', but does not override
+   10 |     double get_price_unit() const override { return PRICE; } \
+      |            ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:24:1: note: in expansion of macro 'DEF_INGREDIENT'
+   24 | DEF_INGREDIENT(MilkFoam, 5)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:11:12: error: 'size_t MilkFoam::get_units() const' marked 'override', but does not override
+   11 |     size_t get_units() const override { return units_; } \
+      |            ^~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:24:1: note: in expansion of macro 'DEF_INGREDIENT'
+   24 | DEF_INGREDIENT(MilkFoam, 5)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:12:12: error: 'double MilkFoam::price() const' marked 'override', but does not override
+   12 |     double price() const override { return PRICE * units_; } \
+      |            ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:24:1: note: in expansion of macro 'DEF_INGREDIENT'
+   24 | DEF_INGREDIENT(MilkFoam, 5)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:6:32: error: expected class-name before '{' token
+    6 | class NAME : public Ingredient { \
+      |                                ^
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:25:1: note: in expansion of macro 'DEF_INGREDIENT'
+   25 | DEF_INGREDIENT(Water, 1)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:13:5: error: 'Ingredient' does not name a type
+   13 |     Ingredient* clone() const override { return new NAME{*this}; } \
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:25:1: note: in expansion of macro 'DEF_INGREDIENT'
+   25 | DEF_INGREDIENT(Water, 1)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:9:17: error: 'std::string Water::get_name() const' marked 'override', but does not override
+    9 |     std::string get_name() const override { return #NAME; } \
+      |                 ^~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:25:1: note: in expansion of macro 'DEF_INGREDIENT'
+   25 | DEF_INGREDIENT(Water, 1)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:10:12: error: 'double Water::get_price_unit() const' marked 'override', but does not override
+   10 |     double get_price_unit() const override { return PRICE; } \
+      |            ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:25:1: note: in expansion of macro 'DEF_INGREDIENT'
+   25 | DEF_INGREDIENT(Water, 1)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:11:12: error: 'size_t Water::get_units() const' marked 'override', but does not override
+   11 |     size_t get_units() const override { return units_; } \
+      |            ^~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:25:1: note: in expansion of macro 'DEF_INGREDIENT'
+   25 | DEF_INGREDIENT(Water, 1)
+      | ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:12:12: error: 'double Water::price() const' marked 'override', but does not override
+   12 |     double price() const override { return PRICE * units_; } \
+      |            ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/sub_ingredients.h:25:1: note: in expansion of macro 'DEF_INGREDIENT'
+   25 | DEF_INGREDIENT(Water, 1)
+      | ^~~~~~~~~~~~~~
+In file included from /app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:5:
+/app/ap1400_2_hw/ap1400_2_hw5/include/espresso_based.h:11:31: error: 'Ingredient' does not name a type
+   11 |     void add_ingredient(const Ingredient& ing);
+      |                               ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/espresso_based.h:12:25: error: 'Ingredient' has not been declared
+   12 |     void add_ingredient(Ingredient* ing);
+      |                         ^~~~~~~~~~
+make[2]: *** [CMakeFiles/main.dir/build.make:76: CMakeFiles/main.dir/src/main.cpp.o] Error 1
+/app/ap1400_2_hw/ap1400_2_hw5/include/espresso_based.h:14:17: error: 'Ingredient' was not declared in this scope; did you mean 'add_ingredient'?
+   14 |     std::vector<Ingredient*> get_ingredients() const { return ingredients; }
+      |                 ^~~~~~~~~~
+      |                 add_ingredient
+/app/ap1400_2_hw/ap1400_2_hw5/include/espresso_based.h:14:28: error: template argument 1 is invalid
+   14 |     std::vector<Ingredient*> get_ingredients() const { return ingredients; }
+      |                            ^
+/app/ap1400_2_hw/ap1400_2_hw5/include/espresso_based.h:14:28: error: template argument 2 is invalid
+/app/ap1400_2_hw/ap1400_2_hw5/include/espresso_based.h:14:10: error: '<expression error>' in namespace 'std' does not name a type
+   14 |     std::vector<Ingredient*> get_ingredients() const { return ingredients; }
+      |          ^~~~~~~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/include/espresso_based.h:21:17: error: 'Ingredient' was not declared in this scope; did you mean 'add_ingredient'?
+   21 |     std::vector<Ingredient*> ingredients;
+      |                 ^~~~~~~~~~
+      |                 add_ingredient
+/app/ap1400_2_hw/ap1400_2_hw5/include/espresso_based.h:21:28: error: template argument 1 is invalid
+   21 |     std::vector<Ingredient*> ingredients;
+      |                            ^
+/app/ap1400_2_hw/ap1400_2_hw5/include/espresso_based.h:21:28: error: template argument 2 is invalid
+/app/ap1400_2_hw/ap1400_2_hw5/include/espresso_based.h:21:10: error: '<expression error>' in namespace 'std' does not name a type
+   21 |     std::vector<Ingredient*> ingredients;
+      |          ^~~~~~~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp: In member function 'virtual void HW5Test_TEST3_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:34:5: error: 'Ingredient' was not declared in this scope
+   34 |     Ingredient* ingredient;
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:34:17: error: 'ingredient' was not declared in this scope
+   34 |     Ingredient* ingredient;
+      |                 ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp: In member function 'virtual void HW5Test_TEST4_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:46:5: error: 'Cappuccino' was not declared in this scope
+   46 |     Cappuccino cappuccino{};
+      |     ^~~~~~~~~~
+In file included from /usr/local/include/gtest/gtest.h:72,
+                 from /app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:1:
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:47:15: error: 'cappuccino' was not declared in this scope
+   47 |     EXPECT_EQ(cappuccino.get_name(), "Cappuccino");
+      |               ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:48:24: error: 'cappuccino' was not declared in this scope
+   48 |     auto ingredients = cappuccino.get_ingredients();
+      |                        ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp: In member function 'virtual void HW5Test_TEST5_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:56:5: error: 'Cappuccino' was not declared in this scope
+   56 |     Cappuccino cappuccino{};
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:57:22: error: 'cappuccino' was not declared in this scope
+   57 |     EXPECT_DOUBLE_EQ(cappuccino.price(), 55);
+      |                      ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:58:5: error: 'cappuccino' was not declared in this scope
+   58 |     cappuccino.add_side_item(new Cinnamon{1});
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp: In member function 'virtual void HW5Test_TEST6_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:63:28: error: 'Cappuccino' does not name a type
+   63 |     EspressoBased* esp{new Cappuccino{}};
+      |                            ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:64:22: error: 'Cappuccino' does not name a type
+   64 |     reinterpret_cast<Cappuccino*>(esp)->add_side_item(new Cookie{1});
+      |                      ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:64:32: error: expected '>' before '*' token
+   64 |     reinterpret_cast<Cappuccino*>(esp)->add_side_item(new Cookie{1});
+      |                                ^
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:64:32: error: expected '(' before '*' token
+   64 |     reinterpret_cast<Cappuccino*>(esp)->add_side_item(new Cookie{1});
+      |                                ^
+      |                                (
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:64:33: error: expected primary-expression before '>' token
+   64 |     reinterpret_cast<Cappuccino*>(esp)->add_side_item(new Cookie{1});
+      |                                 ^
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:64:41: error: 'class EspressoBased' has no member named 'add_side_item'
+   64 |     reinterpret_cast<Cappuccino*>(esp)->add_side_item(new Cookie{1});
+      |                                         ^~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:64:69: error: expected ')' before ';' token
+   64 |     reinterpret_cast<Cappuccino*>(esp)->add_side_item(new Cookie{1});
+      |                                                                     ^
+      |                                                                     )
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:65:17: error: 'Ingredient' was not declared in this scope
+   65 |     std::vector<Ingredient*>& sides = reinterpret_cast<Cappuccino*>(esp)->get_side_items();
+      |                 ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:65:28: error: template argument 1 is invalid
+   65 |     std::vector<Ingredient*>& sides = reinterpret_cast<Cappuccino*>(esp)->get_side_items();
+      |                            ^
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:65:28: error: template argument 2 is invalid
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:65:56: error: 'Cappuccino' does not name a type
+   65 |     std::vector<Ingredient*>& sides = reinterpret_cast<Cappuccino*>(esp)->get_side_items();
+      |                                                        ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:65:66: error: expected '>' before '*' token
+   65 |     std::vector<Ingredient*>& sides = reinterpret_cast<Cappuccino*>(esp)->get_side_items();
+      |                                                                  ^
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:65:66: error: expected '(' before '*' token
+   65 |     std::vector<Ingredient*>& sides = reinterpret_cast<Cappuccino*>(esp)->get_side_items();
+      |                                                                  ^
+      |                                                                  (
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:65:67: error: expected primary-expression before '>' token
+   65 |     std::vector<Ingredient*>& sides = reinterpret_cast<Cappuccino*>(esp)->get_side_items();
+      |                                                                   ^
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:65:75: error: 'class EspressoBased' has no member named 'get_side_items'
+   65 |     std::vector<Ingredient*>& sides = reinterpret_cast<Cappuccino*>(esp)->get_side_items();
+      |                                                                           ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:65:91: error: expected ')' before ';' token
+   65 |     std::vector<Ingredient*>& sides = reinterpret_cast<Cappuccino*>(esp)->get_side_items();
+      |                                                                                           ^
+      |                                                                                           )
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:66:21: error: request for member 'size' in 'sides', which is of non-class type 'int'
+   66 |     EXPECT_EQ(sides.size(), 1);
+      |                     ^~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:68:21: error: request for member 'size' in 'sides', which is of non-class type 'int'
+   68 |     EXPECT_EQ(sides.size(), 0);
+      |                     ^~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp: In member function 'virtual void HW5Test_TEST7_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:72:5: error: 'Cappuccino' was not declared in this scope
+   72 |     Cappuccino cappuccino;
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:73:5: error: 'cappuccino' was not declared in this scope
+   73 |     cappuccino.add_side_item(new Chocolate{2});
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:74:15: error: expected ';' before 'copy'
+   74 |     Cappuccino copy{cappuccino};
+      |               ^~~~~
+      |               ;
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:75:15: error: 'copy' was not declared in this scope
+   75 |     EXPECT_EQ(copy.get_name(), "Cappuccino");
+      |               ^~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:75:15: note: suggested alternatives:
+In file included from /usr/include/c++/13/algorithm:73,
+                 from /usr/local/include/gmock/gmock-actions.h:137,
+                 from /usr/local/include/gmock/gmock.h:56,
+                 from /app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:2:
+/usr/include/c++/13/pstl/glue_algorithm_defs.h:134:1: note:   'std::copy'
+  134 | copy(_ExecutionPolicy&& __exec, _ForwardIterator1 __first, _ForwardIterator1 __last, _ForwardIterator2 __result);
+      | ^~~~
+In file included from /usr/include/c++/13/bits/ranges_uninitialized.h:36,
+                 from /usr/include/c++/13/memory:90,
+                 from /usr/local/include/gtest/gtest.h:55:
+/usr/include/c++/13/bits/ranges_algobase.h:318:30: note:   'std::ranges::copy'
+  318 |   inline constexpr __copy_fn copy{};
+      |                              ^~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:76:22: error: 'copy' was not declared in this scope
+   76 |     EXPECT_DOUBLE_EQ(copy.price(), 65);
+      |                      ^~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:76:22: note: suggested alternatives:
+/usr/include/c++/13/pstl/glue_algorithm_defs.h:134:1: note:   'std::copy'
+  134 | copy(_ExecutionPolicy&& __exec, _ForwardIterator1 __first, _ForwardIterator1 __last, _ForwardIterator2 __result);
+      | ^~~~
+/usr/include/c++/13/bits/ranges_algobase.h:318:30: note:   'std::ranges::copy'
+  318 |   inline constexpr __copy_fn copy{};
+      |                              ^~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp: In member function 'virtual void HW5Test_TEST8_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:80:5: error: 'Cappuccino' was not declared in this scope
+   80 |     Cappuccino cappuccino;
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:81:5: error: 'cappuccino' was not declared in this scope
+   81 |     cappuccino.add_side_item(new Water{1});
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:82:15: error: expected ';' before 'equal'
+   82 |     Cappuccino equal;
+      |               ^~~~~~
+      |               ;
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:83:5: error: 'equal' was not declared in this scope
+   83 |     equal.add_side_item(new Sugar{1});
+      |     ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:83:5: note: suggested alternatives:
+/usr/include/c++/13/pstl/glue_algorithm_defs.h:347:1: note:   'std::equal'
+  347 | equal(_ExecutionPolicy&& __exec, _ForwardIterator1 __first1, _ForwardIterator1 __last1, _ForwardIterator2 __first2,
+      | ^~~~~
+/usr/include/c++/13/bits/ranges_algobase.h:158:31: note:   'std::ranges::equal'
+  158 |   inline constexpr __equal_fn equal{};
+      |                               ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp: In member function 'virtual void HW5Test_TEST9_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:89:5: error: 'Cappuccino' was not declared in this scope
+   89 |     Cappuccino equal;
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:90:5: error: 'equal' was not declared in this scope
+   90 |     equal.add_side_item(new Sugar{2});
+      |     ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:90:5: note: suggested alternatives:
+/usr/include/c++/13/pstl/glue_algorithm_defs.h:347:1: note:   'std::equal'
+  347 | equal(_ExecutionPolicy&& __exec, _ForwardIterator1 __first1, _ForwardIterator1 __last1, _ForwardIterator2 __first2,
+      | ^~~~~
+/usr/include/c++/13/bits/ranges_algobase.h:158:31: note:   'std::ranges::equal'
+  158 |   inline constexpr __equal_fn equal{};
+      |                               ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp: In member function 'virtual void HW5Test_TEST10_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:96:5: error: 'Mocha' was not declared in this scope
+   96 |     Mocha mocha{};
+      |     ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:97:15: error: 'mocha' was not declared in this scope
+   97 |     EXPECT_EQ(mocha.get_name(), "Mocha");
+      |               ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:98:24: error: 'mocha' was not declared in this scope
+   98 |     auto ingredients = mocha.get_ingredients();
+      |                        ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:105:28: error: 'Mocha' does not name a type
+  105 |     EspressoBased* esp{new Mocha{}};
+      |                            ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:106:22: error: 'Cappuccino' does not name a type
+  106 |     reinterpret_cast<Cappuccino*>(esp)->add_side_item(new Cookie{1});
+      |                      ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:106:32: error: expected '>' before '*' token
+  106 |     reinterpret_cast<Cappuccino*>(esp)->add_side_item(new Cookie{1});
+      |                                ^
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:106:32: error: expected '(' before '*' token
+  106 |     reinterpret_cast<Cappuccino*>(esp)->add_side_item(new Cookie{1});
+      |                                ^
+      |                                (
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:106:33: error: expected primary-expression before '>' token
+  106 |     reinterpret_cast<Cappuccino*>(esp)->add_side_item(new Cookie{1});
+      |                                 ^
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:106:41: error: 'class EspressoBased' has no member named 'add_side_item'
+  106 |     reinterpret_cast<Cappuccino*>(esp)->add_side_item(new Cookie{1});
+      |                                         ^~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:106:69: error: expected ')' before ';' token
+  106 |     reinterpret_cast<Cappuccino*>(esp)->add_side_item(new Cookie{1});
+      |                                                                     ^
+      |                                                                     )
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:107:22: error: 'Cappuccino' does not name a type
+  107 |     reinterpret_cast<Cappuccino*>(esp)->add_side_item(new Sugar{2});
+      |                      ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:107:32: error: expected '>' before '*' token
+  107 |     reinterpret_cast<Cappuccino*>(esp)->add_side_item(new Sugar{2});
+      |                                ^
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:107:32: error: expected '(' before '*' token
+  107 |     reinterpret_cast<Cappuccino*>(esp)->add_side_item(new Sugar{2});
+      |                                ^
+      |                                (
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:107:33: error: expected primary-expression before '>' token
+  107 |     reinterpret_cast<Cappuccino*>(esp)->add_side_item(new Sugar{2});
+      |                                 ^
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:107:41: error: 'class EspressoBased' has no member named 'add_side_item'
+  107 |     reinterpret_cast<Cappuccino*>(esp)->add_side_item(new Sugar{2});
+      |                                         ^~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:107:68: error: expected ')' before ';' token
+  107 |     reinterpret_cast<Cappuccino*>(esp)->add_side_item(new Sugar{2});
+      |                                                                    ^
+      |                                                                    )
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:108:17: error: 'Ingredient' was not declared in this scope
+  108 |     std::vector<Ingredient*>& sides = reinterpret_cast<Cappuccino*>(esp)->get_side_items();
+      |                 ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:108:28: error: template argument 1 is invalid
+  108 |     std::vector<Ingredient*>& sides = reinterpret_cast<Cappuccino*>(esp)->get_side_items();
+      |                            ^
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:108:28: error: template argument 2 is invalid
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:108:56: error: 'Cappuccino' does not name a type
+  108 |     std::vector<Ingredient*>& sides = reinterpret_cast<Cappuccino*>(esp)->get_side_items();
+      |                                                        ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:108:66: error: expected '>' before '*' token
+  108 |     std::vector<Ingredient*>& sides = reinterpret_cast<Cappuccino*>(esp)->get_side_items();
+      |                                                                  ^
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:108:66: error: expected '(' before '*' token
+  108 |     std::vector<Ingredient*>& sides = reinterpret_cast<Cappuccino*>(esp)->get_side_items();
+      |                                                                  ^
+      |                                                                  (
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:108:67: error: expected primary-expression before '>' token
+  108 |     std::vector<Ingredient*>& sides = reinterpret_cast<Cappuccino*>(esp)->get_side_items();
+      |                                                                   ^
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:108:75: error: 'class EspressoBased' has no member named 'get_side_items'
+  108 |     std::vector<Ingredient*>& sides = reinterpret_cast<Cappuccino*>(esp)->get_side_items();
+      |                                                                           ^~~~~~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:108:91: error: expected ')' before ';' token
+  108 |     std::vector<Ingredient*>& sides = reinterpret_cast<Cappuccino*>(esp)->get_side_items();
+      |                                                                                           ^
+      |                                                                                           )
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:109:21: error: request for member 'size' in 'sides', which is of non-class type 'int'
+  109 |     EXPECT_EQ(sides.size(), 2);
+      |                     ^~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:111:21: error: request for member 'size' in 'sides', which is of non-class type 'int'
+  111 |     EXPECT_EQ(sides.size(), 0);
+      |                     ^~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp: In member function 'virtual void HW5Test_TEST11_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:115:5: error: 'Cappuccino' was not declared in this scope
+  115 |     Cappuccino cappuccino{};
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:116:5: error: 'cappuccino' was not declared in this scope
+  116 |     cappuccino.brew();
+      |     ^~~~~~~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp: In member function 'virtual void HW5Test_TEST12_Test::TestBody()':
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:120:5: error: 'Mocha' was not declared in this scope
+  120 |     Mocha mocha{};
+      |     ^~~~~
+/app/ap1400_2_hw/ap1400_2_hw5/src/unit_test.cpp:121:5: error: 'mocha' was not declared in this scope
+  121 |     mocha.brew();
+      |     ^~~~~
+make[2]: *** [CMakeFiles/main.dir/build.make:90: CMakeFiles/main.dir/src/unit_test.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/main.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2
+HW5 compile failed, cannot run program

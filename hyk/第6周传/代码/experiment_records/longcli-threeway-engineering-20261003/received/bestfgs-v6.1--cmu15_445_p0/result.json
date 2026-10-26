@@ -1,0 +1,125 @@
+{
+  "version": "bestfgs-monitor-control-v6.1",
+  "task_id": "cmu15_445_p0",
+  "submitted": false,
+  "stop_reason": "request_or_tool_budget",
+  "artifact": {
+    "path": "/mnt/lizh639/longcli-threeway-engineering-20261003/roots/bestfgs-v6.1--cmu15_445_p0/app",
+    "fingerprint": "fb521a228f0b38ecf34af16c5cb97a17aa931d5d7649cc3702c962b456a982f7",
+    "restoration": "workspace_files_only"
+  },
+  "official_success": null,
+  "error_type": null,
+  "interaction_rounds": 656,
+  "action_rounds": 638,
+  "advisor_rounds": 6,
+  "monitor_rounds": 12,
+  "tool_calls": 600,
+  "wall_seconds": 2967.4666323456913,
+  "model_usage": {
+    "action": {
+      "model_calls": 638,
+      "api_requests": 649,
+      "api_responses": 648,
+      "prompt_tokens": 9527833,
+      "completion_tokens": 159744,
+      "total_tokens": 9687577,
+      "cached_prompt_tokens": 806528,
+      "cache_miss_prompt_tokens": 8721305,
+      "usage_reports": 648,
+      "usage_missing_responses": 0,
+      "failure_counts": {
+        "transport": 1,
+        "json_syntax": 11
+      },
+      "response_models": [
+        "deepseek-flash"
+      ]
+    },
+    "advisor": {
+      "model_calls": 6,
+      "api_requests": 6,
+      "api_responses": 6,
+      "prompt_tokens": 102891,
+      "completion_tokens": 2311,
+      "total_tokens": 105202,
+      "cached_prompt_tokens": 1280,
+      "cache_miss_prompt_tokens": 101611,
+      "usage_reports": 6,
+      "usage_missing_responses": 0,
+      "failure_counts": {},
+      "response_models": [
+        "deepseek-flash"
+      ]
+    },
+    "monitor": {
+      "model_calls": 12,
+      "api_requests": 12,
+      "api_responses": 12,
+      "prompt_tokens": 67142,
+      "completion_tokens": 7056,
+      "total_tokens": 74198,
+      "cached_prompt_tokens": 6016,
+      "cache_miss_prompt_tokens": 61126,
+      "usage_reports": 12,
+      "usage_missing_responses": 0,
+      "failure_counts": {
+        "json_syntax": 2
+      },
+      "response_models": [
+        "deepseek-flash"
+      ]
+    }
+  },
+  "mechanism_utilization": {
+    "model_requests": 656,
+    "action_calls": 638,
+    "advisor_calls": 6,
+    "tool_calls": 600,
+    "memory_exposures": 1831,
+    "requests_with_memory": 623,
+    "memories_admitted": 36,
+    "memories_rejected": 0,
+    "memory_use_self_reports": 108,
+    "advisor_responses_accepted": 6,
+    "advisor_deferred": 0,
+    "checkpoints_created": 1,
+    "branch_restores": 0,
+    "submissions": 0,
+    "protocol_errors": 2,
+    "memory_interventions": 8,
+    "memory_action_changed": 6,
+    "memory_action_unchanged": 2,
+    "memory_followup_actions": 66,
+    "memory_followup_runs": 66,
+    "memory_followup_succeeded": 33,
+    "memory_followup_workspace_changed": 4,
+    "post_advice_actions": 6,
+    "monitor_calls": 12,
+    "monitor_reviews_accepted": 7,
+    "monitor_deferred": 5,
+    "semantic_stalls": 6,
+    "auto_memory_candidates": 12,
+    "auto_memories_admitted": 9,
+    "auto_memories_rejected": 3,
+    "observed_memories_admitted": 8,
+    "recovery_started": 67,
+    "recovery_plans": 67,
+    "recovery_verified_repairs": 0,
+    "recovery_checked_hypotheses": 2,
+    "recovery_failed": 65,
+    "memory_exposure_is_not_benefit": true,
+    "memory_use_is_self_report": true
+  },
+  "time_by_role": {
+    "action": 1221.525188784115,
+    "tools": 244.64624642208219,
+    "monitor": 37.392969944514334,
+    "advisor": 15.672485147602856
+  },
+  "contextual_tool_redundancy": {
+    "status": "requires_independent_audit",
+    "rate": null,
+    "denominator": 600
+  }
+}

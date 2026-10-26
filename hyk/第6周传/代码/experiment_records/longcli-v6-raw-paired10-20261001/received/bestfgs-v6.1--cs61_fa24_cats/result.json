@@ -1,0 +1,140 @@
+{
+  "version": "bestfgs-monitor-control-v6.1",
+  "task_id": "cs61_fa24_cats",
+  "submitted": true,
+  "stop_reason": "model_submit",
+  "artifact": {
+    "path": "/mnt/lizh639/longcli-v6-raw-paired10-20261001/roots/bestfgs-v6.1--cs61_fa24_cats/app",
+    "fingerprint": "0bb55fa20ac4621b44a3c90f07cfec2c9ae94b5f38de8c04ce9cc1d30e6619c4",
+    "restoration": "workspace_files_only"
+  },
+  "official_success": null,
+  "error_type": null,
+  "interaction_rounds": 329,
+  "action_rounds": 317,
+  "advisor_rounds": 6,
+  "monitor_rounds": 6,
+  "tool_calls": 286,
+  "wall_seconds": 958.8478456912562,
+  "model_usage": {
+    "action": {
+      "model_calls": 317,
+      "api_requests": 324,
+      "api_responses": 324,
+      "prompt_tokens": 4567833,
+      "cached_prompt_tokens": 377728,
+      "cache_miss_prompt_tokens": 4190105,
+      "cache_write_prompt_tokens": 0,
+      "completion_tokens": 82151,
+      "cache_hit_rate": 0.082693,
+      "usage_missing_responses": 0,
+      "response_models": [
+        "deepseek-flash"
+      ],
+      "system_fingerprints": [
+        "aeb56401ca74e127821c4f9126dcb669"
+      ],
+      "last_failure_kind": null,
+      "last_failure_detail": null,
+      "failure_counts": {
+        "json_syntax": 7
+      },
+      "usage_unreported_requests": 0
+    },
+    "advisor": {
+      "model_calls": 6,
+      "api_requests": 6,
+      "api_responses": 6,
+      "prompt_tokens": 74214,
+      "cached_prompt_tokens": 896,
+      "cache_miss_prompt_tokens": 73318,
+      "cache_write_prompt_tokens": 0,
+      "completion_tokens": 2753,
+      "cache_hit_rate": 0.012073,
+      "usage_missing_responses": 0,
+      "response_models": [
+        "deepseek-flash"
+      ],
+      "system_fingerprints": [
+        "aeb56401ca74e127821c4f9126dcb669"
+      ],
+      "last_failure_kind": null,
+      "last_failure_detail": null,
+      "failure_counts": {},
+      "usage_unreported_requests": 0
+    },
+    "monitor": {
+      "model_calls": 6,
+      "api_requests": 6,
+      "api_responses": 6,
+      "prompt_tokens": 30542,
+      "cached_prompt_tokens": 2816,
+      "cache_miss_prompt_tokens": 27726,
+      "cache_write_prompt_tokens": 0,
+      "completion_tokens": 3052,
+      "cache_hit_rate": 0.092201,
+      "usage_missing_responses": 0,
+      "response_models": [
+        "deepseek-flash"
+      ],
+      "system_fingerprints": [
+        "aeb56401ca74e127821c4f9126dcb669"
+      ],
+      "last_failure_kind": null,
+      "last_failure_detail": null,
+      "failure_counts": {},
+      "usage_unreported_requests": 0
+    }
+  },
+  "mechanism_utilization": {
+    "model_requests": 329,
+    "action_calls": 317,
+    "advisor_calls": 6,
+    "tool_calls": 286,
+    "memory_exposures": 834,
+    "requests_with_memory": 265,
+    "memories_admitted": 10,
+    "memories_rejected": 0,
+    "memory_use_self_reports": 71,
+    "advisor_responses_accepted": 6,
+    "advisor_deferred": 0,
+    "checkpoints_created": 1,
+    "branch_restores": 0,
+    "submissions": 1,
+    "protocol_errors": 2,
+    "memory_interventions": 2,
+    "memory_action_changed": 1,
+    "memory_action_unchanged": 1,
+    "memory_followup_actions": 45,
+    "memory_followup_runs": 45,
+    "memory_followup_succeeded": 21,
+    "memory_followup_workspace_changed": 1,
+    "post_advice_actions": 6,
+    "monitor_calls": 6,
+    "monitor_reviews_accepted": 5,
+    "monitor_deferred": 1,
+    "semantic_stalls": 2,
+    "auto_memory_candidates": 7,
+    "auto_memories_admitted": 6,
+    "auto_memories_rejected": 1,
+    "observed_memories_admitted": 2,
+    "recovery_started": 38,
+    "recovery_plans": 38,
+    "recovery_verified_repairs": 0,
+    "recovery_checked_hypotheses": 3,
+    "recovery_failed": 35,
+    "memory_exposure_is_not_benefit": true,
+    "memory_use_is_self_report": true
+  },
+  "time_by_role": {
+    "action": 639.2468501916155,
+    "tools": 90.90764991380274,
+    "monitor": 19.17196413408965,
+    "advisor": 20.04791166819632
+  },
+  "contextual_tool_redundancy": {
+    "status": "requires_independent_audit",
+    "rate": null,
+    "denominator": 286
+  }
+}

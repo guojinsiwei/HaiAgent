@@ -1,0 +1,25 @@
+{
+  "experiment": "longcli-dh-raw-full20-20261004",
+  "initial_observation": {
+    "worker_0": "running; dh--cs61_fa24_scheme and raw--cs61_fa24_ants progressing",
+    "worker_1": "never_launched; no health, launch marker, worker log or task claims",
+    "relay": "not_started",
+    "original_failure_cause": "not recoverable from persisted logs; original PowerShell launcher did not capture its failure"
+  },
+  "repairs": [
+    "Started existing no-model local relay independently of complete generation launch",
+    "Added public worker-state reconciliation; running, terminal and claimed workers cannot be replayed",
+    "Added bounded GET /models retries for transient connectivity/provider errors",
+    "Added persistent, credential-free launch-stage diagnostics",
+    "Opened hidden local input and started only previously unstarted worker 1"
+  ],
+  "control_regressions_passed": 4,
+  "sealed_algorithm_and_task_inputs_unchanged": true,
+  "worker_1_pid": 555659,
+  "relay_pid": 5496,
+  "last_verified_workers": ["running", "running"],
+  "tasks_replayed": 0,
+  "concurrency": 4,
+  "verified_at_local": "2026-10-04T03:04:30+08:00",
+  "resume_entry": "Start-DH-RAW-Pending.ps1"
+}

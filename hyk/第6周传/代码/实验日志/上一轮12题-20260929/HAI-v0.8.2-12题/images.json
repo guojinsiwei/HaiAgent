@@ -1,0 +1,98 @@
+[
+  {
+    "task": "spot-scheduler-traces",
+    "image": "zli12321/lhtb-spot-scheduler-traces:20260615",
+    "id": "sha256:4617479c6226fcf72d83d7cb3e4e823c8e0c6289b1b7e4c5c4af4597a63bf8a1",
+    "digest": "sha256:4617479c6226fcf72d83d7cb3e4e823c8e0c6289b1b7e4c5c4af4597a63bf8a1",
+    "size": 84311729,
+    "reused": true
+  },
+  {
+    "task": "modflow6-groundwater-regression-audit",
+    "image": "zli12321/lhtb-modflow6-groundwater-regression-audit:20260615",
+    "id": "sha256:bedeaecd1bc6249440433c6735c8deb60f35965136bf700a49201be1eb7b9e9f",
+    "digest": "sha256:bedeaecd1bc6249440433c6735c8deb60f35965136bf700a49201be1eb7b9e9f",
+    "size": 235478399,
+    "reused": true
+  },
+  {
+    "task": "foldseek-paper-reproduction",
+    "image": "zli12321/lhtb-foldseek-paper-reproduction:20260615",
+    "id": "sha256:e0aa5be7b3c49155fb347e15beebc93e956d125ae74739f2b91cbd4a7612ee9f",
+    "digest": "sha256:e0aa5be7b3c49155fb347e15beebc93e956d125ae74739f2b91cbd4a7612ee9f",
+    "size": 105584658,
+    "reused": true
+  },
+  {
+    "task": "gdal-proj-raster-regression",
+    "image": "zli12321/lhtb-gdal-proj-raster-regression:20260615",
+    "id": "sha256:9a0ded6d51ce0c5a3d7b311f3f35b797bda88f5767386a8c1d1f737f10fdb61f",
+    "digest": "sha256:9a0ded6d51ce0c5a3d7b311f3f35b797bda88f5767386a8c1d1f737f10fdb61f",
+    "size": 165383661,
+    "reused": true
+  },
+  {
+    "task": "climate-netcdf-extreme-event-audit",
+    "image": "zhongzhi660/lhtb-climate-netcdf-extreme-event-audit:20260709",
+    "id": "sha256:354f0aac6a0128a3c7d48328bcaa37c238acde68b1b5df2e576a64fd9078d40d",
+    "digest": "sha256:354f0aac6a0128a3c7d48328bcaa37c238acde68b1b5df2e576a64fd9078d40d",
+    "size": 149449534,
+    "reused": true
+  },
+  {
+    "task": "great-expectations-audit",
+    "image": "zli12321/lhtb-great-expectations-audit:20260615",
+    "id": "sha256:30db89ec62c1d36d8b944f5fcfae2dd5ebad3f9adcb6bca79faff715c09a11bf",
+    "digest": "sha256:30db89ec62c1d36d8b944f5fcfae2dd5ebad3f9adcb6bca79faff715c09a11bf",
+    "size": 281003649,
+    "reused": true
+  },
+  {
+    "task": "microscopy-cell-count-qc-audit",
+    "image": "zhongzhi660/lhtb-microscopy-cell-count-qc-audit:20260709",
+    "id": "sha256:f34d8f16ff2c9dd155203de1eda9cde8976482d5d8e5e5563cf5a923f7ed332c",
+    "digest": "sha256:f34d8f16ff2c9dd155203de1eda9cde8976482d5d8e5e5563cf5a923f7ed332c",
+    "size": 184931557,
+    "reused": true
+  },
+  {
+    "task": "epa-swmm-stormwater-regression-audit",
+    "image": "zli12321/lhtb-epa-swmm-stormwater-regression-audit:20260615",
+    "id": "sha256:ea5b7e4716d30676d904c6390e2229c49448b027437b768b712601ef098d688b",
+    "digest": "sha256:ea5b7e4716d30676d904c6390e2229c49448b027437b768b712601ef098d688b",
+    "size": 198058316,
+    "reused": true
+  },
+  {
+    "task": "satellite-flood-change-detection-audit",
+    "image": "zhongzhi660/lhtb-satellite-flood-change-detection-audit:20260709",
+    "id": "sha256:85c8442bd4adf28f11551099e9f4339b42695855d84518e00e959348f2c2aff9",
+    "digest": "sha256:85c8442bd4adf28f11551099e9f4339b42695855d84518e00e959348f2c2aff9",
+    "size": 186749759,
+    "reused": true
+  },
+  {
+    "task": "opensees-seismic-structural-regression-audit",
+    "image": "zli12321/lhtb-opensees-seismic-structural-regression-audit:20260615",
+    "id": "sha256:3f51668dc95b7c903840370ed16c40e1fd1f358dc1f0a06dc767aa02c538ff1a",
+    "digest": "sha256:3f51668dc95b7c903840370ed16c40e1fd1f358dc1f0a06dc767aa02c538ff1a",
+    "size": 261012082,
+    "reused": true
+  },
+  {
+    "task": "unison-paper-reproduction",
+    "image": "zli12321/lhtb-unison-paper-reproduction:20260615",
+    "id": "sha256:4e80a104af85cccd260ada0b737513aae8722acd4bea22f9f3002ba7b9c222d4",
+    "digest": "sha256:4e80a104af85cccd260ada0b737513aae8722acd4bea22f9f3002ba7b9c222d4",
+    "size": 117438281,
+    "reused": true
+  },
+  {
+    "task": "matpower-opf-regression",
+    "image": "zli12321/lhtb-matpower-opf-regression:20260615",
+    "id": "sha256:a92798c18dc53ca6605cbed609a7a20131287abaeb2a45d6ff854c0ff82f0cff",
+    "digest": "sha256:a92798c18dc53ca6605cbed609a7a20131287abaeb2a45d6ff854c0ff82f0cff",
+    "size": 160845501,
+    "reused": true
+  }
+]

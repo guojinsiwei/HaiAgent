@@ -1,0 +1,132 @@
+{
+  "source_campaign": "/var/tmp/longcli-dh-tools-execution-repair3-20261008",
+  "time": 1791451150.4234664,
+  "target_concurrency": 12,
+  "assignments": {
+    "college": [
+      {
+        "task": "61810_cow",
+        "family": "make-pytest",
+        "project": "cow",
+        "index": 10,
+        "image": "longcli-dh-raw-full20-20261004/task-61810_cow:2015f37",
+        "image_id": "sha256:b279ec81c63b14bb2b52ca7fa9f0430172ac4c510b1b9c6dfaa09b2ba8a80cb1",
+        "wall_seconds": 7200,
+        "test_seconds": 300.0,
+        "instruction": "Open and follow the detailed project specification at INSTRUCTION.md. Implement the project tasks accordingly in folder cow."
+      },
+      {
+        "task": "61810_fs",
+        "family": "make-pytest",
+        "project": "fs",
+        "index": 11,
+        "image": "longcli-dh-raw-full20-20261004/task-61810_fs:2015f37",
+        "image_id": "sha256:060fdd756cc6ad5c7ea433c9d469241dfa7e0b60d3f9726ca7e2212f7d461b3f",
+        "wall_seconds": 7200,
+        "test_seconds": 1800.0,
+        "instruction": "Open and follow the detailed project specification at INSTRUCTION.md. Implement the project tasks accordingly in folder fs."
+      },
+      {
+        "task": "61810_lock",
+        "family": "make-pytest",
+        "project": "lock",
+        "index": 12,
+        "image": "longcli-dh-raw-full20-20261004/task-61810_lock:2015f37",
+        "image_id": "sha256:218e3e61935c206e6fe67092bbe5b2801e2ba396548fe1cba4d8719c40d737cb",
+        "wall_seconds": 7200,
+        "test_seconds": 1800.0,
+        "instruction": "Open and follow the detailed project specification at INSTRUCTION.md. Implement the project tasks accordingly in folder lock."
+      },
+      {
+        "task": "61810_mmap",
+        "family": "make-pytest",
+        "project": "mmap",
+        "index": 13,
+        "image": "longcli-dh-raw-full20-20261004/task-61810_mmap:2015f37",
+        "image_id": "sha256:beff0e959d2b7475c404bc9bb88c3b68f98701345c3ffe2761e7cfd4f9b74161",
+        "wall_seconds": 7200,
+        "test_seconds": 1800.0,
+        "instruction": "Open and follow the detailed project specification at INSTRUCTION.md. Implement the project tasks accordingly in folder mmap."
+      },
+      {
+        "task": "61810_net",
+        "family": "make-pytest",
+        "project": "net",
+        "index": 14,
+        "image": "longcli-dh-raw-full20-20261004/task-61810_net:2015f37",
+        "image_id": "sha256:6a0ef2eedb7d50e5cc2bcf8bbab29dd0391d7926263cb6d4a667bc539685b952",
+        "wall_seconds": 7200,
+        "test_seconds": 300.0,
+        "instruction": "Open and follow the detailed project specification at INSTRUCTION.md. Implement the project tasks accordingly in folder net."
+      },
+      {
+        "task": "61810_pgtbl",
+        "family": "make-pytest",
+        "project": "pgtbl",
+        "index": 15,
+        "image": "longcli-dh-raw-full20-20261004/task-61810_pgtbl:2015f37",
+        "image_id": "sha256:6eb51b36579b3a571e305fbbf707cb246c38524e07c152f59b9d787165f7e5f5",
+        "wall_seconds": 7200,
+        "test_seconds": 300.0,
+        "instruction": "Open and follow the detailed project specification at INSTRUCTION.md. Implement the project tasks accordingly in folder pgtbl."
+      }
+    ],
+    "cube0": [
+      {
+        "task": "61810_syscall",
+        "family": "make-pytest",
+        "project": "syscall",
+        "index": 16,
+        "image": "longcli-dh-raw-full20-20261004/task-61810_syscall:2015f37",
+        "image_id": "sha256:9e9c1043986a6fd5991544cbf14693acafef248413d3b7bae19e6b14744b3a5d",
+        "wall_seconds": 7200,
+        "test_seconds": 300.0,
+        "instruction": "Open and follow the detailed project specification at INSTRUCTION.md. Implement the project tasks accordingly in folder syscall."
+      },
+      {
+        "task": "61810_thread",
+        "family": "make-pytest",
+        "project": "thread",
+        "index": 17,
+        "image": "longcli-dh-raw-full20-20261004/task-61810_thread:2015f37",
+        "image_id": "sha256:3c087aa302d3af326fa1556f1b2edcb8a76a0a114645624b528425878aa23932",
+        "wall_seconds": 7200,
+        "test_seconds": 300.0,
+        "instruction": "Open and follow the detailed project specification at INSTRUCTION.md. Implement the project tasks accordingly in folder thread."
+      }
+    ],
+    "cube1": [
+      {
+        "task": "61810_traps",
+        "family": "make-pytest",
+        "project": "traps",
+        "index": 18,
+        "image": "longcli-dh-raw-full20-20261004/task-61810_traps:2015f37",
+        "image_id": "sha256:b1b3a23b3ac11dfd702ed8491e79d1a552b3bcc1d5cc494ad39ba68e24fa66c1",
+        "wall_seconds": 7200,
+        "test_seconds": 300.0,
+        "instruction": "Open and follow the detailed project specification at INSTRUCTION.md. Implement the project tasks accordingly in folder traps."
+      },
+      {
+        "task": "61810_util",
+        "family": "make-pytest",
+        "project": "util",
+        "index": 19,
+        "image": "longcli-dh-raw-full20-20261004/task-61810_util:2015f37",
+        "image_id": "sha256:f86da3bece98ba680d2ab7bf15b0f1b956ec19b1094d2a7f32ec3dd648381e00",
+        "wall_seconds": 7200,
+        "test_seconds": 300.0,
+        "instruction": "Open and follow the detailed project specification at INSTRUCTION.md. Implement the project tasks accordingly in folder util."
+      }
+    ]
+  },
+  "node_limits": {
+    "college": 8,
+    "cube0": 2,
+    "cube1": 2
+  },
+  "model_budget_changed": false,
+  "algorithm_changed": false,
+  "mail_enabled": false,
+  "execution_environment_difference": "Cube has private rootfs namespaces and shared 16GB container; not independent Docker 8GiB cgroup"
+}

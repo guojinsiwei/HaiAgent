@@ -1,0 +1,12 @@
+{
+  "host": "BC-Server01",
+  "owner": "integration-89d605f5d1d54d35a5d4a55f745199e6",
+  "source_image": "ubuntu:24.04",
+  "source_image_id": "sha256:33ceb71981b602c1a7443a53469e4dba065f7503eab3078a2d7a57a2ab987517",
+  "docker": "29.3.0",
+  "network": "none",
+  "cpus": 1,
+  "memory_mb": 1024,
+  "model_api_calls": 0,
+  "scope": "Real adapters and runtimes; scripted policy, not Harbor grading or real-model evaluation"
+}

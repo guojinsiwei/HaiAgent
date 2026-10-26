@@ -1,0 +1,1027 @@
+{
+  "dataset": "terminal-bench/terminal-bench-2",
+  "seed": 20260923,
+  "sampling": "uniform shuffle of hardware-compatible non-frozen development pool; first 36",
+  "dataset_count": 89,
+  "eligible_count": 80,
+  "tasks": [
+    {
+      "id": "terminal-bench/gcode-to-text",
+      "task_dir": "/home/ecs-user/terminalbench-paired36-20260923/datasets/terminal-bench-2/gcode-to-text",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/gcode-to-text:20251031",
+        "cpus": 1,
+        "memory_mb": 2048,
+        "storage_mb": 10240,
+        "gpus": 0,
+        "allow_internet": true,
+        "mcp_servers": []
+      },
+      "agent_timeout": 900.0,
+      "verifier_timeout": 900.0,
+      "public_config_sha256": "ec22a7e33331b2bbfc0745f16003d3cbb13120787d0e1f7863c214ea7e047f34"
+    },
+    {
+      "id": "terminal-bench/compile-compcert",
+      "task_dir": "/home/ecs-user/terminalbench-paired36-20260923/datasets/terminal-bench-2/compile-compcert",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/compile-compcert:20251031",
+        "cpus": 2,
+        "memory_mb": 4096,
+        "storage_mb": 10240,
+        "gpus": 0,
+        "allow_internet": true,
+        "mcp_servers": []
+      },
+      "agent_timeout": 2400.0,
+      "verifier_timeout": 2400.0,
+      "public_config_sha256": "6116a8f17b79435d609f8ac3bc78a366e9970cfe0eed1fcadf8854b38c677e79"
+    },
+    {
+      "id": "terminal-bench/crack-7z-hash",
+      "task_dir": "/home/ecs-user/terminalbench-paired36-20260923/datasets/terminal-bench-2/crack-7z-hash",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/crack-7z-hash:20251031",
+        "cpus": 1,
+        "memory_mb": 2048,
+        "storage_mb": 10240,
+        "gpus": 0,
+        "allow_internet": true,
+        "mcp_servers": []
+      },
+      "agent_timeout": 900.0,
+      "verifier_timeout": 900.0,
+      "public_config_sha256": "67824c5d253f27d374cc8630e322a17b3bc9408c4b1a7b402acd8eb0745c6420"
+    },
+    {
+      "id": "terminal-bench/vulnerable-secret",
+      "task_dir": "/home/ecs-user/terminalbench-paired36-20260923/datasets/terminal-bench-2/vulnerable-secret",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/vulnerable-secret:20251031",
+        "cpus": 1,
+        "memory_mb": 2048,
+        "storage_mb": 10240,
+        "gpus": 0,
+        "allow_internet": true,
+        "mcp_servers": []
+      },
+      "agent_timeout": 900.0,
+      "verifier_timeout": 900.0,
+      "public_config_sha256": "e351d7bcb335a29b848c5c9fc5612bbaeb91cb2e3fc17c2a16e523f6830184e3"
+    },
+    {
+      "id": "terminal-bench/tune-mjcf",
+      "task_dir": "/home/ecs-user/terminalbench-paired36-20260923/datasets/terminal-bench-2/tune-mjcf",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/tune-mjcf:20251031",
+        "cpus": 1,
+        "memory_mb": 2048,
+        "storage_mb": 10240,
+        "gpus": 0,
+        "allow_internet": true,
+        "mcp_servers": []
+      },
+      "agent_timeout": 900.0,
+      "verifier_timeout": 900.0,
+      "public_config_sha256": "ca091dff72274ba890f13ddf34815cfe34efe9fdbe24eafce0063d76b211665f"
+    },
+    {
+      "id": "terminal-bench/path-tracing",
+      "task_dir": "/home/ecs-user/terminalbench-paired36-20260923/datasets/terminal-bench-2/path-tracing",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/path-tracing:20251031",
+        "cpus": 1,
+        "memory_mb": 2048,
+        "storage_mb": 10240,
+        "gpus": 0,
+        "allow_internet": true,
+        "mcp_servers": []
+      },
+      "agent_timeout": 1800.0,
+      "verifier_timeout": 1800.0,
+      "public_config_sha256": "6469eb2d551f0380634576ec4bddb0c317de25e1298e48cc61e7b38c824a635b"
+    },
+    {
+      "id": "terminal-bench/polyglot-c-py",
+      "task_dir": "/home/ecs-user/terminalbench-paired36-20260923/datasets/terminal-bench-2/polyglot-c-py",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/polyglot-c-py:20251031",
+        "cpus": 1,
+        "memory_mb": 2048,
+        "storage_mb": 10240,
+        "gpus": 0,
+        "allow_internet": true,
+        "mcp_servers": []
+      },
+      "agent_timeout": 900.0,
+      "verifier_timeout": 900.0,
+      "public_config_sha256": "126081ca54e30ad691d4ed1c1fc2378486c0154419549de4aabc89ecc4c257ff"
+    },
+    {
+      "id": "terminal-bench/sparql-university",
+      "task_dir": "/home/ecs-user/terminalbench-paired36-20260923/datasets/terminal-bench-2/sparql-university",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/sparql-university:20251031",
+        "cpus": 1,
+        "memory_mb": 2048,
+        "storage_mb": 10240,
+        "gpus": 0,
+        "allow_internet": true,
+        "mcp_servers": []
+      },
+      "agent_timeout": 900.0,
+      "verifier_timeout": 900.0,
+      "public_config_sha256": "798c34f3a068625dffd4154eab874d2b926045bac8504f2a22222db1e099f45a"
+    },
+    {
+      "id": "terminal-bench/git-multibranch",
+      "task_dir": "/home/ecs-user/terminalbench-paired36-20260923/datasets/terminal-bench-2/git-multibranch",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/git-multibranch:20251031",
+        "cpus": 1,
+        "memory_mb": 2048,
+        "storage_mb": 10240,
+        "gpus": 0,
+        "allow_internet": true,
+        "mcp_servers": []
+      },
+      "agent_timeout": 900.0,
+      "verifier_timeout": 900.0,
+      "public_config_sha256": "cea5abd43f4c4894ec3d7d5d259d6d6284afa6e9bdf285ce0782655305598f41"
+    },
+    {
+      "id": "terminal-bench/regex-chess",
+      "task_dir": "/home/ecs-user/terminalbench-paired36-20260923/datasets/terminal-bench-2/regex-chess",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/regex-chess:20251031",
+        "cpus": 1,
+        "memory_mb": 2048,
+        "storage_mb": 10240,
+        "gpus": 0,
+        "allow_internet": true,
+        "mcp_servers": []
+      },
+      "agent_timeout": 3600.0,
+      "verifier_timeout": 3600.0,
+      "public_config_sha256": "e9b20a4efd9b3ba56b75351aec411ca2fc5767163431f5fa3b3753498fca2ad8"
+    },
+    {
+      "id": "terminal-bench/extract-moves-from-video",
+      "task_dir": "/home/ecs-user/terminalbench-paired36-20260923/datasets/terminal-bench-2/extract-moves-from-video",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/extract-moves-from-video:20251031",
+        "cpus": 1,
+        "memory_mb": 2048,
+        "storage_mb": 10240,
+        "gpus": 0,
+        "allow_internet": true,
+        "mcp_servers": []
+      },
+      "agent_timeout": 1800.0,
+      "verifier_timeout": 1800.0,
+      "public_config_sha256": "465e3560482c464911b8f6981808865e95f08e92e21c8274458e6418dfde241e"
+    },
+    {
+      "id": "terminal-bench/financial-document-processor",
+      "task_dir": "/home/ecs-user/terminalbench-paired36-20260923/datasets/terminal-bench-2/financial-document-processor",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/financial-document-processor:20251031",
+        "cpus": 1,
+        "memory_mb": 4096,
+        "storage_mb": 10240,
+        "gpus": 0,
+        "allow_internet": true,
+        "mcp_servers": []
+      },
+      "agent_timeout": 1200.0,
+      "verifier_timeout": 1200.0,
+      "public_config_sha256": "cd084f1245f660f73a6efc44615f3f0c1a61ed2a208c5be95698035b651f4bf0"
+    },
+    {
+      "id": "terminal-bench/mteb-leaderboard",
+      "task_dir": "/home/ecs-user/terminalbench-paired36-20260923/datasets/terminal-bench-2/mteb-leaderboard",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/mteb-leaderboard:20251031",
+        "cpus": 1,
+        "memory_mb": 4096,
+        "storage_mb": 10240,
+        "gpus": 0,
+        "allow_internet": true,
+        "mcp_servers": []
+      },
+      "agent_timeout": 3600.0,
+      "verifier_timeout": 3600.0,
+      "public_config_sha256": "740c4782b49fcaca29297566d578018f3b4fd791663edf262025d1fc39fa7c62"
+    },
+    {
+      "id": "terminal-bench/qemu-alpine-ssh",
+      "task_dir": "/home/ecs-user/terminalbench-paired36-20260923/datasets/terminal-bench-2/qemu-alpine-ssh",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/qemu-alpine-ssh:20251031",
+        "cpus": 1,
+        "memory_mb": 4096,
+        "storage_mb": 10240,
+        "gpus": 0,
+        "allow_internet": true,
+        "mcp_servers": []
+      },
+      "agent_timeout": 900.0,
+      "verifier_timeout": 900.0,
+      "public_config_sha256": "f118cfbfba67a5a2fd5922e39a18bae27984997b126fcc52c52fb113362bbd00"
+    },
+    {
+      "id": "terminal-bench/git-leak-recovery",
+      "task_dir": "/home/ecs-user/terminalbench-paired36-20260923/datasets/terminal-bench-2/git-leak-recovery",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/git-leak-recovery:20251031",
+        "cpus": 1,
+        "memory_mb": 2048,
+        "storage_mb": 10240,
+        "gpus": 0,
+        "allow_internet": true,
+        "mcp_servers": []
+      },
+      "agent_timeout": 900.0,
+      "verifier_timeout": 900.0,
+      "public_config_sha256": "44b83dd6c8bc377bb4dfbaaa261a6db77427e8a00172368cb98b0c9e2c6939bf"
+    },
+    {
+      "id": "terminal-bench/overfull-hbox",
+      "task_dir": "/home/ecs-user/terminalbench-paired36-20260923/datasets/terminal-bench-2/overfull-hbox",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/overfull-hbox:20251031",
+        "cpus": 2,
+        "memory_mb": 4096,
+        "storage_mb": 10240,
+        "gpus": 0,
+        "allow_internet": true,
+        "mcp_servers": []
+      },
+      "agent_timeout": 750.0,
+      "verifier_timeout": 360.0,
+      "public_config_sha256": "a23c08a460fb1e95e12435bfc51906bce89d91c0d9722cb96b212ce197eb7942"
+    },
+    {
+      "id": "terminal-bench/distribution-search",
+      "task_dir": "/home/ecs-user/terminalbench-paired36-20260923/datasets/terminal-bench-2/distribution-search",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/distribution-search:20251031",
+        "cpus": 1,
+        "memory_mb": 2048,
+        "storage_mb": 10240,
+        "gpus": 0,
+        "allow_internet": true,
+        "mcp_servers": []
+      },
+      "agent_timeout": 3600.0,
+      "verifier_timeout": 3600.0,
+      "public_config_sha256": "a6a559e719d64726b489a198757ceddad4780b7c87be97aa037f60ec6b375b9c"
+    },
+    {
+      "id": "terminal-bench/circuit-fibsqrt",
+      "task_dir": "/home/ecs-user/terminalbench-paired36-20260923/datasets/terminal-bench-2/circuit-fibsqrt",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/circuit-fibsqrt:20251031",
+        "cpus": 1,
+        "memory_mb": 2048,
+        "storage_mb": 10240,
+        "gpus": 0,
+        "allow_internet": true,
+        "mcp_servers": []
+      },
+      "agent_timeout": 3600.0,
+      "verifier_timeout": 3600.0,
+      "public_config_sha256": "65e92ab75d47633051932f886a3d4b5dbc01260a177fe68678fea66bcbfc3325"
+    },
+    {
+      "id": "terminal-bench/torch-tensor-parallelism",
+      "task_dir": "/home/ecs-user/terminalbench-paired36-20260923/datasets/terminal-bench-2/torch-tensor-parallelism",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/torch-tensor-parallelism:20251031",
+        "cpus": 1,
+        "memory_mb": 4096,
+        "storage_mb": 10240,
+        "gpus": 0,
+        "allow_internet": true,
+        "mcp_servers": []
+      },
+      "agent_timeout": 900.0,
+      "verifier_timeout": 900.0,
+      "public_config_sha256": "de5932029a469ded1f1bba13112befabec8d3466608a5beac9afa91317420984"
+    },
+    {
+      "id": "terminal-bench/make-mips-interpreter",
+      "task_dir": "/home/ecs-user/terminalbench-paired36-20260923/datasets/terminal-bench-2/make-mips-interpreter",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/make-mips-interpreter:20251031",
+        "cpus": 1,
+        "memory_mb": 2048,
+        "storage_mb": 10240,
+        "gpus": 0,
+        "allow_internet": true,
+        "mcp_servers": []
+      },
+      "agent_timeout": 1800.0,
+      "verifier_timeout": 1800.0,
+      "public_config_sha256": "756677c6d25a49012f5a5fc886ca1fff808309ec22c0a3477f4d4b3c515e720a"
+    },
+    {
+      "id": "terminal-bench/constraints-scheduling",
+      "task_dir": "/home/ecs-user/terminalbench-paired36-20260923/datasets/terminal-bench-2/constraints-scheduling",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/constraints-scheduling:20251031",
+        "cpus": 1,
+        "memory_mb": 2048,
+        "storage_mb": 10240,
+        "gpus": 0,
+        "allow_internet": true,
+        "mcp_servers": []
+      },
+      "agent_timeout": 1200.0,
+      "verifier_timeout": 1200.0,
+      "public_config_sha256": "f4a31e7a90017960ca78edca02b91d6e6727ec7144c55dd223b49fc06a506ddf"
+    },
+    {
+      "id": "terminal-bench/build-cython-ext",
+      "task_dir": "/home/ecs-user/terminalbench-paired36-20260923/datasets/terminal-bench-2/build-cython-ext",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/build-cython-ext:20251031",
+        "cpus": 1,
+        "memory_mb": 2048,
+        "storage_mb": 10240,
+        "gpus": 0,
+        "allow_internet": true,
+        "mcp_servers": []
+      },
+      "agent_timeout": 900.0,
+      "verifier_timeout": 900.0,
+      "public_config_sha256": "a9417f528b6b55a275b1964a9b9757b1ca89d3615f3428bd0cdfe3804d24caab"
+    },
+    {
+      "id": "terminal-bench/openssl-selfsigned-cert",
+      "task_dir": "/home/ecs-user/terminalbench-paired36-20260923/datasets/terminal-bench-2/openssl-selfsigned-cert",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/openssl-selfsigned-cert:20251031",
+        "cpus": 1,
+        "memory_mb": 2048,
+        "storage_mb": 10240,
+        "gpus": 0,
+        "allow_internet": true,
+        "mcp_servers": []
+      },
+      "agent_timeout": 900.0,
+      "verifier_timeout": 900.0,
+      "public_config_sha256": "eb3e6e317f7f65aa495b38cf1b1609a99c727d42329eded2c82832e8fb234c2a"
+    },
+    {
+      "id": "terminal-bench/merge-diff-arc-agi-task",
+      "task_dir": "/home/ecs-user/terminalbench-paired36-20260923/datasets/terminal-bench-2/merge-diff-arc-agi-task",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/merge-diff-arc-agi-task:20251031",
+        "cpus": 1,
+        "memory_mb": 4096,
+        "storage_mb": 10240,
+        "gpus": 0,
+        "allow_internet": true,
+        "mcp_servers": []
+      },
+      "agent_timeout": 900.0,
+      "verifier_timeout": 900.0,
+      "public_config_sha256": "d77f1c358ed19456db0a700812bce43a10b903b99c5a2cf59ca4736cbf50dc46"
+    },
+    {
+      "id": "terminal-bench/log-summary-date-ranges",
+      "task_dir": "/home/ecs-user/terminalbench-paired36-20260923/datasets/terminal-bench-2/log-summary-date-ranges",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/log-summary-date-ranges:20251031",
+        "cpus": 1,
+        "memory_mb": 2048,
+        "storage_mb": 10240,
+        "gpus": 0,
+        "allow_internet": true,
+        "mcp_servers": []
+      },
+      "agent_timeout": 900.0,
+      "verifier_timeout": 900.0,
+      "public_config_sha256": "86609e80f89d88a6422257fc541fd40d69c7117e8f43de3bdde0d91461463fb4"
+    },
+    {
+      "id": "terminal-bench/fix-ocaml-gc",
+      "task_dir": "/home/ecs-user/terminalbench-paired36-20260923/datasets/terminal-bench-2/fix-ocaml-gc",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/fix-ocaml-gc:20251031",
+        "cpus": 1,
+        "memory_mb": 2048,
+        "storage_mb": 10240,
+        "gpus": 0,
+        "allow_internet": true,
+        "mcp_servers": []
+      },
+      "agent_timeout": 3600.0,
+      "verifier_timeout": 3600.0,
+      "public_config_sha256": "043bbfe8e229f35a0410941f1044738b3b88c2cee9bb52786cb2ec5ab868d957"
+    },
+    {
+      "id": "terminal-bench/pytorch-model-cli",
+      "task_dir": "/home/ecs-user/terminalbench-paired36-20260923/datasets/terminal-bench-2/pytorch-model-cli",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/pytorch-model-cli:20251031",
+        "cpus": 1,
+        "memory_mb": 2048,
+        "storage_mb": 10240,
+        "gpus": 0,
+        "allow_internet": true,
+        "mcp_servers": []
+      },
+      "agent_timeout": 900.0,
+      "verifier_timeout": 900.0,
+      "public_config_sha256": "96390bb91e6ab7f0526acb34036c237ac6e3b74cea3f6b788fa18b2c123f7abb"
+    },
+    {
+      "id": "terminal-bench/dna-insert",
+      "task_dir": "/home/ecs-user/terminalbench-paired36-20260923/datasets/terminal-bench-2/dna-insert",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/dna-insert:20251031",
+        "cpus": 1,
+        "memory_mb": 4096,
+        "storage_mb": 10240,
+        "gpus": 0,
+        "allow_internet": true,
+        "mcp_servers": []
+      },
+      "agent_timeout": 1800.0,
+      "verifier_timeout": 1800.0,
+      "public_config_sha256": "380517d2d4a439d640a75f231c33b87f8cd595f0b67b26b7e54820dee36b1339"
+    },
+    {
+      "id": "terminal-bench/caffe-cifar-10",
+      "task_dir": "/home/ecs-user/terminalbench-paired36-20260923/datasets/terminal-bench-2/caffe-cifar-10",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/caffe-cifar-10:20251031",
+        "cpus": 1,
+        "memory_mb": 2048,
+        "storage_mb": 10240,
+        "gpus": 0,
+        "allow_internet": true,
+        "mcp_servers": []
+      },
+      "agent_timeout": 1200.0,
+      "verifier_timeout": 1200.0,
+      "public_config_sha256": "3ab00429ca08dd49913cb95eafa6311acb64f9b76c8056abc1d4457306e26ba2"
+    },
+    {
+      "id": "terminal-bench/install-windows-3-11",
+      "task_dir": "/home/ecs-user/terminalbench-paired36-20260923/datasets/terminal-bench-2/install-windows-3-11",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/install-windows-3.11:20251031",
+        "cpus": 2,
+        "memory_mb": 4096,
+        "storage_mb": 10240,
+        "gpus": 0,
+        "allow_internet": true,
+        "mcp_servers": []
+      },
+      "agent_timeout": 3600.0,
+      "verifier_timeout": 3600.0,
+      "public_config_sha256": "ec6a6499de7d84730c8d69afe7a3ff010b502d100b3be6ee1b307b84ed913093"
+    },
+    {
+      "id": "terminal-bench/prove-plus-comm",
+      "task_dir": "/home/ecs-user/terminalbench-paired36-20260923/datasets/terminal-bench-2/prove-plus-comm",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/prove-plus-comm:20251031",
+        "cpus": 1,
+        "memory_mb": 2048,
+        "storage_mb": 10240,
+        "gpus": 0,
+        "allow_internet": true,
+        "mcp_servers": []
+      },
+      "agent_timeout": 900.0,
+      "verifier_timeout": 900.0,
+      "public_config_sha256": "ece04aee6de44fa9671b8eb375c0c9bc8bce0449c47431d3dadeb902ccdf317b"
+    },
+    {
+      "id": "terminal-bench/video-processing",
+      "task_dir": "/home/ecs-user/terminalbench-paired36-20260923/datasets/terminal-bench-2/video-processing",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/video-processing:20251031",
+        "cpus": 1,
+        "memory_mb": 2048,
+        "storage_mb": 10240,
+        "gpus": 0,
+        "allow_internet": true,
+        "mcp_servers": []
+      },
+      "agent_timeout": 3600.0,
+      "verifier_timeout": 3600.0,
+      "public_config_sha256": "455ab140779b8720ba61ca1fca8f544bccf0829825f9fd2d7e2642810d1514a1"
+    },
+    {
+      "id": "terminal-bench/db-wal-recovery",
+      "task_dir": "/home/ecs-user/terminalbench-paired36-20260923/datasets/terminal-bench-2/db-wal-recovery",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/db-wal-recovery:20251031",
+        "cpus": 1,
+        "memory_mb": 2048,
+        "storage_mb": 10240,
+        "gpus": 0,
+        "allow_internet": true,
+        "mcp_servers": []
+      },
+      "agent_timeout": 900.0,
+      "verifier_timeout": 900.0,
+      "public_config_sha256": "902e982f963559e1ff15e1a1f2576946295a9ee4957a271bd703e6f194cef7ee"
+    },
+    {
+      "id": "terminal-bench/sqlite-db-truncate",
+      "task_dir": "/home/ecs-user/terminalbench-paired36-20260923/datasets/terminal-bench-2/sqlite-db-truncate",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/sqlite-db-truncate:20251031",
+        "cpus": 1,
+        "memory_mb": 2048,
+        "storage_mb": 10240,
+        "gpus": 0,
+        "allow_internet": true,
+        "mcp_servers": []
+      },
+      "agent_timeout": 900.0,
+      "verifier_timeout": 900.0,
+      "public_config_sha256": "760f1a788c684a62b23471995de9bab110bd0facbd1f40fa3fed742462eb94c9"
+    },
+    {
+      "id": "terminal-bench/write-compressor",
+      "task_dir": "/home/ecs-user/terminalbench-paired36-20260923/datasets/terminal-bench-2/write-compressor",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/write-compressor:20251031",
+        "cpus": 1,
+        "memory_mb": 2048,
+        "storage_mb": 10240,
+        "gpus": 0,
+        "allow_internet": true,
+        "mcp_servers": []
+      },
+      "agent_timeout": 900.0,
+      "verifier_timeout": 900.0,
+      "public_config_sha256": "cc7cf264d83b26dd8e140764b5c628e66ed9313852b685d17fd87a72d4eda957"
+    },
+    {
+      "id": "terminal-bench/model-extraction-relu-logits",
+      "task_dir": "/home/ecs-user/terminalbench-paired36-20260923/datasets/terminal-bench-2/model-extraction-relu-logits",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/model-extraction-relu-logits:20251031",
+        "cpus": 1,
+        "memory_mb": 2048,
+        "storage_mb": 10240,
+        "gpus": 0,
+        "allow_internet": true,
+        "mcp_servers": []
+      },
+      "agent_timeout": 900.0,
+      "verifier_timeout": 900.0,
+      "public_config_sha256": "a6b4f94ae764b05414a1d524b955192b1f70d3cd5dbca0a82655f3f042ae81b3"
+    }
+  ],
+  "reserves_not_for_runtime_replacement": [
+    "terminal-bench/headless-terminal",
+    "terminal-bench/dna-assembly",
+    "terminal-bench/cancel-async-tasks",
+    "terminal-bench/custom-memory-heap-crash",
+    "terminal-bench/cobol-modernization",
+    "terminal-bench/llm-inference-batching-scheduler",
+    "terminal-bench/sanitize-git-repo",
+    "terminal-bench/large-scale-text-editing",
+    "terminal-bench/train-fasttext",
+    "terminal-bench/hf-model-inference",
+    "terminal-bench/feal-linear-cryptanalysis",
+    "terminal-bench/nginx-request-logging",
+    "terminal-bench/make-doom-for-mips",
+    "terminal-bench/protein-assembly",
+    "terminal-bench/configure-git-webserver",
+    "terminal-bench/mteb-retrieve",
+    "terminal-bench/adaptive-rejection-sampler",
+    "terminal-bench/qemu-startup",
+    "terminal-bench/feal-differential-cryptanalysis",
+    "terminal-bench/polyglot-rust-c",
+    "terminal-bench/kv-store-grpc",
+    "terminal-bench/password-recovery",
+    "terminal-bench/break-filter-js-from-html",
+    "terminal-bench/count-dataset-tokens",
+    "terminal-bench/regex-log",
+    "terminal-bench/extract-elf",
+    "terminal-bench/pypi-server",
+    "terminal-bench/sam-cell-seg",
+    "terminal-bench/code-from-image",
+    "terminal-bench/query-optimize",
+    "terminal-bench/chess-best-move",
+    "terminal-bench/schemelike-metacircular-eval",
+    "terminal-bench/torch-pipeline-parallelism",
+    "terminal-bench/reshard-c4-data",
+    "terminal-bench/build-pov-ray",
+    "terminal-bench/build-pmars",
+    "terminal-bench/fix-git",
+    "terminal-bench/raman-fitting",
+    "terminal-bench/path-tracing-reverse",
+    "terminal-bench/winning-avg-corewars",
+    "terminal-bench/multi-source-data-merger",
+    "terminal-bench/largest-eigenval",
+    "terminal-bench/gpt2-codegolf",
+    "terminal-bench/modernize-scientific-stack"
+  ],
+  "audit": [
+    {
+      "id": "terminal-bench/adaptive-rejection-sampler",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/bn-fit-modify",
+      "exclusion": "frozen_test"
+    },
+    {
+      "id": "terminal-bench/break-filter-js-from-html",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/build-cython-ext",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/build-pmars",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/build-pov-ray",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/caffe-cifar-10",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/cancel-async-tasks",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/chess-best-move",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/circuit-fibsqrt",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/cobol-modernization",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/code-from-image",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/compile-compcert",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/configure-git-webserver",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/constraints-scheduling",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/count-dataset-tokens",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/crack-7z-hash",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/custom-memory-heap-crash",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/db-wal-recovery",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/distribution-search",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/dna-assembly",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/dna-insert",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/extract-elf",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/extract-moves-from-video",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/feal-differential-cryptanalysis",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/feal-linear-cryptanalysis",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/filter-js-from-html",
+      "exclusion": "frozen_test"
+    },
+    {
+      "id": "terminal-bench/financial-document-processor",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/fix-code-vulnerability",
+      "exclusion": "frozen_test"
+    },
+    {
+      "id": "terminal-bench/fix-git",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/fix-ocaml-gc",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/gcode-to-text",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/git-leak-recovery",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/git-multibranch",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/gpt2-codegolf",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/headless-terminal",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/hf-model-inference",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/install-windows-3-11",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/kv-store-grpc",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/large-scale-text-editing",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/largest-eigenval",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/llm-inference-batching-scheduler",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/log-summary-date-ranges",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/mailman",
+      "exclusion": "frozen_test"
+    },
+    {
+      "id": "terminal-bench/make-doom-for-mips",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/make-mips-interpreter",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/mcmc-sampling-stan",
+      "exclusion": "frozen_test"
+    },
+    {
+      "id": "terminal-bench/merge-diff-arc-agi-task",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/model-extraction-relu-logits",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/modernize-scientific-stack",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/mteb-leaderboard",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/mteb-retrieve",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/multi-source-data-merger",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/nginx-request-logging",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/openssl-selfsigned-cert",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/overfull-hbox",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/password-recovery",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/path-tracing",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/path-tracing-reverse",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/polyglot-c-py",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/polyglot-rust-c",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/portfolio-optimization",
+      "exclusion": "frozen_test"
+    },
+    {
+      "id": "terminal-bench/protein-assembly",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/prove-plus-comm",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/pypi-server",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/pytorch-model-cli",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/pytorch-model-recovery",
+      "exclusion": "frozen_test"
+    },
+    {
+      "id": "terminal-bench/qemu-alpine-ssh",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/qemu-startup",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/query-optimize",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/raman-fitting",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/regex-chess",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/regex-log",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/reshard-c4-data",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/rstan-to-pystan",
+      "exclusion": "frozen_test"
+    },
+    {
+      "id": "terminal-bench/sam-cell-seg",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/sanitize-git-repo",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/schemelike-metacircular-eval",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/sparql-university",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/sqlite-db-truncate",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/sqlite-with-gcov",
+      "exclusion": "frozen_test"
+    },
+    {
+      "id": "terminal-bench/torch-pipeline-parallelism",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/torch-tensor-parallelism",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/train-fasttext",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/tune-mjcf",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/video-processing",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/vulnerable-secret",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/winning-avg-corewars",
+      "exclusion": null
+    },
+    {
+      "id": "terminal-bench/write-compressor",
+      "exclusion": null
+    }
+  ],
+  "frozen_manifest_sha256": "56502da3f4b25af4be6289494f29053e799ac11fd0c7a7756a9ba11c7394d796",
+  "selection_sha256": "7cdf90a63d3d733662d6af8c5c5747257b50989adf4e7e5616fd4ecb34998037"
+}

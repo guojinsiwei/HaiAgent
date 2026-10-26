@@ -1,0 +1,40 @@
+[
+  {
+    "name": "two identical observed failures activate (positive control)",
+    "active": true,
+    "streak": 2
+  },
+  {
+    "name": "changing only diagnostic text prevents activation",
+    "active": false,
+    "streak": 1
+  },
+  {
+    "name": "read between identical failures prevents activation",
+    "active": false,
+    "streak": 1
+  },
+  {
+    "name": "changed source between failed checks prevents accumulation",
+    "active": false,
+    "streak": 1
+  },
+  {
+    "name": "exit zero with unclean result clears streak",
+    "active": false,
+    "streak": 0
+  },
+  {
+    "name": "actual before gate blocks second identical known-state failure without activating",
+    "decision": {
+      "allowed": false,
+      "reason": "same_failed_command_in_unchanged_workspace",
+      "evidence": "E1",
+      "executed": false,
+      "advisoryNext": false,
+      "instruction": "Use the supplied evidence; obtain a new observation or submit a changed strategy. No task was stopped."
+    },
+    "active": false,
+    "streak": 1
+  }
+]

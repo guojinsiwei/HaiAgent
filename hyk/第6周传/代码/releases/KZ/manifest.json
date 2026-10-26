@@ -1,0 +1,23 @@
+{
+  "name": "KZ",
+  "identity": "historic DH subgoals + routing1342, large budget",
+  "revision": "remove-restored-rejection-hard-stop",
+  "historic_configuration_lock": "../../experiment_records/longcli-dh-1342-complete20-20261009/KZ-config-lock.json",
+  "historic_configuration_lock_sha256": "d9f30d681dadfa8b5ff9cfd40a51d75379723f3bc362af322d6c2a82a963d79e",
+  "unchanged_core_source_files": 134,
+  "changed_core_source_files": ["lean_runtime.py", "rejection_recovery.py"],
+  "historic_source": "/var/tmp/longcli-dh-routing3x7-20261008",
+  "server_run": "/mnt/sdb/home/lizh639/longcli-dh-1342-complete20-20261009",
+  "server_repaired_candidate": "/mnt/sdb/home/lizh639/KZ-no-recovery-stop-20261009",
+  "historical_results_use_repaired_source": false,
+  "real_experiments_started_after_repair": false,
+  "cost_limit_cny": 50,
+  "cost_guard_tests": 15,
+  "cost_bar_sha256": "e817536a19bcad18005f135903087634fa78fe4b21ba9c12bf43fe5615872f33",
+  "exploration_memory_and_routing_unchanged": true,
+  "recovery_terminal_rule_removed": true,
+  "source_acceptance_entry": "verify_contract.py",
+  "monetary_policy_new_vs_historic_seven": true,
+  "current_completed_run_guard": "external response watchdog; in-flight billing cannot be revoked",
+  "future_worker_guard": "pre-request conservative reservation; stop preserves artifact for grading"
+}

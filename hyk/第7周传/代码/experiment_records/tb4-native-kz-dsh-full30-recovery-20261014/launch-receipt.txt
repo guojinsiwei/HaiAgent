@@ -1,0 +1,2 @@
+READY
+{"pid": 148222, "detached": true, "kz_tasks": 30, "dsh_tasks": 30, "retry_batches": 1, "per_arm_concurrency": 1}

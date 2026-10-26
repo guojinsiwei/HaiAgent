@@ -1,0 +1,25 @@
+TB2.0 传输故障修复补跑，2026-10-17
+
+范围：原生 KZ 的 polyglot-c-py、regex-log、sqlite-with-gcov；纯 DSH 的 qemu-alpine-ssh。
+不重复已通过或正常失败的题，不改动仍在运行的 KZDSH。
+
+原生根因：三个原题镜像配合独立 CPython 运行时，默认 SSL 上下文均没有 CA（x509_ca=0）。HTTPS GET 均报 URLError，底层为 SSLCertVerificationError；不是模型解题失败。
+修复：将现有已安装 certifi 的公开 Mozilla CA bundle 封入原生运行包，显式设置 SSL_CERT_FILE；证书校验与域名校验均保持开启。每题付费调用之前增加无认证 GET TLS 预检。
+对照：三个原镜像在补齐 CA 后均为 x509_ca=121、TLS 验证成功、HTTP 200，模型调用为 0。证据 audit/tls-matrix.json。
+
+纯 DSH：旧日志显示 qemu-alpine-ssh 成功完成 68 次 HTTP 200 后，第 69 次发生 TypeError 传输失败；旧日志没有底层原因，不能判定它与原生 CA 故障同源。
+修复：记录脱敏的异常类型、底层错误码、请求/读流阶段、已接收字节数、超时标志；不记录请求头、密钥或正文。每题最多一次临时传输恢复，延迟 5 秒；失败请求全额保留不确定费用，新请求必须重新取得预算。第二次失败终止该题，证书/认证错误不重试。部分输出与工具调用不交给解题器。
+
+预算：原生沿用累计 40 元，已继承 19.366403 元（含所有历史未知用量预留），剩余 20.633597 元。DSH 沿用对比轮累计 80 元，必须等父轮结束后继承最终账本，禁止复制活跃预算并行花费。同一新尝试最多 4 元、120 次请求、180 次工具调用、45 分钟。金额是现有峰值单价估算保护，不是 TaoToken Credits 的精确价格承诺。
+
+验收：原生 deployment/native/fixture/deadline 均通过，历史回归与已有基线完全一致（5 个此前记录的旧期望失败仍保留）；真实容器强制超时、私有日志回收、官方评分、清理均成功。DSH 离线 396 项算法、48 项 Python、21 项 deadline/provider 测试全部通过。
+
+服务器：
+原生 /mnt/sdb/home/lizh639/tb2-native-kz-tls3-20261017
+纯 DSH /mnt/sdb/home/lizh639/tb2-kz-dsh-transport1-20261017
+父对比轮 /mnt/sdb/home/lizh639/tb2-kz-dsh-repair7-20261017
+
+启动方式：本地 secure_start.py 的隐藏输入框。密钥只经 SSH stdin 传入并保存在运行进程内存，不保存到报告或启动回执。relaunch.py 启动原生三题，并在父对比轮结束后自动完成 DSH 预算继承、封存和单题启动。
+DSH 真实容器验收：sqlite 官方评分链、纯 DSH qemu 链、强制超时链均成功，回执见相邻 kz-dsh-tb2-transport1-20261017/audit。
+状态：2026-10-17 14:05（北京时间）服务器确认启动。原生 supervisor PID 1733050，第一题 polyglot-c-py 正在无付费预检；DSH 单题在一次性接续队列中等待父轮完成，协调进程 PID 1732984。无需再次输入密钥。
+后续状态：本地 audit/launch-status.json；服务器原生目录 relaunch-status.json，以及两组 health.json。

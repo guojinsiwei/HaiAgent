@@ -1,0 +1,47 @@
+[
+  {
+    "job": "raw--ap1400_2_hw26",
+    "content": "                      [\"bash\",\"-lc\",\"find /app/ap1400_2_hw -type f | head -200 && echo '---' && ls -la /app/ap1400_2_hw\"],\"cwd\":\".\",\"purpose\":\"List project files\",\"stdin\":null,\"timeout_seconds\":60}",
+    "source": "previous redacted model-audit.jsonl"
+  },
+  {
+    "job": "raw--ap1400_2_hw35",
+    "content": "                      [\"bash\",\"-lc\",\"find /app/ap1400_2_hw -type f | head -100 && echo '===' && ls -la /app/ap1400_2_hw\"],\"cwd\":\".\",\"purpose\":\"List project files\",\"stdin\":null,\"timeout_seconds\":60}",
+    "source": "previous redacted model-audit.jsonl"
+  },
+  {
+    "job": "raw--cmu15_445_p0",
+    "content": "                      [\"bash\",\"-lc\",\"ls -la /app && echo '---' && ls -la /app/cmu15_445 && echo '---' && ls -la /app/cmu15_445/project-tutorial 2>/dev/null\"],\"cwd\":\".\",\"purpose\":\"List repo structure\",\"stdin\":null,\"timeout_seconds\":60}",
+    "source": "previous redacted model-audit.jsonl"
+  },
+  {
+    "job": "raw--cmu15_445_p1",
+    "content": "                      [\"bash\",\"-lc\",\"ls -la /app/cmu15_445 && echo '---' && ls -la /app/cmu15_445/project-tutorial 2>/dev/null\"]</｜｜DSML｜｜ parameter>\n<｜｜DSML｜｜ parameter name=\"cwd\" string=\"true\">/app</｜｜DSML｜｜ parameter>\n<｜｜DSML｜｜ parameter name=\"purpose\" string=\"true\">List repo contents</｜｜DSML｜｜ parameter>\n<｜｜DSML｜｜ parameter name=\"stdin\" string=\"false\">null</｜｜DSML｜｜ parameter>\n<｜｜DSML｜｜ parameter name=\"timeout_seconds\" string=\"false\">60</｜｜DSML｜｜ parameter>\n</｜｜DSML｜｜ invoke>\n</｜｜DSML｜｜ calls>",
+    "source": "previous redacted model-audit.jsonl"
+  },
+  {
+    "job": "raw--cmu15_445_p2",
+    "content": "                      [\"bash\", \"-lc\", \"cat '/app/cmu15_445/project-tutorial/Project 2 - B+Tree/project2.md'\"]</｜｜DSML｜｜ parameter>\n<｜｜DSML｜｜ parameter name=\"cwd\" string=\"true\">.</｜｜DSML｜｜ parameter>\n<｜｜DSML｜｜ parameter name=\"purpose\" string=\"true\">Read project 2 spec</｜｜DSML｜｜ parameter>\n<｜｜DSML｜｜ parameter name=\"stdin\" string=\"false\">null</｜｜DSML｜｜ parameter>\n<｜｜DSML｜｜ parameter name=\"timeout_seconds\" string=\"false\">60</｜｜DSML｜｜ parameter>\n</｜｜DSML｜｜ invoke>\n</｜｜DSML｜｜ calls>",
+    "source": "previous redacted model-audit.jsonl"
+  },
+  {
+    "job": "raw--cs61_fa24_ants",
+    "content": "                      [\"sed\",\"-n\",\"150,381p\",\"INSTRUCTION.md\"]</｜｜DSML｜｜ parameter>\n<｜｜DSML｜｜ parameter name=\"cwd\" string=\"true\">.</｜｜DSML｜｜ parameter>\n<｜｜DSML｜｜ parameter name=\"purpose\" string=\"true\">Read rest of spec</｜｜DSML｜｜ parameter>\n<｜｜DSML｜｜ parameter name=\"stdin\" string=\"false\">null</｜｜DSML｜｜ parameter>\n<｜｜DSML｜｜ parameter name=\"timeout_seconds\" string=\"false\">60</｜｜DSML｜｜ parameter>\n</｜｜DSML｜｜ invoke>\n</｜｜DSML｜｜ calls>",
+    "source": "previous redacted model-audit.jsonl"
+  },
+  {
+    "job": "raw--cs61_fa24_cats",
+    "content": "                      [\"bash\", \"-lc\", \"sed -n '200,320p' /app/INSTRUCTION.md\"]</｜｜DSML｜｜ parameter>\n<｜｜DSML｜｜ parameter name=\"cwd\" string=\"true\">.</｜｜DSML｜｜ parameter>\n<｜｜DSML｜｜ parameter name=\"purpose\" string=\"true\">Read remaining INSTRUCTION.md</｜｜DSML｜｜ parameter>\n<｜｜DSML｜｜ parameter name=\"stdin\" string=\"false\">null</｜｜DSML｜｜ parameter>\n<｜｜DSML｜｜ parameter name=\"timeout_seconds\" string=\"false\">60</｜｜DSML｜｜ parameter>\n</｜｜DSML｜｜ invoke>\n</｜｜DSML｜｜ calls>",
+    "source": "previous redacted model-audit.jsonl"
+  },
+  {
+    "job": "raw--cs61_fa24_hog",
+    "content": "                      [\"bash\",\"-lc\",\"ls -la /app/cs61-hog && echo '---' && wc -l /app/cs61-hog/*\"],\"cwd\":\".\",\"purpose\":\"List project files\",\"stdin\":null,\"timeout_seconds\":60}",
+    "source": "previous redacted model-audit.jsonl"
+  },
+  {
+    "job": "raw--cs61_fa24_scheme",
+    "content": "                      [\"bash\", \"-lc\", \"sed -n '200,420p' /app/INSTRUCTION.md\"]</｜｜DSML｜｜ parameter>\n<｜｜DSML｜｜ parameter name=\"cwd\" string=\"true\">.</｜｜DSML｜｜ parameter>\n<｜｜DSML｜｜ parameter name=\"purpose\" string=\"true\">Read instruction part 2</｜｜DSML｜｜ parameter>\n<｜｜DSML｜｜ parameter name=\"stdin\" string=\"false\">null</｜｜DSML｜｜ parameter>\n<｜｜DSML｜｜ parameter name=\"timeout_seconds\" string=\"false\">60</｜｜DSML｜｜ parameter>\n</｜｜DSML｜｜ invoke>\n</｜｜DSML｜｜ calls>",
+    "source": "previous redacted model-audit.jsonl"
+  }
+]

@@ -1,0 +1,265 @@
+=====================================================================
+Assignment: Project 1: Hog
+OK, version v1.18.1
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Scoring tests
+
+---------------------------------------------------------------------
+Question 0
+    Passed: 1
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Question 1 > Suite 1 > Case 5
+
+>>> from hog import *
+>>> counted_dice = make_test_dice(4, 1, 2, 6)
+>>> roll_dice(3, counted_dice)
+1
+>>> # Make sure you call dice exactly num_rolls times!
+>>> # If you call it fewer or more than that, it won't be at the right spot in the cycle for the next roll
+>>> # Note that a return statement within a loop ends the loop
+>>> roll_dice(1, counted_dice)
+2
+
+# Error: expected
+#     6
+# but got
+#     2
+
+Run only this test case with "python3 ok -q 01 --suite 1 --case 5"
+---------------------------------------------------------------------
+Question 1 > Suite 3 > Case 2
+
+>>> # generated case
+>>> from hog import *
+>>> dice = make_test_dice(1, 4, 5, 4, 3)
+>>> roll_dice(2, dice)
+1
+>>> roll_dice(1, dice)
+4
+
+# Error: expected
+#     5
+# but got
+#     4
+
+Run only this test case with "python3 ok -q 01 --suite 3 --case 2"
+---------------------------------------------------------------------
+Question 1
+    Passed: 1
+    Failed: 2
+[oook.......] 33.3% passed
+
+---------------------------------------------------------------------
+Question 2 > Suite 1 > Case 1
+
+>>> from hog import *
+>>> import tests.construct_check as test
+>>> boar_brawl(21, 46)
+7
+
+# Error: expected
+#     9
+# but got
+#     7
+
+Run only this test case with "python3 ok -q 02 --suite 1 --case 1"
+---------------------------------------------------------------------
+Question 2
+    Passed: 0
+    Failed: 1
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Question 3 > Suite 1 > Case 4
+
+>>> from hog import *
+>>> take_turn(0, 37, 15)
+1
+
+# Error: expected
+#     18
+# but got
+#     1
+
+Run only this test case with "python3 ok -q 03 --suite 1 --case 4"
+---------------------------------------------------------------------
+Question 3
+    Passed: 1
+    Failed: 1
+[oooook.....] 50.0% passed
+
+---------------------------------------------------------------------
+Question 4 > Suite 1 > Case 11
+
+>>> from hog import *
+>>> import tests.construct_check as test
+>>> sus_points(21)
+27
+
+# Error: expected
+#     23
+# but got
+#     27
+
+Run only this test case with "python3 ok -q 04 --suite 1 --case 11"
+---------------------------------------------------------------------
+Question 4
+    Passed: 0
+    Failed: 1
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Question 5 > Suite 2 > Case 1
+
+>>> # Fuzz Testing
+>>> # Plays a lot of random games, and calculates a secret value.
+>>> # Failing this test means something is wrong, but you should
+>>> # look at other tests to see where the problem might be.
+>>> # Hint: make sure you're only calling update once per turn!
+>>> #
+>>> import hog, importlib
+>>> # importlib.reload(hog)
+>>> import tests.play_utils
+>>> turns = tests.play_utils.describe_game(hog, test_number=69484, score0=15, score1=10, goal=32, update=hog.simple_update)
+>>> print(turns[0])
+Start scores = (15, 10).
+Player 0 rolls 8 dice and gets outcomes [2, 1].
+End scores = (16, 10)
+
+# Error: expected
+#     Start scores = (15, 10).
+#     Player 0 rolls 8 dice and gets outcomes [2, 1, 6, 6, 6, 5, 4, 4].
+#     End scores = (16, 10)
+# but got
+#     Start scores = (15, 10).
+#     Player 0 rolls 8 dice and gets outcomes [2, 1].
+#     End scores = (16, 10)
+
+Run only this test case with "python3 ok -q 05 --suite 2 --case 1"
+---------------------------------------------------------------------
+Question 5
+    Passed: 0
+    Failed: 1
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Question 6
+    Passed: 1
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Question 7
+    Passed: 1
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Question 8
+    Passed: 2
+    Failed: 0
+[ooooooooook] 100.0% passed
+
+---------------------------------------------------------------------
+Question 9 > Suite 2 > Case 2
+
+>>> from hog import *
+>>> dice = make_test_dice(1, 2, 2, 2, 2, 2, 2, 2)
+>>> max_scoring_num_rolls(dice, times_called=1000)
+7
+
+# Error: expected
+#     4
+# but got
+#     7
+
+Run only this test case with "python3 ok -q 09 --suite 2 --case 2"
+---------------------------------------------------------------------
+Question 9 > Suite 3 > Case 5
+
+>>> from hog import *
+>>> dice = make_test_dice(1, 2, 3, 4, 5)  # dice sweeps from 1 through 5
+>>> max_scoring_num_rolls(dice, times_called=1000)
+4
+
+# Error: expected
+#     3
+# but got
+#     4
+
+Run only this test case with "python3 ok -q 09 --suite 3 --case 5"
+---------------------------------------------------------------------
+Question 9
+    Passed: 0
+    Failed: 2
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Question 10 > Suite 1 > Case 2
+
+>>> from hog import *
+>>> boar_strategy(40, 51, threshold=15, num_rolls=7)
+7
+
+# Error: expected
+#     0
+# but got
+#     7
+
+Run only this test case with "python3 ok -q 10 --suite 1 --case 2"
+---------------------------------------------------------------------
+Question 10
+    Passed: 0
+    Failed: 1
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Question 11 > Suite 1 > Case 4
+
+>>> from hog import *
+>>> sus_strategy(53, 60, threshold=15, num_rolls=2)
+0
+
+# Error: expected
+#     2
+# but got
+#     0
+
+Run only this test case with "python3 ok -q 11 --suite 1 --case 4"
+---------------------------------------------------------------------
+Question 11
+    Passed: 0
+    Failed: 1
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Question 12
+    Passed: 0
+    Failed: 0
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Point breakdown
+    Question 0: 0.0/0
+    Question 1: 0.6666666666666666/2
+    Question 2: 0.0/2
+    Question 3: 1.0/2
+    Question 4: 0.0/2
+    Question 5: 0.0/4
+    Question 6: 2.0/2
+    Question 7: 2.0/2
+    Question 8: 2.0/2
+    Question 9: 0.0/2
+    Question 10: 0.0/2
+    Question 11: 0.0/2
+    Question 12: 0.0/0
+
+Score:
+    Total: 7.666666666666666
+
+Cannot backup when running ok with --local.

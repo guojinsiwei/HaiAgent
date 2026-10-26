@@ -1,0 +1,98 @@
+{
+  "model": "deepseek-flash",
+  "temperature": 0,
+  "max_tokens": 32768,
+  "context_tokens": 1000000,
+  "context_headroom_tokens": 65536,
+  "actual_api_attempts_per_task": 800,
+  "max_tools": 600,
+  "wall_seconds": 7200,
+  "command_seconds": 300,
+  "experiment": "longcli-recuris-protocol-repair4-20261009",
+  "commit": "2015f37b5c458f2562354de6b415e9182c91af64",
+  "tasks": [
+    {
+      "task": "cmu15_445_p0",
+      "family": "c-env",
+      "project": "cmu15_445",
+      "index": 5,
+      "image": "longcli-paired10-20261001/task-cmu15_445_p0:2015f37",
+      "image_id": "sha256:22d90a6f9fad966c7f8e265c396cab0de64e58edb5ccd7f861a47fb4ec74958a",
+      "wall_seconds": 7200,
+      "test_seconds": 720.0,
+      "instruction": "Open and follow the detailed project specification at INSTRUCTION.md. Implement the project tasks accordingly in folder cmu15_445."
+    },
+    {
+      "task": "cmu15_445_p1",
+      "family": "c-env",
+      "project": "cmu15_445",
+      "index": 6,
+      "image": "longcli-paired10-20261001/task-cmu15_445_p1:2015f37",
+      "image_id": "sha256:32fc507a95959e2b2772e04dfe10fd4ece2068c10a4f9619e2bd52d4eb4c5d4f",
+      "wall_seconds": 7200,
+      "test_seconds": 300.0,
+      "instruction": "Open and follow the detailed project specification at INSTRUCTION.md. Implement the project tasks accordingly in folder cmu15_445."
+    },
+    {
+      "task": "cmu15_445_p2",
+      "family": "c-env",
+      "project": "cmu15_445",
+      "index": 7,
+      "image": "longcli-paired10-20261001/task-cmu15_445_p2:2015f37",
+      "image_id": "sha256:b5e046e99a93e0df3a8b66fcc6035a51d64abeb335468a6e48b3b1f223feed30",
+      "wall_seconds": 7200,
+      "test_seconds": 300.0,
+      "instruction": "Open and follow the detailed project specification at INSTRUCTION.md. Implement the project tasks accordingly in folder cmu15_445."
+    },
+    {
+      "task": "61810_net",
+      "family": "make-pytest",
+      "project": "net",
+      "index": 14,
+      "image": "longcli-dh-raw-full20-20261004/task-61810_net:2015f37",
+      "image_id": "sha256:6a0ef2eedb7d50e5cc2bcf8bbab29dd0391d7926263cb6d4a667bc539685b952",
+      "wall_seconds": 7200,
+      "test_seconds": 300.0,
+      "instruction": "Open and follow the detailed project specification at INSTRUCTION.md. Implement the project tasks accordingly in folder net."
+    }
+  ],
+  "methods": [
+    "recuris_frozen"
+  ],
+  "total_trials": 4,
+  "max_turns": 800,
+  "concurrency": 4,
+  "concurrency_per_arm": 4,
+  "cross_task_memory": false,
+  "thinking": false,
+  "source_reference": "/mnt/sdb/home/lizh639/longcli-recuris-large20-20261009",
+  "context_meter": "DH-large initial 1.5 heuristic, calibrated from provider prompt_tokens",
+  "cpu_per_task": 2,
+  "memory_gib_per_task": 8,
+  "pids_limit": 256,
+  "baseline_modes": {
+    "recuris_frozen": "fixed seed; no Meta/TTA; W mutable within task"
+  },
+  "official_feedback_to_solver": false,
+  "notifications": {
+    "enabled": false
+  },
+  "paid_task_retries": 0,
+  "prior_results_carried": 0,
+  "included_canary": null,
+  "cost_bar_cny": null,
+  "attempt": "protocol-io-repair1",
+  "replaces_tasks": [
+    "61810_net",
+    "cmu15_445_p0",
+    "cmu15_445_p1",
+    "cmu15_445_p2"
+  ],
+  "baseline_algorithm": "same frozen memory, goal checking and skill invocation",
+  "protocol_repairs": [
+    "JSON mode enabled for all Recuris structured roles",
+    "ignore only extra working_state; never apply it",
+    "long execute scripts via stdin at shared tool capacity",
+    "format recovery within original shared budget, no two-rejection task stop"
+  ]
+}

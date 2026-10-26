@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-01",
+  "source": "longcli-v6-raw-paired10-20261001 / monitor-control-v6.1",
+  "windows": {
+    "tests_discovered": 51,
+    "passed": 44,
+    "skipped_posix_only": 7,
+    "errors": 0,
+    "offline_memory_demo": "passed",
+    "run_task_help": "passed"
+  },
+  "linux_independent_copy": {
+    "tests_discovered": 51,
+    "passed": 51,
+    "skipped": 0,
+    "errors": 0,
+    "offline_memory_demo": "passed",
+    "source_hash_verification": "passed"
+  },
+  "source_preservation": {
+    "manifest_files_verified": 45,
+    "retained_top_level_definitions_compared": 40,
+    "all_compared_definitions_unchanged": true,
+    "main_loop_memory_monitor_recovery_files": "verbatim",
+    "package_initializer": "legacy eager graph imports removed",
+    "local_entry_demo_raw_tests": "new reading and verification helpers",
+    "original_project_changed": false,
+    "running_experiments_changed": false
+  },
+  "model_generation_calls_during_extraction": 0,
+  "official_benchmark_grading_included": false,
+  "algorithm_effectiveness_verified": false,
+  "warning": "Runnable dependency-complete unit; current real-model stagnation and RAW protocol failures are intentionally not fixed by extraction."
+}

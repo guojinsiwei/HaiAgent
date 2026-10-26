@@ -1,0 +1,80 @@
+﻿[
+    {
+        "file":  "01_MACE.pdf",
+        "source":  "https://arxiv.org/pdf/2609.21533",
+        "bytes":  588803,
+        "sha256":  "9fae7292b68ebc19e168d92abb74ce42837101e73d03254302217e970f06d785"
+    },
+    {
+        "file":  "02_Agent_Workflow_Memory.pdf",
+        "source":  "https://arxiv.org/pdf/2409.07429",
+        "bytes":  941281,
+        "sha256":  "ddc6f6fedec48c88ae743b43a464f7eb4aecaab05acd18c29cfb657ab445ebe4"
+    },
+    {
+        "file":  "03_ReSum.pdf",
+        "source":  "https://arxiv.org/pdf/2509.13313",
+        "bytes":  1360337,
+        "sha256":  "ff58187f496fb96575da3639f6137a6d3a9c1e8b32c810318b703a4d3e0c6e9d"
+    },
+    {
+        "file":  "04_Devils_Advocate.pdf",
+        "source":  "https://arxiv.org/pdf/2405.16334",
+        "bytes":  1671934,
+        "sha256":  "03afd07d04cb9558041308c29a252a9e12a9e40ed34d6c7ca7c44ad996230bd0"
+    },
+    {
+        "file":  "05_SWE_Search.pdf",
+        "source":  "https://arxiv.org/pdf/2410.20285",
+        "bytes":  1865852,
+        "sha256":  "7c3c6e175441a672abf9fa04b591e278a1c5034322cd9ba44be14800202871f7"
+    },
+    {
+        "file":  "06_Dream_RSI.pdf",
+        "source":  "https://arxiv.org/pdf/2609.14858",
+        "bytes":  954448,
+        "sha256":  "b2d13d5944d052c2b63d40e65dce116ebcc606e3b756f6acfc938afe21fe2db9"
+    },
+    {
+        "file":  "07_Reflexion.pdf",
+        "source":  "https://arxiv.org/pdf/2303.11366",
+        "bytes":  591097,
+        "sha256":  "6059b6f89fea9959bd3dab553fbb97756a3dfb1b15e3cbab2fbf3ab6664333bd"
+    },
+    {
+        "file":  "08_ExpeL.pdf",
+        "source":  "https://arxiv.org/pdf/2308.10144",
+        "bytes":  9870272,
+        "sha256":  "01e533d81fb4a5f91797c073a9b1929acbaa64da45a592b26563ca7d135024f3"
+    },
+    {
+        "file":  "09_Voyager.pdf",
+        "source":  "https://arxiv.org/pdf/2305.16291",
+        "bytes":  18830859,
+        "sha256":  "769a4e33ddeeb73870849232eece49afe882c2d146362e33917ccb432ba0efb8"
+    },
+    {
+        "file":  "10_Hindsight.pdf",
+        "source":  "https://arxiv.org/pdf/2512.12818",
+        "bytes":  2452730,
+        "sha256":  "1c0bb9fd4e53f45107e587766d6fc3b4b3441877567b17bdbbb5172015c120d4"
+    },
+    {
+        "file":  "11_REMem.pdf",
+        "source":  "https://arxiv.org/pdf/2602.13530",
+        "bytes":  5651057,
+        "sha256":  "523f86a5ae28be3178ff0d77d386f47621bebff04f4ecf775b44084858bc7613"
+    },
+    {
+        "file":  "12_MiTa.pdf",
+        "source":  "https://arxiv.org/pdf/2601.22974",
+        "bytes":  11204619,
+        "sha256":  "ce72a4c0796b1e8c9bb5a2170733d440c57d7abed87d56be08699577ae8ae4d8"
+    },
+    {
+        "file":  "13_Memory_in_the_Age_of_AI_Agents_Survey.pdf",
+        "source":  "https://arxiv.org/pdf/2512.13564",
+        "bytes":  14916725,
+        "sha256":  "10de3c050903bfa1113c9a954380e2786f42d25a9ea24478bf6cc69fef2e2b42"
+    }
+]

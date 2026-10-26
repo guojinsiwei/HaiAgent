@@ -1,0 +1,227 @@
+{
+  "native": [
+    {
+      "task": "build-cython-ext",
+      "tools": 45,
+      "nonzero": 2,
+      "anchors": 1,
+      "max_streak": 1,
+      "loop_blocks": 0,
+      "starts": 0,
+      "defects_exempted": 1
+    },
+    {
+      "task": "chess-best-move",
+      "tools": 41,
+      "nonzero": 1,
+      "anchors": 1,
+      "max_streak": 1,
+      "loop_blocks": 0,
+      "starts": 0,
+      "defects_exempted": 0
+    },
+    {
+      "task": "configure-git-webserver",
+      "tools": 35,
+      "nonzero": 5,
+      "anchors": 5,
+      "max_streak": 1,
+      "loop_blocks": 0,
+      "starts": 0,
+      "defects_exempted": 0
+    },
+    {
+      "task": "fix-code-vulnerability",
+      "tools": 46,
+      "nonzero": 6,
+      "anchors": 6,
+      "max_streak": 1,
+      "loop_blocks": 0,
+      "starts": 0,
+      "defects_exempted": 0
+    },
+    {
+      "task": "log-summary-date-ranges",
+      "tools": 12,
+      "nonzero": 2,
+      "anchors": 2,
+      "max_streak": 1,
+      "loop_blocks": 0,
+      "starts": 0,
+      "defects_exempted": 0
+    },
+    {
+      "task": "polyglot-c-py",
+      "tools": 55,
+      "nonzero": 5,
+      "anchors": 1,
+      "max_streak": 1,
+      "loop_blocks": 0,
+      "starts": 0,
+      "defects_exempted": 4
+    },
+    {
+      "task": "qemu-alpine-ssh",
+      "tools": 24,
+      "nonzero": 0,
+      "anchors": 0,
+      "max_streak": 1,
+      "loop_blocks": 0,
+      "starts": 0,
+      "defects_exempted": 0
+    },
+    {
+      "task": "qemu-startup",
+      "tools": 38,
+      "nonzero": 15,
+      "anchors": 15,
+      "max_streak": 1,
+      "loop_blocks": 0,
+      "starts": 0,
+      "defects_exempted": 0
+    },
+    {
+      "task": "regex-log",
+      "tools": 22,
+      "nonzero": 2,
+      "anchors": 2,
+      "max_streak": 1,
+      "loop_blocks": 0,
+      "starts": 0,
+      "defects_exempted": 0
+    },
+    {
+      "task": "sqlite-with-gcov",
+      "tools": 17,
+      "nonzero": 1,
+      "anchors": 1,
+      "max_streak": 1,
+      "loop_blocks": 0,
+      "starts": 0,
+      "defects_exempted": 0
+    }
+  ],
+  "kzdsh": [
+    {
+      "task": "build-cython-ext",
+      "bash_outcomes": 37,
+      "nonzero": 3,
+      "unclean_zero": 26,
+      "serial": 0,
+      "observed": 37,
+      "gate_counts": {
+        "ordinary_action": 37,
+        "native_repair_admitted": 4
+      }
+    },
+    {
+      "task": "chess-best-move",
+      "bash_outcomes": 26,
+      "nonzero": 3,
+      "unclean_zero": 17,
+      "serial": 0,
+      "observed": 26,
+      "gate_counts": {
+        "ordinary_action": 26,
+        "native_repair_admitted": 2
+      }
+    },
+    {
+      "task": "configure-git-webserver",
+      "bash_outcomes": 39,
+      "nonzero": 2,
+      "unclean_zero": 36,
+      "serial": 0,
+      "observed": 39,
+      "gate_counts": {
+        "ordinary_action": 39,
+        "native_repair_admitted": 1
+      }
+    },
+    {
+      "task": "fix-code-vulnerability",
+      "bash_outcomes": 26,
+      "nonzero": 1,
+      "unclean_zero": 17,
+      "serial": 0,
+      "observed": 26,
+      "gate_counts": {
+        "ordinary_action": 26,
+        "native_repair_admitted": 5
+      }
+    },
+    {
+      "task": "log-summary-date-ranges",
+      "bash_outcomes": 31,
+      "nonzero": 1,
+      "unclean_zero": 13,
+      "serial": 0,
+      "observed": 31,
+      "gate_counts": {
+        "ordinary_action": 27,
+        "native_repair_admitted": 7,
+        "observed_workspace_change": 1,
+        "error_route_exploration_exemption": 3
+      }
+    },
+    {
+      "task": "polyglot-c-py",
+      "bash_outcomes": 24,
+      "nonzero": 11,
+      "unclean_zero": 13,
+      "serial": 0,
+      "observed": 24,
+      "gate_counts": {
+        "ordinary_action": 19,
+        "native_repair_admitted": 11,
+        "observed_workspace_change": 5
+      }
+    },
+    {
+      "task": "qemu-alpine-ssh",
+      "bash_outcomes": 20,
+      "nonzero": 1,
+      "unclean_zero": 19,
+      "serial": 0,
+      "observed": 25,
+      "gate_counts": {
+        "ordinary_action": 26
+      }
+    },
+    {
+      "task": "qemu-startup",
+      "bash_outcomes": 41,
+      "nonzero": 2,
+      "unclean_zero": 37,
+      "serial": 0,
+      "observed": 43,
+      "gate_counts": {
+        "ordinary_action": 43
+      }
+    },
+    {
+      "task": "regex-log",
+      "bash_outcomes": 22,
+      "nonzero": 1,
+      "unclean_zero": 13,
+      "serial": 0,
+      "observed": 22,
+      "gate_counts": {
+        "ordinary_action": 17,
+        "native_repair_admitted": 9,
+        "observed_workspace_change": 5
+      }
+    },
+    {
+      "task": "sqlite-with-gcov",
+      "bash_outcomes": 25,
+      "nonzero": 4,
+      "unclean_zero": 20,
+      "serial": 0,
+      "observed": 25,
+      "gate_counts": {
+        "ordinary_action": 25
+      }
+    }
+  ]
+}
