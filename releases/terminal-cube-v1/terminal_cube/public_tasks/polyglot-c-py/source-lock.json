@@ -1,0 +1,9 @@
+{
+  "id": "polyglot-c-py",
+  "package_ref": "sha256:d8a8f81772559b1c48005a34a0f5717a3cbd1f13afd3dfd68682a46f4260136d",
+  "files": {
+    "instruction.md": "a57c0c0e1232113113cd29a154ea7e0ac9ea45e4aedc16958fbc6bc753a4ef96",
+    "task.toml": "126081ca54e30ad691d4ed1c1fc2378486c0154419549de4aabc89ecc4c257ff",
+    "environment/Dockerfile": "2eb537f29d2bc4ab30e1b35ff352578437a08b90f91ef6360ee28d8195d5098a"
+  }
+}

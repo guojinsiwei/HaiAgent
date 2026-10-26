@@ -1,0 +1,20 @@
+{
+  "benchmark": "AppWorld",
+  "split": "test_normal",
+  "tasks": 30,
+  "scenarios": 10,
+  "methods": ["hld", "kzdsh-new", "recuris", "dsh"],
+  "trials": 120,
+  "per_trial_cny": 8,
+  "campaign_cny": 720,
+  "provider": "TaoToken TokenPlan",
+  "model": "deepseek-flash",
+  "gpt_model_calls_allowed": false,
+  "cross_task_memory": false,
+  "automatic_paid_retry": false,
+  "selection_seed": 20261018,
+  "workers_target": 6,
+  "held_methods": [],
+  "hld_note": "User confirmed HLD local edits complete. Re-freeze current HLD before deployment.",
+  "stage": "preparing"
+}

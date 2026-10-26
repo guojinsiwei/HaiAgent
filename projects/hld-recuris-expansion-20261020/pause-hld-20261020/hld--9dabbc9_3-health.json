@@ -1,0 +1,39 @@
+{
+  "job": "hld--9dabbc9_3",
+  "arm": "hld",
+  "task": "9dabbc9_3",
+  "scenario": "9dabbc9",
+  "state": "needs_attention",
+  "started": 1792490178.0041256,
+  "world": "aw-world-cbc86e52b1",
+  "solver": "aw-solver-cbc86e52b1",
+  "repair_version": 7,
+  "attempt": 1,
+  "rerun_of": null,
+  "updated": 1792490227.6168854,
+  "api_attempts": 7,
+  "http_errors": [],
+  "transport_errors": 1,
+  "shared_requests": 7,
+  "tools": 8,
+  "budget_reason": "usage_unavailable",
+  "provider_stop": {
+    "kind": "transport",
+    "reason": "request_or_body_failed"
+  },
+  "wall_stop": {
+    "state": "terminating",
+    "reason": "budget-stop.json",
+    "limit_seconds": 7200
+  },
+  "last_log_mtime": 1792490211.0409236,
+  "budget_exhausted": false,
+  "exit_code": 137,
+  "stop_reason": "wall_budget",
+  "engineering_fault": "provider_transport_or_http",
+  "official_success": false,
+  "passed_tests": 0,
+  "total_tests": 9,
+  "grading": "complete",
+  "ended": 1792490227.616885
+}

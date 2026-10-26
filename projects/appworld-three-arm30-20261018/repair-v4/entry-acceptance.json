@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "arm": "recuris",
+      "passed": true,
+      "calls": [
+        "/reserve"
+      ],
+      "external_network": false,
+      "paid_calls": 0
+    }
+  ],
+  "paid_calls": 0
+}

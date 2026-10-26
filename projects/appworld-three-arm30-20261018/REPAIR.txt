@@ -1,0 +1,24 @@
+AppWorld budget and accounting repair, 2026-10-19
+
+Scope: HLD, KZDSH-new, Recuris and DSH, same original 30 tasks.
+Limits remain 8 CNY per attempt and 720 CNY for the entire campaign including all earlier attempts and retries.
+No algorithm, task instructions, official grading, model, or task selection changes.
+
+Repairs:
+1. KZ internal cost accounting now prices cache reads at 0.04 CNY / million tokens, ordinary input/cache writes at 2, output at 8, matching the existing shared ledger.
+2. Conservative maximum-request reservations and unknown-usage charges remain enforced. Shared persistent accounting continues to enforce the total cap.
+3. Budget RPC timeout is 35 seconds (database lock wait is 20 seconds). Up to two retries reuse the same lease/request body. Model generations are not replayed by this repair. Explicit budget denial is never retried.
+4. Read-only ledger snapshots use deferred transactions. Closed response sockets do not produce controller failures; committed transactions remain available for idempotent replay.
+5. Budget stops are classified separately from solver crashes. Official grades are retained even when the solver exits nonzero. Original raw trial summaries remain unchanged.
+
+Restart procedure:
+New solver entries wait before model calls. Existing solvers finish and are graded. Once all six slots are waiting with zero requests, the old controller is stopped. Those zero-call folders are archived under repair-v1/parked-zero-call-attempts.
+All completed logs, worlds and official grades are retained. Retry attempts use new job IDs ending --repair1. Only unpassed trials affected by old cache overcount or budget RPC failure enter the repair queue, ahead of original unstarted tasks.
+The same spending.sqlite is retained. Only authorized retry job IDs are appended to its profile; previous charges remain counted.
+
+Verification:
+13 offline tests cover cached pricing, strict monetary limits, uncertain usage, dropped HTTP responses, idempotence, historical classification, retry selection, and controller continuation with nonzero previous spending and an isolated trial failure.
+Four complete solver entries were tested in isolated containers with dummy keys and network disabled; all were denied at the budget gate before model dispatch.
+Runtime source hashes and deployment changes are recorded in server repair-v1/ready.json and deployed.json.
+
+Storage threshold remains unchanged: Docker filesystem >30 GiB and experiment filesystem >15 GiB to admit new trials.

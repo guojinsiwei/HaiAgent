@@ -1,0 +1,502 @@
+{
+  "benchmark": "Terminal-Bench 2.0",
+  "scope": "Same 89-task effective attempts; monetary-stop failed subset, end-of-run substantive progress",
+  "budget": {
+    "per_run_cny": 16,
+    "campaign_cny": 160,
+    "requests": 800,
+    "tools": 1200,
+    "solver_seconds": 7200
+  },
+  "concurrency": 6,
+  "version_policy": "Preserve historical HLD v7 and Recuris v5 algorithms; shared DSH max-tokens engineering fix only; no audit hints or previous artifacts in solver context",
+  "rows": [
+    {
+      "task": "torch-pipeline-parallelism",
+      "arm": "recuris",
+      "stage": "first",
+      "job": "tb2bd10-01-recuris-torch-pipeline-parallelism",
+      "state": "pending",
+      "prior_job": "tb2hr50-09-recuris-torch-pipeline-parallelism",
+      "prior_live": "/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/jobs/tb2hr50-09-recuris-torch-pipeline-parallelism/torch-pipeline-parallelism__EJU4j36/agent/live",
+      "prior_score": 0,
+      "reason": "真实分布式梯度异常已复现，新增通信和计算图诊断；未认定已修好",
+      "evidence_lines": [
+        686,
+        696,
+        706,
+        711
+      ],
+      "evidence_tier": "concrete_progress"
+    },
+    {
+      "task": "regex-chess",
+      "arm": "hld",
+      "stage": "first",
+      "job": "tb2bd10-02-hld-regex-chess",
+      "state": "pending",
+      "prior_job": "tb2hr50-11-hld-regex-chess",
+      "prior_live": "/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/jobs/tb2hr50-11-hld-regex-chess/regex-chess__BrPYfpr/agent/live",
+      "prior_score": 0,
+      "reason": "修复后棋局产生5个互异候选，仍在定位FEN清理和转义缺陷",
+      "evidence_lines": [
+        700,
+        704,
+        709,
+        718
+      ],
+      "evidence_tier": "concrete_progress"
+    },
+    {
+      "task": "regex-chess",
+      "arm": "recuris",
+      "stage": "first",
+      "job": "tb2bd10-03-recuris-regex-chess",
+      "state": "pending",
+      "prior_job": "tb2hr50-11-recuris-regex-chess",
+      "prior_live": "/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/jobs/tb2hr50-11-recuris-regex-chess-infra1/regex-chess__Cymi7T5/agent/live",
+      "prior_score": 0,
+      "reason": "正则状态重写从128字符重复棋盘修到64字符，继续集成生成器",
+      "evidence_lines": [
+        537,
+        542,
+        547
+      ],
+      "evidence_tier": "concrete_progress"
+    },
+    {
+      "task": "sam-cell-seg",
+      "arm": "hld",
+      "stage": "first",
+      "job": "tb2bd10-04-hld-sam-cell-seg",
+      "state": "pending",
+      "prior_job": "tb2hr50-14-hld-sam-cell-seg",
+      "prior_live": "/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/jobs/tb2hr50-14-hld-sam-cell-seg/sam-cell-seg__vdzQHJf/agent/live",
+      "prior_score": 0,
+      "reason": "实际修改形状字段转换，负例测试改善，真实权重集成验证刚启动",
+      "evidence_lines": [
+        664,
+        697,
+        699,
+        704
+      ],
+      "evidence_tier": "concrete_progress"
+    },
+    {
+      "task": "dna-assembly",
+      "arm": "hld",
+      "stage": "first",
+      "job": "tb2bd10-05-hld-dna-assembly",
+      "state": "pending",
+      "prior_job": "tb2hr50-23-hld-dna-assembly",
+      "prior_live": "/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/jobs/tb2hr50-23-hld-dna-assembly/dna-assembly__nsCGGb3/agent/live",
+      "prior_score": 0,
+      "reason": "实验定位引物不匹配及长度偏差，重新建立坐标并修改设计器",
+      "evidence_lines": [
+        610,
+        620,
+        625
+      ],
+      "evidence_tier": "concrete_progress"
+    },
+    {
+      "task": "circuit-fibsqrt",
+      "arm": "hld",
+      "stage": "first",
+      "job": "tb2bd10-06-hld-circuit-fibsqrt",
+      "state": "pending",
+      "prior_job": "tb2hr39-06-hld-circuit-fibsqrt",
+      "prior_live": "/mnt/sdb/home/lizh639/tb2-hld-recuris39-20261021/jobs/tb2hr39-06-hld-circuit-fibsqrt/circuit-fibsqrt__wJ2HZfx/agent/live",
+      "prior_score": 0,
+      "reason": "小输入开始通过，隔离测试将剩余缺陷收窄到乘法器",
+      "evidence_lines": [
+        665,
+        669,
+        674
+      ],
+      "evidence_tier": "concrete_progress"
+    },
+    {
+      "task": "llm-inference-batching-scheduler",
+      "arm": "recuris",
+      "stage": "first",
+      "job": "tb2bd10-07-recuris-llm-inference-batching-scheduler",
+      "state": "pending",
+      "prior_job": "tb2hr39-24-recuris-llm-inference-batching-scheduler",
+      "prior_live": "/mnt/sdb/home/lizh639/tb2-hld-recuris39-20261021/jobs/tb2hr39-24-recuris-llm-inference-batching-scheduler/llm-inference-batching-scheduler__vF5cTZm/agent/live",
+      "prior_score": 0,
+      "reason": "修正JSONL输出并改进代价DP，真实评估器给出新成本/填充/延迟结果，顺序耗时仍超标",
+      "evidence_lines": [
+        398,
+        408,
+        412
+      ],
+      "evidence_tier": "concrete_progress"
+    },
+    {
+      "task": "make-doom-for-mips",
+      "arm": "recuris",
+      "stage": "first",
+      "job": "tb2bd10-08-recuris-make-doom-for-mips",
+      "state": "pending",
+      "prior_job": "tb2hr39-26-recuris-make-doom-for-mips",
+      "prior_live": "/mnt/sdb/home/lizh639/tb2-hld-recuris39-20261021/jobs/tb2hr39-26-recuris-make-doom-for-mips/make-doom-for-mips__P5y9KkM/agent/live",
+      "prior_score": 0,
+      "reason": "加入诊断并重新链接，得到具体Unknown configuration variable错误并追踪调用点",
+      "evidence_lines": [
+        648,
+        653,
+        667,
+        676
+      ],
+      "evidence_tier": "concrete_progress"
+    },
+    {
+      "task": "polyglot-c-py",
+      "arm": "hld",
+      "stage": "first",
+      "job": "tb2bd10-09-hld-polyglot-c-py",
+      "state": "pending",
+      "prior_job": "tb2hr39-33-hld-polyglot-c-py",
+      "prior_live": "/mnt/sdb/home/lizh639/tb2-hld-recuris39-20261021/jobs/tb2hr39-33-hld-polyglot-c-py/polyglot-c-py__f6oRFwi/agent/live",
+      "prior_score": 0,
+      "reason": "定位SIZE_MAX缺少头文件并实际补入，尚未来得及重编译",
+      "evidence_lines": [
+        698,
+        702,
+        703
+      ],
+      "evidence_tier": "concrete_progress"
+    },
+    {
+      "task": "adaptive-rejection-sampler",
+      "arm": "hld",
+      "stage": "first",
+      "job": "tb2bd10-10-hld-adaptive-rejection-sampler",
+      "state": "pending",
+      "prior_job": "tb2hr50-32-hld-adaptive-rejection-sampler",
+      "prior_live": "/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/jobs/tb2hr50-32-hld-adaptive-rejection-sampler/adaptive-rejection-sampler__9QUffL9/agent/live",
+      "prior_score": 0,
+      "reason": "已实际修复零宽区间导致的improper_envelope错误，重测进入新的合法正态分布误拒绝问题；属于持续调试，有进展但最终包络方案仍有缺陷",
+      "evidence_lines": [
+        534,
+        554,
+        559,
+        577
+      ],
+      "evidence_tier": "diagnostic_progress"
+    }
+  ],
+  "screening": [
+    {
+      "arm": "hld",
+      "task": "protein-assembly",
+      "selected": false,
+      "reason": "重复审查及哈希口径纠缠，交付物无实质改善",
+      "source": "/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/jobs/tb2hr50-07-hld-protein-assembly/protein-assembly__krjyWUK/agent/live/dsh.jsonl",
+      "evidence_lines": []
+    },
+    {
+      "arm": "recuris",
+      "task": "qemu-alpine-ssh",
+      "selected": false,
+      "reason": "实际停止原因是400请求上限，不属于本次金额截断",
+      "source": "/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/jobs/tb2hr50-08-recuris-qemu-alpine-ssh/qemu-alpine-ssh__eTKqpu5/agent/live/dsh.jsonl",
+      "evidence_lines": []
+    },
+    {
+      "arm": "hld",
+      "task": "torch-pipeline-parallelism",
+      "selected": false,
+      "reason": "后段重复验证和回执绑定循环",
+      "source": "/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/jobs/tb2hr50-09-hld-torch-pipeline-parallelism/torch-pipeline-parallelism__NvmKfYb/agent/live/dsh.jsonl",
+      "evidence_lines": []
+    },
+    {
+      "arm": "recuris",
+      "task": "torch-pipeline-parallelism",
+      "selected": true,
+      "reason": "真实分布式梯度异常已复现，新增通信和计算图诊断；未认定已修好",
+      "source": "/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/jobs/tb2hr50-09-recuris-torch-pipeline-parallelism/torch-pipeline-parallelism__EJU4j36/agent/live/dsh.jsonl",
+      "evidence_lines": [
+        686,
+        696,
+        706,
+        711
+      ]
+    },
+    {
+      "arm": "hld",
+      "task": "regex-chess",
+      "selected": true,
+      "reason": "修复后棋局产生5个互异候选，仍在定位FEN清理和转义缺陷",
+      "source": "/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/jobs/tb2hr50-11-hld-regex-chess/regex-chess__BrPYfpr/agent/live/dsh.jsonl",
+      "evidence_lines": [
+        700,
+        704,
+        709,
+        718
+      ]
+    },
+    {
+      "arm": "recuris",
+      "task": "regex-chess",
+      "selected": true,
+      "reason": "正则状态重写从128字符重复棋盘修到64字符，继续集成生成器",
+      "source": "/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/jobs/tb2hr50-11-recuris-regex-chess-infra1/regex-chess__Cymi7T5/agent/live/dsh.jsonl",
+      "evidence_lines": [
+        537,
+        542,
+        547
+      ]
+    },
+    {
+      "arm": "hld",
+      "task": "sam-cell-seg",
+      "selected": true,
+      "reason": "实际修改形状字段转换，负例测试改善，真实权重集成验证刚启动",
+      "source": "/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/jobs/tb2hr50-14-hld-sam-cell-seg/sam-cell-seg__vdzQHJf/agent/live/dsh.jsonl",
+      "evidence_lines": [
+        664,
+        697,
+        699,
+        704
+      ]
+    },
+    {
+      "arm": "hld",
+      "task": "video-processing",
+      "selected": false,
+      "reason": "连续替换未验证传感规则，末段没有可复核的改善",
+      "source": "/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/jobs/tb2hr50-22-hld-video-processing/video-processing__vF4J7iY/agent/live/dsh.jsonl",
+      "evidence_lines": []
+    },
+    {
+      "arm": "hld",
+      "task": "dna-assembly",
+      "selected": true,
+      "reason": "实验定位引物不匹配及长度偏差，重新建立坐标并修改设计器",
+      "source": "/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/jobs/tb2hr50-23-hld-dna-assembly/dna-assembly__nsCGGb3/agent/live/dsh.jsonl",
+      "evidence_lines": [
+        610,
+        620,
+        625
+      ]
+    },
+    {
+      "arm": "recuris",
+      "task": "dna-assembly",
+      "selected": false,
+      "reason": "末段仅推翻模板布局假设，尚无稳定修正或通过验证的候选",
+      "source": "/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/jobs/tb2hr50-23-recuris-dna-assembly/dna-assembly__mMATzzW/agent/live/dsh.jsonl",
+      "evidence_lines": []
+    },
+    {
+      "arm": "hld",
+      "task": "path-tracing",
+      "selected": false,
+      "reason": "像素读取和坐标解释失真，所谓规律不足以证明有效推进",
+      "source": "/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/jobs/tb2hr50-26-hld-path-tracing/path-tracing__Cyazo7V/agent/live/dsh.jsonl",
+      "evidence_lines": []
+    },
+    {
+      "arm": "recuris",
+      "task": "make-mips-interpreter",
+      "selected": false,
+      "reason": "新增插桩尚未获得诊断结果，推进证据不足",
+      "source": "/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/jobs/tb2hr50-30-recuris-make-mips-interpreter/make-mips-interpreter__vfp9zQp/agent/live/dsh.jsonl",
+      "evidence_lines": []
+    },
+    {
+      "arm": "recuris",
+      "task": "adaptive-rejection-sampler",
+      "selected": false,
+      "reason": "集中调试自建测试，未确认交付物改善",
+      "source": "/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/jobs/tb2hr50-32-recuris-adaptive-rejection-sampler/adaptive-rejection-sampler__FanQoRk/agent/live/dsh.jsonl",
+      "evidence_lines": []
+    },
+    {
+      "arm": "hld",
+      "task": "adaptive-rejection-sampler",
+      "selected": true,
+      "reason": "已实际修复零宽区间导致的improper_envelope错误，重测进入新的合法正态分布误拒绝问题；属于持续调试，有进展但最终包络方案仍有缺陷",
+      "source": "/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/jobs/tb2hr50-32-hld-adaptive-rejection-sampler/adaptive-rejection-sampler__9QUffL9/agent/live/dsh.jsonl",
+      "evidence_lines": [
+        534,
+        554,
+        559,
+        577
+      ]
+    },
+    {
+      "arm": "hld",
+      "task": "caffe-cifar-10",
+      "selected": false,
+      "reason": "两小时墙钟超时，含历史工程停顿，不是金额截断",
+      "source": "/mnt/sdb/home/lizh639/tb2-hld-recuris39-20261021/jobs/tb2hr39-04-hld-caffe-cifar-10/caffe-cifar-10__WnLfYv7/agent/live/dsh.jsonl",
+      "evidence_lines": []
+    },
+    {
+      "arm": "hld",
+      "task": "circuit-fibsqrt",
+      "selected": true,
+      "reason": "小输入开始通过，隔离测试将剩余缺陷收窄到乘法器",
+      "source": "/mnt/sdb/home/lizh639/tb2-hld-recuris39-20261021/jobs/tb2hr39-06-hld-circuit-fibsqrt/circuit-fibsqrt__wJ2HZfx/agent/live/dsh.jsonl",
+      "evidence_lines": [
+        665,
+        669,
+        674
+      ]
+    },
+    {
+      "arm": "hld",
+      "task": "crack-7z-hash",
+      "selected": false,
+      "reason": "AES-128/256等根本假设仍错，正控未通过",
+      "source": "/mnt/sdb/home/lizh639/tb2-hld-recuris39-20261021/jobs/tb2hr39-10-hld-crack-7z-hash/crack-7z-hash__9XQiVAK/agent/live/dsh.jsonl",
+      "evidence_lines": []
+    },
+    {
+      "arm": "hld",
+      "task": "filter-js-from-html",
+      "selected": false,
+      "reason": "主要修自建checker，交付物未改，未定位官方失败原因",
+      "source": "/mnt/sdb/home/lizh639/tb2-hld-recuris39-20261021/jobs/tb2hr39-14-hld-filter-js-from-html/filter-js-from-html__NJxHmWE/agent/live/dsh.jsonl",
+      "evidence_lines": []
+    },
+    {
+      "arm": "hld",
+      "task": "financial-document-processor",
+      "selected": false,
+      "reason": "重复确认错误的净额口径",
+      "source": "/mnt/sdb/home/lizh639/tb2-hld-recuris39-20261021/jobs/tb2hr39-15-hld-financial-document-processor/financial-document-processor__Xof9nMc/agent/live/dsh.jsonl",
+      "evidence_lines": []
+    },
+    {
+      "arm": "recuris",
+      "task": "git-multibranch",
+      "selected": false,
+      "reason": "请求上限及验证改动互相失效循环",
+      "source": "/mnt/sdb/home/lizh639/tb2-hld-recuris39-20261021/jobs/tb2hr39-19-recuris-git-multibranch/git-multibranch__bMBGB5N/agent/live/dsh.jsonl",
+      "evidence_lines": []
+    },
+    {
+      "arm": "hld",
+      "task": "gpt2-codegolf",
+      "selected": false,
+      "reason": "权重布局探测互相矛盾，无可信新候选",
+      "source": "/mnt/sdb/home/lizh639/tb2-hld-recuris39-20261021/jobs/tb2hr39-20-hld-gpt2-codegolf/gpt2-codegolf__a4rLpyx/agent/live/dsh.jsonl",
+      "evidence_lines": []
+    },
+    {
+      "arm": "hld",
+      "task": "install-windows-3.11",
+      "selected": false,
+      "reason": "反复解析VM状态，安装目标未获得实际推进",
+      "source": "/mnt/sdb/home/lizh639/tb2-hld-recuris39-20261021/jobs/tb2hr39-21-hld-install-windows-3.11/install-windows-3.11__DoeXfsB/agent/live/dsh.jsonl",
+      "evidence_lines": []
+    },
+    {
+      "arm": "recuris",
+      "task": "install-windows-3.11",
+      "selected": false,
+      "reason": "请求上限及目标反复重新待验循环",
+      "source": "/mnt/sdb/home/lizh639/tb2-hld-recuris39-20261021/jobs/tb2hr39-21-recuris-install-windows-3.11/install-windows-3.11__UVA7Zqg/agent/live/dsh.jsonl",
+      "evidence_lines": []
+    },
+    {
+      "arm": "recuris",
+      "task": "llm-inference-batching-scheduler",
+      "selected": true,
+      "reason": "修正JSONL输出并改进代价DP，真实评估器给出新成本/填充/延迟结果，顺序耗时仍超标",
+      "source": "/mnt/sdb/home/lizh639/tb2-hld-recuris39-20261021/jobs/tb2hr39-24-recuris-llm-inference-batching-scheduler/llm-inference-batching-scheduler__vF5cTZm/agent/live/dsh.jsonl",
+      "evidence_lines": [
+        398,
+        408,
+        412
+      ]
+    },
+    {
+      "arm": "hld",
+      "task": "llm-inference-batching-scheduler",
+      "selected": false,
+      "reason": "后段搜索未找到更好候选，最后工具超时",
+      "source": "/mnt/sdb/home/lizh639/tb2-hld-recuris39-20261021/jobs/tb2hr39-24-hld-llm-inference-batching-scheduler/llm-inference-batching-scheduler__LzeyJd6/agent/live/dsh.jsonl",
+      "evidence_lines": []
+    },
+    {
+      "arm": "recuris",
+      "task": "make-doom-for-mips",
+      "selected": true,
+      "reason": "加入诊断并重新链接，得到具体Unknown configuration variable错误并追踪调用点",
+      "source": "/mnt/sdb/home/lizh639/tb2-hld-recuris39-20261021/jobs/tb2hr39-26-recuris-make-doom-for-mips/make-doom-for-mips__P5y9KkM/agent/live/dsh.jsonl",
+      "evidence_lines": [
+        648,
+        653,
+        667,
+        676
+      ]
+    },
+    {
+      "arm": "hld",
+      "task": "make-doom-for-mips",
+      "selected": false,
+      "reason": "将__ctype_toupper_loc返回指针地址误当表地址，诊断方向错误",
+      "source": "/mnt/sdb/home/lizh639/tb2-hld-recuris39-20261021/jobs/tb2hr39-26-hld-make-doom-for-mips/make-doom-for-mips__CZMMAbp/agent/live/dsh.jsonl",
+      "evidence_lines": []
+    },
+    {
+      "arm": "recuris",
+      "task": "path-tracing-reverse",
+      "selected": false,
+      "reason": "临时产物验证与交付不一致，后段未证明交付改善",
+      "source": "/mnt/sdb/home/lizh639/tb2-hld-recuris39-20261021/jobs/tb2hr39-32-recuris-path-tracing-reverse/path-tracing-reverse__eRiaaeF/agent/live/dsh.jsonl",
+      "evidence_lines": []
+    },
+    {
+      "arm": "hld",
+      "task": "path-tracing-reverse",
+      "selected": false,
+      "reason": "天空公式推断持续错误，缺少改善指标",
+      "source": "/mnt/sdb/home/lizh639/tb2-hld-recuris39-20261021/jobs/tb2hr39-32-hld-path-tracing-reverse/path-tracing-reverse__DTfgKnn/agent/live/dsh.jsonl",
+      "evidence_lines": []
+    },
+    {
+      "arm": "hld",
+      "task": "polyglot-c-py",
+      "selected": true,
+      "reason": "定位SIZE_MAX缺少头文件并实际补入，尚未来得及重编译",
+      "source": "/mnt/sdb/home/lizh639/tb2-hld-recuris39-20261021/jobs/tb2hr39-33-hld-polyglot-c-py/polyglot-c-py__f6oRFwi/agent/live/dsh.jsonl",
+      "evidence_lines": [
+        698,
+        702,
+        703
+      ]
+    },
+    {
+      "arm": "hld",
+      "task": "polyglot-rust-c",
+      "selected": false,
+      "reason": "围栏布局反复失败",
+      "source": "/mnt/sdb/home/lizh639/tb2-hld-polyglot-repair5-20261021/jobs/tb2hr39-34-hld-polyglot-rust-c-repair5/polyglot-rust-c__hUpbmCe/agent/live/dsh.jsonl",
+      "evidence_lines": []
+    },
+    {
+      "arm": "hld",
+      "task": "pypi-server",
+      "selected": false,
+      "reason": "重复破坏并恢复已运行服务，缺少任务缺陷修复",
+      "source": "/mnt/sdb/home/lizh639/tb2-hld-recuris39-20261021/jobs/tb2hr39-35-hld-pypi-server/pypi-server__8Wgdpx2/agent/live/dsh.jsonl",
+      "evidence_lines": []
+    },
+    {
+      "arm": "hld",
+      "task": "winning-avg-corewars",
+      "selected": false,
+      "reason": "将平局列当胜局，改善指标不可信",
+      "source": "/mnt/sdb/home/lizh639/tb2-hld-recuris39-20261021/jobs/tb2hr39-39-hld-winning-avg-corewars/winning-avg-corewars__C4wJ57a/agent/live/dsh.jsonl",
+      "evidence_lines": []
+    }
+  ],
+  "screening_refinement": "Count concrete bug elimination plus newly exposed failure as useful progress; no requirement that all remaining diagnosis be correct."
+}

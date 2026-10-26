@@ -1,0 +1,14 @@
+{
+  "id": "androidworld-ClockTimerEntry",
+  "class": "ClockTimerEntry",
+  "params": {
+    "hours": 4,
+    "minutes": 3,
+    "seconds": 51,
+    "seed": 20261027
+  },
+  "instruction": "Create a timer with 4 hours, 3 minutes, and 51 seconds. Do not start the timer.",
+  "max_steps": 10,
+  "benchmark": "androidworld",
+  "instance_sha256": "0775920310e3fb94730397d2525c6dbe03d689d0b1cde24821af09cacd6ed31c"
+}

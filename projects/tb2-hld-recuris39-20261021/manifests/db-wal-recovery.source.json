@@ -1,0 +1,8 @@
+{
+  "task": "db-wal-recovery",
+  "image": "alexgshaw/db-wal-recovery:20251031",
+  "digest": "sha256:0e33ea5ec823975d1bd6c3778395c9f94251dd88f571146057bff6adb7e4594e",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/db-wal-recovery/manifests/20251031",
+  "header_verified": true,
+  "time": 1792550858.3344908
+}

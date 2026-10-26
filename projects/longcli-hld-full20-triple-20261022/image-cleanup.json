@@ -1,0 +1,50 @@
+{
+  "time": 1792669644.912563,
+  "before_free": 201924812800,
+  "after_free": 201924812800,
+  "freed_gib": 0.0,
+  "images": [
+    {
+      "tag": "alexgshaw/mteb-retrieve:20251031",
+      "id": "sha256:99dd676a21fd3124b7b8164cd93e8f0c51f1fdab2f84a831c61049eff78d063d",
+      "digests": [
+        "alexgshaw/mteb-retrieve@sha256:99dd676a21fd3124b7b8164cd93e8f0c51f1fdab2f84a831c61049eff78d063d"
+      ],
+      "returncode": 0,
+      "output": "Untagged: alexgshaw/mteb-retrieve:20251031\nDeleted: sha256:99dd676a21fd3124b7b8164cd93e8f0c51f1fdab2f84a831c61049eff78d063d\n",
+      "error": ""
+    },
+    {
+      "tag": "alexgshaw/mteb-leaderboard:20251031",
+      "id": "sha256:968de9456bfc53728f7df0cb6c9ce33e17bd0e5563ddfe031e6ed2964965aecf",
+      "digests": [
+        "alexgshaw/mteb-leaderboard@sha256:968de9456bfc53728f7df0cb6c9ce33e17bd0e5563ddfe031e6ed2964965aecf"
+      ],
+      "returncode": 0,
+      "output": "Untagged: alexgshaw/mteb-leaderboard:20251031\nDeleted: sha256:968de9456bfc53728f7df0cb6c9ce33e17bd0e5563ddfe031e6ed2964965aecf\n",
+      "error": ""
+    },
+    {
+      "tag": "alexgshaw/hf-model-inference:20251031",
+      "id": "sha256:f96dd7d3c85c7257b404fd63ba8d24ced2478cd90232c20e297c372f953fa607",
+      "digests": [
+        "alexgshaw/hf-model-inference@sha256:f96dd7d3c85c7257b404fd63ba8d24ced2478cd90232c20e297c372f953fa607"
+      ],
+      "returncode": 0,
+      "output": "Untagged: alexgshaw/hf-model-inference:20251031\nDeleted: sha256:f96dd7d3c85c7257b404fd63ba8d24ced2478cd90232c20e297c372f953fa607\n",
+      "error": ""
+    },
+    {
+      "tag": "alexgshaw/pytorch-model-recovery:20251031",
+      "id": "sha256:83efba8d1a163dfe62694789e271ed55010509b6deabbf2d7d6472b40ca8d69a",
+      "digests": [
+        "alexgshaw/pytorch-model-recovery@sha256:83efba8d1a163dfe62694789e271ed55010509b6deabbf2d7d6472b40ca8d69a"
+      ],
+      "returncode": 0,
+      "output": "Untagged: alexgshaw/pytorch-model-recovery:20251031\nDeleted: sha256:83efba8d1a163dfe62694789e271ed55010509b6deabbf2d7d6472b40ca8d69a\n",
+      "error": ""
+    }
+  ],
+  "containers_removed": 0,
+  "results_removed": 0
+}

@@ -1,0 +1,45 @@
+2026-10-02 engineering repair verification; no provider/model API invoked.
+
+Command: python -B -m unittest discover -s releases/contrastive-engineering-repair-v2/tests -p test_*.py -q
+Local Windows final: 160 tests, 132 passed, 28 Linux-only skipped (6.571s).
+College Linux final: 160 tests, 160 passed, 0 skipped, 0 failed (10.174s).
+Remote isolated directory: /var/tmp/lizh639-contrastive-engineering-v2-ppSydc
+
+Verified: existing field caps are unchanged; exact boundary/overflow errors are
+structured; missing/empty/type/NUL failures stay blocked; rejected command is
+not executed; precise correction reaches the actual next request; three failed
+corrections still stop within the original budget; unknown memory IDs remain
+blocked; original memory/repetition safety tests remain passing; exact shell
+body/full argv representation produces identical TF-IDF comparisons; changed
+shell script, quoting semantics or appended command remains rejected.
+
+Historical evidence: actual last strategy_adjustment from orthogonal1
+spot-scheduler-traces exceeded the unchanged 400-character limit despite
+explicitly specifying inspection and verification. Its old misleading
+semantic-looking error is now an explicit field length diagnostic. A manually
+shortened version passes; the runtime does not silently truncate or rewrite it.
+
+Verified on real Linux: setsid child escape after timeout, nested GNU timeout
+pipeline, background launcher cleanup, no unrelated-process killing. Actual
+scheduler loop with two shared format failures stops before dispatching the
+pending third task; preserves ledger and produces needs_attention without API.
+Verified in actual Docker using the cached Unison image: timeout cleanup killed
+two owned escaped descendants; subsequent action exit 0; snapshot capture and
+delivery returned DELIVERY_OK. Test-created containers/images were cleaned only
+after exact owner-label checks. Original cached benchmark image retained.
+The strengthened final Docker test also verifies that a successful root launcher
+leaving a detached child is rejected (exit 126), records its original exit 0,
+and preserves raw stream hashes. A synthetic display omission marker is not raw
+stderr and must not be included when checking the stream hash. The initially
+incorrect display/hash assertion was corrected, not the original stream hash.
+Final Docker result:
+{"test":"real_docker_timeout_snapshot_delivery","passed":true,"descendant_cleanup":{"killed":2,"complete":true,"scope":"adopted_command_children_only","command_exit_code":-9,"file_only_violation":false},"detached_launcher_exit":126,"raw_stderr_hash_preserved":true,"followup_exit":0,"delivery":"DELIVERY_OK","model_api_calls":0}
+The original v1 seal's 85 files are unchanged (0 hash mismatches).
+
+Not verified: live model correction rate, full Unison task solution, all 24
+task outcomes, long-run availability or algorithm gain. Engineering replay
+passing does not guarantee a model will obey the concise output contract.
+No paid experiment resumed. No scheduler, heartbeat or GPT automation created.
+Do not overwrite the original 24-trial campaign or describe this as recovery.
+The two printed API parse errors in unit tests are deliberately mocked invalid
+responses; the tests do not send requests to a model provider.

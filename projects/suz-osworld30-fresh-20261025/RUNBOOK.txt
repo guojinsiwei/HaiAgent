@@ -1,0 +1,25 @@
+Fresh OSWorld-Verified 30-per-arm comparison, 2026-10-25
+
+User explicitly cancelled repair reruns and authorized a new independent CNY480
+round, CNY8 per arm/task. The repair3 queue and its two active workers were stopped;
+process and container absence were verified. Old results and charges remain intact.
+
+This round starts all 60 runs from fresh VMs and fresh agents. The exact original
+30 task IDs/checksums are shared by baseline and SUZ. No old scores are carried in.
+Both use GLM-5.3-Flash, 100 steps, 400 all-role requests, 7200 seconds, 8 CNY each.
+Two CPU VM workers; no GPU allocation or GPT automations.
+
+SUZ is the repaired frozen version including its task-grounded completion audit.
+Shared engineering changes: bounded transport/output recovery, action adapter fixes,
+per-attempt grading cache isolation and mapped/visible GUI-window readiness checks.
+Source hash is required to match the successful six-action live preflight in each
+arm from repair3. Model configuration bytes must also match. Those are validation
+evidence only; no historical task runs/results are copied into this experiment.
+A fresh CPU-only environment and official scoring preflight runs in the new root
+with zero model calls before the full queue is admitted. Every task additionally
+checks fixture hashes, startup and scoring in its own preflight VM before inference.
+
+The new budget.sqlite is a real new database inside this experiment directory.
+All auxiliary calls and unknown request reservations count against its limits.
+Failed grading retains paid task state for recovery. Original official graders
+and hidden grading data remain outside model inputs.

@@ -1,0 +1,301 @@
+{
+  "passed": true,
+  "paid_calls": 0,
+  "checks": [
+    {
+      "task": "torch-pipeline-parallelism",
+      "arm": "recuris",
+      "stage": "first",
+      "job": "tb2bd10-01-recuris-torch-pipeline-parallelism",
+      "state": "pending",
+      "prior_job": "tb2hr50-09-recuris-torch-pipeline-parallelism",
+      "prior_live": "/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/jobs/tb2hr50-09-recuris-torch-pipeline-parallelism/torch-pipeline-parallelism__EJU4j36/agent/live",
+      "prior_score": 0,
+      "reason": "\u771f\u5b9e\u5206\u5e03\u5f0f\u68af\u5ea6\u5f02\u5e38\u5df2\u590d\u73b0\uff0c\u65b0\u589e\u901a\u4fe1\u548c\u8ba1\u7b97\u56fe\u8bca\u65ad\uff1b\u672a\u8ba4\u5b9a\u5df2\u4fee\u597d",
+      "evidence_lines": [
+        686,
+        696,
+        706,
+        711
+      ],
+      "evidence_tier": "concrete_progress",
+      "preflight_attempt_id": "afeabc719f2c432cb64679f8ad3d31c3",
+      "preflight_ok": true,
+      "preflight": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-budget-double10-20261022/preflight/preflight-tb2bd10-01-recuris-torch-pipeline-parallelism/torch-pipeline-parallelism__5TRZMuA",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "harbor_exit": 0
+      }
+    },
+    {
+      "task": "regex-chess",
+      "arm": "hld",
+      "stage": "first",
+      "job": "tb2bd10-02-hld-regex-chess",
+      "state": "pending",
+      "prior_job": "tb2hr50-11-hld-regex-chess",
+      "prior_live": "/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/jobs/tb2hr50-11-hld-regex-chess/regex-chess__BrPYfpr/agent/live",
+      "prior_score": 0,
+      "reason": "\u4fee\u590d\u540e\u68cb\u5c40\u4ea7\u751f5\u4e2a\u4e92\u5f02\u5019\u9009\uff0c\u4ecd\u5728\u5b9a\u4f4dFEN\u6e05\u7406\u548c\u8f6c\u4e49\u7f3a\u9677",
+      "evidence_lines": [
+        700,
+        704,
+        709,
+        718
+      ],
+      "evidence_tier": "concrete_progress",
+      "preflight_attempt_id": "8f7fa0f143f94a518a70d2d4c5258e13",
+      "preflight_ok": true,
+      "preflight": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-budget-double10-20261022/preflight/preflight-tb2bd10-02-hld-regex-chess/regex-chess__ZtdA4Uo",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "harbor_exit": 0
+      }
+    },
+    {
+      "task": "regex-chess",
+      "arm": "recuris",
+      "stage": "first",
+      "job": "tb2bd10-03-recuris-regex-chess",
+      "state": "pending",
+      "prior_job": "tb2hr50-11-recuris-regex-chess",
+      "prior_live": "/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/jobs/tb2hr50-11-recuris-regex-chess-infra1/regex-chess__Cymi7T5/agent/live",
+      "prior_score": 0,
+      "reason": "\u6b63\u5219\u72b6\u6001\u91cd\u5199\u4ece128\u5b57\u7b26\u91cd\u590d\u68cb\u76d8\u4fee\u523064\u5b57\u7b26\uff0c\u7ee7\u7eed\u96c6\u6210\u751f\u6210\u5668",
+      "evidence_lines": [
+        537,
+        542,
+        547
+      ],
+      "evidence_tier": "concrete_progress",
+      "preflight_attempt_id": "207b475cc49e46b39f9e4184129f4c43",
+      "preflight_ok": true,
+      "preflight": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-budget-double10-20261022/preflight/preflight-tb2bd10-03-recuris-regex-chess/regex-chess__keLrcDH",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "harbor_exit": 0
+      }
+    },
+    {
+      "task": "sam-cell-seg",
+      "arm": "hld",
+      "stage": "first",
+      "job": "tb2bd10-04-hld-sam-cell-seg",
+      "state": "pending",
+      "prior_job": "tb2hr50-14-hld-sam-cell-seg",
+      "prior_live": "/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/jobs/tb2hr50-14-hld-sam-cell-seg/sam-cell-seg__vdzQHJf/agent/live",
+      "prior_score": 0,
+      "reason": "\u5b9e\u9645\u4fee\u6539\u5f62\u72b6\u5b57\u6bb5\u8f6c\u6362\uff0c\u8d1f\u4f8b\u6d4b\u8bd5\u6539\u5584\uff0c\u771f\u5b9e\u6743\u91cd\u96c6\u6210\u9a8c\u8bc1\u521a\u542f\u52a8",
+      "evidence_lines": [
+        664,
+        697,
+        699,
+        704
+      ],
+      "evidence_tier": "concrete_progress",
+      "preflight_attempt_id": "d825721700ec43c890cb3a09bc259e3d",
+      "preflight_ok": true,
+      "preflight": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-budget-double10-20261022/preflight/preflight-tb2bd10-04-hld-sam-cell-seg/sam-cell-seg__WTtDobw",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "harbor_exit": 0
+      }
+    },
+    {
+      "task": "dna-assembly",
+      "arm": "hld",
+      "stage": "first",
+      "job": "tb2bd10-05-hld-dna-assembly",
+      "state": "pending",
+      "prior_job": "tb2hr50-23-hld-dna-assembly",
+      "prior_live": "/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/jobs/tb2hr50-23-hld-dna-assembly/dna-assembly__nsCGGb3/agent/live",
+      "prior_score": 0,
+      "reason": "\u5b9e\u9a8c\u5b9a\u4f4d\u5f15\u7269\u4e0d\u5339\u914d\u53ca\u957f\u5ea6\u504f\u5dee\uff0c\u91cd\u65b0\u5efa\u7acb\u5750\u6807\u5e76\u4fee\u6539\u8bbe\u8ba1\u5668",
+      "evidence_lines": [
+        610,
+        620,
+        625
+      ],
+      "evidence_tier": "concrete_progress",
+      "preflight_attempt_id": "fe180c037d8c452eb8560f8ae0d97687",
+      "preflight_ok": true,
+      "preflight": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-budget-double10-20261022/preflight/preflight-tb2bd10-05-hld-dna-assembly/dna-assembly__mWdbK3d",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "harbor_exit": 0
+      }
+    },
+    {
+      "task": "circuit-fibsqrt",
+      "arm": "hld",
+      "stage": "first",
+      "job": "tb2bd10-06-hld-circuit-fibsqrt",
+      "state": "pending",
+      "prior_job": "tb2hr39-06-hld-circuit-fibsqrt",
+      "prior_live": "/mnt/sdb/home/lizh639/tb2-hld-recuris39-20261021/jobs/tb2hr39-06-hld-circuit-fibsqrt/circuit-fibsqrt__wJ2HZfx/agent/live",
+      "prior_score": 0,
+      "reason": "\u5c0f\u8f93\u5165\u5f00\u59cb\u901a\u8fc7\uff0c\u9694\u79bb\u6d4b\u8bd5\u5c06\u5269\u4f59\u7f3a\u9677\u6536\u7a84\u5230\u4e58\u6cd5\u5668",
+      "evidence_lines": [
+        665,
+        669,
+        674
+      ],
+      "evidence_tier": "concrete_progress",
+      "preflight_attempt_id": "56ef9402b84d42e890ba279e32acfc3f",
+      "preflight_ok": true,
+      "preflight": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-budget-double10-20261022/preflight/preflight-tb2bd10-06-hld-circuit-fibsqrt/circuit-fibsqrt__N6Tor4F",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "harbor_exit": 0
+      }
+    },
+    {
+      "task": "llm-inference-batching-scheduler",
+      "arm": "recuris",
+      "stage": "first",
+      "job": "tb2bd10-07-recuris-llm-inference-batching-scheduler",
+      "state": "pending",
+      "prior_job": "tb2hr39-24-recuris-llm-inference-batching-scheduler",
+      "prior_live": "/mnt/sdb/home/lizh639/tb2-hld-recuris39-20261021/jobs/tb2hr39-24-recuris-llm-inference-batching-scheduler/llm-inference-batching-scheduler__vF5cTZm/agent/live",
+      "prior_score": 0,
+      "reason": "\u4fee\u6b63JSONL\u8f93\u51fa\u5e76\u6539\u8fdb\u4ee3\u4ef7DP\uff0c\u771f\u5b9e\u8bc4\u4f30\u5668\u7ed9\u51fa\u65b0\u6210\u672c/\u586b\u5145/\u5ef6\u8fdf\u7ed3\u679c\uff0c\u987a\u5e8f\u8017\u65f6\u4ecd\u8d85\u6807",
+      "evidence_lines": [
+        398,
+        408,
+        412
+      ],
+      "evidence_tier": "concrete_progress",
+      "preflight_attempt_id": "45c6a249a497499fab6826b9471666c9",
+      "preflight_ok": true,
+      "preflight": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-budget-double10-20261022/preflight/preflight-tb2bd10-07-recuris-llm-inference-batching-scheduler/llm-inference-batching-scheduler__CCajDUr",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "harbor_exit": 0
+      }
+    },
+    {
+      "task": "make-doom-for-mips",
+      "arm": "recuris",
+      "stage": "first",
+      "job": "tb2bd10-08-recuris-make-doom-for-mips",
+      "state": "pending",
+      "prior_job": "tb2hr39-26-recuris-make-doom-for-mips",
+      "prior_live": "/mnt/sdb/home/lizh639/tb2-hld-recuris39-20261021/jobs/tb2hr39-26-recuris-make-doom-for-mips/make-doom-for-mips__P5y9KkM/agent/live",
+      "prior_score": 0,
+      "reason": "\u52a0\u5165\u8bca\u65ad\u5e76\u91cd\u65b0\u94fe\u63a5\uff0c\u5f97\u5230\u5177\u4f53Unknown configuration variable\u9519\u8bef\u5e76\u8ffd\u8e2a\u8c03\u7528\u70b9",
+      "evidence_lines": [
+        648,
+        653,
+        667,
+        676
+      ],
+      "evidence_tier": "concrete_progress",
+      "preflight_attempt_id": "7594fd75dcdc4a3e8ddc7a89d2f35e4e",
+      "preflight_ok": true,
+      "preflight": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-budget-double10-20261022/preflight/preflight-tb2bd10-08-recuris-make-doom-for-mips/make-doom-for-mips__eXNaBu7",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "harbor_exit": 0
+      }
+    },
+    {
+      "task": "polyglot-c-py",
+      "arm": "hld",
+      "stage": "first",
+      "job": "tb2bd10-09-hld-polyglot-c-py",
+      "state": "pending",
+      "prior_job": "tb2hr39-33-hld-polyglot-c-py",
+      "prior_live": "/mnt/sdb/home/lizh639/tb2-hld-recuris39-20261021/jobs/tb2hr39-33-hld-polyglot-c-py/polyglot-c-py__f6oRFwi/agent/live",
+      "prior_score": 0,
+      "reason": "\u5b9a\u4f4dSIZE_MAX\u7f3a\u5c11\u5934\u6587\u4ef6\u5e76\u5b9e\u9645\u8865\u5165\uff0c\u5c1a\u672a\u6765\u5f97\u53ca\u91cd\u7f16\u8bd1",
+      "evidence_lines": [
+        698,
+        702,
+        703
+      ],
+      "evidence_tier": "concrete_progress",
+      "preflight_attempt_id": "42d9635cfa31449a8fb5e76a5ff91198",
+      "preflight_ok": true,
+      "preflight": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-budget-double10-20261022/preflight/preflight-tb2bd10-09-hld-polyglot-c-py/polyglot-c-py__pp8ZMJj",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "harbor_exit": 0
+      }
+    },
+    {
+      "task": "adaptive-rejection-sampler",
+      "arm": "hld",
+      "stage": "first",
+      "job": "tb2bd10-10-hld-adaptive-rejection-sampler",
+      "state": "pending",
+      "prior_job": "tb2hr50-32-hld-adaptive-rejection-sampler",
+      "prior_live": "/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/jobs/tb2hr50-32-hld-adaptive-rejection-sampler/adaptive-rejection-sampler__9QUffL9/agent/live",
+      "prior_score": 0,
+      "reason": "\u5df2\u5b9e\u9645\u4fee\u590d\u96f6\u5bbd\u533a\u95f4\u5bfc\u81f4\u7684improper_envelope\u9519\u8bef\uff0c\u91cd\u6d4b\u8fdb\u5165\u65b0\u7684\u5408\u6cd5\u6b63\u6001\u5206\u5e03\u8bef\u62d2\u7edd\u95ee\u9898\uff1b\u5c5e\u4e8e\u6301\u7eed\u8c03\u8bd5\uff0c\u6709\u8fdb\u5c55\u4f46\u6700\u7ec8\u5305\u7edc\u65b9\u6848\u4ecd\u6709\u7f3a\u9677",
+      "evidence_lines": [
+        534,
+        554,
+        559,
+        577
+      ],
+      "evidence_tier": "diagnostic_progress",
+      "preflight_attempt_id": "747d41380c154b04959e6e4b1c61b960",
+      "preflight_ok": true,
+      "preflight": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-budget-double10-20261022/preflight/preflight-tb2bd10-10-hld-adaptive-rejection-sampler/adaptive-rejection-sampler__LNkJXqL",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "harbor_exit": 0
+      }
+    }
+  ]
+}

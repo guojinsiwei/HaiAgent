@@ -1,0 +1,8 @@
+{
+  "task": "financial-document-processor",
+  "image": "alexgshaw/financial-document-processor:20251031",
+  "digest": "sha256:ef6c9cfaaf14cdd200163008a188d5baa9f626f3bfb8d3e7d6f30c08518e6251",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/financial-document-processor/manifests/20251031",
+  "header_verified": true,
+  "time": 1792550860.7142448
+}

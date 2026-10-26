@@ -1,0 +1,17 @@
+{
+  "pid": 3328002,
+  "started": 1792684535.8417509,
+  "tasks": [
+    "cmu15_445_p0",
+    "cmu15_445_p2",
+    "61810_pgtbl",
+    "61810_syscall",
+    "61810_traps"
+  ],
+  "concurrency": 3,
+  "task_budget_cny": 24,
+  "shared_campaign_budget_cny": 480,
+  "fresh_attempts": true,
+  "no_hints": true,
+  "auto_retries": false
+}

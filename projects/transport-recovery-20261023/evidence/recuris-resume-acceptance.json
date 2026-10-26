@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "job": "lhtb24-04-recuris-commit0-multilib-tdd",
+      "passed": true,
+      "operations": 184,
+      "model_calls": 0
+    },
+    {
+      "job": "lhtb24-05-recuris-opensees-seismic-structural-regression-audit",
+      "passed": true,
+      "operations": 188,
+      "model_calls": 0
+    },
+    {
+      "job": "lhtb24-06-recuris-chess-mate",
+      "passed": true,
+      "operations": 154,
+      "model_calls": 0
+    }
+  ]
+}

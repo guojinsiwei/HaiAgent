@@ -1,0 +1,8 @@
+{
+  "task": "gcode-to-text",
+  "image": "alexgshaw/gcode-to-text:20251031",
+  "digest": "sha256:0979ef40c6a3e8c4e7ab5b6c2524c74625a84799e15cd45dd98dcf83b11efd4d",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/gcode-to-text/manifests/20251031",
+  "header_verified": true,
+  "time": 1792510256.561042
+}

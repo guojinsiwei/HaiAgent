@@ -1,0 +1,77 @@
+{
+  "seed": "sha256(20261022:task)",
+  "selection": "First 10 SHA256-ranked officially scored HLD failures from frozen TB89 audit; fixed before candidate evaluation",
+  "pool_size": 37,
+  "tasks": [
+    {
+      "task": "crack-7z-hash",
+      "prior_score": 0,
+      "prior_job": "tb2hr39-10-hld-crack-7z-hash",
+      "source_group": "TB2-39"
+    },
+    {
+      "task": "path-tracing-reverse",
+      "prior_score": 0,
+      "prior_job": "tb2hr39-32-hld-path-tracing-reverse",
+      "source_group": "TB2-39"
+    },
+    {
+      "task": "gcode-to-text",
+      "prior_score": 0,
+      "prior_job": "tb2hr50-45-hld-gcode-to-text",
+      "source_group": "TB2-50"
+    },
+    {
+      "task": "chess-best-move",
+      "prior_score": 0,
+      "prior_job": "tb2hr50-29-hld-chess-best-move",
+      "source_group": "TB2-50"
+    },
+    {
+      "task": "torch-pipeline-parallelism",
+      "prior_score": 0,
+      "prior_job": "tb2hr50-09-hld-torch-pipeline-parallelism",
+      "source_group": "TB2-50"
+    },
+    {
+      "task": "extract-elf",
+      "prior_score": 0,
+      "prior_job": "tb2hr50-15-hld-extract-elf",
+      "source_group": "TB2-50"
+    },
+    {
+      "task": "hf-model-inference",
+      "prior_score": 0,
+      "prior_job": "tb2hr50-28-hld-hf-model-inference",
+      "source_group": "TB2-50"
+    },
+    {
+      "task": "dna-assembly",
+      "prior_score": 0,
+      "prior_job": "tb2hr50-23-hld-dna-assembly",
+      "source_group": "TB2-50"
+    },
+    {
+      "task": "dna-insert",
+      "prior_score": 0,
+      "prior_job": "tb2hr50-44-hld-dna-insert",
+      "source_group": "TB2-50"
+    },
+    {
+      "task": "polyglot-c-py",
+      "prior_score": 0,
+      "prior_job": "tb2hr39-33-hld-polyglot-c-py",
+      "source_group": "TB2-39"
+    }
+  ],
+  "budget": {
+    "per_run_cny": 8,
+    "campaign_cny": 160,
+    "trials": 20,
+    "independent": true
+  },
+  "arms": [
+    "hld-old",
+    "hld-new"
+  ]
+}

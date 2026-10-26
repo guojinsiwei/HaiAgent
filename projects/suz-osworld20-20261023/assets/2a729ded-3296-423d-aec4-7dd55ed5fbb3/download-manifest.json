@@ -1,0 +1,16 @@
+[
+  {
+    "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/2a729ded-3296-423d-aec4-7dd55ed5fbb3/dog_with_background.png",
+    "download_url": "https://hf-mirror.com/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/2a729ded-3296-423d-aec4-7dd55ed5fbb3/dog_with_background.png",
+    "file": "assets\\2a729ded-3296-423d-aec4-7dd55ed5fbb3\\4ea2009a-0b28-56fb-93cd-87e0614158a5_dog_with_background.png",
+    "sha256": "e08ef7f647e9394682f3ee4858137c69cc931d2ace8b7bc618e25da83618d581",
+    "bytes": 1139372
+  },
+  {
+    "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/2a729ded-3296-423d-aec4-7dd55ed5fbb3/dog_cutout_gold.png",
+    "download_url": "https://hf-mirror.com/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/2a729ded-3296-423d-aec4-7dd55ed5fbb3/dog_cutout_gold.png",
+    "file": "assets\\2a729ded-3296-423d-aec4-7dd55ed5fbb3\\dog_cutout_gold.png",
+    "sha256": "8be70fdebe02f0a5d54aeecfcc37baa0cc381019cc9770a0c347db491748ddc4",
+    "bytes": 957253
+  }
+]

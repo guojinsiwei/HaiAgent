@@ -1,0 +1,27 @@
+2026-10-21 08:08 China time
+
+Removed 37 unused, digest-addressable public swerebenchv2 cache images.
+Docker free bytes: 50,896,994,304 before; 205,563,138,048 after cleanup.
+407 historical result files verified unchanged; 147 submission snapshots kept.
+No containers deleted and no forced image removal.
+Remote records: /mnt/sdb/home/lizh639/hld-recuris-expansion-20261020/storage-cleanup-20261021-0805/
+
+Existing capacity_campaign.py automatically resumed all 12 pending jobs.
+At 08:08 eight were active (HLD 5, Recuris 3), including six preflights;
+four further Recuris jobs were pending. No completed solver was replayed.
+Original spending.sqlite retained: CNY 8 per task, CNY 800 TB campaign cap.
+
+Recuris FEAL task is being graded from the original before-verifier snapshot.
+Controller: /mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/score_saved_feal.py
+State: /mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/feal-regrade-20261021/
+Original official tests, 1 CPU, 2 GiB, and 1800-second verifier limit retained.
+No model calls and no solver rerun. Original result.json remains immutable.
+Saved attack.py contains a nested 65536 by 65536 exhaustive search within
+candidate checks. Previous grading had reached the attack test before timing
+out. This is submission performance evidence, not a download diagnosis.
+effective_status.py merges a valid recovered score. Another timeout remains
+null-scored and is recorded as submission_runtime_timeout. Reporting tested
+offline for both outcomes. Do not fabricate a score or expand the time limit.
+
+At dispatch: HLD 45 scored / 26 passed; Recuris 42 scored / 25 passed.
+The FEAL regrade was still running. Read live state before reporting completion.

@@ -1,0 +1,127 @@
+"""Observe/guard official Harbor boundaries; never replace its verifier or hooks."""
+import contextvars,json,os
+from pathlib import Path
+CURRENT=contextvars.ContextVar('kz_trial_collection',default=None)
+IN_COLLECT_HOOK=contextvars.ContextVar('kz_in_collect_hook',default=False)
+
+class CollectionFailure(RuntimeError):pass
+
+def record(trial,stage,**detail):
+    state=getattr(trial,'_kz_lifecycle',None)
+    if state is None:state=trial._kz_lifecycle={'events':[],'failures':[]}
+    state['stage']=stage;state['events'].append(dict(stage=stage,**detail))
+    p=trial.paths.trial_dir/'lifecycle.json';tmp=p.with_suffix('.tmp')
+    tmp.write_text(json.dumps(state,indent=2));tmp.replace(p)
+
+def failure(trial,kind,**detail):
+    trial._kz_lifecycle['failures'].append(dict(kind=kind,**detail))
+    record(trial,'collection_failed',kind=kind,**detail)
+
+def readable_logs(root):
+    # Do not follow a model-created symlink or expose file contents.
+    def walk_error(error):raise error
+    for folder,dirs,files in os.walk(root,followlinks=False,onerror=walk_error):
+        dirs[:]=[d for d in dirs if not (Path(folder)/d).is_symlink()]
+        for name in files:
+            p=Path(folder)/name
+            if not p.is_symlink() and p.is_file():
+                with p.open('rb') as stream:stream.read(1)
+
+def install(Trial,DockerEnvironment,ArtifactHandler):
+    if getattr(Trial,'_kz_guard_installed',False):return
+    Trial._kz_guard_installed=True
+    collect=Trial._collect_artifacts_phased
+    collect_hooks=Trial._run_collect_hooks
+    verify=Trial._verify_with_timeout
+    finalize=Trial._finalize
+    stop_service=DockerEnvironment.stop_service
+    compose=DockerEnvironment._run_docker_compose_command
+    service_exec=DockerEnvironment.service_exec
+    download=ArtifactHandler._download_artifact
+
+    async def observed_hooks(self,*a,**kw):
+        token=IN_COLLECT_HOOK.set(True)
+        try:return await collect_hooks(self,*a,**kw)
+        finally:IN_COLLECT_HOOK.reset(token)
+
+    async def guarded_collect(self,*a,**kw):
+        record(self,'solver_finished');record(self,'collecting')
+        token=CURRENT.set(self)
+        try:
+            await self.agent_environment.prepare_logs_for_host()
+            await collect(self,*a,**kw)
+            readable_logs(self.paths.agent_dir)
+            if self._kz_lifecycle['failures']:raise CollectionFailure('Trusted artifact collection failed; see lifecycle.json')
+            record(self,'artifacts_collected')
+        except Exception as error:
+            if not self._kz_lifecycle['failures']:failure(self,'collection_or_log_handoff',error_type=type(error).__name__)
+            raise
+        finally:CURRENT.reset(token)
+
+    async def guarded_stop(self,service):
+        trial=CURRENT.get()
+        if trial is not None and self is trial.agent_environment:
+            if service!='main':
+                failure(trial,'premature_sidecar_stop',service=service)
+                raise CollectionFailure('Sidecar stop before collection is forbidden')
+            # The main service will no longer be executable after this boundary.
+            await self.prepare_logs_for_host()
+            readable_logs(trial.paths.agent_dir)
+            record(trial,'logs_handed_to_host')
+        return await stop_service(self,service)
+
+    async def guarded_compose(self,command,*a,**kw):
+        trial=CURRENT.get()
+        if trial is not None and self is trial.agent_environment and command and (
+            command[0]=='down' or command[0]=='stop' and command!=['stop','main']):
+            failure(trial,'premature_project_stop')
+            raise CollectionFailure('Project teardown before collection is forbidden')
+        if command==['down']:command=['down','--volumes']
+        return await compose(self,command,*a,**kw)
+
+    async def observed_exec(self,*a,**kw):
+        trial=CURRENT.get();service=kw.get('service') or 'main'
+        try:
+            result=await service_exec(self,*a,**kw)
+            if IN_COLLECT_HOOK.get() and trial is not None and self is trial.agent_environment and service!='main' and result.return_code!=0:
+                failure(trial,'sidecar_collect_hook',service=service,exit_code=result.return_code)
+            return result
+        except Exception as error:
+            if IN_COLLECT_HOOK.get() and trial is not None and self is trial.agent_environment and service!='main':
+                failure(trial,'sidecar_collect_exception',service=service,error_type=type(error).__name__)
+            raise
+
+    async def observed_download(self,*a,**kw):
+        result=await download(self,*a,**kw);trial=CURRENT.get()
+        if trial is not None and result.service not in (None,'main'):
+            bad=result.status!='ok'
+            if not bad and result.type=='file':
+                base=Path(kw['artifacts_dir']).resolve();relative=Path(result.destination)
+                # Official manifest destinations are prefixed with artifacts/,
+                # including when artifacts_dir is a step-specific directory.
+                target=(base/Path(*relative.parts[1:])).resolve() if relative.parts and relative.parts[0]=='artifacts' else base.parent
+                bad=not target.is_relative_to(base) or not target.is_file() or target.stat().st_size==0
+            if bad:failure(trial,'sidecar_artifact_missing_or_empty',service=result.service,status=result.status)
+        return result
+
+    async def guarded_verify(self,*a,**kw):
+        state=getattr(self,'_kz_lifecycle',{})
+        if state.get('failures'):raise CollectionFailure('Verification refused after trusted collection failure')
+        record(self,'verifying')
+        try:
+            result=await verify(self,*a,**kw);record(self,'verifier_finished');return result
+        except Exception as error:record(self,'verifier_failed',error_type=type(error).__name__);raise
+
+    async def observed_finalize(self,*a,**kw):
+        record(self,'cleanup')
+        try:return await finalize(self,*a,**kw)
+        finally:record(self,'finalized')
+
+    Trial._collect_artifacts_phased=guarded_collect
+    Trial._run_collect_hooks=observed_hooks
+    Trial._verify_with_timeout=guarded_verify
+    Trial._finalize=observed_finalize
+    DockerEnvironment.stop_service=guarded_stop
+    DockerEnvironment._run_docker_compose_command=guarded_compose
+    DockerEnvironment.service_exec=observed_exec
+    ArtifactHandler._download_artifact=observed_download

@@ -1,0 +1,23 @@
+{
+  "receipts": [
+    {
+      "project": "appworld-hld-recuris70-20261020",
+      "pid": 3603566,
+      "script": "resume_hld_app.py",
+      "started": 1792500230.3706706,
+      "budget_reset": false
+    },
+    {
+      "project": "tb2-hld-recuris50-20261020",
+      "pid": 3604326,
+      "script": "resume_hld_tb.py",
+      "started": 1792500232.3727958,
+      "budget_reset": false
+    }
+  ],
+  "model": "deepseek-flash",
+  "per_run_cny": 8,
+  "total_existing_cap_cny": 1920,
+  "algorithm": "frozen SWE-Pro new HLD",
+  "max_total_concurrency": 6
+}

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "paid_calls": 0,
+  "trials": 10,
+  "task_count": 9,
+  "budget_cny": 160,
+  "per_run_cny": 16,
+  "requests": 800,
+  "tools": 1200,
+  "runtime_sha256": "d967f1c3e3c543f15828634be8d038e8f69c30ac279742e308b779bc73498036"
+}

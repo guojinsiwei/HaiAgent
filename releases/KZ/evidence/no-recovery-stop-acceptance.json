@@ -1,0 +1,25 @@
+{
+  "name": "KZ",
+  "revision": "remove-restored-rejection-hard-stop",
+  "tests": 47,
+  "passed": 47,
+  "errors": [],
+  "failures": [],
+  "skipped": [],
+  "proof": {
+    "name": "KZ",
+    "revision": "remove-restored-rejection-hard-stop",
+    "verified_core_files": 136,
+    "changed_core_files": [
+      "sources/bestfgs-project/src/bestfgs/lean_runtime.py",
+      "sources/bestfgs-project/src/bestfgs/rejection_recovery.py"
+    ],
+    "rejection_based_task_stop": false,
+    "paid_model_calls": 0
+  },
+  "paid_model_calls": 0,
+  "real_experiments_started": false,
+  "historic_campaign_unchanged": true,
+  "legacy_lean_tests": "five identical failures on original and repaired local base; not changed in this patch",
+  "ready_to_launch_full_campaign": false
+}

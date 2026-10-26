@@ -1,0 +1,16 @@
+[
+  {
+    "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_writer/72b810ef-4156-4d09-8f08-a0cf57e7cefe/GEOG2169_Course_Outline_2022-23.docx",
+    "download_url": "https://hf-mirror.com/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_writer/72b810ef-4156-4d09-8f08-a0cf57e7cefe/GEOG2169_Course_Outline_2022-23.docx",
+    "file": "assets\\72b810ef-4156-4d09-8f08-a0cf57e7cefe\\c89d6b6d-b933-5b21-b317-23647818a8dd_GEOG2169_Course_Outline_2022-23.docx",
+    "sha256": "6c960a6d9e4983b410eb3e27b610b1569649a20c5b470116e3db52ca9220dd50",
+    "bytes": 10953
+  },
+  {
+    "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_writer/72b810ef-4156-4d09-8f08-a0cf57e7cefe/GEOG2169_Course_Outline_2022-23_Gold.docx",
+    "download_url": "https://hf-mirror.com/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_writer/72b810ef-4156-4d09-8f08-a0cf57e7cefe/GEOG2169_Course_Outline_2022-23_Gold.docx",
+    "file": "assets\\72b810ef-4156-4d09-8f08-a0cf57e7cefe\\GEOG2169_Course_Outline_2022-23_Gold.docx",
+    "sha256": "b914fe1c978cdfbe7830b14f7aff45da37f3dc7f1c96cfe2e39ca7f08ef50a21",
+    "bytes": 11384
+  }
+]

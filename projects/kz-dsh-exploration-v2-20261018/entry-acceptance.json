@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "passed": true,
+      "budget_reservations_attempted": 1,
+      "lease_denied": true,
+      "external_network": "disabled",
+      "paid_calls": 0,
+      "exit_code": 0,
+      "real_entrypoint": true,
+      "all_runtime_guards": true,
+      "monitor_and_critic": "unchanged",
+      "arm": "baseline",
+      "family": "make-pytest"
+    },
+    {
+      "passed": true,
+      "budget_reservations_attempted": 1,
+      "lease_denied": true,
+      "external_network": "disabled",
+      "paid_calls": 0,
+      "exit_code": 0,
+      "real_entrypoint": true,
+      "all_runtime_guards": true,
+      "monitor_and_critic": "unchanged",
+      "arm": "candidate",
+      "family": "make-pytest"
+    },
+    {
+      "passed": true,
+      "budget_reservations_attempted": 1,
+      "lease_denied": true,
+      "external_network": "disabled",
+      "paid_calls": 0,
+      "exit_code": 0,
+      "real_entrypoint": true,
+      "all_runtime_guards": true,
+      "monitor_and_critic": "unchanged",
+      "arm": "baseline",
+      "family": "c-env"
+    },
+    {
+      "passed": true,
+      "budget_reservations_attempted": 1,
+      "lease_denied": true,
+      "external_network": "disabled",
+      "paid_calls": 0,
+      "exit_code": 0,
+      "real_entrypoint": true,
+      "all_runtime_guards": true,
+      "monitor_and_critic": "unchanged",
+      "arm": "candidate",
+      "family": "c-env"
+    }
+  ],
+  "paid_calls": 0
+}

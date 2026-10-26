@@ -1,0 +1,19 @@
+{
+  "source_trial": "/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/jobs/tb2hr50-42-recuris-feal-differential-cryptanalysis/feal-differential-cryptanalysis__h63nPMH",
+  "snapshot_image": "sha256:27a95df6905cbbc8846059bc2c05cb75d25abe4a305c2bf1a63f3c73dc65b553",
+  "original_result_sha256": "2c8fa715b9c56c16c857658c394201204a9664af1f0656a937e0b186d877c357",
+  "official_test_hashes": {
+    "test_outputs.py": "585780e76d98094ad118d096f8c78f2281352dc9826e3687c4de152659631a3d",
+    "test.sh": "106c27394c96343c03b4fbac14faac85542bce6628bccc66a5fe036d77f72daf",
+    "feal_module.c": "1ae1c8a31b099b5742b35a3d6b1b70a2509d8d13d79ab74535e038e9a3379363",
+    "setup.py": "d1d8f08966670ac8bfc1a9cfa8c16a6915eef2153a44ad6502daec2da83e08aa",
+    "feal.h": "d3ebd83bfbdb86f3543bda72a0693aabe478c6880ef78cb4a8e6c2e5a779759e",
+    "feal.c": "bd4e9fb31e38073414d8a1930b2e67bc59eaee17e52f58133f781d297073e885"
+  },
+  "paid_calls": 0,
+  "original_calls_before": 305,
+  "timeout_seconds": 1800,
+  "cpu_limit": 1,
+  "memory_gib": 2,
+  "solver_rerun": false
+}

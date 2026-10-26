@@ -1,0 +1,1 @@
+CPU only. Same parent round budget.sqlite and original arm/task buckets: cumulative CNY8 per task, CNY480 total. Preserve all prior results. Seven failed engineering cases only; passed cases excluded. No GPU or GPT automations.

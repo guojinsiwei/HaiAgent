@@ -1,0 +1,22 @@
+{
+  "source": "/mnt/sdb/home/lizh639/tb4-hld-recuris7-20261019/jobs/tb4-01-hld-payments-pipeline-fix/payments-pipeline-fix__bxBcxYv",
+  "trial": "/mnt/sdb/home/lizh639/tb4-hld-recuris7-20261019/repair-v1/regrades/hld-payments-regrade-v1",
+  "paid_calls": 0,
+  "artifacts_sha256": {
+    "manifest.json": "94d9227b93a74467260933a4598e34001211470c65d7125d9de000852fbf23e7",
+    "tmp/kafka-snapshot.tgz": "b601cb47d89a98dc9ceb480481f15013a6679967accd1334f08a9e8fb5593bf0",
+    "app/src/worker/config.py": "f3d12cbd9875819e42a2dae1c4fee49dd0064fbec01afc41c83d350e34e98840",
+    "app/src/worker/__init__.py": "63b800abbf1b909111eb7bd75d9c117c981a068f28156699752ad5f896521e0f",
+    "app/src/worker/requirements.txt": "b5c784f34d35b8e47f92a6208e6e9fa7a0c46fbf8733d5d78b424b09bb37b1a1",
+    "app/src/worker/worker.py": "fbadce9605c538bbecce15c7ca364bfb3e4c8d6413e08fa9059316086e3e647d",
+    "app/src/worker/__pycache__/__init__.cpython-312.pyc": "1df79f40cfae6dc03d79d91a8aadb7ad5dc030b07657c9b3899c8f32849702e4",
+    "app/src/worker/__pycache__/worker.cpython-312.pyc": "347e23665e6c49698b19119de764efd5416ed366ddf15d5bb1506e1ee139cc1b",
+    "app/src/worker/__pycache__/config.cpython-312.pyc": "5f73b79d1c515a906f5ed01207a794bd41a1b869baf913f059df50e148552eaf"
+  },
+  "verifier_result": {
+    "rewards": {
+      "reward": 0.0
+    }
+  },
+  "exception_type": null
+}

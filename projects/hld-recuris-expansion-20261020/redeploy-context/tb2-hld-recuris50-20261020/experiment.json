@@ -1,0 +1,12 @@
+{
+  "schema_version": 10,
+  "selection": "reuse_frozen_tb2_sample50_20261017",
+  "task_count": 50,
+  "trial_count": 100,
+  "concurrency": 4,
+  "solver_seconds": 7200,
+  "engineering_retry_batches": 0,
+  "preflight_attempts_per_trial": 1,
+  "retry_score_zero": false,
+  "retry_valid_budget_exhaustion": false
+}

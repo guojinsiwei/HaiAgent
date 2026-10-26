@@ -1,0 +1,7 @@
+# Apply identically to native DSH and DSH+KZ. Materialize before launch.
+# The plugin prepends its narrow handler at the supported Cordis hook.
+- insert:
+    - id: tool-json-recovery
+      name: __TRANSPORT_PLUGIN_PATH__
+      config:
+        auditFile: !!js process.env.KZ_TRANSPORT_AUDIT_PATH

@@ -1,0 +1,15 @@
+{
+  "created": 1792392995.8888192,
+  "account_label": "sidebar-account-ending-8991",
+  "state": "active_for_quota_recovery",
+  "key_sha256": "bbd2f4e115370250dda9524b9fafd0ce2979685263d8a45bb19e996db8e3a677",
+  "credential_path": "/home/lizh639/.config/appworld-credentials/taotoken-standby.json",
+  "switch_condition": "primary_provider_quota_exhausted",
+  "budget_ledger": "/mnt/sdb/home/lizh639/appworld-three-arm30-20261018/spending.sqlite",
+  "campaign_limit_cny": 720,
+  "attempt_limit_cny": 8,
+  "model": "deepseek-flash",
+  "note": "Three unsuccessful quota-interrupted tasks restarted with the saved standby key. Old task IDs retained for cumulative 8 CNY caps.",
+  "activated": 1792394414.4418325,
+  "run": "repair-v3"
+}

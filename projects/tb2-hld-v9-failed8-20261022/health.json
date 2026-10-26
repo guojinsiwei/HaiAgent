@@ -1,0 +1,435 @@
+{
+  "state": "running",
+  "updated_utc": "2026-10-22T15:08:13.358515+00:00",
+  "pid": 3000445,
+  "supervisor_identity": {
+    "pid": 3000445,
+    "start": "856862638",
+    "boot": "2861b57d-7d78-4a80-a96b-0854417097ca"
+  },
+  "auth_paused": false,
+  "phase": "first",
+  "summary": {
+    "hld-v9": {
+      "total": 8,
+      "finished": 4,
+      "clean": 4,
+      "scored": 4,
+      "engineering_failures": 0,
+      "passed": 0
+    }
+  },
+  "rows": [
+    {
+      "task": "crack-7z-hash",
+      "arm": "hld-new",
+      "stage": "first",
+      "job": "tb2v9a8-01-hld-v9-crack-7z-hash",
+      "state": "running",
+      "preflight_attempt_id": "a6d08a77d0304e96965c9bc5b7a8042b",
+      "admission_offline": false,
+      "admitted_utc": "2026-10-22T13:51:03.003959+00:00",
+      "pid": 3013917,
+      "live": {
+        "requests": 108,
+        "tools": 86,
+        "updated_utc": "2026-10-22T15:07:15.173Z"
+      },
+      "preflight": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-hld-v9-failed8-20261022/preflight/preflight-tb2v9a8-01-hld-v9-crack-7z-hash/crack-7z-hash__VL7Udhk",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "harbor_exit": 0
+      },
+      "preflight_ok": true,
+      "attempt_id": "b3b7f6ded20b47c881c77d55d26c8e8e"
+    },
+    {
+      "task": "path-tracing-reverse",
+      "arm": "hld-new",
+      "stage": "first",
+      "job": "tb2v9a8-02-hld-v9-path-tracing-reverse",
+      "state": "done",
+      "preflight_attempt_id": "f50333f2bfe5499a99517c9c328dd076",
+      "admission_offline": false,
+      "admitted_utc": "2026-10-22T13:51:53.617366+00:00",
+      "pid": 3017217,
+      "live": {
+        "requests": 200,
+        "tools": 162,
+        "updated_utc": "2026-10-22T14:13:17.235Z"
+      },
+      "preflight": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-hld-v9-failed8-20261022/preflight/preflight-tb2v9a8-02-hld-v9-path-tracing-reverse/path-tracing-reverse__JTozTkA",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "harbor_exit": 0
+      },
+      "preflight_ok": true,
+      "attempt_id": "eb45c52c7e06494596db719924c4bdfb",
+      "result": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-hld-v9-failed8-20261022/jobs/tb2v9a8-02-hld-v9-path-tracing-reverse/path-tracing-reverse__kDLKcTD",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "solver_exit": 1,
+        "timed_out": false,
+        "exit_receipt_status": "present",
+        "requests": 200,
+        "actual_http_attempts": 199,
+        "tools": 162,
+        "usage": {
+          "requests": 200,
+          "tools": 162,
+          "inputTokens": 3109087,
+          "outputTokens": 131830,
+          "cacheReadTokens": 9856128,
+          "cacheWriteTokens": 0,
+          "unknownUsageRequests": 1,
+          "stopped": null,
+          "budgetMode": "bounded_peak_price_estimate",
+          "updated_utc": "2026-10-22T14:13:17.235Z"
+        },
+        "usage_status": "present",
+        "http_status_counts": {
+          "200": 199
+        },
+        "malformed_route_records": 0,
+        "auth_failure": false,
+        "budget_exhausted": true,
+        "provider": {
+          "kind": "available"
+        },
+        "budget_stop": {
+          "reason": "per_task_budget_exhausted",
+          "source": "hld_structured_turn_end"
+        },
+        "completion": "budget_exhausted",
+        "harbor_exit": 0
+      },
+      "engineering_clean": true
+    },
+    {
+      "task": "gcode-to-text",
+      "arm": "hld-new",
+      "stage": "first",
+      "job": "tb2v9a8-03-hld-v9-gcode-to-text",
+      "state": "done",
+      "preflight_attempt_id": "fb6f29d509394d01af9af31219020eec",
+      "admission_offline": false,
+      "admitted_utc": "2026-10-22T13:50:02.493493+00:00",
+      "pid": 3010682,
+      "live": {
+        "requests": 276,
+        "tools": 224,
+        "updated_utc": "2026-10-22T14:21:58.015Z"
+      },
+      "preflight": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-hld-v9-failed8-20261022/preflight/preflight-tb2v9a8-03-hld-v9-gcode-to-text/gcode-to-text__8Y7pxGE",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "harbor_exit": 0
+      },
+      "preflight_ok": true,
+      "attempt_id": "9c43b2e5019f4d67b2090c382b6ac004",
+      "result": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-hld-v9-failed8-20261022/jobs/tb2v9a8-03-hld-v9-gcode-to-text/gcode-to-text__SAES6qQ",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "solver_exit": 1,
+        "timed_out": false,
+        "exit_receipt_status": "present",
+        "requests": 276,
+        "actual_http_attempts": 275,
+        "tools": 224,
+        "usage": {
+          "requests": 276,
+          "tools": 224,
+          "inputTokens": 3008369,
+          "outputTokens": 134416,
+          "cacheReadTokens": 13659648,
+          "cacheWriteTokens": 0,
+          "unknownUsageRequests": 1,
+          "stopped": null,
+          "budgetMode": "bounded_peak_price_estimate",
+          "updated_utc": "2026-10-22T14:21:58.015Z"
+        },
+        "usage_status": "present",
+        "http_status_counts": {
+          "200": 275
+        },
+        "malformed_route_records": 0,
+        "auth_failure": false,
+        "budget_exhausted": true,
+        "provider": {
+          "kind": "available"
+        },
+        "budget_stop": {
+          "reason": "per_task_budget_exhausted",
+          "source": "hld_structured_turn_end"
+        },
+        "completion": "budget_exhausted",
+        "harbor_exit": 0
+      },
+      "engineering_clean": true
+    },
+    {
+      "task": "chess-best-move",
+      "arm": "hld-new",
+      "stage": "first",
+      "job": "tb2v9a8-04-hld-v9-chess-best-move",
+      "state": "done",
+      "preflight_attempt_id": "c0af6e508e894f44bde6c13578aa66f3",
+      "admission_offline": false,
+      "admitted_utc": "2026-10-22T13:51:53.779234+00:00",
+      "pid": 3017220,
+      "live": {
+        "requests": 279,
+        "tools": 232,
+        "updated_utc": "2026-10-22T15:02:16.311Z"
+      },
+      "preflight": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-hld-v9-failed8-20261022/preflight/preflight-tb2v9a8-04-hld-v9-chess-best-move/chess-best-move__2XSzSiA",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "harbor_exit": 0
+      },
+      "preflight_ok": true,
+      "attempt_id": "092252066f3f4252901bed57d058164d",
+      "result": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-hld-v9-failed8-20261022/jobs/tb2v9a8-04-hld-v9-chess-best-move/chess-best-move__dFC9xTS",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "solver_exit": 1,
+        "timed_out": false,
+        "exit_receipt_status": "present",
+        "requests": 279,
+        "actual_http_attempts": 278,
+        "tools": 232,
+        "usage": {
+          "requests": 279,
+          "tools": 232,
+          "inputTokens": 2778499,
+          "outputTokens": 191687,
+          "cacheReadTokens": 14141824,
+          "cacheWriteTokens": 0,
+          "unknownUsageRequests": 1,
+          "stopped": null,
+          "budgetMode": "bounded_peak_price_estimate",
+          "updated_utc": "2026-10-22T15:02:16.311Z"
+        },
+        "usage_status": "present",
+        "http_status_counts": {
+          "200": 278
+        },
+        "malformed_route_records": 0,
+        "auth_failure": false,
+        "budget_exhausted": true,
+        "provider": {
+          "kind": "available"
+        },
+        "budget_stop": {
+          "reason": "per_task_budget_exhausted",
+          "source": "hld_structured_turn_end"
+        },
+        "completion": "budget_exhausted",
+        "harbor_exit": 0
+      },
+      "engineering_clean": true
+    },
+    {
+      "task": "torch-pipeline-parallelism",
+      "arm": "hld-new",
+      "stage": "first",
+      "job": "tb2v9a8-05-hld-v9-torch-pipeline-parallelism",
+      "state": "done",
+      "preflight_attempt_id": "857606b81b9d4845a84a308970b9efcc",
+      "admission_offline": false,
+      "admitted_utc": "2026-10-22T14:25:17.286380+00:00",
+      "pid": 3071823,
+      "live": {
+        "requests": 151,
+        "tools": 122,
+        "updated_utc": "2026-10-22T14:39:29.717Z"
+      },
+      "preflight": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-hld-v9-failed8-20261022/preflight/preflight-tb2v9a8-05-hld-v9-torch-pipeline-parallelism/torch-pipeline-parallelism__eiwvua2",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "harbor_exit": 0
+      },
+      "preflight_ok": true,
+      "attempt_id": "34dba09ceb2c485b8656cba215a73ad4",
+      "result": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-hld-v9-failed8-20261022/jobs/tb2v9a8-05-hld-v9-torch-pipeline-parallelism/torch-pipeline-parallelism__7mnjEB7",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "solver_exit": 0,
+        "timed_out": false,
+        "exit_receipt_status": "present",
+        "requests": 151,
+        "actual_http_attempts": 151,
+        "tools": 122,
+        "usage": {
+          "requests": 151,
+          "tools": 122,
+          "inputTokens": 1723822,
+          "outputTokens": 84371,
+          "cacheReadTokens": 7200640,
+          "cacheWriteTokens": 0,
+          "unknownUsageRequests": 0,
+          "stopped": null,
+          "budgetMode": "bounded_peak_price_estimate",
+          "updated_utc": "2026-10-22T14:39:29.717Z"
+        },
+        "usage_status": "present",
+        "http_status_counts": {
+          "200": 151
+        },
+        "malformed_route_records": 0,
+        "auth_failure": false,
+        "budget_exhausted": false,
+        "provider": {
+          "kind": "available"
+        },
+        "budget_stop": {},
+        "harbor_exit": 0
+      },
+      "engineering_clean": true
+    },
+    {
+      "task": "hf-model-inference",
+      "arm": "hld-new",
+      "stage": "first",
+      "job": "tb2v9a8-06-hld-v9-hf-model-inference",
+      "state": "running",
+      "preflight_attempt_id": "8c24e6a506ca4cc3933f270484b4ad3a",
+      "admission_offline": false,
+      "admitted_utc": "2026-10-22T14:42:41.275996+00:00",
+      "pid": 3098371,
+      "live": {
+        "requests": 128,
+        "tools": 108,
+        "updated_utc": "2026-10-22T15:07:54.940Z"
+      },
+      "preflight": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-hld-v9-failed8-20261022/preflight/preflight-tb2v9a8-06-hld-v9-hf-model-inference/hf-model-inference__vm3wCcQ",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "harbor_exit": 0
+      },
+      "preflight_ok": true,
+      "attempt_id": "a46653af12d04385b4fc2872ee93b08c"
+    },
+    {
+      "task": "dna-assembly",
+      "arm": "hld-new",
+      "stage": "first",
+      "job": "tb2v9a8-07-hld-v9-dna-assembly",
+      "state": "running",
+      "preflight_attempt_id": "8601e9ccb3d14bcfbf89d766ffd84967",
+      "admission_offline": false,
+      "admitted_utc": "2026-10-22T14:52:57.043684+00:00",
+      "pid": 3129244,
+      "live": {
+        "requests": 157,
+        "tools": 128,
+        "updated_utc": "2026-10-22T15:08:07.463Z"
+      },
+      "preflight": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-hld-v9-failed8-20261022/preflight/preflight-tb2v9a8-07-hld-v9-dna-assembly/dna-assembly__4K99jrf",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "harbor_exit": 0
+      },
+      "preflight_ok": true,
+      "attempt_id": "d04c5dafa6624f4aa5ffc322cf1c7c3e"
+    },
+    {
+      "task": "polyglot-c-py",
+      "arm": "hld-new",
+      "stage": "first",
+      "job": "tb2v9a8-08-hld-v9-polyglot-c-py",
+      "state": "preflighting",
+      "preflight_attempt_id": "a73b0855e9e44b2a8439eae00c7ff486",
+      "admission_offline": true,
+      "admitted_utc": "2026-10-22T15:05:42.309386+00:00",
+      "pid": 3202346,
+      "live": {}
+    }
+  ],
+  "spending": {
+    "limit_microcny": 64000000,
+    "settled_microcny": 38509370,
+    "reserved_microcny": 577536,
+    "uncertain_microcny": 387072,
+    "remaining_microcny": 24526022,
+    "halt_reason": null,
+    "estimate_peak_cny": 64.0
+  },
+  "active": [
+    {
+      "job": "tb2v9a8-01-hld-v9-crack-7z-hash",
+      "pid": 3013917,
+      "offline": false
+    },
+    {
+      "job": "tb2v9a8-06-hld-v9-hf-model-inference",
+      "pid": 3098371,
+      "offline": false
+    },
+    {
+      "job": "tb2v9a8-07-hld-v9-dna-assembly",
+      "pid": 3129244,
+      "offline": false
+    },
+    {
+      "job": "tb2v9a8-08-hld-v9-polyglot-c-py",
+      "pid": 3202346,
+      "offline": true
+    }
+  ]
+}

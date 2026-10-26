@@ -1,0 +1,50 @@
+{
+  "release": "experience-control-v7",
+  "validated_date_local": "2026-09-21",
+  "timezone": "Asia/Shanghai",
+  "platform": "Windows",
+  "python_version": "3.12.14",
+  "implementation_sha256": "db5a7df62f62b6f1ce1b727fadc652b512d4e92a60eef9a072feeb797a94fa2a",
+  "baseline_release": "delivery-hardening-v6",
+  "baseline_implementation_sha256": "010f7ff1b3c6457993e4b9ae567ee91345219b9452f8b1057ac527b4b91da2ff",
+  "baseline_unchanged": true,
+  "tests": {
+    "command": "PYTHONPATH=src python -m unittest discover -s tests -q",
+    "total": 409,
+    "passed": 403,
+    "skipped": 6,
+    "failures": 0,
+    "errors": 0,
+    "elapsed_seconds": 97.392,
+    "skip_scope": "5 existing POSIX/Linux cases and 1 symlink privilege case; Linux integration not rerun"
+  },
+  "unchanged_components": {
+    "raw_baseline.py_sha256": "6d29816fbc2e9b1b1f7f0d9c59b3ca6d6c5bc37cba1f2f472bb5ef5604a7ffd2",
+    "experiment_metrics.py_sha256": "070dd9136c317e12ae1b9b692a974cb543b130d5132cd6c872c2d8e0f4c09f35",
+    "metric_version": "cli-comparison-v1"
+  },
+  "experience_modes": ["off", "legacy", "conditioned"],
+  "default_experience_mode": "conditioned",
+  "ablation_default": "plan_only",
+  "ablation_maximum_selected_tasks": 10,
+  "paid_model_calls_performed": false,
+  "cloud_deployed": false,
+  "official_evaluation_performed": false,
+  "historical_100_tasks_rerun": false,
+  "validation_scope": [
+    "Actual observations versus model hypotheses and verifier methods",
+    "Dependency validity, changed files, conflicting and truncated observations",
+    "Task isolation, no citation priority bonus, retained ordinary history",
+    "Controlled same-prefix offline policy fixture; not a DeepSeek score",
+    "Public counterexample replay inside existing tool budgets",
+    "v6 artifact retention and explicit submission regression suite",
+    "Three-arm frozen small-development experiment planning and partial-result aggregation"
+  ],
+  "claims_not_established": [
+    "Improved SWE-bench official success rate",
+    "Reduced production API cost or causal tool-call savings",
+    "Measured false-block rate",
+    "Generic production model checkpoint continuation",
+    "Complete external operating-system state or model weight immutability"
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "exit_code": 0,
+  "output": "{\"saved\": true, \"mode\": \"0o600\", \"state\": \"saved_standby_not_hot_loaded\"}\n",
+  "stderr": ""
+}

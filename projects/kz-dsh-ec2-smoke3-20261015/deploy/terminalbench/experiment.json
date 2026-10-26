@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "selection": "first_3_of_frozen_30",
+  "task_count": 3,
+  "concurrency": 1,
+  "solver_seconds": 10800,
+  "engineering_retry_batches": 1,
+  "preflight_attempts_per_trial": 1,
+  "retry_score_zero": false,
+  "retry_valid_budget_exhaustion": false
+}

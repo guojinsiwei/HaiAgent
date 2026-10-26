@@ -1,0 +1,16 @@
+{
+  "hld": [
+    "regex-chess",
+    "sam-cell-seg",
+    "dna-assembly",
+    "circuit-fibsqrt",
+    "polyglot-c-py",
+    "adaptive-rejection-sampler"
+  ],
+  "recuris": [
+    "torch-pipeline-parallelism",
+    "regex-chess",
+    "llm-inference-batching-scheduler",
+    "make-doom-for-mips"
+  ]
+}

@@ -1,0 +1,942 @@
+✔ three actually observed identical failures queue one task-local handover (5.5153ms)
+✔ changed or unknown state, incomplete output, local syntax error cannot establish repeated failure (0.5622ms)
+✔ different error output or an intervening execution resets consecutive failures (0.5506ms)
+✔ fourteen observed read-only steps queue a suspicion, not an execution or failure claim (0.8537ms)
+✔ semantic stall takes priority; a new progress review cancels a pending alarm (0.6512ms)
+✔ workspace change cancels stale pending advice; unknown state does not falsely claim progress (0.5077ms)
+✔ pending handover and attempted signatures survive resume without cross-task leakage (0.656ms)
+✔ malformed optional memories do not suppress a valid monitor alarm; invalid verdict IDs do (2.1351ms)
+✔ advisor limits are configurable and invalid values fail explicitly (0.5269ms)
+✔ an intervening native edit resets old consecutive-failure counters even if files are restored (0.4808ms)
+✖ LongCLI materialization retains every original KZ config field under actual DSH patch semantics (19.2959ms)
+✔ DSH partial config patches REPLACE rather than merge; regression must not silently drop KZ setup (1.6681ms)
+✔ shared transport recovery patch loads independently of KZ without replacing provider config (1.1352ms)
+✔ EC2 intervening evidence survives A -> B -> A, identical copies do not buy reviews (4.6638ms)
+✔ EC2 actual execution, background completion and archive retrieval are activity; prose is not (0.8168ms)
+✔ EC2 reopening a gap changes review identity without inventing new file evidence (0.4496ms)
+✔ EC2 semantic history survives 64-row eviction and checkpoint restore without retaining raw history (59.4548ms)
+✔ EC2 literal absolute cd matches the same explicit cwd, unsafe shell remains distinct (1.4676ms)
+✔ EC2 actual equivalent check binds, newer failure cannot be bypassed by older proof (4.5397ms)
+✔ EC receipts: marker fact, command exit and evidence validity are independent (4.4443ms)
+✔ EC receipts: absence in incomplete output is unknown; complete absence is unmet (0.9977ms)
+✖ EC3 ledger: exact legacy repeats keep IDs; distinct concerns survive independently (1.2031ms)
+✔ EC ledger: changed related file reopens proof without changing its Gap ID (2.3365ms)
+✖ EC ledger: incremental close needs current receipts, stable new gap keys come from public requirement quotes (0.5545ms)
+✔ EC ledger: a newer execution supersedes old acceptance despite identical files (0.5906ms)
+✔ EC identical receipt renumbering is not new completion evidence; changed output is (0.9452ms)
+✔ EC ledger: unknown state never proves cross-action stability, same-observation refresh is not an action (0.3789ms)
+✔ EC ledger: failed/weak receipts become deterministic gaps even when Critic gives no gap (0.4845ms)
+✔ EC unavailable Critic: fallback uses real unmet goal and never treats model plan as full coverage (2.2096ms)
+✔ EC a missing-verification gap closes on current deterministic goal proof, then reopens after a source edit (2.0484ms)
+✔ EC unknown-state three complete identical failures intervene without claiming unchanged environment (4.858ms)
+✔ EC an unknown explicit dependency cannot be rescued by a known whole-workspace hash (0.5912ms)
+✔ EC known failed input is blocked on second attempt, changed input can be re-tested (0.6559ms)
+✔ EC output stagnation is broken by edit (0.7891ms)
+✔ EC output stagnation is broken by different_error (0.825ms)
+✔ EC output stagnation is broken by incomplete (0.4486ms)
+✔ EC output stagnation is broken by unclean_zero (1.6389ms)
+✔ EC Advisor preserves usable partial hypotheses without granting execution authority (1.3752ms)
+✔ EC subgoals retain all six and a malformed checker loses only verification (0.8352ms)
+✔ EC dependency cycle has a diagnostic focus, not permission to bypass prerequisites; repair restores readiness (1.8365ms)
+✔ EC malformed prerequisite goal stays a draft without deleting valid goals (0.443ms)
+✔ EC external artifacts have explicit authority, baseline and change tracking; late registration is not called task-initial (159.0738ms)
+✔ EC original public /results path is registered through configured roots and existing artifact remains unchanged (84.7893ms)
+✔ EC symlink state is unknown, declared external roots do not authorize linked escapes (63.1668ms)
+✔ EC an oversized global snapshot does not erase known targeted file evidence (125.8538ms)
+✔ triggering route outranks unrelated recent failures; duplicates merge (4.9278ms)
+✔ one changed dimension accepted; no change rejected; predictions required (6.3748ms)
+✖ real result is written, retrievable on next step and survives restore (7.7252ms)
+✔ both, neither, incomplete, timeout and suspect execution all stay unknown (4.43ms)
+✖ matching support records observed condition without claiming correctness (1.2512ms)
+✔ no outcome fabricated for declaration, rejection or mismatched action (1.7792ms)
+✖ routine actions do not exhaust probe budget; eighth probe writes its result (1.9582ms)
+✔ verification after repair does not consume probe allowance (0.6526ms)
+✔ full task writes uncertain and local-defect results before routing exclusions (11.2049ms)
+✖ result memory stays visible in full context and condition changes remain explicit (5.3355ms)
+✔ duplicate receipt cannot create a second lesson, independent tasks stay isolated (1.7638ms)
+✖ opposing results preserve both observations rather than overwriting history (1.4268ms)
+✖ uncertain core receipts have unique evidence IDs and protocol errors exit boundedly (1.6801ms)
+✔ changed diagnostics and edited source retain failures for the same check (11.871ms)
+✔ reading evidence between failed checks does not erase attempts (0.956ms)
+✔ different compiler flags and wrappers target the same source, other source/cwd do not (0.9177ms)
+✔ same telnet endpoint aggregates changed probes, separate ports stay separate (0.8295ms)
+✔ clean success of the same check clears only that check (2.4798ms)
+✔ uncertain zero exit preserves the ledger without inventing another failure (0.6217ms)
+✔ incomplete outcomes, disabled exploration and duplicate receipt IDs do not activate (1.0853ms)
+✔ unchanged failed request activates before denial, once per failed receipt (1.8128ms)
+✔ recovery cannot rearm from failures accumulated inside the previous episode (1.2575ms)
+✔ trigger state survives context/session restoration (1.162ms)
+✔ full-task evidence path activates across edits while local syntax fixes remain exempt (7.7679ms)
+✔ terminal cleaning preserves earlier error frames and handles OSC/CSI/C1 controls (2.2352ms)
+✔ diagnostic extraction retains a middle failure and footer, not just head/tail (2.5763ms)
+✔ grep no-match is not a failed strategy (2.5968ms)
+✔ zero exit plus traceback does not prove clean execution (1.0832ms)
+✔ masked pipeline status and mixed failed/passed summary cannot pass a public check (0.3958ms)
+✔ complete task memory deduplicates, reinforces and detects changed dependencies (3.5607ms)
+✔ monitor memory requires exact quotes and never promotes a claim to truth (1.3679ms)
+✔ unknown and unadvertised evidence cannot become a memory (0.3848ms)
+✔ memory review checks applicability fields; long explanation stays valid (0.8881ms)
+✔ subgoal definitions are atomic, immutable and acyclic (3.6476ms)
+✔ subgoal only passes a matching actual check on stable dependencies and invalidates downstream (2.3208ms)
+✔ subgoal cannot pass when its own verification changes relevant files (0.6302ms)
+✔ structured context retains omitted open items and requires evidence to retire (0.969ms)
+✔ syntax route does not become an algorithmic failure; reconnaissance bypasses novelty (4.8821ms)
+✔ two regressed fixed checks request rollback; a different new check does not (6.5806ms)
+✔ full panel reserves memories and state is restorable, not reset by view generation (5.3433ms)
+✔ dependency snapshots cover missing files and changes (176.548ms)
+✔ real checkpoint restores files while preserving all current work (259.661ms)
+✔ oversized memory and context prose cannot overflow the protected panel or erase memory (29.1221ms)
+✔ monitor cannot cite synthetic line labels added only by compression (1.7357ms)
+✔ a new failing check cannot trigger rollback to an unrelated passed subgoal (4.0785ms)
+✔ checkpoint corruption is rejected before modifying the current workspace (352.5735ms)
+✔ structured follow-up data is rendered without crashing planner context (2.2913ms)
+✔ catalog resolves exact public quotes without inventing correctness or hiding conflicts (3.5216ms)
+✔ retirement aliases retain no rejected route and unknown evidence stays invalid (2.8032ms)
+✔ same failure across different commands triggers replan only at unchanged complete state (2.3141ms)
+✔ prompt assembly refreshes evidence without leaking another session (356.8657ms)
+✔ evidence braces survive the REAL host renderer as literal values across sessions (210.3189ms)
+✔ outside-workspace calls are not classified as unchanged state (182.2814ms)
+✔ native strategy tool binds its proposal to the subsequent bash call (477.1066ms)
+✔ real official agent loop receives evidence and recovers from gate denial, zero API (399.6758ms)
+✔ actual DSH registry loads plugin and preserves native result; next repeat denied (329.5119ms)
+✔ actual DSH registry permits re-test after workspace edit (350.9766ms)
+✔ host permission denial is preserved and not admitted into failure memory (86.9519ms)
+✔ different sessions do not share evidence (388.404ms)
+✔ recreated agent restores task evidence and invalidates pending proposal (471.4876ms)
+✔ workspace mismatch fails explicitly instead of reading another task (23.4955ms)
+✔ seven denials leave native loop runnable, not terminated (1264.491ms)
+✔ disabled plugin is a true no-op with no strategy tool or audit (14.2606ms)
+✔ EC3 actual AgentLoop accepts missing-information plan without executing a check or buying a verdict (945.6351ms)
+✖ EC3 actual AgentLoop rejects composite check before shell execution (1093.3904ms)
+✔ EC3 actual AgentLoop retains plan-stage formula gap despite global accept of a self-check (1296.4369ms)
+✔ HLD v7 public requirement IDs bind a new gap to an actual receipt and close it (875.5692ms)
+✔ empty Critic plan recovers only after a new public observation, not a repeated final (1719.6619ms)
+✖ REPAIR4 repeatedly empty Critic plans never become success or an unbounded review loop (625.7403ms)
+✖ EC official loop: three substantive completion reviews retain the same gap and do not auto-deliver after two (2742.59ms)
+✔ EC official loop: unavailable Critic fallback needs operator coverage=true (1102.0988ms)
+✖ EC official loop: unavailable Critic fallback needs operator coverage=false (1269.8392ms)
+✔ EC dynamic command uses output-side intervention, not filesystem equality (264.6098ms)
+﹣ EC2 real Linux shell: literal cd receipt verifies the planned explicit cwd (0.2259ms) # SKIP
+✖ EC2 official loop: execute after diagnosis is activity even with identical evidence (1758.216ms)
+✖ EC2 official loop: archive after diagnosis is activity even with identical evidence (1805.3833ms)
+✔ EC malformed optional review cannot block an otherwise ordinary executable action (740.969ms)
+✔ FULL official-loop chain: subgoal → failure → quoted memory → edit → reviewed retry → snapshot → independent Critic (2538.7885ms)
+✔ FULL auxiliary roles share the task request budget; no extra hidden allowance (578.468ms)
+✔ FULL malformed strategy is recoverable and enters local correction without failure memory (112.9745ms)
+✔ FULL optional adviser uses an independent request and the same task budget (1231.0608ms)
+✔ FULL native INVALID_ARGS uses structured error metadata, not an executed failure (66.797ms)
+✔ FULL Critic cannot turn a host-denied check into acceptance (640.8479ms)
+✔ FULL a final Critic check saves its checkpoint without needing another solver step (736.1527ms)
+✔ AUTO monitor stall calls Advisor before next Solver, with handover and shared budget (1905.515ms)
+✔ AUTO and manual advice share cooldown rather than allocating another role budget (1799.3552ms)
+✔ AUTO preserves the final request for Solver and logs budget skip (929.6318ms)
+✔ AUTO adviser failure is nonfatal and does not recursively retry the same evidence (2042.4415ms)
+✔ AUTO three real duplicate failures trigger advice; blocked calls are not failure evidence (2463.9822ms)
+✔ AUTO extended terminal reconnaissance triggers once without changing native commands (3656.1064ms)
+✔ AUTO configured adviser capacity zero skips assistance without stopping Solver (1834.277ms)
+✔ AUDIT rollback traverses actual host permissions and runs the real restore helper in an isolated process (2831.4928ms)
+✔ AUDIT rollback traverses actual host permissions and preserves changed files on denial (2554.8273ms)
+✔ REPAIR frozen default does not create snapshots even after actor and Critic pass the same goal (1042.1469ms)
+✔ REPAIR native absolute file paths supply dependency evidence; native execution errors are visible but not clean checks (129.0819ms)
+✔ REPAIR2 actual DSH write reviews memory, binds receipt, and retains host denial (731.9807ms)
+✔ REPAIR2 actual DSH edit reviews memory, binds receipt, and retains host denial (730.4093ms)
+✔ REPAIR2 actual Critic cache fresh=false preserves receipts and counts executions (788.9377ms)
+✔ REPAIR2 actual Critic cache fresh=true preserves receipts and counts executions (920.6409ms)
+✔ REPAIR actual host stream counts cumulative usage once and blocks a third adapter dispatch (308.4086ms)
+✔ REPAIR cost guard stops before dispatch when request output cap is implicit or monetary ceiling is too low (158.5189ms)
+✔ repair4 returned native error is complete evidence, never CLI execution or test success (6.3917ms)
+✔ repair4 complete native precondition errors support a conditional procedure and survive persistence (4.2497ms)
+✔ repair4 native errors cannot become command-specific or route-blocking memories (1.11ms)
+✔ repair4 partial pages, a missing returned error page, and fabricated quotes remain rejected (0.9541ms)
+✔ repair4 exact monitor quote may correct the stdout/stderr label without changing text (0.6716ms)
+✔ repair4 support normalization does not accept unavailable view content or synthetic labels (1.1726ms)
+✔ repair4 explicit workspace root safely converts absolute targets and preserves missing targets (103.2291ms)
+✔ repair4 normalization cannot escape roots, touch git, or remove evidence/target count limits (50.0432ms)
+✔ repair4 target normalization rejects a symbolic-link traversal even when it resolves inside root (45.7369ms)
+✔ repair4 monitor instruction describes evidence completeness separately from execution outcome (4.3703ms)
+✔ repair4 critic instruction grounds checks in observed public APIs and does not accept empty checks (2.0714ms)
+✔ recover commit interrupted after intent exactly once (78.3437ms)
+✔ recover commit interrupted after events exactly once (91.8445ms)
+✔ recover commit interrupted after checkpoint exactly once (96.1666ms)
+✔ recover a partial final JSONL record without losing committed prefix (95.9426ms)
+✔ independent audit modifications block recovery instead of being overwritten (165.7128ms)
+✔ archived evidence is immutable and repeated identical writes are idempotent (21.6166ms)
+✔ transient atomic-replace locks retry without dropping the old checkpoint (2.9997ms)
+✔ persistent audit failure stays explicit and retries are bounded (1.2033ms)
+✔ normalize only safe whitespace and argument quoting (3.595ms)
+✔ cwd and meaningful timeout differ; description is not identity (1.4598ms)
+✔ TF-IDF identity and empty vocabulary (2.115ms)
+✔ normal first action uses native tools (1.6212ms)
+✔ failed repeated command is rejected but not executed (4.165ms)
+✔ real repair permits the same verification command (1.1737ms)
+✔ unknown state is never proof of unchanged workspace (0.6966ms)
+✔ different cwd is not automatically the same failure (0.8601ms)
+✔ second identical observed failure activates exploration, unrelated failures do not (2.3292ms)
+✖ proof is bound to exact native arguments, one-shot (4.2864ms)
+✔ proof/action mismatch rejected (1.3192ms)
+✔ long prose never causes a length protocol error (0.6775ms)
+✔ invisible evidence references are rejected (0.2976ms)
+✔ seven denials switch to advisory, never terminate or inject shell actions (2.4237ms)
+✔ read/edit tools stay native even during exploration (0.9306ms)
+✔ unknown, cancelled, background and truncated outcomes are not failure memories (0.4309ms)
+✔ a command that changes the workspace is not an unchanged failure (0.5469ms)
+✔ exit zero does not imply task completion (0.4347ms)
+✔ bounded memories and regenerated context (5.7721ms)
+✔ ANSI cleaning affects excerpts only (0.652ms)
+✔ adapter requires structured native exit evidence (0.3519ms)
+✔ disabled algorithm does not gather memory or gate (0.2517ms)
+✔ invalid policy configuration fails at startup (0.6852ms)
+✔ workspace hashing detects actual writes and returns unknown on limits (53.107ms)
+✔ R5 recovery: native admission/final receipt count once; rejection is not execution evidence (4.7846ms)
+✔ R5 recovery: rejected calls advance Monitor cooldown without creating E or failure anchors (7.748ms)
+✔ R5 recovery: rejection monitoring preserves six later periodic slots and total cap (3.9518ms)
+✔ R5 recovery: Monitor may cite R for a control stall but not store a fake failure memory (5.1749ms)
+✔ R5 exploration: two orthogonality rejections exit without killing task or injecting commands (2.667ms)
+✖ R5 exploration: admitted actions end the eight-action window, polls do not duplicate a call (2.4715ms)
+✔ R5 exploration: successful intervening admission resets consecutive orthogonal rejections (0.5108ms)
+✖ R5 exploration: cooldown uses four recovery steps, including rejections, never duplicated receipts (0.6872ms)
+✔ R5 exploration: changed real inputs with unchanged error can start a new episode after cooldown (6.4371ms)
+✔ R5 exploration: unchanged repeated failures do not rearm an exhausted gate (2.3373ms)
+✔ R5 integration: pure proposal refusals reach Monitor and Advisor as R records without inventing E or failure memory (1698.4284ms)
+✔ R5 integration: unexecuted KZ rejections advance Advisor cooldown without additional environment output (3163.422ms)
+✔ R5 integration: DSH host permission denials are not KZ semantic failures or recovery-clock rejections (856.8909ms)
+✔ R5 integration: declaration and atomic child gates count once, not once for every wrapper layer (1725.4378ms)
+✔ R5 integration: 4-request shared cap reserves the final Solver request without hidden auxiliary allowance (812.9077ms)
+✔ R5 integration: 5-request shared cap reserves the final Solver request without hidden auxiliary allowance (1021.3495ms)
+✔ R5 restore review: a fresh task has no fabricated previous Advisor timestamp (18.9964ms)
+✔ R5 restore review: JSON persistence retains R identity, deduplication and new-clock cooldown (7.1945ms)
+✔ R5 restore review: legacy all-tool Advisor timestamp does not become a future recovery-clock deadline (1.4507ms)
+✔ freeze clears pending rollback on resume but retains old checkpoints and subgoal evidence (6.6987ms)
+✔ quoted controls are data while actual pipeline, substitution and newline remain uncertain (0.5706ms)
+✔ dynamic queries and arbitrary successful programs are not classified as cached file reads (2.0084ms)
+✔ local imported source and dependency manifests count as relevant inputs, not random notes (578.6921ms)
+✔ unknown state is never treated as proof of unchanged dependencies (0.9473ms)
+✔ mutating failed operation is not treated as a cached stable failure (0.6452ms)
+✔ seven rejected proposals fall back to advice without stopping the task (1.8346ms)
+✔ one justified retry does not become an unlimited prose-only exemption (1.5391ms)
+✔ native observations preserve text without inventing exit zero or completed checks (2.6178ms)
+✔ native reconnaissance participates in advisor detection without declaring source text a failure (8.3596ms)
+✔ monitor reviews are spread across the run and counters survive resume (660.7353ms)
+✔ pending failure IDs survive recent-window eviction and are removed only after valid review (36.4436ms)
+✔ delivery extraction separates output section from input references and does not claim success (2.3819ms)
+✔ 60/85 percent budget reminders never grant new budget or end a task (0.3519ms)
+✔ routing switches are independent and disabled monitor cannot spend calls (0.6455ms)
+✔ monetary reservation blocks before spending above ceiling and rejects unpriced routes (0.9254ms)
+✔ unknown billing remains charged conservatively across restart; no fake refund on network error (0.1855ms)
+✔ cost guard validates bounds, media and cumulative reservation for concurrent requests (0.3502ms)
+✔ repair2 native review is exact-tool/exact-arguments and one-shot, without orthogonality proof (27.8346ms)
+✔ native edits remain available with memories and create no form rejections (3.6788ms)
+✔ repair2 operation matching does not revive stale or target-mismatched blockers (2.1423ms)
+✔ repair2 complete quoted related observation permits one hypothesis retry, never repeated same-result retries (9.9853ms)
+✔ repair2 retry rejects unrelated_target (3.8153ms)
+✔ repair2 retry rejects fake_quote (2.6364ms)
+✔ repair2 retry rejects old_evidence (1.697ms)
+✔ repair2 retry rejects incomplete (3.9101ms)
+✔ repair2 retry rejects tracked_not_observed (2.3273ms)
+✔ repair2 retry rejects no_hypothesis (1.3859ms)
+✔ repair2 actual related edit needs no extra retry-support schema (1.215ms)
+✔ optional memory review-to-result survives snapshot without a fabricated intervention (3.8611ms)
+✔ repair2 memory receipts bind by call ID under out-of-order completion; unknown execution is not success (0.9198ms)
+✔ repair2 Critic reuses only explicit unchanged workspace check receipt (3.51ms)
+✔ repair2 Critic does not reuse changed_scope (0.9453ms)
+✔ repair2 Critic does not reuse changed_dependency (0.8466ms)
+✔ repair2 Critic does not reuse unknown_scope (0.7404ms)
+✔ repair2 Critic does not reuse intervening_observation (1.0172ms)
+✔ repair2 Critic does not reuse failed_check (0.4894ms)
+✔ repair2 Critic does not reuse partial_check (0.4485ms)
+✔ repair2 Critic does not reuse mutating_check (0.464ms)
+✔ repair3 background launch is incomplete and linked, not a success (4.9702ms)
+✔ repair3 promoted launch is incomplete and linked, not a success (0.5769ms)
+✔ repair3 observer stream supersedes rendered promotion without duplication and retains channels (1.5199ms)
+✔ repair3 killed/signal: SIGTERM never fabricates a clean outcome (0.5138ms)
+✔ repair3 failed/producer broke never fabricates a clean outcome (0.4738ms)
+✔ repair3 completed/ never fabricates a clean outcome (0.5127ms)
+✔ repair3 completed/exit code: 0 [sandbox: denied] never fabricates a clean outcome (0.3339ms)
+✔ repair3 unavailable/unknown job never fabricates a clean outcome (0.3269ms)
+✔ repair3 dropped/oversized output remains partial without rejecting or killing execution (1.2483ms)
+✔ repair3 rendered job_output links failure for review but does not claim full channel coverage (0.8658ms)
+✔ repair3 foreign ID/kind never consumes origin binding (0.4284ms)
+✔ repair3 restart invalidates live registry IDs rather than assigning a recycled job outcome (0.5498ms)
+✔ repair3 overlapping jobs have uncertain state attribution (0.4227ms)
+✔ repair3 launch/poll does not consume memory effect or advance check counter; final does (17.2807ms)
+✔ repair3 malformed retry items all stay nonfatal and cannot authorize a retry (12.4436ms)
+✔ repair3 real DSH registry non-consuming observer preserves model cursor, completes origin exactly once (1044.991ms)
+✔ repair3 host INVALID_ARGS rejection clears old proposal before later action (319.7884ms)
+✔ repair3 semantic proposal rejection also clears old pending authorization (284.9631ms)
+✔ repair3 real background success verifies only the exact declared stable-target check (825.3529ms)
+✔ repair3 background check does not certify a target modified during execution (813.8576ms)
+✔ repair3 interleaved native action makes background attribution unknown, not a reusable failed anchor (1066.7106ms)
+✔ repair3 host cancellation of replacement proposal revokes old pending action (262.3488ms)
+✔ repair3 matched blocker can be explicitly reviewed as not applicable without demanding unrelated memories (2.5638ms)
+✔ repair4 review complete nonzero Traceback becomes a genuine failed-command anchor (26.1037ms)
+✔ repair4 review repeated real Traceback admits an observed conditional blocker, not a success (13.1223ms)
+✔ repair4 review exit zero with Traceback is not clean execution, passing check or a success memory (1.0956ms)
+✔ repair4 review a complete native rejection cannot enter failed command history even on a bash-shaped path (2.5679ms)
+✔ repair4 review malformed native error carrying a numeric exit cannot override the native error tag (0.6224ms)
+✔ repair4 review partial failure evidence does not create a durable command anchor (1.2894ms)
+✔ repair4 review an unexecuted receipt cannot prove either success or command failure (0.6573ms)
+✔ repair4 review complete native-error distinction survives the Solver context projection (5.0874ms)
+✔ repair4 review structured context rejects inherited, nonexistent and mismatched evidence IDs atomically (3.1013ms)
+✔ repair4 review hydrating an older E record cannot replace the newest same-command prior (3.6909ms)
+✔ repair4 review trimming after archive hydration evicts chronological oldest, not newest receipts (103.7237ms)
+✔ repair4 review a genuine repeated failure at the evidence-capacity boundary retains its conditional lesson (47.3293ms)
+✔ R5 an early subgoal without verification cannot crash Critic cache eligibility (9.8461ms)
+✔ R5 restored Advisor cooldown uses bounded new-clock units, while first call is never delayed (2.413ms)
+✔ R5 sandbox failures and interrupted native Bash results are not clean executed evidence (1.5158ms)
+✔ R5 upstream nonzero cannot create a successful pipeline memory or a semantic failure ban (8.0951ms)
+✖ EC3 historical fin failure: global accept plus column-only receipt cannot close formula gap (4.1258ms)
+✖ EC3 explicit targeted closure succeeds; unrelated second gap stays open (0.5364ms)
+✖ EC3 formula closure rejects no_mapping (0.4897ms)
+✖ EC3 formula closure rejects wrong_requirement (0.2272ms)
+✖ EC3 formula closure rejects no_reason (0.1748ms)
+✖ EC3 formula closure rejects unknown_id (0.2609ms)
+✖ EC3 formula closure rejects consistency (0.1938ms)
+✖ EC3 formula closure rejects cached (0.1629ms)
+✖ EC3 plan-stage gaps survive a verdict that omits them and checkpoint restore (0.378ms)
+✖ EC3 a repeated or weaker plan cannot downgrade an existing correctness obligation (0.4889ms)
+✖ EC3 distinct deficiencies under the same public requirement are not merged (0.3906ms)
+✔ EC3 exact public source traced; fabricated or incomplete evidence remains consistency-only (1.0328ms)
+✔ EC3 task correctness coverage requires mappings for each requirement (2.6268ms)
+✔ EC3 missing information or capability is a legal zero-execution, zero-verdict-call plan (0.9201ms)
+✔ EC3 payments-like composite plans are rejected before any execution; direct scripts remain valid (2.0933ms)
+✖ EC3 a new contradictory result still invalidates individually mapped proof (0.9469ms)
+✔ repair5 official DSH Bash keeps permission/action identity original and records real upstream failure (918.7087ms)
+✔ repair5 official DSH all-zero pipeline is clean execution but not a task/public-check pass (756.7293ms)
+✔ repair5 original host denial prevents every native process and creates no execution evidence (88.7105ms)
+✔ repair5 unsupported compound syntax stays unchanged and cannot certify pipeline success (657.5567ms)
+✔ repair5 official background job receives pipeline statuses only on final real registry receipt (1150.2032ms)
+✔ repair5 shell receipts are capability opt-in and never mutate original/native execution fields (8.2179ms)
+✔ repair5 lexer handles literal quotes and fd merge without splitting quoted pipes (1.5999ms)
+✔ repair5 unfamiliar shell syntax executes untouched with explicitly unknown stage coverage (1.822ms)
+✔ repair5 complete native single-pipeline receipt is checked and only its own bytes are removed (1.3337ms)
+✔ repair5 native missing/partial/timeout/abort/sandbox/background-progress observations are never promoted (1.5741ms)
+✔ repair5 no self-reported passed, duplicate/foreign/malformed/forged/inconsistent receipt can count as complete (1.2165ms)
+✔ repair5 complete native stage data preserves SIGPIPE and does not invent test/task success (0.846ms)
+✔ repair5 real Bash captures masked first-stage failure without changing native exit or output (771.5548ms)
+✔ repair5 real Bash snapshots all stages atomically and preserves last-stage failure (1619.4847ms)
+✔ repair5 inherited pipefail is preserved rather than added, removed or treated as receipt evidence (500.0958ms)
+✔ repair5 real quoted strings, stdin, stderr and literal 2>&1 remain byte-for-byte compatible (2153.0876ms)
+✔ repair5 real pipeline executes side effects exactly once, no hidden probe or retry (279.1258ms)
+✔ repair5 real literal cd prefix preserves cwd semantics and failed cd skips every pipeline stage (577.841ms)
+✔ repair5 literal cd parsing and prefix receipt validations cannot invent skipped stage exit codes (0.5895ms)
+✔ repair5 real background-style observation accepts receipt only after native final completion (345.2851ms)
+✔ repair5 real timeout remains an incomplete command, with no automatic execution restart (112.2458ms)
+✔ repair5 original cd conditional preserves inherited errexit and ERR-trap semantics (2676.511ms)
+✔ repair5 inherited function named exit cannot replace native pipeline exit semantics (406.5927ms)
+✔ repair4 strategy execute:true traverses actual DSH runtime exactly once and exposes native receipt (676.3713ms)
+✔ repair4 declaration-only compatibility remains: execute omitted never invokes native action (482.128ms)
+✔ repair4 atomic strategy does not bypass the final duplicate failure gate (1000.4284ms)
+✔ repair4 atomic strategy cannot overrule host permission denial (254.9813ms)
+✔ repair4 atomic strategy cannot overrule cancellation at the child action boundary (359.769ms)
+✔ repair4 shared tool cap includes the wrapper and prevents an unbudgeted child execution (375.6815ms)
+✔ repair4 ordinary action has no empty memory declaration requirement (488.2206ms)
+✔ repair4 real old evidence remains usable after display omission and archive eviction (6096.2714ms)
+✔ repair4 future and another session evidence cannot authorize an atomic action (317.313ms)
+✔ R5 subgoal controller: early plan request is bounded and never blocks (8.2934ms)
+✔ R5 subgoal controller: saved reminder state survives a restart without resetting allowance (0.5595ms)
+✔ R5 subgoal controller: existing meaningful plan avoids the planner prompt (3.4377ms)
+✔ R5 subgoal controller: real clean candidate is shown once with exact E/native arguments but never auto-passed (7.4272ms)
+✔ R5 subgoal controller: echo/cat/grep and unregistered complex commands are not test candidates (2.8207ms)
+✔ R5 subgoal controller: explicitly registered generic command is eligible; unknown full arguments are never guessed (1.0556ms)
+✔ R5 subgoal controller: dirty/incomplete/changed-source and superseded checks produce no candidates (2.5426ms)
+✔ R5 subgoal controller: actual check automatically advances focus to the next ready dependency (3.6296ms)
+✔ R5 subgoal controller: failure or changed source moves focus back and invalidates downstream proof (3.8456ms)
+✔ R5 subgoal controller: explicitly blocked/deferred goals are not force-reactivated by a matching check (2.9188ms)
+✔ R5 subgoal controller: version changes require revalidation and all checks passed does not mean official success (1.1544ms)
+✔ R5 subgoal controller: a proof from another revision cannot survive a state refresh (0.7687ms)
+✔ R5 subgoal controller: successful silent doctest advances a predeclared goal without inventing output markers (7.8305ms)
+✔ R5 subgoal controller: an observed silent doctest is only a candidate until an explicit definition and real E binding (8.3716ms)
+✔ R5 subgoals: empty assertions require explicit zero exit and a substantive check; trivial and generic commands are refused (3.1062ms)
+✔ R5 subgoals: silent checks still need complete executed clean receipts and unchanged targets (3.896ms)
+✔ R5 edge: Go preview go test -list=. cannot certify execution (4.3519ms)
+✔ R5 edge: Go preview go test -n cannot certify execution (0.79ms)
+✔ R5 edge: Go preview go test -c cannot certify execution (0.4419ms)
+✔ R5 edge: list/dry-run make test -n cannot certify a silent test (2.553ms)
+✔ R5 edge: list/dry-run make test -q cannot certify a silent test (1.775ms)
+✔ R5 edge: list/dry-run make test --just-print cannot certify a silent test (0.5202ms)
+✔ R5 edge: list/dry-run make test --recon cannot certify a silent test (0.5635ms)
+✔ R5 edge: list/dry-run make test --question cannot certify a silent test (1.2598ms)
+✔ R5 edge: list/dry-run ctest -N cannot certify a silent test (1.2683ms)
+✔ R5 edge: list/dry-run ctest -NV cannot certify a silent test (0.7664ms)
+✔ R5 edge: list/dry-run ctest --show-only=json-v1 cannot certify a silent test (0.6944ms)
+✔ R5 edge: list/dry-run cargo test --no-run cannot certify a silent test (0.5116ms)
+✔ R5 edge: list/dry-run pytest --collect-only cannot certify a silent test (0.4055ms)
+✔ R5 edge: list/dry-run pytest --co cannot certify a silent test (0.3683ms)
+✔ R5 edge: list/dry-run python -m pytest --fixtures cannot certify a silent test (0.3665ms)
+✔ R5 edge: list/dry-run npm test -- --listTests cannot certify a silent test (0.4758ms)
+✔ R5 edge: list/dry-run npm test -- --showConfig cannot certify a silent test (0.3751ms)
+✔ R5 edge: list/dry-run python -m doctest -o SKIP a.py cannot certify a silent test (0.7482ms)
+✔ R5 edge: list/dry-run python -m doctest -oSKIP a.py cannot certify a silent test (0.3268ms)
+✔ R5 edge: list/dry-run python -m doctest --option=SKIP a.py cannot certify a silent test (0.3547ms)
+✔ R5 edge: list/dry-run go test -list . cannot certify a silent test (0.3449ms)
+✔ R5 edge: supported interpreter flags do not reject a real silent test: python -B -m doctest a.py (1.7731ms)
+✔ R5 edge: supported interpreter flags do not reject a real silent test: python -u -m doctest a.py (0.5271ms)
+✔ R5 edge: supported interpreter flags do not reject a real silent test: python -E -m doctest a.py (0.3541ms)
+✔ R5 edge: supported interpreter flags do not reject a real silent test: python -I -m doctest a.py (0.4096ms)
+✔ R5 edge: supported interpreter flags do not reject a real silent test: python -s -m doctest a.py (0.4344ms)
+✔ R5 edge: supported interpreter flags do not reject a real silent test: python -Bu -m doctest a.py (0.3572ms)
+✔ R5 edge: initial goal lacking verification is safe through actual CriticCache eligibility and lookup (3.923ms)
+✔ R5 edge: candidate hints remain bounded in the structured prompt while full arguments stay in evidence (157.4597ms)
+✔ R5 edge: missing plan reminders never block an ordinary native action (10.061ms)
+✔ R4 integration: real DSH metadata preserves an initial plan and binds a subsequently discovered public check (915.0492ms)
+✔ R4 integration: unknown evidence and stale revisions stay recoverable and cannot create proof (1208.6583ms)
+✔ R4 integration: fresh metadata fingerprints prevent an old successful check certifying edited source (792.4526ms)
+✔ R4 integration: metadata cannot normalize an outside-workspace target into a valid goal (166.9019ms)
+✔ R4 integration: official AgentLoop distributes the frozen canonical task to Solver, Monitor, Advisor and Critic (3400.3177ms)
+✔ R5 official DSH loop: early plan → real silent doctest → explicit E binding → next goal → source edit invalidates dependent proofs (3495.1081ms)
+✔ R4 subgoals: planning without a verification remains visible and cannot pass (13.7946ms)
+✔ R4 subgoals: an explicit revised command binds actual test evidence, not semantic similarity (1.9092ms)
+✔ R4 subgoals: revision invalidates old and dependent proofs while preserving audit history (1.4613ms)
+✔ R4 subgoals: plan cannot silently rewrite definitions and stale updates stay atomic (1.7299ms)
+✔ R4 subgoals: updated dependency cycles and invalid targets cannot partially change a goal (1.1947ms)
+✔ R4 subgoals: binding requires complete real bash evidence, never a model pass flag (1.7273ms)
+✔ R4 subgoals: successful evidence cannot bind after relevant source changes or with unknown fingerprints (1.1363ms)
+✔ R4 subgoals: failure, absent assertion and unverified prerequisite cannot pass (1.3778ms)
+✔ R4 subgoals: duplicate binding is idempotent and latest contrary evidence cannot be hidden (1.6455ms)
+✔ R4 subgoals: existing snapshots gain a revision without losing evidence (1.0131ms)
+✔ R4 task instruction: absent config performs no filesystem discovery (6.0083ms)
+✔ R4 task instruction: only explicit public file is read completely and hashed without rewriting (56.6148ms)
+✔ R4 task instruction: dangerous and hidden path forms fail before touching the filesystem (2.7848ms)
+✔ R4 task instruction: missing configured file does not fall back to a present README (20.3658ms)
+✔ R4 task instruction: requires a regular nonempty UTF-8 text file (53.2783ms)
+✔ R4 task instruction: root must be an absolute task directory (1.2203ms)
+✔ R4 task instruction: refuses a linked directory even when it points inside the workspace (15.9063ms)
+✔ R4 task instruction: refuses a linked workspace root (10.5643ms)
+﹣ R4 task instruction: refuses a linked file pointing outside the task (8.1799ms) # Filesystem cannot create a test link: EPERM
+✔ narrow classification does not swallow auth, cancellation or other malformed protocol (2.1773ms)
+✔ native loop recovers one malformed response, counts retry, retains prior tool result, executes no partial blocks (1032.9836ms)
+✔ native retry allowance exhausts explicitly, not after the first malformed JSON (591.4121ms)
+✔ mixed native network and JSON retries share allowance, no retry budget multiplication (453.8369ms)
+✔ shared request cap still blocks retry before another provider call (371.083ms)
+✔ successful steps reset local retry state; independent task errors do not pollute KZ memory (989.7986ms)
+✔ disabled native retries and unrelated errors are not resurrected (243.0965ms)
+✔ repair also works in native DSH without KZ (same harness treatment for baseline) (40.9544ms)
+✔ cancellation during queued repair never dispatches another request (252.2163ms)
+✔ non-tool-JSON failure AUTH/credentials rejected retains native failure handling (229.3312ms)
+✔ non-tool-JSON failure QUOTA/insufficient quota retains native failure handling (216.5313ms)
+✔ non-tool-JSON failure MALFORMED_RESPONSE/DeepSeek Messages SSE contains invalid JSON retains native failure handling (241.731ms)
+✔ official Messages parser reproduces and recovers the actual failure: recovery=false (605.2052ms)
+✔ official Messages parser reproduces and recovers the actual failure: recovery=true (801.0133ms)
+✔ unlimited bypasses all old caps but counts requests/tools/usage (7.6397ms)
+✔ bounded default still rejects exhausted budget (2.0793ms)
+✔ unlimited does not bypass host denial (2.3774ms)
+✔ unlimited has no stale percentage-based delivery pressure (1.5845ms)
+✔ monitor remains reachable after former lifetime quota (1.1686ms)
+✔ unlimited still validates mode type and retains cooldown (0.8004ms)
+ℹ tests 425
+ℹ suites 0
+ℹ pass 393
+ℹ fail 30
+ℹ cancelled 0
+ℹ skipped 2
+ℹ todo 0
+ℹ duration_ms 52620.0716
+
+✖ failing tests:
+
+test at projects\tb2-hld-mechanism-ab10-20261022\baseline\tests\deployment-config.test.mjs:10:1
+✖ LongCLI materialization retains every original KZ config field under actual DSH patch semantics (19.2959ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  400 !== 800
+  
+      at TestContext.<anonymous> (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/deployment-config.test.mjs:15:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.start (node:internal/test_runner/test:1096:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 400,
+    expected: 800,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at projects\tb2-hld-mechanism-ab10-20261022\baseline\tests\evidence-control.test.mjs:37:1
+✖ EC3 ledger: exact legacy repeats keep IDs; distinct concerns survive independently (1.2031ms)
+  Error: Reuse existing gap IDs in gap_updates; new concerns require new_gaps with a public requirement and stable obligation_id
+      at CompletionLedger.registerReview (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/src/completion.mjs:52:13)
+      at CompletionLedger.record (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/src/completion.mjs:92:10)
+      at TestContext.<anonymous> (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/evidence-control.test.mjs:39:76)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+
+test at projects\tb2-hld-mechanism-ab10-20261022\baseline\tests\evidence-control.test.mjs:51:1
+✖ EC ledger: incremental close needs current receipts, stable new gap keys come from public requirement quotes (0.5545ms)
+  Error: new_gaps requires a stable obligation_id describing the distinct proof obligation
+      at CompletionLedger.registerReview (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/src/completion.mjs:55:15)
+      at CompletionLedger.record (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/src/completion.mjs:92:10)
+      at TestContext.<anonymous> (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/evidence-control.test.mjs:53:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+
+test at projects\tb2-hld-mechanism-ab10-20261022\baseline\tests\exploration-learning.test.mjs:32:1
+✖ real result is written, retrievable on next step and survives restore (7.7252ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'unknown'
+  - 'refuted'
+  
+      at TestContext.<anonymous> (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/exploration-learning.test.mjs:34:45)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'unknown',
+    expected: 'refuted',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at projects\tb2-hld-mechanism-ab10-20261022\baseline\tests\exploration-learning.test.mjs:45:1
+✖ matching support records observed condition without claiming correctness (1.2512ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'unknown'
+  - 'supported'
+  
+      at TestContext.<anonymous> (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/exploration-learning.test.mjs:47:9)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'unknown',
+    expected: 'supported',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at projects\tb2-hld-mechanism-ab10-20261022\baseline\tests\exploration-learning.test.mjs:55:1
+✖ routine actions do not exhaust probe budget; eighth probe writes its result (1.9582ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  false !== true
+  
+      at TestContext.<anonymous> (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/exploration-learning.test.mjs:58:9)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at projects\tb2-hld-mechanism-ab10-20261022\baseline\tests\exploration-learning.test.mjs:78:1
+✖ result memory stays visible in full context and condition changes remain explicit (5.3355ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'unknown'
+  - 'refuted'
+  
+      at TestContext.<anonymous> (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/exploration-learning.test.mjs:82:9)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'unknown',
+    expected: 'refuted',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at projects\tb2-hld-mechanism-ab10-20261022\baseline\tests\exploration-learning.test.mjs:89:1
+✖ opposing results preserve both observations rather than overwriting history (1.4268ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  false !== true
+  
+      at dispatch (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/exploration-learning.test.mjs:14:9)
+      at TestContext.<anonymous> (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/exploration-learning.test.mjs:91:2)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at projects\tb2-hld-mechanism-ab10-20261022\baseline\tests\exploration-learning.test.mjs:94:1
+✖ uncertain core receipts have unique evidence IDs and protocol errors exit boundedly (1.6801ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  false !== true
+  
+      at dispatch (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/exploration-learning.test.mjs:14:9)
+      at TestContext.<anonymous> (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/exploration-learning.test.mjs:96:2)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at projects\tb2-hld-mechanism-ab10-20261022\baseline\tests\host.test.mjs:243:1
+✖ EC3 actual AgentLoop rejects composite check before shell execution (1093.3904ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  2 !== 1
+  
+      at TestContext.<anonymous> (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/host.test.mjs:247:41)
+      at async Test.run (node:internal/test_runner/test:1208:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 2,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at projects\tb2-hld-mechanism-ab10-20261022\baseline\tests\host.test.mjs:303:1
+✖ REPAIR4 repeatedly empty Critic plans never become success or an unbounded review loop (625.7403ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  2 !== 1
+  
+      at TestContext.<anonymous> (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/host.test.mjs:307:10)
+      at async Test.run (node:internal/test_runner/test:1208:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 2,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at projects\tb2-hld-mechanism-ab10-20261022\baseline\tests\host.test.mjs:311:1
+✖ EC official loop: three substantive completion reviews retain the same gap and do not auto-deliver after two (2742.59ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  1 !== 2
+  
+      at TestContext.<anonymous> (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/host.test.mjs:319:10)
+      at async Test.run (node:internal/test_runner/test:1208:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 2,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at projects\tb2-hld-mechanism-ab10-20261022\baseline\tests\host.test.mjs:323:44
+✖ EC official loop: unavailable Critic fallback needs operator coverage=false (1269.8392ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'incomplete_review_stalled'
+  - 'incomplete_repeated_submission'
+                  ^
+  
+      at TestContext.<anonymous> (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/host.test.mjs:332:10)
+      at async Test.run (node:internal/test_runner/test:1208:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'incomplete_review_stalled',
+    expected: 'incomplete_repeated_submission',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at projects\tb2-hld-mechanism-ab10-20261022\baseline\tests\host.test.mjs:363:43
+✖ EC2 official loop: execute after diagnosis is activity even with identical evidence (1758.216ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'incomplete_review_stalled'
+  - 'incomplete_repeated_submission'
+                  ^
+  
+      at TestContext.<anonymous> (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/host.test.mjs:371:10)
+      at async Test.run (node:internal/test_runner/test:1208:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'incomplete_review_stalled',
+    expected: 'incomplete_repeated_submission',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at projects\tb2-hld-mechanism-ab10-20261022\baseline\tests\host.test.mjs:363:43
+✖ EC2 official loop: archive after diagnosis is activity even with identical evidence (1805.3833ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'incomplete_review_stalled'
+  - 'incomplete_repeated_submission'
+                  ^
+  
+      at TestContext.<anonymous> (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/host.test.mjs:371:10)
+      at async Test.run (node:internal/test_runner/test:1208:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'incomplete_review_stalled',
+    expected: 'incomplete_repeated_submission',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at projects\tb2-hld-mechanism-ab10-20261022\baseline\tests\policy.test.mjs:62:1
+✖ proof is bound to exact native arguments, one-shot (4.2864ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  false !== true
+  
+      at TestContext.<anonymous> (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/policy.test.mjs:64:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at projects\tb2-hld-mechanism-ab10-20261022\baseline\tests\recovery-clock-repair5.test.mjs:55:1
+✖ R5 exploration: admitted actions end the eight-action window, polls do not duplicate a call (2.4715ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  true !== false
+  
+      at TestContext.<anonymous> (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/recovery-clock-repair5.test.mjs:58:66)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: true,
+    expected: false,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at projects\tb2-hld-mechanism-ab10-20261022\baseline\tests\recovery-clock-repair5.test.mjs:66:1
+✖ R5 exploration: cooldown uses four recovery steps, including rejections, never duplicated receipts (0.6872ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 4
+  
+      at TestContext.<anonymous> (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/recovery-clock-repair5.test.mjs:69:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 4,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at projects\tb2-hld-mechanism-ab10-20261022\baseline\tests\review-policy.test.mjs:16:1
+✖ EC3 historical fin failure: global accept plus column-only receipt cannot close formula gap (4.1258ms)
+  Error: new_gaps requires a stable obligation_id describing the distinct proof obligation
+      at CompletionLedger.registerReview (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/src/completion.mjs:55:15)
+      at ledger (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/review-policy.test.mjs:14:53)
+      at TestContext.<anonymous> (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/review-policy.test.mjs:17:11)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.start (node:internal/test_runner/test:1096:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17)
+
+test at projects\tb2-hld-mechanism-ab10-20261022\baseline\tests\review-policy.test.mjs:20:1
+✖ EC3 explicit targeted closure succeeds; unrelated second gap stays open (0.5364ms)
+  Error: new_gaps requires a stable obligation_id describing the distinct proof obligation
+      at CompletionLedger.registerReview (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/src/completion.mjs:55:15)
+      at ledger (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/review-policy.test.mjs:14:53)
+      at TestContext.<anonymous> (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/review-policy.test.mjs:21:11)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3)
+
+test at projects\tb2-hld-mechanism-ab10-20261022\baseline\tests\review-policy.test.mjs:25:105
+✖ EC3 formula closure rejects no_mapping (0.4897ms)
+  Error: new_gaps requires a stable obligation_id describing the distinct proof obligation
+      at CompletionLedger.registerReview (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/src/completion.mjs:55:15)
+      at ledger (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/review-policy.test.mjs:14:53)
+      at TestContext.<anonymous> (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/review-policy.test.mjs:26:11)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+
+test at projects\tb2-hld-mechanism-ab10-20261022\baseline\tests\review-policy.test.mjs:25:105
+✖ EC3 formula closure rejects wrong_requirement (0.2272ms)
+  Error: new_gaps requires a stable obligation_id describing the distinct proof obligation
+      at CompletionLedger.registerReview (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/src/completion.mjs:55:15)
+      at ledger (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/review-policy.test.mjs:14:53)
+      at TestContext.<anonymous> (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/review-policy.test.mjs:26:11)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+
+test at projects\tb2-hld-mechanism-ab10-20261022\baseline\tests\review-policy.test.mjs:25:105
+✖ EC3 formula closure rejects no_reason (0.1748ms)
+  Error: new_gaps requires a stable obligation_id describing the distinct proof obligation
+      at CompletionLedger.registerReview (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/src/completion.mjs:55:15)
+      at ledger (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/review-policy.test.mjs:14:53)
+      at TestContext.<anonymous> (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/review-policy.test.mjs:26:11)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+
+test at projects\tb2-hld-mechanism-ab10-20261022\baseline\tests\review-policy.test.mjs:25:105
+✖ EC3 formula closure rejects unknown_id (0.2609ms)
+  Error: new_gaps requires a stable obligation_id describing the distinct proof obligation
+      at CompletionLedger.registerReview (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/src/completion.mjs:55:15)
+      at ledger (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/review-policy.test.mjs:14:53)
+      at TestContext.<anonymous> (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/review-policy.test.mjs:26:11)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+
+test at projects\tb2-hld-mechanism-ab10-20261022\baseline\tests\review-policy.test.mjs:25:105
+✖ EC3 formula closure rejects consistency (0.1938ms)
+  Error: new_gaps requires a stable obligation_id describing the distinct proof obligation
+      at CompletionLedger.registerReview (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/src/completion.mjs:55:15)
+      at ledger (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/review-policy.test.mjs:14:53)
+      at TestContext.<anonymous> (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/review-policy.test.mjs:26:11)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+
+test at projects\tb2-hld-mechanism-ab10-20261022\baseline\tests\review-policy.test.mjs:25:105
+✖ EC3 formula closure rejects cached (0.1629ms)
+  Error: new_gaps requires a stable obligation_id describing the distinct proof obligation
+      at CompletionLedger.registerReview (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/src/completion.mjs:55:15)
+      at ledger (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/review-policy.test.mjs:14:53)
+      at TestContext.<anonymous> (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/review-policy.test.mjs:26:11)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+
+test at projects\tb2-hld-mechanism-ab10-20261022\baseline\tests\review-policy.test.mjs:35:1
+✖ EC3 plan-stage gaps survive a verdict that omits them and checkpoint restore (0.378ms)
+  Error: new_gaps requires a stable obligation_id describing the distinct proof obligation
+      at CompletionLedger.registerReview (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/src/completion.mjs:55:15)
+      at ledger (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/review-policy.test.mjs:14:53)
+      at TestContext.<anonymous> (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/review-policy.test.mjs:36:9)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+
+test at projects\tb2-hld-mechanism-ab10-20261022\baseline\tests\review-policy.test.mjs:39:1
+✖ EC3 a repeated or weaker plan cannot downgrade an existing correctness obligation (0.4889ms)
+  Error: new_gaps requires a stable obligation_id describing the distinct proof obligation
+      at CompletionLedger.registerReview (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/src/completion.mjs:55:15)
+      at ledger (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/review-policy.test.mjs:14:53)
+      at TestContext.<anonymous> (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/review-policy.test.mjs:40:11)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+
+test at projects\tb2-hld-mechanism-ab10-20261022\baseline\tests\review-policy.test.mjs:43:1
+✖ EC3 distinct deficiencies under the same public requirement are not merged (0.3906ms)
+  Error: new_gaps requires a stable obligation_id describing the distinct proof obligation
+      at CompletionLedger.registerReview (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/src/completion.mjs:55:15)
+      at ledger (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/review-policy.test.mjs:14:53)
+      at TestContext.<anonymous> (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/review-policy.test.mjs:44:11)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+
+test at projects\tb2-hld-mechanism-ab10-20261022\baseline\tests\review-policy.test.mjs:73:1
+✖ EC3 a new contradictory result still invalidates individually mapped proof (0.9469ms)
+  Error: new_gaps requires a stable obligation_id describing the distinct proof obligation
+      at CompletionLedger.registerReview (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/src/completion.mjs:55:15)
+      at ledger (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/review-policy.test.mjs:14:53)
+      at TestContext.<anonymous> (file:///C:/Users/54177/Documents/ChatGPT/mcts/projects/tb2-hld-mechanism-ab10-20261022/baseline/tests/review-policy.test.mjs:74:11)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7)

@@ -1,0 +1,53 @@
+{
+  "id": "webarena-571",
+  "task": {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 571,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "I recently moved, my address is {{address}}, update my information on OneStopShopping accordingly",
+    "instantiation_dict": {
+      "address": "231 Willow Way, Suite 100, Chicago, IL, 60601"
+    },
+    "intent": "I recently moved, my address is 231 Willow Way, Suite 100, Chicago, IL, 60601, update my information on OneStopShopping accordingly",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING__/customer/address",
+          "locator": "document.querySelector(\".box.box-address-billing > .box-content\").outerText",
+          "required_contents": {
+            "must_include": [
+              "231 Willow Way",
+              "Suite 100",
+              "Chicago, Illinois, 60601"
+            ]
+          }
+        },
+        {
+          "url": "__SHOPPING__/customer/address",
+          "locator": "document.querySelector(\".box.box-address-shipping > .box-content\").outerText",
+          "required_contents": {
+            "must_include": [
+              "231 Willow Way",
+              "Suite 100",
+              "Chicago, Illinois, 60601"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 165
+  },
+  "benchmark": "webarena",
+  "source_task_sha256": "727fa7eba646f8b38b962cbde898e2aadd776a1f44617d6f8012250fa0848ef7"
+}

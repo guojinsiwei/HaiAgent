@@ -1,0 +1,60 @@
+{
+  "benchmark": "Terminal-Bench 2.0",
+  "commit": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+  "arms": [
+    "HLD v5 unchanged algorithm",
+    "HLD v6 improved"
+  ],
+  "paired_tasks": 10,
+  "selection": [
+    "build-cython-ext",
+    "chess-best-move",
+    "configure-git-webserver",
+    "fix-code-vulnerability",
+    "log-summary-date-ranges",
+    "polyglot-c-py",
+    "qemu-alpine-ssh",
+    "qemu-startup",
+    "regex-log",
+    "sqlite-with-gcov"
+  ],
+  "model": "deepseek-flash",
+  "endpoint": "https://api.taotoken.net/token/v1/messages",
+  "temperature": 0,
+  "thinking": false,
+  "budget": {
+    "server_solver_seconds": 7200,
+    "per_run_cny": 4,
+    "campaign_cny": 80,
+    "shared_requests": 400,
+    "shared_tools": 600
+  },
+  "fresh_container": true,
+  "cross_task_memory": false,
+  "original_official_verifier": true,
+  "submission_snapshot_before_verifier": true,
+  "concurrency_note": "4 total, 2 per arm; task failure does not stop unrelated tasks",
+  "comparison_scope": "bundled controller/protocol/context improvements; single paired run per task, no causal component attribution",
+  "total_trials": 20,
+  "max_trials_with_retry": 20,
+  "paid_attempts_per_arm_task": 1,
+  "no_automatic_paid_retries": true,
+  "task_preflight": "One unpaid original-verifier preflight for each run",
+  "retry_policy": "No automatic paid retries",
+  "concurrency": {
+    "total": 4,
+    "per_arm": 2
+  },
+  "experiment": {
+    "schema_version": 10,
+    "selection": "original_tb2_sample10_fixed_before_outcomes",
+    "task_count": 10,
+    "trial_count": 20,
+    "concurrency": 4,
+    "solver_seconds": 7200,
+    "engineering_retry_batches": 0,
+    "preflight_attempts_per_trial": 1,
+    "retry_score_zero": false,
+    "retry_valid_budget_exhaustion": false
+  }
+}

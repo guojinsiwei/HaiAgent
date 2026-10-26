@@ -1,0 +1,19 @@
+{
+  "name": "hld",
+  "version": "0.4.0-semantic.2",
+  "private": true,
+  "type": "module",
+  "description": "HLD: semantic route planning with a renewable sliding window for DeepSeek Harness",
+  "exports": "./src/plugin.mjs",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "check:host": "node scripts/check-host.mjs",
+    "test:semantic": "node --test tests/semantic-planner.test.mjs tests/semantic-integration.test.mjs"
+  },
+  "devDependencies": {
+    "@deepseek-ai/dsh": "0.2.0-rc.2"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "benchmark": "Terminal-Bench 2.0",
+  "arms": [
+    "frozen_HLD_v8",
+    "HLD_v9.1_efficiency_repair"
+  ],
+  "selection_type": "targeted regression pilot, not benchmark-wide representative sample",
+  "historical_success_tasks": [
+    "extract-elf",
+    "dna-insert",
+    "bn-fit-modify",
+    "build-pmars",
+    "cancel-async-tasks",
+    "compile-compcert",
+    "db-wal-recovery",
+    "fix-ocaml-gc",
+    "git-multibranch",
+    "kv-store-grpc",
+    "modernize-scientific-stack",
+    "qemu-startup"
+  ],
+  "historical_budget_failure_tasks": [
+    "path-tracing-reverse",
+    "gcode-to-text",
+    "dna-assembly",
+    "polyglot-c-py"
+  ],
+  "historical_other_failure_tasks": [
+    "chess-best-move",
+    "hf-model-inference",
+    "large-scale-text-editing",
+    "sanitize-git-repo"
+  ],
+  "proposed_per_trial_cny": 8,
+  "common_limits": {
+    "model_requests": 400,
+    "tools": 600,
+    "solver_seconds": 7200
+  },
+  "concurrency": {
+    "total": 4,
+    "per_arm": 2,
+    "respect_running_longcli": true
+  },
+  "ordering": "paired task/repetition blocks, randomized order with fixed seed 20261023; all repeated trials start fresh",
+  "controls": [
+    "same exact model route and sampling parameters",
+    "same base image and task/verifier hashes",
+    "same provider-account assignment within each pair",
+    "identical transport, billing and dependency handling",
+    "freeze sources before first paid trial",
+    "no grader feedback to solver",
+    "no selection of best attempt",
+    "no inter-task memory or solution reuse"
+  ],
+  "metrics": [
+    "official pass rate and paired gains/losses",
+    "all-role settled and unresolved cost",
+    "cost per allocated trial",
+    "total cost divided by official passes",
+    "all model requests including retries and compaction",
+    "solver decision rounds excluding auxiliary calls",
+    "tool calls separately",
+    "input/output/cache tokens",
+    "solver wall time excluding queue",
+    "complete campaign wall time",
+    "budget and review stops",
+    "engineering failures"
+  ],
+  "analysis": "Pair by task and repetition; resample entire task clusters for uncertainty. Report all tasks, historical-success stratum, and both-pass pairs separately. Both-pass filtering is diagnostic only. Budget failures remain algorithm outcomes. Unresolved usage is reported as an interval, not zero. Engineering-fault repair consumes the same trial budget and cannot be repeated to chase success.",
+  "pilot_targets": {
+    "observed_pass_rate_drop_max": 0,
+    "total_cost_reduction": 0.2,
+    "all_model_request_reduction": 0.15
+  },
+  "interpretation": "Targets are prespecified practical goals, not guarantees. A small zero-drop pilot supports expansion; it cannot establish exact population-level equality. Report confidence intervals and failure transitions. Cost reduction caused by earlier failed submission does not count as successful optimization.",
+  "status": "authorized_running",
+  "repetitions_per_arm_task": 1,
+  "total_trials": 40,
+  "proposed_total_cny": 320,
+  "paid_launch_authorized": true
+}

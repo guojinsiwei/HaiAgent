@@ -1,0 +1,45 @@
+{
+  "time": "2026-10-21T08:08:26.941910",
+  "free_gib": 189.32889556884766,
+  "active_counts": {
+    "hld_preflight": 4,
+    "recuris_preflight": 2,
+    "hld_solve_or_grade": 1,
+    "recuris_solve_or_grade": 1
+  },
+  "pending": 4,
+  "summary": {
+    "hld": {
+      "total": 50,
+      "finished": 45,
+      "clean": 43,
+      "scored": 45,
+      "engineering_failures": 2,
+      "passed": 26
+    },
+    "recuris": {
+      "total": 50,
+      "finished": 43,
+      "clean": 42,
+      "scored": 42,
+      "engineering_failures": 1,
+      "passed": 25
+    }
+  },
+  "budget": {
+    "limit_microcny": 800000000,
+    "settled_microcny": 356907908,
+    "reserved_microcny": 0,
+    "uncertain_microcny": 0,
+    "remaining_microcny": 443092092,
+    "halt_reason": null,
+    "estimate_peak_cny": 800.0
+  },
+  "feal_regrade": {
+    "state": "verifying",
+    "started": 1792541243.393812,
+    "updated": 1792541243.393812,
+    "paid_calls": 0,
+    "container": "tb2hr50-feal-artifact-regrade"
+  }
+}

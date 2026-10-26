@@ -1,0 +1,14 @@
+FROM docker.m.daocloud.io/library/python:3.11-slim-bookworm
+ENV DEBIAN_FRONTEND=noninteractive CUDA_VISIBLE_DEVICES="" NVIDIA_VISIBLE_DEVICES=void ANDROID_HOME=/opt/android ANDROID_SDK_ROOT=/opt/android
+RUN apt-get update && apt-get install -y --no-install-recommends openjdk-17-jre-headless curl unzip libasound2 libnss3 libx11-6 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxi6 libxtst6 libxrandr2 libpulse0 libxkbcommon0 libgl1 libegl1 libdbus-1-3 ffmpeg && rm -rf /var/lib/apt/lists/*
+RUN curl -fL --retry 3 https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip -o /tmp/sdk.zip && mkdir -p /opt/android/cmdline-tools && unzip -q /tmp/sdk.zip -d /opt/android/cmdline-tools && mv /opt/android/cmdline-tools/cmdline-tools /opt/android/cmdline-tools/latest && rm /tmp/sdk.zip
+ENV PATH=/opt/android/cmdline-tools/latest/bin:/opt/android/platform-tools:/opt/android/emulator:$PATH
+RUN yes | sdkmanager --licenses >/dev/null && sdkmanager 'platform-tools' 'emulator' 'system-images;android-33;google_apis;x86_64' && echo no | avdmanager create avd -n AndroidWorldAvd -k 'system-images;android-33;google_apis;x86_64' -d pixel_6
+COPY upstream/android_world /opt/android_world
+RUN pip install --no-cache-dir -r /opt/android_world/requirements.txt && pip install --no-cache-dir /opt/android_world Pillow==11.3.0 httpx backoff loguru
+COPY node /usr/local/bin/node
+COPY SUZ /opt/SUZ
+COPY harness /opt/harness
+ENV PYTHONPATH=/opt/SUZ:/opt/harness
+WORKDIR /opt/harness
+CMD ["python","-u","worker.py"]

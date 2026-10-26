@@ -1,0 +1,652 @@
+[
+  {
+    "path": "audit.py",
+    "sha256": "346bc76df3cc6015886e93778c8082b95619d0be40a7148ae521e970096bc8db",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/audit.py"
+  },
+  {
+    "path": "bestfgs-project/examples/__init__.py",
+    "sha256": "3ba0db688d15cf2ed3ecd240bfe9397e35cb5356651eb76a43f215fc661c2fcd",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/examples/__init__.py"
+  },
+  {
+    "path": "bestfgs-project/examples/demo_counter.py",
+    "sha256": "9607e95e46f522f7dcf38e85035c6baed4bc092ca151410bb2ad7b5fce9003c2",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/examples/demo_counter.py"
+  },
+  {
+    "path": "bestfgs-project/examples/demo_lean.py",
+    "sha256": "a6d895d006879340f3faed4711899c604f23c825dc72aafd4d0b06e0ced2c3b0",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/examples/demo_lean.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/__init__.py",
+    "sha256": "6018a4713374b5c16cc476264e835e5e0ab55468914bb87513cfa906d85fa4fe",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/__init__.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/__main__.py",
+    "sha256": "c312c3eaefc2a59d5210ac1c9f360ebdc108b43605b5c10f98a6bd1e7ff0d95e",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/__main__.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/agent.py",
+    "sha256": "272cdeed5a8ec247fabde0674019639d82db76dfd4f0b01af5d4add66b223c76",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/agent.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/best_first.py",
+    "sha256": "3142ffef1cc70d4b0e8804929947ec559b91bb4ae9c73ab4d22b572e1bccb857",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/best_first.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/best_first_runtime.py",
+    "sha256": "4cc7308d74ca130068c6c5f80cbc83954149d0c5993ac6625e065d549e81c1aa",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/best_first_runtime.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/blocking_memory.py",
+    "sha256": "38d51430257f87120771287cc30b0b4feccf2ec99cf19aadac175bc79948baf4",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/blocking_memory.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/cli_config.py",
+    "sha256": "8b7aeac7671cb3857795bfbcddd84dbdf171389b4693e99c3736c8406e0dca4f",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/cli_config.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/collaboration.py",
+    "sha256": "cf097b1336f1776c1f577b157b13375397b67c40daa7f3bd78bfab5135c07aae",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/collaboration.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/context_updates.py",
+    "sha256": "6bc675cee320b1a9a70ad6bbe7b1a6c6dec16b0f48b6b9e67b60ab5d0e4a78d4",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/context_updates.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/environment.py",
+    "sha256": "76096a6f909f42124424772040d04d30a6e801184d478d9c5a43f721bf514720",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/environment.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/evidence_memory.py",
+    "sha256": "67d39b5f737c64b3aa1a29b7980050f2f3fb076c93a8e4bf3760df7fca502d3b",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/evidence_memory.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/evidence_runtime.py",
+    "sha256": "f24cc8839cedeaf09c43bb7cb6ad4bf466adee3d48484418c0b9252943a35122",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/evidence_runtime.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/experience.py",
+    "sha256": "26441b1ccfb7637b64bb1166c815469c6fdd6b2cac1da084dabbfe758b1e83d5",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/experience.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/experiment_metrics.py",
+    "sha256": "55b34dd564b514ed9495d7d7806eb7d921d70853185283ca8ee1098ad6697ad8",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/experiment_metrics.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/lean_audit.py",
+    "sha256": "3fb0266a46fb715d238343d38ebc61447abbcc01e0ee86a194d19cf1f8607dd6",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/lean_audit.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/lean_cli.py",
+    "sha256": "c8a0367ba06d8f8e4e8ab724ae9930c82af0f3e245118723481469b7100670ab",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/lean_cli.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/lean_conversation.py",
+    "sha256": "b62e7cacf9726bb59cc5690d53defe343e7a3f8a5fbc6455872de6de76608c35",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/lean_conversation.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/lean_docker.py",
+    "sha256": "217001039c58a9271c3375e85e78a5194e425021efbb85308fc26fcbd7b255ed",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/lean_docker.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/lean_environment.py",
+    "sha256": "7af5c298dbc976e4bf977fc174129b39aa8fc13b6b23c9e9726f7d6f8cf7c262",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/lean_environment.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/lean_lhtb.py",
+    "sha256": "cf714201309e67e4afddbb92eabbbd8a646a518bc15d3666e8df617f2a3d12fa",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/lean_lhtb.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/lean_memory.py",
+    "sha256": "1795176b0f57c03275a086e937e05fd2a75994291952fced8fada8a7919b41b8",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/lean_memory.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/lean_monitor.py",
+    "sha256": "136ad6aa2e32f1ba0785fa2bc4b610a9281c2c420c49c77f610ab6d52e67c1dd",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/lean_monitor.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/lean_progress.py",
+    "sha256": "3f45c983459b9e7985b2657c3454ec2864a243555ae373db3f6d6b470390168b",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/lean_progress.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/lean_protocol.py",
+    "sha256": "a875fb1f44b7b3af2d32ace0a132dbd2efbd188113db705416766c2974908801",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/lean_protocol.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/lean_runtime.py",
+    "sha256": "3d859b2ce9811a10c6d1f465bc0ddfa1a098aad1b8fe80c9bdcbcb6d7c49d425",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/lean_runtime.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/memory_events.py",
+    "sha256": "a00bdd44b42fbaf4fb36730f135790746c1a810da068f886861c924153e672a0",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/memory_events.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/metrics.py",
+    "sha256": "80bcd0a21b5325616567e9f3fa34270cff2bd90e0dadd62568e67b7b590ee81a",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/metrics.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/micro_experience.py",
+    "sha256": "ae39673a162acbe71f1d356be5624b4378f93592ce2121520675fe307830eeb4",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/micro_experience.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/model_wire.py",
+    "sha256": "dd92ce356d6e541c98f2ce62ef6b759b1441b8ad7076230ef0d651541a18d1cd",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/model_wire.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/models.py",
+    "sha256": "6fcaa1666a299e42ddb80f4a7916efe9ddee5e9950b06ca759208d5ef681e2a6",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/models.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/monitor_config.py",
+    "sha256": "b400cbe6cd2e9f5e06ec6eaeb981d60b5acb20a2f7b7b4c17e77e0e734c6bec8",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/monitor_config.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/monitor_context.py",
+    "sha256": "ec79a31b67798553348cb904ae339cdcd3d8f6228d532a05ef3b52762d071415",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/monitor_context.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/priority.py",
+    "sha256": "0302096792461befc586ded59314b308673902f6a26b1852a1888f3e18daeb98",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/priority.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/prompt_views.py",
+    "sha256": "68353387a320b28f05230f649887faa0e1c2b0445d89e6c8cc8986986a315723",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/prompt_views.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/raw_baseline.py",
+    "sha256": "415fd3b05cbf613c93c9d5f85d599944579db5a8734a05b495c84bd61e270661",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/raw_baseline.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/redundancy.py",
+    "sha256": "203facd6a0bb31d31f9cc87318c670bd7d8de6a5738e35a5c869c040e7ed1267",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/redundancy.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/response_repair.py",
+    "sha256": "fdafb17f8b0b1cfc342230bd4e1d793f54787a1881b1b79e061eaedd09470a4a",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/response_repair.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/retrac_adapter.py",
+    "sha256": "a6b5c7bf19b6e161ea0bc0d7ab4bf6ccc9d9429251d060281f8957c65fc5bdef",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/retrac_adapter.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/rl.py",
+    "sha256": "a8e583f9178f8e57cdf790625c128f3a6f90f90f2abbfbc82a937b7d9de65522",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/rl.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/rules.py",
+    "sha256": "5885e154a61e6d13cfbff74ef892b560b0560ce2585f1ec0e58cf507e6cfe55e",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/rules.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/semantic.py",
+    "sha256": "0192724c9927093914e38848a108a922fceed8aee4780b608265ad154ca84f82",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/semantic.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/shell_probe.py",
+    "sha256": "13beadecbeef458b2026881f43d58d98304384fe0ee775ba2641f1593627d79c",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/shell_probe.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/stagnation_control.py",
+    "sha256": "2ab0a158860288be52c48ff9a5caae5a7df24ba2877ec592f6a0f79198d1e744",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/stagnation_control.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/submission.py",
+    "sha256": "50c452b3b85273c8a3dd993289072f3e03d404653ac5139e816bdd80e32babb9",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/submission.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/success_judge.py",
+    "sha256": "e497fb4bd41cc98243663e3deae318bcdd406dbb6c1e174d5227b8b2173e2a6c",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/success_judge.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/tool_outcomes.py",
+    "sha256": "08bad4d49646ca783abca8cabfee0292f2e555e5e4bab5c5082d5d66c9713315",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/tool_outcomes.py"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/validation.py",
+    "sha256": "9fe2c536f68da5a473b77308c5579822fd16b126759583adcb75aee2a3587006",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/src/bestfgs/validation.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_architecture.py",
+    "sha256": "f87e0181fc31db266f5ccacc0083bf81d87d9ae752ad1485bc3f1231ea69dcdc",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_architecture.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_benchmark_runners.py",
+    "sha256": "64ee0325cd416d8ae101cfc90f3892048312d5055a3d7d5b892d40e305950f48",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_benchmark_runners.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_benchmark_selection.py",
+    "sha256": "6f7c4f8ee194d79f8c331bed7c5b8e4f20ceea1134fcde28947ecb56051ec757",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_benchmark_selection.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_best_first.py",
+    "sha256": "ffb02d8d6e771efcf2afc01d6dda0dca8e5d2524db000bbab5f63d3fc05926dc",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_best_first.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_budget_runtime.py",
+    "sha256": "55797e3926ffdeb52586a636c100e9c191e89e40f395058ca6be007f9f4a86e5",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_budget_runtime.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_collaboration.py",
+    "sha256": "1057c42389f406518af0e3fe35b89b7b81c0ddc9b560ddd96ddd06bcf2751b48",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_collaboration.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_comparison_preparation.py",
+    "sha256": "2fa847e26fbf8442c59a1c24cd7743114095709664a0caa1eb263a96e534c600",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_comparison_preparation.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_comparison_sharding.py",
+    "sha256": "a5a865638c9500f1055ce724514863845d11272dbf1b7d21e911e09ef070f7f0",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_comparison_sharding.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_context_updates.py",
+    "sha256": "64de932da75bc051d619d6d4dcdffbdafd4965ba29b68ddcbe8e71e1a6a36ced",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_context_updates.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_delivery_runtime.py",
+    "sha256": "5c46a45db4bba19025eef49bf3e9fa15c178979affdacf09ce62e846bbb70257",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_delivery_runtime.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_environment.py",
+    "sha256": "be8db374694683d4ec2b0e04fdf367530e729fe983b5f2be0ef925453b00a9f2",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_environment.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_experience.py",
+    "sha256": "fbc2ffaa772ac88d5711f48d938dbc4d002298f38101139b831827ad95430621",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_experience.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_experience_ablation.py",
+    "sha256": "a1d81afa736019e270532eaf0b415b2c57bd7937e4281dc9dc8150782f47b7b2",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_experience_ablation.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_experience_cli.py",
+    "sha256": "f5e075ff7d898b805055ee7b5586e0870bf0991fcf624d6dea2abd2907074d82",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_experience_cli.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_experience_runtime.py",
+    "sha256": "bd26bb113b3221de89432b4946c7ed2de558832703cb6b4d7f3b1d44721db592",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_experience_runtime.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_lean.py",
+    "sha256": "e5f15db8823a108877e8e0f8b7efdf13dfa60d894470c75c9a4dbaf961c4e4b1",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_lean.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_lean_docker.py",
+    "sha256": "9ab39f2029de58c4b4ea2cb160c074620c026e548bcb11f211b52eec7932c882",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_lean_docker.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_metrics.py",
+    "sha256": "2de7cf275c69edb1b2d3dea44a5e48b091048a6009342a3412361e06b29d99df",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_metrics.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_metrics_report_v2.py",
+    "sha256": "c18675403711a9186268fdf9519299b1605be85ecc1c64ffb79068e6174907ec",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_metrics_report_v2.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_micro_experience.py",
+    "sha256": "87e8bc685bf5f6673a57f1cbcd7d0448765700142af8bf5a8bc9b7b59f66ea3e",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_micro_experience.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_micro_experience_integration.py",
+    "sha256": "5a8e9ebbf82149ecc2e6083f91329d56a998f68defa920e49df33fa89b3484cd",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_micro_experience_integration.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_micro_experience_store.py",
+    "sha256": "a76e492e18f90373a31834bec52fd7123949fa913e2cb0861484915d069b9e21",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_micro_experience_store.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_micro_experience_wire.py",
+    "sha256": "887db959d04bc85a175138a6c3d123c45960ac165d4bfd23acb18e8165fb616e",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_micro_experience_wire.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_model_wire.py",
+    "sha256": "bad16bb0d857508dfeb4b4c06d019338c9bfb487daf588bbb5b5c457780e2125",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_model_wire.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_no_judge_entrypoints.py",
+    "sha256": "17314035437fb38c589924350969fa6a963022b2c0deee0bfd8986cdb6b2f7f8",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_no_judge_entrypoints.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_notebook_runner.py",
+    "sha256": "5ff983dd23032769a563f06717fa73b8780acd652854c771de30ee1be59b5108",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_notebook_runner.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_prompt_views.py",
+    "sha256": "60ed045a4e75dbc5e679cbc6178370aa6b6d8e052bedbfd98cd7e855c1f64b30",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_prompt_views.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_raw_comparison.py",
+    "sha256": "a9353e6168f6e36031713a37b7a49668816933072c259bfa10b016ce1e3f8320",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_raw_comparison.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_redundancy_v10.py",
+    "sha256": "d6f4829ac874ae2ee038ed9cd29a427d34bc88c6a6578ca40ca45932db6fad06",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_redundancy_v10.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_retrac_adapter.py",
+    "sha256": "ea5b52ecf9748c9b5a6b5c081a136aa40e131348249e94386a70a2ab08c6fb24",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_retrac_adapter.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_rl.py",
+    "sha256": "536476e676d147f4aa51e8f04c58823a0699dfab9350b59186d7b9dd45ecc034",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_rl.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_rules.py",
+    "sha256": "b39ca0e77440c8cfe0c764c6c16ca210c9ce6c2651b8166c1c0d7446a3ef1729",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_rules.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_runtime.py",
+    "sha256": "30e07b68ac151169212cd0b32d5326fa0cf3a1a22c2377a23087c996252209a7",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_runtime.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_semantic.py",
+    "sha256": "acd2a685feab798751b88025438995181cde2b8d12d7208ceec0f5ffe8a9d4b2",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_semantic.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_submission.py",
+    "sha256": "d19198ec4d6eb04bb8799c28c1359a87273f94e98f6cfdb8ae901f85146da02e",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_submission.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_success_judge.py",
+    "sha256": "a8646254df97af205baa18225e86cbb5b454dee99379f93a619eeefc31708844",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_success_judge.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_swe_batch.py",
+    "sha256": "e1da4cb28758845358013c9510789727565f29213ef3b53043ada0f542752631",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_swe_batch.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_swe_preparation.py",
+    "sha256": "d484a1d76e85ba3e9152f0e5a6ef3fd07f6a917f292676d45d072291a584f4f0",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_swe_preparation.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_v11_delivery.py",
+    "sha256": "b2f72b05bc55c9585bab488e4047c8843cb213f151f8a3b3217e8e531bec99e9",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_v11_delivery.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_v11_evidence_memory.py",
+    "sha256": "2ee67bd2dd40507fbf8bae7945fe445744492ef7e421e8628242187d74274a1a",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_v11_evidence_memory.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_v11_protocol.py",
+    "sha256": "9f74071135875c4dc492eb900d60810f6c0c9af8a8efbc792928e22deb8e8ab0",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_v11_protocol.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_v11_runtime.py",
+    "sha256": "9d7955d8a84beb941e9fb7e2e9c9ad0bb71fb6c4bbc0a05f60e21d66250a0b75",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_v11_runtime.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_v11_runtime_delivery.py",
+    "sha256": "0ea37911ae001b0d174e408e3410cabaafb79701406d3f4486d2ccf9b206b9f4",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_v11_runtime_delivery.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_v12_blocking_memory.py",
+    "sha256": "75cb939230fde40e7382152deac9c8c306e6d1eb145c17250d1dda91cbfe4d70",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_v12_blocking_memory.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_v12_blocking_protocol.py",
+    "sha256": "0f096cc8e9e257588986b99810f3512090d6285326f7e0e25d6bf7af2213db41",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_v12_blocking_protocol.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_v12_blocking_runtime.py",
+    "sha256": "b26e7c186cbd753cd06a0477f96bfedfd9ac89a92c34653fc158033cecd33b77",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_v12_blocking_runtime.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_v13_branching_restore.py",
+    "sha256": "3defdadd5e2414bab7b664bc0ad865de2ba77ee19e5b5307e6fe345d993a4f05",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_v13_branching_restore.py"
+  },
+  {
+    "path": "bestfgs-project/tests/test_v17_reliability.py",
+    "sha256": "f4511234fed7a97088ef1a2dac8209d83f34edd94e042ab321289f4a0644c84d",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/bestfgs-project/tests/test_v17_reliability.py"
+  },
+  {
+    "path": "container_command.py",
+    "sha256": "50b6e7b50978fff26f6a9ec8d601438e05d896837672f3d22e6a9bf33cc0dcd1",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/container_command.py"
+  },
+  {
+    "path": "docker_state.py",
+    "sha256": "49fa3b3738b08d2cca5a5e807968396c91dfa3dd589c3b59ae9af988d0692079",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/docker_state.py"
+  },
+  {
+    "path": "hai-project/src/haiagent/__init__.py",
+    "sha256": "5337d13fc2e1419ece1cd9bb656e5e7757f52708fab0247a7087f4dc20f9ede4",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/hai-project/src/haiagent/__init__.py"
+  },
+  {
+    "path": "hai-project/src/haiagent/__main__.py",
+    "sha256": "307299fda7b77d22c64cb51430ec75e5f59d78e9c948786afb3b2544fe45e4b7",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/hai-project/src/haiagent/__main__.py"
+  },
+  {
+    "path": "hai-project/src/haiagent/action_protocol.py",
+    "sha256": "a683ac087dc0edfa9cbe0f1786ef6e80bf706123f43daab1ace566f413431f5a",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/hai-project/src/haiagent/action_protocol.py"
+  },
+  {
+    "path": "hai-project/src/haiagent/cli.py",
+    "sha256": "4e5dfbd7884621fa17eee6d48d4c056c7ff973c672731f341a04711c327dd5d2",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/hai-project/src/haiagent/cli.py"
+  },
+  {
+    "path": "hai-project/src/haiagent/demo.py",
+    "sha256": "74d59bf8cb4cdc16384cfbd50ebf454dcd580fdd10b9abe05ef0bf62f48381d6",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/hai-project/src/haiagent/demo.py"
+  },
+  {
+    "path": "hai-project/src/haiagent/evaluation.py",
+    "sha256": "ba541555a32925af3e284f774f988a995c7bff9bf40d4de63023173715814288",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/hai-project/src/haiagent/evaluation.py"
+  },
+  {
+    "path": "hai-project/src/haiagent/executor.py",
+    "sha256": "000336493fbf69051f13091d451e1351277a09cba507e875c6f8a35d4b9bab8c",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/hai-project/src/haiagent/executor.py"
+  },
+  {
+    "path": "hai-project/src/haiagent/file_evidence.py",
+    "sha256": "97f16daa202e105fccfdd6017c4e5e22c7d2fbd2590a84b2e3322891a0f9ae79",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/hai-project/src/haiagent/file_evidence.py"
+  },
+  {
+    "path": "hai-project/src/haiagent/metrics.py",
+    "sha256": "5643fa9443968f0dc1c0a4318d0111487c0fe3fc1fbc9d3e1f0216864639eab0",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/hai-project/src/haiagent/metrics.py"
+  },
+  {
+    "path": "hai-project/src/haiagent/model.py",
+    "sha256": "77a640602828431cc624ba0f32cb9e4d01aa0850d88969d2305a84e81caeceee",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/hai-project/src/haiagent/model.py"
+  },
+  {
+    "path": "hai-project/src/haiagent/protocol.py",
+    "sha256": "5f3fd55a369f08b69d43dffb952e3b7107cd218862b051fe4d6c04b9bf444874",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/hai-project/src/haiagent/protocol.py"
+  },
+  {
+    "path": "hai-project/src/haiagent/runtime.py",
+    "sha256": "6d6ec919089be6ecd71ecefcf64fe438caea4f8d4bfe330d78101b6207672081",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/hai-project/src/haiagent/runtime.py"
+  },
+  {
+    "path": "hai-project/src/haiagent/semantic.py",
+    "sha256": "1987f6e64e55f3e59356186f5df9ed1eae68bdf5b54903bfe5842f54c5037db1",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/hai-project/src/haiagent/semantic.py"
+  },
+  {
+    "path": "hai-project/src/haiagent/storage.py",
+    "sha256": "3fb0266a46fb715d238343d38ebc61447abbcc01e0ee86a194d19cf1f8607dd6",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/hai-project/src/haiagent/storage.py"
+  },
+  {
+    "path": "hai-project/src/haiagent/submission.py",
+    "sha256": "c8789a0bdad1414617998bd25f44aca29b11fe1eaae6bedaa5551f17bf5d458b",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/hai-project/src/haiagent/submission.py"
+  },
+  {
+    "path": "hai-project/src/terminal_context/__init__.py",
+    "sha256": "b647214eb536046c467cc1ca14bd62617d8ec144c224675cefdcbabdd657dc7d",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/hai-project/src/terminal_context/__init__.py"
+  },
+  {
+    "path": "hai-project/src/terminal_context/adapters.py",
+    "sha256": "bee3ef15eecc7bc2f1729bd6ffde3d44c8ce404c689c87a07dace4fd7810cd67",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/hai-project/src/terminal_context/adapters.py"
+  },
+  {
+    "path": "hai-project/src/terminal_context/compression.py",
+    "sha256": "72f89ed2e261a2c279424fa4ba6c458b9a278cb63510efcdc9ac0d7d043e2f9c",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/hai-project/src/terminal_context/compression.py"
+  },
+  {
+    "path": "hai-project/src/terminal_context/core.py",
+    "sha256": "4e121ef0c13b3e2734cb7bae18d49255fa496ffdda88a4cd1804a614987cf90f",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/hai-project/src/terminal_context/core.py"
+  },
+  {
+    "path": "hai-project/src/terminal_context/stagnation.py",
+    "sha256": "220428cb9d47774893921030051a111f018e8c813e3a3118ec6f82b8c56d71c1",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/hai-project/src/terminal_context/stagnation.py"
+  },
+  {
+    "path": "hai-project/src/terminal_context/types.py",
+    "sha256": "fd55fcca350f316391657dbadd4198c87c1b74f8a36eb76291eaa3327dcc993d",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/hai-project/src/terminal_context/types.py"
+  },
+  {
+    "path": "hai-project/tests/test_action_protocol.py",
+    "sha256": "37904cfe8ffc2fb728f2c4a7565339b5507d57ba52c7d04d33a33e7020dd27f6",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/hai-project/tests/test_action_protocol.py"
+  },
+  {
+    "path": "hai-project/tests/test_agent.py",
+    "sha256": "eb9aefb71fd3c0519aae4468fac1b282ade63def00e7ae93cb30e7df5e48448a",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/hai-project/tests/test_agent.py"
+  },
+  {
+    "path": "hai-project/tests/test_context.py",
+    "sha256": "650c65db715f4adbf6ed4ce4357cc2ae8fc04edc6dd309531acc1e760420a3ea",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/hai-project/tests/test_context.py"
+  },
+  {
+    "path": "hai-project/tests/test_regressions.py",
+    "sha256": "1ea448389d05534d5c8ea9132eee5a32c93ea953ce030ad992d26090712ddb32",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/hai-project/tests/test_regressions.py"
+  },
+  {
+    "path": "hai-project/tests/test_semantic_memory.py",
+    "sha256": "94bd2d79dd4a84b42eb71d099c2f5d0a640844e052aa9d7f88a51a9cc010ba5d",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/hai-project/tests/test_semantic_memory.py"
+  },
+  {
+    "path": "hai-project/tests/test_stagnation.py",
+    "sha256": "ac6329a4331d50ef7563ad795820d635057a8483ae680ea1b94666eb4a468b6e",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/hai-project/tests/test_stagnation.py"
+  },
+  {
+    "path": "hai_outcomes.py",
+    "sha256": "51bfbfdb144d0adbdfcc0ba710069aa71e2bfa5fc5659a62d6f19ca0461a6def",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/hai_outcomes.py"
+  },
+  {
+    "path": "hai_transport.py",
+    "sha256": "f4363ebb8b50e0d511e56344c2d42abe20e3e5d99667b9c71e1383d2ee2665db",
+    "origin": "/var/tmp/lizh639-monitor-control-v6/sources/hai_transport.py"
+  }
+]

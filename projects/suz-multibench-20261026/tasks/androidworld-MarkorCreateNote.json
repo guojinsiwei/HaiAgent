@@ -1,0 +1,13 @@
+{
+  "id": "androidworld-MarkorCreateNote",
+  "class": "MarkorCreateNote",
+  "params": {
+    "file_name": "cool_ocean_edited.md",
+    "text": "Cleanliness is next to godliness.",
+    "seed": 20261030
+  },
+  "instruction": "Create a new note in Markor named cool_ocean_edited.md with the following text: Cleanliness is next to godliness.",
+  "max_steps": 16,
+  "benchmark": "androidworld",
+  "instance_sha256": "2dee8f4cf1798e0b2350fd28ff7b5d14b7f9db42704650f5eec3b77d4de49d7a"
+}

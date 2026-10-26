@@ -1,0 +1,210 @@
+{
+  "commit": "04718eab9327856efe8192cc58161acc7a7627e2",
+  "seed": "SUZ-OSWorld-20261023-20",
+  "selection": "Two tasks per official domain, SHA256-ranked before model runs. Balanced pilot, not the full-dataset distribution.",
+  "tasks": [
+    {
+      "id": "6c4c23a1-42a4-43cc-9db1-2f86ff3738cc",
+      "domain": "chrome",
+      "path": "tasks/chrome/6c4c23a1-42a4-43cc-9db1-2f86ff3738cc.json",
+      "sha256": "96b23662f256ffabe7018db46a0ebd4eacb81fd770005ff3d98aa048a93f7290",
+      "instruction": "Find flights from Seattle to New York on 5th next month and only show those that can be purchased with miles.",
+      "related_apps": [
+        "chrome"
+      ]
+    },
+    {
+      "id": "3299584d-8f11-4457-bf4c-ce98f7600250",
+      "domain": "chrome",
+      "path": "tasks/chrome/3299584d-8f11-4457-bf4c-ce98f7600250.json",
+      "sha256": "9519b2303dccbce6d33be4c21893d1d51c2a5acb06107503a36caa6bfabfed6d",
+      "instruction": "On my surface pro whenever I launch Chrome it always opens \"funbrain.com.\" I don't want this. I cleared my cache but it still happens. What should I do?",
+      "related_apps": [
+        "chrome"
+      ]
+    },
+    {
+      "id": "f723c744-e62c-4ae6-98d1-750d3cd7d79d",
+      "domain": "gimp",
+      "path": "tasks/gimp/f723c744-e62c-4ae6-98d1-750d3cd7d79d.json",
+      "sha256": "90947f79d1f5ecfc8ca2154134a32ae226f3b3dda2e796513411389767042520",
+      "instruction": "I'd like to make the picture's contrast stronger to really bring out the main subject. Could you assist me in boosting the contrast?",
+      "related_apps": [
+        "gimp"
+      ]
+    },
+    {
+      "id": "2a729ded-3296-423d-aec4-7dd55ed5fbb3",
+      "domain": "gimp",
+      "path": "tasks/gimp/2a729ded-3296-423d-aec4-7dd55ed5fbb3.json",
+      "sha256": "a2972fc8a5b955c570b84e4a2a689b74d7a73bc999ac4ee97d3c8379fcb6bd7c",
+      "instruction": "Could you make the background of this image transparent for me?",
+      "related_apps": [
+        "gimp"
+      ]
+    },
+    {
+      "id": "6e99a1ad-07d2-4b66-a1ce-ece6d99c20a5",
+      "domain": "libreoffice_calc",
+      "path": "tasks/libreoffice_calc/6e99a1ad-07d2-4b66-a1ce-ece6d99c20a5.json",
+      "sha256": "610adfe4461f26cd2c0dd95053d010be0b1ed1eac294a780a82c67df6b8f46f7",
+      "instruction": "Help me format column \"spent\" by keeping two decimal points. ",
+      "related_apps": [
+        "libreoffice calc"
+      ]
+    },
+    {
+      "id": "4188d3a4-077d-46b7-9c86-23e1a036f6c1",
+      "domain": "libreoffice_calc",
+      "path": "tasks/libreoffice_calc/4188d3a4-077d-46b7-9c86-23e1a036f6c1.json",
+      "sha256": "c3a9c694d83e99388ab1cacdf14d5a35928fe3eee5e1e71cfc8256ebb71bfb0d",
+      "instruction": "Help me freeze the range A1:B1 on this sheet to keep the headers always visible",
+      "related_apps": [
+        "libreoffice_calc"
+      ]
+    },
+    {
+      "id": "2cd43775-7085-45d8-89fa-9e35c0a915cf",
+      "domain": "libreoffice_impress",
+      "path": "tasks/libreoffice_impress/2cd43775-7085-45d8-89fa-9e35c0a915cf.json",
+      "sha256": "4f3699c92303b83da81e1ad44753fb333d7934f5e2f881f574db4d976254ac51",
+      "instruction": "Enable auto-save every 3min for me, so that I don't need to hit \"ctrl-s\" that much",
+      "related_apps": [
+        "libreoffice_impress"
+      ]
+    },
+    {
+      "id": "ce88f674-ab7a-43da-9201-468d38539e4a",
+      "domain": "libreoffice_impress",
+      "path": "tasks/libreoffice_impress/ce88f674-ab7a-43da-9201-468d38539e4a.json",
+      "sha256": "21198431a3645242f715224c5d8d038abde98be268d1d2493e06340dc9cd4f17",
+      "instruction": "Please set my slides upright instead of sideways.",
+      "related_apps": [
+        "libreoffice_impress"
+      ]
+    },
+    {
+      "id": "0810415c-bde4-4443-9047-d5f70165a697",
+      "domain": "libreoffice_writer",
+      "path": "tasks/libreoffice_writer/0810415c-bde4-4443-9047-d5f70165a697.json",
+      "sha256": "25b48b75bbe896e3b50f5304c831ff8c768ddf6057c4cca2f1901ba1ad6a4e3d",
+      "instruction": "Make the line spacing of first two paragraph into double line spacing",
+      "related_apps": [
+        "libreoffice_writer"
+      ]
+    },
+    {
+      "id": "72b810ef-4156-4d09-8f08-a0cf57e7cefe",
+      "domain": "libreoffice_writer",
+      "path": "tasks/libreoffice_writer/72b810ef-4156-4d09-8f08-a0cf57e7cefe.json",
+      "sha256": "0ccfc3cd89567c19dd5496cacc3eb3d7780d6a91a0c6ec5ac85c42298f3079b7",
+      "instruction": "I am peer-reviewing my friend's course outline. I think the last paragraph is redundant so I want to add strike-through on words in the last paragraph. Can you do this for me?",
+      "related_apps": [
+        "libreoffice_writer"
+      ]
+    },
+    {
+      "id": "36037439-2044-4b50-b9d1-875b5a332143",
+      "domain": "multi_apps",
+      "path": "tasks/multi_apps/36037439-2044-4b50-b9d1-875b5a332143.json",
+      "sha256": "165b68f0f734343de0ca972cb9938f60b64c9a161d009379975b19c6d1b5b2fb",
+      "instruction": "Could you please pull up the Google Scholar page of the corresponding author for me in Chrome?",
+      "related_apps": [
+        "OS",
+        "Chrome"
+      ]
+    },
+    {
+      "id": "227d2f97-562b-4ccb-ae47-a5ec9e142fbb",
+      "domain": "multi_apps",
+      "path": "tasks/multi_apps/227d2f97-562b-4ccb-ae47-a5ec9e142fbb.json",
+      "sha256": "227b0aa19cb5001b2fa5bfbd1cd25f078b3309da43fee11d1f52def842b06054",
+      "instruction": "I've stored my .xcf file on the Desktop. Can you assist me in copying the image and pasting it into a LibreOffice Writer document? Save the document as 'image.docx' on the Desktop, please.",
+      "related_apps": [
+        "libreoffice_writer",
+        "gimp",
+        "os"
+      ]
+    },
+    {
+      "id": "c288e301-e626-4b98-a1ab-159dcb162af5",
+      "domain": "os",
+      "path": "tasks/os/c288e301-e626-4b98-a1ab-159dcb162af5.json",
+      "sha256": "c50565f3a59462abb56546ebce66e83b0a5abe05dd11282ab8969a951714a071",
+      "instruction": "Please set the default Python version to Python4 on my Ubuntu system.",
+      "related_apps": [
+        "os"
+      ]
+    },
+    {
+      "id": "a4d98375-215b-4a4d-aee9-3d4370fccc41",
+      "domain": "os",
+      "path": "tasks/os/a4d98375-215b-4a4d-aee9-3d4370fccc41.json",
+      "sha256": "642f338e55756f5a3661b3fab923725b90313f8885b11b195744d72a0463b1d9",
+      "instruction": "I want to have my computer automatically locked after I leaved. Can you help me?",
+      "related_apps": [
+        "os"
+      ]
+    },
+    {
+      "id": "08c73485-7c6d-4681-999d-919f5c32dcfa",
+      "domain": "thunderbird",
+      "path": "tasks/thunderbird/08c73485-7c6d-4681-999d-919f5c32dcfa.json",
+      "sha256": "6049b3f321368f8639afe664e7f791edfe0e0f37c8bbcabe59322cf341c136a0",
+      "instruction": "Thunderbird's message filters seem to only fire on Inbox automatically. If you want to filter on subfolders, you'd have to start this filter manually. I am wondering if the filter can be applied automatically. Could you help me apply automatic message filters to subfolders",
+      "related_apps": [
+        "thunderbird"
+      ]
+    },
+    {
+      "id": "a10b69e1-6034-4a2b-93e1-571d45194f75",
+      "domain": "thunderbird",
+      "path": "tasks/thunderbird/a10b69e1-6034-4a2b-93e1-571d45194f75.json",
+      "sha256": "55ba72bff154a1192339c038a37887dfeeb78829e72c9c1867c07cb91bfa2b02",
+      "instruction": "Create two local folders in Thunderbird for me: COMPANY and UNIVERSITY.",
+      "related_apps": [
+        "thunderbird"
+      ]
+    },
+    {
+      "id": "aa4b5023-aef6-4ed9-bdc9-705f59ab9ad6",
+      "domain": "vlc",
+      "path": "tasks/vlc/aa4b5023-aef6-4ed9-bdc9-705f59ab9ad6.json",
+      "sha256": "e6e724a40ebc25e003cbe34747d9ce6f08dd0fd9847de613870cf4bd2a4e7ad7",
+      "instruction": "Hey, could you turn this video the right way up for me? And once it's flipped around, could you save it for me with the name '1984_Apple_Macintosh_Commercial.mp4' on the main screen where all my files are?",
+      "related_apps": [
+        "vlc"
+      ]
+    },
+    {
+      "id": "5ac2891a-eacd-4954-b339-98abba077adb",
+      "domain": "vlc",
+      "path": "tasks/vlc/5ac2891a-eacd-4954-b339-98abba077adb.json",
+      "sha256": "4e038a7bb4c3770186209d68402e678ff723238cb31684fe452f0b0c6f4665da",
+      "instruction": "My VLC Media Player has been auto-closing once the video ends. It is very annoying. Could you help me prevent the VLC Media Player from auto-closing once the video ends?",
+      "related_apps": [
+        "vlc"
+      ]
+    },
+    {
+      "id": "ec71221e-ac43-46f9-89b8-ee7d80f7e1c5",
+      "domain": "vs_code",
+      "path": "tasks/vs_code/ec71221e-ac43-46f9-89b8-ee7d80f7e1c5.json",
+      "sha256": "b9f50a23a983d7c339cf6169804073020cf3a5151ab8bb9c16d202071655adcf",
+      "instruction": "Please help me increase the indent of line 2 to line 10 by one tab.",
+      "related_apps": [
+        "vscode"
+      ]
+    },
+    {
+      "id": "9439a27b-18ae-42d8-9778-5f68f891805e",
+      "domain": "vs_code",
+      "path": "tasks/vs_code/9439a27b-18ae-42d8-9778-5f68f891805e.json",
+      "sha256": "08d00b2137e5e596980139493c844185291c96b796791217c8a86a7c81b372cb",
+      "instruction": "Please help me modify the setting of VS Code to keep my cursor focused on the debug console when debugging in VS Code, instead of automatically focusing back on the Editor.",
+      "related_apps": [
+        "vscode"
+      ]
+    }
+  ]
+}

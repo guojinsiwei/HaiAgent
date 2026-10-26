@@ -1,0 +1,8 @@
+{
+  "task": "path-tracing-reverse",
+  "image": "alexgshaw/path-tracing-reverse:20251031",
+  "digest": "sha256:7911e42479d8f6d8af1248bc52442a0efbc5a33e3ecf535fdc20d252a2c64142",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/path-tracing-reverse/manifests/20251031",
+  "header_verified": true,
+  "time": 1792550874.8995862
+}

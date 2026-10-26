@@ -1,0 +1,14 @@
+{
+  "mode": "opencua_baseline",
+  "passed": true,
+  "cpu_only": true,
+  "batches": 11,
+  "primitive_actions": 11,
+  "green_fraction": 0.3767361111111111,
+  "cost_cny": 0.0934752,
+  "requests": 12,
+  "source_sha256": "0486b43af257178995092f779dd9a7aa0acaa8a9275feaa0e897754e58e9f256",
+  "deployment_sha256": "dd8723e66993a175024cb471ca949a29ff89985c86f1194f5413f61209cecc9f",
+  "verification": "Manual inspection of preserved last-observation.png: All two steps verified and Completed successfully visible. Prior assertion incorrectly required >45% full-screen green despite non-maximized window. No repeated model calls.",
+  "image_sha256": "d7c7cc01d9b08f30a7fa7a11de3b5edc36afaa53ba8c6b970ade991997488909"
+}

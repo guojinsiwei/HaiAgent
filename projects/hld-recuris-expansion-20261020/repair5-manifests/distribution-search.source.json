@@ -1,0 +1,8 @@
+{
+  "task": "distribution-search",
+  "image": "alexgshaw/distribution-search:20251031",
+  "digest": "sha256:1448f7aa1c6080488251d00350e8e90477858989b1bec0accc866d7b3220738a",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/distribution-search/manifests/20251031",
+  "header_verified": true,
+  "time": 1792510257.762346
+}

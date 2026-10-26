@@ -1,0 +1,8 @@
+{
+  "task": "git-multibranch",
+  "image": "alexgshaw/git-multibranch:20251031",
+  "digest": "sha256:5bc449921c138295f6ddd8dca2977319fee2ce523811dbe56cec4ca663385fb5",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/git-multibranch/manifests/20251031",
+  "header_verified": true,
+  "time": 1792550865.185042
+}

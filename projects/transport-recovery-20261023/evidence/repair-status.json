@@ -1,0 +1,202 @@
+{
+  "checked_at": 1792737127.6900227,
+  "tests": [
+    {
+      "name": "provider-guard",
+      "passed": true
+    },
+    {
+      "name": "circuit",
+      "passed": true
+    }
+  ],
+  "source_changes": [
+    "dsh-baselines/src/bridge.mjs",
+    "dsh-baselines/src/plugin.mjs"
+  ],
+  "lhtb_recovery_proofs": [
+    {
+      "job": "lhtb24-04-hld-commit0-multilib-tdd",
+      "passed": true,
+      "restored_reward": 0.0918
+    },
+    {
+      "job": "lhtb24-04-recuris-commit0-multilib-tdd",
+      "passed": true,
+      "restored_reward": 0.0281
+    },
+    {
+      "job": "lhtb24-05-hld-opensees-seismic-structural-regression-audit",
+      "passed": true,
+      "restored_reward": 0.03141671606401897
+    },
+    {
+      "job": "lhtb24-05-recuris-opensees-seismic-structural-regression-audit",
+      "passed": true,
+      "restored_reward": 0.01896858328393598
+    },
+    {
+      "job": "lhtb24-06-hld-chess-mate",
+      "passed": true,
+      "restored_reward": 0.1375
+    },
+    {
+      "job": "lhtb24-06-recuris-chess-mate",
+      "passed": true,
+      "restored_reward": 0.1208
+    },
+    {
+      "job": "lhtb24-21-hld-nbody-accel-iterative",
+      "passed": true,
+      "restored_reward": null
+    },
+    {
+      "job": "lhtb24-21-recuris-nbody-accel-iterative",
+      "passed": true,
+      "restored_reward": null
+    }
+  ],
+  "lhtb": {
+    "state": "running",
+    "active": [
+      "lhtb24-04-recuris-commit0-multilib-tdd",
+      "lhtb24-05-hld-opensees-seismic-structural-regression-audit",
+      "lhtb24-05-recuris-opensees-seismic-structural-regression-audit",
+      "lhtb24-06-hld-chess-mate",
+      "lhtb24-06-recuris-chess-mate",
+      "lhtb24-07-hld-spice-ephemeris-regression"
+    ],
+    "summary": {
+      "hld": {
+        "total": 21,
+        "finished": 0,
+        "scored": 0,
+        "passed": 0,
+        "solved_095": 0,
+        "engineering_failures": 0
+      },
+      "recuris": {
+        "total": 21,
+        "finished": 0,
+        "scored": 0,
+        "passed": 0,
+        "solved_095": 0,
+        "engineering_failures": 0
+      }
+    },
+    "budget": {
+      "limit_microcny": 1152000000,
+      "settled_microcny": 206211102,
+      "reserved_microcny": 1738752,
+      "uncertain_microcny": 38887424,
+      "remaining_microcny": 905162722,
+      "halt_reason": null,
+      "estimate_peak_cny": 1152.0
+    }
+  },
+  "longcli": {
+    "state": "running",
+    "pid": 397468,
+    "updated": 1792737123.0857034,
+    "concurrency": 3,
+    "active": [
+      "61810_syscall",
+      "61810_traps",
+      "cmu15_445_p0"
+    ],
+    "pending": [
+      "cmu15_445_p2",
+      "61810_cow"
+    ],
+    "completed": [
+      {
+        "job": "hld-request400--61810_pgtbl",
+        "task": "61810_pgtbl",
+        "state": "graded",
+        "started": 1792734542.5977726,
+        "container": "hld-lcli-1f898a4dde42",
+        "version": "HLD v8",
+        "offline_probe": false,
+        "updated": 1792736983.8537405,
+        "requests": 624,
+        "tools": 467,
+        "http_200": 150,
+        "http_errors": [],
+        "agent_exit": {
+          "exit_code": 0,
+          "signal": null,
+          "attempt_id": "hld-request400--61810_pgtbl",
+          "timed_out": false,
+          "stopped_by": null,
+          "arm": "hld-new"
+        },
+        "budget_stop": null,
+        "limit_stop": null,
+        "provider_stop": null,
+        "exit_code": 0,
+        "artifact": {
+          "path": "/mnt/sdb/home/lizh639/transport-recovery-20261023/longcli-v2/jobs/hld-request400--61810_pgtbl/final-source.tar.gz",
+          "sha256": "c4ba45c531420977f62d0d04c40ce2da947d411d4ed42169846b41ffacec5f55",
+          "entries": 193,
+          "source_only": true
+        },
+        "grading_state": "complete",
+        "official_success": false,
+        "f2p": {
+          "is_pass": 0,
+          "step_score": 0.782608695652174
+        },
+        "ended": 1792736983.8537397
+      }
+    ],
+    "budget": {
+      "limit_microcny": 480000000,
+      "settled_microcny": 355899567,
+      "reserved_microcny": 577536,
+      "uncertain_microcny": 5529600,
+      "remaining_microcny": 117993297,
+      "halt_reason": null,
+      "estimate_peak_cny": 480.0
+    },
+    "circuit": {
+      "id": 1,
+      "state": "closed",
+      "generation": 1,
+      "failures": 1,
+      "successes": 3,
+      "retry_at": 1792734315.7758164,
+      "last_success": 1792734506.084251,
+      "reason": null
+    }
+  },
+  "tb2_score_recovery": {
+    "task": "crack-7z-hash",
+    "reward": 0.0,
+    "engineering_clean": true,
+    "model_calls": 0,
+    "source_trial": "/mnt/sdb/home/lizh639/tb2-hld-v9-failed8-20261022/jobs/tb2v9a8-01-hld-v9-crack-7z-hash/crack-7z-hash__DP3n5Px",
+    "snapshot": {
+      "image_id": "sha256:a641360d41b3c5e45c7072f807421416b1291e4dab9b8cf9fec2a0c637a192fd",
+      "tag": "kz-score-recovery:b3b7f6ded20b47c881c77d55d26c8e8e",
+      "container_id": "4719c9679ac9231f0f4f65170752d8c834392de0bba56d86ebd8bc89f4e98b4d",
+      "attempt_id": "b3b7f6ded20b47c881c77d55d26c8e8e",
+      "before_verifier": true
+    },
+    "test_summary": {
+      "tests": 2,
+      "passed": 0,
+      "failed": 2,
+      "skipped": 0,
+      "pending": 0,
+      "other": 0,
+      "start": 1792733888.5948737,
+      "stop": 1792733888.6525953
+    },
+    "grader_returncode": 0,
+    "seconds": 0.4160029888153076,
+    "historical_result_preserved": true
+  },
+  "historical_results_preserved": true,
+  "original_ledgers_shared": true,
+  "gpt_automations_created": 0
+}

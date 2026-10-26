@@ -1,0 +1,69 @@
+SUZ vs OpenCUA execution flow + GLM-5.3-Flash
+Fresh OSWorld-Verified 30-task comparison, authorized 2026-10-24
+
+Both arms run all 30 tasks from scratch. No old result is substituted.
+Task selection: same SHA256 seed/ranking as initial20, extend from two to three per
+official domain. Original20 plus deterministic next10; no selection by pass/fail.
+This is a balanced pilot (3/domain), not the full benchmark distribution.
+
+Independent budget.sqlite: per arm/task CNY8 cumulative; whole round CNY480.
+Includes every auxiliary role, compatibility recovery, and live preflight request.
+Old round's budget remains separate. Unknown request reservations are retained.
+
+Model for solver and all roles: glm-5.3-flash through existing TaoToken endpoint.
+Baseline label: OpenCUA execution flow with GLM, not native OpenCUA model weights.
+Limits identical across arms: 100 steps, 400 all-role requests, 2 hours.
+Initial output limit16384, one length recovery up to32768, request timeout480s.
+CPU-only desktop VMs; no GPU runtime, device request, nvidia device or /dev/dri.
+Two workers in this round. Previously active old-round attempts may finish separately;
+old queue and its pending retry dispatcher were stopped, no new old-round tasks.
+
+Source: independent SUZ-repair2 copy, frozen vendor/HLD SHA pins preserved.
+Repairs retained: bounded format/length recovery, E/F reference separation,
+safe constant arithmetic, accurate engineering-stop reporting.
+Further repair: explicit absolute coordinate mode preserves scroll count,
+mouse buttons, and parentheses in typed text; no regex reprojection of action batches.
+Critic protocol repair now identifies each invalid assessment and the exact current
+frame ID, requests a supported current-state explanation or unknown, and never
+auto-attaches evidence or weakens the completion gate. Added targeted regression.
+VM creation/reset serialized; keep shared upstream port lock and wait up to300s.
+Asset setup and official scoring preflight run before spending on each task.
+Paid scoring failures retain their container and recovery record; no blind restart.
+
+Launch gated by 30 successful asset checks, source/deployment fingerprints,
+continuous actual-GUI multi-step preflight for both arms, and unit regression tests.
+All results in runs/<mode>/<task-id>/; logs/; status.py is read-only and costs no inference.
+STOP_DISPATCH prevents launching any later queued tasks without interrupting active tasks.
+
+Preflight accounting distinguishes model batches from primitive GUI calls: grouping
+focus+typing is allowed by the production action schema. Require at least4 feedback
+cycles and6 primitive actions, >=2 applied Monitor judgments for SUZ, an accepted
+final Critic review, and the independently verified final green screen. The first
+preflight with the incorrect six-batch-only assertion and a Critic reference error
+is archived unchanged under preflight-attempt1-before-critic-fix. The final source
+is rechecked in entirely new GUI sessions, with every request in this round's ledger.
+Monitor repair feedback distinguishes one ineffective action from repeated lack of
+progress. A stalled verdict needs two relevant executed transitions; one failed
+interaction should be uncertain. No irrelevant history is added to satisfy the count.
+The second preflight is retained under preflight-attempt2-before-monitor-fix.
+Final offline regression suite:23 Python tests +14 Node tests, frozen source checks.
+
+Final protocol fix: Planner accepts either a single memory review or a list of
+distinct per-memory reviews. Every item retains its own decision and explanation;
+unknown IDs and duplicate/conflicting decisions remain rejected before applying.
+The last live CPU preflight completed both GUI steps and final Critic acceptance,
+but its Planner list was rejected. That failure is retained in the original trace.
+Validation after the list fix uses full protocol replay of actual screenshots and
+recorded outputs, with identical action batches and zero unresolved role errors.
+Because successful replanning changes memory retrieval, final Critic is called
+afresh on the resulting supplied screenshot set, within the shared preflight budget.
+This is hybrid validation, not a new full live episode. passed.json records both
+source hashes, the exact two changed files, live traces, replay traces, fresh Critic
+call count, and the preserved original error. accept-preflight.py verifies all gates.
+Formal runs measure live behavior under the repaired planner from scratch.
+
+Launch verified 2026-10-24 14:23 China time: queue running, first task assigned to
+both arms, two CPU-only containers verified (4 CPU, 6 GiB each). Tasks begin with
+their own official setup/scoring check before model calls. Local accepted-preflight.json
+contains the validated source/deployment fingerprints and exact evidence provenance.
+At launch accounted preflight cost was CNY1.2970152; no formal score yet.

@@ -1,0 +1,703 @@
+{
+  "rows": [
+    {
+      "task": "tune-mjcf",
+      "arm": "kz-dsh",
+      "stage": "retry",
+      "job": "retry1-tb50-05-kz-dsh-tune-mjcf",
+      "budget_job": "tb50-05-kz-dsh-tune-mjcf",
+      "state": "pending",
+      "original_result": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-20261017/jobs/tb50-05-kz-dsh-tune-mjcf/tune-mjcf__TvPmZb6",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": false,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "solver_exit": 0,
+        "timed_out": false,
+        "exit_receipt_status": "present",
+        "requests": 18,
+        "actual_http_attempts": 18,
+        "tools": 13,
+        "usage": {
+          "requests": 18,
+          "tools": 13,
+          "inputTokens": 189649,
+          "outputTokens": 17880,
+          "cacheReadTokens": 340480,
+          "cacheWriteTokens": 0,
+          "unknownUsageRequests": 2,
+          "stopped": null,
+          "budgetMode": "bounded_peak_price_estimate",
+          "updated_utc": "2026-10-17T11:36:49.032Z"
+        },
+        "usage_status": "present",
+        "http_status_counts": {
+          "200": 16
+        },
+        "malformed_route_records": 0,
+        "auth_failure": false,
+        "budget_exhausted": false,
+        "provider": {
+          "kind": "budget",
+          "reason": "usage_unavailable",
+          "updated_utc": "2026-10-17T11:36:48.764Z"
+        },
+        "budget_stop": {
+          "reason": "usage_unavailable"
+        },
+        "harbor_exit": 0
+      },
+      "previous_charged_microcny": 1006568,
+      "remaining_microcny": 2993432
+    },
+    {
+      "task": "torch-pipeline-parallelism",
+      "arm": "dsh",
+      "stage": "retry",
+      "job": "retry1-tb50-09-dsh-torch-pipeline-parallelism",
+      "budget_job": "tb50-09-dsh-torch-pipeline-parallelism",
+      "state": "pending",
+      "original_result": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-20261017/preflight/preflight-tb50-09-dsh-torch-pipeline-parallelism/torch-pipeline-parallelism__ZrkyUYH",
+        "reward": null,
+        "exception_type": "FileNotFoundError",
+        "engineering_clean": false,
+        "result_status": "present",
+        "lifecycle_status": "incomplete",
+        "collection_failures": [],
+        "harbor_exit": 0,
+        "reason": "preflight_failed",
+        "paid_calls": 0
+      },
+      "previous_charged_microcny": 0,
+      "remaining_microcny": 4000000
+    },
+    {
+      "task": "torch-pipeline-parallelism",
+      "arm": "native-kz",
+      "stage": "retry",
+      "job": "retry1-tb50-09-native-kz-torch-pipeline-parallelism",
+      "budget_job": "tb50-09-native-kz-torch-pipeline-parallelism",
+      "state": "pending",
+      "original_result": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-20261017/preflight/preflight-tb50-09-native-kz-torch-pipeline-parallelism/torch-pipeline-parallelism__XWDR8BG",
+        "reward": null,
+        "exception_type": "FileNotFoundError",
+        "engineering_clean": false,
+        "result_status": "present",
+        "lifecycle_status": "incomplete",
+        "collection_failures": [],
+        "harbor_exit": 0,
+        "reason": "preflight_failed",
+        "paid_calls": 0
+      },
+      "previous_charged_microcny": 0,
+      "remaining_microcny": 4000000
+    },
+    {
+      "task": "torch-pipeline-parallelism",
+      "arm": "kz-dsh",
+      "stage": "retry",
+      "job": "retry1-tb50-09-kz-dsh-torch-pipeline-parallelism",
+      "budget_job": "tb50-09-kz-dsh-torch-pipeline-parallelism",
+      "state": "pending",
+      "original_result": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-20261017/preflight/preflight-tb50-09-kz-dsh-torch-pipeline-parallelism/torch-pipeline-parallelism__oQPXbmc",
+        "reward": null,
+        "exception_type": "FileNotFoundError",
+        "engineering_clean": false,
+        "result_status": "present",
+        "lifecycle_status": "incomplete",
+        "collection_failures": [],
+        "harbor_exit": 0,
+        "reason": "preflight_failed",
+        "paid_calls": 0
+      },
+      "previous_charged_microcny": 0,
+      "remaining_microcny": 4000000
+    },
+    {
+      "task": "pytorch-model-recovery",
+      "arm": "native-kz",
+      "stage": "retry",
+      "job": "retry1-tb50-10-native-kz-pytorch-model-recovery",
+      "budget_job": "tb50-10-native-kz-pytorch-model-recovery",
+      "state": "pending",
+      "original_result": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-20261017/preflight/preflight-tb50-10-native-kz-pytorch-model-recovery/pytorch-model-recovery__2nPQUdk",
+        "reward": null,
+        "exception_type": "EnvironmentStartTimeoutError",
+        "engineering_clean": false,
+        "result_status": "present",
+        "lifecycle_status": "failed",
+        "collection_failures": [
+          {
+            "kind": "collection_or_log_handoff",
+            "error_type": "CollectionFailure"
+          }
+        ],
+        "harbor_exit": 1,
+        "reason": "preflight_failed",
+        "paid_calls": 0
+      },
+      "previous_charged_microcny": 0,
+      "remaining_microcny": 4000000
+    },
+    {
+      "task": "pytorch-model-recovery",
+      "arm": "kz-dsh",
+      "stage": "retry",
+      "job": "retry1-tb50-10-kz-dsh-pytorch-model-recovery",
+      "budget_job": "tb50-10-kz-dsh-pytorch-model-recovery",
+      "state": "pending",
+      "original_result": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-20261017/preflight/preflight-tb50-10-kz-dsh-pytorch-model-recovery/pytorch-model-recovery__xJrJmuS",
+        "reward": null,
+        "exception_type": "EnvironmentStartTimeoutError",
+        "engineering_clean": false,
+        "result_status": "present",
+        "lifecycle_status": "failed",
+        "collection_failures": [
+          {
+            "kind": "collection_or_log_handoff",
+            "error_type": "CollectionFailure"
+          }
+        ],
+        "harbor_exit": 1,
+        "reason": "preflight_failed",
+        "paid_calls": 0
+      },
+      "previous_charged_microcny": 0,
+      "remaining_microcny": 4000000
+    },
+    {
+      "task": "pytorch-model-recovery",
+      "arm": "dsh",
+      "stage": "retry",
+      "job": "retry1-tb50-10-dsh-pytorch-model-recovery",
+      "budget_job": "tb50-10-dsh-pytorch-model-recovery",
+      "state": "pending",
+      "original_result": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-20261017/preflight/preflight-tb50-10-dsh-pytorch-model-recovery/pytorch-model-recovery__y43wuPx",
+        "reward": null,
+        "exception_type": "EnvironmentStartTimeoutError",
+        "engineering_clean": false,
+        "result_status": "present",
+        "lifecycle_status": "failed",
+        "collection_failures": [
+          {
+            "kind": "collection_or_log_handoff",
+            "error_type": "CollectionFailure"
+          }
+        ],
+        "harbor_exit": 1,
+        "reason": "preflight_failed",
+        "paid_calls": 0
+      },
+      "previous_charged_microcny": 0,
+      "remaining_microcny": 4000000
+    },
+    {
+      "task": "sam-cell-seg",
+      "arm": "kz-dsh",
+      "stage": "retry",
+      "job": "retry1-tb50-14-kz-dsh-sam-cell-seg",
+      "budget_job": "tb50-14-kz-dsh-sam-cell-seg",
+      "state": "pending",
+      "original_result": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-20261017/jobs/tb50-14-kz-dsh-sam-cell-seg/sam-cell-seg__Tkjanpp",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": false,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "solver_exit": 0,
+        "timed_out": true,
+        "exit_receipt_status": "present",
+        "requests": 66,
+        "actual_http_attempts": 66,
+        "tools": 45,
+        "usage": {
+          "requests": 66,
+          "tools": 45,
+          "inputTokens": 1133681,
+          "outputTokens": 90095,
+          "cacheReadTokens": 1304064,
+          "cacheWriteTokens": 0,
+          "unknownUsageRequests": 1,
+          "stopped": null,
+          "budgetMode": "bounded_peak_price_estimate",
+          "updated_utc": "2026-10-17T14:49:17.628Z"
+        },
+        "usage_status": "present",
+        "http_status_counts": {
+          "200": 65
+        },
+        "malformed_route_records": 0,
+        "auth_failure": false,
+        "budget_exhausted": true,
+        "provider": {
+          "kind": "transport",
+          "reason": "request_or_body_failed",
+          "updated_utc": "2026-10-17T14:49:17.492Z"
+        },
+        "budget_stop": {
+          "reason": "usage_unavailable"
+        },
+        "completion": "budget_exhausted",
+        "harbor_exit": 0
+      },
+      "previous_charged_microcny": 3427385,
+      "remaining_microcny": 572615
+    },
+    {
+      "task": "mteb-leaderboard",
+      "arm": "dsh",
+      "stage": "retry",
+      "job": "retry1-tb50-18-dsh-mteb-leaderboard",
+      "budget_job": "tb50-18-dsh-mteb-leaderboard",
+      "state": "pending",
+      "original_result": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-20261017/preflight/preflight-tb50-18-dsh-mteb-leaderboard/mteb-leaderboard__fdkZ9T3",
+        "reward": null,
+        "exception_type": "EnvironmentStartTimeoutError",
+        "engineering_clean": false,
+        "result_status": "present",
+        "lifecycle_status": "failed",
+        "collection_failures": [
+          {
+            "kind": "collection_or_log_handoff",
+            "error_type": "CollectionFailure"
+          }
+        ],
+        "harbor_exit": 1,
+        "reason": "preflight_failed",
+        "paid_calls": 0
+      },
+      "previous_charged_microcny": 0,
+      "remaining_microcny": 4000000
+    },
+    {
+      "task": "mteb-leaderboard",
+      "arm": "native-kz",
+      "stage": "retry",
+      "job": "retry1-tb50-18-native-kz-mteb-leaderboard",
+      "budget_job": "tb50-18-native-kz-mteb-leaderboard",
+      "state": "pending",
+      "original_result": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-20261017/preflight/preflight-tb50-18-native-kz-mteb-leaderboard/mteb-leaderboard__stt9zgt",
+        "reward": null,
+        "exception_type": "EnvironmentStartTimeoutError",
+        "engineering_clean": false,
+        "result_status": "present",
+        "lifecycle_status": "failed",
+        "collection_failures": [
+          {
+            "kind": "collection_or_log_handoff",
+            "error_type": "CollectionFailure"
+          }
+        ],
+        "harbor_exit": 1,
+        "reason": "preflight_failed",
+        "paid_calls": 0
+      },
+      "previous_charged_microcny": 0,
+      "remaining_microcny": 4000000
+    },
+    {
+      "task": "mteb-leaderboard",
+      "arm": "kz-dsh",
+      "stage": "retry",
+      "job": "retry1-tb50-18-kz-dsh-mteb-leaderboard",
+      "budget_job": "tb50-18-kz-dsh-mteb-leaderboard",
+      "state": "pending",
+      "original_result": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-20261017/preflight/preflight-tb50-18-kz-dsh-mteb-leaderboard/mteb-leaderboard__MYLsgS6",
+        "reward": null,
+        "exception_type": "EnvironmentStartTimeoutError",
+        "engineering_clean": false,
+        "result_status": "present",
+        "lifecycle_status": "failed",
+        "collection_failures": [
+          {
+            "kind": "collection_or_log_handoff",
+            "error_type": "CollectionFailure"
+          }
+        ],
+        "harbor_exit": 1,
+        "reason": "preflight_failed",
+        "paid_calls": 0
+      },
+      "previous_charged_microcny": 0,
+      "remaining_microcny": 4000000
+    },
+    {
+      "task": "largest-eigenval",
+      "arm": "native-kz",
+      "stage": "retry",
+      "job": "retry1-tb50-25-native-kz-largest-eigenval",
+      "budget_job": "tb50-25-native-kz-largest-eigenval",
+      "state": "pending",
+      "original_result": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-20261017/jobs/tb50-25-native-kz-largest-eigenval/largest-eigenval__htgGPBJ",
+        "reward": 1.0,
+        "exception_type": null,
+        "engineering_clean": false,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "solver_exit": 143,
+        "timed_out": false,
+        "exit_receipt_status": "present",
+        "requests": 4,
+        "tools": 2,
+        "usage": {},
+        "usage_status": "present",
+        "http_status_counts": {
+          "200": 2,
+          "error": 1,
+          "fatal": 1
+        },
+        "native_status": {},
+        "budget_stop": {
+          "kind": "accounting",
+          "reason": "usage_unavailable",
+          "origin": "local_accounting"
+        },
+        "provider": {
+          "kind": "accounting",
+          "reason": "usage_unavailable",
+          "origin": "local_accounting"
+        },
+        "budget_exhausted": false,
+        "harbor_exit": 0
+      },
+      "previous_charged_microcny": 800672,
+      "remaining_microcny": 3199328
+    },
+    {
+      "task": "hf-model-inference",
+      "arm": "native-kz",
+      "stage": "retry",
+      "job": "retry1-tb50-28-native-kz-hf-model-inference",
+      "budget_job": "tb50-28-native-kz-hf-model-inference",
+      "state": "pending",
+      "original_result": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-20261017/preflight/preflight-tb50-28-native-kz-hf-model-inference/hf-model-inference__B5LEYyZ",
+        "reward": null,
+        "exception_type": "EnvironmentStartTimeoutError",
+        "engineering_clean": false,
+        "result_status": "present",
+        "lifecycle_status": "failed",
+        "collection_failures": [
+          {
+            "kind": "collection_or_log_handoff",
+            "error_type": "CollectionFailure"
+          }
+        ],
+        "harbor_exit": 1,
+        "reason": "preflight_failed",
+        "paid_calls": 0
+      },
+      "previous_charged_microcny": 0,
+      "remaining_microcny": 4000000
+    },
+    {
+      "task": "hf-model-inference",
+      "arm": "dsh",
+      "stage": "retry",
+      "job": "retry1-tb50-28-dsh-hf-model-inference",
+      "budget_job": "tb50-28-dsh-hf-model-inference",
+      "state": "pending",
+      "original_result": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-20261017/preflight/preflight-tb50-28-dsh-hf-model-inference/hf-model-inference__tcSvWKz",
+        "reward": null,
+        "exception_type": "EnvironmentStartTimeoutError",
+        "engineering_clean": false,
+        "result_status": "present",
+        "lifecycle_status": "failed",
+        "collection_failures": [
+          {
+            "kind": "collection_or_log_handoff",
+            "error_type": "CollectionFailure"
+          }
+        ],
+        "harbor_exit": 1,
+        "reason": "preflight_failed",
+        "paid_calls": 0
+      },
+      "previous_charged_microcny": 0,
+      "remaining_microcny": 4000000
+    },
+    {
+      "task": "make-mips-interpreter",
+      "arm": "dsh",
+      "stage": "retry",
+      "job": "retry1-tb50-30-dsh-make-mips-interpreter",
+      "budget_job": "tb50-30-dsh-make-mips-interpreter",
+      "state": "pending",
+      "original_result": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-20261017/jobs/tb50-30-dsh-make-mips-interpreter/make-mips-interpreter__Wh5A4sp",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": false,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "solver_exit": 0,
+        "timed_out": false,
+        "exit_receipt_status": "present",
+        "requests": 26,
+        "actual_http_attempts": 26,
+        "tools": 41,
+        "usage": {
+          "requests": 26,
+          "tools": 41,
+          "inputTokens": 71500,
+          "outputTokens": 5166,
+          "cacheReadTokens": 645376,
+          "cacheWriteTokens": 0,
+          "unknownUsageRequests": 1,
+          "stopped": null,
+          "budgetMode": "bounded_peak_price_estimate",
+          "updated_utc": "2026-10-17T17:16:33.994Z"
+        },
+        "usage_status": "present",
+        "http_status_counts": {
+          "200": 25
+        },
+        "malformed_route_records": 0,
+        "auth_failure": false,
+        "budget_exhausted": false,
+        "provider": {
+          "kind": "protocol",
+          "reason": "invalid_tool_json",
+          "updated_utc": "2026-10-17T17:16:33.911Z"
+        },
+        "budget_stop": {},
+        "harbor_exit": 0
+      },
+      "previous_charged_microcny": 478007,
+      "remaining_microcny": 3521993
+    },
+    {
+      "task": "mteb-retrieve",
+      "arm": "kz-dsh",
+      "stage": "retry",
+      "job": "retry1-tb50-35-kz-dsh-mteb-retrieve",
+      "budget_job": "tb50-35-kz-dsh-mteb-retrieve",
+      "state": "pending",
+      "original_result": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-20261017/preflight/preflight-tb50-35-kz-dsh-mteb-retrieve/mteb-retrieve__G5cMbhV",
+        "reward": null,
+        "exception_type": "EnvironmentStartTimeoutError",
+        "engineering_clean": false,
+        "result_status": "present",
+        "lifecycle_status": "failed",
+        "collection_failures": [
+          {
+            "kind": "collection_or_log_handoff",
+            "error_type": "CollectionFailure"
+          }
+        ],
+        "harbor_exit": 1,
+        "reason": "preflight_failed",
+        "paid_calls": 0
+      },
+      "previous_charged_microcny": 0,
+      "remaining_microcny": 4000000
+    },
+    {
+      "task": "mteb-retrieve",
+      "arm": "dsh",
+      "stage": "retry",
+      "job": "retry1-tb50-35-dsh-mteb-retrieve",
+      "budget_job": "tb50-35-dsh-mteb-retrieve",
+      "state": "pending",
+      "original_result": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-20261017/preflight/preflight-tb50-35-dsh-mteb-retrieve/mteb-retrieve__ifpvcW4",
+        "reward": null,
+        "exception_type": "FileNotFoundError",
+        "engineering_clean": false,
+        "result_status": "present",
+        "lifecycle_status": "incomplete",
+        "collection_failures": [],
+        "harbor_exit": 0,
+        "reason": "preflight_failed",
+        "paid_calls": 0
+      },
+      "previous_charged_microcny": 0,
+      "remaining_microcny": 4000000
+    },
+    {
+      "task": "mteb-retrieve",
+      "arm": "native-kz",
+      "stage": "retry",
+      "job": "retry1-tb50-35-native-kz-mteb-retrieve",
+      "budget_job": "tb50-35-native-kz-mteb-retrieve",
+      "state": "pending",
+      "original_result": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-20261017/preflight/preflight-tb50-35-native-kz-mteb-retrieve/mteb-retrieve__t8XDGhE",
+        "reward": null,
+        "exception_type": "FileNotFoundError",
+        "engineering_clean": false,
+        "result_status": "present",
+        "lifecycle_status": "incomplete",
+        "collection_failures": [],
+        "harbor_exit": 0,
+        "reason": "preflight_failed",
+        "paid_calls": 0
+      },
+      "previous_charged_microcny": 0,
+      "remaining_microcny": 4000000
+    },
+    {
+      "task": "train-fasttext",
+      "arm": "dsh",
+      "stage": "retry",
+      "job": "retry1-tb50-48-dsh-train-fasttext",
+      "budget_job": "tb50-48-dsh-train-fasttext",
+      "state": "pending",
+      "original_result": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-20261017/preflight/preflight-tb50-48-dsh-train-fasttext/train-fasttext__KTJeRU4",
+        "reward": null,
+        "exception_type": "FileNotFoundError",
+        "engineering_clean": false,
+        "result_status": "present",
+        "lifecycle_status": "incomplete",
+        "collection_failures": [],
+        "harbor_exit": 0,
+        "reason": "preflight_failed",
+        "paid_calls": 0
+      },
+      "previous_charged_microcny": 0,
+      "remaining_microcny": 4000000
+    },
+    {
+      "task": "train-fasttext",
+      "arm": "native-kz",
+      "stage": "retry",
+      "job": "retry1-tb50-48-native-kz-train-fasttext",
+      "budget_job": "tb50-48-native-kz-train-fasttext",
+      "state": "pending",
+      "original_result": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-20261017/preflight/preflight-tb50-48-native-kz-train-fasttext/train-fasttext__ZbryxAz",
+        "reward": null,
+        "exception_type": "FileNotFoundError",
+        "engineering_clean": false,
+        "result_status": "present",
+        "lifecycle_status": "incomplete",
+        "collection_failures": [],
+        "harbor_exit": 0,
+        "reason": "preflight_failed",
+        "paid_calls": 0
+      },
+      "previous_charged_microcny": 0,
+      "remaining_microcny": 4000000
+    },
+    {
+      "task": "train-fasttext",
+      "arm": "kz-dsh",
+      "stage": "retry",
+      "job": "retry1-tb50-48-kz-dsh-train-fasttext",
+      "budget_job": "tb50-48-kz-dsh-train-fasttext",
+      "state": "pending",
+      "original_result": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-20261017/preflight/preflight-tb50-48-kz-dsh-train-fasttext/train-fasttext__4BAGkwy",
+        "reward": null,
+        "exception_type": "FileNotFoundError",
+        "engineering_clean": false,
+        "result_status": "present",
+        "lifecycle_status": "incomplete",
+        "collection_failures": [],
+        "harbor_exit": 0,
+        "reason": "preflight_failed",
+        "paid_calls": 0
+      },
+      "previous_charged_microcny": 0,
+      "remaining_microcny": 4000000
+    },
+    {
+      "task": "torch-tensor-parallelism",
+      "arm": "kz-dsh",
+      "stage": "retry",
+      "job": "retry1-tb50-50-kz-dsh-torch-tensor-parallelism",
+      "budget_job": "tb50-50-kz-dsh-torch-tensor-parallelism",
+      "state": "pending",
+      "original_result": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-20261017/preflight/preflight-tb50-50-kz-dsh-torch-tensor-parallelism/torch-tensor-parallelism__KnsUoFT",
+        "reward": null,
+        "exception_type": "VerifierTimeoutError",
+        "engineering_clean": false,
+        "result_status": "present",
+        "lifecycle_status": "incomplete",
+        "collection_failures": [],
+        "harbor_exit": 0,
+        "reason": "preflight_failed",
+        "paid_calls": 0
+      },
+      "previous_charged_microcny": 0,
+      "remaining_microcny": 4000000
+    },
+    {
+      "task": "torch-tensor-parallelism",
+      "arm": "dsh",
+      "stage": "retry",
+      "job": "retry1-tb50-50-dsh-torch-tensor-parallelism",
+      "budget_job": "tb50-50-dsh-torch-tensor-parallelism",
+      "state": "pending",
+      "original_result": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-20261017/preflight/preflight-tb50-50-dsh-torch-tensor-parallelism/torch-tensor-parallelism__stRkTqg",
+        "reward": null,
+        "exception_type": "VerifierTimeoutError",
+        "engineering_clean": false,
+        "result_status": "present",
+        "lifecycle_status": "incomplete",
+        "collection_failures": [],
+        "harbor_exit": 0,
+        "reason": "preflight_failed",
+        "paid_calls": 0
+      },
+      "previous_charged_microcny": 0,
+      "remaining_microcny": 4000000
+    },
+    {
+      "task": "torch-tensor-parallelism",
+      "arm": "native-kz",
+      "stage": "retry",
+      "job": "retry1-tb50-50-native-kz-torch-tensor-parallelism",
+      "budget_job": "tb50-50-native-kz-torch-tensor-parallelism",
+      "state": "pending",
+      "original_result": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-20261017/preflight/preflight-tb50-50-native-kz-torch-tensor-parallelism/torch-tensor-parallelism__ryJLqrw",
+        "reward": null,
+        "exception_type": "VerifierTimeoutError",
+        "engineering_clean": false,
+        "result_status": "present",
+        "lifecycle_status": "incomplete",
+        "collection_failures": [],
+        "harbor_exit": 0,
+        "reason": "preflight_failed",
+        "paid_calls": 0
+      },
+      "previous_charged_microcny": 0,
+      "remaining_microcny": 4000000
+    }
+  ],
+  "skipped": [
+    {
+      "job": "tb50-23-kz-dsh-dna-assembly",
+      "reason": "original_task_budget_insufficient",
+      "charged_microcny": 3895065,
+      "remaining_microcny": 104935
+    }
+  ],
+  "automatic_batches": 1,
+  "max_concurrency": 3,
+  "per_arm_concurrency": 1,
+  "budget": "Original shared 600 CNY ledger and cumulative 4 CNY per original arm/task"
+}

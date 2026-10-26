@@ -1,0 +1,203 @@
+{
+  "id": "androidworld-RecipeAddSingleRecipe",
+  "class": "RecipeAddSingleRecipe",
+  "params": {
+    "row_objects": [
+      {
+        "__type__": "dataclass",
+        "module": "android_world.task_evals.utils.sqlite_schema_utils",
+        "name": "Recipe",
+        "fields": {
+          "title": "BBQ Chicken Quesadillas",
+          "description": "An ideal recipe for experimenting with different flavors and ingredients.",
+          "servings": "3-4 servings",
+          "preparationTime": "2 hrs",
+          "source": "",
+          "ingredients": "to preference",
+          "directions": "Mix shredded cooked chicken with BBQ sauce. Place on tortillas with cheese, fold and cook until crispy. Try adding a pinch of your favorite spices for extra flavor.",
+          "favorite": 0,
+          "imageName": "",
+          "recipeId": -1
+        }
+      }
+    ],
+    "noise_row_objects": [
+      {
+        "__type__": "dataclass",
+        "module": "android_world.task_evals.utils.sqlite_schema_utils",
+        "name": "Recipe",
+        "fields": {
+          "title": "Cauliflower Fried \"Rice\"",
+          "description": "A delicious and healthy choice for any time of the day.",
+          "servings": "8 servings",
+          "preparationTime": "10 mins",
+          "source": "",
+          "ingredients": "as desired",
+          "directions": "Pulse cauliflower in a food processor until it resembles rice. Saut\u00e9 with vegetables, soy sauce, and add scrambled eggs. Feel free to substitute with ingredients you have on hand.",
+          "favorite": 0,
+          "imageName": "",
+          "recipeId": -1
+        }
+      },
+      {
+        "__type__": "dataclass",
+        "module": "android_world.task_evals.utils.sqlite_schema_utils",
+        "name": "Recipe",
+        "fields": {
+          "title": "Shrimp Avocado Salad",
+          "description": "A delicious and healthy choice for any time of the day.",
+          "servings": "8 servings",
+          "preparationTime": "45 mins",
+          "source": "",
+          "ingredients": "adjustable",
+          "directions": "Mix cooked shrimp with avocado, tomatoes, cucumber, and onion. Dress with lime juice, olive oil, salt, and pepper. Feel free to substitute with ingredients you have on hand.",
+          "favorite": 0,
+          "imageName": "",
+          "recipeId": -1
+        }
+      },
+      {
+        "__type__": "dataclass",
+        "module": "android_world.task_evals.utils.sqlite_schema_utils",
+        "name": "Recipe",
+        "fields": {
+          "title": "Eggplant Parmesan",
+          "description": "A delicious and healthy choice for any time of the day.",
+          "servings": "3-4 servings",
+          "preparationTime": "1 hrs",
+          "source": "",
+          "ingredients": "varies",
+          "directions": "Slice eggplant, bread, and fry. Layer in a baking dish with marinara sauce and mozzarella cheese. Bake until bubbly. Garnish with fresh herbs for a more vibrant taste.",
+          "favorite": 0,
+          "imageName": "",
+          "recipeId": -1
+        }
+      },
+      {
+        "__type__": "dataclass",
+        "module": "android_world.task_evals.utils.sqlite_schema_utils",
+        "name": "Recipe",
+        "fields": {
+          "title": "Quick Fried Rice",
+          "description": "An ideal recipe for experimenting with different flavors and ingredients.",
+          "servings": "8 servings",
+          "preparationTime": "30 mins",
+          "source": "",
+          "ingredients": "varies",
+          "directions": "Saut\u00e9 cooked rice with vegetables, add soy sauce and scrambled eggs. Toss until hot. Garnish with fresh herbs for a more vibrant taste.",
+          "favorite": 0,
+          "imageName": "",
+          "recipeId": -1
+        }
+      },
+      {
+        "__type__": "dataclass",
+        "module": "android_world.task_evals.utils.sqlite_schema_utils",
+        "name": "Recipe",
+        "fields": {
+          "title": "Sweet Potato and Black Bean Tacos",
+          "description": "A delicious and healthy choice for any time of the day.",
+          "servings": "6 servings",
+          "preparationTime": "3 hrs",
+          "source": "",
+          "ingredients": "optional ingredients",
+          "directions": "Roast sweet potato cubes, mix with black beans, and use as filling for tacos. Top with avocado and cilantro lime sauce. Feel free to substitute with ingredients you have on hand.",
+          "favorite": 0,
+          "imageName": "",
+          "recipeId": -1
+        }
+      },
+      {
+        "__type__": "dataclass",
+        "module": "android_world.task_evals.utils.sqlite_schema_utils",
+        "name": "Recipe",
+        "fields": {
+          "title": "Greek Salad Pita Pockets",
+          "description": "An ideal recipe for experimenting with different flavors and ingredients.",
+          "servings": "2 servings",
+          "preparationTime": "4 hrs",
+          "source": "",
+          "ingredients": "subject to change",
+          "directions": "Fill pita pockets with lettuce, cucumber, tomato, feta, olives, and Greek dressing. Feel free to substitute with ingredients you have on hand.",
+          "favorite": 0,
+          "imageName": "",
+          "recipeId": -1
+        }
+      },
+      {
+        "__type__": "dataclass",
+        "module": "android_world.task_evals.utils.sqlite_schema_utils",
+        "name": "Recipe",
+        "fields": {
+          "title": "Beef Stir Fry",
+          "description": "A quick and easy meal, perfect for busy weekdays.",
+          "servings": "3-4 servings",
+          "preparationTime": "3 hrs",
+          "source": "",
+          "ingredients": "as desired",
+          "directions": "Stir-fry beef slices with broccoli, bell peppers, and onions in soy sauce and garlic. Serve over rice or noodles. Garnish with fresh herbs for a more vibrant taste.",
+          "favorite": 0,
+          "imageName": "",
+          "recipeId": -1
+        }
+      },
+      {
+        "__type__": "dataclass",
+        "module": "android_world.task_evals.utils.sqlite_schema_utils",
+        "name": "Recipe",
+        "fields": {
+          "title": "Caprese Salad Skewers",
+          "description": "A delicious and healthy choice for any time of the day.",
+          "servings": "3-4 servings",
+          "preparationTime": "3 hrs",
+          "source": "",
+          "ingredients": "quantities to taste",
+          "directions": "Thread cherry tomatoes, basil leaves, and mozzarella balls onto skewers. Drizzle with balsamic glaze. Feel free to substitute with ingredients you have on hand.",
+          "favorite": 0,
+          "imageName": "",
+          "recipeId": -1
+        }
+      },
+      {
+        "__type__": "dataclass",
+        "module": "android_world.task_evals.utils.sqlite_schema_utils",
+        "name": "Recipe",
+        "fields": {
+          "title": "Spinach and Feta Stuffed Chicken",
+          "description": "A quick and easy meal, perfect for busy weekdays.",
+          "servings": "8 servings",
+          "preparationTime": "4 hrs",
+          "source": "",
+          "ingredients": "as desired",
+          "directions": "Stuff chicken breasts with a mixture of spinach, feta, garlic, and herbs. Bake until chicken is cooked through. Garnish with fresh herbs for a more vibrant taste.",
+          "favorite": 0,
+          "imageName": "",
+          "recipeId": -1
+        }
+      },
+      {
+        "__type__": "dataclass",
+        "module": "android_world.task_evals.utils.sqlite_schema_utils",
+        "name": "Recipe",
+        "fields": {
+          "title": "Spinach and Feta Stuffed Chicken",
+          "description": "A delicious and healthy choice for any time of the day.",
+          "servings": "6 servings",
+          "preparationTime": "3 hrs",
+          "source": "",
+          "ingredients": "flexible ingredients",
+          "directions": "Stuff chicken breasts with a mixture of spinach, feta, garlic, and herbs. Bake until chicken is cooked through. Garnish with fresh herbs for a more vibrant taste.",
+          "favorite": 0,
+          "imageName": "",
+          "recipeId": -1
+        }
+      }
+    ],
+    "text_representation_type": "text_block",
+    "seed": 20261034
+  },
+  "instruction": "Add the following recipes into the Broccoli app:\nRecipe: BBQ Chicken Quesadillas\n description: An ideal recipe for experimenting with different flavors and ingredients.\n servings: 3-4 servings\n preparationTime: 2 hrs\n ingredients: to preference\n directions: Mix shredded cooked chicken with BBQ sauce. Place on tortillas with cheese, fold and cook until crispy. Try adding a pinch of your favorite spices for extra flavor.\n",
+  "max_steps": 24,
+  "benchmark": "androidworld",
+  "instance_sha256": "bea0bb56e84cb321a2313bcdce505337570b142b2271f677c2fdf27b562220df"
+}

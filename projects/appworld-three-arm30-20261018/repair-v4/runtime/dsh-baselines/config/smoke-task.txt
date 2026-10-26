@@ -1,0 +1,1 @@
+Create result.txt containing the line verified. Run a public shell assertion that checks the content, and report the actual result.

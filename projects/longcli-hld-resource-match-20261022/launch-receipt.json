@@ -1,0 +1,14 @@
+{
+  "pid": 3319094,
+  "started": 1792684244.6685255,
+  "tasks": [
+    "cs61_fa24_scheme",
+    "61810_cow"
+  ],
+  "concurrency": 2,
+  "task_budget_cny": 24,
+  "shared_campaign_budget_cny": 480,
+  "fresh_attempts": true,
+  "no_hints": true,
+  "auto_retries": false
+}

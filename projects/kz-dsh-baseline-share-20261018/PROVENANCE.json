@@ -1,0 +1,23 @@
+{
+  "project": "KZDSH",
+  "version": "0.3.0",
+  "snapshot": "pre-exploration-v2-baseline-20261018",
+  "comparison_arm": "baseline",
+  "source_origin": "Frozen baseline used in the 2026-10-18 LongCLI paired comparison",
+  "original_locked_files": 66,
+  "source_unchanged": true,
+  "includes_exploration_v2_improvements": false,
+  "dependencies": "@deepseek-ai/dsh@0.2.0-rc.2",
+  "validation": {
+    "related_linux_tests_passed": 111,
+    "related_linux_tests_failed": 0,
+    "broader_windows_known_failures": 25
+  },
+  "excluded": [
+    "credentials",
+    "runtime paths",
+    "experiment logs",
+    "task data",
+    "node_modules"
+  ]
+}

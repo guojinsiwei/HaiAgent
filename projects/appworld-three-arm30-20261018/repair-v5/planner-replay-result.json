@@ -1,0 +1,233 @@
+{
+  "responses": 28,
+  "old_accepted": 15,
+  "new_accepted": 28,
+  "paid_calls": 0,
+  "scope": "Historical output protocol replay; no new model responses or benchmark outcomes",
+  "results": [
+    {
+      "job": "hld--90adc3f_2--mechanism2--quota3",
+      "line": 31,
+      "old_status": "semantic_plan_accepted",
+      "old_error": null,
+      "new_accepted": true,
+      "new_error": null
+    },
+    {
+      "job": "hld--90adc3f_2--mechanism2--quota3",
+      "line": 164,
+      "old_status": "semantic_plan_accepted",
+      "old_error": null,
+      "new_accepted": true,
+      "new_error": null
+    },
+    {
+      "job": "hld--90adc3f_3--mechanism2",
+      "line": 33,
+      "old_status": "semantic_plan_failed",
+      "old_error": "planner needs reason, real evidence IDs and routes array",
+      "new_accepted": true,
+      "new_error": null
+    },
+    {
+      "job": "hld--90adc3f_3--mechanism2",
+      "line": 116,
+      "old_status": "semantic_plan_accepted",
+      "old_error": null,
+      "new_accepted": true,
+      "new_error": null
+    },
+    {
+      "job": "hld--90adc3f_3--mechanism2",
+      "line": 247,
+      "old_status": "semantic_plan_failed",
+      "old_error": "planner needs reason, real evidence IDs and routes array",
+      "new_accepted": true,
+      "new_error": null
+    },
+    {
+      "job": "hld--90adc3f_3--mechanism2",
+      "line": 360,
+      "old_status": "semantic_plan_failed",
+      "old_error": "planner needs reason, real evidence IDs and routes array",
+      "new_accepted": true,
+      "new_error": null
+    },
+    {
+      "job": "hld--2c544f9_2--mechanism2--quota3",
+      "line": 33,
+      "old_status": "semantic_plan_failed",
+      "old_error": "planner needs reason, real evidence IDs and routes array",
+      "new_accepted": true,
+      "new_error": null
+    },
+    {
+      "job": "hld--2c544f9_2--mechanism2--quota3",
+      "line": 96,
+      "old_status": "semantic_plan_accepted",
+      "old_error": null,
+      "new_accepted": true,
+      "new_error": null
+    },
+    {
+      "job": "hld--2c544f9_2--mechanism2--quota3",
+      "line": 235,
+      "old_status": "semantic_plan_accepted",
+      "old_error": null,
+      "new_accepted": true,
+      "new_error": null
+    },
+    {
+      "job": "hld--13547f5_3--mechanism2",
+      "line": 31,
+      "old_status": "semantic_plan_failed",
+      "old_error": "planner needs reason, real evidence IDs and routes array",
+      "new_accepted": true,
+      "new_error": null
+    },
+    {
+      "job": "hld--13547f5_3--mechanism2",
+      "line": 102,
+      "old_status": "semantic_plan_accepted",
+      "old_error": null,
+      "new_accepted": true,
+      "new_error": null
+    },
+    {
+      "job": "hld--13547f5_3--mechanism2",
+      "line": 248,
+      "old_status": "semantic_plan_failed",
+      "old_error": "every planner invocation must propose 1-2 new routes",
+      "new_accepted": true,
+      "new_error": null
+    },
+    {
+      "job": "hld--2c544f9_1--mechanism2",
+      "line": 31,
+      "old_status": "semantic_plan_failed",
+      "old_error": "planner needs reason, real evidence IDs and routes array",
+      "new_accepted": true,
+      "new_error": null
+    },
+    {
+      "job": "hld--2c544f9_1--mechanism2",
+      "line": 97,
+      "old_status": "semantic_plan_accepted",
+      "old_error": null,
+      "new_accepted": true,
+      "new_error": null
+    },
+    {
+      "job": "hld--2c544f9_1--mechanism2",
+      "line": 240,
+      "old_status": "semantic_plan_accepted",
+      "old_error": null,
+      "new_accepted": true,
+      "new_error": null
+    },
+    {
+      "job": "hld--f323bae_3--mechanism2",
+      "line": 37,
+      "old_status": "semantic_plan_failed",
+      "old_error": "planner needs reason, real evidence IDs and routes array",
+      "new_accepted": true,
+      "new_error": null
+    },
+    {
+      "job": "hld--f323bae_3--mechanism2",
+      "line": 119,
+      "old_status": "semantic_plan_accepted",
+      "old_error": null,
+      "new_accepted": true,
+      "new_error": null
+    },
+    {
+      "job": "hld--f323bae_1--mechanism2",
+      "line": 33,
+      "old_status": "semantic_plan_failed",
+      "old_error": "planner needs reason, real evidence IDs and routes array",
+      "new_accepted": true,
+      "new_error": null
+    },
+    {
+      "job": "hld--f323bae_1--mechanism2",
+      "line": 102,
+      "old_status": "semantic_plan_accepted",
+      "old_error": null,
+      "new_accepted": true,
+      "new_error": null
+    },
+    {
+      "job": "hld--2c544f9_3--mechanism2",
+      "line": 34,
+      "old_status": "semantic_plan_accepted",
+      "old_error": null,
+      "new_accepted": true,
+      "new_error": null
+    },
+    {
+      "job": "hld--2c544f9_3--mechanism2",
+      "line": 179,
+      "old_status": "semantic_plan_accepted",
+      "old_error": null,
+      "new_accepted": true,
+      "new_error": null
+    },
+    {
+      "job": "hld--2c544f9_3--mechanism2",
+      "line": 341,
+      "old_status": "semantic_plan_accepted",
+      "old_error": null,
+      "new_accepted": true,
+      "new_error": null
+    },
+    {
+      "job": "hld--90adc3f_1--mechanism2",
+      "line": 33,
+      "old_status": "semantic_plan_accepted",
+      "old_error": null,
+      "new_accepted": true,
+      "new_error": null
+    },
+    {
+      "job": "hld--90adc3f_1--mechanism2",
+      "line": 191,
+      "old_status": "semantic_plan_accepted",
+      "old_error": null,
+      "new_accepted": true,
+      "new_error": null
+    },
+    {
+      "job": "hld--13547f5_2--mechanism2",
+      "line": 33,
+      "old_status": "semantic_plan_failed",
+      "old_error": "planner needs reason, real evidence IDs and routes array",
+      "new_accepted": true,
+      "new_error": null
+    },
+    {
+      "job": "hld--13547f5_2--mechanism2",
+      "line": 112,
+      "old_status": "semantic_plan_failed",
+      "old_error": "planner needs reason, real evidence IDs and routes array",
+      "new_accepted": true,
+      "new_error": null
+    },
+    {
+      "job": "hld--f323bae_2--mechanism2",
+      "line": 33,
+      "old_status": "semantic_plan_failed",
+      "old_error": "planner needs reason, real evidence IDs and routes array",
+      "new_accepted": true,
+      "new_error": null
+    },
+    {
+      "job": "hld--f323bae_2--mechanism2",
+      "line": 107,
+      "old_status": "semantic_plan_failed",
+      "old_error": "planner needs reason, real evidence IDs and routes array",
+      "new_accepted": true,
+      "new_error": null
+    }
+  ]
+}

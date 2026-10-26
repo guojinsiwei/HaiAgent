@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "best-fgs"
+version = "0.15.0"
+description = "Role-separated model collaboration over the unchanged BestFGS graph runtime"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+cli-retrac-best-fgs = "bestfgs.__main__:main"
+best-fgs = "bestfgs.__main__:main"
+raw-cli-baseline = "bestfgs.raw_baseline:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

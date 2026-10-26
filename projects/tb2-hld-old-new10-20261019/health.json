@@ -1,0 +1,223 @@
+{
+  "state": "running",
+  "updated_utc": "2026-10-19T12:21:02.839228+00:00",
+  "pid": 3658079,
+  "supervisor_identity": {
+    "pid": 3658079,
+    "start": "830414721",
+    "boot": "2861b57d-7d78-4a80-a96b-0854417097ca"
+  },
+  "auth_paused": false,
+  "phase": "first",
+  "summary": {
+    "hld-old": {
+      "total": 10,
+      "finished": 0,
+      "clean": 0,
+      "scored": 0,
+      "engineering_failures": 0,
+      "passed": 0
+    },
+    "hld-new": {
+      "total": 10,
+      "finished": 0,
+      "clean": 0,
+      "scored": 0,
+      "engineering_failures": 0,
+      "passed": 0
+    }
+  },
+  "rows": [
+    {
+      "task": "build-cython-ext",
+      "arm": "hld-old",
+      "stage": "first",
+      "job": "tb2hld-01-hld-old-build-cython-ext",
+      "state": "preflighting",
+      "preflight_attempt_id": "e5fc4021beda402190cac4391a779705",
+      "admission_offline": true,
+      "admitted_utc": "2026-10-19T12:20:52.548297+00:00",
+      "pid": 3658101,
+      "live": {}
+    },
+    {
+      "task": "build-cython-ext",
+      "arm": "hld-new",
+      "stage": "first",
+      "job": "tb2hld-01-hld-new-build-cython-ext",
+      "state": "preflighting",
+      "preflight_attempt_id": "1053b20fb8664238bab6daff23bc485b",
+      "admission_offline": true,
+      "admitted_utc": "2026-10-19T12:20:52.612688+00:00",
+      "pid": 3658103,
+      "live": {}
+    },
+    {
+      "task": "chess-best-move",
+      "arm": "hld-new",
+      "stage": "first",
+      "job": "tb2hld-02-hld-new-chess-best-move",
+      "state": "preflighting",
+      "preflight_attempt_id": "3ea1193795d5425f9c971caba1cb2cdc",
+      "admission_offline": true,
+      "admitted_utc": "2026-10-19T12:20:52.666078+00:00",
+      "pid": 3658105,
+      "live": {}
+    },
+    {
+      "task": "chess-best-move",
+      "arm": "hld-old",
+      "stage": "first",
+      "job": "tb2hld-02-hld-old-chess-best-move",
+      "state": "preflighting",
+      "preflight_attempt_id": "d70a6abac1db47ad913330526c491dde",
+      "admission_offline": true,
+      "admitted_utc": "2026-10-19T12:20:52.731956+00:00",
+      "pid": 3658106,
+      "live": {}
+    },
+    {
+      "task": "configure-git-webserver",
+      "arm": "hld-old",
+      "stage": "first",
+      "job": "tb2hld-03-hld-old-configure-git-webserver",
+      "state": "pending"
+    },
+    {
+      "task": "configure-git-webserver",
+      "arm": "hld-new",
+      "stage": "first",
+      "job": "tb2hld-03-hld-new-configure-git-webserver",
+      "state": "pending"
+    },
+    {
+      "task": "fix-code-vulnerability",
+      "arm": "hld-new",
+      "stage": "first",
+      "job": "tb2hld-04-hld-new-fix-code-vulnerability",
+      "state": "pending"
+    },
+    {
+      "task": "fix-code-vulnerability",
+      "arm": "hld-old",
+      "stage": "first",
+      "job": "tb2hld-04-hld-old-fix-code-vulnerability",
+      "state": "pending"
+    },
+    {
+      "task": "log-summary-date-ranges",
+      "arm": "hld-old",
+      "stage": "first",
+      "job": "tb2hld-05-hld-old-log-summary-date-ranges",
+      "state": "pending"
+    },
+    {
+      "task": "log-summary-date-ranges",
+      "arm": "hld-new",
+      "stage": "first",
+      "job": "tb2hld-05-hld-new-log-summary-date-ranges",
+      "state": "pending"
+    },
+    {
+      "task": "polyglot-c-py",
+      "arm": "hld-new",
+      "stage": "first",
+      "job": "tb2hld-06-hld-new-polyglot-c-py",
+      "state": "pending"
+    },
+    {
+      "task": "polyglot-c-py",
+      "arm": "hld-old",
+      "stage": "first",
+      "job": "tb2hld-06-hld-old-polyglot-c-py",
+      "state": "pending"
+    },
+    {
+      "task": "qemu-alpine-ssh",
+      "arm": "hld-old",
+      "stage": "first",
+      "job": "tb2hld-07-hld-old-qemu-alpine-ssh",
+      "state": "pending"
+    },
+    {
+      "task": "qemu-alpine-ssh",
+      "arm": "hld-new",
+      "stage": "first",
+      "job": "tb2hld-07-hld-new-qemu-alpine-ssh",
+      "state": "pending"
+    },
+    {
+      "task": "qemu-startup",
+      "arm": "hld-new",
+      "stage": "first",
+      "job": "tb2hld-08-hld-new-qemu-startup",
+      "state": "pending"
+    },
+    {
+      "task": "qemu-startup",
+      "arm": "hld-old",
+      "stage": "first",
+      "job": "tb2hld-08-hld-old-qemu-startup",
+      "state": "pending"
+    },
+    {
+      "task": "regex-log",
+      "arm": "hld-old",
+      "stage": "first",
+      "job": "tb2hld-09-hld-old-regex-log",
+      "state": "pending"
+    },
+    {
+      "task": "regex-log",
+      "arm": "hld-new",
+      "stage": "first",
+      "job": "tb2hld-09-hld-new-regex-log",
+      "state": "pending"
+    },
+    {
+      "task": "sqlite-with-gcov",
+      "arm": "hld-new",
+      "stage": "first",
+      "job": "tb2hld-10-hld-new-sqlite-with-gcov",
+      "state": "pending"
+    },
+    {
+      "task": "sqlite-with-gcov",
+      "arm": "hld-old",
+      "stage": "first",
+      "job": "tb2hld-10-hld-old-sqlite-with-gcov",
+      "state": "pending"
+    }
+  ],
+  "spending": {
+    "limit_microcny": 80000000,
+    "settled_microcny": 0,
+    "reserved_microcny": 0,
+    "uncertain_microcny": 0,
+    "remaining_microcny": 80000000,
+    "halt_reason": null,
+    "estimate_peak_cny": 80.0
+  },
+  "active": [
+    {
+      "job": "tb2hld-01-hld-old-build-cython-ext",
+      "pid": 3658101,
+      "offline": true
+    },
+    {
+      "job": "tb2hld-01-hld-new-build-cython-ext",
+      "pid": 3658103,
+      "offline": true
+    },
+    {
+      "job": "tb2hld-02-hld-new-chess-best-move",
+      "pid": 3658105,
+      "offline": true
+    },
+    {
+      "job": "tb2hld-02-hld-old-chess-best-move",
+      "pid": 3658106,
+      "offline": true
+    }
+  ]
+}

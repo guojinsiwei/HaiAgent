@@ -1,0 +1,189 @@
+{
+  "updated": 1792423687.982514,
+  "pid": 4165707,
+  "state": "running",
+  "summary": {
+    "hld": {
+      "completed": 0,
+      "passed": 0,
+      "engineering_failed": 1
+    },
+    "recuris": {
+      "completed": 0,
+      "passed": 0,
+      "engineering_failed": 1
+    }
+  },
+  "rows": {
+    "swp-01-hld": {
+      "task": "instance_navidrome__navidrome-9c3b4561652a15846993d477003e111f0df0c585",
+      "arm": "hld",
+      "state": "engineering_failed",
+      "error_type": "RuntimeError",
+      "error": "Official empty/gold preflight did not validate",
+      "paid_calls": 0
+    },
+    "swp-01-recuris": {
+      "task": "instance_navidrome__navidrome-9c3b4561652a15846993d477003e111f0df0c585",
+      "arm": "recuris",
+      "state": "engineering_failed",
+      "error_type": "RuntimeError",
+      "error": "Official empty/gold preflight did not validate",
+      "paid_calls": 0
+    },
+    "swp-02-hld": {
+      "task": "instance_ansible__ansible-a20a52701402a12f91396549df04ac55809f68e9-v1055803c3a812189a1133297f7f5468579283f86",
+      "arm": "hld",
+      "state": "running",
+      "started": 1792423548.6512287,
+      "container": "swepro-hld-recuris15-20261019-s-swp-02-hld"
+    },
+    "swp-02-recuris": {
+      "task": "instance_ansible__ansible-a20a52701402a12f91396549df04ac55809f68e9-v1055803c3a812189a1133297f7f5468579283f86",
+      "arm": "recuris",
+      "state": "grading",
+      "started": 1792423548.6125598,
+      "container": "swepro-hld-recuris15-20261019-s-swp-02-recuris",
+      "solver_exit": 0
+    },
+    "swp-03-hld": {
+      "task": "instance_qutebrowser__qutebrowser-ff1c025ad3210506fc76e1f604d8c8c27637d88e-v363c8a7e5ccdf6968fc7ab84a2053ac78036691d",
+      "arm": "hld",
+      "state": "preflight"
+    },
+    "swp-03-recuris": {
+      "task": "instance_qutebrowser__qutebrowser-ff1c025ad3210506fc76e1f604d8c8c27637d88e-v363c8a7e5ccdf6968fc7ab84a2053ac78036691d",
+      "arm": "recuris",
+      "state": "preflight"
+    },
+    "swp-04-hld": {
+      "task": "instance_element-hq__element-web-7c63d52500e145d6fff6de41dd717f61ab88d02f-vnan",
+      "arm": "hld",
+      "state": "pending"
+    },
+    "swp-04-recuris": {
+      "task": "instance_element-hq__element-web-7c63d52500e145d6fff6de41dd717f61ab88d02f-vnan",
+      "arm": "recuris",
+      "state": "pending"
+    },
+    "swp-05-hld": {
+      "task": "instance_internetarchive__openlibrary-53d376b148897466bb86d5accb51912bbbe9a8ed-v08d8e8889ec945ab821fb156c04c7d2e2810debb",
+      "arm": "hld",
+      "state": "pending"
+    },
+    "swp-05-recuris": {
+      "task": "instance_internetarchive__openlibrary-53d376b148897466bb86d5accb51912bbbe9a8ed-v08d8e8889ec945ab821fb156c04c7d2e2810debb",
+      "arm": "recuris",
+      "state": "pending"
+    },
+    "swp-06-hld": {
+      "task": "instance_tutao__tutanota-de49d486feef842101506adf040a0f00ded59519-v10a26bfb45a064b93f4fc044a0254925037b88f1",
+      "arm": "hld",
+      "state": "pending"
+    },
+    "swp-06-recuris": {
+      "task": "instance_tutao__tutanota-de49d486feef842101506adf040a0f00ded59519-v10a26bfb45a064b93f4fc044a0254925037b88f1",
+      "arm": "recuris",
+      "state": "pending"
+    },
+    "swp-07-hld": {
+      "task": "instance_element-hq__element-web-aec454dd6feeb93000380523cbb0b3681c0275fd-vnan",
+      "arm": "hld",
+      "state": "pending"
+    },
+    "swp-07-recuris": {
+      "task": "instance_element-hq__element-web-aec454dd6feeb93000380523cbb0b3681c0275fd-vnan",
+      "arm": "recuris",
+      "state": "pending"
+    },
+    "swp-08-hld": {
+      "task": "instance_gravitational__teleport-7744f72c6eb631791434b648ba41083b5f6d2278-vce94f93ad1030e3136852817f2423c1b3ac37bc4",
+      "arm": "hld",
+      "state": "pending"
+    },
+    "swp-08-recuris": {
+      "task": "instance_gravitational__teleport-7744f72c6eb631791434b648ba41083b5f6d2278-vce94f93ad1030e3136852817f2423c1b3ac37bc4",
+      "arm": "recuris",
+      "state": "pending"
+    },
+    "swp-09-hld": {
+      "task": "instance_ansible__ansible-34db57a47f875d11c4068567b9ec7ace174ec4cf-v1055803c3a812189a1133297f7f5468579283f86",
+      "arm": "hld",
+      "state": "pending"
+    },
+    "swp-09-recuris": {
+      "task": "instance_ansible__ansible-34db57a47f875d11c4068567b9ec7ace174ec4cf-v1055803c3a812189a1133297f7f5468579283f86",
+      "arm": "recuris",
+      "state": "pending"
+    },
+    "swp-10-hld": {
+      "task": "instance_element-hq__element-web-6205c70462e0ce2e1e77afb3a70b55d0fdfe1b31-vnan",
+      "arm": "hld",
+      "state": "pending"
+    },
+    "swp-10-recuris": {
+      "task": "instance_element-hq__element-web-6205c70462e0ce2e1e77afb3a70b55d0fdfe1b31-vnan",
+      "arm": "recuris",
+      "state": "pending"
+    },
+    "swp-11-hld": {
+      "task": "instance_future-architect__vuls-436341a4a522dc83eb8bddd1164b764c8dd6bc45",
+      "arm": "hld",
+      "state": "pending"
+    },
+    "swp-11-recuris": {
+      "task": "instance_future-architect__vuls-436341a4a522dc83eb8bddd1164b764c8dd6bc45",
+      "arm": "recuris",
+      "state": "pending"
+    },
+    "swp-12-hld": {
+      "task": "instance_protonmail__webclients-5e815cfa518b223a088fa9bb232a5fc90ab15691",
+      "arm": "hld",
+      "state": "pending"
+    },
+    "swp-12-recuris": {
+      "task": "instance_protonmail__webclients-5e815cfa518b223a088fa9bb232a5fc90ab15691",
+      "arm": "recuris",
+      "state": "pending"
+    },
+    "swp-13-hld": {
+      "task": "instance_NodeBB__NodeBB-f9ce92df988db7c1ae55d9ef96d247d27478bc70-vf2cf3cbd463b7ad942381f1c6d077626485a1e9e",
+      "arm": "hld",
+      "state": "pending"
+    },
+    "swp-13-recuris": {
+      "task": "instance_NodeBB__NodeBB-f9ce92df988db7c1ae55d9ef96d247d27478bc70-vf2cf3cbd463b7ad942381f1c6d077626485a1e9e",
+      "arm": "recuris",
+      "state": "pending"
+    },
+    "swp-14-hld": {
+      "task": "instance_flipt-io__flipt-e88e93990e3ec1e7697754b423decc510d5dd5fe",
+      "arm": "hld",
+      "state": "pending"
+    },
+    "swp-14-recuris": {
+      "task": "instance_flipt-io__flipt-e88e93990e3ec1e7697754b423decc510d5dd5fe",
+      "arm": "recuris",
+      "state": "pending"
+    },
+    "swp-15-hld": {
+      "task": "instance_internetarchive__openlibrary-9cd47f4dc21e273320d9e30d889c864f8cb20ccf-v0f5aece3601a5b4419f7ccec1dbda2071be28ee4",
+      "arm": "hld",
+      "state": "pending"
+    },
+    "swp-15-recuris": {
+      "task": "instance_internetarchive__openlibrary-9cd47f4dc21e273320d9e30d889c864f8cb20ccf-v0f5aece3601a5b4419f7ccec1dbda2071be28ee4",
+      "arm": "recuris",
+      "state": "pending"
+    }
+  },
+  "spending": {
+    "limit_microcny": 240000000,
+    "settled_microcny": 1153882,
+    "reserved_microcny": 387072,
+    "uncertain_microcny": 0,
+    "remaining_microcny": 238459046,
+    "halt_reason": null,
+    "estimate_peak_cny": 240.0
+  }
+}

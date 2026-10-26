@@ -1,0 +1,21 @@
+2026-10-03: recovery cooldown counter correction only
+
+Baseline: releases/longcli-repair-v9 (preserved unchanged).
+Candidate: releases/recovery-counter-fix-v9.
+
+Recovery clock = actual tool_calls + action_loop_blocks + contrastive_rejections.
+Used only for exploration reactivation cooldown, monitor cooldown/scheduling
+horizon and advisor cooldown. Monitor/advisor calls do not advance this clock.
+All cooldown thresholds and existing call quotas are unchanged.
+
+Actual tool budgets, evidence IDs, episode execution caps, command matching,
+orthogonal validation, prediction selection, memory rules, prompts and experiment
+configuration are unchanged. No new forced action, rejection cap or termination
+policy is introduced. This correction does not guarantee escape from every loop.
+
+Verification: bundled Python 3.12, offline scripted clients, 128 tests passed
+(122 existing + 6 recovery-counter regressions). No model API calls, cloud
+deployment, experiment restart or changes to recorded results.
+
+Run from workspace root:
+python -B -m unittest discover -s releases/recovery-counter-fix-v9/tests -q

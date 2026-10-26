@@ -1,0 +1,8 @@
+{
+  "task": "make-doom-for-mips",
+  "image": "alexgshaw/make-doom-for-mips:20251031",
+  "digest": "sha256:80a9459f1b94b692ea8346f68e6b864f6c4d984fbdf6ffd68ad332308300c2ec",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/make-doom-for-mips/manifests/20251031",
+  "header_verified": true,
+  "time": 1792550870.0101354
+}

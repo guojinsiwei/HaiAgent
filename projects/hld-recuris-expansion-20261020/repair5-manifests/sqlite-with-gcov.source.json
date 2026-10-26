@@ -1,0 +1,8 @@
+{
+  "task": "sqlite-with-gcov",
+  "image": "alexgshaw/sqlite-with-gcov:20251031",
+  "digest": "sha256:f986820b00c74ce75db7288719d364df313fde7c7917bea6eb6352a08431a89f",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/sqlite-with-gcov/manifests/20251031",
+  "header_verified": true,
+  "time": 1792510253.9909012
+}

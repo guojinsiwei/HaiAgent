@@ -1,0 +1,108 @@
+HISTORICAL PRE-FIX AUDIT. The confirmed defects below were subsequently repaired.
+Current scope, verification and remaining limitations: ENGINEERING-FIXES.txt.
+The original findings are preserved as evidence, not a current all-clear report.
+
+DHv1 engineering audit — 2026-10-04 (Asia/Shanghai)
+
+Actions in this audit
+- Renamed the current candidate directory from DH-expectation-v1 to DHv1.
+- Updated CHANGES heading and emitted header/result version to DHv1.
+- No algorithm, policy, budget, RAW or production configuration changes.
+- No paid model calls, benchmark reruns or cloud deployment.
+- Offline reproduction script: audit/scan_engineering.py.
+
+Validation
+Release suite: 177 discovered; 175 passed, 2 existing POSIX cases skipped on Windows.
+The rename is asserted in tests/test_expectation.py for header and final result.
+Legacy source test_lean.py: 33 cases, 5 failures, 7 POSIX skips.
+All five failures reproduced on the unchanged original DH previously as well.
+New diagnosis: legacy fixture actions omit current required memory_review fields.
+Representative trace hits model_or_protocol_error_limit with repeated
+"visible memories require a brief memory_review before execution" before the
+expected memory-intervention path can run.
+Diagnostic-only adapter with memory_injection=False: all five legacy cases pass.
+This neither fixes nor disables the production review protocol; the legacy
+fixtures still require migration. It is not evidence that memory works reliably
+in real-model benchmark runs.
+
+Previously exposed issues — current assessment
+
+1. Wrong diagnostic cwd/path
+   Fixed for the covered literal leading `cd DIR &&` form and explicit cwd.
+   Covered by regression tests; ambiguous shell programs remain unknown.
+
+2. Inner QEMU timeout exceeds outer timeout; log lost on kill
+   Bounded literal QEMU clock alignment and fresh redirected-log recovery have
+   offline coverage. Prior engineering candidate's Linux subprocess/log-recovery
+   regressions passed; current expectation module does not change this code.
+   NOT a real QEMU/guest-input acceptance test. Direct timeout argv and general
+   PTY/session driving are not covered. LiveWorkspace lacks the image-root log
+   recovery integrated into the shared SandboxExecutor backend.
+
+3. /dev/null permissions and false pipeline success
+   Device creation/0666 validation and top-level shell stage-status capture are
+   retained. Historical cube-acceptance-0/1 evidence covers clean /dev/null reads
+   and writes plus false|true recognition on two workers.
+   That evidence is historical, not a fresh validation of current deployed roots.
+   No current server/container was inspected in this audit.
+   Stage coverage is bounded; not every nested shell construct is covered.
+
+4. ANSI contamination and incomplete capture
+   Existing cleaning/projection tests pass. Original output and uncertainty flags
+   remain available. New expectation checks preserve unknown on incomplete output.
+
+5. Orthogonal rejection counted as fatal protocol error
+   Existing v9 regressions pass: rejection is recoverable and two rejections can
+   produce a counted diagnostic. Missing/invalid expectation fields likewise do
+   not create fatal errors or extra model requests.
+   Other required review fields still have the original protocol-error breaker.
+
+6. Temporary test boot replacement delivered to grader
+   PARTIAL FIX ONLY. Obvious exec("pgtbltest", argv) substitutions are caught.
+   Offline audit reproduced three missed cases, each incorrectly reports passed:
+   - Keep old exec("sh", argv) in a COMMENT while really executing pgtbltest.
+   - Remove boot exec dispatch completely.
+   - Dispatch the test through a VARIABLE rather than a string literal.
+   Cause: literal regex sees comments and check only rejects known literal test
+   replacements when no literal sh is present. Not a general C/source validator.
+   These cases were NOT fixed during this audit.
+
+7. NEW expectation field contaminates memory-action-change statistics
+   REPRODUCED: same argv/cwd/stdin, only expected_observation changes.
+   action_key stays identical (repeat guard unaffected), but _action_core differs
+   and memory_action_changed can be credited without any executable change.
+   Cause: _action_core excludes other metadata but not expected_observation.
+   This statistical defect was NOT fixed during this audit.
+
+8. Repeated blocked proposals consume requests without escaping
+   NOT SOLVED. Existing repeat guards correctly block unchanged commands, but
+   there is still no guaranteed productive next action. Expectation feedback is
+   not a takeover/route-changing mechanism. The audit does not change this policy.
+
+9. RAW early termination on malformed output
+   NOT SOLVED. RAW still has max_consecutive_format_errors=3 and its format circuit
+   breaker. It is intentionally unchanged. Historical low RAW scores cannot be
+   attributed solely to weak problem-solving ability.
+
+10. Launch-entry configuration drift
+   The inherited generic lean_cli.py defaults route_search=True and
+   stagnation_control=True, unlike the actual DH experiment runner's explicit
+   orthogonal configuration (both false).
+   Do NOT treat the generic CLI default as the fixed DH trial configuration.
+   Candidate release does not yet contain a complete new deployment scheduler/
+   launcher; no cloud instance currently runs this candidate as a result of this
+   audit. Public test parsing also remains narrow; unsupported runner types return
+   unknown rather than a fabricated pass.
+
+Next engineering priorities (recommendations, not implemented here)
+1. Tighten boot-delivery audit without silently reverting unknown source changes.
+2. Separate expected-observation metadata from executable-change metrics.
+3. Migrate obsolete regression fixtures to the current review protocol.
+4. Pin a DHv1-specific deployment entry/configuration and run free real-executor
+   preflight, including QEMU input/log collection, before paying for another run.
+
+Summary
+Covered path, clock, log and rejection-count repairs have regression evidence.
+Delivery protection is incomplete; a new metric bug is confirmed. Legacy tests
+are protocol-stale, not five proven production-memory failures. Request-loop
+escape and RAW format termination remain unresolved. No all-clear claim.

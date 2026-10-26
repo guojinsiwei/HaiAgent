@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "E": [],
+  "W": {
+    "init_guidance": "Represent every public task requirement as a checkable goal. Keep the goal set small and complete. Bind each goal to a meaningful public verification command; never use a no-op or merely print a success label. Goals start pending. Do not read hidden graders or expected answers.",
+    "update_guidance": "Propose status changes from actual observations. A successful skill invocation or an attempted command does not prove completion. Use the matching verification receipt to propose done. Preserve incomplete requirements; add genuinely missing goals and correct verification commands when needed. Be explicit about blockers.",
+    "max_goals": 8
+  },
+  "rho": {"trigger": "first_turn", "retrieval": "all", "max_skills": 64},
+  "C": {"required_output": [], "forbidden_output": []}
+}

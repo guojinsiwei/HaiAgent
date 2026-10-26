@@ -1,0 +1,9 @@
+{
+  "limit_microcny": 720000000,
+  "settled_microcny": 512824582,
+  "reserved_microcny": 774144,
+  "uncertain_microcny": 2709504,
+  "remaining_microcny": 203691770,
+  "halt_reason": null,
+  "estimate_peak_cny": 720.0
+}

@@ -1,0 +1,64 @@
+OSWorld-Verified GLM-5.3-Flash paired pilot — engineering repair 1, 2026-10-24
+
+Frozen original source: projects/SUZ (remote SUZ).
+Independent revised source: projects/SUZ-repair1 (remote SUZ-repair1).
+Official OpenCUA vendor and frozen HLD files remain byte-identical, checked by source locks.
+Original 40 runs, configs, ledgers, screenshots and audit are retained.
+
+Affected reruns: 32 unsuccessful engineering-interrupted attempts, 16 per arm.
+Keep seven original passing attempts and the one normally completed failed attempt.
+Original passing attempts that later encountered a protocol stop retain their official score.
+These merged recovery results are an engineering recovery report, not a fresh single-attempt paired evaluation.
+
+Changes shared by both arms:
+- Explicit full-screen pixel output, safe AST conversion into pinned relative-coordinate parser.
+- Legacy fractional pairs retained; screen bounds checked before execution.
+- Bounded constant arithmetic; arbitrary code, dynamic expressions and non-GUI calls rejected.
+- One charged output-length recovery from 8192 to 32768 tokens; never execute partial output.
+- One charged action-format repair before dispatch. Unknown transport requests are not retried.
+- Raw response, finish reason, usage, adapted action and recovery trace retained per run.
+- Caught transport/protocol stops counted as engineering failures, separately from limits.
+
+SUZ role compatibility:
+- Supplied F screenshot references separated from E executed-action references.
+- Frames cannot create executed evidence or satisfy the two-transition stagnation rule.
+- Validate Monitor references before mutation; one charged correction for Monitor/Critic protocol errors.
+- Existing Critic evidence and full-task acceptance requirements retained.
+
+Validation gates:
+- Offline Python + Node regression tests and source hash checks.
+- Live continuous four-page GUI fixture, independent CPU VM for each arm, model controls mouse/keyboard.
+- At least six execution batches, visible final-state check, SUZ multiple Monitor calls and Critic acceptance.
+- Source fingerprint in passed marker must exactly match deployed source before every task.
+- Each selected benchmark task gets asset/setup/official evaluator preflight before model spending.
+
+Budget:
+Reuse existing budget.sqlite and original mode/task-id buckets. Cumulative CNY 8 per arm/task,
+CNY 320 whole round including original attempts, all helper roles, recoveries and preflight.
+Unknown-request reservations retained. Two CPU desktops maximum; runc, no GPU requests/devices.
+
+Paths:
+repair1-manifest.json — exact original result digests and reasons.
+repair1-runs/<mode>/<task>/ — new attempts, original directories never overwritten.
+preflight-multistep-repair1/ — live multi-step evidence.
+repair-status.py — read-only original/repaired/combined score and cumulative budget report.
+
+Validation outcome:
+- 20 Python and 13 Node regression tests passed, frozen sources unchanged.
+- Actual baseline: 12 sequential GUI execution batches, correct final screen, 15 total API requests.
+- Actual SUZ: 13 sequential GUI execution batches, correct final screen and Critic acceptance,
+  30 total API requests, no unavailable roles. Two real truncated requests recovered successfully.
+- Live preflight total: CNY 0.8727408, charged to original experiment ledger.
+
+Additional startup repair:
+- Concurrent official Docker startup exceeded upstream 10-second port-lock wait before any model calls.
+- Retained the shared port lock; process-local timeout is 300 seconds. Experiment-specific startup
+  serialization covers initial creation and later resets; execution still uses two independent CPU VMs.
+- No-model concurrency regression passed with peak concurrent startup=1.
+- Failed startup records are archived before replacement. A finite post-queue pass retries only
+  zero-call preflight failures, never a paid incomplete attempt. It creates no GPT/Codex scheduled task.
+- Active runtime verification confirmed two runc containers, 4 CPU cores and 6 GiB each,
+  no GPU DeviceRequests/devices; original result hashes unchanged.
+
+First observed repair result: SUZ f723c744-e62c-4ae6-98d1-750d3cd7d79d officially passed.
+At that checkpoint combined recovery score was SUZ 5/20 and baseline 3/20; two further tasks active.

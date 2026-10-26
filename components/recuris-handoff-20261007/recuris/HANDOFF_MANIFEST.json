@@ -1,0 +1,277 @@
+{
+  "schema_version": 1,
+  "package": "recuris-longcli",
+  "contains_benchmark_results": false,
+  "files": [
+    {
+      "path": "recuris/.gitignore",
+      "sha256": "763dad381201737b7212d8fed859c8993e369df6a82f1d5a02f5efc9cdfad695",
+      "bytes": 93
+    },
+    {
+      "path": "recuris/README.md",
+      "sha256": "67399fef6415f8d467068c00b9804cbad549f2263919096b06c6409fe906fac7",
+      "bytes": 12443
+    },
+    {
+      "path": "recuris/docs/evolution.md",
+      "sha256": "1bb38cde89f4e9e2d7a8afaf1a3c4e6df159b4c349429711063aae922e190675",
+      "bytes": 10831
+    },
+    {
+      "path": "recuris/docs/infrastructure-provenance.md",
+      "sha256": "2ca381577291cd2d7ef33b74192350990401fcc57af60dd2453c5b5ce8960821",
+      "bytes": 4066
+    },
+    {
+      "path": "recuris/docs/longcli-contract.md",
+      "sha256": "77c76149dbd74dce9f1d1d0ee39152c71a215532e44f1e653e9fe895210c4568",
+      "bytes": 5186
+    },
+    {
+      "path": "recuris/docs/paper-source.json",
+      "sha256": "8c89257f9e85fa2c9bf8962767b560600529d32a0acd801d86006219760b5f5e",
+      "bytes": 536
+    },
+    {
+      "path": "recuris/docs/reproduction.md",
+      "sha256": "2cbfd60722f8a03d4ebe222618f492cc47c16f469d0d6760c40339a187b0a9f8",
+      "bytes": 6862
+    },
+    {
+      "path": "recuris/docs/upstream/LICENSE",
+      "sha256": "a1a354cd1e52667c56837996fd12bcdaf5db3b9ab948730fa28ce1d0a8d1a38e",
+      "bytes": 11349
+    },
+    {
+      "path": "recuris/docs/upstream/README.md",
+      "sha256": "a883d70586186687dab208e4791f4ce70d5bd1a05893627a87556653a3d414f5",
+      "bytes": 4873
+    },
+    {
+      "path": "recuris/docs/upstream/THIRD_PARTY_NOTICES.md",
+      "sha256": "32987c7a2086a7e0c966d1748824f75e3e9fd98f812b571e26561589132f6c39",
+      "bytes": 3567
+    },
+    {
+      "path": "recuris/docs/upstream/manifest.json",
+      "sha256": "cad6b47c32008a8022fcdeb15ad3ddc3e69bc2b07c04c2071c81229e5e83f249",
+      "bytes": 3094
+    },
+    {
+      "path": "recuris/docs/upstream/skill_memories/tb21_seed/em/closed_loop.md",
+      "sha256": "ef394004dbb1f278791d5fba0c3d5f513565a09bd72f7996fbbf9bc568556015",
+      "bytes": 419
+    },
+    {
+      "path": "recuris/docs/upstream/skill_memories/tb21_seed/manifest.yaml",
+      "sha256": "29ffe9b058f578934e6990614b1eb1f9fa6cbaf46b962e6a25fb081e1bf4ecea",
+      "bytes": 589
+    },
+    {
+      "path": "recuris/docs/upstream/skill_memories/tb21_seed/strategies.py",
+      "sha256": "23eaaa2c8e40260c5e199df68d29cb214bf0c98a1430c6f84acb0f803445b847",
+      "bytes": 5537
+    },
+    {
+      "path": "recuris/docs/upstream/src/recuris/adapters/tb21/harbor_terminus.py",
+      "sha256": "2c4faf822a13a8b5156a8a6901ea7eb4ba61d38f42e0532d2291e769f97bd3c6",
+      "bytes": 3864
+    },
+    {
+      "path": "recuris/docs/upstream/src/recuris/adapters/tb21/runtime_bridge.py",
+      "sha256": "6559be2f7287bf33a880f78b572890dab9e51c2660cda4fba994e9e0bd8f0c74",
+      "bytes": 13551
+    },
+    {
+      "path": "recuris/docs/upstream/src/recuris/metaagent/gate.py",
+      "sha256": "c21999581fa1f359cd9607634453d1c288d3e28a25456da7674ccb331f839cf0",
+      "bytes": 3705
+    },
+    {
+      "path": "recuris/docs/upstream/src/recuris/metaagent/gates.py",
+      "sha256": "f864018a37c9466a9697f7df2e77ec13d9cbc624eab85caa4da03ccf1a6a29a6",
+      "bytes": 4833
+    },
+    {
+      "path": "recuris/docs/upstream/src/recuris/tta/driver.py",
+      "sha256": "1883f810645e3eb9cef06f54352257a4f088b1bbfd9378bff2937cb26dd371fb",
+      "bytes": 28415
+    },
+    {
+      "path": "recuris/docs/validation.md",
+      "sha256": "8101f2f84939b4e6871ac7dc874532facc020ba2c46f36ce4b0409f63c57783b",
+      "bytes": 2130
+    },
+    {
+      "path": "recuris/pyproject.toml",
+      "sha256": "e9bf8731eaca6fce894bce6c194ae06518ce6ecd195937e7dfc6272fb65205d0",
+      "bytes": 611
+    },
+    {
+      "path": "recuris/scripts/build_handoff.py",
+      "sha256": "47224ebae8fce3b05fb34538b4f6f4c813d86e743af008ac46f702e6f90e85d1",
+      "bytes": 3282
+    },
+    {
+      "path": "recuris/scripts/run_longcli.sh",
+      "sha256": "f4853902f0467b990b528622a083815432382ffb6a71c9394456961b14e32167",
+      "bytes": 2385
+    },
+    {
+      "path": "recuris/src/recuris/__init__.py",
+      "sha256": "a2993836a47659e8ffe3618b95c6281e8ec8b7ab1a00a38f6a80c0e2b1894558",
+      "bytes": 88
+    },
+    {
+      "path": "recuris/src/recuris/__main__.py",
+      "sha256": "307299fda7b77d22c64cb51430ec75e5f59d78e9c948786afb3b2544fe45e4b7",
+      "bytes": 79
+    },
+    {
+      "path": "recuris/src/recuris/admission.py",
+      "sha256": "3de91fa7dc04320e91e6157ca8b5673f151db199ef68a4e275ed9010f40a558b",
+      "bytes": 14971
+    },
+    {
+      "path": "recuris/src/recuris/audit.py",
+      "sha256": "edd03ad7c5646a4b16f14b678a9d2c0742d1f2a7e25200c6020b170838a61c27",
+      "bytes": 4223
+    },
+    {
+      "path": "recuris/src/recuris/cli.py",
+      "sha256": "12e30755785165e7baa71ecf03a154128ab21b1c7acd26b43e9746fc5864fc09",
+      "bytes": 9878
+    },
+    {
+      "path": "recuris/src/recuris/client.py",
+      "sha256": "4a9f91685660eb70fc83597308307faf9e8451e6a967e99d4ef57eb5113ecbd8",
+      "bytes": 13804
+    },
+    {
+      "path": "recuris/src/recuris/engine.py",
+      "sha256": "caf29f986050cf370584344c5c5265975b6a98f9ec8d4af8a33522977a39cedc",
+      "bytes": 19456
+    },
+    {
+      "path": "recuris/src/recuris/evolution.py",
+      "sha256": "7902bd05e708e8fb271b87c7268c8dcd020780d10289d24a3df43a5bba71bfa9",
+      "bytes": 22131
+    },
+    {
+      "path": "recuris/src/recuris/longcli.py",
+      "sha256": "5bf2aeb13b3e65c4f055434d616cec17e618ed557b1756cff5383356ebd68683",
+      "bytes": 8925
+    },
+    {
+      "path": "recuris/src/recuris/memory.py",
+      "sha256": "5e4a742cbb55deb2eb07622fdd7ded716e25fdc30e71a2d8d225ba81184655f7",
+      "bytes": 5168
+    },
+    {
+      "path": "recuris/src/recuris/prompts.py",
+      "sha256": "0b3bec812750ef7b5bb40441fc448fc8f583da8db51a51e75addd431262931e3",
+      "bytes": 4439
+    },
+    {
+      "path": "recuris/src/recuris/protocol.py",
+      "sha256": "daead1b861e65cae2610e041211933af268a50762a649be723d3b65e57e37b34",
+      "bytes": 3325
+    },
+    {
+      "path": "recuris/src/recuris/response_text.py",
+      "sha256": "8b69044043546348f546f345502359be436c0d475e54b8314933edda08cf15a2",
+      "bytes": 1282
+    },
+    {
+      "path": "recuris/src/recuris/skills/neutral.json",
+      "sha256": "a12a7e76424811dd63809c8d94f91400d436cca2a7cba7e5d9eef5f070373dd1",
+      "bytes": 851
+    },
+    {
+      "path": "recuris/src/recuris/skills/terminal_seed.json",
+      "sha256": "336fdd33d52db5042ad77aab62258794ed0484baff9ff2403877c2655a359aad",
+      "bytes": 1392
+    },
+    {
+      "path": "recuris/src/recuris/tta.py",
+      "sha256": "d12fec9e2b307f48aa76dde1441672063db7e1a68c4b282cbf887b1470cae905",
+      "bytes": 22467
+    },
+    {
+      "path": "recuris/src/recuris/working.py",
+      "sha256": "4f37412a2fc629cd67f6f605ae2692b7adf2d1b338ac70eb60a59e6a5d108c24",
+      "bytes": 6336
+    },
+    {
+      "path": "recuris/tests/test_admission.py",
+      "sha256": "68fe5cbfc9ea70761ff5c91a3fd8f3be086a07d04c8c2b44d6a0b5a8423bca6a",
+      "bytes": 14375
+    },
+    {
+      "path": "recuris/tests/test_cli.py",
+      "sha256": "92044e0cc065b84211bdbb5987c88de551486cca4ea34d53725fe7e0ffcff8a4",
+      "bytes": 3668
+    },
+    {
+      "path": "recuris/tests/test_client.py",
+      "sha256": "d36ad5bea1a2a7a695f894b77881359a8a4eeea9b51a111043a15d60299f077a",
+      "bytes": 14790
+    },
+    {
+      "path": "recuris/tests/test_engine.py",
+      "sha256": "799e5e2c994e57e484636d0e6459fd79ea353ac5901eff2048c3db36ebf3a12b",
+      "bytes": 11840
+    },
+    {
+      "path": "recuris/tests/test_evolution.py",
+      "sha256": "47caf138f4bc11725fb03a76706dc27f9cb4d92a2eec00a48ddc94492e329be0",
+      "bytes": 14892
+    },
+    {
+      "path": "recuris/tests/test_longcli.py",
+      "sha256": "2de52dbc3e06262225a1154568fd43c212efa22dba38c563091e497659d06f80",
+      "bytes": 14751
+    },
+    {
+      "path": "recuris/tests/test_memory.py",
+      "sha256": "7c7c3e278e34d9b8a35a23ce7de95f4045e4f4b30ae62c527539445024aeea8b",
+      "bytes": 2794
+    },
+    {
+      "path": "recuris/tests/test_response_text.py",
+      "sha256": "fc78a717e3d8bceb869aa7c906129ce7d33d93fc23dfadbb3a397c465ac3e9db",
+      "bytes": 1604
+    },
+    {
+      "path": "recuris/tests/test_tta.py",
+      "sha256": "b5ad05fe07aeef02fbdeea21b59fd2942c3590975cb3b761fe003be74a9accfa",
+      "bytes": 13448
+    },
+    {
+      "path": "recuris/tests/test_working.py",
+      "sha256": "0783089d564125879e69c006fe2de940ca155fefc63fbacdbff334df93107b90",
+      "bytes": 5067
+    },
+    {
+      "path": "recuris/vendor-contracts/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357
+    },
+    {
+      "path": "recuris/vendor-contracts/manifest.json",
+      "sha256": "6e1c4ce912d97914c49f481ce093c0b1505636cc282fca23fe4f852dd0282033",
+      "bytes": 1147
+    },
+    {
+      "path": "recuris/vendor-contracts/terminal_bench__agents__base_agent.py",
+      "sha256": "ab28f2368763876e14d2ca8eccbdd793e96796a0f2fc5e065a58fd66d0ad5f1b",
+      "bytes": 4467
+    },
+    {
+      "path": "recuris/vendor-contracts/terminal_bench__agents__failure_mode.py",
+      "sha256": "b4bb025b37a332493dcc957406a57829dde961bc5428a6391da88bd778498ed5",
+      "bytes": 483
+    }
+  ]
+}

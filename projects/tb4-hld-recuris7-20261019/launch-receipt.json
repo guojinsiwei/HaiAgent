@@ -1,0 +1,14 @@
+{
+  "pid": 3162577,
+  "started_utc": "2026-10-19T08:40:11.412355+00:00",
+  "state": "running",
+  "concurrency_limit": 4,
+  "per_arm_concurrency": 2,
+  "tasks_per_arm": 7,
+  "total_runs": 14,
+  "per_run_cny": 6,
+  "campaign_cny": 84,
+  "offline_acceptance": true,
+  "initial_paid_calls": 0,
+  "supervisor_detached": true
+}

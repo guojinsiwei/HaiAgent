@@ -1,0 +1,12 @@
+{
+  "schema_version": 10,
+  "selection": "original_tb2_sample10_fixed_before_outcomes",
+  "task_count": 10,
+  "trial_count": 20,
+  "concurrency": 4,
+  "solver_seconds": 7200,
+  "engineering_retry_batches": 0,
+  "preflight_attempts_per_trial": 1,
+  "retry_score_zero": false,
+  "retry_valid_budget_exhaustion": false
+}

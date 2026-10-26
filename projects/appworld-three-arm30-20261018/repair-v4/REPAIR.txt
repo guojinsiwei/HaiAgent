@@ -1,0 +1,37 @@
+Recuris AppWorld 修复与失败题补跑，2026-10-19
+
+已确认问题
+1. 原验证调用把缺省 commandTimeoutMs 显式放入参数对象，值为 undefined；DSH 拒绝此参数，命令根本没有执行。既有离线审计确认涉及 29 题、141 次调用。
+2. 验证工具内部失败未进入 state.faults，控制器因此漏报工程故障。
+3. 缺失/未知 goal_id 可触发 worker 异常；原公共指南还错误写成 supervisor.task_completed。
+4. 三道失败题：0d01c76_2 笔记内容已正确但未提交（5/6）；2c544f9_2 付款正确但存在额外导出/邮件/充值等操作（5/6）；2c544f9_3 存在多笔错误付款和额外操作，且未提交（1/6）。第三题未调用 recuris_verify，不能归因于超时参数缺陷。
+
+修复
+- 省略缺省 timeoutMs；显式配置要求正整数。执行参数保持可无损 JSON 序列化。
+- 缺失/未知目标在调用 worker 前返回可纠正的输入错误；不污染工作记忆或伪造完成。
+- 验证执行异常记录到 faults，并向 DSH 返回工具错误；真实非零检查结果保留为未通过，不误报基础设施故障。
+- Recuris 验证期间通过 AppWorld 端强制只读，结束后恢复原只读状态。
+- 使用与 HLD/KZDSH 修复版相同的 AppWorld 客户端、状态提交保护和公共操作指南：分页、精确目标与范围、避免验证性写入、使用正确 complete_task API。
+- 原 Recuris worker、E/W/rho/C 提交逻辑、记忆检索及种子文件逐字节保留。模型、任务、官方评分器不变；未向运行时加入隐藏测试答案。
+
+离线验收（付费模型调用 0）
+- 10 项 DSH/Recuris 回归测试通过：包含实际 bash 执行、缺省超时、真实回执提交、错误目标、执行失败、非零检查、压缩后记忆、协议修复和官方传输接口本地测试。
+- 2 项真实 AppWorld 集成测试通过：只读 API 检查能生成完成依据；写入检查被拦截，世界状态不变，只读状态恢复。
+- 1 项并行预算测试通过：新控制器启动不改变其他控制器的在途预留，原控制器仍能正常结算。
+- 完整生产入口验收通过：实际插件和 worker 启动，隔离外网，预算端拒绝首个请求，无付费调用。
+
+补跑
+仅运行 recuris--0d01c76_2--mechanism4、recuris--2c544f9_2--mechanism4、recuris--2c544f9_3--mechanism4。
+原来通过的 27/30 题保留，不重复运行；所有历史结果和原运行时保留。
+每次最多 8 元，本批最多 24 元，仍受原 spending.sqlite 全轮 720 元上限约束。仅向预算授权表新增 3 个任务 ID；不清零支出、不释放旧不确定预留。旧预算配置和账本已备份。
+使用用户授权的备用 TaoToken 账号，密钥不写入本报告、计划或日志。模型仍为 deepseek-flash。
+控制器 PID 3055486，3 路并发。启动验证三题均处于 solving、有实际模型请求、HTTP 错误列表为空；旧 Recuris 的 90 份结果索引/汇总记录哈希一致。
+
+比较口径
+修复前 Recuris 27/30；新结果尚未评分时不提前宣称改善。之后逐题比较原分数、新分数、耗时、请求数及费用。保留原始 27/30，另报失败题补跑后的累计有效通过数；此口径不同于修复版独立全量重测。
+
+服务器目录：/mnt/sdb/home/lizh639/appworld-three-arm30-20261018/repair-v4
+主进度入口：python3 /mnt/sdb/home/lizh639/appworld-three-arm30-20261018/status.py
+该入口合并 repair-v3（HLD/KZDSH 换号恢复）和 repair-v4（Recuris 修复）的并发。
+证据：offline-tests.json、world-verifier-acceptance.json、concurrent-budget-test.json、entry-acceptance.json、ready.json、baseline.json、original-result-manifest.json。
+ready.json 固定本轮源码及预算授权版本。此前 repair-v2 的 ready.json 保留原预算授权哈希，因此不能拿它直接重新启动旧批次；已在运行的控制器不受影响。

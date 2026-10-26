@@ -1,0 +1,10 @@
+{
+  "pid": 528842,
+  "trials": 160,
+  "per_trial_cny": 7,
+  "total_limit_cny": 1120,
+  "concurrency_cap": 12,
+  "existing_experiments_reserved": true,
+  "paid_grading_calls": 0,
+  "gpt_automation": false
+}

@@ -1,0 +1,14 @@
+{
+  "id": "androidworld-MarkorEditNote",
+  "class": "MarkorEditNote",
+  "params": {
+    "file_name": "note_sVxFm.txt",
+    "edit_type": "header",
+    "header": "Weekend plans: Hiking trip to Blue Mountain.",
+    "seed": 20261031
+  },
+  "instruction": "Edit note_sVxFm.txt in Markor. Add to the top of the note Weekend plans: Hiking trip to Blue Mountain.",
+  "max_steps": 12,
+  "benchmark": "androidworld",
+  "instance_sha256": "60201e5eef8f149c1a39f0227ee2f1313864cab252d1f8005e9dd197eec109c1"
+}

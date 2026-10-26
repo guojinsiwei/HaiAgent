@@ -1,0 +1,8 @@
+{
+  "task": "install-windows-3.11",
+  "image": "alexgshaw/install-windows-3.11:20251031",
+  "digest": "sha256:c6695097316ef8810abce0545e347e65354aef9d51d4f7f662c3242e742f6a3e",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/install-windows-3.11/manifests/20251031",
+  "header_verified": true,
+  "time": 1792550865.5167122
+}

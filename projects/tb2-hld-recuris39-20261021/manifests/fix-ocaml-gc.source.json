@@ -1,0 +1,8 @@
+{
+  "task": "fix-ocaml-gc",
+  "image": "alexgshaw/fix-ocaml-gc:20251031",
+  "digest": "sha256:66a1e2293076c9ef27a118611b3089a6284fdf467fd4675592d0cce7d11e5b0b",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/fix-ocaml-gc/manifests/20251031",
+  "header_verified": true,
+  "time": 1792550862.6543195
+}

@@ -1,0 +1,29 @@
+{
+  "benchmark": "ALFWorld",
+  "split": "valid_unseen",
+  "selected": 80,
+  "arms": [
+    "hld",
+    "recuris"
+  ],
+  "trials": 160,
+  "per_trial_cny": 7,
+  "total_cny": 1120,
+  "max_environment_actions": 100,
+  "concurrency_cap": 12,
+  "combined_solver_ceiling_with_existing": 12,
+  "seed": 20261022,
+  "cross_task_memory": false,
+  "admissible_actions_exposed": true,
+  "grading": "official GameState.won",
+  "solver": "deepseek-flash",
+  "temperature": 0,
+  "thinking": false,
+  "base_runtime_sha256": "f4ff20e6c6767496db70a04b3b2f6686a33fc28f0a1dc80ada248a0719daaf0a",
+  "runtime_changes": [
+    "clear stale max-tokens stop reason for both arms",
+    "HLD cost ceiling 7 CNY",
+    "ALFWorld public interface"
+  ],
+  "no_gpt_jobs": true
+}

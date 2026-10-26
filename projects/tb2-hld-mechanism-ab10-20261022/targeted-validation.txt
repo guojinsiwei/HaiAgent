@@ -1,0 +1,37 @@
+✔ structured follow-up data is rendered without crashing planner context (1.5546ms)
+✔ catalog resolves exact public quotes without inventing correctness or hiding conflicts (3.3819ms)
+✔ retirement aliases retain no rejected route and unknown evidence stays invalid (1.6069ms)
+✔ same failure across different commands triggers replan only at unchanged complete state (1.7611ms)
+✔ monetary pressure enters delivery priority before the cap and compiled artifacts are tracked (3.9545ms)
+✔ real audited task formats retain every substantive line and resolve all Q references (3.5778ms)
+✔ numbered constraints, examples and fenced blocks are lossless; empty input stays unavailable (0.3459ms)
+✔ full contract needs attributed receipts for every segment; subset accept cannot pass (0.4153ms)
+✔ progress needs a new attributable predicate; new E ID with same measurement does not inflate progress (1.662ms)
+✔ unchanged delivery with twelve executions requests reassessment; changed artifact resets alarm (0.4806ms)
+✔ contradicted memory ceases to gate actions; quoted newer observations required and dispute persists (1.5998ms)
+✔ repeat review cannot be unlocked by scratch edits or duplicated receipts, while new actual evidence can (0.7902ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 194.5538
+✔ HLD v8 complete public catalog binds all requirements and closes targeted gap: Repair check.py and pass its public check. (638.246ms)
+✔ HLD v8 complete public catalog binds all requirements and closes targeted gap: # Requirements
+- Repair check.py and pass its public check.
+ (538.8299ms)
+✔ HLD v8 complete public catalog binds all requirements and closes targeted gap: Repair check.py.
+
+Keep empty inputs valid. (600.2958ms)
+✔ empty Critic plan recovers only after a new public observation, not a repeated final (1207.9698ms)
+✔ FULL official-loop chain: subgoal → failure → quoted memory → edit → reviewed retry → snapshot → independent Critic (2405.051ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5879.775

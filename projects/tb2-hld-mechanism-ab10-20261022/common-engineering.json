@@ -1,0 +1,6 @@
+{
+  "max_tokens_fixed_both": true,
+  "loop_sha256": "ff283260bc892786c7148053ce0ec2df7a86d8d098003c66827a0dc4bc244ad4",
+  "context_patch_sha256": "2ae4f37cab4059088c1b3e17cbeff845214f180d82d93fb5941120c8d43e313a",
+  "same_model_temperature_token_budget": true
+}

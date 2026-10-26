@@ -1,0 +1,61 @@
+{
+  "release": "metrics-protocol-v9",
+  "validated_date_local": "2026-09-21",
+  "platform": "Windows",
+  "python_version": "3.12.14",
+  "implementation_sha256": "e3f6e169d53c7b8d42851bfe88e40cb7f04d7307864ab8aee9cfd56d868a4ade",
+  "baseline_release": "micro-experience-v8",
+  "baseline_implementation_sha256": "e94712e5f1c6bb9b106a828e1efba10b0e5980b8eba136c4a37164f613dbc0b8",
+  "trace_metric_version": "cli-comparison-v1",
+  "metric_report_version": "cli-metrics-report-v2",
+  "audit_version": "contextual-repeat-audit-v1",
+  "tests": {
+    "equivalent_command": "PYTHONPATH=src python -m unittest discover -s tests -q",
+    "total": 471,
+    "passed": 464,
+    "skipped": 7,
+    "failures": 0,
+    "errors": 0,
+    "test_elapsed_seconds": 92.094,
+    "including_discovery_seconds": 92.771,
+    "skip_scope": "5 POSIX/Linux cases and 2 Windows symlink privilege cases; not a Linux integration validation"
+  },
+  "unchanged_definitions": [
+    "Official resolved on the fixed task denominator, existing unknown handling",
+    "Original CLI feedback-batch interaction rounds",
+    "Original mechanical repeat arithmetic; legacy aliases retained explicitly"
+  ],
+  "unchanged_files": [
+    "src/bestfgs/raw_baseline.py",
+    "src/bestfgs/environment.py",
+    "src/bestfgs/cli_config.py",
+    "src/bestfgs/best_first.py",
+    "src/bestfgs/best_first_runtime.py",
+    "src/bestfgs/experience.py",
+    "src/bestfgs/micro_experience.py",
+    "src/bestfgs/retrac_adapter.py",
+    "src/bestfgs/priority.py"
+  ],
+  "checks": [
+    "Explicit mechanical-repeat fields with per-phase results and unknown semantic rate",
+    "Old trace arithmetic, success and interaction comparison compatibility",
+    "Mechanical repeat no longer certifies semantic redundancy reduction target",
+    "Necessary re-verification and differently worded avoidable repetition distinguished by audit labels",
+    "Deterministic sampling of all completed calls, not only detector positives",
+    "Trace/sample/rubric binding and refusal to remove unreviewed items",
+    "Decisive labels require contextual evidence, avoidable repeats cite preceding calls",
+    "Unknown audit labels stay in the denominator; partial sample does not become full-run rate",
+    "Offline reporting does not overwrite old traces or outputs",
+    "Original micro-experience, delivery, budget and baseline regression suite"
+  ],
+  "cloud_deployed": false,
+  "paid_model_calls_performed": false,
+  "official_evaluation_performed": false,
+  "historical_results_recomputed": false,
+  "limits": [
+    "No fully automatic semantic redundancy classifier",
+    "Audit labels need original contextual logs and reviewer judgment",
+    "Unknown-value bounds are not sampling confidence intervals",
+    "No causal tool-call savings or experimental performance improvement established"
+  ]
+}

@@ -1,0 +1,30 @@
+2026-10-17 21:05 北京时间：旧实验资源清理已完成。
+
+结果
+- 删除224个已结束的本账户TB2/TB4实验临时Compose镜像。
+- 从135个可回收且不共享缓存ID组成的允许清单中，清理了101条至少24小时未使用的构建缓存。
+- Docker报告构建缓存回收27.58GB。
+- 清理前可用71.20GiB，缓存清理后134.81GiB；并发任务继续写入时净增63.61GiB。
+- 调度器自动从2扩至6个活动任务，每组2个；验收时3个正式运行、3个无费用预检。
+- Supervisor PID 2084350持续运行，没有重启实验、改变预算或降低磁盘保护阈值。
+- 原先两道qemu-alpine-ssh任务保持原PID 2468365、2473463，原容器仍运行。
+
+保护与核验
+- 只按已完成trial目录、finished_at、Compose项目标签和镜像标签对应关系清理临时镜像。
+- 每次删除前复查所有容器引用；未使用docker image rm -f。
+- 本轮所有镜像均排除，官方基础镜像保留。未删除任何容器、卷、日志或历史结果目录。
+- 两个停止容器归属其他用户，已保留。
+- 候选历史result.json清理前后SHA256一致。
+- campaign.validate()再次成功，已封存的代码、预算、题目清单和运行包未变化。
+- 构建缓存使用明确ID正则允许清单与until=24h交集，未使用全局system prune或--all。
+
+远端审计目录：/mnt/sdb/home/lizh639/docker-cleanup-20261017
+本地证据：inventory.json、cleanup-result.json、cache-allowlist.json、cache-result.json、cache-prune.log。
+Docker过滤语义依据：https://docs.docker.com/reference/cli/docker/buildx/prune/
+
+并发仍受实际磁盘余量动态保护；这次确认6个活动任务已进入调度，不保证未来所有时刻恒为6。
+
+附带观察：DSH第9题torch-pipeline-parallelism在21:02的无费用预检中，
+下载tokenizers wheel时收到USTC PyPI镜像HTTP 429，未产生ctrf.json而单题隔离。
+发生在构建缓存清理之前；安装容器正常，非历史文件或镜像被删除导致。
+该题paid_calls=0，未为其启动自动重试。原活动的第8题仍保持运行。

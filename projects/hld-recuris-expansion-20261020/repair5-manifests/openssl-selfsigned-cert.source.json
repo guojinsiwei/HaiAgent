@@ -1,0 +1,8 @@
+{
+  "task": "openssl-selfsigned-cert",
+  "image": "alexgshaw/openssl-selfsigned-cert:20251031",
+  "digest": "sha256:4c948a4e630af2435ae0a19108fc0814a946ac2fa29a512469e0fc77b38c8c12",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/openssl-selfsigned-cert/manifests/20251031",
+  "header_verified": true,
+  "time": 1792509976.2603912
+}

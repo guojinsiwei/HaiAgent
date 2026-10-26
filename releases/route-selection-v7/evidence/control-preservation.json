@@ -1,0 +1,18 @@
+{
+  "success": true,
+  "control_path": "/var/tmp/lizh639-monitor-control-v6",
+  "control_manifest_counts": {
+    "sources": 130,
+    "integration": 5
+  },
+  "control_changes": [],
+  "shared_lean_defaults_changed": {},
+  "new_lean_defaults": {
+    "route_search": false,
+    "max_route_episodes": 3,
+    "route_tool_cap": 10
+  },
+  "hai_source_count": 21,
+  "hai_changes": [],
+  "note": "Checks source preservation and shared low-level defaults, not a sealed paid-run configuration."
+}

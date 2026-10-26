@@ -1,0 +1,14 @@
+{
+  "files": 17563,
+  "groups": 57,
+  "source_bytes": 66813047,
+  "archive_bytes": 15722630,
+  "archive_sha256": "afd82fb3df7503c9e04937d6bb7fa0ad2d1449141784eb2ad6dd6c01d0e306bb",
+  "skipped": {
+    "credential_pattern": 19,
+    "credential_name_or_symlink": 2,
+    "unreadable": 1,
+    "large_file": 1
+  },
+  "uploaded": false
+}

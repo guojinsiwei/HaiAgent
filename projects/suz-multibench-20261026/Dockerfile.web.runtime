@@ -1,0 +1,3 @@
+FROM suz-web-cpu:20261026
+RUN apt-get update && apt-get install -y --no-install-recommends libtk8.6 && rm -rf /var/lib/apt/lists/*
+RUN pip install --no-cache-dir openai

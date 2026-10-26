@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "dshVersion": "0.2.0-rc.2",
+  "route": {"provider":"deepseek-official","model":"deepseek-flash","temperature":0,"maxTokens":32768},
+  "contextWindow":1000000,
+  "compaction":{"thresholdRatio":0.8,"headroomTokens":65536,"retainRatio":0.16,"maxTokens":32768,"compactionRetries":1,"maxOverflowRetries":2},
+  "budget":{"apiRequests":800,"tools":600,"wallSeconds":7200},
+  "commandTimeoutMs":300000,
+  "environment":{"cpu":2,"memoryGiB":8,"pids":256,"network":"model-gateway-only","imageDigest":null},
+  "nativeTools":{"mode":"native","maxParallelToolCalls":1,"todo":false,"goalTool":false,"delegatedSolvers":false,"web":false,"backgroundBash":false,"commandPromotion":false},
+  "crossTaskMemory":false,
+  "offline":true,
+  "paidRunApproved":false
+}

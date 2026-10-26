@@ -1,0 +1,428 @@
+{
+  "benchmark": "SWE-bench Pro V2",
+  "commit": "66f92766bba642462d4bbe5479e83f91f9211862",
+  "seed": 20261019,
+  "selection": "one per repository, then four uniformly shuffled remaining tasks; frozen before outcomes",
+  "tasks": [
+    {
+      "index": 1,
+      "name": "instance_navidrome__navidrome-9c3b4561652a15846993d477003e111f0df0c585",
+      "image": "ghcr.io/scaleapi/swe-bench_pro-v2:instance_navidrome__navidrome-9c3b4561652a15846993d477003e111f0df0c585",
+      "environment": {
+        "network_mode": "public",
+        "build_timeout_sec": 1800.0,
+        "docker_image": "ghcr.io/scaleapi/swe-bench_pro-v2:instance_navidrome__navidrome-9c3b4561652a15846993d477003e111f0df0c585",
+        "os": "linux",
+        "cpus": 1,
+        "memory_mb": 4096,
+        "storage_mb": 10240,
+        "mcp_servers": [],
+        "env": {}
+      },
+      "files": {
+        "instruction.md": "c0037322bc1c82c1e8f3137166cb1f6e024a030284c7dcc36c65d088af09eb70",
+        "task.toml": "f3d68e9a28d747500cb83ecd5ac43dabd4aae6c0c28db802f22e211689998748",
+        "environment/Dockerfile": "b5270a6ab49cdacb87e6037d3f2b1201c44033ec393e526baa1a2a531479704f",
+        "solution/gold_patch.diff": "d6485b5574f2eded6ab3cd31a53d19cf32e0316d26d09f3b8c2e41a30ddf49b5",
+        "solution/solve.sh": "6d7497394937410135791cc64ba2f32ad48a94daf6308f0f4c64c74d24c50f97",
+        "tests/run_script.sh": "eb8d62aea3d3416835d08160c4ed7780c41b61dedf631bd1804a4a312e9db143",
+        "tests/test.sh": "b6f26eecd87c1696a3702ee115d31f9d42f4704cf2116419cd879f66b60976d0",
+        "tests/parser.py": "b1c0279417bc528109d5022e6ac4e0ba27899b09dfc7500e020be0754ee21039",
+        "tests/config.json": "ef6fcfbe9d92f7e9b08994f852ff8ea728504ee4dd079b1adb7f97626f0b4844",
+        "tests/test_patch.patch": "6f552719d3ff3db8fb6cd60b8864505ba866cff4e2a9e845ca8372292ace8e29"
+      }
+    },
+    {
+      "index": 2,
+      "name": "instance_ansible__ansible-a20a52701402a12f91396549df04ac55809f68e9-v1055803c3a812189a1133297f7f5468579283f86",
+      "image": "ghcr.io/scaleapi/swe-bench_pro-v2:instance_ansible__ansible-a20a52701402a12f91396549df04ac55809f68e9-v1055803c3a812189a1133297f7f5468579283f86",
+      "environment": {
+        "network_mode": "public",
+        "build_timeout_sec": 1800.0,
+        "docker_image": "ghcr.io/scaleapi/swe-bench_pro-v2:instance_ansible__ansible-a20a52701402a12f91396549df04ac55809f68e9-v1055803c3a812189a1133297f7f5468579283f86",
+        "os": "linux",
+        "cpus": 1,
+        "memory_mb": 4096,
+        "storage_mb": 10240,
+        "mcp_servers": [],
+        "env": {}
+      },
+      "files": {
+        "instruction.md": "6ca494273af9e9618a0d5e04ea04ec55d6d2a1f6bd46bd710f3d827c9c1f3463",
+        "task.toml": "09b7e33c03cab1225eff08f06cd834f369a1f6dcb142d262686b903ad1117711",
+        "environment/Dockerfile": "f35a8a119db7a548ce5d516a1c9cd3d879fbcfa9f66fdf23c2b47bf911d1233a",
+        "solution/gold_patch.diff": "f8331f9ebaf2556bef4d650bae3fe35fb82d78f7cd7c3058f296c05bd53acc6d",
+        "solution/solve.sh": "6d7497394937410135791cc64ba2f32ad48a94daf6308f0f4c64c74d24c50f97",
+        "tests/run_script.sh": "e8c61cf1ba381c6f91c5457d248152cf1b0339d52252d0af0d1ea60c2ba483b7",
+        "tests/test.sh": "b6f26eecd87c1696a3702ee115d31f9d42f4704cf2116419cd879f66b60976d0",
+        "tests/parser.py": "3bb7f471aa61ea90f7c8992cb901f61c14efc2a703dee9a14cd682840006c2dd",
+        "tests/config.json": "ede572ff026e13bc3ee0b311a9c9fbcd64049f5129e6e53a625e8b579b5d19fd",
+        "tests/test_patch.patch": "76361c71568c3b1edb5e9341b17e0fc5e88daf89608b3b2c1b9eeb527927c0d3"
+      }
+    },
+    {
+      "index": 3,
+      "name": "instance_qutebrowser__qutebrowser-ff1c025ad3210506fc76e1f604d8c8c27637d88e-v363c8a7e5ccdf6968fc7ab84a2053ac78036691d",
+      "image": "ghcr.io/scaleapi/swe-bench_pro-v2:instance_qutebrowser__qutebrowser-ff1c025ad3210506fc76e1f604d8c8c27637d88e-v363c8a7e5ccdf6968fc7ab84a2053ac78036691d",
+      "environment": {
+        "network_mode": "public",
+        "build_timeout_sec": 1800.0,
+        "docker_image": "ghcr.io/scaleapi/swe-bench_pro-v2:instance_qutebrowser__qutebrowser-ff1c025ad3210506fc76e1f604d8c8c27637d88e-v363c8a7e5ccdf6968fc7ab84a2053ac78036691d",
+        "os": "linux",
+        "cpus": 1,
+        "memory_mb": 4096,
+        "storage_mb": 10240,
+        "mcp_servers": [],
+        "env": {}
+      },
+      "files": {
+        "instruction.md": "fcc7f5648789ce2f25484b1788455b4d6ca0435b0dca3b07605405940e97e8f5",
+        "task.toml": "ae95a61d88158121619874a0542ee056d94fa8bd95cd29f46618d2640b30b5cf",
+        "environment/Dockerfile": "15af5b2b3d14ebe485465eee11dab8337c68dcea5e3a491d0e6dc3f41b6f0917",
+        "solution/gold_patch.diff": "c56d853614f05edebcb1ef2da91d77a5d568ed131a9e57a4f433f1879a224c42",
+        "solution/solve.sh": "6d7497394937410135791cc64ba2f32ad48a94daf6308f0f4c64c74d24c50f97",
+        "tests/run_script.sh": "b37fbfccd022046cd034c3797f0d3c1f65fb79c6ba9b9aa90e48a552e2556d84",
+        "tests/test.sh": "b6f26eecd87c1696a3702ee115d31f9d42f4704cf2116419cd879f66b60976d0",
+        "tests/parser.py": "dd9e16f9758617a0147b23dca25de01e1b8879c2f2cea60f07ea3bde80f56bdd",
+        "tests/config.json": "03501bc74c52432372cb0884f8e450cf1313bfb0ce1c76f38adc3c8f0d7685a6",
+        "tests/test_patch.patch": "e274438b656557e25ae9ccccd42c939187c3c2b286ac96d87f9abc58ceaca855"
+      }
+    },
+    {
+      "index": 4,
+      "name": "instance_element-hq__element-web-7c63d52500e145d6fff6de41dd717f61ab88d02f-vnan",
+      "image": "ghcr.io/scaleapi/swe-bench_pro-v2:instance_element-hq__element-web-7c63d52500e145d6fff6de41dd717f61ab88d02f-vnan",
+      "environment": {
+        "network_mode": "public",
+        "build_timeout_sec": 1800.0,
+        "docker_image": "ghcr.io/scaleapi/swe-bench_pro-v2:instance_element-hq__element-web-7c63d52500e145d6fff6de41dd717f61ab88d02f-vnan",
+        "os": "linux",
+        "cpus": 1,
+        "memory_mb": 4096,
+        "storage_mb": 10240,
+        "mcp_servers": [],
+        "env": {}
+      },
+      "files": {
+        "instruction.md": "9c420f9504f37003e475e3fdd2df7ec50ec1630f41e3ba044231e3c69f226ff7",
+        "task.toml": "fe55069cb01839452e5d0fea8da7951b2a3fa7e17ede6350fdfc470a7c717b29",
+        "environment/Dockerfile": "5193204bf40ce8fa3a95255a2ce6d21ab5cc33d933588a322a86df8ccf475c8a",
+        "solution/gold_patch.diff": "be1866c24998d1b739c0515ed0780e30fce3199f0ebbf462a1d022cdcb2b01b5",
+        "solution/solve.sh": "6d7497394937410135791cc64ba2f32ad48a94daf6308f0f4c64c74d24c50f97",
+        "tests/run_script.sh": "8fa955298afd7223f9d1f7196c614de668ce66e77799fe2ec6d6f43d41082246",
+        "tests/test.sh": "b6f26eecd87c1696a3702ee115d31f9d42f4704cf2116419cd879f66b60976d0",
+        "tests/parser.py": "53aff51506358c3895f23046a9e1e374fff838d4110b4355e6dea257efe54db2",
+        "tests/config.json": "5be4737559904200da51a2e167af8e2781cfd349569d2d1113cff515c6f5b6cc",
+        "tests/test_patch.patch": "00a58e15008d80b87178eb7ef3a9fed55b7b8337f1f9f6436514d24ec36a4d1a"
+      }
+    },
+    {
+      "index": 5,
+      "name": "instance_internetarchive__openlibrary-53d376b148897466bb86d5accb51912bbbe9a8ed-v08d8e8889ec945ab821fb156c04c7d2e2810debb",
+      "image": "ghcr.io/scaleapi/swe-bench_pro-v2:instance_internetarchive__openlibrary-53d376b148897466bb86d5accb51912bbbe9a8ed-v08d8e8889ec945ab821fb156c04c7d2e2810debb",
+      "environment": {
+        "network_mode": "public",
+        "build_timeout_sec": 1800.0,
+        "docker_image": "ghcr.io/scaleapi/swe-bench_pro-v2:instance_internetarchive__openlibrary-53d376b148897466bb86d5accb51912bbbe9a8ed-v08d8e8889ec945ab821fb156c04c7d2e2810debb",
+        "os": "linux",
+        "cpus": 1,
+        "memory_mb": 4096,
+        "storage_mb": 10240,
+        "mcp_servers": [],
+        "env": {}
+      },
+      "files": {
+        "instruction.md": "b1bac0666c501fe2cf9f17d5ce7de54b7a1d76fb8642d901599cbd24acedbd5a",
+        "task.toml": "d8942aabe86e918e148a445e1321e85ea3579a60f0865c7bb3d0b8ba90848c23",
+        "environment/Dockerfile": "e489ca378522a21f0869c5facfad3506785437eeee3f32484563bf53df975962",
+        "solution/gold_patch.diff": "be13d407dcca19e5de15446042a8a0f682e71babff084deb0d562a46a75e682f",
+        "solution/solve.sh": "6d7497394937410135791cc64ba2f32ad48a94daf6308f0f4c64c74d24c50f97",
+        "tests/run_script.sh": "9426c5d3b174c487acc5d90873a7461c604cc23682c3809b418a50c0c3066875",
+        "tests/test.sh": "72978b0ed03ba132c5adc82866cac95701c26c78b5ccb9db25dd90783a0030bb",
+        "tests/parser.py": "954c0a68c4cd45d6848774a59b093b825333b2f8bc51b8393ebac77bd4ff91ca",
+        "tests/config.json": "ecbbd671f7a0682e1f74ba59e81d61bed9ee1ef0734ad9622485c6cb1c84d805",
+        "tests/test_patch.patch": "37f57bfea5d9627089852bf673adf0fb645fa0ebabd66267f0d90cbae4f45ab3"
+      }
+    },
+    {
+      "index": 6,
+      "name": "instance_tutao__tutanota-de49d486feef842101506adf040a0f00ded59519-v10a26bfb45a064b93f4fc044a0254925037b88f1",
+      "image": "ghcr.io/scaleapi/swe-bench_pro-v2:instance_tutao__tutanota-de49d486feef842101506adf040a0f00ded59519-v10a26bfb45a064b93f4fc044a0254925037b88f1",
+      "environment": {
+        "network_mode": "public",
+        "build_timeout_sec": 1800.0,
+        "docker_image": "ghcr.io/scaleapi/swe-bench_pro-v2:instance_tutao__tutanota-de49d486feef842101506adf040a0f00ded59519-v10a26bfb45a064b93f4fc044a0254925037b88f1",
+        "os": "linux",
+        "cpus": 1,
+        "memory_mb": 4096,
+        "storage_mb": 10240,
+        "mcp_servers": [],
+        "env": {}
+      },
+      "files": {
+        "instruction.md": "0ebf40baf8e9f6e3a0e04da2d0c0c8c799a1f4c89aa3151cb2fe97ff5b009ced",
+        "task.toml": "305b8af561c83edbb8dca8751a6ee5f3619d246d80f473894f8b2579d8a69a32",
+        "environment/Dockerfile": "754bc36bc75fa8c10744ba1c955abf95766fb493ba2580456921fb42f854c053",
+        "solution/gold_patch.diff": "0154aac0aa5472dab92c4fea5739beba6b0bc5b54ad02c437119ba266153551a",
+        "solution/solve.sh": "6d7497394937410135791cc64ba2f32ad48a94daf6308f0f4c64c74d24c50f97",
+        "tests/run_script.sh": "97327a3c5c82257ec578f4ba77c413e9711a3c0da519043a3fd8a9f002b1a618",
+        "tests/test.sh": "b6f26eecd87c1696a3702ee115d31f9d42f4704cf2116419cd879f66b60976d0",
+        "tests/parser.py": "991682329d3b2183bc722ecaa9981a6cebe7d43c8a3f315c6ef32c7a9befb3fd",
+        "tests/config.json": "06c070a99e92a9674e54def90677ae324b1c13362f694c5cc8840be471e076ff",
+        "tests/test_patch.patch": "3d668303b8a5e59fd046587353514925e9191fa149baf402cfe140a287962051"
+      }
+    },
+    {
+      "index": 7,
+      "name": "instance_element-hq__element-web-aec454dd6feeb93000380523cbb0b3681c0275fd-vnan",
+      "image": "ghcr.io/scaleapi/swe-bench_pro-v2:instance_element-hq__element-web-aec454dd6feeb93000380523cbb0b3681c0275fd-vnan",
+      "environment": {
+        "network_mode": "public",
+        "build_timeout_sec": 1800.0,
+        "docker_image": "ghcr.io/scaleapi/swe-bench_pro-v2:instance_element-hq__element-web-aec454dd6feeb93000380523cbb0b3681c0275fd-vnan",
+        "os": "linux",
+        "cpus": 1,
+        "memory_mb": 4096,
+        "storage_mb": 10240,
+        "mcp_servers": [],
+        "env": {}
+      },
+      "files": {
+        "instruction.md": "8321d2546e78520dc26e1bae2cdd38f3f5d1d91c95a6f1f2de516f36e4eb8be6",
+        "task.toml": "7579629508a1960294507ffcc85de5a6018ecad8a70f2a9a4e0c1a08cec6b569",
+        "environment/Dockerfile": "818aef425d76d72bd32df2ea0da5a81a12c16b60ae6d74a90271d5d5b90f7a83",
+        "solution/gold_patch.diff": "a1e81e29fbc30232b93282fd0365b233e580e24df9291e053da079c02a019d4b",
+        "solution/solve.sh": "6d7497394937410135791cc64ba2f32ad48a94daf6308f0f4c64c74d24c50f97",
+        "tests/run_script.sh": "8fa955298afd7223f9d1f7196c614de668ce66e77799fe2ec6d6f43d41082246",
+        "tests/test.sh": "b6f26eecd87c1696a3702ee115d31f9d42f4704cf2116419cd879f66b60976d0",
+        "tests/parser.py": "b26aa13858127aee027b5b11cfa581f3b12cc784a6e4179da5649f6e5e7af72c",
+        "tests/config.json": "845bd572ad736d5462c75dd05b2a0f44fb6b07b6dc7a81efeb4513257d9883d3",
+        "tests/test_patch.patch": "c713f3a02a1daae2c582606c0e132458646e0113e0affda38ea4deeff2b72254"
+      }
+    },
+    {
+      "index": 8,
+      "name": "instance_gravitational__teleport-7744f72c6eb631791434b648ba41083b5f6d2278-vce94f93ad1030e3136852817f2423c1b3ac37bc4",
+      "image": "ghcr.io/scaleapi/swe-bench_pro-v2:instance_gravitational__teleport-7744f72c6eb631791434b648ba41083b5f6d2278-vce94f93ad1030e3136852817f2423c1b3ac37bc4",
+      "environment": {
+        "network_mode": "public",
+        "build_timeout_sec": 1800.0,
+        "docker_image": "ghcr.io/scaleapi/swe-bench_pro-v2:instance_gravitational__teleport-7744f72c6eb631791434b648ba41083b5f6d2278-vce94f93ad1030e3136852817f2423c1b3ac37bc4",
+        "os": "linux",
+        "cpus": 1,
+        "memory_mb": 4096,
+        "storage_mb": 10240,
+        "mcp_servers": [],
+        "env": {}
+      },
+      "files": {
+        "instruction.md": "22dc680321dc8f645117a605cd6c565437b537d82d99bca6b57a75304f9720c0",
+        "task.toml": "d75efe76e526a229670ff036e5a7cc821eb2803eb5a4c588f658259a0e9a4550",
+        "environment/Dockerfile": "5e205a1dc5d94a77f0a3c6e898bdf2a5dd3dcad18e52ee6f4af1f4f1269d2373",
+        "solution/gold_patch.diff": "0f832b86aa87de374d6241bd0f299ca677ee97299addc57147863ac45f10b309",
+        "solution/solve.sh": "6d7497394937410135791cc64ba2f32ad48a94daf6308f0f4c64c74d24c50f97",
+        "tests/run_script.sh": "6fb7e44b14d82b80ff4b3488106ea410fb890332aa988c79914e5536633d0ddd",
+        "tests/test.sh": "9dcc9dfbf255bfa077f060458f878f2ffe03f9c8a310e74e165d111858874913",
+        "tests/parser.py": "264b094594a765a5dd6812a45154203110e3032c7de4704c993b09b2b4418534",
+        "tests/config.json": "40eff46f34cf9492ec21701012d4940b960f2f43efb1f106f8b04ad53b6e6629",
+        "tests/test_patch.patch": "55e696ae5518c82e32ab228df1a3bcb5c718609878956a002006a8de5cceffa0"
+      }
+    },
+    {
+      "index": 9,
+      "name": "instance_ansible__ansible-34db57a47f875d11c4068567b9ec7ace174ec4cf-v1055803c3a812189a1133297f7f5468579283f86",
+      "image": "ghcr.io/scaleapi/swe-bench_pro-v2:instance_ansible__ansible-34db57a47f875d11c4068567b9ec7ace174ec4cf-v1055803c3a812189a1133297f7f5468579283f86",
+      "environment": {
+        "network_mode": "public",
+        "build_timeout_sec": 1800.0,
+        "docker_image": "ghcr.io/scaleapi/swe-bench_pro-v2:instance_ansible__ansible-34db57a47f875d11c4068567b9ec7ace174ec4cf-v1055803c3a812189a1133297f7f5468579283f86",
+        "os": "linux",
+        "cpus": 1,
+        "memory_mb": 4096,
+        "storage_mb": 10240,
+        "mcp_servers": [],
+        "env": {}
+      },
+      "files": {
+        "instruction.md": "e9862a106382808ccd9097fb3f286934b2a3a1ad530d952ac4c6bb024b67546e",
+        "task.toml": "88442c6e3fd255f7cf322334e6ead05972430565ea82c922c073243c92410013",
+        "environment/Dockerfile": "2aaa6b3a058ac3cef1fc7213b43278c2f13c361c6cbd21a84fadf5b960c0956c",
+        "solution/gold_patch.diff": "58bde02c7ceeac2379f29f293edac1ab9f43d86a1d52c77b8e67b7cf5efcfdd6",
+        "solution/solve.sh": "6d7497394937410135791cc64ba2f32ad48a94daf6308f0f4c64c74d24c50f97",
+        "tests/run_script.sh": "e8c61cf1ba381c6f91c5457d248152cf1b0339d52252d0af0d1ea60c2ba483b7",
+        "tests/test.sh": "b6f26eecd87c1696a3702ee115d31f9d42f4704cf2116419cd879f66b60976d0",
+        "tests/parser.py": "3bb7f471aa61ea90f7c8992cb901f61c14efc2a703dee9a14cd682840006c2dd",
+        "tests/config.json": "84603ef5b4da314e6508c72bbc0420013472e6027500836184e2819224904f0c",
+        "tests/test_patch.patch": "9a8de821feb464bc747a18d407ef4ddcd7a730f00ecb7c627f06495569acf39d"
+      }
+    },
+    {
+      "index": 10,
+      "name": "instance_element-hq__element-web-6205c70462e0ce2e1e77afb3a70b55d0fdfe1b31-vnan",
+      "image": "ghcr.io/scaleapi/swe-bench_pro-v2:instance_element-hq__element-web-6205c70462e0ce2e1e77afb3a70b55d0fdfe1b31-vnan",
+      "environment": {
+        "network_mode": "public",
+        "build_timeout_sec": 1800.0,
+        "docker_image": "ghcr.io/scaleapi/swe-bench_pro-v2:instance_element-hq__element-web-6205c70462e0ce2e1e77afb3a70b55d0fdfe1b31-vnan",
+        "os": "linux",
+        "cpus": 1,
+        "memory_mb": 4096,
+        "storage_mb": 10240,
+        "mcp_servers": [],
+        "env": {}
+      },
+      "files": {
+        "instruction.md": "7064fa57d086b9cdbdd7375b3caa5bde39429cf1390e962d7c3755588929633c",
+        "task.toml": "828ff123bacc79fff5f5fb580e5f214dc4e3be7884a6dcecc955497b23b8f36b",
+        "environment/Dockerfile": "27189ed1d40135625b46b86faddaa270ca02ec08298802d0d3abfb05887fdc3c",
+        "solution/gold_patch.diff": "ad25b243ac09543c1b82385b38d3971fa55f9d66c41e613fc140bfa755aa3c57",
+        "solution/solve.sh": "6d7497394937410135791cc64ba2f32ad48a94daf6308f0f4c64c74d24c50f97",
+        "tests/run_script.sh": "8fa955298afd7223f9d1f7196c614de668ce66e77799fe2ec6d6f43d41082246",
+        "tests/test.sh": "b6f26eecd87c1696a3702ee115d31f9d42f4704cf2116419cd879f66b60976d0",
+        "tests/parser.py": "53aff51506358c3895f23046a9e1e374fff838d4110b4355e6dea257efe54db2",
+        "tests/config.json": "e16938d2b3a47e4c879e6fe4f77fee7bb7bb6a996cb02c4b03c2f58375972fd4",
+        "tests/test_patch.patch": "d1639141fc102998ccc4dd6b81ca3e930a770821d0a508e41b54e9a3cd12024d"
+      }
+    },
+    {
+      "index": 11,
+      "name": "instance_future-architect__vuls-436341a4a522dc83eb8bddd1164b764c8dd6bc45",
+      "image": "ghcr.io/scaleapi/swe-bench_pro-v2:instance_future-architect__vuls-436341a4a522dc83eb8bddd1164b764c8dd6bc45",
+      "environment": {
+        "network_mode": "public",
+        "build_timeout_sec": 1800.0,
+        "docker_image": "ghcr.io/scaleapi/swe-bench_pro-v2:instance_future-architect__vuls-436341a4a522dc83eb8bddd1164b764c8dd6bc45",
+        "os": "linux",
+        "cpus": 1,
+        "memory_mb": 4096,
+        "storage_mb": 10240,
+        "mcp_servers": [],
+        "env": {}
+      },
+      "files": {
+        "instruction.md": "bd0c3af1c6a021311ce28311b2842bcd1a5a988e6cc286ea728b10de2b95fd24",
+        "task.toml": "9e669e79207d8f76004989d3dedab7b218e14d581dda95a3190238d0e5bbd986",
+        "environment/Dockerfile": "8ac2270b6dca29d456e0bbbf37ee9ecd0b0b12043626b37307ed6dcf5b7e287e",
+        "solution/gold_patch.diff": "1d888144185e24a76b2207df8456cc0400cfc4a7a620d9c91e7d47acdbcdd5f3",
+        "solution/solve.sh": "6d7497394937410135791cc64ba2f32ad48a94daf6308f0f4c64c74d24c50f97",
+        "tests/run_script.sh": "5c4e2b6b55d794e4adc15a51a3facd033ea130d01ff3346115ecec000e2ec5d7",
+        "tests/test.sh": "b6f26eecd87c1696a3702ee115d31f9d42f4704cf2116419cd879f66b60976d0",
+        "tests/parser.py": "bfd3ba2ec189b525d683cfaedf80ac597395a956a3413ef1369ae49a7e830fc5",
+        "tests/config.json": "46d8293058c4d2d3c24aaff229349f5764b023be948c3eaa49900002efe77bd8",
+        "tests/test_patch.patch": "18916ddd40f46da5b7508d0cc18b7d1621ea7fe96708a2776da92cf57a3fd61d"
+      }
+    },
+    {
+      "index": 12,
+      "name": "instance_protonmail__webclients-5e815cfa518b223a088fa9bb232a5fc90ab15691",
+      "image": "ghcr.io/scaleapi/swe-bench_pro-v2:instance_protonmail__webclients-5e815cfa518b223a088fa9bb232a5fc90ab15691",
+      "environment": {
+        "network_mode": "public",
+        "build_timeout_sec": 1800.0,
+        "docker_image": "ghcr.io/scaleapi/swe-bench_pro-v2:instance_protonmail__webclients-5e815cfa518b223a088fa9bb232a5fc90ab15691",
+        "os": "linux",
+        "cpus": 1,
+        "memory_mb": 4096,
+        "storage_mb": 10240,
+        "mcp_servers": [],
+        "env": {}
+      },
+      "files": {
+        "instruction.md": "9e2a5178ac2a877cbeeb0e00a6feb7e0c50a05cab0df5ff414eb21fce5f932bb",
+        "task.toml": "6b3d65f9930be412acc510cd2a2088173337c80a10050ad3b96e19df211750f1",
+        "environment/Dockerfile": "199ea20ce79a1a58ad32c3afff210a3d9a153b6383ea82ec26ebcaecc550031b",
+        "solution/gold_patch.diff": "c81214f5e8a9e947dbb1299df959123f4ce298462d9d770a3e217248e8fed864",
+        "solution/solve.sh": "6d7497394937410135791cc64ba2f32ad48a94daf6308f0f4c64c74d24c50f97",
+        "tests/run_script.sh": "11d00d8f7dbe86bbccbcae84466db6da990fa22a3ad76a65387817dddfdfed50",
+        "tests/test.sh": "b6f26eecd87c1696a3702ee115d31f9d42f4704cf2116419cd879f66b60976d0",
+        "tests/parser.py": "ed9fdce7768825057db4726a21a7545863df541ec25e64e0cd6c566097534142",
+        "tests/config.json": "fa7111b3fe8094703c2ced21445c842313aa7c50faa45846756a726066c786f2",
+        "tests/test_patch.patch": "85137e99745ebdd3105ad6bba12b65c068e48b13604a128219382db2af70aea1"
+      }
+    },
+    {
+      "index": 13,
+      "name": "instance_NodeBB__NodeBB-f9ce92df988db7c1ae55d9ef96d247d27478bc70-vf2cf3cbd463b7ad942381f1c6d077626485a1e9e",
+      "image": "ghcr.io/scaleapi/swe-bench_pro-v2:instance_NodeBB__NodeBB-f9ce92df988db7c1ae55d9ef96d247d27478bc70-vf2cf3cbd463b7ad942381f1c6d077626485a1e9e",
+      "environment": {
+        "network_mode": "public",
+        "build_timeout_sec": 1800.0,
+        "docker_image": "ghcr.io/scaleapi/swe-bench_pro-v2:instance_NodeBB__NodeBB-f9ce92df988db7c1ae55d9ef96d247d27478bc70-vf2cf3cbd463b7ad942381f1c6d077626485a1e9e",
+        "os": "linux",
+        "cpus": 1,
+        "memory_mb": 4096,
+        "storage_mb": 10240,
+        "mcp_servers": [],
+        "env": {}
+      },
+      "files": {
+        "instruction.md": "b44185ed23d58de7d62a8032484a33a0ab75537425cf87656b63994406e0a530",
+        "task.toml": "e3e148a463b933913d1382fbba5c3d652aeeb79cca4cd042f3c145cef2a10ab3",
+        "environment/Dockerfile": "734ae3927f319b53696ec43701438a8adf74fb1c319dd3729177a63709eb093f",
+        "solution/gold_patch.diff": "be6590fb49541c228583908f79241304acf6b9ce08a61b17370ab9a7f6968bd8",
+        "solution/solve.sh": "6d7497394937410135791cc64ba2f32ad48a94daf6308f0f4c64c74d24c50f97",
+        "tests/run_script.sh": "f7ae8ff66fd6a77a26a909b2812c84cfb5bfc3b369effc1e8bb683e7dfc56a47",
+        "tests/test.sh": "b6f26eecd87c1696a3702ee115d31f9d42f4704cf2116419cd879f66b60976d0",
+        "tests/parser.py": "55c2418512e1f11fac1893043e2a588d6c0809071c373b989a6c3d86906cbd97",
+        "tests/config.json": "4057b231b58a213d0dffe9c1499b5dfec75cd4fad9efb58fd2374a68ea337961",
+        "tests/test_patch.patch": "6aa5d3c1d5d33ab078305ef628e87b3059867f2636fab44008f9ed9270407128"
+      }
+    },
+    {
+      "index": 14,
+      "name": "instance_flipt-io__flipt-e88e93990e3ec1e7697754b423decc510d5dd5fe",
+      "image": "ghcr.io/scaleapi/swe-bench_pro-v2:instance_flipt-io__flipt-e88e93990e3ec1e7697754b423decc510d5dd5fe",
+      "environment": {
+        "network_mode": "public",
+        "build_timeout_sec": 1800.0,
+        "docker_image": "ghcr.io/scaleapi/swe-bench_pro-v2:instance_flipt-io__flipt-e88e93990e3ec1e7697754b423decc510d5dd5fe",
+        "os": "linux",
+        "cpus": 1,
+        "memory_mb": 4096,
+        "storage_mb": 10240,
+        "mcp_servers": [],
+        "env": {}
+      },
+      "files": {
+        "instruction.md": "350ea98e8b5ac67e58d6b97504b56f947a65f1fc48170532cfed29c7d9fac1c4",
+        "task.toml": "57cf840b97120d5829e6b3c4fd8844b44bc5ee1f43f2779b1e71b3fb92188f6e",
+        "environment/Dockerfile": "2fd02de4dff9a738f7351ca14559b9bcc012f436632da829ba9aa5c72e2e0da3",
+        "solution/gold_patch.diff": "188e31f6252c6aebbc1a4da4ffc719d3e73af23642dd1dd00333ab4c114955c9",
+        "solution/solve.sh": "6d7497394937410135791cc64ba2f32ad48a94daf6308f0f4c64c74d24c50f97",
+        "tests/run_script.sh": "5af67a651b73b721b1a0d4d9c187c908745318e1b7047165ec70f1740ad60065",
+        "tests/test.sh": "b6f26eecd87c1696a3702ee115d31f9d42f4704cf2116419cd879f66b60976d0",
+        "tests/parser.py": "fedec88f7bb3094f8c694a517fc4894d26cc508a5e932fd2099a0355dbcbd81a",
+        "tests/config.json": "075cc63fdd08651a75de7f54d49b627d49033d3c640e8fbd9aad92c3755e04a1",
+        "tests/test_patch.patch": "6797ea5d21df1de09232e73446c9e28519e7e79571ce7afe028a39543ee5820c"
+      }
+    },
+    {
+      "index": 15,
+      "name": "instance_internetarchive__openlibrary-9cd47f4dc21e273320d9e30d889c864f8cb20ccf-v0f5aece3601a5b4419f7ccec1dbda2071be28ee4",
+      "image": "ghcr.io/scaleapi/swe-bench_pro-v2:instance_internetarchive__openlibrary-9cd47f4dc21e273320d9e30d889c864f8cb20ccf-v0f5aece3601a5b4419f7ccec1dbda2071be28ee4",
+      "environment": {
+        "network_mode": "public",
+        "build_timeout_sec": 1800.0,
+        "docker_image": "ghcr.io/scaleapi/swe-bench_pro-v2:instance_internetarchive__openlibrary-9cd47f4dc21e273320d9e30d889c864f8cb20ccf-v0f5aece3601a5b4419f7ccec1dbda2071be28ee4",
+        "os": "linux",
+        "cpus": 1,
+        "memory_mb": 4096,
+        "storage_mb": 10240,
+        "mcp_servers": [],
+        "env": {}
+      },
+      "files": {
+        "instruction.md": "e657c73a2f8e0a02f1901e82202eb538534f3cd2b39d8191e5e18ca36a70083c",
+        "task.toml": "d92166a2116cffd3bd2983eaf3f33877bd28983db0511aedb20299bb16ff0e38",
+        "environment/Dockerfile": "03f643feac89ffe035e3188288a05b72e572b70fc8d3a158c0395268618b51af",
+        "solution/gold_patch.diff": "aa7b6375a1479517983f5972f60d395c92df9297f8a019b6bdcedbc5e624ccf7",
+        "solution/solve.sh": "6d7497394937410135791cc64ba2f32ad48a94daf6308f0f4c64c74d24c50f97",
+        "tests/run_script.sh": "7b1c1159e658aa0f60bc1fb7ff73dcd6d5f261e99e55b93520131b74443a451d",
+        "tests/test.sh": "b6f26eecd87c1696a3702ee115d31f9d42f4704cf2116419cd879f66b60976d0",
+        "tests/parser.py": "14451c49d5f347978407553041b1de3dba0d63be6b8bd6abeaa7aaf807e6e613",
+        "tests/config.json": "2a218662f0b53f5584fc9c5b8afd5285d8c15a5728975ca0736f01af8d7f5861",
+        "tests/test_patch.patch": "e6e3519ead9c9408a62a6692e5ab6202e8efc51afd83f8e668c6487e76ef487e"
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+Storage maintenance, 2026-10-19
+
+Current AppWorld jobs use one shared immutable Docker image and small per-trial world snapshots.
+Existing scheduler admission checks: Docker filesystem >30 GiB free; experiment filesystem >15 GiB free.
+If either threshold is reached, pending jobs wait for storage; active trials are not killed by this admission check.
+
+Completed TB2 scorefix dependency-cache/*/dependencies.tar archives are compressed losslessly with zstd.
+The original archive is removed only after decompressing the new archive and verifying SHA256 equality.
+Historical scores, logs, submission snapshots, metadata and recovery images are retained.
+No AppWorld runtime, shared node_modules, running container, Docker volume, or other user's files are removed.
+
+Server receipt:
+/mnt/sdb/home/lizh639/appworld-three-arm30-20261018/storage-maintenance/compressed-dependency-cache.json
+
+To reuse a historical dependency archive, decompress the corresponding .tar.zst to its original dependencies.tar path and verify its SHA256 against the receipt before starting the old runner.
+Example: zstd -d /exact/task/dependencies.tar.zst -o /exact/task/dependencies.tar
+Compressed archives preserve the data; an old runner expecting the uncompressed path requires this restoration first.
+
+This is free-space headroom on a shared server, not an exclusive filesystem quota or reservation.

@@ -1,0 +1,1434 @@
+[
+  {
+    "task": {
+      "task_id": "best-memory-reliability",
+      "goal": "Fix config.txt and preserve the parser failure evidence.",
+      "success_criteria": [],
+      "constraints": []
+    },
+    "fixed_context": {
+      "current_workspace": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+      "external_state": "unverified",
+      "evidence": [],
+      "memories": [],
+      "advice": {},
+      "delivery_progress": {
+        "criteria": [
+          {
+            "criterion": "Fix config.txt and preserve the parser failure evidence.",
+            "status": "unverified_by_controller"
+          }
+        ],
+        "requested_artifacts": [],
+        "missing_artifacts": [],
+        "controller_claims_success": false,
+        "delivery_gap": "No explicit artifact path was safely extracted. Task completion remains unverified; use the public requirements and real checks to decide what to deliver."
+      },
+      "budget_pressure": {
+        "stage": "normal",
+        "used_ratio": 0.0
+      },
+      "memory_intervention": null,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "label": "initial state",
+          "hypothesis": "Root before any attempted solution",
+          "fingerprint": "2a54ca27aad056fb40e3a996ad05a279417e00f18957a4c872b1f78d2b2cb1fd"
+        }
+      ],
+      "budgets": {
+        "model_requests": 30,
+        "tools": 30,
+        "advisor_calls": 0,
+        "wall_seconds": 499.76
+      },
+      "feedback": {},
+      "memory_reliability": {
+        "enabled": true,
+        "notices": [],
+        "instruction": "Observed outcomes are historical facts, not causal rules. Recheck changed dependencies."
+      }
+    },
+    "recent_decisions": [],
+    "conversation": {
+      "total_turns": 0,
+      "policy": "budgeted full dialogue plus explicit older excerpts; use recall_history for originals"
+    }
+  },
+  {
+    "task": {
+      "task_id": "best-memory-reliability",
+      "goal": "Fix config.txt and preserve the parser failure evidence.",
+      "success_criteria": [],
+      "constraints": []
+    },
+    "fixed_context": {
+      "current_workspace": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+      "external_state": "unverified",
+      "evidence": [
+        {
+          "id": "E1",
+          "argv": "[\"bash\", \"-lc\", \"printf 'invalid-data' > config.txt\"]",
+          "purpose": "integration test",
+          "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+          "after": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "return_code": 0,
+          "timed_out": false,
+          "blocked": false,
+          "stdout": "",
+          "stderr": "",
+          "capture_incomplete": false,
+          "category": "generic",
+          "stable_dependencies": {
+            "config.txt": "unknown"
+          },
+          "dependency_before": {
+            "config.txt": "missing"
+          },
+          "dependency_after": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_coverage": "selected_paths_only_external_and_dynamic_dependencies_unknown",
+          "command_key": "1cf86cb647b9e52c498e6f5f1921ec36dd103171f0a6e4260dd9e4c18e14559a",
+          "outcome_key": "a0dfe55a1eae15be62075310539e957a5f6e00d37e47cc16e6561f2ccac01598"
+        }
+      ],
+      "memories": [],
+      "advice": {},
+      "delivery_progress": {
+        "criteria": [
+          {
+            "criterion": "Fix config.txt and preserve the parser failure evidence.",
+            "status": "unverified_by_controller"
+          }
+        ],
+        "requested_artifacts": [],
+        "missing_artifacts": [],
+        "controller_claims_success": false,
+        "delivery_gap": "No explicit artifact path was safely extracted. Task completion remains unverified; use the public requirements and real checks to decide what to deliver."
+      },
+      "budget_pressure": {
+        "stage": "normal",
+        "used_ratio": 0.033
+      },
+      "memory_intervention": null,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "label": "initial state",
+          "hypothesis": "Root before any attempted solution",
+          "fingerprint": "2a54ca27aad056fb40e3a996ad05a279417e00f18957a4c872b1f78d2b2cb1fd"
+        }
+      ],
+      "budgets": {
+        "model_requests": 29,
+        "tools": 29,
+        "advisor_calls": 0,
+        "wall_seconds": 499.12
+      },
+      "feedback": {
+        "evidence": {
+          "id": "E1",
+          "argv": "[\"bash\", \"-lc\", \"printf 'invalid-data' > config.txt\"]",
+          "purpose": "integration test",
+          "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+          "after": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "return_code": 0,
+          "timed_out": false,
+          "blocked": false,
+          "stdout": "",
+          "stderr": "",
+          "capture_incomplete": false,
+          "category": "generic",
+          "stable_dependencies": {
+            "config.txt": "unknown"
+          },
+          "dependency_before": {
+            "config.txt": "missing"
+          },
+          "dependency_after": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_coverage": "selected_paths_only_external_and_dynamic_dependencies_unknown",
+          "command_key": "1cf86cb647b9e52c498e6f5f1921ec36dd103171f0a6e4260dd9e4c18e14559a",
+          "outcome_key": "a0dfe55a1eae15be62075310539e957a5f6e00d37e47cc16e6561f2ccac01598"
+        }
+      },
+      "memory_reliability": {
+        "enabled": true,
+        "notices": [],
+        "instruction": "Observed outcomes are historical facts, not causal rules. Recheck changed dependencies."
+      }
+    },
+    "recent_decisions": [
+      {
+        "action": "run",
+        "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"printf 'invalid-data' > config.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+        "response": {
+          "evidence_id": "E1"
+        }
+      }
+    ],
+    "conversation": {
+      "total_turns": 1,
+      "policy": "budgeted full dialogue plus explicit older excerpts; use recall_history for originals"
+    }
+  },
+  {
+    "task": {
+      "task_id": "best-memory-reliability",
+      "goal": "Fix config.txt and preserve the parser failure evidence.",
+      "success_criteria": [],
+      "constraints": []
+    },
+    "fixed_context": {
+      "current_workspace": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+      "external_state": "unverified",
+      "evidence": [
+        {
+          "id": "E1",
+          "argv": "[\"bash\", \"-lc\", \"printf 'invalid-data' > config.txt\"]",
+          "purpose": "integration test",
+          "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+          "after": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "return_code": 0,
+          "timed_out": false,
+          "blocked": false,
+          "stdout": "",
+          "stderr": "",
+          "capture_incomplete": false,
+          "category": "generic",
+          "stable_dependencies": {
+            "config.txt": "unknown"
+          },
+          "dependency_before": {
+            "config.txt": "missing"
+          },
+          "dependency_after": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_coverage": "selected_paths_only_external_and_dynamic_dependencies_unknown",
+          "command_key": "1cf86cb647b9e52c498e6f5f1921ec36dd103171f0a6e4260dd9e4c18e14559a",
+          "outcome_key": "a0dfe55a1eae15be62075310539e957a5f6e00d37e47cc16e6561f2ccac01598"
+        },
+        {
+          "id": "E2",
+          "argv": "[\"bash\", \"-lc\", \"cat config.txt >&2; exit 2\"]",
+          "purpose": "integration test",
+          "before": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "after": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "return_code": 2,
+          "timed_out": false,
+          "blocked": false,
+          "stdout": "",
+          "stderr": "invalid-data",
+          "capture_incomplete": false,
+          "category": "generic",
+          "stable_dependencies": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_before": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_after": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_coverage": "selected_paths_only_external_and_dynamic_dependencies_unknown",
+          "command_key": "106a7403019dcd442d7b4ef70b563eec2f1110b05c5748d056876265d552a2fa",
+          "outcome_key": "c86e51edb6f2e1b4b2ecb77588c7dcb8d90fa8b8a38c09e7adb25d6b5a883927"
+        }
+      ],
+      "memories": [],
+      "advice": {},
+      "delivery_progress": {
+        "criteria": [
+          {
+            "criterion": "Fix config.txt and preserve the parser failure evidence.",
+            "status": "unverified_by_controller"
+          }
+        ],
+        "requested_artifacts": [],
+        "missing_artifacts": [],
+        "controller_claims_success": false,
+        "delivery_gap": "No explicit artifact path was safely extracted. Task completion remains unverified; use the public requirements and real checks to decide what to deliver."
+      },
+      "budget_pressure": {
+        "stage": "normal",
+        "used_ratio": 0.067
+      },
+      "memory_intervention": null,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "label": "initial state",
+          "hypothesis": "Root before any attempted solution",
+          "fingerprint": "2a54ca27aad056fb40e3a996ad05a279417e00f18957a4c872b1f78d2b2cb1fd"
+        }
+      ],
+      "budgets": {
+        "model_requests": 28,
+        "tools": 28,
+        "advisor_calls": 0,
+        "wall_seconds": 498.48
+      },
+      "feedback": {
+        "evidence": {
+          "id": "E2",
+          "argv": "[\"bash\", \"-lc\", \"cat config.txt >&2; exit 2\"]",
+          "purpose": "integration test",
+          "before": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "after": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "return_code": 2,
+          "timed_out": false,
+          "blocked": false,
+          "stdout": "",
+          "stderr": "invalid-data",
+          "capture_incomplete": false,
+          "category": "generic",
+          "stable_dependencies": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_before": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_after": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_coverage": "selected_paths_only_external_and_dynamic_dependencies_unknown",
+          "command_key": "106a7403019dcd442d7b4ef70b563eec2f1110b05c5748d056876265d552a2fa",
+          "outcome_key": "c86e51edb6f2e1b4b2ecb77588c7dcb8d90fa8b8a38c09e7adb25d6b5a883927"
+        }
+      },
+      "memory_reliability": {
+        "enabled": true,
+        "notices": [],
+        "instruction": "Observed outcomes are historical facts, not causal rules. Recheck changed dependencies."
+      }
+    },
+    "recent_decisions": [
+      {
+        "action": "run",
+        "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"printf 'invalid-data' > config.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+        "response": {
+          "evidence_id": "E1"
+        }
+      },
+      {
+        "action": "run",
+        "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cat config.txt >&2; exit 2\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+        "response": {
+          "evidence_id": "E2"
+        }
+      }
+    ],
+    "conversation": {
+      "total_turns": 2,
+      "policy": "budgeted full dialogue plus explicit older excerpts; use recall_history for originals"
+    }
+  },
+  {
+    "task": {
+      "task_id": "best-memory-reliability",
+      "goal": "Fix config.txt and preserve the parser failure evidence.",
+      "success_criteria": [],
+      "constraints": []
+    },
+    "fixed_context": {
+      "current_workspace": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+      "external_state": "unverified",
+      "evidence": [
+        {
+          "id": "E1",
+          "argv": "[\"bash\", \"-lc\", \"printf 'invalid-data' > config.txt\"]",
+          "purpose": "integration test",
+          "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+          "after": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "return_code": 0,
+          "timed_out": false,
+          "blocked": false,
+          "stdout": "",
+          "stderr": "",
+          "capture_incomplete": false,
+          "category": "generic",
+          "stable_dependencies": {
+            "config.txt": "unknown"
+          },
+          "dependency_before": {
+            "config.txt": "missing"
+          },
+          "dependency_after": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_coverage": "selected_paths_only_external_and_dynamic_dependencies_unknown",
+          "command_key": "1cf86cb647b9e52c498e6f5f1921ec36dd103171f0a6e4260dd9e4c18e14559a",
+          "outcome_key": "a0dfe55a1eae15be62075310539e957a5f6e00d37e47cc16e6561f2ccac01598"
+        },
+        {
+          "id": "E2",
+          "argv": "[\"bash\", \"-lc\", \"cat config.txt >&2; exit 2\"]",
+          "purpose": "integration test",
+          "before": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "after": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "return_code": 2,
+          "timed_out": false,
+          "blocked": false,
+          "stdout": "",
+          "stderr": "invalid-data",
+          "capture_incomplete": false,
+          "category": "generic",
+          "stable_dependencies": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_before": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_after": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_coverage": "selected_paths_only_external_and_dynamic_dependencies_unknown",
+          "command_key": "106a7403019dcd442d7b4ef70b563eec2f1110b05c5748d056876265d552a2fa",
+          "outcome_key": "c86e51edb6f2e1b4b2ecb77588c7dcb8d90fa8b8a38c09e7adb25d6b5a883927"
+        },
+        {
+          "id": "E3",
+          "argv": "[\"bash\", \"-lc\", \"cat config.txt >&2; exit 2\"]",
+          "purpose": "integration test",
+          "before": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "after": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "return_code": 2,
+          "timed_out": false,
+          "blocked": false,
+          "stdout": "",
+          "stderr": "invalid-data",
+          "capture_incomplete": false,
+          "category": "generic",
+          "stable_dependencies": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_before": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_after": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_coverage": "selected_paths_only_external_and_dynamic_dependencies_unknown",
+          "command_key": "106a7403019dcd442d7b4ef70b563eec2f1110b05c5748d056876265d552a2fa",
+          "outcome_key": "c86e51edb6f2e1b4b2ecb77588c7dcb8d90fa8b8a38c09e7adb25d6b5a883927"
+        }
+      ],
+      "memories": [
+        {
+          "id": "M1",
+          "conclusion": "This exact command produced the same captured failure twice; cause remains unknown. Captured outcome: c86e51edb6f2e1b4",
+          "condition": "For this command and observed dependencies; external state must be rechecked. [\"bash\", \"-lc\", \"cat config.txt >&2; exit 2\"]",
+          "kind": "blocker",
+          "operation": "",
+          "targets": [
+            "config.txt"
+          ],
+          "next_step": "Check changed inputs or a specific retry reason before repeating.",
+          "evidence_ids": [
+            "E3",
+            "E2"
+          ],
+          "scope": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "evidence_scopes": [
+            "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d"
+          ],
+          "dependency_state": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "repairs": [],
+          "status": "observed_tool_outcome_not_causal_rule",
+          "reinforcements": 1,
+          "updated_at": 1,
+          "origin": "execution_observer",
+          "command_key": "106a7403019dcd442d7b4ef70b563eec2f1110b05c5748d056876265d552a2fa",
+          "outcome_key": "c86e51edb6f2e1b4b2ecb77588c7dcb8d90fa8b8a38c09e7adb25d6b5a883927",
+          "observation_excerpt": "invalid-data",
+          "applicability": "target_dependencies_unchanged_external_state_unverified"
+        }
+      ],
+      "advice": {},
+      "delivery_progress": {
+        "criteria": [
+          {
+            "criterion": "Fix config.txt and preserve the parser failure evidence.",
+            "status": "unverified_by_controller"
+          }
+        ],
+        "requested_artifacts": [],
+        "missing_artifacts": [],
+        "controller_claims_success": false,
+        "delivery_gap": "No explicit artifact path was safely extracted. Task completion remains unverified; use the public requirements and real checks to decide what to deliver."
+      },
+      "budget_pressure": {
+        "stage": "normal",
+        "used_ratio": 0.1
+      },
+      "memory_intervention": null,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "label": "initial state",
+          "hypothesis": "Root before any attempted solution",
+          "fingerprint": "2a54ca27aad056fb40e3a996ad05a279417e00f18957a4c872b1f78d2b2cb1fd"
+        }
+      ],
+      "budgets": {
+        "model_requests": 27,
+        "tools": 27,
+        "advisor_calls": 0,
+        "wall_seconds": 497.53
+      },
+      "feedback": {
+        "evidence": {
+          "id": "E3",
+          "argv": "[\"bash\", \"-lc\", \"cat config.txt >&2; exit 2\"]",
+          "purpose": "integration test",
+          "before": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "after": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "return_code": 2,
+          "timed_out": false,
+          "blocked": false,
+          "stdout": "",
+          "stderr": "invalid-data",
+          "capture_incomplete": false,
+          "category": "generic",
+          "stable_dependencies": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_before": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_after": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_coverage": "selected_paths_only_external_and_dynamic_dependencies_unknown",
+          "command_key": "106a7403019dcd442d7b4ef70b563eec2f1110b05c5748d056876265d552a2fa",
+          "outcome_key": "c86e51edb6f2e1b4b2ecb77588c7dcb8d90fa8b8a38c09e7adb25d6b5a883927"
+        }
+      },
+      "memory_reliability": {
+        "enabled": true,
+        "notices": [],
+        "instruction": "Observed outcomes are historical facts, not causal rules. Recheck changed dependencies."
+      }
+    },
+    "recent_decisions": [
+      {
+        "action": "run",
+        "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"printf 'invalid-data' > config.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+        "response": {
+          "evidence_id": "E1"
+        }
+      },
+      {
+        "action": "run",
+        "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cat config.txt >&2; exit 2\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+        "response": {
+          "evidence_id": "E2"
+        }
+      },
+      {
+        "action": "run",
+        "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cat config.txt >&2; exit 2\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+        "response": {
+          "evidence_id": "E3"
+        }
+      }
+    ],
+    "conversation": {
+      "total_turns": 3,
+      "policy": "budgeted full dialogue plus explicit older excerpts; use recall_history for originals"
+    }
+  },
+  {
+    "task": {
+      "task_id": "best-memory-reliability",
+      "goal": "Fix config.txt and preserve the parser failure evidence.",
+      "success_criteria": [],
+      "constraints": []
+    },
+    "fixed_context": {
+      "current_workspace": "030f9ef5a156be2887dfac3f0456c57cccf37b1fd6fe3077b56c6a586cf4d24a",
+      "external_state": "unverified",
+      "evidence": [
+        {
+          "id": "E1",
+          "argv": "[\"bash\", \"-lc\", \"printf 'invalid-data' > config.txt\"]",
+          "purpose": "integration test",
+          "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+          "after": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "return_code": 0,
+          "timed_out": false,
+          "blocked": false,
+          "stdout": "",
+          "stderr": "",
+          "capture_incomplete": false,
+          "category": "generic",
+          "stable_dependencies": {
+            "config.txt": "unknown"
+          },
+          "dependency_before": {
+            "config.txt": "missing"
+          },
+          "dependency_after": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_coverage": "selected_paths_only_external_and_dynamic_dependencies_unknown",
+          "command_key": "1cf86cb647b9e52c498e6f5f1921ec36dd103171f0a6e4260dd9e4c18e14559a",
+          "outcome_key": "a0dfe55a1eae15be62075310539e957a5f6e00d37e47cc16e6561f2ccac01598"
+        },
+        {
+          "id": "E2",
+          "argv": "[\"bash\", \"-lc\", \"cat config.txt >&2; exit 2\"]",
+          "purpose": "integration test",
+          "before": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "after": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "return_code": 2,
+          "timed_out": false,
+          "blocked": false,
+          "stdout": "",
+          "stderr": "invalid-data",
+          "capture_incomplete": false,
+          "category": "generic",
+          "stable_dependencies": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_before": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_after": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_coverage": "selected_paths_only_external_and_dynamic_dependencies_unknown",
+          "command_key": "106a7403019dcd442d7b4ef70b563eec2f1110b05c5748d056876265d552a2fa",
+          "outcome_key": "c86e51edb6f2e1b4b2ecb77588c7dcb8d90fa8b8a38c09e7adb25d6b5a883927"
+        },
+        {
+          "id": "E3",
+          "argv": "[\"bash\", \"-lc\", \"cat config.txt >&2; exit 2\"]",
+          "purpose": "integration test",
+          "before": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "after": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "return_code": 2,
+          "timed_out": false,
+          "blocked": false,
+          "stdout": "",
+          "stderr": "invalid-data",
+          "capture_incomplete": false,
+          "category": "generic",
+          "stable_dependencies": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_before": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_after": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_coverage": "selected_paths_only_external_and_dynamic_dependencies_unknown",
+          "command_key": "106a7403019dcd442d7b4ef70b563eec2f1110b05c5748d056876265d552a2fa",
+          "outcome_key": "c86e51edb6f2e1b4b2ecb77588c7dcb8d90fa8b8a38c09e7adb25d6b5a883927"
+        },
+        {
+          "id": "E4",
+          "argv": "[\"bash\", \"-lc\", \"printf 'unrelated' > note.txt\"]",
+          "purpose": "integration test",
+          "before": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "after": "030f9ef5a156be2887dfac3f0456c57cccf37b1fd6fe3077b56c6a586cf4d24a",
+          "return_code": 0,
+          "timed_out": false,
+          "blocked": false,
+          "stdout": "",
+          "stderr": "",
+          "capture_incomplete": false,
+          "category": "generic",
+          "stable_dependencies": {
+            "note.txt": "unknown",
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_before": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2",
+            "note.txt": "missing"
+          },
+          "dependency_after": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2",
+            "note.txt": "file:9:c2703a7ddf6c74b39505339af20dd6dd4f0794720e038b78ba395600c72417d4"
+          },
+          "dependency_coverage": "selected_paths_only_external_and_dynamic_dependencies_unknown",
+          "command_key": "c325fa58fd4a5eaf190e959cd0f9e9eb44743c69d4da544b966ca1fd5bddd9f0",
+          "outcome_key": "a0dfe55a1eae15be62075310539e957a5f6e00d37e47cc16e6561f2ccac01598"
+        }
+      ],
+      "memories": [
+        {
+          "id": "M1",
+          "conclusion": "This exact command produced the same captured failure twice; cause remains unknown. Captured outcome: c86e51edb6f2e1b4",
+          "condition": "For this command and observed dependencies; external state must be rechecked. [\"bash\", \"-lc\", \"cat config.txt >&2; exit 2\"]",
+          "kind": "blocker",
+          "operation": "",
+          "targets": [
+            "config.txt"
+          ],
+          "next_step": "Check changed inputs or a specific retry reason before repeating.",
+          "evidence_ids": [
+            "E3",
+            "E2"
+          ],
+          "scope": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "evidence_scopes": [
+            "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d"
+          ],
+          "dependency_state": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "repairs": [],
+          "status": "observed_tool_outcome_not_causal_rule",
+          "reinforcements": 1,
+          "updated_at": 1,
+          "origin": "execution_observer",
+          "command_key": "106a7403019dcd442d7b4ef70b563eec2f1110b05c5748d056876265d552a2fa",
+          "outcome_key": "c86e51edb6f2e1b4b2ecb77588c7dcb8d90fa8b8a38c09e7adb25d6b5a883927",
+          "observation_excerpt": "invalid-data",
+          "applicability": "target_dependencies_unchanged_external_state_unverified"
+        }
+      ],
+      "advice": {},
+      "delivery_progress": {
+        "criteria": [
+          {
+            "criterion": "Fix config.txt and preserve the parser failure evidence.",
+            "status": "unverified_by_controller"
+          }
+        ],
+        "requested_artifacts": [],
+        "missing_artifacts": [],
+        "controller_claims_success": false,
+        "delivery_gap": "No explicit artifact path was safely extracted. Task completion remains unverified; use the public requirements and real checks to decide what to deliver."
+      },
+      "budget_pressure": {
+        "stage": "normal",
+        "used_ratio": 0.133
+      },
+      "memory_intervention": null,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "label": "initial state",
+          "hypothesis": "Root before any attempted solution",
+          "fingerprint": "2a54ca27aad056fb40e3a996ad05a279417e00f18957a4c872b1f78d2b2cb1fd"
+        }
+      ],
+      "budgets": {
+        "model_requests": 26,
+        "tools": 26,
+        "advisor_calls": 0,
+        "wall_seconds": 496.75
+      },
+      "feedback": {
+        "evidence": {
+          "id": "E4",
+          "argv": "[\"bash\", \"-lc\", \"printf 'unrelated' > note.txt\"]",
+          "purpose": "integration test",
+          "before": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "after": "030f9ef5a156be2887dfac3f0456c57cccf37b1fd6fe3077b56c6a586cf4d24a",
+          "return_code": 0,
+          "timed_out": false,
+          "blocked": false,
+          "stdout": "",
+          "stderr": "",
+          "capture_incomplete": false,
+          "category": "generic",
+          "stable_dependencies": {
+            "note.txt": "unknown",
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_before": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2",
+            "note.txt": "missing"
+          },
+          "dependency_after": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2",
+            "note.txt": "file:9:c2703a7ddf6c74b39505339af20dd6dd4f0794720e038b78ba395600c72417d4"
+          },
+          "dependency_coverage": "selected_paths_only_external_and_dynamic_dependencies_unknown",
+          "command_key": "c325fa58fd4a5eaf190e959cd0f9e9eb44743c69d4da544b966ca1fd5bddd9f0",
+          "outcome_key": "a0dfe55a1eae15be62075310539e957a5f6e00d37e47cc16e6561f2ccac01598"
+        }
+      },
+      "memory_reliability": {
+        "enabled": true,
+        "notices": [],
+        "instruction": "Observed outcomes are historical facts, not causal rules. Recheck changed dependencies."
+      }
+    },
+    "recent_decisions": [
+      {
+        "action": "run",
+        "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"printf 'invalid-data' > config.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+        "response": {
+          "evidence_id": "E1"
+        }
+      },
+      {
+        "action": "run",
+        "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cat config.txt >&2; exit 2\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+        "response": {
+          "evidence_id": "E2"
+        }
+      },
+      {
+        "action": "run",
+        "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cat config.txt >&2; exit 2\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+        "response": {
+          "evidence_id": "E3"
+        }
+      },
+      {
+        "action": "run",
+        "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"printf 'unrelated' > note.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+        "response": {
+          "evidence_id": "E4"
+        }
+      }
+    ],
+    "conversation": {
+      "total_turns": 4,
+      "policy": "budgeted full dialogue plus explicit older excerpts; use recall_history for originals"
+    }
+  },
+  {
+    "task": {
+      "task_id": "best-memory-reliability",
+      "goal": "Fix config.txt and preserve the parser failure evidence.",
+      "success_criteria": [],
+      "constraints": []
+    },
+    "fixed_context": {
+      "current_workspace": "030f9ef5a156be2887dfac3f0456c57cccf37b1fd6fe3077b56c6a586cf4d24a",
+      "external_state": "unverified",
+      "evidence": [
+        {
+          "id": "E1",
+          "argv": "[\"bash\", \"-lc\", \"printf 'invalid-data' > config.txt\"]",
+          "purpose": "integration test",
+          "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+          "after": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "return_code": 0,
+          "timed_out": false,
+          "blocked": false,
+          "stdout": "",
+          "stderr": "",
+          "capture_incomplete": false,
+          "category": "generic",
+          "stable_dependencies": {
+            "config.txt": "unknown"
+          },
+          "dependency_before": {
+            "config.txt": "missing"
+          },
+          "dependency_after": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_coverage": "selected_paths_only_external_and_dynamic_dependencies_unknown",
+          "command_key": "1cf86cb647b9e52c498e6f5f1921ec36dd103171f0a6e4260dd9e4c18e14559a",
+          "outcome_key": "a0dfe55a1eae15be62075310539e957a5f6e00d37e47cc16e6561f2ccac01598"
+        },
+        {
+          "id": "E2",
+          "argv": "[\"bash\", \"-lc\", \"cat config.txt >&2; exit 2\"]",
+          "purpose": "integration test",
+          "before": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "after": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "return_code": 2,
+          "timed_out": false,
+          "blocked": false,
+          "stdout": "",
+          "stderr": "invalid-data",
+          "capture_incomplete": false,
+          "category": "generic",
+          "stable_dependencies": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_before": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_after": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_coverage": "selected_paths_only_external_and_dynamic_dependencies_unknown",
+          "command_key": "106a7403019dcd442d7b4ef70b563eec2f1110b05c5748d056876265d552a2fa",
+          "outcome_key": "c86e51edb6f2e1b4b2ecb77588c7dcb8d90fa8b8a38c09e7adb25d6b5a883927"
+        },
+        {
+          "id": "E3",
+          "argv": "[\"bash\", \"-lc\", \"cat config.txt >&2; exit 2\"]",
+          "purpose": "integration test",
+          "before": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "after": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "return_code": 2,
+          "timed_out": false,
+          "blocked": false,
+          "stdout": "",
+          "stderr": "invalid-data",
+          "capture_incomplete": false,
+          "category": "generic",
+          "stable_dependencies": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_before": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_after": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_coverage": "selected_paths_only_external_and_dynamic_dependencies_unknown",
+          "command_key": "106a7403019dcd442d7b4ef70b563eec2f1110b05c5748d056876265d552a2fa",
+          "outcome_key": "c86e51edb6f2e1b4b2ecb77588c7dcb8d90fa8b8a38c09e7adb25d6b5a883927"
+        },
+        {
+          "id": "E4",
+          "argv": "[\"bash\", \"-lc\", \"printf 'unrelated' > note.txt\"]",
+          "purpose": "integration test",
+          "before": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "after": "030f9ef5a156be2887dfac3f0456c57cccf37b1fd6fe3077b56c6a586cf4d24a",
+          "return_code": 0,
+          "timed_out": false,
+          "blocked": false,
+          "stdout": "",
+          "stderr": "",
+          "capture_incomplete": false,
+          "category": "generic",
+          "stable_dependencies": {
+            "note.txt": "unknown",
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_before": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2",
+            "note.txt": "missing"
+          },
+          "dependency_after": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2",
+            "note.txt": "file:9:c2703a7ddf6c74b39505339af20dd6dd4f0794720e038b78ba395600c72417d4"
+          },
+          "dependency_coverage": "selected_paths_only_external_and_dynamic_dependencies_unknown",
+          "command_key": "c325fa58fd4a5eaf190e959cd0f9e9eb44743c69d4da544b966ca1fd5bddd9f0",
+          "outcome_key": "a0dfe55a1eae15be62075310539e957a5f6e00d37e47cc16e6561f2ccac01598"
+        }
+      ],
+      "memories": [
+        {
+          "id": "M1",
+          "conclusion": "This exact command produced the same captured failure twice; cause remains unknown. Captured outcome: c86e51edb6f2e1b4",
+          "condition": "For this command and observed dependencies; external state must be rechecked. [\"bash\", \"-lc\", \"cat config.txt >&2; exit 2\"]",
+          "kind": "blocker",
+          "operation": "",
+          "targets": [
+            "config.txt"
+          ],
+          "next_step": "Check changed inputs or a specific retry reason before repeating.",
+          "evidence_ids": [
+            "E3",
+            "E2"
+          ],
+          "scope": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "evidence_scopes": [
+            "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d"
+          ],
+          "dependency_state": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "repairs": [],
+          "status": "observed_tool_outcome_not_causal_rule",
+          "reinforcements": 1,
+          "updated_at": 1,
+          "origin": "execution_observer",
+          "command_key": "106a7403019dcd442d7b4ef70b563eec2f1110b05c5748d056876265d552a2fa",
+          "outcome_key": "c86e51edb6f2e1b4b2ecb77588c7dcb8d90fa8b8a38c09e7adb25d6b5a883927",
+          "observation_excerpt": "invalid-data",
+          "applicability": "target_dependencies_unchanged_external_state_unverified"
+        }
+      ],
+      "advice": {},
+      "delivery_progress": {
+        "criteria": [
+          {
+            "criterion": "Fix config.txt and preserve the parser failure evidence.",
+            "status": "unverified_by_controller"
+          }
+        ],
+        "requested_artifacts": [],
+        "missing_artifacts": [],
+        "controller_claims_success": false,
+        "delivery_gap": "No explicit artifact path was safely extracted. Task completion remains unverified; use the public requirements and real checks to decide what to deliver."
+      },
+      "budget_pressure": {
+        "stage": "normal",
+        "used_ratio": 0.167
+      },
+      "memory_intervention": {
+        "id": "MI1",
+        "proposed_action": {
+          "action": "run",
+          "argv": [
+            "bash",
+            "-lc",
+            "cat config.txt >&2; exit 2"
+          ],
+          "cwd": "/app",
+          "purpose": "integration test",
+          "timeout_seconds": 60,
+          "stdin": null
+        },
+        "matched_memories": [
+          {
+            "id": "M1",
+            "conclusion": "This exact command produced the same captured failure twice; cause remains unknown. Captured outcome: c86e51edb6f2e1b4",
+            "condition": "For this command and observed dependencies; external state must be rechecked. [\"bash\", \"-lc\", \"cat config.txt >&2; exit 2\"]",
+            "kind": "blocker",
+            "operation": "",
+            "targets": [
+              "config.txt"
+            ],
+            "next_step": "Check changed inputs or a specific retry reason before repeating.",
+            "evidence_ids": [
+              "E3",
+              "E2"
+            ],
+            "scope": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+            "evidence_scopes": [
+              "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d"
+            ],
+            "dependency_state": {
+              "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+            },
+            "repairs": [],
+            "status": "observed_tool_outcome_not_causal_rule",
+            "reinforcements": 1,
+            "updated_at": 1,
+            "origin": "execution_observer",
+            "command_key": "106a7403019dcd442d7b4ef70b563eec2f1110b05c5748d056876265d552a2fa",
+            "outcome_key": "c86e51edb6f2e1b4b2ecb77588c7dcb8d90fa8b8a38c09e7adb25d6b5a883927",
+            "observation_excerpt": "invalid-data",
+            "applicability": "target_dependencies_unchanged_external_state_unverified",
+            "match_reasons": {
+              "target": true,
+              "operation": false,
+              "semantic_token_overlap": 6
+            }
+          }
+        ],
+        "instruction": "Reconsider this proposed action against the matched evidence. You may change it, check applicability, or deliberately repeat it with uses_memory listing the IDs. No command has run and the reminder is not a prohibition.",
+        "causal_benefit_proven": false
+      },
+      "checkpoints": [
+        {
+          "id": "C1",
+          "label": "initial state",
+          "hypothesis": "Root before any attempted solution",
+          "fingerprint": "2a54ca27aad056fb40e3a996ad05a279417e00f18957a4c872b1f78d2b2cb1fd"
+        }
+      ],
+      "budgets": {
+        "model_requests": 25,
+        "tools": 26,
+        "advisor_calls": 0,
+        "wall_seconds": 496.56
+      },
+      "feedback": {
+        "memory_intervention_id": "MI1",
+        "instruction": "Reconsider this proposed action against the matched evidence. You may change it, check applicability, or deliberately repeat it with uses_memory listing the IDs. No command has run and the reminder is not a prohibition."
+      },
+      "memory_reliability": {
+        "enabled": true,
+        "notices": [],
+        "instruction": "Observed outcomes are historical facts, not causal rules. Recheck changed dependencies."
+      }
+    },
+    "recent_decisions": [
+      {
+        "action": "run",
+        "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"printf 'invalid-data' > config.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+        "response": {
+          "evidence_id": "E1"
+        }
+      },
+      {
+        "action": "run",
+        "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cat config.txt >&2; exit 2\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+        "response": {
+          "evidence_id": "E2"
+        }
+      },
+      {
+        "action": "run",
+        "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cat config.txt >&2; exit 2\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+        "response": {
+          "evidence_id": "E3"
+        }
+      },
+      {
+        "action": "run",
+        "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"printf 'unrelated' > note.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+        "response": {
+          "evidence_id": "E4"
+        }
+      },
+      {
+        "action": "memory_intervention",
+        "detail": "{\"id\": \"MI1\", \"proposed_action\": {\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cat config.txt >&2; exit 2\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}, \"matched_memories\": [{\"id\": \"M1\", \"conclusion\": \"This exact command produced the same captured failure twice; cause remains unknown. Captured outcome: c86e51edb6f2e1b4\", \"condition\": \"For this command and observed dependencies; external state must be rechecked. [\\\"bash\\\", \\\"-lc\\\", \\\"cat config.txt >&2; exit 2\\\"]\", \"kind\": \"blocker\", \"operation\": \"\", \"targets\": [\"config.txt\"], \"next_step\": \"Check changed inputs or a specific retry reason before repeating.\", \"evidence_ids\": [\"E3\", \"E2\"], \"scope\": \"894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d\", \"evidence_scopes\": [\"894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d\"], \"dependency_state\": {\"config.txt\": \"file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2\"}, \"repairs\": [], \"status\": \"observed_tool_outcome_not_causal_rule\", \"reinforcements\": 1, \"updated_at\": 1, \"origin\": \"execution_observer\", \"command_key\": \"106a7403019dcd442d7b4ef70b563eec2f1110b05c5748d056876265d552a2fa\", \"outcome_key\": \"c86e51edb6f2e1b4b2ecb77588c7dcb8d90fa8b8a38c09e7adb25d6b5a883927\", \"observation_excerpt\": \"invalid-data\", \"applicability\": \"target_dependencies_unchanged_external_state_unverified\", \"match_reasons\": {\"target\": true, \"operation\": false, \"semantic_token_overlap\": 6}}], \"instruction\": \"Reconsider this proposed action against the matched evidence. You may change it, check applicability, or deliberately repeat it with uses_memory listing the IDs. No command has run and the reminder is not a prohibition.\", \"causal_benefit_proven\": false}",
+        "response": {
+          "memory_intervention_id": "MI1",
+          "instruction": "Reconsider this proposed action against the matched evidence. You may change it, check applicability, or deliberately repeat it with uses_memory listing the IDs. No command has run and the reminder is not a prohibition."
+        }
+      }
+    ],
+    "conversation": {
+      "total_turns": 5,
+      "policy": "budgeted full dialogue plus explicit older excerpts; use recall_history for originals"
+    }
+  },
+  {
+    "task": {
+      "task_id": "best-memory-reliability",
+      "goal": "Fix config.txt and preserve the parser failure evidence.",
+      "success_criteria": [],
+      "constraints": []
+    },
+    "fixed_context": {
+      "current_workspace": "5e1e669bf4b8516a7dcea69da412d195b4d2ae312a29086defde64a0ec44d63d",
+      "external_state": "unverified",
+      "evidence": [
+        {
+          "id": "E1",
+          "argv": "[\"bash\", \"-lc\", \"printf 'invalid-data' > config.txt\"]",
+          "purpose": "integration test",
+          "before": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+          "after": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "return_code": 0,
+          "timed_out": false,
+          "blocked": false,
+          "stdout": "",
+          "stderr": "",
+          "capture_incomplete": false,
+          "category": "generic",
+          "stable_dependencies": {
+            "config.txt": "unknown"
+          },
+          "dependency_before": {
+            "config.txt": "missing"
+          },
+          "dependency_after": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_coverage": "selected_paths_only_external_and_dynamic_dependencies_unknown",
+          "command_key": "1cf86cb647b9e52c498e6f5f1921ec36dd103171f0a6e4260dd9e4c18e14559a",
+          "outcome_key": "a0dfe55a1eae15be62075310539e957a5f6e00d37e47cc16e6561f2ccac01598"
+        },
+        {
+          "id": "E2",
+          "argv": "[\"bash\", \"-lc\", \"cat config.txt >&2; exit 2\"]",
+          "purpose": "integration test",
+          "before": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "after": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "return_code": 2,
+          "timed_out": false,
+          "blocked": false,
+          "stdout": "",
+          "stderr": "invalid-data",
+          "capture_incomplete": false,
+          "category": "generic",
+          "stable_dependencies": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_before": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_after": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_coverage": "selected_paths_only_external_and_dynamic_dependencies_unknown",
+          "command_key": "106a7403019dcd442d7b4ef70b563eec2f1110b05c5748d056876265d552a2fa",
+          "outcome_key": "c86e51edb6f2e1b4b2ecb77588c7dcb8d90fa8b8a38c09e7adb25d6b5a883927"
+        },
+        {
+          "id": "E3",
+          "argv": "[\"bash\", \"-lc\", \"cat config.txt >&2; exit 2\"]",
+          "purpose": "integration test",
+          "before": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "after": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "return_code": 2,
+          "timed_out": false,
+          "blocked": false,
+          "stdout": "",
+          "stderr": "invalid-data",
+          "capture_incomplete": false,
+          "category": "generic",
+          "stable_dependencies": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_before": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_after": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_coverage": "selected_paths_only_external_and_dynamic_dependencies_unknown",
+          "command_key": "106a7403019dcd442d7b4ef70b563eec2f1110b05c5748d056876265d552a2fa",
+          "outcome_key": "c86e51edb6f2e1b4b2ecb77588c7dcb8d90fa8b8a38c09e7adb25d6b5a883927"
+        },
+        {
+          "id": "E4",
+          "argv": "[\"bash\", \"-lc\", \"printf 'unrelated' > note.txt\"]",
+          "purpose": "integration test",
+          "before": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "after": "030f9ef5a156be2887dfac3f0456c57cccf37b1fd6fe3077b56c6a586cf4d24a",
+          "return_code": 0,
+          "timed_out": false,
+          "blocked": false,
+          "stdout": "",
+          "stderr": "",
+          "capture_incomplete": false,
+          "category": "generic",
+          "stable_dependencies": {
+            "note.txt": "unknown",
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_before": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2",
+            "note.txt": "missing"
+          },
+          "dependency_after": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2",
+            "note.txt": "file:9:c2703a7ddf6c74b39505339af20dd6dd4f0794720e038b78ba395600c72417d4"
+          },
+          "dependency_coverage": "selected_paths_only_external_and_dynamic_dependencies_unknown",
+          "command_key": "c325fa58fd4a5eaf190e959cd0f9e9eb44743c69d4da544b966ca1fd5bddd9f0",
+          "outcome_key": "a0dfe55a1eae15be62075310539e957a5f6e00d37e47cc16e6561f2ccac01598"
+        },
+        {
+          "id": "E5",
+          "argv": "[\"bash\", \"-lc\", \"printf 'valid-data' > config.txt\"]",
+          "purpose": "integration test",
+          "before": "030f9ef5a156be2887dfac3f0456c57cccf37b1fd6fe3077b56c6a586cf4d24a",
+          "after": "5e1e669bf4b8516a7dcea69da412d195b4d2ae312a29086defde64a0ec44d63d",
+          "return_code": 0,
+          "timed_out": false,
+          "blocked": false,
+          "stdout": "",
+          "stderr": "",
+          "capture_incomplete": false,
+          "category": "generic",
+          "stable_dependencies": {
+            "config.txt": "unknown"
+          },
+          "dependency_before": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_after": {
+            "config.txt": "file:10:825bdc3777e1fd87cae3ac9210aa6bc50a709f821a39988494d667ebee6752d3"
+          },
+          "dependency_coverage": "selected_paths_only_external_and_dynamic_dependencies_unknown",
+          "command_key": "7d9f464635b04aa80d7667f995970c44b86435852d24cbe7afe1735297213771",
+          "outcome_key": "a0dfe55a1eae15be62075310539e957a5f6e00d37e47cc16e6561f2ccac01598"
+        }
+      ],
+      "memories": [
+        {
+          "id": "M1",
+          "conclusion": "This exact command produced the same captured failure twice; cause remains unknown. Captured outcome: c86e51edb6f2e1b4",
+          "condition": "For this command and observed dependencies; external state must be rechecked. [\"bash\", \"-lc\", \"cat config.txt >&2; exit 2\"]",
+          "kind": "blocker",
+          "operation": "",
+          "targets": [
+            "config.txt"
+          ],
+          "next_step": "Check changed inputs or a specific retry reason before repeating.",
+          "evidence_ids": [
+            "E3",
+            "E2"
+          ],
+          "scope": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "evidence_scopes": [
+            "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d"
+          ],
+          "dependency_state": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "repairs": [],
+          "status": "observed_tool_outcome_not_causal_rule",
+          "reinforcements": 1,
+          "updated_at": 1,
+          "origin": "execution_observer",
+          "command_key": "106a7403019dcd442d7b4ef70b563eec2f1110b05c5748d056876265d552a2fa",
+          "outcome_key": "c86e51edb6f2e1b4b2ecb77588c7dcb8d90fa8b8a38c09e7adb25d6b5a883927",
+          "observation_excerpt": "invalid-data",
+          "applicability": "target_dependencies_changed_or_unknown_recheck_required"
+        },
+        {
+          "id": "M2",
+          "conclusion": "The command read invalid-data from config.txt.",
+          "condition": "At the observed config.txt version.",
+          "kind": "finding",
+          "operation": "",
+          "targets": [
+            "config.txt"
+          ],
+          "next_step": "Repair the input then verify it.",
+          "evidence_ids": [
+            "E2",
+            "E3"
+          ],
+          "scope": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "evidence_scopes": [
+            "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d"
+          ],
+          "dependency_state": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "repairs": [
+            {
+              "field": "operation",
+              "reason": "overlong_optional_field_omitted",
+              "original_chars": 143,
+              "sha256": "9440921e16570dd9e6ef9507e08907fdae878f83afd233ec522c808e9c2d30c3"
+            }
+          ],
+          "status": "evidence_linked_model_claim",
+          "reinforcements": 1,
+          "updated_at": 2,
+          "applicability": "target_dependencies_changed_or_unknown_recheck_required"
+        }
+      ],
+      "advice": {},
+      "delivery_progress": {
+        "criteria": [
+          {
+            "criterion": "Fix config.txt and preserve the parser failure evidence.",
+            "status": "unverified_by_controller"
+          }
+        ],
+        "requested_artifacts": [],
+        "missing_artifacts": [],
+        "controller_claims_success": false,
+        "delivery_gap": "No explicit artifact path was safely extracted. Task completion remains unverified; use the public requirements and real checks to decide what to deliver."
+      },
+      "budget_pressure": {
+        "stage": "normal",
+        "used_ratio": 0.2
+      },
+      "memory_intervention": null,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "label": "initial state",
+          "hypothesis": "Root before any attempted solution",
+          "fingerprint": "2a54ca27aad056fb40e3a996ad05a279417e00f18957a4c872b1f78d2b2cb1fd"
+        }
+      ],
+      "budgets": {
+        "model_requests": 24,
+        "tools": 25,
+        "advisor_calls": 0,
+        "wall_seconds": 495.59
+      },
+      "feedback": {
+        "evidence": {
+          "id": "E5",
+          "argv": "[\"bash\", \"-lc\", \"printf 'valid-data' > config.txt\"]",
+          "purpose": "integration test",
+          "before": "030f9ef5a156be2887dfac3f0456c57cccf37b1fd6fe3077b56c6a586cf4d24a",
+          "after": "5e1e669bf4b8516a7dcea69da412d195b4d2ae312a29086defde64a0ec44d63d",
+          "return_code": 0,
+          "timed_out": false,
+          "blocked": false,
+          "stdout": "",
+          "stderr": "",
+          "capture_incomplete": false,
+          "category": "generic",
+          "stable_dependencies": {
+            "config.txt": "unknown"
+          },
+          "dependency_before": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "dependency_after": {
+            "config.txt": "file:10:825bdc3777e1fd87cae3ac9210aa6bc50a709f821a39988494d667ebee6752d3"
+          },
+          "dependency_coverage": "selected_paths_only_external_and_dynamic_dependencies_unknown",
+          "command_key": "7d9f464635b04aa80d7667f995970c44b86435852d24cbe7afe1735297213771",
+          "outcome_key": "a0dfe55a1eae15be62075310539e957a5f6e00d37e47cc16e6561f2ccac01598"
+        }
+      },
+      "memory_reliability": {
+        "enabled": true,
+        "notices": [
+          {
+            "memory_id": "M2",
+            "repairs": [
+              {
+                "field": "operation",
+                "reason": "overlong_optional_field_omitted",
+                "original_chars": 143,
+                "sha256": "9440921e16570dd9e6ef9507e08907fdae878f83afd233ec522c808e9c2d30c3"
+              }
+            ]
+          }
+        ],
+        "instruction": "Observed outcomes are historical facts, not causal rules. Recheck changed dependencies."
+      }
+    },
+    "recent_decisions": [
+      {
+        "action": "run",
+        "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"printf 'invalid-data' > config.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+        "response": {
+          "evidence_id": "E1"
+        }
+      },
+      {
+        "action": "run",
+        "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cat config.txt >&2; exit 2\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+        "response": {
+          "evidence_id": "E2"
+        }
+      },
+      {
+        "action": "run",
+        "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cat config.txt >&2; exit 2\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+        "response": {
+          "evidence_id": "E3"
+        }
+      },
+      {
+        "action": "run",
+        "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"printf 'unrelated' > note.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}",
+        "response": {
+          "evidence_id": "E4"
+        }
+      },
+      {
+        "action": "memory_intervention",
+        "detail": "{\"id\": \"MI1\", \"proposed_action\": {\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"cat config.txt >&2; exit 2\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null}, \"matched_memories\": [{\"id\": \"M1\", \"conclusion\": \"This exact command produced the same captured failure twice; cause remains unknown. Captured outcome: c86e51edb6f2e1b4\", \"condition\": \"For this command and observed dependencies; external state must be rechecked. [\\\"bash\\\", \\\"-lc\\\", \\\"cat config.txt >&2; exit 2\\\"]\", \"kind\": \"blocker\", \"operation\": \"\", \"targets\": [\"config.txt\"], \"next_step\": \"Check changed inputs or a specific retry reason before repeating.\", \"evidence_ids\": [\"E3\", \"E2\"], \"scope\": \"894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d\", \"evidence_scopes\": [\"894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d\"], \"dependency_state\": {\"config.txt\": \"file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2\"}, \"repairs\": [], \"status\": \"observed_tool_outcome_not_causal_rule\", \"reinforcements\": 1, \"updated_at\": 1, \"origin\": \"execution_observer\", \"command_key\": \"106a7403019dcd442d7b4ef70b563eec2f1110b05c5748d056876265d552a2fa\", \"outcome_key\": \"c86e51edb6f2e1b4b2ecb77588c7dcb8d90fa8b8a38c09e7adb25d6b5a883927\", \"observation_excerpt\": \"invalid-data\", \"applicability\": \"target_dependencies_unchanged_external_state_unverified\", \"match_reasons\": {\"target\": true, \"operation\": false, \"semantic_token_overlap\": 6}}], \"instruction\": \"Reconsider this proposed action against the matched evidence. You may change it, check applicability, or deliberately repeat it with uses_memory listing the IDs. No command has run and the reminder is not a prohibition.\", \"causal_benefit_proven\": false}",
+        "response": {
+          "memory_intervention_id": "MI1",
+          "instruction": "Reconsider this proposed action against the matched evidence. You may change it, check applicability, or deliberately repeat it with uses_memory listing the IDs. No command has run and the reminder is not a prohibition."
+        }
+      },
+      {
+        "action": "run",
+        "detail": "{\"action\": \"run\", \"argv\": [\"bash\", \"-lc\", \"printf 'valid-data' > config.txt\"], \"cwd\": \"/app\", \"purpose\": \"integration test\", \"timeout_seconds\": 60, \"stdin\": null, \"memory\": {\"kind\": \"finding\", \"conclusion\": \"The command read invalid-data from config.txt.\", \"condition\": \"At the observed config.txt version.\", \"operation\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"targets\": [\"config.txt\"], \"evidence_ids\": [\"E2\", \"E3\"], \"next_step\": \"Repair the input then verify it.\"}}",
+        "response": {
+          "evidence_id": "E5"
+        }
+      }
+    ],
+    "conversation": {
+      "total_turns": 6,
+      "policy": "budgeted full dialogue plus explicit older excerpts; use recall_history for originals"
+    }
+  }
+]

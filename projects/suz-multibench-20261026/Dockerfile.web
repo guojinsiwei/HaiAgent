@@ -1,0 +1,11 @@
+FROM docker.m.daocloud.io/library/python:3.11-slim-bookworm
+ENV DEBIAN_FRONTEND=noninteractive CUDA_VISIBLE_DEVICES="" NVIDIA_VISIBLE_DEVICES=void
+RUN apt-get update && apt-get install -y --no-install-recommends xvfb fluxbox wmctrl scrot xclip xauth ca-certificates curl && rm -rf /var/lib/apt/lists/*
+RUN pip install --no-cache-dir playwright==1.56.0 Pillow==11.3.0 numpy==1.26.4 gymnasium==0.29.1 beartype==0.12.0 nltk requests lxml cssselect pyautogui pyperclip httpx backoff loguru && playwright install --with-deps chromium
+COPY node /usr/local/bin/node
+COPY upstream/webarena /opt/webarena
+COPY SUZ /opt/SUZ
+COPY harness /opt/harness
+ENV PYTHONPATH=/opt/SUZ:/opt/webarena:/opt/harness DISPLAY=:99
+WORKDIR /opt/harness
+CMD ["python","-u","worker.py"]

@@ -1,0 +1,8 @@
+{
+  "task": "bn-fit-modify",
+  "image": "alexgshaw/bn-fit-modify:20251031",
+  "digest": "sha256:5aeb11ca6e802b83816c9a31f055ac9d028309a853509400c2e3139ac2d8380d",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/bn-fit-modify/manifests/20251031",
+  "header_verified": true,
+  "time": 1792550852.394639
+}

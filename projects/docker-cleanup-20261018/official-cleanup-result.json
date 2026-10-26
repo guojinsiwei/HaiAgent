@@ -1,0 +1,361 @@
+{
+  "started": 1792304305.4730809,
+  "free_before": 60483928064,
+  "removed": [
+    {
+      "id": "eb7e209672bf6cef2785fafd9e13509b10626c327bcc2b37f5bf40ca83eaf3aa",
+      "tags": [
+        "alexgshaw/headless-terminal:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/headless-terminal:20251031\nDeleted: sha256:eb7e209672bf6cef2785fafd9e13509b10626c327bcc2b37f5bf40ca83eaf3aa\n",
+      "stderr": ""
+    },
+    {
+      "id": "3612a38fadb89a96f74a1a951fb0b0af734198fd160571eeaba6401593234594",
+      "tags": [
+        "alexgshaw/build-cython-ext:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/build-cython-ext:20251031\nDeleted: sha256:3612a38fadb89a96f74a1a951fb0b0af734198fd160571eeaba6401593234594\n",
+      "stderr": ""
+    },
+    {
+      "id": "15fcd84bf3b06270ee148211cc6da6599b13ec2f41ac1d0894cf75c2225872ee",
+      "tags": [
+        "alexgshaw/password-recovery:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/password-recovery:20251031\nDeleted: sha256:15fcd84bf3b06270ee148211cc6da6599b13ec2f41ac1d0894cf75c2225872ee\n",
+      "stderr": ""
+    },
+    {
+      "id": "14a9dcca7d08ce53c5a0ed9fbd663a996ef28f207c199ed69d9ccf6064f8b184",
+      "tags": [
+        "alexgshaw/extract-moves-from-video:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/extract-moves-from-video:20251031\nDeleted: sha256:14a9dcca7d08ce53c5a0ed9fbd663a996ef28f207c199ed69d9ccf6064f8b184\n",
+      "stderr": ""
+    },
+    {
+      "id": "9c513c4ba342bd95be501f6f5eadd4806a2b18749c87c251615825100130232d",
+      "tags": [
+        "alexgshaw/count-dataset-tokens:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/count-dataset-tokens:20251031\nDeleted: sha256:9c513c4ba342bd95be501f6f5eadd4806a2b18749c87c251615825100130232d\n",
+      "stderr": ""
+    },
+    {
+      "id": "94de701b57e7ecfdbada6044f8534876e4b58874f8f313184dadc4d7533e0818",
+      "tags": [
+        "alexgshaw/protein-assembly:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/protein-assembly:20251031\nDeleted: sha256:94de701b57e7ecfdbada6044f8534876e4b58874f8f313184dadc4d7533e0818\n",
+      "stderr": ""
+    },
+    {
+      "id": "541e8214a8c4faa7b556531b899d45da21048fa2ca6dd328d8cb6c4cffa8e964",
+      "tags": [
+        "alexgshaw/qemu-alpine-ssh:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/qemu-alpine-ssh:20251031\nDeleted: sha256:541e8214a8c4faa7b556531b899d45da21048fa2ca6dd328d8cb6c4cffa8e964\n",
+      "stderr": ""
+    },
+    {
+      "id": "e3b6d61d2d3930fbbdc5f7bf091a7f8b7f6125e1951ef8a7dbe165b1ef62942c",
+      "tags": [
+        "alexgshaw/regex-chess:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/regex-chess:20251031\nDeleted: sha256:e3b6d61d2d3930fbbdc5f7bf091a7f8b7f6125e1951ef8a7dbe165b1ef62942c\n",
+      "stderr": ""
+    },
+    {
+      "id": "401fa95d5d491f44a473eda9d2c52930f9565cc889c796eabcb6e20fec26852e",
+      "tags": [
+        "alexgshaw/raman-fitting:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/raman-fitting:20251031\nDeleted: sha256:401fa95d5d491f44a473eda9d2c52930f9565cc889c796eabcb6e20fec26852e\n",
+      "stderr": ""
+    },
+    {
+      "id": "cbeb6ba905c2fec294f16cd5e16e3ea7f2e04d38ac2484d51a11de262aa7dc51",
+      "tags": [
+        "alexgshaw/log-summary-date-ranges:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/log-summary-date-ranges:20251031\nDeleted: sha256:cbeb6ba905c2fec294f16cd5e16e3ea7f2e04d38ac2484d51a11de262aa7dc51\n",
+      "stderr": ""
+    },
+    {
+      "id": "6932e4cb318464307eacd497ef8dc617eaf551b6a90231f815ec0b911895cfed",
+      "tags": [
+        "alexgshaw/extract-elf:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/extract-elf:20251031\nDeleted: sha256:6932e4cb318464307eacd497ef8dc617eaf551b6a90231f815ec0b911895cfed\n",
+      "stderr": ""
+    },
+    {
+      "id": "93461db3cec697c31585941a3b9387c1398495aa1ff0aee2ac752c7230b50ef8",
+      "tags": [
+        "alexgshaw/portfolio-optimization:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/portfolio-optimization:20251031\nDeleted: sha256:93461db3cec697c31585941a3b9387c1398495aa1ff0aee2ac752c7230b50ef8\n",
+      "stderr": ""
+    },
+    {
+      "id": "c996884b5fb5fb2c0c07d67da2c4f974f271f07234ed28e1a868240375c57a67",
+      "tags": [
+        "alexgshaw/pytorch-model-cli:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/pytorch-model-cli:20251031\nDeleted: sha256:c996884b5fb5fb2c0c07d67da2c4f974f271f07234ed28e1a868240375c57a67\n",
+      "stderr": ""
+    },
+    {
+      "id": "b485be38bf80d56c1a4cd9da95bbf7ec129dc03f6786b86c0525518a96f6d1db",
+      "tags": [
+        "alexgshaw/schemelike-metacircular-eval:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/schemelike-metacircular-eval:20251031\nDeleted: sha256:b485be38bf80d56c1a4cd9da95bbf7ec129dc03f6786b86c0525518a96f6d1db\n",
+      "stderr": ""
+    },
+    {
+      "id": "2be9cdb746ed18c1b2b1404032efae0b2235a1b8fc479ef17730c95409d89f76",
+      "tags": [
+        "alexgshaw/code-from-image:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/code-from-image:20251031\nDeleted: sha256:2be9cdb746ed18c1b2b1404032efae0b2235a1b8fc479ef17730c95409d89f76\n",
+      "stderr": ""
+    },
+    {
+      "id": "b23d48839408524326095c15ada4145c772b87646cf299022ff1f58c97baba91",
+      "tags": [
+        "alexgshaw/rstan-to-pystan:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/rstan-to-pystan:20251031\nDeleted: sha256:b23d48839408524326095c15ada4145c772b87646cf299022ff1f58c97baba91\n",
+      "stderr": ""
+    },
+    {
+      "id": "a2c0f39e3ab04e67ac6e49cad9167bb0d987babe32511768c01aa0c6905a875f",
+      "tags": [
+        "alexgshaw/video-processing:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/video-processing:20251031\nDeleted: sha256:a2c0f39e3ab04e67ac6e49cad9167bb0d987babe32511768c01aa0c6905a875f\n",
+      "stderr": ""
+    },
+    {
+      "id": "d1adf6835f1dd91205ba70e452c699d0aea601010038e5617f370716efb50569",
+      "tags": [
+        "alexgshaw/dna-assembly:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/dna-assembly:20251031\nDeleted: sha256:d1adf6835f1dd91205ba70e452c699d0aea601010038e5617f370716efb50569\n",
+      "stderr": ""
+    },
+    {
+      "id": "62160e522a4238b8bcd522411ea97b5b200f811e5899d34947e66809bef7e586",
+      "tags": [
+        "alexgshaw/git-leak-recovery:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/git-leak-recovery:20251031\nDeleted: sha256:62160e522a4238b8bcd522411ea97b5b200f811e5899d34947e66809bef7e586\n",
+      "stderr": ""
+    },
+    {
+      "id": "4b44725102cd627dfa895191a5a30d16dae3c5623bb43da6459f79135db6b482",
+      "tags": [
+        "alexgshaw/path-tracing:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/path-tracing:20251031\nDeleted: sha256:4b44725102cd627dfa895191a5a30d16dae3c5623bb43da6459f79135db6b482\n",
+      "stderr": ""
+    },
+    {
+      "id": "52fe1f089f38650f0dc22d7531ee6e01ebd526de1b349aaa2ecb331dca9fabce",
+      "tags": [
+        "alexgshaw/model-extraction-relu-logits:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/model-extraction-relu-logits:20251031\nDeleted: sha256:52fe1f089f38650f0dc22d7531ee6e01ebd526de1b349aaa2ecb331dca9fabce\n",
+      "stderr": ""
+    },
+    {
+      "id": "bb447f94d9e2a8ed879f85c85a514b213b7418f9fe11fd7b2428a0b0e436e647",
+      "tags": [
+        "alexgshaw/chess-best-move:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/chess-best-move:20251031\nDeleted: sha256:bb447f94d9e2a8ed879f85c85a514b213b7418f9fe11fd7b2428a0b0e436e647\n",
+      "stderr": ""
+    },
+    {
+      "id": "4c948a4e630af2435ae0a19108fc0814a946ac2fa29a512469e0fc77b38c8c12",
+      "tags": [
+        "alexgshaw/openssl-selfsigned-cert:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/openssl-selfsigned-cert:20251031\nDeleted: sha256:4c948a4e630af2435ae0a19108fc0814a946ac2fa29a512469e0fc77b38c8c12\n",
+      "stderr": ""
+    },
+    {
+      "id": "985bed39e8448bc95f138b5f766b59003a95c4be171c96af8e76448338f3dd8f",
+      "tags": [
+        "alexgshaw/adaptive-rejection-sampler:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/adaptive-rejection-sampler:20251031\nDeleted: sha256:985bed39e8448bc95f138b5f766b59003a95c4be171c96af8e76448338f3dd8f\n",
+      "stderr": ""
+    },
+    {
+      "id": "aabac93c93bd1f310e6a6fb893911d7735026ed18491c72133c9196a09092ca4",
+      "tags": [
+        "alexgshaw/sqlite-db-truncate:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/sqlite-db-truncate:20251031\nDeleted: sha256:aabac93c93bd1f310e6a6fb893911d7735026ed18491c72133c9196a09092ca4\n",
+      "stderr": ""
+    },
+    {
+      "id": "28de7da87004eab5b29bd5eaf1823579bc5b73ccea4b80349a5623185770da14",
+      "tags": [
+        "alexgshaw/query-optimize:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/query-optimize:20251031\nDeleted: sha256:28de7da87004eab5b29bd5eaf1823579bc5b73ccea4b80349a5623185770da14\n",
+      "stderr": ""
+    },
+    {
+      "id": "e26741d01681a9da1beeff8b7b7b65fe2b921b8b122a306a3707a81ebd051f73",
+      "tags": [
+        "alexgshaw/prove-plus-comm:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/prove-plus-comm:20251031\nDeleted: sha256:e26741d01681a9da1beeff8b7b7b65fe2b921b8b122a306a3707a81ebd051f73\n",
+      "stderr": ""
+    },
+    {
+      "id": "3618e1f8a997b437c09cd3dbaac736705809c05f6f12f584b65722175970ebe1",
+      "tags": [
+        "alexgshaw/write-compressor:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/write-compressor:20251031\nDeleted: sha256:3618e1f8a997b437c09cd3dbaac736705809c05f6f12f584b65722175970ebe1\n",
+      "stderr": ""
+    },
+    {
+      "id": "874baf49341e2853a15a9184e308c7eb632e97f434359fcff2891c6e5ca1b39b",
+      "tags": [
+        "alexgshaw/build-pov-ray:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/build-pov-ray:20251031\nDeleted: sha256:874baf49341e2853a15a9184e308c7eb632e97f434359fcff2891c6e5ca1b39b\n",
+      "stderr": ""
+    },
+    {
+      "id": "92fa4304e51167f9fb4466144eba33ef9272a7df0ac1cab9fc3986bccd1ab708",
+      "tags": [
+        "alexgshaw/sparql-university:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/sparql-university:20251031\nDeleted: sha256:92fa4304e51167f9fb4466144eba33ef9272a7df0ac1cab9fc3986bccd1ab708\n",
+      "stderr": ""
+    },
+    {
+      "id": "f986820b00c74ce75db7288719d364df313fde7c7917bea6eb6352a08431a89f",
+      "tags": [
+        "alexgshaw/sqlite-with-gcov:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/sqlite-with-gcov:20251031\nDeleted: sha256:f986820b00c74ce75db7288719d364df313fde7c7917bea6eb6352a08431a89f\n",
+      "stderr": ""
+    },
+    {
+      "id": "61ebb40454dd103aa2f7e71ad6dafd91cf2b301e6bb07e69d5b472412d1ee15b",
+      "tags": [
+        "alexgshaw/vulnerable-secret:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/vulnerable-secret:20251031\nDeleted: sha256:61ebb40454dd103aa2f7e71ad6dafd91cf2b301e6bb07e69d5b472412d1ee15b\n",
+      "stderr": ""
+    },
+    {
+      "id": "bea93bafe9eab601ca58729f5735a13f8339f52055322d1cf840e3742b54a287",
+      "tags": [
+        "alexgshaw/feal-differential-cryptanalysis:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/feal-differential-cryptanalysis:20251031\nDeleted: sha256:bea93bafe9eab601ca58729f5735a13f8339f52055322d1cf840e3742b54a287\n",
+      "stderr": ""
+    },
+    {
+      "id": "90101b2e815323a8da20528a1439bebc407eb9761c9c68a3d557730856c878e9",
+      "tags": [
+        "alexgshaw/regex-log:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/regex-log:20251031\nDeleted: sha256:90101b2e815323a8da20528a1439bebc407eb9761c9c68a3d557730856c878e9\n",
+      "stderr": ""
+    },
+    {
+      "id": "4dd8760694e355de85ecf03605cb487ccdb33322f6afad513d2920829baa33b2",
+      "tags": [
+        "alexgshaw/dna-insert:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/dna-insert:20251031\nDeleted: sha256:4dd8760694e355de85ecf03605cb487ccdb33322f6afad513d2920829baa33b2\n",
+      "stderr": ""
+    },
+    {
+      "id": "0979ef40c6a3e8c4e7ab5b6c2524c74625a84799e15cd45dd98dcf83b11efd4d",
+      "tags": [
+        "alexgshaw/gcode-to-text:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/gcode-to-text:20251031\nDeleted: sha256:0979ef40c6a3e8c4e7ab5b6c2524c74625a84799e15cd45dd98dcf83b11efd4d\n",
+      "stderr": ""
+    },
+    {
+      "id": "bfc2a235f2ceea64ffb1ffc5529c2acebf570bff61f3668f0e5669ef570c17d4",
+      "tags": [
+        "alexgshaw/merge-diff-arc-agi-task:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/merge-diff-arc-agi-task:20251031\nDeleted: sha256:bfc2a235f2ceea64ffb1ffc5529c2acebf570bff61f3668f0e5669ef570c17d4\n",
+      "stderr": ""
+    },
+    {
+      "id": "593ab9df3d83f771e927888b2d9436b380cdf7ec4d0af2a9f0802d541edebba0",
+      "tags": [
+        "alexgshaw/cobol-modernization:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/cobol-modernization:20251031\nDeleted: sha256:593ab9df3d83f771e927888b2d9436b380cdf7ec4d0af2a9f0802d541edebba0\n",
+      "stderr": ""
+    },
+    {
+      "id": "1448f7aa1c6080488251d00350e8e90477858989b1bec0accc866d7b3220738a",
+      "tags": [
+        "alexgshaw/distribution-search:20251031"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: alexgshaw/distribution-search:20251031\nDeleted: sha256:1448f7aa1c6080488251d00350e8e90477858989b1bec0accc866d7b3220738a\n",
+      "stderr": ""
+    }
+  ],
+  "skipped": [],
+  "finished": 1792304334.172986,
+  "free_after": 71712083968,
+  "history_verified": true
+}

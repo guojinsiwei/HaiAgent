@@ -1,0 +1,762 @@
+{
+  "status": "completed",
+  "acceptance_passed": true,
+  "exit_code": 0,
+  "counts": {
+    "PASS": 29,
+    "FAIL": 0,
+    "ERROR": 0
+  },
+  "model_api_calls": 0,
+  "checks": [
+    {
+      "name": "docker_snapshot_restore_delivery",
+      "status": "PASS",
+      "evidence": {
+        "restore_output": "restored\n",
+        "delivered": "A",
+        "live_container_reused": true,
+        "mounts": [],
+        "network": "container:9cc38626514bc1a0d67694302c9ba999236d206618552745cec321a496d9d98a"
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "workspace_escape_refused",
+      "status": "PASS",
+      "evidence": {
+        "blocked": true,
+        "exit": 126
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "command_timeout_and_recovery",
+      "status": "PASS",
+      "evidence": {
+        "timed_out": true,
+        "next_call_succeeded": true
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "best_plain_read_advisor",
+      "status": "PASS",
+      "evidence": {
+        "advisor_calls": 1
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "best_shell_wrapped_read_advisor",
+      "status": "PASS",
+      "evidence": {
+        "advisor_calls": 1,
+        "expected": 1
+      },
+      "expected_issue": "shell compound classified generic"
+    },
+    {
+      "name": "best_visible_evidence_3",
+      "status": "PASS",
+      "evidence": {
+        "accepted": 1,
+        "visible": [
+          "E1",
+          "E2",
+          "E3",
+          "E4"
+        ],
+        "deferred": [],
+        "declared_maximum": 3,
+        "expected_behavior": "accept valid 3; explicitly reject over-limit 4"
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "best_visible_evidence_4",
+      "status": "PASS",
+      "evidence": {
+        "accepted": 0,
+        "visible": [
+          "E1",
+          "E2",
+          "E3",
+          "E4"
+        ],
+        "deferred": [
+          "evidence_ids must contain at most 3 IDs"
+        ],
+        "declared_maximum": 3,
+        "expected_behavior": "accept valid 3; explicitly reject over-limit 4"
+      },
+      "expected_issue": "undocumented three-evidence limit"
+    },
+    {
+      "name": "best_conversation_beyond_six_on_wire",
+      "status": "PASS",
+      "evidence": {
+        "requests": 12,
+        "assistant_turns": 10,
+        "max_message_chars": 22179,
+        "context_chars": 48000,
+        "external_http_requests": 0
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "best_history_retrieval_on_wire",
+      "status": "PASS",
+      "evidence": {
+        "tool_calls": 10,
+        "retrieval_visible": true
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "best_truncated_response_recovery",
+      "status": "PASS",
+      "evidence": {
+        "requests": 6,
+        "tool_calls": 3,
+        "rejected_action_absent": true,
+        "artifact": "part1\npart2",
+        "failure_counts": {
+          "output_length": 2
+        },
+        "external_http_requests": 0
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "best_recovered_output_error_classification",
+      "status": "PASS",
+      "evidence": {
+        "stop_reason": "model_submit",
+        "infrastructure_ok": true,
+        "reasons": [],
+        "method_issues": [],
+        "model_error_count": 1,
+        "recovered_model_errors": 1,
+        "unrecovered_model_errors": 0,
+        "optional_monitor_errors": 0,
+        "warnings": [
+          "recovered_model_errors"
+        ]
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "semantic_different_command_loop",
+      "status": "PASS",
+      "evidence": {
+        "stalls": 1,
+        "advisor_rounds": 1
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "automatic_quoted_memory_on_next_action",
+      "status": "PASS",
+      "evidence": {
+        "memories": [
+          {
+            "id": "M1",
+            "conclusion": "These two attempts both failed with PARSER_PROBE.",
+            "condition": "Only for this unchanged fixture input; external state unverified.",
+            "kind": "blocker",
+            "operation": "bash",
+            "targets": [],
+            "next_step": "Inspect the input format",
+            "evidence_ids": [
+              "E1",
+              "E2"
+            ],
+            "scope": "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663",
+            "evidence_scopes": [
+              "ea8321fd805db51384d87f279eb9a1113360a0cf07b24ce471ab4957a055d663"
+            ],
+            "dependency_state": {},
+            "repairs": [],
+            "status": "evidence_quoted_model_claim_not_verified",
+            "reinforcements": 1,
+            "updated_at": 1,
+            "origin": "semantic_monitor",
+            "support": [
+              {
+                "evidence_id": "E1",
+                "field": "stderr",
+                "quote": "PARSER_PROBE"
+              },
+              {
+                "evidence_id": "E2",
+                "field": "stderr",
+                "quote": "PARSER_PROBE"
+              }
+            ],
+            "monitor_review_id": "R1",
+            "applicability": "same_workspace_external_state_unverified"
+          }
+        ],
+        "admitted": 1
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "semantic_loop_to_real_artifact",
+      "status": "PASS",
+      "evidence": {
+        "artifact": "recovered",
+        "tool_calls": 3,
+        "submitted": true
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "monitor_wire_budget_and_isolation",
+      "status": "PASS",
+      "evidence": {
+        "monitor_requests": 1,
+        "model_rounds": 6,
+        "external_model_calls": 0
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "observed_memory_without_llm",
+      "status": "PASS",
+      "evidence": {
+        "observed": 1,
+        "monitor_calls": 0
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "unrelated_edit_preserves_dependency_applicability",
+      "status": "PASS",
+      "evidence": {
+        "memory": {
+          "id": "M1",
+          "conclusion": "This exact command produced the same captured failure twice; cause remains unknown. Captured outcome: c86e51edb6f2e1b4",
+          "condition": "For this command and observed dependencies; external state must be rechecked. [\"bash\", \"-lc\", \"cat config.txt >&2; exit 2\"]",
+          "kind": "blocker",
+          "operation": "",
+          "targets": [
+            "config.txt"
+          ],
+          "next_step": "Check changed inputs or a specific retry reason before repeating.",
+          "evidence_ids": [
+            "E3",
+            "E2"
+          ],
+          "scope": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+          "evidence_scopes": [
+            "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d"
+          ],
+          "dependency_state": {
+            "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+          },
+          "repairs": [],
+          "status": "observed_tool_outcome_not_causal_rule",
+          "reinforcements": 1,
+          "updated_at": 1,
+          "origin": "execution_observer",
+          "command_key": "106a7403019dcd442d7b4ef70b563eec2f1110b05c5748d056876265d552a2fa",
+          "outcome_key": "c86e51edb6f2e1b4b2ecb77588c7dcb8d90fa8b8a38c09e7adb25d6b5a883927",
+          "observation_excerpt": "invalid-data",
+          "applicability": "target_dependencies_unchanged_external_state_unverified"
+        },
+        "unrelated_file": "unrelated"
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "acknowledgment_needs_reason_not_hard_ban",
+      "status": "PASS",
+      "evidence": {
+        "interventions": 1,
+        "tool_calls": 5,
+        "submitted": true
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "related_edit_requires_recheck",
+      "status": "PASS",
+      "evidence": {
+        "memories": [
+          {
+            "id": "M1",
+            "conclusion": "This exact command produced the same captured failure twice; cause remains unknown. Captured outcome: c86e51edb6f2e1b4",
+            "condition": "For this command and observed dependencies; external state must be rechecked. [\"bash\", \"-lc\", \"cat config.txt >&2; exit 2\"]",
+            "kind": "blocker",
+            "operation": "",
+            "targets": [
+              "config.txt"
+            ],
+            "next_step": "Check changed inputs or a specific retry reason before repeating.",
+            "evidence_ids": [
+              "E3",
+              "E2"
+            ],
+            "scope": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+            "evidence_scopes": [
+              "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d"
+            ],
+            "dependency_state": {
+              "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+            },
+            "repairs": [],
+            "status": "observed_tool_outcome_not_causal_rule",
+            "reinforcements": 1,
+            "updated_at": 1,
+            "origin": "execution_observer",
+            "command_key": "106a7403019dcd442d7b4ef70b563eec2f1110b05c5748d056876265d552a2fa",
+            "outcome_key": "c86e51edb6f2e1b4b2ecb77588c7dcb8d90fa8b8a38c09e7adb25d6b5a883927",
+            "observation_excerpt": "invalid-data",
+            "applicability": "target_dependencies_changed_or_unknown_recheck_required"
+          },
+          {
+            "id": "M2",
+            "conclusion": "The command read invalid-data from config.txt.",
+            "condition": "At the observed config.txt version.",
+            "kind": "finding",
+            "operation": "",
+            "targets": [
+              "config.txt"
+            ],
+            "next_step": "Repair the input then verify it.",
+            "evidence_ids": [
+              "E2",
+              "E3"
+            ],
+            "scope": "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d",
+            "evidence_scopes": [
+              "894d35503fd7a0e48c1ed713552f1710f6dd42b081367a9301919af1d793562d"
+            ],
+            "dependency_state": {
+              "config.txt": "file:12:267bfd92e322fde7116197c7108bea68a93e669e5911bc34b1e9c4873074eeb2"
+            },
+            "repairs": [
+              {
+                "field": "operation",
+                "reason": "overlong_optional_field_omitted",
+                "original_chars": 143,
+                "sha256": "9440921e16570dd9e6ef9507e08907fdae878f83afd233ec522c808e9c2d30c3"
+              }
+            ],
+            "status": "evidence_linked_model_claim",
+            "reinforcements": 1,
+            "updated_at": 2,
+            "applicability": "target_dependencies_changed_or_unknown_recheck_required"
+          }
+        ],
+        "artifact": "valid-data"
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "overlong_operation_retains_real_evidence",
+      "status": "PASS",
+      "evidence": {
+        "repairs": [
+          {
+            "event": "memory_field_repaired",
+            "memory_id": "M2",
+            "previous": "42d98bcd960c07d5fdf0d397c4465427e516be7e571a5254f3243fed40ae2465",
+            "repairs": [
+              {
+                "field": "operation",
+                "original_chars": 143,
+                "reason": "overlong_optional_field_omitted",
+                "sha256": "9440921e16570dd9e6ef9507e08907fdae878f83afd233ec522c808e9c2d30c3"
+              }
+            ],
+            "sequence": 41,
+            "sha256": "a080c0ca170538a55e01480d1e07c726a76e8c04f086dbf454497019eb61140c",
+            "time": 1790772588.2464445
+          }
+        ]
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "v6_docker_pipeline_exit_observation",
+      "status": "PASS",
+      "evidence": {
+        "process_exit": 0,
+        "assessment": {
+          "process_succeeded": true,
+          "execution_clean": false,
+          "failure_observed": false,
+          "suspected_failure": true,
+          "check_status": "unknown",
+          "signals": [
+            "python_traceback",
+            "nonzero_shell_stage"
+          ],
+          "shell": {
+            "coverage": "top_level_bash_only",
+            "complete": true,
+            "trace_truncated": false,
+            "pipelines": [
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "nonzero_statuses": [
+              {
+                "shell_status": 0,
+                "stages": [
+                  1,
+                  0
+                ]
+              },
+              {
+                "shell_status": 0,
+                "stages": [
+                  1,
+                  0
+                ]
+              }
+            ],
+            "notice": "Nonzero stages may be handled intentionally (grep no-match, head SIGPIPE, || recovery). Not task failure proof."
+          },
+          "task_success": null
+        }
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "v6_docker_intervention_edit_verify",
+      "status": "PASS",
+      "evidence": {
+        "counts": {
+          "model_requests": 6,
+          "action_calls": 6,
+          "advisor_calls": 0,
+          "tool_calls": 5,
+          "memory_exposures": 0,
+          "requests_with_memory": 0,
+          "memories_admitted": 0,
+          "memories_rejected": 0,
+          "memory_use_self_reports": 0,
+          "advisor_responses_accepted": 0,
+          "advisor_deferred": 0,
+          "checkpoints_created": 1,
+          "branch_restores": 0,
+          "submissions": 1,
+          "protocol_errors": 0,
+          "memory_interventions": 0,
+          "memory_action_changed": 0,
+          "memory_action_unchanged": 0,
+          "memory_followup_actions": 0,
+          "memory_followup_runs": 0,
+          "memory_followup_succeeded": 0,
+          "memory_followup_workspace_changed": 0,
+          "post_advice_actions": 0,
+          "monitor_calls": 0,
+          "monitor_reviews_accepted": 0,
+          "monitor_deferred": 0,
+          "semantic_stalls": 0,
+          "auto_memory_candidates": 0,
+          "auto_memories_admitted": 0,
+          "auto_memories_rejected": 0,
+          "observed_memories_admitted": 0,
+          "recovery_started": 1,
+          "recovery_plans": 1,
+          "recovery_verified_repairs": 1,
+          "recovery_checked_hypotheses": 0,
+          "recovery_failed": 0,
+          "memory_exposure_is_not_benefit": true,
+          "memory_use_is_self_report": true
+        },
+        "recovery": {
+          "id": "I1",
+          "status": "verified_public_check",
+          "reason": "The same command, observable state and output recurred at least three times. Explain a legitimate retry or select a discriminating action; repetition alone is not failure proof.",
+          "created_tool": 3,
+          "deadline_tool": 11,
+          "plan": {
+            "hypothesis": "Required result.txt is missing",
+            "mode": "repair",
+            "targets": [
+              "result.txt"
+            ],
+            "action": {
+              "argv": [
+                "bash",
+                "-lc",
+                "printf repaired > result.txt"
+              ],
+              "cwd": ".",
+              "stdin": null
+            },
+            "verification": {
+              "argv": [
+                "bash",
+                "-lc",
+                "test \"$(cat result.txt)\" = repaired && echo RECOVERY_CHECK_PASSED"
+              ],
+              "cwd": ".",
+              "stdin": null
+            },
+            "success_contains": "RECOVERY_CHECK_PASSED",
+            "fingerprint": "6cba61e1c87b3a54317c59513253ea543388250bc037522077ba5e8a6dbc571d"
+          },
+          "action_seen": true,
+          "target_changed": true,
+          "verification_seen": true,
+          "last_outcome": {
+            "evidence_id": "E5",
+            "execution_clean": true,
+            "check_status": "unknown",
+            "signals": []
+          }
+        }
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "v6_docker_real_artifact_delivery",
+      "status": "PASS",
+      "evidence": {
+        "artifact": {
+          "path": "/var/tmp/lizh639-monitor-control-v6/run-20260930-204652-de9a729c/monitor-control-v6/state/def68172836c4eb99a4730e882256851",
+          "fingerprint": "535760d9524e3f8ebd2b9c69ea8a4509f3be130eaeab60b07161786cbc6d50cf",
+          "snapshot_id": "def68172836c4eb99a4730e882256851",
+          "restoration": "container_filesystem_only"
+        }
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "hai_relative_cwd_memory",
+      "status": "PASS",
+      "evidence": {
+        "cwd": ".",
+        "memory_count": 1,
+        "validity": [
+          "current"
+        ],
+        "memory_bytes": [
+          2252
+        ],
+        "selected_ids": [
+          "M1"
+        ],
+        "tools": 3,
+        "workspace_scope": {
+          "cwd": "/var/tmp/lizh639-monitor-control-v6/run-20260930-204652-de9a729c/hai_relative_cwd_memory/state/live",
+          "environment": null,
+          "workspace": "ad2d95b2c7438a79198836d29cc68b43491baea913773a929ee66ca303cddbfe"
+        }
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "hai_container_cwd_memory",
+      "status": "PASS",
+      "evidence": {
+        "cwd": "/app",
+        "memory_count": 1,
+        "validity": [
+          "current"
+        ],
+        "memory_bytes": [
+          2256
+        ],
+        "selected_ids": [
+          "M1"
+        ],
+        "tools": 3,
+        "workspace_scope": {
+          "cwd": "/var/tmp/lizh639-monitor-control-v6/run-20260930-204652-de9a729c/hai_container_cwd_memory/state/live",
+          "environment": null,
+          "workspace": "ad2d95b2c7438a79198836d29cc68b43491baea913773a929ee66ca303cddbfe"
+        }
+      },
+      "expected_issue": "container /app versus host mirror alias"
+    },
+    {
+      "name": "hai_large_memory_reaches_next_prompt",
+      "status": "PASS",
+      "evidence": {
+        "cwd": ".",
+        "memory_count": 1,
+        "validity": [
+          "current"
+        ],
+        "memory_bytes": [
+          3313
+        ],
+        "selected_ids": [
+          "M1"
+        ],
+        "tools": 3,
+        "workspace_scope": {
+          "cwd": "/var/tmp/lizh639-monitor-control-v6/run-20260930-204652-de9a729c/hai_large_memory/state/live",
+          "environment": null,
+          "workspace": "ad2d95b2c7438a79198836d29cc68b43491baea913773a929ee66ca303cddbfe"
+        }
+      },
+      "expected_issue": "whole memory dropped above 3000-byte slice"
+    },
+    {
+      "name": "hai_container_cwd_intervention",
+      "status": "PASS",
+      "evidence": {
+        "reminders": 1,
+        "tools": 4,
+        "reconsiderations": [
+          {
+            "acknowledged_memory_ids": [],
+            "causal_benefit_proven": false,
+            "changed": true,
+            "changed_action": true,
+            "changed_direction": true,
+            "event": "memory_reconsideration",
+            "intervention_id": "MI1",
+            "memory_ids": [
+              "M1"
+            ],
+            "previous": "23349fa4c5ba8844d6713709459683fbde1a165891a65943c202aea6ecc54c7b",
+            "previous_profile": {
+              "action_key": "e7c8c319bde49990464d95a738f1e678e8c5258b9847630ae02112c8cf40253e",
+              "anchors": [
+                "--mode",
+                "search"
+              ],
+              "canonical_sha256": "d43db5518bc6e62885ac309a67eedc767dbcb762dfa59f87568257aa1a0c9044",
+              "direction_key": "334114dddedec5b0a87f2595e004fa76cbce9cb1d6dd587bf652868b63f507c8",
+              "exploration_scope": [],
+              "kind": "execute",
+              "payload_sha256": "c8ce17baae87c6b172cf03ef68f0aa7c825c837b71cde14844e332eaee2203ad",
+              "program": "python",
+              "stdin_direction_sha256": null,
+              "summary": "execute via python: workspace/environment; scope=unspecified",
+              "targets": [],
+              "tool_chain": [
+                "python"
+              ]
+            },
+            "revised_profile": {
+              "action_key": "6a467696cea272af4a2c8d4e3f14a80c04cd098691e6dbb91263a9c636dec6a0",
+              "anchors": [],
+              "canonical_sha256": "ee86d7ecdd2d566f061d676dc1d4ead4dc8b6b9e05a10dd875dc49fed250d619",
+              "direction_key": "5f8fd8d3bae195e2521eb363002ccb1a07a4cb3cd4c2f5805fe1f7cd2f2a66b2",
+              "exploration_scope": [],
+              "kind": "inspect",
+              "payload_sha256": "cb548fb37c04c2d579eb0d8115936766ada0ea5651b5a06fe835275cb2e8bdf1",
+              "program": "cat",
+              "stdin_direction_sha256": null,
+              "summary": "inspect via cat: file.txt; scope=unspecified",
+              "targets": [
+                "file.txt"
+              ],
+              "tool_chain": [
+                "cat"
+              ]
+            },
+            "sequence": 31,
+            "sha256": "20fa0bd270c90f58e65342fc0c369ad12e95bc2066fb6af5cc2344c67783889e",
+            "time": 1790772727.3228853
+          }
+        ],
+        "followups": [
+          {
+            "action_kind": "run",
+            "blocked": false,
+            "causal_benefit_proven": false,
+            "changed": true,
+            "changed_action": true,
+            "changed_direction": true,
+            "event": "memory_followup_outcome",
+            "intervention_id": "MI1",
+            "memory_ids": [
+              "M1"
+            ],
+            "outcome_observed": true,
+            "previous": "cfee0844cf184d6bc64f117fd653666c2508acfcd545ba068b803ee83af4516a",
+            "profile": {
+              "action_key": "6a467696cea272af4a2c8d4e3f14a80c04cd098691e6dbb91263a9c636dec6a0",
+              "anchors": [],
+              "canonical_sha256": "ee86d7ecdd2d566f061d676dc1d4ead4dc8b6b9e05a10dd875dc49fed250d619",
+              "direction_key": "5f8fd8d3bae195e2521eb363002ccb1a07a4cb3cd4c2f5805fe1f7cd2f2a66b2",
+              "exploration_scope": [],
+              "kind": "inspect",
+              "payload_sha256": "cb548fb37c04c2d579eb0d8115936766ada0ea5651b5a06fe835275cb2e8bdf1",
+              "program": "cat",
+              "stdin_direction_sha256": null,
+              "summary": "inspect via cat: file.txt; scope=unspecified",
+              "targets": [
+                "file.txt"
+              ],
+              "tool_chain": [
+                "cat"
+              ]
+            },
+            "revised_profile": {
+              "action_key": "6a467696cea272af4a2c8d4e3f14a80c04cd098691e6dbb91263a9c636dec6a0",
+              "anchors": [],
+              "canonical_sha256": "ee86d7ecdd2d566f061d676dc1d4ead4dc8b6b9e05a10dd875dc49fed250d619",
+              "direction_key": "5f8fd8d3bae195e2521eb363002ccb1a07a4cb3cd4c2f5805fe1f7cd2f2a66b2",
+              "exploration_scope": [],
+              "kind": "inspect",
+              "payload_sha256": "cb548fb37c04c2d579eb0d8115936766ada0ea5651b5a06fe835275cb2e8bdf1",
+              "program": "cat",
+              "stdin_direction_sha256": null,
+              "summary": "inspect via cat: file.txt; scope=unspecified",
+              "targets": [
+                "file.txt"
+              ],
+              "tool_chain": [
+                "cat"
+              ]
+            },
+            "sequence": 34,
+            "sha256": "7b21f7c59c9b46f1a80fe2c6f17bd25f868eb53289b69f06667dead41d5eef53",
+            "succeeded": true,
+            "time": 1790772731.581065,
+            "timed_out": false,
+            "workspace_changed": false
+          }
+        ]
+      },
+      "expected_issue": null
+    },
+    {
+      "name": "classifier_budget_with_metrics",
+      "status": "PASS",
+      "evidence": {
+        "stop_reason": "wall_budget",
+        "infrastructure_ok": true,
+        "reasons": []
+      },
+      "expected_issue": "metrics changes adjacency"
+    },
+    {
+      "name": "classifier_infrastructure_stop",
+      "status": "PASS",
+      "evidence": {
+        "stop_reason": "infrastructure_error",
+        "infrastructure_ok": false,
+        "reasons": [
+          "infrastructure_stop"
+        ]
+      },
+      "expected_issue": "stop reason ignored"
+    }
+  ],
+  "fatal": null,
+  "cleanup_errors": [],
+  "remaining_originals": [],
+  "elapsed_seconds": 337.478,
+  "run_dir": "/var/tmp/lizh639-monitor-control-v6/run-20260930-204652-de9a729c",
+  "source_dir": "/var/tmp/lizh639-monitor-control-v6/sources"
+}

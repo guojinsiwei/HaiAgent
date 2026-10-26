@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-21",
+  "release": "delivery-hardening-v6",
+  "reference_snapshot": "../interface-hardening-v5",
+  "reference_local_implementation_sha256": "d7621862f883ca560a86772794036aeb77714ba13177517ac5b138c2a49a185f",
+  "implementation_sha256": "010f7ff1b3c6457993e4b9ae567ee91345219b9452f8b1057ac527b4b91da2ff",
+  "hash_note": "Code fingerprint from benchmark_runtime.implementation_sha256, not a frozen experiment protocol hash.",
+  "python": "3.12.14",
+  "platform": "Windows",
+  "command": "PYTHONPATH=src python -m unittest discover -s tests -q",
+  "tests": {
+    "total": 350,
+    "passed": 344,
+    "skipped": 6,
+    "failed": 0,
+    "errors": 0,
+    "elapsed_seconds": 61.840,
+    "real_git_delivery_contract_cases": 12,
+    "skip_reasons": [
+      "Five existing POSIX/Linux preparation, process-group, repair or Unix-symlink cases do not run on Windows.",
+      "One Git submission symlink case cannot create a symlink with this host's privileges."
+    ]
+  },
+  "unchanged_from_v5": [
+    "src/bestfgs/raw_baseline.py",
+    "src/bestfgs/priority.py",
+    "src/bestfgs/rules.py",
+    "src/bestfgs/semantic.py",
+    "src/bestfgs/model_wire.py",
+    "src/bestfgs/experiment_metrics.py"
+  ],
+  "cloud_deployed": false,
+  "paid_model_calls": 0,
+  "swe_tasks_rerun": 0,
+  "official_evaluation_started": false,
+  "claim_limit": "Offline engineering contract tests only; not evidence of increased SWE-bench resolved rate."
+}

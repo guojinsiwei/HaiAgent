@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "task": "polyglot-rust-c",
+      "arm": "hld",
+      "stage": "retry",
+      "state": "pending",
+      "job": "tb2hr39-34-hld-polyglot-rust-c-repair5",
+      "budget_job": "tb2hr39-34-hld-polyglot-rust-c",
+      "original_job": "tb2hr39-34-hld-polyglot-rust-c",
+      "preflight_attempt_id": "b0c28275710244df9f86cd421df0ecc9",
+      "admission_offline": true,
+      "preflight": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-hld-polyglot-repair5-20261021/preflight/preflight-tb2hr39-34-hld-polyglot-rust-c-repair5/polyglot-rust-c__BdpNBt9",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "harbor_exit": 0
+      },
+      "preflight_ok": true
+    }
+  ],
+  "paid_calls": 0,
+  "preserved_results_unchanged": true
+}

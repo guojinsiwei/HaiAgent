@@ -1,0 +1,331 @@
+{
+  "state": "running",
+  "updated_utc": "2026-10-18T07:53:38.973896+00:00",
+  "pid": 854668,
+  "supervisor_identity": {
+    "pid": 854668,
+    "start": "820154134",
+    "boot": "2861b57d-7d78-4a80-a96b-0854417097ca"
+  },
+  "auth_paused": false,
+  "phase": "first",
+  "summary": {
+    "native-kz": {
+      "total": 8,
+      "first_finished": 0,
+      "clean": 0,
+      "passed": 0
+    },
+    "kz-dsh": {
+      "total": 7,
+      "first_finished": 0,
+      "clean": 0,
+      "passed": 0
+    },
+    "dsh": {
+      "total": 7,
+      "first_finished": 1,
+      "clean": 1,
+      "passed": 0
+    }
+  },
+  "rows": [
+    {
+      "task": "torch-pipeline-parallelism",
+      "arm": "dsh",
+      "stage": "retry",
+      "job": "scorefix-tb50-09-dsh-torch-pipeline-parallelism",
+      "budget_job": "tb50-09-dsh-torch-pipeline-parallelism",
+      "state": "done",
+      "engineering_clean": true,
+      "score_only": true,
+      "result": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-scorefix-20261018/preflight/preflight-accept-score-torch-pipeline-parallelism-aac06e/torch-pipeline-parallelism__VfcJSMG",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "task": "torch-pipeline-parallelism",
+        "arm": "dsh",
+        "paid_calls": 0,
+        "exit_code": 0,
+        "row": {
+          "task": "torch-pipeline-parallelism",
+          "arm": "dsh",
+          "job": "accept-score-torch-pipeline-parallelism-aac06e",
+          "preflight_attempt_id": "be4b5b0802b34dab88734c235b8283db"
+        },
+        "official_test_summary": {
+          "tests": 3,
+          "passed": 1,
+          "failed": 2,
+          "skipped": 0,
+          "pending": 0,
+          "other": 0,
+          "start": 1792309131.8486876,
+          "stop": 1792309155.6537337
+        },
+        "score_only": true,
+        "original_trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-retry2-20261018/jobs/retry2-tb50-09-dsh-torch-pipeline-parallelism/torch-pipeline-parallelism__Ksib3ke",
+        "additional_model_calls": 0
+      }
+    },
+    {
+      "task": "torch-pipeline-parallelism",
+      "arm": "native-kz",
+      "stage": "retry",
+      "job": "scorefix-tb50-09-native-kz-torch-pipeline-parallelism",
+      "budget_job": "tb50-09-native-kz-torch-pipeline-parallelism",
+      "state": "preflighting",
+      "preflight_attempt_id": "ddc360cf86414674acfd57913f95ac9f",
+      "admission_offline": true,
+      "admitted_utc": "2026-10-18T07:50:46.936830+00:00",
+      "pid": 854698,
+      "live": {}
+    },
+    {
+      "task": "torch-pipeline-parallelism",
+      "arm": "kz-dsh",
+      "stage": "retry",
+      "job": "scorefix-tb50-09-kz-dsh-torch-pipeline-parallelism",
+      "budget_job": "tb50-09-kz-dsh-torch-pipeline-parallelism",
+      "state": "preflighting",
+      "preflight_attempt_id": "8bd5c9631bcb482b82150cb8b23d5ebf",
+      "admission_offline": true,
+      "admitted_utc": "2026-10-18T07:50:47.061260+00:00",
+      "pid": 854700,
+      "live": {}
+    },
+    {
+      "task": "pytorch-model-recovery",
+      "arm": "native-kz",
+      "stage": "retry",
+      "job": "scorefix-tb50-10-native-kz-pytorch-model-recovery",
+      "budget_job": "tb50-10-native-kz-pytorch-model-recovery",
+      "state": "preflighting",
+      "preflight_attempt_id": "db7027da4d0743d390a164fa589d9600",
+      "admission_offline": true,
+      "admitted_utc": "2026-10-18T07:50:47.185134+00:00",
+      "pid": 854702,
+      "live": {}
+    },
+    {
+      "task": "pytorch-model-recovery",
+      "arm": "kz-dsh",
+      "stage": "retry",
+      "job": "scorefix-tb50-10-kz-dsh-pytorch-model-recovery",
+      "budget_job": "tb50-10-kz-dsh-pytorch-model-recovery",
+      "state": "preflighting",
+      "preflight_attempt_id": "6c00f2c694444af6b8ea0407210a65fb",
+      "admission_offline": true,
+      "admitted_utc": "2026-10-18T07:50:47.281439+00:00",
+      "pid": 854704,
+      "live": {}
+    },
+    {
+      "task": "pytorch-model-recovery",
+      "arm": "dsh",
+      "stage": "retry",
+      "job": "scorefix-tb50-10-dsh-pytorch-model-recovery",
+      "budget_job": "tb50-10-dsh-pytorch-model-recovery",
+      "state": "preflighting",
+      "preflight_attempt_id": "1b4aac9d9a6c49f1a6a36ecb02c72bba",
+      "admission_offline": true,
+      "admitted_utc": "2026-10-18T07:50:47.357289+00:00",
+      "pid": 854705,
+      "live": {}
+    },
+    {
+      "task": "sam-cell-seg",
+      "arm": "kz-dsh",
+      "stage": "retry",
+      "job": "scorefix-tb50-14-kz-dsh-sam-cell-seg",
+      "budget_job": "tb50-14-kz-dsh-sam-cell-seg",
+      "state": "pending"
+    },
+    {
+      "task": "mteb-leaderboard",
+      "arm": "dsh",
+      "stage": "retry",
+      "job": "scorefix-tb50-18-dsh-mteb-leaderboard",
+      "budget_job": "tb50-18-dsh-mteb-leaderboard",
+      "state": "running",
+      "preflight_attempt_id": "8e59cc4406c84db395be765127fc0776",
+      "admission_offline": false,
+      "admitted_utc": "2026-10-18T07:52:18.278036+00:00",
+      "pid": 868257,
+      "live": {
+        "requests": 23,
+        "tools": 25,
+        "updated_utc": "2026-10-18T07:53:38.013Z"
+      },
+      "preflight": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-scorefix-20261018/preflight/preflight-scorefix-tb50-18-dsh-mteb-leaderboard/mteb-leaderboard__UbMjui5",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "harbor_exit": 0
+      },
+      "preflight_ok": true,
+      "attempt_id": "ce8bea03921b48938e651803d6eced6e"
+    },
+    {
+      "task": "mteb-leaderboard",
+      "arm": "native-kz",
+      "stage": "retry",
+      "job": "scorefix-tb50-18-native-kz-mteb-leaderboard",
+      "budget_job": "tb50-18-native-kz-mteb-leaderboard",
+      "state": "pending"
+    },
+    {
+      "task": "mteb-leaderboard",
+      "arm": "kz-dsh",
+      "stage": "retry",
+      "job": "scorefix-tb50-18-kz-dsh-mteb-leaderboard",
+      "budget_job": "tb50-18-kz-dsh-mteb-leaderboard",
+      "state": "pending"
+    },
+    {
+      "task": "largest-eigenval",
+      "arm": "native-kz",
+      "stage": "retry",
+      "job": "scorefix-tb50-25-native-kz-largest-eigenval",
+      "budget_job": "tb50-25-native-kz-largest-eigenval",
+      "state": "pending"
+    },
+    {
+      "task": "hf-model-inference",
+      "arm": "native-kz",
+      "stage": "retry",
+      "job": "scorefix-tb50-28-native-kz-hf-model-inference",
+      "budget_job": "tb50-28-native-kz-hf-model-inference",
+      "state": "pending"
+    },
+    {
+      "task": "make-mips-interpreter",
+      "arm": "dsh",
+      "stage": "retry",
+      "job": "scorefix-tb50-30-dsh-make-mips-interpreter",
+      "budget_job": "tb50-30-dsh-make-mips-interpreter",
+      "state": "pending"
+    },
+    {
+      "task": "mteb-retrieve",
+      "arm": "kz-dsh",
+      "stage": "retry",
+      "job": "scorefix-tb50-35-kz-dsh-mteb-retrieve",
+      "budget_job": "tb50-35-kz-dsh-mteb-retrieve",
+      "state": "pending"
+    },
+    {
+      "task": "mteb-retrieve",
+      "arm": "dsh",
+      "stage": "retry",
+      "job": "scorefix-tb50-35-dsh-mteb-retrieve",
+      "budget_job": "tb50-35-dsh-mteb-retrieve",
+      "state": "pending"
+    },
+    {
+      "task": "mteb-retrieve",
+      "arm": "native-kz",
+      "stage": "retry",
+      "job": "scorefix-tb50-35-native-kz-mteb-retrieve",
+      "budget_job": "tb50-35-native-kz-mteb-retrieve",
+      "state": "pending"
+    },
+    {
+      "task": "train-fasttext",
+      "arm": "dsh",
+      "stage": "retry",
+      "job": "scorefix-tb50-48-dsh-train-fasttext",
+      "budget_job": "tb50-48-dsh-train-fasttext",
+      "state": "pending"
+    },
+    {
+      "task": "train-fasttext",
+      "arm": "native-kz",
+      "stage": "retry",
+      "job": "scorefix-tb50-48-native-kz-train-fasttext",
+      "budget_job": "tb50-48-native-kz-train-fasttext",
+      "state": "pending"
+    },
+    {
+      "task": "train-fasttext",
+      "arm": "kz-dsh",
+      "stage": "retry",
+      "job": "scorefix-tb50-48-kz-dsh-train-fasttext",
+      "budget_job": "tb50-48-kz-dsh-train-fasttext",
+      "state": "pending"
+    },
+    {
+      "task": "torch-tensor-parallelism",
+      "arm": "kz-dsh",
+      "stage": "retry",
+      "job": "scorefix-tb50-50-kz-dsh-torch-tensor-parallelism",
+      "budget_job": "tb50-50-kz-dsh-torch-tensor-parallelism",
+      "state": "pending"
+    },
+    {
+      "task": "torch-tensor-parallelism",
+      "arm": "dsh",
+      "stage": "retry",
+      "job": "scorefix-tb50-50-dsh-torch-tensor-parallelism",
+      "budget_job": "tb50-50-dsh-torch-tensor-parallelism",
+      "state": "pending"
+    },
+    {
+      "task": "torch-tensor-parallelism",
+      "arm": "native-kz",
+      "stage": "retry",
+      "job": "scorefix-tb50-50-native-kz-torch-tensor-parallelism",
+      "budget_job": "tb50-50-native-kz-torch-tensor-parallelism",
+      "state": "pending"
+    }
+  ],
+  "spending": {
+    "limit_microcny": 600000000,
+    "settled_microcny": 286702558,
+    "reserved_microcny": 387072,
+    "uncertain_microcny": 3096576,
+    "remaining_microcny": 309813794,
+    "halt_reason": null,
+    "estimate_peak_cny": 600.0
+  },
+  "active": [
+    {
+      "job": "scorefix-tb50-09-native-kz-torch-pipeline-parallelism",
+      "pid": 854698,
+      "offline": true
+    },
+    {
+      "job": "scorefix-tb50-09-kz-dsh-torch-pipeline-parallelism",
+      "pid": 854700,
+      "offline": true
+    },
+    {
+      "job": "scorefix-tb50-10-native-kz-pytorch-model-recovery",
+      "pid": 854702,
+      "offline": true
+    },
+    {
+      "job": "scorefix-tb50-10-kz-dsh-pytorch-model-recovery",
+      "pid": 854704,
+      "offline": true
+    },
+    {
+      "job": "scorefix-tb50-10-dsh-pytorch-model-recovery",
+      "pid": 854705,
+      "offline": true
+    },
+    {
+      "job": "scorefix-tb50-18-dsh-mteb-leaderboard",
+      "pid": 868257,
+      "offline": false
+    }
+  ]
+}

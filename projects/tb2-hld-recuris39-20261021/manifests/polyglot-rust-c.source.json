@@ -1,0 +1,8 @@
+{
+  "task": "polyglot-rust-c",
+  "image": "alexgshaw/polyglot-rust-c:20251031",
+  "digest": "sha256:3ba84f0e138a4b65e58c53f920a0fc852571e6402901c3bdbb876e9dab6e6c5e",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/polyglot-rust-c/manifests/20251031",
+  "header_verified": true,
+  "time": 1792550878.444488
+}

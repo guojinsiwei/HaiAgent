@@ -1,0 +1,9 @@
+{
+  "images_removed": 12,
+  "before_free_gib": 66.89,
+  "after_free_gib": 124.89,
+  "net_free_increase_gib": 58.0,
+  "data_free_gib": 164.08,
+  "preserved_result_files": 88,
+  "historical_results_hashes_unchanged": true
+}

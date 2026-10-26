@@ -1,0 +1,72 @@
+{
+  "model_calls": 0,
+  "all_passed": true,
+  "rows": [
+    {
+      "task": "schemelike-metacircular-eval",
+      "arm": "recuris",
+      "stage": "image-repair",
+      "job": "tb2hr50-19-recuris-schemelike-metacircular-eval-imagefix1",
+      "budget_job": "tb2hr50-19-recuris-schemelike-metacircular-eval",
+      "original_job": "tb2hr50-19-recuris-schemelike-metacircular-eval",
+      "state": "preflight_passed",
+      "preflight_attempt_id": "28173414ba8342e58f509db34ec2e07c",
+      "admission_offline": true,
+      "preflight": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/preflight/preflight-tb2hr50-19-recuris-schemelike-metacircular-eval-imagefix1/schemelike-metacircular-eval__GmnPkso",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "harbor_exit": 0
+      },
+      "preflight_ok": true
+    },
+    {
+      "task": "code-from-image",
+      "arm": "recuris",
+      "stage": "image-repair",
+      "job": "tb2hr50-20-recuris-code-from-image-imagefix1",
+      "budget_job": "tb2hr50-20-recuris-code-from-image",
+      "original_job": "tb2hr50-20-recuris-code-from-image",
+      "state": "preflight_passed",
+      "preflight_attempt_id": "0f6cf46263304f3ab9db463f35f257dc",
+      "admission_offline": true,
+      "preflight": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/preflight/preflight-tb2hr50-20-recuris-code-from-image-imagefix1/code-from-image__ceqA84W",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "harbor_exit": 0
+      },
+      "preflight_ok": true
+    },
+    {
+      "task": "rstan-to-pystan",
+      "arm": "recuris",
+      "stage": "image-repair",
+      "job": "tb2hr50-21-recuris-rstan-to-pystan-imagefix1",
+      "budget_job": "tb2hr50-21-recuris-rstan-to-pystan",
+      "original_job": "tb2hr50-21-recuris-rstan-to-pystan",
+      "state": "preflight_passed",
+      "preflight_attempt_id": "d3868c1e7f1f4ef5be977fe8ec04abd0",
+      "admission_offline": true,
+      "preflight": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/preflight/preflight-tb2hr50-21-recuris-rstan-to-pystan-imagefix1/rstan-to-pystan__Fqu9aa7",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "harbor_exit": 0
+      },
+      "preflight_ok": true
+    }
+  ]
+}

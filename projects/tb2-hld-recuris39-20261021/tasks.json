@@ -1,0 +1,710 @@
+{
+  "benchmark": "Terminal-Bench 2.0",
+  "commit": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+  "population": 89,
+  "selection": "Sorted exact complement of frozen 50-task comparison; no result-based selection",
+  "tasks": [
+    {
+      "name": "bn-fit-modify",
+      "category": "scientific-computing",
+      "difficulty": "hard",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/bn-fit-modify:20251031",
+        "cpus": 1,
+        "memory": "2G",
+        "storage": "10G"
+      },
+      "agent": {
+        "timeout_sec": 3600.0
+      },
+      "verifier": {
+        "timeout_sec": 3600.0
+      }
+    },
+    {
+      "name": "break-filter-js-from-html",
+      "category": "security",
+      "difficulty": "medium",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/break-filter-js-from-html:20251031",
+        "cpus": 1,
+        "memory": "2G",
+        "storage": "10G"
+      },
+      "agent": {
+        "timeout_sec": 1200.0
+      },
+      "verifier": {
+        "timeout_sec": 1200.0
+      }
+    },
+    {
+      "name": "build-pmars",
+      "category": "software-engineering",
+      "difficulty": "medium",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/build-pmars:20251031",
+        "cpus": 1,
+        "memory": "2G",
+        "storage": "10G"
+      },
+      "agent": {
+        "timeout_sec": 900.0
+      },
+      "verifier": {
+        "timeout_sec": 900.0
+      }
+    },
+    {
+      "name": "caffe-cifar-10",
+      "category": "machine-learning",
+      "difficulty": "medium",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/caffe-cifar-10:20251031",
+        "cpus": 1,
+        "memory": "2G",
+        "storage": "10G"
+      },
+      "agent": {
+        "timeout_sec": 1200.0
+      },
+      "verifier": {
+        "timeout_sec": 1200.0
+      }
+    },
+    {
+      "name": "cancel-async-tasks",
+      "category": "software-engineering",
+      "difficulty": "hard",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/cancel-async-tasks:20251031",
+        "cpus": 1,
+        "memory": "2G",
+        "storage": "10G"
+      },
+      "agent": {
+        "timeout_sec": 900.0
+      },
+      "verifier": {
+        "timeout_sec": 900.0
+      }
+    },
+    {
+      "name": "circuit-fibsqrt",
+      "category": "software-engineering",
+      "difficulty": "hard",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/circuit-fibsqrt:20251031",
+        "cpus": 1,
+        "memory": "2G",
+        "storage": "10G"
+      },
+      "agent": {
+        "timeout_sec": 3600.0
+      },
+      "verifier": {
+        "timeout_sec": 3600.0
+      }
+    },
+    {
+      "name": "compile-compcert",
+      "category": "system-administration",
+      "difficulty": "medium",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/compile-compcert:20251031",
+        "cpus": 2,
+        "memory": "4G",
+        "storage": "10G"
+      },
+      "agent": {
+        "timeout_sec": 2400.0
+      },
+      "verifier": {
+        "timeout_sec": 2400.0
+      }
+    },
+    {
+      "name": "configure-git-webserver",
+      "category": "system-administration",
+      "difficulty": "hard",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/configure-git-webserver:20251031",
+        "cpus": 1,
+        "memory": "2G",
+        "storage": "10G"
+      },
+      "agent": {
+        "timeout_sec": 900.0
+      },
+      "verifier": {
+        "timeout_sec": 900.0
+      }
+    },
+    {
+      "name": "constraints-scheduling",
+      "category": "personal-assistant",
+      "difficulty": "medium",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/constraints-scheduling:20251031",
+        "cpus": 1,
+        "memory": "2G",
+        "storage": "10G"
+      },
+      "agent": {
+        "timeout_sec": 1200.0
+      },
+      "verifier": {
+        "timeout_sec": 1200.0
+      }
+    },
+    {
+      "name": "crack-7z-hash",
+      "category": "security",
+      "difficulty": "medium",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/crack-7z-hash:20251031",
+        "cpus": 1,
+        "memory": "2G",
+        "storage": "10G"
+      },
+      "agent": {
+        "timeout_sec": 900.0
+      },
+      "verifier": {
+        "timeout_sec": 900.0
+      }
+    },
+    {
+      "name": "custom-memory-heap-crash",
+      "category": "debugging",
+      "difficulty": "medium",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/custom-memory-heap-crash:20251031",
+        "cpus": 1,
+        "memory": "2G",
+        "storage": "10G"
+      },
+      "agent": {
+        "timeout_sec": 1800.0
+      },
+      "verifier": {
+        "timeout_sec": 1800.0
+      }
+    },
+    {
+      "name": "db-wal-recovery",
+      "category": "file-operations",
+      "difficulty": "medium",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/db-wal-recovery:20251031",
+        "cpus": 1,
+        "memory": "2G",
+        "storage": "10G"
+      },
+      "agent": {
+        "timeout_sec": 900.0
+      },
+      "verifier": {
+        "timeout_sec": 900.0
+      }
+    },
+    {
+      "name": "feal-linear-cryptanalysis",
+      "category": "mathematics",
+      "difficulty": "hard",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/feal-linear-cryptanalysis:20251031",
+        "cpus": 1,
+        "memory": "2G",
+        "storage": "10G"
+      },
+      "agent": {
+        "timeout_sec": 1800.0
+      },
+      "verifier": {
+        "timeout_sec": 1800.0
+      }
+    },
+    {
+      "name": "filter-js-from-html",
+      "category": "security",
+      "difficulty": "medium",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/filter-js-from-html:20251031",
+        "cpus": 1,
+        "memory": "2G",
+        "storage": "10G"
+      },
+      "agent": {
+        "timeout_sec": 1800.0
+      },
+      "verifier": {
+        "timeout_sec": 900.0
+      }
+    },
+    {
+      "name": "financial-document-processor",
+      "category": "data-processing",
+      "difficulty": "medium",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/financial-document-processor:20251031",
+        "cpus": 1,
+        "memory": "4G",
+        "storage": "10G"
+      },
+      "agent": {
+        "timeout_sec": 1200.0
+      },
+      "verifier": {
+        "timeout_sec": 1200.0
+      }
+    },
+    {
+      "name": "fix-code-vulnerability",
+      "category": "security",
+      "difficulty": "hard",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/fix-code-vulnerability:20251031",
+        "cpus": 1,
+        "memory": "2G",
+        "storage": "10G"
+      },
+      "agent": {
+        "timeout_sec": 900.0
+      },
+      "verifier": {
+        "timeout_sec": 900.0
+      }
+    },
+    {
+      "name": "fix-git",
+      "category": "software-engineering",
+      "difficulty": "easy",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/fix-git:20251031",
+        "cpus": 1,
+        "memory": "2G",
+        "storage": "10G"
+      },
+      "agent": {
+        "timeout_sec": 900.0
+      },
+      "verifier": {
+        "timeout_sec": 900.0
+      }
+    },
+    {
+      "name": "fix-ocaml-gc",
+      "category": "software-engineering",
+      "difficulty": "hard",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/fix-ocaml-gc:20251031",
+        "cpus": 1,
+        "memory": "2G",
+        "storage": "10G"
+      },
+      "agent": {
+        "timeout_sec": 3600.0
+      },
+      "verifier": {
+        "timeout_sec": 3600.0
+      }
+    },
+    {
+      "name": "git-multibranch",
+      "category": "system-administration",
+      "difficulty": "medium",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "cpus": 1,
+        "memory": "2G",
+        "storage": "10G",
+        "docker_image": "alexgshaw/git-multibranch:20251031"
+      },
+      "agent": {
+        "timeout_sec": 900.0
+      },
+      "verifier": {
+        "timeout_sec": 900.0
+      }
+    },
+    {
+      "name": "gpt2-codegolf",
+      "category": "software-engineering",
+      "difficulty": "hard",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/gpt2-codegolf:20251031",
+        "cpus": 1,
+        "memory": "4G",
+        "storage": "10G"
+      },
+      "agent": {
+        "timeout_sec": 900.0
+      },
+      "verifier": {
+        "timeout_sec": 900.0
+      }
+    },
+    {
+      "name": "install-windows-3.11",
+      "category": "system-administration",
+      "difficulty": "hard",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/install-windows-3.11:20251031",
+        "cpus": 2,
+        "memory": "4G",
+        "storage": "10G"
+      },
+      "agent": {
+        "timeout_sec": 3600.0
+      },
+      "verifier": {
+        "timeout_sec": 3600.0
+      }
+    },
+    {
+      "name": "kv-store-grpc",
+      "category": "software-engineering",
+      "difficulty": "medium",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/kv-store-grpc:20251031",
+        "cpus": 1,
+        "memory": "2G",
+        "storage": "10G"
+      },
+      "agent": {
+        "timeout_sec": 900.0
+      },
+      "verifier": {
+        "timeout_sec": 900.0
+      }
+    },
+    {
+      "name": "large-scale-text-editing",
+      "category": "file-operations",
+      "difficulty": "medium",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/large-scale-text-editing:20251031",
+        "cpus": 1,
+        "memory": "2G",
+        "storage": "10G"
+      },
+      "agent": {
+        "timeout_sec": 1200.0
+      },
+      "verifier": {
+        "timeout_sec": 1200.0
+      }
+    },
+    {
+      "name": "llm-inference-batching-scheduler",
+      "category": "machine-learning",
+      "difficulty": "hard",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "cpus": 1,
+        "memory": "2G",
+        "storage": "10G",
+        "docker_image": "alexgshaw/llm-inference-batching-scheduler:20251031"
+      },
+      "agent": {
+        "timeout_sec": 1800.0
+      },
+      "verifier": {
+        "timeout_sec": 1800.0
+      }
+    },
+    {
+      "name": "mailman",
+      "category": "system-administration",
+      "difficulty": "medium",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/mailman:20251031",
+        "cpus": 1,
+        "memory": "2G",
+        "storage": "10G"
+      },
+      "agent": {
+        "timeout_sec": 1800.0
+      },
+      "verifier": {
+        "timeout_sec": 1800.0
+      }
+    },
+    {
+      "name": "make-doom-for-mips",
+      "category": "software-engineering",
+      "difficulty": "hard",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/make-doom-for-mips:20251031",
+        "cpus": 1,
+        "memory": "2G",
+        "storage": "10G"
+      },
+      "agent": {
+        "timeout_sec": 900.0
+      },
+      "verifier": {
+        "timeout_sec": 900.0
+      }
+    },
+    {
+      "name": "mcmc-sampling-stan",
+      "category": "data-science",
+      "difficulty": "hard",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "cpus": 4,
+        "memory": "8G",
+        "storage": "10G",
+        "docker_image": "alexgshaw/mcmc-sampling-stan:20251031"
+      },
+      "agent": {
+        "timeout_sec": 1800.0
+      },
+      "verifier": {
+        "timeout_sec": 1800.0
+      }
+    },
+    {
+      "name": "modernize-scientific-stack",
+      "category": "scientific-computing",
+      "difficulty": "medium",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "cpus": 1,
+        "memory": "2G",
+        "storage": "10G",
+        "docker_image": "alexgshaw/modernize-scientific-stack:20251031"
+      },
+      "agent": {
+        "timeout_sec": 600.0
+      },
+      "verifier": {
+        "timeout_sec": 600.0
+      }
+    },
+    {
+      "name": "multi-source-data-merger",
+      "category": "data-processing",
+      "difficulty": "medium",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "cpus": 1,
+        "memory": "2G",
+        "storage": "10G",
+        "docker_image": "alexgshaw/multi-source-data-merger:20251031"
+      },
+      "agent": {
+        "timeout_sec": 900.0
+      },
+      "verifier": {
+        "timeout_sec": 900.0
+      }
+    },
+    {
+      "name": "nginx-request-logging",
+      "category": "system-administration",
+      "difficulty": "medium",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/nginx-request-logging:20251031",
+        "cpus": 1,
+        "memory": "2G",
+        "storage": "10G"
+      },
+      "agent": {
+        "timeout_sec": 900.0
+      },
+      "verifier": {
+        "timeout_sec": 900.0
+      }
+    },
+    {
+      "name": "overfull-hbox",
+      "category": "debugging",
+      "difficulty": "easy",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "cpus": 2,
+        "memory": "4G",
+        "storage": "10G",
+        "docker_image": "alexgshaw/overfull-hbox:20251031"
+      },
+      "agent": {
+        "timeout_sec": 750.0
+      },
+      "verifier": {
+        "timeout_sec": 360.0
+      }
+    },
+    {
+      "name": "path-tracing-reverse",
+      "category": "software-engineering",
+      "difficulty": "hard",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/path-tracing-reverse:20251031",
+        "cpus": 1,
+        "memory": "2G",
+        "storage": "10G"
+      },
+      "agent": {
+        "timeout_sec": 1800.0
+      },
+      "verifier": {
+        "timeout_sec": 1800.0
+      }
+    },
+    {
+      "name": "polyglot-c-py",
+      "category": "software-engineering",
+      "difficulty": "medium",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/polyglot-c-py:20251031",
+        "cpus": 1,
+        "memory": "2G",
+        "storage": "10G"
+      },
+      "agent": {
+        "timeout_sec": 900.0
+      },
+      "verifier": {
+        "timeout_sec": 900.0
+      }
+    },
+    {
+      "name": "polyglot-rust-c",
+      "category": "software-engineering",
+      "difficulty": "hard",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/polyglot-rust-c:20251031",
+        "cpus": 1,
+        "memory": "2G",
+        "storage": "10G"
+      },
+      "agent": {
+        "timeout_sec": 900.0
+      },
+      "verifier": {
+        "timeout_sec": 900.0
+      }
+    },
+    {
+      "name": "pypi-server",
+      "category": "software-engineering",
+      "difficulty": "medium",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/pypi-server:20251031",
+        "cpus": 1,
+        "memory": "2G",
+        "storage": "10G"
+      },
+      "agent": {
+        "timeout_sec": 900.0
+      },
+      "verifier": {
+        "timeout_sec": 900.0
+      }
+    },
+    {
+      "name": "qemu-startup",
+      "category": "system-administration",
+      "difficulty": "medium",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/qemu-startup:20251031",
+        "cpus": 1,
+        "memory": "4G",
+        "storage": "10G"
+      },
+      "agent": {
+        "timeout_sec": 900.0
+      },
+      "verifier": {
+        "timeout_sec": 900.0
+      }
+    },
+    {
+      "name": "reshard-c4-data",
+      "category": "data-science",
+      "difficulty": "medium",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/reshard-c4-data:20251031",
+        "cpus": 1,
+        "memory": "2G",
+        "storage": "10G"
+      },
+      "agent": {
+        "timeout_sec": 3600.0
+      },
+      "verifier": {
+        "timeout_sec": 3600.0
+      }
+    },
+    {
+      "name": "sanitize-git-repo",
+      "category": "security",
+      "difficulty": "medium",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/sanitize-git-repo:20251031",
+        "cpus": 1,
+        "memory": "2G",
+        "storage": "10G"
+      },
+      "agent": {
+        "timeout_sec": 900.0
+      },
+      "verifier": {
+        "timeout_sec": 900.0
+      }
+    },
+    {
+      "name": "winning-avg-corewars",
+      "category": "software-engineering",
+      "difficulty": "medium",
+      "environment": {
+        "build_timeout_sec": 600.0,
+        "docker_image": "alexgshaw/winning-avg-corewars:20251031",
+        "cpus": 1,
+        "memory": "2G",
+        "storage": "10G"
+      },
+      "agent": {
+        "timeout_sec": 3600.0
+      },
+      "verifier": {
+        "timeout_sec": 3600.0
+      }
+    }
+  ]
+}

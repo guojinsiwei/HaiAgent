@@ -1,0 +1,13 @@
+{
+  "id": "androidworld-SimpleSmsSend",
+  "class": "SimpleSmsSend",
+  "params": {
+    "number": "+13119270650",
+    "message": "Yoga class every Tuesday and Thursday at 6 PM.",
+    "seed": 20261032
+  },
+  "instruction": "Send a text message using Simple SMS Messenger to +13119270650 with message: Yoga class every Tuesday and Thursday at 6 PM.",
+  "max_steps": 12,
+  "benchmark": "androidworld",
+  "instance_sha256": "fa7c940530366f4670bfa5b407095e7fd27524e2caa943a0415fc31b3f07a75b"
+}
