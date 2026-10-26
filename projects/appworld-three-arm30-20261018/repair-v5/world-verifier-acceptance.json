@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "tests": 2,
+  "paid_calls": 0,
+  "network": "internal",
+  "artifacts": "/mnt/sdb/home/lizh639/appworld-three-arm30-20261018/repair-v5/acceptance/verifier-42d8f722eb",
+  "checks": [
+    "genuine public API verification commits receipt",
+    "verification write blocked without state mutation",
+    "read-only mode restored"
+  ]
+}

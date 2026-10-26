@@ -1,0 +1,8 @@
+{
+  "task": "multi-source-data-merger",
+  "image": "alexgshaw/multi-source-data-merger:20251031",
+  "digest": "sha256:8b32782078ff7383a1b4e5d3cecca8ce287e30f50bb4c0e5db009a18064e666e",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/multi-source-data-merger/manifests/20251031",
+  "header_verified": true,
+  "time": 1792550872.0495706
+}

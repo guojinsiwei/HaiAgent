@@ -1,0 +1,18 @@
+{
+  "name": "suz-osworld30-fresh-20261025",
+  "total_cny": 480,
+  "task_cny": 8,
+  "tasks": 30,
+  "runs": 60,
+  "max_concurrency": 2,
+  "max_steps": 100,
+  "max_requests": 400,
+  "max_seconds": 7200,
+  "gpu_allowed": false,
+  "fresh_comparison": true,
+  "model": "glm-5.3-flash",
+  "prior_results_reused": false,
+  "independent_budget": true,
+  "reference_experiment": "suz-osworld30-20261024",
+  "cohort": "same 30 task ids and checksums, fresh VM and agent for every arm/task"
+}

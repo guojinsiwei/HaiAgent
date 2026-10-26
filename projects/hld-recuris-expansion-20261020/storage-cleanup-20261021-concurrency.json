@@ -1,0 +1,85 @@
+{
+  "time": "2026-10-21T00:09:38.593268",
+  "free_gib": 157.72389221191406,
+  "active": [
+    {
+      "job": "tb2hr50-10-hld-pytorch-model-recovery",
+      "pid": 4011217,
+      "offline": false
+    },
+    {
+      "job": "tb2hr50-20-recuris-code-from-image-imagefix1",
+      "task": "code-from-image",
+      "offline": false,
+      "pid": 129983
+    },
+    {
+      "job": "tb2hr50-14-hld-sam-cell-seg",
+      "pid": 125556,
+      "offline": false
+    },
+    {
+      "job": "tb2hr50-17-hld-pytorch-model-cli",
+      "pid": 202617,
+      "offline": true
+    },
+    {
+      "job": "tb2hr50-21-hld-rstan-to-pystan",
+      "pid": 216131,
+      "offline": true
+    },
+    {
+      "job": "tb2hr50-18-hld-mteb-leaderboard",
+      "pid": 219749,
+      "offline": false
+    },
+    {
+      "job": "tb2hr50-36-recuris-prove-plus-comm",
+      "pid": 219762,
+      "offline": false
+    },
+    {
+      "job": "tb2hr50-19-hld-schemelike-metacircular-eval",
+      "pid": 226979,
+      "offline": false
+    },
+    {
+      "job": "tb2hr50-26-recuris-path-tracing-imagefix1",
+      "task": "path-tracing",
+      "offline": false,
+      "pid": 134052
+    }
+  ],
+  "counts": {
+    "hld_solving_or_grading": 4,
+    "recuris_solving_or_grading": 3,
+    "hld_preflight": 2
+  },
+  "summary": {
+    "hld": {
+      "total": 50,
+      "finished": 14,
+      "clean": 14,
+      "scored": 14,
+      "engineering_failures": 0,
+      "passed": 7
+    },
+    "recuris": {
+      "total": 50,
+      "finished": 28,
+      "clean": 28,
+      "scored": 28,
+      "engineering_failures": 0,
+      "passed": 12
+    }
+  },
+  "budget": {
+    "limit_microcny": 800000000,
+    "settled_microcny": 183730414,
+    "reserved_microcny": 1449984,
+    "uncertain_microcny": 0,
+    "remaining_microcny": 614819602,
+    "halt_reason": null,
+    "estimate_peak_cny": 800.0
+  }
+}

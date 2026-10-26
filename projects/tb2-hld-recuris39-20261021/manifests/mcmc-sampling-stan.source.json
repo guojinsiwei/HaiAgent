@@ -1,0 +1,8 @@
+{
+  "task": "mcmc-sampling-stan",
+  "image": "alexgshaw/mcmc-sampling-stan:20251031",
+  "digest": "sha256:073fc36a3347b4f6b43bd6e98339542c41ed531c771af8bee40ba10f00cfabaf",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/mcmc-sampling-stan/manifests/20251031",
+  "header_verified": true,
+  "time": 1792550872.1298618
+}

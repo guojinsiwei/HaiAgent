@@ -1,0 +1,57 @@
+TB2.0 工程修复，2026-10-20
+
+范围
+暂停 HLD 的大规模实验保持不变；仅修复 Recuris 的 TB2.0 运行基础设施。
+原先5题：headless-terminal、password-recovery、extract-moves-from-video、
+count-dataset-tokens、protein-assembly。
+排查期间另发现 regex-chess、raman-fitting 的同类失败，共7题。
+7题此前均未产生模型调用；保留所有原始失败记录，以新运行目录补跑。
+
+根因与修复
+1. Docker Hub 清单/镜像层下载发生 EOF、连接重置。
+   增加启动前镜像准备：从官方源获取原始 manifest 并固定 SHA-256，
+   通过可用传输源下载相同 digest，校验 manifest 和本地镜像身份后入缓存。
+   原始任务文件、测试断言、模型与算法源码均保持不变。
+   不修改公共服务器的 Docker 全局配置，不清理其他用户的镜像。
+
+2. 镜像准备失败发生在 Harbor 建立运行目录之前时，结果收集路径会
+   因重复传入 reason 参数再次报错，掩盖最初故障。
+   修复失败分类，保存 preflight_failure_reason。
+
+3. 主队列恢复逻辑未识别 paused_by_user 状态。
+   修复恢复时对暂停 HLD 行的处理，确保恢复 Recuris 队列不启用 HLD。
+
+4. torch-pipeline-parallelism 原有提交评分超时。
+   从保留的 submission snapshot 恢复官方评分，保持1 CPU、4 GiB、
+   900秒上限及官方测试不变，将 OpenMP/MKL/OpenBLAS 线程设为1。
+   官方 pytest 测试在约29秒完成，2通过、2失败，reward=0。
+   失败为梯度数值不匹配；评分恢复未调用模型。
+   CTRF插件合并同名参数化测试，报告显示3条；实际pytest执行4个用例。
+
+验证
+7题已全部通过真实环境安装、产物收集及官方空白评分，均无模型调用。
+7题空白评分均为0，验证流程完整。
+补跑已开始，主队列已恢复：主队列进程3569609，补跑进程3522027；
+当前主队列2路、补跑1路。补跑首题为headless-terminal。
+额外离线验证通过：
+- 有效本地镜像不访问网络；
+- 本地镜像身份变化会拒绝；
+- 镜像传输源 manifest 与官方 digest 不符时，复制前拒绝；
+- HLD 暂停状态在主队列恢复后仍保留。
+
+预算与调度
+沿用原 spending.sqlite 和原 budget job，每题仍最多8元；不重置消费。
+仅对确认0次付费调用的失败题启动一次补跑，无自动付费重试。
+补跑并发1；原有任务先自然完成，主队列在预检通过后自动恢复原2路。
+已完成的解题结果保留；Torch仅重评分。
+
+服务器路径
+/mnt/sdb/home/lizh639/tb2-hld-recuris50-20261020/infra-repair-20261020/
+进度：health.json
+预检：preflight-results.json
+主队列恢复：main-resume.json
+Torch评分：torch-regrade/result.json
+
+汇总时使用根目录 effective_status.py 或 status.py：
+以原题为键合并补跑，避免重复计数；保留初次失败与恢复来源。
+不要仅使用原 health.json 中的历史失败计数。

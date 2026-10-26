@@ -1,0 +1,37 @@
+[
+  {
+    "index": 15,
+    "mode": "opencua_baseline",
+    "id": "36037439-2044-4b50-b9d1-875b5a332143"
+  },
+  {
+    "index": 2,
+    "mode": "opencua_baseline",
+    "id": "da46d875-6b82-4681-9284-653b0c7ae241"
+  },
+  {
+    "index": 21,
+    "mode": "opencua_baseline",
+    "id": "08c73485-7c6d-4681-999d-919f5c32dcfa"
+  },
+  {
+    "index": 24,
+    "mode": "opencua_baseline",
+    "id": "aa4b5023-aef6-4ed9-bdc9-705f59ab9ad6"
+  },
+  {
+    "index": 15,
+    "mode": "suz",
+    "id": "36037439-2044-4b50-b9d1-875b5a332143"
+  },
+  {
+    "index": 2,
+    "mode": "suz",
+    "id": "da46d875-6b82-4681-9284-653b0c7ae241"
+  },
+  {
+    "index": 18,
+    "mode": "suz",
+    "id": "c288e301-e626-4b98-a1ab-159dcb162af5"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "time": 1792490350.1938047,
+  "requested": "pause HLD; continue Recuris benchmarks",
+  "tb2_recuris_tasks": 50,
+  "appworld_recuris_tasks": 70,
+  "per_run_cny": 8,
+  "budget_ledger_reset": false,
+  "transfer_hld_budget": false,
+  "paid_retries": false,
+  "swepro_interrupted_jobs": [
+    "swp-10-old",
+    "swp-10-new",
+    "swp-11-old",
+    "swp-11-new"
+  ],
+  "agent_sources_changed": false
+}

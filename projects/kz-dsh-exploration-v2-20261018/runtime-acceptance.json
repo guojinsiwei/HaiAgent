@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "passed": true,
+      "exit_code": 0,
+      "requests": 2,
+      "native_receipt": true,
+      "settings": true,
+      "paid_calls": 0,
+      "external_network": "disabled",
+      "monitor_and_critic": "disabled for shell acceptance only; covered by separate integration tests"
+    },
+    {
+      "passed": true,
+      "exit_code": 0,
+      "requests": 2,
+      "native_receipt": true,
+      "settings": true,
+      "paid_calls": 0,
+      "external_network": "disabled",
+      "monitor_and_critic": "disabled for shell acceptance only; covered by separate integration tests"
+    },
+    {
+      "passed": true,
+      "exit_code": 0,
+      "requests": 2,
+      "native_receipt": true,
+      "settings": true,
+      "paid_calls": 0,
+      "external_network": "disabled",
+      "monitor_and_critic": "disabled for shell acceptance only; covered by separate integration tests"
+    },
+    {
+      "passed": true,
+      "exit_code": 0,
+      "requests": 2,
+      "native_receipt": true,
+      "settings": true,
+      "paid_calls": 0,
+      "external_network": "disabled",
+      "monitor_and_critic": "disabled for shell acceptance only; covered by separate integration tests"
+    }
+  ],
+  "model_calls": 0
+}

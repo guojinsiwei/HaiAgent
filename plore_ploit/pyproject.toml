@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plore-ploit"
+version = "0.3.0"
+description = "Exploration-first, recommendation-driven exploitation with a fixed-width RE-TRAC MCTS"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+cli-retrac-mcts = "cli_retrac_mcts.__main__:main"
+plore-ploit = "cli_retrac_mcts.__main__:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

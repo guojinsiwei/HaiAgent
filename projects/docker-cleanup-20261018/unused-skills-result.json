@@ -1,0 +1,108 @@
+{
+  "started": 1792304884.8432276,
+  "free_before": 125425045504,
+  "removed": [
+    {
+      "id": "sha256:053e9507605ec926ddbf90f4825d32c84a905726cf94b03fdf2f4c364b1045ad",
+      "tags": [
+        "skillsbench-no-skills/latex-formula-extraction:latest"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: skillsbench-no-skills/latex-formula-extraction:latest\nDeleted: sha256:053e9507605ec926ddbf90f4825d32c84a905726cf94b03fdf2f4c364b1045ad\n",
+      "stderr": ""
+    },
+    {
+      "id": "sha256:e7c0b4eab5059e5e5e64171551e27120a61ca6bb86c0fb492529ef78d8c82d91",
+      "tags": [
+        "skillsbench-no-skills/fix-build-agentops:latest"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: skillsbench-no-skills/fix-build-agentops:latest\nDeleted: sha256:e7c0b4eab5059e5e5e64171551e27120a61ca6bb86c0fb492529ef78d8c82d91\n",
+      "stderr": ""
+    },
+    {
+      "id": "sha256:6a93923cad0843097c75b6c5df2e3c94255ac23bc2913e5adae7b50470e4bf6e",
+      "tags": [
+        "skillsbench-no-skills/multilingual-video-dubbing:latest"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: skillsbench-no-skills/multilingual-video-dubbing:latest\nDeleted: sha256:6a93923cad0843097c75b6c5df2e3c94255ac23bc2913e5adae7b50470e4bf6e\n",
+      "stderr": ""
+    },
+    {
+      "id": "sha256:2805a57131736d533cc7a4cb6e4adf5f9b3a0c315ed06b0302d4f9ba50ef59f2",
+      "tags": [
+        "skillsbench-no-skills/earthquake-phase-association:latest"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: skillsbench-no-skills/earthquake-phase-association:latest\nDeleted: sha256:2805a57131736d533cc7a4cb6e4adf5f9b3a0c315ed06b0302d4f9ba50ef59f2\n",
+      "stderr": ""
+    },
+    {
+      "id": "sha256:624eb3fe82bbdfe96a0c529912414ae2cbc85379445dc2ec6a6d05c8c40ba697",
+      "tags": [
+        "skillsbench-no-skills/lean4-proof:latest"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: skillsbench-no-skills/lean4-proof:latest\nDeleted: sha256:624eb3fe82bbdfe96a0c529912414ae2cbc85379445dc2ec6a6d05c8c40ba697\n",
+      "stderr": ""
+    },
+    {
+      "id": "sha256:733994cf89fd9538d3ebc94f0923cf69be9ea9bf5391bfdb68d385faed177213",
+      "tags": [
+        "skillsbench-no-skills/flink-query:latest"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: skillsbench-no-skills/flink-query:latest\nDeleted: sha256:733994cf89fd9538d3ebc94f0923cf69be9ea9bf5391bfdb68d385faed177213\n",
+      "stderr": ""
+    },
+    {
+      "id": "sha256:788a0eedb286e82f985164e3464a531b3e2789744ff582f932cd5cb92fea08e9",
+      "tags": [
+        "skillsbench-no-skills/fix-druid-loophole-cve:latest"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: skillsbench-no-skills/fix-druid-loophole-cve:latest\nDeleted: sha256:788a0eedb286e82f985164e3464a531b3e2789744ff582f932cd5cb92fea08e9\n",
+      "stderr": ""
+    },
+    {
+      "id": "sha256:bfa4517b60dfeb105f904c06ab02ac5f46e21b8c3b57431bf035f3f49f98ff08",
+      "tags": [
+        "skillsbench-no-skills/python-scala-translation:latest"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: skillsbench-no-skills/python-scala-translation:latest\nDeleted: sha256:bfa4517b60dfeb105f904c06ab02ac5f46e21b8c3b57431bf035f3f49f98ff08\n",
+      "stderr": ""
+    },
+    {
+      "id": "sha256:c54070bf6c440e55cbfd059eb5a219842d829680336149a6ae8204d7357e9ca4",
+      "tags": [
+        "skillsbench-no-skills/fix-build-google-auto:latest"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: skillsbench-no-skills/fix-build-google-auto:latest\nDeleted: sha256:c54070bf6c440e55cbfd059eb5a219842d829680336149a6ae8204d7357e9ca4\n",
+      "stderr": ""
+    },
+    {
+      "id": "sha256:0413039d16ff8a877ef723034f33c89da74867deea581972db90e33af124d637",
+      "tags": [
+        "skillsbench-no-skills/organize-messy-files:latest"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: skillsbench-no-skills/organize-messy-files:latest\nDeleted: sha256:0413039d16ff8a877ef723034f33c89da74867deea581972db90e33af124d637\n",
+      "stderr": ""
+    },
+    {
+      "id": "sha256:5c1744a71d1d0f906b830ba291954e3293b597619f33be0cc399db2b8a703944",
+      "tags": [
+        "skillsbench-no-skills/react-performance-debugging:latest"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: skillsbench-no-skills/react-performance-debugging:latest\nDeleted: sha256:5c1744a71d1d0f906b830ba291954e3293b597619f33be0cc399db2b8a703944\n",
+      "stderr": ""
+    }
+  ],
+  "skipped": [],
+  "free_after": 196040261632,
+  "finished": 1792304900.1510575
+}

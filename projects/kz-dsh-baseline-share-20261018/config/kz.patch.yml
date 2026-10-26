@@ -1,0 +1,55 @@
+# TEMPLATE: use scripts/prepare-config.mjs to replace the absolute plugin path.
+# Set KZ_WORKSPACE (isolated task dir) and KZ_AUDIT_DIR (outside that dir).
+# Apply common.patch.yml to BOTH arms. Only this overlay differs.
+- insert:
+    - id: kz-policy
+      name: __KZ_PLUGIN_PATH__
+      config:
+        workspace: !!js process.env.KZ_WORKSPACE
+        auditDir: !!js process.env.KZ_AUDIT_DIR
+        # LongCLI deployments must explicitly set this to INSTRUCTION.md.
+        # Unset for other benchmarks; never guess a task file or read graders.
+        taskInstructionPath: !!js process.env.KZ_TASK_INSTRUCTION_PATH
+        enabled: true
+        full: true
+        # Frozen by user decision; no automatic snapshot creation or restore.
+        backtracking: false
+        localCorrection: true
+        reconnaissanceEnabled: true
+        criticEnabled: true
+        monitorEnabled: true
+        explorationEnabled: true
+        explorationMaxExecutions: 8
+        explorationRejectLimit: 2
+        explorationCooldownSteps: 4
+        # Enable only in deployments that attest native POSIX Bash execution.
+        shellReceipts: false
+        fullContextChars: 24000
+        memoryReserveChars: 8000
+        monitorCooldown: 8
+        repeatedFailureThreshold: 3
+        diagnosticAdvisorThreshold: 14
+        maxAdvisorCalls: 6
+        advisorCooldownTools: 5
+        maxRequests: 800
+        maxTools: 600
+        wallSeconds: 7200
+        # Frozen historical upper-bound rates, NOT a claim about current prices.
+        # Verify this route/bound in deployment; no generic-provider fallback.
+        costPolicy:
+          provider: deepseek-official
+          model: deepseek-flash
+          limitCny: 50
+          inputPerMillion: 2
+          outputPerMillion: 8
+          maxInputTokens: 1000000
+          maxOutputTokens: 32768
+          priceBasis: historical-KZ-20261009-peak-upper-bound
+        memoryCapacity: 24
+        recallLimit: 4
+        anchorLimit: 3
+        triggerFailures: 2
+        similarityThreshold: 0.8
+        maxConsecutiveRejections: 7
+        contextChars: 12000
+        excerptChars: 1200

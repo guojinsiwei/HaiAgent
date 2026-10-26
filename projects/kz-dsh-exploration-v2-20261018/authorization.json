@@ -1,0 +1,12 @@
+{
+  "scope": "KZDSH only; native KZ excluded",
+  "budget_cny": 96,
+  "planned_trials": 12,
+  "planned_cap_cny": 48,
+  "per_trial_cny": 4,
+  "benchmark": "LongCLI",
+  "task_count": 6,
+  "model": "deepseek-flash",
+  "provider": "TaoToken",
+  "other_campaign_budget_unchanged": true
+}

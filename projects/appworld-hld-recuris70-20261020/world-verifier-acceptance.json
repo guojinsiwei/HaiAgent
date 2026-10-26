@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "tests": 2,
+  "paid_calls": 0,
+  "network": "internal",
+  "artifacts": "/mnt/sdb/home/lizh639/appworld-hld-recuris70-20261020/acceptance/verifier-2ee8ca70c0",
+  "checks": [
+    "genuine public API verification commits receipt",
+    "verification write blocked without state mutation",
+    "read-only mode restored"
+  ]
+}

@@ -1,0 +1,9 @@
+2026-10-18 user direction: focus future exploration work on KZDSH, the official
+DSH migration. Native KZ is excluded from the newly authorized comparison.
+
+The new candidate is isolated at:
+../kz-dsh-exploration-v2-20261018/candidate/src
+Its exact deployed baseline, regression evidence, plan and experiment controller
+are alongside it. Read ../kz-dsh-exploration-v2-20261018/README.txt first.
+Do not overwrite historical deployment directories or silently mix the current
+main source's Critic changes into the paired exploration-only comparison.

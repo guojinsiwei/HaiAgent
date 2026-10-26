@@ -1,0 +1,96 @@
+SUZ repair3 — 2026-10-25
+
+Scope and original results
+Original repair2 results remain immutable: baseline 15/30, SUZ 14/30.
+Of the 31 unsuccessful runs, 25 had an engineering stop (baseline 13, SUZ 12).
+Two additional engineering-stop runs already scored 1 and are excluded from reruns.
+Engineering stop types across all 27 affected runs: 9 transport disconnections,
+9 empty final responses, 7 action-format/validation failures, 2 length-recovery failures.
+
+Code changes (independent projects/SUZ-repair3)
+1. One bounded extra request for transient transport/empty/truncated output, subject
+   to the existing all-role shared budget and request cap. Unknown charges stay
+   reserved. Reasoning-only text is never executed. No unbounded retry loop.
+2. Exactly one line-delimited action code block is parsed; inline backtick prose
+   cannot confuse the upstream parser. Missing Action heading is normalized.
+   Explicit termination status is canonicalized independently from answer text.
+   Literal waits up to 30 seconds are allowed without shortening them. Ambiguous
+   multiple action blocks still require a bounded model format repair.
+3. Critic checks original task, initial foreground image, current raw image and
+   executed actions independently of prior plans/obligations. Missing/effect-
+   mismatched evidence blocks completion. Per-obligation review still follows a
+   supported audit. Negative audit skips the redundant review call.
+4. Each arm/task/attempt has separate preflight and final evaluation caches.
+   Only checksum-verified fixture files are copied from the shared asset store.
+   Grader outputs are retained per attempt with hashes. Official metrics unchanged.
+5. After official setup, wait for each explicitly launched supported GUI application's
+   mapped window before capturing the first agent observation. Window metadata stays
+   in setup diagnostics and is not sent to the model. Timeout fails before inference.
+
+Important correction to failure attribution
+Confirmed semantic mistakes include wrong target application (autosave), wrong
+preference effect (VLC), and incomplete text selection (strike-through).
+For the writer task, the retained final DOCX has an unstruck first letter E;
+the remaining last-paragraph runs are struck. Cache mtime 1792837220.1522813
+matches SUZ's final grading, after baseline finished at 1792836730.9056122.
+This resolves the earlier screenshot-only uncertainty; visible near-completion
+was insufficient to establish full-range formatting.
+Further inspection of autosave F0 shows ONLY the desktop, with no Impress window.
+Its launch returned before the application appeared. This is an initialization race
+followed by a guessed target. A single new Critic replay on F0/F7 rejected completion
+for unverified persistence, but still treated VS Code as the target; this replay does
+NOT demonstrate corrected target recognition. The setup readiness fix addresses the
+missing initial task window directly and equally for both arms.
+Flight task final screenshot visibly supports route/date/miles, but getter values
+were not archived. Its zero remains an unresolved grading/semantic discrepancy.
+No official zero has been changed to a pass. Shared cache collision is a proven
+design fault; it has not been proven to cause either specific zero above.
+
+Validation
+30 Python tests + 15 Node tests + 2 cache-isolation tests + 2 readiness tests passed locally and on
+the server. Frozen HLD (76 files) and upstream OpenCUA (5 files) integrity passed.
+Replay of seven actual action-error replies: six can be normalized into valid
+actions; one ambiguous multi-block reply is deliberately rejected.
+The first live preflight was interrupted and preserved when inline-fence parsing
+was found defective. It is not used as final-version acceptance evidence.
+Final-version live preflight runs both CPU arms concurrently, completing a two-
+stage visual form. Each must show the final green page, execute >=4 batches and
+>=6 primitive actions. SUZ also requires Monitor use, valid completion audit and
+per-obligation acceptance. Both live agent preflights passed six consecutive GUI
+interactions; baseline used 7 requests / CNY 0.0509472, SUZ 15 requests / CNY 0.2525708.
+The subsequent setup-only change receives a separate fresh-CPU-VM, zero-model-call
+initialization/grading test. Admission checks unchanged tested agent source and model
+configuration, both original multistep records, and a final-deployment-hash-matched
+environment preflight certificate. Original preflight hashes are preserved; the final
+environment test records its different deployment hash. No GPT polling task is configured.
+The first readiness probe matched a small background window; visual inspection
+rejected it. Its certificate and screenshot were archived. The final check excludes
+tiny/background/splash windows and requires stable visible application windows.
+Fresh VM verification showed a full 1850x1016 LibreOffice Impress window after
+6.75 seconds. Final screenshot was manually inspected; initial official grading
+returned 0 normally, with zero model calls during this environment test.
+
+Release state
+Final agent source: 46ddde81f28ac1bf4bcdf40164afc0dc01f189dde3cb132b3a3f389721d5b8d3
+Final deployment: e9fe54dfd29aceee4daf95c980d532a2393b5f2895ce3e47e800933e0faa30a3
+Two baseline jobs were admitted immediately after the agent multistep gate, before
+the setup hold was applied: 6c4c23a1... and da46d875.... They retain deployment e7f927...
+and were left running to preserve paid work; both have visible Chrome task windows.
+All subsequent workers use the final initialization gate. No queued jobs were lost
+during the hold. The hold has been released and the two-worker repair queue continues.
+
+Rerun scope and accounting
+28 runs: baseline 13 engineering failures; SUZ 12 engineering failures plus
+3 confirmed semantic completion errors. Already-passed results are retained.
+Original per-arm/task bucket IDs are reused in the SAME parent budget.sqlite.
+Cumulative CNY 8 per arm/task and CNY 480 total remain unchanged, including all
+roles, retries and preflights. Old costs are not reset. No GPU is used.
+Original containers have already been closed; these 28 cannot resume their VM
+state. Historical model outputs and results remain available for paired analysis.
+The unresolved flight grading case is not rerun just to chase a pass.
+
+Remote deployment
+/data/share/lizh639/suz-osworld30-20261024/repair3
+Code, logs, attempts, grading caches and results are isolated from original runs.
+Shared assets are read-only inputs to the copied attempt caches. API credentials
+are referenced through the existing private file and never included in reports.

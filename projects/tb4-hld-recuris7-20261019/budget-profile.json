@@ -1,0 +1,29 @@
+{
+  "endpoint": "https://api.taotoken.net/token/v1/messages",
+  "model": "deepseek-flash",
+  "campaign_limit_microcny": 84000000,
+  "task_limit_microcny": 6000000,
+  "input_ceiling_tokens": 128000,
+  "max_output_tokens": 16384,
+  "requests_per_task": 400,
+  "tools_per_task": 600,
+  "solver_seconds": 7200,
+  "rate_basis": "TaoToken official deepseek-flash peak prices viewed 2026-10-16: input 2, cached input 0.04, output 8 CNY/M; estimate, not Credits invoice",
+  "rate_source": "https://taotoken.net/models?modelId=deepseek-flash",
+  "jobs": [
+    "tb4-01-hld-payments-pipeline-fix",
+    "tb4-01-recuris-payments-pipeline-fix",
+    "tb4-02-recuris-fin-saccr-rwa",
+    "tb4-02-hld-fin-saccr-rwa",
+    "tb4-03-hld-mvcc-lsm-compaction",
+    "tb4-03-recuris-mvcc-lsm-compaction",
+    "tb4-04-recuris-uefi-bootkit",
+    "tb4-04-hld-uefi-bootkit",
+    "tb4-05-hld-retro-console-soc",
+    "tb4-05-recuris-retro-console-soc",
+    "tb4-06-recuris-gsea-proteomics",
+    "tb4-06-hld-gsea-proteomics",
+    "tb4-07-hld-coq-block-bound",
+    "tb4-07-recuris-coq-block-bound"
+  ]
+}

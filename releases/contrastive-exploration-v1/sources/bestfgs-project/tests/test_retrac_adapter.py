@@ -1,0 +1,1024 @@
+import json
+import os
+import threading
+import time
+import unittest
+from dataclasses import dataclass, field
+from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+from unittest.mock import patch
+
+from bestfgs.agent import TaskRunner
+from bestfgs.best_first_runtime import BestFGSConfig
+from bestfgs.models import ModelCallError, SemanticDirection, StructuredContext, TaskSpec
+from bestfgs.retrac_adapter import (
+    OpenAICompatibleJSONClient,
+    RetracModelConfig,
+    RetracPolicyAdapter,
+    _project_action_for_prompt,
+    _project_rules_for_prompt,
+    _request_bytes_with_hard_timeout,
+    _safe_error_text,
+    _truncate,
+)
+from bestfgs.rules import TaskRule, TaskRuleStore
+from examples.demo_counter import CounterEnvironment
+
+
+@dataclass
+class ScriptedClient:
+    responses: list[dict]
+    prompts: list[str] = field(default_factory=list)
+    reasoning_efforts: list[str | None] = field(default_factory=list)
+    prompt_cache_keys: list[str | None] = field(default_factory=list)
+    system_prompts: list[str] = field(default_factory=list)
+
+    def complete_json(
+        self,
+        *,
+        system_prompt: str,
+        user_prompt: str,
+        reasoning_effort: str | None = None,
+        prompt_cache_key: str | None = None,
+    ) -> dict:
+        self.prompts.append(user_prompt)
+        self.system_prompts.append(system_prompt)
+        self.reasoning_efforts.append(reasoning_effort)
+        self.prompt_cache_keys.append(prompt_cache_key)
+        if not self.responses:
+            raise AssertionError("unexpected model call")
+        return self.responses.pop(0)
+
+
+class FakeHTTPResponse:
+    def __init__(self, payload: dict) -> None:
+        self._body = json.dumps(payload).encode("utf-8")
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *args):
+        return False
+
+    def read(self) -> bytes:
+        return self._body
+
+
+class EmptyHTTPResponse(FakeHTTPResponse):
+    def __init__(self) -> None:
+        self._body = b""
+
+
+class SlowHTTPHandler(BaseHTTPRequestHandler):
+    def do_POST(self) -> None:
+        time.sleep(3)
+        self.send_response(200)
+        self.end_headers()
+        self.wfile.write(b"{}")
+
+    def log_message(self, *args) -> None:
+        pass
+
+
+class StreamingKeepAliveHandler(BaseHTTPRequestHandler):
+    def do_POST(self) -> None:
+        self.send_response(200)
+        self.send_header("Content-Type", "text/event-stream")
+        self.end_headers()
+        for _ in range(4):
+            self.wfile.write(b": keep-alive\n\n")
+            self.wfile.flush()
+            time.sleep(0.6)
+        self.wfile.write(
+            b'data: {"choices":[{"delta":{"content":"{\\"ok\\":"}}]}\n\n'
+        )
+        self.wfile.write(
+            b'data: {"choices":[{"delta":{"content":"true}"}}]}\n\n'
+        )
+        self.wfile.write(
+            b'data: {"choices":[],"usage":{"prompt_tokens":100,'
+            b'"completion_tokens":5,"total_tokens":105,'
+            b'"prompt_tokens_details":{"cached_tokens":64}}}\n\n'
+        )
+        self.wfile.write(b"data: [DONE]\n\n")
+        self.wfile.flush()
+
+    def log_message(self, *args) -> None:
+        pass
+
+
+def model_config(**overrides) -> RetracModelConfig:
+    values = {
+        "model_name": "test-model",
+        "base_url": "http://model.test/v1",
+        "api_key": "secret",
+        "request_attempts": 1,
+        "parse_attempts": 2,
+        "retry_interval_seconds": 0.0,
+        #普通HTTP客户端测试需要在当前进程中保留mock；生产默认仍启用子进程硬超时
+        "hard_timeout_process": False,
+    }
+    values.update(overrides)
+    return RetracModelConfig(**values)
+
+
+def candidate_action_payload(**overrides) -> dict:
+    payload = {
+        "name": "review_existing_patch",
+        "rationale": "review the existing repair and its boundaries",
+        "semantic_direction_id": "repair",
+        "semantic_direction_label": "Repair",
+        "intent": "candidate",
+        "commands": [{"argv": ["git", "diff"], "description": "review cumulative source changes"}],
+        "verification_commands": [{
+            "argv": ["python", "-m", "unittest"],
+            "description": "run public regression checks",
+        }],
+    }
+    payload.update(overrides)
+    return payload
+
+
+class RetracAdapterTests(unittest.TestCase):
+    def test_experience_revision_is_a_string_audit_not_action_identity(self) -> None:
+        adapter = RetracPolicyAdapter(model_config(), client=ScriptedClient([]))
+        signatures = set()
+        for fields in ({}, {"experience_revision": ""}, {
+            "experience_revision": "Parser input normalization changed; replay the negative case.",
+        }):
+            action, = adapter._parse_actions(
+                {"actions": [candidate_action_payload(**fields)]}, limit=1,
+            )
+            signatures.add(action.signature())
+            self.assertEqual(action.experience_revision, fields.get("experience_revision", ""))
+            self.assertEqual(_project_action_for_prompt(action)["experience_revision"], action.experience_revision)
+        self.assertEqual(len(signatures), 1)
+        for value in (None, 1, False, [], {}):
+            with self.subTest(value=value), self.assertRaisesRegex(ValueError, "experience_revision must be a string"):
+                adapter._parse_actions({"actions": [candidate_action_payload(experience_revision=value)]}, limit=1)
+
+    def test_conditioned_rule_projection_keeps_evidence_and_conditions_under_budget(self) -> None:
+        rules = tuple(TaskRule(
+            rule_id=f"rule-{index}", task_id="task-a", kind="avoid",
+            semantic_direction_id="repair_parser", action_name="failed_attempt",
+            condition="Only if parser.py still has the observed implementation. " * 8,
+            guidance="Hypothesis: inspect the guard before changing it. " * 12,
+            evidence=("ARGV: pytest test_parser.py; RETURN_CODE: 1; observed negative case failed. " * 14,),
+            evidence_ids=(f"evidence-{index}",), experience_kind="hypothesis",
+            condition_status="changed", dependency_paths=("parser.py",),
+            hard_block_eligible=False, counterexample_guidance="Replay the empty-input assertion.",
+        ) for index in range(7))
+        projected = _project_rules_for_prompt(rules)
+        self.assertTrue(projected)
+        self.assertLess(len(projected), len(rules))
+        self.assertLessEqual(len(json.dumps(projected, ensure_ascii=False, separators=(",", ":"))), 2500)
+        for item in projected:
+            self.assertTrue(item["condition"])
+            self.assertIn("RETURN_CODE: 1", item["evidence"][0])
+            self.assertEqual(item["evidence_ids"], [item["rule_id"].replace("rule", "evidence")])
+            self.assertEqual(item["condition_status"], "changed")
+            self.assertEqual(item["experience_kind"], "hypothesis")
+            self.assertEqual(item["dependency_paths"], ["parser.py"])
+            self.assertFalse(item["hard_block_eligible"])
+            self.assertIn("empty-input", item["counterexample_guidance"])
+        self.assertEqual(_project_rules_for_prompt(rules, "off"), [])
+
+    def test_modes_control_extra_experience_without_erasing_context(self) -> None:
+        rule = TaskRule(
+            rule_id="source-rule-unique", task_id="task-a", kind="recommend",
+            semantic_direction_id="repair", action_name="old_check",
+            condition="Current parser matches the recorded state",
+            evidence=("source-observation-unique: RETURN_CODE: 0",),
+        )
+        for mode in ("off", "legacy", "conditioned"):
+            with self.subTest(mode=mode):
+                client = ScriptedClient([
+                    {"semantic_directions": [{"direction_id": "repair", "label": "Repair"}],
+                     "bootstrap_action": candidate_action_payload(intent="explore", verification_commands=[])},
+                    {"actions": [candidate_action_payload()]},
+                ])
+                adapter = RetracPolicyAdapter(model_config(), client=client, experience_mode=mode)
+                task = TaskSpec("task-a", "repair")
+                context = StructuredContext(task_goal="repair", current_solution="current-real-patch-unique")
+                adapter.propose_initial_plan(task=task, context=context, rules=(rule,), limit=1)
+                adapter.propose_actions(task=task, context=context, rules=(rule,), limit=1)
+                for prompt in client.prompts:
+                    self.assertIn("current-real-patch-unique", prompt)
+                    self.assertIn('"experience_revision": ""', prompt)
+                    if mode == "off":
+                        self.assertNotIn(rule.rule_id, prompt)
+                        self.assertNotIn("source-observation-unique", prompt)
+                        self.assertIn("Extra task-local experience is disabled", prompt)
+                    else:
+                        self.assertIn(rule.rule_id, prompt)
+                        self.assertIn("source-observation-unique", prompt)
+                    if mode == "conditioned":
+                        self.assertIn("audit annotations only", prompt)
+                        self.assertIn("One failed attempt never excludes an entire", prompt)
+                        self.assertIn("Do not explore just to collect experience", prompt)
+                        self.assertNotIn("Recommend experience raises runtime frontier priority", prompt)
+                if mode == "legacy":
+                    self.assertIn("Recommend experience raises runtime frontier priority", client.prompts[-1])
+        with self.assertRaisesRegex(ValueError, "experience_mode"):
+            RetracPolicyAdapter(model_config(), client=ScriptedClient([]), experience_mode="invalid")
+
+    def test_off_mode_does_not_accept_ids_from_hidden_extra_experience(self) -> None:
+        rule = TaskRule("hidden-rule", "task-a", "recommend", "repair", "check")
+        client = ScriptedClient([{"actions": [candidate_action_payload(applied_rule_ids=[rule.rule_id])]}])
+        adapter = RetracPolicyAdapter(model_config(parse_attempts=1), client=client, experience_mode="off")
+        with self.assertRaises(ModelCallError):
+            adapter.propose_actions(task=TaskSpec("task-a", "repair"),
+                context=StructuredContext(task_goal="repair"), rules=(rule,), limit=1)
+
+    def test_new_modes_allow_early_candidate_and_necessary_covered_revisit(self) -> None:
+        for mode in ("off", "conditioned", "legacy"):
+            with self.subTest(mode=mode):
+                client = ScriptedClient([
+                    {"semantic_directions": [{"direction_id": "repair", "label": "Repair"}],
+                     "bootstrap_action": candidate_action_payload()},
+                    {"actions": [candidate_action_payload()]},
+                ])
+                adapter = RetracPolicyAdapter(model_config(), client=client, experience_mode=mode)
+                task = TaskSpec("task-a", "repair the documented boundary")
+                context = StructuredContext(task_goal=task.goal,
+                    semantic_directions=(SemanticDirection("repair", "Repair", "covered"),))
+                plan = adapter.propose_initial_plan(task=task, context=context, rules=(), limit=1)
+                actions = adapter.propose_actions(task=task, context=context, rules=(), limit=1, solve_mode=False)
+                self.assertEqual(plan.bootstrap_action.intent, "candidate")
+                self.assertFalse(plan.bootstrap_action.submit)
+                self.assertEqual(actions[0].intent, "candidate")
+                if mode == "legacy":
+                    self.assertIn("Do not repeat a covered direction for ordinary exploration", client.prompts[1])
+                    self.assertIn("Set intent to explore and leave verification_commands empty", client.prompts[0])
+                    self.assertIn("reason only from semantic directions and their coverage states", client.system_prompts[0])
+                else:
+                    self.assertIn("not a mandatory exploration phase", client.prompts[0])
+                    self.assertIn("do not wait for solve mode", client.prompts[1])
+                    self.assertIn("covered direction may need a targeted reread", client.prompts[1])
+                    for prompt in client.prompts:
+                        self.assertNotIn("Set intent to explore and leave verification_commands empty", prompt)
+                        self.assertNotIn("Do not repeat a covered direction", prompt)
+                    for system_prompt in client.system_prompts:
+                        self.assertNotIn("reason only from semantic directions and their coverage states", system_prompt)
+                        self.assertIn("A supported repair may be a candidate in any scheduling phase", system_prompt)
+
+    def test_action_parser_preserves_explicit_submission_and_legacy_default(self) -> None:
+        adapter = RetracPolicyAdapter(model_config(), client=ScriptedClient([]))
+        for fields, expected in (({}, False), ({"submit": False}, False), ({"submit": True}, True)):
+            with self.subTest(fields=fields):
+                action, = adapter._parse_actions(
+                    {"actions": [candidate_action_payload(**fields)]},
+                    limit=1,
+                    solve_mode=True,
+                )
+                self.assertIs(action.submit, expected)
+                self.assertIs(_project_action_for_prompt(action)["submit"], expected)
+                self.assertEqual(action.commands[0].argv, ("git", "diff"))
+                self.assertEqual(action.verification_commands[0].argv, ("python", "-m", "unittest"))
+
+    def test_action_parser_rejects_nonboolean_submission_and_explore_submission(self) -> None:
+        adapter = RetracPolicyAdapter(model_config(), client=ScriptedClient([]))
+        for invalid in ("true", "false", "", 0, 1, None, [], {}):
+            with self.subTest(submit=invalid):
+                with self.assertRaisesRegex(ValueError, "submit must be a boolean"):
+                    adapter._parse_actions(
+                        {"actions": [candidate_action_payload(submit=invalid)]},
+                        limit=1,
+                    )
+        with self.assertRaisesRegex(ValueError, "submit=true requires candidate intent"):
+            adapter._parse_actions(
+                {"actions": [candidate_action_payload(intent="explore", submit=True)]},
+                limit=1,
+            )
+
+    def test_bootstrap_and_expansion_prompts_require_separate_readonly_submission(self) -> None:
+        bootstrap = candidate_action_payload(intent="explore", verification_commands=[])
+        client = ScriptedClient([
+            {
+                "semantic_directions": [{"direction_id": "repair", "label": "Repair"}],
+                "bootstrap_action": bootstrap,
+            },
+            {"actions": [candidate_action_payload(submit=True)]},
+        ])
+        adapter = RetracPolicyAdapter(model_config(), client=client)
+        task = TaskSpec("task-a", "repair the documented boundary behavior")
+        plan = adapter.propose_initial_plan(
+            task=task,
+            context=StructuredContext(task_goal=task.goal),
+            rules=(),
+            limit=1,
+        )
+        actions = adapter.propose_actions(
+            task=task,
+            context=StructuredContext(
+                task_goal=task.goal,
+                current_solution="implementation patch exists and public checks passed",
+                semantic_directions=(SemanticDirection("repair", "Repair", status="covered"),),
+            ),
+            rules=(),
+            limit=1,
+            solve_mode=True,
+            budget_status={"maximum_commands_for_next_action": 2},
+        )
+
+        self.assertFalse(plan.bootstrap_action.submit)
+        self.assertTrue(actions[0].submit)
+        self.assertEqual(actions[0].semantic_direction_id, "repair")
+        for prompt in client.prompts:
+            self.assertIn('"submit": false', prompt)
+            self.assertIn("it does not end the task", prompt)
+            self.assertIn("diagnostic evidence, not a submission request", prompt)
+            self.assertIn("current snapshot already contains a real implementation patch", prompt)
+            self.assertIn("commands must be read-only review", prompt)
+            self.assertIn("verification_commands must run real public tests", prompt)
+            self.assertIn("Do not edit the patch or create deliverables in the same submit action", prompt)
+            self.assertIn("submit action may target an existing direction already marked covered", prompt)
+            self.assertIn("All review and verification commands count against", prompt)
+        self.assertIn("Keep submit=false for the bootstrap action", client.prompts[0])
+
+    def test_observation_truncation_keeps_middle_diagnostics(self) -> None:
+        content = "HEAD\n" + ("ordinary output\n" * 300)
+        content += "Traceback: important middle failure\n"
+        content += ("more ordinary output\n" * 300) + "TAIL"
+
+        shortened = _truncate(content, 1_200)
+
+        self.assertLessEqual(len(shortened), 1_200)
+        self.assertIn("HEAD", shortened)
+        self.assertIn("important middle failure", shortened)
+        self.assertIn("TAIL", shortened)
+
+    def test_solve_mode_prompt_requires_modification_and_verification(self) -> None:
+        client = ScriptedClient(
+            [{
+                "actions": [{
+                    "name": "edit_and_test",
+                    "rationale": "implement the solution",
+                    "semantic_direction_id": "implement_solution",
+                    "semantic_direction_label": "Implement solution",
+                    "expected_effect": "write the fix and run tests",
+                    "applied_rule_ids": [],
+                    "intent": "candidate",
+                    "commands": [{
+                        "argv": ["python", "-c", "print('edit')"],
+                        "description": "edit and test",
+                    }],
+                    "verification_commands": [{
+                        "argv": ["python", "-m", "pytest"],
+                        "description": "independently run the test suite",
+                    }],
+                }],
+            }]
+        )
+        adapter = RetracPolicyAdapter(model_config(), client=client)
+
+        adapter.propose_actions(
+            task=TaskSpec("task-a", "repair failing tests"),
+            context=StructuredContext(task_goal="repair failing tests"),
+            rules=(),
+            limit=1,
+            solve_mode=True,
+            budget_status={
+                "remaining_iterations": 2,
+                "remaining_action_tool_calls": 4,
+                "reserved_final_verification_tool_calls": 8,
+                "maximum_commands_for_next_action": 2,
+                "urgency": "closing",
+            },
+        )
+
+        self.assertIn("The search is now in solve mode", client.prompts[0])
+        self.assertIn("real implementation change relative to the task root", client.prompts[0])
+        self.assertIn("do not make cosmetic edits", client.prompts[0])
+        self.assertIn("do not fall back to broad directory scans", client.prompts[0])
+        self.assertIn("verification_commands", client.prompts[0])
+        self.assertIn("negative or adversarial case", client.prompts[0])
+        self.assertIn("Current runtime budget status", client.prompts[0])
+        self.assertIn('"remaining_iterations":2', client.prompts[0])
+        self.assertIn("The run is closing", client.prompts[0])
+        self.assertIn("Maximum commands per macro action: 2", client.prompts[0])
+        self.assertEqual(client.reasoning_efforts, ["max"])
+        self.assertEqual(client.prompt_cache_keys, ["retrac-v2-solve-actions"])
+        self.assertLess(
+            client.prompts[0].index("Return this schema"),
+            client.prompts[0].index("Task specification"),
+        )
+
+    def test_action_parser_enforces_current_runtime_command_budget(self) -> None:
+        adapter = RetracPolicyAdapter(model_config(), client=ScriptedClient([]))
+        payload = {
+            "actions": [{
+                "name": "too_large",
+                "rationale": "would consume the verification reserve",
+                "semantic_direction_id": "repair",
+                "semantic_direction_label": "Repair",
+                "intent": "candidate",
+                "commands": [{
+                    "argv": ["python", "-c", "print('edit')"],
+                    "description": "edit",
+                }],
+                "verification_commands": [{
+                    "argv": ["python", "-m", "pytest"],
+                    "description": "verify",
+                }],
+            }],
+        }
+
+        for submit in (False, True):
+            with self.subTest(submit=submit):
+                payload["actions"][0]["submit"] = submit
+                with self.assertRaisesRegex(ValueError, "current runtime budget"):
+                    adapter._parse_actions(
+                        payload,
+                        limit=1,
+                        solve_mode=True,
+                        max_total_commands=1,
+                    )
+
+    def test_action_model_selects_only_from_retrieved_rule_candidates(self) -> None:
+        store = TaskRuleStore(task_id="task-a")
+        rule = store.add(
+            task_id="task-a",
+            kind="recommend",
+            semantic_direction_id="inspect_tests",
+            action_name="read_tests",
+            evidence="test inspection worked",
+            condition="tests are failing",
+            guidance="inspect the failing tests",
+        )
+        client = ScriptedClient(
+            [
+                {
+                    "actions": [
+                        {
+                            "name": "analyze_test_failure",
+                            "rationale": "apply the retrieved testing rule",
+                            "semantic_direction_id": "analyze_tests",
+                            "semantic_direction_label": "Analyze test failures",
+                            "expected_effect": "identify the failing assertion",
+                            "applied_rule_ids": [rule.rule_id],
+                            "commands": [
+                                {
+                                    "argv": ["python", "-m", "unittest"],
+                                    "description": "run tests",
+                                }
+                            ],
+                        }
+                    ]
+                }
+            ]
+        )
+        adapter = RetracPolicyAdapter(model_config(), client=client, experience_mode="legacy")
+
+        actions = adapter.propose_actions(
+            task=TaskSpec("task-a", "repair failing tests"),
+            context=StructuredContext(task_goal="repair failing tests"),
+            rules=(rule,),
+            limit=1,
+        )
+
+        self.assertEqual(actions[0].applied_rule_ids, (rule.rule_id,))
+        self.assertIn("Top-k candidate rules", client.prompts[0])
+        self.assertIn("Experience-guided priority", client.prompts[0])
+
+    def test_avoid_experience_guides_a_distinct_exploration_action(self) -> None:
+        store = TaskRuleStore(task_id="task-a")
+        rule = store.add(
+            task_id="task-a",
+            kind="avoid",
+            semantic_direction_id="repair_parser",
+            action_name="repeat_failed_patch",
+            evidence="the previous patch caused a regression",
+            guidance="use the failing assertion to construct a different patch",
+        )
+        client = ScriptedClient(
+            [{
+                "actions": [{
+                    "name": "inspect_failing_assertion",
+                    "rationale": "avoid repeating the failed patch",
+                    "semantic_direction_id": "repair_parser",
+                    "semantic_direction_label": "Repair parser",
+                    "expected_effect": "identify a different repair",
+                    "applied_rule_ids": [],
+                    "avoided_rule_ids": [rule.rule_id],
+                    "intent": "explore",
+                    "commands": [{
+                        "argv": ["python", "-m", "pytest"],
+                        "description": "inspect the focused failure",
+                    }],
+                    "verification_commands": [],
+                }],
+            }]
+        )
+        adapter = RetracPolicyAdapter(model_config(), client=client, experience_mode="legacy")
+
+        actions = adapter.propose_actions(
+            task=TaskSpec("task-a", "repair parser"),
+            context=StructuredContext(task_goal="repair parser"),
+            rules=(rule,),
+            limit=1,
+        )
+
+        self.assertEqual(actions[0].applied_rule_ids, ())
+        self.assertEqual(actions[0].avoided_rule_ids, (rule.rule_id,))
+        self.assertIn("Experience-guided exploration", client.prompts[0])
+        self.assertIn("base action capacity", client.prompts[0])
+        self.assertIn("Node visit count never changes this capacity", client.prompts[0])
+        self.assertIn("instead of repeating", client.prompts[0])
+
+    def test_action_parser_rejects_rule_ids_outside_candidates(self) -> None:
+        adapter = RetracPolicyAdapter(model_config(), client=ScriptedClient([]))
+        payload = {
+            "actions": [
+                {
+                    "name": "inspect",
+                    "rationale": "test",
+                    "semantic_direction_id": "inspect",
+                    "semantic_direction_label": "Inspect",
+                    "applied_rule_ids": ["unknown-rule"],
+                    "commands": [
+                        {"argv": ["python", "-V"], "description": "check python"}
+                    ],
+                }
+            ]
+        }
+
+        with self.assertRaisesRegex(ValueError, "outside the retrieved candidates"):
+            adapter._parse_actions(
+                payload,
+                limit=1,
+                allowed_rule_ids=frozenset({"known-rule"}),
+            )
+
+    def test_windows_read_only_builtin_is_wrapped_by_cmd(self) -> None:
+        adapter = RetracPolicyAdapter(model_config(), client=ScriptedClient([]))
+        raw_commands = [
+            {
+                "argv": ["type", "tests\\test_pricing.py"],
+                "description": "read tests",
+            }
+        ]
+        with patch("bestfgs.retrac_adapter.platform.system", return_value="Windows"):
+            commands = adapter._parse_commands(raw_commands)
+
+        self.assertEqual(commands[0].argv[:4], ("cmd.exe", "/d", "/s", "/c"))
+        self.assertIn("type", commands[0].argv[4])
+        self.assertIn("tests\\test_pricing.py", commands[0].argv[4])
+
+    def test_windows_builtin_rejects_shell_metacharacters(self) -> None:
+        adapter = RetracPolicyAdapter(model_config(), client=ScriptedClient([]))
+        raw_commands = [
+            {
+                "argv": ["type", "README.md", "&", "del", "important.txt"],
+                "description": "unsafe command",
+            }
+        ]
+        with patch("bestfgs.retrac_adapter.platform.system", return_value="Windows"):
+            with self.assertRaisesRegex(ValueError, "unsafe characters"):
+                adapter._parse_commands(raw_commands)
+
+    def test_deepseek_provider_uses_independent_defaults(self) -> None:
+        with patch.dict(
+            os.environ,
+            {"DEEPSEEK_API_KEY": "deepseek-secret\r\n"},
+            clear=True,
+        ):
+            config = RetracModelConfig.from_environment(provider="deepseek")
+
+        self.assertEqual(config.provider, "deepseek")
+        self.assertEqual(config.base_url, "https://api.deepseek.com")
+        self.assertEqual(config.model_name, "deepseek-v4-flash")
+        self.assertEqual(config.api_key, "deepseek-secret")
+
+    def test_api_error_text_redacts_bearer_token(self) -> None:
+        secret = "sk-this-token-must-not-appear"
+        message = _safe_error_text(
+            ValueError(f"Invalid header value b'Bearer {secret}\\r'")
+        )
+
+        self.assertNotIn(secret, message)
+        self.assertIn("[REDACTED]", message)
+
+    def test_openai_provider_keeps_original_environment_variables(self) -> None:
+        environment = {
+            "OPENAI_API_KEY": "openai-secret",
+            "OPENAI_API_BASE": "https://api.openai.test/v1",
+            "OPENAI_MODEL": "openai-test-model",
+        }
+        with patch.dict(os.environ, environment, clear=True):
+            config = RetracModelConfig.from_environment(provider="openai")
+
+        self.assertEqual(config.provider, "openai")
+        self.assertEqual(config.base_url, environment["OPENAI_API_BASE"])
+        self.assertEqual(config.model_name, environment["OPENAI_MODEL"])
+        self.assertEqual(config.api_key, environment["OPENAI_API_KEY"])
+
+    def test_dashscope_provider_has_reproducible_domestic_defaults(self) -> None:
+        with patch.dict(
+            os.environ,
+            {"DASHSCOPE_API_KEY": "dashscope-secret\r\n"},
+            clear=True,
+        ):
+            config = RetracModelConfig.from_environment(provider="dashscope")
+
+        self.assertEqual(config.provider, "dashscope")
+        self.assertEqual(config.model_name, "qwen3.7-plus-2026-05-26")
+        self.assertEqual(
+            config.base_url,
+            "https://dashscope.aliyuncs.com/compatible-mode/v1",
+        )
+        self.assertEqual(config.api_key, "dashscope-secret")
+
+    def test_adapter_drives_one_complete_best_fgs_transition(self) -> None:
+        client = ScriptedClient(
+            [
+                {
+                    "semantic_directions": [
+                        {
+                            "direction_id": "reach_target",
+                            "label": "到达目标值",
+                            "status": "unexplored",
+                            "evidence": [],
+                        },
+                        {
+                            "direction_id": "verify_target",
+                            "label": "验证目标状态",
+                            "status": "unexplored",
+                            "evidence": [],
+                        },
+                    ],
+                    "bootstrap_action": {
+                            "name": "直接到达目标",
+                            "rationale": "验证目标状态",
+                            "semantic_direction_id": "reach_target",
+                            "semantic_direction_label": "到达目标值",
+                            "expected_effect": "计数器等于3",
+                            "intent": "candidate",
+                            "commands": [
+                                {
+                                    "argv": ["counter", "add", "3"],
+                                    "description": "将计数器增加3",
+                                    "cwd": ".",
+                                    "timeout_seconds": 60,
+                                    "stdin": None,
+                                }
+                            ],
+                            "verification_commands": [
+                                {
+                                    "argv": ["counter", "verify", "3"],
+                                    "description": "独立确认计数器等于3",
+                                    "cwd": ".",
+                                    "timeout_seconds": 60,
+                                    "stdin": None,
+                                }
+                            ],
+                        }
+                },
+                {
+                    "assessment": {
+                        "direction_status": "covered",
+                        "task_success": True,
+                        "satisfied_success_criteria": ["counter equals 3"],
+                        "feedback": "命令输出为3，成功标准已满足。",
+                    },
+                    "next_context": {
+                        "task_goal": "Reach counter value 3.",
+                        "current_solution": "counter=3",
+                        "facts_and_evidence": [
+                            {
+                                "claim": "counter equals 3",
+                                "source": "counter add 3",
+                                "verified": "yes",
+                            }
+                        ],
+                        "analysis_and_conclusions": ["目标已达到"],
+                        "unresolved_issues": [],
+                        "incomplete_plans": [],
+                        "semantic_directions": [
+                            {
+                                "direction_id": "reach_target",
+                                "label": "到达目标值",
+                                "status": "covered",
+                                "evidence": ["counter=3"],
+                            }
+                        ],
+                        "environment_summary": "value=3",
+                    },
+                },
+            ]
+        )
+        adapter = RetracPolicyAdapter(model_config(), client=client)
+        task = TaskSpec.create("Reach counter value 3.", ("counter equals 3",))
+        with self.assertLogs(
+            "bestfgs.best_first_runtime", level="INFO"
+        ) as progress:
+            result = TaskRunner(
+                CounterEnvironment(),
+                adapter,
+                BestFGSConfig(
+                    # Historical one-transition auto-success contract only.
+                    termination_mode="legacy_verified",
+                    max_iterations=2,
+                    initial_branching_factor=2,
+                    post_success_iterations=0,
+                ),
+            ).run(task)
+
+        self.assertTrue(result.succeeded)
+        self.assertEqual(result.stop_reason, "verified_success")
+        self.assertTrue(result.transitions[-1].assessment.verified_success)
+        self.assertEqual(result.best_node.context.current_solution, "counter=3")
+        self.assertEqual(
+            {
+                item.direction_id
+                for item in result.transitions[0].state_before.semantic_directions
+            },
+            {"reach_target", "verify_target"},
+        )
+        self.assertEqual(result.transitions[0].semantic_coverage_after, 0.5)
+        #初始动作生成一次、转移评估与压缩合并一次，共两次模型请求
+        self.assertEqual(len(client.prompts), 2)
+        self.assertEqual(
+            client.prompt_cache_keys,
+            ["retrac-v2-initial-plan", "retrac-v2-transition-update"],
+        )
+        self.assertLess(
+            client.prompts[0].index("Return this schema"),
+            client.prompts[0].index("Task specification"),
+        )
+        self.assertLess(
+            client.prompts[1].index("Return this schema"),
+            client.prompts[1].index("Task specification"),
+        )
+        self.assertIn(
+            "Return the assessment and next_context together",
+            client.prompts[1],
+        )
+        self.assertIn("Separate observed evidence from hypotheses explicitly", client.prompts[1])
+        self.assertIn("Never promote expected effects into facts", client.prompts[1])
+        self.assertIn("does not rule out an entire code or semantic direction", client.prompts[1])
+        self.assertIn("An earlier test pass must not be inherited by a changed patch", client.prompts[1])
+        messages = "\n".join(progress.output)
+        self.assertIn("迭代 1/2", messages)
+        self.assertIn("语义覆盖率", messages)
+        self.assertIn("搜索结束", messages)
+
+    def test_invalid_assessment_is_repaired_once(self) -> None:
+        client = ScriptedClient(
+            [
+                {"direction_status": "done", "task_success": "false", "feedback": "bad"},
+                {"direction_status": "exploring", "task_success": False, "feedback": "partial"},
+            ]
+        )
+        adapter = RetracPolicyAdapter(model_config(), client=client)
+        with self.assertLogs("bestfgs.retrac_adapter", level="INFO") as progress:
+            assessment = adapter._ask_and_parse("test", adapter._parse_assessment)
+
+        self.assertEqual(assessment.direction_status, "exploring")
+        self.assertFalse(assessment.task_success)
+        self.assertIn("previous output failed schema validation", client.prompts[1])
+        messages = "\n".join(progress.output)
+        self.assertIn("格式尝试 1/2", messages)
+        self.assertIn("输出格式不合格", messages)
+        self.assertIn("输出已通过结构校验", messages)
+
+    def test_assessment_cannot_set_runtime_verified_success(self) -> None:
+        with self.assertRaisesRegex(ValueError, "runtime-only"):
+            RetracPolicyAdapter._parse_assessment(
+                {
+                    "direction_status": "covered",
+                    "task_success": True,
+                    "satisfied_success_criteria": ["done"],
+                    "verified_success": True,
+                    "feedback": "claimed",
+                },
+                allowed_success_criteria=("done",),
+            )
+
+    def test_task_success_requires_exact_criterion_coverage(self) -> None:
+        with self.assertRaisesRegex(ValueError, "every task success criterion"):
+            RetracPolicyAdapter._parse_assessment(
+                {
+                    "direction_status": "covered",
+                    "task_success": True,
+                    "satisfied_success_criteria": ["criterion a"],
+                    "feedback": "partial",
+                },
+                allowed_success_criteria=("criterion a", "criterion b"),
+            )
+    def test_openai_compatible_client_builds_chat_completion_request(self) -> None:
+        response = FakeHTTPResponse({
+            "choices": [{"message": {"content": "```json\n{\"ok\": true}\n```"}}],
+            "usage": {
+                "prompt_tokens": 100,
+                "completion_tokens": 5,
+                "total_tokens": 105,
+                "prompt_tokens_details": {
+                    "cached_tokens": 64,
+                    "cache_write_tokens": 32,
+                },
+            },
+        })
+        captured = {}
+
+        def fake_urlopen(request, timeout):
+            captured["request"] = request
+            captured["timeout"] = timeout
+            return response
+
+        client = OpenAICompatibleJSONClient(model_config(timeout_seconds=42))
+        with patch("urllib.request.urlopen", side_effect=fake_urlopen):
+            payload = client.complete_json(
+                system_prompt="system",
+                user_prompt="user",
+                prompt_cache_key="retrac-v2-test",
+            )
+
+        self.assertEqual(payload, {"ok": True})
+        self.assertEqual(captured["request"].full_url, "http://model.test/v1/chat/completions")
+        self.assertEqual(captured["timeout"], 42)
+        request_payload = json.loads(captured["request"].data.decode("utf-8"))
+        self.assertEqual(request_payload["model"], "test-model")
+        self.assertEqual(request_payload["response_format"], {"type": "json_object"})
+        self.assertTrue(request_payload["stream"])
+        self.assertEqual(request_payload["stream_options"], {"include_usage": True})
+        self.assertEqual(request_payload["prompt_cache_key"], "retrac-v2-test")
+        self.assertEqual(
+            client.usage_summary(),
+            {
+                "model_calls": 1,
+                "api_requests": 1,
+                "api_responses": 1,
+                "prompt_tokens": 100,
+                "cached_prompt_tokens": 64,
+                "cache_miss_prompt_tokens": 36,
+                "cache_write_prompt_tokens": 32,
+                "completion_tokens": 5,
+                "cache_hit_rate": 0.64,
+                "usage_missing_responses": 0,
+                "response_models": [],
+                "system_fingerprints": [],
+                "last_failure_kind": None,
+                "last_failure_detail": None,
+                "failure_counts": {},
+                "usage_unreported_requests": 0,
+            },
+        )
+
+    def test_deepseek_request_explicitly_keeps_high_thinking_enabled(self) -> None:
+        response = FakeHTTPResponse({
+            "choices": [{"message": {"content": "{\"ok\": true}"}}],
+            "usage": {
+                "prompt_tokens": 100,
+                "completion_tokens": 5,
+                "prompt_cache_hit_tokens": 80,
+                "prompt_cache_miss_tokens": 20,
+                "total_tokens": 105,
+            },
+        })
+        captured = {}
+
+        def fake_urlopen(request, timeout):
+            captured["request"] = request
+            return response
+
+        client = OpenAICompatibleJSONClient(model_config(provider="deepseek"))
+        with patch("urllib.request.urlopen", side_effect=fake_urlopen):
+            client.complete_json(
+                system_prompt="system",
+                user_prompt="user",
+                prompt_cache_key="must-not-be-forwarded",
+            )
+
+        request_payload = json.loads(captured["request"].data.decode("utf-8"))
+        self.assertEqual(request_payload["thinking"], {"type": "enabled"})
+        self.assertEqual(request_payload["reasoning_effort"], "high")
+        self.assertNotIn("prompt_cache_key", request_payload)
+        self.assertEqual(client.usage_summary()["cache_hit_rate"], 0.8)
+
+    def test_dashscope_request_uses_qwen_thinking_without_vendor_fields(self) -> None:
+        response = FakeHTTPResponse({
+            "choices": [{"message": {"content": "{\"ok\": true}"}}],
+            "usage": {"prompt_tokens": 100, "completion_tokens": 5},
+        })
+        captured = {}
+
+        def fake_urlopen(request, timeout):
+            captured["request"] = request
+            return response
+
+        client = OpenAICompatibleJSONClient(model_config(provider="dashscope"))
+        with patch("urllib.request.urlopen", side_effect=fake_urlopen):
+            client.complete_json(
+                system_prompt="Return exactly one JSON object.",
+                user_prompt="JSON evidence",
+                reasoning_effort="high",
+                prompt_cache_key="must-not-be-forwarded",
+            )
+
+        request_payload = json.loads(captured["request"].data.decode("utf-8"))
+        self.assertTrue(request_payload["enable_thinking"])
+        self.assertNotIn("prompt_cache_key", request_payload)
+        self.assertNotIn("thinking", request_payload)
+        self.assertNotIn("reasoning_effort", request_payload)
+
+    def test_production_client_routes_request_through_hard_timeout_process(self) -> None:
+        raw = json.dumps(
+            {"choices": [{"message": {"content": "{\"ok\": true}"}}]}
+        ).encode("utf-8")
+        client = OpenAICompatibleJSONClient(
+            model_config(
+                hard_timeout_process=True,
+                timeout_seconds=17,
+                max_wall_time_seconds=300,
+            )
+        )
+
+        with patch(
+            "bestfgs.retrac_adapter._request_bytes_with_hard_timeout",
+            return_value=raw,
+        ) as request:
+            payload = client.complete_json(system_prompt="system", user_prompt="user")
+
+        self.assertEqual(payload, {"ok": True})
+        self.assertEqual(request.call_args.kwargs["timeout_seconds"], 17)
+        self.assertEqual(request.call_args.kwargs["max_wall_time_seconds"], 300)
+        self.assertTrue(request.call_args.kwargs["stream_response"])
+
+    def test_hard_timeout_terminates_a_slow_http_request(self) -> None:
+        server = ThreadingHTTPServer(("127.0.0.1", 0), SlowHTTPHandler)
+        server.daemon_threads = True
+        thread = threading.Thread(target=server.serve_forever, daemon=True)
+        thread.start()
+        started = time.monotonic()
+        try:
+            with self.assertRaisesRegex(TimeoutError, "no activity"):
+                _request_bytes_with_hard_timeout(
+                    endpoint=f"http://127.0.0.1:{server.server_port}/chat/completions",
+                    encoded=b"{}",
+                    headers={"Content-Type": "application/json"},
+                    timeout_seconds=1,
+                )
+        finally:
+            server.shutdown()
+            server.server_close()
+            thread.join(timeout=1)
+
+        self.assertLess(time.monotonic() - started, 2.5)
+
+    def test_stream_activity_extends_idle_timeout_without_exceeding_wall_limit(self) -> None:
+        server = ThreadingHTTPServer(("127.0.0.1", 0), StreamingKeepAliveHandler)
+        server.daemon_threads = True
+        thread = threading.Thread(target=server.serve_forever, daemon=True)
+        thread.start()
+        started = time.monotonic()
+        try:
+            raw = _request_bytes_with_hard_timeout(
+                endpoint=f"http://127.0.0.1:{server.server_port}/chat/completions",
+                encoded=b"{}",
+                headers={"Content-Type": "application/json"},
+                timeout_seconds=2,
+                max_wall_time_seconds=6,
+                stream_response=True,
+            )
+        finally:
+            server.shutdown()
+            server.server_close()
+            thread.join(timeout=1)
+
+        payload = json.loads(raw.decode("utf-8"))
+        self.assertEqual(payload["choices"][0]["message"]["content"], '{"ok":true}')
+        self.assertEqual(payload["usage"]["prompt_tokens_details"]["cached_tokens"], 64)
+        self.assertGreater(time.monotonic() - started, 2.0)
+
+    def test_empty_http_body_has_an_explicit_diagnostic(self) -> None:
+        client = OpenAICompatibleJSONClient(model_config(request_attempts=1))
+
+        with patch("urllib.request.urlopen", return_value=EmptyHTTPResponse()):
+            with self.assertRaisesRegex(ModelCallError, "HTTP response body is empty"):
+                client.complete_json(system_prompt="system", user_prompt="user")
+
+    def test_temporary_request_failures_use_capped_exponential_backoff(self) -> None:
+        response = FakeHTTPResponse({"choices": [{"message": {"content": "{\"ok\": true}"}}]})
+        client = OpenAICompatibleJSONClient(
+            model_config(
+                request_attempts=3,
+                retry_interval_seconds=1.0,
+                max_retry_interval_seconds=2.0,
+            )
+        )
+        with (
+            patch(
+                "urllib.request.urlopen",
+                side_effect=[TimeoutError("first"), TimeoutError("second"), response],
+            ) as urlopen,
+            patch("bestfgs.retrac_adapter.time.sleep") as sleep,
+        ):
+            payload = client.complete_json(system_prompt="system", user_prompt="user")
+
+        self.assertEqual(payload, {"ok": True})
+        self.assertEqual(urlopen.call_count, 3)
+        self.assertEqual([item.args[0] for item in sleep.call_args_list], [1.0, 2.0])
+
+
+if __name__ == "__main__":
+    unittest.main()

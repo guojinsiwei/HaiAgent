@@ -1,0 +1,1 @@
+{"command": "drain", "supervisor_identity": {"pid": 2886284, "start": "838198301", "boot": "2861b57d-7d78-4a80-a96b-0854417097ca"}, "reason": "repair_image_preflight_pipeline"}

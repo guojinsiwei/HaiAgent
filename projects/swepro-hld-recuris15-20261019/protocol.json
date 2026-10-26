@@ -1,0 +1,34 @@
+{
+  "benchmark": "SWE-bench Pro V2",
+  "commit": "66f92766bba642462d4bbe5479e83f91f9211862",
+  "task_count": 15,
+  "runs": 30,
+  "model": "deepseek-flash",
+  "temperature": 0,
+  "thinking": false,
+  "per_run_cny": 8,
+  "total_cny": 240,
+  "solver_seconds": 3000,
+  "concurrency": 4,
+  "per_arm_concurrency": 2,
+  "arms": [
+    "HLD v6 latest TB2 candidate",
+    "Recuris repaired v5 latest deployment"
+  ],
+  "agent_network": "none; Unix socket relay allows only TaoToken API and budget service",
+  "evaluation": "original verifier in pristine image with captured patch only",
+  "preflight": "empty patch fails and gold patch passes; failed task gated without blocking other tasks",
+  "automatic_paid_retries": false,
+  "cross_task_memory": false,
+  "budget_basis": "existing peak token prices; not a TaoToken Credits invoice",
+  "selection": "seeded repository-stratified public V2 subset",
+  "dependency_preparation": {
+    "fetch": "keyless throwaway containers using host artifact cache",
+    "modules": "proxy.golang.org",
+    "checksums": "signed sum.golang.org records relayed by goproxy.cn and verified by Go",
+    "solver_access": "read-only public module artifacts; per-container private extracted cache; no external network",
+    "verifier_network": "none after declared-module preparation",
+    "model_cost_for_preparation": 0,
+    "task_source_and_saved_patches": "unchanged"
+  }
+}

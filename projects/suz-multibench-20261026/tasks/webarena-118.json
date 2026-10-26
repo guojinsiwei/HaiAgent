@@ -1,0 +1,39 @@
+{
+  "id": "webarena-118",
+  "task": {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 118,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "I have jaw bruxism problem, show me something that could alleviate the problem.",
+    "instantiation_dict": {},
+    "intent": "I have jaw bruxism problem, show me something that could alleviate the problem.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": null,
+      "program_html": [
+        {
+          "url": "last",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "jaw bruxism",
+              "mouth guard"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 151
+  },
+  "benchmark": "webarena",
+  "source_task_sha256": "89d9705ec98c93be2f3ba13f06f6d649ce88d6102f389f841fd50d24ccf9fb5d"
+}

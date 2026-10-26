@@ -1,0 +1,8 @@
+{
+  "task": "reshard-c4-data",
+  "image": "alexgshaw/reshard-c4-data:20251031",
+  "digest": "sha256:92d209e704785e17ad6b3f740e813dd72bc7ac33982ce435d197ab9d890eac2a",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/reshard-c4-data/manifests/20251031",
+  "header_verified": true,
+  "time": 1792550880.156384
+}

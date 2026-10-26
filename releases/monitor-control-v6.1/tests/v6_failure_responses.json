@@ -1,0 +1,255 @@
+[
+  {
+    "job": "v6-foldseek-paper-reproduction",
+    "error": "TypeError",
+    "last_response": {
+      "action": {
+        "action": "run",
+        "argv": [
+          "bash",
+          "-lc",
+          "cd /app && python - <<'PY'\nimport re\np='src/foldseek_repro/codec.py'\ns=open(p).read()\nprint('HAS_TRACEBACK', 'traceback' in s.lower())\nprint('HAS_ALIGNED_PAIRS', 'aligned_pairs' in s)\nprint('LEN', len(s))\nPY"
+        ],
+        "cwd": ".",
+        "purpose": "Check whether codec.py already has SW traceback/aligned-pairs before editing"
+      },
+      "recovery_plan": {
+        "action_argv": [
+          "bash",
+          "-lc",
+          "cd /app && python - <<'PY'\nimport re\np='src/foldseek_repro/codec.py'\ns=open(p).read()\nprint('HAS_TRACEBACK', 'traceback' in s.lower())\nprint('HAS_ALIGNED_PAIRS', 'aligned_pairs' in s)\nprint('LEN', len(s))\nPY"
+        ],
+        "cwd": ".",
+        "hypothesis": "The LDDT/TM proxy is computed over a naive diagonal residue pairing rather than the actual SW traceback-aligned pairs, so non-self hits get inflated lddt/tm and thus inflated structural_bit_score; the self-hit is unaffected (lddt=1.0 either way). Fixing the pair mapping to use SW-aligned pairs should pull non-self structural_bit_scores toward their calibrated values.",
+        "mode": "repair",
+        "success_contains": "d2w72b_",
+        "targets": [
+          "src/foldseek_repro/codec.py"
+        ],
+        "verification_argv": [
+          "bash",
+          "-lc",
+          "cd /app && python -m foldseek_repro.cli run-sample --dataset configs/sample_search.csv --out outputs/foldseek_report.json --summary outputs/summary.tsv && python -c \"import json;r=json.load(open('outputs/foldseek_report.json'));[print(h['target'],round(h['lddt'],4),round(h['tm_proxy'],4),round(h['structural_bit_score'],4)) for h in r['hits']]\""
+        ]
+      }
+    },
+    "inner_tail": [
+      {
+        "event": "recovery_started",
+        "command": null,
+        "error_type": null
+      },
+      {
+        "event": "conversation_turn",
+        "command": null,
+        "error_type": null
+      },
+      {
+        "event": "infrastructure_error",
+        "command": null,
+        "error_type": "TypeError"
+      }
+    ]
+  },
+  {
+    "job": "v6-gdal-proj-raster-regression",
+    "error": "TypeError",
+    "last_response": {
+      "action": {
+        "action": "run",
+        "argv": [
+          "bash",
+          "-lc",
+          "cd /app && wc -c src/geo_audit/audit.py && grep -n 'def ' src/geo_audit/audit.py; echo '---CLI---'; cat src/geo_audit/cli.py"
+        ],
+        "cwd": ".",
+        "purpose": "Confirm audit.py stub state and CLI wiring before authoring code"
+      },
+      "recovery_plan": {
+        "action_argv": [
+          "bash",
+          "-lc",
+          "cd /app && wc -c src/geo_audit/audit.py && grep -n 'def ' src/geo_audit/audit.py; echo '---CLI---'; cat src/geo_audit/cli.py"
+        ],
+        "cwd": ".",
+        "hypothesis": "audit.py is still a 341-byte stub with no case-handling functions, so no outputs can exist; the blocker is that implementation has not started, not missing schema knowledge.",
+        "mode": "repair",
+        "success_contains": "warp_report.json",
+        "targets": [
+          "src/geo_audit/audit.py"
+        ],
+        "verification_argv": [
+          "bash",
+          "-lc",
+          "cd /app && python -m geo_audit.cli run --manifest configs/public_manifest.yml --out-dir outputs && ls -la outputs"
+        ]
+      }
+    },
+    "inner_tail": [
+      {
+        "event": "recovery_started",
+        "command": null,
+        "error_type": null
+      },
+      {
+        "event": "conversation_turn",
+        "command": null,
+        "error_type": null
+      },
+      {
+        "event": "infrastructure_error",
+        "command": null,
+        "error_type": "TypeError"
+      }
+    ]
+  },
+  {
+    "job": "v6-great-expectations-audit",
+    "error": "RuntimeError",
+    "last_response": {
+      "action": "run",
+      "argv": [
+        "bash",
+        "-lc",
+        "cd /app && python - <<'PY'\np='src/dq_audit/audit.py'\ns=open(p).read()\nold='    qdf = pd.DataFrame(quarantine, columns=[\"dataset\", \"row_number\", \"record_id\", \"reason\"]) if quarantine else pd.DataFrame(columns=[\"dataset\", \"row_number\", \"record_id\", \"reason\"])'\nnew='    qdf = pd.DataFrame([dict(zip([\"dataset\", \"row_number\", \"record_id\", \"reason\"], t)) if not isinstance(t, dict) else t for t in quarantine], columns=[\"dataset\", \"row_number\", \"record_id\", \"reason\"]) if quarantine else pd.DataFrame(columns=[\"dataset\", \"row_number\", \"record_id\", \"reason\"])'\nassert old in s, 'anchor not found'\ns=s.replace(old,new,1)\nopen(p,'w').write(s)\nprint('patched')\nPY"
+      ],
+      "cwd": ".",
+      "purpose": "Normalize quarantine tuples to dicts before DataFrame construction"
+    },
+    "inner_tail": [
+      {
+        "event": "recovery_followup",
+        "command": null,
+        "error_type": null
+      },
+      {
+        "event": "tool_call",
+        "command": {
+          "action": "run",
+          "argv": [
+            "bash",
+            "-lc",
+            "cd /app && sed -n '290,320p' src/dq_audit/audit.py"
+          ],
+          "cwd": ".",
+          "purpose": "Inspect quarantine construction around line 303 to fix tuple/dict mismatch",
+          "timeout_seconds": 60
+        },
+        "error_type": null
+      },
+      {
+        "event": "conversation_turn",
+        "command": null,
+        "error_type": null
+      },
+      {
+        "event": "infrastructure_error",
+        "command": null,
+        "error_type": "RuntimeError"
+      }
+    ]
+  },
+  {
+    "job": "v6-microscopy-cell-count-qc-audit",
+    "error": "TypeError",
+    "last_response": {
+      "action": {
+        "action": "run",
+        "argv": [
+          "bash",
+          "-lc",
+          "cd /app && python -c \"import cv2,numpy as np,json; m=json.load(open('data/public/manifest.json')); print(json.dumps(m,indent=1)[:2000])\""
+        ],
+        "purpose": "Inspect manifest schema for channel metadata and asset layout"
+      },
+      "recovery_plan": {
+        "action_argv": [
+          "bash",
+          "-lc",
+          "cd /app && python -c \"import cv2,numpy as np,json; m=json.load(open('data/public/manifest.json')); print(json.dumps(m,indent=1)[:2000])\""
+        ],
+        "cwd": ".",
+        "hypothesis": "The public run produces FITC=0 and TRITC=DAPI=21, indicating channel-positive counting reuses the nuclei mask instead of measuring per-channel signal; the channel index mapping or positivity threshold in audit.py is wrong.",
+        "mode": "diagnose",
+        "success_contains": "ch 0",
+        "targets": [
+          "src/microscopy_audit/audit.py"
+        ],
+        "verification_argv": [
+          "bash",
+          "-lc",
+          "cd /app && python -c \"import cv2,numpy as np; img=cv2.imread('data/public/public_plateA_field01.png'); print('shape',img.shape); [print('ch',i,'mean',round(float(img[:,:,i].mean()),2),'p99',int(np.percentile(img[:,:,i],99)),'max',int(img[:,:,i].max())) for i in range(3)]\""
+        ]
+      }
+    },
+    "inner_tail": [
+      {
+        "event": "recovery_started",
+        "command": null,
+        "error_type": null
+      },
+      {
+        "event": "conversation_turn",
+        "command": null,
+        "error_type": null
+      },
+      {
+        "event": "infrastructure_error",
+        "command": null,
+        "error_type": "TypeError"
+      }
+    ]
+  },
+  {
+    "job": "v6-modflow6-groundwater-regression-audit",
+    "error": "TypeError",
+    "last_response": {
+      "action": {
+        "action": "run",
+        "argv": [
+          "bash",
+          "-lc",
+          "cd /app && python - <<'PY'\nfrom flopy.utils import CellBudgetFile\nimport glob\nf=glob.glob('data/public/sims/aquifer_alpha/*.cbc')[0]\ncbf=CellBudgetFile(f)\nt=cbf.get_times()[0]\nfor rec in ['STO-SS','STO-SY','DATA-SPDIS']:\n    d=cbf.get_data(text=rec,totim=t)\n    for x in d:\n        nm=getattr(x,'dtype',None)\n        nm=nm.names if nm is not None else None\n        print(rec,'names=',nm,'shape=',getattr(x,'shape',None),'type=',type(x).__name__)\nPY"
+        ],
+        "cwd": ".",
+        "purpose": "Determine exact structure of STO-SS/STO-SY/DATA-SPDIS records to fix parser"
+      },
+      "recovery_plan": {
+        "action_argv": [
+          "bash",
+          "-lc",
+          "cd /app && python - <<'PY'\nfrom flopy.utils import CellBudgetFile\nimport glob\nf=glob.glob('data/public/sims/aquifer_alpha/*.cbc')[0]\ncbf=CellBudgetFile(f)\nt=cbf.get_times()[0]\nfor rec in ['STO-SS','STO-SY','DATA-SPDIS']:\n    d=cbf.get_data(text=rec,totim=t)\n    for x in d:\n        nm=getattr(x,'dtype',None)\n        nm=nm.names if nm is not None else None\n        print(rec,'names=',nm,'shape=',getattr(x,'shape',None),'type=',type(x).__name__)\nPY"
+        ],
+        "cwd": ".",
+        "hypothesis": "The budget parser silently drops STO-SS/STO-SY records because they have no dtype field names (dtype.names is None), so their inflow/outflow are never counted and water_balance residuals are wrong; the guard `names is None or 'q' not in names` skips them entirely.",
+        "mode": "repair",
+        "success_contains": "STO-SS",
+        "targets": [
+          "src/mf6_audit/audit.py"
+        ],
+        "verification_argv": [
+          "bash",
+          "-lc",
+          "cd /app && python -m mf6_audit.cli run --manifest configs/public_manifest.yml --out-dir outputs && python -c \"import pandas as pd; d=pd.read_csv('outputs/water_balance.csv'); print(d.to_string()); print('STO rows in package_budget:'); p=pd.read_csv('outputs/package_budget.csv'); print(p[p.package.str.startswith('STO')].to_string())\""
+        ]
+      }
+    },
+    "inner_tail": [
+      {
+        "event": "recovery_started",
+        "command": null,
+        "error_type": null
+      },
+      {
+        "event": "conversation_turn",
+        "command": null,
+        "error_type": null
+      },
+      {
+        "event": "infrastructure_error",
+        "command": null,
+        "error_type": "TypeError"
+      }
+    ]
+  }
+]

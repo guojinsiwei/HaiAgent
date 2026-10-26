@@ -1,0 +1,173 @@
+{
+  "checked_at": "2026-10-22T20:41:27.546818+08:00",
+  "adjustment": {
+    "created": 1792672587.4651878,
+    "jobs": [
+      "hld--61810_fs",
+      "hld--61810_lock",
+      "hld--61810_mmap",
+      "hld--61810_net"
+    ],
+    "requests_per_task": 800,
+    "max_output_tokens": 32768,
+    "task_limit_microcny": 24000000,
+    "campaign_limit_microcny": 480000000,
+    "eligibility": "unstarted at stage; early-run criterion <=5 minutes and <=30 requests had no match",
+    "algorithm": "HLD v8 unchanged",
+    "paid_restart": false
+  },
+  "activation": {
+    "jobs": [
+      "hld--61810_fs",
+      "hld--61810_lock",
+      "hld--61810_mmap",
+      "hld--61810_net"
+    ],
+    "pid": 2862058,
+    "port": 40841,
+    "time": 1792672820.1182585,
+    "paid_restart": false,
+    "task_limit_cny": 24,
+    "campaign_limit_cny": 480
+  },
+  "preflight": {
+    "passed": true,
+    "model_calls": 0,
+    "checks": [
+      "32768 output reserved at full upper bound",
+      "unauthorized job refused",
+      "32769 output refused",
+      "800th attempt allowed",
+      "801st refused",
+      "24 CNY retained",
+      "original monetary ledger unchanged",
+      "600 tools and 7200 seconds retained"
+    ],
+    "time": 1792672751.9155464
+  },
+  "node_preflight": {
+    "passed": true,
+    "model_calls": 0,
+    "exact_config_delta": true,
+    "shared_request_guard": 800,
+    "output_limit": 32768,
+    "cny_per_task": 24
+  },
+  "scores": [
+    {
+      "task": "61810_thread",
+      "state": "graded",
+      "f2p": {
+        "is_pass": 1,
+        "step_score": 1
+      },
+      "official_success": true,
+      "budget_stop": null,
+      "limit_stop": null,
+      "engineering_fault": null
+    },
+    {
+      "task": "ap1400_2_hw26",
+      "state": "graded",
+      "f2p": {
+        "is_pass": 0,
+        "step_score": 0.375
+      },
+      "official_success": false,
+      "budget_stop": null,
+      "limit_stop": null,
+      "engineering_fault": null
+    },
+    {
+      "task": "cs61_fa24_ants",
+      "state": "graded",
+      "f2p": {
+        "is_pass": 1,
+        "step_score": 1
+      },
+      "official_success": true,
+      "budget_stop": null,
+      "limit_stop": null,
+      "engineering_fault": null
+    },
+    {
+      "task": "cs61_fa24_cats",
+      "state": "graded",
+      "f2p": {
+        "is_pass": 1,
+        "step_score": 1
+      },
+      "official_success": false,
+      "budget_stop": null,
+      "limit_stop": null,
+      "engineering_fault": null
+    },
+    {
+      "task": "cs61_fa24_hog",
+      "state": "graded",
+      "f2p": {
+        "is_pass": 1,
+        "step_score": 1
+      },
+      "official_success": true,
+      "budget_stop": null,
+      "limit_stop": null,
+      "engineering_fault": null
+    },
+    {
+      "task": "cs61_fa24_hw08",
+      "state": "graded",
+      "f2p": {
+        "is_pass": 1,
+        "step_score": 1
+      },
+      "official_success": true,
+      "budget_stop": null,
+      "limit_stop": null,
+      "engineering_fault": null
+    },
+    {
+      "task": "cs61_fa24_scheme",
+      "state": "graded",
+      "f2p": {
+        "is_pass": 0,
+        "step_score": 0.9285714285714286
+      },
+      "official_success": false,
+      "budget_stop": null,
+      "limit_stop": null,
+      "engineering_fault": null
+    }
+  ],
+  "pending": [
+    "61810_lock",
+    "61810_mmap",
+    "61810_net"
+  ],
+  "active": [
+    "hld--61810_syscall",
+    "hld--61810_util",
+    "hld--cmu15_445_p0",
+    "hld--61810_fs",
+    "hld--cmu15_445_p1",
+    "hld--ap1400_2_hw35",
+    "hld--61810_cow",
+    "hld--cmu15_445_p2",
+    "hld--61810_pgtbl",
+    "hld--61810_traps"
+  ],
+  "ledger": [
+    [
+      "reserved",
+      5,
+      null,
+      1869824
+    ],
+    [
+      "settled",
+      3693,
+      147563075,
+      1381582848
+    ]
+  ]
+}

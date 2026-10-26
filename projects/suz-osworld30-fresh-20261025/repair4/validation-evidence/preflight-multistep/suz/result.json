@@ -1,0 +1,21 @@
+{
+  "mode": "suz",
+  "passed": true,
+  "cpu_only": true,
+  "batches": 7,
+  "primitive_actions": 7,
+  "green_fraction": 0.8341049382716049,
+  "cost_cny": 0.4165164,
+  "requests": 19,
+  "source_sha256": "0486b43af257178995092f779dd9a7aa0acaa8a9275feaa0e897754e58e9f256",
+  "deployment_sha256": "dd8723e66993a175024cb471ca949a29ff89985c86f1194f5413f61209cecc9f",
+  "role_rejections": [
+    {
+      "role": "advisor",
+      "reason": "unknown or missing evidence IDs",
+      "step": 5
+    }
+  ],
+  "verification": "Verified completion screenshot and independent Critic accepted. Advisor cited E1 absent from supplied E2-E5: correctly rejected, advice remains empty, solver continued and completed. Runtime evidence checks unchanged.",
+  "image_sha256": "c58df45192b80aaee2b146ee9e8ef13f38efeb5b5a6ad30910b201d03656e8d5"
+}

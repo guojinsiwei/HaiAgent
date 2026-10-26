@@ -1,0 +1,12 @@
+{
+  "per_run_cny": 8,
+  "total_cny": 1920,
+  "tb2_cny": 800,
+  "appworld_cny": 1120,
+  "paid_runs": 240,
+  "arms": [
+    "hld",
+    "recuris"
+  ],
+  "authorized": true
+}

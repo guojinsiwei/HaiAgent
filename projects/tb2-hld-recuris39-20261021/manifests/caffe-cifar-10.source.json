@@ -1,0 +1,8 @@
+{
+  "task": "caffe-cifar-10",
+  "image": "alexgshaw/caffe-cifar-10:20251031",
+  "digest": "sha256:5b54d6e8f1b392cdeb819e28215853f500b72b8e08b91270c7a3693bf44d1fe2",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/caffe-cifar-10/manifests/20251031",
+  "header_verified": true,
+  "time": 1792550853.8450963
+}

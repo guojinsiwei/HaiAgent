@@ -1,0 +1,16 @@
+OSWorld repair5, 2026-10-26
+Scope: only opencua_baseline / 36037439-2044-4b50-b9d1-875b5a332143 and aa4b5023-aef6-4ed9-bdc9-705f59ab9ad6.
+Old results and source are preserved in parent and repair4. Shared budget.sqlite stays in original parent. Cumulative original arm/task limit CNY8; whole round limit CNY480, including failed attempts and preflights. No new funding.
+
+1. Mixed computer.wait()+pyautogui batches: normalize exact argument-free wait to a bounded GUI sleep, retain all actions and original order. Reject unsupported control actions, mixed termination and non-GUI statements. Exact Scholar failure response replayed in regression test.
+2. Empty/truncated outputs: one bounded recovery uses documented GLM-5.3 reasoning_effort=low; normal calls retain original settings. No global reasoning change. Streaming remains enabled. Never execute truncated output. All failed/recovery calls charged to original cumulative budget; transport uncertainty retains reservation. Maximum recovery request count unchanged.
+Reference: https://docs.bigmodel.cn/cn/guide/capabilities/thinking
+3. Scholar network: direct server and local requests time out; existing local proxy at 127.0.0.1:17891 succeeds. Loopback-only SSH reverse tunnel 28791. Task-scoped bridge relay accepts only its single CPU VM container IP, closes with VM. Guest GNOME proxy setup, real browser Scholar homepage preflight must succeed before any solving call. No task answer, author query, DOM or evaluator data is supplied to Solver. Task JSON and official evaluator unchanged.
+
+Validation: 38 Python tests, 15 Node tests passed on server. Real API preflight deliberately caps first response at128 tokens to exercise paid truncation recovery; second response at low effort returned finish_reason=stop. Consecutive GUI actions and official grading gates are mandatory before the two worker jobs can start.
+
+CPU only; no GPU, no GPT calls or scheduled GPT tasks. Public host proxy/network settings unchanged. Other benchmark deployments untouched. Temporary Scholar network depends on the existing local proxy and SSH tunnel staying available during its run.
+
+Network follow-up: repair5-network keeps the identical frozen repair5 Solver source and reuses its passed live multistep proof. It changes only the Scholar environment gate: dedicated Chrome policy inside the disposable VM, since GNOME settings alone did not work for this Chrome environment. Guest curl via the same peer-restricted relay returned HTTP200. The follow-up must pass its own real Chrome and official grading gate before inference. A later read-only audit proved STOP_DISPATCH is read solely before launch.py creates a new worker; active workers never read it. After that proof, the old queue was marked to prevent the superseded Scholar retry. Active VLC was verified still running.
+
+Final verification: both repairs are running with complete stop-terminated model responses. VLC: 6 executed batches /7 responses; Scholar:8 executed batches /8 responses. Scholar network gate passed in both its preflight and fresh solving VMs. Original limits remain CNY8 per task bucket and CNY480 total. Combined round accounted CNY64.9334168 at this snapshot. All historical results retained.

@@ -1,0 +1,2 @@
+READY
+{"pid": 3000445, "detached": true, "paired_tasks": 8, "total_trials": 8, "retry_batches": 0, "total_concurrency": 4}

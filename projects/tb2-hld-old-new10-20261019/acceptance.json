@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "trial": "/mnt/sdb/home/lizh639/tb2-hld-old-new10-20261019/preflight/preflight-entry-hld-old-73c3e2f9/build-cython-ext__CxTuJez",
+      "reward": 0.0,
+      "exception_type": null,
+      "engineering_clean": true,
+      "result_status": "present",
+      "lifecycle_status": "succeeded",
+      "collection_failures": [],
+      "arm": "hld-old",
+      "exit_code": 0
+    },
+    {
+      "trial": "/mnt/sdb/home/lizh639/tb2-hld-old-new10-20261019/preflight/preflight-entry-hld-new-4b2c9067/build-cython-ext__AMQg39b",
+      "reward": 0.0,
+      "exception_type": null,
+      "engineering_clean": true,
+      "result_status": "present",
+      "lifecycle_status": "succeeded",
+      "collection_failures": [],
+      "arm": "hld-new",
+      "exit_code": 0
+    }
+  ],
+  "paid_calls": 0
+}

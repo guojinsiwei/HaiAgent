@@ -1,0 +1,15 @@
+SUZ / OpenCUA repair4 — 2026-10-25
+Scope: seven failed engineering cases from fresh30. Three cases with engineering messages and official pass are excluded. Prior scores and frozen source remain intact.
+Changes shared by both arms:
+- Strict exact computer.wait dictionary adapter; mixed batches preserve preceding key actions.
+- Up to 60 seconds of explicit wait per batch, split into <=30-second calls. Longer waits and arbitrary code remain rejected.
+- Stream content and reasoning separately. Require final finish marker and full token usage. Incomplete streams retain conservative reservation.
+- One transport recovery plus one output recovery, <=3 requests total per completion, same output ceiling32768 and cumulative budget.
+- Missing/corrupt post-action screenshot receives bounded read-only reacquisition. No GUI action replay. On persistent solve failure try official evaluation of existing state while preserving original error.
+Validation: 34 Python tests and 15 Node tests passed. Nine available terminal Solver payloads replay successfully offline, including all three observed action syntax/wait failures. Live CPU multi-step and official grading preflights are required before dispatch.
+Budget: parent fresh-round budget.sqlite, original mode/task buckets, CNY8 cumulative per arm/task and CNY480 total. Unknown previous charges retained. Live preflight counts toward same total.
+Recovery: original stopped SUZ Scholar container retained; its 618397696-byte disk preserved before restart. Separate CPU clone cold-booted for zero-model official getter/metric evaluation. No active Chrome address element remained after reboot, score0 in recovery clone. This cannot establish the historical live-state score; original unscored result stays untouched. Full bounded rerun remains eligible.
+Limitations: streaming and bounded retries mitigate transport/empty output failure; a second32768-token truncation still stops safely. Web WAF/HTTP500 and task strategy failures may remain and are not claimed repaired.
+Exact mixed-failure audit: baseline08c request1 length16384 then request2 transport-unknown; baselineaa4 request9 transport-unknown then request10 length16384; SUZda46 request67 transport-unknown then request68 length16384. Old shared one-recovery limit aborted all three before both recovery paths could complete. Repair4 admits one recovery per category within three requests and original cumulative budget.
+
+Live validation complete: baseline11 batches/12 requests/CNY0.0934752; SUZ7 batches/19 requests/CNY0.4165164. Baseline completion manually verified after full-screen-area assertion falsely rejected a non-maximized successful window. SUZ completed with one correctly rejected Advisor E1 citation outside supplied E2-E5; advice stayed empty, independent Critic accepted visible completion. Both initial validation failures retained and corrections documented; no extra inference replay. Official CPU grading preflight passed. At2026-10-26 00:15:30+08:00 queue launched, two baseline tasks in per-task preflight, five pending; concurrency2. Total parent ledger accounted CNY53.2272724 including CNY11.888128 prior unknown reservations.

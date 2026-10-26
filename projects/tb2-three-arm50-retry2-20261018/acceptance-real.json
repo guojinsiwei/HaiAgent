@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-retry2-20261018/preflight/preflight-accept-real-native-kz/tune-mjcf__sdv3qB2",
+      "reward": 0.0,
+      "exception_type": null,
+      "engineering_clean": true,
+      "result_status": "present",
+      "lifecycle_status": "succeeded",
+      "collection_failures": [],
+      "arm": "native-kz",
+      "harbor_exit": 0,
+      "paid_calls": 0
+    },
+    {
+      "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-retry2-20261018/preflight/preflight-accept-real-kz-dsh/tune-mjcf__CYqofyU",
+      "reward": 0.0,
+      "exception_type": null,
+      "engineering_clean": true,
+      "result_status": "present",
+      "lifecycle_status": "succeeded",
+      "collection_failures": [],
+      "arm": "kz-dsh",
+      "harbor_exit": 0,
+      "paid_calls": 0
+    },
+    {
+      "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-retry2-20261018/preflight/preflight-accept-real-dsh/tune-mjcf__A9MCAYv",
+      "reward": 0.0,
+      "exception_type": null,
+      "engineering_clean": true,
+      "result_status": "present",
+      "lifecycle_status": "succeeded",
+      "collection_failures": [],
+      "arm": "dsh",
+      "harbor_exit": 0,
+      "paid_calls": 0
+    }
+  ],
+  "paid_calls": 0
+}

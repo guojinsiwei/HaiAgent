@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "trial": "/mnt/sdb/home/lizh639/tb4-hld-recuris7-20261019/preflight/preflight-entry-hld-56f48567/fin-saccr-rwa__xjKeL8n",
+      "reward": 0.0,
+      "exception_type": null,
+      "engineering_clean": true,
+      "result_status": "present",
+      "lifecycle_status": "succeeded",
+      "collection_failures": [],
+      "arm": "hld",
+      "exit_code": 0
+    },
+    {
+      "trial": "/mnt/sdb/home/lizh639/tb4-hld-recuris7-20261019/preflight/preflight-entry-recuris-d6edd38c/fin-saccr-rwa__ae5gfHR",
+      "reward": 0.0,
+      "exception_type": null,
+      "engineering_clean": true,
+      "result_status": "present",
+      "lifecycle_status": "succeeded",
+      "collection_failures": [],
+      "arm": "recuris",
+      "exit_code": 0
+    }
+  ],
+  "paid_calls": 0
+}

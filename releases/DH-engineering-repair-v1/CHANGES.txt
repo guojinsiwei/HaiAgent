@@ -1,0 +1,70 @@
+DH engineering repair v1 — 2026-10-04
+
+Base: releases/DH (frozen original left unchanged).
+Status: independent candidate; Linux offline validation completed in an isolated
+temporary directory. Not switched into any production experiment. No benchmark
+rerun, model API calls, algorithm-threshold change or budget increase.
+
+Repairs
+1. Resolve a literal leading `cd DIR &&` when extracting command dependencies.
+   `/app/cow/kernel/vm.c` is no longer confused with `/app/kernel/vm.c`.
+   Ambiguous shell branches/expansions stay unknown instead of guessed.
+2. Align literal inner QEMU timeout with outer command timeout and a 10-second
+   collection allowance, bounded by the existing command cap and task deadline.
+3. On sandbox timeout, recover bounded tails of literal redirected logs confined
+   to that task image. Skip unchanged old logs and symlink escapes. Preserve the
+   nonzero exit/timeout; recovered text is NOT a test-pass signal.
+4. Audit known xv6 init.c test-only boot substitutions before delivery. Feed the
+   issue back for correction; do not silently revert edits. Apply the same public
+   delivery guard to DH and RAW. Budget exit with a broken boot guard is recorded
+   separately, preserving the original stop reason in the audit event.
+5. Make active contrastive proposal fields explicit in the context. Distinguish
+   schema rejection from similarity rejection and return concise repair fields.
+   Do not invent orthogonality proofs or bypass existing exploration checks.
+
+Validation
+Windows: `python -X utf8 -m unittest discover -s tests -p test_*.py`
+149 discovered, 147 passed, 2 POSIX-specific cases skipped.
+Linux Python 3.12.12: same command; all 149 passed.
+The Linux cases include an actual sleeping subprocess killed at timeout, partial
+log recovery without reporting success, and a parent-symlink escape regression.
+The 149 cases include the original 128 release tests plus 21 new engineering cases.
+All model clients in these suites are offline/scripted/mocked. Printed API-error
+messages are deliberate malformed-response fixtures, not real API requests.
+
+Additional legacy suite: sources/bestfgs-project/tests/test_lean.py
+Linux candidate: 33 cases, 28 passed, 5 failed.
+Windows original frozen DH: the same 5 failed, 7 POSIX cases skipped.
+These historical assertions remain unresolved; do NOT advertise an all-repository
+green test suite. The failing names are:
+  test_action_conditioned_memory_reminds_before_execution_and_audits_followup
+  test_deliberate_same_action_runs_after_one_memory_reminder
+  test_memory_is_in_fixed_panel_after_old_history_eviction
+  test_memory_preserved_but_marked_historical_after_restore
+  test_memory_reconsideration_to_submit_does_not_leak_into_later_tool
+Additional upload of the original snapshot for a same-host baseline run was blocked
+by permission review; no bypass attempted. Local original-baseline checks completed.
+
+Linux candidate verification directory:
+/var/tmp/lizh639-dh-engineering-v1-20261004-GZAwk8
+This directory is a free regression sandbox, NOT a running model experiment.
+
+Limits
+- Real QEMU guest input/lifecycle and official LongCLI scoring have not been rerun.
+- The timeout parser handles literal shell QEMU invocations, not arbitrary shell
+  programs or a general terminal/PTY driver.
+- Redirect-log recovery is integrated in harness/environment.py's shared sandbox;
+  other executor backends do not automatically gain image-root log recovery.
+- The boot guard targets recognizable literal init.c boot substitutions; it is not
+  a complete C parser or a general temporary-edit rollback mechanism.
+- The original rigid gate policy, regeneration budget and repeated-call policy
+  are unchanged. This patch does not promise that persistent model loops disappear.
+- Shared DH/RAW executor changes must be applied together in any future comparison;
+  old experiment scores remain immutable and do not measure this patch's effect.
+
+Useful entry points
+sources/bestfgs-project/src/bestfgs/command_paths.py
+sources/bestfgs-project/src/bestfgs/command_io.py
+sources/bestfgs-project/src/bestfgs/delivery_safety.py
+harness/environment.py
+tests/test_os_engineering.py

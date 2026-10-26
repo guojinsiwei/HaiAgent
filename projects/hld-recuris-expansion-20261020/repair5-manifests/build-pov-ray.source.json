@@ -1,0 +1,8 @@
+{
+  "task": "build-pov-ray",
+  "image": "alexgshaw/build-pov-ray:20251031",
+  "digest": "sha256:874baf49341e2853a15a9184e308c7eb632e97f434359fcff2891c6e5ca1b39b",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/build-pov-ray/manifests/20251031",
+  "header_verified": true,
+  "time": 1792510252.776255
+}

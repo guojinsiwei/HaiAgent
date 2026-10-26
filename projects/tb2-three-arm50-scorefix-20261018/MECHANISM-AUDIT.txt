@@ -1,0 +1,87 @@
+KZ / KZDSH 已完成实验机制审计
+数据截点：2026-10-18 16:14:18，Asia/Shanghai
+
+结论
+各机制尚未共同形成稳定有效的探索闭环。上下文、记忆存取、Monitor 和 Advisor 确实运行，并有改变行动的案例；核心正交探索覆盖极低，探索结果的预测指标过弱，完成审查同时存在错误放行和无法正常收尾的问题。
+
+范围与方法
+读取本轮 TB2.0 50 题三组首轮、retry、retry2、boost6、scorefix 的 health.json。
+按原始 budget_job 合并，只取 state=done 且 engineering_clean=true 的最新有效评分尝试。
+截点时原生 KZ 43 份（21 通过）、KZDSH 42 份（19 通过）、DSH 45 份（25 通过）。
+排除运行中的尝试、未评分和工程失败尝试。上述样本数不表示整轮已跑完。
+全量统计机制事件和最终状态，定向追读代表案例；无新增模型调用，无部署修改，无干预运行任务。
+这些事件统计可证明运行与具体行为链；未做机制开关消融，不能把官方通过数直接归因于单一机制。
+解析器跳过不可解析的 JSONL 行；最终探索状态文件用于交叉核对启动记录，不能把部分轨迹中的事件总数当成完整 API 计费次数。
+
+1. 结构化上下文
+原生 KZ：1539 次 terminal_projection、1539 次 execution_assessment。
+KZDSH：1667 次 context_refreshed，1611 次 pre_step_context_update。
+可以确认持续整理并注入上下文。上述计数没有衡量信息提取准确率，也没有证明其提升任务得分。
+
+2. 记忆
+原生 KZ：94 次 memory_admitted，覆盖 34/43 题；1872 次检索事件中 1213 次 selected_ids 非空，累计选中 2692 个记忆项；reserve_omitted_ids 累计 0。
+原生 KZ：845 次 memory_decision_review，154 次明确记忆引用后的动作回执，覆盖 12 题。回执中 47 次 workspace_changed=true；check_status 为 unknown 150 次、缺失 4 次。不能把改了文件或执行成功当作验证改善。
+KZDSH：42/42 题最终持有记忆，共 271 条；15 次明确绑定的 memory_followup_outcome，覆盖 10 题，其中 6 次 clean_check=true。
+结论：存储、检索和部分显式利用工作正常。隐式利用未被这些计数覆盖；当前日志无法证明稳定的复用收益。
+
+3. Monitor / Advisor
+原生 KZ：Monitor 121 次逻辑请求，68 次有效 review，其中 progress 53、stalled 12、uncertain 3。
+49 次 monitor_deferred：29 次 invalid reason，17 次 evidence_ids 超过 3 条，3 次 model_request_failed。
+Advisor 17 次触发，12 次 advice，5 次 deferred。
+KZDSH：Monitor 160 次请求，151 次有效 review，其中 progress 142、stalled 7、uncertain 2；Advisor 13 次触发、12 次回答。
+有效行为案例：原生 password-recovery 中，Monitor 指出重复解码同一 ZIP 片段，Advisor 建议拼接已有明文碎片或扩大搜索；后续实际执行拼接、写入和扫描，最终官方通过。中间仍有长度正则错误和返回旧解码路线的行为，故只能确认为建议影响了行动，不能称为一次干预直接解决了任务。
+具体定位：原生 password-recovery trace/events.jsonl 的 advice 为 sequence/line 233，后续 tool_call 为 248、261、275、305；memory_followup_outcome 的样例见初始审计摘要。
+
+4. 正交探索：核心薄弱点
+原生 KZ 43 题：contrastive_episode_start、contrastive_validation、contrastive_outcome、exploration_learning 全部 0。
+全部最终 exploration-trigger.json 的 lastDecision 均为空；残留失败账本共 112 个检查项，failures 全部为 1。
+KZDSH 42 题：只有 write-compressor 的 episode.serial=1，其余均 0。该题正式执行 2 次 probe，15 次 auxiliary，最终官方 reward=0。
+KZDSH 总共 9 条 exploration_learning，分布于 7 题；其中仅 2 条来自正式 episode，另外 7 条为自愿附带的 auxiliary 学习记录。状态为 supported 3、refuted 1、unknown 5。
+
+触发断点：
+两套 check_identity 仅对 C/C++ 编译和 telnet 做有限归并；其余大量 Python/heredoc/复合命令按完整文本区分。脚本内容或包装改变，失败计数就容易分散到不同检查。
+原生 Monitor 的 stalled 分支只设置 Advisor 问题，没有启动正交 episode；KZDSH 的 semantic_stall 同样进入 Advisor 队列。发现语义停滞与执行正交约束之间缺少直接衔接。
+执行退出成功、任务语义仍错误，且未被登记为 public_check_failed 的尝试也无法形成相应失败触发证据。
+原生的 19 次 action_loop_block 属于已有结果的重复调用拦截，不能计成正交探索成功；例如 tune-mjcf 拦截再次运行已成功的 eval.py。
+新代码确实已部署：原生运行 header 的 contrastive_exploration.py SHA256 与本地修改版一致，均为 44880546189adbfd6f121eea387e4e18da7e9ffd2c6355ca97dd622e9694edbb。contrastive_predictions=false 控制额外双候选扩展，不等于禁用当前 exploration 假设及结果学习协议。
+
+学习质量问题：
+write-compressor 的 XE22 执行后出现“no digit at bit”，原假设被记为 refuted；XE27 仍运行相同命令（期间代码有改动），改用“no digit at bit 1”支持关于 decoder normalization 的因果解释，记录为 supported。
+该输出只证明错误现象存在，无法单独验证所写的根因。当前字面匹配可以完成记录流程，判别力仍弱。
+openssl-selfsigned-cert 的 XE26 假设为“文件与此前验证时字节一致”，supports 只要求输出包含 /app/ssl/server.pem，最终记 supported。打印路径无法证明哈希相等。
+两个记录均明确保存 semantic_verified=false；问题在于这类薄弱观察被写入后续探索记忆时，容易被模型过度解释。
+
+5. Critic / 完成账本
+原生 KZ：175 次 critic_review，13 次 accepted=true；这些 13 题中官方 12 通过、1 失败。
+错误放行案例 video-processing：
+ - 第 313 行审查提出起跳/落地帧语义缺乏独立验证，74/89 的估计未经证实；accepted=false。
+ - 第 454 行仍保留帧定位未验证的缺口；accepted=false。
+ - 第 481 行只检查脚本运行、字段存在、绝对输出路径和起跳早于落地等条件，verdict.gaps 变为空，accepted=true；核心帧定位缺口未得到新的有效验证。
+ - 官方示例视频要求起跳帧 50–54，实际为 74；测试视频要求 219–223，实际为 62。两项帧定位测试均失败，正式 reward=0。
+这说明“程序能运行、输出格式正确”仍有机会替代任务正确性检验。
+
+KZDSH：79 次 critic_plan_registered，72 次 critic_plan_needs_followup。
+72 次分类：repair_check 31、missing_information 35、repair_implementation 6。后两类包含真实信息或实现缺口，不能全算格式浪费。
+42 份最终完成状态：repair_pending 22、working 19、review_unavailable 1，没有完成账本正常接受的任务。
+headless-terminal 官方通过，但 KZDSH 长期保留“检查不可执行或无法归因”的 Gap-1；最终 Advisor 问题仍在讨论 verification_evidence 为什么绑定不上。该轨迹 86 次模型请求、58 次工具调用；原生同题 12 次请求、11 次工具调用。这是具体工作流拖累案例，单次对比不能作为全局算法收益估计。
+原生也存在审查循环：tune-mjcf 17 次 critic_review，最后通过。
+
+优先改进方向（本次未修改）
+1) 将任务相关的语义停滞证据连接到正交探索触发，并按子目标/失败假设/被检验性质识别相关尝试。
+2) 预测必须区分竞争解释或检验待证属性；单纯重复错误字符串、打印路径不够支撑因果解释或状态一致性。
+3) 已提出的核心正确性缺口跨审查保留，逐条对应新证据；格式验证不能消除语义缺口。
+4) 对可执行检查和证据绑定做可靠的协议适配与明确收尾，避免反复审查消耗求解预算。
+
+可复核文件
+mechanism-audit-detail.json：冻结的逐题统计、事件摘录、最终状态及远程原始文件与行号。
+mechanism-audit-raw.jsonl：较早截点的事件类型总量与样例（原生 42、KZDSH 42、DSH 44）；最终统计使用 detail 文件。
+mechanism-cases.json：video-processing 官方测试摘录、password-recovery 后续动作。
+audit_mechanisms.py：只读提取脚本，stdout 为 gzip/base64 压缩 JSON。
+
+源码位置
+projects/kz-native-orthogonal-trigger-20261017/native/legacy/sources/bestfgs-project/src/bestfgs/exploration_trigger.py:9
+projects/kz-native-orthogonal-trigger-20261017/native/legacy/sources/bestfgs-project/src/bestfgs/lean_monitor.py:230
+projects/kz-native-orthogonal-trigger-20261017/native/legacy/sources/bestfgs-project/src/bestfgs/contrastive_exploration.py:282
+projects/tb2-three-arm50-20261017/merged-src/exploration-trigger.mjs:6
+projects/tb2-three-arm50-20261017/merged-src/advisory.mjs:50
+projects/tb2-three-arm50-20261017/merged-src/exploration-learning.mjs:38

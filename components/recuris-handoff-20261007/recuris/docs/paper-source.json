@@ -1,0 +1,12 @@
+{
+  "title": "Recursive Experiential–Working Memory Evolution for Long-Horizon Agent Harnesses",
+  "paper_id": "arXiv:2608.24876v1",
+  "publication_date": "2026-08-25",
+  "source": "User-provided baseline/recuris.pdf",
+  "pages": 36,
+  "sha256": "dfa6f6d1174ad07dee26e5e3d310b750280fe3eaba16b371ef1e0d80bce8ae41",
+  "recuris_reference_commit": "7d3745ab787b1206ccd981cb1511100476097266",
+  "longcli_reference_commit": "2015f37b5c458f2562354de6b415e9182c91af64",
+  "reproduction_notes": "reproduction.md",
+  "experiments_run": false
+}

@@ -1,0 +1,57 @@
+{
+  "time": 1792397963.823715,
+  "state": "complete",
+  "concurrency": 0,
+  "pending": 0,
+  "budget": {
+    "limit_microcny": 720000000,
+    "settled_microcny": 517765021,
+    "reserved_microcny": 0,
+    "uncertain_microcny": 2709504,
+    "remaining_microcny": 199525475,
+    "halt_reason": null,
+    "estimate_peak_cny": 720.0
+  },
+  "arms": {
+    "hld": {
+      "finished_tasks": 30,
+      "finished_attempts": 48,
+      "passed": 30,
+      "unresolved_engineering_faults": 4,
+      "legacy_budget_affected_unpassed": 0,
+      "scenarios_passed": 10,
+      "active": []
+    },
+    "kzdsh-new": {
+      "finished_tasks": 30,
+      "finished_attempts": 37,
+      "passed": 29,
+      "unresolved_engineering_faults": 0,
+      "legacy_budget_affected_unpassed": 0,
+      "scenarios_passed": 9,
+      "active": []
+    },
+    "recuris": {
+      "finished_tasks": 30,
+      "finished_attempts": 33,
+      "passed": 29,
+      "unresolved_engineering_faults": 1,
+      "legacy_budget_affected_unpassed": 0,
+      "scenarios_passed": 9,
+      "active": []
+    },
+    "dsh": {
+      "finished_tasks": 30,
+      "finished_attempts": 30,
+      "passed": 25,
+      "unresolved_engineering_faults": 0,
+      "legacy_budget_affected_unpassed": 0,
+      "scenarios_passed": 5,
+      "active": []
+    }
+  },
+  "repair_plan": {
+    "retry_count": 7,
+    "unstarted_count": 91
+  }
+}

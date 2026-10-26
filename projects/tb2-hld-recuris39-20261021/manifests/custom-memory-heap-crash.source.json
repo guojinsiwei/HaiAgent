@@ -1,0 +1,8 @@
+{
+  "task": "custom-memory-heap-crash",
+  "image": "alexgshaw/custom-memory-heap-crash:20251031",
+  "digest": "sha256:1895d7d6240d5fb2ec774d6bfdd1057d170f8d199c15c582e4585d3c63802557",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/custom-memory-heap-crash/manifests/20251031",
+  "header_verified": true,
+  "time": 1792550858.3500566
+}

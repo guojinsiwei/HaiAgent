@@ -1,0 +1,22 @@
+{
+  "benchmark": "OSWorld-Verified",
+  "upstream_commit": "04718eab9327856efe8192cc58161acc7a7627e2",
+  "task_count": 20,
+  "arms": ["opencua_baseline", "suz"],
+  "attempts_per_arm_task": 1,
+  "max_steps": 100,
+  "per_arm_task_budget_cny": 8,
+  "total_budget_cny": 320,
+  "all_auxiliary_calls_included": true,
+  "server_gpu_allowed": false,
+  "inference": "external_multimodal_api",
+  "model": "glm-5.3-flash",
+  "baseline_label": "OpenCUA execution flow + GLM-5.3-Flash (no SUZ)",
+  "treatment_label": "Same execution flow and GLM-5.3-Flash + SUZ",
+  "model_change_approved_by_user": true,
+  "allow_live": true,
+  "max_output_tokens": 8192,
+  "role_max_tokens": 8192,
+  "desktop_concurrency": 2,
+  "status": "preflights passed; ready for paired execution"
+}

@@ -1,0 +1,553 @@
+{
+  "state": "running",
+  "pid": 3167180,
+  "updated": 1792681677.8063948,
+  "concurrency_limit": 6,
+  "active": [
+    "lhtb24-01-hld-rush_hour_campaign",
+    "lhtb24-01-recuris-rush_hour_campaign",
+    "lhtb24-02-recuris-robotics-slam-benchmark-repair",
+    "lhtb24-02-hld-robotics-slam-benchmark-repair",
+    "lhtb24-03-hld-snake_maze_campaign",
+    "lhtb24-03-recuris-snake_maze_campaign"
+  ],
+  "summary": {
+    "hld": {
+      "total": 24,
+      "finished": 0,
+      "scored": 0,
+      "passed": 0,
+      "solved_095": 0,
+      "engineering_failures": 0
+    },
+    "recuris": {
+      "total": 24,
+      "finished": 0,
+      "scored": 0,
+      "passed": 0,
+      "solved_095": 0,
+      "engineering_failures": 0
+    }
+  },
+  "rows": [
+    {
+      "task": "rush_hour_campaign",
+      "arm": "hld",
+      "job": "lhtb24-01-hld-rush_hour_campaign",
+      "state": "solving",
+      "started": 1792681437.4224281,
+      "preflight": {
+        "trial": "/mnt/sdb/home/lizh639/lhtb-hld-v8-recuris24-20261022/preflight/preflight-lhtb24-01-hld-rush_hour_campaign/rush_hour_campaign__FSY7RDZ",
+        "reward": 0.0,
+        "official_full_pass": false,
+        "solved_095": false,
+        "engineering_clean": true,
+        "exception": null,
+        "shared_usage": {},
+        "stops": {
+          "budget-stop.json": null,
+          "limit-stop.json": null,
+          "provider-stop.json": null,
+          "wall-limit.json": null
+        },
+        "continuation": {
+          "offline_acceptance": true,
+          "paid_calls": 0,
+          "continue_until_timeout_phase": 0
+        },
+        "offline": true,
+        "completed_owned_containers_released": true,
+        "harbor_exit": 0
+      },
+      "paid_started": 1792681475.1342695,
+      "live": {
+        "requests": 9,
+        "tools": 4,
+        "inputTokens": 39618,
+        "outputTokens": 1767,
+        "cacheReadTokens": 91008,
+        "cacheWriteTokens": 0,
+        "unknownUsageRequests": 0,
+        "stopped": null,
+        "budgetMode": "bounded_peak_price_estimate",
+        "updated_utc": "2026-10-22T15:05:18.910Z"
+      }
+    },
+    {
+      "task": "rush_hour_campaign",
+      "arm": "recuris",
+      "job": "lhtb24-01-recuris-rush_hour_campaign",
+      "state": "solving",
+      "started": 1792681437.4277523,
+      "preflight": {
+        "trial": "/mnt/sdb/home/lizh639/lhtb-hld-v8-recuris24-20261022/preflight/preflight-lhtb24-01-recuris-rush_hour_campaign/rush_hour_campaign__j8jqWf4",
+        "reward": 0.0,
+        "official_full_pass": false,
+        "solved_095": false,
+        "engineering_clean": true,
+        "exception": null,
+        "shared_usage": {},
+        "stops": {
+          "budget-stop.json": null,
+          "limit-stop.json": null,
+          "provider-stop.json": null,
+          "wall-limit.json": null
+        },
+        "continuation": {
+          "offline_acceptance": true,
+          "paid_calls": 0,
+          "continue_until_timeout_phase": 0
+        },
+        "offline": true,
+        "completed_owned_containers_released": true,
+        "harbor_exit": 0
+      },
+      "paid_started": 1792681471.561463,
+      "live": {
+        "requests": 12,
+        "tools": 5,
+        "inputTokens": 161507,
+        "outputTokens": 32909,
+        "cacheReadTokens": 67840,
+        "cacheWriteTokens": 0,
+        "unknownUsageRequests": 0,
+        "stopped": null,
+        "budgetMode": "bounded_peak_price_estimate",
+        "updated_utc": "2026-10-22T15:07:57.347Z"
+      }
+    },
+    {
+      "task": "robotics-slam-benchmark-repair",
+      "arm": "recuris",
+      "job": "lhtb24-02-recuris-robotics-slam-benchmark-repair",
+      "state": "solving",
+      "started": 1792681437.4841223,
+      "preflight": {
+        "trial": "/mnt/sdb/home/lizh639/lhtb-hld-v8-recuris24-20261022/preflight/preflight-lhtb24-02-recuris-robotics-slam-benchmark-repair/robotics-slam-benchmark-repair__g63CFBc",
+        "reward": 0.021082291667,
+        "official_full_pass": false,
+        "solved_095": false,
+        "engineering_clean": true,
+        "exception": null,
+        "shared_usage": {},
+        "stops": {
+          "budget-stop.json": null,
+          "limit-stop.json": null,
+          "provider-stop.json": null,
+          "wall-limit.json": null
+        },
+        "continuation": {
+          "offline_acceptance": true,
+          "paid_calls": 0,
+          "continue_until_timeout_phase": 0
+        },
+        "offline": true,
+        "completed_owned_containers_released": true,
+        "harbor_exit": 0
+      },
+      "paid_started": 1792681475.5064054,
+      "live": {
+        "requests": 45,
+        "tools": 21,
+        "inputTokens": 289583,
+        "outputTokens": 30704,
+        "cacheReadTokens": 302080,
+        "cacheWriteTokens": 0,
+        "unknownUsageRequests": 0,
+        "stopped": null,
+        "budgetMode": "bounded_peak_price_estimate",
+        "updated_utc": "2026-10-22T15:07:55.820Z"
+      }
+    },
+    {
+      "task": "robotics-slam-benchmark-repair",
+      "arm": "hld",
+      "job": "lhtb24-02-hld-robotics-slam-benchmark-repair",
+      "state": "solving",
+      "started": 1792681437.4915533,
+      "preflight": {
+        "trial": "/mnt/sdb/home/lizh639/lhtb-hld-v8-recuris24-20261022/preflight/preflight-lhtb24-02-hld-robotics-slam-benchmark-repair/robotics-slam-benchmark-repair__akinwpq",
+        "reward": 0.021082291667,
+        "official_full_pass": false,
+        "solved_095": false,
+        "engineering_clean": true,
+        "exception": null,
+        "shared_usage": {},
+        "stops": {
+          "budget-stop.json": null,
+          "limit-stop.json": null,
+          "provider-stop.json": null,
+          "wall-limit.json": null
+        },
+        "continuation": {
+          "offline_acceptance": true,
+          "paid_calls": 0,
+          "continue_until_timeout_phase": 0
+        },
+        "offline": true,
+        "completed_owned_containers_released": true,
+        "harbor_exit": 0
+      },
+      "paid_started": 1792681475.3617458,
+      "live": {
+        "requests": 23,
+        "tools": 20,
+        "inputTokens": 338541,
+        "outputTokens": 30736,
+        "cacheReadTokens": 593920,
+        "cacheWriteTokens": 0,
+        "unknownUsageRequests": 0,
+        "stopped": null,
+        "budgetMode": "bounded_peak_price_estimate",
+        "updated_utc": "2026-10-22T15:07:57.773Z"
+      }
+    },
+    {
+      "task": "snake_maze_campaign",
+      "arm": "hld",
+      "job": "lhtb24-03-hld-snake_maze_campaign",
+      "state": "solving",
+      "started": 1792681437.496164,
+      "preflight": {
+        "trial": "/mnt/sdb/home/lizh639/lhtb-hld-v8-recuris24-20261022/preflight/preflight-lhtb24-03-hld-snake_maze_campaign/snake_maze_campaign__gLTMk3S",
+        "reward": 0,
+        "official_full_pass": false,
+        "solved_095": false,
+        "engineering_clean": true,
+        "exception": null,
+        "shared_usage": {},
+        "stops": {
+          "budget-stop.json": null,
+          "limit-stop.json": null,
+          "provider-stop.json": null,
+          "wall-limit.json": null
+        },
+        "continuation": {
+          "offline_acceptance": true,
+          "paid_calls": 0,
+          "continue_until_timeout_phase": 0
+        },
+        "offline": true,
+        "completed_owned_containers_released": true,
+        "harbor_exit": 0
+      },
+      "paid_started": 1792681475.2452505,
+      "live": {
+        "requests": 29,
+        "tools": 22,
+        "inputTokens": 308388,
+        "outputTokens": 18154,
+        "cacheReadTokens": 875904,
+        "cacheWriteTokens": 0,
+        "unknownUsageRequests": 0,
+        "stopped": null,
+        "budgetMode": "bounded_peak_price_estimate",
+        "updated_utc": "2026-10-22T15:07:11.859Z"
+      }
+    },
+    {
+      "task": "snake_maze_campaign",
+      "arm": "recuris",
+      "job": "lhtb24-03-recuris-snake_maze_campaign",
+      "state": "solving",
+      "started": 1792681437.5045037,
+      "preflight": {
+        "trial": "/mnt/sdb/home/lizh639/lhtb-hld-v8-recuris24-20261022/preflight/preflight-lhtb24-03-recuris-snake_maze_campaign/snake_maze_campaign__FqSGoT6",
+        "reward": 0,
+        "official_full_pass": false,
+        "solved_095": false,
+        "engineering_clean": true,
+        "exception": null,
+        "shared_usage": {},
+        "stops": {
+          "budget-stop.json": null,
+          "limit-stop.json": null,
+          "provider-stop.json": null,
+          "wall-limit.json": null
+        },
+        "continuation": {
+          "offline_acceptance": true,
+          "paid_calls": 0,
+          "continue_until_timeout_phase": 0
+        },
+        "offline": true,
+        "completed_owned_containers_released": true,
+        "harbor_exit": 0
+      },
+      "paid_started": 1792681475.6148267,
+      "live": {
+        "requests": 39,
+        "tools": 15,
+        "inputTokens": 310496,
+        "outputTokens": 21810,
+        "cacheReadTokens": 266240,
+        "cacheWriteTokens": 0,
+        "unknownUsageRequests": 0,
+        "stopped": null,
+        "budgetMode": "bounded_peak_price_estimate",
+        "updated_utc": "2026-10-22T15:07:48.318Z"
+      }
+    },
+    {
+      "task": "commit0-multilib-tdd",
+      "arm": "recuris",
+      "job": "lhtb24-04-recuris-commit0-multilib-tdd",
+      "state": "pending"
+    },
+    {
+      "task": "commit0-multilib-tdd",
+      "arm": "hld",
+      "job": "lhtb24-04-hld-commit0-multilib-tdd",
+      "state": "pending"
+    },
+    {
+      "task": "opensees-seismic-structural-regression-audit",
+      "arm": "hld",
+      "job": "lhtb24-05-hld-opensees-seismic-structural-regression-audit",
+      "state": "pending"
+    },
+    {
+      "task": "opensees-seismic-structural-regression-audit",
+      "arm": "recuris",
+      "job": "lhtb24-05-recuris-opensees-seismic-structural-regression-audit",
+      "state": "pending"
+    },
+    {
+      "task": "chess-mate",
+      "arm": "recuris",
+      "job": "lhtb24-06-recuris-chess-mate",
+      "state": "pending"
+    },
+    {
+      "task": "chess-mate",
+      "arm": "hld",
+      "job": "lhtb24-06-hld-chess-mate",
+      "state": "pending"
+    },
+    {
+      "task": "spice-ephemeris-regression",
+      "arm": "hld",
+      "job": "lhtb24-07-hld-spice-ephemeris-regression",
+      "state": "pending"
+    },
+    {
+      "task": "spice-ephemeris-regression",
+      "arm": "recuris",
+      "job": "lhtb24-07-recuris-spice-ephemeris-regression",
+      "state": "pending"
+    },
+    {
+      "task": "sudoku-recovery",
+      "arm": "recuris",
+      "job": "lhtb24-08-recuris-sudoku-recovery",
+      "state": "pending"
+    },
+    {
+      "task": "sudoku-recovery",
+      "arm": "hld",
+      "job": "lhtb24-08-hld-sudoku-recovery",
+      "state": "pending"
+    },
+    {
+      "task": "duckdb-optimizer-closure",
+      "arm": "hld",
+      "job": "lhtb24-09-hld-duckdb-optimizer-closure",
+      "state": "pending"
+    },
+    {
+      "task": "duckdb-optimizer-closure",
+      "arm": "recuris",
+      "job": "lhtb24-09-recuris-duckdb-optimizer-closure",
+      "state": "pending"
+    },
+    {
+      "task": "riscv-core-debug",
+      "arm": "recuris",
+      "job": "lhtb24-10-recuris-riscv-core-debug",
+      "state": "pending"
+    },
+    {
+      "task": "riscv-core-debug",
+      "arm": "hld",
+      "job": "lhtb24-10-hld-riscv-core-debug",
+      "state": "pending"
+    },
+    {
+      "task": "tabular-data-feature-covshift",
+      "arm": "hld",
+      "job": "lhtb24-11-hld-tabular-data-feature-covshift",
+      "state": "pending"
+    },
+    {
+      "task": "tabular-data-feature-covshift",
+      "arm": "recuris",
+      "job": "lhtb24-11-recuris-tabular-data-feature-covshift",
+      "state": "pending"
+    },
+    {
+      "task": "foldseek-paper-reproduction",
+      "arm": "recuris",
+      "job": "lhtb24-12-recuris-foldseek-paper-reproduction",
+      "state": "pending"
+    },
+    {
+      "task": "foldseek-paper-reproduction",
+      "arm": "hld",
+      "job": "lhtb24-12-hld-foldseek-paper-reproduction",
+      "state": "pending"
+    },
+    {
+      "task": "generals-bot-arena",
+      "arm": "hld",
+      "job": "lhtb24-13-hld-generals-bot-arena",
+      "state": "pending"
+    },
+    {
+      "task": "generals-bot-arena",
+      "arm": "recuris",
+      "job": "lhtb24-13-recuris-generals-bot-arena",
+      "state": "pending"
+    },
+    {
+      "task": "materials-phase-diagram-audit",
+      "arm": "recuris",
+      "job": "lhtb24-14-recuris-materials-phase-diagram-audit",
+      "state": "pending"
+    },
+    {
+      "task": "materials-phase-diagram-audit",
+      "arm": "hld",
+      "job": "lhtb24-14-hld-materials-phase-diagram-audit",
+      "state": "pending"
+    },
+    {
+      "task": "nrel-pysam-hybrid-renewables-audit",
+      "arm": "hld",
+      "job": "lhtb24-15-hld-nrel-pysam-hybrid-renewables-audit",
+      "state": "pending"
+    },
+    {
+      "task": "nrel-pysam-hybrid-renewables-audit",
+      "arm": "recuris",
+      "job": "lhtb24-15-recuris-nrel-pysam-hybrid-renewables-audit",
+      "state": "pending"
+    },
+    {
+      "task": "epidemic-inverse-control-audit",
+      "arm": "recuris",
+      "job": "lhtb24-16-recuris-epidemic-inverse-control-audit",
+      "state": "pending"
+    },
+    {
+      "task": "epidemic-inverse-control-audit",
+      "arm": "hld",
+      "job": "lhtb24-16-hld-epidemic-inverse-control-audit",
+      "state": "pending"
+    },
+    {
+      "task": "apex-management-consulting-matter",
+      "arm": "hld",
+      "job": "lhtb24-17-hld-apex-management-consulting-matter",
+      "state": "pending"
+    },
+    {
+      "task": "apex-management-consulting-matter",
+      "arm": "recuris",
+      "job": "lhtb24-17-recuris-apex-management-consulting-matter",
+      "state": "pending"
+    },
+    {
+      "task": "poc-exploit-craft",
+      "arm": "recuris",
+      "job": "lhtb24-18-recuris-poc-exploit-craft",
+      "state": "pending"
+    },
+    {
+      "task": "poc-exploit-craft",
+      "arm": "hld",
+      "job": "lhtb24-18-hld-poc-exploit-craft",
+      "state": "pending"
+    },
+    {
+      "task": "apex-investment-banking-matter",
+      "arm": "hld",
+      "job": "lhtb24-19-hld-apex-investment-banking-matter",
+      "state": "pending"
+    },
+    {
+      "task": "apex-investment-banking-matter",
+      "arm": "recuris",
+      "job": "lhtb24-19-recuris-apex-investment-banking-matter",
+      "state": "pending"
+    },
+    {
+      "task": "su2-airfoil-regression",
+      "arm": "recuris",
+      "job": "lhtb24-20-recuris-su2-airfoil-regression",
+      "state": "pending"
+    },
+    {
+      "task": "su2-airfoil-regression",
+      "arm": "hld",
+      "job": "lhtb24-20-hld-su2-airfoil-regression",
+      "state": "pending"
+    },
+    {
+      "task": "nbody-accel-iterative",
+      "arm": "hld",
+      "job": "lhtb24-21-hld-nbody-accel-iterative",
+      "state": "pending"
+    },
+    {
+      "task": "nbody-accel-iterative",
+      "arm": "recuris",
+      "job": "lhtb24-21-recuris-nbody-accel-iterative",
+      "state": "pending"
+    },
+    {
+      "task": "unknown-config-semantics",
+      "arm": "recuris",
+      "job": "lhtb24-22-recuris-unknown-config-semantics",
+      "state": "pending"
+    },
+    {
+      "task": "unknown-config-semantics",
+      "arm": "hld",
+      "job": "lhtb24-22-hld-unknown-config-semantics",
+      "state": "pending"
+    },
+    {
+      "task": "grammar-fuzz-coverage-hunt",
+      "arm": "hld",
+      "job": "lhtb24-23-hld-grammar-fuzz-coverage-hunt",
+      "state": "pending"
+    },
+    {
+      "task": "grammar-fuzz-coverage-hunt",
+      "arm": "recuris",
+      "job": "lhtb24-23-recuris-grammar-fuzz-coverage-hunt",
+      "state": "pending"
+    },
+    {
+      "task": "climate-netcdf-extreme-event-audit",
+      "arm": "recuris",
+      "job": "lhtb24-24-recuris-climate-netcdf-extreme-event-audit",
+      "state": "pending"
+    },
+    {
+      "task": "climate-netcdf-extreme-event-audit",
+      "arm": "hld",
+      "job": "lhtb24-24-hld-climate-netcdf-extreme-event-audit",
+      "state": "pending"
+    }
+  ],
+  "spending": {
+    "limit_microcny": 1152000000,
+    "settled_microcny": 4072846,
+    "reserved_microcny": 1679360,
+    "uncertain_microcny": 0,
+    "remaining_microcny": 1146247794,
+    "halt_reason": null,
+    "estimate_peak_cny": 1152.0
+  }
+}

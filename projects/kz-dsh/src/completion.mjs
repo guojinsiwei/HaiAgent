@@ -1,0 +1,107 @@
+import { digest, knownState } from './policy.mjs';
+import { knownDependency } from './memory.mjs';
+
+// A task-local ledger, not a second executor. IDs belong to the harness, never
+// to a model's changing prose. Unknown state invalidates proof conservatively.
+export class CompletionLedger {
+  constructor(state) {
+    this.state=state??{version:1,next:1,gaps:[],lastReview:null,diagnosed:null,status:'working'};
+    if(this.state.version!==1)throw new Error('unsupported completion ledger');
+  }
+  sync(scope,dependencies,evidence={},observed=null) {
+    const reopened=[];
+    for(const gap of this.state.gaps)if(gap.status==='closed') {
+      const proof=gap.proof,targets=Object.keys(proof?.dependencies??{});
+      const superseded=proof?.checks?.some(check=>Object.values(evidence).some(row=>row.key===check.key&&row.executed===true&&Number(row.id?.slice(1))>Number(check.id.slice(1))));
+      // An unknown hash cannot establish equality across actions. But a second
+      // refresh in the SAME observation is not a new action invalidating the
+      // check that has just run. Known changes invalidate even in that case.
+      const sameObservation=observed!==null&&observed===proof?.observed;
+      const unchanged=(old,now)=>knownDependency(old)&&knownDependency(now)?old===now:sameObservation&&old===now;
+      const current=!superseded&&proof&&(targets.length?targets.every(p=>unchanged(proof.dependencies[p],dependencies[p])):
+        knownState(scope)&&knownState(proof.scope)?scope===proof.scope:sameObservation&&scope===proof.scope);
+      if(!current){gap.status='needs_reverification';gap.reason='related_state_changed_or_unknown';reopened.push(gap.id);}
+    }
+    if(reopened.length)this.state.status='repair_pending';
+    return reopened;
+  }
+  open() {return this.state.gaps.filter(g=>g.status!=='closed');}
+  reconcileGoals(goals,evidence,observed) {
+    for(const gap of this.open())if(gap.key.startsWith('goal:')) {
+      const goal=goals.state.items[gap.requirement_id],row=evidence[goal?.proof?.evidence];
+      if(goal?.status!=='check_passed'||!goal.proof||!row)continue;
+      gap.status='closed';gap.proof={scope:goal.proof.scope,observed,dependencies:{...goal.proof.dependencies},
+        evidence_ids:[row.id],checks:[{key:row.key,id:row.id}]};
+    }
+  }
+  upsert(key,detail) {
+    let gap=this.state.gaps.find(g=>g.key===key);
+    if(!gap){gap={id:`Gap-${this.state.next++}`,key,status:'open'};this.state.gaps.push(gap);}
+    Object.assign(gap,detail,{status:'open'});delete gap.proof;return gap;
+  }
+  record(verdict,receipts,{scope,dependencies,accepted,evidence={},observed=null,publicTask=''}) {
+    const proofFor=ids=>{
+      const rows=ids.map(id=>evidence[id]).filter(Boolean);
+      // Equivalent duplicate checks in this SAME review do not invalidate one
+      // another. A newer contradictory result must still supersede old proof.
+      const current=rows.filter(row=>!rows.some(newer=>newer.key===row.key&&Number(newer.id.slice(1))>Number(row.id.slice(1))&&
+        newer.exitCode===row.exitCode&&newer.complete===row.complete&&newer.stdout===row.stdout&&newer.stderr===row.stderr));
+      return {scope,observed,dependencies:{...dependencies},evidence_ids:ids,checks:current.map(row=>({key:row.key,id:row.id}))};
+    };
+    for(const draft of Array.isArray(verdict.new_gaps)?verdict.new_gaps:[]) {
+      // Additional independent gaps must be anchored to an exact PUBLIC
+      // requirement, not just a fresh paraphrase of the last error.
+      if(typeof draft?.requirement_quote!=='string'||!draft.requirement_quote.trim()||!publicTask.includes(draft.requirement_quote))continue;
+      this.upsert(`requirement:${digest(draft.requirement_quote)}`,{kind:'public_requirement_gap',
+        requirement_quote:draft.requirement_quote,detail:draft.detail,
+        evidence_ids:(Array.isArray(draft.evidence_ids)?draft.evidence_ids:[]).filter(id=>receipts.some(r=>r.evidence_id===id)),next_step:draft.next_step});
+    }
+    // Explicit IDs update existing gaps. Legacy string gaps become ONE stable
+    // aggregate item, rather than a fresh ID for every paraphrase.
+    const updates=Array.isArray(verdict.gap_updates)?verdict.gap_updates:[];
+    for(const update of updates) {
+      if(!update||typeof update!=='object')continue;
+      const gap=this.state.gaps.find(g=>g.id===update.gap_id);
+      if(!gap)continue;
+      if(typeof update.detail==='string')gap.detail=update.detail;
+      const ids=update.evidence_ids;
+      if(update.status==='closed'&&Array.isArray(ids)&&ids.length&&ids.every(id=>receipts.some(r=>r.evidence_id===id&&r.passed)&&evidence[id])) {
+        gap.status='closed';gap.proof=proofFor(ids);
+      }else if(['open','needs_reverification'].includes(update.status)) {gap.status=update.status;delete gap.proof;}
+      // Unknown/fabricated IDs and prose-only closure never become proof.
+    }
+    if(!accepted&&verdict.gaps?.length)this.upsert('public-review',{
+      kind:'public_requirement_gap',detail:verdict.gaps,requirements:verdict.requirements,
+      evidence_ids:receipts.map(r=>r.evidence_id).filter(Boolean),
+      next_step:'Repair the evidenced requirement gap, or obtain a discriminating public observation.'});
+    if(!accepted)for(const receipt of receipts.filter(r=>!r.passed))this.upsert(`check:${digest(receipt.command)}`,{
+      kind:receipt.command_execution==='failed'?'check_failed':'verification_missing',detail:receipt.harness_diagnostic,
+      evidence_ids:receipt.evidence_id?[receipt.evidence_id]:[],next_step:receipt.command});
+    if(accepted&&!this.state.gaps.length)this.upsert('public-review',{kind:'public_requirement_coverage',detail:verdict.requirements});
+    if(accepted)for(const gap of this.open()) {
+      gap.status='closed';gap.proof=proofFor(receipts.map(r=>r.evidence_id).filter(Boolean));
+    }
+    this.state.status=accepted?'completed_publicly':'repair_pending';
+  }
+  fallback(goals,evidence) {
+    for(const [id,goal] of Object.entries(goals.state.items))if(goal.status!=='check_passed') {
+      const row=evidence[goal.lastEvidence];
+      this.upsert(`goal:${id}`,{kind:row?.failureObserved?'check_failed':'verification_missing',
+        requirement_id:id,detail:`${id} has no current verified acceptance receipt. This does not prove its implementation is wrong.`,
+        evidence_ids:row?[row.id]:[],next_step:goal.definition.verification?.arguments??'Discover an appropriate public check; do not invent a passing marker.'});
+    }
+    this.state.status='review_unavailable';
+  }
+  // Only an operator-supplied complete requirement manifest can enable this
+  // fallback. A model-created set of subgoals is NOT coverage of the whole task.
+  deterministicCoverage(requirements,goals) {
+    return Array.isArray(requirements)&&requirements.length>0&&requirements.every(r=>
+      typeof r.id==='string'&&Array.isArray(r.goalIds)&&r.goalIds.length>0&&r.goalIds.every(id=>goals.state.items[id]?.status==='check_passed'));
+  }
+  token(state) {
+    const latest=Object.values(state.evidence??{}).sort((a,b)=>Number(b.id?.slice(1))-Number(a.id?.slice(1)))[0];
+    const observation=latest?[latest.key,latest.exitCode,latest.complete,latest.rawHashes??digest([latest.stdout,latest.stderr]),latest.nativeToolError??false]:null;
+    return digest([state.scope,state.dependencies,observation,
+      Object.entries(state.subgoals?.items??{}).map(([id,g])=>[id,g.revision,g.status])]);
+  }
+}

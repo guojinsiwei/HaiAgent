@@ -1,0 +1,8 @@
+{
+  "task": "filter-js-from-html",
+  "image": "alexgshaw/filter-js-from-html:20251031",
+  "digest": "sha256:92acda0f124b988036a6f426ce0bc47fac19f5efe9fc5e6ea3ea52ccb075d0a4",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/filter-js-from-html/manifests/20251031",
+  "header_verified": true,
+  "time": 1792550860.5212681
+}

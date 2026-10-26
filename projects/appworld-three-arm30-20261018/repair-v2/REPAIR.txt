@@ -1,0 +1,39 @@
+HLD / KZDSH AppWorld 修复与补跑记录
+2026-10-19，repair-v2
+
+一、修复范围
+1. 命令验证身份：在所有分支忽略 description；实际 command、cwd、timeout 仍严格匹配，执行记录完整性校验保留。解决同一命令只改描述就被误拒的问题。
+2. HLD 规划协议：模型生成临时路线 ID；控制器分配稳定 ID、校验排名和生成精确对比字段。证据引用对照完整已知证据集合，失败后按 4/8/16/32 步退避，允许普通解题动作继续。侦察步数由 8 调为 3。
+3. Critic：完整检查格式提前提供；无检查的 accept 无法放行。格式错误仅有限重试，不再制造虚假的任务缺口。审查收到完整命令参数及明确标注截断的证据；连续三次世界状态无进展的审查结束为 incomplete，最终仍走官方评分。
+4. AppWorld 执行适配：审查检查强制只读，提交成功后封存写操作，防止测试消息等额外操作污染已完成状态。提供显式分页收集助手和文件执行入口；默认分页截断提示。公开任务指令明确只要求修改状态时，将提交 answer 规范化为 null；问答任务保留答案，不明确时保留原行为。
+5. 公共操作指南强调完整分页、对象身份、时间范围、精确筛选和最小修改范围，禁止用额外写入验证成功。上述策略只能降低模型选择错误；实际改善由补跑评分确认。
+
+这些变更覆盖算法控制、审查协议、执行适配和公共指南。本轮衡量整体修复效果，不能单独归因于某一个算法模块。模型、任务、镜像和官方评分器沿用原配置。运行时不读取隐藏评分答案。
+
+二、先离线验证，再启动
+全部通过：250 项测试（HLD 126、KZDSH 99、新增 JavaScript 9、Python 保护逻辑 9、原预算账本 6、控制器隔离/续跑 1）。
+真实历史误拒回放：HLD 21/21、KZDSH 20/20，共 41 条全部修复。
+真实 AppWorld 离线验收：13547f5_2 官方评分 6/6；同时验证只读拦截、提交后写入拦截、分页、文件执行、答案契约和隐藏评分接口不可访问。
+两组完整启动入口验收：隔离外网，预算端拒绝首次 reserve，验证启动链；没有付费模型调用。
+所有运行时 JavaScript 通过语法检查。
+ready.json 封存基础 243 项测试及生产文件哈希；另 7 项预算/控制器测试见 budget-controller-tests.json。验证过程新增付费调用为 0。
+
+三、补跑与预算
+仅补跑 15 个原失败任务：HLD 11，KZDSH 4；已通过任务不重复运行。
+HLD：13547f5_2、13547f5_3、90adc3f_3、2c544f9_1、f323bae_1、f323bae_2、f323bae_3、2c544f9_2、2c544f9_3、90adc3f_1、90adc3f_2。
+KZDSH：0d01c76_1、2c544f9_1、2c544f9_2、90adc3f_3。
+并发 6；沿用 spending.sqlite 和总上限 720 元，每次上限 8 元。15 次最多新增 120 元，仍受全轮原预算约束。启动前扣除已结算和不确定预留后的可用额度 260.465447 元。
+沿用 TaoToken deepseek-flash；密钥未写入报告或聊天。
+控制器已启动，PID 2961432。首次运行核对：6 项 solving，9 项 pending，六项均已有模型请求，暂未记录工程故障。之后以实时 status 为准。
+
+四、修复前后保留和比较
+原始结果：HLD 19/30、KZDSH 26/30、Recuris 27/30、DSH 25/30。
+原始运行时 runtime/、原任务目录和评分结果保留。original-result-manifest.json 包含 508 份原记录哈希，启动后再次核对一致。
+新运行时在 repair-v2/runtime/；新任务目录 jobs/<arm>--<task>--mechanism2/。baseline.json 保存修复前逐题结果，resume-plan.json 保存补跑对应关系。
+原账本备份 spending-before.sqlite 和预算快照 budget-before.json 存于服务器 repair-v2/。原支出未清零。
+对比时逐题列出原分数、新分数、耗时、请求数与费用；保留原始分组成绩，同时另报补跑后的有效通过数。只补跑失败题，结果不等同于全量独立重测或无偏随机对照。
+原 status.py 已备份到 repair-v2/status-before.py，其状态读取入口指向当前 repair-v2；原 health.json、summary.json 保留。
+
+服务器根目录：/mnt/sdb/home/lizh639/appworld-three-arm30-20261018
+进度及原始记录校验：python3 repair-v2/status.py --verify-originals
+验收文件：offline-tests.json、historical-replay.json、budget-controller-tests.json、world-acceptance.json、entry-acceptance.json、ready.json。

@@ -1,0 +1,8 @@
+{
+  "task": "gpt2-codegolf",
+  "image": "alexgshaw/gpt2-codegolf:20251031",
+  "digest": "sha256:537e7bd26b02db5c761230515fa09dc05f89403c6737fbdae4b5793ebc2c7066",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/gpt2-codegolf/manifests/20251031",
+  "header_verified": true,
+  "time": 1792550864.3107016
+}

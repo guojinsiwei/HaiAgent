@@ -1,0 +1,27 @@
+{
+  "state": "running",
+  "supervisor_identity": {
+    "pid": 632734,
+    "start": "819628218",
+    "boot": "2861b57d-7d78-4a80-a96b-0854417097ca"
+  },
+  "inherited_active": [
+    {
+      "job": "retry2-tb50-09-dsh-torch-pipeline-parallelism",
+      "pid": 609747,
+      "offline": false
+    },
+    {
+      "job": "retry2-tb50-09-native-kz-torch-pipeline-parallelism",
+      "pid": 616881,
+      "offline": true
+    },
+    {
+      "job": "retry2-tb50-09-kz-dsh-torch-pipeline-parallelism",
+      "pid": 626306,
+      "offline": true
+    }
+  ],
+  "total_concurrency": 6,
+  "per_arm": 2
+}

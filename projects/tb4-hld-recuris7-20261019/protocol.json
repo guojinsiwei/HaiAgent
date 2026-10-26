@@ -1,0 +1,57 @@
+{
+  "benchmark": "TerminalBench 4.0.0",
+  "commit": "452bf305c6daa62fc59061d22133a7cbc7c1572e",
+  "arms": [
+    "HLD v5 semantic replanning",
+    "Recuris v5 interface/stop-state repair"
+  ],
+  "paired_tasks": 7,
+  "selection": [
+    "payments-pipeline-fix",
+    "fin-saccr-rwa",
+    "mvcc-lsm-compaction",
+    "uefi-bootkit",
+    "retro-console-soc",
+    "gsea-proteomics",
+    "coq-block-bound"
+  ],
+  "model": "deepseek-flash",
+  "endpoint": "https://api.taotoken.net/token/v1/messages",
+  "temperature": 0,
+  "thinking": false,
+  "budget": {
+    "server_solver_seconds": 7200,
+    "per_run_cny": 6,
+    "campaign_cny": 84,
+    "shared_requests": 400,
+    "shared_tools": 600
+  },
+  "fresh_container": true,
+  "cross_task_memory": false,
+  "original_official_verifier": true,
+  "submission_snapshot_before_verifier": true,
+  "v5_source": "/mnt/sdb/home/lizh639/appworld-three-arm30-20261018/repair-v5",
+  "concurrency_note": "4 total, 2 per arm, admission pauses under low storage",
+  "total_trials": 14,
+  "max_trials_with_retry": 14,
+  "paid_attempts_per_arm_task": 1,
+  "no_automatic_paid_retries": true,
+  "task_preflight": "One unpaid original-verifier preflight for each run",
+  "retry_policy": "No automatic paid retries",
+  "concurrency": {
+    "total": 4,
+    "per_arm": 2
+  },
+  "experiment": {
+    "schema_version": 10,
+    "selection": "first_7_text_tasks_from_frozen_tb4_ten",
+    "task_count": 7,
+    "trial_count": 14,
+    "concurrency": 4,
+    "solver_seconds": 7200,
+    "engineering_retry_batches": 0,
+    "preflight_attempts_per_trial": 1,
+    "retry_score_zero": false,
+    "retry_valid_budget_exhaustion": false
+  }
+}

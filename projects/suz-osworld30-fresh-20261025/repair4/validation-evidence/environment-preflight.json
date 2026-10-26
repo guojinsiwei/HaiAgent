@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "cpu_only": true,
+  "model_calls": 0,
+  "initial_score": 0,
+  "desktop_ready": {
+    "required_window_families": [
+      [
+        "libreoffice",
+        "soffice"
+      ]
+    ],
+    "mapped_windows": [
+      {
+        "id": "0x03400096",
+        "class": "libreoffice.libreoffice-impress",
+        "width": 1850,
+        "height": 1016
+      }
+    ],
+    "elapsed_seconds": 11.135950214997138,
+    "passed": true,
+    "model_visible": false
+  },
+  "source_sha256": "0486b43af257178995092f779dd9a7aa0acaa8a9275feaa0e897754e58e9f256",
+  "deployment_sha256": "dd8723e66993a175024cb471ca949a29ff89985c86f1194f5413f61209cecc9f",
+  "model_config_sha256": "27a0892ebfb2940f7d95a0e80b6bb95ca682a0e325538f0a804a6072e07a0681",
+  "multistep_deployment_sha256": "dd8723e66993a175024cb471ca949a29ff89985c86f1194f5413f61209cecc9f",
+  "provenance": "Repaired source and streaming configuration verified by both live multistep preflights and CPU grading preflight."
+}

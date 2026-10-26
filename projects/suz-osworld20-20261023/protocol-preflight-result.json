@@ -1,0 +1,22 @@
+[
+  {
+    "mode": "opencua_baseline",
+    "passed": true,
+    "actions": [
+      "pyautogui.click(280, 315)"
+    ],
+    "status": "running",
+    "cost_cny": 0.0018348000000000001,
+    "model_requests": 1
+  },
+  {
+    "mode": "suz",
+    "passed": true,
+    "actions": [
+      "pyautogui.click(286, 319)"
+    ],
+    "status": "running",
+    "cost_cny": 0.0181184,
+    "model_requests": 3
+  }
+]

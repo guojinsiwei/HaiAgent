@@ -1,0 +1,12 @@
+{
+  "task_id": "f723c744-e62c-4ae6-98d1-750d3cd7d79d",
+  "official_score": 1.0,
+  "error": null,
+  "executed_batches": 8,
+  "phase": "graded",
+  "agent_status": "visually_accepted",
+  "wall_seconds": 544.5295517444611,
+  "total_accounted_cny": 0.3069132,
+  "model_requests": 17,
+  "outcome_kind": "agent_completed"
+}

@@ -1,0 +1,43 @@
+{
+  "candidates": 2,
+  "admitted": 2,
+  "model_calls": 0,
+  "commands_executed": 0,
+  "original_scores_unchanged": true,
+  "results": [
+    {
+      "trial": "bestfgs-climate-netcdf-extreme-event-audit",
+      "source": "/var/tmp/lizh639-lhtb-paired6-repair-v2-20260929/runs/bestfgs-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__mcmDudc/agent/method/events.jsonl",
+      "source_sha256": "829ec7cafdaeb5c4938b2d5e439cdf7cd0ad28ebc3f1d9778e0af463cb350db3",
+      "original_rejection": "invalid operation",
+      "new_admission": true,
+      "repairs": [
+        {
+          "field": "operation",
+          "reason": "overlong_optional_field_omitted",
+          "original_chars": 123,
+          "sha256": "587a7fc6fa053c9c5512971231bd92ebc04cb460997f29530bea7dda575a5e92"
+        }
+      ],
+      "applicability": "target_dependencies_changed_or_unknown_recheck_required",
+      "conclusion_and_evidence_preserved": true
+    },
+    {
+      "trial": "bestfgs-spot-scheduler-traces",
+      "source": "/var/tmp/lizh639-lhtb-paired6-repair-v2-20260929/runs/bestfgs-spot-scheduler-traces/spot-scheduler-traces__USQgWic/agent/method/events.jsonl",
+      "source_sha256": "7e500f18ec8843b1e21cd3b944d61143a9bafbdb3e44d8c83b2e318d24bdad7b",
+      "original_rejection": "invalid operation",
+      "new_admission": true,
+      "repairs": [
+        {
+          "field": "operation",
+          "reason": "overlong_optional_field_omitted",
+          "original_chars": 143,
+          "sha256": "ea119c35a65b9f1a190d930855328beb0015b07d35afbebb2f534a27afddd949"
+        }
+      ],
+      "applicability": "target_dependencies_changed_or_unknown_recheck_required",
+      "conclusion_and_evidence_preserved": true
+    }
+  ]
+}

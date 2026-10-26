@@ -1,0 +1,32 @@
+{
+  "benchmark": "SWE-bench Pro V2",
+  "task_indices": [
+    5,
+    8,
+    11,
+    12,
+    10
+  ],
+  "arms": [
+    "old",
+    "new"
+  ],
+  "runs": 10,
+  "selection": "Four HLD failures plus one random previously passed task; seed 20261020, Element task 10. Diagnostic development comparison, not held-out generalization.",
+  "model": "deepseek-flash",
+  "temperature": 0,
+  "per_run_cny": 8,
+  "total_comparison_cny": 80,
+  "original_envelope_cny": 240,
+  "requests_per_task": 400,
+  "tools_per_task": 600,
+  "solver_seconds": 3000,
+  "concurrency": 4,
+  "baseline": "Exact frozen HLD deployed in original SWE-Pro run",
+  "candidate": "Generic role protocol, structured-data rendering, public contract and repeated-failure replanning repairs",
+  "same_environment": "Same original image, instruction, dependency cache preparation, CPU=1, memory=8GB, source state and official verifier",
+  "evaluation": "Fresh isolated container with only captured patch and original official tests; no prior task patch, audit or grading output given to solver",
+  "automatic_paid_retries": false,
+  "algorithm_source_frozen": true,
+  "cross_task_memory": false
+}

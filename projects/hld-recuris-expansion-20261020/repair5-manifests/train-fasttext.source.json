@@ -1,0 +1,8 @@
+{
+  "task": "train-fasttext",
+  "image": "alexgshaw/train-fasttext:20251031",
+  "digest": "sha256:3c77da9617e7fa577de04aef73fb1ac3114be32d7ffef72609c83929d842b157",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/train-fasttext/manifests/20251031",
+  "header_verified": true,
+  "time": 1792510257.7621498
+}

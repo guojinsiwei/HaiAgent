@@ -1,0 +1,117 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "id": "androidworld-ContactsAddContact",
+      "initialized": true,
+      "official_initial_score": 0.0,
+      "screenshot_shape": [
+        2400,
+        1080,
+        3
+      ],
+      "model_calls": 0
+    },
+    {
+      "id": "androidworld-ClockTimerEntry",
+      "initialized": true,
+      "official_initial_score": 0.0,
+      "screenshot_shape": [
+        2400,
+        1080,
+        3
+      ],
+      "model_calls": 0
+    },
+    {
+      "id": "androidworld-SimpleCalendarAddOneEvent",
+      "initialized": true,
+      "official_initial_score": 0.0,
+      "screenshot_shape": [
+        2400,
+        1080,
+        3
+      ],
+      "model_calls": 0
+    },
+    {
+      "id": "androidworld-SimpleCalendarAddRepeatingEvent",
+      "initialized": true,
+      "official_initial_score": 0.0,
+      "screenshot_shape": [
+        2400,
+        1080,
+        3
+      ],
+      "model_calls": 0
+    },
+    {
+      "id": "androidworld-MarkorCreateNote",
+      "initialized": true,
+      "official_initial_score": 0.0,
+      "screenshot_shape": [
+        2400,
+        1080,
+        3
+      ],
+      "model_calls": 0
+    },
+    {
+      "id": "androidworld-MarkorEditNote",
+      "initialized": true,
+      "official_initial_score": 0.0,
+      "screenshot_shape": [
+        2400,
+        1080,
+        3
+      ],
+      "model_calls": 0
+    },
+    {
+      "id": "androidworld-SimpleSmsSend",
+      "initialized": true,
+      "official_initial_score": 0.0,
+      "screenshot_shape": [
+        2400,
+        1080,
+        3
+      ],
+      "model_calls": 0
+    },
+    {
+      "id": "androidworld-ExpenseAddSingle",
+      "initialized": true,
+      "official_initial_score": 0.0,
+      "screenshot_shape": [
+        2400,
+        1080,
+        3
+      ],
+      "model_calls": 0
+    },
+    {
+      "id": "androidworld-RecipeAddSingleRecipe",
+      "initialized": true,
+      "official_initial_score": 0.0,
+      "screenshot_shape": [
+        2400,
+        1080,
+        3
+      ],
+      "model_calls": 0
+    },
+    {
+      "id": "androidworld-SimpleSmsReply",
+      "initialized": true,
+      "official_initial_score": 0.0,
+      "screenshot_shape": [
+        2400,
+        1080,
+        3
+      ],
+      "model_calls": 0
+    }
+  ],
+  "model_calls": 0,
+  "cpu_only": true
+}

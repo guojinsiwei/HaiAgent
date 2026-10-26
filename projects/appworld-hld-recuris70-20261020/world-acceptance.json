@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "persistent_cells": true,
+  "separate_worlds": true,
+  "errors_return_nonzero": true,
+  "grader_not_exposed": true,
+  "saved_world_regraded": true,
+  "paid_calls": 0
+}

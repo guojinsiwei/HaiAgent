@@ -1,0 +1,8 @@
+{
+  "task": "polyglot-c-py",
+  "image": "alexgshaw/polyglot-c-py:20251031",
+  "digest": "sha256:0f1c3b7816d70cf5551573fd6aeef76893f2ae3000be2419997b6871b5d987ed",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/polyglot-c-py/manifests/20251031",
+  "header_verified": true,
+  "time": 1792550877.095747
+}

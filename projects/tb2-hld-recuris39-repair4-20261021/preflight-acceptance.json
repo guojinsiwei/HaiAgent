@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "task": "caffe-cifar-10",
+      "arm": "recuris",
+      "stage": "retry",
+      "state": "pending",
+      "job": "tb2hr39-04-recuris-caffe-cifar-10-repair4",
+      "budget_job": "tb2hr39-04-recuris-caffe-cifar-10",
+      "original_job": "tb2hr39-04-recuris-caffe-cifar-10",
+      "preflight_attempt_id": "1c6b9ec69eb1484d83cfc3d6ec49bed4",
+      "admission_offline": true,
+      "preflight": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-hld-recuris39-repair4-20261021/preflight/preflight-tb2hr39-04-recuris-caffe-cifar-10-repair4/caffe-cifar-10__2aZZ5WT",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "harbor_exit": 0
+      },
+      "preflight_ok": true
+    },
+    {
+      "task": "mailman",
+      "arm": "hld",
+      "stage": "retry",
+      "state": "pending",
+      "job": "tb2hr39-25-hld-mailman-repair4",
+      "budget_job": "tb2hr39-25-hld-mailman",
+      "original_job": "tb2hr39-25-hld-mailman",
+      "preflight_attempt_id": "ba5d08e807b64e64a2e6752eada5bb6f",
+      "admission_offline": true,
+      "preflight": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-hld-recuris39-repair4-20261021/preflight/preflight-tb2hr39-25-hld-mailman-repair4/mailman__pbLo25C",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "harbor_exit": 0
+      },
+      "preflight_ok": true
+    },
+    {
+      "task": "mailman",
+      "arm": "recuris",
+      "stage": "retry",
+      "state": "pending",
+      "job": "tb2hr39-25-recuris-mailman-repair4",
+      "budget_job": "tb2hr39-25-recuris-mailman",
+      "original_job": "tb2hr39-25-recuris-mailman",
+      "preflight_attempt_id": "920989f9750b488baedd314845ada160",
+      "admission_offline": true,
+      "preflight": {
+        "trial": "/mnt/sdb/home/lizh639/tb2-hld-recuris39-repair4-20261021/preflight/preflight-tb2hr39-25-recuris-mailman-repair4/mailman__jq6GrjA",
+        "reward": 0.0,
+        "exception_type": null,
+        "engineering_clean": true,
+        "result_status": "present",
+        "lifecycle_status": "succeeded",
+        "collection_failures": [],
+        "harbor_exit": 0
+      },
+      "preflight_ok": true
+    }
+  ],
+  "paid_calls": 0,
+  "preserved_results_unchanged": true
+}

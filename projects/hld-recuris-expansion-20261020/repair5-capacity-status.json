@@ -1,0 +1,49 @@
+{
+  "time": "2026-10-20T23:47:57.091590",
+  "all_five_preflights_passed": true,
+  "preflight_model_calls": 0,
+  "repair5": {
+    "preflight_passed": 5,
+    "scored": 0,
+    "passed": 0,
+    "failed": 0
+  },
+  "repair5_active": {
+    "job": "tb2hr50-26-recuris-path-tracing-imagefix1",
+    "task": "path-tracing",
+    "offline": false,
+    "pid": 134052
+  },
+  "first_repair_original_budget_calls": 31,
+  "active_by_arm": {
+    "hld": 5,
+    "recuris": 2
+  },
+  "summary": {
+    "hld": {
+      "total": 50,
+      "finished": 10,
+      "clean": 10,
+      "scored": 10,
+      "engineering_failures": 0,
+      "passed": 5
+    },
+    "recuris": {
+      "total": 50,
+      "finished": 28,
+      "clean": 28,
+      "scored": 28,
+      "engineering_failures": 0,
+      "passed": 12
+    }
+  },
+  "budget": {
+    "limit_microcny": 800000000,
+    "settled_microcny": 161203190,
+    "reserved_microcny": 675840,
+    "uncertain_microcny": 0,
+    "remaining_microcny": 638120970,
+    "halt_reason": null,
+    "estimate_peak_cny": 800.0
+  }
+}

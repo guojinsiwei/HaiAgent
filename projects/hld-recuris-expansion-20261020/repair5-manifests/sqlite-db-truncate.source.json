@@ -1,0 +1,8 @@
+{
+  "task": "sqlite-db-truncate",
+  "image": "alexgshaw/sqlite-db-truncate:20251031",
+  "digest": "sha256:aabac93c93bd1f310e6a6fb893911d7735026ed18491c72133c9196a09092ca4",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/sqlite-db-truncate/manifests/20251031",
+  "header_verified": true,
+  "time": 1792509977.7125964
+}

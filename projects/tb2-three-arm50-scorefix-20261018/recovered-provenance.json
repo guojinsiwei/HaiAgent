@@ -1,0 +1,52 @@
+{
+  "original_trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-retry2-20261018/jobs/retry2-tb50-09-dsh-torch-pipeline-parallelism/torch-pipeline-parallelism__Ksib3ke",
+  "source_log_sha256": "2ad8cd1a5c6b80ea37848a65f1d2ceba2f9aa7df095bba734d8b986e1e91768d",
+  "file_sha256": "6fc675095f946f96f5b81aab19ae7d588d77311a09a47100afbdf1b0cd5a1a5d",
+  "lines": 362,
+  "sources": [
+    {
+      "row": 155,
+      "call": "call_00_uddr7hcan6t4yskfwhartg8j"
+    },
+    {
+      "row": 160,
+      "call": "call_00_428liao45erho4a85hwco7km"
+    },
+    {
+      "row": 175,
+      "call": "call_00_9obo0hfhlmcu08x6k5ko3puk"
+    },
+    {
+      "row": 180,
+      "call": "call_00_tic6vtfz2ijf9xnsg6g0crf9"
+    },
+    {
+      "row": 184,
+      "call": "call_00_a5zl6g0woumpiqkfb2u6ubxp"
+    },
+    {
+      "row": 189,
+      "call": "call_00_5bgo873o1x1nphr740etaqc1"
+    },
+    {
+      "row": 193,
+      "call": "call_00_mwubrg54rhedbg2kzzyd857r"
+    },
+    {
+      "row": 198,
+      "call": "call_00_qp9qzoc4nzrnm6jh82vk80bs"
+    },
+    {
+      "row": 218,
+      "call": "call_00_wq3iveheoouoc42n0vd3x59z"
+    },
+    {
+      "row": 223,
+      "call": "call_00_k5o4ech2ht9qxox8n4d5ohpj"
+    }
+  ],
+  "model_calls": 0,
+  "recovery": "Complete reads at unchanged checkpoint, then exact successful edits; final read verified",
+  "syntax_valid": false,
+  "syntax_error": "invalid syntax (<unknown>, line 159)"
+}

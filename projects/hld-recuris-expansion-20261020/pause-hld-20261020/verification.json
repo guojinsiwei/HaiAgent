@@ -1,0 +1,12 @@
+{
+  "time": 1792490369.0466547,
+  "tb2_hld_paused": 50,
+  "appworld_enabled": [
+    "recuris"
+  ],
+  "appworld_completed_recuris": 2,
+  "appworld_active_recuris": 2,
+  "tb2_state": "held_low_disk",
+  "tb2_wait_reason": "existing_swepro_grading",
+  "hld_solver_calls_stopped": true
+}

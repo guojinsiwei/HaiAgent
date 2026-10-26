@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "arm": "hld",
+      "passed": true,
+      "calls": [
+        "/reserve"
+      ],
+      "external_network": false,
+      "paid_calls": 0
+    },
+    {
+      "arm": "recuris",
+      "passed": true,
+      "calls": [
+        "/reserve"
+      ],
+      "external_network": false,
+      "paid_calls": 0
+    }
+  ],
+  "paid_calls": 0
+}

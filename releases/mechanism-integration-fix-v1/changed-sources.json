@@ -1,0 +1,42 @@
+[
+  {
+    "path": "bestfgs-project/src/bestfgs/lean_memory.py",
+    "before": "e4cd971b64b2821686b4f4a225eda5924cdb1904958e7ea67ea53f6ecc08b5d2",
+    "after": "a4eaa3dbdb395923470c6c44986a73afbee8c228e1ec28d49f584f829492984f"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/lean_protocol.py",
+    "before": "58ff8f9708f97b207646951f8fc0a86c72a29e24912bd3284f9b9503edcdf415",
+    "after": "a6093d0b590d2d48e3dc50b481fcf96b8aa6107dba32a18bac7fffa473c03daf"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/lean_runtime.py",
+    "before": "2c82e4fa5ab8b4a9317b5714b7536be5bafe846c9da8f02cdef4e10977614c3d",
+    "after": "83e7cc29f541767d6eaa07e7c0d836216819c8b77064c8c7b75c2aab757938ec"
+  },
+  {
+    "path": "bestfgs-project/src/bestfgs/prompt_views.py",
+    "before": "c6a43055a551d3f5541d902da71a1b35e86d4e47b1342d27f04fa8ef0b35b5f0",
+    "after": "68353387a320b28f05230f649887faa0e1c2b0445d89e6c8cc8986986a315723"
+  },
+  {
+    "path": "hai-project/src/haiagent/runtime.py",
+    "before": "1c753dc2a5041bc25861800d0d80ee220875ecff379a01e44c5ebc1ffd214c20",
+    "after": "6d6ec919089be6ecd71ecefcf64fe438caea4f8d4bfe330d78101b6207672081"
+  },
+  {
+    "path": "hai-project/src/terminal_context/core.py",
+    "before": "1f564599e112bfaed23980551751a8daa5e325c0fb3dbd5582ef4cd81ba79588",
+    "after": "4e121ef0c13b3e2734cb7bae18d49255fa496ffdda88a4cd1804a614987cf90f"
+  },
+  {
+    "path": "hai_outcomes.py",
+    "before": "007200423a23c9a011e51ca0c6b3d3d187cee7b0e58a0793406d550f2bb5e2ae",
+    "after": "51bfbfdb144d0adbdfcc0ba710069aa71e2bfa5fc5659a62d6f19ca0461a6def"
+  },
+  {
+    "path": "hai_transport.py",
+    "before": "f685a93b551116dc52433c57f8f88f3d5e074ae8fe05a8710b38019d58caae7b",
+    "after": "f4363ebb8b50e0d511e56344c2d42abe20e3e5d99667b9c71e1383d2ee2665db"
+  }
+]

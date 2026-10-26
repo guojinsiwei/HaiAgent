@@ -1,0 +1,10 @@
+{
+  "pid": 478062,
+  "finite_trials": 1,
+  "original_budget_cny": 624,
+  "per_original_job_limit_cny": 8,
+  "global_paid_concurrency_limit": 8,
+  "task": "polyglot-rust-c",
+  "arm": "hld",
+  "gpt_calls": 0
+}

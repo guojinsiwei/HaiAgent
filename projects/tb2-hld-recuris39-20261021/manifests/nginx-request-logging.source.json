@@ -1,0 +1,8 @@
+{
+  "task": "nginx-request-logging",
+  "image": "alexgshaw/nginx-request-logging:20251031",
+  "digest": "sha256:693e64431a0dbf45952e8b91a298d54fd60247e501c6623fb8fa3ebc07fc3d3d",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/nginx-request-logging/manifests/20251031",
+  "header_verified": true,
+  "time": 1792550874.433301
+}

@@ -1,0 +1,39 @@
+2026-10-16 — User-authorized restart from task 2
+
+Original incident
+Task 2's first provider request returned HTTP 502 without trustworthy usage.
+The previous implementation incorrectly latched a campaign-wide halt. The host
+then attempted to write into a container-owned live directory and exited with
+PermissionError. Neither the original supervisor nor its trial runner remains.
+
+Repair
+Unknown usage keeps its full monetary reservation and stops the current solver.
+Provider/authentication/protocol faults are recorded per task; subsequent tasks
+continue. Campaign budget exhaustion still latches a global stop.
+The host no longer writes stop files into container-owned live directories.
+Unknown-usage failures cannot be classified as clean model-quality results.
+
+Recovery state
+Task 1 remains completed and is not rerun. Task 2's original attempt and logs
+remain under its original job directory. Its authorized replacement uses job
+resume-02-kz-dsh-layout-config-recreation, charged to the SAME task budget identity.
+Tasks 3–10 follow in their original order. There is no automatic paid retry batch.
+The full calls table was preserved unchanged. Only the erroneous legacy global
+usage_unavailable halt was cleared, with an audit record of the transition.
+
+Budget at recovery preparation (CNY estimate, not exact Credits billing)
+Campaign cap: 40.000000; task cap: 5.000000.
+Settled: 4.620044; uncertain retained: 0.387072; remaining: 34.992884.
+The prior task 2 request counts toward its request and monetary limits.
+
+Validation
+396 Node + 44 Python + 18 deadline/provider tests passed. Regression coverage
+includes continuation after unknown usage/authentication failure, persistent
+unknown reservations, campaign cap enforcement and a simulated container-owned
+directory that raises PermissionError on host writes.
+
+Credentials
+The old supervisor held the credential only in process memory and has exited.
+secure_resume.py opens a masked field for the user to enter it again. No key is
+written to this report, chat or a credential file. The program calls the explicit
+resume path only after checking the repaired seal and reconciled queue.

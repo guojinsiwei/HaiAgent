@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "task": "13547f5_2",
+  "grade": [
+    6,
+    6
+  ],
+  "checks": [
+    "actual requester read-only",
+    "post-submit probe blocked",
+    "state-only answer contract",
+    "pagination exhaustion",
+    "direct client --file",
+    "hidden grader unavailable",
+    "official grade persisted"
+  ],
+  "paid_calls": 0,
+  "artifacts": "/mnt/sdb/home/lizh639/appworld-three-arm30-20261018/repair-v2/acceptance/567a306204"
+}

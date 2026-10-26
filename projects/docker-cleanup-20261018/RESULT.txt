@@ -1,0 +1,13 @@
+Completed 2026-10-18, Asia/Shanghai.
+Deleted 215 unreferenced old images using explicit tag lists and no force:
+39 finished official TB2 task images, 165 old Compose trial images,
+11 old SkillsBench images under the user's explicit expanded cleanup approval.
+Existing containers and pending TB2 dependency images were protected each time.
+Reclaimed old unshared build cache with exact ID allowlist AND unused for 24h:
+Docker reported 8.148 GB. No --all or system/image/container/volume prune used.
+No result/log/artifact files removed; matched official result hashes verified.
+Free space: approximately 56 GiB before, 182.58 GiB at cleanup completion,
+180.60 GiB after admitting new jobs. Six-way combined concurrency verified.
+Per-image deletion results are in official-cleanup-result.json,
+unused-compose-result.json, unused-skills-result.json; cache audit in
+cache-result.json, cache-allowlist.json and cache-prune.log.

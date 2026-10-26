@@ -1,0 +1,17 @@
+2026-10-01, college server 172.16.108.236, isolated candidate only.
+Command:
+/mnt/sdb/home/lizh639/terminalbench-v14-setup/runtime/bin/python -m unittest discover -s /var/tmp/lizh639-memory-normalized-xBQsEA/tests
+Exit code: 0
+
+Captured terminal output:
+........................[API] 本次模型请求未成功：Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+.....................[API] 本次模型请求未成功：Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+..................................................
+----------------------------------------------------------------------
+Ran 95 tests in 2.311s
+
+OK
+
+The two API-labeled lines come from deliberately malformed mock responses in
+transport-repair unit tests, not real provider calls. No API key or paid model
+request was used in this regression run.

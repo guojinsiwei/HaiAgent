@@ -1,0 +1,11 @@
+{
+  "schema_version": 4,
+  "selection": "tb2_official_sample_names_from_pinned_full_dataset",
+  "task_count": 10,
+  "concurrency": 1,
+  "solver_seconds": 2700,
+  "engineering_retry_batches": 0,
+  "preflight_attempts_per_trial": 1,
+  "retry_score_zero": false,
+  "retry_valid_budget_exhaustion": false
+}

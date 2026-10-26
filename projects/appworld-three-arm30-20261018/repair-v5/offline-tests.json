@@ -1,0 +1,18 @@
+{
+  "hld": {
+    "code": 0,
+    "log": "/mnt/sdb/home/lizh639/appworld-three-arm30-20261018/repair-v5/hld-tests.log"
+  },
+  "kzdsh-new": {
+    "code": 0,
+    "log": "/mnt/sdb/home/lizh639/appworld-three-arm30-20261018/repair-v5/kzdsh-new-tests.log"
+  },
+  "dsh-baselines": {
+    "code": 0,
+    "log": "/mnt/sdb/home/lizh639/appworld-three-arm30-20261018/repair-v5/dsh-baselines-tests.log"
+  },
+  "passed": true,
+  "paid_calls": 0,
+  "note": "160 HLD + 50 KZDSH + 10 Recuris/native/transport checks. TACO not deployed; excluded from lifecycle test selection.",
+  "tests": 220
+}

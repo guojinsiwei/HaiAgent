@@ -1,0 +1,26 @@
+{
+  "source_sha256": "0ac7117066b8c7853139a9f112624b626ec11b1c0657811a4c0c5df2f8266906",
+  "arms": [
+    {
+      "mode": "opencua_baseline",
+      "passed": true,
+      "cpu_only": true,
+      "batches": 12,
+      "green_fraction": 0.8339120370370371,
+      "cost_cny": 0.1144904,
+      "requests": 15,
+      "source_sha256": "0ac7117066b8c7853139a9f112624b626ec11b1c0657811a4c0c5df2f8266906"
+    },
+    {
+      "mode": "suz",
+      "passed": true,
+      "cpu_only": true,
+      "batches": 13,
+      "green_fraction": 0.8339120370370371,
+      "cost_cny": 0.7582504,
+      "requests": 30,
+      "source_sha256": "0ac7117066b8c7853139a9f112624b626ec11b1c0657811a4c0c5df2f8266906"
+    }
+  ],
+  "timestamp": 1792817509.862705
+}

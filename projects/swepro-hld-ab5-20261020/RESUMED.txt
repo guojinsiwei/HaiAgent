@@ -1,0 +1,20 @@
+2026-10-20：纠正暂停范围
+
+用户明确要求：大规模 TB2.0/AppWorld 对比暂停 HLD；SWE-Pro 小规模
+新旧 HLD 对照剩余四次运行应继续。此前中断由助手误解范围造成。
+
+已启动恢复进程 2951453：
+/mnt/sdb/home/lizh639/swepro-hld-ab5-20261020/resume-interrupted-20261020/
+
+swp-10-old、swp-10-new、swp-11-old、swp-11-new 均已实际恢复：
+使用原会话 ID、保存的补丁与 HLD 状态；四组日志均出现 restored 事件。
+保留原 8 元/任务、80 元/全轮账本；先前消费继续计入。
+Element 剩余运行时间每组663秒；Vuls 每组793秒。基础设施停顿不计入运行时间。
+不向模型提供已产生的官方评分反馈；保留误停前后产物，恢复运行单独记录。
+
+进度首先读取 resume-interrupted-20261020/health.json。
+旧评分控制器退出后，恢复进程同步根 health.json/status.json；
+旧控制器尚未退出时，根状态仍代表误停后的收尾评分。
+active-recovery.json 指明当前有效的恢复目录。
+
+大规模 TB2.0/AppWorld 队列仍仅启用 Recuris，HLD 继续暂停。

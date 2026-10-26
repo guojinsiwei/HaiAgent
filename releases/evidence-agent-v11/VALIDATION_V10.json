@@ -1,0 +1,49 @@
+{
+  "release": "redundancy-metric-v10",
+  "date": "2026-09-21",
+  "implementation_sha256": "9fddf4960d28e9cf9c42011023c9605233b2bf9d70b76d72ccf2c113cea417b7",
+  "parent_release": "metrics-protocol-v9",
+  "parent_sha256_verified_unchanged": "e3f6e169d53c7b8d42851bfe88e40cb7f04d7307864ab8aee9cfd56d868a4ade",
+  "metric_version": "cli-comparison-v2",
+  "metric_report_version": "cli-metrics-report-v3",
+  "redundancy_version": "reusable-evidence-v1",
+  "python": "3.12.14",
+  "platform": "Windows",
+  "full_suite": {
+    "command": "python -m unittest discover -s tests -q",
+    "tests_run": 495,
+    "passed": 488,
+    "skipped": 7,
+    "failures": 0,
+    "errors": 0,
+    "elapsed_seconds": 112.450
+  },
+  "targeted_suite": {
+    "command": "python -m unittest test_redundancy_v10 test_raw_comparison test_metrics_report_v2 test_experience_ablation -q",
+    "tests_run": 89,
+    "failures": 0,
+    "errors": 0,
+    "elapsed_seconds": 7.629
+  },
+  "new_detector_tests": 24,
+  "unchanged_from_parent": [
+    "src/bestfgs/best_first_runtime.py",
+    "src/bestfgs/experience.py",
+    "src/bestfgs/micro_experience.py",
+    "src/bestfgs/raw_baseline.py",
+    "src/bestfgs/environment.py",
+    "src/bestfgs/retrac_adapter.py",
+    "src/bestfgs/cli_config.py",
+    "run_comparison.py"
+  ],
+  "validation_scope": "Offline unit/integration tests including common-executor Python reads; not a SWE-bench outcome or detector accuracy study on real task traces.",
+  "paid_api_calls_started": false,
+  "cloud_deployed": false,
+  "official_evaluation_started": false,
+  "limitations": [
+    "Operational reusable-evidence redundancy, not complete semantic usefulness inference.",
+    "Local checks assume frozen workspace-local task dependencies; external or stochastic state is not fully observed.",
+    "Unsupported operations remain unknown and stay in the denominator; compare coverage between arms.",
+    "Legacy traces lack the new dependency evidence and cannot be relabelled as the new metric."
+  ]
+}

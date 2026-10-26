@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "model_calls": 0,
+  "result": {
+    "trial": "/mnt/sdb/home/lizh639/transport-recovery-20261023/lhtb/preflight/preflight-accept-fast-nbody/nbody-accel-iterative__SCTjnAE",
+    "reward": 0.0,
+    "official_full_pass": false,
+    "solved_095": false,
+    "engineering_clean": true,
+    "exception": null,
+    "shared_usage": {
+      "requests": 1,
+      "tools": 0,
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0,
+      "unknownUsageRequests": 1,
+      "stopped": null,
+      "budgetMode": "bounded_peak_price_estimate",
+      "updated_utc": "2026-10-23T06:29:53.706Z"
+    },
+    "stops": {
+      "budget-stop.json": {
+        "reason": "per_task_budget_exhausted"
+      },
+      "limit-stop.json": null,
+      "provider-stop.json": {
+        "kind": "budget",
+        "reason": "per_task_budget_exhausted"
+      },
+      "wall-limit.json": {
+        "state": "terminating",
+        "reason": "budget-stop.json",
+        "limit_seconds": 90,
+        "attempt_id": "9d32adc603ca407597df3a9335b058f6"
+      }
+    },
+    "continuation": {
+      "offline_acceptance": true,
+      "paid_calls": 0,
+      "continue_until_timeout_phase": 0
+    },
+    "offline": true,
+    "scoring_clean": true,
+    "completed_owned_containers_released": true,
+    "harbor_exit": 0
+  },
+  "acceptance": "Official missing-artifact path returns score 0; exact pinned verifier image and root-only result ownership normalization validated. Full baseline grader also passed initial three stages and remains running."
+}

@@ -1,0 +1,8 @@
+{
+  "task": "configure-git-webserver",
+  "image": "alexgshaw/configure-git-webserver:20251031",
+  "digest": "sha256:9e48389b917fd4650dda1f64406bd7198bbf20dc1c6b0e5c4d81a3c16369f88c",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/configure-git-webserver/manifests/20251031",
+  "header_verified": true,
+  "time": 1792550856.615703
+}

@@ -1,0 +1,16 @@
+{
+  "version": "planner-solver-graph-v3",
+  "passed": true,
+  "tests_run": 185,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "python": "3.12.14",
+  "platform": "Windows",
+  "updated": 1791049463.7873936,
+  "model_api_calls": 0,
+  "cloud_deployed": false,
+  "actual_file_snapshot_fixture": true,
+  "linux_production_executor_verified": false,
+  "benchmark_performance_verified": false
+}

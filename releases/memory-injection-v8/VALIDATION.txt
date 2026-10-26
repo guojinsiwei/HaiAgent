@@ -1,0 +1,88 @@
+Validation, 2026-10-01
+
+Latest ANSI/handover/live-test entry build:
+- Local: 118 tests discovered, 102 passed, 16 Linux-only skipped.
+- College isolated Linux run: all 118 passed, 0 skipped, 0 failed/errors.
+- Original six paired engineering scenarios: twelve real-command runs, 6/6
+  controller behavior checks passed. Evidence: evidence/microtests-handover-ansi.
+- New tests cover terminal colors/cursor/OSC/string controls, CR refresh frames,
+  incomplete-sequence uncertainty, colored traceback/test results, raw audit
+  preservation, factual handovers, fewer-than-three failures, skipped guide
+  reports, older evidence citation, safe micro-CLI and all six grading paths.
+- User subsequently entered the private key locally; all six REAL provider runs
+  completed. 35 API requests/responses, no API errors; all six independently
+  graded goals passed. Eighteen memory-arm requests contain visible memories
+  and short reviews. Control goals also all passed; no demonstrated advantage.
+  See evidence/live-memory-reviewed-bMpgaM/RESULTS.txt and independent-analysis.json.
+  Harness unit regression still uses mock providers and is separate evidence.
+- Frozen original source hashes unchanged. Current v8 candidate remains isolated
+  from production runs, HAI and the desktop reading package.
+
+Latest command-identity repair validation:
+- 95 local regression tests discovered: 81 passed, 14 Linux-only skipped.
+- Linux full suite: 95 passed, 0 skipped, 0 failures/errors after the user
+  authorized uploading the missing historical fixture. The initial run's sole
+  error was a missing file, not a behavioral failure; the complete rerun passed.
+- Six real-command scenarios, paired memory on/off, twelve isolated runs:
+  all six memory/controller behavior checks passed. Original five traps now 5/5.
+- Whitespace-only repeat: third proposal refused before execution; failure
+  executions reduced from 3 before repair to 2 after repair.
+- Added quote-variant scenario: two equivalent failures with different spellings
+  form one memory, and a third equivalent spelling is refused. Source repair
+  subsequently permits verification again.
+- No paid provider/LLM call. Deterministic actor decisions do not prove autonomous
+  LLM memory use or better official scores. Original experiments are unchanged.
+- See evidence/microtests-normalized/RESULTS.txt and summary.json.
+
+Historical validation BEFORE command-identity repair follows:
+
+Local unit/regression suite: 81 tests discovered, 67 passed, 14 skipped.
+Skipped tests require Linux process groups or external frozen cloud fixtures;
+they are not claimed as passed. The 21 memory-injection tests all passed.
+No real provider request or paid task was used.
+
+Frozen C1 Foldseek recorded-state replay:
+606 actor request states replayed.
+Old explicit memory present: 196 requests.
+New explicit memory present: 592 requests.
+Old empty input with retrievable memory: 396 requests.
+New empty input with retrievable memory: 0 requests.
+All 606 final message lists fit the original 48000-character budget, including
+the existing 1024-character transport-repair reserve.
+No memory omission due to the new view reserve in this replay.
+The initial 14 states have no memory yet; these are not retrieval failures.
+After tool 100: old [], new [M2, M1].
+After tool 200: old [], new [M6, M3, M5, M2].
+
+This is a prompt delivery replay, NOT a rerun of solving, a reward comparison,
+or proof that the model understands or obeys these memories. Dependency states
+are reconstructed from recorded evidence; no current server files are inspected.
+
+Checks covered:
+- system instruction and tail memory reach actual client arguments;
+- missing decision review refuses execution;
+- an exact applicable failed command cannot masquerade as a different route;
+- a justified retry requires a new condition/discriminating observation;
+- stale-memory warning and whole conditions are preserved;
+- view compaction does not modify the memory store;
+- decision summaries do not inflate action-change counts;
+- final logical prompts and actual retry wire bodies are audited;
+- redaction, history retention, disabled memory, unchanged logical-call count;
+- original experiment source hashes remain unchanged.
+
+Reflection-first and demonstrations update:
+- Reject response if memory_review, strategy_adjustment, action are not its
+  first three keys, in that exact order, while current memories are visible.
+- Require brief observed_result, applicability, and concrete strategy_adjustment.
+- Both supplied examples validate against the unchanged flat action protocol.
+- Examples distinguish unchanged failure from same-command verification after
+  a source change, and are explicitly marked as illustrative rather than facts.
+- Canonically sorted disk archives are unchanged; historical assistant messages
+  restore the reflection-first ordering when constructing the model input.
+- Record original response key order and the strategy adjustment for audit.
+- Repeated the 606-state offline replay with the longer demonstration prompt:
+  all final requests remain within budget; no retrievable memory is lost.
+This does not prove better model behavior or official scores; live testing remains.
+
+Candidate is local only. Existing cloud runs, frozen releases, experiment arms,
+HAI and the desktop reading package were not modified or replaced.

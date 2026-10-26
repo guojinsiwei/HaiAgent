@@ -1,0 +1,8 @@
+{
+  "task": "path-tracing",
+  "image": "alexgshaw/path-tracing:20251031",
+  "digest": "sha256:4b44725102cd627dfa895191a5a30d16dae3c5623bb43da6459f79135db6b482",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/path-tracing/manifests/20251031",
+  "header_verified": true,
+  "time": 1792509976.5854387
+}

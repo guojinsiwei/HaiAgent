@@ -1,0 +1,25 @@
+{
+  "endpoint": "https://api.taotoken.net/token/v1/messages",
+  "model": "deepseek-flash",
+  "campaign_limit_microcny": 160000000,
+  "task_limit_microcny": 16000000,
+  "input_ceiling_tokens": 128000,
+  "max_output_tokens": 16384,
+  "requests_per_task": 800,
+  "tools_per_task": 1200,
+  "solver_seconds": 7200,
+  "rate_basis": "TaoToken official deepseek-flash peak prices viewed 2026-10-16: input 2, cached input 0.04, output 8 CNY/M; estimate, not Credits invoice",
+  "rate_source": "https://taotoken.net/models?modelId=deepseek-flash",
+  "jobs": [
+    "tb2bd10-01-recuris-torch-pipeline-parallelism",
+    "tb2bd10-02-hld-regex-chess",
+    "tb2bd10-03-recuris-regex-chess",
+    "tb2bd10-04-hld-sam-cell-seg",
+    "tb2bd10-05-hld-dna-assembly",
+    "tb2bd10-06-hld-circuit-fibsqrt",
+    "tb2bd10-07-recuris-llm-inference-batching-scheduler",
+    "tb2bd10-08-recuris-make-doom-for-mips",
+    "tb2bd10-09-hld-polyglot-c-py",
+    "tb2bd10-10-hld-adaptive-rejection-sampler"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "changed": [
+    "runtime/hld/src/full-integration.mjs",
+    "runtime/hld/src/plugin.mjs",
+    "runtime/hld/src/review-policy.mjs",
+    "runtime/hld/src/roles.mjs",
+    "runtime/hld/src/semantic-planner.mjs",
+    "runtime/hld/src/verification-receipt.mjs",
+    "runtime/hld/tests/evidence-control.test.mjs",
+    "runtime/hld/tests/semantic-integration.test.mjs",
+    "runtime/kzdsh-new/src/full-integration.mjs",
+    "runtime/kzdsh-new/src/review-policy.mjs",
+    "runtime/kzdsh-new/src/roles.mjs",
+    "runtime/kzdsh-new/src/verification-receipt.mjs",
+    "runtime/kzdsh-new/tests/evidence-control.test.mjs",
+    "runtime/dsh-baselines/src/plugin.mjs"
+  ],
+  "old_version_mismatches": [],
+  "recuris_worker_unchanged": true
+}

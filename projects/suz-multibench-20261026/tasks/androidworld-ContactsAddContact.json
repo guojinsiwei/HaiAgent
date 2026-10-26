@@ -1,0 +1,13 @@
+{
+  "id": "androidworld-ContactsAddContact",
+  "class": "ContactsAddContact",
+  "params": {
+    "name": "Freya Chen",
+    "number": "+12768106955",
+    "seed": 20261026
+  },
+  "instruction": "Create a new contact for Freya Chen. Their number is +12768106955.",
+  "max_steps": 12,
+  "benchmark": "androidworld",
+  "instance_sha256": "c3afe8338d06a970f39f2d6fc5dcd6a9c87133a32f4a366b413b27d03f2a9a4b"
+}

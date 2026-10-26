@@ -1,0 +1,459 @@
+{
+  "reason": "engineering failures only; retain all original successful results",
+  "runs": [
+    {
+      "id": "6c4c23a1-42a4-43cc-9db1-2f86ff3738cc",
+      "domain": "chrome",
+      "path": "tasks/chrome/6c4c23a1-42a4-43cc-9db1-2f86ff3738cc.json",
+      "sha256": "96b23662f256ffabe7018db46a0ebd4eacb81fd770005ff3d98aa048a93f7290",
+      "instruction": "Find flights from Seattle to New York on 5th next month and only show those that can be purchased with miles.",
+      "related_apps": [
+        "chrome"
+      ],
+      "mode": "suz",
+      "original_result": "runs/suz/6c4c23a1-42a4-43cc-9db1-2f86ff3738cc/result.json",
+      "original_sha256": "40673fa98cfaadee43c1597f2104e6fdda98687fd4d7d05415658e848c2e7667",
+      "reason": "unsupported GUI action: action argument outside bounds"
+    },
+    {
+      "id": "f723c744-e62c-4ae6-98d1-750d3cd7d79d",
+      "domain": "gimp",
+      "path": "tasks/gimp/f723c744-e62c-4ae6-98d1-750d3cd7d79d.json",
+      "sha256": "90947f79d1f5ecfc8ca2154134a32ae226f3b3dda2e796513411389767042520",
+      "instruction": "I'd like to make the picture's contrast stronger to really bring out the main subject. Could you assist me in boosting the contrast?",
+      "related_apps": [
+        "gimp"
+      ],
+      "mode": "opencua_baseline",
+      "original_result": "runs/opencua_baseline/f723c744-e62c-4ae6-98d1-750d3cd7d79d/result.json",
+      "original_sha256": "1474080f8b536e74b5c42c1f27498c6bc66245caf08be24d3c376c8fa0ebc89b",
+      "reason": "unsupported GUI action: action argument outside bounds"
+    },
+    {
+      "id": "f723c744-e62c-4ae6-98d1-750d3cd7d79d",
+      "domain": "gimp",
+      "path": "tasks/gimp/f723c744-e62c-4ae6-98d1-750d3cd7d79d.json",
+      "sha256": "90947f79d1f5ecfc8ca2154134a32ae226f3b3dda2e796513411389767042520",
+      "instruction": "I'd like to make the picture's contrast stronger to really bring out the main subject. Could you assist me in boosting the contrast?",
+      "related_apps": [
+        "gimp"
+      ],
+      "mode": "suz",
+      "original_result": "runs/suz/f723c744-e62c-4ae6-98d1-750d3cd7d79d/result.json",
+      "original_sha256": "16f548820db75075cdf917b8335f90c119fbc74621353a64a3bd2d853a52f4a5",
+      "reason": "unsupported GUI action: action argument outside bounds"
+    },
+    {
+      "id": "2a729ded-3296-423d-aec4-7dd55ed5fbb3",
+      "domain": "gimp",
+      "path": "tasks/gimp/2a729ded-3296-423d-aec4-7dd55ed5fbb3.json",
+      "sha256": "a2972fc8a5b955c570b84e4a2a689b74d7a73bc999ac4ee97d3c8379fcb6bd7c",
+      "instruction": "Could you make the background of this image transparent for me?",
+      "related_apps": [
+        "gimp"
+      ],
+      "mode": "opencua_baseline",
+      "original_result": "runs/opencua_baseline/2a729ded-3296-423d-aec4-7dd55ed5fbb3/result.json",
+      "original_sha256": "7faf24b86ba7a8b32959b0bb6b84ed464bcae0b14f63faceaafd8bec1fa2cc4f",
+      "reason": "unsupported GUI action: action argument outside bounds"
+    },
+    {
+      "id": "2a729ded-3296-423d-aec4-7dd55ed5fbb3",
+      "domain": "gimp",
+      "path": "tasks/gimp/2a729ded-3296-423d-aec4-7dd55ed5fbb3.json",
+      "sha256": "a2972fc8a5b955c570b84e4a2a689b74d7a73bc999ac4ee97d3c8379fcb6bd7c",
+      "instruction": "Could you make the background of this image transparent for me?",
+      "related_apps": [
+        "gimp"
+      ],
+      "mode": "suz",
+      "original_result": "runs/suz/2a729ded-3296-423d-aec4-7dd55ed5fbb3/result.json",
+      "original_sha256": "41795c0cdaa57fefdccf6057ab52c004e4e4c4bca08335cba9b88eac6ac63f61",
+      "reason": "unsupported GUI action: action argument outside bounds"
+    },
+    {
+      "id": "6e99a1ad-07d2-4b66-a1ce-ece6d99c20a5",
+      "domain": "libreoffice_calc",
+      "path": "tasks/libreoffice_calc/6e99a1ad-07d2-4b66-a1ce-ece6d99c20a5.json",
+      "sha256": "610adfe4461f26cd2c0dd95053d010be0b1ed1eac294a780a82c67df6b8f46f7",
+      "instruction": "Help me format column \"spent\" by keeping two decimal points. ",
+      "related_apps": [
+        "libreoffice calc"
+      ],
+      "mode": "opencua_baseline",
+      "original_result": "runs/opencua_baseline/6e99a1ad-07d2-4b66-a1ce-ece6d99c20a5/result.json",
+      "original_sha256": "33d755d8dd40ec08f309fbc348fccaf751de29ac0f0330cb0415ab97086a7ca9",
+      "reason": "unsupported GUI action: action argument outside bounds"
+    },
+    {
+      "id": "6e99a1ad-07d2-4b66-a1ce-ece6d99c20a5",
+      "domain": "libreoffice_calc",
+      "path": "tasks/libreoffice_calc/6e99a1ad-07d2-4b66-a1ce-ece6d99c20a5.json",
+      "sha256": "610adfe4461f26cd2c0dd95053d010be0b1ed1eac294a780a82c67df6b8f46f7",
+      "instruction": "Help me format column \"spent\" by keeping two decimal points. ",
+      "related_apps": [
+        "libreoffice calc"
+      ],
+      "mode": "suz",
+      "original_result": "runs/suz/6e99a1ad-07d2-4b66-a1ce-ece6d99c20a5/result.json",
+      "original_sha256": "cdd2e3b554d4b74491a94ba22e8795f76239ae22cc2e5ae0b180ad0120e651e7",
+      "reason": "unsupported GUI action: action argument outside bounds"
+    },
+    {
+      "id": "4188d3a4-077d-46b7-9c86-23e1a036f6c1",
+      "domain": "libreoffice_calc",
+      "path": "tasks/libreoffice_calc/4188d3a4-077d-46b7-9c86-23e1a036f6c1.json",
+      "sha256": "c3a9c694d83e99388ab1cacdf14d5a35928fe3eee5e1e71cfc8256ebb71bfb0d",
+      "instruction": "Help me freeze the range A1:B1 on this sheet to keep the headers always visible",
+      "related_apps": [
+        "libreoffice_calc"
+      ],
+      "mode": "suz",
+      "original_result": "runs/suz/4188d3a4-077d-46b7-9c86-23e1a036f6c1/result.json",
+      "original_sha256": "634f73938dc53102d47f05ce01986bebfaa406a2ce063cc973ba9038c5a2528f",
+      "reason": "unsupported GUI action: action argument outside bounds"
+    },
+    {
+      "id": "2cd43775-7085-45d8-89fa-9e35c0a915cf",
+      "domain": "libreoffice_impress",
+      "path": "tasks/libreoffice_impress/2cd43775-7085-45d8-89fa-9e35c0a915cf.json",
+      "sha256": "4f3699c92303b83da81e1ad44753fb333d7934f5e2f881f574db4d976254ac51",
+      "instruction": "Enable auto-save every 3min for me, so that I don't need to hit \"ctrl-s\" that much",
+      "related_apps": [
+        "libreoffice_impress"
+      ],
+      "mode": "opencua_baseline",
+      "original_result": "runs/opencua_baseline/2cd43775-7085-45d8-89fa-9e35c0a915cf/result.json",
+      "original_sha256": "fb557a91f1b15e35a7c11927256b31164dea022b21369b2658839536653edbe2",
+      "reason": "unsupported GUI action: action argument outside bounds"
+    },
+    {
+      "id": "2cd43775-7085-45d8-89fa-9e35c0a915cf",
+      "domain": "libreoffice_impress",
+      "path": "tasks/libreoffice_impress/2cd43775-7085-45d8-89fa-9e35c0a915cf.json",
+      "sha256": "4f3699c92303b83da81e1ad44753fb333d7934f5e2f881f574db4d976254ac51",
+      "instruction": "Enable auto-save every 3min for me, so that I don't need to hit \"ctrl-s\" that much",
+      "related_apps": [
+        "libreoffice_impress"
+      ],
+      "mode": "suz",
+      "original_result": "runs/suz/2cd43775-7085-45d8-89fa-9e35c0a915cf/result.json",
+      "original_sha256": "3690454c97240d19427ccc68b3568a9e21263c5831a8278db9e71b49ff92ed39",
+      "reason": "unsupported GUI action: action argument outside bounds"
+    },
+    {
+      "id": "ce88f674-ab7a-43da-9201-468d38539e4a",
+      "domain": "libreoffice_impress",
+      "path": "tasks/libreoffice_impress/ce88f674-ab7a-43da-9201-468d38539e4a.json",
+      "sha256": "21198431a3645242f715224c5d8d038abde98be268d1d2493e06340dc9cd4f17",
+      "instruction": "Please set my slides upright instead of sideways.",
+      "related_apps": [
+        "libreoffice_impress"
+      ],
+      "mode": "opencua_baseline",
+      "original_result": "runs/opencua_baseline/ce88f674-ab7a-43da-9201-468d38539e4a/result.json",
+      "original_sha256": "21624002b8066278f6771b8c536703b67a3890953225ccc1d886537d43acadaa",
+      "reason": "unsupported GUI action: action argument outside bounds"
+    },
+    {
+      "id": "ce88f674-ab7a-43da-9201-468d38539e4a",
+      "domain": "libreoffice_impress",
+      "path": "tasks/libreoffice_impress/ce88f674-ab7a-43da-9201-468d38539e4a.json",
+      "sha256": "21198431a3645242f715224c5d8d038abde98be268d1d2493e06340dc9cd4f17",
+      "instruction": "Please set my slides upright instead of sideways.",
+      "related_apps": [
+        "libreoffice_impress"
+      ],
+      "mode": "suz",
+      "original_result": "runs/suz/ce88f674-ab7a-43da-9201-468d38539e4a/result.json",
+      "original_sha256": "154cf43a74572258346cda0fc9d3f176301fb51968d9529a66365d66f06aea16",
+      "reason": "unsupported GUI action: action argument outside bounds"
+    },
+    {
+      "id": "0810415c-bde4-4443-9047-d5f70165a697",
+      "domain": "libreoffice_writer",
+      "path": "tasks/libreoffice_writer/0810415c-bde4-4443-9047-d5f70165a697.json",
+      "sha256": "25b48b75bbe896e3b50f5304c831ff8c768ddf6057c4cca2f1901ba1ad6a4e3d",
+      "instruction": "Make the line spacing of first two paragraph into double line spacing",
+      "related_apps": [
+        "libreoffice_writer"
+      ],
+      "mode": "opencua_baseline",
+      "original_result": "runs/opencua_baseline/0810415c-bde4-4443-9047-d5f70165a697/result.json",
+      "original_sha256": "48b757a0fb22e0d289b3e877bb90d6040265d030d90560fb7199e28a71c3e818",
+      "reason": "incomplete model output; cost recorded, no automatic retry"
+    },
+    {
+      "id": "0810415c-bde4-4443-9047-d5f70165a697",
+      "domain": "libreoffice_writer",
+      "path": "tasks/libreoffice_writer/0810415c-bde4-4443-9047-d5f70165a697.json",
+      "sha256": "25b48b75bbe896e3b50f5304c831ff8c768ddf6057c4cca2f1901ba1ad6a4e3d",
+      "instruction": "Make the line spacing of first two paragraph into double line spacing",
+      "related_apps": [
+        "libreoffice_writer"
+      ],
+      "mode": "suz",
+      "original_result": "runs/suz/0810415c-bde4-4443-9047-d5f70165a697/result.json",
+      "original_sha256": "9f452ae809385cca55fa90e8ab62b0e3d41d7d59b7c5853d73292a270854e4b3",
+      "reason": "unsupported GUI action: action argument outside bounds"
+    },
+    {
+      "id": "72b810ef-4156-4d09-8f08-a0cf57e7cefe",
+      "domain": "libreoffice_writer",
+      "path": "tasks/libreoffice_writer/72b810ef-4156-4d09-8f08-a0cf57e7cefe.json",
+      "sha256": "0ccfc3cd89567c19dd5496cacc3eb3d7780d6a91a0c6ec5ac85c42298f3079b7",
+      "instruction": "I am peer-reviewing my friend's course outline. I think the last paragraph is redundant so I want to add strike-through on words in the last paragraph. Can you do this for me?",
+      "related_apps": [
+        "libreoffice_writer"
+      ],
+      "mode": "opencua_baseline",
+      "original_result": "runs/opencua_baseline/72b810ef-4156-4d09-8f08-a0cf57e7cefe/result.json",
+      "original_sha256": "1d6df1526a110f242cdf20dc892281d3729a321e5659075b178d02bdb9ec50de",
+      "reason": "incomplete model output; cost recorded, no automatic retry"
+    },
+    {
+      "id": "72b810ef-4156-4d09-8f08-a0cf57e7cefe",
+      "domain": "libreoffice_writer",
+      "path": "tasks/libreoffice_writer/72b810ef-4156-4d09-8f08-a0cf57e7cefe.json",
+      "sha256": "0ccfc3cd89567c19dd5496cacc3eb3d7780d6a91a0c6ec5ac85c42298f3079b7",
+      "instruction": "I am peer-reviewing my friend's course outline. I think the last paragraph is redundant so I want to add strike-through on words in the last paragraph. Can you do this for me?",
+      "related_apps": [
+        "libreoffice_writer"
+      ],
+      "mode": "suz",
+      "original_result": "runs/suz/72b810ef-4156-4d09-8f08-a0cf57e7cefe/result.json",
+      "original_sha256": "187b6f804d3f10a757e7fd2a11210a020a6328ba99e01e600b55046ad7ea7822",
+      "reason": "incomplete model output; cost recorded, no automatic retry"
+    },
+    {
+      "id": "36037439-2044-4b50-b9d1-875b5a332143",
+      "domain": "multi_apps",
+      "path": "tasks/multi_apps/36037439-2044-4b50-b9d1-875b5a332143.json",
+      "sha256": "165b68f0f734343de0ca972cb9938f60b64c9a161d009379975b19c6d1b5b2fb",
+      "instruction": "Could you please pull up the Google Scholar page of the corresponding author for me in Chrome?",
+      "related_apps": [
+        "OS",
+        "Chrome"
+      ],
+      "mode": "opencua_baseline",
+      "original_result": "runs/opencua_baseline/36037439-2044-4b50-b9d1-875b5a332143/result.json",
+      "original_sha256": "4c18e64ab24afc4cd9ec016b218d450ecef6173e2b0798db4fe99f024a152f6f",
+      "reason": "unsupported GUI action: action argument outside bounds"
+    },
+    {
+      "id": "36037439-2044-4b50-b9d1-875b5a332143",
+      "domain": "multi_apps",
+      "path": "tasks/multi_apps/36037439-2044-4b50-b9d1-875b5a332143.json",
+      "sha256": "165b68f0f734343de0ca972cb9938f60b64c9a161d009379975b19c6d1b5b2fb",
+      "instruction": "Could you please pull up the Google Scholar page of the corresponding author for me in Chrome?",
+      "related_apps": [
+        "OS",
+        "Chrome"
+      ],
+      "mode": "suz",
+      "original_result": "runs/suz/36037439-2044-4b50-b9d1-875b5a332143/result.json",
+      "original_sha256": "2e9827fc00ef0201fd84bc2a499a2e3cb8e9d7a2c3b1129f14be2d088d12f14f",
+      "reason": "unsupported GUI action: action argument outside bounds"
+    },
+    {
+      "id": "227d2f97-562b-4ccb-ae47-a5ec9e142fbb",
+      "domain": "multi_apps",
+      "path": "tasks/multi_apps/227d2f97-562b-4ccb-ae47-a5ec9e142fbb.json",
+      "sha256": "227b0aa19cb5001b2fa5bfbd1cd25f078b3309da43fee11d1f52def842b06054",
+      "instruction": "I've stored my .xcf file on the Desktop. Can you assist me in copying the image and pasting it into a LibreOffice Writer document? Save the document as 'image.docx' on the Desktop, please.",
+      "related_apps": [
+        "libreoffice_writer",
+        "gimp",
+        "os"
+      ],
+      "mode": "opencua_baseline",
+      "original_result": "runs/opencua_baseline/227d2f97-562b-4ccb-ae47-a5ec9e142fbb/result.json",
+      "original_sha256": "a886062b831608d1dc854614940d88b9db86be53628600b4a01d6e79b9707e1c",
+      "reason": "unsupported GUI action: action argument outside bounds"
+    },
+    {
+      "id": "227d2f97-562b-4ccb-ae47-a5ec9e142fbb",
+      "domain": "multi_apps",
+      "path": "tasks/multi_apps/227d2f97-562b-4ccb-ae47-a5ec9e142fbb.json",
+      "sha256": "227b0aa19cb5001b2fa5bfbd1cd25f078b3309da43fee11d1f52def842b06054",
+      "instruction": "I've stored my .xcf file on the Desktop. Can you assist me in copying the image and pasting it into a LibreOffice Writer document? Save the document as 'image.docx' on the Desktop, please.",
+      "related_apps": [
+        "libreoffice_writer",
+        "gimp",
+        "os"
+      ],
+      "mode": "suz",
+      "original_result": "runs/suz/227d2f97-562b-4ccb-ae47-a5ec9e142fbb/result.json",
+      "original_sha256": "37ae4b5decfa2c3adb6090a0adffa4c1f32e2eab78a7b6d88cdef69f079eee14",
+      "reason": "unsupported GUI action: malformed node or string on line 1: <ast.BinOp object at 0x72898c5388d0>"
+    },
+    {
+      "id": "c288e301-e626-4b98-a1ab-159dcb162af5",
+      "domain": "os",
+      "path": "tasks/os/c288e301-e626-4b98-a1ab-159dcb162af5.json",
+      "sha256": "c50565f3a59462abb56546ebce66e83b0a5abe05dd11282ab8969a951714a071",
+      "instruction": "Please set the default Python version to Python4 on my Ubuntu system.",
+      "related_apps": [
+        "os"
+      ],
+      "mode": "suz",
+      "original_result": "runs/suz/c288e301-e626-4b98-a1ab-159dcb162af5/result.json",
+      "original_sha256": "01af9b7571996bf7313c6c63076d189a9b0f5d5062ec99e937a749e0e8d2c4f0",
+      "reason": "incomplete model output; cost recorded, no automatic retry"
+    },
+    {
+      "id": "a4d98375-215b-4a4d-aee9-3d4370fccc41",
+      "domain": "os",
+      "path": "tasks/os/a4d98375-215b-4a4d-aee9-3d4370fccc41.json",
+      "sha256": "642f338e55756f5a3661b3fab923725b90313f8885b11b195744d72a0463b1d9",
+      "instruction": "I want to have my computer automatically locked after I leaved. Can you help me?",
+      "related_apps": [
+        "os"
+      ],
+      "mode": "opencua_baseline",
+      "original_result": "runs/opencua_baseline/a4d98375-215b-4a4d-aee9-3d4370fccc41/result.json",
+      "original_sha256": "e15bcafbd63663d156779faa9afc4775b65d1fa003fe535124c8c03c456f6a94",
+      "reason": "unsupported GUI action: action argument outside bounds"
+    },
+    {
+      "id": "08c73485-7c6d-4681-999d-919f5c32dcfa",
+      "domain": "thunderbird",
+      "path": "tasks/thunderbird/08c73485-7c6d-4681-999d-919f5c32dcfa.json",
+      "sha256": "6049b3f321368f8639afe664e7f791edfe0e0f37c8bbcabe59322cf341c136a0",
+      "instruction": "Thunderbird's message filters seem to only fire on Inbox automatically. If you want to filter on subfolders, you'd have to start this filter manually. I am wondering if the filter can be applied automatically. Could you help me apply automatic message filters to subfolders",
+      "related_apps": [
+        "thunderbird"
+      ],
+      "mode": "opencua_baseline",
+      "original_result": "runs/opencua_baseline/08c73485-7c6d-4681-999d-919f5c32dcfa/result.json",
+      "original_sha256": "c4dd253471827300f1d482b1b2bf3fa7a3eb130ac9ef5131922a50d9388f02ec",
+      "reason": "incomplete model output; cost recorded, no automatic retry"
+    },
+    {
+      "id": "08c73485-7c6d-4681-999d-919f5c32dcfa",
+      "domain": "thunderbird",
+      "path": "tasks/thunderbird/08c73485-7c6d-4681-999d-919f5c32dcfa.json",
+      "sha256": "6049b3f321368f8639afe664e7f791edfe0e0f37c8bbcabe59322cf341c136a0",
+      "instruction": "Thunderbird's message filters seem to only fire on Inbox automatically. If you want to filter on subfolders, you'd have to start this filter manually. I am wondering if the filter can be applied automatically. Could you help me apply automatic message filters to subfolders",
+      "related_apps": [
+        "thunderbird"
+      ],
+      "mode": "suz",
+      "original_result": "runs/suz/08c73485-7c6d-4681-999d-919f5c32dcfa/result.json",
+      "original_sha256": "ecc38e197d3834181dd4673bb3b4c04c0d71a06a0f6e4d0706f6c1faa60819d6",
+      "reason": "unsupported GUI action: action argument outside bounds"
+    },
+    {
+      "id": "a10b69e1-6034-4a2b-93e1-571d45194f75",
+      "domain": "thunderbird",
+      "path": "tasks/thunderbird/a10b69e1-6034-4a2b-93e1-571d45194f75.json",
+      "sha256": "55ba72bff154a1192339c038a37887dfeeb78829e72c9c1867c07cb91bfa2b02",
+      "instruction": "Create two local folders in Thunderbird for me: COMPANY and UNIVERSITY.",
+      "related_apps": [
+        "thunderbird"
+      ],
+      "mode": "opencua_baseline",
+      "original_result": "runs/opencua_baseline/a10b69e1-6034-4a2b-93e1-571d45194f75/result.json",
+      "original_sha256": "278e5ba7bba2357907b8434d7cadfce9c3838a4fbd317959c669a6e03b4722d1",
+      "reason": "unsupported GUI action: action argument outside bounds"
+    },
+    {
+      "id": "a10b69e1-6034-4a2b-93e1-571d45194f75",
+      "domain": "thunderbird",
+      "path": "tasks/thunderbird/a10b69e1-6034-4a2b-93e1-571d45194f75.json",
+      "sha256": "55ba72bff154a1192339c038a37887dfeeb78829e72c9c1867c07cb91bfa2b02",
+      "instruction": "Create two local folders in Thunderbird for me: COMPANY and UNIVERSITY.",
+      "related_apps": [
+        "thunderbird"
+      ],
+      "mode": "suz",
+      "original_result": "runs/suz/a10b69e1-6034-4a2b-93e1-571d45194f75/result.json",
+      "original_sha256": "8bc996bff2498ae2d26c79fa7ef8f108ba6ed29b6b4ecff84b0e5c581d8802fb",
+      "reason": "unsupported GUI action: action argument outside bounds"
+    },
+    {
+      "id": "aa4b5023-aef6-4ed9-bdc9-705f59ab9ad6",
+      "domain": "vlc",
+      "path": "tasks/vlc/aa4b5023-aef6-4ed9-bdc9-705f59ab9ad6.json",
+      "sha256": "e6e724a40ebc25e003cbe34747d9ce6f08dd0fd9847de613870cf4bd2a4e7ad7",
+      "instruction": "Hey, could you turn this video the right way up for me? And once it's flipped around, could you save it for me with the name '1984_Apple_Macintosh_Commercial.mp4' on the main screen where all my files are?",
+      "related_apps": [
+        "vlc"
+      ],
+      "mode": "opencua_baseline",
+      "original_result": "runs/opencua_baseline/aa4b5023-aef6-4ed9-bdc9-705f59ab9ad6/result.json",
+      "original_sha256": "c76913bebaedb8eadc522947be612d4a6407665b3245355f3e20d36b91dfe027",
+      "reason": "incomplete model output; cost recorded, no automatic retry"
+    },
+    {
+      "id": "aa4b5023-aef6-4ed9-bdc9-705f59ab9ad6",
+      "domain": "vlc",
+      "path": "tasks/vlc/aa4b5023-aef6-4ed9-bdc9-705f59ab9ad6.json",
+      "sha256": "e6e724a40ebc25e003cbe34747d9ce6f08dd0fd9847de613870cf4bd2a4e7ad7",
+      "instruction": "Hey, could you turn this video the right way up for me? And once it's flipped around, could you save it for me with the name '1984_Apple_Macintosh_Commercial.mp4' on the main screen where all my files are?",
+      "related_apps": [
+        "vlc"
+      ],
+      "mode": "suz",
+      "original_result": "runs/suz/aa4b5023-aef6-4ed9-bdc9-705f59ab9ad6/result.json",
+      "original_sha256": "c1d4ace6eea061162618e9621f19b6d60da9cee911c7771ed1946df6fce9a532",
+      "reason": "incomplete model output; cost recorded, no automatic retry"
+    },
+    {
+      "id": "5ac2891a-eacd-4954-b339-98abba077adb",
+      "domain": "vlc",
+      "path": "tasks/vlc/5ac2891a-eacd-4954-b339-98abba077adb.json",
+      "sha256": "4e038a7bb4c3770186209d68402e678ff723238cb31684fe452f0b0c6f4665da",
+      "instruction": "My VLC Media Player has been auto-closing once the video ends. It is very annoying. Could you help me prevent the VLC Media Player from auto-closing once the video ends?",
+      "related_apps": [
+        "vlc"
+      ],
+      "mode": "opencua_baseline",
+      "original_result": "runs/opencua_baseline/5ac2891a-eacd-4954-b339-98abba077adb/result.json",
+      "original_sha256": "3c44808cd279e10dc17944f4538e1afd2c25c3339448d1dbc17a9987a8afe79b",
+      "reason": "unsupported GUI action: action argument outside bounds"
+    },
+    {
+      "id": "5ac2891a-eacd-4954-b339-98abba077adb",
+      "domain": "vlc",
+      "path": "tasks/vlc/5ac2891a-eacd-4954-b339-98abba077adb.json",
+      "sha256": "4e038a7bb4c3770186209d68402e678ff723238cb31684fe452f0b0c6f4665da",
+      "instruction": "My VLC Media Player has been auto-closing once the video ends. It is very annoying. Could you help me prevent the VLC Media Player from auto-closing once the video ends?",
+      "related_apps": [
+        "vlc"
+      ],
+      "mode": "suz",
+      "original_result": "runs/suz/5ac2891a-eacd-4954-b339-98abba077adb/result.json",
+      "original_sha256": "c0b2edca532184a32409cae9bbb145c7ff62a7b3e2942045cdfc5764f82ab86c",
+      "reason": "unsupported GUI action: action argument outside bounds"
+    },
+    {
+      "id": "ec71221e-ac43-46f9-89b8-ee7d80f7e1c5",
+      "domain": "vs_code",
+      "path": "tasks/vs_code/ec71221e-ac43-46f9-89b8-ee7d80f7e1c5.json",
+      "sha256": "b9f50a23a983d7c339cf6169804073020cf3a5151ab8bb9c16d202071655adcf",
+      "instruction": "Please help me increase the indent of line 2 to line 10 by one tab.",
+      "related_apps": [
+        "vscode"
+      ],
+      "mode": "opencua_baseline",
+      "original_result": "runs/opencua_baseline/ec71221e-ac43-46f9-89b8-ee7d80f7e1c5/result.json",
+      "original_sha256": "fe4f0bdd442209ef06cda184f8ac2558e9cbb005ae8bef5f9b35367e0cfa45bd",
+      "reason": "incomplete model output; cost recorded, no automatic retry"
+    },
+    {
+      "id": "9439a27b-18ae-42d8-9778-5f68f891805e",
+      "domain": "vs_code",
+      "path": "tasks/vs_code/9439a27b-18ae-42d8-9778-5f68f891805e.json",
+      "sha256": "08d00b2137e5e596980139493c844185291c96b796791217c8a86a7c81b372cb",
+      "instruction": "Please help me modify the setting of VS Code to keep my cursor focused on the debug console when debugging in VS Code, instead of automatically focusing back on the Editor.",
+      "related_apps": [
+        "vscode"
+      ],
+      "mode": "opencua_baseline",
+      "original_result": "runs/opencua_baseline/9439a27b-18ae-42d8-9778-5f68f891805e/result.json",
+      "original_sha256": "1e2a92ef7de009e997e2c4ad8a271bf83122987a3bd455670a7b96b09cef1e1d",
+      "reason": "unsupported GUI action: action argument outside bounds"
+    }
+  ]
+}

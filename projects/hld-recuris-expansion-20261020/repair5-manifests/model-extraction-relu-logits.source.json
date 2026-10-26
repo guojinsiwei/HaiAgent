@@ -1,0 +1,8 @@
+{
+  "task": "model-extraction-relu-logits",
+  "image": "alexgshaw/model-extraction-relu-logits:20251031",
+  "digest": "sha256:52fe1f089f38650f0dc22d7531ee6e01ebd526de1b349aaa2ecb331dca9fabce",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/model-extraction-relu-logits/manifests/20251031",
+  "header_verified": true,
+  "time": 1792509976.7671795
+}

@@ -1,0 +1,1014 @@
+{
+  "benchmark": "AppWorld",
+  "split": "test_normal",
+  "tasks": [
+    {
+      "task": "9dabbc9_1",
+      "scenario": "9dabbc9",
+      "instruction": "My roommate requested me to pay for my share of the housing bill this month on venmo today. But they forgot about the 5% rent increase starting this month. So reject that payment request and send them the corrected amount of money with a note, \"You forgot about the 5% increase!\".",
+      "supervisor": {
+        "first_name": "Paul",
+        "last_name": "Miller",
+        "email": "paul_mill@gmail.com",
+        "phone_number": "3379617841"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "9dabbc9_2",
+      "scenario": "9dabbc9",
+      "instruction": "My roommate requested me to pay for my share of the housing bill this month on venmo today. But they forgot about the 10% rent decrease starting this month. So reject that payment request and send them the corrected amount of money with a note, \"The rent decreased by 10% this month.\".",
+      "supervisor": {
+        "first_name": "Nancy",
+        "last_name": "Ritter",
+        "email": "nan_ritt@gmail.com",
+        "phone_number": "2307354647"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "9dabbc9_3",
+      "scenario": "9dabbc9",
+      "instruction": "My roommate requested me to pay for my share of the housing bill this month on venmo today. But they forgot about the 15% rent increase starting this month. So reject that payment request and send them the corrected amount of money with a note, \"Correcting for 15% rent increase.\".",
+      "supervisor": {
+        "first_name": "Nicholas",
+        "last_name": "Weber",
+        "email": "nicholas.weber@gmail.com",
+        "phone_number": "9503658964"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "d6ac34d_1",
+      "scenario": "d6ac34d",
+      "instruction": "Add a new habit tracking log note for today in my Simple Note account. It should be the same as yesterday, except I had a good posture today.",
+      "supervisor": {
+        "first_name": "Anita",
+        "last_name": "Burch",
+        "email": "anita.burch@gmail.com",
+        "phone_number": "3643463570"
+      },
+      "datetime": "2023-05-18T21:09:28"
+    },
+    {
+      "task": "d6ac34d_2",
+      "scenario": "d6ac34d",
+      "instruction": "Add a new habit tracking log note for today in my Simple Note account. It should be the same as yesterday, except I did not meditate today.",
+      "supervisor": {
+        "first_name": "Sabrina",
+        "last_name": "Brown",
+        "email": "sab-brown@gmail.com",
+        "phone_number": "6639773608"
+      },
+      "datetime": "2023-05-18T21:29:01"
+    },
+    {
+      "task": "d6ac34d_3",
+      "scenario": "d6ac34d",
+      "instruction": "Add a new habit tracking log note for today in my Simple Note account. It should be the same as yesterday, except I ate home-prepared meals today.",
+      "supervisor": {
+        "first_name": "Marcus",
+        "last_name": "Smith",
+        "email": "ma_smith@gmail.com",
+        "phone_number": "7196131136"
+      },
+      "datetime": "2023-05-18T21:10:12"
+    },
+    {
+      "task": "5a83b05_1",
+      "scenario": "5a83b05",
+      "instruction": "Delete all .pdf files from my file system ~/downloads folder.",
+      "supervisor": {
+        "first_name": "Jeffrey",
+        "last_name": "Smith",
+        "email": "jefsmith@gmail.com",
+        "phone_number": "3272301258"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "5a83b05_2",
+      "scenario": "5a83b05",
+      "instruction": "Delete all .jpg files from my file system ~/downloads folder.",
+      "supervisor": {
+        "first_name": "David",
+        "last_name": "Martinez",
+        "email": "dav.mart@gmail.com",
+        "phone_number": "7228796993"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "5a83b05_3",
+      "scenario": "5a83b05",
+      "instruction": "Delete all .pdf files from my file system ~/downloads folder.",
+      "supervisor": {
+        "first_name": "Susan",
+        "last_name": "Burton",
+        "email": "susanmiller@gmail.com",
+        "phone_number": "3296062648"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "32616b5_1",
+      "scenario": "32616b5",
+      "instruction": "I went on a few trips each with some of my friends. My Simple Note has information on who owes whom what from each trip. I have already created Splitwise groups for the trips. Record the expenses accordingly in the respective groups.",
+      "supervisor": {
+        "first_name": "Robin",
+        "last_name": "Burton",
+        "email": "roburton@gmail.com",
+        "phone_number": "5025995878"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "32616b5_2",
+      "scenario": "32616b5",
+      "instruction": "I went on a few trips each with some of my coworkers. My Simple Note has information on who owes whom what from each trip. I have already created Splitwise groups for the trips. Record the expenses accordingly in the respective groups.",
+      "supervisor": {
+        "first_name": "Connor",
+        "last_name": "Brown",
+        "email": "connorbrow@gmail.com",
+        "phone_number": "5734599766"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "32616b5_3",
+      "scenario": "32616b5",
+      "instruction": "I went on a few trips each with some of my friends. My Simple Note has information on who owes whom what from each trip. I have already created Splitwise groups for the trips. Record the expenses accordingly in the respective groups.",
+      "supervisor": {
+        "first_name": "Leslie",
+        "last_name": "Ball",
+        "email": "les_ball@gmail.com",
+        "phone_number": "7873383923"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "9ef798c_1",
+      "scenario": "9ef798c",
+      "instruction": "Chelsea and I have been carpooling to work this month. They have requested money for it on venmo. Accept it.",
+      "supervisor": {
+        "first_name": "Nicholas",
+        "last_name": "Weber",
+        "email": "nicholas.weber@gmail.com",
+        "phone_number": "9503658964"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "9ef798c_2",
+      "scenario": "9ef798c",
+      "instruction": "William and I have been carpooling to work this month. They have requested money for it on venmo. Accept it.",
+      "supervisor": {
+        "first_name": "Martin",
+        "last_name": "Blackburn",
+        "email": "mar_blac@gmail.com",
+        "phone_number": "3539110281"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "9ef798c_3",
+      "scenario": "9ef798c",
+      "instruction": "Sabrina and I have been carpooling to work this month. They have requested money for it on venmo. Accept it.",
+      "supervisor": {
+        "first_name": "Anita",
+        "last_name": "Burch",
+        "email": "anita.burch@gmail.com",
+        "phone_number": "3643463570"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "0a9d82a_1",
+      "scenario": "0a9d82a",
+      "instruction": "What is my longest practiced-good-posture habit streak, in number of days, as per my Simple Note habit tracking logs?",
+      "supervisor": {
+        "first_name": "Stephen",
+        "last_name": "Mccoy",
+        "email": "stmcco@gmail.com",
+        "phone_number": "5707454150"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "0a9d82a_2",
+      "scenario": "0a9d82a",
+      "instruction": "What is my longest limited-screen-time-to-1-hr habit streak, in number of days, as per my Simple Note habit tracking logs?",
+      "supervisor": {
+        "first_name": "Kyle",
+        "last_name": "Moore",
+        "email": "kyl_moor@gmail.com",
+        "phone_number": "6372953330"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "0a9d82a_3",
+      "scenario": "0a9d82a",
+      "instruction": "What is my longest ate-homemade-meals habit streak, in number of days, as per my Simple Note habit tracking logs?",
+      "supervisor": {
+        "first_name": "Angelica",
+        "last_name": "Wilson",
+        "email": "angelica.wils@gmail.com",
+        "phone_number": "6759633882"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "a30375d_1",
+      "scenario": "a30375d",
+      "instruction": "Give me a random funny quote from my SimpleNote note about it. Just the quote, nothing else.",
+      "supervisor": {
+        "first_name": "Angela",
+        "last_name": "Riddle",
+        "email": "angriddle@gmail.com",
+        "phone_number": "6925139040"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "a30375d_2",
+      "scenario": "a30375d",
+      "instruction": "Give me a random inspirational quote from my SimpleNote note about it. Just the quote, nothing else.",
+      "supervisor": {
+        "first_name": "Michael",
+        "last_name": "Burch",
+        "email": "mi.burch@gmail.com",
+        "phone_number": "8095050664"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "a30375d_3",
+      "scenario": "a30375d",
+      "instruction": "Give me a random movie quote from my SimpleNote note about it. Just the quote, nothing else.",
+      "supervisor": {
+        "first_name": "Jeffrey",
+        "last_name": "Smith",
+        "email": "jefsmith@gmail.com",
+        "phone_number": "3272301258"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "1150ed6_1",
+      "scenario": "1150ed6",
+      "instruction": "Play any song released in 2022 from my Spotify song library.",
+      "supervisor": {
+        "first_name": "Christopher",
+        "last_name": "Burch",
+        "email": "ch-burch@gmail.com",
+        "phone_number": "4275730168"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "1150ed6_2",
+      "scenario": "1150ed6",
+      "instruction": "Play any song released in 2021 from my Spotify album library.",
+      "supervisor": {
+        "first_name": "Alexander",
+        "last_name": "Riddle",
+        "email": "alexander-ridd@gmail.com",
+        "phone_number": "9876546221"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "1150ed6_3",
+      "scenario": "1150ed6",
+      "instruction": "Play any song released in 2020 from my Spotify playlists.",
+      "supervisor": {
+        "first_name": "Jonathan",
+        "last_name": "Ball",
+        "email": "jo.ball@gmail.com",
+        "phone_number": "2306532706"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "29a7b7e_1",
+      "scenario": "29a7b7e",
+      "instruction": "My work meeting files are available in the \"~/documents/work/meetings/\" directory in my file system. Currently, they are organized as \"<date>__<file_name>.<extension>\". Reorganize them in this format, \"<file_name>/<date>.<extension>\".",
+      "supervisor": {
+        "first_name": "Catherine",
+        "last_name": "Smith",
+        "email": "ca-smit@gmail.com",
+        "phone_number": "9084969795"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "29a7b7e_2",
+      "scenario": "29a7b7e",
+      "instruction": "My work meeting files are available in the \"~/documents/work/meetings_files/\" directory in my file system. Currently, they are organized as \"<date>__<file_name>.<extension>\". Reorganize them in this format, \"<file_name>/<date>.<extension>\".",
+      "supervisor": {
+        "first_name": "Adam",
+        "last_name": "Blackburn",
+        "email": "ad.blackburn@gmail.com",
+        "phone_number": "8944155247"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "29a7b7e_3",
+      "scenario": "29a7b7e",
+      "instruction": "My work meeting files are available in the \"~/documents/work/meetings_data/\" directory in my file system. Currently, they are organized as \"<date>__<file_name>.<extension>\". Reorganize them in this format, \"<file_name>/<date>.<extension>\".",
+      "supervisor": {
+        "first_name": "Sierra",
+        "last_name": "White",
+        "email": "siwhit@gmail.com",
+        "phone_number": "7295077363"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "09b0ee6_1",
+      "scenario": "09b0ee6",
+      "instruction": "Give me 6 comma-separated artist names with the most songs in my Spotify playlists. If the same song is present in multiple playlists, count it once.",
+      "supervisor": {
+        "first_name": "Denise",
+        "last_name": "Maldonado",
+        "email": "deniseburch@gmail.com",
+        "phone_number": "6279200672"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "09b0ee6_2",
+      "scenario": "09b0ee6",
+      "instruction": "Give me 4 comma-separated artist names with the least songs in my Spotify playlists. If the same song is present in multiple playlists, count it once.",
+      "supervisor": {
+        "first_name": "Tammy",
+        "last_name": "Weaver",
+        "email": "ta.weav@gmail.com",
+        "phone_number": "2738013302"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "09b0ee6_3",
+      "scenario": "09b0ee6",
+      "instruction": "Give me 3 comma-separated artist names with the most songs in my Spotify playlists. If the same song is present in multiple playlists, count it once.",
+      "supervisor": {
+        "first_name": "Ashlee",
+        "last_name": "Martinez",
+        "email": "ashlee_martinez@gmail.com",
+        "phone_number": "3506492550"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "f861c32_1",
+      "scenario": "f861c32",
+      "instruction": "Send $30 to each of my roommates via venmo with a note, \"For Drinks\". Refill venmo balance if you need to.",
+      "supervisor": {
+        "first_name": "Lindsey",
+        "last_name": "Simpson",
+        "email": "lindseysimpson@gmail.com",
+        "phone_number": "3567801924"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "f861c32_2",
+      "scenario": "f861c32",
+      "instruction": "Send $20 to each of my coworkers via venmo with a note, \"For Lunch\". Refill venmo balance if you need to.",
+      "supervisor": {
+        "first_name": "Connor",
+        "last_name": "Brown",
+        "email": "connorbrow@gmail.com",
+        "phone_number": "5734599766"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "f861c32_3",
+      "scenario": "f861c32",
+      "instruction": "Send $20 to each of my friends via venmo with a note, \"For Karaoke\". Refill venmo balance if you need to.",
+      "supervisor": {
+        "first_name": "Anthony",
+        "last_name": "Harrison",
+        "email": "an-harrison@gmail.com",
+        "phone_number": "2466064078"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "afc4005_1",
+      "scenario": "afc4005",
+      "instruction": "How long is my workout duration today, in minutes, as per my plan in Simple Note?",
+      "supervisor": {
+        "first_name": "Kyle",
+        "last_name": "Moore",
+        "email": "kyl_moor@gmail.com",
+        "phone_number": "6372953330"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "afc4005_2",
+      "scenario": "afc4005",
+      "instruction": "How long was my workout duration yesterday, in minutes, as per my plan in Simple Note?",
+      "supervisor": {
+        "first_name": "William",
+        "last_name": "Martinez",
+        "email": "william_mart@gmail.com",
+        "phone_number": "4429057162"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "afc4005_3",
+      "scenario": "afc4005",
+      "instruction": "How long is my workout duration on sundays, in minutes, as per my plan in Simple Note?",
+      "supervisor": {
+        "first_name": "Jonathan",
+        "last_name": "Ball",
+        "email": "jo.ball@gmail.com",
+        "phone_number": "2306532706"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "f3f60f0_1",
+      "scenario": "f3f60f0",
+      "instruction": "Like all the songs and albums in my Spotify song and album library, respectively, that I have not liked yet.",
+      "supervisor": {
+        "first_name": "Cheryl",
+        "last_name": "Martinez",
+        "email": "cheweber@gmail.com",
+        "phone_number": "3517418245"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "f3f60f0_2",
+      "scenario": "f3f60f0",
+      "instruction": "Like all the songs and albums in my Spotify song and album library, respectively, that I have not liked yet.",
+      "supervisor": {
+        "first_name": "Ashley",
+        "last_name": "Moore",
+        "email": "as_moore@gmail.com",
+        "phone_number": "7336094411"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "f3f60f0_3",
+      "scenario": "f3f60f0",
+      "instruction": "Like all the songs and albums in my Spotify song and album library, respectively, that I have not liked yet.",
+      "supervisor": {
+        "first_name": "Caitlin",
+        "last_name": "Burch",
+        "email": "caiburc@gmail.com",
+        "phone_number": "5896230193"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "0de03ea_1",
+      "scenario": "0de03ea",
+      "instruction": "I am going for a 15-minute drive without internet. Play an album from my Spotify library that already has enough downloaded songs for it, so I do not have to repeat.",
+      "supervisor": {
+        "first_name": "Ashley",
+        "last_name": "Moore",
+        "email": "as_moore@gmail.com",
+        "phone_number": "7336094411"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "0de03ea_2",
+      "scenario": "0de03ea",
+      "instruction": "I am going for a half-hour walk without internet. Play a playlist from my Spotify library that already has enough downloaded songs for it, so I do not have to repeat.",
+      "supervisor": {
+        "first_name": "Cory",
+        "last_name": "Wilson",
+        "email": "corwils@gmail.com",
+        "phone_number": "5412564532"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "0de03ea_3",
+      "scenario": "0de03ea",
+      "instruction": "I am going for a 20-minute drive without internet. Play an album from my Spotify library that already has enough downloaded songs for it, so I do not have to repeat.",
+      "supervisor": {
+        "first_name": "Matthew",
+        "last_name": "Blackburn",
+        "email": "matthew.blac@gmail.com",
+        "phone_number": "4886643554"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "3b8fb7a_1",
+      "scenario": "3b8fb7a",
+      "instruction": "I went on a trip with friends to Maui recently. I have maintained a note of money I owe to others and others owe me from the trip in simple note. Make private venmo payments or requests accordingly. In the payments/requests, add a note, \"For Maui trip\".",
+      "supervisor": {
+        "first_name": "Brenda",
+        "last_name": "Smith",
+        "email": "brenda.webe@gmail.com",
+        "phone_number": "9312015677"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "3b8fb7a_2",
+      "scenario": "3b8fb7a",
+      "instruction": "I went on a trip with friends to Athens recently. I have maintained a note of money I owe to others and others owe me from the trip in simple note. Make private venmo payments or requests accordingly. In the payments/requests, add a note, \"For Athens trip\".",
+      "supervisor": {
+        "first_name": "Alexander",
+        "last_name": "Riddle",
+        "email": "alexander-ridd@gmail.com",
+        "phone_number": "9876546221"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "3b8fb7a_3",
+      "scenario": "3b8fb7a",
+      "instruction": "I went on a trip with friends to Miami recently. I have maintained a note of money I owe to others and others owe me from the trip in simple note. Make private venmo payments or requests accordingly. In the payments/requests, add a note, \"For Miami trip\".",
+      "supervisor": {
+        "first_name": "Morgan",
+        "last_name": "Burton",
+        "email": "morgan-harrison@gmail.com",
+        "phone_number": "8903665635"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "b6d1104_1",
+      "scenario": "b6d1104",
+      "instruction": "I maintain a log of my monthly venmo expense in SimpleNote note. Update it with an entry for this month.",
+      "supervisor": {
+        "first_name": "Martin",
+        "last_name": "Blackburn",
+        "email": "mar_blac@gmail.com",
+        "phone_number": "3539110281"
+      },
+      "datetime": "2023-05-31T18:34:21.999999"
+    },
+    {
+      "task": "b6d1104_2",
+      "scenario": "b6d1104",
+      "instruction": "I maintain a log of my monthly venmo expense in SimpleNote note. Update it with an entry for this month.",
+      "supervisor": {
+        "first_name": "Chris",
+        "last_name": "Mccoy",
+        "email": "chris.mcco@gmail.com",
+        "phone_number": "5584932120"
+      },
+      "datetime": "2023-05-31T19:10:11.999999"
+    },
+    {
+      "task": "b6d1104_3",
+      "scenario": "b6d1104",
+      "instruction": "I maintain a log of my monthly venmo expense in SimpleNote note. Update it with an entry for this month.",
+      "supervisor": {
+        "first_name": "Troy",
+        "last_name": "Solomon",
+        "email": "tr_solo@gmail.com",
+        "phone_number": "7273731063"
+      },
+      "datetime": "2023-05-31T19:40:40.999999"
+    },
+    {
+      "task": "c77c005_1",
+      "scenario": "c77c005",
+      "instruction": "Befriend on Venmo anyone I have sent or received money from this month and unfriend everyone else.",
+      "supervisor": {
+        "first_name": "Glenn",
+        "last_name": "Burton",
+        "email": "glenn.burton@gmail.com",
+        "phone_number": "8638518861"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "c77c005_2",
+      "scenario": "c77c005",
+      "instruction": "Befriend on Venmo anyone I have sent money to this month and unfriend everyone else.",
+      "supervisor": {
+        "first_name": "Angelica",
+        "last_name": "Wilson",
+        "email": "angelica.wils@gmail.com",
+        "phone_number": "6759633882"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "c77c005_3",
+      "scenario": "c77c005",
+      "instruction": "Befriend on Venmo anyone I have received money from this month and unfriend everyone else.",
+      "supervisor": {
+        "first_name": "Stacy",
+        "last_name": "Maldonado",
+        "email": "st-maldonado@gmail.com",
+        "phone_number": "9053203579"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "425a494_1",
+      "scenario": "425a494",
+      "instruction": "Songs of which genre have I liked the most in my Spotify song library?",
+      "supervisor": {
+        "first_name": "Jacob",
+        "last_name": "Blackburn",
+        "email": "jac-blackburn@gmail.com",
+        "phone_number": "7375474944"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "425a494_2",
+      "scenario": "425a494",
+      "instruction": "Songs of which genre have I liked the least in my Spotify album library?",
+      "supervisor": {
+        "first_name": "Jennifer",
+        "last_name": "Powell",
+        "email": "jepowell@gmail.com",
+        "phone_number": "4288705164"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "425a494_3",
+      "scenario": "425a494",
+      "instruction": "Songs of which genre have I liked the most in my Spotify playlists?",
+      "supervisor": {
+        "first_name": "Jose",
+        "last_name": "Harrison",
+        "email": "joseharr@gmail.com",
+        "phone_number": "2474975253"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "21abae1_1",
+      "scenario": "21abae1",
+      "instruction": "How much money have I sent to others on venmo this month so far?",
+      "supervisor": {
+        "first_name": "Cody",
+        "last_name": "Smith",
+        "email": "cod.smith@gmail.com",
+        "phone_number": "7826309761"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "21abae1_2",
+      "scenario": "21abae1",
+      "instruction": "How much money have I received from others on venmo this month so far?",
+      "supervisor": {
+        "first_name": "Brandon",
+        "last_name": "Weber",
+        "email": "brandon-webe@gmail.com",
+        "phone_number": "3798762980"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "21abae1_3",
+      "scenario": "21abae1",
+      "instruction": "How much money have I sent to or received from others on venmo this month so far?",
+      "supervisor": {
+        "first_name": "Jordan",
+        "last_name": "Harrison",
+        "email": "jo-harr@gmail.com",
+        "phone_number": "2254213734"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "bde252e_1",
+      "scenario": "bde252e",
+      "instruction": "I maintain my work schedule in SimpleNote and track my tasks in Todoist. Every night, I delete the completed tasks from my \"Today's Goal\" project. Then, I move the maximum number of incomplete tasks from my Inbox to the \"Today's Goal\" project. The maximum here is assuming I work back-to-back as per my schedule and I find time for the left overs from the current day first. I am busy tonight, please do it for me. Note that the moved tasks must be identical to the original ones.",
+      "supervisor": {
+        "first_name": "Dillon",
+        "last_name": "Wilson",
+        "email": "diwils@gmail.com",
+        "phone_number": "3966728840"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "bde252e_2",
+      "scenario": "bde252e",
+      "instruction": "I maintain my work schedule in SimpleNote and track my tasks in Todoist. Every night, I delete the completed tasks from my \"Today's Target\" project. Then, I move the maximum number of incomplete tasks from my Inbox to the \"Today's Target\" project. The maximum here is assuming I work back-to-back as per my schedule and I find time for the left overs from the current day first. I am busy tonight, please do it for me. Note that the moved tasks must be identical to the original ones.",
+      "supervisor": {
+        "first_name": "Jordan",
+        "last_name": "Harrison",
+        "email": "jo-harr@gmail.com",
+        "phone_number": "2254213734"
+      },
+      "datetime": "2023-05-19T12:00:00"
+    },
+    {
+      "task": "bde252e_3",
+      "scenario": "bde252e",
+      "instruction": "I maintain my work schedule in SimpleNote and track my tasks in Todoist. Every night, I delete the completed tasks from my \"Today\" project. Then, I move the maximum number of incomplete tasks from my Inbox to the \"Today\" project. The maximum here is assuming I work back-to-back as per my schedule and I find time for the left overs from the current day first. I am busy tonight, please do it for me. Note that the moved tasks must be identical to the original ones.",
+      "supervisor": {
+        "first_name": "Ashley",
+        "last_name": "Moore",
+        "email": "as_moore@gmail.com",
+        "phone_number": "7336094411"
+      },
+      "datetime": "2023-05-22T00:00:00"
+    },
+    {
+      "task": "634f342_1",
+      "scenario": "634f342",
+      "instruction": "Go through all my Spotify playlists and remove all the songs from them that are in \"~/documents/personal/old_songs.txt\" from my file system and put them in a new playlist named \"Archived Songs\".",
+      "supervisor": {
+        "first_name": "Edwin",
+        "last_name": "Wilson",
+        "email": "ed_wilson@gmail.com",
+        "phone_number": "8506051563"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "634f342_2",
+      "scenario": "634f342",
+      "instruction": "Go through all my Spotify playlists and remove all the songs from them that are in \"~/documents/personal/songs_to_archive.txt\" from my file system and put them in a new playlist named \"Old Songs\".",
+      "supervisor": {
+        "first_name": "Vickie",
+        "last_name": "Powell",
+        "email": "vicpowe@gmail.com",
+        "phone_number": "8924356613"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "634f342_3",
+      "scenario": "634f342",
+      "instruction": "Go through all my Spotify playlists and remove all the songs from them that are in \"~/documents/personal/list_of_old_songs.txt\" from my file system and put them in a new playlist named \"Archived Playlist Songs\".",
+      "supervisor": {
+        "first_name": "Jack",
+        "last_name": "Maldonado",
+        "email": "jack-maldonado@gmail.com",
+        "phone_number": "3772349310"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "3d9a636_1",
+      "scenario": "3d9a636",
+      "instruction": "Reset friends on venmo to be the same as my friends in my phone. Befriend and unfriend as needed.",
+      "supervisor": {
+        "first_name": "Anita",
+        "last_name": "Burch",
+        "email": "anita.burch@gmail.com",
+        "phone_number": "3643463570"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "3d9a636_2",
+      "scenario": "3d9a636",
+      "instruction": "Reset friends on venmo to be the same as my friends in my phone. Befriend and unfriend as needed.",
+      "supervisor": {
+        "first_name": "Claudia",
+        "last_name": "Miller",
+        "email": "clmiller@gmail.com",
+        "phone_number": "2125442118"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "3d9a636_3",
+      "scenario": "3d9a636",
+      "instruction": "Reset friends on venmo to be the same as my friends in my phone. Befriend and unfriend as needed.",
+      "supervisor": {
+        "first_name": "Carl",
+        "last_name": "Brown",
+        "email": "carbrown@gmail.com",
+        "phone_number": "7934818191"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    },
+    {
+      "task": "166f4ff_1",
+      "scenario": "166f4ff",
+      "instruction": "How much money have I been requested on Venmo in the last 7 days (including today)? ",
+      "supervisor": {
+        "first_name": "Connor",
+        "last_name": "Brown",
+        "email": "connorbrow@gmail.com",
+        "phone_number": "5734599766"
+      },
+      "datetime": "2023-06-03T23:58:00"
+    },
+    {
+      "task": "166f4ff_2",
+      "scenario": "166f4ff",
+      "instruction": "How much money have I been requested on Venmo in the last 10 days (including today)? ",
+      "supervisor": {
+        "first_name": "Grant",
+        "last_name": "Martinez",
+        "email": "gra-martinez@gmail.com",
+        "phone_number": "7056722825"
+      },
+      "datetime": "2023-06-02T23:58:00"
+    },
+    {
+      "task": "166f4ff_3",
+      "scenario": "166f4ff",
+      "instruction": "How much money have I been requested on Venmo in the last 5 days (including today)? ",
+      "supervisor": {
+        "first_name": "Sandra",
+        "last_name": "Martinez",
+        "email": "saritt@gmail.com",
+        "phone_number": "9012831674"
+      },
+      "datetime": "2023-06-03T23:58:00"
+    },
+    {
+      "task": "b9c5c9a_1",
+      "scenario": "b9c5c9a",
+      "instruction": "I have invited some of my friends to a reunion party via phone messages. I have made a CSV to track who is coming or not in \"~/documents/personal/\" in my file system. Please update RSVPs in it as per their latest replies.",
+      "supervisor": {
+        "first_name": "Ashley",
+        "last_name": "Moore",
+        "email": "as_moore@gmail.com",
+        "phone_number": "7336094411"
+      },
+      "datetime": "2023-05-18T12:00:00"
+    }
+  ],
+  "arms": [
+    "hld",
+    "recuris"
+  ],
+  "trials": 140,
+  "workers": 2,
+  "model": "deepseek-flash",
+  "budget": {
+    "endpoint": "https://api.taotoken.net/token/v1/messages",
+    "model": "deepseek-flash",
+    "campaign_limit_microcny": 1120000000,
+    "task_limit_microcny": 8000000,
+    "input_ceiling_tokens": 128000,
+    "max_output_tokens": 16384,
+    "requests_per_task": 400,
+    "tools_per_task": 600,
+    "solver_seconds": 7200,
+    "rate_basis": "Peak ceiling verified in TaoToken model detail on 2026-10-18: input 2, cache 0.04, output 8 CNY/M; conservative estimate, not TokenPlan Credits invoice",
+    "rate_source": "https://taotoken.net/models?modelId=deepseek-flash",
+    "jobs": [
+      "hld--9dabbc9_1",
+      "recuris--9dabbc9_1",
+      "hld--9dabbc9_2",
+      "recuris--9dabbc9_2",
+      "hld--9dabbc9_3",
+      "recuris--9dabbc9_3",
+      "hld--d6ac34d_1",
+      "recuris--d6ac34d_1",
+      "hld--d6ac34d_2",
+      "recuris--d6ac34d_2",
+      "hld--d6ac34d_3",
+      "recuris--d6ac34d_3",
+      "hld--5a83b05_1",
+      "recuris--5a83b05_1",
+      "hld--5a83b05_2",
+      "recuris--5a83b05_2",
+      "hld--5a83b05_3",
+      "recuris--5a83b05_3",
+      "hld--32616b5_1",
+      "recuris--32616b5_1",
+      "hld--32616b5_2",
+      "recuris--32616b5_2",
+      "hld--32616b5_3",
+      "recuris--32616b5_3",
+      "hld--9ef798c_1",
+      "recuris--9ef798c_1",
+      "hld--9ef798c_2",
+      "recuris--9ef798c_2",
+      "hld--9ef798c_3",
+      "recuris--9ef798c_3",
+      "hld--0a9d82a_1",
+      "recuris--0a9d82a_1",
+      "hld--0a9d82a_2",
+      "recuris--0a9d82a_2",
+      "hld--0a9d82a_3",
+      "recuris--0a9d82a_3",
+      "hld--a30375d_1",
+      "recuris--a30375d_1",
+      "hld--a30375d_2",
+      "recuris--a30375d_2",
+      "hld--a30375d_3",
+      "recuris--a30375d_3",
+      "hld--1150ed6_1",
+      "recuris--1150ed6_1",
+      "hld--1150ed6_2",
+      "recuris--1150ed6_2",
+      "hld--1150ed6_3",
+      "recuris--1150ed6_3",
+      "hld--29a7b7e_1",
+      "recuris--29a7b7e_1",
+      "hld--29a7b7e_2",
+      "recuris--29a7b7e_2",
+      "hld--29a7b7e_3",
+      "recuris--29a7b7e_3",
+      "hld--09b0ee6_1",
+      "recuris--09b0ee6_1",
+      "hld--09b0ee6_2",
+      "recuris--09b0ee6_2",
+      "hld--09b0ee6_3",
+      "recuris--09b0ee6_3",
+      "hld--f861c32_1",
+      "recuris--f861c32_1",
+      "hld--f861c32_2",
+      "recuris--f861c32_2",
+      "hld--f861c32_3",
+      "recuris--f861c32_3",
+      "hld--afc4005_1",
+      "recuris--afc4005_1",
+      "hld--afc4005_2",
+      "recuris--afc4005_2",
+      "hld--afc4005_3",
+      "recuris--afc4005_3",
+      "hld--f3f60f0_1",
+      "recuris--f3f60f0_1",
+      "hld--f3f60f0_2",
+      "recuris--f3f60f0_2",
+      "hld--f3f60f0_3",
+      "recuris--f3f60f0_3",
+      "hld--0de03ea_1",
+      "recuris--0de03ea_1",
+      "hld--0de03ea_2",
+      "recuris--0de03ea_2",
+      "hld--0de03ea_3",
+      "recuris--0de03ea_3",
+      "hld--3b8fb7a_1",
+      "recuris--3b8fb7a_1",
+      "hld--3b8fb7a_2",
+      "recuris--3b8fb7a_2",
+      "hld--3b8fb7a_3",
+      "recuris--3b8fb7a_3",
+      "hld--b6d1104_1",
+      "recuris--b6d1104_1",
+      "hld--b6d1104_2",
+      "recuris--b6d1104_2",
+      "hld--b6d1104_3",
+      "recuris--b6d1104_3",
+      "hld--c77c005_1",
+      "recuris--c77c005_1",
+      "hld--c77c005_2",
+      "recuris--c77c005_2",
+      "hld--c77c005_3",
+      "recuris--c77c005_3",
+      "hld--425a494_1",
+      "recuris--425a494_1",
+      "hld--425a494_2",
+      "recuris--425a494_2",
+      "hld--425a494_3",
+      "recuris--425a494_3",
+      "hld--21abae1_1",
+      "recuris--21abae1_1",
+      "hld--21abae1_2",
+      "recuris--21abae1_2",
+      "hld--21abae1_3",
+      "recuris--21abae1_3",
+      "hld--bde252e_1",
+      "recuris--bde252e_1",
+      "hld--bde252e_2",
+      "recuris--bde252e_2",
+      "hld--bde252e_3",
+      "recuris--bde252e_3",
+      "hld--634f342_1",
+      "recuris--634f342_1",
+      "hld--634f342_2",
+      "recuris--634f342_2",
+      "hld--634f342_3",
+      "recuris--634f342_3",
+      "hld--3d9a636_1",
+      "recuris--3d9a636_1",
+      "hld--3d9a636_2",
+      "recuris--3d9a636_2",
+      "hld--3d9a636_3",
+      "recuris--3d9a636_3",
+      "hld--166f4ff_1",
+      "recuris--166f4ff_1",
+      "hld--166f4ff_2",
+      "recuris--166f4ff_2",
+      "hld--166f4ff_3",
+      "recuris--166f4ff_3",
+      "hld--b9c5c9a_1",
+      "recuris--b9c5c9a_1"
+    ]
+  },
+  "hld_source": "/mnt/sdb/home/lizh639/swepro-hld-ab5-20261020/bundle/hld-new",
+  "recuris_source": "/mnt/sdb/home/lizh639/swepro-hld-ab5-20261020/bundle/recuris-dsh",
+  "official_grading": true,
+  "cross_task_memory": false,
+  "automatic_paid_retries": false,
+  "aggregation": "Report new70 first attempts separately; historical30 retained-pass-after-selective-repairs separately; combined100 is mixed-version cumulative result, not latest-version pass@1."
+}

@@ -1,0 +1,53 @@
+HW26 差异核查与无提示补跑记录
+核查日期：2026-10-22
+
+结论
+HLD 原次正式得分 0.375，Recuris 历史正式得分 1.0。
+HLD 的 HW6 9/9 通过；HW2 在 CMake 查找 OpenSSL 时失败，15 项未能进入实际测试。
+因此 9/(15+9)=37.5%。不能据此断言 HW2 的业务代码只有零分水平，也不能把临时替身通过当成真实 HW2 已通过。
+
+HLD 路径
+最终 CMakeLists.txt 仍含 find_package(OpenSSL REQUIRED)，评分镜像缺 OpenSSL 开发头文件及可发现的开发库链接。
+解题器为局部验证写了临时 stubcrypto.cpp；替身测试成功未解决最终真实构建。
+2026-10-22 12:30:00.967Z Critic 明确记录 hw2_real_crypto_integration 缺口，指出 stub-only success cannot close this integration obligation。
+12:37:12.039Z Critic 再次指出 E144 真实 CMake configure 失败、E142 使用 stubcrypto.o。
+12:40:21.890Z Critic 返回无效 JSON；随后 critic_protocol_circuit_open。没有可靠的最终完成证明。
+语义规划事件：14 次 started，7 次 accepted，7 次 failed；4 次 route_switched。
+机制检测到了问题，但没有把发现转化为可用的最终构建；协议失败进一步削弱收尾。
+
+Recuris 路径与约束差异
+最终 CMakeLists.txt 去掉 find_package(OpenSSL REQUIRED)，增加 third_party/ 头文件目录，直接链接 /usr/lib/x86_64-linux-gnu/libcrypto.so.3。
+新增 third_party/openssl/*.h 主要为现有真实库提供类型、函数声明和宏；不能将其概括成用假加密绕过测试。
+正式评分 HW2 15/15、HW6 9/9，P2P 4/4，official_success=true。
+原 README 明文只允许修改 server.cpp/h、client.cpp/h，并要求其他已填充文件保持不变。Recuris 修改 CMakeLists.txt 偏离该限制。
+P2P 仅检查两份 Dockerfile 与两份 main.cpp，没有检查 CMakeLists.txt。这解释了约束偏差没有影响官方得分。
+保留其官方满分记录，同时记录约束偏差。
+
+资源与结束原因
+HLD：235 次模型请求，200 次工具调用，HTTP 错误 0；费用账本 236 条、9.337678 元。
+HLD：无 budget_stop、limit_stop、provider_stop，无超时；不是预算耗尽退出。金额为本轮统一估算账本口径，非平台 Credits 发票。
+HLD：从启动到完成评分约 24 分 41 秒。
+Recuris：176 次模型/API 请求，81 次工具调用，解题约 5 分 55 秒，stop_reason=task_complete。
+历史 Recuris 使用不同服务渠道、较大上下文，并未设置相同人民币上限；本次对齐的是已授权的请求数和输出上限，继续保留 24 元限额。
+
+新尝试（与分析隔离）
+远端目录：/mnt/sdb/home/lizh639/longcli-hld-hw26-matched-20261022
+job：hld-hw26-repeat--ap1400_2_hw26
+PID：2960856
+版本：HLD v8，未部署 v9 效率候选版。
+原始 starter、新工作区、新会话、新容器；提示与原次 BENCHMARK_INSTRUCTION.md 逐字相同。
+不给诊断结论、Recuris 解答、旧 HLD 解答、官方评分反馈。
+800 次总模型请求，32768 单次输出，600 次工具，7200 秒，24 元单次上限；所有辅助调用计费。
+与原轮共用 spending.sqlite，480 元总上限保持不变；旧次 9.337678 元仍在总账中。
+独立 job 允许新尝试从 0 开始计其 24 元单次限额，不重置原轮任何账目。
+预检零模型调用：原始输入/镜像、官方评分器 AST 和文件哈希、脚本语法、800/801 次边界、输出限制、24/480 元边界及任务 allowlist 均通过。
+启动核验：9 次模型请求/9 次 HTTP 200，无工程错误；effective-limits.json 与授权一致。
+新次独立报告，不覆盖原 37.5% 成绩，不用补跑最佳值替换首轮总分。
+
+原始证据位置
+HLD：/mnt/sdb/home/lizh639/longcli-hld-full20-triple-20261022/jobs/hld--ap1400_2_hw26
+HLD 评分：同轮 grades/hld--ap1400_2_hw26/result.json 与 test_output/f2p_output.txt
+Recuris：/mnt/sdb/home/lizh639/longcli-recuris-large20-20261009/recuris_frozen/jobs/recuris_frozen--ap1400_2_hw26
+Recuris 评分与源码：同轮 grades/recuris_frozen--ap1400_2_hw26
+HLD 原源码 SHA256：8023cb6357fad4bf5336f50c445ecc0a531679e097d98b0c808fc3c8ceef25fd
+Recuris 原源码 SHA256：7596a09dd8ca8cb1c7fe1c3744cb21ccd51fb66467f763957da9abd6dc71ae88

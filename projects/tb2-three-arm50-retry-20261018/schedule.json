@@ -1,0 +1,47 @@
+{
+  "state": "finished",
+  "updated_utc": "2026-10-17T21:47:46.128355+00:00",
+  "supervisor_identity": {
+    "pid": 3255364,
+    "start": "814780329",
+    "boot": "2861b57d-7d78-4a80-a96b-0854417097ca"
+  },
+  "parent": "/mnt/sdb/home/lizh639/tb2-three-arm50-20261017",
+  "summary": {
+    "native-kz": {
+      "total": 8,
+      "first_finished": 8,
+      "clean": 0,
+      "passed": 0
+    },
+    "kz-dsh": {
+      "total": 8,
+      "first_finished": 8,
+      "clean": 0,
+      "passed": 0
+    },
+    "dsh": {
+      "total": 8,
+      "first_finished": 8,
+      "clean": 1,
+      "passed": 0
+    }
+  },
+  "spending": {
+    "limit_microcny": 600000000,
+    "settled_microcny": 283445632,
+    "reserved_microcny": 0,
+    "uncertain_microcny": 3096576,
+    "remaining_microcny": 313457792,
+    "halt_reason": null,
+    "estimate_peak_cny": 600.0
+  },
+  "skipped": [
+    {
+      "job": "tb50-23-kz-dsh-dna-assembly",
+      "reason": "original_task_budget_insufficient",
+      "charged_microcny": 3895065,
+      "remaining_microcny": 104935
+    }
+  ]
+}

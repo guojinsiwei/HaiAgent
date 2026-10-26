@@ -1,0 +1,8 @@
+{
+  "task": "dna-insert",
+  "image": "alexgshaw/dna-insert:20251031",
+  "digest": "sha256:4dd8760694e355de85ecf03605cb487ccdb33322f6afad513d2920829baa33b2",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/dna-insert/manifests/20251031",
+  "header_verified": true,
+  "time": 1792510255.4166694
+}

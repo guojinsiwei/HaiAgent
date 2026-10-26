@@ -1,0 +1,902 @@
+{
+  "tasks": [
+    {
+      "task": "modflow6-groundwater-regression-audit",
+      "source_path": "/var/tmp/lizh639-lhtb-bestfgs12-memory-v5-20260930/runs/bestfgs-modflow6-groundwater-regression-audit/modflow6-groundwater-regression__LUxSu42/agent/method/events.jsonl",
+      "source_sha256": "8498c337f35e0894a1416ef79e6f4d35f2d1040f3d2b54af3d36e03a65ef9d11",
+      "old_triggers": 12,
+      "context_build_passed": 12,
+      "context_build_failed": 0,
+      "max_context_chars": 15368,
+      "min_evidence_count": 8,
+      "simulated_schedule": [
+        {
+          "tool": 50,
+          "lane": "periodic",
+          "context_chars": 14967
+        },
+        {
+          "tool": 84,
+          "lane": "anomaly",
+          "context_chars": 14104
+        },
+        {
+          "tool": 100,
+          "lane": "anomaly",
+          "context_chars": 14193
+        },
+        {
+          "tool": 150,
+          "lane": "periodic",
+          "context_chars": 13472
+        },
+        {
+          "tool": 223,
+          "lane": "anomaly",
+          "context_chars": 13741
+        },
+        {
+          "tool": 250,
+          "lane": "periodic",
+          "context_chars": 13221
+        },
+        {
+          "tool": 300,
+          "lane": "anomaly",
+          "context_chars": 13713
+        },
+        {
+          "tool": 350,
+          "lane": "periodic",
+          "context_chars": 13614
+        },
+        {
+          "tool": 403,
+          "lane": "anomaly",
+          "context_chars": 13848
+        },
+        {
+          "tool": 450,
+          "lane": "periodic",
+          "context_chars": 13967
+        },
+        {
+          "tool": 507,
+          "lane": "anomaly",
+          "context_chars": 13385
+        },
+        {
+          "tool": 550,
+          "lane": "periodic",
+          "context_chars": 13492
+        }
+      ],
+      "covers_last_tenth": true,
+      "historical_outcomes_not_reexecuted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "spot-scheduler-traces",
+      "source_path": "/var/tmp/lizh639-lhtb-bestfgs12-memory-v5-20260930/runs/bestfgs-spot-scheduler-traces/spot-scheduler-traces__r9YuuSE/agent/method/events.jsonl",
+      "source_sha256": "5208552af25bff8690c3b89e8bb717019e0d5050c3123f24f7cee9c0212688d3",
+      "old_triggers": 26,
+      "context_build_passed": 26,
+      "context_build_failed": 0,
+      "max_context_chars": 14888,
+      "min_evidence_count": 8,
+      "simulated_schedule": [
+        {
+          "tool": 35,
+          "lane": "anomaly",
+          "context_chars": 14022
+        },
+        {
+          "tool": 50,
+          "lane": "periodic",
+          "context_chars": 14117
+        },
+        {
+          "tool": 113,
+          "lane": "anomaly",
+          "context_chars": 14096
+        },
+        {
+          "tool": 150,
+          "lane": "periodic",
+          "context_chars": 13965
+        },
+        {
+          "tool": 204,
+          "lane": "anomaly",
+          "context_chars": 14087
+        },
+        {
+          "tool": 250,
+          "lane": "periodic",
+          "context_chars": 14280
+        },
+        {
+          "tool": 325,
+          "lane": "anomaly",
+          "context_chars": 14678
+        },
+        {
+          "tool": 350,
+          "lane": "periodic",
+          "context_chars": 14392
+        },
+        {
+          "tool": 404,
+          "lane": "anomaly",
+          "context_chars": 14614
+        },
+        {
+          "tool": 450,
+          "lane": "periodic",
+          "context_chars": 14719
+        },
+        {
+          "tool": 500,
+          "lane": "anomaly",
+          "context_chars": 14408
+        },
+        {
+          "tool": 550,
+          "lane": "periodic",
+          "context_chars": 14827
+        }
+      ],
+      "covers_last_tenth": true,
+      "historical_outcomes_not_reexecuted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "foldseek-paper-reproduction",
+      "source_path": "/var/tmp/lizh639-lhtb-bestfgs12-memory-v5-20260930/runs/bestfgs-foldseek-paper-reproduction/foldseek-paper-reproduction__Sh44XHt/agent/method/events.jsonl",
+      "source_sha256": "3c53761988643c1b909856caf318a1c17d9390695b5da9e9df3320d804ec47a8",
+      "old_triggers": 74,
+      "context_build_passed": 74,
+      "context_build_failed": 0,
+      "max_context_chars": 15079,
+      "min_evidence_count": 8,
+      "simulated_schedule": [
+        {
+          "tool": 15,
+          "lane": "anomaly",
+          "context_chars": 14503
+        },
+        {
+          "tool": 50,
+          "lane": "periodic",
+          "context_chars": 13867
+        },
+        {
+          "tool": 100,
+          "lane": "anomaly",
+          "context_chars": 13656
+        },
+        {
+          "tool": 150,
+          "lane": "periodic",
+          "context_chars": 14089
+        },
+        {
+          "tool": 205,
+          "lane": "anomaly",
+          "context_chars": 14171
+        },
+        {
+          "tool": 250,
+          "lane": "periodic",
+          "context_chars": 13675
+        },
+        {
+          "tool": 300,
+          "lane": "anomaly",
+          "context_chars": 14070
+        },
+        {
+          "tool": 350,
+          "lane": "periodic",
+          "context_chars": 14082
+        },
+        {
+          "tool": 401,
+          "lane": "anomaly",
+          "context_chars": 14702
+        },
+        {
+          "tool": 450,
+          "lane": "periodic",
+          "context_chars": 14854
+        },
+        {
+          "tool": 500,
+          "lane": "anomaly",
+          "context_chars": 14482
+        },
+        {
+          "tool": 550,
+          "lane": "periodic",
+          "context_chars": 13532
+        }
+      ],
+      "covers_last_tenth": true,
+      "historical_outcomes_not_reexecuted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "gdal-proj-raster-regression",
+      "source_path": "/var/tmp/lizh639-lhtb-bestfgs12-memory-v5-20260930/runs/bestfgs-gdal-proj-raster-regression/gdal-proj-raster-regression__K2VmyCf/agent/method/events.jsonl",
+      "source_sha256": "638e15a4e0d45c26e6816b68ad62b12bc5f9ae893c3eb1eb5ecb8a9ff90812c9",
+      "old_triggers": 42,
+      "context_build_passed": 42,
+      "context_build_failed": 0,
+      "max_context_chars": 15864,
+      "min_evidence_count": 8,
+      "simulated_schedule": [
+        {
+          "tool": 16,
+          "lane": "anomaly",
+          "context_chars": 14705
+        },
+        {
+          "tool": 50,
+          "lane": "periodic",
+          "context_chars": 15706
+        },
+        {
+          "tool": 106,
+          "lane": "anomaly",
+          "context_chars": 14979
+        },
+        {
+          "tool": 150,
+          "lane": "periodic",
+          "context_chars": 14338
+        },
+        {
+          "tool": 203,
+          "lane": "anomaly",
+          "context_chars": 15082
+        },
+        {
+          "tool": 250,
+          "lane": "periodic",
+          "context_chars": 14488
+        },
+        {
+          "tool": 303,
+          "lane": "anomaly",
+          "context_chars": 15224
+        },
+        {
+          "tool": 350,
+          "lane": "periodic",
+          "context_chars": 15580
+        },
+        {
+          "tool": 402,
+          "lane": "anomaly",
+          "context_chars": 15473
+        },
+        {
+          "tool": 450,
+          "lane": "periodic",
+          "context_chars": 15631
+        },
+        {
+          "tool": 503,
+          "lane": "anomaly",
+          "context_chars": 15025
+        },
+        {
+          "tool": 550,
+          "lane": "periodic",
+          "context_chars": 14818
+        }
+      ],
+      "covers_last_tenth": true,
+      "historical_outcomes_not_reexecuted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "climate-netcdf-extreme-event-audit",
+      "source_path": "/var/tmp/lizh639-lhtb-bestfgs12-memory-v5-20260930/runs/bestfgs-climate-netcdf-extreme-event-audit/climate-netcdf-extreme-event-aud__YDXonL5/agent/method/events.jsonl",
+      "source_sha256": "354eb7e3f9b365c82590f5e050fe089f51ada190982ac6cfd9441370de922971",
+      "old_triggers": 12,
+      "context_build_passed": 12,
+      "context_build_failed": 0,
+      "max_context_chars": 14929,
+      "min_evidence_count": 8,
+      "simulated_schedule": [
+        {
+          "tool": 43,
+          "lane": "anomaly",
+          "context_chars": 12109
+        },
+        {
+          "tool": 51,
+          "lane": "periodic",
+          "context_chars": 14041
+        },
+        {
+          "tool": 117,
+          "lane": "anomaly",
+          "context_chars": 14819
+        },
+        {
+          "tool": 150,
+          "lane": "periodic",
+          "context_chars": 15195
+        },
+        {
+          "tool": 223,
+          "lane": "anomaly",
+          "context_chars": 14959
+        },
+        {
+          "tool": 250,
+          "lane": "periodic",
+          "context_chars": 14286
+        },
+        {
+          "tool": 335,
+          "lane": "anomaly",
+          "context_chars": 13714
+        },
+        {
+          "tool": 350,
+          "lane": "periodic",
+          "context_chars": 14007
+        },
+        {
+          "tool": 407,
+          "lane": "anomaly",
+          "context_chars": 14023
+        },
+        {
+          "tool": 450,
+          "lane": "periodic",
+          "context_chars": 14000
+        },
+        {
+          "tool": 526,
+          "lane": "anomaly",
+          "context_chars": 13918
+        },
+        {
+          "tool": 550,
+          "lane": "periodic",
+          "context_chars": 14107
+        }
+      ],
+      "covers_last_tenth": true,
+      "historical_outcomes_not_reexecuted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "great-expectations-audit",
+      "source_path": "/var/tmp/lizh639-lhtb-bestfgs12-memory-v5-20260930/runs/bestfgs-great-expectations-audit/great-expectations-audit__RnVKKKf/agent/method/events.jsonl",
+      "source_sha256": "60a2fc6eab88c0fa65410559a631bf773af9557424138a695424eafbfa2d48b8",
+      "old_triggers": 72,
+      "context_build_passed": 72,
+      "context_build_failed": 0,
+      "max_context_chars": 15462,
+      "min_evidence_count": 8,
+      "simulated_schedule": [
+        {
+          "tool": 12,
+          "lane": "anomaly",
+          "context_chars": 14264
+        },
+        {
+          "tool": 50,
+          "lane": "periodic",
+          "context_chars": 14086
+        },
+        {
+          "tool": 100,
+          "lane": "anomaly",
+          "context_chars": 14728
+        },
+        {
+          "tool": 150,
+          "lane": "periodic",
+          "context_chars": 13031
+        },
+        {
+          "tool": 233,
+          "lane": "anomaly",
+          "context_chars": 14362
+        },
+        {
+          "tool": 250,
+          "lane": "periodic",
+          "context_chars": 13946
+        },
+        {
+          "tool": 316,
+          "lane": "anomaly",
+          "context_chars": 13499
+        },
+        {
+          "tool": 350,
+          "lane": "periodic",
+          "context_chars": 14596
+        },
+        {
+          "tool": 422,
+          "lane": "anomaly",
+          "context_chars": 13698
+        },
+        {
+          "tool": 450,
+          "lane": "periodic",
+          "context_chars": 13886
+        },
+        {
+          "tool": 502,
+          "lane": "anomaly",
+          "context_chars": 14201
+        },
+        {
+          "tool": 550,
+          "lane": "periodic",
+          "context_chars": 13667
+        }
+      ],
+      "covers_last_tenth": true,
+      "historical_outcomes_not_reexecuted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "microscopy-cell-count-qc-audit",
+      "source_path": "/var/tmp/lizh639-lhtb-bestfgs12-memory-v5-20260930/runs/bestfgs-microscopy-cell-count-qc-audit/microscopy-cell-count-qc-audit__rS4F6S8/agent/method/events.jsonl",
+      "source_sha256": "3e6b9c43fbcd1c1424067aa9d36d65997197ef1772e955237ce00961f257ea10",
+      "old_triggers": 44,
+      "context_build_passed": 44,
+      "context_build_failed": 0,
+      "max_context_chars": 14865,
+      "min_evidence_count": 8,
+      "simulated_schedule": [
+        {
+          "tool": 9,
+          "lane": "anomaly",
+          "context_chars": 13591
+        },
+        {
+          "tool": 50,
+          "lane": "periodic",
+          "context_chars": 14303
+        },
+        {
+          "tool": 130,
+          "lane": "anomaly",
+          "context_chars": 14242
+        },
+        {
+          "tool": 150,
+          "lane": "periodic",
+          "context_chars": 14452
+        },
+        {
+          "tool": 220,
+          "lane": "anomaly",
+          "context_chars": 14276
+        },
+        {
+          "tool": 250,
+          "lane": "periodic",
+          "context_chars": 14408
+        },
+        {
+          "tool": 303,
+          "lane": "anomaly",
+          "context_chars": 14363
+        },
+        {
+          "tool": 350,
+          "lane": "periodic",
+          "context_chars": 14307
+        },
+        {
+          "tool": 400,
+          "lane": "anomaly",
+          "context_chars": 14365
+        },
+        {
+          "tool": 450,
+          "lane": "periodic",
+          "context_chars": 14373
+        },
+        {
+          "tool": 500,
+          "lane": "anomaly",
+          "context_chars": 14335
+        },
+        {
+          "tool": 550,
+          "lane": "periodic",
+          "context_chars": 14263
+        }
+      ],
+      "covers_last_tenth": true,
+      "historical_outcomes_not_reexecuted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "epa-swmm-stormwater-regression-audit",
+      "source_path": "/var/tmp/lizh639-lhtb-bestfgs12-memory-v5-20260930/runs/bestfgs-epa-swmm-stormwater-regression-audit/epa-swmm-stormwater-regression-a__B4wsRdV/agent/method/events.jsonl",
+      "source_sha256": "374a4d3276e2d83b4f940d5dd174d1b15c9b8335abfe4338ca1ec9e4d5943b87",
+      "old_triggers": 12,
+      "context_build_passed": 12,
+      "context_build_failed": 0,
+      "max_context_chars": 16167,
+      "min_evidence_count": 8,
+      "simulated_schedule": [
+        {
+          "tool": 50,
+          "lane": "periodic",
+          "context_chars": 16336
+        },
+        {
+          "tool": 58,
+          "lane": "anomaly",
+          "context_chars": 15729
+        },
+        {
+          "tool": 108,
+          "lane": "anomaly",
+          "context_chars": 16762
+        },
+        {
+          "tool": 150,
+          "lane": "periodic",
+          "context_chars": 11939
+        },
+        {
+          "tool": 200,
+          "lane": "anomaly",
+          "context_chars": 11944
+        },
+        {
+          "tool": 250,
+          "lane": "periodic",
+          "context_chars": 11939
+        },
+        {
+          "tool": 300,
+          "lane": "anomaly",
+          "context_chars": 11944
+        },
+        {
+          "tool": 350,
+          "lane": "periodic",
+          "context_chars": 15483
+        },
+        {
+          "tool": 413,
+          "lane": "anomaly",
+          "context_chars": 14501
+        },
+        {
+          "tool": 450,
+          "lane": "periodic",
+          "context_chars": 15224
+        },
+        {
+          "tool": 511,
+          "lane": "anomaly",
+          "context_chars": 15071
+        },
+        {
+          "tool": 550,
+          "lane": "periodic",
+          "context_chars": 14653
+        }
+      ],
+      "covers_last_tenth": true,
+      "historical_outcomes_not_reexecuted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "satellite-flood-change-detection-audit",
+      "source_path": "/var/tmp/lizh639-lhtb-bestfgs12-memory-v5-20260930/runs/bestfgs-satellite-flood-change-detection-audit/satellite-flood-change-detection__SM3Vfq6/agent/method/events.jsonl",
+      "source_sha256": "c91059582b45ccb011c5e2f8330f8e1e5f3774a78f9b63a3aab59fbb06dc09e7",
+      "old_triggers": 12,
+      "context_build_passed": 12,
+      "context_build_failed": 0,
+      "max_context_chars": 14232,
+      "min_evidence_count": 8,
+      "simulated_schedule": [
+        {
+          "tool": 23,
+          "lane": "anomaly",
+          "context_chars": 14084
+        },
+        {
+          "tool": 50,
+          "lane": "periodic",
+          "context_chars": 14252
+        },
+        {
+          "tool": 100,
+          "lane": "anomaly",
+          "context_chars": 14309
+        },
+        {
+          "tool": 150,
+          "lane": "periodic",
+          "context_chars": 14101
+        },
+        {
+          "tool": 200,
+          "lane": "anomaly",
+          "context_chars": 14092
+        },
+        {
+          "tool": 250,
+          "lane": "periodic",
+          "context_chars": 14076
+        },
+        {
+          "tool": 300,
+          "lane": "anomaly",
+          "context_chars": 14046
+        },
+        {
+          "tool": 350,
+          "lane": "periodic",
+          "context_chars": 14380
+        },
+        {
+          "tool": 400,
+          "lane": "anomaly",
+          "context_chars": 14219
+        },
+        {
+          "tool": 450,
+          "lane": "periodic",
+          "context_chars": 14221
+        },
+        {
+          "tool": 500,
+          "lane": "anomaly",
+          "context_chars": 14232
+        },
+        {
+          "tool": 550,
+          "lane": "periodic",
+          "context_chars": 14019
+        }
+      ],
+      "covers_last_tenth": true,
+      "historical_outcomes_not_reexecuted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "opensees-seismic-structural-regression-audit",
+      "source_path": "/var/tmp/lizh639-lhtb-bestfgs12-memory-v5-20260930/runs/bestfgs-opensees-seismic-structural-regression-audit/opensees-seismic-structural-regr__nqiZDhV/agent/method/events.jsonl",
+      "source_sha256": "02fdfeefc35f4172a6357d95a719f1c110fb9c074b8e2ec6302fbcf01dd3f7c3",
+      "old_triggers": 12,
+      "context_build_passed": 12,
+      "context_build_failed": 0,
+      "max_context_chars": 14040,
+      "min_evidence_count": 8,
+      "simulated_schedule": [
+        {
+          "tool": 21,
+          "lane": "anomaly",
+          "context_chars": 11379
+        },
+        {
+          "tool": 50,
+          "lane": "periodic",
+          "context_chars": 12983
+        },
+        {
+          "tool": 150,
+          "lane": "periodic",
+          "context_chars": 13602
+        },
+        {
+          "tool": 250,
+          "lane": "periodic",
+          "context_chars": 13384
+        },
+        {
+          "tool": 311,
+          "lane": "anomaly",
+          "context_chars": 13971
+        },
+        {
+          "tool": 342,
+          "lane": "anomaly",
+          "context_chars": 13726
+        },
+        {
+          "tool": 350,
+          "lane": "periodic",
+          "context_chars": 13353
+        },
+        {
+          "tool": 381,
+          "lane": "anomaly",
+          "context_chars": 13925
+        },
+        {
+          "tool": 450,
+          "lane": "periodic",
+          "context_chars": 13503
+        },
+        {
+          "tool": 550,
+          "lane": "periodic",
+          "context_chars": 13784
+        },
+        {
+          "tool": 560,
+          "lane": "anomaly",
+          "context_chars": 13126
+        }
+      ],
+      "covers_last_tenth": true,
+      "historical_outcomes_not_reexecuted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "unison-paper-reproduction",
+      "source_path": "/var/tmp/lizh639-lhtb-bestfgs12-memory-v5-20260930/runs/bestfgs-unison-paper-reproduction/unison-paper-reproduction__grYn8Gs/agent/method/events.jsonl",
+      "source_sha256": "ea3b56e0bdd9d20a67df5f97b193781a0ae0c23b91b9fbf806d9051d5c68431d",
+      "old_triggers": 73,
+      "context_build_passed": 73,
+      "context_build_failed": 0,
+      "max_context_chars": 15763,
+      "min_evidence_count": 8,
+      "simulated_schedule": [
+        {
+          "tool": 26,
+          "lane": "anomaly",
+          "context_chars": 14123
+        },
+        {
+          "tool": 50,
+          "lane": "periodic",
+          "context_chars": 14047
+        },
+        {
+          "tool": 100,
+          "lane": "anomaly",
+          "context_chars": 14227
+        },
+        {
+          "tool": 150,
+          "lane": "periodic",
+          "context_chars": 14618
+        },
+        {
+          "tool": 200,
+          "lane": "anomaly",
+          "context_chars": 14726
+        },
+        {
+          "tool": 250,
+          "lane": "periodic",
+          "context_chars": 14908
+        },
+        {
+          "tool": 300,
+          "lane": "anomaly",
+          "context_chars": 14801
+        },
+        {
+          "tool": 350,
+          "lane": "periodic",
+          "context_chars": 14384
+        },
+        {
+          "tool": 400,
+          "lane": "anomaly",
+          "context_chars": 14982
+        },
+        {
+          "tool": 450,
+          "lane": "periodic",
+          "context_chars": 14903
+        },
+        {
+          "tool": 500,
+          "lane": "anomaly",
+          "context_chars": 15354
+        },
+        {
+          "tool": 550,
+          "lane": "periodic",
+          "context_chars": 15374
+        }
+      ],
+      "covers_last_tenth": true,
+      "historical_outcomes_not_reexecuted": true,
+      "model_calls": 0
+    },
+    {
+      "task": "matpower-opf-regression",
+      "source_path": "/var/tmp/lizh639-lhtb-bestfgs12-memory-v5-20260930/runs/bestfgs-matpower-opf-regression/matpower-opf-regression__Poyehbp/agent/method/events.jsonl",
+      "source_sha256": "e4cabcbca567f67c6e5b461b1335493d6291b2a4006817b2c1005b131c02ec8a",
+      "old_triggers": 74,
+      "context_build_passed": 74,
+      "context_build_failed": 0,
+      "max_context_chars": 15400,
+      "min_evidence_count": 8,
+      "simulated_schedule": [
+        {
+          "tool": 10,
+          "lane": "anomaly",
+          "context_chars": 13461
+        },
+        {
+          "tool": 50,
+          "lane": "periodic",
+          "context_chars": 14093
+        },
+        {
+          "tool": 107,
+          "lane": "anomaly",
+          "context_chars": 14933
+        },
+        {
+          "tool": 150,
+          "lane": "periodic",
+          "context_chars": 13688
+        },
+        {
+          "tool": 203,
+          "lane": "anomaly",
+          "context_chars": 13402
+        },
+        {
+          "tool": 250,
+          "lane": "periodic",
+          "context_chars": 13272
+        },
+        {
+          "tool": 300,
+          "lane": "anomaly",
+          "context_chars": 13124
+        },
+        {
+          "tool": 350,
+          "lane": "periodic",
+          "context_chars": 13245
+        },
+        {
+          "tool": 401,
+          "lane": "anomaly",
+          "context_chars": 13248
+        },
+        {
+          "tool": 450,
+          "lane": "periodic",
+          "context_chars": 13129
+        },
+        {
+          "tool": 500,
+          "lane": "anomaly",
+          "context_chars": 13219
+        },
+        {
+          "tool": 550,
+          "lane": "periodic",
+          "context_chars": 13190
+        }
+      ],
+      "covers_last_tenth": true,
+      "historical_outcomes_not_reexecuted": true,
+      "model_calls": 0
+    }
+  ],
+  "success": true,
+  "model_calls": 0,
+  "limitation": "Input/schedule replay only; no claim about real model judgments, reduced repeats or score gains."
+}

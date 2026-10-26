@@ -1,0 +1,8 @@
+{
+  "task": "merge-diff-arc-agi-task",
+  "image": "alexgshaw/merge-diff-arc-agi-task:20251031",
+  "digest": "sha256:bfc2a235f2ceea64ffb1ffc5529c2acebf570bff61f3668f0e5669ef570c17d4",
+  "source": "https://registry-1.docker.io/v2/alexgshaw/merge-diff-arc-agi-task/manifests/20251031",
+  "header_verified": true,
+  "time": 1792510256.5966082
+}

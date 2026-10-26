@@ -1,0 +1,32 @@
+{
+  "time": 1792669692.610246,
+  "original_slots": 6,
+  "extra_slots": 4,
+  "total_slots": 10,
+  "initial_active": [
+    "cs61_fa24_scheme",
+    "cs61_fa24_ants",
+    "cs61_fa24_cats",
+    "cs61_fa24_hog",
+    "cs61_fa24_hw08",
+    "cmu15_445_p0"
+  ],
+  "extra_tasks": [
+    "61810_util",
+    "61810_traps",
+    "61810_thread",
+    "61810_syscall",
+    "61810_pgtbl",
+    "61810_net",
+    "61810_mmap",
+    "61810_lock",
+    "61810_fs",
+    "61810_cow",
+    "ap1400_2_hw35",
+    "ap1400_2_hw26",
+    "cmu15_445_p2",
+    "cmu15_445_p1"
+  ],
+  "shared_budget": "/mnt/sdb/home/lizh639/longcli-hld-full20-triple-20261022/spending.sqlite",
+  "dedup_test_passed": true
+}
