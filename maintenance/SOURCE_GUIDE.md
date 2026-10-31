@@ -52,3 +52,7 @@ Windows 下 HAIAgent 可直接执行 `projects/HAIAgent/test.ps1`。本次离线
 - Recuris 与 DSH 适配的来源和机制差异见各工程 README、`source-lock.json` 以及 `vendor/` 中的许可证。
 
 上游提交标识用于来源追溯；本地适配可能带有改动，实际入库字节以本仓库的源码清单为准。
+
+## CLI 阶段补齐（2026-10-31）
+
+早期 BestFGS 工作副本、冻结基线和官方评测准备脚本已补齐，详见 [CLI 源码补齐索引](PRE_CV_SOURCE_GUIDE.md)。新增文件位于 `releases/pre-cv-archive-20261031/`。

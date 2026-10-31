@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.venv/
+.runs/
+artifacts/
+.idea/
+benchmark_results/
+*.egg-info/

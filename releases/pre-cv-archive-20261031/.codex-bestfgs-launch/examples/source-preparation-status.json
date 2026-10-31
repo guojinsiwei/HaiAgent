@@ -1,0 +1,801 @@
+[
+  {
+    "id": "django__django-15252",
+    "status": "prepared",
+    "last_attempt_seconds": 392.34
+  },
+  {
+    "id": "django__django-13023",
+    "status": "prepared",
+    "last_attempt_seconds": 240.55
+  },
+  {
+    "id": "scikit-learn__scikit-learn-14894",
+    "status": "prepared",
+    "last_attempt_seconds": 434.03
+  },
+  {
+    "id": "django__django-11087",
+    "status": "prepared",
+    "last_attempt_seconds": 210.57
+  },
+  {
+    "id": "scikit-learn__scikit-learn-14053",
+    "status": "prepared",
+    "last_attempt_seconds": 310.57
+  },
+  {
+    "id": "matplotlib__matplotlib-20676",
+    "status": "prepared",
+    "previous_attempts": [
+      {
+        "id": "matplotlib__matplotlib-20676",
+        "status": "prepare_error",
+        "error": "Command failed (1): /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/matplotlib__matplotlib-20676/attempt-897dd9dcee17/env/bin/python; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/matplotlib__matplotlib-20676/prepare.log",
+        "last_attempt_seconds": 903.89
+      },
+      {
+        "id": "matplotlib__matplotlib-20676",
+        "status": "prepare_error",
+        "error": "Command failed (1): /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/matplotlib__matplotlib-20676/attempt-1460c0e48e5f/env/bin/python; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/matplotlib__matplotlib-20676/prepare.log",
+        "last_attempt_seconds": 627.11
+      }
+    ],
+    "repair_journal": "/mnt/lizh639/bestfgs-runs/swe100-v1/repairs/prepfix-v2-3041fab66a70/repair.json",
+    "preparation_adapter": {
+      "version": "notebook-prepfix-v2",
+      "pins": [
+        "wheel==0.44.0",
+        "packaging==23.1",
+        "tomli==2.0.1",
+        "setuptools==68.1.2",
+        "setuptools-scm==7.1.0",
+        "numpy==1.24.4"
+      ],
+      "implementation_sha256": "d893495db64e66b5caa0871060e4e3c31183bc217e4e6b648709be42b01f25e3",
+      "runtime_requires": "snapshot-src-lib-root-pythonpath"
+    },
+    "last_attempt_seconds": 515.58
+  },
+  {
+    "id": "django__django-15957",
+    "status": "prepared",
+    "last_attempt_seconds": 60.87
+  },
+  {
+    "id": "sympy__sympy-22080",
+    "status": "prepared",
+    "last_attempt_seconds": 159.71
+  },
+  {
+    "id": "scikit-learn__scikit-learn-25931",
+    "status": "prepare_error",
+    "previous_attempts": [
+      {
+        "id": "scikit-learn__scikit-learn-25931",
+        "status": "prepare_error",
+        "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/scikit-learn__scikit-learn-25931/prepare.log",
+        "last_attempt_seconds": 473.14
+      },
+      {
+        "id": "scikit-learn__scikit-learn-25931",
+        "status": "prepare_error",
+        "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/scikit-learn__scikit-learn-25931/prepare.log",
+        "last_attempt_seconds": 86.74
+      }
+    ],
+    "repair_journal": "/mnt/lizh639/bestfgs-runs/swe100-v1/repairs/prepfix-v2-3041fab66a70/repair.json",
+    "error": "Command failed (1): /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/scikit-learn__scikit-learn-25931/attempt-2bbec70a6ebc/env/bin/python; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/scikit-learn__scikit-learn-25931/prepare.log",
+    "last_attempt_seconds": 373.47
+  },
+  {
+    "id": "django__django-15467",
+    "status": "prepared",
+    "last_attempt_seconds": 66.14,
+    "previous_attempts": [
+      {
+        "id": "django__django-15467",
+        "status": "prepare_error",
+        "error": "Command failed (128): git; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-15467/prepare.log",
+        "last_attempt_seconds": 27.67
+      }
+    ]
+  },
+  {
+    "id": "sphinx-doc__sphinx-7590",
+    "status": "prepared",
+    "last_attempt_seconds": 30.21,
+    "previous_attempts": [
+      {
+        "id": "sphinx-doc__sphinx-7590",
+        "status": "prepare_error",
+        "error": "Command failed (128): git; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/sphinx-doc__sphinx-7590/prepare.log",
+        "last_attempt_seconds": 289.48
+      }
+    ]
+  },
+  {
+    "id": "django__django-13033",
+    "status": "prepared",
+    "last_attempt_seconds": 53.94
+  },
+  {
+    "id": "django__django-16100",
+    "status": "prepared",
+    "last_attempt_seconds": 49.43
+  },
+  {
+    "id": "sympy__sympy-13798",
+    "status": "prepared",
+    "last_attempt_seconds": 147.07
+  },
+  {
+    "id": "django__django-11885",
+    "status": "prepared",
+    "last_attempt_seconds": 45.54
+  },
+  {
+    "id": "pytest-dev__pytest-10051",
+    "status": "prepared",
+    "last_attempt_seconds": 124.57
+  },
+  {
+    "id": "scikit-learn__scikit-learn-11578",
+    "status": "prepared",
+    "last_attempt_seconds": 331.09
+  },
+  {
+    "id": "django__django-16256",
+    "status": "prepared",
+    "last_attempt_seconds": 68.28
+  },
+  {
+    "id": "django__django-12262",
+    "status": "prepared",
+    "last_attempt_seconds": 46.12
+  },
+  {
+    "id": "django__django-11749",
+    "status": "prepared",
+    "last_attempt_seconds": 45.57
+  },
+  {
+    "id": "django__django-13809",
+    "status": "prepared",
+    "last_attempt_seconds": 190.12
+  },
+  {
+    "id": "django__django-13449",
+    "status": "prepared",
+    "last_attempt_seconds": 57.81
+  },
+  {
+    "id": "django__django-10999",
+    "status": "prepared",
+    "last_attempt_seconds": 45.64
+  },
+  {
+    "id": "django__django-15572",
+    "status": "prepared",
+    "last_attempt_seconds": 58.11
+  },
+  {
+    "id": "django__django-13363",
+    "status": "prepared",
+    "last_attempt_seconds": 63.0
+  },
+  {
+    "id": "sphinx-doc__sphinx-7985",
+    "status": "prepared",
+    "last_attempt_seconds": 28.44
+  },
+  {
+    "id": "scikit-learn__scikit-learn-13496",
+    "status": "prepared",
+    "last_attempt_seconds": 280.16,
+    "previous_attempts": [
+      {
+        "id": "scikit-learn__scikit-learn-13496",
+        "status": "prepare_error",
+        "error": "Command failed (128): git; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/scikit-learn__scikit-learn-13496/prepare.log",
+        "last_attempt_seconds": 275.58
+      }
+    ]
+  },
+  {
+    "id": "django__django-14915",
+    "status": "prepared",
+    "last_attempt_seconds": 55.02
+  },
+  {
+    "id": "django__django-14053",
+    "status": "prepared",
+    "last_attempt_seconds": 52.5
+  },
+  {
+    "id": "sympy__sympy-24213",
+    "status": "prepared",
+    "last_attempt_seconds": 42.34
+  },
+  {
+    "id": "sympy__sympy-23262",
+    "status": "prepared",
+    "last_attempt_seconds": 30.6
+  },
+  {
+    "id": "sympy__sympy-15875",
+    "status": "prepared",
+    "last_attempt_seconds": 29.82
+  },
+  {
+    "id": "pydata__xarray-3095",
+    "status": "prepared",
+    "last_attempt_seconds": 199.69,
+    "previous_attempts": [
+      {
+        "id": "pydata__xarray-3095",
+        "status": "prepare_error",
+        "error": "Command failed (128): git; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/pydata__xarray-3095/prepare.log",
+        "last_attempt_seconds": 749.84
+      }
+    ]
+  },
+  {
+    "id": "sphinx-doc__sphinx-8551",
+    "status": "prepared",
+    "last_attempt_seconds": 36.76,
+    "previous_attempts": [
+      {
+        "id": "sphinx-doc__sphinx-8551",
+        "status": "prepare_error",
+        "error": "Command failed (128): git; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/sphinx-doc__sphinx-8551/prepare.log",
+        "last_attempt_seconds": 327.08
+      }
+    ]
+  },
+  {
+    "id": "django__django-14752",
+    "status": "prepared",
+    "last_attempt_seconds": 50.4
+  },
+  {
+    "id": "pytest-dev__pytest-5262",
+    "status": "prepared",
+    "last_attempt_seconds": 413.94
+  },
+  {
+    "id": "django__django-13837",
+    "status": "prepared",
+    "last_attempt_seconds": 49.37
+  },
+  {
+    "id": "sympy__sympy-19040",
+    "status": "prepared",
+    "last_attempt_seconds": 30.14
+  },
+  {
+    "id": "pylint-dev__pylint-7080",
+    "status": "prepared",
+    "last_attempt_seconds": 179.64
+  },
+  {
+    "id": "pydata__xarray-2905",
+    "status": "prepare_error",
+    "previous_attempts": [
+      {
+        "id": "pydata__xarray-2905",
+        "status": "prepare_error",
+        "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/pydata__xarray-2905/prepare.log",
+        "last_attempt_seconds": 100.56
+      },
+      {
+        "id": "pydata__xarray-2905",
+        "status": "prepare_error",
+        "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/pydata__xarray-2905/prepare.log",
+        "last_attempt_seconds": 112.97
+      }
+    ],
+    "repair_journal": "/mnt/lizh639/bestfgs-runs/swe100-v1/repairs/prepfix-v2-3041fab66a70/repair.json",
+    "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/pydata__xarray-2905/prepare.log",
+    "last_attempt_seconds": 204.94
+  },
+  {
+    "id": "pydata__xarray-4075",
+    "status": "prepare_error",
+    "previous_attempts": [
+      {
+        "id": "pydata__xarray-4075",
+        "status": "prepare_error",
+        "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/pydata__xarray-4075/prepare.log",
+        "last_attempt_seconds": 102.61
+      },
+      {
+        "id": "pydata__xarray-4075",
+        "status": "prepare_error",
+        "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/pydata__xarray-4075/prepare.log",
+        "last_attempt_seconds": 111.64
+      }
+    ],
+    "repair_journal": "/mnt/lizh639/bestfgs-runs/swe100-v1/repairs/prepfix-v2-3041fab66a70/repair.json",
+    "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/pydata__xarray-4075/prepare.log",
+    "last_attempt_seconds": 136.57
+  },
+  {
+    "id": "django__django-11179",
+    "status": "prepared",
+    "last_attempt_seconds": 48.62
+  },
+  {
+    "id": "sympy__sympy-17139",
+    "status": "prepared",
+    "last_attempt_seconds": 40.25
+  },
+  {
+    "id": "sympy__sympy-22456",
+    "status": "prepared",
+    "last_attempt_seconds": 32.93
+  },
+  {
+    "id": "django__django-13568",
+    "status": "prepared",
+    "last_attempt_seconds": 48.21
+  },
+  {
+    "id": "django__django-12325",
+    "status": "prepared",
+    "last_attempt_seconds": 47.33
+  },
+  {
+    "id": "django__django-14238",
+    "status": "prepared",
+    "last_attempt_seconds": 60.21
+  },
+  {
+    "id": "sphinx-doc__sphinx-10614",
+    "status": "prepare_error",
+    "previous_attempts": [
+      {
+        "id": "sphinx-doc__sphinx-10614",
+        "status": "prepare_error",
+        "error": "Command failed (1): /root/miniconda3/bin/conda; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/sphinx-doc__sphinx-10614/prepare.log",
+        "last_attempt_seconds": 76.27
+      },
+      {
+        "id": "sphinx-doc__sphinx-10614",
+        "status": "prepare_error",
+        "error": "Command failed (128): git; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/sphinx-doc__sphinx-10614/prepare.log",
+        "last_attempt_seconds": 288.18
+      }
+    ],
+    "repair_journal": "/mnt/lizh639/bestfgs-runs/swe100-v1/repairs/prepfix-v2-3041fab66a70/repair.json",
+    "error": "Command failed (2): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/sphinx-doc__sphinx-10614/prepare.log",
+    "last_attempt_seconds": 28.31
+  },
+  {
+    "id": "scikit-learn__scikit-learn-13328",
+    "status": "prepared",
+    "last_attempt_seconds": 276.82
+  },
+  {
+    "id": "django__django-13089",
+    "status": "prepared",
+    "last_attempt_seconds": 61.21
+  },
+  {
+    "id": "django__django-11999",
+    "status": "prepared",
+    "last_attempt_seconds": 46.51
+  },
+  {
+    "id": "django__django-16454",
+    "status": "prepared",
+    "last_attempt_seconds": 379.47
+  },
+  {
+    "id": "django__django-14534",
+    "status": "prepared",
+    "last_attempt_seconds": 51.69
+  },
+  {
+    "id": "django__django-17084",
+    "status": "prepared",
+    "last_attempt_seconds": 369.66
+  },
+  {
+    "id": "django__django-14493",
+    "status": "prepared",
+    "last_attempt_seconds": 52.97
+  },
+  {
+    "id": "django__django-11138",
+    "status": "prepared",
+    "last_attempt_seconds": 50.34
+  },
+  {
+    "id": "django__django-14672",
+    "status": "prepared",
+    "last_attempt_seconds": 75.52
+  },
+  {
+    "id": "pydata__xarray-4356",
+    "status": "prepare_error",
+    "previous_attempts": [
+      {
+        "id": "pydata__xarray-4356",
+        "status": "prepare_error",
+        "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/pydata__xarray-4356/prepare.log",
+        "last_attempt_seconds": 242.78
+      },
+      {
+        "id": "pydata__xarray-4356",
+        "status": "prepare_error",
+        "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/pydata__xarray-4356/prepare.log",
+        "last_attempt_seconds": 158.96
+      }
+    ],
+    "repair_journal": "/mnt/lizh639/bestfgs-runs/swe100-v1/repairs/prepfix-v2-3041fab66a70/repair.json",
+    "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/pydata__xarray-4356/prepare.log",
+    "last_attempt_seconds": 194.05
+  },
+  {
+    "id": "pylint-dev__pylint-8898",
+    "status": "prepare_error",
+    "previous_attempts": [
+      {
+        "id": "pylint-dev__pylint-8898",
+        "status": "prepare_error",
+        "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/pylint-dev__pylint-8898/prepare.log",
+        "last_attempt_seconds": 314.02
+      },
+      {
+        "id": "pylint-dev__pylint-8898",
+        "status": "prepare_error",
+        "error": "Command failed (128): git; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/pylint-dev__pylint-8898/prepare.log",
+        "last_attempt_seconds": 27.84
+      }
+    ],
+    "repair_journal": "/mnt/lizh639/bestfgs-runs/swe100-v1/repairs/prepfix-v2-3041fab66a70/repair.json",
+    "error": "Command failed (2): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/pylint-dev__pylint-8898/prepare.log",
+    "last_attempt_seconds": 30.4
+  },
+  {
+    "id": "django__django-14140",
+    "status": "prepared",
+    "last_attempt_seconds": 76.7
+  },
+  {
+    "id": "django__django-13121",
+    "status": "prepared",
+    "last_attempt_seconds": 68.68
+  },
+  {
+    "id": "sympy__sympy-12481",
+    "status": "prepared",
+    "last_attempt_seconds": 45.23
+  },
+  {
+    "id": "django__django-10554",
+    "status": "prepared",
+    "last_attempt_seconds": 62.12
+  },
+  {
+    "id": "pytest-dev__pytest-5631",
+    "status": "prepared",
+    "last_attempt_seconds": 19.79,
+    "previous_attempts": [
+      {
+        "id": "pytest-dev__pytest-5631",
+        "status": "prepare_error",
+        "error": "Command failed (128): git; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/pytest-dev__pytest-5631/prepare.log",
+        "last_attempt_seconds": 143.79
+      }
+    ]
+  },
+  {
+    "id": "scikit-learn__scikit-learn-25232",
+    "status": "prepare_error",
+    "previous_attempts": [
+      {
+        "id": "scikit-learn__scikit-learn-25232",
+        "status": "prepare_error",
+        "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/scikit-learn__scikit-learn-25232/prepare.log",
+        "last_attempt_seconds": 86.94
+      },
+      {
+        "id": "scikit-learn__scikit-learn-25232",
+        "status": "prepare_error",
+        "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/scikit-learn__scikit-learn-25232/prepare.log",
+        "last_attempt_seconds": 81.68
+      }
+    ],
+    "repair_journal": "/mnt/lizh639/bestfgs-runs/swe100-v1/repairs/prepfix-v2-3041fab66a70/repair.json",
+    "error": "Command failed (1): /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/scikit-learn__scikit-learn-25232/attempt-44c2583d194f/env/bin/python; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/scikit-learn__scikit-learn-25232/prepare.log",
+    "last_attempt_seconds": 233.29
+  },
+  {
+    "id": "pylint-dev__pylint-4604",
+    "status": "prepared",
+    "last_attempt_seconds": 254.94
+  },
+  {
+    "id": "django__django-13158",
+    "status": "prepared",
+    "last_attempt_seconds": 51.19
+  },
+  {
+    "id": "astropy__astropy-14369",
+    "status": "prepare_error",
+    "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/astropy__astropy-14369/prepare.log",
+    "last_attempt_seconds": 28.06,
+    "previous_attempts": [
+      {
+        "id": "astropy__astropy-14369",
+        "status": "prepare_error",
+        "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/astropy__astropy-14369/prepare.log",
+        "last_attempt_seconds": 171.93
+      }
+    ]
+  },
+  {
+    "id": "django__django-12708",
+    "status": "prepared",
+    "last_attempt_seconds": 61.7
+  },
+  {
+    "id": "sympy__sympy-12419",
+    "status": "prepared",
+    "last_attempt_seconds": 30.06
+  },
+  {
+    "id": "astropy__astropy-7336",
+    "status": "prepared",
+    "last_attempt_seconds": 451.96
+  },
+  {
+    "id": "sphinx-doc__sphinx-9658",
+    "status": "prepared",
+    "last_attempt_seconds": 37.77,
+    "previous_attempts": [
+      {
+        "id": "sphinx-doc__sphinx-9658",
+        "status": "prepare_error",
+        "error": "Command failed (128): git; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/sphinx-doc__sphinx-9658/prepare.log",
+        "last_attempt_seconds": 170.8
+      }
+    ]
+  },
+  {
+    "id": "sympy__sympy-14976",
+    "status": "prepared",
+    "last_attempt_seconds": 44.15
+  },
+  {
+    "id": "django__django-11133",
+    "status": "prepared",
+    "last_attempt_seconds": 46.86
+  },
+  {
+    "id": "astropy__astropy-7671",
+    "status": "prepared",
+    "last_attempt_seconds": 156.69
+  },
+  {
+    "id": "django__django-16950",
+    "status": "prepared",
+    "last_attempt_seconds": 54.99
+  },
+  {
+    "id": "django__django-11951",
+    "status": "prepared",
+    "last_attempt_seconds": 52.34,
+    "previous_attempts": [
+      {
+        "id": "django__django-11951",
+        "status": "prepare_error",
+        "error": "Command failed (128): git; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-11951/prepare.log",
+        "last_attempt_seconds": 36.69
+      }
+    ]
+  },
+  {
+    "id": "scikit-learn__scikit-learn-14983",
+    "status": "prepared",
+    "last_attempt_seconds": 303.83
+  },
+  {
+    "id": "django__django-15375",
+    "status": "prepared",
+    "last_attempt_seconds": 59.03
+  },
+  {
+    "id": "scikit-learn__scikit-learn-25747",
+    "status": "prepared",
+    "last_attempt_seconds": 592.31
+  },
+  {
+    "id": "django__django-15098",
+    "status": "prepared",
+    "last_attempt_seconds": 55.84
+  },
+  {
+    "id": "matplotlib__matplotlib-24026",
+    "status": "prepare_error",
+    "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/matplotlib__matplotlib-24026/prepare.log",
+    "last_attempt_seconds": 146.12,
+    "previous_attempts": [
+      {
+        "id": "matplotlib__matplotlib-24026",
+        "status": "prepare_error",
+        "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/matplotlib__matplotlib-24026/prepare.log",
+        "last_attempt_seconds": 710.73
+      }
+    ]
+  },
+  {
+    "id": "sympy__sympy-13757",
+    "status": "prepared",
+    "last_attempt_seconds": 35.33
+  },
+  {
+    "id": "django__django-12193",
+    "status": "prepared",
+    "last_attempt_seconds": 46.6,
+    "previous_attempts": [
+      {
+        "id": "django__django-12193",
+        "status": "prepare_error",
+        "error": "Command failed (128): git; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-12193/prepare.log",
+        "last_attempt_seconds": 30.21
+      }
+    ]
+  },
+  {
+    "id": "matplotlib__matplotlib-21568",
+    "status": "prepare_error",
+    "error": "Command failed (1): /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/matplotlib__matplotlib-21568/attempt-62cd8ff686ef/env/bin/python; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/matplotlib__matplotlib-21568/prepare.log",
+    "last_attempt_seconds": 154.62,
+    "previous_attempts": [
+      {
+        "id": "matplotlib__matplotlib-21568",
+        "status": "prepare_error",
+        "error": "Command failed (1): /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/matplotlib__matplotlib-21568/attempt-72349cf49e2a/env/bin/python; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/matplotlib__matplotlib-21568/prepare.log",
+        "last_attempt_seconds": 194.07
+      }
+    ]
+  },
+  {
+    "id": "django__django-15278",
+    "status": "prepared",
+    "last_attempt_seconds": 67.61
+  },
+  {
+    "id": "matplotlib__matplotlib-24149",
+    "status": "prepare_error",
+    "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/matplotlib__matplotlib-24149/prepare.log",
+    "last_attempt_seconds": 121.16,
+    "previous_attempts": [
+      {
+        "id": "matplotlib__matplotlib-24149",
+        "status": "prepare_error",
+        "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/matplotlib__matplotlib-24149/prepare.log",
+        "last_attempt_seconds": 132.2
+      }
+    ]
+  },
+  {
+    "id": "django__django-10880",
+    "status": "prepared",
+    "last_attempt_seconds": 49.27
+  },
+  {
+    "id": "sympy__sympy-15599",
+    "status": "prepared",
+    "last_attempt_seconds": 39.82
+  },
+  {
+    "id": "sphinx-doc__sphinx-7757",
+    "status": "prepared",
+    "last_attempt_seconds": 33.44
+  },
+  {
+    "id": "matplotlib__matplotlib-24570",
+    "status": "prepare_error",
+    "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/matplotlib__matplotlib-24570/prepare.log",
+    "last_attempt_seconds": 120.91,
+    "previous_attempts": [
+      {
+        "id": "matplotlib__matplotlib-24570",
+        "status": "prepare_error",
+        "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/matplotlib__matplotlib-24570/prepare.log",
+        "last_attempt_seconds": 123.73
+      }
+    ]
+  },
+  {
+    "id": "django__django-16819",
+    "status": "prepared",
+    "last_attempt_seconds": 63.43
+  },
+  {
+    "id": "scikit-learn__scikit-learn-26194",
+    "status": "prepare_error",
+    "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/scikit-learn__scikit-learn-26194/prepare.log",
+    "last_attempt_seconds": 81.56,
+    "previous_attempts": [
+      {
+        "id": "scikit-learn__scikit-learn-26194",
+        "status": "prepare_error",
+        "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/scikit-learn__scikit-learn-26194/prepare.log",
+        "last_attempt_seconds": 102.6
+      }
+    ]
+  },
+  {
+    "id": "sphinx-doc__sphinx-9591",
+    "status": "prepared",
+    "last_attempt_seconds": 28.39,
+    "previous_attempts": [
+      {
+        "id": "sphinx-doc__sphinx-9591",
+        "status": "prepare_error",
+        "error": "Command failed (128): git; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/sphinx-doc__sphinx-9591/prepare.log",
+        "last_attempt_seconds": 41.05
+      }
+    ]
+  },
+  {
+    "id": "django__django-13658",
+    "status": "prepared",
+    "last_attempt_seconds": 54.41,
+    "previous_attempts": [
+      {
+        "id": "django__django-13658",
+        "status": "prepare_error",
+        "error": "Command failed (128): git; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-13658/prepare.log",
+        "last_attempt_seconds": 29.51
+      }
+    ]
+  },
+  {
+    "id": "django__django-16139",
+    "status": "prepared",
+    "last_attempt_seconds": 58.8,
+    "previous_attempts": [
+      {
+        "id": "django__django-16139",
+        "status": "prepare_error",
+        "error": "Command failed (128): git; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/django__django-16139/prepare.log",
+        "last_attempt_seconds": 37.9
+      }
+    ]
+  },
+  {
+    "id": "django__django-13741",
+    "status": "prepared",
+    "last_attempt_seconds": 59.4
+  },
+  {
+    "id": "astropy__astropy-13033",
+    "status": "prepare_error",
+    "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/astropy__astropy-13033/prepare.log",
+    "last_attempt_seconds": 22.04,
+    "previous_attempts": [
+      {
+        "id": "astropy__astropy-13033",
+        "status": "prepare_error",
+        "error": "Command failed (1): bash; log: /mnt/lizh639/bestfgs-runs/swe100-v1/prepared/astropy__astropy-13033/prepare.log",
+        "last_attempt_seconds": 29.57
+      }
+    ]
+  },
+  {
+    "id": "django__django-17087",
+    "status": "prepared",
+    "last_attempt_seconds": 59.3
+  },
+  {
+    "id": "sphinx-doc__sphinx-10449",
+    "status": "prepared",
+    "last_attempt_seconds": 292.83
+  }
+]

@@ -43,3 +43,5 @@ API 密钥、个人配置、依赖目录、容器镜像和大体积原始日志�
 ## 加入仓库
 
 李泽昊（`guojinsiwei`）管理仓库，霍彦凯账号为 `1sourcegod`，鲁天昱账号为 `Ysky114`。仓库公开可读，协作者接受邀请后可提交分支；权限以 GitHub 当前设置为准。
+
+2026-10-31 补齐转 CV 前的 CLI / 语义规划历史源码：[补齐索引](maintenance/PRE_CV_SOURCE_GUIDE.md)。
