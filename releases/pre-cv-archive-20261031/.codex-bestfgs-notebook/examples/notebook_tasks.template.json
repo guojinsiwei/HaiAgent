@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "benchmark": "custom",
+  "tasks": [
+    {
+      "id": "prepared-task-01",
+      "goal": "替换为任务的公开问题描述",
+      "workspace": "/mnt/YOUR_NETID/prepared-tasks/task-01",
+      "success_criteria": ["根据公开任务要求完成实现并进行功能验证"],
+      "constraints": ["只修改任务工作区，不安装或修改系统级依赖，不读取隐藏测试"]
+    }
+  ]
+}

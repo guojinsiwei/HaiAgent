@@ -1,0 +1,3403 @@
+{
+  "schema": 1,
+  "snapshot_date": "2026-10-31",
+  "scope": "CLI / semantic planning before the CV transition",
+  "files": [
+    {
+      "source": ".codex-bestfgs-backup-20260915/best_first_runtime.pre-mcts-removal.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-backup-20260915/best_first_runtime.pre-mcts-removal.py",
+      "sha256": "bc142b88b27be1d6ca393127085e6340bd14a399c3dc3ba88cabaa6557389714",
+      "bytes": 118514
+    },
+    {
+      "source": ".codex-bestfgs-backup-20260915/README.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-backup-20260915/README.md",
+      "sha256": "49a4abe34a7f4188c2be731892474b999c00eaac2eeb6998bba72a7164ab8e72",
+      "bytes": 9256
+    },
+    {
+      "source": ".codex-bestfgs-backup-20260915/src/cli_retrac_mcts/agent.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-backup-20260915/src/cli_retrac_mcts/agent.py",
+      "sha256": "b4a66bbaad8f9077e873100e87ca7fa1b6e1ff1b470398412f022ce1ffd462ad",
+      "bytes": 1721
+    },
+    {
+      "source": ".codex-bestfgs-backup-20260915/src/cli_retrac_mcts/best_first.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-backup-20260915/src/cli_retrac_mcts/best_first.py",
+      "sha256": "88adce97baecf6059ed307ba1a395a3e4e07b9d426c4eed21422eff250ef8596",
+      "bytes": 33666
+    },
+    {
+      "source": ".codex-bestfgs-backup-20260915/src/cli_retrac_mcts/mcts.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-backup-20260915/src/cli_retrac_mcts/mcts.py",
+      "sha256": "e5b6738654c53af880ff49f219f20fb2fed9926827bd092964f4ea445c82e38a",
+      "bytes": 127860
+    },
+    {
+      "source": ".codex-bestfgs-backup-20260915/src/cli_retrac_mcts/__init__.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-backup-20260915/src/cli_retrac_mcts/__init__.py",
+      "sha256": "44a3354ed9369347f2b2158fb9b230c423b6029d74232d27dce97ca50e2cde26",
+      "bytes": 864
+    },
+    {
+      "source": ".codex-bestfgs-backup-20260915/src/cli_retrac_mcts/__main__.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-backup-20260915/src/cli_retrac_mcts/__main__.py",
+      "sha256": "4479ba88d568c6e85cb9013b2c0675171d80182915244608792fb792c84b975c",
+      "bytes": 24070
+    },
+    {
+      "source": ".codex-bestfgs-backup-20260915/tests/test_retrac_adapter.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-backup-20260915/tests/test_retrac_adapter.py",
+      "sha256": "d2990923d7a837262f2ca6b73fc1db6f62ad5dbb9f7af3d9f295c8de617b547e",
+      "bytes": 32481
+    },
+    {
+      "source": ".codex-bestfgs-baseline/.gitignore",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/.gitignore",
+      "sha256": "37b8500917e9a4312b20559433fe46d987235c3f1855cab8955b3f73cf37cd93",
+      "bytes": 86
+    },
+    {
+      "source": ".codex-bestfgs-baseline/BASELINE_COMPARISON.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/BASELINE_COMPARISON.md",
+      "sha256": "30a034afffce09b0415ae5536be6e22fcbfcf0f7250558bdfdea126fe5d46b36",
+      "bytes": 13333
+    },
+    {
+      "source": ".codex-bestfgs-baseline/BENCHMARKS.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/BENCHMARKS.md",
+      "sha256": "a58812f31ca27c820927003ec704a3f2d890abf41604418a52b1761737ca4007",
+      "bytes": 6815
+    },
+    {
+      "source": ".codex-bestfgs-baseline/benchmark_metrics.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/benchmark_metrics.py",
+      "sha256": "87fe55c9a4f7f83e13563979e8dc38a6e72514da2e6b0c3323c155ebc0715dcc",
+      "bytes": 12030
+    },
+    {
+      "source": ".codex-bestfgs-baseline/benchmark_runtime.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/benchmark_runtime.py",
+      "sha256": "ac3009a8c01859bab7fbac9e17640b5c7294d4b386ff67d09c3ecb2712303d90",
+      "bytes": 3548
+    },
+    {
+      "source": ".codex-bestfgs-baseline/benchmark_selection.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/benchmark_selection.py",
+      "sha256": "30dfb9890282c2a8b50edb2f817e75fbb337a61003eef108d586e8b27d052010",
+      "bytes": 5376
+    },
+    {
+      "source": ".codex-bestfgs-baseline/benchmark_splits.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/benchmark_splits.py",
+      "sha256": "b30c07a8c9aaf8ec9532caf9efbc1876b2b326f80fecd45368814c25b5b19414",
+      "bytes": 3604
+    },
+    {
+      "source": ".codex-bestfgs-baseline/build_swe_batch.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/build_swe_batch.py",
+      "sha256": "8e4c9c23e03527ae43f0dec104f1411257e0c2180d7026435ecf143d1a6b5d3f",
+      "bytes": 4090
+    },
+    {
+      "source": ".codex-bestfgs-baseline/CHANGES_20260914.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/CHANGES_20260914.md",
+      "sha256": "b82b964dd46fd59b39fc4038925e47708f2e14f8691e9a98e57b27018814829e",
+      "bytes": 3822
+    },
+    {
+      "source": ".codex-bestfgs-baseline/CHANGES_20260915.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/CHANGES_20260915.md",
+      "sha256": "b304c146a9314f4769ac4c179d252686d7761192af47afd976dec8e3bfe4d8ac",
+      "bytes": 1414
+    },
+    {
+      "source": ".codex-bestfgs-baseline/CHANGES_20260918.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/CHANGES_20260918.md",
+      "sha256": "5fc956fcec36846f8a3e53d3ae758fdf3b0be6e129ade8af717481ce871768be",
+      "bytes": 1145
+    },
+    {
+      "source": ".codex-bestfgs-baseline/compare_experiments.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/compare_experiments.py",
+      "sha256": "009d80e593c4be176ee4ec5be6c7daf5642f6107122040f4da7470591f1d0f85",
+      "bytes": 12143
+    },
+    {
+      "source": ".codex-bestfgs-baseline/CUBE_STUDIO.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/CUBE_STUDIO.md",
+      "sha256": "58dad57588776b9c6ad822da0cb774f475813f28837d8e8d40874df7fe0b1f5a",
+      "bytes": 7155
+    },
+    {
+      "source": ".codex-bestfgs-baseline/evaluate_swe100.ps1",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/evaluate_swe100.ps1",
+      "sha256": "eb2a25d168f0208ec6ff101491156de53b34f7cfea323496b2c8aa6f03805a0f",
+      "bytes": 1260
+    },
+    {
+      "source": ".codex-bestfgs-baseline/evaluate_swe_batch.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/evaluate_swe_batch.py",
+      "sha256": "d9c5c0427939586d0fafb0d6ed0abb27312ed310fbec15d8d002a8add5b30d35",
+      "bytes": 15165
+    },
+    {
+      "source": ".codex-bestfgs-baseline/prepare_swe_sympy.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/prepare_swe_sympy.py",
+      "sha256": "24a1d58a7f6fb57b5d8b1bfbdf3c761bc8b832e3275e3d3d9daff289965b27aa",
+      "bytes": 5975
+    },
+    {
+      "source": ".codex-bestfgs-baseline/pyproject.toml",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/pyproject.toml",
+      "sha256": "6f5f49044499194965d54aeb8fdcc8b79234b4a3626611ff17888daf0f6b029c",
+      "bytes": 528
+    },
+    {
+      "source": ".codex-bestfgs-baseline/README.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/README.md",
+      "sha256": "b817dc4aaef2fd4ed5b7aec3f879d4bac360cfca3c370ba396afe41489ceab34",
+      "bytes": 9147
+    },
+    {
+      "source": ".codex-bestfgs-baseline/refresh_experiment_reports.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/refresh_experiment_reports.py",
+      "sha256": "197efc2e2852678e5933413ae335ed9ce968e8a8315516771325f48f21536b6d",
+      "bytes": 3260
+    },
+    {
+      "source": ".codex-bestfgs-baseline/run_comparison.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/run_comparison.py",
+      "sha256": "c62360bfcae64e157a9c3a75c3ce625b40f05d8db2f1f9313518702dc5227e6f",
+      "bytes": 14363
+    },
+    {
+      "source": ".codex-bestfgs-baseline/run_notebook.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/run_notebook.py",
+      "sha256": "0380fc6ef50b7a35efd64d0a48dff8e2dc8e2c664007d0e18a98ed5e5976c35a",
+      "bytes": 20334
+    },
+    {
+      "source": ".codex-bestfgs-baseline/run_swebench.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/run_swebench.py",
+      "sha256": "b9c4cb0239297883606a4712740cc4e1f06c3d8383b65e7c8db16b90ffb723f9",
+      "bytes": 70191
+    },
+    {
+      "source": ".codex-bestfgs-baseline/run_swebench_18tasks.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/run_swebench_18tasks.py",
+      "sha256": "050d6f2c13b18d99c04321e15dba79a1a63d971e1d051612c9d90c711174a29d",
+      "bytes": 2318
+    },
+    {
+      "source": ".codex-bestfgs-baseline/run_swebench_2random_tasks.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/run_swebench_2random_tasks.py",
+      "sha256": "72e406b73a8fe911168c604798fdb4119640a2523b909bbe9d86732cf8728052",
+      "bytes": 2567
+    },
+    {
+      "source": ".codex-bestfgs-baseline/run_swebench_2tasks.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/run_swebench_2tasks.py",
+      "sha256": "3df075ab304248e705713eaaaec8f5a50d8ad4befec344b33811628008a0ad1e",
+      "bytes": 1018
+    },
+    {
+      "source": ".codex-bestfgs-baseline/run_swebench_frozen_test.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/run_swebench_frozen_test.py",
+      "sha256": "8c586d6856c44fd76066af54b975423cc5a257898495fa3215d8172716ebecb4",
+      "bytes": 1132
+    },
+    {
+      "source": ".codex-bestfgs-baseline/run_swebench_tenth.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/run_swebench_tenth.py",
+      "sha256": "a74b7d56f98595c60906020c0b1e79ee42f5bf9aeb9c2f18a217fd89cdd4637e",
+      "bytes": 2248
+    },
+    {
+      "source": ".codex-bestfgs-baseline/run_terminal_bench.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/run_terminal_bench.py",
+      "sha256": "7275bf766fad96224b4223cd687540830de482debd056da10161b6f97b369284",
+      "bytes": 65576
+    },
+    {
+      "source": ".codex-bestfgs-baseline/run_terminal_bench_2random_tasks.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/run_terminal_bench_2random_tasks.py",
+      "sha256": "2293b1f0d761eb1116b7f6affa93ee0049bd1234cc762c072c4b0a7e10f222a6",
+      "bytes": 3942
+    },
+    {
+      "source": ".codex-bestfgs-baseline/run_terminal_bench_2tasks.cmd",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/run_terminal_bench_2tasks.cmd",
+      "sha256": "55ddd2484c948fa8ce75e1ca57ddd3717f071d9a2a5406c6e9c2e547b5140b1f",
+      "bytes": 942
+    },
+    {
+      "source": ".codex-bestfgs-baseline/run_terminal_bench_frozen_test.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/run_terminal_bench_frozen_test.py",
+      "sha256": "1b0d73c28bc84bab50ab391bbaf5d6110fbb356ab3ff912c1f3f3b3d3bdfa82f",
+      "bytes": 839
+    },
+    {
+      "source": ".codex-bestfgs-baseline/run_terminal_bench_tenth.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/run_terminal_bench_tenth.py",
+      "sha256": "16c0a5c9c292c5e17bbbb57a49a702eb667546a98febcf204cbfb654b9a0ab56",
+      "bytes": 6872
+    },
+    {
+      "source": ".codex-bestfgs-baseline/start_swe100.sh",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/start_swe100.sh",
+      "sha256": "31b7096bc8b32429af9439b1667ab661135803aae8d3c5879f90542a1d017b7f",
+      "bytes": 1252
+    },
+    {
+      "source": ".codex-bestfgs-baseline/SWE100.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/SWE100.md",
+      "sha256": "5ab155f9de3044ce93d8ac28ca9991d757926d58248d8d6b0b24793f4e368106",
+      "bytes": 8295
+    },
+    {
+      "source": ".codex-bestfgs-baseline/swe_batch.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/swe_batch.py",
+      "sha256": "5a553f99df070cc02a97cddc753b737afb6621d058fd296d78eec6a04615ca98",
+      "bytes": 24900
+    },
+    {
+      "source": ".codex-bestfgs-baseline/benchmark_splits/frozen_test_set_v1.json",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/benchmark_splits/frozen_test_set_v1.json",
+      "sha256": "56502da3f4b25af4be6289494f29053e799ac11fd0c7a7756a9ba11c7394d796",
+      "bytes": 2820
+    },
+    {
+      "source": ".codex-bestfgs-baseline/benchmark_splits/frozen_test_set_v1.sha256",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/benchmark_splits/frozen_test_set_v1.sha256",
+      "sha256": "23e8656a8530751ae28e9da53015038aaa1cb0b6957fa2e42e911cc84f301260",
+      "bytes": 65
+    },
+    {
+      "source": ".codex-bestfgs-baseline/benchmark_splits/README.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/benchmark_splits/README.md",
+      "sha256": "9315e44b4aec2d69258e1e44f77b2873ab9bd5c8aaba1764e3161e2ec64bac13",
+      "bytes": 603
+    },
+    {
+      "source": ".codex-bestfgs-baseline/examples/demo_counter.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/examples/demo_counter.py",
+      "sha256": "04b86482fdcbed857c22b4b43c6981f21d687d98e290e79b02b9df249c6ffa41",
+      "bytes": 6557
+    },
+    {
+      "source": ".codex-bestfgs-baseline/examples/notebook_tasks.template.json",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/examples/notebook_tasks.template.json",
+      "sha256": "2d7114e98c4e51c7ed18ae5ff0e48bfb348632c42ccc3c4b0175fb70e642cc2a",
+      "bytes": 427
+    },
+    {
+      "source": ".codex-bestfgs-baseline/examples/swe100-plan.json",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/examples/swe100-plan.json",
+      "sha256": "f6a3ba53814b33632e940dc8719cbb1e9c7271b45d93d185182a4a7a9c735805",
+      "bytes": 541610
+    },
+    {
+      "source": ".codex-bestfgs-baseline/examples/__init__.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/examples/__init__.py",
+      "sha256": "3ba0db688d15cf2ed3ecd240bfe9397e35cb5356651eb76a43f215fc661c2fcd",
+      "bytes": 57
+    },
+    {
+      "source": ".codex-bestfgs-baseline/src/bestfgs/agent.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/src/bestfgs/agent.py",
+      "sha256": "aa355246637ea9352ca69026fddd2d735f72609770e1f2f82bb4d1863111e3f4",
+      "bytes": 2315
+    },
+    {
+      "source": ".codex-bestfgs-baseline/src/bestfgs/best_first.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/src/bestfgs/best_first.py",
+      "sha256": "f4c8cbf2e8504f8ee70cfa71e56625bb89bf262c1cf7d397f13f2f990e8d572d",
+      "bytes": 33573
+    },
+    {
+      "source": ".codex-bestfgs-baseline/src/bestfgs/best_first_runtime.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/src/bestfgs/best_first_runtime.py",
+      "sha256": "cfa8954f1cd7b16b66411c609e6d4e395f4e3bdb0d812be877706ac566f464c1",
+      "bytes": 110668
+    },
+    {
+      "source": ".codex-bestfgs-baseline/src/bestfgs/cli_config.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/src/bestfgs/cli_config.py",
+      "sha256": "8b7aeac7671cb3857795bfbcddd84dbdf171389b4693e99c3736c8406e0dca4f",
+      "bytes": 915
+    },
+    {
+      "source": ".codex-bestfgs-baseline/src/bestfgs/environment.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/src/bestfgs/environment.py",
+      "sha256": "3b861fc4295c7e8c2274d3c0b66c2a884ba44cea413595b7f4f625af1bd6dea2",
+      "bytes": 23063
+    },
+    {
+      "source": ".codex-bestfgs-baseline/src/bestfgs/experiment_metrics.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/src/bestfgs/experiment_metrics.py",
+      "sha256": "070dd9136c317e12ae1b9b692a974cb543b130d5132cd6c872c2d8e0f4c09f35",
+      "bytes": 7780
+    },
+    {
+      "source": ".codex-bestfgs-baseline/src/bestfgs/metrics.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/src/bestfgs/metrics.py",
+      "sha256": "8ba89cb76f681928b33cfe83ad2e4919cf5855e8694ea3425d67289ee9cf4e98",
+      "bytes": 10313
+    },
+    {
+      "source": ".codex-bestfgs-baseline/src/bestfgs/models.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/src/bestfgs/models.py",
+      "sha256": "de2b8037e851f198e343c268721aa179085e82540f3e890cdf8f8e42160726f7",
+      "bytes": 24531
+    },
+    {
+      "source": ".codex-bestfgs-baseline/src/bestfgs/priority.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/src/bestfgs/priority.py",
+      "sha256": "72c47638c08a68c3ee33e72b0d17d81544e9cf4b408cadac47670dcc7c68c36a",
+      "bytes": 8020
+    },
+    {
+      "source": ".codex-bestfgs-baseline/src/bestfgs/raw_baseline.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/src/bestfgs/raw_baseline.py",
+      "sha256": "56270ecca0f36770af3206cfa5bf4d368b921b1220fc8ee141076fa4e63a0d76",
+      "bytes": 7544
+    },
+    {
+      "source": ".codex-bestfgs-baseline/src/bestfgs/retrac_adapter.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/src/bestfgs/retrac_adapter.py",
+      "sha256": "ee8f7719dbb8b35d1d9cbebd4cc9944b7a4b4549c5da0f2dd22688cf84dc12c8",
+      "bytes": 76919
+    },
+    {
+      "source": ".codex-bestfgs-baseline/src/bestfgs/rl.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/src/bestfgs/rl.py",
+      "sha256": "a8e583f9178f8e57cdf790625c128f3a6f90f90f2abbfbc82a937b7d9de65522",
+      "bytes": 3234
+    },
+    {
+      "source": ".codex-bestfgs-baseline/src/bestfgs/rules.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/src/bestfgs/rules.py",
+      "sha256": "e94f959fd6bb94c468f103ed7e40c13a7128df16cebd43e023733725018cba4a",
+      "bytes": 16722
+    },
+    {
+      "source": ".codex-bestfgs-baseline/src/bestfgs/semantic.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/src/bestfgs/semantic.py",
+      "sha256": "94b079de7c08f3c0df0e2e65f92cf6c353b9e1cf02b6a052cf86bd7c2c9808e3",
+      "bytes": 51646
+    },
+    {
+      "source": ".codex-bestfgs-baseline/src/bestfgs/success_judge.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/src/bestfgs/success_judge.py",
+      "sha256": "e497fb4bd41cc98243663e3deae318bcdd406dbb6c1e174d5227b8b2173e2a6c",
+      "bytes": 25591
+    },
+    {
+      "source": ".codex-bestfgs-baseline/src/bestfgs/__init__.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/src/bestfgs/__init__.py",
+      "sha256": "faacc03c094a06582932ebbe70c2c7980d10fed3c0828caf3cbceca7ffb8a6e2",
+      "bytes": 911
+    },
+    {
+      "source": ".codex-bestfgs-baseline/src/bestfgs/__main__.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/src/bestfgs/__main__.py",
+      "sha256": "667a7f7a559bd5c6f103995c951acfa41f37d53ccc5fc722a144c28006e0023d",
+      "bytes": 19130
+    },
+    {
+      "source": ".codex-bestfgs-baseline/tests/test_architecture.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/tests/test_architecture.py",
+      "sha256": "435e2f2adc315f24428a0c793f90eb6402c6c112f2c146a492bcff625996f215",
+      "bytes": 1479
+    },
+    {
+      "source": ".codex-bestfgs-baseline/tests/test_benchmark_runners.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/tests/test_benchmark_runners.py",
+      "sha256": "64ee0325cd416d8ae101cfc90f3892048312d5055a3d7d5b892d40e305950f48",
+      "bytes": 24997
+    },
+    {
+      "source": ".codex-bestfgs-baseline/tests/test_benchmark_selection.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/tests/test_benchmark_selection.py",
+      "sha256": "628b73531d82fa3beea1ea3125ba22ca96bb0cb5963b2c37d3082862e63b21c1",
+      "bytes": 23755
+    },
+    {
+      "source": ".codex-bestfgs-baseline/tests/test_best_first.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/tests/test_best_first.py",
+      "sha256": "dd4d2dee96bbfeccf73fa572d30d75c29c52e109d5ea8c84a6df050b302c1638",
+      "bytes": 27194
+    },
+    {
+      "source": ".codex-bestfgs-baseline/tests/test_budget_runtime.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/tests/test_budget_runtime.py",
+      "sha256": "4fc00d3a4e03f1b67a99790245e2fbb9ab30f3ac55379ba51045634a62b2fff6",
+      "bytes": 15745
+    },
+    {
+      "source": ".codex-bestfgs-baseline/tests/test_environment.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/tests/test_environment.py",
+      "sha256": "07f925b9f24c2c2915e9214bfa429bd0bf1e40cc5feb55d0bf988565c888a4e8",
+      "bytes": 14653
+    },
+    {
+      "source": ".codex-bestfgs-baseline/tests/test_metrics.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/tests/test_metrics.py",
+      "sha256": "b297a1c8a50fa420e1a7f859a91817e210731d71a6a817e52868fc6a367e7d36",
+      "bytes": 7838
+    },
+    {
+      "source": ".codex-bestfgs-baseline/tests/test_notebook_runner.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/tests/test_notebook_runner.py",
+      "sha256": "27de0b38f5bbc458bcc40119a634baf8a8690e302e5f5d7fe47bbfe8eb8d69c6",
+      "bytes": 14120
+    },
+    {
+      "source": ".codex-bestfgs-baseline/tests/test_no_judge_entrypoints.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/tests/test_no_judge_entrypoints.py",
+      "sha256": "b8eda706e10bf1226b98df26ca9b6d3219aea9205862b1d07350000b2276b0eb",
+      "bytes": 3061
+    },
+    {
+      "source": ".codex-bestfgs-baseline/tests/test_raw_comparison.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/tests/test_raw_comparison.py",
+      "sha256": "33a634749f7fbdf779dd1d4567f0d6d7c04250089753c6fb00d9250cffad60ab",
+      "bytes": 22668
+    },
+    {
+      "source": ".codex-bestfgs-baseline/tests/test_retrac_adapter.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/tests/test_retrac_adapter.py",
+      "sha256": "bd52019465fdfe8f2529e076385e6085cb366adc31e625bb4ecab47c17a419b7",
+      "bytes": 32624
+    },
+    {
+      "source": ".codex-bestfgs-baseline/tests/test_rl.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/tests/test_rl.py",
+      "sha256": "536476e676d147f4aa51e8f04c58823a0699dfab9350b59186d7b9dd45ecc034",
+      "bytes": 784
+    },
+    {
+      "source": ".codex-bestfgs-baseline/tests/test_rules.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/tests/test_rules.py",
+      "sha256": "b39ca0e77440c8cfe0c764c6c16ca210c9ce6c2651b8166c1c0d7446a3ef1729",
+      "bytes": 11506
+    },
+    {
+      "source": ".codex-bestfgs-baseline/tests/test_runtime.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/tests/test_runtime.py",
+      "sha256": "aad08a5a5eb9dabce888149a23785cae06c33327d24843e66bd28a9ba38a3f28",
+      "bytes": 38760
+    },
+    {
+      "source": ".codex-bestfgs-baseline/tests/test_semantic.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/tests/test_semantic.py",
+      "sha256": "acd2a685feab798751b88025438995181cde2b8d12d7208ceec0f5ffe8a9d4b2",
+      "bytes": 22112
+    },
+    {
+      "source": ".codex-bestfgs-baseline/tests/test_success_judge.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/tests/test_success_judge.py",
+      "sha256": "ed292bf3b3ec3aa720707d051bfac4533d821cdce02859589de48d6fe9963bec",
+      "bytes": 18508
+    },
+    {
+      "source": ".codex-bestfgs-baseline/tests/test_swe_batch.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/tests/test_swe_batch.py",
+      "sha256": "724384c222cfd647bf7b33dce026023bf9030c5069edc9e106aa093bbe41fcc5",
+      "bytes": 13729
+    },
+    {
+      "source": ".codex-bestfgs-baseline/tests/test_swe_preparation.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-baseline/tests/test_swe_preparation.py",
+      "sha256": "d484a1d76e85ba3e9152f0e5a6ef3fd07f6a917f292676d45d072291a584f4f0",
+      "bytes": 2210
+    },
+    {
+      "source": ".codex-bestfgs-batch/.gitignore",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/.gitignore",
+      "sha256": "37b8500917e9a4312b20559433fe46d987235c3f1855cab8955b3f73cf37cd93",
+      "bytes": 86
+    },
+    {
+      "source": ".codex-bestfgs-batch/BENCHMARKS.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/BENCHMARKS.md",
+      "sha256": "a58812f31ca27c820927003ec704a3f2d890abf41604418a52b1761737ca4007",
+      "bytes": 6815
+    },
+    {
+      "source": ".codex-bestfgs-batch/benchmark_metrics.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/benchmark_metrics.py",
+      "sha256": "87fe55c9a4f7f83e13563979e8dc38a6e72514da2e6b0c3323c155ebc0715dcc",
+      "bytes": 12030
+    },
+    {
+      "source": ".codex-bestfgs-batch/benchmark_runtime.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/benchmark_runtime.py",
+      "sha256": "1841b01f2d90216838fda67ca7dae153e7c95a070e02de3aaf44bbdc21bbc1ed",
+      "bytes": 3419
+    },
+    {
+      "source": ".codex-bestfgs-batch/benchmark_selection.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/benchmark_selection.py",
+      "sha256": "30dfb9890282c2a8b50edb2f817e75fbb337a61003eef108d586e8b27d052010",
+      "bytes": 5376
+    },
+    {
+      "source": ".codex-bestfgs-batch/benchmark_splits.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/benchmark_splits.py",
+      "sha256": "b30c07a8c9aaf8ec9532caf9efbc1876b2b326f80fecd45368814c25b5b19414",
+      "bytes": 3604
+    },
+    {
+      "source": ".codex-bestfgs-batch/build_swe_batch.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/build_swe_batch.py",
+      "sha256": "8e4c9c23e03527ae43f0dec104f1411257e0c2180d7026435ecf143d1a6b5d3f",
+      "bytes": 4090
+    },
+    {
+      "source": ".codex-bestfgs-batch/CHANGES_20260914.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/CHANGES_20260914.md",
+      "sha256": "b82b964dd46fd59b39fc4038925e47708f2e14f8691e9a98e57b27018814829e",
+      "bytes": 3822
+    },
+    {
+      "source": ".codex-bestfgs-batch/CHANGES_20260915.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/CHANGES_20260915.md",
+      "sha256": "b304c146a9314f4769ac4c179d252686d7761192af47afd976dec8e3bfe4d8ac",
+      "bytes": 1414
+    },
+    {
+      "source": ".codex-bestfgs-batch/CHANGES_20260918.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/CHANGES_20260918.md",
+      "sha256": "5fc956fcec36846f8a3e53d3ae758fdf3b0be6e129ade8af717481ce871768be",
+      "bytes": 1145
+    },
+    {
+      "source": ".codex-bestfgs-batch/CUBE_STUDIO.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/CUBE_STUDIO.md",
+      "sha256": "58dad57588776b9c6ad822da0cb774f475813f28837d8e8d40874df7fe0b1f5a",
+      "bytes": 7155
+    },
+    {
+      "source": ".codex-bestfgs-batch/evaluate_swe100.ps1",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/evaluate_swe100.ps1",
+      "sha256": "eb2a25d168f0208ec6ff101491156de53b34f7cfea323496b2c8aa6f03805a0f",
+      "bytes": 1260
+    },
+    {
+      "source": ".codex-bestfgs-batch/evaluate_swe_batch.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/evaluate_swe_batch.py",
+      "sha256": "021553ee9087b3adf413a31d2059c7c3533b2fe0992eb7b378a3e69fd9d6f269",
+      "bytes": 13797
+    },
+    {
+      "source": ".codex-bestfgs-batch/prepare_swe_sympy.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/prepare_swe_sympy.py",
+      "sha256": "24a1d58a7f6fb57b5d8b1bfbdf3c761bc8b832e3275e3d3d9daff289965b27aa",
+      "bytes": 5975
+    },
+    {
+      "source": ".codex-bestfgs-batch/pyproject.toml",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/pyproject.toml",
+      "sha256": "a9aea2ee05bbb0bfa8e33a789c2cf477a52a006c8279ab9b37d301e2202a27d2",
+      "bytes": 481
+    },
+    {
+      "source": ".codex-bestfgs-batch/README.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/README.md",
+      "sha256": "6edaa90a7f4bbd50675065fa984a6df3082377d5ddaed0eaa668bd342355b062",
+      "bytes": 8865
+    },
+    {
+      "source": ".codex-bestfgs-batch/refresh_experiment_reports.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/refresh_experiment_reports.py",
+      "sha256": "197efc2e2852678e5933413ae335ed9ce968e8a8315516771325f48f21536b6d",
+      "bytes": 3260
+    },
+    {
+      "source": ".codex-bestfgs-batch/run_notebook.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/run_notebook.py",
+      "sha256": "736101ee520d6f747002c230f5e6c626993c1ec20e367ba3b95b6c8c80a31986",
+      "bytes": 19861
+    },
+    {
+      "source": ".codex-bestfgs-batch/run_swebench.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/run_swebench.py",
+      "sha256": "b9c4cb0239297883606a4712740cc4e1f06c3d8383b65e7c8db16b90ffb723f9",
+      "bytes": 70191
+    },
+    {
+      "source": ".codex-bestfgs-batch/run_swebench_18tasks.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/run_swebench_18tasks.py",
+      "sha256": "050d6f2c13b18d99c04321e15dba79a1a63d971e1d051612c9d90c711174a29d",
+      "bytes": 2318
+    },
+    {
+      "source": ".codex-bestfgs-batch/run_swebench_2random_tasks.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/run_swebench_2random_tasks.py",
+      "sha256": "72e406b73a8fe911168c604798fdb4119640a2523b909bbe9d86732cf8728052",
+      "bytes": 2567
+    },
+    {
+      "source": ".codex-bestfgs-batch/run_swebench_2tasks.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/run_swebench_2tasks.py",
+      "sha256": "3df075ab304248e705713eaaaec8f5a50d8ad4befec344b33811628008a0ad1e",
+      "bytes": 1018
+    },
+    {
+      "source": ".codex-bestfgs-batch/run_swebench_frozen_test.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/run_swebench_frozen_test.py",
+      "sha256": "8c586d6856c44fd76066af54b975423cc5a257898495fa3215d8172716ebecb4",
+      "bytes": 1132
+    },
+    {
+      "source": ".codex-bestfgs-batch/run_swebench_tenth.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/run_swebench_tenth.py",
+      "sha256": "a74b7d56f98595c60906020c0b1e79ee42f5bf9aeb9c2f18a217fd89cdd4637e",
+      "bytes": 2248
+    },
+    {
+      "source": ".codex-bestfgs-batch/run_terminal_bench.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/run_terminal_bench.py",
+      "sha256": "7275bf766fad96224b4223cd687540830de482debd056da10161b6f97b369284",
+      "bytes": 65576
+    },
+    {
+      "source": ".codex-bestfgs-batch/run_terminal_bench_2random_tasks.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/run_terminal_bench_2random_tasks.py",
+      "sha256": "2293b1f0d761eb1116b7f6affa93ee0049bd1234cc762c072c4b0a7e10f222a6",
+      "bytes": 3942
+    },
+    {
+      "source": ".codex-bestfgs-batch/run_terminal_bench_2tasks.cmd",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/run_terminal_bench_2tasks.cmd",
+      "sha256": "55ddd2484c948fa8ce75e1ca57ddd3717f071d9a2a5406c6e9c2e547b5140b1f",
+      "bytes": 942
+    },
+    {
+      "source": ".codex-bestfgs-batch/run_terminal_bench_frozen_test.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/run_terminal_bench_frozen_test.py",
+      "sha256": "1b0d73c28bc84bab50ab391bbaf5d6110fbb356ab3ff912c1f3f3b3d3bdfa82f",
+      "bytes": 839
+    },
+    {
+      "source": ".codex-bestfgs-batch/run_terminal_bench_tenth.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/run_terminal_bench_tenth.py",
+      "sha256": "16c0a5c9c292c5e17bbbb57a49a702eb667546a98febcf204cbfb654b9a0ab56",
+      "bytes": 6872
+    },
+    {
+      "source": ".codex-bestfgs-batch/start_swe100.sh",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/start_swe100.sh",
+      "sha256": "31b7096bc8b32429af9439b1667ab661135803aae8d3c5879f90542a1d017b7f",
+      "bytes": 1252
+    },
+    {
+      "source": ".codex-bestfgs-batch/SWE100.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/SWE100.md",
+      "sha256": "5ab155f9de3044ce93d8ac28ca9991d757926d58248d8d6b0b24793f4e368106",
+      "bytes": 8295
+    },
+    {
+      "source": ".codex-bestfgs-batch/swe_batch.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/swe_batch.py",
+      "sha256": "900f74f82c98c8839da9a57da28a6ffe4e1de673342a0fffcd449c557741dfe3",
+      "bytes": 24719
+    },
+    {
+      "source": ".codex-bestfgs-batch/benchmark_splits/frozen_test_set_v1.json",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/benchmark_splits/frozen_test_set_v1.json",
+      "sha256": "56502da3f4b25af4be6289494f29053e799ac11fd0c7a7756a9ba11c7394d796",
+      "bytes": 2820
+    },
+    {
+      "source": ".codex-bestfgs-batch/benchmark_splits/frozen_test_set_v1.sha256",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/benchmark_splits/frozen_test_set_v1.sha256",
+      "sha256": "23e8656a8530751ae28e9da53015038aaa1cb0b6957fa2e42e911cc84f301260",
+      "bytes": 65
+    },
+    {
+      "source": ".codex-bestfgs-batch/benchmark_splits/README.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/benchmark_splits/README.md",
+      "sha256": "9315e44b4aec2d69258e1e44f77b2873ab9bd5c8aaba1764e3161e2ec64bac13",
+      "bytes": 603
+    },
+    {
+      "source": ".codex-bestfgs-batch/examples/demo_counter.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/examples/demo_counter.py",
+      "sha256": "04b86482fdcbed857c22b4b43c6981f21d687d98e290e79b02b9df249c6ffa41",
+      "bytes": 6557
+    },
+    {
+      "source": ".codex-bestfgs-batch/examples/notebook_tasks.template.json",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/examples/notebook_tasks.template.json",
+      "sha256": "2d7114e98c4e51c7ed18ae5ff0e48bfb348632c42ccc3c4b0175fb70e642cc2a",
+      "bytes": 427
+    },
+    {
+      "source": ".codex-bestfgs-batch/examples/swe100-plan.json",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/examples/swe100-plan.json",
+      "sha256": "f6a3ba53814b33632e940dc8719cbb1e9c7271b45d93d185182a4a7a9c735805",
+      "bytes": 541610
+    },
+    {
+      "source": ".codex-bestfgs-batch/examples/__init__.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/examples/__init__.py",
+      "sha256": "3ba0db688d15cf2ed3ecd240bfe9397e35cb5356651eb76a43f215fc661c2fcd",
+      "bytes": 57
+    },
+    {
+      "source": ".codex-bestfgs-batch/src/bestfgs/agent.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/src/bestfgs/agent.py",
+      "sha256": "aa355246637ea9352ca69026fddd2d735f72609770e1f2f82bb4d1863111e3f4",
+      "bytes": 2315
+    },
+    {
+      "source": ".codex-bestfgs-batch/src/bestfgs/best_first.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/src/bestfgs/best_first.py",
+      "sha256": "f4c8cbf2e8504f8ee70cfa71e56625bb89bf262c1cf7d397f13f2f990e8d572d",
+      "bytes": 33573
+    },
+    {
+      "source": ".codex-bestfgs-batch/src/bestfgs/best_first_runtime.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/src/bestfgs/best_first_runtime.py",
+      "sha256": "cfa8954f1cd7b16b66411c609e6d4e395f4e3bdb0d812be877706ac566f464c1",
+      "bytes": 110668
+    },
+    {
+      "source": ".codex-bestfgs-batch/src/bestfgs/environment.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/src/bestfgs/environment.py",
+      "sha256": "7395c046f8579ecfec6f8fb304f00a7709ba0ec524a49457ff19e56ffbb7863a",
+      "bytes": 22843
+    },
+    {
+      "source": ".codex-bestfgs-batch/src/bestfgs/metrics.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/src/bestfgs/metrics.py",
+      "sha256": "8ba89cb76f681928b33cfe83ad2e4919cf5855e8694ea3425d67289ee9cf4e98",
+      "bytes": 10313
+    },
+    {
+      "source": ".codex-bestfgs-batch/src/bestfgs/models.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/src/bestfgs/models.py",
+      "sha256": "de2b8037e851f198e343c268721aa179085e82540f3e890cdf8f8e42160726f7",
+      "bytes": 24531
+    },
+    {
+      "source": ".codex-bestfgs-batch/src/bestfgs/priority.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/src/bestfgs/priority.py",
+      "sha256": "72c47638c08a68c3ee33e72b0d17d81544e9cf4b408cadac47670dcc7c68c36a",
+      "bytes": 8020
+    },
+    {
+      "source": ".codex-bestfgs-batch/src/bestfgs/retrac_adapter.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/src/bestfgs/retrac_adapter.py",
+      "sha256": "2037236a437ca38e4b063bdb759a58317f9049f0beec5a6a68baceafb3443cf0",
+      "bytes": 75343
+    },
+    {
+      "source": ".codex-bestfgs-batch/src/bestfgs/rl.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/src/bestfgs/rl.py",
+      "sha256": "a8e583f9178f8e57cdf790625c128f3a6f90f90f2abbfbc82a937b7d9de65522",
+      "bytes": 3234
+    },
+    {
+      "source": ".codex-bestfgs-batch/src/bestfgs/rules.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/src/bestfgs/rules.py",
+      "sha256": "e94f959fd6bb94c468f103ed7e40c13a7128df16cebd43e023733725018cba4a",
+      "bytes": 16722
+    },
+    {
+      "source": ".codex-bestfgs-batch/src/bestfgs/semantic.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/src/bestfgs/semantic.py",
+      "sha256": "94b079de7c08f3c0df0e2e65f92cf6c353b9e1cf02b6a052cf86bd7c2c9808e3",
+      "bytes": 51646
+    },
+    {
+      "source": ".codex-bestfgs-batch/src/bestfgs/success_judge.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/src/bestfgs/success_judge.py",
+      "sha256": "e497fb4bd41cc98243663e3deae318bcdd406dbb6c1e174d5227b8b2173e2a6c",
+      "bytes": 25591
+    },
+    {
+      "source": ".codex-bestfgs-batch/src/bestfgs/__init__.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/src/bestfgs/__init__.py",
+      "sha256": "faacc03c094a06582932ebbe70c2c7980d10fed3c0828caf3cbceca7ffb8a6e2",
+      "bytes": 911
+    },
+    {
+      "source": ".codex-bestfgs-batch/src/bestfgs/__main__.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/src/bestfgs/__main__.py",
+      "sha256": "6c09dc29451b393e8228904eabb4183e3b6b9005ff59b6e56756e7f1c3002750",
+      "bytes": 19414
+    },
+    {
+      "source": ".codex-bestfgs-batch/tests/test_architecture.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/tests/test_architecture.py",
+      "sha256": "fb092ea8c2cd1b839406db7272aa2013c277d85c4934d0dc49d80fc57ca9bd85",
+      "bytes": 1402
+    },
+    {
+      "source": ".codex-bestfgs-batch/tests/test_benchmark_runners.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/tests/test_benchmark_runners.py",
+      "sha256": "64ee0325cd416d8ae101cfc90f3892048312d5055a3d7d5b892d40e305950f48",
+      "bytes": 24997
+    },
+    {
+      "source": ".codex-bestfgs-batch/tests/test_benchmark_selection.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/tests/test_benchmark_selection.py",
+      "sha256": "628b73531d82fa3beea1ea3125ba22ca96bb0cb5963b2c37d3082862e63b21c1",
+      "bytes": 23755
+    },
+    {
+      "source": ".codex-bestfgs-batch/tests/test_best_first.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/tests/test_best_first.py",
+      "sha256": "dd4d2dee96bbfeccf73fa572d30d75c29c52e109d5ea8c84a6df050b302c1638",
+      "bytes": 27194
+    },
+    {
+      "source": ".codex-bestfgs-batch/tests/test_budget_runtime.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/tests/test_budget_runtime.py",
+      "sha256": "4fc00d3a4e03f1b67a99790245e2fbb9ab30f3ac55379ba51045634a62b2fff6",
+      "bytes": 15745
+    },
+    {
+      "source": ".codex-bestfgs-batch/tests/test_environment.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/tests/test_environment.py",
+      "sha256": "07f925b9f24c2c2915e9214bfa429bd0bf1e40cc5feb55d0bf988565c888a4e8",
+      "bytes": 14653
+    },
+    {
+      "source": ".codex-bestfgs-batch/tests/test_metrics.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/tests/test_metrics.py",
+      "sha256": "b297a1c8a50fa420e1a7f859a91817e210731d71a6a817e52868fc6a367e7d36",
+      "bytes": 7838
+    },
+    {
+      "source": ".codex-bestfgs-batch/tests/test_notebook_runner.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/tests/test_notebook_runner.py",
+      "sha256": "27de0b38f5bbc458bcc40119a634baf8a8690e302e5f5d7fe47bbfe8eb8d69c6",
+      "bytes": 14120
+    },
+    {
+      "source": ".codex-bestfgs-batch/tests/test_no_judge_entrypoints.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/tests/test_no_judge_entrypoints.py",
+      "sha256": "b8eda706e10bf1226b98df26ca9b6d3219aea9205862b1d07350000b2276b0eb",
+      "bytes": 3061
+    },
+    {
+      "source": ".codex-bestfgs-batch/tests/test_retrac_adapter.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/tests/test_retrac_adapter.py",
+      "sha256": "a48584879d5b84ad8ee34deac1482ca278fab38ce8fab0196dc5143619e89140",
+      "bytes": 32453
+    },
+    {
+      "source": ".codex-bestfgs-batch/tests/test_rl.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/tests/test_rl.py",
+      "sha256": "536476e676d147f4aa51e8f04c58823a0699dfab9350b59186d7b9dd45ecc034",
+      "bytes": 784
+    },
+    {
+      "source": ".codex-bestfgs-batch/tests/test_rules.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/tests/test_rules.py",
+      "sha256": "b39ca0e77440c8cfe0c764c6c16ca210c9ce6c2651b8166c1c0d7446a3ef1729",
+      "bytes": 11506
+    },
+    {
+      "source": ".codex-bestfgs-batch/tests/test_runtime.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/tests/test_runtime.py",
+      "sha256": "aad08a5a5eb9dabce888149a23785cae06c33327d24843e66bd28a9ba38a3f28",
+      "bytes": 38760
+    },
+    {
+      "source": ".codex-bestfgs-batch/tests/test_semantic.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/tests/test_semantic.py",
+      "sha256": "acd2a685feab798751b88025438995181cde2b8d12d7208ceec0f5ffe8a9d4b2",
+      "bytes": 22112
+    },
+    {
+      "source": ".codex-bestfgs-batch/tests/test_success_judge.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/tests/test_success_judge.py",
+      "sha256": "ed292bf3b3ec3aa720707d051bfac4533d821cdce02859589de48d6fe9963bec",
+      "bytes": 18508
+    },
+    {
+      "source": ".codex-bestfgs-batch/tests/test_swe_batch.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/tests/test_swe_batch.py",
+      "sha256": "724384c222cfd647bf7b33dce026023bf9030c5069edc9e106aa093bbe41fcc5",
+      "bytes": 13729
+    },
+    {
+      "source": ".codex-bestfgs-batch/tests/test_swe_preparation.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-batch/tests/test_swe_preparation.py",
+      "sha256": "d484a1d76e85ba3e9152f0e5a6ef3fd07f6a917f292676d45d072291a584f4f0",
+      "bytes": 2210
+    },
+    {
+      "source": ".codex-bestfgs-launch/.gitignore",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/.gitignore",
+      "sha256": "37b8500917e9a4312b20559433fe46d987235c3f1855cab8955b3f73cf37cd93",
+      "bytes": 86
+    },
+    {
+      "source": ".codex-bestfgs-launch/BASELINE_COMPARISON.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/BASELINE_COMPARISON.md",
+      "sha256": "08edbd0907f70f6993e468c347511bbd36f31729dd8a3712515acd00886dadff",
+      "bytes": 13713
+    },
+    {
+      "source": ".codex-bestfgs-launch/BENCHMARKS.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/BENCHMARKS.md",
+      "sha256": "a58812f31ca27c820927003ec704a3f2d890abf41604418a52b1761737ca4007",
+      "bytes": 6815
+    },
+    {
+      "source": ".codex-bestfgs-launch/benchmark_metrics.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/benchmark_metrics.py",
+      "sha256": "87fe55c9a4f7f83e13563979e8dc38a6e72514da2e6b0c3323c155ebc0715dcc",
+      "bytes": 12030
+    },
+    {
+      "source": ".codex-bestfgs-launch/benchmark_runtime.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/benchmark_runtime.py",
+      "sha256": "930bdbc7a5c199c96e13e207ba229faff6f0a255979635766092ade895af4453",
+      "bytes": 3683
+    },
+    {
+      "source": ".codex-bestfgs-launch/benchmark_selection.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/benchmark_selection.py",
+      "sha256": "30dfb9890282c2a8b50edb2f817e75fbb337a61003eef108d586e8b27d052010",
+      "bytes": 5376
+    },
+    {
+      "source": ".codex-bestfgs-launch/benchmark_splits.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/benchmark_splits.py",
+      "sha256": "b30c07a8c9aaf8ec9532caf9efbc1876b2b326f80fecd45368814c25b5b19414",
+      "bytes": 3604
+    },
+    {
+      "source": ".codex-bestfgs-launch/build_swe_batch.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/build_swe_batch.py",
+      "sha256": "8e4c9c23e03527ae43f0dec104f1411257e0c2180d7026435ecf143d1a6b5d3f",
+      "bytes": 4090
+    },
+    {
+      "source": ".codex-bestfgs-launch/build_swe_reserve.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/build_swe_reserve.py",
+      "sha256": "6c302ab8378ff7695d51f604344085c6e4ef01bd46f751586fe27729b54db3c5",
+      "bytes": 4255
+    },
+    {
+      "source": ".codex-bestfgs-launch/CHANGES_20260914.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/CHANGES_20260914.md",
+      "sha256": "b82b964dd46fd59b39fc4038925e47708f2e14f8691e9a98e57b27018814829e",
+      "bytes": 3822
+    },
+    {
+      "source": ".codex-bestfgs-launch/CHANGES_20260915.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/CHANGES_20260915.md",
+      "sha256": "b304c146a9314f4769ac4c179d252686d7761192af47afd976dec8e3bfe4d8ac",
+      "bytes": 1414
+    },
+    {
+      "source": ".codex-bestfgs-launch/CHANGES_20260918.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/CHANGES_20260918.md",
+      "sha256": "5fc956fcec36846f8a3e53d3ae758fdf3b0be6e129ade8af717481ce871768be",
+      "bytes": 1145
+    },
+    {
+      "source": ".codex-bestfgs-launch/compare_experiments.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/compare_experiments.py",
+      "sha256": "009d80e593c4be176ee4ec5be6c7daf5642f6107122040f4da7470591f1d0f85",
+      "bytes": 12143
+    },
+    {
+      "source": ".codex-bestfgs-launch/COMPARISON_LAUNCH.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/COMPARISON_LAUNCH.md",
+      "sha256": "8bb6a65a34f499e224dd62e06d9e9e69c12a4ae22d3c7927ccc325c62cffa0e5",
+      "bytes": 2574
+    },
+    {
+      "source": ".codex-bestfgs-launch/CUBE_STUDIO.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/CUBE_STUDIO.md",
+      "sha256": "58dad57588776b9c6ad822da0cb774f475813f28837d8e8d40874df7fe0b1f5a",
+      "bytes": 7155
+    },
+    {
+      "source": ".codex-bestfgs-launch/evaluate_swe100.ps1",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/evaluate_swe100.ps1",
+      "sha256": "eb2a25d168f0208ec6ff101491156de53b34f7cfea323496b2c8aa6f03805a0f",
+      "bytes": 1260
+    },
+    {
+      "source": ".codex-bestfgs-launch/evaluate_swe_batch.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/evaluate_swe_batch.py",
+      "sha256": "d9c5c0427939586d0fafb0d6ed0abb27312ed310fbec15d8d002a8add5b30d35",
+      "bytes": 15165
+    },
+    {
+      "source": ".codex-bestfgs-launch/PREPARATION_REPAIR.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/PREPARATION_REPAIR.md",
+      "sha256": "6b8c5282ee36a0f30ae9892c987c561be72038783222ff9a51e6dcaa333f98a2",
+      "bytes": 2486
+    },
+    {
+      "source": ".codex-bestfgs-launch/prepare_swe_comparison.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/prepare_swe_comparison.py",
+      "sha256": "565e1d7ca15f4cf913c291f346ff1ff2aaa56f04ae2d9e4de42e16197822527a",
+      "bytes": 11245
+    },
+    {
+      "source": ".codex-bestfgs-launch/prepare_swe_sympy.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/prepare_swe_sympy.py",
+      "sha256": "24a1d58a7f6fb57b5d8b1bfbdf3c761bc8b832e3275e3d3d9daff289965b27aa",
+      "bytes": 5975
+    },
+    {
+      "source": ".codex-bestfgs-launch/pyproject.toml",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/pyproject.toml",
+      "sha256": "6f5f49044499194965d54aeb8fdcc8b79234b4a3626611ff17888daf0f6b029c",
+      "bytes": 528
+    },
+    {
+      "source": ".codex-bestfgs-launch/README.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/README.md",
+      "sha256": "b817dc4aaef2fd4ed5b7aec3f879d4bac360cfca3c370ba396afe41489ceab34",
+      "bytes": 9147
+    },
+    {
+      "source": ".codex-bestfgs-launch/refresh_experiment_reports.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/refresh_experiment_reports.py",
+      "sha256": "197efc2e2852678e5933413ae335ed9ce968e8a8315516771325f48f21536b6d",
+      "bytes": 3260
+    },
+    {
+      "source": ".codex-bestfgs-launch/repair_swe_preparation.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/repair_swe_preparation.py",
+      "sha256": "62c45b9afe05c58cfd97be480c6b6605607f352b073e28cfbcb70314b35b9835",
+      "bytes": 6652
+    },
+    {
+      "source": ".codex-bestfgs-launch/run_comparison.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/run_comparison.py",
+      "sha256": "c62360bfcae64e157a9c3a75c3ce625b40f05d8db2f1f9313518702dc5227e6f",
+      "bytes": 14363
+    },
+    {
+      "source": ".codex-bestfgs-launch/run_notebook.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/run_notebook.py",
+      "sha256": "0380fc6ef50b7a35efd64d0a48dff8e2dc8e2c664007d0e18a98ed5e5976c35a",
+      "bytes": 20334
+    },
+    {
+      "source": ".codex-bestfgs-launch/run_swebench.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/run_swebench.py",
+      "sha256": "b9c4cb0239297883606a4712740cc4e1f06c3d8383b65e7c8db16b90ffb723f9",
+      "bytes": 70191
+    },
+    {
+      "source": ".codex-bestfgs-launch/run_swebench_18tasks.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/run_swebench_18tasks.py",
+      "sha256": "050d6f2c13b18d99c04321e15dba79a1a63d971e1d051612c9d90c711174a29d",
+      "bytes": 2318
+    },
+    {
+      "source": ".codex-bestfgs-launch/run_swebench_2random_tasks.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/run_swebench_2random_tasks.py",
+      "sha256": "72e406b73a8fe911168c604798fdb4119640a2523b909bbe9d86732cf8728052",
+      "bytes": 2567
+    },
+    {
+      "source": ".codex-bestfgs-launch/run_swebench_2tasks.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/run_swebench_2tasks.py",
+      "sha256": "3df075ab304248e705713eaaaec8f5a50d8ad4befec344b33811628008a0ad1e",
+      "bytes": 1018
+    },
+    {
+      "source": ".codex-bestfgs-launch/run_swebench_frozen_test.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/run_swebench_frozen_test.py",
+      "sha256": "8c586d6856c44fd76066af54b975423cc5a257898495fa3215d8172716ebecb4",
+      "bytes": 1132
+    },
+    {
+      "source": ".codex-bestfgs-launch/run_swebench_tenth.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/run_swebench_tenth.py",
+      "sha256": "a74b7d56f98595c60906020c0b1e79ee42f5bf9aeb9c2f18a217fd89cdd4637e",
+      "bytes": 2248
+    },
+    {
+      "source": ".codex-bestfgs-launch/run_terminal_bench.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/run_terminal_bench.py",
+      "sha256": "7275bf766fad96224b4223cd687540830de482debd056da10161b6f97b369284",
+      "bytes": 65576
+    },
+    {
+      "source": ".codex-bestfgs-launch/run_terminal_bench_2random_tasks.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/run_terminal_bench_2random_tasks.py",
+      "sha256": "2293b1f0d761eb1116b7f6affa93ee0049bd1234cc762c072c4b0a7e10f222a6",
+      "bytes": 3942
+    },
+    {
+      "source": ".codex-bestfgs-launch/run_terminal_bench_2tasks.cmd",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/run_terminal_bench_2tasks.cmd",
+      "sha256": "55ddd2484c948fa8ce75e1ca57ddd3717f071d9a2a5406c6e9c2e547b5140b1f",
+      "bytes": 942
+    },
+    {
+      "source": ".codex-bestfgs-launch/run_terminal_bench_frozen_test.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/run_terminal_bench_frozen_test.py",
+      "sha256": "1b0d73c28bc84bab50ab391bbaf5d6110fbb356ab3ff912c1f3f3b3d3bdfa82f",
+      "bytes": 839
+    },
+    {
+      "source": ".codex-bestfgs-launch/run_terminal_bench_tenth.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/run_terminal_bench_tenth.py",
+      "sha256": "16c0a5c9c292c5e17bbbb57a49a702eb667546a98febcf204cbfb654b9a0ab56",
+      "bytes": 6872
+    },
+    {
+      "source": ".codex-bestfgs-launch/start_swe100.sh",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/start_swe100.sh",
+      "sha256": "31b7096bc8b32429af9439b1667ab661135803aae8d3c5879f90542a1d017b7f",
+      "bytes": 1252
+    },
+    {
+      "source": ".codex-bestfgs-launch/SWE100.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/SWE100.md",
+      "sha256": "5ab155f9de3044ce93d8ac28ca9991d757926d58248d8d6b0b24793f4e368106",
+      "bytes": 8295
+    },
+    {
+      "source": ".codex-bestfgs-launch/swe_batch.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/swe_batch.py",
+      "sha256": "592fc1b25ada83b1f5e1fc11d04b705ffddda3aa231683ceb716c172ec58ef0d",
+      "bytes": 28285
+    },
+    {
+      "source": ".codex-bestfgs-launch/benchmark_splits/frozen_test_set_v1.json",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/benchmark_splits/frozen_test_set_v1.json",
+      "sha256": "56502da3f4b25af4be6289494f29053e799ac11fd0c7a7756a9ba11c7394d796",
+      "bytes": 2820
+    },
+    {
+      "source": ".codex-bestfgs-launch/benchmark_splits/frozen_test_set_v1.sha256",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/benchmark_splits/frozen_test_set_v1.sha256",
+      "sha256": "23e8656a8530751ae28e9da53015038aaa1cb0b6957fa2e42e911cc84f301260",
+      "bytes": 65
+    },
+    {
+      "source": ".codex-bestfgs-launch/benchmark_splits/README.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/benchmark_splits/README.md",
+      "sha256": "9315e44b4aec2d69258e1e44f77b2873ab9bd5c8aaba1764e3161e2ec64bac13",
+      "bytes": 603
+    },
+    {
+      "source": ".codex-bestfgs-launch/examples/demo_counter.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/examples/demo_counter.py",
+      "sha256": "04b86482fdcbed857c22b4b43c6981f21d687d98e290e79b02b9df249c6ffa41",
+      "bytes": 6557
+    },
+    {
+      "source": ".codex-bestfgs-launch/examples/notebook_tasks.template.json",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/examples/notebook_tasks.template.json",
+      "sha256": "2d7114e98c4e51c7ed18ae5ff0e48bfb348632c42ccc3c4b0175fb70e642cc2a",
+      "bytes": 427
+    },
+    {
+      "source": ".codex-bestfgs-launch/examples/source-preparation-status.json",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/examples/source-preparation-status.json",
+      "sha256": "56b904e7b2c9fd69f343bcf87d9b3975cab8d194fb1887d5f583f6ab0c05335a",
+      "bytes": 24537
+    },
+    {
+      "source": ".codex-bestfgs-launch/examples/swe100-plan.json",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/examples/swe100-plan.json",
+      "sha256": "f6a3ba53814b33632e940dc8719cbb1e9c7271b45d93d185182a4a7a9c735805",
+      "bytes": 541610
+    },
+    {
+      "source": ".codex-bestfgs-launch/examples/swe100-reserve-plan.json",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/examples/swe100-reserve-plan.json",
+      "sha256": "99ed86186f3448cbac8932f5940b9ed286a7b109b559fdaf8ad4b46f22c9d94d",
+      "bytes": 169457
+    },
+    {
+      "source": ".codex-bestfgs-launch/examples/__init__.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/examples/__init__.py",
+      "sha256": "3ba0db688d15cf2ed3ecd240bfe9397e35cb5356651eb76a43f215fc661c2fcd",
+      "bytes": 57
+    },
+    {
+      "source": ".codex-bestfgs-launch/src/bestfgs/agent.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/src/bestfgs/agent.py",
+      "sha256": "aa355246637ea9352ca69026fddd2d735f72609770e1f2f82bb4d1863111e3f4",
+      "bytes": 2315
+    },
+    {
+      "source": ".codex-bestfgs-launch/src/bestfgs/best_first.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/src/bestfgs/best_first.py",
+      "sha256": "f4c8cbf2e8504f8ee70cfa71e56625bb89bf262c1cf7d397f13f2f990e8d572d",
+      "bytes": 33573
+    },
+    {
+      "source": ".codex-bestfgs-launch/src/bestfgs/best_first_runtime.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/src/bestfgs/best_first_runtime.py",
+      "sha256": "cfa8954f1cd7b16b66411c609e6d4e395f4e3bdb0d812be877706ac566f464c1",
+      "bytes": 110668
+    },
+    {
+      "source": ".codex-bestfgs-launch/src/bestfgs/cli_config.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/src/bestfgs/cli_config.py",
+      "sha256": "8b7aeac7671cb3857795bfbcddd84dbdf171389b4693e99c3736c8406e0dca4f",
+      "bytes": 915
+    },
+    {
+      "source": ".codex-bestfgs-launch/src/bestfgs/environment.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/src/bestfgs/environment.py",
+      "sha256": "075981302fb54b9a72e6f68df2821a47adb07ba059c132b2e57c58e0c0d2c3d6",
+      "bytes": 23100
+    },
+    {
+      "source": ".codex-bestfgs-launch/src/bestfgs/experiment_metrics.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/src/bestfgs/experiment_metrics.py",
+      "sha256": "070dd9136c317e12ae1b9b692a974cb543b130d5132cd6c872c2d8e0f4c09f35",
+      "bytes": 7780
+    },
+    {
+      "source": ".codex-bestfgs-launch/src/bestfgs/metrics.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/src/bestfgs/metrics.py",
+      "sha256": "8ba89cb76f681928b33cfe83ad2e4919cf5855e8694ea3425d67289ee9cf4e98",
+      "bytes": 10313
+    },
+    {
+      "source": ".codex-bestfgs-launch/src/bestfgs/models.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/src/bestfgs/models.py",
+      "sha256": "de2b8037e851f198e343c268721aa179085e82540f3e890cdf8f8e42160726f7",
+      "bytes": 24531
+    },
+    {
+      "source": ".codex-bestfgs-launch/src/bestfgs/priority.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/src/bestfgs/priority.py",
+      "sha256": "72c47638c08a68c3ee33e72b0d17d81544e9cf4b408cadac47670dcc7c68c36a",
+      "bytes": 8020
+    },
+    {
+      "source": ".codex-bestfgs-launch/src/bestfgs/raw_baseline.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/src/bestfgs/raw_baseline.py",
+      "sha256": "56270ecca0f36770af3206cfa5bf4d368b921b1220fc8ee141076fa4e63a0d76",
+      "bytes": 7544
+    },
+    {
+      "source": ".codex-bestfgs-launch/src/bestfgs/retrac_adapter.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/src/bestfgs/retrac_adapter.py",
+      "sha256": "ee8f7719dbb8b35d1d9cbebd4cc9944b7a4b4549c5da0f2dd22688cf84dc12c8",
+      "bytes": 76919
+    },
+    {
+      "source": ".codex-bestfgs-launch/src/bestfgs/rl.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/src/bestfgs/rl.py",
+      "sha256": "a8e583f9178f8e57cdf790625c128f3a6f90f90f2abbfbc82a937b7d9de65522",
+      "bytes": 3234
+    },
+    {
+      "source": ".codex-bestfgs-launch/src/bestfgs/rules.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/src/bestfgs/rules.py",
+      "sha256": "e94f959fd6bb94c468f103ed7e40c13a7128df16cebd43e023733725018cba4a",
+      "bytes": 16722
+    },
+    {
+      "source": ".codex-bestfgs-launch/src/bestfgs/semantic.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/src/bestfgs/semantic.py",
+      "sha256": "94b079de7c08f3c0df0e2e65f92cf6c353b9e1cf02b6a052cf86bd7c2c9808e3",
+      "bytes": 51646
+    },
+    {
+      "source": ".codex-bestfgs-launch/src/bestfgs/success_judge.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/src/bestfgs/success_judge.py",
+      "sha256": "e497fb4bd41cc98243663e3deae318bcdd406dbb6c1e174d5227b8b2173e2a6c",
+      "bytes": 25591
+    },
+    {
+      "source": ".codex-bestfgs-launch/src/bestfgs/__init__.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/src/bestfgs/__init__.py",
+      "sha256": "faacc03c094a06582932ebbe70c2c7980d10fed3c0828caf3cbceca7ffb8a6e2",
+      "bytes": 911
+    },
+    {
+      "source": ".codex-bestfgs-launch/src/bestfgs/__main__.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/src/bestfgs/__main__.py",
+      "sha256": "667a7f7a559bd5c6f103995c951acfa41f37d53ccc5fc722a144c28006e0023d",
+      "bytes": 19130
+    },
+    {
+      "source": ".codex-bestfgs-launch/tests/test_architecture.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/tests/test_architecture.py",
+      "sha256": "435e2f2adc315f24428a0c793f90eb6402c6c112f2c146a492bcff625996f215",
+      "bytes": 1479
+    },
+    {
+      "source": ".codex-bestfgs-launch/tests/test_benchmark_runners.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/tests/test_benchmark_runners.py",
+      "sha256": "64ee0325cd416d8ae101cfc90f3892048312d5055a3d7d5b892d40e305950f48",
+      "bytes": 24997
+    },
+    {
+      "source": ".codex-bestfgs-launch/tests/test_benchmark_selection.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/tests/test_benchmark_selection.py",
+      "sha256": "628b73531d82fa3beea1ea3125ba22ca96bb0cb5963b2c37d3082862e63b21c1",
+      "bytes": 23755
+    },
+    {
+      "source": ".codex-bestfgs-launch/tests/test_best_first.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/tests/test_best_first.py",
+      "sha256": "dd4d2dee96bbfeccf73fa572d30d75c29c52e109d5ea8c84a6df050b302c1638",
+      "bytes": 27194
+    },
+    {
+      "source": ".codex-bestfgs-launch/tests/test_budget_runtime.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/tests/test_budget_runtime.py",
+      "sha256": "4fc00d3a4e03f1b67a99790245e2fbb9ab30f3ac55379ba51045634a62b2fff6",
+      "bytes": 15745
+    },
+    {
+      "source": ".codex-bestfgs-launch/tests/test_comparison_preparation.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/tests/test_comparison_preparation.py",
+      "sha256": "2fa847e26fbf8442c59a1c24cd7743114095709664a0caa1eb263a96e534c600",
+      "bytes": 5174
+    },
+    {
+      "source": ".codex-bestfgs-launch/tests/test_environment.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/tests/test_environment.py",
+      "sha256": "07f925b9f24c2c2915e9214bfa429bd0bf1e40cc5feb55d0bf988565c888a4e8",
+      "bytes": 14653
+    },
+    {
+      "source": ".codex-bestfgs-launch/tests/test_metrics.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/tests/test_metrics.py",
+      "sha256": "b297a1c8a50fa420e1a7f859a91817e210731d71a6a817e52868fc6a367e7d36",
+      "bytes": 7838
+    },
+    {
+      "source": ".codex-bestfgs-launch/tests/test_notebook_runner.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/tests/test_notebook_runner.py",
+      "sha256": "27de0b38f5bbc458bcc40119a634baf8a8690e302e5f5d7fe47bbfe8eb8d69c6",
+      "bytes": 14120
+    },
+    {
+      "source": ".codex-bestfgs-launch/tests/test_no_judge_entrypoints.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/tests/test_no_judge_entrypoints.py",
+      "sha256": "b8eda706e10bf1226b98df26ca9b6d3219aea9205862b1d07350000b2276b0eb",
+      "bytes": 3061
+    },
+    {
+      "source": ".codex-bestfgs-launch/tests/test_raw_comparison.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/tests/test_raw_comparison.py",
+      "sha256": "33a634749f7fbdf779dd1d4567f0d6d7c04250089753c6fb00d9250cffad60ab",
+      "bytes": 22668
+    },
+    {
+      "source": ".codex-bestfgs-launch/tests/test_retrac_adapter.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/tests/test_retrac_adapter.py",
+      "sha256": "bd52019465fdfe8f2529e076385e6085cb366adc31e625bb4ecab47c17a419b7",
+      "bytes": 32624
+    },
+    {
+      "source": ".codex-bestfgs-launch/tests/test_rl.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/tests/test_rl.py",
+      "sha256": "536476e676d147f4aa51e8f04c58823a0699dfab9350b59186d7b9dd45ecc034",
+      "bytes": 784
+    },
+    {
+      "source": ".codex-bestfgs-launch/tests/test_rules.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/tests/test_rules.py",
+      "sha256": "b39ca0e77440c8cfe0c764c6c16ca210c9ce6c2651b8166c1c0d7446a3ef1729",
+      "bytes": 11506
+    },
+    {
+      "source": ".codex-bestfgs-launch/tests/test_runtime.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/tests/test_runtime.py",
+      "sha256": "aad08a5a5eb9dabce888149a23785cae06c33327d24843e66bd28a9ba38a3f28",
+      "bytes": 38760
+    },
+    {
+      "source": ".codex-bestfgs-launch/tests/test_semantic.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/tests/test_semantic.py",
+      "sha256": "acd2a685feab798751b88025438995181cde2b8d12d7208ceec0f5ffe8a9d4b2",
+      "bytes": 22112
+    },
+    {
+      "source": ".codex-bestfgs-launch/tests/test_success_judge.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/tests/test_success_judge.py",
+      "sha256": "ed292bf3b3ec3aa720707d051bfac4533d821cdce02859589de48d6fe9963bec",
+      "bytes": 18508
+    },
+    {
+      "source": ".codex-bestfgs-launch/tests/test_swe_batch.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/tests/test_swe_batch.py",
+      "sha256": "e1da4cb28758845358013c9510789727565f29213ef3b53043ada0f542752631",
+      "bytes": 18383
+    },
+    {
+      "source": ".codex-bestfgs-launch/tests/test_swe_preparation.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-launch/tests/test_swe_preparation.py",
+      "sha256": "d484a1d76e85ba3e9152f0e5a6ef3fd07f6a917f292676d45d072291a584f4f0",
+      "bytes": 2210
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/.gitignore",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/.gitignore",
+      "sha256": "37b8500917e9a4312b20559433fe46d987235c3f1855cab8955b3f73cf37cd93",
+      "bytes": 86
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/BENCHMARKS.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/BENCHMARKS.md",
+      "sha256": "a58812f31ca27c820927003ec704a3f2d890abf41604418a52b1761737ca4007",
+      "bytes": 6815
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/benchmark_metrics.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/benchmark_metrics.py",
+      "sha256": "87fe55c9a4f7f83e13563979e8dc38a6e72514da2e6b0c3323c155ebc0715dcc",
+      "bytes": 12030
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/benchmark_runtime.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/benchmark_runtime.py",
+      "sha256": "63bcae7fa46ff1a94969b4a7b0dd44a420f7942d9a0a3a1296c34ebafefa376f",
+      "bytes": 3232
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/benchmark_selection.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/benchmark_selection.py",
+      "sha256": "30dfb9890282c2a8b50edb2f817e75fbb337a61003eef108d586e8b27d052010",
+      "bytes": 5376
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/benchmark_splits.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/benchmark_splits.py",
+      "sha256": "b30c07a8c9aaf8ec9532caf9efbc1876b2b326f80fecd45368814c25b5b19414",
+      "bytes": 3604
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/CHANGES_20260914.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/CHANGES_20260914.md",
+      "sha256": "b82b964dd46fd59b39fc4038925e47708f2e14f8691e9a98e57b27018814829e",
+      "bytes": 3822
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/CHANGES_20260915.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/CHANGES_20260915.md",
+      "sha256": "b304c146a9314f4769ac4c179d252686d7761192af47afd976dec8e3bfe4d8ac",
+      "bytes": 1414
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/CHANGES_20260918.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/CHANGES_20260918.md",
+      "sha256": "5fc956fcec36846f8a3e53d3ae758fdf3b0be6e129ade8af717481ce871768be",
+      "bytes": 1145
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/CUBE_STUDIO.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/CUBE_STUDIO.md",
+      "sha256": "58dad57588776b9c6ad822da0cb774f475813f28837d8e8d40874df7fe0b1f5a",
+      "bytes": 7155
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/prepare_swe_sympy.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/prepare_swe_sympy.py",
+      "sha256": "24a1d58a7f6fb57b5d8b1bfbdf3c761bc8b832e3275e3d3d9daff289965b27aa",
+      "bytes": 5975
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/pyproject.toml",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/pyproject.toml",
+      "sha256": "a9aea2ee05bbb0bfa8e33a789c2cf477a52a006c8279ab9b37d301e2202a27d2",
+      "bytes": 481
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/README.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/README.md",
+      "sha256": "8389a08d7c8c5e2f52208d9ae7d418749c30bf82a18eefb822222a9c259e220c",
+      "bytes": 8717
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/refresh_experiment_reports.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/refresh_experiment_reports.py",
+      "sha256": "197efc2e2852678e5933413ae335ed9ce968e8a8315516771325f48f21536b6d",
+      "bytes": 3260
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/run_notebook.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/run_notebook.py",
+      "sha256": "1db86d75a67f6329fcb5f4de745586cbfe9cb3d9dec01624226fde93330c1973",
+      "bytes": 19009
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/run_swebench.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/run_swebench.py",
+      "sha256": "b9c4cb0239297883606a4712740cc4e1f06c3d8383b65e7c8db16b90ffb723f9",
+      "bytes": 70191
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/run_swebench_18tasks.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/run_swebench_18tasks.py",
+      "sha256": "050d6f2c13b18d99c04321e15dba79a1a63d971e1d051612c9d90c711174a29d",
+      "bytes": 2318
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/run_swebench_2random_tasks.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/run_swebench_2random_tasks.py",
+      "sha256": "72e406b73a8fe911168c604798fdb4119640a2523b909bbe9d86732cf8728052",
+      "bytes": 2567
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/run_swebench_2tasks.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/run_swebench_2tasks.py",
+      "sha256": "3df075ab304248e705713eaaaec8f5a50d8ad4befec344b33811628008a0ad1e",
+      "bytes": 1018
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/run_swebench_frozen_test.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/run_swebench_frozen_test.py",
+      "sha256": "8c586d6856c44fd76066af54b975423cc5a257898495fa3215d8172716ebecb4",
+      "bytes": 1132
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/run_swebench_tenth.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/run_swebench_tenth.py",
+      "sha256": "a74b7d56f98595c60906020c0b1e79ee42f5bf9aeb9c2f18a217fd89cdd4637e",
+      "bytes": 2248
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/run_terminal_bench.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/run_terminal_bench.py",
+      "sha256": "7275bf766fad96224b4223cd687540830de482debd056da10161b6f97b369284",
+      "bytes": 65576
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/run_terminal_bench_2random_tasks.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/run_terminal_bench_2random_tasks.py",
+      "sha256": "2293b1f0d761eb1116b7f6affa93ee0049bd1234cc762c072c4b0a7e10f222a6",
+      "bytes": 3942
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/run_terminal_bench_2tasks.cmd",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/run_terminal_bench_2tasks.cmd",
+      "sha256": "55ddd2484c948fa8ce75e1ca57ddd3717f071d9a2a5406c6e9c2e547b5140b1f",
+      "bytes": 942
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/run_terminal_bench_frozen_test.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/run_terminal_bench_frozen_test.py",
+      "sha256": "1b0d73c28bc84bab50ab391bbaf5d6110fbb356ab3ff912c1f3f3b3d3bdfa82f",
+      "bytes": 839
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/run_terminal_bench_tenth.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/run_terminal_bench_tenth.py",
+      "sha256": "16c0a5c9c292c5e17bbbb57a49a702eb667546a98febcf204cbfb654b9a0ab56",
+      "bytes": 6872
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/benchmark_splits/frozen_test_set_v1.json",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/benchmark_splits/frozen_test_set_v1.json",
+      "sha256": "56502da3f4b25af4be6289494f29053e799ac11fd0c7a7756a9ba11c7394d796",
+      "bytes": 2820
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/benchmark_splits/frozen_test_set_v1.sha256",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/benchmark_splits/frozen_test_set_v1.sha256",
+      "sha256": "23e8656a8530751ae28e9da53015038aaa1cb0b6957fa2e42e911cc84f301260",
+      "bytes": 65
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/benchmark_splits/README.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/benchmark_splits/README.md",
+      "sha256": "9315e44b4aec2d69258e1e44f77b2873ab9bd5c8aaba1764e3161e2ec64bac13",
+      "bytes": 603
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/desktop-backup-20260918/CUBE_STUDIO.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/desktop-backup-20260918/CUBE_STUDIO.md",
+      "sha256": "07e8408cd5def10366ae2b4b40a2d3903615dce4c5e7489fd48f1c8a917aaec8",
+      "bytes": 6548
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/desktop-backup-20260918/README.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/desktop-backup-20260918/README.md",
+      "sha256": "4d19a6e6da2d4b1f7689862962f66abe8a5279c6b8e50e22b0fa3c33d9dd407c",
+      "bytes": 9799
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/desktop-backup-20260918/run_notebook.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/desktop-backup-20260918/run_notebook.py",
+      "sha256": "781bc42b14bc7997efff041f37eae6b694af90f05e20df1af9d5eb82b9eea059",
+      "bytes": 18077
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/desktop-backup-20260918/run_swebench.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/desktop-backup-20260918/run_swebench.py",
+      "sha256": "ca3b15a6e32534825aea2b633533d8843e0d0f9b8cf1636aaa5b404ae604fb4c",
+      "bytes": 70425
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/desktop-backup-20260918/run_terminal_bench.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/desktop-backup-20260918/run_terminal_bench.py",
+      "sha256": "78b866be843d5d1c555a5a986aee6a286b554a15c01695dc15331f527f0d927c",
+      "bytes": 65821
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/desktop-backup-20260918/src/bestfgs/retrac_adapter.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/desktop-backup-20260918/src/bestfgs/retrac_adapter.py",
+      "sha256": "5a95fa9089abdcc013b42f5c747f7ab38660f465dc31e04b7ef92d4ba3ff9810",
+      "bytes": 75253
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/desktop-backup-20260918/src/bestfgs/__main__.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/desktop-backup-20260918/src/bestfgs/__main__.py",
+      "sha256": "36ff4225e0a9520441df84ef937f888ff1cc8fffea785d8e22e3d5175dd4b4b8",
+      "bytes": 23173
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/desktop-backup-20260918/tests/test_notebook_runner.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/desktop-backup-20260918/tests/test_notebook_runner.py",
+      "sha256": "64575ba0bde7fd1d0a76204bbf6b7c428acfb48673c98ed40707a6a6e7456d4c",
+      "bytes": 12972
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/desktop-backup-swe-prep-20260918/benchmark_runtime.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/desktop-backup-swe-prep-20260918/benchmark_runtime.py",
+      "sha256": "fdcfd620e9dd27c626349e1458e760f5e096f939f05a2816d1581b9bdb81feaa",
+      "bytes": 3171
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/desktop-backup-swe-prep-20260918/CUBE_STUDIO.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/desktop-backup-swe-prep-20260918/CUBE_STUDIO.md",
+      "sha256": "d22f7fc9158b3935bcee38b366e901bd0884767193340a57a40fe06857b80b32",
+      "bytes": 6736
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/desktop-backup-swe-prep-20260918/run_notebook.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/desktop-backup-swe-prep-20260918/run_notebook.py",
+      "sha256": "3dc36e311c2dcfdcf283dd07f45eb9d31385da06c756d01d80b8ccb31abb7a4d",
+      "bytes": 18005
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/desktop-backup-swe-prep-20260918/tests/test_notebook_runner.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/desktop-backup-swe-prep-20260918/tests/test_notebook_runner.py",
+      "sha256": "8d6c28e53f713e882b660907b05c05c731445cec448ee4085e4070263ce94ff8",
+      "bytes": 13505
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/examples/demo_counter.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/examples/demo_counter.py",
+      "sha256": "04b86482fdcbed857c22b4b43c6981f21d687d98e290e79b02b9df249c6ffa41",
+      "bytes": 6557
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/examples/notebook_tasks.template.json",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/examples/notebook_tasks.template.json",
+      "sha256": "2d7114e98c4e51c7ed18ae5ff0e48bfb348632c42ccc3c4b0175fb70e642cc2a",
+      "bytes": 427
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/examples/__init__.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/examples/__init__.py",
+      "sha256": "3ba0db688d15cf2ed3ecd240bfe9397e35cb5356651eb76a43f215fc661c2fcd",
+      "bytes": 57
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/src/bestfgs/agent.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/src/bestfgs/agent.py",
+      "sha256": "aa355246637ea9352ca69026fddd2d735f72609770e1f2f82bb4d1863111e3f4",
+      "bytes": 2315
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/src/bestfgs/best_first.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/src/bestfgs/best_first.py",
+      "sha256": "f4c8cbf2e8504f8ee70cfa71e56625bb89bf262c1cf7d397f13f2f990e8d572d",
+      "bytes": 33573
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/src/bestfgs/best_first_runtime.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/src/bestfgs/best_first_runtime.py",
+      "sha256": "cfa8954f1cd7b16b66411c609e6d4e395f4e3bdb0d812be877706ac566f464c1",
+      "bytes": 110668
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/src/bestfgs/environment.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/src/bestfgs/environment.py",
+      "sha256": "e45486bd11d4b2bd86893d798f4c52f0e0146814eaf6488fc1e5d65ca396bfb0",
+      "bytes": 22407
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/src/bestfgs/metrics.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/src/bestfgs/metrics.py",
+      "sha256": "8ba89cb76f681928b33cfe83ad2e4919cf5855e8694ea3425d67289ee9cf4e98",
+      "bytes": 10313
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/src/bestfgs/models.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/src/bestfgs/models.py",
+      "sha256": "de2b8037e851f198e343c268721aa179085e82540f3e890cdf8f8e42160726f7",
+      "bytes": 24531
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/src/bestfgs/priority.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/src/bestfgs/priority.py",
+      "sha256": "72c47638c08a68c3ee33e72b0d17d81544e9cf4b408cadac47670dcc7c68c36a",
+      "bytes": 8020
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/src/bestfgs/retrac_adapter.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/src/bestfgs/retrac_adapter.py",
+      "sha256": "2037236a437ca38e4b063bdb759a58317f9049f0beec5a6a68baceafb3443cf0",
+      "bytes": 75343
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/src/bestfgs/rl.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/src/bestfgs/rl.py",
+      "sha256": "a8e583f9178f8e57cdf790625c128f3a6f90f90f2abbfbc82a937b7d9de65522",
+      "bytes": 3234
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/src/bestfgs/rules.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/src/bestfgs/rules.py",
+      "sha256": "e94f959fd6bb94c468f103ed7e40c13a7128df16cebd43e023733725018cba4a",
+      "bytes": 16722
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/src/bestfgs/semantic.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/src/bestfgs/semantic.py",
+      "sha256": "94b079de7c08f3c0df0e2e65f92cf6c353b9e1cf02b6a052cf86bd7c2c9808e3",
+      "bytes": 51646
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/src/bestfgs/success_judge.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/src/bestfgs/success_judge.py",
+      "sha256": "e497fb4bd41cc98243663e3deae318bcdd406dbb6c1e174d5227b8b2173e2a6c",
+      "bytes": 25591
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/src/bestfgs/__init__.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/src/bestfgs/__init__.py",
+      "sha256": "faacc03c094a06582932ebbe70c2c7980d10fed3c0828caf3cbceca7ffb8a6e2",
+      "bytes": 911
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/src/bestfgs/__main__.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/src/bestfgs/__main__.py",
+      "sha256": "6c09dc29451b393e8228904eabb4183e3b6b9005ff59b6e56756e7f1c3002750",
+      "bytes": 19414
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/tests/test_architecture.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/tests/test_architecture.py",
+      "sha256": "fb092ea8c2cd1b839406db7272aa2013c277d85c4934d0dc49d80fc57ca9bd85",
+      "bytes": 1402
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/tests/test_benchmark_runners.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/tests/test_benchmark_runners.py",
+      "sha256": "64ee0325cd416d8ae101cfc90f3892048312d5055a3d7d5b892d40e305950f48",
+      "bytes": 24997
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/tests/test_benchmark_selection.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/tests/test_benchmark_selection.py",
+      "sha256": "628b73531d82fa3beea1ea3125ba22ca96bb0cb5963b2c37d3082862e63b21c1",
+      "bytes": 23755
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/tests/test_best_first.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/tests/test_best_first.py",
+      "sha256": "dd4d2dee96bbfeccf73fa572d30d75c29c52e109d5ea8c84a6df050b302c1638",
+      "bytes": 27194
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/tests/test_budget_runtime.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/tests/test_budget_runtime.py",
+      "sha256": "4fc00d3a4e03f1b67a99790245e2fbb9ab30f3ac55379ba51045634a62b2fff6",
+      "bytes": 15745
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/tests/test_environment.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/tests/test_environment.py",
+      "sha256": "07f925b9f24c2c2915e9214bfa429bd0bf1e40cc5feb55d0bf988565c888a4e8",
+      "bytes": 14653
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/tests/test_metrics.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/tests/test_metrics.py",
+      "sha256": "b297a1c8a50fa420e1a7f859a91817e210731d71a6a817e52868fc6a367e7d36",
+      "bytes": 7838
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/tests/test_notebook_runner.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/tests/test_notebook_runner.py",
+      "sha256": "27de0b38f5bbc458bcc40119a634baf8a8690e302e5f5d7fe47bbfe8eb8d69c6",
+      "bytes": 14120
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/tests/test_no_judge_entrypoints.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/tests/test_no_judge_entrypoints.py",
+      "sha256": "b8eda706e10bf1226b98df26ca9b6d3219aea9205862b1d07350000b2276b0eb",
+      "bytes": 3061
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/tests/test_retrac_adapter.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/tests/test_retrac_adapter.py",
+      "sha256": "a48584879d5b84ad8ee34deac1482ca278fab38ce8fab0196dc5143619e89140",
+      "bytes": 32453
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/tests/test_rl.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/tests/test_rl.py",
+      "sha256": "536476e676d147f4aa51e8f04c58823a0699dfab9350b59186d7b9dd45ecc034",
+      "bytes": 784
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/tests/test_rules.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/tests/test_rules.py",
+      "sha256": "b39ca0e77440c8cfe0c764c6c16ca210c9ce6c2651b8166c1c0d7446a3ef1729",
+      "bytes": 11506
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/tests/test_runtime.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/tests/test_runtime.py",
+      "sha256": "aad08a5a5eb9dabce888149a23785cae06c33327d24843e66bd28a9ba38a3f28",
+      "bytes": 38760
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/tests/test_semantic.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/tests/test_semantic.py",
+      "sha256": "acd2a685feab798751b88025438995181cde2b8d12d7208ceec0f5ffe8a9d4b2",
+      "bytes": 22112
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/tests/test_success_judge.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/tests/test_success_judge.py",
+      "sha256": "ed292bf3b3ec3aa720707d051bfac4533d821cdce02859589de48d6fe9963bec",
+      "bytes": 18508
+    },
+    {
+      "source": ".codex-bestfgs-nojudge/tests/test_swe_preparation.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-nojudge/tests/test_swe_preparation.py",
+      "sha256": "d484a1d76e85ba3e9152f0e5a6ef3fd07f6a917f292676d45d072291a584f4f0",
+      "bytes": 2210
+    },
+    {
+      "source": ".codex-bestfgs-notebook/.gitignore",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/.gitignore",
+      "sha256": "37b8500917e9a4312b20559433fe46d987235c3f1855cab8955b3f73cf37cd93",
+      "bytes": 86
+    },
+    {
+      "source": ".codex-bestfgs-notebook/BENCHMARKS.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/BENCHMARKS.md",
+      "sha256": "a58812f31ca27c820927003ec704a3f2d890abf41604418a52b1761737ca4007",
+      "bytes": 6815
+    },
+    {
+      "source": ".codex-bestfgs-notebook/benchmark_metrics.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/benchmark_metrics.py",
+      "sha256": "87fe55c9a4f7f83e13563979e8dc38a6e72514da2e6b0c3323c155ebc0715dcc",
+      "bytes": 12030
+    },
+    {
+      "source": ".codex-bestfgs-notebook/benchmark_runtime.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/benchmark_runtime.py",
+      "sha256": "fdcfd620e9dd27c626349e1458e760f5e096f939f05a2816d1581b9bdb81feaa",
+      "bytes": 3171
+    },
+    {
+      "source": ".codex-bestfgs-notebook/benchmark_selection.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/benchmark_selection.py",
+      "sha256": "30dfb9890282c2a8b50edb2f817e75fbb337a61003eef108d586e8b27d052010",
+      "bytes": 5376
+    },
+    {
+      "source": ".codex-bestfgs-notebook/benchmark_splits.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/benchmark_splits.py",
+      "sha256": "b30c07a8c9aaf8ec9532caf9efbc1876b2b326f80fecd45368814c25b5b19414",
+      "bytes": 3604
+    },
+    {
+      "source": ".codex-bestfgs-notebook/CHANGES_20260914.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/CHANGES_20260914.md",
+      "sha256": "b82b964dd46fd59b39fc4038925e47708f2e14f8691e9a98e57b27018814829e",
+      "bytes": 3822
+    },
+    {
+      "source": ".codex-bestfgs-notebook/CHANGES_20260915.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/CHANGES_20260915.md",
+      "sha256": "b304c146a9314f4769ac4c179d252686d7761192af47afd976dec8e3bfe4d8ac",
+      "bytes": 1414
+    },
+    {
+      "source": ".codex-bestfgs-notebook/CUBE_STUDIO.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/CUBE_STUDIO.md",
+      "sha256": "07e8408cd5def10366ae2b4b40a2d3903615dce4c5e7489fd48f1c8a917aaec8",
+      "bytes": 6548
+    },
+    {
+      "source": ".codex-bestfgs-notebook/pyproject.toml",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/pyproject.toml",
+      "sha256": "a9aea2ee05bbb0bfa8e33a789c2cf477a52a006c8279ab9b37d301e2202a27d2",
+      "bytes": 481
+    },
+    {
+      "source": ".codex-bestfgs-notebook/README.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/README.md",
+      "sha256": "4d19a6e6da2d4b1f7689862962f66abe8a5279c6b8e50e22b0fa3c33d9dd407c",
+      "bytes": 9799
+    },
+    {
+      "source": ".codex-bestfgs-notebook/refresh_experiment_reports.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/refresh_experiment_reports.py",
+      "sha256": "197efc2e2852678e5933413ae335ed9ce968e8a8315516771325f48f21536b6d",
+      "bytes": 3260
+    },
+    {
+      "source": ".codex-bestfgs-notebook/run_notebook.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/run_notebook.py",
+      "sha256": "781bc42b14bc7997efff041f37eae6b694af90f05e20df1af9d5eb82b9eea059",
+      "bytes": 18077
+    },
+    {
+      "source": ".codex-bestfgs-notebook/run_swebench.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/run_swebench.py",
+      "sha256": "ca3b15a6e32534825aea2b633533d8843e0d0f9b8cf1636aaa5b404ae604fb4c",
+      "bytes": 70425
+    },
+    {
+      "source": ".codex-bestfgs-notebook/run_swebench_18tasks.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/run_swebench_18tasks.py",
+      "sha256": "050d6f2c13b18d99c04321e15dba79a1a63d971e1d051612c9d90c711174a29d",
+      "bytes": 2318
+    },
+    {
+      "source": ".codex-bestfgs-notebook/run_swebench_2random_tasks.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/run_swebench_2random_tasks.py",
+      "sha256": "72e406b73a8fe911168c604798fdb4119640a2523b909bbe9d86732cf8728052",
+      "bytes": 2567
+    },
+    {
+      "source": ".codex-bestfgs-notebook/run_swebench_2tasks.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/run_swebench_2tasks.py",
+      "sha256": "3df075ab304248e705713eaaaec8f5a50d8ad4befec344b33811628008a0ad1e",
+      "bytes": 1018
+    },
+    {
+      "source": ".codex-bestfgs-notebook/run_swebench_frozen_test.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/run_swebench_frozen_test.py",
+      "sha256": "8c586d6856c44fd76066af54b975423cc5a257898495fa3215d8172716ebecb4",
+      "bytes": 1132
+    },
+    {
+      "source": ".codex-bestfgs-notebook/run_swebench_tenth.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/run_swebench_tenth.py",
+      "sha256": "a74b7d56f98595c60906020c0b1e79ee42f5bf9aeb9c2f18a217fd89cdd4637e",
+      "bytes": 2248
+    },
+    {
+      "source": ".codex-bestfgs-notebook/run_terminal_bench.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/run_terminal_bench.py",
+      "sha256": "78b866be843d5d1c555a5a986aee6a286b554a15c01695dc15331f527f0d927c",
+      "bytes": 65821
+    },
+    {
+      "source": ".codex-bestfgs-notebook/run_terminal_bench_2random_tasks.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/run_terminal_bench_2random_tasks.py",
+      "sha256": "2293b1f0d761eb1116b7f6affa93ee0049bd1234cc762c072c4b0a7e10f222a6",
+      "bytes": 3942
+    },
+    {
+      "source": ".codex-bestfgs-notebook/run_terminal_bench_2tasks.cmd",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/run_terminal_bench_2tasks.cmd",
+      "sha256": "55ddd2484c948fa8ce75e1ca57ddd3717f071d9a2a5406c6e9c2e547b5140b1f",
+      "bytes": 942
+    },
+    {
+      "source": ".codex-bestfgs-notebook/run_terminal_bench_frozen_test.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/run_terminal_bench_frozen_test.py",
+      "sha256": "1b0d73c28bc84bab50ab391bbaf5d6110fbb356ab3ff912c1f3f3b3d3bdfa82f",
+      "bytes": 839
+    },
+    {
+      "source": ".codex-bestfgs-notebook/run_terminal_bench_tenth.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/run_terminal_bench_tenth.py",
+      "sha256": "16c0a5c9c292c5e17bbbb57a49a702eb667546a98febcf204cbfb654b9a0ab56",
+      "bytes": 6872
+    },
+    {
+      "source": ".codex-bestfgs-notebook/benchmark_splits/frozen_test_set_v1.json",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/benchmark_splits/frozen_test_set_v1.json",
+      "sha256": "56502da3f4b25af4be6289494f29053e799ac11fd0c7a7756a9ba11c7394d796",
+      "bytes": 2820
+    },
+    {
+      "source": ".codex-bestfgs-notebook/benchmark_splits/frozen_test_set_v1.sha256",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/benchmark_splits/frozen_test_set_v1.sha256",
+      "sha256": "23e8656a8530751ae28e9da53015038aaa1cb0b6957fa2e42e911cc84f301260",
+      "bytes": 65
+    },
+    {
+      "source": ".codex-bestfgs-notebook/benchmark_splits/README.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/benchmark_splits/README.md",
+      "sha256": "9315e44b4aec2d69258e1e44f77b2873ab9bd5c8aaba1764e3161e2ec64bac13",
+      "bytes": 603
+    },
+    {
+      "source": ".codex-bestfgs-notebook/desktop-backup-20260917/benchmark_runtime.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/desktop-backup-20260917/benchmark_runtime.py",
+      "sha256": "960199bb6591fe524feaa55cee0f0ab061bcba1121198c3aa614c83a5ccadb8b",
+      "bytes": 3110
+    },
+    {
+      "source": ".codex-bestfgs-notebook/desktop-backup-20260917/README.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/desktop-backup-20260917/README.md",
+      "sha256": "67c2044d5db5d38969a7fc4690c57e6516178b7b8a04c8402cfff0ffe5e81252",
+      "bytes": 9378
+    },
+    {
+      "source": ".codex-bestfgs-notebook/desktop-backup-20260917/run_swebench.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/desktop-backup-20260917/run_swebench.py",
+      "sha256": "277ce7e61537d662961f43cbc617b9a23f6f23fcd6755b7c05d4e530fe4f7edb",
+      "bytes": 70062
+    },
+    {
+      "source": ".codex-bestfgs-notebook/desktop-backup-20260917/run_terminal_bench.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/desktop-backup-20260917/run_terminal_bench.py",
+      "sha256": "cbb6d71d84e2cc7d8ddd57d4df711f939e972954723aec56a848aded6d9dd2b8",
+      "bytes": 65520
+    },
+    {
+      "source": ".codex-bestfgs-notebook/examples/demo_counter.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/examples/demo_counter.py",
+      "sha256": "04b86482fdcbed857c22b4b43c6981f21d687d98e290e79b02b9df249c6ffa41",
+      "bytes": 6557
+    },
+    {
+      "source": ".codex-bestfgs-notebook/examples/notebook_tasks.template.json",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/examples/notebook_tasks.template.json",
+      "sha256": "2d7114e98c4e51c7ed18ae5ff0e48bfb348632c42ccc3c4b0175fb70e642cc2a",
+      "bytes": 427
+    },
+    {
+      "source": ".codex-bestfgs-notebook/examples/__init__.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/examples/__init__.py",
+      "sha256": "3ba0db688d15cf2ed3ecd240bfe9397e35cb5356651eb76a43f215fc661c2fcd",
+      "bytes": 57
+    },
+    {
+      "source": ".codex-bestfgs-notebook/src/bestfgs/agent.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/src/bestfgs/agent.py",
+      "sha256": "aa355246637ea9352ca69026fddd2d735f72609770e1f2f82bb4d1863111e3f4",
+      "bytes": 2315
+    },
+    {
+      "source": ".codex-bestfgs-notebook/src/bestfgs/best_first.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/src/bestfgs/best_first.py",
+      "sha256": "f4c8cbf2e8504f8ee70cfa71e56625bb89bf262c1cf7d397f13f2f990e8d572d",
+      "bytes": 33573
+    },
+    {
+      "source": ".codex-bestfgs-notebook/src/bestfgs/best_first_runtime.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/src/bestfgs/best_first_runtime.py",
+      "sha256": "cfa8954f1cd7b16b66411c609e6d4e395f4e3bdb0d812be877706ac566f464c1",
+      "bytes": 110668
+    },
+    {
+      "source": ".codex-bestfgs-notebook/src/bestfgs/environment.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/src/bestfgs/environment.py",
+      "sha256": "e45486bd11d4b2bd86893d798f4c52f0e0146814eaf6488fc1e5d65ca396bfb0",
+      "bytes": 22407
+    },
+    {
+      "source": ".codex-bestfgs-notebook/src/bestfgs/metrics.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/src/bestfgs/metrics.py",
+      "sha256": "8ba89cb76f681928b33cfe83ad2e4919cf5855e8694ea3425d67289ee9cf4e98",
+      "bytes": 10313
+    },
+    {
+      "source": ".codex-bestfgs-notebook/src/bestfgs/models.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/src/bestfgs/models.py",
+      "sha256": "de2b8037e851f198e343c268721aa179085e82540f3e890cdf8f8e42160726f7",
+      "bytes": 24531
+    },
+    {
+      "source": ".codex-bestfgs-notebook/src/bestfgs/priority.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/src/bestfgs/priority.py",
+      "sha256": "72c47638c08a68c3ee33e72b0d17d81544e9cf4b408cadac47670dcc7c68c36a",
+      "bytes": 8020
+    },
+    {
+      "source": ".codex-bestfgs-notebook/src/bestfgs/retrac_adapter.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/src/bestfgs/retrac_adapter.py",
+      "sha256": "5a95fa9089abdcc013b42f5c747f7ab38660f465dc31e04b7ef92d4ba3ff9810",
+      "bytes": 75253
+    },
+    {
+      "source": ".codex-bestfgs-notebook/src/bestfgs/rl.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/src/bestfgs/rl.py",
+      "sha256": "a8e583f9178f8e57cdf790625c128f3a6f90f90f2abbfbc82a937b7d9de65522",
+      "bytes": 3234
+    },
+    {
+      "source": ".codex-bestfgs-notebook/src/bestfgs/rules.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/src/bestfgs/rules.py",
+      "sha256": "e94f959fd6bb94c468f103ed7e40c13a7128df16cebd43e023733725018cba4a",
+      "bytes": 16722
+    },
+    {
+      "source": ".codex-bestfgs-notebook/src/bestfgs/semantic.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/src/bestfgs/semantic.py",
+      "sha256": "94b079de7c08f3c0df0e2e65f92cf6c353b9e1cf02b6a052cf86bd7c2c9808e3",
+      "bytes": 51646
+    },
+    {
+      "source": ".codex-bestfgs-notebook/src/bestfgs/success_judge.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/src/bestfgs/success_judge.py",
+      "sha256": "e497fb4bd41cc98243663e3deae318bcdd406dbb6c1e174d5227b8b2173e2a6c",
+      "bytes": 25591
+    },
+    {
+      "source": ".codex-bestfgs-notebook/src/bestfgs/__init__.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/src/bestfgs/__init__.py",
+      "sha256": "faacc03c094a06582932ebbe70c2c7980d10fed3c0828caf3cbceca7ffb8a6e2",
+      "bytes": 911
+    },
+    {
+      "source": ".codex-bestfgs-notebook/src/bestfgs/__main__.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/src/bestfgs/__main__.py",
+      "sha256": "36ff4225e0a9520441df84ef937f888ff1cc8fffea785d8e22e3d5175dd4b4b8",
+      "bytes": 23173
+    },
+    {
+      "source": ".codex-bestfgs-notebook/tests/test_architecture.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/tests/test_architecture.py",
+      "sha256": "fb092ea8c2cd1b839406db7272aa2013c277d85c4934d0dc49d80fc57ca9bd85",
+      "bytes": 1402
+    },
+    {
+      "source": ".codex-bestfgs-notebook/tests/test_benchmark_runners.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/tests/test_benchmark_runners.py",
+      "sha256": "64ee0325cd416d8ae101cfc90f3892048312d5055a3d7d5b892d40e305950f48",
+      "bytes": 24997
+    },
+    {
+      "source": ".codex-bestfgs-notebook/tests/test_benchmark_selection.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/tests/test_benchmark_selection.py",
+      "sha256": "628b73531d82fa3beea1ea3125ba22ca96bb0cb5963b2c37d3082862e63b21c1",
+      "bytes": 23755
+    },
+    {
+      "source": ".codex-bestfgs-notebook/tests/test_best_first.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/tests/test_best_first.py",
+      "sha256": "dd4d2dee96bbfeccf73fa572d30d75c29c52e109d5ea8c84a6df050b302c1638",
+      "bytes": 27194
+    },
+    {
+      "source": ".codex-bestfgs-notebook/tests/test_budget_runtime.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/tests/test_budget_runtime.py",
+      "sha256": "4fc00d3a4e03f1b67a99790245e2fbb9ab30f3ac55379ba51045634a62b2fff6",
+      "bytes": 15745
+    },
+    {
+      "source": ".codex-bestfgs-notebook/tests/test_environment.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/tests/test_environment.py",
+      "sha256": "07f925b9f24c2c2915e9214bfa429bd0bf1e40cc5feb55d0bf988565c888a4e8",
+      "bytes": 14653
+    },
+    {
+      "source": ".codex-bestfgs-notebook/tests/test_metrics.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/tests/test_metrics.py",
+      "sha256": "b297a1c8a50fa420e1a7f859a91817e210731d71a6a817e52868fc6a367e7d36",
+      "bytes": 7838
+    },
+    {
+      "source": ".codex-bestfgs-notebook/tests/test_notebook_runner.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/tests/test_notebook_runner.py",
+      "sha256": "64575ba0bde7fd1d0a76204bbf6b7c428acfb48673c98ed40707a6a6e7456d4c",
+      "bytes": 12972
+    },
+    {
+      "source": ".codex-bestfgs-notebook/tests/test_retrac_adapter.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/tests/test_retrac_adapter.py",
+      "sha256": "a48584879d5b84ad8ee34deac1482ca278fab38ce8fab0196dc5143619e89140",
+      "bytes": 32453
+    },
+    {
+      "source": ".codex-bestfgs-notebook/tests/test_rl.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/tests/test_rl.py",
+      "sha256": "536476e676d147f4aa51e8f04c58823a0699dfab9350b59186d7b9dd45ecc034",
+      "bytes": 784
+    },
+    {
+      "source": ".codex-bestfgs-notebook/tests/test_rules.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/tests/test_rules.py",
+      "sha256": "b39ca0e77440c8cfe0c764c6c16ca210c9ce6c2651b8166c1c0d7446a3ef1729",
+      "bytes": 11506
+    },
+    {
+      "source": ".codex-bestfgs-notebook/tests/test_runtime.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/tests/test_runtime.py",
+      "sha256": "aad08a5a5eb9dabce888149a23785cae06c33327d24843e66bd28a9ba38a3f28",
+      "bytes": 38760
+    },
+    {
+      "source": ".codex-bestfgs-notebook/tests/test_semantic.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/tests/test_semantic.py",
+      "sha256": "acd2a685feab798751b88025438995181cde2b8d12d7208ceec0f5ffe8a9d4b2",
+      "bytes": 22112
+    },
+    {
+      "source": ".codex-bestfgs-notebook/tests/test_success_judge.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-notebook/tests/test_success_judge.py",
+      "sha256": "ed292bf3b3ec3aa720707d051bfac4533d821cdce02859589de48d6fe9963bec",
+      "bytes": 18508
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/.gitignore",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/.gitignore",
+      "sha256": "37b8500917e9a4312b20559433fe46d987235c3f1855cab8955b3f73cf37cd93",
+      "bytes": 86
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/BASELINE_COMPARISON.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/BASELINE_COMPARISON.md",
+      "sha256": "08edbd0907f70f6993e468c347511bbd36f31729dd8a3712515acd00886dadff",
+      "bytes": 13713
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/BENCHMARKS.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/BENCHMARKS.md",
+      "sha256": "a58812f31ca27c820927003ec704a3f2d890abf41604418a52b1761737ca4007",
+      "bytes": 6815
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/benchmark_metrics.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/benchmark_metrics.py",
+      "sha256": "87fe55c9a4f7f83e13563979e8dc38a6e72514da2e6b0c3323c155ebc0715dcc",
+      "bytes": 12030
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/benchmark_runtime.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/benchmark_runtime.py",
+      "sha256": "5f6c1993ec9ccdbedd2acdecc5f42c81e73d078492ef7eb4f0651d51fcffae34",
+      "bytes": 3618
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/benchmark_selection.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/benchmark_selection.py",
+      "sha256": "30dfb9890282c2a8b50edb2f817e75fbb337a61003eef108d586e8b27d052010",
+      "bytes": 5376
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/benchmark_splits.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/benchmark_splits.py",
+      "sha256": "b30c07a8c9aaf8ec9532caf9efbc1876b2b326f80fecd45368814c25b5b19414",
+      "bytes": 3604
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/build_swe_batch.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/build_swe_batch.py",
+      "sha256": "8e4c9c23e03527ae43f0dec104f1411257e0c2180d7026435ecf143d1a6b5d3f",
+      "bytes": 4090
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/CHANGES_20260914.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/CHANGES_20260914.md",
+      "sha256": "b82b964dd46fd59b39fc4038925e47708f2e14f8691e9a98e57b27018814829e",
+      "bytes": 3822
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/CHANGES_20260915.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/CHANGES_20260915.md",
+      "sha256": "b304c146a9314f4769ac4c179d252686d7761192af47afd976dec8e3bfe4d8ac",
+      "bytes": 1414
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/CHANGES_20260918.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/CHANGES_20260918.md",
+      "sha256": "5fc956fcec36846f8a3e53d3ae758fdf3b0be6e129ade8af717481ce871768be",
+      "bytes": 1145
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/compare_experiments.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/compare_experiments.py",
+      "sha256": "009d80e593c4be176ee4ec5be6c7daf5642f6107122040f4da7470591f1d0f85",
+      "bytes": 12143
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/CUBE_STUDIO.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/CUBE_STUDIO.md",
+      "sha256": "58dad57588776b9c6ad822da0cb774f475813f28837d8e8d40874df7fe0b1f5a",
+      "bytes": 7155
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/evaluate_swe100.ps1",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/evaluate_swe100.ps1",
+      "sha256": "eb2a25d168f0208ec6ff101491156de53b34f7cfea323496b2c8aa6f03805a0f",
+      "bytes": 1260
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/evaluate_swe_batch.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/evaluate_swe_batch.py",
+      "sha256": "d9c5c0427939586d0fafb0d6ed0abb27312ed310fbec15d8d002a8add5b30d35",
+      "bytes": 15165
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/PREPARATION_REPAIR.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/PREPARATION_REPAIR.md",
+      "sha256": "6b8c5282ee36a0f30ae9892c987c561be72038783222ff9a51e6dcaa333f98a2",
+      "bytes": 2486
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/prepare_swe_sympy.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/prepare_swe_sympy.py",
+      "sha256": "24a1d58a7f6fb57b5d8b1bfbdf3c761bc8b832e3275e3d3d9daff289965b27aa",
+      "bytes": 5975
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/pyproject.toml",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/pyproject.toml",
+      "sha256": "6f5f49044499194965d54aeb8fdcc8b79234b4a3626611ff17888daf0f6b029c",
+      "bytes": 528
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/README.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/README.md",
+      "sha256": "b817dc4aaef2fd4ed5b7aec3f879d4bac360cfca3c370ba396afe41489ceab34",
+      "bytes": 9147
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/refresh_experiment_reports.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/refresh_experiment_reports.py",
+      "sha256": "197efc2e2852678e5933413ae335ed9ce968e8a8315516771325f48f21536b6d",
+      "bytes": 3260
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/repair_swe_preparation.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/repair_swe_preparation.py",
+      "sha256": "62c45b9afe05c58cfd97be480c6b6605607f352b073e28cfbcb70314b35b9835",
+      "bytes": 6652
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/run_comparison.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/run_comparison.py",
+      "sha256": "c62360bfcae64e157a9c3a75c3ce625b40f05d8db2f1f9313518702dc5227e6f",
+      "bytes": 14363
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/run_notebook.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/run_notebook.py",
+      "sha256": "0380fc6ef50b7a35efd64d0a48dff8e2dc8e2c664007d0e18a98ed5e5976c35a",
+      "bytes": 20334
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/run_swebench.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/run_swebench.py",
+      "sha256": "b9c4cb0239297883606a4712740cc4e1f06c3d8383b65e7c8db16b90ffb723f9",
+      "bytes": 70191
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/run_swebench_18tasks.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/run_swebench_18tasks.py",
+      "sha256": "050d6f2c13b18d99c04321e15dba79a1a63d971e1d051612c9d90c711174a29d",
+      "bytes": 2318
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/run_swebench_2random_tasks.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/run_swebench_2random_tasks.py",
+      "sha256": "72e406b73a8fe911168c604798fdb4119640a2523b909bbe9d86732cf8728052",
+      "bytes": 2567
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/run_swebench_2tasks.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/run_swebench_2tasks.py",
+      "sha256": "3df075ab304248e705713eaaaec8f5a50d8ad4befec344b33811628008a0ad1e",
+      "bytes": 1018
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/run_swebench_frozen_test.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/run_swebench_frozen_test.py",
+      "sha256": "8c586d6856c44fd76066af54b975423cc5a257898495fa3215d8172716ebecb4",
+      "bytes": 1132
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/run_swebench_tenth.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/run_swebench_tenth.py",
+      "sha256": "a74b7d56f98595c60906020c0b1e79ee42f5bf9aeb9c2f18a217fd89cdd4637e",
+      "bytes": 2248
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/run_terminal_bench.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/run_terminal_bench.py",
+      "sha256": "7275bf766fad96224b4223cd687540830de482debd056da10161b6f97b369284",
+      "bytes": 65576
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/run_terminal_bench_2random_tasks.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/run_terminal_bench_2random_tasks.py",
+      "sha256": "2293b1f0d761eb1116b7f6affa93ee0049bd1234cc762c072c4b0a7e10f222a6",
+      "bytes": 3942
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/run_terminal_bench_2tasks.cmd",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/run_terminal_bench_2tasks.cmd",
+      "sha256": "55ddd2484c948fa8ce75e1ca57ddd3717f071d9a2a5406c6e9c2e547b5140b1f",
+      "bytes": 942
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/run_terminal_bench_frozen_test.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/run_terminal_bench_frozen_test.py",
+      "sha256": "1b0d73c28bc84bab50ab391bbaf5d6110fbb356ab3ff912c1f3f3b3d3bdfa82f",
+      "bytes": 839
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/run_terminal_bench_tenth.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/run_terminal_bench_tenth.py",
+      "sha256": "16c0a5c9c292c5e17bbbb57a49a702eb667546a98febcf204cbfb654b9a0ab56",
+      "bytes": 6872
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/start_swe100.sh",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/start_swe100.sh",
+      "sha256": "31b7096bc8b32429af9439b1667ab661135803aae8d3c5879f90542a1d017b7f",
+      "bytes": 1252
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/SWE100.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/SWE100.md",
+      "sha256": "5ab155f9de3044ce93d8ac28ca9991d757926d58248d8d6b0b24793f4e368106",
+      "bytes": 8295
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/swe_batch.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/swe_batch.py",
+      "sha256": "d863b5fed188853d49f1a5739ea75ceb7a55c3656c14a2eace94e09c5cb1333d",
+      "bytes": 28244
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/benchmark_splits/frozen_test_set_v1.json",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/benchmark_splits/frozen_test_set_v1.json",
+      "sha256": "56502da3f4b25af4be6289494f29053e799ac11fd0c7a7756a9ba11c7394d796",
+      "bytes": 2820
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/benchmark_splits/frozen_test_set_v1.sha256",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/benchmark_splits/frozen_test_set_v1.sha256",
+      "sha256": "23e8656a8530751ae28e9da53015038aaa1cb0b6957fa2e42e911cc84f301260",
+      "bytes": 65
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/benchmark_splits/README.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/benchmark_splits/README.md",
+      "sha256": "9315e44b4aec2d69258e1e44f77b2873ab9bd5c8aaba1764e3161e2ec64bac13",
+      "bytes": 603
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/examples/demo_counter.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/examples/demo_counter.py",
+      "sha256": "04b86482fdcbed857c22b4b43c6981f21d687d98e290e79b02b9df249c6ffa41",
+      "bytes": 6557
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/examples/notebook_tasks.template.json",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/examples/notebook_tasks.template.json",
+      "sha256": "2d7114e98c4e51c7ed18ae5ff0e48bfb348632c42ccc3c4b0175fb70e642cc2a",
+      "bytes": 427
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/examples/swe100-plan.json",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/examples/swe100-plan.json",
+      "sha256": "f6a3ba53814b33632e940dc8719cbb1e9c7271b45d93d185182a4a7a9c735805",
+      "bytes": 541610
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/examples/__init__.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/examples/__init__.py",
+      "sha256": "3ba0db688d15cf2ed3ecd240bfe9397e35cb5356651eb76a43f215fc661c2fcd",
+      "bytes": 57
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/src/bestfgs/agent.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/src/bestfgs/agent.py",
+      "sha256": "aa355246637ea9352ca69026fddd2d735f72609770e1f2f82bb4d1863111e3f4",
+      "bytes": 2315
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/src/bestfgs/best_first.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/src/bestfgs/best_first.py",
+      "sha256": "f4c8cbf2e8504f8ee70cfa71e56625bb89bf262c1cf7d397f13f2f990e8d572d",
+      "bytes": 33573
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/src/bestfgs/best_first_runtime.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/src/bestfgs/best_first_runtime.py",
+      "sha256": "cfa8954f1cd7b16b66411c609e6d4e395f4e3bdb0d812be877706ac566f464c1",
+      "bytes": 110668
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/src/bestfgs/cli_config.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/src/bestfgs/cli_config.py",
+      "sha256": "8b7aeac7671cb3857795bfbcddd84dbdf171389b4693e99c3736c8406e0dca4f",
+      "bytes": 915
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/src/bestfgs/environment.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/src/bestfgs/environment.py",
+      "sha256": "075981302fb54b9a72e6f68df2821a47adb07ba059c132b2e57c58e0c0d2c3d6",
+      "bytes": 23100
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/src/bestfgs/experiment_metrics.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/src/bestfgs/experiment_metrics.py",
+      "sha256": "070dd9136c317e12ae1b9b692a974cb543b130d5132cd6c872c2d8e0f4c09f35",
+      "bytes": 7780
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/src/bestfgs/metrics.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/src/bestfgs/metrics.py",
+      "sha256": "8ba89cb76f681928b33cfe83ad2e4919cf5855e8694ea3425d67289ee9cf4e98",
+      "bytes": 10313
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/src/bestfgs/models.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/src/bestfgs/models.py",
+      "sha256": "de2b8037e851f198e343c268721aa179085e82540f3e890cdf8f8e42160726f7",
+      "bytes": 24531
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/src/bestfgs/priority.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/src/bestfgs/priority.py",
+      "sha256": "72c47638c08a68c3ee33e72b0d17d81544e9cf4b408cadac47670dcc7c68c36a",
+      "bytes": 8020
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/src/bestfgs/raw_baseline.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/src/bestfgs/raw_baseline.py",
+      "sha256": "56270ecca0f36770af3206cfa5bf4d368b921b1220fc8ee141076fa4e63a0d76",
+      "bytes": 7544
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/src/bestfgs/retrac_adapter.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/src/bestfgs/retrac_adapter.py",
+      "sha256": "ee8f7719dbb8b35d1d9cbebd4cc9944b7a4b4549c5da0f2dd22688cf84dc12c8",
+      "bytes": 76919
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/src/bestfgs/rl.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/src/bestfgs/rl.py",
+      "sha256": "a8e583f9178f8e57cdf790625c128f3a6f90f90f2abbfbc82a937b7d9de65522",
+      "bytes": 3234
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/src/bestfgs/rules.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/src/bestfgs/rules.py",
+      "sha256": "e94f959fd6bb94c468f103ed7e40c13a7128df16cebd43e023733725018cba4a",
+      "bytes": 16722
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/src/bestfgs/semantic.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/src/bestfgs/semantic.py",
+      "sha256": "94b079de7c08f3c0df0e2e65f92cf6c353b9e1cf02b6a052cf86bd7c2c9808e3",
+      "bytes": 51646
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/src/bestfgs/success_judge.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/src/bestfgs/success_judge.py",
+      "sha256": "e497fb4bd41cc98243663e3deae318bcdd406dbb6c1e174d5227b8b2173e2a6c",
+      "bytes": 25591
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/src/bestfgs/__init__.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/src/bestfgs/__init__.py",
+      "sha256": "faacc03c094a06582932ebbe70c2c7980d10fed3c0828caf3cbceca7ffb8a6e2",
+      "bytes": 911
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/src/bestfgs/__main__.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/src/bestfgs/__main__.py",
+      "sha256": "667a7f7a559bd5c6f103995c951acfa41f37d53ccc5fc722a144c28006e0023d",
+      "bytes": 19130
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/tests/test_architecture.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/tests/test_architecture.py",
+      "sha256": "435e2f2adc315f24428a0c793f90eb6402c6c112f2c146a492bcff625996f215",
+      "bytes": 1479
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/tests/test_benchmark_runners.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/tests/test_benchmark_runners.py",
+      "sha256": "64ee0325cd416d8ae101cfc90f3892048312d5055a3d7d5b892d40e305950f48",
+      "bytes": 24997
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/tests/test_benchmark_selection.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/tests/test_benchmark_selection.py",
+      "sha256": "628b73531d82fa3beea1ea3125ba22ca96bb0cb5963b2c37d3082862e63b21c1",
+      "bytes": 23755
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/tests/test_best_first.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/tests/test_best_first.py",
+      "sha256": "dd4d2dee96bbfeccf73fa572d30d75c29c52e109d5ea8c84a6df050b302c1638",
+      "bytes": 27194
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/tests/test_budget_runtime.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/tests/test_budget_runtime.py",
+      "sha256": "4fc00d3a4e03f1b67a99790245e2fbb9ab30f3ac55379ba51045634a62b2fff6",
+      "bytes": 15745
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/tests/test_environment.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/tests/test_environment.py",
+      "sha256": "07f925b9f24c2c2915e9214bfa429bd0bf1e40cc5feb55d0bf988565c888a4e8",
+      "bytes": 14653
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/tests/test_metrics.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/tests/test_metrics.py",
+      "sha256": "b297a1c8a50fa420e1a7f859a91817e210731d71a6a817e52868fc6a367e7d36",
+      "bytes": 7838
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/tests/test_notebook_runner.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/tests/test_notebook_runner.py",
+      "sha256": "27de0b38f5bbc458bcc40119a634baf8a8690e302e5f5d7fe47bbfe8eb8d69c6",
+      "bytes": 14120
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/tests/test_no_judge_entrypoints.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/tests/test_no_judge_entrypoints.py",
+      "sha256": "b8eda706e10bf1226b98df26ca9b6d3219aea9205862b1d07350000b2276b0eb",
+      "bytes": 3061
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/tests/test_raw_comparison.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/tests/test_raw_comparison.py",
+      "sha256": "33a634749f7fbdf779dd1d4567f0d6d7c04250089753c6fb00d9250cffad60ab",
+      "bytes": 22668
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/tests/test_retrac_adapter.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/tests/test_retrac_adapter.py",
+      "sha256": "bd52019465fdfe8f2529e076385e6085cb366adc31e625bb4ecab47c17a419b7",
+      "bytes": 32624
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/tests/test_rl.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/tests/test_rl.py",
+      "sha256": "536476e676d147f4aa51e8f04c58823a0699dfab9350b59186d7b9dd45ecc034",
+      "bytes": 784
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/tests/test_rules.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/tests/test_rules.py",
+      "sha256": "b39ca0e77440c8cfe0c764c6c16ca210c9ce6c2651b8166c1c0d7446a3ef1729",
+      "bytes": 11506
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/tests/test_runtime.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/tests/test_runtime.py",
+      "sha256": "aad08a5a5eb9dabce888149a23785cae06c33327d24843e66bd28a9ba38a3f28",
+      "bytes": 38760
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/tests/test_semantic.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/tests/test_semantic.py",
+      "sha256": "acd2a685feab798751b88025438995181cde2b8d12d7208ceec0f5ffe8a9d4b2",
+      "bytes": 22112
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/tests/test_success_judge.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/tests/test_success_judge.py",
+      "sha256": "ed292bf3b3ec3aa720707d051bfac4533d821cdce02859589de48d6fe9963bec",
+      "bytes": 18508
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/tests/test_swe_batch.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/tests/test_swe_batch.py",
+      "sha256": "e1da4cb28758845358013c9510789727565f29213ef3b53043ada0f542752631",
+      "bytes": 18383
+    },
+    {
+      "source": ".codex-bestfgs-prepfix/tests/test_swe_preparation.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-prepfix/tests/test_swe_preparation.py",
+      "sha256": "d484a1d76e85ba3e9152f0e5a6ef3fd07f6a917f292676d45d072291a584f4f0",
+      "bytes": 2210
+    },
+    {
+      "source": ".codex-bestfgs-reduction/.gitignore",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/.gitignore",
+      "sha256": "37b8500917e9a4312b20559433fe46d987235c3f1855cab8955b3f73cf37cd93",
+      "bytes": 86
+    },
+    {
+      "source": ".codex-bestfgs-reduction/BENCHMARKS.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/BENCHMARKS.md",
+      "sha256": "a58812f31ca27c820927003ec704a3f2d890abf41604418a52b1761737ca4007",
+      "bytes": 6815
+    },
+    {
+      "source": ".codex-bestfgs-reduction/benchmark_metrics.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/benchmark_metrics.py",
+      "sha256": "87fe55c9a4f7f83e13563979e8dc38a6e72514da2e6b0c3323c155ebc0715dcc",
+      "bytes": 12030
+    },
+    {
+      "source": ".codex-bestfgs-reduction/benchmark_runtime.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/benchmark_runtime.py",
+      "sha256": "960199bb6591fe524feaa55cee0f0ab061bcba1121198c3aa614c83a5ccadb8b",
+      "bytes": 3110
+    },
+    {
+      "source": ".codex-bestfgs-reduction/benchmark_selection.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/benchmark_selection.py",
+      "sha256": "30dfb9890282c2a8b50edb2f817e75fbb337a61003eef108d586e8b27d052010",
+      "bytes": 5376
+    },
+    {
+      "source": ".codex-bestfgs-reduction/benchmark_splits.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/benchmark_splits.py",
+      "sha256": "b30c07a8c9aaf8ec9532caf9efbc1876b2b326f80fecd45368814c25b5b19414",
+      "bytes": 3604
+    },
+    {
+      "source": ".codex-bestfgs-reduction/CHANGES_20260914.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/CHANGES_20260914.md",
+      "sha256": "b82b964dd46fd59b39fc4038925e47708f2e14f8691e9a98e57b27018814829e",
+      "bytes": 3822
+    },
+    {
+      "source": ".codex-bestfgs-reduction/CHANGES_20260915.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/CHANGES_20260915.md",
+      "sha256": "b304c146a9314f4769ac4c179d252686d7761192af47afd976dec8e3bfe4d8ac",
+      "bytes": 1414
+    },
+    {
+      "source": ".codex-bestfgs-reduction/pyproject.toml",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/pyproject.toml",
+      "sha256": "a9aea2ee05bbb0bfa8e33a789c2cf477a52a006c8279ab9b37d301e2202a27d2",
+      "bytes": 481
+    },
+    {
+      "source": ".codex-bestfgs-reduction/README.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/README.md",
+      "sha256": "67c2044d5db5d38969a7fc4690c57e6516178b7b8a04c8402cfff0ffe5e81252",
+      "bytes": 9378
+    },
+    {
+      "source": ".codex-bestfgs-reduction/refresh_experiment_reports.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/refresh_experiment_reports.py",
+      "sha256": "197efc2e2852678e5933413ae335ed9ce968e8a8315516771325f48f21536b6d",
+      "bytes": 3260
+    },
+    {
+      "source": ".codex-bestfgs-reduction/run_swebench.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/run_swebench.py",
+      "sha256": "277ce7e61537d662961f43cbc617b9a23f6f23fcd6755b7c05d4e530fe4f7edb",
+      "bytes": 70062
+    },
+    {
+      "source": ".codex-bestfgs-reduction/run_swebench_18tasks.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/run_swebench_18tasks.py",
+      "sha256": "050d6f2c13b18d99c04321e15dba79a1a63d971e1d051612c9d90c711174a29d",
+      "bytes": 2318
+    },
+    {
+      "source": ".codex-bestfgs-reduction/run_swebench_2random_tasks.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/run_swebench_2random_tasks.py",
+      "sha256": "72e406b73a8fe911168c604798fdb4119640a2523b909bbe9d86732cf8728052",
+      "bytes": 2567
+    },
+    {
+      "source": ".codex-bestfgs-reduction/run_swebench_2tasks.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/run_swebench_2tasks.py",
+      "sha256": "3df075ab304248e705713eaaaec8f5a50d8ad4befec344b33811628008a0ad1e",
+      "bytes": 1018
+    },
+    {
+      "source": ".codex-bestfgs-reduction/run_swebench_frozen_test.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/run_swebench_frozen_test.py",
+      "sha256": "8c586d6856c44fd76066af54b975423cc5a257898495fa3215d8172716ebecb4",
+      "bytes": 1132
+    },
+    {
+      "source": ".codex-bestfgs-reduction/run_swebench_tenth.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/run_swebench_tenth.py",
+      "sha256": "a74b7d56f98595c60906020c0b1e79ee42f5bf9aeb9c2f18a217fd89cdd4637e",
+      "bytes": 2248
+    },
+    {
+      "source": ".codex-bestfgs-reduction/run_terminal_bench.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/run_terminal_bench.py",
+      "sha256": "cbb6d71d84e2cc7d8ddd57d4df711f939e972954723aec56a848aded6d9dd2b8",
+      "bytes": 65520
+    },
+    {
+      "source": ".codex-bestfgs-reduction/run_terminal_bench_2random_tasks.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/run_terminal_bench_2random_tasks.py",
+      "sha256": "2293b1f0d761eb1116b7f6affa93ee0049bd1234cc762c072c4b0a7e10f222a6",
+      "bytes": 3942
+    },
+    {
+      "source": ".codex-bestfgs-reduction/run_terminal_bench_2tasks.cmd",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/run_terminal_bench_2tasks.cmd",
+      "sha256": "55ddd2484c948fa8ce75e1ca57ddd3717f071d9a2a5406c6e9c2e547b5140b1f",
+      "bytes": 942
+    },
+    {
+      "source": ".codex-bestfgs-reduction/run_terminal_bench_frozen_test.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/run_terminal_bench_frozen_test.py",
+      "sha256": "1b0d73c28bc84bab50ab391bbaf5d6110fbb356ab3ff912c1f3f3b3d3bdfa82f",
+      "bytes": 839
+    },
+    {
+      "source": ".codex-bestfgs-reduction/run_terminal_bench_tenth.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/run_terminal_bench_tenth.py",
+      "sha256": "16c0a5c9c292c5e17bbbb57a49a702eb667546a98febcf204cbfb654b9a0ab56",
+      "bytes": 6872
+    },
+    {
+      "source": ".codex-bestfgs-reduction/benchmark_splits/frozen_test_set_v1.json",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/benchmark_splits/frozen_test_set_v1.json",
+      "sha256": "56502da3f4b25af4be6289494f29053e799ac11fd0c7a7756a9ba11c7394d796",
+      "bytes": 2820
+    },
+    {
+      "source": ".codex-bestfgs-reduction/benchmark_splits/frozen_test_set_v1.sha256",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/benchmark_splits/frozen_test_set_v1.sha256",
+      "sha256": "23e8656a8530751ae28e9da53015038aaa1cb0b6957fa2e42e911cc84f301260",
+      "bytes": 65
+    },
+    {
+      "source": ".codex-bestfgs-reduction/benchmark_splits/README.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/benchmark_splits/README.md",
+      "sha256": "9315e44b4aec2d69258e1e44f77b2873ab9bd5c8aaba1764e3161e2ec64bac13",
+      "bytes": 603
+    },
+    {
+      "source": ".codex-bestfgs-reduction/examples/demo_counter.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/examples/demo_counter.py",
+      "sha256": "04b86482fdcbed857c22b4b43c6981f21d687d98e290e79b02b9df249c6ffa41",
+      "bytes": 6557
+    },
+    {
+      "source": ".codex-bestfgs-reduction/examples/__init__.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/examples/__init__.py",
+      "sha256": "3ba0db688d15cf2ed3ecd240bfe9397e35cb5356651eb76a43f215fc661c2fcd",
+      "bytes": 57
+    },
+    {
+      "source": ".codex-bestfgs-reduction/src/bestfgs/agent.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/src/bestfgs/agent.py",
+      "sha256": "aa355246637ea9352ca69026fddd2d735f72609770e1f2f82bb4d1863111e3f4",
+      "bytes": 2315
+    },
+    {
+      "source": ".codex-bestfgs-reduction/src/bestfgs/best_first.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/src/bestfgs/best_first.py",
+      "sha256": "f4c8cbf2e8504f8ee70cfa71e56625bb89bf262c1cf7d397f13f2f990e8d572d",
+      "bytes": 33573
+    },
+    {
+      "source": ".codex-bestfgs-reduction/src/bestfgs/best_first_runtime.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/src/bestfgs/best_first_runtime.py",
+      "sha256": "cfa8954f1cd7b16b66411c609e6d4e395f4e3bdb0d812be877706ac566f464c1",
+      "bytes": 110668
+    },
+    {
+      "source": ".codex-bestfgs-reduction/src/bestfgs/environment.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/src/bestfgs/environment.py",
+      "sha256": "e45486bd11d4b2bd86893d798f4c52f0e0146814eaf6488fc1e5d65ca396bfb0",
+      "bytes": 22407
+    },
+    {
+      "source": ".codex-bestfgs-reduction/src/bestfgs/metrics.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/src/bestfgs/metrics.py",
+      "sha256": "8ba89cb76f681928b33cfe83ad2e4919cf5855e8694ea3425d67289ee9cf4e98",
+      "bytes": 10313
+    },
+    {
+      "source": ".codex-bestfgs-reduction/src/bestfgs/models.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/src/bestfgs/models.py",
+      "sha256": "de2b8037e851f198e343c268721aa179085e82540f3e890cdf8f8e42160726f7",
+      "bytes": 24531
+    },
+    {
+      "source": ".codex-bestfgs-reduction/src/bestfgs/priority.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/src/bestfgs/priority.py",
+      "sha256": "72c47638c08a68c3ee33e72b0d17d81544e9cf4b408cadac47670dcc7c68c36a",
+      "bytes": 8020
+    },
+    {
+      "source": ".codex-bestfgs-reduction/src/bestfgs/retrac_adapter.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/src/bestfgs/retrac_adapter.py",
+      "sha256": "5a95fa9089abdcc013b42f5c747f7ab38660f465dc31e04b7ef92d4ba3ff9810",
+      "bytes": 75253
+    },
+    {
+      "source": ".codex-bestfgs-reduction/src/bestfgs/rl.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/src/bestfgs/rl.py",
+      "sha256": "a8e583f9178f8e57cdf790625c128f3a6f90f90f2abbfbc82a937b7d9de65522",
+      "bytes": 3234
+    },
+    {
+      "source": ".codex-bestfgs-reduction/src/bestfgs/rules.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/src/bestfgs/rules.py",
+      "sha256": "e94f959fd6bb94c468f103ed7e40c13a7128df16cebd43e023733725018cba4a",
+      "bytes": 16722
+    },
+    {
+      "source": ".codex-bestfgs-reduction/src/bestfgs/semantic.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/src/bestfgs/semantic.py",
+      "sha256": "94b079de7c08f3c0df0e2e65f92cf6c353b9e1cf02b6a052cf86bd7c2c9808e3",
+      "bytes": 51646
+    },
+    {
+      "source": ".codex-bestfgs-reduction/src/bestfgs/success_judge.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/src/bestfgs/success_judge.py",
+      "sha256": "e497fb4bd41cc98243663e3deae318bcdd406dbb6c1e174d5227b8b2173e2a6c",
+      "bytes": 25591
+    },
+    {
+      "source": ".codex-bestfgs-reduction/src/bestfgs/__init__.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/src/bestfgs/__init__.py",
+      "sha256": "faacc03c094a06582932ebbe70c2c7980d10fed3c0828caf3cbceca7ffb8a6e2",
+      "bytes": 911
+    },
+    {
+      "source": ".codex-bestfgs-reduction/src/bestfgs/__main__.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/src/bestfgs/__main__.py",
+      "sha256": "36ff4225e0a9520441df84ef937f888ff1cc8fffea785d8e22e3d5175dd4b4b8",
+      "bytes": 23173
+    },
+    {
+      "source": ".codex-bestfgs-reduction/tests/test_architecture.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/tests/test_architecture.py",
+      "sha256": "fb092ea8c2cd1b839406db7272aa2013c277d85c4934d0dc49d80fc57ca9bd85",
+      "bytes": 1402
+    },
+    {
+      "source": ".codex-bestfgs-reduction/tests/test_benchmark_runners.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/tests/test_benchmark_runners.py",
+      "sha256": "64ee0325cd416d8ae101cfc90f3892048312d5055a3d7d5b892d40e305950f48",
+      "bytes": 24997
+    },
+    {
+      "source": ".codex-bestfgs-reduction/tests/test_benchmark_selection.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/tests/test_benchmark_selection.py",
+      "sha256": "628b73531d82fa3beea1ea3125ba22ca96bb0cb5963b2c37d3082862e63b21c1",
+      "bytes": 23755
+    },
+    {
+      "source": ".codex-bestfgs-reduction/tests/test_best_first.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/tests/test_best_first.py",
+      "sha256": "dd4d2dee96bbfeccf73fa572d30d75c29c52e109d5ea8c84a6df050b302c1638",
+      "bytes": 27194
+    },
+    {
+      "source": ".codex-bestfgs-reduction/tests/test_budget_runtime.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/tests/test_budget_runtime.py",
+      "sha256": "4fc00d3a4e03f1b67a99790245e2fbb9ab30f3ac55379ba51045634a62b2fff6",
+      "bytes": 15745
+    },
+    {
+      "source": ".codex-bestfgs-reduction/tests/test_environment.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/tests/test_environment.py",
+      "sha256": "07f925b9f24c2c2915e9214bfa429bd0bf1e40cc5feb55d0bf988565c888a4e8",
+      "bytes": 14653
+    },
+    {
+      "source": ".codex-bestfgs-reduction/tests/test_metrics.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/tests/test_metrics.py",
+      "sha256": "b297a1c8a50fa420e1a7f859a91817e210731d71a6a817e52868fc6a367e7d36",
+      "bytes": 7838
+    },
+    {
+      "source": ".codex-bestfgs-reduction/tests/test_retrac_adapter.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/tests/test_retrac_adapter.py",
+      "sha256": "a48584879d5b84ad8ee34deac1482ca278fab38ce8fab0196dc5143619e89140",
+      "bytes": 32453
+    },
+    {
+      "source": ".codex-bestfgs-reduction/tests/test_rl.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/tests/test_rl.py",
+      "sha256": "536476e676d147f4aa51e8f04c58823a0699dfab9350b59186d7b9dd45ecc034",
+      "bytes": 784
+    },
+    {
+      "source": ".codex-bestfgs-reduction/tests/test_rules.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/tests/test_rules.py",
+      "sha256": "b39ca0e77440c8cfe0c764c6c16ca210c9ce6c2651b8166c1c0d7446a3ef1729",
+      "bytes": 11506
+    },
+    {
+      "source": ".codex-bestfgs-reduction/tests/test_runtime.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/tests/test_runtime.py",
+      "sha256": "aad08a5a5eb9dabce888149a23785cae06c33327d24843e66bd28a9ba38a3f28",
+      "bytes": 38760
+    },
+    {
+      "source": ".codex-bestfgs-reduction/tests/test_semantic.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/tests/test_semantic.py",
+      "sha256": "acd2a685feab798751b88025438995181cde2b8d12d7208ceec0f5ffe8a9d4b2",
+      "bytes": 22112
+    },
+    {
+      "source": ".codex-bestfgs-reduction/tests/test_success_judge.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-reduction/tests/test_success_judge.py",
+      "sha256": "ed292bf3b3ec3aa720707d051bfac4533d821cdce02859589de48d6fe9963bec",
+      "bytes": 18508
+    },
+    {
+      "source": ".codex-bestfgs-refactor/.gitignore",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/.gitignore",
+      "sha256": "37b8500917e9a4312b20559433fe46d987235c3f1855cab8955b3f73cf37cd93",
+      "bytes": 86
+    },
+    {
+      "source": ".codex-bestfgs-refactor/BENCHMARKS.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/BENCHMARKS.md",
+      "sha256": "a58812f31ca27c820927003ec704a3f2d890abf41604418a52b1761737ca4007",
+      "bytes": 6815
+    },
+    {
+      "source": ".codex-bestfgs-refactor/benchmark_metrics.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/benchmark_metrics.py",
+      "sha256": "87fe55c9a4f7f83e13563979e8dc38a6e72514da2e6b0c3323c155ebc0715dcc",
+      "bytes": 12030
+    },
+    {
+      "source": ".codex-bestfgs-refactor/benchmark_runtime.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/benchmark_runtime.py",
+      "sha256": "960199bb6591fe524feaa55cee0f0ab061bcba1121198c3aa614c83a5ccadb8b",
+      "bytes": 3110
+    },
+    {
+      "source": ".codex-bestfgs-refactor/benchmark_selection.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/benchmark_selection.py",
+      "sha256": "30dfb9890282c2a8b50edb2f817e75fbb337a61003eef108d586e8b27d052010",
+      "bytes": 5376
+    },
+    {
+      "source": ".codex-bestfgs-refactor/benchmark_splits.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/benchmark_splits.py",
+      "sha256": "b30c07a8c9aaf8ec9532caf9efbc1876b2b326f80fecd45368814c25b5b19414",
+      "bytes": 3604
+    },
+    {
+      "source": ".codex-bestfgs-refactor/CHANGES_20260914.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/CHANGES_20260914.md",
+      "sha256": "b82b964dd46fd59b39fc4038925e47708f2e14f8691e9a98e57b27018814829e",
+      "bytes": 3822
+    },
+    {
+      "source": ".codex-bestfgs-refactor/CHANGES_20260915.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/CHANGES_20260915.md",
+      "sha256": "b304c146a9314f4769ac4c179d252686d7761192af47afd976dec8e3bfe4d8ac",
+      "bytes": 1414
+    },
+    {
+      "source": ".codex-bestfgs-refactor/pyproject.toml",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/pyproject.toml",
+      "sha256": "a9aea2ee05bbb0bfa8e33a789c2cf477a52a006c8279ab9b37d301e2202a27d2",
+      "bytes": 481
+    },
+    {
+      "source": ".codex-bestfgs-refactor/README.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/README.md",
+      "sha256": "67c2044d5db5d38969a7fc4690c57e6516178b7b8a04c8402cfff0ffe5e81252",
+      "bytes": 9378
+    },
+    {
+      "source": ".codex-bestfgs-refactor/refresh_experiment_reports.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/refresh_experiment_reports.py",
+      "sha256": "197efc2e2852678e5933413ae335ed9ce968e8a8315516771325f48f21536b6d",
+      "bytes": 3260
+    },
+    {
+      "source": ".codex-bestfgs-refactor/run_swebench.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/run_swebench.py",
+      "sha256": "277ce7e61537d662961f43cbc617b9a23f6f23fcd6755b7c05d4e530fe4f7edb",
+      "bytes": 70062
+    },
+    {
+      "source": ".codex-bestfgs-refactor/run_swebench_18tasks.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/run_swebench_18tasks.py",
+      "sha256": "050d6f2c13b18d99c04321e15dba79a1a63d971e1d051612c9d90c711174a29d",
+      "bytes": 2318
+    },
+    {
+      "source": ".codex-bestfgs-refactor/run_swebench_2random_tasks.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/run_swebench_2random_tasks.py",
+      "sha256": "72e406b73a8fe911168c604798fdb4119640a2523b909bbe9d86732cf8728052",
+      "bytes": 2567
+    },
+    {
+      "source": ".codex-bestfgs-refactor/run_swebench_2tasks.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/run_swebench_2tasks.py",
+      "sha256": "3df075ab304248e705713eaaaec8f5a50d8ad4befec344b33811628008a0ad1e",
+      "bytes": 1018
+    },
+    {
+      "source": ".codex-bestfgs-refactor/run_swebench_frozen_test.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/run_swebench_frozen_test.py",
+      "sha256": "8c586d6856c44fd76066af54b975423cc5a257898495fa3215d8172716ebecb4",
+      "bytes": 1132
+    },
+    {
+      "source": ".codex-bestfgs-refactor/run_swebench_tenth.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/run_swebench_tenth.py",
+      "sha256": "a74b7d56f98595c60906020c0b1e79ee42f5bf9aeb9c2f18a217fd89cdd4637e",
+      "bytes": 2248
+    },
+    {
+      "source": ".codex-bestfgs-refactor/run_terminal_bench.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/run_terminal_bench.py",
+      "sha256": "cbb6d71d84e2cc7d8ddd57d4df711f939e972954723aec56a848aded6d9dd2b8",
+      "bytes": 65520
+    },
+    {
+      "source": ".codex-bestfgs-refactor/run_terminal_bench_2random_tasks.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/run_terminal_bench_2random_tasks.py",
+      "sha256": "2293b1f0d761eb1116b7f6affa93ee0049bd1234cc762c072c4b0a7e10f222a6",
+      "bytes": 3942
+    },
+    {
+      "source": ".codex-bestfgs-refactor/run_terminal_bench_2tasks.cmd",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/run_terminal_bench_2tasks.cmd",
+      "sha256": "55ddd2484c948fa8ce75e1ca57ddd3717f071d9a2a5406c6e9c2e547b5140b1f",
+      "bytes": 942
+    },
+    {
+      "source": ".codex-bestfgs-refactor/run_terminal_bench_frozen_test.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/run_terminal_bench_frozen_test.py",
+      "sha256": "1b0d73c28bc84bab50ab391bbaf5d6110fbb356ab3ff912c1f3f3b3d3bdfa82f",
+      "bytes": 839
+    },
+    {
+      "source": ".codex-bestfgs-refactor/run_terminal_bench_tenth.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/run_terminal_bench_tenth.py",
+      "sha256": "16c0a5c9c292c5e17bbbb57a49a702eb667546a98febcf204cbfb654b9a0ab56",
+      "bytes": 6872
+    },
+    {
+      "source": ".codex-bestfgs-refactor/benchmark_splits/frozen_test_set_v1.json",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/benchmark_splits/frozen_test_set_v1.json",
+      "sha256": "56502da3f4b25af4be6289494f29053e799ac11fd0c7a7756a9ba11c7394d796",
+      "bytes": 2820
+    },
+    {
+      "source": ".codex-bestfgs-refactor/benchmark_splits/frozen_test_set_v1.sha256",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/benchmark_splits/frozen_test_set_v1.sha256",
+      "sha256": "23e8656a8530751ae28e9da53015038aaa1cb0b6957fa2e42e911cc84f301260",
+      "bytes": 65
+    },
+    {
+      "source": ".codex-bestfgs-refactor/benchmark_splits/README.md",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/benchmark_splits/README.md",
+      "sha256": "9315e44b4aec2d69258e1e44f77b2873ab9bd5c8aaba1764e3161e2ec64bac13",
+      "bytes": 603
+    },
+    {
+      "source": ".codex-bestfgs-refactor/examples/demo_counter.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/examples/demo_counter.py",
+      "sha256": "04b86482fdcbed857c22b4b43c6981f21d687d98e290e79b02b9df249c6ffa41",
+      "bytes": 6557
+    },
+    {
+      "source": ".codex-bestfgs-refactor/examples/__init__.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/examples/__init__.py",
+      "sha256": "3ba0db688d15cf2ed3ecd240bfe9397e35cb5356651eb76a43f215fc661c2fcd",
+      "bytes": 57
+    },
+    {
+      "source": ".codex-bestfgs-refactor/src/bestfgs/agent.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/src/bestfgs/agent.py",
+      "sha256": "aa355246637ea9352ca69026fddd2d735f72609770e1f2f82bb4d1863111e3f4",
+      "bytes": 2315
+    },
+    {
+      "source": ".codex-bestfgs-refactor/src/bestfgs/best_first.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/src/bestfgs/best_first.py",
+      "sha256": "cd93f1b43cdce19c5f39cce57778d5e5be6c4d1342f744ac0ad5470272a60fda",
+      "bytes": 33427
+    },
+    {
+      "source": ".codex-bestfgs-refactor/src/bestfgs/best_first_runtime.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/src/bestfgs/best_first_runtime.py",
+      "sha256": "854aa50ddcf24a013438576e85d243ea6cf56087740d423de57a95d4384768e9",
+      "bytes": 111520
+    },
+    {
+      "source": ".codex-bestfgs-refactor/src/bestfgs/environment.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/src/bestfgs/environment.py",
+      "sha256": "e45486bd11d4b2bd86893d798f4c52f0e0146814eaf6488fc1e5d65ca396bfb0",
+      "bytes": 22407
+    },
+    {
+      "source": ".codex-bestfgs-refactor/src/bestfgs/metrics.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/src/bestfgs/metrics.py",
+      "sha256": "8ba89cb76f681928b33cfe83ad2e4919cf5855e8694ea3425d67289ee9cf4e98",
+      "bytes": 10313
+    },
+    {
+      "source": ".codex-bestfgs-refactor/src/bestfgs/models.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/src/bestfgs/models.py",
+      "sha256": "de2b8037e851f198e343c268721aa179085e82540f3e890cdf8f8e42160726f7",
+      "bytes": 24531
+    },
+    {
+      "source": ".codex-bestfgs-refactor/src/bestfgs/priority.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/src/bestfgs/priority.py",
+      "sha256": "72c47638c08a68c3ee33e72b0d17d81544e9cf4b408cadac47670dcc7c68c36a",
+      "bytes": 8020
+    },
+    {
+      "source": ".codex-bestfgs-refactor/src/bestfgs/retrac_adapter.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/src/bestfgs/retrac_adapter.py",
+      "sha256": "5a95fa9089abdcc013b42f5c747f7ab38660f465dc31e04b7ef92d4ba3ff9810",
+      "bytes": 75253
+    },
+    {
+      "source": ".codex-bestfgs-refactor/src/bestfgs/rl.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/src/bestfgs/rl.py",
+      "sha256": "a8e583f9178f8e57cdf790625c128f3a6f90f90f2abbfbc82a937b7d9de65522",
+      "bytes": 3234
+    },
+    {
+      "source": ".codex-bestfgs-refactor/src/bestfgs/rules.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/src/bestfgs/rules.py",
+      "sha256": "e94f959fd6bb94c468f103ed7e40c13a7128df16cebd43e023733725018cba4a",
+      "bytes": 16722
+    },
+    {
+      "source": ".codex-bestfgs-refactor/src/bestfgs/semantic.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/src/bestfgs/semantic.py",
+      "sha256": "94b079de7c08f3c0df0e2e65f92cf6c353b9e1cf02b6a052cf86bd7c2c9808e3",
+      "bytes": 51646
+    },
+    {
+      "source": ".codex-bestfgs-refactor/src/bestfgs/success_judge.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/src/bestfgs/success_judge.py",
+      "sha256": "e497fb4bd41cc98243663e3deae318bcdd406dbb6c1e174d5227b8b2173e2a6c",
+      "bytes": 25591
+    },
+    {
+      "source": ".codex-bestfgs-refactor/src/bestfgs/__init__.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/src/bestfgs/__init__.py",
+      "sha256": "faacc03c094a06582932ebbe70c2c7980d10fed3c0828caf3cbceca7ffb8a6e2",
+      "bytes": 911
+    },
+    {
+      "source": ".codex-bestfgs-refactor/src/bestfgs/__main__.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/src/bestfgs/__main__.py",
+      "sha256": "36ff4225e0a9520441df84ef937f888ff1cc8fffea785d8e22e3d5175dd4b4b8",
+      "bytes": 23173
+    },
+    {
+      "source": ".codex-bestfgs-refactor/tests/test_architecture.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/tests/test_architecture.py",
+      "sha256": "fb092ea8c2cd1b839406db7272aa2013c277d85c4934d0dc49d80fc57ca9bd85",
+      "bytes": 1402
+    },
+    {
+      "source": ".codex-bestfgs-refactor/tests/test_benchmark_runners.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/tests/test_benchmark_runners.py",
+      "sha256": "64ee0325cd416d8ae101cfc90f3892048312d5055a3d7d5b892d40e305950f48",
+      "bytes": 24997
+    },
+    {
+      "source": ".codex-bestfgs-refactor/tests/test_benchmark_selection.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/tests/test_benchmark_selection.py",
+      "sha256": "628b73531d82fa3beea1ea3125ba22ca96bb0cb5963b2c37d3082862e63b21c1",
+      "bytes": 23755
+    },
+    {
+      "source": ".codex-bestfgs-refactor/tests/test_best_first.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/tests/test_best_first.py",
+      "sha256": "8d73b859dc86b6e276cddd8c63fe5b05902aed7a2c1292163e1910d56d4f5fd7",
+      "bytes": 26522
+    },
+    {
+      "source": ".codex-bestfgs-refactor/tests/test_budget_runtime.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/tests/test_budget_runtime.py",
+      "sha256": "4fc00d3a4e03f1b67a99790245e2fbb9ab30f3ac55379ba51045634a62b2fff6",
+      "bytes": 15745
+    },
+    {
+      "source": ".codex-bestfgs-refactor/tests/test_environment.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/tests/test_environment.py",
+      "sha256": "07f925b9f24c2c2915e9214bfa429bd0bf1e40cc5feb55d0bf988565c888a4e8",
+      "bytes": 14653
+    },
+    {
+      "source": ".codex-bestfgs-refactor/tests/test_metrics.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/tests/test_metrics.py",
+      "sha256": "b297a1c8a50fa420e1a7f859a91817e210731d71a6a817e52868fc6a367e7d36",
+      "bytes": 7838
+    },
+    {
+      "source": ".codex-bestfgs-refactor/tests/test_retrac_adapter.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/tests/test_retrac_adapter.py",
+      "sha256": "a48584879d5b84ad8ee34deac1482ca278fab38ce8fab0196dc5143619e89140",
+      "bytes": 32453
+    },
+    {
+      "source": ".codex-bestfgs-refactor/tests/test_rl.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/tests/test_rl.py",
+      "sha256": "536476e676d147f4aa51e8f04c58823a0699dfab9350b59186d7b9dd45ecc034",
+      "bytes": 784
+    },
+    {
+      "source": ".codex-bestfgs-refactor/tests/test_rules.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/tests/test_rules.py",
+      "sha256": "b39ca0e77440c8cfe0c764c6c16ca210c9ce6c2651b8166c1c0d7446a3ef1729",
+      "bytes": 11506
+    },
+    {
+      "source": ".codex-bestfgs-refactor/tests/test_runtime.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/tests/test_runtime.py",
+      "sha256": "6e478593b16b8e853730aad9f3e9ae1e39bb1f785444f4ba9777f2fa92e3f8ff",
+      "bytes": 37490
+    },
+    {
+      "source": ".codex-bestfgs-refactor/tests/test_semantic.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/tests/test_semantic.py",
+      "sha256": "acd2a685feab798751b88025438995181cde2b8d12d7208ceec0f5ffe8a9d4b2",
+      "bytes": 22112
+    },
+    {
+      "source": ".codex-bestfgs-refactor/tests/test_success_judge.py",
+      "path": "releases/pre-cv-archive-20261031/.codex-bestfgs-refactor/tests/test_success_judge.py",
+      "sha256": "ed292bf3b3ec3aa720707d051bfac4533d821cdce02859589de48d6fe9963bec",
+      "bytes": 18508
+    },
+    {
+      "source": "official-submission-v3/prepare_current50_images.py",
+      "path": "releases/pre-cv-archive-20261031/official-submission-v3/prepare_current50_images.py",
+      "sha256": "3cd171274d6f628330ece4b7a1f315d37b3f35d7577888c9f2cb39eba737acea",
+      "bytes": 6372
+    },
+    {
+      "source": "official-submission-v3/prepare_images.py",
+      "path": "releases/pre-cv-archive-20261031/official-submission-v3/prepare_images.py",
+      "sha256": "0d747f58e7d781e632a992e664a243e93bd150cc411f13381ff4b737f61b98f0",
+      "bytes": 6303
+    },
+    {
+      "source": "review_gaidong/project-audit-20260922-v10.md",
+      "path": "releases/pre-cv-archive-20261031/review_gaidong/project-audit-20260922-v10.md",
+      "sha256": "47b5e3d53390f23e759939eac72b098c0ac1d92c0e2762d916228481464c713e",
+      "bytes": 8463
+    }
+  ]
+}
