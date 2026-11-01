@@ -1,0 +1,125 @@
+{
+    "id": "ae91bedb-e86e-455d-97d4-ba5acbd3b6a8",
+    "task_name": "terminal-bench/wal-recovery-ordering",
+    "trial_name": "wal-recovery-ordering__3oYbSNB",
+    "trial_uri": "file:///var/tmp/lizh639-tb4-taotoken-smoke-20261011/jobs/taotoken-smoke-retry2/wal-recovery-ordering__3oYbSNB",
+    "task_id": {
+        "path": "task-transport/wal-recovery-ordering"
+    },
+    "source": null,
+    "task_checksum": "f84ab23898ba50e07df0b13e27dcb943484f0055b7e933d0c86653dd48ba2203",
+    "config": {
+        "task": {
+            "path": "task-transport/wal-recovery-ordering",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "wal-recovery-ordering__3oYbSNB",
+        "trials_dir": "/var/tmp/lizh639-tb4-taotoken-smoke-20261011/jobs/taotoken-smoke-retry2",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 0.08,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "harbor_retry2:KZRetry2",
+            "import_path": null,
+            "model_name": null,
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {},
+            "mcp_servers": []
+        },
+        "user_agent": null,
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": false,
+            "stream": false,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "extra_instructions": [],
+        "job_id": "38d6f43a-b992-4790-8a86-c0d38a63936c",
+        "source_trial": null
+    },
+    "agent_info": {
+        "name": "kz-dsh-taotoken-smoke",
+        "version": "unknown",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "model_usage": null,
+        "rollout_details": null,
+        "metadata": {
+            "agent_return_code": 1,
+            "provider_actual": "taotoken-token-plan",
+            "endpoint": "https://api.taotoken.net/token/v1/messages",
+            "retry_of": "taotoken-smoke",
+            "smoke_only": true,
+            "max_requests": 40,
+            "max_tools": 80,
+            "live_gate_max_requests": 8
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "verifier_environment_mode": "separate",
+    "exception_info": null,
+    "started_at": "2026-10-11T14:15:56.918318Z",
+    "finished_at": "2026-10-11T14:23:34.006926Z",
+    "environment_setup": {
+        "started_at": "2026-10-11T14:15:56.945046Z",
+        "finished_at": "2026-10-11T14:16:04.113436Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-10-11T14:16:04.113543Z",
+        "finished_at": "2026-10-11T14:16:17.484572Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-10-11T14:16:17.484830Z",
+        "finished_at": "2026-10-11T14:22:14.321269Z"
+    },
+    "verifier": {
+        "started_at": "2026-10-11T14:22:30.044986Z",
+        "finished_at": "2026-10-11T14:23:34.006905Z"
+    },
+    "step_results": null
+}

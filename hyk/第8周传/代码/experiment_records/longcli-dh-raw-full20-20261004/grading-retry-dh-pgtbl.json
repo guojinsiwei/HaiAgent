@@ -1,0 +1,33 @@
+{
+  "job": "roundtrip--61810_pgtbl",
+  "method": "dh",
+  "retry_of": "dh--61810_pgtbl",
+  "artifact_sha256": "8abd94a8f8f59899f25f87402251156c9c1739daef4acecfcb0d743c675a846a",
+  "attempt": 2,
+  "model_calls": 0,
+  "solving_repeated": false,
+  "official_script_unchanged": true,
+  "timeout_seconds": 300,
+  "grading_cpu": 8,
+  "grading_memory_gib": 8,
+  "original_preserved": true,
+  "created": 1791096789.3859508,
+  "state": "failed",
+  "updated": 1791097098.389117,
+  "result": {
+    "job": "roundtrip--61810_pgtbl",
+    "task": "61810_pgtbl",
+    "artifact_sha256": "8abd94a8f8f59899f25f87402251156c9c1739daef4acecfcb0d743c675a846a",
+    "image_id": "sha256:6eb51b36579b3a571e305fbbf707cb246c38524e07c152f59b9d787165f7e5f5",
+    "container": "longcli-paired10-33fb5672a48a",
+    "grading_cpu": 8,
+    "grading_memory_gib": 8,
+    "grading_cpuset": "8-15",
+    "official_success": null,
+    "grading_state": "failed",
+    "fixture": false,
+    "script_exit": 124,
+    "error_type": "FileNotFoundError",
+    "error": "[Errno 2] No such file or directory: '/var/tmp/lizh639-longcli-dh-raw-full20-20261004/grades/roundtrip--61810_pgtbl/test_output/f2p_score.json'"
+  }
+}

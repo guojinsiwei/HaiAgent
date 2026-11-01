@@ -1,0 +1,39 @@
+{
+  "data_status": "ACTUAL_RUN",
+  "verified_date": "2026-10-09",
+  "selection": "latest selected attempt per task, not maximum score; exclude cmu15_445_p2 only from user-requested positive-score subset",
+  "rows": [
+    {
+      "task": "61810_lock", "score": 0.525, "official_success": false, "scored": true,
+      "tools": 46, "api_attempts": 63, "stop_reason": "model_submit",
+      "report": "/mnt/sdb/home/lizh639/kz2-low4-20261009/grades/1342--61810_lock/result.json",
+      "report_sha256": "386caa0522d64d8f7ff32bdc678dd184e836cc924f4b0f345a4ead80864726dd",
+      "summary": "/mnt/sdb/home/lizh639/kz2-low4-20261009/jobs/1342--61810_lock/summary.json",
+      "summary_sha256": "0b2a679d4a02b7e21ac7d9ebbd9b2e0d323af59c5a71ea79287bb6d069c1ada7"
+    },
+    {
+      "task": "61810_mmap", "score": 0.8642857142857143, "official_success": false, "scored": true,
+      "tools": 45, "api_attempts": 454, "stop_reason": "user_requested_stop_loop",
+      "report": "/mnt/sdb/home/lizh639/kz2-retry2-memory-soft-20261009/grades/1342--61810_mmap/result.json",
+      "report_sha256": "5ad50a86ab03d9c529180392a91268d1d375c24676cc0b50f095cdfe60c69066",
+      "summary": "/mnt/sdb/home/lizh639/kz2-retry2-memory-soft-20261009/jobs/1342--61810_mmap/summary.json",
+      "summary_sha256": "1dd62b23f1b010f9bed8a5b76a33683fca54c9fed0856eb277dbc63fa01cf8c4"
+    },
+    {
+      "task": "61810_cow", "score": 0.5454545454545454, "official_success": false, "scored": true,
+      "tools": 48, "api_attempts": 646, "stop_reason": "cost_budget_cny",
+      "report": "/mnt/sdb/home/lizh639/kz2-cow-timeout-retry-20261009/grades/1342--61810_cow/result.json",
+      "report_sha256": "747ef7dc9cfcb6cfb6086037ad631cd64aaf288d67aa98a70336785cc908dda3",
+      "summary": "/mnt/sdb/home/lizh639/kz2-cow-timeout-retry-20261009/jobs/1342--61810_cow/summary.json",
+      "summary_sha256": "601bd52e906947ceedd1b4b5c57fae36a26adce19025b4be9a56d2c0f34b84a5"
+    },
+    {
+      "task": "cmu15_445_p2", "score": 0.0, "official_success": false, "scored": true,
+      "tools": 53, "api_attempts": 565, "stop_reason": "cost_budget_cny",
+      "report": "/mnt/sdb/home/lizh639/kz2-retry2-memory-soft-20261009/grades/1342--cmu15_445_p2/result.json",
+      "report_sha256": "d6bdfd578b44d50ad06f5a5bda9e125dd6dcd0a7be9d5fc6c5bcb0f2b6c54af7",
+      "summary": "/mnt/sdb/home/lizh639/kz2-retry2-memory-soft-20261009/jobs/1342--cmu15_445_p2/summary.json",
+      "summary_sha256": "665d58057b6bfe5254a9703d6e6d0c5bdccddec5e9d2e6815021475be140ad1f"
+    }
+  ]
+}

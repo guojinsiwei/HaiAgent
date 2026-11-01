@@ -1,0 +1,78 @@
+{
+  "sealed_utc": "2026-10-11T14:15:16.489784+00:00",
+  "offline_passed": true,
+  "checks": {
+    "exit_code": 0,
+    "calls": 5,
+    "native_tool_result": true,
+    "settings_ok": true,
+    "request_settings": [
+      {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "temperature": 0,
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "temperature": null,
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "temperature": null,
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "temperature": 0,
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "temperature": 0,
+        "thinking": {
+          "type": "disabled"
+        }
+      }
+    ],
+    "compaction_calls": 2,
+    "compaction_output_caps": [
+      8192,
+      8192
+    ],
+    "budget_accounted_requests": 5,
+    "compaction_accounted": true,
+    "compaction_successes": 2,
+    "compaction_errors": [],
+    "kz_tool_present": true
+  },
+  "change": "Native compaction maxTokens=8192; original task budget unchanged",
+  "sha256": {
+    "launch_retry2.py": "69c4158e4ee3107a75c8f8048c8c10497a62e305b9957a16d8959c46a298f8fc",
+    "harbor_retry2.py": "da0d3a1cfbdf660cacc7daf22b83dd7c82024471a639f2d4755152848c612fa7",
+    "route2.patch.yml": "010ab1058dae70fec52ddedd591c67c9952349079e0c9ffbafe4246d8022e151",
+    "compaction-repair.patch.yml": "ef597b54ea697bc573f39a80b1db66627b51fe8c0835d607f0971946bbd6adce",
+    "offline_compaction.py": "568817602d581343c825dc212452e6e0b4d0cbef490122487559c5eb58392cfb",
+    "harbor_retry1.py": "7b148baed7089ac331a4d7d68b734d629c7d0d88d70ebc3f54e4fa3387a1c455",
+    "harbor_kz.py": "0789e484e0f7366a9db89d7068b1805adb59f8be472a090216428e8af0167df1",
+    "runtime.tar.gz": "f37e16acca136f288bf15cf9dc6201d711020062cd3660cd8c93239b35468441",
+    "route.patch.yml": "c062652b0a27e03e7082d42a869c905c579862d28a9b4c3b0ab4f7b2a683e5d1",
+    "route-audit.mjs": "465183fc92cbe493d822b8e8946ab2c15cbfc8fb1507039bb3529e63798a1c74",
+    "dsh_runtime.py": "0fd1ebb44cda50e0dab0427ccb17b83dbd3392afcb808dfd2fcb1da7fbef9224",
+    "container-retry1.py": "6eea63c7794b987356b6afb96b74a6d6a7268230477fab6e4b506450f77557c9",
+    "offline_headless.py": "6ee9250b484d71f769f98eb85ac0106295165114921df52cda180d47eb56fc8d"
+  }
+}

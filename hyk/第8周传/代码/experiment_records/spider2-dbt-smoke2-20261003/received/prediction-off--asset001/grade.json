@@ -1,0 +1,10 @@
+{
+  "job": "prediction-off--asset001",
+  "task": "asset001",
+  "artifact_sha256": "a4ed42a47c8079bca7dc049c96e0f8656657376dad95efa098743929a73a7512",
+  "grading_state": "complete",
+  "official_success": false,
+  "score": 0,
+  "scorer": "Unmodified official duckdb_match + compare_pandas_table",
+  "gold_sha256": "2d027db456288892d3dcb511ab9c1a4aa7480984877a196d8cef6167340f8e4b"
+}

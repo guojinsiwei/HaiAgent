@@ -1,0 +1,65 @@
+{
+  "longcli-dsh20-byte-context-repair-20261006": {
+    "scored": 20,
+    "jobs": [
+      "dsh--61810_cow",
+      "dsh--61810_fs",
+      "dsh--61810_lock",
+      "dsh--61810_mmap",
+      "dsh--61810_net",
+      "dsh--61810_pgtbl",
+      "dsh--61810_syscall",
+      "dsh--61810_thread",
+      "dsh--61810_traps",
+      "dsh--61810_util",
+      "dsh--ap1400_2_hw26",
+      "dsh--ap1400_2_hw35",
+      "dsh--cmu15_445_p0",
+      "dsh--cmu15_445_p1",
+      "dsh--cmu15_445_p2",
+      "dsh--cs61_fa24_ants",
+      "dsh--cs61_fa24_cats",
+      "dsh--cs61_fa24_hog",
+      "dsh--cs61_fa24_hw08",
+      "dsh--cs61_fa24_scheme"
+    ],
+    "model_calls": 0
+  },
+  "longcli-reflexion20-college-20261006": {
+    "scored": 3,
+    "jobs": [
+      "reflexion--61810_util",
+      "reflexion--cs61_fa24_hog",
+      "reflexion--cs61_fa24_hw08"
+    ],
+    "model_calls": 0
+  },
+  "longcli-reflexion-recovery-20261006": {
+    "scored": 17,
+    "jobs": [
+      "reflexion--61810_cow",
+      "reflexion--61810_fs",
+      "reflexion--61810_lock",
+      "reflexion--61810_mmap",
+      "reflexion--61810_net",
+      "reflexion--61810_pgtbl",
+      "reflexion--61810_syscall",
+      "reflexion--61810_thread",
+      "reflexion--61810_traps",
+      "reflexion--ap1400_2_hw26",
+      "reflexion--ap1400_2_hw35",
+      "reflexion--cmu15_445_p0",
+      "reflexion--cmu15_445_p1",
+      "reflexion--cmu15_445_p2",
+      "reflexion--cs61_fa24_ants",
+      "reflexion--cs61_fa24_cats",
+      "reflexion--cs61_fa24_scheme"
+    ],
+    "model_calls": 0
+  },
+  "longcli-retrac-recovery2-20261007": {
+    "scored": 0,
+    "jobs": [],
+    "model_calls": 0
+  }
+}

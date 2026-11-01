@@ -1,0 +1,46 @@
+{
+  "experiment": "longcli-dh-raw-full20-20261004",
+  "supersedes_status_snapshot_only": "partial-launch-repair.json",
+  "original_job": "raw--cs61_fa24_scheme",
+  "original_failure": {
+    "stop_reason": "api_error",
+    "api_requests": 2,
+    "api_responses": 0,
+    "tool_calls": 0,
+    "transport_phase": "dns",
+    "errno": -3,
+    "artifact_sha256": "5b7d4adc0de87be865930eb2cf70466c217c43264f789cac06cb560409cc1c20"
+  },
+  "user_authorized_retry": true,
+  "attempt": 2,
+  "retry_transport_job": "roundtrip--cs61_fa24_scheme",
+  "canonical_method": "raw",
+  "fixture": false,
+  "original_failure_and_grade_retained": true,
+  "transport_alias_reason": "Existing sealed grader supports roundtrip prefix; distinct grades/runs paths prevent overwriting the original. This actual RAW model attempt is not an offline fixture.",
+  "network_repair": "Temporary controller-only api.deepseek.com host mapping; verified normal TLS certificate and SNI, no solver network access enabled",
+  "sealed_algorithms_and_task_inputs_unchanged": true,
+  "budgets_unchanged": true,
+  "control_tests_passed_local": 6,
+  "retry_tests_passed_worker": 2,
+  "verification": "launch_tools/raw-scheme-retry-verification.json",
+  "verified_model_responses": 25,
+  "verified_tool_completions": 25,
+  "verified_transport_failures": 0,
+  "verified_active_trials": 4,
+  "continuation": {
+    "worker": 1,
+    "unclaimed_original_jobs": 18,
+    "waits_for_original_admitted_task_and_supplementary_retry": true,
+    "replays_existing_claims": false,
+    "controller_alive_at_verification": true
+  },
+  "result_relay": {
+    "pid": 30620,
+    "model_calls": 0,
+    "status": "raw-scheme-retry-status.json",
+    "output": "network-retry/raw--cs61_fa24_scheme",
+    "official_grading_after_artifact_freeze_only": true
+  },
+  "reporting_policy": "Preserve the first infrastructure failure and separately report the approved retry. Do not silently replace the original score or count the retry as an additional unique task pair."
+}

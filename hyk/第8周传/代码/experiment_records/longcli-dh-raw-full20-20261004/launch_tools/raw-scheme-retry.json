@@ -1,0 +1,16 @@
+{
+  "pid": 565983,
+  "worker": 1,
+  "slot": 0,
+  "job": "roundtrip--cs61_fa24_scheme",
+  "method": "raw",
+  "attempt": 2,
+  "retry_of": "raw--cs61_fa24_scheme",
+  "original_artifact_sha256": "5b7d4adc0de87be865930eb2cf70466c217c43264f789cac06cb560409cc1c20",
+  "reason": "User approved retry after DNS repair",
+  "created": 1791055593.8713288,
+  "original_retained": true,
+  "fixture": false,
+  "budgets_unchanged": true,
+  "secret_values_read": false
+}

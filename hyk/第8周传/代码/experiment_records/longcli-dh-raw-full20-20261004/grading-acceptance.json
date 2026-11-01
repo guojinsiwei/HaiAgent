@@ -1,0 +1,288 @@
+{
+  "passed": true,
+  "tasks": [
+    {
+      "task": "61810_cow",
+      "grading_state": "complete",
+      "f2p": {
+        "is_pass": 0,
+        "step_score": 0.0
+      },
+      "p2p_is_pass": 1,
+      "p2p_step_score": 1.0,
+      "p2p_count": 70,
+      "environment_faults": [],
+      "error": null,
+      "script_exit": 0
+    },
+    {
+      "task": "61810_fs",
+      "grading_state": "complete",
+      "f2p": {
+        "is_pass": 0,
+        "step_score": 0.0
+      },
+      "p2p_is_pass": 0,
+      "p2p_step_score": 0.985,
+      "p2p_count": 68,
+      "environment_faults": [],
+      "error": null,
+      "script_exit": 1
+    },
+    {
+      "task": "61810_lock",
+      "grading_state": "complete",
+      "f2p": {
+        "is_pass": 0,
+        "step_score": 0.0
+      },
+      "p2p_is_pass": 0,
+      "p2p_step_score": 0.988,
+      "p2p_count": 80,
+      "environment_faults": [],
+      "error": null,
+      "script_exit": 1
+    },
+    {
+      "task": "61810_mmap",
+      "grading_state": "complete",
+      "f2p": {
+        "is_pass": 0,
+        "step_score": 0.0
+      },
+      "p2p_is_pass": 0,
+      "p2p_step_score": 0.984,
+      "p2p_count": 62,
+      "environment_faults": [],
+      "error": null,
+      "script_exit": 1
+    },
+    {
+      "task": "61810_net",
+      "grading_state": "complete",
+      "f2p": {
+        "is_pass": 0,
+        "step_score": 0.0
+      },
+      "p2p_is_pass": 0,
+      "p2p_step_score": 0.988,
+      "p2p_count": 85,
+      "environment_faults": [],
+      "error": null,
+      "script_exit": 1
+    },
+    {
+      "task": "61810_pgtbl",
+      "grading_state": "complete",
+      "f2p": {
+        "is_pass": 0,
+        "step_score": 0.0
+      },
+      "p2p_is_pass": 1,
+      "p2p_step_score": 1.0,
+      "p2p_count": 63,
+      "environment_faults": [],
+      "error": null,
+      "script_exit": 0
+    },
+    {
+      "task": "61810_syscall",
+      "grading_state": "complete",
+      "f2p": {
+        "is_pass": 0,
+        "step_score": 0.0
+      },
+      "p2p_is_pass": 1,
+      "p2p_step_score": 1.0,
+      "p2p_count": 65,
+      "environment_faults": [],
+      "error": null,
+      "script_exit": 0
+    },
+    {
+      "task": "61810_thread",
+      "grading_state": "complete",
+      "f2p": {
+        "is_pass": 0,
+        "step_score": 0.0
+      },
+      "p2p_is_pass": 1,
+      "p2p_step_score": 1.0,
+      "p2p_count": 71,
+      "environment_faults": [],
+      "error": null,
+      "script_exit": 0
+    },
+    {
+      "task": "61810_traps",
+      "grading_state": "complete",
+      "f2p": {
+        "is_pass": 0,
+        "step_score": 0.0
+      },
+      "p2p_is_pass": 1,
+      "p2p_step_score": 1.0,
+      "p2p_count": 63,
+      "environment_faults": [],
+      "error": null,
+      "script_exit": 0
+    },
+    {
+      "task": "61810_util",
+      "grading_state": "complete",
+      "f2p": {
+        "is_pass": 0,
+        "step_score": 0.0
+      },
+      "p2p_is_pass": 1,
+      "p2p_step_score": 1.0,
+      "p2p_count": 72,
+      "environment_faults": [],
+      "error": null,
+      "script_exit": 0
+    },
+    {
+      "task": "cs61_fa24_scheme",
+      "grading_state": "complete",
+      "f2p": {
+        "is_pass": 0,
+        "step_score": 0.0
+      },
+      "p2p_is_pass": 1,
+      "p2p_step_score": 1.0,
+      "p2p_count": 53,
+      "environment_faults": [],
+      "error": null,
+      "script_exit": 0
+    },
+    {
+      "task": "cs61_fa24_ants",
+      "grading_state": "complete",
+      "f2p": {
+        "is_pass": 0,
+        "step_score": 0.03014025663980901
+      },
+      "p2p_is_pass": 1,
+      "p2p_step_score": 1.0,
+      "p2p_count": 4,
+      "environment_faults": [],
+      "error": null,
+      "script_exit": 0
+    },
+    {
+      "task": "cs61_fa24_cats",
+      "grading_state": "complete",
+      "f2p": {
+        "is_pass": 0,
+        "step_score": 0.0
+      },
+      "p2p_is_pass": 0,
+      "p2p_step_score": 0.947,
+      "p2p_count": 19,
+      "environment_faults": [],
+      "error": null,
+      "script_exit": 1
+    },
+    {
+      "task": "cs61_fa24_hog",
+      "grading_state": "complete",
+      "f2p": {
+        "is_pass": 0,
+        "step_score": 0.0
+      },
+      "p2p_is_pass": 1,
+      "p2p_step_score": 1.0,
+      "p2p_count": 17,
+      "environment_faults": [],
+      "error": null,
+      "script_exit": 0
+    },
+    {
+      "task": "cs61_fa24_hw08",
+      "grading_state": "complete",
+      "f2p": {
+        "is_pass": 0,
+        "step_score": 0.0
+      },
+      "p2p_is_pass": 1,
+      "p2p_step_score": 1.0,
+      "p2p_count": 34,
+      "environment_faults": [],
+      "error": null,
+      "script_exit": 0
+    },
+    {
+      "task": "cmu15_445_p0",
+      "grading_state": "complete",
+      "f2p": {
+        "is_pass": 0,
+        "step_score": 0.0
+      },
+      "p2p_is_pass": 1,
+      "p2p_step_score": 1.0,
+      "p2p_count": 8,
+      "environment_faults": [],
+      "error": null,
+      "script_exit": 0
+    },
+    {
+      "task": "cmu15_445_p1",
+      "grading_state": "complete",
+      "f2p": {
+        "is_pass": 0,
+        "step_score": 0.0
+      },
+      "p2p_is_pass": 1,
+      "p2p_step_score": 1.0,
+      "p2p_count": 8,
+      "environment_faults": [],
+      "error": null,
+      "script_exit": 0
+    },
+    {
+      "task": "cmu15_445_p2",
+      "grading_state": "complete",
+      "f2p": {
+        "is_pass": 0,
+        "step_score": 0.0
+      },
+      "p2p_is_pass": 1,
+      "p2p_step_score": 1.0,
+      "p2p_count": 7,
+      "environment_faults": [],
+      "error": null,
+      "script_exit": 0
+    },
+    {
+      "task": "ap1400_2_hw26",
+      "grading_state": "complete",
+      "f2p": {
+        "is_pass": 0,
+        "step_score": 0.0
+      },
+      "p2p_is_pass": 1,
+      "p2p_step_score": 1.0,
+      "p2p_count": 4,
+      "environment_faults": [],
+      "error": null,
+      "script_exit": 0
+    },
+    {
+      "task": "ap1400_2_hw35",
+      "grading_state": "complete",
+      "f2p": {
+        "is_pass": 0,
+        "step_score": 0.0
+      },
+      "p2p_is_pass": 1,
+      "p2p_step_score": 1.0,
+      "p2p_count": 4,
+      "environment_faults": [],
+      "error": null,
+      "script_exit": 0
+    }
+  ],
+  "model_calls": 0,
+  "unchanged_official_scripts": true,
+  "baseline_is_not_algorithm_performance": true
+}

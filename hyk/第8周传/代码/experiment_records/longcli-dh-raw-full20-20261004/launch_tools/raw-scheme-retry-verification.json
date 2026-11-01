@@ -1,0 +1,42 @@
+{
+  "updated": 1791055685.175177,
+  "sealed_inputs_unchanged": true,
+  "method": "raw",
+  "attempt": 2,
+  "job": "roundtrip--cs61_fa24_scheme",
+  "original_retained": true,
+  "original_artifact_sha256": "5b7d4adc0de87be865930eb2cf70466c217c43264f789cac06cb560409cc1c20",
+  "original_artifact_integrity": true,
+  "retry_controller_alive": true,
+  "continuation_alive": true,
+  "current_provider_addresses": [
+    "58.251.127.101"
+  ],
+  "retry_api": {
+    "events": {
+      "trial_start": 1,
+      "model_request": 26,
+      "wire_request": 29,
+      "transport_diagnostic": 28,
+      "wire_response": 28,
+      "model_response": 25,
+      "wire_rejected": 3
+    },
+    "latest": 1791055684.8980126,
+    "age_seconds": 0.3004322052001953,
+    "transport_failures": []
+  },
+  "retry_tools": {
+    "events": {
+      "header": 1,
+      "request_context": 26,
+      "model_response": 25,
+      "decision": 25,
+      "tool_start": 25,
+      "tool_end": 25
+    },
+    "latest": 1791055684.8957973,
+    "age_seconds": 0.3081347942352295,
+    "transport_failures": []
+  }
+}
