@@ -1,0 +1,19 @@
+{
+  "trial": "/mnt/sdb/home/lizh639/tb2-three-arm50-scorefix-20261018/preflight/preflight-accept-score-torch-pipeline-parallelism-aac06e/torch-pipeline-parallelism__VfcJSMG",
+  "reward": 0.0,
+  "exception_type": null,
+  "engineering_clean": true,
+  "result_status": "present",
+  "lifecycle_status": "succeeded",
+  "collection_failures": [],
+  "task": "torch-pipeline-parallelism",
+  "arm": "dsh",
+  "paid_calls": 0,
+  "exit_code": 0,
+  "row": {
+    "task": "torch-pipeline-parallelism",
+    "arm": "dsh",
+    "job": "accept-score-torch-pipeline-parallelism-aac06e",
+    "preflight_attempt_id": "be4b5b0802b34dab88734c235b8283db"
+  }
+}

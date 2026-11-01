@@ -1,0 +1,381 @@
+{
+  "updated": 1791097767.3777995,
+  "expected_original": 40,
+  "returned_original": 40,
+  "returned_supplementary": 1,
+  "returned_grading_retry": 2,
+  "arms": {
+    "dh": {
+      "returned": 20,
+      "official_successes": 2
+    },
+    "raw": {
+      "returned": 20,
+      "official_successes": 3
+    }
+  },
+  "rows": [
+    {
+      "task": "cs61_fa24_scheme",
+      "dh": {
+        "job": "dh--cs61_fa24_scheme",
+        "grading_state": "complete",
+        "f2p": 0.5595238095238095,
+        "p2p": 1.0,
+        "official_success": false
+      },
+      "raw": {
+        "job": "raw--cs61_fa24_scheme",
+        "grading_state": "complete",
+        "f2p": 0.0,
+        "p2p": 1.0,
+        "official_success": false
+      },
+      "raw_network_retry": {
+        "job": "roundtrip--cs61_fa24_scheme",
+        "attempt": 2,
+        "grading_state": "complete",
+        "f2p": 0.30357142857142855,
+        "p2p": 1.0,
+        "official_success": false,
+        "original_retained": true
+      }
+    },
+    {
+      "task": "cs61_fa24_ants",
+      "dh": {
+        "job": "dh--cs61_fa24_ants",
+        "grading_state": "complete",
+        "f2p": 0.34720978812294834,
+        "p2p": 1.0,
+        "official_success": false
+      },
+      "raw": {
+        "job": "raw--cs61_fa24_ants",
+        "grading_state": "complete",
+        "f2p": 0.03014025663980901,
+        "p2p": 1.0,
+        "official_success": false
+      }
+    },
+    {
+      "task": "cs61_fa24_cats",
+      "dh": {
+        "job": "dh--cs61_fa24_cats",
+        "grading_state": "complete",
+        "f2p": 0.7894736842105263,
+        "p2p": 0.947,
+        "official_success": false
+      },
+      "raw": {
+        "job": "raw--cs61_fa24_cats",
+        "grading_state": "complete",
+        "f2p": 0.0,
+        "p2p": 0.947,
+        "official_success": false
+      }
+    },
+    {
+      "task": "cs61_fa24_hog",
+      "dh": {
+        "job": "dh--cs61_fa24_hog",
+        "grading_state": "complete",
+        "f2p": 0.9166666666666666,
+        "p2p": 1.0,
+        "official_success": false
+      },
+      "raw": {
+        "job": "raw--cs61_fa24_hog",
+        "grading_state": "complete",
+        "f2p": 0.0,
+        "p2p": 1.0,
+        "official_success": false
+      }
+    },
+    {
+      "task": "cs61_fa24_hw08",
+      "dh": {
+        "job": "dh--cs61_fa24_hw08",
+        "grading_state": "complete",
+        "f2p": 1.0,
+        "p2p": 1.0,
+        "official_success": true
+      },
+      "raw": {
+        "job": "raw--cs61_fa24_hw08",
+        "grading_state": "complete",
+        "f2p": 1.0,
+        "p2p": 1.0,
+        "official_success": true
+      }
+    },
+    {
+      "task": "cmu15_445_p0",
+      "dh": {
+        "job": "dh--cmu15_445_p0",
+        "grading_state": "complete",
+        "f2p": 0.5,
+        "p2p": 0.875,
+        "official_success": false
+      },
+      "raw": {
+        "job": "raw--cmu15_445_p0",
+        "grading_state": "complete",
+        "f2p": 0.0,
+        "p2p": 1.0,
+        "official_success": false
+      }
+    },
+    {
+      "task": "cmu15_445_p1",
+      "dh": {
+        "job": "dh--cmu15_445_p1",
+        "grading_state": "complete",
+        "f2p": 0.0,
+        "p2p": 0.875,
+        "official_success": false
+      },
+      "raw": {
+        "job": "raw--cmu15_445_p1",
+        "grading_state": "complete",
+        "f2p": 0.0,
+        "p2p": 1.0,
+        "official_success": false
+      }
+    },
+    {
+      "task": "cmu15_445_p2",
+      "dh": {
+        "job": "dh--cmu15_445_p2",
+        "grading_state": "complete",
+        "f2p": 0.0,
+        "p2p": 1.0,
+        "official_success": false
+      },
+      "raw": {
+        "job": "raw--cmu15_445_p2",
+        "grading_state": "complete",
+        "f2p": 0.0,
+        "p2p": 1.0,
+        "official_success": false
+      }
+    },
+    {
+      "task": "ap1400_2_hw26",
+      "dh": {
+        "job": "dh--ap1400_2_hw26",
+        "grading_state": "complete",
+        "f2p": 0.2916666666666667,
+        "p2p": 1.0,
+        "official_success": false
+      },
+      "raw": {
+        "job": "raw--ap1400_2_hw26",
+        "grading_state": "complete",
+        "f2p": 0.3333333333333333,
+        "p2p": 1.0,
+        "official_success": false
+      }
+    },
+    {
+      "task": "ap1400_2_hw35",
+      "dh": {
+        "job": "dh--ap1400_2_hw35",
+        "grading_state": "complete",
+        "f2p": 0.7209302325581395,
+        "p2p": 0.75,
+        "official_success": false
+      },
+      "raw": {
+        "job": "raw--ap1400_2_hw35",
+        "grading_state": "complete",
+        "f2p": 0.0,
+        "p2p": 1.0,
+        "official_success": false
+      }
+    },
+    {
+      "task": "61810_cow",
+      "dh": {
+        "job": "dh--61810_cow",
+        "grading_state": "complete",
+        "f2p": 0.0,
+        "p2p": 1.0,
+        "official_success": false
+      },
+      "raw": {
+        "job": "raw--61810_cow",
+        "grading_state": "complete",
+        "f2p": 0.7272727272727273,
+        "p2p": 1.0,
+        "official_success": false
+      }
+    },
+    {
+      "task": "61810_fs",
+      "dh": {
+        "job": "dh--61810_fs",
+        "grading_state": "complete",
+        "f2p": 0.4,
+        "p2p": 0.971,
+        "official_success": false
+      },
+      "raw": {
+        "job": "raw--61810_fs",
+        "grading_state": "complete",
+        "f2p": 0.81,
+        "p2p": 0.985,
+        "official_success": false
+      }
+    },
+    {
+      "task": "61810_lock",
+      "dh": {
+        "job": "dh--61810_lock",
+        "grading_state": "complete",
+        "f2p": 0.0,
+        "p2p": 0.975,
+        "official_success": false
+      },
+      "raw": {
+        "job": "raw--61810_lock",
+        "grading_state": "complete",
+        "f2p": 0.25,
+        "p2p": 0.988,
+        "official_success": false
+      }
+    },
+    {
+      "task": "61810_mmap",
+      "dh": {
+        "job": "dh--61810_mmap",
+        "grading_state": "complete",
+        "f2p": 0.0,
+        "p2p": 0.968,
+        "official_success": false
+      },
+      "raw": {
+        "job": "raw--61810_mmap",
+        "grading_state": "complete",
+        "f2p": 0.0,
+        "p2p": 0.984,
+        "official_success": false
+      }
+    },
+    {
+      "task": "61810_net",
+      "dh": {
+        "job": "dh--61810_net",
+        "grading_state": "complete",
+        "f2p": 1.0,
+        "p2p": 0.965,
+        "official_success": false
+      },
+      "raw": {
+        "job": "raw--61810_net",
+        "grading_state": "complete",
+        "f2p": 1.0,
+        "p2p": 0.988,
+        "official_success": false
+      }
+    },
+    {
+      "task": "61810_pgtbl",
+      "dh": {
+        "job": "dh--61810_pgtbl",
+        "grading_state": "failed",
+        "f2p": null,
+        "p2p": null,
+        "official_success": null
+      },
+      "raw": {
+        "job": "raw--61810_pgtbl",
+        "grading_state": "complete",
+        "f2p": 0.6521739130434783,
+        "p2p": 1.0,
+        "official_success": false
+      },
+      "dh_grading_retry": {
+        "job": "roundtrip--outer-clock-fix--61810_pgtbl",
+        "grading_attempt": 3,
+        "grading_state": "complete",
+        "f2p": 0.43478260869565216,
+        "p2p": 0.921,
+        "official_success": false,
+        "original_retained": true
+      }
+    },
+    {
+      "task": "61810_syscall",
+      "dh": {
+        "job": "dh--61810_syscall",
+        "grading_state": "complete",
+        "f2p": 0.6857142857142857,
+        "p2p": 1.0,
+        "official_success": false
+      },
+      "raw": {
+        "job": "raw--61810_syscall",
+        "grading_state": "complete",
+        "f2p": 0.8571428571428571,
+        "p2p": 1.0,
+        "official_success": false
+      }
+    },
+    {
+      "task": "61810_thread",
+      "dh": {
+        "job": "dh--61810_thread",
+        "grading_state": "complete",
+        "f2p": 0.88,
+        "p2p": 1.0,
+        "official_success": false
+      },
+      "raw": {
+        "job": "raw--61810_thread",
+        "grading_state": "complete",
+        "f2p": 1.0,
+        "p2p": 1.0,
+        "official_success": true
+      }
+    },
+    {
+      "task": "61810_traps",
+      "dh": {
+        "job": "dh--61810_traps",
+        "grading_state": "complete",
+        "f2p": 0.7894736842105263,
+        "p2p": 1.0,
+        "official_success": false
+      },
+      "raw": {
+        "job": "raw--61810_traps",
+        "grading_state": "complete",
+        "f2p": 0.8,
+        "p2p": 1.0,
+        "official_success": false
+      }
+    },
+    {
+      "task": "61810_util",
+      "dh": {
+        "job": "dh--61810_util",
+        "grading_state": "complete",
+        "f2p": 1.0,
+        "p2p": 1.0,
+        "official_success": true
+      },
+      "raw": {
+        "job": "raw--61810_util",
+        "grading_state": "complete",
+        "f2p": 1.0,
+        "p2p": 1.0,
+        "official_success": true
+      }
+    }
+  ],
+  "pending": [],
+  "original_and_retry_separately_reported": true,
+  "no_model_calls": true,
+  "no_grading_replayed": true
+}

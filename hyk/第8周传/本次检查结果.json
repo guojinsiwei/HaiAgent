@@ -1,0 +1,33 @@
+{
+  "files": 561,
+  "bytes": 1607245,
+  "extensions": {
+    ".py": 185,
+    ".ps1": 5,
+    ".json": 357,
+    ".txt": 4,
+    ".lock": 2,
+    ".before-infra-repair-20261006": 2,
+    ".template": 3,
+    ".js": 2,
+    ".mjs": 1
+  },
+  "python_syntax_failures": [],
+  "credential_findings": [],
+  "sha256_verified": true,
+  "offline_checks": [
+    "missing official report rejected",
+    "malformed report rejected",
+    "zero-test report rejected",
+    "legitimate task failure accepted as result",
+    "contradictory success reward rejected",
+    "score-only row retains original trial and zero additional model calls",
+    "original plan and budget identities preserved",
+    "score-only row excluded from paid queue; concurrency 6, per arm 2",
+    "paid solver rerun rejected",
+    "grading environment patch idempotent and rejects foreign containers"
+  ],
+  "check_limits": "Synthetic fixtures; score_retry pure functions loaded via AST to avoid unavailable runtime imports. No Docker, paid calls, full original test suite or benchmark executed.",
+  "json_parse_failures": [],
+  "javascript_syntax_failures": []
+}

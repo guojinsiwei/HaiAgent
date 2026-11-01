@@ -1,0 +1,52 @@
+{
+  "sealed_utc": "2026-10-11T13:54:41.747350+00:00",
+  "offline_passed": true,
+  "live_api_test_pending": true,
+  "checks": {
+    "exit_code": 0,
+    "calls": 3,
+    "native_tool_result": true,
+    "settings_ok": true,
+    "request_settings": [
+      {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "temperature": 0,
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "temperature": 0,
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "temperature": 0,
+        "thinking": {
+          "type": "disabled"
+        }
+      }
+    ],
+    "kz_tool_present": true,
+    "wire_requests": 3,
+    "wire_integrity": true
+  },
+  "oracle_reward": 1,
+  "sha256": {
+    "route-audit.mjs": "465183fc92cbe493d822b8e8946ab2c15cbfc8fb1507039bb3529e63798a1c74",
+    "dsh_runtime.py": "0fd1ebb44cda50e0dab0427ccb17b83dbd3392afcb808dfd2fcb1da7fbef9224",
+    "container-retry1.py": "6eea63c7794b987356b6afb96b74a6d6a7268230477fab6e4b506450f77557c9",
+    "harbor_retry1.py": "7b148baed7089ac331a4d7d68b734d629c7d0d88d70ebc3f54e4fa3387a1c455",
+    "harbor_kz.py": "0789e484e0f7366a9db89d7068b1805adb59f8be472a090216428e8af0167df1",
+    "offline_headless.py": "6ee9250b484d71f769f98eb85ac0106295165114921df52cda180d47eb56fc8d",
+    "route.patch.yml": "c062652b0a27e03e7082d42a869c905c579862d28a9b4c3b0ab4f7b2a683e5d1",
+    "runtime.tar.gz": "f37e16acca136f288bf15cf9dc6201d711020062cd3660cd8c93239b35468441",
+    "launch_retry1.py": "42ec20475a38dd9c119b4004cd44eb084cee4cebff7b8eb3db2dec352736771e"
+  }
+}

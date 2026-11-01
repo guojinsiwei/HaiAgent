@@ -1,0 +1,26 @@
+{
+  "job": "1342--cmu15_445_p2",
+  "task": "cmu15_445_p2",
+  "campaign": "/mnt/sdb/home/lizh639/kz2-retry2-memory-soft-20261009",
+  "artifact_sha256": "118eb1bda66309c8d9da81a405bfb54b396ed33c0866eebe8e09d59b0ee239a6",
+  "grading_state": "complete",
+  "official_success": false,
+  "f2p": {"is_pass": 0, "step_score": 0.0},
+  "p2p_is_pass": 1,
+  "p2p_step_score": 1.0,
+  "p2p_count": 7,
+  "script_exit": 0,
+  "grading_cpu": 8,
+  "grading_memory_gib": 8,
+  "grading_cpuset": "8-15",
+  "image_id": "sha256:b5e046e99a93e0df3a8b66fcc6035a51d64abeb335468a6e48b3b1f223feed30",
+  "grading_container_destroyed": true,
+  "model_calls_for_supplement": 0,
+  "evidence": [
+    "[100%] Built target sqllogictest",
+    "make: *** No rule to make target 'build-tests'.  Stop.",
+    "No tests were found!!!",
+    "test results: 0/1 passed"
+  ],
+  "interpretation": "Official script returned zero after build-tests target was missing and no tests were discovered. This is not a successful test suite reporting all assertions failed. Budget stop itself was not converted directly into a zero score."
+}

@@ -1,0 +1,10 @@
+{
+  "job": "prediction-off--asana001",
+  "task": "asana001",
+  "artifact_sha256": "2f25dad071620689d370d01dee32019f7ff2a931c845e83a90f256b6aa1a820a",
+  "grading_state": "complete",
+  "official_success": false,
+  "score": 0,
+  "scorer": "Unmodified official duckdb_match + compare_pandas_table",
+  "gold_sha256": "8bd2190fb78351c8144c39413b7ff984f441b9d59abc5e4033cf297bbd5b5ea4"
+}

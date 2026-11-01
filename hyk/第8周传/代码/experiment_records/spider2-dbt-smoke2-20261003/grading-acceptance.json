@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "task": "asset001",
+      "gold_self_match": 1,
+      "missing_table_match": 0,
+      "unchanged_starter_score": 0,
+      "model_calls": 0
+    },
+    {
+      "task": "asana001",
+      "gold_self_match": 1,
+      "missing_table_match": 0,
+      "unchanged_starter_score": 0,
+      "model_calls": 0
+    }
+  ],
+  "model_calls": 0
+}

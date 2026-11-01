@@ -1,0 +1,9 @@
+{
+  "state": "passed",
+  "paid_model_calls": 0,
+  "time": 1791427857.635856,
+  "job": "roundtrip--cs61_fa24_hog",
+  "official_report": "/var/tmp/longcli-dh-routing3x7-20261008/fixture-grades/roundtrip--cs61_fa24_hog/result.json",
+  "container_destroyed": true,
+  "image_id": "sha256:cb17a6ea2478304ee86be957b1d3ad73d21983ac1029a2091a9e22201c2dcd43"
+}
