@@ -1,0 +1,206 @@
+[
+  {
+    "step_id": 1,
+    "event": "turn",
+    "state_before": [
+      {
+        "id": "g1",
+        "description": "Pass artifact smoke check",
+        "verification": {
+          "command": "python public_smoke.py",
+          "contains": [
+            "PUBLIC_OK"
+          ]
+        },
+        "status": "pending",
+        "evidence_ids": [],
+        "blocker": ""
+      }
+    ],
+    "invoked_skills": [],
+    "action": {
+      "analysis": "Use public terminal evidence.",
+      "operation": "execute",
+      "keystrokes": "python repair.py\n",
+      "duration": 0,
+      "goal_id": "",
+      "final_answer": ""
+    },
+    "observation": {
+      "kind": "terminal",
+      "output": "artifact repaired",
+      "revision": 1,
+      "synthetic": false,
+      "id": "receipt-1",
+      "output_truncated": false
+    },
+    "proposed_state": {
+      "updates": [
+        {
+          "goal_id": "g1",
+          "status": "pending",
+          "evidence_ids": [],
+          "blocker": ""
+        }
+      ],
+      "new_goals": [],
+      "revised_verifications": []
+    },
+    "checker_decisions": [
+      {
+        "goal_id": "g1",
+        "requested_status": "pending",
+        "accepted": true,
+        "reason": "non-completion proposal"
+      }
+    ],
+    "state_after": [
+      {
+        "id": "g1",
+        "description": "Pass artifact smoke check",
+        "verification": {
+          "command": "python public_smoke.py",
+          "contains": [
+            "PUBLIC_OK"
+          ]
+        },
+        "status": "pending",
+        "evidence_ids": [],
+        "blocker": ""
+      }
+    ]
+  },
+  {
+    "step_id": 2,
+    "event": "turn",
+    "state_before": [
+      {
+        "id": "g1",
+        "description": "Pass artifact smoke check",
+        "verification": {
+          "command": "python public_smoke.py",
+          "contains": [
+            "PUBLIC_OK"
+          ]
+        },
+        "status": "pending",
+        "evidence_ids": [],
+        "blocker": ""
+      }
+    ],
+    "invoked_skills": [],
+    "action": {
+      "analysis": "Use public terminal evidence.",
+      "operation": "verify",
+      "keystrokes": "",
+      "duration": 0,
+      "goal_id": "g1",
+      "final_answer": ""
+    },
+    "observation": {
+      "kind": "verification",
+      "goal_id": "g1",
+      "verification_digest": "d6b1a33de27e9ce4106a044cac6e3e95b5a1db1bb3dc2bd40e8f520dd2ea27c4",
+      "revision": 1,
+      "output": "PUBLIC_OK",
+      "completed": true,
+      "exit_code": 0,
+      "synthetic": false,
+      "id": "receipt-2",
+      "output_truncated": false
+    },
+    "proposed_state": {
+      "updates": [
+        {
+          "goal_id": "g1",
+          "status": "done",
+          "evidence_ids": [
+            "receipt-2"
+          ],
+          "blocker": ""
+        }
+      ],
+      "new_goals": [],
+      "revised_verifications": []
+    },
+    "checker_decisions": [
+      {
+        "goal_id": "g1",
+        "requested_status": "done",
+        "accepted": true,
+        "reason": "Supported by actual public check receipt receipt-2"
+      }
+    ],
+    "state_after": [
+      {
+        "id": "g1",
+        "description": "Pass artifact smoke check",
+        "verification": {
+          "command": "python public_smoke.py",
+          "contains": [
+            "PUBLIC_OK"
+          ]
+        },
+        "status": "done",
+        "evidence_ids": [
+          "receipt-2"
+        ],
+        "blocker": ""
+      }
+    ]
+  },
+  {
+    "step_id": 3,
+    "event": "turn",
+    "state_before": [
+      {
+        "id": "g1",
+        "description": "Pass artifact smoke check",
+        "verification": {
+          "command": "python public_smoke.py",
+          "contains": [
+            "PUBLIC_OK"
+          ]
+        },
+        "status": "done",
+        "evidence_ids": [
+          "receipt-2"
+        ],
+        "blocker": ""
+      }
+    ],
+    "invoked_skills": [],
+    "action": {
+      "analysis": "Use public terminal evidence.",
+      "operation": "finish",
+      "keystrokes": "",
+      "duration": 0,
+      "goal_id": "",
+      "final_answer": "The public artifact check passed."
+    },
+    "observation": {
+      "kind": "completion_request",
+      "accepted": true,
+      "synthetic": true
+    },
+    "proposed_state": {},
+    "checker_decisions": [],
+    "state_after": [
+      {
+        "id": "g1",
+        "description": "Pass artifact smoke check",
+        "verification": {
+          "command": "python public_smoke.py",
+          "contains": [
+            "PUBLIC_OK"
+          ]
+        },
+        "status": "done",
+        "evidence_ids": [
+          "receipt-2"
+        ],
+        "blocker": ""
+      }
+    ]
+  }
+]

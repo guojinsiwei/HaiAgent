@@ -1,0 +1,57 @@
+{
+  "repository": "https://github.com/Gen-Verse/Recuris",
+  "commit": "7d3745ab787b1206ccd981cb1511100476097266",
+  "retrieved": "2026-10-06",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "a1a354cd1e52667c56837996fd12bcdaf5db3b9ab948730fa28ce1d0a8d1a38e",
+      "url": "https://raw.githubusercontent.com/Gen-Verse/Recuris/7d3745ab787b1206ccd981cb1511100476097266/LICENSE"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "32987c7a2086a7e0c966d1748824f75e3e9fd98f812b571e26561589132f6c39",
+      "url": "https://raw.githubusercontent.com/Gen-Verse/Recuris/7d3745ab787b1206ccd981cb1511100476097266/THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "path": "skill_memories/tb21_seed/manifest.yaml",
+      "sha256": "29ffe9b058f578934e6990614b1eb1f9fa6cbaf46b962e6a25fb081e1bf4ecea",
+      "url": "https://raw.githubusercontent.com/Gen-Verse/Recuris/7d3745ab787b1206ccd981cb1511100476097266/skill_memories/tb21_seed/manifest.yaml"
+    },
+    {
+      "path": "skill_memories/tb21_seed/strategies.py",
+      "sha256": "23eaaa2c8e40260c5e199df68d29cb214bf0c98a1430c6f84acb0f803445b847",
+      "url": "https://raw.githubusercontent.com/Gen-Verse/Recuris/7d3745ab787b1206ccd981cb1511100476097266/skill_memories/tb21_seed/strategies.py"
+    },
+    {
+      "path": "skill_memories/tb21_seed/em/closed_loop.md",
+      "sha256": "ef394004dbb1f278791d5fba0c3d5f513565a09bd72f7996fbbf9bc568556015",
+      "url": "https://raw.githubusercontent.com/Gen-Verse/Recuris/7d3745ab787b1206ccd981cb1511100476097266/skill_memories/tb21_seed/em/closed_loop.md"
+    },
+    {
+      "path": "src/recuris/adapters/tb21/harbor_terminus.py",
+      "sha256": "2c4faf822a13a8b5156a8a6901ea7eb4ba61d38f42e0532d2291e769f97bd3c6",
+      "url": "https://raw.githubusercontent.com/Gen-Verse/Recuris/7d3745ab787b1206ccd981cb1511100476097266/src/recuris/adapters/tb21/harbor_terminus.py"
+    },
+    {
+      "path": "src/recuris/adapters/tb21/runtime_bridge.py",
+      "sha256": "6559be2f7287bf33a880f78b572890dab9e51c2660cda4fba994e9e0bd8f0c74",
+      "url": "https://raw.githubusercontent.com/Gen-Verse/Recuris/7d3745ab787b1206ccd981cb1511100476097266/src/recuris/adapters/tb21/runtime_bridge.py"
+    },
+    {
+      "path": "src/recuris/metaagent/gate.py",
+      "sha256": "c21999581fa1f359cd9607634453d1c288d3e28a25456da7674ccb331f839cf0",
+      "url": "https://raw.githubusercontent.com/Gen-Verse/Recuris/7d3745ab787b1206ccd981cb1511100476097266/src/recuris/metaagent/gate.py"
+    },
+    {
+      "path": "src/recuris/metaagent/gates.py",
+      "sha256": "f864018a37c9466a9697f7df2e77ec13d9cbc624eab85caa4da03ccf1a6a29a6",
+      "url": "https://raw.githubusercontent.com/Gen-Verse/Recuris/7d3745ab787b1206ccd981cb1511100476097266/src/recuris/metaagent/gates.py"
+    },
+    {
+      "path": "src/recuris/tta/driver.py",
+      "sha256": "1883f810645e3eb9cef06f54352257a4f088b1bbfd9378bff2937cb26dd371fb",
+      "url": "https://raw.githubusercontent.com/Gen-Verse/Recuris/7d3745ab787b1206ccd981cb1511100476097266/src/recuris/tta/driver.py"
+    }
+  ]
+}

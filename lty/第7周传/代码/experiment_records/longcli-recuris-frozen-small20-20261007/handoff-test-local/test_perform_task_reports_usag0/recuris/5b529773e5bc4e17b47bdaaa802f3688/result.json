@@ -1,0 +1,16 @@
+{
+  "stop_reason": "task_complete",
+  "final_answer": "finished",
+  "memory_digest": "",
+  "working_state": [],
+  "trace": [],
+  "input_tokens": 120,
+  "output_tokens": 30,
+  "model_calls": 0,
+  "tool_calls": 0,
+  "steps": 0,
+  "elapsed_seconds": 0,
+  "error": null,
+  "error_phase": null,
+  "official_success": null
+}
