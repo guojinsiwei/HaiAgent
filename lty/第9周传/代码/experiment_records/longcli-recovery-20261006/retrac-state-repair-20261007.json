@@ -1,0 +1,27 @@
+{
+  "campaign": "/var/tmp/lizh639-longcli-retrac-recovery3-20261007",
+  "state_at_last_check": "running",
+  "active_at_last_check": ["cmu15_445_p1", "cs61_fa24_cats"],
+  "reported_errors_at_last_check": [],
+  "remaining_tasks": 16,
+  "retained_deliveries": ["cs61_fa24_hog", "61810_util", "cs61_fa24_scheme", "cs61_fa24_ants"],
+  "repairs": [
+    "First oversized compression requests a quantified shorter rewrite; second structurally valid oversized response uses byte-bounded whole-record serialization",
+    "All eight facets preserved; omitted records explicitly marked; complete original provider output retained in audit",
+    "Missing facets and provider-truncated responses still rejected",
+    "Fresh incoming parent directory is created before artifact transfer",
+    "Existing Scheme and Ants artifacts officially graded without solver replay"
+  ],
+  "native_engine_changed": false,
+  "memory_transport_changed": true,
+  "lossless_compression_claimed": false,
+  "max_parse_attempts": 2,
+  "per_task_request_tool_time_budgets_changed": false,
+  "regression_tests_passed": 44,
+  "real_docker_fixtures_passed": 2,
+  "oversized_memory_commits_verified_in_docker": 14,
+  "historical_oversized_responses_replayed": 2,
+  "fixture_api_calls": 0,
+  "fresh_key_entered_locally": true,
+  "historical_comparison": "four-way-results-20261007.json"
+}

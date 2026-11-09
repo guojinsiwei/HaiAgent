@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-05",
+  "scope": "offline implementation and contract verification only",
+  "python": "3.12.5",
+  "command": "python -B -m pytest -q --basetemp .test-tmp-02",
+  "tests_passed": 81,
+  "subtests_passed": 30,
+  "tests_failed": 0,
+  "additional_checks": [
+    "Python source AST parsing",
+    "pyproject.toml parsing",
+    "python -B -m retrac --help",
+    "bash -n scripts/run_longcli.sh"
+  ],
+  "actual_official_agent_definitions_loaded": true,
+  "official_longcli_commit": "2015f37b5c458f2562354de6b415e9182c91af64",
+  "terminal_dependencies_mocked": true,
+  "model_api_called": false,
+  "docker_started": false,
+  "benchmark_experiments_run": false,
+  "accuracy_claim": null,
+  "remaining_runtime_validation": "Recipient supplies DeepSeek model/key and Linux/WSL Docker environment for actual endpoint and benchmark integration."
+}

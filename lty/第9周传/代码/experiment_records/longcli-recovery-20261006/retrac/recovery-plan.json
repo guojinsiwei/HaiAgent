@@ -1,0 +1,45 @@
+{
+  "source_campaign": "/var/tmp/lizh639-longcli-retrac20-engineering-repair-20261006",
+  "new_campaign": "/var/tmp/lizh639-longcli-retrac-recovery-20261006",
+  "method": "retrac",
+  "source_protocol_sha256": "d66f071d817cfdea2f7df6ea56b66e911284dc3cc6b01de9002257f2a4eb6dd6",
+  "reused_deliveries": [
+    {
+      "task": "cs61_fa24_hog",
+      "source": "/var/tmp/lizh639-longcli-retrac20-engineering-repair-20261006/jobs/retrac--cs61_fa24_hog",
+      "artifact_sha256": "3920046eebc5f678a28d4384ff6433057ac3699f00129b48b590ed1d10ba0f54",
+      "summary_sha256": "8f0000ea83b4be019ef117f88c60705993ade813013603baa655829d49a5746a"
+    },
+    {
+      "task": "61810_util",
+      "source": "/var/tmp/lizh639-longcli-retrac20-engineering-repair-20261006/jobs/retrac--61810_util",
+      "artifact_sha256": "ef67332d4a53a056bfa66c3b480ddc38135a7df599b4beb39b2768226113a9f4",
+      "summary_sha256": "df56f24deca127b41cff277e67846832a64817425fc01b6e75e8ecf7d4c9cf3a"
+    }
+  ],
+  "new_attempt_tasks": [
+    "cs61_fa24_scheme",
+    "cs61_fa24_ants",
+    "cs61_fa24_cats",
+    "cs61_fa24_hw08",
+    "cmu15_445_p0",
+    "cmu15_445_p1",
+    "cmu15_445_p2",
+    "ap1400_2_hw26",
+    "ap1400_2_hw35",
+    "61810_cow",
+    "61810_fs",
+    "61810_lock",
+    "61810_mmap",
+    "61810_net",
+    "61810_pgtbl",
+    "61810_syscall",
+    "61810_thread",
+    "61810_traps"
+  ],
+  "original_attempts_retained": true,
+  "model_calls_during_preparation": 0,
+  "fresh_key_required": true,
+  "solver_algorithm_changed": false,
+  "request_tool_and_time_budgets_changed": false
+}

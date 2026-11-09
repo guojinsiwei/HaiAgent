@@ -1,0 +1,12 @@
+{
+  "scope": "LATS resume campaign, future task processes only",
+  "reason": "A model-requested 320 second CLI timeout raised ValueError against the 300 second sandbox bound.",
+  "source_sha256": "906832760098272afc208346ba9fff4027f42aa9bf052c56ebc9bef96689ea96",
+  "replacement_sha256": "0a5c635be14c9d49d95a9770ebc58dab53f20b08279400fa05d6dc8143cb7161",
+  "tested": "zero API unit test passed",
+  "already_active_task_unmodified": "lats--cs61_fa24_ants",
+  "model_budget_changed": false,
+  "tool_budget_changed": false,
+  "command_changed": false,
+  "max_effective_timeout_seconds": 300
+}
