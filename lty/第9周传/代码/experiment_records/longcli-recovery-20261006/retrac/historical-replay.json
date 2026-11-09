@@ -1,0 +1,11 @@
+{
+  "unchanged_valid": 33,
+  "exact_suffix_recovered": [
+    "response-0042.json",
+    "response-0039.json",
+    "response-0035.json",
+    "response-0043.json"
+  ],
+  "still_rejected": 2,
+  "model_calls": 0
+}

@@ -1,0 +1,62 @@
+{
+  "title": "Reflexion: Language Agents with Verbal Reinforcement Learning",
+  "authors_conference_version": [
+    "Noah Shinn",
+    "Federico Cassano",
+    "Ashwin Gopinath",
+    "Karthik Narasimhan",
+    "Shunyu Yao"
+  ],
+  "venue": "NeurIPS 2023",
+  "local_pdf": {
+    "source_path_at_implementation": "F:/软工科研/baseline/NeurIPS-2023-reflexion-language-agents-with-verbal-reinforcement-learning-Paper-Conference.pdf",
+    "sha256": "efba04cd48b779131fc4c3c58ae49e8523ded534f9225a7c57c7bdad0823803d",
+    "pages": 19,
+    "included_in_delivery": false,
+    "note": "主要依据用户提供的会议版 PDF；本交付不复制论文全文。"
+  },
+  "reviewed_on": "2026-10-06",
+  "references": [
+    {
+      "kind": "official_conference_page",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/1b44b878bb782e6954cd888628510e90-Abstract-Conference.html"
+    },
+    {
+      "kind": "official_conference_pdf",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/1b44b878bb782e6954cd888628510e90-Paper-Conference.pdf"
+    },
+    {
+      "kind": "official_repository",
+      "url": "https://github.com/noahshinn/reflexion",
+      "original_paper_url": "https://github.com/noahshinn024/reflexion"
+    },
+    {
+      "kind": "official_reflection_prompt_reference",
+      "url": "https://github.com/noahshinn/reflexion/blob/main/alfworld_runs/generate_reflections.py",
+      "reviewed_raw_url": "https://raw.githubusercontent.com/noahshinn/reflexion/main/alfworld_runs/generate_reflections.py"
+    },
+    {
+      "kind": "official_programming_prompt_reference",
+      "url": "https://github.com/noahshinn/reflexion/blob/main/programming_runs/generators/py_generate.py",
+      "reviewed_raw_url": "https://raw.githubusercontent.com/noahshinn/reflexion/main/programming_runs/generators/py_generate.py"
+    },
+    {
+      "kind": "official_reasoning_prompt_reference",
+      "url": "https://github.com/noahshinn/reflexion/blob/main/hotpotqa_runs/prompts.py",
+      "reviewed_raw_url": "https://raw.githubusercontent.com/noahshinn/reflexion/main/hotpotqa_runs/prompts.py"
+    }
+  ],
+  "source_note": "核心机制与页码来自本地会议版 PDF。官方仓库 main 链接用于核对角色与提示含义，可能随时间变化；本项目是独立实现，不以它们代表固定版本的逐行源码复现。",
+  "paper_ambiguities": [
+    {
+      "page": 4,
+      "location": "Algorithm 1",
+      "handling": "论文循环条件使用 OR；本实现依据第 5 页正文及有限尝试预算，成功或预算耗尽均停止。"
+    },
+    {
+      "page": 15,
+      "location": "Appendix C.3",
+      "handling": "反思说明重复 Actor 代码生成指令；按正文与官方实现生成失败分析和改进建议文本。"
+    }
+  ]
+}

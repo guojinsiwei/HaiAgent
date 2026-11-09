@@ -1,0 +1,56 @@
+[
+  {
+    "response": "0023",
+    "changed": true,
+    "original_chars": 9547,
+    "original_bytes": 9585,
+    "retained_bytes": 7998,
+    "retained_records": [
+      1,
+      12,
+      9,
+      11,
+      6,
+      1,
+      8,
+      3
+    ],
+    "omitted_records": [
+      0,
+      5,
+      0,
+      4,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "response": "0024",
+    "changed": true,
+    "original_chars": 9429,
+    "original_bytes": 9465,
+    "retained_bytes": 7926,
+    "retained_records": [
+      1,
+      11,
+      9,
+      14,
+      6,
+      1,
+      8,
+      3
+    ],
+    "omitted_records": [
+      0,
+      6,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+]

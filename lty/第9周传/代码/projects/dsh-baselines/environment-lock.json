@@ -1,0 +1,43 @@
+{
+  "imageId": "sha256:e19976ce9f5d95e3c57a2975e2c2515942553227c56868137b342390a1ee6877",
+  "image": "dsh-baselines-offline:20261013",
+  "inputs": {
+    "baseImageId": "sha256:5568ac38fe7ad7bf91717543babf5852819736facbb067f3889788c45b8f0fea",
+    "node": {
+      "version": "24.9.0",
+      "sha256": "f52ec50e959d72d5c680d9731420b2661cd2a8070e94c7369b6ddfcd8b7278be",
+      "source": "https://nodejs.org/dist/v24.9.0/"
+    },
+    "wheels": {
+      "annotated_types-0.8.0-py3-none-any.whl": "f072f4d804ea359e4eaf198b1af7a8b0943881a87f31bb764f8bf219bb9419e0",
+      "pydantic-2.13.5-py3-none-any.whl": "346a034f080da3755d8e9cb5e00e8b07de1d39e4f6e2c87d8ab7cafa0b269a73",
+      "pydantic_core-2.46.5-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0fc5be0abd4a407e200d844b404e33639a554e7bd0d448e7b9ae181be4789ac2",
+      "typing_extensions-4.16.0-py3-none-any.whl": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+      "typing_inspection-0.4.4-py3-none-any.whl": "65b8397ba37ccbce054456aaccddfc91e6e3083c92824df348d96ca832f3f147"
+    }
+  },
+  "testedSource": {
+    "node": "v24.9.0",
+    "files": {
+      "dsh-baselines/src/plugin.mjs": "8f120827dc90cf3b5e5ac601af751defedf5b3045d64c0d2a5cce007f0d1e104",
+      "dsh-baselines/src/bridge.mjs": "325a5917e786a0b9279610d6fac5110c507963500cc0240748ed48368f5b2d03",
+      "dsh-baselines/src/transport.mjs": "c375dab70f067256d4484037bd572ec2b4992f85bd40d32d3fb1529fa5cb987a",
+      "dsh-baselines/config/common.json": "376d34538580ae8ce1f0f7082dadd61cd9e19b637d35ee9cfeed853492416e58",
+      "recuris-dsh/src/plugin.mjs": "64b623381cde988b4b1a21cca2ebdb3537564595a00fb72dbfa18cf0131253f9",
+      "recuris-dsh/worker.py": "4accda61206d33a6b9d7c24f42cc69ece7ba69a3ba4be48ca8a2e6f5422c6336",
+      "recuris-dsh/vendor/recuris/memory.py": "5e4a742cbb55deb2eb07622fdd7ded716e25fdc30e71a2d8d225ba81184655f7",
+      "recuris-dsh/vendor/recuris/working.py": "4f37412a2fc629cd67f6f605ae2692b7adf2d1b338ac70eb60a59e6a5d108c24",
+      "taco-dsh/src/plugin.mjs": "9dba86b5d88ff92d6a43dc4e6b1e77bf20148c2551c0a373aff3ae9acb7045ae",
+      "taco-dsh/worker.py": "c63a215d1a6918d3daf2719916c51644fd7fbb7e2877af0f0e2aa61fbcfec30e",
+      "taco-dsh/vendor/taco_native/output_filter.py": "c3127d884364645d07c15c27efc7bb61388d4f36544d762bd0d95b13101cda02",
+      "taco-dsh/vendor/taco_native/compression/planner.py": "d66f4a6c13d3bd8841d93c564c86f0e9cb5bca0810c47ad92c6d098cf57103f0",
+      "taco-dsh/vendor/taco_native/compression/evolver.py": "739d2d67cb9debd8a268c71d76c3f396c4599619b8b62a77b16fa43caf9b9f1c",
+      "taco-dsh/vendor/taco_native/compression/feedback.py": "a486e85faffac420483f96addade6936e85ddb1467795c0fb87f73363f35f46f",
+      "taco-dsh/vendor/taco_native/compression/dynamic_filter.py": "c53f71be9eec1e547145f3a67a5eeaa6498d48fa3f3b6c8563fb02e9f08e8a91",
+      "taco-dsh/vendor/taco_native/compression/models.py": "adeee2dd75f5f3ab2b047d65862c34f0a9181a60cc1a5f661050d255a9360d5d",
+      "taco-dsh/vendor/taco_native/compression/seed_rules.py": "d0a6ba237b06ef7bc7b8b218e3ad8b12f151e13c164d4022441a3bae061cb779"
+    }
+  },
+  "networkDuringTests": "none; per-container localhost only",
+  "realModelApiCalls": 0
+}

@@ -1,0 +1,22 @@
+{
+  "repository": "https://github.com/finyorko/longcli-bench",
+  "commit": "2015f37b5c458f2562354de6b415e9182c91af64",
+  "purpose": "Unmodified upstream interfaces used by offline adapter contract tests; tmux and template dependencies are mocked.",
+  "files": [
+    {
+      "file": "terminal_bench__agents__failure_mode.py",
+      "source": "https://raw.githubusercontent.com/finyorko/longcli-bench/2015f37b5c458f2562354de6b415e9182c91af64/terminal_bench/agents/failure_mode.py",
+      "sha256": "b4bb025b37a332493dcc957406a57829dde961bc5428a6391da88bd778498ed5"
+    },
+    {
+      "file": "terminal_bench__agents__base_agent.py",
+      "source": "https://raw.githubusercontent.com/finyorko/longcli-bench/2015f37b5c458f2562354de6b415e9182c91af64/terminal_bench/agents/base_agent.py",
+      "sha256": "ab28f2368763876e14d2ca8eccbdd793e96796a0f2fc5e065a58fd66d0ad5f1b"
+    },
+    {
+      "file": "LICENSE",
+      "source": "https://raw.githubusercontent.com/finyorko/longcli-bench/2015f37b5c458f2562354de6b415e9182c91af64/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    }
+  ]
+}

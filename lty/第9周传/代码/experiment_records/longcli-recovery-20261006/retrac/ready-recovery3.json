@@ -1,0 +1,93 @@
+{
+  "ready": true,
+  "paid_api_requests": 0,
+  "checks": [
+    {
+      "check": "engineering",
+      "seconds": 8.543742895126343,
+      "passed": true
+    },
+    {
+      "check": "grading_contract",
+      "seconds": 0.06509947776794434,
+      "passed": true
+    },
+    {
+      "check": "cmu15_445_p1",
+      "seconds": 51.837358713150024,
+      "passed": true
+    },
+    {
+      "check": "cs61_fa24_cats",
+      "seconds": 51.0790696144104,
+      "passed": true
+    }
+  ],
+  "hashes": {
+    "test_transport_regression.py": "445ac9f40be3ae1d2a0a28df60ff5c04c6ea03d5ae250ccd379e62285c1d404c",
+    "process_receipt.py": "be7630073da0deba0a7e6b16847819cd766b4b88295a21700b153d313f12cf39",
+    "safe_process.py": "bdd96fc6bb96f65c6d1096c1526e8dc0674a2b0862ef70b0b19aae1923c860c8",
+    "common.py": "5bc7935458f89886fda5ec85f56b4588b4c4fdf15d0ef248dcb7737d864c9aef",
+    "deploy.py": "199c84e3e28af4288cc06532f70ec07b69ef1926207e7af22b3c45f0dac8571e",
+    "matched_adapter.py": "ffadcda52cda1854c95b4d5ee8da7786087638e35546c39d5e14aa6f727eb69e",
+    "test_infrastructure.py": "41700ba8911f2de51ececa799d44f565c4bc975ce3ba017cc63783867e969c20",
+    "runner.py": "4ad44ac733fe320f194776b154d8d6ed4a12c7eb7155fc59955064fb7a2b48d9",
+    "grading_adapter.py": "103206984097e268155e78ba785103db4c6066a498193d2510cfd5d1884e49b7",
+    "test_state_transport.py": "7e1ce132e19a5dd14fc71c6bcade29f993bbb8274e1c94aa5f09f48018177a35",
+    "college_grader.py": "e557933f3896136ec32b0827e255b7f1b96027c56ec336de4403018425acd298",
+    "context_limit.py": "c15290d639a006c748541adb433d1eb281501db0cdc51ab32ce7f29320fe7c12",
+    "grading_worker.py": "311445f6708540675b4eac9efc8a8f4ee676d5331ea2a579447268ead39e02ee",
+    "fault_guard.py": "5689ae59cfc9f687a961d2c03f596b09bbc9716eb11420b5847f7ca590929a21",
+    "docker_cleanup.py": "00f780e683bcfb19ac87f730f1ef5090fc0514ce31b500fd052001f0165e75cd",
+    "status.py": "1f7c600e506e1aa04c2444cd1e81cad3a12c99b37d996ab613105ac5cdf2b285",
+    "prepare.py": "1bec90f56db0293769f86114e0dc939ad1e6ed4256d7db6ba1835c25158a98f9",
+    "check_ready.py": "1ab40ff5484710bb603ad889bfc00fe1561c6b148f2685974900d53deb96511d",
+    "grade_one.py": "7ab1b3e18d97fd46a2efd01e748aab19d057d2797488ef76953a484431e622e2",
+    "offline_tests.py": "1b402f5e95328db714765325106daed4611815f65e3e956ec5daad9c3c79052b",
+    "test_grade_lifecycle.py": "661518c58b01fd5e2d28588477cdd18e08e0ec0764d378811e792e47201cfb0a",
+    "docker_terminal.py": "8c0b3dcb86034603cb6947e872ec256c3b65623117b0a9b5765e38706d94d890",
+    "check_grading.py": "8c065e69264182c903c22c634725189d10ca4dfa33bcb333cafd871c2bc2e97d",
+    "launch.py": "b4ef5da94222b14945e3094bbfaa1b393cbafe0c7458bc91c20f6b63b9b0a0bf",
+    "accept_grading.py": "dbf86eee5ddc905d9b5b8e12364f61960d46880bcdc7b3a302088281240d29d7",
+    "test_fresh_grading.py": "82d72133b7c9fcee714d3d54e9296b16705da9c8ffdcfb88173df26dcd8d3f2f",
+    "test_process_receipt.py": "87179bb700e8b7706329b0f4c2fac070fe23e3189db1e32290d2f1bfe15d15b0",
+    "test_failfast.py": "8665019d63517c394155ec76d11a6061cefca20d7566b7ed0a07e547ea21730e",
+    "state_transport.py": "757f43d4c5a0f49931292b17ef2cfe649ece97d662a8c24b0e760fca65c275ce",
+    "test_adapter.py": "404d6ebb27bf80749d7924014c1dee4613cce5fb5c0939135b7e106a206cd13b",
+    "repair_existing.py": "ca75202ea48c24887919ef835c9fee1a66d6b5c27d4ca493ea6abd4ed1db8c04",
+    "retrac/MANIFEST.sha256": "b2224f5d73454d40eac1754d594836c460bd271b7e330fd571d5baed42781814",
+    "retrac/.gitignore": "a6bcbad7bb7611fb99b61ca4cafcf73a1d0af5da3e8a9f3f424ae5277173ff6c",
+    "retrac/.env.example": "87dfca4cdd6d907abf6fb1aee87656ac69d5b5361d60be800c80c601dd1c909c",
+    "retrac/README.md": "9227337b55d5849701e2e17f3865ff82d1c2c8ccb19ec7f453be89e539aad937",
+    "retrac/pyproject.toml": "6b5c0d3d8b72a6332f60ffc4a1e9cfd6c9e490c2eaa194ae26255b66e6f12eea",
+    "retrac/vendor-contracts/manifest.json": "6e1c4ce912d97914c49f481ce093c0b1505636cc282fca23fe4f852dd0282033",
+    "retrac/vendor-contracts/terminal_bench__agents__base_agent.py": "ab28f2368763876e14d2ca8eccbdd793e96796a0f2fc5e065a58fd66d0ad5f1b",
+    "retrac/vendor-contracts/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "retrac/vendor-contracts/terminal_bench__agents__failure_mode.py": "b4bb025b37a332493dcc957406a57829dde961bc5428a6391da88bd778498ed5",
+    "retrac/tests/test_client.py": "b4a6ba5084e264804a0278838f8c45d1f9ba3eed590439a57f81fec12873dbc4",
+    "retrac/tests/test_prompts.py": "ca98aea46734284d963b2745d1823c44ccf81b8f1f4c908ac527e9eceffcc6fd",
+    "retrac/tests/test_longcli.py": "15ac6b799aeb27ecdd8a6fc5df58a44d84bf0ffb6c8f01d945cd41cf414d759f",
+    "retrac/tests/test_engine.py": "14fdbb689eb6a8f0dd32dc3e15001e01a0fcad2fbc4c78c6edbd626eab2450aa",
+    "retrac/docs/longcli-contract.md": "34472eb0479f9b5e05ff65f6caded28a585f206fe7df9e861b207cfed621f525",
+    "retrac/docs/reproduction.md": "d5adbf4f99635810d9316b0939585810cfc5f37572b149fd6360398496838927",
+    "retrac/docs/validation.json": "8a51732f69a41c41f8dcb10f2649e195d18628d1c1965346c78985de825aa031",
+    "retrac/scripts/run_longcli.sh": "c6840e2024075ee4cc7ec77e4f935ff953ca8b3bf61a9c81ed6786be937a9456",
+    "retrac/src/retrac/prompts.py": "134b819d7f49c7feb7ea54c51584b247c406354de153381b318fd6c072d84320",
+    "retrac/src/retrac/__init__.py": "1c91bb43bf92fc79596f02a20fffb7907e145dbffaac43e457d55b51e5a93f70",
+    "retrac/src/retrac/cli.py": "13fad6d50d4a30cd28f8d30a59037e113258b2b06a1562b3cbc3ad4720ebdaf6",
+    "retrac/src/retrac/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "retrac/src/retrac/audit.py": "edd03ad7c5646a4b16f14b678a9d2c0742d1f2a7e25200c6020b170838a61c27",
+    "retrac/src/retrac/engine.py": "2cef231e7d63fc56ee8571e1a214166c71a5a0d3bcc2757acc591f21addccf74",
+    "retrac/src/retrac/client.py": "1b88d4fd43bbdef945c2d630776d80a4abdb2f58ea8c49166bef9d9c2b910726",
+    "retrac/src/retrac/longcli.py": "dc3b34cf5b789049c692b260c3cba36d57791af153b84b38863e06b6543dfa78",
+    "protocol.json": "a3a15a71142e070a2e8cd67860c644a2927f246c8894c0df35603aa87ff96978",
+    "recovery-plan.json": "c16ce5c525be62b3bf9369ef9085fd28101a18ddb69daed68c6d759742c64898",
+    "input-manifest.json": "fd73350dc674eb82f1d6978c4eb922c69f128e35a483c65fa732141230cec6bc",
+    "grading-ready.json": "2e0c1fd8d95f454a9ea8560273ddbe43904e6787e8b8e5e5ed5feeea07ef7190",
+    "grading-acceptance.json": "96bbd5b4c74676c5b0b9229659683d0e00592bab8a70bb0cd62309b265755cd4"
+  },
+  "fixture_tasks": [
+    "cmu15_445_p1",
+    "cs61_fa24_cats"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "job": "reflexion--ap1400_2_hw35",
+  "task": "ap1400_2_hw35",
+  "artifact_sha256": "7adac1acce5880ef507a5f01a0505ddd22254972c01626f48b44db16c42f67ff",
+  "image_id": "sha256:94cf06cc66c75068e8c42d874b34344c009713164c81d37223debee286cb25a4",
+  "container": "longcli-paired10-7dbf703270b5",
+  "grading_cpu": 8,
+  "grading_memory_gib": 8,
+  "grading_cpuset": "8-15",
+  "official_success": false,
+  "grading_state": "complete",
+  "fixture": false,
+  "script_exit": 0,
+  "f2p": {
+    "is_pass": 0,
+    "step_score": 0.7209302325581395
+  },
+  "p2p_is_pass": 1,
+  "p2p_step_score": 1.0,
+  "p2p_count": 4,
+  "p2p_cases": {
+    "test_file_integrity[/app/ap1400_2_hw/ap1400_2_hw3/Dockerfile-03ac1a3d1fbcbd9f0d5de84b9f6f9341]": 1,
+    "test_file_integrity[/app/ap1400_2_hw/ap1400_2_hw3/src/main.cpp-19dfaf5436274303a25b436ee8022537]": 1,
+    "test_file_integrity[/app/ap1400_2_hw/ap1400_2_hw5/Dockerfile-03ac1a3d1fbcbd9f0d5de84b9f6f9341]": 1,
+    "test_file_integrity[/app/ap1400_2_hw/ap1400_2_hw5/src/main.cpp-3c30886fd2a66add982a4256066ff8ab]": 1
+  },
+  "f2p_output_nonempty": true,
+  "grading_attempt_root": "/var/tmp/lizh639-longcli-reflexion-recovery-20261006/grading-recovery-20261007",
+  "paid_model_calls_for_repair": 0,
+  "original_failed_attempt_retained": true,
+  "cleanup": [
+    {
+      "name": "longcli-paired10-7dbf703270b5",
+      "removed": true
+    }
+  ]
+}
